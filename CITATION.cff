@@ -1,0 +1,147 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Blue Mountains Shale Mining Communities Digital Collection Software"
+version: 0.1.0
+date-released: "2025-10-09"
+
+# Principal Investigators
+authors:
+  - family-names: "Evans"
+    given-names: "Tanya"
+    affiliation: "Macquarie University"
+    orcid: "https://orcid.org/0000-0003-3701-9736"
+
+  - family-names: "Taksa"
+    given-names: "Lucy"
+    affiliation: "Deakin University"
+    orcid: "https://orcid.org/0000-0002-0532-2573"
+
+  - family-names: "Ross"
+    given-names: "Shawn"
+    affiliation: "Macquarie University"
+    orcid: "https://orcid.org/0000-0002-6492-9025"
+
+  - family-names: "Lupack"
+    given-names: "Susan"
+    affiliation: "Macquarie University"
+    orcid: "https://orcid.org/0000-0002-7935-7613"
+
+  - family-names: "Crook"
+    given-names: "Penelope"
+    affiliation: "Macquarie University"
+    orcid: "https://orcid.org/0000-0001-8509-7865"
+
+  - family-names: "Leslie"
+    given-names: "Fiona"
+    affiliation: "MTS Heritage"
+    orcid: "https://orcid.org/0000-0002-8267-269X"
+
+  - family-names: "Parkes"
+    given-names: "Rebecca"
+    affiliation: "Lantern Heritage Pty Ltd"
+    orcid: "https://orcid.org/0000-0002-4808-4464"
+
+  - family-names: "High"
+    given-names: "Steven"
+    affiliation: "Concordia University, Canada"
+    orcid: "https://orcid.org/0000-0001-7224-4133"
+
+# Keywords for discoverability
+keywords:
+  - "digital humanities"
+  - "archaeology"
+  - "industrial archaeology"
+  - "historical archaeology"
+  - "shale mining"
+  - "Blue Mountains"
+  - "Jamison Valley"
+  - "Katoomba"
+  - "Ruined Castle"
+  - "Zotero"
+  - "Omeka Classic"
+  - "CurateScape"
+  - "FAIR data"
+  - "FAIR4RS"
+  - "controlled vocabularies"
+  - "Getty vocabularies"
+  - "Research Vocabularies Australia"
+  - "deindustrialisation"
+  - "industrial heritage"
+  - "Australian history"
+  - "heritage conservation"
+  - "bibliography management"
+  - "digital collections"
+  - "mobile heritage tours"
+
+license: "Apache-2.0"
+repository-code: "https://github.com/shale-heritage/blue-mountains"
+type: software
+
+abstract: >
+  Research software for processing, analysing, and publishing historical
+  newspaper sources and archaeological evidence from Blue Mountains shale
+  mining communities (1880-1914). Part of ARC Linkage Project LP190100900:
+  "History, heritage and environmental change in a deindustrialised landscape".
+
+  The software implements FAIR principles for research data and FAIR4RS
+  principles for research software, integrating Zotero bibliography management
+  for controlled vocabulary development, mapping to Getty vocabularies (AAT, TGN),
+  Gazetteer of Australia, and Research Vocabularies Australia, and publishing
+  to Omeka Classic digital collections with CurateScape mobile heritage tours.
+
+  Key features: tag extraction and rationalisation, similarity analysis,
+  hierarchical taxonomy development, data quality assessment, FAIR-compliant
+  metadata generation, API integration with Zotero and Omeka Classic, and
+  support for DNG high-resolution archaeological field photography.
+
+references:
+  - type: grant
+    title: "History, heritage and environmental change in a deindustrialised landscape"
+    institution:
+      name: "Australian Research Council"
+    number: "LP190100900"
+    start-date: "2020-07-01"
+    end-date: "2024-12-31"
+    authors:
+      - family-names: "Evans"
+        given-names: "Tanya"
+      - family-names: "Taksa"
+        given-names: "Lucy"
+      - family-names: "Ross"
+        given-names: "Shawn"
+      - family-names: "Lupack"
+        given-names: "Susan"
+      - family-names: "Crook"
+        given-names: "Penelope"
+
+  - type: article
+    title: "Ruined Castle Shale Mining Settlement, Katoomba NSW: Report on a Pilot Survey"
+    authors:
+      - family-names: "Parkes"
+        given-names: "Rebecca"
+      - family-names: "Ross"
+        given-names: "Shawn Adrian"
+      - family-names: "Evans"
+        given-names: "Tanya"
+      - family-names: "Crook"
+        given-names: "Penny"
+      - family-names: "Lupack"
+        given-names: "Susan"
+      - family-names: "Karskens"
+        given-names: "Grace"
+      - family-names: "Leslie"
+        given-names: "Fiona"
+      - family-names: "Merson"
+        given-names: "John"
+    year: 2018
+    journal: "Australasian historical archaeology: journal of the Australasian Society for Historical Archaeology"
+    volume: 36
+    start: 86
+    end: 92
+    url: "http://www.asha.org.au/journals/2010s/volume-36"
+
+contact:
+  - email: "shawn@faims.edu.au"
+    family-names: "Ross"
+    given-names: "Shawn"
+    affiliation: "Macquarie University"

@@ -1,0 +1,311 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Blue Mountains Shale Mining Communities Digital Collection Software",
+  "description": "Research software for processing, analysing, and publishing historical newspaper sources and archaeological evidence from Blue Mountains shale mining communities (1880-1914). Implements FAIR data principles and FAIR4RS principles, integrating Zotero bibliography management, Getty vocabularies, Gazetteer of Australia, Research Vocabularies Australia, and Omeka Classic digital collections with CurateScape mobile heritage tours.",
+  "version": "0.1.0",
+  "identifier": "https://github.com/shale-heritage/blue-mountains",
+  "dateCreated": "2025-10-09",
+  "dateModified": "2025-10-09",
+  "datePublished": "2025-10-09",
+  "codeRepository": "https://github.com/shale-heritage/blue-mountains",
+  "issueTracker": "https://github.com/shale-heritage/blue-mountains/issues",
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "Python",
+    "version": "3.12",
+    "url": "https://www.python.org/"
+  },
+  "runtimePlatform": "Python 3.12+",
+  "operatingSystem": [
+    "Linux",
+    "macOS",
+    "Windows"
+  ],
+  "applicationCategory": "Research Software",
+  "applicationSubCategory": [
+    "Digital Humanities",
+    "Historical Archaeology",
+    "Industrial Archaeology",
+    "Heritage Management",
+    "Data Management",
+    "Bibliography Management"
+  ],
+  "keywords": [
+    "digital humanities",
+    "archaeology",
+    "industrial archaeology",
+    "historical archaeology",
+    "shale mining",
+    "Blue Mountains",
+    "Jamison Valley",
+    "Katoomba",
+    "Ruined Castle",
+    "Zotero",
+    "Omeka Classic",
+    "CurateScape",
+    "FAIR data",
+    "FAIR4RS",
+    "controlled vocabularies",
+    "Getty vocabularies",
+    "Research Vocabularies Australia",
+    "deindustrialisation",
+    "industrial heritage",
+    "Australian history",
+    "heritage conservation",
+    "bibliography management",
+    "digital collections",
+    "mobile heritage tours"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0003-3701-9736",
+      "givenName": "Tanya",
+      "familyName": "Evans",
+      "affiliation": {
+        "@type": "Organization",
+        "@id": "https://ror.org/01sf06y89",
+        "name": "Macquarie University"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-0532-2573",
+      "givenName": "Lucy",
+      "familyName": "Taksa",
+      "affiliation": {
+        "@type": "Organization",
+        "@id": "https://ror.org/02czsnj07",
+        "name": "Deakin University"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-6492-9025",
+      "givenName": "Shawn",
+      "familyName": "Ross",
+      "email": "shawn@faims.edu.au",
+      "affiliation": {
+        "@type": "Organization",
+        "@id": "https://ror.org/01sf06y89",
+        "name": "Macquarie University"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-7935-7613",
+      "givenName": "Susan",
+      "familyName": "Lupack",
+      "affiliation": {
+        "@type": "Organization",
+        "@id": "https://ror.org/01sf06y89",
+        "name": "Macquarie University"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0001-8509-7865",
+      "givenName": "Penelope",
+      "familyName": "Crook",
+      "affiliation": {
+        "@type": "Organization",
+        "@id": "https://ror.org/01sf06y89",
+        "name": "Macquarie University"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-8267-269X",
+      "givenName": "Fiona",
+      "familyName": "Leslie",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "MTS Heritage"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-4808-4464",
+      "givenName": "Rebecca",
+      "familyName": "Parkes",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Lantern Heritage Pty Ltd"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0001-7224-4133",
+      "givenName": "Steven",
+      "familyName": "High",
+      "affiliation": {
+        "@type": "Organization",
+        "@id": "https://ror.org/0420zvk78",
+        "name": "Concordia University, Canada"
+      }
+    }
+  ],
+  "contributor": [],
+  "copyrightHolder": [
+    {
+      "@type": "Organization",
+      "@id": "https://ror.org/01sf06y89",
+      "name": "Macquarie University"
+    }
+  ],
+  "copyrightYear": 2025,
+  "funder": {
+    "@type": "Organization",
+    "@id": "https://doi.org/10.13039/501100000923",
+    "name": "Australian Research Council",
+    "url": "https://www.arc.gov.au/"
+  },
+  "funding": "LP190100900",
+  "isPartOf": {
+    "@type": "ScholarlyArticle",
+    "name": "History, heritage and environmental change in a deindustrialised landscape",
+    "identifier": "LP190100900",
+    "funder": {
+      "@type": "Organization",
+      "@id": "https://doi.org/10.13039/501100000923",
+      "name": "Australian Research Council"
+    }
+  },
+  "referencePublication": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Ruined Castle Shale Mining Settlement, Katoomba NSW: Report on a Pilot Survey",
+      "author": [
+        {
+          "@type": "Person",
+          "givenName": "Rebecca",
+          "familyName": "Parkes"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Shawn Adrian",
+          "familyName": "Ross"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Tanya",
+          "familyName": "Evans"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Penny",
+          "familyName": "Crook"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Susan",
+          "familyName": "Lupack"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Grace",
+          "familyName": "Karskens"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Fiona",
+          "familyName": "Leslie"
+        },
+        {
+          "@type": "Person",
+          "givenName": "John",
+          "familyName": "Merson"
+        }
+      ],
+      "datePublished": "2018-12",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Australasian historical archaeology: journal of the Australasian Society for Historical Archaeology",
+        "volumeNumber": "36"
+      },
+      "pageStart": "86",
+      "pageEnd": "92",
+      "url": "http://www.asha.org.au/journals/2010s/volume-36"
+    }
+  ],
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "pyzotero",
+      "identifier": "https://pypi.org/project/pyzotero/",
+      "version": ">=1.6.17"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "requests",
+      "identifier": "https://pypi.org/project/requests/",
+      "version": ">=2.32.0"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "pandas",
+      "identifier": "https://pypi.org/project/pandas/",
+      "version": ">=2.0.0"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "python-dotenv",
+      "identifier": "https://pypi.org/project/python-dotenv/",
+      "version": ">=1.0.0"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "matplotlib",
+      "identifier": "https://pypi.org/project/matplotlib/",
+      "version": ">=3.0.0"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "seaborn",
+      "identifier": "https://pypi.org/project/seaborn/",
+      "version": ">=0.12.0"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "fuzzywuzzy",
+      "identifier": "https://pypi.org/project/fuzzywuzzy/",
+      "version": ">=0.18.0"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "python-Levenshtein",
+      "identifier": "https://pypi.org/project/python-Levenshtein/",
+      "version": ">=0.20.0"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "networkx",
+      "identifier": "https://pypi.org/project/networkx/",
+      "version": ">=3.0"
+    }
+  ],
+  "softwareHelp": [
+    {
+      "@type": "WebSite",
+      "url": "https://github.com/shale-heritage/blue-mountains/blob/main/README.md"
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://github.com/shale-heritage/blue-mountains/tree/main/docs"
+    }
+  ],
+  "readme": "https://github.com/shale-heritage/blue-mountains/blob/main/README.md",
+  "developmentStatus": "active",
+  "embargoDate": null,
+  "maintainer": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0002-6492-9025",
+      "givenName": "Shawn",
+      "familyName": "Ross",
+      "email": "shawn@faims.edu.au"
+    }
+  ]
+}

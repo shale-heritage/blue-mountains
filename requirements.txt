@@ -1,2 +1,201 @@
-pyzotero
-requests
+# ==============================================================================
+# Blue Mountains Shale Mining Communities Project
+# Python Dependencies
+# ==============================================================================
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# Version Policy:
+#   - Minimum versions specified (>= operator) for stability
+#   - Versions tested with Python 3.12
+#   - Update this file when adding new dependencies
+#   - Document purpose of each dependency below
+#
+# Dependency Management:
+#   - Keep dependencies minimal (only what's actually used)
+#   - Prefer well-maintained, widely-used packages
+#   - Check for security updates regularly: pip list --outdated
+#   - Consider using pip-audit for security scanning
+#
+# ==============================================================================
+
+
+# ==============================================================================
+# CORE API INTEGRATION
+# ==============================================================================
+
+# Zotero API Client
+# Used for: Bibliography management, tag extraction, item metadata retrieval
+# Documentation: https://github.com/urschrei/pyzotero
+# Scripts: 01_extract_tags.py, 02_analyze_tags.py, 03_inspect_multiple_attachments.py
+pyzotero>=1.6.17
+
+# HTTP Requests Library
+# Used for: API calls, web scraping (if needed), Omeka Classic integration
+# Documentation: https://requests.readthedocs.io/
+# Note: Required by pyzotero and for future Omeka API integration
+requests>=2.32.0
+
+
+# ==============================================================================
+# DATA PROCESSING AND ANALYSIS
+# ==============================================================================
+
+# Data Analysis and Manipulation
+# Used for: Tag frequency tables, CSV export, data quality analysis, statistics
+# Documentation: https://pandas.pydata.org/
+# Scripts: All analysis scripts (01, 02, 03)
+# Note: Provides DataFrame structure for tabular data
+pandas>=2.0.0
+
+# Environment Variable Management
+# Used for: Secure API credential storage, configuration management
+# Documentation: https://github.com/theskumar/python-dotenv
+# Scripts: config.py (loads .env file)
+# Security: Prevents hardcoding API keys in source code
+python-dotenv>=1.0.0
+
+
+# ==============================================================================
+# TEXT ANALYSIS AND SIMILARITY DETECTION
+# ==============================================================================
+
+# Fuzzy String Matching
+# Used for: Tag similarity detection, identifying near-duplicates for consolidation
+# Documentation: https://github.com/seatgeek/fuzzywuzzy
+# Scripts: 02_analyze_tags.py
+# Algorithm: Uses Levenshtein Distance for fuzzy matching
+# Example: "Katoomba" vs "Katoomba NSW" → 85% similarity
+fuzzywuzzy>=0.18.0
+
+# Levenshtein Distance Calculator (speedup for fuzzywuzzy)
+# Used for: Fast C-implementation of Levenshtein Distance algorithm
+# Documentation: https://github.com/maxbachmann/python-Levenshtein
+# Note: Optional but significantly improves fuzzywuzzy performance
+# Without this, fuzzywuzzy falls back to slower pure-Python implementation
+python-Levenshtein>=0.20.0
+
+
+# ==============================================================================
+# NETWORK ANALYSIS
+# ==============================================================================
+
+# Network and Graph Analysis
+# Used for: Tag co-occurrence network analysis, hierarchical relationship detection
+# Documentation: https://networkx.org/
+# Scripts: 02_analyze_tags.py
+# Features: Graph algorithms, network metrics, community detection
+# Output: tag_network.json with co-occurrence patterns
+networkx>=3.0
+
+
+# ==============================================================================
+# DATA VISUALISATION
+# ==============================================================================
+
+# Plotting and Visualisation Library
+# Used for: Tag frequency charts, network graphs, distribution plots
+# Documentation: https://matplotlib.org/
+# Scripts: 02_analyze_tags.py (generates PNG visualisations)
+# Note: Backend for seaborn, can be used directly for custom plots
+matplotlib>=3.0.0
+
+# Statistical Data Visualisation
+# Used for: Enhanced visual styling, statistical plots, heatmaps
+# Documentation: https://seaborn.pydata.org/
+# Scripts: 02_analyze_tags.py
+# Note: Built on matplotlib, provides higher-level interface
+# Example outputs: Tag frequency bar charts, similarity matrices
+seaborn>=0.12.0
+
+
+# ==============================================================================
+# OPTIONAL: DEVELOPMENT TOOLS (commented out by default)
+# ==============================================================================
+#
+# Uncomment these for development work:
+#
+# Code Quality and Linting
+# flake8>=7.0.0        # Python code linter (PEP 8 compliance)
+# pylint>=3.0.0        # Comprehensive Python code analyser
+#
+# Testing Framework
+# pytest>=8.0.0        # Unit testing and test automation
+# pytest-cov>=4.1.0    # Test coverage reporting
+#
+# Documentation Generation
+# sphinx>=7.0.0        # Documentation generator (if creating full API docs)
+#
+# Markdown Linting (use npm/node for markdownlint-cli)
+# Note: Markdown linting handled separately via npm: markdownlint-cli
+#
+# Type Checking
+# mypy>=1.8.0          # Static type checker for Python
+#
+# ==============================================================================
+
+
+# ==============================================================================
+# FUTURE DEPENDENCIES (to be added in later phases)
+# ==============================================================================
+#
+# These will be needed for future project phases:
+#
+# Phase 2: AI-Assisted Tagging
+# - anthropic>=0.18.0          # Claude API for LLM-based tag suggestions
+# - openai>=1.0.0              # Alternative: OpenAI API
+# - transformers>=4.36.0       # Hugging Face for local LLM models
+#
+# Phase 3: Location Data Enhancement
+# - geopandas>=0.14.0          # Spatial data analysis (works with GeoPackage)
+# - shapely>=2.0.0             # Geometric operations
+# - pyproj>=3.6.0              # Coordinate system transformations
+#
+# Phase 4: Omeka Classic Integration
+# - omeka-api-client>=0.3.0    # Omeka Classic API wrapper (if available)
+# - Pillow>=10.0.0             # Image processing for DNG/JPEG thumbnails
+# - xmltodict>=0.13.0          # XML parsing for Omeka API responses
+#
+# Phase 5: Advanced Analysis
+# - scikit-learn>=1.4.0        # Machine learning for tag clustering
+# - scipy>=1.11.0              # Scientific computing, statistics
+#
+# Phase 6: SKOS Vocabulary Publishing
+# - rdflib>=7.0.0              # RDF/SKOS generation for RVA publishing
+# - SPARQLWrapper>=2.0.0       # SPARQL queries for Getty vocabularies
+#
+# ==============================================================================
+
+
+# ==============================================================================
+# NOTES FOR MAINTAINERS
+# ==============================================================================
+#
+# Version Updates:
+# - Check compatibility before updating major versions
+# - Test all scripts after dependency updates
+# - Document breaking changes in CHANGELOG.md
+# - Consider using pip freeze > requirements-lock.txt for exact versions
+#
+# Security:
+# - Run pip-audit regularly to check for vulnerabilities
+# - Subscribe to security advisories for critical packages
+# - Update promptly when security patches released
+#
+# Performance:
+# - python-Levenshtein significantly speeds up fuzzywuzzy (100x+ faster)
+# - pandas version >=2.0 uses Apache Arrow backend for better performance
+# - Consider using conda for complex scientific dependencies (geopandas, etc.)
+#
+# Dependency Conflicts:
+# - If conflicts arise, use pip install --upgrade to resolve
+# - Document any known conflicts in docs/troubleshooting.md (when created)
+# - Consider using virtual environment (venv) to isolate project dependencies
+#
+# Platform-Specific Notes:
+# - Windows users may need Microsoft C++ Build Tools for python-Levenshtein
+# - macOS users may need to install cairo for some matplotlib backends
+# - Linux users: install python3-dev for compiling C extensions
+#
+# ==============================================================================

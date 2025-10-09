@@ -1,0 +1,42 @@
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Environment variables (contains API keys)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files (may contain sensitive information)
+data/*.json
+data/*.csv
+backups/*.json
+backups/*.csv
+
+# Logs
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gazetteer data files (too large for GitHub, >100MB)
+gazetteers/composite-gazetteer/PlaceNames.gpkg
+gazetteers/gazetter-of-australia/Gazetteer2012_GML/Gazetteer2012GML.gml
+gazetteers/gazetter-of-australia/Gazetteer2012_mdb.mdb

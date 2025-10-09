@@ -1,0 +1,106 @@
+Creative Commons Attribution 4.0 International Public License
+
+This license applies to all documentation files in this repository, including
+but not limited to:
+- Markdown files (*.md)
+- Documentation in docs/ folder
+- Planning documents in planning/ folder
+- README files
+- CHANGELOG.md
+- CONTRIBUTING.md
+- CITATION.cff
+- codemeta.json
+- Any other non-code content
+
+By exercising the Licensed Rights (defined below), You accept and agree to be
+bound by the terms and conditions of this Creative Commons Attribution 4.0
+International Public License ("Public License").
+
+======================================================================
+
+Full Legal Text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+======================================================================
+
+You are free to:
+
+  - Share: copy and redistribute the material in any medium or format
+  - Adapt: remix, transform, and build upon the material
+    for any purpose, even commercially.
+
+Under the following terms:
+
+  - Attribution: You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+  - No additional restrictions: You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+======================================================================
+
+How to Attribute This Work:
+
+When using or adapting documentation from this repository, please provide
+attribution as follows:
+
+  "Documentation from Blue Mountains Shale Mining Communities Digital
+   Collection Software by Tanya Evans, Lucy Taksa, Shawn Ross, Susan Lupack,
+   Penelope Crook, Fiona Leslie, Rebecca Parkes, and Steven High, used under
+   CC BY 4.0. Original work: https://github.com/shale-heritage/blue-mountains"
+
+Or cite using the CITATION.cff file in this repository.
+
+======================================================================
+
+Project Information:
+
+Title: Blue Mountains Shale Mining Communities Digital Collection Software
+Authors:
+  - A/Prof Tanya Evans (Macquarie University)
+  - Prof Lucy Taksa (Deakin University)
+  - A/Prof Shawn Ross (Macquarie University)
+  - Dr Susan Lupack (Macquarie University)
+  - Dr Penelope Crook (Macquarie University)
+  - Ms Fiona Leslie (MTS Heritage)
+  - Dr Rebecca Parkes (Lantern Heritage Pty Ltd)
+  - Prof Steven High (Concordia University, Canada)
+
+Copyright: 2025 Macquarie University and contributors
+
+Funding: Australian Research Council Linkage Project LP190100900
+
+Repository: https://github.com/shale-heritage/blue-mountains
+
+======================================================================
+
+Note on Code License:
+
+The source code in this repository (Python scripts, configuration files) is
+licensed separately under the Apache License 2.0. See the LICENSE file for
+details.
+
+This CC-BY-4.0 license applies ONLY to documentation, not to source code.
+
+======================================================================
+
+Disclaimer:
+
+Unless otherwise stated, this work is provided "as is" without warranty of
+any kind, either expressed or implied, including but not limited to the
+implied warranties of merchantability and fitness for a particular purpose.
+
+The licensor shall not be liable for any damages arising from the use of
+this work.
+
+======================================================================
+
+For the full legal text of this license, please visit:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+For human-readable summary:
+https://creativecommons.org/licenses/by/4.0/
+
+For questions about licensing, contact: shawn@faims.edu.au
