@@ -155,17 +155,28 @@ ZOTERO_API_KEY = os.getenv('ZOTERO_API_KEY')
 # Default to 'group' if not specified in .env
 ZOTERO_LIBRARY_TYPE = os.getenv('ZOTERO_LIBRARY_TYPE', 'group')
 
-# Omeka Configuration (for future implementation)
-# ===============================================
+# Omeka Configuration (for Phase 4 implementation)
+# =================================================
 # Omeka Classic is a digital collections publishing platform
-# Phase 4 of this project will publish items from Zotero to Omeka
-# These variables are placeholders - not yet used by any scripts
+# Phase 4 of this project will publish controlled vocabulary-tagged items
+# from Zotero to the Shale Heritage Omeka Classic digital collection
 
-# Omeka API endpoint URL (e.g., https://bluemountains.omeka.net/api)
+# Production Site Details:
+# - Site URL: https://shaleheritage.au/
+# - API Endpoint: https://shaleheritage.au/api
+# - Maximum results per page: 50 (configured in Omeka admin settings)
+
+# Omeka API endpoint URL
+# Full API documentation: https://omeka.org/classic/docs/Reference/api/
 OMEKA_API_URL = os.getenv('OMEKA_API_URL')
 
 # Omeka API key for authentication
-# Generated in Omeka admin panel under API Keys
+# Generated in Omeka admin panel: Users > API Keys
+#
+# SECURITY NOTE: Omeka Classic does not support read-only API keys
+# All API keys inherit full user permissions (unlike Zotero's granular permissions)
+# Best practice: Create dedicated user account with minimal permissions for API access
+# Protect this key as carefully as database credentials
 OMEKA_API_KEY = os.getenv('OMEKA_API_KEY')
 
 # Project Paths
