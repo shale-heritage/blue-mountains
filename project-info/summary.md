@@ -23,9 +23,12 @@
 ### **2\. List of Organisations**
 1. Macquarie University (Lead Organisation) | ROR: https://ror.org/01sf06y89
 2. Deakin University | ROR: https://ror.org/02czsnj07
-3. MTS Heritage
-4. Lantern Heritage Pty Ltd
-5. Concordia University, Canada | ROR: https://ror.org/0420zvk78
+3. Concordia University, Canada | ROR: https://ror.org/0420zvk78
+4. Blue Mountains World Heritage Institute Limited (BMWHI)
+5. NSW National Parks and Wildlife Service (NPWS)
+6. Lantern Heritage Pty Ltd
+7. Mountains Heritage Pty Ltd (MTS Heritage)
+8. Australian Research Council (ARC Linkage Project: LP190100900)
 
 ### **3\. List of Investigators with Brief Biographies**
 

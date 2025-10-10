@@ -9,9 +9,9 @@ Research software for processing, analysing, and publishing historical newspaper
 
 **Project:** ARC Linkage Project LP190100900: *History, heritage and environmental change in a deindustrialised landscape*
 
-**Institutions:** Macquarie University (lead), Deakin University, La Trobe University, MTS Heritage, Lantern Heritage, Concordia University (Canada)
+**Institutions:** Macquarie University (lead), Deakin University, Concordia University (Canada), Blue Mountains World Heritage Institute Limited, NSW National Parks and Wildlife Service, Mountains Heritage Pty Ltd, Lantern Heritage Pty Ltd.
 
-**Keywords:** digital humanities · industrial archaeology · Zotero · Omeka Classic · FAIR data · controlled vocabularies · Getty vocabularies · Research Vocabularies Australia · Australian history · shale mining · Blue Mountains · heritage conservation
+**Keywords:** digital humanities · industrial archaeology · FAIR data · FAIR4RS · Australian history · public history · shale mining · Blue Mountains · heritage conservation
 
 ---
 
@@ -44,7 +44,7 @@ This software supports multidisciplinary research on shale mining settlements in
 - What were the social dynamics of gender, community, and transiency?
 - How can digital methods enhance heritage conservation and public engagement?
 
-**Study Site:** Ruined Castle shale mining village, Jamison Valley (operational 1880-1914)
+**Study Areas:** Ruined Castle shale mining village, Jamison Valley; Nellie's Glen shale mining village
 
 **Primary Sources:** 417 newspaper articles and documents from Zotero group library (1,189 total items)
 
@@ -130,7 +130,7 @@ CurateScape Mobile Heritage Tours (public engagement)
 - **Git** for version control
 - **Zotero API credentials:**
   - Group library access to Blue Mountains collection (or your own library for testing)
-  - API key with read/write permissions: https://www.zotero.org/settings/keys
+  - API key with read/write permissions: <https://www.zotero.org/settings/keys>
 
 ### Step-by-Step Installation
 
@@ -223,7 +223,7 @@ python scripts/config.py
 
 **Issue:** python-Levenshtein installation fails (Windows)
 
-- **Solution:** Install Microsoft C++ Build Tools: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+- **Solution:** Install Microsoft C++ Build Tools: <https://visualstudio.microsoft.com/visual-cpp-build-tools/>
 
 ---
 
@@ -404,7 +404,7 @@ This software implements FAIR4RS principles (Findable, Accessible, Interoperable
 ### Accessible (A)
 
 - **Open Source:** Apache 2.0 licence (code), CC-BY-4.0 (docs)
-- **Public Repository:** https://github.com/shale-heritage/blue-mountains
+- **Public Repository:** <https://github.com/shale-heritage/blue-mountains>
 - **Installation Guide:** Step-by-step instructions with troubleshooting
 - **Dependencies:** All publicly available via PyPI
 - **API Access:** Documented credentials process (.env.example)
@@ -476,7 +476,7 @@ If you use this software in your research, please cite it as:
 
 > Evans, T., Taksa, L., Ross, S., Lupack, S., Crook, P., Leslie, F., Parkes, R., & High, S. (2025).
 > *Blue Mountains Shale Mining Communities Digital Collection Software* (Version 0.1.0) [Computer software].
-> https://github.com/shale-heritage/blue-mountains
+> <https://github.com/shale-heritage/blue-mountains>
 
 ### BibTeX
 
@@ -573,7 +573,7 @@ This research is supported by the **Australian Research Council** Linkage Projec
 Parkes, R., Ross, S. A., Evans, T., Crook, P., Lupack, S., Karskens, G., Leslie, F., & Merson, J. (2018).
 Ruined Castle Shale Mining Settlement, Katoomba NSW: Report on a Pilot Survey.
 *Australasian Historical Archaeology*, 36, 86-92.
-http://www.asha.org.au/journals/2010s/volume-36
+<http://www.asha.org.au/journals/2010s/volume-36>
 
 ---
 
@@ -598,13 +598,13 @@ We welcome contributions from the research community! Please see [CONTRIBUTING.m
 ## Contact
 
 **Project Lead:** A/Prof Shawn Ross
-**Email:** shawn@faims.edu.au
-**Repository:** https://github.com/shale-heritage/blue-mountains
+**Email:** <shawn@faims.edu.au>
+**Repository:** <https://github.com/shale-heritage/blue-mountains>
 
 **For questions about:**
 
 - **Software usage:** Open an issue on GitHub
-- **Research collaboration:** Email shawn@faims.edu.au
+- **Research collaboration:** Email <shawn@faims.edu.au>
 - **Zotero library access:** Contact project team
 - **Heritage site visits:** Contact NPWS or BMWHI
 

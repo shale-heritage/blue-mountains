@@ -32,7 +32,7 @@ This project is part of an academic research initiative. All contributors are ex
 
 **Unacceptable behaviour** includes harassment, discriminatory language, personal attacks, trolling, or unprofessional conduct.
 
-**Enforcement:** Violations should be reported to shawn@faims.edu.au. The project team will review and respond to all complaints.
+**Enforcement:** Violations should be reported to <shawn@faims.edu.au>. The project team will review and respond to all complaints.
 
 ---
 
@@ -57,7 +57,7 @@ This project is part of an academic research initiative. All contributors are ex
 
 3. Add upstream remote:
    ```bash
-   git remote add upstream https://github.com/shale-heritage/blue-mountains.git
+   git remote add upstream <https://github.com/shale-heritage/blue-mountains>.git
    ```
 
 4. Create a virtual environment:
@@ -362,7 +362,7 @@ markdownlint '**/*.md' --ignore node_modules --ignore venv
 
 **Fix common issues:**
 
-```markdown
+````markdown
 <!-- WRONG: No blank lines around heading -->
 Some text
 ## Heading
@@ -384,7 +384,7 @@ code here
 ```python
 code here
 ```
-```
+````
 
 ---
 
@@ -529,7 +529,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ### Submitting the PR
 
-1. Go to https://github.com/shale-heritage/blue-mountains
+1. Go to <https://github.com/shale-heritage/blue-mountains>
 2. Click "Pull Requests" → "New Pull Request"
 3. Select your fork and feature branch
 4. Fill in the PR template:
@@ -574,7 +574,7 @@ How did you test these changes? Provide specific steps:
 Include screenshots of visualisations, reports, or output files
 ```
 
-5. Submit the PR
+1. Submit the PR
 
 ### PR Review Process
 
@@ -645,15 +645,15 @@ Maintainers will add labels:
 
 **For project-specific questions:**
 
-- **Email:** shawn@faims.edu.au
+- **Email:** <shawn@faims.edu.au>
 - **GitHub Discussions:** (when enabled)
 
 **For general support:**
 
-- **Zotero API:** https://www.zotero.org/support/dev/web_api/v3/start
-- **Python:** https://docs.python.org/3/
-- **pandas:** https://pandas.pydata.org/docs/
-- **FAIR4RS:** https://www.rd-alliance.org/groups/fair-4-research-software-fair4rs-wg
+- **Zotero API:** <https://www.zotero.org/support/dev/web_api/v3/start>
+- **Python:** <https://docs.python.org/3/>
+- **pandas:** <https://pandas.pydata.org/docs/>
+- **FAIR4RS:** <https://www.rd-alliance.org/groups/fair-4-research-software-fair4rs-wg>
 
 ---
 
@@ -676,4 +676,4 @@ This project is supported by the Australian Research Council Linkage Project sch
 
 ---
 
-*Last updated: 2025-10-09*
+Last updated: 2025-10-09

@@ -36,7 +36,6 @@ logs/*.log
 .DS_Store
 Thumbs.db
 
-# Gazetteer data files (too large for GitHub, >100MB)
-gazetteers/composite-gazetteer/PlaceNames.gpkg
-gazetteers/gazetter-of-australia/Gazetteer2012_GML/Gazetteer2012GML.gml
-gazetteers/gazetter-of-australia/Gazetteer2012_mdb.mdb
+# Gazetteer data files (reference data, not part of repository)
+# Large files exceed GitHub limits, downloaded separately
+gazetteers/
