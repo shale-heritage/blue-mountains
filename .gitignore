@@ -39,3 +39,7 @@ Thumbs.db
 # Gazetteer data files (reference data, not part of repository)
 # Large files exceed GitHub limits, downloaded separately
 gazetteers/
+
+# Conversation exports - require manual review before committing
+# Name new exports with .new extension, review/redact, then rename to .txt
+cc-interactions/202*.txt.new
