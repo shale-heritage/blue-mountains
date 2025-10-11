@@ -1,0 +1,167 @@
+uuid,identifier,createdBy,createdAtGMT,modifiedBy,modifiedAtGMT,Dimension,Measurement
+1000031586562080149,{Length__m_}: 1.4,Bec Parkes,2020-04-10 23:41:33.491 GMT,Bec Parkes,2020-04-10 23:41:33 GMT,Length (m),1.4
+1000021586562199783,{Length__m_}: 1.4,Shawn Ross,2020-04-10 23:43:31.172 GMT,Shawn Ross,2020-04-10 23:43:31 GMT,Length (m),1.4
+1000021586562244160,{Width__m_}: .9,Shawn Ross,2020-04-10 23:44:11.788 GMT,Shawn Ross,2020-04-10 23:44:11 GMT,Width (m),0.9
+1000031586562238717,{Width__m_}: 0.9,Bec Parkes,2020-04-10 23:44:12.857 GMT,Bec Parkes,2020-04-10 23:44:12 GMT,Width (m),0.9
+1000031586565347431,{Width__m_}: 3.1,Bec Parkes,2020-04-11 00:37:07.333 GMT,Bec Parkes,2020-04-11 00:37:07 GMT,Width (m),3.1
+1000031586565429932,{Height__m_}: 1,Bec Parkes,2020-04-11 00:37:24.016 GMT,Bec Parkes,2020-04-11 00:37:24 GMT,Height (m),1
+1000031586565452338,{Length__m_}: 1.8,Bec Parkes,2020-04-11 00:37:41.561 GMT,Bec Parkes,2020-04-11 00:38:09 GMT,Length (m),1.8
+1000031586565492229,{Other}: 4.5,Bec Parkes,2020-04-11 00:38:20.380 GMT,Bec Parkes,2020-04-11 00:38:20 GMT,Other,4.5
+1000031586566546338,{Length__m_}: 1.5,Bec Parkes,2020-04-11 00:55:56.951 GMT,Bec Parkes,2020-04-11 00:55:56 GMT,Length (m),1.5
+1000031586566558907,{Width__m_}: 1,Bec Parkes,2020-04-11 00:56:05.731 GMT,Bec Parkes,2020-04-11 00:56:05 GMT,Width (m),1
+1000031586567160411,{Length__m_}: 3,Bec Parkes,2020-04-11 01:06:21.148 GMT,Bec Parkes,2020-04-11 01:06:21 GMT,Length (m),3
+1000031586567183440,{Width__m_}: 3,Bec Parkes,2020-04-11 01:06:30.329 GMT,Bec Parkes,2020-04-11 01:06:30 GMT,Width (m),3
+1000031586567729558,{Length__m_}: .9,Bec Parkes,2020-04-11 01:15:41.523 GMT,Bec Parkes,2020-04-11 01:15:41 GMT,Length (m),0.9
+1000031586567743708,{Width__m_}: 1.2,Bec Parkes,2020-04-11 01:15:54.716 GMT,Bec Parkes,2020-04-11 01:15:54 GMT,Width (m),1.2
+1000031586567756500,{Height__m_}: .4,Bec Parkes,2020-04-11 01:16:03.989 GMT,Bec Parkes,2020-04-11 01:16:03 GMT,Height (m),0.4
+1000031586567790169,{Other}: ,Bec Parkes,2020-04-11 01:16:41.951 GMT,Bec Parkes,2020-04-11 01:16:41 GMT,Other,
+1000021586568396229,{Width__m_}: 3.9,Shawn Ross,2020-04-11 01:26:44.039 GMT,Shawn Ross,2020-04-11 01:26:44 GMT,Width (m),3.9
+1000021586568421670,{Length__m_}: 4.6,Shawn Ross,2020-04-11 01:27:13.990 GMT,Shawn Ross,2020-04-11 01:27:33 GMT,"Length (m),max preserved",4.6
+1000021586568456721,{Height__m_}: 0.7,Shawn Ross,2020-04-11 01:27:50.940 GMT,Shawn Ross,2020-04-11 01:27:50 GMT,Height (m),"0.7,max preserved"
+1000061586568969549,{Length__m_}: 4.5,Cass Venn,2020-04-11 01:36:26.453 GMT,Cass Venn,2020-04-11 01:36:26 GMT,Length (m),4.5
+1000061586568988464,{Width__m_}: 3,Cass Venn,2020-04-11 01:36:36.791 GMT,Cass Venn,2020-04-11 01:36:36 GMT,Width (m),3
+1000021586569159697,{Length__m_}: 0.9,Shawn Ross,2020-04-11 01:39:28.890 GMT,Shawn Ross,2020-04-11 01:39:28 GMT,Length (m),0.9
+1000021586569200378,{Width__m_}: 0.7,Shawn Ross,2020-04-11 01:40:08.716 GMT,Shawn Ross,2020-04-11 01:40:08 GMT,Width (m),0.7
+1000021586569236044,{Depth__m_}: 0.3,Shawn Ross,2020-04-11 01:40:43.518 GMT,Shawn Ross,2020-04-11 01:40:43 GMT,Depth (m),0.3
+1000061586569257282,{Length__m_}: 5.4,Cass Venn,2020-04-11 01:41:08.613 GMT,Cass Venn,2020-04-11 01:41:08 GMT,Length (m),5.4
+1000061586569270595,{Width__m_}: 3.4,Cass Venn,2020-04-11 01:41:17.943 GMT,Cass Venn,2020-04-11 01:41:17 GMT,Width (m),3.4
+1000061586571268831,{Length__m_}: .995,Cass Venn,2020-04-11 02:14:37.695 GMT,Cass Venn,2020-04-11 02:14:37 GMT,Length (m),0.995
+1000061586571293856,{Width__m_}: .79,Cass Venn,2020-04-11 02:15:04.830 GMT,Cass Venn,2020-04-11 02:15:04 GMT,Width (m),0.79
+1000061586571307068,{Depth__m_}: .5,Cass Venn,2020-04-11 02:15:13.862 GMT,Cass Venn,2020-04-11 02:15:57 GMT,"Depth (m),depth from leaf litter",0.5
+1000061586572078042,{Width__m_}: .16,Cass Venn,2020-04-11 02:28:10.137 GMT,Cass Venn,2020-04-11 02:29:56 GMT,"Width (m),hole",0.16
+1000061586572092611,{Height__m_}: .14,Cass Venn,2020-04-11 02:28:20.683 GMT,Cass Venn,2020-04-11 02:29:46 GMT,"Height (m),hole",0.14
+1000061586572102928,{Depth__m_}: .06,Cass Venn,2020-04-11 02:28:36.950 GMT,Cass Venn,2020-04-11 02:28:48 GMT,"Depth (m),modified hole",0.06
+1000061586572135100,{Height__m_}: .95,Cass Venn,2020-04-11 02:29:07.480 GMT,Cass Venn,2020-04-11 02:29:21 GMT,"Height (m),hole from ground surface",0.95
+1000061586572198505,{Width__m_}: .9,Cass Venn,2020-04-11 02:30:15.405 GMT,Cass Venn,2020-04-11 02:30:15 GMT,"Width (m),metal",0.9
+1000061586572217205,{Length__m_}: .49,Cass Venn,2020-04-11 02:30:31.938 GMT,Cass Venn,2020-04-11 02:30:31 GMT,"Length (m),metal",0.49
+1000061586572234524,{Depth__m_}: .05,Cass Venn,2020-04-11 02:30:44.703 GMT,Cass Venn,2020-04-11 02:30:49 GMT,"Depth (m),metal",0.05
+1000021586572694261,{Diameter__m_}: 0.03,Shawn Ross,2020-04-11 02:38:31.067 GMT,Shawn Ross,2020-04-11 02:38:31 GMT,Diameter (m),0.03
+1000061586573226767,{Length__m_}: .9,Cass Venn,2020-04-11 02:47:14.992 GMT,Cass Venn,2020-04-11 02:47:32 GMT,"Length (m),ushaped",0.9
+1000061586573254059,{Width__m_}: 2.8,Cass Venn,2020-04-11 02:47:41.528 GMT,Cass Venn,2020-04-11 02:47:52 GMT,"Width (m),ushaped",2.8
+1000061586573275620,{Length__m_}: 1.4,Cass Venn,2020-04-11 02:48:10.513 GMT,Cass Venn,2020-04-11 02:49:05 GMT,"Length (m),Central strut. chain links connected to a D-Link at one end and hook at other.",1.4
+1000021586573403430,{Length__m_}: 0.28,Shawn Ross,2020-04-11 02:50:11.738 GMT,Shawn Ross,2020-04-11 02:50:11 GMT,Length (m),0.28
+1000021586573436160,{Width__m_}: 0.25,Shawn Ross,2020-04-11 02:50:44.865 GMT,Shawn Ross,2020-04-11 02:50:44 GMT,Width (m),0.25
+1000021586573466122,{Other}: 0.008,Shawn Ross,2020-04-11 02:51:17.302 GMT,Shawn Ross,2020-04-11 02:51:33 GMT,"Other,thickness",0.008
+1000061586574354212,{Length__m_}: 2,Cass Venn,2020-04-11 03:06:01.635 GMT,Cass Venn,2020-04-11 03:06:01 GMT,Length (m),2
+1000061586574364645,{Width__m_}: 1,Cass Venn,2020-04-11 03:06:11.359 GMT,Cass Venn,2020-04-11 03:06:11 GMT,Width (m),1
+1000061586577135303,{Length__m_}: 3,Cass Venn,2020-04-11 03:52:22.358 GMT,Cass Venn,2020-04-11 03:52:22 GMT,Length (m),3
+1000061586577144179,{Width__m_}: 3,Cass Venn,2020-04-11 03:52:31.492 GMT,Cass Venn,2020-04-11 03:52:31 GMT,Width (m),3
+1000061586577450703,{Length__m_}: 3,Cass Venn,2020-04-11 03:57:42.005 GMT,Cass Venn,2020-04-11 03:57:42 GMT,Length (m),3
+1000061586577464275,{Width__m_}: 3,Cass Venn,2020-04-11 03:57:49.466 GMT,Cass Venn,2020-04-11 03:57:49 GMT,Width (m),3
+1000061586578029820,{Length__m_}: 6.8,Cass Venn,2020-04-11 04:07:20.793 GMT,Cass Venn,2020-04-11 04:07:27 GMT,"Length (m),platform",6.8
+1000061586578094270,{Width__m_}: 3.9,Cass Venn,2020-04-11 04:08:25.057 GMT,Cass Venn,2020-04-11 04:08:31 GMT,"Width (m),platform",3.9
+1000061586578144520,{Width__m_}: 1.6,Cass Venn,2020-04-11 04:09:26.841 GMT,Cass Venn,2020-04-11 04:09:33 GMT,"Width (m),hearth",1.6
+1000061586578180927,{Length__m_}: 1.2,Cass Venn,2020-04-11 04:09:48.136 GMT,Cass Venn,2020-04-11 04:09:55 GMT,"Length (m),hearth",1.2
+1000061586578212274,{Height__m_}: 1.2,Cass Venn,2020-04-11 04:10:19.642 GMT,Cass Venn,2020-04-11 04:10:33 GMT,"Height (m),max preserved",1.2
+1000021586582928850,{Length__m_}: 0.70,Shawn Ross,2020-04-11 05:29:03.135 GMT,Shawn Ross,2020-04-11 05:29:03 GMT,Length (m),0.7
+1000021586582946018,{Diameter__m_}: 0.28,Shawn Ross,2020-04-11 05:29:14.010 GMT,Shawn Ross,2020-04-11 05:29:28 GMT,"Diameter (m),inside wheel",0.28
+1000021586582970140,{Diameter__m_}: 0.30,Shawn Ross,2020-04-11 05:29:38.081 GMT,Shawn Ross,2020-04-11 05:29:46 GMT,"Diameter (m),outside wheel",0.3
+1000021586583017301,{Width__m_}: 0.55,Shawn Ross,2020-04-11 05:30:24.579 GMT,Shawn Ross,2020-04-11 05:30:49 GMT,"Width (m),rail gauge",0.55
+1000061586650457302,{Length__m_}: 6.3,Cass Venn,2020-04-12 00:14:26.642 GMT,Cass Venn,2020-04-12 00:14:45 GMT,"Length (m),platform",6.3
+1000021586650485183,{Length__m_}: 4.0,Shawn Ross,2020-04-12 00:15:00.884 GMT,Shawn Ross,2020-04-12 00:15:00 GMT,Length (m),4
+1000061586650495094,{Width__m_}: 3.8,Cass Venn,2020-04-12 00:15:02.066 GMT,Cass Venn,2020-04-12 00:15:11 GMT,"Width (m),platform",3.8
+1000021586650512438,{Width__m_}: 3.0,Shawn Ross,2020-04-12 00:15:23.531 GMT,Shawn Ross,2020-04-12 00:15:23 GMT,Width (m),3
+1000021586650528502,{Diameter__m_}: 0.240,Shawn Ross,2020-04-12 00:15:44.665 GMT,Shawn Ross,2020-04-12 00:16:04 GMT,"Diameter (m),metal ring",0.24
+1000021586650566329,{Length__m_}: 0.240,Shawn Ross,2020-04-12 00:16:20.721 GMT,Shawn Ross,2020-04-12 00:16:33 GMT,"Length (m),brick",0.24
+1000061586650578214,{Height__m_}: .3,Cass Venn,2020-04-12 00:16:25.073 GMT,Cass Venn,2020-04-12 00:16:35 GMT,"Height (m),max preserved",0.3
+1000021586650595045,{Width__m_}: 0.110,Shawn Ross,2020-04-12 00:16:45.915 GMT,Shawn Ross,2020-04-12 00:16:50 GMT,"Width (m),brick",0.11
+1000021586650615123,{Height__m_}: .080,Shawn Ross,2020-04-12 00:17:06.424 GMT,Shawn Ross,2020-04-12 00:17:15 GMT,"Height (m),brick",0.08
+1000061586650776184,{Length__m_}: 1.4,Cass Venn,2020-04-12 00:19:45.519 GMT,Cass Venn,2020-04-12 00:19:54 GMT,"Length (m),hearth",1.4
+1000061586650799555,{Width__m_}: 1.4,Cass Venn,2020-04-12 00:20:06.887 GMT,Cass Venn,2020-04-12 00:20:13 GMT,"Width (m),hearth",1.4
+1000061586651409877,{Length__m_}: 1.5,Cass Venn,2020-04-12 00:30:19.264 GMT,Cass Venn,2020-04-12 00:30:25 GMT,"Length (m),engraving",1.5
+1000061586651434357,{Width__m_}: .15,Cass Venn,2020-04-12 00:30:41.323 GMT,Cass Venn,2020-04-12 00:30:54 GMT,"Width (m),engraving",0.15
+1000061586651457226,{Length__m_}: 2.5,Cass Venn,2020-04-12 00:31:03.993 GMT,Cass Venn,2020-04-12 00:31:09 GMT,"Length (m),rock",2.5
+1000061586651514811,{Width__m_}: .9,Cass Venn,2020-04-12 00:32:02.739 GMT,Cass Venn,2020-04-12 00:32:09 GMT,"Width (m),rock",0.9
+1000021586652060081,{Diameter__m_}: 0.05,Shawn Ross,2020-04-12 00:41:09.895 GMT,Shawn Ross,2020-04-12 00:41:09 GMT,Diameter (m),0.05
+1000021586652114365,{Other}: 0.04,Shawn Ross,2020-04-12 00:42:03.876 GMT,Shawn Ross,2020-04-12 00:42:18 GMT,"Other,max depth",0.04
+1000021586652983678,{Length__m_}: 3.0,Shawn Ross,2020-04-12 00:56:42.711 GMT,Shawn Ross,2020-04-12 00:56:42 GMT,Length (m),3
+1000021586653004410,{Width__m_}: 2.0,Shawn Ross,2020-04-12 00:56:57.043 GMT,Shawn Ross,2020-04-12 00:56:57 GMT,Width (m),2
+1000021586653019837,{Length__m_}: 0.240,Shawn Ross,2020-04-12 00:57:07.675 GMT,Shawn Ross,2020-04-12 00:57:18 GMT,"Length (m),brick",0.24
+1000021586653040171,{Width__m_}: 0.110,Shawn Ross,2020-04-12 00:57:27.674 GMT,Shawn Ross,2020-04-12 00:57:27 GMT,Width (m),0.11
+1000021586653050236,{Height__m_}: 0.080,Shawn Ross,2020-04-12 00:57:41.776 GMT,Shawn Ross,2020-04-12 00:58:15 GMT,"Height (m),brick",0.08
+1000061586653086792,{Height__m_}: .6,Cass Venn,2020-04-12 00:58:15.994 GMT,Cass Venn,2020-04-12 00:58:20 GMT,"Height (m),max pres",0.6
+1000061586653102001,{Length__m_}: 1.15,Cass Venn,2020-04-12 00:58:52.402 GMT,Cass Venn,2020-04-12 00:58:52 GMT,"Length (m),max hearth",1.15
+1000061586653134573,{Length__m_}: .9,Cass Venn,2020-04-12 00:59:05.807 GMT,Cass Venn,2020-04-12 00:59:16 GMT,"Length (m),min hearth",0.9
+1000061586653169535,{Width__m_}: 2,Cass Venn,2020-04-12 00:59:39.763 GMT,Cass Venn,2020-04-12 00:59:39 GMT,"Width (m),hearth",2
+1000061586653279597,{Width__m_}: 2.5,Cass Venn,2020-04-12 01:01:26.882 GMT,Cass Venn,2020-04-12 01:02:06 GMT,"Width (m),platform",2.5
+1000061586653390207,{Length__m_}: 3.9,Cass Venn,2020-04-12 01:03:27.483 GMT,Cass Venn,2020-04-12 01:03:27 GMT,"Length (m),platform",3.9
+1000061586653896586,{Length__m_}: 10,Cass Venn,2020-04-12 01:11:44.491 GMT,Cass Venn,2020-04-12 01:11:54 GMT,"Length (m),Nat plat",10
+1000061586653917943,{Width__m_}: 3,Cass Venn,2020-04-12 01:12:21.344 GMT,Cass Venn,2020-04-12 01:12:21 GMT,"Width (m),Nat plat",3
+1000061586653998600,{Length__m_}: 1,Cass Venn,2020-04-12 01:13:49.483 GMT,Cass Venn,2020-04-12 01:13:49 GMT,Length (m),1
+1000061586654035503,{Width__m_}: 1.2,Cass Venn,2020-04-12 01:14:01.849 GMT,Cass Venn,2020-04-12 01:14:01 GMT,Width (m),1.2
+1000061586654260146,{Length__m_}: 1.3,Cass Venn,2020-04-12 01:18:21.483 GMT,Cass Venn,2020-04-12 01:18:21 GMT,Length (m),1.3
+1000061586654303357,{Width__m_}: 1.5,Cass Venn,2020-04-12 01:18:29.643 GMT,Cass Venn,2020-04-12 01:18:29 GMT,Width (m),1.5
+1000021586654363079,{Length__m_}: 3.8,Shawn Ross,2020-04-12 01:19:34.938 GMT,Shawn Ross,2020-04-12 01:19:49 GMT,"Length (m),max preserved",3.8
+1000021586654391276,{Width__m_}: 2.7,Shawn Ross,2020-04-12 01:20:01.230 GMT,Shawn Ross,2020-04-12 01:20:15 GMT,"Width (m),max preserved",2.7
+1000061586655436518,{Length__m_}: 4,Cass Venn,2020-04-12 01:37:26.953 GMT,Cass Venn,2020-04-12 01:37:37 GMT,"Length (m),platform",4
+1000061586655464213,{Width__m_}: 3.2,Cass Venn,2020-04-12 01:37:53.411 GMT,Cass Venn,2020-04-12 01:37:58 GMT,"Width (m),platform",3.2
+1000061586655480302,{Length__m_}: 2,Cass Venn,2020-04-12 01:38:08.935 GMT,Cass Venn,2020-04-12 01:38:08 GMT,"Length (m),mound",2
+1000061586655493871,{Width__m_}: 2.5,Cass Venn,2020-04-12 01:38:21.073 GMT,Cass Venn,2020-04-12 01:38:31 GMT,"Width (m),mound",2.5
+1000061586655582704,{Height__m_}: .3,Cass Venn,2020-04-12 01:39:56.324 GMT,Cass Venn,2020-04-12 01:40:03 GMT,"Height (m),max pres",0.3
+1000021586655991156,{Depth__m_}: 0.370,Shawn Ross,2020-04-12 01:46:49.188 GMT,Shawn Ross,2020-04-12 01:46:49 GMT,Depth (m),0.37
+1000021586656316059,{Length__m_}: 5.5,Shawn Ross,2020-04-12 01:52:03.967 GMT,Shawn Ross,2020-04-12 01:52:03 GMT,Length (m),5.5
+1000021586656325775,{Width__m_}: 4.0,Shawn Ross,2020-04-12 01:52:29.705 GMT,Shawn Ross,2020-04-12 01:52:29 GMT,Width (m),4
+1000061586656689611,{Length__m_}: 4,Cass Venn,2020-04-12 01:58:16.521 GMT,Cass Venn,2020-04-12 01:58:20 GMT,"Length (m),platform",4
+1000061586656702650,{Width__m_}: 2.6,Cass Venn,2020-04-12 01:58:29.569 GMT,Cass Venn,2020-04-12 01:58:38 GMT,"Width (m),platform",2.6
+1000061586656720595,{Length__m_}: 1.4,Cass Venn,2020-04-12 01:58:47.943 GMT,Cass Venn,2020-04-12 01:58:50 GMT,"Length (m),hearth",1.4
+1000061586656734070,{Width__m_}: 1.7,Cass Venn,2020-04-12 01:59:01.714 GMT,Cass Venn,2020-04-12 01:59:09 GMT,"Width (m),hearth",1.7
+1000061586657204718,{Height__m_}: 0.35,Cass Venn,2020-04-12 02:07:00.590 GMT,Cass Venn,2020-04-12 02:07:00 GMT,"Height (m),max pres",0.35
+1000021586657224692,{Length__m_}: 10,Shawn Ross,2020-04-12 02:07:12.309 GMT,Shawn Ross,2020-04-12 02:07:36 GMT,"Length (m),across slope",10
+1000021586657261360,{Width__m_}: 8.0,Shawn Ross,2020-04-12 02:07:51.470 GMT,Shawn Ross,2020-04-12 02:08:04 GMT,"Width (m),up-down slope",8
+1000061586657498548,{Height__m_}: 0.4,Cass Venn,2020-04-12 02:12:01.225 GMT,Cass Venn,2020-04-12 02:12:01 GMT,"Height (m),max pres",0.4
+1000061586657524120,{Width__m_}: 1.2,Cass Venn,2020-04-12 02:12:24.206 GMT,Cass Venn,2020-04-12 02:12:24 GMT,"Width (m),hearth",1.2
+1000061586657550553,{Length__m_}: 1.1,Cass Venn,2020-04-12 02:12:44.744 GMT,Cass Venn,2020-04-12 02:12:44 GMT,"Length (m),hearth",1.1
+1000061586660824032,{Height__m_}: 0.5,Cass Venn,2020-04-12 03:07:13.573 GMT,Cass Venn,2020-04-12 03:07:22 GMT,"Height (m),max pres.",0.5
+1000061586660843948,{Width__m_}: 1.4,Cass Venn,2020-04-12 03:07:30.697 GMT,Cass Venn,2020-04-12 03:07:37 GMT,"Width (m),internal hearth",1.4
+1000061586660859810,{Depth__m_}: 0.9,Cass Venn,2020-04-12 03:07:47.568 GMT,Cass Venn,2020-04-12 03:07:54 GMT,"Depth (m),internal hearth",0.9
+1000061586660876658,{Width__m_}: 2.9,Cass Venn,2020-04-12 03:08:35.905 GMT,Cass Venn,2020-04-12 03:08:35 GMT,"Width (m),external hearth",2.9
+1000061586660917745,{Length__m_}: 2,Cass Venn,2020-04-12 03:08:51.830 GMT,Cass Venn,2020-04-12 03:08:51 GMT,"Length (m),external hearth",2
+1000061586661057289,{Length__m_}: 3.5,Cass Venn,2020-04-12 03:11:07.480 GMT,Cass Venn,2020-04-12 03:11:10 GMT,"Length (m),platform",3.5
+1000061586661072552,{Width__m_}: 3.3,Cass Venn,2020-04-12 03:11:23.652 GMT,Cass Venn,2020-04-12 03:11:23 GMT,"Width (m),platform",3.3
+1000061586661687317,{Length__m_}: 1.2,Cass Venn,2020-04-12 03:21:35.372 GMT,Cass Venn,2020-04-12 03:21:37 GMT,"Length (m),hearth",1.2
+1000061586661699112,{Width__m_}: 1.8,Cass Venn,2020-04-12 03:21:46.085 GMT,Cass Venn,2020-04-12 03:21:47 GMT,"Width (m),hearth",1.8
+1000061586661712050,{Length__m_}: 4.2,Cass Venn,2020-04-12 03:21:59.568 GMT,Cass Venn,2020-04-12 03:22:24 GMT,"Length (m),platform",4.2
+1000061586661747970,{Width__m_}: 2,Cass Venn,2020-04-12 03:22:36.165 GMT,Cass Venn,2020-04-12 03:22:36 GMT,"Width (m),platform",2
+1000061586662000563,{Height__m_}: .4,Cass Venn,2020-04-12 03:26:59.121 GMT,Cass Venn,2020-04-12 03:26:59 GMT,"Height (m),max pres.",0.4
+1000061586664042733,{Length__m_}: .16,Cass Venn,2020-04-12 04:00:56.096 GMT,Cass Venn,2020-04-12 04:01:01 GMT,"Length (m),horseshoe",0.16
+1000061586664064479,{Width__m_}: .14,Cass Venn,2020-04-12 04:01:17.973 GMT,Cass Venn,2020-04-12 04:01:23 GMT,"Width (m),horseshoe",0.14
+1000021586664235110,{Diameter__m_}: 0.37,Shawn Ross,2020-04-12 04:04:03.856 GMT,Shawn Ross,2020-04-12 04:04:03 GMT,Diameter (m),0.37
+1000021586664257629,{Depth__m_}: 0.18,Shawn Ross,2020-04-12 04:04:28.280 GMT,Shawn Ross,2020-04-12 04:04:28 GMT,Depth (m),0.18
+1000021586664809082,{Diameter__m_}: 0.30,Shawn Ross,2020-04-12 04:13:36.658 GMT,Shawn Ross,2020-04-12 04:13:36 GMT,Diameter (m),0.3
+1000061586664832200,{Length__m_}: 8,Cass Venn,2020-04-12 04:14:00.510 GMT,Cass Venn,2020-04-12 04:14:00 GMT,Length (m),8
+1000061586664846483,{Width__m_}: 2,Cass Venn,2020-04-12 04:14:12.342 GMT,Cass Venn,2020-04-12 04:14:12 GMT,Width (m),2
+1000021586664876896,{Other}: 0.540,Shawn Ross,2020-04-12 04:14:43.802 GMT,Shawn Ross,2020-04-12 04:14:54 GMT,"Other,gauge width",0.54
+1000021586665343136,{Length__m_}: 0.150,Shawn Ross,2020-04-12 04:22:30.231 GMT,Shawn Ross,2020-04-12 04:22:30 GMT,Length (m),0.15
+1000021586665357848,{Width__m_}: 0.160,Shawn Ross,2020-04-12 04:22:45.319 GMT,Shawn Ross,2020-04-12 04:22:45 GMT,Width (m),0.16
+1000061586665609308,{Length__m_}: 5,Cass Venn,2020-04-12 04:27:09.742 GMT,Cass Venn,2020-04-12 04:27:09 GMT,Length (m),5
+1000061586665631333,{Width__m_}: 5,Cass Venn,2020-04-12 04:27:15.639 GMT,Cass Venn,2020-04-12 04:27:15 GMT,Width (m),5
+1000061586666517933,{Length__m_}: 0.4,Cass Venn,2020-04-12 04:42:02.774 GMT,Cass Venn,2020-04-12 04:42:02 GMT,Length (m),0.4
+1000061586666562826,{Width__m_}: 0.3,Cass Venn,2020-04-12 04:42:50.757 GMT,Cass Venn,2020-04-12 04:42:50 GMT,Width (m),0.3
+1000061586666573063,{Depth__m_}: 0.15,Cass Venn,2020-04-12 04:43:02.665 GMT,Cass Venn,2020-04-12 04:43:02 GMT,Depth (m),0.15
+1000061586667033841,{Height__m_}: 0.3,Cass Venn,2020-04-12 04:50:43.014 GMT,Cass Venn,2020-04-12 04:50:50 GMT,"Height (m),max pres",0.3
+1000061586667052212,{Length__m_}: 3.5,Cass Venn,2020-04-12 04:51:05.533 GMT,Cass Venn,2020-04-12 04:51:05 GMT,Length (m),3.5
+1000061586667068110,{Width__m_}: 2.6,Cass Venn,2020-04-12 04:51:17.542 GMT,Cass Venn,2020-04-12 04:51:17 GMT,Width (m),2.6
+1000061586668755961,{Height__m_}: 1,Cass Venn,2020-04-12 05:19:22.549 GMT,Cass Venn,2020-04-12 05:19:27 GMT,"Height (m),max pres",1
+1000061586669076266,{Width__m_}: 1.4,Cass Venn,2020-04-12 05:24:46.824 GMT,Cass Venn,2020-04-12 05:24:46 GMT,Width (m),1.4
+1000061586669092907,{Length__m_}: 1.6,Cass Venn,2020-04-12 05:25:00.330 GMT,Cass Venn,2020-04-12 05:25:00 GMT,Length (m),1.6
+1000061586669503716,{Height__m_}: 1.1,Cass Venn,2020-04-12 05:31:51.475 GMT,Cass Venn,2020-04-12 05:31:57 GMT,"Height (m),max pres",1.1
+1000061586669519921,{Depth__m_}: 1.2,Cass Venn,2020-04-12 05:32:08.352 GMT,Cass Venn,2020-04-12 05:32:08 GMT,Depth (m),1.2
+1000061586669533784,{Width__m_}: 2,Cass Venn,2020-04-12 05:32:21.049 GMT,Cass Venn,2020-04-12 05:32:21 GMT,Width (m),2
+1000061586669565493,{Width__m_}: 2.9,Cass Venn,2020-04-12 05:32:58.374 GMT,Cass Venn,2020-04-12 05:32:58 GMT,"Width (m),platform",2.9
+1000061586669605893,{Length__m_}: 2.5,Cass Venn,2020-04-12 05:33:33.207 GMT,Cass Venn,2020-04-12 05:33:38 GMT,"Length (m),platform",2.5
+1000061586669803446,{Height__m_}: 1.1,Cass Venn,2020-04-12 05:36:57.235 GMT,Cass Venn,2020-04-12 05:37:02 GMT,"Height (m),max pres",1.1
+1000061586669824862,{Width__m_}: 2.2,Cass Venn,2020-04-12 05:37:10.742 GMT,Cass Venn,2020-04-12 05:37:10 GMT,Width (m),2.2
+1000061586669832457,{Depth__m_}: 1.5,Cass Venn,2020-04-12 05:37:22.361 GMT,Cass Venn,2020-04-12 05:37:22 GMT,Depth (m),1.5
+1000061586669843993,{Length__m_}: 3.6,Cass Venn,2020-04-12 05:37:33.909 GMT,Cass Venn,2020-04-12 05:37:33 GMT,"Length (m),platform",3.6
+1000061586669855661,{Width__m_}: 2.5,Cass Venn,2020-04-12 05:37:42.865 GMT,Cass Venn,2020-04-12 05:37:45 GMT,"Width (m),platform",2.5
+1000021586669958797,{Length__m_}: 1.10,Shawn Ross,2020-04-12 05:39:32.023 GMT,Shawn Ross,2020-04-12 05:39:32 GMT,Length (m),1.1
+1000021586669990177,{Width__m_}: 0.90,Shawn Ross,2020-04-12 05:39:57.627 GMT,Shawn Ross,2020-04-12 05:39:57 GMT,Width (m),0.9
+1000021586670002465,{Length__m_}: 1.10,Shawn Ross,2020-04-12 05:40:12.459 GMT,Shawn Ross,2020-04-12 05:40:12 GMT,Length (m),1.1
+1000021586670025751,{Depth__m_}: 0.30,Shawn Ross,2020-04-12 05:40:35.959 GMT,Shawn Ross,2020-04-12 05:40:59 GMT,"Depth (m),max preserved depth",0.3
+1000061586670065102,{Height__m_}: 0.9,Cass Venn,2020-04-12 05:41:14.536 GMT,Cass Venn,2020-04-12 05:41:20 GMT,"Height (m),max pres",0.9
+1000061586670099674,{Length__m_}: 2.2,Cass Venn,2020-04-12 05:41:50.021 GMT,Cass Venn,2020-04-12 05:41:50 GMT,Length (m),2.2
+1000061586670112850,{Width__m_}: 1.6,Cass Venn,2020-04-12 05:41:59.927 GMT,Cass Venn,2020-04-12 05:41:59 GMT,Width (m),1.6
+1000061586670124022,{Length__m_}: 3.6,Cass Venn,2020-04-12 05:42:15.692 GMT,Cass Venn,2020-04-12 05:42:15 GMT,"Length (m),platform",3.6
+1000021586670158989,{Length__m_}: 0.80,Shawn Ross,2020-04-12 05:42:49.891 GMT,Shawn Ross,2020-04-12 05:42:49 GMT,Length (m),0.8
+1000021586670171536,{Width__m_}: 0.7,Shawn Ross,2020-04-12 05:42:58.073 GMT,Shawn Ross,2020-04-12 05:42:58 GMT,Width (m),0.7
+1000021586670181657,{Depth__m_}: 0.20,Shawn Ross,2020-04-12 05:43:15.843 GMT,Shawn Ross,2020-04-12 05:43:25 GMT,"Depth (m),max preserved depth",0.2

@@ -871,6 +871,403 @@ An item about Katoomba Courthouse might receive:
 
 ---
 
+## 11. Archaeological FAIMS Data: Tagging Structure and Analysis
+
+**Added:** 2025-10-11 (archaeological data review)
+
+### 11.1 Archaeological Data Overview
+
+**Data Source:** FAIMS Mobile 2.6 field data collection system (open-source digital archaeology platform)
+
+**Study Areas:**
+
+- **RC (Ruined Castle):** 67 features recorded (Jamison Valley)
+- **NG (Nellie's Glen):** 275 features recorded (Megalong Valley)
+- **Total:** 342 archaeological features documented
+
+**FAIMS Data Structure:**
+
+- **Entity-Feature files:** Primary archaeological feature records (platforms, hearths, artefact scatters, structures)
+- **Entity-Measurement files:** Detailed measurements associated with features
+- **Relationship-FeatureMeasurement files:** Links between features and measurements
+
+**Key Metadata:**
+
+- Geospatial coordinates (latitude, longitude, northing, easting, accuracy)
+- Feature descriptions, interpretations, material types
+- Photo documentation (overview photos, detail photos, external camera references)
+- Cross-references between associated features
+
+### 11.2 Three-Dimensional Archaeological Tagging System
+
+Archaeological features in FAIMS receive **three separate types of tags**, recorded in distinct columns:
+
+#### 11.2.1 Column 1: `Tags` (Mixed Interpretations and Social Themes)
+
+**Purpose:** Records both **structural interpretations** and **social history theme associations**.
+
+**Structure interpretations** (what we think the feature was used for):
+
+- Hut (63 uses) - Small, simple dwelling interpretation
+- Dwelling (28 uses) - More substantial residence interpretation
+- Structure (8 uses) - General building interpretation
+- Work (63 uses) - Work-related feature
+- Pit (15 uses), Posthole (2 uses) - Cut feature interpretations
+
+**Work types and industrial features:**
+
+- Industrial (15 uses), Industry (13 uses), Mining (2 uses)
+- Transport (5 uses)
+
+**Social history theme tags** (applied where material evidence supports interpretation):
+
+- Food (59 uses) - Food-related artefacts
+- Alcohol (18 uses) - Alcohol bottles, gin cases
+- Pharmaceutical (8 uses) - Medicine bottles
+- Waste (10 uses) - Refuse deposits
+- Horses (4 uses) - Horseshoes, tack
+- Clothing (2 uses) - Buttons, dress fasteners
+- Women (2 uses) - Gender-specific artefacts
+- Music (1 use) - Musical instruments
+- Smoking (1 use) - Tobacco pipes
+- Literacy (3 uses) - Writing implements
+
+**Material/construction tags:**
+
+- Building-material (10 uses), Building material (8 uses), Building-Material (2 uses), Building materials (1 use) - **Inconsistent capitalisation**
+- Artefact (151 uses) - Marker indicating artefacts are present at this feature
+
+**Special feature types:**
+
+- Drain (7 uses), Graffiti (1 use), Retaining wall (1 use), Trench (1 use)
+
+**Issues identified:**
+
+- Typos: "Arefact" (1 use) instead of "Artefact"
+- Inconsistent capitalisation across "Building-material" variants
+- One empty tag value (":")
+- Mixing of structural interpretations and social themes in same column
+
+#### 11.2.2 Column 2: `Artefact Functional type` (EAMC-based Classification)
+
+**Purpose:** Functional categorisation of artefacts following **EAMC database schema** (Crook & Murray 2006).
+
+**Most common functional types:**
+
+- Bottle (60 uses) - Glass bottles for alcohol, medicine, condiments
+- Food service (41 uses) - Tableware, plates, cups, utensils
+- Mechanical (31 uses) - Industrial equipment, ropeway elements, mining machinery
+- Building material (23 uses) - Brick, window glass, nails, roofing materials
+- Implement (9 uses) - Tools, horseshoes
+- Chamber pot (6 uses) - Sanitary/waste management
+- Cooking (5 uses) - Pots, pans, hearth equipment
+- Food storage (4 uses) - Storage containers, jars
+
+**Less common types:**
+
+- Tool (3 uses), Writing (3 uses), Apparel (2 uses), Barrel (2 uses)
+- Musical instrument (1 use), Food preparation (1 use), ACH (1 use - Aboriginal Cultural Heritage?)
+- Ore (1 use), Electrical component (1 use), Spoil (1 use)
+
+**Issues identified:**
+
+- Inconsistent capitalisation: "Bottle" vs "bottle", "Food service" vs "Food Service" vs "food service"
+- Typos: "Bootle" (2 uses), "Botttle" (1 use), "Buidling material" (1 use), "Chamber Pot" vs "Chamber pot"
+- "Building material" appears in both Tags column and Artefact Functional type column
+
+**Note:** Artefact specialist Penny Crook was unable to attend archaeological tagging session. **Verification needed** to ensure full alignment with EAMC schema.
+
+#### 11.2.3 Column 3: `RevisedFeatureType` (Observed Archaeological Features)
+
+**Purpose:** Records the **actual observable features** on the ground (not interpretations).
+
+**Most common feature types:**
+
+- Artefact (153 uses) - Isolated finds or artefact scatters
+- Platform (81 uses) - Levelled ground surface, typically foundation for structure
+- Hearth (78 uses) - Fireplace or cooking feature
+- Depression (23 uses) - Cut features, pits
+- Other (22 uses) - Sawn trees, tree stumps, fenceposts
+
+**Mining and industrial features:**
+
+- Mining element (12 uses) - Cart wheels, rail, mining equipment
+- Ropeway element (9 uses) - Bleichert ropeway buckets and infrastructure
+- Fence (16 uses), Trackway (5 uses)
+- Prop hole (4 uses) - Drilled holes for mine props
+- Masonry (6 uses), Wall (1 use), Floor (1 use)
+
+**Special features:**
+
+- Double Hearth (2 uses) - Two hearths in same structure
+- Graffiti (1 use), Oven (1 use), Fireplace (1 use)
+- Bridge (1 use), Spoil (1 use), Quarry (1 use), Mound (1 use), Water race (1 use)
+
+**Issues identified:**
+
+- Typos: "Depresson" (3 uses), "Depressoin" (1 use) instead of "Depression"
+- "Structure" appears in both Tags column (8 uses) and RevisedFeatureType column (2 uses)
+- "Artefact" appears in both Tags column (151 uses) and RevisedFeatureType column (153 uses) - used as both a feature type marker and a category
+
+### 11.3 Understanding Pipe-Delimited Tags
+
+**Format:** Tags are **pipe-delimited** (e.g., "Hut | Artefact | Food | Alcohol")
+
+**Important clarification:** The pipe delimiter does **not** indicate hierarchy. Multiple tags are simply listed together.
+
+**Example from Ruined Castle Feature 1006:**
+
+```text
+Tags: Hut
+RevisedFeatureType: Hearth | Platform | Artefact
+Artefact Functional type: Bottle
+Material: Glass - Metal
+Description: possible platform extends 2m southeast. metal bar (rail) across hearth.
+             olive green bottle glass.
+```
+
+**Interpretation:**
+
+- **Structural interpretation:** This feature is interpreted as a **Hut** (dwelling)
+- **Observed features:** A **Hearth** with an associated **Platform** and **Artefacts**
+- **Artefact type:** Glass **Bottle** (alcohol)
+- **Social theme inference:** Presence of alcohol bottles at domestic feature
+
+**Not hierarchical:** "Hearth | Platform | Artefact" means three separate observed features, not "Hearth contains Platform which contains Artefact"
+
+### 11.4 Separation of Structure vs Artefact Tags
+
+**Future data processing requirement:** Archaeological tags need to be **separated into two distinct categories** for analysis:
+
+#### Structure/Feature Tags
+
+**Source columns:** `Tags` (interpretation), `RevisedFeatureType` (observation)
+
+**Examples:**
+
+- Hut, Dwelling, Structure (interpretations of building function)
+- Platform, Hearth, Depression (observed archaeological features)
+- Mining element, Ropeway element, Prop hole (industrial features)
+- Fence, Trackway, Wall (construction features)
+
+**Workflow:**
+
+1. Extract structure-related tags from both `Tags` and `RevisedFeatureType` columns
+2. Standardise terminology (fix typos, capitalisation inconsistencies)
+3. Map to hierarchical structure vocabulary (from `archaeological-tags.md`)
+4. Align with historical document tags for institutions and buildings
+
+#### Artefact Tags
+
+**Source columns:** `Artefact Functional type` (EAMC schema), `Tags` (social themes)
+
+**Examples:**
+
+- **Functional:** Bottle, Food service, Mechanical, Building material, Cooking, Implement
+- **Social themes:** Food, Alcohol, Pharmaceutical, Clothing, Horses, Women, Music, Smoking
+
+**Workflow:**
+
+1. Extract artefact functional types from `Artefact Functional type` column
+2. Extract social history theme tags associated with artefacts from `Tags` column
+3. Verify functional categories against EAMC schema with artefact specialist
+4. Align social theme tags with rationalised historical document tags
+
+### 11.5 Archaeological Tag Statistics Summary
+
+**Tags column (combined structure + social themes):**
+
+- 40 unique tags
+- 516 total tag applications
+- Most common: Artefact (151), Work (63), Hut (63), Food (59), Dwelling (28), Alcohol (18)
+
+**Artefact Functional type column:**
+
+- 29 unique functional types
+- 211 total applications
+- Most common: Bottle (60), Food service (41), Mechanical (31), Building material (23)
+
+**RevisedFeatureType column:**
+
+- 25 unique feature types
+- 427 total applications
+- Most common: Artefact (153), Platform (81), Hearth (78), Depression (23), Other (22)
+
+### 11.6 Issues Requiring Rationalisation
+
+**Spelling and capitalisation inconsistencies:**
+
+1. **Building material variants:**
+   - "Building-material" (10), "Building material" (8), "Building-Material" (2), "Building materials" (1)
+   - **Recommendation:** Standardise to "Building material"
+
+2. **Bottle variants:**
+   - "Bottle" (60), "Bootle" (2), "Botttle" (1), "bottle" (1)
+   - **Recommendation:** Standardise to "Bottle"
+
+3. **Depression variants:**
+   - "Depression" (23), "Depresson" (3), "Depressoin" (1)
+   - **Recommendation:** Standardise to "Depression"
+
+4. **Food service variants:**
+   - "Food service" (41), "Food Service" (3), "food service" (1)
+   - **Recommendation:** Standardise to "Food service"
+
+5. **Artefact variants:**
+   - "Artefact" (151), "Arefact" (1)
+   - **Recommendation:** Fix typo
+
+6. **Other minor typos:**
+   - "Buidling material" → "Building material"
+   - "Chamber Pot" vs "Chamber pot" → Standardise
+
+**Redundancy between columns:**
+
+- "Artefact" appears in both Tags (151) and RevisedFeatureType (153)
+- "Structure" appears in both Tags (8) and RevisedFeatureType (2)
+- "Building material" appears in both Tags (20 total) and Artefact Functional type (23)
+
+**Recommendation:** Clarify functional roles of each column during Phase 1.2 rationalisation.
+
+**Empty/minimal records:**
+
+- One empty tag value (":")
+- Several features with minimal data (e.g., RC Feature 4007, NG Feature 4012)
+- **Recommendation:** Review for deletion or completion
+
+### 11.7 Future Work: Archaeological Tag Alignment
+
+**Phase 1.2+: After Historical Document Tag Rationalisation**
+
+1. **Clean and standardise archaeological tags:**
+   - Fix all spelling and capitalisation inconsistencies
+   - Remove empty/minimal records
+   - Separate structure tags from artefact tags in output datasets
+
+2. **Map archaeological structure tags to historical institution/building tags:**
+   - Align "Hut" / "Dwelling" with "Accommodation" / "Housing" tags from historical documents
+   - Map "Court" (historical) to "Courthouse" (archaeological Structure type)
+   - Ensure consistency for institutions appearing in both datasets
+
+3. **Align archaeological social theme tags with rationalised historical tags:**
+   - Food, Alcohol, Pharmaceutical, Waste, Horses, Clothing, Women, Music, Smoking, Literacy
+   - Apply same terminology across all three tagging systems
+
+4. **Verify artefact functional categories with specialist:**
+   - Review EAMC schema alignment with Penny Crook
+   - Confirm functional categories are correct
+   - Enrich artefact tags where needed
+
+5. **Enable Omeka integration:**
+   - Collections grouped by social history themes (Food, Alcohol, Family, etc.)
+   - Exhibitions combining historical documents + archaeological features + artefacts
+   - Walking tours linking geographic tags + archaeological features + historical events
+
+**Ultimate goal:** Seamless integration of historical, archaeological, and artefact evidence through shared, rationalised tagging vocabulary.
+
+---
+
+## 12. Omeka Integration and Public Engagement Goals
+
+### 12.1 Purpose of Tag Rationalisation
+
+The ultimate purpose of tag rationalisation is to enable **Omeka-based public engagement** with the Blue Mountains shale mining heritage collection.
+
+**Target audiences:**
+
+- Academic researchers (history, archaeology, heritage)
+- Heritage managers and conservation professionals
+- Local historians and community history groups
+- Family historians researching Blue Mountains connections
+- General public interested in mining heritage and local history
+- School groups and educational programmes
+
+### 12.2 Omeka Collections (Thematic Grouping)
+
+**Collections organised by social history themes:**
+
+Tags enable automatic/semi-automatic generation of thematic collections:
+
+- **Working Life Collection:** Mining, Miners, Labour, Industry, Wages, Employment
+- **Family Life Collection:** Families, Women, Children, Marriage, Birth, Death
+- **Community Life Collection:** Church, School, Recreation, Sports, Entertainment, Associations
+- **Conditions of Living Collection:** Housing, Food, Drink, Alcohol, Health, Sanitary conditions
+- **Law and Order Collection:** Court, Crime, Police, Violence, Accidents
+- **Mining Heritage Collection:** Shale mines, Companies, Mining accidents, Ropeways, Industrial archaeology
+
+**Cross-collection items:** Many items will appear in multiple collections (e.g., a court case about mining accident appears in Law and Order + Working Life + specific company collection).
+
+### 12.3 Omeka Exhibitions (Narrative Storytelling)
+
+**Exhibitions combine historical documents, archaeological features, and artefacts** to tell specific stories:
+
+**Example exhibition 1: "Life in a Mining Hut"**
+
+- Historical documents: Court cases about hut conditions, newspaper articles about housing
+- Archaeological features: Hut platforms, hearths, associated artefacts
+- Artefacts: Cooking implements, alcohol bottles, food service items, structural materials
+- Narrative: Daily life, living conditions, material culture, class and aspiration
+
+**Example exhibition 2: "The Bleichert Ropeway"**
+
+- Historical documents: Company records, newspaper articles about ropeway construction/operation
+- Archaeological features: Ropeway element locations (mapped)
+- Artefacts: Ropeway buckets, mechanical components, photographs
+- Narrative: Industrial technology, engineering achievement, economic boom/bust
+
+**Example exhibition 3: "Women and Children in Mining Communities"**
+
+- Historical documents: Court cases, birth/death records, school records
+- Archaeological features: Dwelling platforms with children's toys, gender-specific artefacts
+- Artefacts: Children's toys, women's clothing fasteners, domestic items, decorated tableware
+- Narrative: Family history, gender roles, childhood in isolated settlements
+
+### 12.4 Walking Tours (Geospatial Integration)
+
+**Walking tours link geographic locations with historical and archaeological evidence:**
+
+**Example walking tour: "Ruined Castle Mining Settlement"**
+
+Using GPS coordinates from archaeological features + georeferenced historical documents:
+
+1. **Stop 1: Ropeway Loading Point**
+   - Archaeological: Ropeway element locations, platform remains
+   - Historical: Company records, newspaper articles about ropeway operations
+   - Theme: Industrial technology and economic boom
+
+2. **Stop 2: Miners' Huts**
+   - Archaeological: Hut platforms, hearths, artefact scatters
+   - Historical: Court cases about living conditions, wages, accidents
+   - Artefacts: Domestic items, food/alcohol evidence, children's toys
+   - Theme: Daily life, family and community
+
+3. **Stop 3: Mine Entrance (Addit)**
+   - Archaeological: Addit location, spoil heaps, mine infrastructure
+   - Historical: Mining accident reports, employment records
+   - Theme: Working conditions, danger, labour history
+
+4. **Stop 4: Managers' Residence**
+   - Archaeological: High-quality masonry structure
+   - Historical: Company hierarchy, class divisions
+   - Theme: Social stratification in mining communities
+
+**Mobile-friendly format:** Walking tours delivered via Omeka mobile site or app, using device GPS for location-based content delivery.
+
+### 12.5 Tag Requirements for Omeka Integration
+
+To enable collections, exhibitions, and walking tours, tags must:
+
+1. **Be consistent** across historical documents, archaeological features, and artefacts
+2. **Support thematic grouping** (social history themes as primary organising principle)
+3. **Enable geographic filtering** (place names, coordinates, spatial relationships)
+4. **Link related items** across different evidence types (documents about Hut X + archaeological remains of Hut X + artefacts from Hut X)
+5. **Support temporal filtering** (date ranges, significant periods)
+6. **Connect to external resources** (Getty vocabularies, ADB entries, gazetteers)
+
+**This is why tag rationalisation is critical:** Without consistent, well-structured tags, automated/semi-automated creation of Omeka content is impossible.
+
+---
+
 ## End of Document
 
-Folksonomy Logic Documentation Complete - Phase 1.1 Deliverable
+Folksonomy Logic Documentation Complete - Phase 1.1 Deliverable (with Archaeological FAIMS Data Analysis)

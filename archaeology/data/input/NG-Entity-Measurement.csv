@@ -1,0 +1,522 @@
+uuid,identifier,createdBy,createdAtGMT,modifiedBy,modifiedAtGMT,Dimension,Measurement
+1000061593216531161,{Width__m_}: 3.15,Cass Venn,2020-06-27 00:09:01.891 GMT,Cass Venn,2020-06-27 00:09:01 GMT,Width (m),3.15
+1000061593216544458,{Length__m_}: 2.6,Cass Venn,2020-06-27 00:09:12.727 GMT,Cass Venn,2020-06-27 00:09:12 GMT,Length (m),2.6
+1000061593216558686,: 0.6,Cass Venn,2020-06-27 00:09:45.010 GMT,Cass Venn,2020-06-27 00:10:21 GMT,",max preserved height",0.6
+1000061593218559175,{Width__m_}: 2.3,Cass Venn,2020-06-27 00:42:50.682 GMT,Cass Venn,2020-06-27 00:43:11 GMT,Width (m),2.3
+1000061593218614116,{Length__m_}: 1.5,Cass Venn,2020-06-27 00:43:47.673 GMT,Cass Venn,2020-06-27 00:43:47 GMT,Length (m),1.5
+1000061593218633067,{Height__m_}: .3,Cass Venn,2020-06-27 00:44:07.994 GMT,Cass Venn,2020-06-27 00:44:27 GMT,"Height (m),max pres height",0.3
+1000041593218827407,{Diameter__m_}: 20,Penny Crook,2020-06-27 00:47:19.715 GMT,Penny Crook,2020-06-27 01:04:41 GMT,Diameter (m),20
+1000061593219643538,{Diameter__m_}: 0.2,Cass Venn,2020-06-27 01:01:00.013 GMT,Cass Venn,2020-06-27 01:03:36 GMT,Diameter (m),0.2
+1000061593221124605,{Width__m_}: 2.7,Cass Venn,2020-06-27 01:25:35.473 GMT,Cass Venn,2020-06-27 01:26:03 GMT,Width (m),"2.7,max width"
+1000061593221176570,{Width__m_}: 1.4,Cass Venn,2020-06-27 01:26:25.486 GMT,Cass Venn,2020-06-27 01:26:57 GMT,"Width (m),interior ",1.4
+1000061593221233605,{Length__m_}: 1.5,Cass Venn,2020-06-27 01:27:21.659 GMT,Cass Venn,2020-06-27 01:27:31 GMT,"Length (m),max",1.5
+1000061593221270519,{Length__m_}: 0.9,Cass Venn,2020-06-27 01:28:00.779 GMT,Cass Venn,2020-06-27 01:28:18 GMT,"Length (m),internal",0.9
+1000061593221301668,{Height__m_}: 0.5,Cass Venn,2020-06-27 01:28:55.072 GMT,Cass Venn,2020-06-27 01:28:55 GMT,"Height (m),max preserved height",0.5
+1000041593221824073,{Diameter__m_}: 5,Penny Crook,2020-06-27 01:37:13.022 GMT,Penny Crook,2020-06-27 01:37:13 GMT,Diameter (m),5
+1000041593222878201,{Diameter__m_}: 3,Penny Crook,2020-06-27 01:54:45.081 GMT,Penny Crook,2020-06-27 01:54:55 GMT,Diameter (m),3
+1000061593223035769,{Width__m_}: 3,Cass Venn,2020-06-27 01:57:20.845 GMT,Cass Venn,2020-06-27 01:57:20 GMT,Width (m),3
+1000061593223042565,{Width__m_}: 1.2,Cass Venn,2020-06-27 01:57:34.862 GMT,Cass Venn,2020-06-27 01:57:34 GMT,"Width (m),internal",1.2
+1000061593223056600,{Length__m_}: 2.7,Cass Venn,2020-06-27 01:57:44.145 GMT,Cass Venn,2020-06-27 01:57:48 GMT,Length (m),2.7
+1000061593223069662,{Length__m_}: 1.2,Cass Venn,2020-06-27 01:58:03.859 GMT,Cass Venn,2020-06-27 01:58:03 GMT,"Length (m),interior",1.2
+1000061593223087817,{Height__m_}: 0.4,Cass Venn,2020-06-27 01:58:15.157 GMT,Cass Venn,2020-06-27 01:58:19 GMT,"Height (m),max pres",0.4
+1000041593223549987,{Diameter__m_}: 1,Penny Crook,2020-06-27 02:05:59.370 GMT,Penny Crook,2020-06-27 02:05:59 GMT,Diameter (m),1
+1000041593223896069,{Diameter__m_}: .20,Penny Crook,2020-06-27 02:11:58.637 GMT,Penny Crook,2020-06-27 02:13:14 GMT,Diameter (m),".20,est"
+1000041593223930685,{Height__m_}: .90,Penny Crook,2020-06-27 02:12:22.707 GMT,Penny Crook,2020-06-27 02:12:59 GMT,Height (m),0.9
+1000021593223953547,{Diameter__m_}: 0.25,Shawn  Ross,2020-06-27 02:12:41.423 GMT,Shawn  Ross,2020-06-27 02:12:48 GMT,Diameter (m),0.25
+1000021593223992378,{Height__m_}: 0.9,Shawn  Ross,2020-06-27 02:13:26.010 GMT,Shawn  Ross,2020-06-27 02:13:26 GMT,Height (m),0.9
+1000021593224144626,{Diameter__m_}: 0.35,Shawn  Ross,2020-06-27 02:15:53.969 GMT,Shawn  Ross,2020-06-27 02:16:03 GMT,Diameter (m),0.35
+1000041593224155622,{Length__m_}: 3,Penny Crook,2020-06-27 02:16:07.473 GMT,Penny Crook,2020-06-27 02:16:07 GMT,Length (m),3
+1000021593224170557,{Height__m_}: 1.0,Shawn  Ross,2020-06-27 02:16:18.100 GMT,Shawn  Ross,2020-06-27 02:16:18 GMT,Height (m),1
+1000041593224231135,{Length__m_}: .4,Penny Crook,2020-06-27 02:17:22.621 GMT,Penny Crook,2020-06-27 02:17:35 GMT,Length (m),0.4
+1000021593224231244,{Diameter__m_}: 0.2,Shawn  Ross,2020-06-27 02:17:26.728 GMT,Shawn  Ross,2020-06-27 02:17:26 GMT,Diameter (m),0.2
+1000021593224249106,{Height__m_}: 0.7,Shawn  Ross,2020-06-27 02:17:42.155 GMT,Shawn  Ross,2020-06-27 02:17:42 GMT,Height (m),0.7
+1000041593224259047,{Diameter__m_}: .25,Penny Crook,2020-06-27 02:17:46.193 GMT,Penny Crook,2020-06-27 02:18:15 GMT,Diameter (m),0.25
+1000071593224350537,{Width__m_}: 3.9,Glenn van der Kolk,2020-06-27 02:19:26.042 GMT,Glenn van der Kolk,2020-06-27 02:20:08 GMT,"Width (m),max external",3.9
+1000071593224411348,{Width__m_}: 1.2,Glenn van der Kolk,2020-06-27 02:20:32.171 GMT,Glenn van der Kolk,2020-06-27 02:20:52 GMT,"Width (m),internal",1.2
+1000071593224464405,{Length__m_}: 2.8,Glenn van der Kolk,2020-06-27 02:21:25.835 GMT,Glenn van der Kolk,2020-06-27 02:21:33 GMT,"Length (m),max external",2.8
+1000071593224496265,{Length__m_}: 1.7,Glenn van der Kolk,2020-06-27 02:21:46.257 GMT,Glenn van der Kolk,2020-06-27 02:22:00 GMT,"Length (m),internal",1.7
+1000071593224566807,{Height__m_}: 0.6,Glenn van der Kolk,2020-06-27 02:22:56.443 GMT,Glenn van der Kolk,2020-06-27 02:23:12 GMT,"Height (m),max preserved height",0.6
+1000021593225218572,{Diameter__m_}: 0.3,Shawn  Ross,2020-06-27 02:33:54.217 GMT,Shawn  Ross,2020-06-27 02:37:14 GMT,Diameter (m),"0.3,first trunk of y-shaped stump. all diameter measurements at cut."
+1000021593225272586,{Diameter__m_}: 0.35,Shawn  Ross,2020-06-27 02:34:40.501 GMT,Shawn  Ross,2020-06-27 02:35:25 GMT,Diameter (m),"0.35,second trunk"
+1000021593225349226,{Height__m_}: 1.2,Shawn  Ross,2020-06-27 02:35:58.351 GMT,Shawn  Ross,2020-06-27 02:35:58 GMT,Height (m),1.2
+1000021593225556513,{Diameter__m_}: 0.35,Shawn  Ross,2020-06-27 02:39:29.786 GMT,Shawn  Ross,2020-06-27 02:39:29 GMT,Diameter (m),0.35
+1000041593225568709,{Diameter__m_}: .35,Penny Crook,2020-06-27 02:39:35.653 GMT,Penny Crook,2020-06-27 02:39:38 GMT,Diameter (m),0.35
+1000021593225572588,{Height__m_}: 0.8,Shawn  Ross,2020-06-27 02:39:40.862 GMT,Shawn  Ross,2020-06-27 02:39:48 GMT,Height (m),0.8
+1000041593225586814,{Length__m_}: 4,Penny Crook,2020-06-27 02:39:57.844 GMT,Penny Crook,2020-06-27 02:39:57 GMT,Length (m),4
+1000021593225661897,{Diameter__m_}: 0.35,Shawn  Ross,2020-06-27 02:41:09.759 GMT,Shawn  Ross,2020-06-27 02:41:09 GMT,Diameter (m),0.35
+1000021593225671966,{Length__m_}: 2.5,Shawn  Ross,2020-06-27 02:41:19.026 GMT,Shawn  Ross,2020-06-27 02:41:26 GMT,Length (m),2.5
+1000041593225731232,{Diameter__m_}: .3,Penny Crook,2020-06-27 02:42:27.132 GMT,Penny Crook,2020-06-27 02:42:33 GMT,Diameter (m),".3,at base"
+1000041593225758032,{Length__m_}: 1.2,Penny Crook,2020-06-27 02:42:55.412 GMT,Penny Crook,2020-06-27 02:43:00 GMT,Length (m),1.2
+1000071593226001758,{Width__m_}: 2.9,Glenn van der Kolk,2020-06-27 02:46:50.066 GMT,Glenn van der Kolk,2020-06-27 02:47:11 GMT,"Width (m),ext max width",2.9
+1000071593226034543,{Width__m_}: 1.3,Glenn van der Kolk,2020-06-27 02:47:24.115 GMT,Glenn van der Kolk,2020-06-27 02:47:24 GMT,"Width (m),internal",1.3
+1000071593226067345,{Length__m_}: 2,Glenn van der Kolk,2020-06-27 02:47:56.505 GMT,Glenn van der Kolk,2020-06-27 02:48:16 GMT,"Length (m),max external",2
+1000071593226098667,{Length__m_}: 1,Glenn van der Kolk,2020-06-27 02:48:26.135 GMT,Glenn van der Kolk,2020-06-27 02:48:57 GMT,"Length (m),max internal",1
+1000071593226143635,{Height__m_}: 0.3,Glenn van der Kolk,2020-06-27 02:49:13.421 GMT,Glenn van der Kolk,2020-06-27 02:49:47 GMT,"Height (m),max preserved height",0.3
+1000041593226900113,{Length__m_}: 4,Penny Crook,2020-06-27 03:01:49.599 GMT,Penny Crook,2020-06-27 03:01:49 GMT,Length (m),4
+1000041593226925515,{Diameter__m_}: .25,Penny Crook,2020-06-27 03:02:15.691 GMT,Penny Crook,2020-06-27 03:02:15 GMT,Diameter (m),0.25
+1000041593227124761,{Height__m_}: .45,Penny Crook,2020-06-27 03:05:33.428 GMT,Penny Crook,2020-06-27 03:05:33 GMT,Height (m),0.45
+1000041593227136129,{Diameter__m_}: .3,Penny Crook,2020-06-27 03:05:46.513 GMT,Penny Crook,2020-06-27 03:05:46 GMT,Diameter (m),0.3
+1000071593227400636,{Width__m_}: 3.4,Glenn van der Kolk,2020-06-27 03:10:19.165 GMT,Glenn van der Kolk,2020-06-27 03:10:34 GMT,"Width (m),max external",3.4
+1000071593227436581,{Width__m_}: 1.3,Glenn van der Kolk,2020-06-27 03:10:44.130 GMT,Glenn van der Kolk,2020-06-27 03:10:52 GMT,"Width (m),max internal",1.3
+1000041593227447622,{Height__m_}: .4,Penny Crook,2020-06-27 03:10:58.189 GMT,Penny Crook,2020-06-27 03:10:58 GMT,Height (m),0.4
+1000071593227454542,{Length__m_}: 2.1,Glenn van der Kolk,2020-06-27 03:11:03.453 GMT,Glenn van der Kolk,2020-06-27 03:11:12 GMT,"Length (m),max external",2.1
+1000041593227463601,{Diameter__m_}: .25,Penny Crook,2020-06-27 03:11:12.110 GMT,Penny Crook,2020-06-27 03:11:19 GMT,Diameter (m),0.25
+1000071593227474370,{Length__m_}: 0.9,Glenn van der Kolk,2020-06-27 03:11:24.523 GMT,Glenn van der Kolk,2020-06-27 03:11:40 GMT,"Length (m),max internal",0.9
+1000071593227503123,{Height__m_}: 0.4,Glenn van der Kolk,2020-06-27 03:11:50.627 GMT,Glenn van der Kolk,2020-06-27 03:12:00 GMT,"Height (m),max pres",0.4
+1000041593227526684,{Height__m_}: .7,Penny Crook,2020-06-27 03:12:13.553 GMT,Penny Crook,2020-06-27 03:12:13 GMT,Height (m),0.7
+1000041593227535797,{Diameter__m_}: .2,Penny Crook,2020-06-27 03:12:24.839 GMT,Penny Crook,2020-06-27 03:12:24 GMT,Diameter (m),0.2
+1000071593232058799,{Width__m_}: 1.8,Glenn van der Kolk,2020-06-27 04:27:52.603 GMT,Glenn van der Kolk,2020-06-27 04:27:52 GMT,"Width (m),ext max",1.8
+1000071593232107467,{Width__m_}: 1.0,Glenn van der Kolk,2020-06-27 04:28:35.917 GMT,Glenn van der Kolk,2020-06-27 04:28:50 GMT,"Width (m),int in situ estimate",1
+1000071593232133418,{Length__m_}: 1.5,Glenn van der Kolk,2020-06-27 04:29:00.874 GMT,Glenn van der Kolk,2020-06-27 04:29:37 GMT,"Length (m),ext max",1.5
+1000071593232180736,{Length__m_}: 0.7,Glenn van der Kolk,2020-06-27 04:29:48.439 GMT,Glenn van der Kolk,2020-06-27 04:29:56 GMT,"Length (m),int max",0.7
+1000071593232238589,{Height__m_}: 0.2,Glenn van der Kolk,2020-06-27 04:30:47.896 GMT,Glenn van der Kolk,2020-06-27 04:31:13 GMT,"Height (m),max pres height",0.2
+1000041593232637813,{Diameter__m_}: 3,Penny Crook,2020-06-27 04:37:27.712 GMT,Penny Crook,2020-06-27 04:37:27 GMT,Diameter (m),3
+1000071593232925943,{Width__m_}: 3.0,Glenn van der Kolk,2020-06-27 04:42:13.370 GMT,Glenn van der Kolk,2020-06-27 04:44:01 GMT,"Width (m),max ext",3
+1000071593233043701,{Width__m_}: 1.0,Glenn van der Kolk,2020-06-27 04:44:12.930 GMT,Glenn van der Kolk,2020-06-27 04:44:42 GMT,"Width (m),max int",1
+1000071593233089166,{Length__m_}: 2.4,Glenn van der Kolk,2020-06-27 04:44:56.910 GMT,Glenn van der Kolk,2020-06-27 04:45:18 GMT,"Length (m),max ext",2.4
+1000071593233120982,{Length__m_}: 1.3,Glenn van der Kolk,2020-06-27 04:45:28.199 GMT,Glenn van der Kolk,2020-06-27 04:45:45 GMT,Length (m),1.3
+1000071593233173923,{Height__m_}: 0.5,Glenn van der Kolk,2020-06-27 04:46:21.407 GMT,Glenn van der Kolk,2020-06-27 04:47:45 GMT,"Height (m),max preserved height",0.5
+1000041593233345206,{Other}: 10,Penny Crook,2020-06-27 04:49:30.554 GMT,Penny Crook,2020-06-27 04:49:40 GMT,Other,"10,m downslope"
+1000041593233894776,{Other}: 10,Penny Crook,2020-06-27 04:58:22.117 GMT,Penny Crook,2020-06-27 04:58:55 GMT,Other,"10,m down slope from GPS point"
+1000071593235105296,{Width__m_}: 5.6,Glenn van der Kolk,2020-06-27 05:18:32.707 GMT,Glenn van der Kolk,2020-06-27 05:19:21 GMT,"Width (m),max ext",5.6
+1000071593235164792,{Width__m_}: 1.3,Glenn van der Kolk,2020-06-27 05:19:33.411 GMT,Glenn van der Kolk,2020-06-27 05:19:57 GMT,"Width (m),int hearth",1.3
+1000071593235201956,{Length__m_}: 2.9,Glenn van der Kolk,2020-06-27 05:20:09.033 GMT,Glenn van der Kolk,2020-06-27 05:20:30 GMT,"Length (m),max hearth length",2.9
+1000071593235233054,{Length__m_}: 0.7,Glenn van der Kolk,2020-06-27 05:20:44.637 GMT,Glenn van der Kolk,2020-06-27 05:20:55 GMT,"Length (m),int hearth",0.7
+1000071593235258550,{Height__m_}: 0.8,Glenn van der Kolk,2020-06-27 05:21:05.488 GMT,Glenn van der Kolk,2020-06-27 05:21:18 GMT,"Height (m),max preserved",0.8
+1000071593235283194,{Length__m_}: 2.4,Glenn van der Kolk,2020-06-27 05:21:39.605 GMT,Glenn van der Kolk,2020-06-27 05:21:39 GMT,"Length (m),E wall",2.4
+1000071593235310048,{Width__m_}: 0.9,Glenn van der Kolk,2020-06-27 05:21:59.313 GMT,Glenn van der Kolk,2020-06-27 05:22:12 GMT,"Width (m),E wall",0.9
+1000071593235338614,{Height__m_}: 0.6,Glenn van der Kolk,2020-06-27 05:22:29.910 GMT,Glenn van der Kolk,2020-06-27 05:22:29 GMT,"Height (m),max preserved ",0.6
+1000021593236085138,{Width__m_}: 2.8,Shawn  Ross,2020-06-27 05:35:00.460 GMT,Shawn  Ross,2020-06-27 05:35:14 GMT,"Width (m),max exterior",2.8
+1000021593236127037,{Width__m_}: .7,Shawn  Ross,2020-06-27 05:35:38.819 GMT,Shawn  Ross,2020-06-27 05:35:53 GMT,"Width (m),interior",0.7
+1000021593236160890,{Length__m_}: 2.2,Shawn  Ross,2020-06-27 05:36:13.826 GMT,Shawn  Ross,2020-06-27 05:36:44 GMT,"Length (m),exterior",2.2
+1000021593236210802,{Length__m_}: 1,Shawn  Ross,2020-06-27 05:36:58.661 GMT,Shawn  Ross,2020-06-27 05:37:08 GMT,"Length (m),interior",1
+1000021593236231917,{Height__m_}: .5,Shawn  Ross,2020-06-27 05:37:24.359 GMT,Shawn  Ross,2020-06-27 05:37:38 GMT,"Height (m),Max preserved",0.5
+1000071593236831928,{Length__m_}: 3.4,Glenn van der Kolk,2020-06-27 05:47:22.395 GMT,Glenn van der Kolk,2020-06-27 05:47:35 GMT,Length (m),3.4
+1000071593236857643,{Width__m_}: 2.8,Glenn van der Kolk,2020-06-27 05:47:44.881 GMT,Glenn van der Kolk,2020-06-27 05:47:57 GMT,Width (m),2.8
+1000021593237566155,{Length__m_}: 1.7,Shawn  Ross,2020-06-27 06:00:38.774 GMT,Shawn  Ross,2020-06-27 06:04:48 GMT,"Length (m),exterior length preserved",1.7
+1000021593237644320,{Width__m_}: 2.3,Shawn  Ross,2020-06-27 06:00:49.291 GMT,Shawn  Ross,2020-06-27 06:03:15 GMT,"Width (m),exterior",2.3
+1000021593237651556,{Height__m_}: .25,Shawn  Ross,2020-06-27 06:00:54.536 GMT,Shawn  Ross,2020-06-27 06:05:43 GMT,"Height (m),Max preserved",0.25
+1000021593237799813,{Width__m_}: 1.2,Shawn  Ross,2020-06-27 06:03:26.746 GMT,Shawn  Ross,2020-06-27 06:03:35 GMT,"Width (m),interior",1.2
+1000021593237891839,{Length__m_}: 1.1,Shawn  Ross,2020-06-27 06:05:14.530 GMT,Shawn  Ross,2020-06-27 06:05:25 GMT,"Length (m),interior",1.1
+1000071593238052976,{Width__m_}: 3.4,Glenn van der Kolk,2020-06-27 06:07:45.145 GMT,Glenn van der Kolk,2020-06-27 06:08:08 GMT,"Width (m),max ext",3.4
+1000071593238090933,{Width__m_}: 1.3,Glenn van der Kolk,2020-06-27 06:08:28.076 GMT,Glenn van der Kolk,2020-06-27 06:08:56 GMT,"Width (m),approx int in situ",1.3
+1000071593238137967,{Length__m_}: 3.2,Glenn van der Kolk,2020-06-27 06:09:16.679 GMT,Glenn van der Kolk,2020-06-27 06:09:29 GMT,"Length (m),max ext",3.2
+1000071593238172523,{Length__m_}: 1.0,Glenn van der Kolk,2020-06-27 06:09:40.488 GMT,Glenn van der Kolk,2020-06-27 06:10:03 GMT,"Length (m),max int",1
+1000071593238218641,{Height__m_}: 0.8,Glenn van der Kolk,2020-06-27 06:10:25.772 GMT,Glenn van der Kolk,2020-06-27 06:10:33 GMT,"Height (m),max preserved height",0.8
+1000021593238316759,{Length__m_}: .35,Shawn  Ross,2020-06-27 06:12:03.761 GMT,Shawn  Ross,2020-06-27 06:12:49 GMT,Length (m),0.35
+1000021593238388972,{Width__m_}: .035,Shawn  Ross,2020-06-27 06:13:20.359 GMT,Shawn  Ross,2020-06-27 06:13:55 GMT,Width (m),".035,3.5cm wide"
+1000071593300476490,{Width__m_}: 2.1,Glenn van der Kolk,2020-06-27 23:28:05.415 GMT,Glenn van der Kolk,2020-06-27 23:28:49 GMT,"Width (m),max ext",2.1
+1000071593300533832,{Width__m_}: 1.0,Glenn van der Kolk,2020-06-27 23:29:05.865 GMT,Glenn van der Kolk,2020-06-27 23:29:05 GMT,"Width (m),max int",1
+1000071593300557972,{Length__m_}: 2.3,Glenn van der Kolk,2020-06-27 23:29:25.897 GMT,Glenn van der Kolk,2020-06-27 23:29:32 GMT,"Length (m),max ext",2.3
+1000041593300583454,{Width__m_}: 3.4,Penny Crook,2020-06-27 23:29:54.623 GMT,Penny Crook,2020-06-27 23:30:02 GMT,Width (m),"3.4,max ext"
+1000071593300581956,{Length__m_}: 0.85,Glenn van der Kolk,2020-06-27 23:29:56.871 GMT,Glenn van der Kolk,2020-06-27 23:29:56 GMT,"Length (m),max int",0.85
+1000071593300610113,{Height__m_}: 0.3,Glenn van der Kolk,2020-06-27 23:30:18.993 GMT,Glenn van der Kolk,2020-06-27 23:30:27 GMT,"Height (m),max preserved",0.3
+1000041593300609498,{Width__m_}: 1.4,Penny Crook,2020-06-27 23:30:20.466 GMT,Penny Crook,2020-06-27 23:30:20 GMT,"Width (m),interior width",1.4
+1000041593300656900,{Length__m_}: 2.2,Penny Crook,2020-06-27 23:31:08.671 GMT,Penny Crook,2020-06-27 23:31:08 GMT,"Length (m),Max exterior",2.2
+1000041593300702193,{Width__m_}: 1.4,Penny Crook,2020-06-27 23:32:01.324 GMT,Penny Crook,2020-06-27 23:32:01 GMT,"Width (m),interior",1.4
+1000041593300735749,{Length__m_}: 2.2,Penny Crook,2020-06-27 23:32:25.190 GMT,Penny Crook,2020-06-27 23:32:25 GMT,"Length (m),max ext",2.2
+1000041593300759984,{Length__m_}: .7,Penny Crook,2020-06-27 23:32:53.388 GMT,Penny Crook,2020-06-27 23:32:53 GMT,"Length (m),interior",0.7
+1000041593300775211,{Height__m_}: .55,Penny Crook,2020-06-27 23:33:04.249 GMT,Penny Crook,2020-06-27 23:33:04 GMT,"Height (m),max preserved",0.55
+1000041593300803551,{Width__m_}: 3.4,Penny Crook,2020-06-27 23:33:31.412 GMT,Penny Crook,2020-06-27 23:33:38 GMT,"Width (m),width of platform",3.4
+1000041593300821863,{Length__m_}: 5.7,Penny Crook,2020-06-27 23:33:48.871 GMT,Penny Crook,2020-06-27 23:34:22 GMT,"Length (m),length of platform",5.7
+1000071593303161611,{Width__m_}: 3.7,Glenn van der Kolk,2020-06-28 00:13:04.799 GMT,Glenn van der Kolk,2020-06-28 00:13:04 GMT,"Width (m),max ext",3.7
+1000071593303194958,{Width__m_}: 1.2,Glenn van der Kolk,2020-06-28 00:13:27.291 GMT,Glenn van der Kolk,2020-06-28 00:13:27 GMT,"Width (m),int max",1.2
+1000071593303213377,{Length__m_}: 3.1,Glenn van der Kolk,2020-06-28 00:13:40.553 GMT,Glenn van der Kolk,2020-06-28 00:13:49 GMT,"Length (m),max ext",3.1
+1000071593303234637,{Length__m_}: 0.7,Glenn van der Kolk,2020-06-28 00:14:03.410 GMT,Glenn van der Kolk,2020-06-28 00:14:10 GMT,"Length (m),max int",0.7
+1000071593303268745,{Height__m_}: 0.9,Glenn van der Kolk,2020-06-28 00:14:42.044 GMT,Glenn van der Kolk,2020-06-28 00:14:42 GMT,"Height (m),max preserved",0.9
+1000061593303386919,{Width__m_}: 3.2,Cass Venn,2020-06-28 00:16:34.234 GMT,Cass Venn,2020-06-28 00:16:34 GMT,Width (m),3.2
+1000061593303397366,{Width__m_}: 1.15,Cass Venn,2020-06-28 00:16:44.554 GMT,Cass Venn,2020-06-28 00:17:07 GMT,"Width (m),interior",1.15
+1000061593303440488,{Length__m_}: 1.7,Cass Venn,2020-06-28 00:17:32.479 GMT,Cass Venn,2020-06-28 00:17:38 GMT,Length (m),1.7
+1000061593303461500,{Length__m_}: 0.7,Cass Venn,2020-06-28 00:17:48.353 GMT,Cass Venn,2020-06-28 00:18:06 GMT,"Length (m),interior",0.7
+1000061593303498038,{Height__m_}: 0.3,Cass Venn,2020-06-28 00:18:25.634 GMT,Cass Venn,2020-06-28 00:19:29 GMT,"Height (m),max pres",0.3
+1000061593303577404,{Length__m_}: 4.1,Cass Venn,2020-06-28 00:20:14.923 GMT,Cass Venn,2020-06-28 00:20:14 GMT,"Length (m),platform",4.1
+1000061593303634562,{Width__m_}: 3.2,Cass Venn,2020-06-28 00:20:41.821 GMT,Cass Venn,2020-06-28 00:20:55 GMT,"Width (m),platform",3.2
+1000061593304650253,{Height__m_}: ,Cass Venn,2020-06-28 00:37:37.360 GMT,Cass Venn,2020-06-28 00:37:37 GMT,Height (m),
+1000061593304998022,{Height__m_}: 1.6,Cass Venn,2020-06-28 00:43:26.992 GMT,Cass Venn,2020-06-28 00:43:28 GMT,Height (m),1.6
+1000061593305030874,{Width__m_}: .27,Cass Venn,2020-06-28 00:43:59.071 GMT,Cass Venn,2020-06-28 00:43:59 GMT,Width (m),0.27
+1000041593305251675,{Height__m_}: 1.55,Penny Crook,2020-06-28 00:47:38.773 GMT,Penny Crook,2020-06-28 00:47:55 GMT,Height (m),1.55
+1000041593305483804,{Height__m_}: 1.55,Penny Crook,2020-06-28 00:51:31.132 GMT,Penny Crook,2020-06-28 00:51:31 GMT,Height (m),1.55
+1000041593305632186,{Height__m_}: 1.5,Penny Crook,2020-06-28 00:54:01.645 GMT,Penny Crook,2020-06-28 00:54:01 GMT,Height (m),1.5
+1000041593305806843,{Length__m_}: 1.5,Penny Crook,2020-06-28 00:56:56.643 GMT,Penny Crook,2020-06-28 00:56:56 GMT,Length (m),1.5
+1000041593305845964,{Width__m_}: .27,Penny Crook,2020-06-28 00:57:36.415 GMT,Penny Crook,2020-06-28 00:57:36 GMT,Width (m),0.27
+1000071593306015159,{Height__m_}: 0.9,Glenn van der Kolk,2020-06-28 01:00:27.661 GMT,Glenn van der Kolk,2020-06-28 01:00:36 GMT,"Height (m),max preserved",0.9
+1000071593306046943,{Width__m_}: 3.7,Glenn van der Kolk,2020-06-28 01:00:54.435 GMT,Glenn van der Kolk,2020-06-28 01:02:00 GMT,"Width (m),max ext",3.7
+1000071593306133954,{Width__m_}: 1.3,Glenn van der Kolk,2020-06-28 01:02:26.655 GMT,Glenn van der Kolk,2020-06-28 01:02:26 GMT,"Width (m),max int",1.3
+1000071593306177659,{Length__m_}: 2.7,Glenn van der Kolk,2020-06-28 01:03:08.079 GMT,Glenn van der Kolk,2020-06-28 01:03:08 GMT,"Length (m),max ext",2.7
+1000071593306195315,{Length__m_}: 0.8,Glenn van der Kolk,2020-06-28 01:03:26.718 GMT,Glenn van der Kolk,2020-06-28 01:03:26 GMT,"Length (m),estimate internal",0.8
+1000041593306692324,{Diameter__m_}: 5,Penny Crook,2020-06-28 01:11:39.836 GMT,Penny Crook,2020-06-28 01:12:30 GMT,Diameter (m),5
+1000041593307122897,{Diameter__m_}: 3,Penny Crook,2020-06-28 01:18:49.971 GMT,Penny Crook,2020-06-28 01:18:54 GMT,Diameter (m),3
+1000071593308266567,{Width__m_}: 2.5,Glenn van der Kolk,2020-06-28 01:37:58.045 GMT,Glenn van der Kolk,2020-06-28 01:37:58 GMT,"Width (m),max ext",2.5
+1000071593308281869,{Width__m_}: 1.0,Glenn van der Kolk,2020-06-28 01:38:15.543 GMT,Glenn van der Kolk,2020-06-28 01:38:15 GMT,"Width (m),int estimate",1
+1000071593308325341,{Length__m_}: 3.0,Glenn van der Kolk,2020-06-28 01:38:55.271 GMT,Glenn van der Kolk,2020-06-28 01:38:55 GMT,"Length (m),maxext",3
+1000071593308358545,{Height__m_}: 0.4,Glenn van der Kolk,2020-06-28 01:39:25.795 GMT,Glenn van der Kolk,2020-06-28 01:39:45 GMT,"Height (m),max preserved estimate",0.4
+1000071593308394134,: ,Glenn van der Kolk,2020-06-28 01:40:01.470 GMT,Glenn van der Kolk,2020-06-28 01:40:01 GMT,,
+1000041593310433275,{Width__m_}: .85,Penny Crook,2020-06-28 02:14:00.563 GMT,Penny Crook,2020-06-28 02:14:00 GMT,Width (m),0.85
+1000041593310442584,{Width__m_}: .6,Penny Crook,2020-06-28 02:15:51.897 GMT,Penny Crook,2020-06-28 02:16:52 GMT,"Width (m),at least",0.6
+1000041593313379985,{Width__m_}: 4.5,Penny Crook,2020-06-28 03:03:06.921 GMT,Penny Crook,2020-06-28 03:04:55 GMT,"Width (m),Max exterior with",4.5
+1000041593313524767,{Width__m_}: 1.5,Penny Crook,2020-06-28 03:05:36.016 GMT,Penny Crook,2020-06-28 03:05:36 GMT,"Width (m),interior",1.5
+1000041593313538562,{Length__m_}: 2.8,Penny Crook,2020-06-28 03:05:49.192 GMT,Penny Crook,2020-06-28 03:05:49 GMT,"Length (m),Max exterior",2.8
+1000041593313558159,{Length__m_}: 1.7,Penny Crook,2020-06-28 03:06:11.194 GMT,Penny Crook,2020-06-28 03:06:11 GMT,"Length (m),interior lengt",1.7
+1000041593313593176,{Height__m_}: 1.4,Penny Crook,2020-06-28 03:06:39.866 GMT,Penny Crook,2020-06-28 03:06:51 GMT,"Height (m),Max preserved",1.4
+1000041593315686345,{Length__m_}: 2.7,Penny Crook,2020-06-28 03:41:39.450 GMT,Penny Crook,2020-06-28 03:41:39 GMT,"Length (m),max exterior",2.7
+1000041593315722437,{Length__m_}: 0.7,Penny Crook,2020-06-28 03:42:14.206 GMT,Penny Crook,2020-06-28 03:42:14 GMT,"Length (m),length of actual structure",0.7
+1000041593315835019,{Width__m_}: 3.8,Penny Crook,2020-06-28 03:44:04.847 GMT,Penny Crook,2020-06-28 03:44:04 GMT,"Width (m),Max exterior of Eastern wall
+",3.8
+1000041593315906240,{Width__m_}: 1.1,Penny Crook,2020-06-28 03:45:13.228 GMT,Penny Crook,2020-06-28 03:45:21 GMT,"Width (m),width of oven",1.1
+1000041593315936911,{Height__m_}: 1.1,Penny Crook,2020-06-28 03:45:48.224 GMT,Penny Crook,2020-06-28 03:46:01 GMT,"Height (m),Max preserved",1.1
+1000041593318981131,{Length__m_}: 16.1,Penny Crook,2020-06-28 04:36:31.892 GMT,Penny Crook,2020-06-28 04:36:41 GMT,Length (m),16.1
+1000041593319003854,{Width__m_}: 6.5,Penny Crook,2020-06-28 04:36:47.124 GMT,Penny Crook,2020-06-28 04:39:02 GMT,Width (m),6.5
+1000041593319191777,{Height__m_}: .3,Penny Crook,2020-06-28 04:40:00.947 GMT,Penny Crook,2020-06-28 04:40:00 GMT,"Height (m),est height of cut on South side",0.3
+1000041593321869759,{Length__m_}: 10,Penny Crook,2020-06-28 05:24:36.305 GMT,Penny Crook,2020-06-28 05:28:55 GMT,Length (m),10
+1000071593321871366,{Width__m_}: 2.2,Glenn van der Kolk,2020-06-28 05:24:42.818 GMT,Glenn van der Kolk,2020-06-28 05:24:42 GMT,"Width (m),max ext",2.2
+1000071593321889020,{Length__m_}: 2.0,Glenn van der Kolk,2020-06-28 05:25:04.265 GMT,Glenn van der Kolk,2020-06-28 05:25:04 GMT,"Length (m),max ext",2
+1000071593321919745,{Height__m_}: 0.2,Glenn van der Kolk,2020-06-28 05:25:27.717 GMT,Glenn van der Kolk,2020-06-28 05:25:42 GMT,"Height (m),ax preserved",0.2
+1000041593322137860,{Width__m_}: 4,Penny Crook,2020-06-28 05:29:03.322 GMT,Penny Crook,2020-06-28 05:29:03 GMT,Width (m),4
+1000061593386171104,{Width__m_}: 3.5,Cass Venn,2020-06-28 23:16:23.956 GMT,Cass Venn,2020-06-28 23:17:58 GMT,"Width (m),external",3.5
+1000061593386190552,{Width__m_}: 1.9,Cass Venn,2020-06-28 23:16:37.560 GMT,Cass Venn,2020-06-28 23:21:13 GMT,"Width (m),in situ external",1.9
+1000061593386222755,{Width__m_}: 1.3,Cass Venn,2020-06-28 23:17:10.376 GMT,Cass Venn,2020-06-28 23:21:20 GMT,"Width (m),internal",1.3
+1000061593386232710,{Length__m_}: 2.4,Cass Venn,2020-06-28 23:17:20.556 GMT,Cass Venn,2020-06-28 23:21:28 GMT,"Length (m),external",2.4
+1000061593386242611,{Length__m_}: 1.1,Cass Venn,2020-06-28 23:17:31.293 GMT,Cass Venn,2020-06-28 23:21:34 GMT,"Length (m),internal",1.1
+1000061593386633103,{Height__m_}: 0.5,Cass Venn,2020-06-28 23:24:00.102 GMT,Cass Venn,2020-06-28 23:24:27 GMT,"Height (m),max pres",0.5
+1000061593386946118,{Width__m_}: 2.7,Cass Venn,2020-06-28 23:29:19.535 GMT,Cass Venn,2020-06-28 23:29:19 GMT,"Width (m),platform",2.7
+1000061593386962655,{Length__m_}: ,Cass Venn,2020-06-28 23:29:29.444 GMT,Cass Venn,2020-06-28 23:29:29 GMT,"Length (m),platform",
+1000021593387830275,{Diameter__m_}: 20,Shawn  Ross,2020-06-28 23:44:00.931 GMT,Shawn  Ross,2020-06-28 23:46:08 GMT,Diameter (m),20
+1000021593388113944,{Diameter__m_}: 15,Shawn  Ross,2020-06-28 23:48:43.231 GMT,Shawn  Ross,2020-06-28 23:52:24 GMT,Diameter (m),15
+1000061593389154781,{Length__m_}: 8,Cass Venn,2020-06-29 00:06:03.080 GMT,Cass Venn,2020-06-29 00:06:03 GMT,"Length (m),e-w",8
+1000061593389309624,{Width__m_}: 2,Cass Venn,2020-06-29 00:08:41.279 GMT,Cass Venn,2020-06-29 00:08:48 GMT,"Width (m),n-s",2
+1000061593390399867,{Length__m_}: 10,Cass Venn,2020-06-29 00:26:46.769 GMT,Cass Venn,2020-06-29 00:26:46 GMT,Length (m),10
+1000061593390408359,{Width__m_}: 10,Cass Venn,2020-06-29 00:26:54.150 GMT,Cass Venn,2020-06-29 00:26:54 GMT,Width (m),10
+1000061593392153384,{Length__m_}: 3,Cass Venn,2020-06-29 00:56:04.057 GMT,Cass Venn,2020-06-29 00:58:47 GMT,Length (m),3
+1000061593392168954,{Height__m_}: 0.6,Cass Venn,2020-06-29 00:56:21.607 GMT,Cass Venn,2020-06-29 00:59:59 GMT,"Height (m),max preserved",0.6
+1000061593392191276,{Height__m_}: 1.5,Cass Venn,2020-06-29 00:56:43.221 GMT,Cass Venn,2020-06-29 01:00:13 GMT,"Height (m),est. original",1.5
+1000061593392218338,{Length__m_}: 0.9,Cass Venn,2020-06-29 00:57:06.244 GMT,Cass Venn,2020-06-29 00:59:51 GMT,"Length (m),in situ external",0.9
+1000061593392234716,{Width__m_}: 1.3,Cass Venn,2020-06-29 00:57:22.993 GMT,Cass Venn,2020-06-29 00:59:45 GMT,"Width (m),in situ external",1.3
+1000061593392253401,{Width__m_}: 2.8,Cass Venn,2020-06-29 00:57:40.013 GMT,Cass Venn,2020-06-29 00:59:02 GMT,Width (m),2.8
+1000061593393312678,{Width__m_}: 2.8,Cass Venn,2020-06-29 01:15:17.600 GMT,Cass Venn,2020-06-29 01:21:53 GMT,Width (m),2.8
+1000061593393319602,{Length__m_}: 3.2,Cass Venn,2020-06-29 01:15:23.301 GMT,Cass Venn,2020-06-29 01:22:04 GMT,Length (m),3.2
+1000061593393325462,{Height__m_}: 0.3,Cass Venn,2020-06-29 01:15:32.094 GMT,Cass Venn,2020-06-29 01:22:34 GMT,"Height (m),max pres",0.3
+1000061593393354738,{Width__m_}: 2.3,Cass Venn,2020-06-29 01:16:03.353 GMT,Cass Venn,2020-06-29 01:23:04 GMT,"Width (m),platform",2.3
+1000061593393366862,{Length__m_}: 3.4,Cass Venn,2020-06-29 01:16:14.964 GMT,Cass Venn,2020-06-29 01:22:54 GMT,"Length (m),platform",3.4
+1000061593393378648,{Height__m_}: 0.3,Cass Venn,2020-06-29 01:16:26.365 GMT,Cass Venn,2020-06-29 01:23:22 GMT,"Height (m),cut",0.3
+1000061593394377061,{Length__m_}: 2.5,Cass Venn,2020-06-29 01:33:02.065 GMT,Cass Venn,2020-06-29 01:47:40 GMT,Length (m),2.5
+1000061593394383923,{Width__m_}: 4.5,Cass Venn,2020-06-29 01:33:06.649 GMT,Cass Venn,2020-06-29 01:46:53 GMT,Width (m),4.5
+1000061593394388516,{Height__m_}: 1,Cass Venn,2020-06-29 01:33:16.010 GMT,Cass Venn,2020-06-29 01:48:00 GMT,"Height (m),max pres",1
+1000061593394400739,{Length__m_}: 5,Cass Venn,2020-06-29 01:33:28.077 GMT,Cass Venn,2020-06-29 01:50:22 GMT,"Length (m),platform",5
+1000061593394412420,{Width__m_}: 3.2,Cass Venn,2020-06-29 01:33:39.659 GMT,Cass Venn,2020-06-29 01:50:10 GMT,"Width (m),platform",3.2
+1000061593395223108,{Width__m_}: 1.1,Cass Venn,2020-06-29 01:47:15.619 GMT,Cass Venn,2020-06-29 01:47:15 GMT,"Width (m),interior",1.1
+1000061593395238752,{Length__m_}: 0.7,Cass Venn,2020-06-29 01:47:26.174 GMT,Cass Venn,2020-06-29 01:47:49 GMT,"Length (m),interior",0.7
+1000061593395590023,{Length__m_}: 0.8,Cass Venn,2020-06-29 01:53:15.218 GMT,Cass Venn,2020-06-29 01:54:45 GMT,Length (m),0.8
+1000061593395596880,{Width__m_}: 0.9,Cass Venn,2020-06-29 01:53:19.358 GMT,Cass Venn,2020-06-29 01:54:34 GMT,Width (m),0.9
+1000061593395601903,{Length__m_}: 0.6,Cass Venn,2020-06-29 01:53:30.187 GMT,Cass Venn,2020-06-29 01:54:53 GMT,"Length (m),interior",0.6
+1000061593395612482,{Width__m_}: 0.35,Cass Venn,2020-06-29 01:53:39.668 GMT,Cass Venn,2020-06-29 01:54:59 GMT,"Width (m),interior",0.35
+1000061593395624183,{Height__m_}: 0.65,Cass Venn,2020-06-29 01:53:51.437 GMT,Cass Venn,2020-06-29 01:55:06 GMT,"Height (m),max preserved",0.65
+1000061593396947186,{Length__m_}: 2,Cass Venn,2020-06-29 02:15:49.951 GMT,Cass Venn,2020-06-29 02:26:26 GMT,Length (m),2
+1000061593396951881,{Width__m_}: 2.4,Cass Venn,2020-06-29 02:15:54.454 GMT,Cass Venn,2020-06-29 02:26:09 GMT,Width (m),2.4
+1000061593396956815,{Height__m_}: 1.6,Cass Venn,2020-06-29 02:16:03.826 GMT,Cass Venn,2020-06-29 02:27:13 GMT,"Height (m),Max pres",1.6
+1000061593396972273,{Length__m_}: 1.5,Cass Venn,2020-06-29 02:16:19.372 GMT,Cass Venn,2020-06-29 02:26:45 GMT,"Length (m),interior",1.5
+1000061593396984779,{Width__m_}: 1.8,Cass Venn,2020-06-29 02:16:32.732 GMT,Cass Venn,2020-06-29 02:26:38 GMT,"Width (m),max pres",1.8
+1000061593396997767,{Width__m_}: 3.6,Cass Venn,2020-06-29 02:16:58.990 GMT,Cass Venn,2020-06-29 02:24:52 GMT,"Width (m),platform",3.6
+1000061593397021115,{Length__m_}: 8.9,Cass Venn,2020-06-29 02:17:08.227 GMT,Cass Venn,2020-06-29 02:23:44 GMT,"Length (m),platform",8.9
+1000021593400389805,{Height__m_}: 0.16,Shawn  Ross,2020-06-29 03:13:20.531 GMT,Shawn  Ross,2020-06-29 03:13:20 GMT,Height (m),0.16
+1000021593400402675,{Diameter__m_}: 0.21,Shawn  Ross,2020-06-29 03:13:32.842 GMT,Shawn  Ross,2020-06-29 03:21:52 GMT,"Diameter (m),base",0.21
+1000021593400424326,{Diameter__m_}: 0.23,Shawn  Ross,2020-06-29 03:13:53.420 GMT,Shawn  Ross,2020-06-29 03:14:25 GMT,"Diameter (m),rim, est",0.23
+1000061593400546856,{Height__m_}: 1.55,Cass Venn,2020-06-29 03:15:56.904 GMT,Cass Venn,2020-06-29 03:16:40 GMT,"Height (m),post",1.55
+1000061593400561832,{Diameter__m_}: 0.18,Cass Venn,2020-06-29 03:16:12.245 GMT,Cass Venn,2020-06-29 03:16:33 GMT,"Diameter (m),post",0.18
+1000061593400711562,{Length__m_}: 0.9,Cass Venn,2020-06-29 03:18:39.077 GMT,Cass Venn,2020-06-29 03:18:39 GMT,Length (m),0.9
+1000061593400720763,{Width__m_}: 1,Cass Venn,2020-06-29 03:18:46.532 GMT,Cass Venn,2020-06-29 03:18:46 GMT,Width (m),1
+1000061593402802662,{Length__m_}: 1.6,Cass Venn,2020-06-29 03:53:26.661 GMT,Cass Venn,2020-06-29 03:56:38 GMT,Length (m),1.6
+1000061593402808062,{Width__m_}: 2.3,Cass Venn,2020-06-29 03:53:30.310 GMT,Cass Venn,2020-06-29 03:56:28 GMT,Width (m),2.3
+1000061593402812857,{Height__m_}: 0.4,Cass Venn,2020-06-29 03:53:39.574 GMT,Cass Venn,2020-06-29 03:59:09 GMT,"Height (m),Max pres",0.4
+1000061593402830545,{Length__m_}: 2.6,Cass Venn,2020-06-29 03:53:58.553 GMT,Cass Venn,2020-06-29 03:57:00 GMT,"Length (m),platform",2.6
+1000061593403022586,{Width__m_}: 4.4,Cass Venn,2020-06-29 03:57:10.876 GMT,Cass Venn,2020-06-29 03:57:16 GMT,"Width (m),platform",4.4
+1000061593403039743,{Width__m_}: 1,Cass Venn,2020-06-29 03:57:34.995 GMT,Cass Venn,2020-06-29 03:58:15 GMT,"Width (m),external insitu",1
+1000061593403065967,{Length__m_}: 0.6,Cass Venn,2020-06-29 03:57:53.009 GMT,Cass Venn,2020-06-29 03:58:24 GMT,"Length (m),external insitu",0.6
+1000061593403107205,{Length__m_}: 1.7,Cass Venn,2020-06-29 03:58:35.877 GMT,Cass Venn,2020-06-29 03:59:00 GMT,"Length (m),max observed east side",1.7
+1000061593403413036,{Height__m_}: 1.5,Cass Venn,2020-06-29 04:03:38.833 GMT,Cass Venn,2020-06-29 04:03:38 GMT,Height (m),1.5
+1000061593403478082,{Width__m_}: 0.22,Cass Venn,2020-06-29 04:04:56.717 GMT,Cass Venn,2020-06-29 04:04:56 GMT,Width (m),0.22
+1000061593403537944,{Width__m_}: 0.19,Cass Venn,2020-06-29 04:05:49.437 GMT,Cass Venn,2020-06-29 04:05:49 GMT,Width (m),0.19
+1000061593403563744,{Height__m_}: 1.45,Cass Venn,2020-06-29 04:06:14.032 GMT,Cass Venn,2020-06-29 04:06:20 GMT,Height (m),1.45
+1000061593403835605,{Width__m_}: 0.23,Cass Venn,2020-06-29 04:10:42.119 GMT,Cass Venn,2020-06-29 04:10:42 GMT,Width (m),0.23
+1000061593403843807,{Length__m_}: 1.35,Cass Venn,2020-06-29 04:10:52.969 GMT,Cass Venn,2020-06-29 04:10:52 GMT,Length (m),1.35
+1000061593405304557,{Width__m_}: 0.23,Cass Venn,2020-06-29 04:35:11.152 GMT,Cass Venn,2020-06-29 04:35:11 GMT,Width (m),0.23
+1000061593405313198,{Height__m_}: 1.05,Cass Venn,2020-06-29 04:35:23.361 GMT,Cass Venn,2020-06-29 04:35:23 GMT,Height (m),1.05
+1000061593405396531,{Width__m_}: 3.5,Cass Venn,2020-06-29 04:36:38.932 GMT,Cass Venn,2020-06-29 04:43:44 GMT,Width (m),3.5
+1000061593405402341,{Width__m_}: 2.1,Cass Venn,2020-06-29 04:36:49.685 GMT,Cass Venn,2020-06-29 04:44:02 GMT,"Width (m),external in situ",2.1
+1000061593405423950,{Width__m_}: 1.5,Cass Venn,2020-06-29 04:37:10.731 GMT,Cass Venn,2020-06-29 04:44:07 GMT,"Width (m),internal",1.5
+1000061593405435549,{Length__m_}: 1.8,Cass Venn,2020-06-29 04:37:18.440 GMT,Cass Venn,2020-06-29 04:44:24 GMT,Length (m),1.8
+1000061593405440805,{Length__m_}: 1.4,Cass Venn,2020-06-29 04:37:30.533 GMT,Cass Venn,2020-06-29 04:44:34 GMT,"Length (m),in situ external",1.4
+1000061593405461928,{Length__m_}: 1.1,Cass Venn,2020-06-29 04:37:48.953 GMT,Cass Venn,2020-06-29 04:44:41 GMT,"Length (m),internal",1.1
+1000061593405470837,{Height__m_}: 0.65,Cass Venn,2020-06-29 04:37:57.314 GMT,Cass Venn,2020-06-29 04:44:55 GMT,"Height (m),max pres",0.65
+1000061593405703880,{Length__m_}: 4.5,Cass Venn,2020-06-29 04:41:51.643 GMT,Cass Venn,2020-06-29 04:42:45 GMT,"Length (m),platform",4.5
+1000061593405713730,{Width__m_}: 3.2,Cass Venn,2020-06-29 04:42:00.749 GMT,Cass Venn,2020-06-29 04:43:16 GMT,"Width (m),platform",3.2
+1000061593406295954,{Height__m_}: 1.4,Cass Venn,2020-06-29 04:51:40.888 GMT,Cass Venn,2020-06-29 04:51:40 GMT,Height (m),1.4
+1000061593406302389,{Width__m_}: 0.23,Cass Venn,2020-06-29 04:51:48.960 GMT,Cass Venn,2020-06-29 04:51:48 GMT,Width (m),0.23
+1000061593407064159,{Width__m_}: 2,Cass Venn,2020-06-29 05:04:33.295 GMT,Cass Venn,2020-06-29 05:04:41 GMT,"Width (m),external",2
+1000061593407082721,{Width__m_}: 0.8,Cass Venn,2020-06-29 05:04:53.063 GMT,Cass Venn,2020-06-29 05:04:53 GMT,"Width (m),internal",0.8
+1000061593407095204,{Length__m_}: 1.4,Cass Venn,2020-06-29 05:05:05.803 GMT,Cass Venn,2020-06-29 05:05:07 GMT,"Length (m),external",1.4
+1000061593407109368,{Length__m_}: 0.7,Cass Venn,2020-06-29 05:05:17.168 GMT,Cass Venn,2020-06-29 05:05:20 GMT,"Length (m),internal",0.7
+1000061593407121828,{Height__m_}: 0.9,Cass Venn,2020-06-29 05:05:28.342 GMT,Cass Venn,2020-06-29 05:05:32 GMT,"Height (m),max preserved",0.9
+1000061593407134069,{Length__m_}: 3.7,Cass Venn,2020-06-29 05:05:46.141 GMT,Cass Venn,2020-06-29 05:05:46 GMT,"Length (m),platform",3.7
+1000061593407148186,{Width__m_}: 2.5,Cass Venn,2020-06-29 05:05:59.993 GMT,Cass Venn,2020-06-29 05:06:13 GMT,"Width (m),platform",2.5
+1000061593407346100,{Width__m_}: 2.7,Cass Venn,2020-06-29 05:09:12.403 GMT,Cass Venn,2020-06-29 05:09:12 GMT,Width (m),2.7
+1000061593407365705,{Length__m_}: 4.1,Cass Venn,2020-06-29 05:09:31.751 GMT,Cass Venn,2020-06-29 05:09:31 GMT,Length (m),4.1
+1000041607125621584,Interior Width (m): 1.38,Penny Crook,2020-12-04 23:47:01.584 GMT,Penny Crook,2020-12-04 23:47:01 GMT,"Interior Width (m),Hearth ",1.38
+1000041607125634727,Interior Length (m): 1,Penny Crook,2020-12-04 23:47:14.727 GMT,Penny Crook,2020-12-04 23:47:14 GMT,"Interior Length (m),Hearth ",1
+1000041607125678802,Exterior Length (m): 2.3,Penny Crook,2020-12-04 23:47:58.802 GMT,Penny Crook,2020-12-04 23:47:58 GMT,Exterior Length (m),2.3
+1000041607125686970,Exterior Width (m): 4.1,Penny Crook,2020-12-04 23:48:06.970 GMT,Penny Crook,2020-12-04 23:48:06 GMT,Exterior Width (m),4.1
+1000041607125709488,Max preserved Height (m): .4,Penny Crook,2020-12-04 23:48:29.488 GMT,Penny Crook,2020-12-04 23:48:29 GMT,Max preserved Height (m),0.4
+1000041607128310967,Interior Width (m): 1.25,Penny Crook,2020-12-05 00:31:50.967 GMT,Penny Crook,2020-12-05 00:31:50 GMT,"Interior Width (m),Hearth ",1.25
+1000041607128321499,Interior Length (m): 1.4,Penny Crook,2020-12-05 00:32:01.499 GMT,Penny Crook,2020-12-05 00:32:01 GMT,"Interior Length (m),Hearth ",1.4
+1000041607128375191,Exterior Length (m): 2.7,Penny Crook,2020-12-05 00:32:55.192 GMT,Penny Crook,2020-12-05 00:32:55 GMT,"Exterior Length (m),Hearth /rockfall ",2.7
+1000041607128388918,Interior Width (m): 4.3,Penny Crook,2020-12-05 00:33:08.919 GMT,Penny Crook,2020-12-05 00:33:08 GMT,"Interior Width (m),Hearth /rockfall ",4.3
+1000041607128407720,Max preserved Height (m): 1.2,Penny Crook,2020-12-05 00:33:27.720 GMT,Penny Crook,2020-12-05 00:33:27 GMT,Max preserved Height (m),1.2
+1000041607128432614,{Width__m_}: .35,Penny Crook,2020-12-05 00:33:52.614 GMT,Penny Crook,2020-12-05 00:34:00 GMT,"Width (m),Wall thickness ",0.35
+1000041607129219422,{Height__m_}: 25,Penny Crook,2020-12-05 00:46:59.422 GMT,Penny Crook,2020-12-05 00:46:59 GMT,"Height (m),Platform is built up appropriately 20-30cm at western end. ",25
+1000041607129243261,{Width__m_}: 3.2,Penny Crook,2020-12-05 00:47:23.261 GMT,Penny Crook,2020-12-05 00:47:23 GMT,"Width (m),Platform ",3.2
+1000041607129250654,{Length__m_}: 4,Penny Crook,2020-12-05 00:47:30.654 GMT,Penny Crook,2020-12-05 00:47:40 GMT,"Length (m),Platform ",4
+1000041607129272789,Exterior Length (m): 3,Penny Crook,2020-12-05 00:47:52.789 GMT,Penny Crook,2020-12-05 00:47:52 GMT,"Exterior Length (m),Hearth ",3
+1000041607129283591,Exterior Width (m): 3.6,Penny Crook,2020-12-05 00:48:03.592 GMT,Penny Crook,2020-12-05 00:48:03 GMT,"Exterior Width (m),Hearth ",3.6
+1000041607129312342,Max preserved Height (m): .9,Penny Crook,2020-12-05 00:48:32.342 GMT,Penny Crook,2020-12-05 00:48:32 GMT,"Max preserved Height (m),Hearth ",0.9
+1000041607129817137,{Length__m_}: 2.1,Penny Crook,2020-12-05 00:56:57.138 GMT,Penny Crook,2020-12-05 00:56:57 GMT,Length (m),2.1
+1000041607129823331,{Width__m_}: .8,Penny Crook,2020-12-05 00:57:03.331 GMT,Penny Crook,2020-12-05 00:57:03 GMT,Width (m),0.8
+1000041607129993302,{Depth__m_}: .15,Penny Crook,2020-12-05 00:59:53.302 GMT,Penny Crook,2020-12-05 00:59:53 GMT,Depth (m),0.15
+1000041607130932675,{Length__m_}: 2,Penny Crook,2020-12-05 01:15:32.675 GMT,Penny Crook,2020-12-05 01:15:32 GMT,Length (m),2
+1000041607130938592,{Width__m_}: 1.4,Penny Crook,2020-12-05 01:15:38.592 GMT,Penny Crook,2020-12-05 01:15:38 GMT,Width (m),1.4
+1000041607131513067,{Length__m_}: 1,Penny Crook,2020-12-05 01:25:13.067 GMT,Penny Crook,2020-12-05 01:25:33 GMT,Length (m),1
+1000041607131519247,{Width__m_}: 1,Penny Crook,2020-12-05 01:25:19.247 GMT,Penny Crook,2020-12-05 01:25:26 GMT,Width (m),1
+1000041607214228293,Interior Width (m): .86,Penny Crook,2020-12-06 00:23:48.294 GMT,Penny Crook,2020-12-06 00:23:48 GMT,Interior Width (m),0.86
+1000041607214254731,Interior Length (m): .45,Penny Crook,2020-12-06 00:24:14.731 GMT,Penny Crook,2020-12-06 00:24:14 GMT,Interior Length (m),0.45
+1000041607214326854,Exterior Width (m): 2.58,Penny Crook,2020-12-06 00:25:26.854 GMT,Penny Crook,2020-12-06 00:25:26 GMT,Exterior Width (m),2.58
+1000041607214376122,{Width__m_}: 4.6,Penny Crook,2020-12-06 00:26:16.122 GMT,Penny Crook,2020-12-06 00:26:44 GMT,"Width (m),Platform ","4.6,Estimate platform width "
+1000041607214423756,Exterior Length (m): 1.80,Penny Crook,2020-12-06 00:27:03.756 GMT,Penny Crook,2020-12-06 00:27:03 GMT,Exterior Length (m),1.8
+1000041607214455062,Max preserved Height (m): 1.6,Penny Crook,2020-12-06 00:27:35.063 GMT,Penny Crook,2020-12-06 00:27:35 GMT,Max preserved Height (m),1.6
+1000051607214477182,Max preserved Height (m): 700,Bec Parkes,2020-12-06 00:27:57.182 GMT,Bec Parkes,2020-12-06 00:27:57 GMT,Max preserved Height (m),700
+1000051607214495710,{Length__m_}: 7000,Bec Parkes,2020-12-06 00:28:15.710 GMT,Bec Parkes,2020-12-06 00:28:15 GMT,Length (m),7000
+1000041607214526035,{Length__m_}: 6.64,Penny Crook,2020-12-06 00:28:46.036 GMT,Penny Crook,2020-12-06 00:28:46 GMT,"Length (m),Estimate platform length 6.64",6.64
+1000051607214527794,{Width__m_}: 3850,Bec Parkes,2020-12-06 00:28:47.794 GMT,Bec Parkes,2020-12-06 00:28:47 GMT,Width (m),3850
+1000051607214560444,Exterior Width (m): 1700,Bec Parkes,2020-12-06 00:29:20.445 GMT,Bec Parkes,2020-12-06 00:29:20 GMT,"Exterior Width (m),hearth",1700
+1000051607214622882,Exterior Length (m): 760,Bec Parkes,2020-12-06 00:30:22.882 GMT,Bec Parkes,2020-12-06 00:30:22 GMT,"Exterior Length (m),hearth",760
+1000051607214747876,Interior Length (m): 830,Bec Parkes,2020-12-06 00:32:27.877 GMT,Bec Parkes,2020-12-06 00:32:27 GMT,"Interior Length (m),hearth",830
+1000051607214762420,Interior Hearth Width (m): 1240,Bec Parkes,2020-12-06 00:32:42.420 GMT,Bec Parkes,2020-12-06 00:32:42 GMT,Interior Hearth Width (m),1240
+1000051607214780828,Interior Width (m): 2930,Bec Parkes,2020-12-06 00:33:00.828 GMT,Bec Parkes,2020-12-06 00:33:00 GMT,"Interior Width (m),building",2930
+1000051607215192375,{Length__m_}: 1200,Bec Parkes,2020-12-06 00:39:52.375 GMT,Bec Parkes,2020-12-06 00:39:52 GMT,"Length (m),length east-west",1200
+1000051607215202463,{Width__m_}: 800,Bec Parkes,2020-12-06 00:40:02.463 GMT,Bec Parkes,2020-12-06 00:40:02 GMT,Width (m),800
+1000051607215259740,{Depth__m_}: 250,Bec Parkes,2020-12-06 00:40:59.742 GMT,Bec Parkes,2020-12-06 00:40:59 GMT,"Depth (m),minimum depth",250
+1000051607215952404,{Width__m_}: 1480,Bec Parkes,2020-12-06 00:52:32.404 GMT,Bec Parkes,2020-12-06 00:52:32 GMT,Width (m),"1480,north-south"
+1000051607215960993,{Width__m_}: 140,Bec Parkes,2020-12-06 00:52:40.994 GMT,Bec Parkes,2020-12-06 00:52:40 GMT,Width (m),140
+1000051607215971719,{Depth__m_}: 700,Bec Parkes,2020-12-06 00:52:51.720 GMT,Bec Parkes,2020-12-06 00:52:51 GMT,Depth (m),"700,maximum"
+1000051607216595412,{Length__m_}: 10,Bec Parkes,2020-12-06 01:03:15.413 GMT,Bec Parkes,2020-12-06 01:03:15 GMT,Length (m),"10,m"
+1000051607216603708,{Width__m_}: 5,Bec Parkes,2020-12-06 01:03:23.709 GMT,Bec Parkes,2020-12-06 01:05:16 GMT,Width (m),"5,m"
+1000051607217061271,{Height__m_}: 15,Bec Parkes,2020-12-06 01:11:01.272 GMT,Bec Parkes,2020-12-06 01:11:01 GMT,"Height (m),approximate height of platform","15,cm"
+1000051607217258187,{Width__m_}: 4.7,Bec Parkes,2020-12-06 01:14:18.189 GMT,Bec Parkes,2020-12-06 01:14:52 GMT,"Width (m),platform","4.7,mm"
+1000051607217316969,{Length__m_}: 5,Bec Parkes,2020-12-06 01:15:16.970 GMT,Bec Parkes,2020-12-06 01:15:16 GMT,"Length (m),platform","5,m"
+1000051607217338453,Max preserved Height (m): .78,Bec Parkes,2020-12-06 01:15:38.453 GMT,Bec Parkes,2020-12-06 01:15:38 GMT,"Max preserved Height (m),hearth",0.78
+1000051607217420391,Exterior Width (m): 1.88,Bec Parkes,2020-12-06 01:17:00.391 GMT,Bec Parkes,2020-12-06 01:17:00 GMT,"Exterior Width (m),insitu hearth",1.88
+1000051607217439125,Interior Width (m): 1.25,Bec Parkes,2020-12-06 01:17:19.125 GMT,Bec Parkes,2020-12-06 01:17:19 GMT,"Interior Width (m),hearth",1.25
+1000051607217485998,Exterior Length (m): 1.45,Bec Parkes,2020-12-06 01:18:05.998 GMT,Bec Parkes,2020-12-06 01:18:05 GMT,"Exterior Length (m),insitu hearth",1.45
+1000051607217497372,Interior Length (m): 1.2,Bec Parkes,2020-12-06 01:18:17.373 GMT,Bec Parkes,2020-12-06 01:18:17 GMT,"Interior Length (m),hearth",1.2
+1000041607217553303,{Length__m_}: 1.5,Penny Crook,2020-12-06 01:19:13.303 GMT,Penny Crook,2020-12-06 01:19:13 GMT,Length (m),1.5
+1000041607217559511,{Width__m_}: 1.2,Penny Crook,2020-12-06 01:19:19.511 GMT,Penny Crook,2020-12-06 01:19:19 GMT,Width (m),1.2
+1000041607218354686,Interior Width (m): 1.5,Penny Crook,2020-12-06 01:32:34.686 GMT,Penny Crook,2020-12-06 01:32:34 GMT,Interior Width (m),1.5
+1000041607218371182,Exterior Width (m): 2.15,Penny Crook,2020-12-06 01:32:51.182 GMT,Penny Crook,2020-12-06 01:32:51 GMT,Exterior Width (m),2.15
+1000051607218388901,{Height__m_}: 2,Bec Parkes,2020-12-06 01:33:08.901 GMT,Bec Parkes,2020-12-06 01:33:08 GMT,"Height (m),abutment","2,at least"
+1000041607218416266,Interior Length (m): 1.2,Penny Crook,2020-12-06 01:33:36.266 GMT,Penny Crook,2020-12-06 01:33:36 GMT,Interior Length (m),1.2
+1000041607218427969,Exterior Length (m): 1.9,Penny Crook,2020-12-06 01:33:47.970 GMT,Penny Crook,2020-12-06 01:33:47 GMT,Exterior Length (m),1.9
+1000051607218443467,{Height__m_}: .5,Bec Parkes,2020-12-06 01:34:03.467 GMT,Bec Parkes,2020-12-06 01:34:03 GMT,"Height (m),Rick packing on western side",0.5
+1000041607218450637,Max preserved Height (m): 1.50,Penny Crook,2020-12-06 01:34:10.637 GMT,Penny Crook,2020-12-06 01:34:10 GMT,Max preserved Height (m),1.5
+1000051607218504932,{Width__m_}: 4.15,Bec Parkes,2020-12-06 01:35:04.932 GMT,Bec Parkes,2020-12-06 01:35:04 GMT,Width (m),4.15
+1000041607218538344,{Length__m_}: 5.8,Penny Crook,2020-12-06 01:35:38.344 GMT,Penny Crook,2020-12-06 01:35:38 GMT,"Length (m),Platform ","5.8,Approx"
+1000041607218575845,{Width__m_}: 3.4,Penny Crook,2020-12-06 01:36:15.846 GMT,Penny Crook,2020-12-06 01:36:15 GMT,"Width (m),Platform ","3.4,Approx "
+1000051607218721685,{Width__m_}: 3.02,Bec Parkes,2020-12-06 01:38:41.685 GMT,Bec Parkes,2020-12-06 01:38:41 GMT,"Width (m),cutting",3.02
+1000041607220998509,{Length__m_}: 1.4,Penny Crook,2020-12-06 02:16:38.509 GMT,Penny Crook,2020-12-06 02:16:38 GMT,"Length (m),Approx ",1.4
+1000041607221010662,{Width__m_}: 1.6,Penny Crook,2020-12-06 02:16:50.663 GMT,Penny Crook,2020-12-06 02:16:50 GMT,"Width (m),Approx ",1.6
+1000041607221017342,{Depth__m_}: .4,Penny Crook,2020-12-06 02:16:57.343 GMT,Penny Crook,2020-12-06 02:16:57 GMT,Depth (m),0.4
+1000091607221397945,{Height__m_}: 2,Susan Lupack,2020-12-06 02:23:17.945 GMT,Susan Lupack,2020-12-06 02:23:17 GMT,"Height (m),Boulder","2,height"
+1000091607221418793,{Length__m_}: 5.5,Susan Lupack,2020-12-06 02:23:38.793 GMT,Susan Lupack,2020-12-06 02:23:38 GMT,"Length (m),Boulder",5.5
+1000091607221436508,{Width__m_}: 1.7,Susan Lupack,2020-12-06 02:23:56.508 GMT,Susan Lupack,2020-12-06 02:23:56 GMT,"Width (m),Boulder",1.7
+1000091607221502482,{Height__m_}: .71,Susan Lupack,2020-12-06 02:25:02.482 GMT,Susan Lupack,2020-12-06 02:25:02 GMT,"Height (m),Indent 1",".71,from base of boulder to base of indent"
+1000091607221536983,{Height__m_}: .84,Susan Lupack,2020-12-06 02:25:36.983 GMT,Susan Lupack,2020-12-06 02:25:36 GMT,"Height (m),Indent 2",".84,Height from base of boulder to base"
+1000091607221564492,{Height__m_}: 1.65,Susan Lupack,2020-12-06 02:26:04.492 GMT,Susan Lupack,2020-12-06 02:26:04 GMT,"Height (m),Indent 3","1.65,from base of boulder to base of indent"
+1000091607221615987,{Height__m_}: .08,Susan Lupack,2020-12-06 02:26:55.988 GMT,Susan Lupack,2020-12-06 02:26:55 GMT,"Height (m),Indent 1",0.08
+1000091607221628597,{Width__m_}: .07,Susan Lupack,2020-12-06 02:27:08.597 GMT,Susan Lupack,2020-12-06 02:27:08 GMT,"Width (m),Indent 1",0.07
+1000091607221640110,{Depth__m_}: .03,Susan Lupack,2020-12-06 02:27:20.110 GMT,Susan Lupack,2020-12-06 02:27:20 GMT,"Depth (m),Indent 1",0.03
+1000091607221654901,{Height__m_}: .08,Susan Lupack,2020-12-06 02:27:34.901 GMT,Susan Lupack,2020-12-06 02:27:34 GMT,"Height (m),Indent 2",0.08
+1000091607221666383,{Width__m_}: .09,Susan Lupack,2020-12-06 02:27:46.386 GMT,Susan Lupack,2020-12-06 02:27:46 GMT,"Width (m),Indent 2",0.09
+1000091607221676676,{Depth__m_}: .04,Susan Lupack,2020-12-06 02:27:56.676 GMT,Susan Lupack,2020-12-06 02:27:56 GMT,"Depth (m),Indent 2",0.04
+1000091607221694622,{Height__m_}: .06,Susan Lupack,2020-12-06 02:28:14.623 GMT,Susan Lupack,2020-12-06 02:28:14 GMT,"Height (m),Indent 3",0.06
+1000091607221707767,{Width__m_}: .05,Susan Lupack,2020-12-06 02:28:27.770 GMT,Susan Lupack,2020-12-06 02:28:27 GMT,"Width (m),Indent 3",0.05
+1000091607221720466,{Depth__m_}: .025,Susan Lupack,2020-12-06 02:28:40.466 GMT,Susan Lupack,2020-12-06 02:28:40 GMT,"Depth (m),Indent 3",0.025
+1000041607221850406,{Diameter__m_}: 1.5,Penny Crook,2020-12-06 02:30:50.406 GMT,Penny Crook,2020-12-06 02:30:50 GMT,Diameter (m),1.5
+1000091607222051192,{Diameter__m_}: .25,Susan Lupack,2020-12-06 02:34:11.192 GMT,Susan Lupack,2020-12-06 02:34:11 GMT,"Diameter (m),Rock festure",0.25
+1000041607223267956,{Width__m_}: 3.4,Penny Crook,2020-12-06 02:54:27.956 GMT,Penny Crook,2020-12-06 02:54:27 GMT,"Width (m),Tramway",3.4
+1000041607223282745,{Width__m_}: .9,Penny Crook,2020-12-06 02:54:42.746 GMT,Penny Crook,2020-12-06 02:54:42 GMT,"Width (m),Drain ",0.9
+1000021618363832909,{Diameter__m_}: .405,Penny Crook,2021-04-14 01:30:32.909 GMT,Penny Crook,2021-04-14 01:31:25 GMT,Diameter (m),0.405
+1000021618363899754,{Height__m_}: .16,Penny Crook,2021-04-14 01:31:39.754 GMT,Penny Crook,2021-04-14 01:31:39 GMT,"Height (m),cylinder",0.16
+1000021618363979127,{Height__m_}: .055,Penny Crook,2021-04-14 01:32:59.128 GMT,Penny Crook,2021-04-14 01:32:59 GMT,"Height (m),feet",0.055
+1000021618364837435,{Diameter__m_}: 1,Penny Crook,2021-04-14 01:47:17.436 GMT,Penny Crook,2021-04-14 01:47:17 GMT,"Diameter (m),scatter",1
+1000021618366474263,{Width__m_}: .18,Penny Crook,2021-04-14 02:14:34.263 GMT,Penny Crook,2021-04-14 02:14:34 GMT,"Width (m),burnt",0.18
+1000021618366827279,{Height__m_}: 1.53,Penny Crook,2021-04-14 02:20:27.283 GMT,Penny Crook,2021-04-14 02:20:27 GMT,"Height (m),max preserved",1.53
+1000021618366905487,{Width__m_}: .21,Penny Crook,2021-04-14 02:21:45.487 GMT,Penny Crook,2021-04-14 02:21:45 GMT,Width (m),0.21
+1000011618368543845,{Length__m_}: 2.25,Faims Admin,2021-04-14 02:49:03.845 GMT,Faims Admin,2021-04-14 02:49:03 GMT,Length (m),"2.25,Line ofrocksnorth-south"
+1000011618368616270,{Other}: 58,Faims Admin,2021-04-14 02:50:16.270 GMT,Faims Admin,2021-04-14 02:50:16 GMT,"Other,Distance between east-west rocks","58,Cm"
+1000011618369413127,{Width__m_}: 1.87,Faims Admin,2021-04-14 03:03:33.127 GMT,Faims Admin,2021-04-14 03:03:33 GMT,"Width (m),Rock line east west",1.87
+1000011618370120818,{Diameter__m_}: 5,Faims Admin,2021-04-14 03:15:20.819 GMT,Faims Admin,2021-04-14 03:15:20 GMT,Diameter (m),5
+1000011618371135595,{Height__m_}: .145,Faims Admin,2021-04-14 03:32:15.596 GMT,Faims Admin,2021-04-14 03:32:15 GMT,Height (m),0.145
+1000011618371150338,{Length__m_}: .075,Faims Admin,2021-04-14 03:32:30.338 GMT,Faims Admin,2021-04-14 03:32:30 GMT,Length (m),0.075
+1000011618371173514,{Depth__m_}: .100,Faims Admin,2021-04-14 03:32:53.514 GMT,Faims Admin,2021-04-14 03:32:53 GMT,Depth (m),0.1
+1000021618371346934,{Length__m_}: 6,Penny Crook,2021-04-14 03:35:46.934 GMT,Penny Crook,2021-04-14 03:36:26 GMT,"Length (m),min",6
+1000021618371355197,{Height__m_}: 1,Penny Crook,2021-04-14 03:35:55.198 GMT,Penny Crook,2021-04-14 03:35:55 GMT,"Height (m),1
+min",1
+1000021618371379203,{Width__m_}: 3,Penny Crook,2021-04-14 03:36:19.203 GMT,Penny Crook,2021-04-14 03:36:19 GMT,"Width (m),min",3
+1000011618372101497,{Length__m_}: 3.77,Faims Admin,2021-04-14 03:48:21.498 GMT,Faims Admin,2021-04-14 03:48:21 GMT,"Length (m),East west",3.77
+1000011618372208354,{Width__m_}: 3.1,Faims Admin,2021-04-14 03:50:08.354 GMT,Faims Admin,2021-04-14 03:50:08 GMT,"Width (m),North South, minimum",3.1
+1000011618372275506,{Height__m_}: .7,Faims Admin,2021-04-14 03:51:15.507 GMT,Faims Admin,2021-04-14 03:51:15 GMT,"Height (m),At least 3 courses of stone",0.7
+1000011618372791465,{Length__m_}: 4.35,Faims Admin,2021-04-14 03:59:51.465 GMT,Faims Admin,2021-04-14 03:59:51 GMT,Length (m),4.35
+1000011618372851436,{Height__m_}: .46,Faims Admin,2021-04-14 04:00:51.436 GMT,Faims Admin,2021-04-14 04:00:51 GMT,Height (m),0.46
+1000011618373665997,{Length__m_}: 28,Faims Admin,2021-04-14 04:14:25.997 GMT,Faims Admin,2021-04-14 04:14:25 GMT,"Length (m),Roughly North south",28
+1000011618373678740,{Width__m_}: 1,Faims Admin,2021-04-14 04:14:38.740 GMT,Faims Admin,2021-04-14 04:14:38 GMT,"Width (m),Roughly at base",1
+1000011618373692841,{Depth__m_}: 1.5,Faims Admin,2021-04-14 04:14:52.842 GMT,Faims Admin,2021-04-14 04:14:52 GMT,"Depth (m),Eastern face",1.5
+1000011618374290344,{Width__m_}: 1.2,Faims Admin,2021-04-14 04:24:50.345 GMT,Faims Admin,2021-04-14 04:24:50 GMT,"Width (m),North south",1.2
+1000011618374295182,{Height__m_}: .7,Faims Admin,2021-04-14 04:24:55.182 GMT,Faims Admin,2021-04-14 04:24:55 GMT,Height (m),0.7
+1000011618374313138,{Length__m_}: 3.3,Faims Admin,2021-04-14 04:25:13.138 GMT,Faims Admin,2021-04-14 04:25:13 GMT,"Length (m),East west",3.3
+1000021618374537666,{Width__m_}: 2.4,Penny Crook,2021-04-14 04:28:57.667 GMT,Penny Crook,2021-04-14 04:33:01 GMT,"Width (m),Max preserved",2.4
+1000021618374549452,{Width__m_}: 0.94,Penny Crook,2021-04-14 04:29:09.453 GMT,Penny Crook,2021-04-14 04:36:07 GMT,"Width (m),internal",0.94
+1000021618374615798,{Height__m_}: 2.75,Penny Crook,2021-04-14 04:30:15.799 GMT,Penny Crook,2021-04-14 04:35:03 GMT,"Height (m),Max",2.75
+1000021618374822266,{Depth__m_}: 1.4,Penny Crook,2021-04-14 04:33:42.266 GMT,Penny Crook,2021-04-14 04:33:42 GMT,"Depth (m),Max preserved.",1.4
+1000021618374866193,{Depth__m_}: 1.75,Penny Crook,2021-04-14 04:34:26.193 GMT,Penny Crook,2021-04-14 04:34:26 GMT,"Depth (m),spill extends",1.75
+1000011618374925712,{Width__m_}: 2,Faims Admin,2021-04-14 04:35:25.712 GMT,Faims Admin,2021-04-14 04:36:14 GMT,"Width (m),East west",2
+1000011618374951403,{Height__m_}: .45,Faims Admin,2021-04-14 04:35:51.403 GMT,Faims Admin,2021-04-14 04:35:51 GMT,"Height (m),Northern face max",0.45
+1000021618375053078,{Depth__m_}: .85,Penny Crook,2021-04-14 04:37:33.078 GMT,Penny Crook,2021-04-14 04:37:33 GMT,"Depth (m),internal",0.85
+1000021618378066869,{Diameter__m_}: .25,Penny Crook,2021-04-14 05:27:46.869 GMT,Penny Crook,2021-04-14 05:27:46 GMT,"Diameter (m),Approx ",0.25
+1000061618446170240,{Height__m_}: 0.034,Susan Lupack,2021-04-15 00:22:50.241 GMT,Susan Lupack,2021-04-15 00:22:50 GMT,"Height (m),Max preserved on  north face ",0.034
+1000061618446331188,{Length__m_}: 1.5,Susan Lupack,2021-04-15 00:25:31.189 GMT,Susan Lupack,2021-04-15 00:25:31 GMT,"Length (m),Ext max length",1.5
+1000061618446387418,{Depth__m_}: 1.45,Susan Lupack,2021-04-15 00:26:27.418 GMT,Susan Lupack,2021-04-15 00:26:27 GMT,"Depth (m),Ext width east west",1.45
+1000061618446440111,{Width__m_}: 1.05,Susan Lupack,2021-04-15 00:27:20.112 GMT,Susan Lupack,2021-04-15 00:27:20 GMT,"Width (m),Int width",1.05
+1000061618446498615,{Length__m_}: .75,Susan Lupack,2021-04-15 00:28:18.616 GMT,Susan Lupack,2021-04-15 00:28:18 GMT,"Length (m),Int length",0.75
+1000061618447724225,{Length__m_}: .90,Susan Lupack,2021-04-15 00:48:44.225 GMT,Susan Lupack,2021-04-15 00:48:44 GMT,Length (m),0.9
+1000061618447733606,{Width__m_}: .45,Susan Lupack,2021-04-15 00:48:53.606 GMT,Susan Lupack,2021-04-15 00:48:53 GMT,Width (m),0.45
+1000081618450000071,{Width__m_}: 1.95,Samuel Leask,2021-04-15 01:26:40.072 GMT,Samuel Leask,2021-04-15 01:26:40 GMT,"Width (m),external width",1.95
+1000081618450026558,{Width__m_}: 1.1,Samuel Leask,2021-04-15 01:27:06.563 GMT,Samuel Leask,2021-04-15 01:27:06 GMT,Width (m),"1.1,internal width"
+1000081618450054206,{Length__m_}: 2.1,Samuel Leask,2021-04-15 01:27:34.207 GMT,Samuel Leask,2021-04-15 01:27:34 GMT,Length (m),"2.1,external length"
+1000081618450114463,{Length__m_}: 0.6,Samuel Leask,2021-04-15 01:28:34.463 GMT,Samuel Leask,2021-04-15 01:28:34 GMT,Length (m),"0.6,interior length"
+1000061618450231114,{Length__m_}: 1.4,Susan Lupack,2021-04-15 01:30:31.115 GMT,Susan Lupack,2021-04-15 01:30:31 GMT,"Length (m),Interior length",1.4
+1000061618450273044,{Width__m_}: 1.0,Susan Lupack,2021-04-15 01:31:13.044 GMT,Susan Lupack,2021-04-15 01:31:13 GMT,"Width (m),Interior wixth",1
+1000061618450482225,{Width__m_}: 2.8,Susan Lupack,2021-04-15 01:34:42.225 GMT,Susan Lupack,2021-04-15 01:34:42 GMT,"Width (m),Max width ",2.8
+1000061618450522582,{Length__m_}: 3.3,Susan Lupack,2021-04-15 01:35:22.583 GMT,Susan Lupack,2021-04-15 01:35:22 GMT,"Length (m),Platform lenvth",3.3
+1000061618450582382,{Width__m_}: 2.0,Susan Lupack,2021-04-15 01:36:22.382 GMT,Susan Lupack,2021-04-15 01:36:22 GMT,"Width (m),Platform width ",2
+1000081618451083672,{Length__m_}: 2.8,Samuel Leask,2021-04-15 01:44:43.672 GMT,Samuel Leask,2021-04-15 01:44:43 GMT,Length (m),"2.8,external width"
+1000081618451247275,{Width__m_}: 2.2,Samuel Leask,2021-04-15 01:47:27.276 GMT,Samuel Leask,2021-04-15 01:47:27 GMT,Width (m),"2.2,external"
+1000081618451277876,{Width__m_}: 0.9,Samuel Leask,2021-04-15 01:47:57.876 GMT,Samuel Leask,2021-04-15 01:47:57 GMT,Width (m),"0.9,internal "
+1000081618451362660,{Height__m_}: 0.2,Samuel Leask,2021-04-15 01:49:22.661 GMT,Samuel Leask,2021-04-15 01:49:22 GMT,Height (m),"0.2,max height"
+1000081618451420198,{Length__m_}: 0.6,Samuel Leask,2021-04-15 01:50:20.198 GMT,Samuel Leask,2021-04-15 01:50:20 GMT,Length (m),"0.6,internal length"
+1000081618455933172,{Length__m_}: 15,Samuel Leask,2021-04-15 03:05:33.173 GMT,Samuel Leask,2021-04-15 03:05:33 GMT,Length (m),"15,approximate extent of scatter "
+1000081618455962426,{Width__m_}: 10,Samuel Leask,2021-04-15 03:06:02.426 GMT,Samuel Leask,2021-04-15 03:06:02 GMT,Width (m),"10,approximate extent of scatter"
+1000091618456094978,{Width__m_}: 0.74,Tamara Rudd,2021-04-15 03:08:14.979 GMT,Tamara Rudd,2021-04-15 03:08:14 GMT,"Width (m),Interior width",0.74
+1000091618456132958,{Width__m_}: 1.10,Tamara Rudd,2021-04-15 03:08:52.959 GMT,Tamara Rudd,2021-04-15 03:08:52 GMT,"Width (m),Exterior width",1.1
+1000091618456157083,{Length__m_}: 0.45,Tamara Rudd,2021-04-15 03:09:17.084 GMT,Tamara Rudd,2021-04-15 03:09:17 GMT,"Length (m),Interior length",0.45
+1000091618456187384,{Length__m_}: 0.58,Tamara Rudd,2021-04-15 03:09:47.384 GMT,Tamara Rudd,2021-04-15 03:09:47 GMT,"Length (m),Exterior length",0.58
+1000081618456315658,{Width__m_}: 1.46,Samuel Leask,2021-04-15 03:11:55.659 GMT,Samuel Leask,2021-04-15 03:11:55 GMT,Width (m),"1.46,external width "
+1000081618456328064,{Width__m_}: 0.9,Samuel Leask,2021-04-15 03:12:08.064 GMT,Samuel Leask,2021-04-15 03:12:08 GMT,Width (m),"0.9,internal width"
+1000081618456352139,{Length__m_}: 0.6,Samuel Leask,2021-04-15 03:12:32.140 GMT,Samuel Leask,2021-04-15 03:12:32 GMT,Length (m),"0.6,internal length "
+1000081618456384922,{Length__m_}: 0.9,Samuel Leask,2021-04-15 03:13:04.923 GMT,Samuel Leask,2021-04-15 03:13:04 GMT,Length (m),"0.9,max external length "
+1000091618456936553,{Width__m_}: 1.18,Tamara Rudd,2021-04-15 03:22:16.554 GMT,Tamara Rudd,2021-04-15 03:22:16 GMT,"Width (m),Interior width",1.18
+1000081618458425396,{Width__m_}: 1.45,Samuel Leask,2021-04-15 03:47:05.397 GMT,Samuel Leask,2021-04-15 03:47:05 GMT,Width (m),"1.45,external width"
+1000081618458434466,{Width__m_}: 1.2,Samuel Leask,2021-04-15 03:47:14.467 GMT,Samuel Leask,2021-04-15 03:47:14 GMT,Width (m),"1.2,internal width"
+1000081618458501970,{Length__m_}: 0.65,Samuel Leask,2021-04-15 03:48:21.971 GMT,Samuel Leask,2021-04-15 03:49:21 GMT,"Length (m),internal length","0.65,internal width"
+1000081618458575741,{Length__m_}: 1,Samuel Leask,2021-04-15 03:49:35.742 GMT,Samuel Leask,2021-04-15 03:49:35 GMT,Length (m),"1,external length"
+1000091618458791468,{Length__m_}: 2.46,Tamara Rudd,2021-04-15 03:53:11.468 GMT,Tamara Rudd,2021-04-15 03:53:11 GMT,Length (m),2.46
+1000091618458829581,{Width__m_}: 0.56,Tamara Rudd,2021-04-15 03:53:49.581 GMT,Tamara Rudd,2021-04-15 03:53:49 GMT,Width (m),0.56
+1000081618459473084,{Width__m_}: 2.7,Samuel Leask,2021-04-15 04:04:33.084 GMT,Samuel Leask,2021-04-15 04:04:33 GMT,Width (m),"2.7,maximum extent of stones"
+1000081618459494082,{Length__m_}: 2.1,Samuel Leask,2021-04-15 04:04:54.082 GMT,Samuel Leask,2021-04-15 04:04:54 GMT,Length (m),"2.1,maximum extent of stones "
+1000081618460457169,{Length__m_}: 0.95,Samuel Leask,2021-04-15 04:20:57.169 GMT,Samuel Leask,2021-04-15 04:20:57 GMT,Length (m),"0.95,interior"
+1000081618460495167,{Width__m_}: 1.4,Samuel Leask,2021-04-15 04:21:35.168 GMT,Samuel Leask,2021-04-15 04:21:35 GMT,Width (m),"1.4,exterior"
+1000081618460505715,{Width__m_}: 0.8,Samuel Leask,2021-04-15 04:21:45.715 GMT,Samuel Leask,2021-04-15 04:21:45 GMT,Width (m),"0.8,interior"
+1000081618460536728,{Length__m_}: 1.1,Samuel Leask,2021-04-15 04:22:16.729 GMT,Samuel Leask,2021-04-15 04:22:16 GMT,Length (m),"1.1,exterior"
+1000081618462750691,{Width__m_}: 1.35,Samuel Leask,2021-04-15 04:59:10.692 GMT,Samuel Leask,2021-04-15 04:59:10 GMT,Width (m),"1.35,external"
+1000081618462760243,{Width__m_}: 1.1,Samuel Leask,2021-04-15 04:59:20.247 GMT,Samuel Leask,2021-04-15 04:59:20 GMT,Width (m),"1.1,internal"
+1000081618462797729,{Length__m_}: 1,Samuel Leask,2021-04-15 04:59:57.730 GMT,Samuel Leask,2021-04-15 04:59:57 GMT,Length (m),"1,external"
+1000081618462805424,{Length__m_}: 0.6,Samuel Leask,2021-04-15 05:00:05.425 GMT,Samuel Leask,2021-04-15 05:00:05 GMT,Length (m),"0.6,internal"
+1000091618462837163,{Length__m_}: 3.7,Tamara Rudd,2021-04-15 05:00:37.163 GMT,Tamara Rudd,2021-04-15 05:00:37 GMT,Length (m),3.7
+1000091618462860960,{Width__m_}: 3.4,Tamara Rudd,2021-04-15 05:01:00.962 GMT,Tamara Rudd,2021-04-15 05:01:00 GMT,Width (m),3.4
+1000081618462869317,{Height__m_}: 0.35,Samuel Leask,2021-04-15 05:01:09.320 GMT,Samuel Leask,2021-04-15 05:01:09 GMT,Height (m),0.35
+1000091618462999330,{Height__m_}: 0.5,Tamara Rudd,2021-04-15 05:03:19.330 GMT,Tamara Rudd,2021-04-15 05:03:19 GMT,Height (m),0.5
+1000081618463966670,{Length__m_}: 1.8,Samuel Leask,2021-04-15 05:19:26.674 GMT,Samuel Leask,2021-04-15 05:19:26 GMT,Length (m),"1.8,minimum"
+1000081618463988060,{Width__m_}: 0.5,Samuel Leask,2021-04-15 05:19:48.060 GMT,Samuel Leask,2021-04-15 05:19:48 GMT,Width (m),"0.5,minimum "
+1000011663377324004,{Diameter__m_}: 5,Penny Crook,2022-09-17 01:15:24.004 GMT,Penny Crook,2022-09-17 01:15:24 GMT,Diameter (m),5
+1000091663379860470,{Width__m_}: 1.2,Benjamin Dickson,2022-09-17 01:57:40.471 GMT,Benjamin Dickson,2022-09-17 01:57:40 GMT,"Width (m),estimated exterior of hearth","1.2,collapsed wall"
+1000091663379915104,{Length__m_}: 1.2,Benjamin Dickson,2022-09-17 01:58:35.104 GMT,Benjamin Dickson,2022-09-17 01:58:35 GMT,"Length (m),estimated exterior of hearth","1.2,collapsed wall"
+1000091663379948303,{Height__m_}: 0.4,Benjamin Dickson,2022-09-17 01:59:08.304 GMT,Benjamin Dickson,2022-09-17 01:59:08 GMT,"Height (m),estimated exterior wall","0.4,collapsed wall"
+1000091663381704146,{Width__m_}: 2.14,Benjamin Dickson,2022-09-17 02:28:24.147 GMT,Benjamin Dickson,2022-09-17 02:28:24 GMT,"Width (m),Max extent of fallen exterior wall",2.14
+1000091663381721141,{Width__m_}: 0.9,Benjamin Dickson,2022-09-17 02:28:41.141 GMT,Benjamin Dickson,2022-09-17 02:28:41 GMT,"Width (m),estimate interior ",0.9
+1000091663381751081,{Length__m_}: 0.7,Benjamin Dickson,2022-09-17 02:29:11.082 GMT,Benjamin Dickson,2022-09-17 02:29:11 GMT,"Length (m),estimate interior",0.7
+1000091663381784332,{Length__m_}: 1.5,Benjamin Dickson,2022-09-17 02:29:44.333 GMT,Benjamin Dickson,2022-09-17 02:29:44 GMT,"Length (m),Max extent ",1.5
+1000091663381910923,{Height__m_}: 0.14,Benjamin Dickson,2022-09-17 02:31:50.923 GMT,Benjamin Dickson,2022-09-17 02:31:50 GMT,"Height (m),Max preserved height",0.14
+1000011663382259107,{Width__m_}: 1.4,Penny Crook,2022-09-17 02:37:39.107 GMT,Penny Crook,2022-09-17 02:37:39 GMT,"Width (m),external ",1.4
+1000011663382300584,{Length__m_}: 1.8,Penny Crook,2022-09-17 02:38:20.584 GMT,Penny Crook,2022-09-17 02:38:20 GMT,"Length (m),external",1.8
+1000011663382329562,{Length__m_}: 0.9,Penny Crook,2022-09-17 02:38:49.563 GMT,Penny Crook,2022-09-17 02:38:49 GMT,"Length (m),internal ",0.9
+1000011663382366188,{Width__m_}: 1,Penny Crook,2022-09-17 02:39:26.189 GMT,Penny Crook,2022-09-17 02:39:26 GMT,"Width (m),internal ",1
+1000011663382387275,{Height__m_}: 0.15,Penny Crook,2022-09-17 02:39:47.275 GMT,Penny Crook,2022-09-17 02:39:47 GMT,"Height (m),maximum preserved",0.15
+1000091663383254405,{Width__m_}: 0.67,Benjamin Dickson,2022-09-17 02:54:14.406 GMT,Benjamin Dickson,2022-09-17 02:54:14 GMT,"Width (m),estimate interior of hearth",0.67
+1000091663383350839,{Length__m_}: 1.4,Benjamin Dickson,2022-09-17 02:55:50.840 GMT,Benjamin Dickson,2022-09-17 02:55:50 GMT,"Length (m),Max preserved length of hearth",1.4
+1000091663383380063,{Width__m_}: 1.04,Benjamin Dickson,2022-09-17 02:56:20.064 GMT,Benjamin Dickson,2022-09-17 02:56:20 GMT,"Width (m),Max preserved width of hearth",1.04
+1000011663386192627,{Width__m_}: 1.2,Penny Crook,2022-09-17 03:43:12.627 GMT,Penny Crook,2022-09-17 03:43:12 GMT,Width (m),1.2
+1000011663386205856,{Length__m_}: 1.25,Penny Crook,2022-09-17 03:43:25.856 GMT,Penny Crook,2022-09-17 03:43:25 GMT,Length (m),1.25
+1000011663386234891,{Height__m_}: 0.3,Penny Crook,2022-09-17 03:43:54.892 GMT,Penny Crook,2022-09-17 03:43:54 GMT,Height (m),0.3
+1000011663387072488,{Length__m_}: 1.7,Penny Crook,2022-09-17 03:57:52.488 GMT,Penny Crook,2022-09-17 03:57:52 GMT,Length (m),1.7
+1000011663387081939,{Width__m_}: 1.5,Penny Crook,2022-09-17 03:58:01.940 GMT,Penny Crook,2022-09-17 03:58:01 GMT,Width (m),1.5
+1000011663387108352,{Height__m_}: 0.14,Penny Crook,2022-09-17 03:58:28.352 GMT,Penny Crook,2022-09-17 03:58:28 GMT,Height (m),0.14
+1000011663387418692,{Width__m_}: 3.2,Penny Crook,2022-09-17 04:03:38.693 GMT,Penny Crook,2022-09-17 04:03:38 GMT,Width (m),3.2
+1000011663387426499,{Length__m_}: 5,Penny Crook,2022-09-17 04:03:46.500 GMT,Penny Crook,2022-09-17 04:03:46 GMT,Length (m),5
+1000011663387825572,{Length__m_}: 1.3,Penny Crook,2022-09-17 04:10:25.573 GMT,Penny Crook,2022-09-17 04:10:25 GMT,"Length (m),external ",1.3
+1000011663387835761,{Width__m_}: 1.4,Penny Crook,2022-09-17 04:10:35.761 GMT,Penny Crook,2022-09-17 04:10:35 GMT,"Width (m),external ",1.4
+1000111663388287373,{Width__m_}: 1.2,Jessika Odenthal,2022-09-17 04:18:07.374 GMT,Jessika Odenthal,2022-09-17 04:18:07 GMT,"Width (m),Exterior",1.2
+1000111663389235306,{Diameter__m_}: 3,Jessika Odenthal,2022-09-17 04:33:55.307 GMT,Jessika Odenthal,2022-09-17 04:33:55 GMT,Diameter (m),3
+1000011663390294998,{Diameter__m_}: 3.4,Penny Crook,2022-09-17 04:51:34.999 GMT,Penny Crook,2022-09-17 04:51:34 GMT,"Diameter (m),approximate ",3.4
+1000011663390375912,{Length__m_}: 3.76,Penny Crook,2022-09-17 04:52:55.913 GMT,Penny Crook,2022-09-17 04:52:55 GMT,"Length (m),max extent ",3.76
+1000011663392416772,{Depth__m_}: .2,Penny Crook,2022-09-17 05:26:56.772 GMT,Penny Crook,2022-09-17 05:26:56 GMT,Depth (m),0.2
+1000011663392425203,{Width__m_}: .9,Penny Crook,2022-09-17 05:27:05.203 GMT,Penny Crook,2022-09-17 05:27:05 GMT,Width (m),0.9
+1000011663465630280,{Width__m_}: .67,Penny Crook,2022-09-18 01:47:10.280 GMT,Penny Crook,2022-09-18 01:47:10 GMT,"Width (m),interior hearth ",0.67
+1000011663465666521,{Width__m_}: 1.78,Penny Crook,2022-09-18 01:47:46.521 GMT,Penny Crook,2022-09-18 01:47:46 GMT,"Width (m),Max preserved ",1.78
+1000011663465714211,{Length__m_}: .9,Penny Crook,2022-09-18 01:48:34.211 GMT,Penny Crook,2022-09-18 01:48:34 GMT,"Length (m),interior length ",0.9
+1000081663466802750,{Width__m_}: 1.25,Amelia Berthold,2022-09-18 02:06:42.750 GMT,Amelia Berthold,2022-09-18 02:06:42 GMT,"Width (m),Max preserved ",1.25
+1000081663466820312,{Length__m_}: 1.45,Amelia Berthold,2022-09-18 02:07:00.313 GMT,Amelia Berthold,2022-09-18 02:07:00 GMT,"Length (m),Max preserved ",1.45
+1000111663475841570,{Length__m_}: 6.1,Jessika Odenthal,2022-09-18 04:37:21.570 GMT,Jessika Odenthal,2022-09-18 04:38:06 GMT,Length (m),"6.1,From possible post hole to estimate eastern corner"
+1000111663475922787,{Width__m_}: 4,Jessika Odenthal,2022-09-18 04:38:42.788 GMT,Jessika Odenthal,2022-09-18 04:38:42 GMT,Width (m),"4,Estimate"
+1000111663475946856,{Length__m_}: .95,Jessika Odenthal,2022-09-18 04:39:06.856 GMT,Jessika Odenthal,2022-09-18 04:39:06 GMT,"Length (m),Of threshold",0.95
+1000111663475956561,{Width__m_}: .5,Jessika Odenthal,2022-09-18 04:39:16.561 GMT,Jessika Odenthal,2022-09-18 04:39:16 GMT,"Width (m),of threshold",0.5
+1000111663475972954,{Width__m_}: 1.6,Jessika Odenthal,2022-09-18 04:39:32.955 GMT,Jessika Odenthal,2022-09-18 04:39:32 GMT,"Width (m),of hearth",1.6
+1000111663475981948,{Length__m_}: 1.8,Jessika Odenthal,2022-09-18 04:39:41.948 GMT,Jessika Odenthal,2022-09-18 04:39:41 GMT,"Length (m),of hearth",1.8
+1000111663476089312,{Height__m_}: .6,Jessika Odenthal,2022-09-18 04:41:29.312 GMT,Jessika Odenthal,2022-09-18 04:41:29 GMT,Height (m),".6, Max preserved"
+1000111663476549607,{Width__m_}: .7,Jessika Odenthal,2022-09-18 04:49:09.608 GMT,Jessika Odenthal,2022-09-18 04:49:09 GMT,"Width (m),of hearth",".7,of internal width"
+1000111663476562110,{Length__m_}: 1.2,Jessika Odenthal,2022-09-18 04:49:22.111 GMT,Jessika Odenthal,2022-09-18 04:49:22 GMT,"Length (m),of hearth",1.2
+1000111663476585158,{Length__m_}: 2,Jessika Odenthal,2022-09-18 04:49:45.159 GMT,Jessika Odenthal,2022-09-18 04:49:45 GMT,"Length (m),of scatter",2
+1000111663476600674,{Width__m_}: 2.1,Jessika Odenthal,2022-09-18 04:50:00.675 GMT,Jessika Odenthal,2022-09-18 04:50:00 GMT,"Width (m),of scatter",2.1
+1000111663549167173,{Width__m_}: 1.5,Jessika Odenthal,2022-09-19 00:59:27.174 GMT,Jessika Odenthal,2022-09-19 00:59:27 GMT,"Width (m),External of hearth",1.5
+1000111663549179282,{Width__m_}: 1.1,Jessika Odenthal,2022-09-19 00:59:39.282 GMT,Jessika Odenthal,2022-09-19 00:59:39 GMT,"Width (m),Internal of hearth ",1.1
+1000111663549195723,{Length__m_}: 1.4,Jessika Odenthal,2022-09-19 00:59:55.724 GMT,Jessika Odenthal,2022-09-19 00:59:55 GMT,"Length (m),External of hearth ",1.4
+1000111663549209975,{Length__m_}: 1.1,Jessika Odenthal,2022-09-19 01:00:09.976 GMT,Jessika Odenthal,2022-09-19 01:00:09 GMT,"Length (m),Internal of hearth",1.1
+1000111663549238473,{Height__m_}: 0.45,Jessika Odenthal,2022-09-19 01:00:38.474 GMT,Jessika Odenthal,2022-09-19 01:00:38 GMT,"Height (m),Max preserved ",0.45
+1000111663549265458,{Width__m_}: 3.8,Jessika Odenthal,2022-09-19 01:01:05.459 GMT,Jessika Odenthal,2022-09-19 01:01:05 GMT,"Width (m),Minimum of structure ",3.8
+1000111663549281625,{Length__m_}: 6,Jessika Odenthal,2022-09-19 01:01:21.626 GMT,Jessika Odenthal,2022-09-19 01:01:21 GMT,"Length (m),Minimum of platform",6
+1000111663552370994,{Diameter__m_}: 0.07,Jessika Odenthal,2022-09-19 01:52:50.994 GMT,Jessika Odenthal,2022-09-19 01:52:50 GMT,"Diameter (m),Nearly full base with letter m",0.07
+1000111663552926508,{Length__m_}: 1.4,Jessika Odenthal,2022-09-19 02:02:06.509 GMT,Jessika Odenthal,2022-09-19 02:02:06 GMT,"Length (m),Piece of timbre",1.4
+1000111663552939989,{Width__m_}: .45,Jessika Odenthal,2022-09-19 02:02:19.990 GMT,Jessika Odenthal,2022-09-19 02:02:19 GMT,"Width (m),Piece of timbre",0.45
+1000111663552958078,{Height__m_}: 0.06,Jessika Odenthal,2022-09-19 02:02:38.079 GMT,Jessika Odenthal,2022-09-19 02:02:38 GMT,"Height (m),Piece of timbre",0.06
+1000111663553233720,{Width__m_}: 1.2,Jessika Odenthal,2022-09-19 02:07:13.720 GMT,Jessika Odenthal,2022-09-19 02:07:13 GMT,"Width (m),Estimated interior",1.2
+1000111663553263308,{Length__m_}: 0.85,Jessika Odenthal,2022-09-19 02:07:43.308 GMT,Jessika Odenthal,2022-09-19 02:07:43 GMT,"Length (m),Estimated interior",0.85
+1000111663553324745,{Length__m_}: 1.9,Jessika Odenthal,2022-09-19 02:08:44.746 GMT,Jessika Odenthal,2022-09-19 02:08:44 GMT,"Length (m),Exterior",1.9
+1000111663553345013,{Width__m_}: 2.4,Jessika Odenthal,2022-09-19 02:09:05.014 GMT,Jessika Odenthal,2022-09-19 02:09:05 GMT,"Width (m),Extant exterior",2.4
+1000111663554586979,{Width__m_}: 0.75,Jessika Odenthal,2022-09-19 02:29:46.979 GMT,Jessika Odenthal,2022-09-19 02:29:46 GMT,"Width (m),Interior minimum",0.75
+1000111663554604107,{Width__m_}: 1.2,Jessika Odenthal,2022-09-19 02:30:04.107 GMT,Jessika Odenthal,2022-09-19 02:30:04 GMT,"Width (m),Interior maximum",1.2
+1000111663554633031,{Width__m_}: 1.45,Jessika Odenthal,2022-09-19 02:30:33.031 GMT,Jessika Odenthal,2022-09-19 02:30:33 GMT,"Width (m),Exterior",1.45
+1000111663554657357,{Length__m_}: 0.9,Jessika Odenthal,2022-09-19 02:30:57.358 GMT,Jessika Odenthal,2022-09-19 02:30:57 GMT,"Length (m),Interior",0.9
+1000111663554720089,{Length__m_}: 1.3,Jessika Odenthal,2022-09-19 02:32:00.089 GMT,Jessika Odenthal,2022-09-19 02:32:00 GMT,"Length (m),Exterior",1.3
+1000111663554767228,{Length__m_}: 1.7,Jessika Odenthal,2022-09-19 02:32:47.228 GMT,Jessika Odenthal,2022-09-19 02:32:47 GMT,"Length (m),Back rockfall ",1.7
+1000111663554801714,{Length__m_}: 2.2,Jessika Odenthal,2022-09-19 02:33:21.715 GMT,Jessika Odenthal,2022-09-19 02:33:21 GMT,"Length (m),Side rockfall ",2.2
+1000111663554825782,{Height__m_}: 0.3,Jessika Odenthal,2022-09-19 02:33:45.783 GMT,Jessika Odenthal,2022-09-19 02:33:45 GMT,"Height (m),Maximum",0.3
+1000111663555830165,{Width__m_}: 1.24,Jessika Odenthal,2022-09-19 02:50:30.166 GMT,Jessika Odenthal,2022-09-19 02:50:30 GMT,"Width (m),in situe rock",1.24
+1000111663555888259,{Length__m_}: 0.9,Jessika Odenthal,2022-09-19 02:51:28.260 GMT,Jessika Odenthal,2022-09-19 02:51:28 GMT,"Length (m),in situe rock",0.9
+1000111663555900830,{Length__m_}: 0.7,Jessika Odenthal,2022-09-19 02:51:40.831 GMT,Jessika Odenthal,2022-09-19 02:51:40 GMT,"Length (m),central paver ",0.7
+1000111663555920905,{Length__m_}: 1.55,Jessika Odenthal,2022-09-19 02:52:00.906 GMT,Jessika Odenthal,2022-09-19 02:52:00 GMT,"Length (m),Max exterior ",1.55
+1000111663555949127,{Width__m_}: 2.34,Jessika Odenthal,2022-09-19 02:52:29.128 GMT,Jessika Odenthal,2022-09-19 02:52:29 GMT,"Width (m),Max exterior ",2.34
+1000111663555982567,{Height__m_}: 0.15,Jessika Odenthal,2022-09-19 02:53:02.568 GMT,Jessika Odenthal,2022-09-19 02:53:02 GMT,"Height (m),Max preserved ",0.15
