@@ -1,6 +1,6 @@
 # Zotero Tag Extraction Summary
 
-**Generated:** 2025-10-08 23:04:45
+**Generated:** 2025-10-11 10:34:43
 **Zotero Group ID:** 2258643
 
 ---
@@ -90,7 +90,7 @@ These tags may be:
 
 1. **Review singleton tags:** 40 tags are used only once. Consider consolidation.
 2. **Untagged items:** 853 items have no tags. These need to be processed.
-3. **Tag standardization:** Review top tags for spelling variations and inconsistencies.
+3. **Tag standardisation:** Review top tags for spelling variations and inconsistencies.
 4. **Hierarchy development:** Consider grouping tags into categories based on usage patterns.
 
 ---
@@ -99,7 +99,7 @@ These tags may be:
 
 1. Run `02_analyze_tags.py` to identify similar tags and patterns
 2. Review analysis with project historians
-3. Begin tag rationalization process
+3. Begin tag rationalisation process
 
 ---
 

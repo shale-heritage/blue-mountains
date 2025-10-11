@@ -40,6 +40,10 @@ Thumbs.db
 # Large files exceed GitHub limits, downloaded separately
 gazetteers/
 
+# Reference PDFs (copyrighted articles, large files)
+# Not suitable for public repository due to copyright and file size
+references/pdfs/
+
 # Conversation exports - require manual review before committing
 # Name new exports with .new extension, review/redact, then rename to .txt
 cc-interactions/202*.txt.new
