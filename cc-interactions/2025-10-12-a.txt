@@ -1,0 +1,562 @@
+
+ ▐▛███▜▌   Claude Code v2.0.13
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+═════════════════════════════════════════════════════════════════════════════════════════════════════════════════ Conversation compacted · ctrl+o for history ════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+> /compact │   Phase 1.1 Complete: Folksonomy Documentation + Archaeological Data Integration                                                                                                                                                                                 
+          │
+│                                                                                                                                                                                                                                                                            │
+│   Task: Document folksonomy logic for three parallel tagging systems (historical documents, archaeological features, artefacts) to establish foundation for Phase 1.2 tag rationalisation and Omeka integration.                                                           │
+│                                                                                                                                                                                                                                                                            │
+│   Completed:                                                                                                                                                                                                                                                               │
+│                                                                                                                                                                                                                                                                            │
+│   1. Historical Document Tagging System Documentation (docs/folksonomy_logic.md Sections 1-10):                                                                                                                                                                            │
+│      ✅ Research-driven framework grounded in ARC LP190100900 themes (social history, family history, labour, deindustrialisation)                                                                                                                                          
+│
+│      ✅ 481 unique tags from 336 tagged Zotero items (304 primary sources = 90.5% of tagged items)                                                                                                                                                                          
+│
+│      ✅ Six tag categories: Social themes, Geographic, Institutions, People/Families, Temporal, Document type                                                                                                                                                               
+│
+│      ✅ Geographic hierarchy: Mining districts (Ruined Castle, Nellie's Glen) vs towns (Katoomba, Megalong)                                                                                                                                                                 
+│
+│      ✅ Institution hierarchy: Parent categories (Court) → Named instances (Katoomba Court, Supreme Court)                                                                                                                                                                  
+│
+│      ✅ Rationalisation principle: "Err on side of maintaining granularity" - easier to collapse than re-expand                                                                                                                                                             
+│
+│      ✅ Court tag hierarchy decided: Court (parent) with 6 sub-tags (Court cases, Courthouse, Supreme Court, Police court, Licensing Court, Katoomba Court)                                                                                                                 
+│
+│      ✅ NER principle: Any proper noun extractable via NER should become a tag                                                                                                                                                                                              
+│
+│      ✅ Phase 1.2-1.4 roadmap: Rationalisation → Getty/RVA mapping → Zotero batch update → NER/full text analysis                                                                                                                                                           
+│
+│                                                                                                                                                                                                                                                                            │
+│   2. Archaeological FAIMS Data Integration (docs/folksonomy_logic.md Sections 11-12):                                                                                                                                                                                      │
+│      ✅ Added 8 FAIMS Mobile 2.6 data files: 342 archaeological features (RC: 67, NG: 275)                                                                                                                                                                                  
+│
+│      ✅ Three-dimensional tagging system documented:                                                                                                                                                                                                                        
+│
+│         - Tags column: Mixed interpretations + social themes (40 unique, 516 uses)                                                                                                                                                                                         │
+│         - Artefact Functional type: EAMC schema (29 unique, 211 uses)                                                                                                                                                                                                      │
+│         - RevisedFeatureType: Observed features (25 unique, 427 uses)                                                                                                                                                                                                      │
+│      ✅ Clarified pipe-delimited format is NOT hierarchical (co-occurring features, not nested)                                                                                                                                                                             
+│
+│      ✅ Documented separation requirement: structure tags vs artefact tags for future processing                                                                                                                                                                            
+│
+│      ✅ Identified inconsistencies: Spelling ("Arefact", "Depresson"), capitalisation ("Building-material" variants, "Bottle"/"bottle")                                                                                                                                     
+│
+│      ✅ Archaeological tag statistics and alignment workflow for Phase 1.2+                                                                                                                                                                                                 
+│
+│                                                                                                                                                                                                                                                                            │
+│   3. Omeka Integration Planning (docs/folksonomy_logic.md Section 12):                                                                                                                                                                                                     │
+│      ✅ Documented ultimate goal: Enable Omeka collections, exhibitions, walking tours                                                                                                                                                                                      
+│
+│      ✅ Target audiences: Researchers, heritage managers, family historians, general public                                                                                                                                                                                 
+│
+│      ✅ Examples: Thematic collections (Working Life, Family Life, etc.), narrative exhibitions ("Life in a Mining Hut"), GPS-based walking tours                                                                                                                           
+│
+│      ✅ Tag requirements: Consistency, thematic grouping, geographic filtering, cross-evidence linking                                                                                                                                                                      
+│
+│                                                                                                                                                                                                                                                                            │
+│   4. Git commits and repository updates:                                                                                                                                                                                                                                   │
+│      ✅ Commit e6b2cf7: Initial folksonomy documentation (877 lines)                                                                                                                                                                                                        
+│
+│      ✅ Commit 38fe478: Archaeological data + extended documentation (1,273 lines, ~14,500 words)                                                                                                                                                                           
+│
+│      ✅ Updated .gitignore (references/pdfs/ exclusion)                                                                                                                                                                                                                     
+│
+│      ✅ Updated reports/tag_summary.md (UK spelling, regenerated timestamp)                                                                                                                                                                                                 
+│
+│      ✅ Added conversation records: cc-interactions/2025-10-10-d.txt, 2025-10-11-a.txt                                                                                                                                                                                      
+│
+│                                                                                                                                                                                                                                                                            │
+│   Result: Phase 1.1 "Folksonomy Analysis" complete. Comprehensive folksonomy_logic.md documents all three tagging systems, establishes rationalisation principles, identifies 332 similar tag pairs and 137 hierarchical relationships requiring review. Ready to begin    │
+│   Phase 1.2: Tag Schema Rationalisation, starting with 481 historical document tags from Zotero.                                                                                                                                                                           │
+│                                                                                                                                                                                                                                                                            │
+│   Next: Phase 1.2 tag rationalisation beginning with historical documents.                                                                                                                                                                                                 │
+ 
+  ⎿  Compacted (ctrl+o to see full summary)
+  ⎿  Read ../../../../tmp/compact_message.txt (45 lines)
+  ⎿  Referenced file docs/folksonomy_logic.md
+  ⎿  Read archaeology/data/input/archaeological-tags.md (50 lines)
+  ⎿  Referenced file archaeology/data/input/NG-Relationship-FeatureMeasurement.csv
+  ⎿  Read archaeology/data/input/NG-Entity-Feature.kmz (1 lines)
+
+> As we prepare to begin historical document tag rationalisation, would it be worthwhile to examine at least some of the full text and evaluate the comprehensiveness of tagging, maybe on a subsample to begin with? If you disagree, say so, I appreciate your 
+perspective. 
+
+● Good question! I'll share my perspective on this - and I do think you should wait on full-text examination for now. Here's why:
+
+  Why to defer full-text analysis:
+
+  1. Sequential dependency: The tag rationalisation work you're about to begin will establish the canonical vocabulary. If you do full-text analysis now:
+  - You'll identify entities using the current messy tags as your reference
+  - You'll then have to re-map all those findings to the rationalised vocabulary
+  - That's duplicate work
+
+  2. Your existing roadmap is sound: You documented this sequence in folksonomy_logic.md:
+  - Phase 1.2: Rationalise existing tags → canonical vocabulary
+  - Phase 1.4: Apply rationalised tags via Zotero API batch update
+  - Then Phase 1.5-1.6: NER and full-text analysis using the clean vocabulary
+
+  3. Coverage question vs consistency question:
+  - "Are we missing important tags?" (coverage) is a different question from "Are our existing tags consistent?" (rationalisation)
+  - You need to answer the consistency question first to have a stable reference point
+  - Then use NER/full-text to systematically expand coverage
+
+  4. Sample size is already substantial:
+  - 481 unique tags from 336 items is a rich folksonomy
+  - The similar_tags.csv (332 pairs) and tag_hierarchy.csv (137 relationships) show plenty of work to do rationalising what exists
+  - Better to consolidate this solid foundation before expanding
+
+  When to do full-text analysis:
+
+  After Phase 1.2-1.4 (rationalisation + batch update), you could do a targeted subsample check to:
+  - Validate the rationalised vocabulary captures major themes
+  - Identify systematic gaps before full NER rollout
+  - Test NER approach on known ground truth
+
+  My recommendation: Stick with your plan. Begin rationalising the 481 historical tags using the similar_tags.csv and tag_hierarchy.csv data. The full-text work will be more efficient once you have a clean vocabulary to work with.
+
+  Does this reasoning make sense? Or do you see a specific benefit to sampling full text now that I'm missing?
+
+> ok, great, can you give me a high-level overview of 1.2 and our approach to it? Do we need a more specific planning document or is phase1-detailed.md a sufficient roadmap? 
+
+● Let me check what exists in the planning documents first:
+
+● Search(pattern: "**/phase1-detailed.md")
+  ⎿  Found 0 files 
+
+● Search(pattern: "**/planning/*.md")
+  ⎿  Found 0 files 
+
+● Search(pattern: "planning/*.md")
+  ⎿  Found 0 files 
+
+● Search(pattern: "*.md")
+  ⎿  Found 1 file (ctrl+o to expand)
+
+● Bash(find /home/shawn/Code/blue-mountains -name "*.md" -path "*/planning/*" -type f 2>/dev/null | head -20)
+  ⎿  /home/shawn/Code/blue-mountains/planning/FAIR4RS-phase-a-detailed.md
+     /home/shawn/Code/blue-mountains/planning/README.md
+     /home/shawn/Code/blue-mountains/planning/FAIR4RS-phase-b-detailed.md
+     … +5 lines (ctrl+o to expand)
+
+● Read(planning/phase1-detailed.md)
+  ⎿  Read 520 lines
+
+● Perfect! You already have a comprehensive roadmap. Let me give you a high-level overview of Phase 1.2 and assess whether you need additional planning:
+
+  High-Level Overview of Phase 1.2: Tag Schema Rationalisation
+
+  Goal: Transform 481 messy historical document tags into a clean, consistent controlled vocabulary.
+
+  Current assets you have:
+  - data/similar_tags.csv - 332 pairs of similar tags requiring merge decisions
+  - data/tag_hierarchy.csv - 137 hierarchical relationships to establish
+  - docs/folksonomy_logic.md - Your decision-making framework and principles
+
+  The four sub-phases (from phase1-detailed.md:83-191):
+
+  1.2.1 Consolidate Similar Tags
+
+  What: Review the 332 similar tag pairs and decide: merge, keep separate, or rename
+  How: Script 03_consolidate_tags.py will implement your decisions
+  Output: data/tag_consolidation_map.csv (old_tag → new_tag)
+
+  1.2.2 Standardise Terminology
+
+  What: Establish naming conventions (capitalisation, hyphenation, preferred terms)
+  How: Collaborative decision-making documented in style guides
+  Output: planning/naming_conventions.md, planning/preferred_terms.md
+
+  1.2.3 Create Hierarchical Structure
+
+  What: Build parent-child relationships (e.g., Court → Katoomba Court)
+  How: Script 04_hierarchy_builder.py will structure the taxonomy
+  Output: data/tag_hierarchy.json, visualisation
+
+  1.2.4 Document Definitions
+
+  What: Write scope notes, usage guidelines, and relationships for each tag
+  How: Manual documentation with historian input
+  Output: data/tag_definitions.csv, planning/tagging_guidelines.md
+
+  ---
+  Assessment: Do you need a more specific planning document?
+
+  Short answer: No, phase1-detailed.md is sufficient - but you may want a lightweight working document to track decisions during 1.2.
+
+  Why the existing plan is good enough:
+  1. You have clear task definitions for all 4 sub-phases
+  2. You have the input data ready (similar_tags.csv, tag_hierarchy.csv)
+  3. You have decision-making principles documented (folksonomy_logic.md)
+  4. You have output specifications for each step
+  5. The scripts are well-defined (even if not all written yet)
+
+  What might be useful to add (optional):
+  - A working decision log for 1.2.1: As you review the 332 similar tag pairs, you could create planning/phase1.2-consolidation-decisions.md to record:
+    - Which pairs you merged and why
+    - Which you kept separate and why
+    - Any questions/uncertainties for historian review
+    - Running tally of progress (e.g., "Reviewed 50/332 pairs")
+
+  This would be a lightweight tracker, not a formal plan - just to help you work systematically through the 332 decisions.
+
+  My recommendation: Start with phase1-detailed.md as your roadmap. If you find yourself getting lost in the 332 similar tags, then create the lightweight decision log. Don't create it pre-emptively.
+
+  Does this assessment match your thinking? Would you like to dive straight into 1.2.1 (reviewing similar_tags.csv)?
+
+> Could you provide me with detailed instructions for '1.2.1 Consolidate Similar Tags'? 
+
+● Read(data/similar_tags.csv)
+  ⎿  Read 50 lines
+
+● Read(docs/folksonomy_logic.md)
+  ⎿  Read 100 lines
+
+● Detailed Instructions for Phase 1.2.1: Consolidate Similar Tags
+
+  Overview
+
+  Goal: Review 332 similar tag pairs and make systematic decisions about which to merge, which to keep separate, and how to establish hierarchical relationships.
+
+  Your primary resources:
+  - data/similar_tags.csv (332 pairs requiring decisions)
+  - docs/folksonomy_logic.md (decision-making framework you've already documented)
+
+  Key principle (from folksonomy_logic.md:614): "Err on the side of maintaining existing granularity." It's easier to collapse tags later than to re-expand them.
+
+  ---
+  The Decision Framework
+
+  For each of the 332 tag pairs, you need to make one of four decisions:
+
+  Decision 1: MERGE (Consolidate to single tag)
+
+  When to merge:
+  - True spelling variants (e.g., "Arefact" → "Artefact")
+  - Capitalisation inconsistencies (e.g., "Bottle" vs "bottle")
+  - Singular/plural forms where meaning is identical (e.g., "Hotel" vs "Hotels")
+  - Hyphenation differences (e.g., "Building-material" vs "Building material")
+
+  How to decide which form to keep:
+  - Use most frequent form as canonical
+  - Follow naming conventions (to be documented in Phase 1.2.2)
+  - Prefer full words over abbreviations
+
+  Example from similar_tags.csv line 107:
+  tag1,tag2,count1,count2,similarity,ratio,partial,token_sort,suggested_merge
+  Bottle,Bootle,60,2,100,56,100,56,Bottle
+  Decision: MERGE "Bootle" → "Bottle" (typo, keep more frequent form)
+
+  ---
+  Decision 2: HIERARCHY (Parent-child relationship)
+
+  When to create hierarchy:
+  - One tag is a broader category, the other is a specific instance
+  - Geographic relationships (Katoomba → Katoomba Hotel)
+  - Institution types (Court → Katoomba Court, Supreme Court, Licensing Court)
+  - Thematic relationships (Mining → Mining accidents)
+
+  Important: Both tags are preserved - this is NOT a merge. Items get both tags applied.
+
+  Example from similar_tags.csv lines 2-7:
+  Court,Court cases,45,45,100,62,100,62,Court
+  Court,Supreme Court,45,4,100,56,100,56,Court
+  Court,Katoomba Court,45,8,100,53,100,53,Court
+  Court,Police court,45,5,100,59,100,59,Court
+  Court,Courthouse,45,8,100,67,100,67,Court
+  Court,Licensing Court,45,12,100,50,100,50,Court
+
+  Decision: HIERARCHY (already decided in folksonomy_logic.md:453-475)
+  Court (PARENT - institution type)
+  ├── Court cases (sub-tag: events/proceedings)
+  ├── Courthouse (sub-tag: building type)
+  ├── Supreme Court (sub-tag: court level)
+  ├── Police court (sub-tag: proceeding type)
+  ├── Licensing Court (sub-tag: proceeding type)
+  └── Katoomba Court (sub-tag: specific building + also tagged "Katoomba")
+
+  ---
+  Decision 3: KEEP SEPARATE (Distinct concepts)
+
+  When to keep separate:
+  - Different people with similar names (Mr Wilson vs Mrs Wilson vs Mr W Wilson)
+  - Different places (Katoomba vs South Katoomba)
+  - Related but distinct concepts (Pub vs Publican vs Public meeting)
+  - Legitimately different entities detected by similarity algorithm
+
+  Example from similar_tags.csv line 23:
+  Pub,Public meeting,3,1,100,35,100,35,Pub
+  Decision: KEEP SEPARATE (completely different concepts - similarity algorithm false positive)
+
+  Example from similar_tags.csv line 148:
+  Mr Wilson,Mrs Wilson,5,2,95,95,89,95,Mr Wilson
+  Decision: KEEP SEPARATE (different people - likely husband and wife)
+
+  ---
+  Decision 4: UNCERTAIN - FLAG FOR HISTORIAN REVIEW
+
+  When to flag:
+  - Domain expertise needed (e.g., "Are Katoomba South and South Katoomba the same place?")
+  - Ambiguous relationships (e.g., "Should 'Recreation for miners' be merged with 'Miners'?")
+  - Potential false positives requiring source checking
+
+  Example from similar_tags.csv line 30:
+  Katoomba South,South Katoomba,9,10,100,57,73,100,South Katoomba
+  Decision: FLAG FOR REVIEW (Are these the same place or different places? Need historian confirmation)
+
+  ---
+  Workflow: Processing the 332 Pairs
+
+  Step 1: Create Working Document
+
+  Create planning/phase1.2-consolidation-decisions.md to record your decisions as you work through the pairs.
+
+  Format:
+  # Phase 1.2.1: Tag Consolidation Decisions
+
+  **Date started**: 2025-10-12
+  **Status**: In progress (X/332 pairs reviewed)
+
+  ## Decisions by Category
+
+  ### MERGE (Spelling/Capitalisation/Typos)
+  | Old Tag | New Tag | Count | Rationale |
+  |---------|---------|-------|-----------|
+  | Bootle | Bottle | 2→60 | Typo |
+  | Arefact | Artefact | 1→151 | Typo |
+
+  ### HIERARCHY (Parent-Child Relationships)
+  | Parent Tag | Child Tag | Count | Rationale |
+  |------------|-----------|-------|-----------|
+  | Court | Court cases | 45, 45 | Institution type → event type |
+  | Court | Supreme Court | 45, 4 | Institution type → specific court level |
+
+  ### KEEP SEPARATE (Distinct Concepts)
+  | Tag 1 | Tag 2 | Count | Rationale |
+  |-------|-------|-------|-----------|
+  | Mr Wilson | Mrs Wilson | 5, 2 | Different people (likely husband/wife) |
+  | Pub | Public meeting | 3, 1 | Unrelated concepts (false positive) |
+
+  ### FLAG FOR REVIEW (Requires Historian Input)
+  | Tag 1 | Tag 2 | Count | Question |
+  |-------|-------|-------|----------|
+  | Katoomba South | South Katoomba | 9, 10 | Same place or different places? |
+
+  Step 2: Work Systematically Through Categories
+
+  The 332 pairs fall into natural groupings. Process them in this order for efficiency:
+
+  Category A: Geographic Tags (lines 8-19, 30, 46-52, 66, etc.)
+
+  Pattern: Place name + Specific institution/feature within that place
+
+  Strategy: Apply multi-tagging principle from folksonomy_logic.md:438-451
+  - Keep geographic tag (e.g., "Katoomba")
+  - Keep institution type (e.g., "Hotel", "Court", "School")
+  - Keep specific named institution (e.g., "Katoomba Hotel", "Katoomba Court")
+  - Decision: HIERARCHY for all
+
+  Examples:
+  - Line 8: Katoomba → Katoomba Hotel (HIERARCHY)
+  - Line 48: Nellie's Glen → Nellie's Glen Shale Mine (HIERARCHY)
+  - Line 51: Megalong Valley → Megalong Valley School (HIERARCHY)
+
+  Category B: Institution Type + Named Institution (lines 90-95, 160-184, etc.)
+
+  Pattern: Generic institution → Specific named instance
+
+  Strategy: Same as geographic - establish parent-child hierarchy
+
+  Examples:
+  - Lines 90-95: Church → St Hilda's Church, Congregational Church, etc. (HIERARCHY for all)
+  - Lines 160-184: Hotels → Mount Victoria Hotel, Allen's Hotel, etc. (HIERARCHY for all)
+
+  Category C: Person Names (lines 148-332, approximately)
+
+  Pattern: Similar names (Mr Wilson, Mrs Wilson, Mr W Wilson, etc.)
+
+  Strategy: KEEP SEPARATE unless you have definitive evidence they're the same person
+
+  Critical guidance from folksonomy_logic.md:517-522:
+  "Preserve all individual person tags - DO NOT merge similar names without verification. Many detected 'similar' names are actually different people."
+
+  Examples:
+  - Line 148: Mr Wilson vs Mrs Wilson (KEEP SEPARATE - different people)
+  - Line 186: Mr W Wilson vs Mr Wilson (KEEP SEPARATE - could be same person or different, needs verification)
+  - Line 193: Mr Thomas Meredith vs Mr Evan Thomas Meredith (KEEP SEPARATE - different people from Meredith family)
+
+  Category D: Spelling/Typo Variants (scattered throughout)
+
+  Pattern: Obvious misspellings
+
+  Strategy: MERGE to correct form
+
+  Examples:
+  - "Bootle" → "Bottle"
+  - "Arefact" → "Artefact"
+  - "Depresson" → "Depression"
+  - "Buidling material" → "Building material"
+
+  Category E: Thematic Relationships (lines 34-46, 76-78, 102, etc.)
+
+  Pattern: Broad theme + Specific manifestation
+
+  Strategy: Establish HIERARCHY (parent-child)
+
+  Examples:
+  - Line 34: Cricket → Megalong Cricket Club (HIERARCHY)
+  - Line 42: Football → Football clubs (HIERARCHY)
+  - Lines 77-78: Mining → Mining settlements, Mining accidents (HIERARCHY)
+
+  Category F: Ambiguous/Uncertain (case-by-case)
+
+  Strategy: FLAG FOR REVIEW when uncertain
+
+  Examples:
+  - Line 23: Pub vs Public meeting (KEEP SEPARATE - false positive)
+  - Line 101: Recreation for miners vs Miners (FLAG - is recreation a sub-category or separate theme?)
+  - Line 237: Mining vs Drinking (KEEP SEPARATE - unrelated, false positive)
+
+  ---
+  Step 3: Generate Consolidation Map
+
+  Once decisions are made, create data/tag_consolidation_map.csv:
+
+  Format:
+  old_tag,new_tag,action,notes
+  Bootle,Bottle,merge,typo
+  Arefact,Artefact,merge,typo
+  Court cases,Court,hierarchy,parent=Court
+  Supreme Court,Court,hierarchy,parent=Court
+  Katoomba Hotel,Katoomba,hierarchy,parent=Katoomba (also parent=Hotel)
+  Mr Wilson,Mr Wilson,keep,distinct from Mrs Wilson and Mr W Wilson
+
+  Column definitions:
+  - old_tag: Original tag from Zotero
+  - new_tag: Canonical form (for merges) or parent tag (for hierarchies)
+  - action: One of: merge, hierarchy, keep, review
+  - notes: Brief rationale or additional context
+
+  ---
+  Step 4: Preview Changes
+
+  Before applying, generate reports/consolidation_preview.md showing:
+  - How many tags will be affected
+  - How many items will be retagged
+  - Examples of before/after for spot-checking
+
+  ---
+  Practical Approach for You
+
+  I recommend we work through this collaboratively and incrementally:
+
+  1. Start with Category D (Spelling/Typos) - Quickest wins, clearest decisions
+  2. Move to Category A (Geographic) - Apply consistent hierarchy pattern
+  3. Then Category B (Institutions) - Similar hierarchy pattern
+  4. Review Category E (Thematic) - Some judgment calls
+  5. Flag Category F (Ambiguous) - Set aside for historian review
+  6. Save Category C (Person Names) for last - Most complex, requires careful review
+
+  Would you like me to:
+  - Option 1: Start processing Category D (spelling/typos) right now and show you the first batch of decisions?
+  - Option 2: Create the working document template first, then work through categories together?
+  - Option 3: Something else?
+
+  Let me know how you'd like to proceed!
+
+> I need to swap computers, I'm travelling and will be working from my laptop, could you please write out a markdown file into planning/ with the 'Detailed Instructions for Phase 1.2.1: Consolidate Similar Tags', so that I have clear instructions for beginning 
+again? 
+
+● Write(planning/phase1.2.1-instructions.md)
+  ⎿  Wrote 420 lines to planning/phase1.2.1-instructions.md           
+     # Phase 1.2.1: Consolidate Similar Tags - Detailed Instructions
+     **Document Version:** 1.0
+     **Date:** 2025-10-12
+     **Status:** Ready to begin
+     **Phase:** Tag Schema Rationalisation (Phase 1.2, Sub-task 1.2.1)
+     ---
+     ## Overview
+     … +410 lines (ctrl+o to expand)
+
+● Perfect! I've created detailed instructions for Phase 1.2.1 at:
+
+  planning/phase1.2.1-instructions.md
+
+  The document includes:
+
+  ✅ Complete decision framework (MERGE, HIERARCHY, KEEP SEPARATE, FLAG FOR REVIEW)
+  ✅ Step-by-step workflow for processing 332 pairs
+  ✅ Six categories with specific strategies for each
+  ✅ Template for creating your working decision document
+  ✅ Examples from your actual data (similar_tags.csv)
+  ✅ Key references to relevant sections in folksonomy_logic.md
+  ✅ Recommended processing order (starting with spelling/typos)
+  ✅ Required deliverables and outputs
+  ✅ Important reminders about your rationalisation principles
+
+  When you're back on your laptop, you can pick up right where we left off. The document is self-contained and gives you everything you need to begin Phase 1.2.1 tag consolidation.
+
+  Safe travels! 🚂
+
+> Thanks! Please do a comprehensive git commit and push 
+
+● Bash(cd /home/shawn/Code/blue-mountains && git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +6 lines (ctrl+o to expand)
+
+● Bash(cd /home/shawn/Code/blue-mountains && git diff HEAD)
+  ⎿  (No content)
+
+● Bash(cd /home/shawn/Code/blue-mountains && git log -3 --oneline)
+  ⎿  38fe478 Append archaeological FAIMS data analysis to folksonomy documentation
+     e6b2cf7 Complete Phase 1.1: Folksonomy logic documentation and infrastructure
+     c1d4666 Add safety rule for conversation export files
+
+● Bash(git add planning/phase1.2.1-instructions.md cc-interactions/2025-10-11-b.txt && git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +4 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Add Phase 1.2.1 detailed instructions for tag consolidation workflow…)
+  ⎿  [main cd1fa0e] Add Phase 1.2.1 detailed instructions for tag consolidation workflow
+      2 files changed, 1261 insertions(+)
+      create mode 100644 cc-interactions/2025-10-11-b.txt
+      create mode 100644 planning/phase1.2.1-instructions.md
+
+● Bash(git push)
+  ⎿  To github.com:shale-heritage/blue-mountains.git
+        38fe478..cd1fa0e  main -> main
+
+● Bash(git log -1 --stat)
+  ⎿  commit cd1fa0ea2206f041d85344efbed5ef1bc2f575da
+     Author: Shawn Ross <shawn@faims.edu.au>
+     Date:   Sun Oct 12 14:28:16 2025 +1100
+     … +47 lines (ctrl+o to expand)
+
+● Perfect! ✅ Commit and push completed successfully.
+
+  Summary
+
+  Commit: cd1fa0e
+  Files added:
+  - planning/phase1.2.1-instructions.md (419 lines)
+  - cc-interactions/2025-10-11-b.txt (842 lines)
+
+  Total: 1,261 lines added
+
+  The comprehensive instructions document is now committed and pushed, so you'll have it available on your laptop when you resume work. The instructions cover:
+
+  - Complete decision framework for the 4 types of decisions
+  - All 6 processing categories with specific strategies
+  - Template for your working document
+  - Recommended order of work
+  - Key principles and references
+
+  You're all set to begin Phase 1.2.1 tag consolidation when you're ready! Safe travels! 🚂
+
+
+
