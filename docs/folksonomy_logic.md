@@ -20,8 +20,7 @@ This document records the tagging logic and categorisation approach developed in
 - **Unique tags:** 481
 - **Total tag applications:** 3,775
 - **Average tags per tagged item:** 11.24
-- **Archaeological features documented:** ~256 (Parkes et al. 2018 pilot survey at Ruined Castle)
-- **Artefacts/artefact groups documented:** ~256 (from FAIMS Mobile survey data)
+- **Archaeological features including artefacts/artefact groups documented:** ~256 (from FAIMS Mobile survey data)
 
 **Three Parallel Tagging Systems:**
 
@@ -30,9 +29,9 @@ This document records the tagging logic and categorisation approach developed in
    - Developed by historians and research assistants
 2. **Archaeological features (FAIMS Mobile):** Built environment, structures, work sites + social theme associations
    - ~256 features documented at Ruined Castle and Nellie's Glen
-   - Developed by archaeological team led by Shawn Ross
+   - Developed by archaeological team organised by Shawn Ross
 3. **Artefacts (FAIMS Mobile):** Functional categories (EAMC schema) + social theme associations
-   - ~256 artefacts/groups documented
+   - Subset of features
    - Functional categories to be verified with artefact specialist Penny Crook
 
 ---
@@ -58,6 +57,8 @@ The tagging system was designed to support investigation of:
 **Multiple perspectives:** The system accommodates three specialist approaches (historical, archaeological, artefact analysis) whilst maintaining connection through shared social history themes.
 
 **User community:** Designed to serve academic researchers, heritage managers, local historians, family historians, and public audiences engaging with Blue Mountains mining heritage.
+
+**Utility:** Tags should be useful for the retrieval and organisation of historical and archaeological sources/data, especially for the creation of collections and exhibits in Omeka.
 
 ---
 
@@ -108,7 +109,7 @@ These tags enable grouping, analysis, and public presentation of documents relat
 
 ### 2.2 Geographic Tags
 
-**Purpose:** Record where events occurred, enable spatial analysis, support heritage mapping, link to gazetteers (particularly Getty Thesaurus of Geographic Names - TGN).
+**Purpose:** Record where events occurred, enable spatial analysis, support heritage mapping, link to gazetteers (particularly Getty Thesaurus of Geographic Names - TGN - and an Australian gazetteer TBD).
 
 **Spatial Hierarchy:**
 
@@ -167,7 +168,7 @@ Greater Katoomba Region
 
 #### Level 2: Named Institution (specific instance)
 
-- Court → Katoomba Court, Supreme Court, Police court, Licensing Court
+- Court → Katoomba Court, Supreme Court (court type: higher court level), Police court (court type: lower court level/magistrate), Licensing Court (court type: specialist jurisdiction)
 - Hotel → Katoomba Hotel, Carrington Hotel, Imperial Hotel, Megalong Hotel
 - School → Katoomba Public School, Katoomba Superior Public School, Megalong Valley School
 - Church → Katoomba Congregational Church, St Hilda's Church, Wesleyan Church
@@ -201,7 +202,7 @@ Greater Katoomba Region
 **Consistency challenges:**
 
 - Many similar-looking names represent **different people** (e.g., "Mr Wilson", "Mrs Wilson", "Mr W Wilson", "Mr Albert C Wilson" are likely 3-4 distinct individuals)
-- **Disambiguation needed:** Through Named Entity Recognition (NER) and biographical dictionary research
+- **Disambiguation needed:** Through Named Entity Recognition (NER) and biographical dictionary research; where disambiguation is uncertain, recognise ambiguity and state the possible candidate individuals (with approximately likelihood and reasoning wherever possible) - or in extreme cases where disambiguation is impossible, explicitly report that the identity of the person cannot be determined
 - **Future work:** Create complete register of people mentioned in corpus, link to ADB entries where available
 
 ### 2.5 Temporal Tags
@@ -230,19 +231,23 @@ Greater Katoomba Region
 - Post-Federation (1901)
 - Pre-World War I
 
-### 2.6 Document Type: "Primary Source"
+### 2.6 Document Type: "Primary Source" or "Secondary Source" or "Other"
 
-**Current status:** Applied to 304 out of 336 tagged items (90%)
+**Current status:** "Primary Source: applied to 304 out of 336 tagged items (90%)
 
 **Analysis:** This is essentially **item metadata** rather than a subject tag. It describes the **nature of the document** (primary vs secondary source) rather than its **content**.
 
 **Recommendation for rationalisation:**
 
-- Move "Primary source" designation to **item type metadata** field in Zotero
+- Move "Primary source" designation to **item type metadata** field in Zotero where an item is a primary source
+- Move or add "Secondary soruce" designation to **item type metadata** where an item is a secondary source
+- If there are any sources that are neither primary nor secondary, tag as "Other" in **item type metadata** (there may not be)
 - Reserve tags for **subject/thematic content only**
 - This will reduce tag clutter and improve subject-based discovery
 
-**Other potential document type categories:**
+**Potential document subtype categories:**
+
+Where the nature of the document can be determined, add a subtype category such as:
 
 - Newspaper article
 - Court record / transcript
@@ -264,7 +269,7 @@ Archaeological features were tagged by the project archaeological team (led by d
 2. **Apply social history theme tags** where material evidence supports interpretation
 3. **Integrate archaeological and historical evidence** through shared tagging vocabulary
 
-**Limitations:** Archaeological surface survey reveals structural remains and scattered artefacts, but interpretation is more constrained than with textual sources. Social history theme tags applied only when **material evidence clearly supports** the interpretation.
+**Limitations:** Archaeological surface survey reveals structural remains and scattered artefacts, but interpretation is more constrained than with textual sources. Social history theme tags applied only when **material evidence clearly supports** the interpretation. Archaeological tags will often be less specific, at a higher level in a combined tag taxonomy than historical source tags. This fact requires careful consideration of tag hierarchies so that archaeological data can be meaningfully associated with related historical sources despite being tagged with a broader term.
 
 ### 3.2 Built Environment Categories
 
@@ -356,7 +361,7 @@ Based on **Parkes et al. 2018** pilot survey and expanded fieldwork at Ruined Ca
 
 - Align terminology with rationalised historical tags
 - Enrich feature tags with additional social theme associations
-- Ensure consistency between archaeological and historical tagging vocabularies
+- Ensure consistency between archaeological and historical tagging vocabularies, especially regarding construction of the tag hierachy applied to both
 
 ---
 
@@ -447,6 +452,7 @@ Following the same social history themes as historical documents, where evidence
 
 - Enables searching by location alone ("all Katoomba items")
 - Enables searching by institution type alone ("all court cases")
+- Enmables boolean searching of location plus institution ("all court cases heard in the Katoomba courthouse")
 - Enables searching for specific named institution
 - Supports hierarchical vocabulary mapping to Getty TGN and AAT
 
@@ -456,11 +462,11 @@ Following the same social history themes as historical documents, where evidence
 
 - Court (45 uses) - **Institution type (PARENT CATEGORY)**
 - Court cases (45 uses) - **Sub-tag** for events/proceedings
-- Supreme Court (4 uses) - **Sub-tag** for specific court level
+- Supreme Court (4 uses) - **Court type:** higher court level
+- Police court (5 uses) - **Court type:** lower court level (magistrate/petty sessions)
+- Licensing Court (12 uses) - **Court type:** specialist jurisdiction
 - Katoomba Court (8 uses) - **Sub-tag** for specific courthouse building
-- Police court (5 uses) - **Sub-tag** for specific proceeding type
 - Courthouse (8 uses) - **Sub-tag** for building type
-- Licensing Court (12 uses) - **Sub-tag** for specific proceeding type
 
 **Recommended hierarchy (maintaining granularity):**
 
@@ -468,11 +474,23 @@ Following the same social history themes as historical documents, where evidence
 Court (PARENT CATEGORY - institution type)
 ├── Court cases (sub-tag: events/proceedings about court)
 ├── Courthouse (sub-tag: building type)
-├── Supreme Court (sub-tag: specific court level - hierarchical)
-├── Police court (sub-tag: specific proceeding type)
-├── Licensing Court (sub-tag: specific proceeding type)
+├── Court type (sub-category: court level and jurisdiction)
+│   ├── Supreme Court (higher court level - serious criminal/civil matters)
+│   ├── Police court (lower court level - magistrate/petty sessions for minor offences)
+│   └── Licensing Court (specialist jurisdiction - liquor licensing matters)
 └── Katoomba Court (sub-tag: specific courthouse building - also tagged "Katoomba")
 ```
+
+**Historical context for Court Type classification:**
+
+In 19th/early 20th century Australian legal systems:
+- **Supreme Court** = highest state court for serious criminal and civil matters (hierarchically superior)
+- **Police court** = Magistrate's Court or Petty Sessions - lower-level court for minor offences and preliminary hearings
+- **Licensing Court** = specialist court for liquor licensing matters (often held by magistrates or specially appointed commissioners)
+
+This classification groups them as "Court Type" which encompasses both:
+- **Court level** (hierarchical: Supreme vs Police/Magistrate)
+- **Court jurisdiction** (specialist: Licensing Court)
 
 **Cross-domain tagging example:**
 
@@ -646,8 +664,10 @@ An item about Katoomba Courthouse might receive:
 - Retain all sub-tags:
   - Court cases (events/proceedings)
   - Courthouse (building type)
-  - Supreme Court (court level)
-  - Police court, Licensing Court (proceeding types)
+  - **Court type** (sub-category grouping):
+    - Supreme Court (court type: higher court level)
+    - Police court (court type: lower court level/magistrate)
+    - Licensing Court (court type: specialist jurisdiction)
   - Katoomba Court (specific building + geographic tag "Katoomba")
 
 **5. People and Families:**

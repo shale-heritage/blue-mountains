@@ -53,7 +53,7 @@ Bottle,Bootle,60,2,100,56,100,56,Bottle
 **When to create hierarchy**:
 - One tag is a **broader category**, the other is a **specific instance**
 - Geographic relationships (Katoomba → Katoomba Hotel)
-- Institution types (Court → Katoomba Court, Supreme Court, Licensing Court)
+- Institution types (Court → Katoomba Court; Court type grouping → Supreme Court, Police court, Licensing Court)
 - Thematic relationships (Mining → Mining accidents)
 
 **Important**: Both tags are **preserved** - this is NOT a merge. Items get **both** tags applied.
@@ -69,15 +69,16 @@ Court,Courthouse,45,8,100,67,100,67,Court
 Court,Licensing Court,45,12,100,50,100,50,Court
 ```
 
-**Decision**: HIERARCHY (already decided in folksonomy_logic.md:453-475)
+**Decision**: HIERARCHY (already decided in folksonomy_logic.md:458-493)
 
 ```text
 Court (PARENT - institution type)
 ├── Court cases (sub-tag: events/proceedings)
 ├── Courthouse (sub-tag: building type)
-├── Supreme Court (sub-tag: court level)
-├── Police court (sub-tag: proceeding type)
-├── Licensing Court (sub-tag: proceeding type)
+├── Court type (sub-category: court level and jurisdiction)
+│   ├── Supreme Court (higher court level - serious criminal/civil matters)
+│   ├── Police court (lower court level - magistrate/petty sessions)
+│   └── Licensing Court (specialist jurisdiction - liquor licensing)
 └── Katoomba Court (sub-tag: specific building + also tagged "Katoomba")
 ```
 
@@ -343,11 +344,16 @@ Work through this **incrementally**:
 
 > "Preserve all individual person tags - DO NOT merge similar names without verification. Many detected 'similar' names are actually different people."
 
-**Court Tag Hierarchy - ALREADY DECIDED (lines 453-475)**:
+**Court Tag Hierarchy - ALREADY DECIDED (lines 458-493)**:
 
 The Court tag hierarchy has been decided and documented:
 - Court (PARENT CATEGORY - institution type)
-- Court cases, Courthouse, Supreme Court, Police court, Licensing Court, Katoomba Court (all SUB-TAGS)
+- Court cases (events/proceedings), Courthouse (building type)
+- **Court type** (sub-category grouping):
+  - Supreme Court (court type: higher court level)
+  - Police court (court type: lower court level/magistrate)
+  - Licensing Court (court type: specialist jurisdiction)
+- Katoomba Court (specific building + geographic tag "Katoomba")
 
 ---
 
