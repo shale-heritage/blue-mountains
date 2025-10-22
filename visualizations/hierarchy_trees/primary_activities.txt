@@ -34,7 +34,9 @@ Activities
 │   └── Sports
 ├── Regulatory processes
 │   └── Licensing
-│       └── Liquor licensing
+│       ├── Hotel licensing
+│       ├── Liquor licensing
+│       └── Publican's licensing
 └── Social behaviours
     ├── Drinking (alcohol)
     ├── Gambling
@@ -42,6 +44,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 38
+  Total nodes in facet: 40
   Generated: 2025-10-20
   Source: data/poly_hierarchy_additions.csv

@@ -686,6 +686,11 @@ def generate_primary_facets():
         ['Regulatory processes', 'Regulatory processes', 'hierarchy', 'parent=Activities'],
         ['Licensing', 'Licensing', 'hierarchy', 'parent=Regulatory processes'],
         ['Liquor licensing', 'Liquor licensing', 'hierarchy', 'parent=Licensing'],
+        ['Hotel licensing', 'Hotel licensing', 'hierarchy', 'parent=Licensing'],
+        ['Publican\'s licensing', 'Publican\'s licensing', 'hierarchy', 'parent=Licensing'],
+
+        # Map existing tag variant to new preferred form
+        ['Publican\'s License', 'Publican\'s licensing', 'synonym', 'Historical term for licence to operate public house serving alcohol'],
 
         # Charitable and welfare activities
         ['Charitable and welfare activities', 'Charitable and welfare activities', 'hierarchy', 'parent=Activities'],
