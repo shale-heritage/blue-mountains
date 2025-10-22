@@ -1,0 +1,2195 @@
+
+ ▐▛███▜▌   Claude Code v2.0.22
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+════════════════════════════════════════════ Conversation compacted · ctrl+o for history ═══════════════════════════════════════════
+
+> /compact   Session Handover: Accommodation Rationalization Complete
+
+  ✅ Accomplished This Session
+
+  1. Completed Deferred Items (3/5)
+
+  - Desertion (3 uses) → Classified as Events > Criminal events (child/family desertion criminal offense)
+  - Drunkeness (16 uses) → Split into:
+    - "Drunkenness" → Events > Criminal events (10 court cases)
+    - "Drunkenness (intoxication)" → Associated Concepts > Physical and health conditions (6 non-criminal references)
+  - Accommodation (64 uses) → DEPRECATED, replaced with Pattern A hierarchies
+
+  2. Implemented Pattern A (Churches Model) Hierarchy
+
+  Pattern: Plural Parent (category) > Singular Generic (taggable) > Specific Instances
+
+  Applied to 6 new/updated categories:
+  - Hotels > Hotel > [9 new + existing hotels]
+  - Boarding houses > Boarding house > Orama Boarding House
+  - Cottages > Cottage (NEW category)
+  - Stables > Stable (NEW category)
+  - Hotelliers > Hotellier > [30 individuals: Mrs Long, Mr Wilson, F.C. Goyder, etc.]
+  - Coach and buggy business > Mr Thomas Cale (NEW occupation category)
+
+  3. Hierarchy Additions
+
+  - 9 new towns: Leura, Medlow, Mount Victoria, Hartley Vale, Clarence, Lithgow, Sydney, Blackheath, South Katoomba
+  (sub-locality under Katoomba)
+  - Gullies > Nellie's Glen (new natural feature category)
+  - Animals > Cattle
+  - Synonyms: Mt Victoria → Mount Victoria, Mt Victoria Hotel → Mount Victoria Hotel
+
+  4. Files & Statistics
+
+  - scripts/22_generate_poly_hierarchy.py (+~150 lines): Generates poly-hierarchical taxonomy CSV
+  - scripts/23_visualise_poly_hierarchy.py: Generates ASCII tree visualisations (28 files)
+  - reports/accommodation_rationalization_report.md (998 lines): Detailed retagging guide for 64 items
+  - data/poly_hierarchy_additions.csv: 570 → 633 lines (+63 relationships, +11%)
+  - Git: Committed and pushed (commit 2861be2)
+
+  ---
+  📋 COMPREHENSIVE TO-DO LIST
+
+  🔴 IMMEDIATE PRIORITY (Before Next Work)
+
+  1. Merge CSVs (CHECK CONFLICTS FIRST!)
+  # Check for conflicts between:
+  # - data/poly_hierarchy_additions.csv (633 lines - NEW work)
+  # - data/tag_consolidation_map.csv (996 lines - MASTER file)
+  ⚠️ Critical: poly_hierarchy_additions.csv NOT yet appended to master tag_consolidation_map.csv
+
+  2. Fix Taxonomy Issues (User Identified)
+  - Merge "Mining settlements" → "Mining districts"
+  - Merge "Hospitality venues" → "Accommodation buildings" (rename to "Accommodation and Hospitality buildings"?)
+
+  3. Manual Zotero Retagging
+  - 64 items tagged "Accommodation" need retagging
+  - Use reports/accommodation_rationalization_report.md as guide
+  - 3 items (#24, #30, #48) need full-text review
+
+  ---
+  🟡 CONTINUE DEFERRED ITEMS (2 remaining)
+
+  4. Alcohol Tag (12 uses) - Too broad, needs context review
+  - Fetch full text from Zotero
+  - Analyse: substance/material vs. activity vs. merge with "Drinking"
+  - Propose classification
+
+  5. Post Tag (9 uses) - Building vs. service disambiguation
+  - Already added to Activities > Communication activities > Postal services
+  - Need to disambiguate: post office (building) vs. postal service (activity)
+  - May need separate Built Environment entry
+
+  ---
+  🟢 PHASE 2: PATTERN A STANDARDIZATION
+
+  6. Retrofit Existing Categories to Pattern A
+  Categories using Pattern B (flat - inconsistent):
+  - Clergy > [ADD: Clergyman] > Cardinal Moran, etc.
+  - Medical professionals > [ADD: Medical professional] > Dr Spark, etc.
+  - Law enforcement > [ADD: Police officer] > Constable Hamilton, etc.
+  - Other occupations (audit needed)
+
+  Estimated scope: 5-6 categories, ~200+ tags affected
+  Documentation: See scripts/22_generate_poly_hierarchy.py lines 767-821
+
+  Steps:
+  1. Audit all plural parent categories across 7 primary facets
+  2. Identify Pattern B categories
+  3. Add singular intermediates
+  4. Update poly_hierarchy_additions.csv
+  5. Regenerate visualisations
+  6. Test and validate
+
+  ---
+  🔵 REMAINING WORK
+
+  7. Take Stock & Plan Next Steps
+  - Review what's completed vs. what remains
+  - Assess vocabulary coverage
+  - Plan Phase 1.3 (Getty AAT mapping?)
+
+  8. Documentation Updates
+  - Update folksonomy_logic.md with new structures
+  - Document Pattern A standardization decision
+  - Update phase instructions if needed
+
+  ---
+  🎯 CURRENT STATE
+
+  Primary Facets: 7 (stable)
+
+  1. Activities (30 nodes)
+  2. Agents (163 nodes) - expanded with 30 hoteliers
+  3. Associated Concepts (5 nodes)
+  4. Built Environment (67 nodes) - expanded with hotels, cottages, stables
+  5. Events (39 nodes) - added Desertion, Drunkenness
+  6. Information Forms (7 nodes)
+  7. Places (37 nodes) - added 9 towns, Gullies
+
+  Coverage
+
+  - Primary facet assignments: 345 tags (of ~481 total)
+  - Deferred items: 2 remaining (Alcohol, Post)
+  - CSV growth: +11% this session
+
+  ---
+  ⚠️ IMPORTANT WARNINGS
+
+  1. poly_hierarchy_additions.csv ≠ tag_consolidation_map.csv
+    - poly_hierarchy_additions.csv: Generated vocabulary structure (not applied)
+    - tag_consolidation_map.csv: MASTER file for actual Zotero changes
+    - Must merge before applying to Zotero!
+  2. Manual retagging required
+    - Scripts define vocabulary, NOT item-specific tag assignments
+    - Accommodation report has assignment guidance, but must be applied manually in Zotero
+  3. Pattern inconsistency remains
+    - New categories use Pattern A (correct)
+    - Existing categories use Pattern B (needs retrofit - Phase 2)
+
+  ---
+  📁 KEY FILES
+
+  Modified:
+  - scripts/22_generate_poly_hierarchy.py - Main taxonomy generator
+  - scripts/23_visualise_poly_hierarchy.py - Tree visualiser
+
+  Generated:
+  - data/poly_hierarchy_additions.csv (633 lines) - NOT YET MERGED
+  - visualizations/hierarchy_trees/*.txt (28 files)
+  - reports/accommodation_rationalization_report.md (998 lines)
+
+  Master file (TO UPDATE):
+  - data/tag_consolidation_map.csv (996 lines) - NEEDS MERGE
+
+  ---
+  Ready to continue with Alcohol & Post tag analysis, then CSV merge and taxonomy fixes!
+
+  Todos
+  ☒ Classify Desertion tag (3 uses) - crime vs. social pathology
+  ☒ Classify Drunkeness tag (16 uses) - public crime vs. physical condition
+  ☒ Rationalize Accommodation tag (64 uses) - occupations vs. built environment
+  ☐ Divide Alcohol tag (12 uses) - too broad, needs context review
+  ☐ Disambiguate Post tag (9 uses) - building vs. service 
+  ⎿  Compacted (ctrl+o to see full summary)
+  ⎿  Referenced file scripts/22_generate_poly_hierarchy.py
+  ⎿  Referenced file reports/accommodation_rationalization_report.md
+  ⎿  Read visualizations/hierarchy_trees/primary_built_environment.txt (112 lines)
+  ⎿  Read .claude/settings.local.json (14 lines)
+  ⎿  Read scripts/09_analyse_variants_in_context.py (328 lines)
+  ⎿  Todo list read (5 items)
+
+> Hi CC, welcome back. Before we begin on substantive work, can you do a git commit and push of the new and changed files? You 
+did some but not all in our previous session. If you need to break them into multiple commits for it to be logical, that's fine,
+ but please make *all* necessary commits then push so that the repo is fully up-to-date. 
+
+● I'll check the current git status and organize the commits logically based on the work completed.
+
+● Bash(git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +86 lines (ctrl+o to expand)
+
+● Let me check if the accommodation rationalization files from the previous session were already committed:
+
+● Bash(git log --oneline -5)
+  ⎿  2861be2 Implement accommodation tag rationalization with Pattern A hierarchy
+     a3f89e4 Revise court tag hierarchy with 'Court Type' categorisation
+     7d728b0 Export Claude Code conversation
+     … +2 lines (ctrl+o to expand)
+
+● Bash(ls -la scripts/22_generate_poly_hierarchy.py scripts/23_visualise_poly_hierarchy.py
+      reports/accommodation_rationalization_report.md 2>/dev/null | head -20)
+  ⎿  -rw-rw-r-- 1 shawn shawn 36716 Oct 22 10:31 reports/accommodation_rationalization_report.md
+     -rwxrwxr-x 1 shawn shawn 78056 Oct 22 11:15 scripts/22_generate_poly_hierarchy.py
+     -rw-rw-r-- 1 shawn shawn 15372 Oct 21 13:43 scripts/23_visualise_poly_hierarchy.py
+
+● Perfect! I can see the accommodation rationalization work was already committed (2861be2). Now I'll organize the remaining
+  files into logical commits. Let me check what changed in README.md first:
+
+● Bash(git diff README.md | head -50)
+  ⎿  diff --git a/README.md b/README.md
+     index 6fecb41..a79d2e9 100644
+     --- a/README.md
+     … +47 lines (ctrl+o to expand)
+
+● I'll organize this into logical commits. Let me start:
+
+  Commit 1: Add analysis scripts infrastructure
+
+● Bash(git add scripts/04_auto_categorize_tags.py scripts/05_triage_flagged_pairs.py scripts/06_apply_automated_decisions.py
+      scripts/07_review_naming_variants.py scrip…)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +87 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Add Phase 1.2 analysis script infrastructure…)
+  ⎿  [main 6c6f657] Add Phase 1.2 analysis script infrastructure
+      25 files changed, 6280 insertions(+)
+      create mode 100755 run.sh
+     … +24 lines (ctrl+o to expand)
+
+● Commit 2: Add documentation and planning files
+
+● Bash(git add README.md docs/folksonomy_logic.md docs/thesaurus_structure.md planning/phase1.2.1-instructions.md planning/TODO.md
+      planning/community_institutions_prop…)
+  ⎿  On branch main                                    
+     Your branch is ahead of 'origin/main' by 1 commit.
+       (use "git push" to publish your local commits)
+     … +63 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Update project documentation and add Phase 1.2 planning files…)
+  ⎿  [main b25ad88] Update project documentation and add Phase 1.2 planning files
+      11 files changed, 2120 insertions(+), 49 deletions(-)
+      create mode 100644 docs/thesaurus_structure.md
+     … +7 lines (ctrl+o to expand)
+
+● Commit 3: Add Phase 1.2 analysis reports
+
+● Bash(git add reports/*.md reports/*.txt visualizations/tag_cooccurrence.png && git status)
+  ⎿  On branch main                                     
+     Your branch is ahead of 'origin/main' by 2 commits.
+       (use "git push" to publish your local commits)
+     … +48 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Add comprehensive Phase 1.2 tag analysis reports…)
+  ⎿  [main 8f2bf81] Add comprehensive Phase 1.2 tag analysis reports 
+      27 files changed, 5662 insertions(+), 14 deletions(-)
+      create mode 100644 reports/activities_corrections_validation.md
+     … +22 lines (ctrl+o to expand)
+
+● Commit 4: Add session tracking and interaction logs
+
+● Bash(git add SESSION_HANDOVER.md SESSION_HANDOVER_2025-10-20.md cc-interactions/ && git status)
+  ⎿  On branch main                                     
+     Your branch is ahead of 'origin/main' by 3 commits.
+       (use "git push" to publish your local commits)
+     … +21 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Add session handover documentation and interaction logs…)
+  ⎿  [main 01453ed] Add session handover documentation and interaction logs
+      11 files changed, 13143 insertions(+)
+      create mode 100644 SESSION_HANDOVER.md
+     … +10 lines (ctrl+o to expand)
+
+● Now let me check the final status and push all commits:
+
+● Bash(git status)
+  ⎿  On branch main                                     
+     Your branch is ahead of 'origin/main' by 4 commits.
+       (use "git push" to publish your local commits)
+     … +9 lines (ctrl+o to expand)
+
+● Perfect! The remaining untracked files are backup files and checksums (temporary/generated files that shouldn't be committed).
+   Now let me push all commits:
+
+● Bash(git push)
+  ⎿  To github.com:shale-heritage/blue-mountains.git
+        2861be2..01453ed  main -> main
+
+● Excellent! All commits successfully pushed to the remote repository. Here's what was committed:
+
+  Commit Summary
+
+  4 commits pushed (from 2861be2 to 01453ed):
+
+  1. 6c6f657: Add Phase 1.2 analysis script infrastructure
+    - 25 files: All numbered analysis scripts (04-28), setup.sh, run.sh
+    - 6,280 lines of code added
+  2. b25ad88: Update project documentation and add Phase 1.2 planning files
+    - 11 files: README.md, folksonomy docs, planning documents, taxonomy proposals
+    - 2,120 lines added
+  3. 8f2bf81: Add comprehensive Phase 1.2 tag analysis reports
+    - 27 files: Entity analysis, hierarchy implementation, process reports, updated visualizations
+    - 5,662 lines added
+  4. 01453ed: Add session handover documentation and interaction logs
+    - 11 files: Session handovers, Claude Code interaction logs (Oct 19-22)
+    - 13,143 lines added (complete audit trail)
+
+  Total: 74 files committed, ~27,000 lines added
+
+  Not committed (correctly excluded):
+  - data/poly_hierarchy_additions.csv.backup* - backup files
+  - data/poly_hierarchy_additions.csv.md5 - checksum file
+
+  The repository is now fully up-to-date with all Phase 1.2 work, ready to proceed with the remaining tasks!
+
+> great, let's now turn to the Alcohol tag uses. Can you provide me with a report like the accommodation_rationalisation report?
+ Also, please review claude.md, I see you've slipped out of Australian English into US English 
+
+● I apologise for the spelling errors. Let me first read CLAUDE.md to refresh the standards, then I'll create the Alcohol tag
+  analysis report.
+
+● Read(CLAUDE.md)
+  ⎿  Read 51 lines
+
+● Read(scripts/config.py)
+  ⎿  Read 306 lines
+
+● Thank you for the reminder about Australian English spelling. I'll be more careful going forward.
+
+  Now let me create a script to analyse the "Alcohol" tag and generate a comprehensive report:
+
+● Write(scripts/29_analyse_alcohol_tag.py)
+  ⎿  Wrote 349 lines to scripts/29_analyse_alcohol_tag.py                     
+     #!/usr/bin/env python3
+     """
+     Script 29: Analyse Alcohol Tag Usage
+     This script analyses items tagged with "Alcohol" to determine appropriate
+     reclassification. The "Alcohol" tag is too broad and may refer to:
+     1. Alcoholic beverages as material goods/substances
+     2. Alcohol consumption/drinking as an activity
+     3. Alcohol trade/sales as an occupation
+     … +339 lines (ctrl+o to expand)
+
+● Now let me run the script to generate the report:
+
+● Bash(./run.sh 29_analyse_alcohol_tag.py)
+  ⎿  ➜ Running: scripts/29_analyse_alcohol_tag.py
+
+     ✓ Configuration loaded successfully
+     … +45 lines (ctrl+o to expand)
+
+● Perfect! Now let me read the generated report and analyse each item to provide specific tag recommendations:
+
+● Read(reports/alcohol_rationalisation_report.md)
+  ⎿  Read 261 lines
+
+● Now let me analyse each item's full context and provide specific tag recommendations. I'll update the report with detailed
+  analysis:
+
+● Write(scripts/30_analyse_alcohol_contexts.py)
+  ⎿  Wrote 157 lines to scripts/30_analyse_alcohol_contexts.py              
+     #!/usr/bin/env python3
+     """
+     Script 30: Detailed Alcohol Context Analysis
+     This script provides detailed analysis of each item tagged "Alcohol" by
+     searching for alcohol-related keywords in the full text and extracting
+     relevant context. This helps determine appropriate replacement tags.
+     Outputs:
+         - Console output with keyword-in-context analysis
+     … +147 lines (ctrl+o to expand)
+
+● Bash(./run.sh 30_analyse_alcohol_contexts.py 2>&1 | head -300)
+  ⎿  ➜ Running: scripts/30_analyse_alcohol_contexts.py
+
+     ✓ Configuration loaded successfully
+     … +318 lines (ctrl+o to expand)
+
+● Excellent! Now I have the detailed contexts. Let me update the report with specific tag recommendations based on this
+  analysis. I'll edit the report file directly:
+
+● Read(reports/alcohol_rationalisation_report.md)
+  ⎿  Read 25 lines
+
+● Now let me update each item with specific tag recommendations. I'll work through them systematically:
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       32    
+       33    - **Date:** 6 September 1890
+       34    - **Publication:** Nepean Times
+       35 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       36 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       35 +  - **Proposed Tag:** `Sexual assault` | `Carrington Hotel`
+       36 +  - **Hierarchy Path:** Events > Criminal events > Sexual assault | Built Environment > Buildings > Accommodation 
+          + buildings > Hotels > Carrington Hotel
+       37    
+       38    **Snippet:**
+       39    > Nepean Times (Penrith, NSW : 1882 - 1962), Saturday 6 September 1890, page 4 A Charge of Rape. At the Penrith 
+            Police Court on Friday, before Messrs. A. Judges and A. Colless, J's. P. Robert Russell was charged that he did 
+            on the 3rd September instant, at Katoomba, without her consent, ravish and carnally know Fanny Lynch. Constable 
+            John Hamilton, sworn, deposed: From information I received from Fanny Lynch yesterday morning between 3 and 4 
+            o'clock, I took her to Dr. Spark at Katoomba, this was between 9 and 10 o'clock, she refused to be examined; I 
+            went in search of Fanny Lynch's husband but I failed to find him; Constable Illingworth then arrived at Katoomba,
+             we went and searched for Lynch but could not find him; we then went to the Carrington Hotel; I called accused 
+            and said to him "We are going to arrest you;" I further said...
+       40    
+       41 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       41 +  **Rationale:** Primary subject is sexual assault/rape charge at Penrith Police Court. Full text contains 
+          + multiple references to rum, grog, and drinking as contextual details (accused and witnesses had been drinking). 
+          + Arrest occurred at Carrington Hotel. The "Alcohol" tag appears to be  misapplied - the article is fundamentally 
+          + about a criminal prosecution for rape, not about alcohol. Remove "Alcohol" tag entirely and use appropriate 
+          + criminal event and location tags.
+       42    
+       43    ---
+       44    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       46    
+       47    - **Date:** 29 April 1892
+       48    - **Publication:** Katoomba Times
+       49 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       50 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       49 +  - **Proposed Tag:** `Drunkenness` | `Drunkenness (intoxication)` | `Beer`
+       50 +  - **Hierarchy Path:** Events > Criminal events > Drunkenness | Associated Concepts > Physical and health 
+          + conditions > Drunkenness (intoxication) | Associated Concepts > Materials > Consumable materials > Alcoholic 
+          + beverages > Beer
+       51    
+       52    **Snippet:**
+       53    > Katoomba Times (NSW : 1889 - 1894), Friday 29 April 1892, page 2 Mountain Mixtures. "A chiel's amang ye takin'
+             notes, an' faith we'll print 'em." THREE YEARS Since the first Issue of THE TIMES. Two drunks at Katoomba Court 
+            this week and they were fined the usual figure. Mr. T. Snow has purchased Mr. D. J. Kelleher's Tailoring 
+            business. See ad. Constable Tinddle, from Mudgee, is to take charge of Hartley Vale police station. Beautiful day
+             last Sunday, and a few visitors were at the various places of resort. On Thursday night a little daughter of Mr.
+             C. W. Craig's, aged 10 months, died at Katoomba, from whooping cough. A terrible railway accident occurred to 
+            the down mail train last Tuesday night near Tarana. Particulars elsewhere. Concert in aid of the Roman Catholic 
+            Church will be held in the Oddfellows' Hall, Katoomba, on Friday next. See ad. If the...
+       54    
+       55 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       55 +  **Rationale:** Article mentions "Two drunks at Katoomba Court" (criminal prosecutions) and discusses prediction 
+          + of "double the amount of drunkenness at the black-diamond fields" due to cheap "thripenny beers" at Lithgow. 
+          + Contains both criminal drunkenness (court fines) and social commentary on drinking behaviour (intoxication 
+          + levels). Also references alcoholic beverages specifically (beer prices).
+       56    
+       57    ---
+       58    
+
+● Let me continue with the remaining items. I'll work through them more quickly:
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       60    
+       61    - **Date:** 25 August 1893
+       62    - **Publication:** Katoomba Times
+       63 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       64 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       63 +  - **Proposed Tag:** `Drinking` | `Liquor trade` | `Megalong Valley`
+       64 +  - **Hierarchy Path:** Activities > Lifestyle and leisure > Social activities > Drinking | Activities > 
+          + Commercial activities > Liquor trade | Places > Valleys > Megalong Valley
+       65    
+       66    **Snippet:**
+       67    > Katoomba Times (NSW : 1889 - 1894), Friday 25 August 1893, page 2 Mountain Mixtures. "A chiel's amang ye 
+            takin' notes an faith we'll prent 'em No court at Katoomba this week. Getting better. Hartley and The Nepean 
+            electorates retain their names. Arbor Day celebration a big success at Penrith last week. Seed Potatoes at G. 
+            Clarke's produce store, Katoomba. - Advt. Mr. John Barry, at one time coach proprietor at Katoomba, died 
+            recently. Over 140 pupils prohibited from attending the Katoomba Public School for several weeks. Cause - 
+            measles. Mr. Mullany intends erecting two weatherboard cottages in Leichhardt-street, Katoomba. Tenders called in
+             this issue. Katoomba Tennis Club fencing being proceeded with, also, we suppose, the rent to the Railway 
+            Commissioners is still running on. Mr. Samuel J. Thompson, solicitor, is conducting Mr. S. B. Banfield's practice
+             at Katoomba, during that gentleman's temporary absence. See advt. On Sunday last a...
+       68    
+       69 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       69 +  **Rationale:** Full text discusses Megalong Valley mining settlement drinking culture: "Whisky at Megalong 
+          + breeds imitation funerals, hangings", "grog shop which is the means of fully compensating for the absence of 
+          + [theatres]", describes "beer and its whiskey, its rum and its brandy, re-tailed per case". Social commentary on 
+          + drinking as recreational activity and liquor retail trade at mining settlement.
+       70    
+       71    ---
+       72    
+
+● Let me continue with items 4-12. Due to length, I'll do them in batches:
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       74    
+       75    - **Date:** 10 February 1893
+       76    - **Publication:** Katoomba Times
+       77 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       78 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       77 +  - **Proposed Tag:** `Beer` | `Liquor trade`
+       78 +  - **Hierarchy Path:** Associated Concepts > Materials > Consumable materials > Alcoholic beverages > Beer | 
+          + Activities > Commercial activities > Liquor trade
+       79    
+       80    **Snippet:**
+       81    > Katoomba Times (NSW : 1889 - 1894), Friday 10 February 1893, page 2 Mountain Mixtures. "A chiel's amang ye 
+            takin' notes, an' faith we'll prent 'em." No new courthouse for Katoomba yet awhile. Blackheath is to have an 
+            Oddfellows' Lodge (independent order). The addition to Katoomba Superior Public School proceeding very slowly. 
+            Will John Hurley be the National Ass. candidate for Hartley next election? Katoomba Park Estate to be auctioned 
+            on the ground at Katoomba next Saturday, February 11. Mr. H. Scope is the delegate of Mountaineer Lodge I.O.O.F. 
+            to the G.L. session to be held next week. Masonic installment at Mount Victoria on Saturday. R.W. Bro. Hopson, 
+            D.G.M., is the instaling master. The proprietors of this paper have made a start at suing long-winded debtors. 
+            More next month unless - Last week Mr. Ted Loften circular-sawed his finger; this week another did the same thing
+             with the very same...
+       82    
+       83 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       83 +  **Rationale:** Full text contains satirical commentary on beer prices: "There is a talk of cheap beer at 
+          + Katoomba. We haven't yet sampled it and what's more, we don't believe cheap beer is to be obtained here... beer 
+          + is awkwardly dear - high-priced, we mean - on these lovely Blue Mountains. Sixpence a glass!" Commentary on 
+          + liquor pricing/trade.
+       84    
+       85    ---
+       86    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+        88    
+        89    - **Date:** 28 January 1893
+        90    - **Publication:** Nepean Times
+        91 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+        92 -  - **Hierarchy Path:** [TO BE DETERMINED]
+        91 +  - **Proposed Tag:** `Death` | `Inquests` | `Ruined Castle Shale Mine` | `South Katoomba`
+        92 +  - **Hierarchy Path:** Events > Death | Events > Legal proceedings > Inquests | Built Environment > Structures >
+           +  Industrial structures > Mining sites > Ruined Castle Shale Mine | Places > Towns > Katoomba > South Katoomba
+        93    
+        94    **Snippet:**
+        95    > Nepean Times (Penrith, NSW : 1882 - 1962), Saturday 28 January 1893, page 3 Found dead. On Wednesday, the 
+             24th inst. Mr. J. K. Lethbridge held an enquiry touching the death of one Robert Cowan Dryden, over-man at the 
+             Ruined Castle Shale Mine, Katoomba south, - who was found dead in his bed on the previous day. John Fitizpatrick
+              deposed: I am the weighman at the Shale mine: I have seen the subject of this inquiry, who I identify as that 
+             of Robert Cowan. Dryden: on Monday last at noon, not seeing him come home to his dinner, I went to his hut 
+             (which is about 20 yards from the mine) and looked in; I saw deceased laying on his bed with his head resting on
+              a stool and the hands laying down I saw that he was dead. I lifted him into the bed and found the body quite...
+        96    
+        97 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+        97 +  **Rationale:** Coroner's inquest into death of mine over-man Robert Cowan Dryden. Full text mentions deceased 
+           + "was in the habit of taking a drink occasionally" and was "slightly under the influence of liquor" the day 
+           + before death, but alcohol was incidental to death (natural causes - heart disease/rigid arteries). Primary 
+           + subject is death/inquest. "Alcohol" tag misapplied - remove it.
+        98    
+        99    ---
+       100    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       102    
+       103    - **Date:** 3 March 1893
+       104    - **Publication:** Katoomba Times
+       105 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       106 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       105 +  - **Proposed Tag:** `Liquor trade` | `Hotelliers` | `Fires`
+       106 +  - **Hierarchy Path:** Activities > Commercial activities > Liquor trade | Agents > People > Occupations > 
+           + Hospitality workers > Hotelliers | Events > Disasters > Fires
+       107    
+       108    **Snippet:**
+       109    > Katoomba Times (NSW : 1889 - 1894), Friday 3 March 1893, page 2 Mountain Mixtures. "A chiel's amang ye takin'
+              notes an' faith we'll prent' ein." Bright sunny days. Penrith Show last Thursday. Big affair. February gone, 
+             and the year is March-ing onwards. Ha! Civilian rifle club formed at Katoomba. Dr. Spark president. Cheap and 
+             nasty - The advertisement secured by legal proceedings. Athletic sports and Fancy dress Social at Ka-toomba on 
+             Easter Monday. One shilling per month is the subscription to Katoomba Civilian Rifle Club. Katoomba Council 
+             still making roads and the overdraft is increasing by leaps and bounds. Sir Frederick Darley 
+             (Lieutenant-Governor) has been sworn in as acting-Governor of N.S.W. Mr. R. McMillan, a journalist known to many
+              Mountaineers, is still hovering around Sydney. A branch of the I.O.O.F. lodge to be opened by the Grand Lodge 
+             at Blackheath tonight (Friday). Katoomba Minstrels, as a result of last...
+       110    
+       111 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       111 +  **Rationale:** Full text discusses multiple topics including Megalong Valley ("a grog shop to make it a red-hot
+           +  hades"), comment on financial benefits to "Mountain hotelkeepers", and a "disastrous fire... in Plummer's Club 
+           + House Hotel, Oberon". References to liquor retail trade, hotel keepers as occupation, and hotel fire disaster.
+       112    
+       113    ---
+       114    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       116    
+       117    - **Date:** 14 October 1892
+       118    - **Publication:** Katoomba Times
+       119 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       120 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       119 +  - **Proposed Tag:** `Liquor licensing` | `Illegal liquor sales`
+       120 +  - **Hierarchy Path:** Activities > Commercial activities > Liquor trade > Liquor licensing | Events > Criminal 
+           + events > Illegal liquor sales
+       121    
+       122    **Snippet:**
+       123    > Katoomba Times (NSW : 1889 - 1894), Friday 14 October 1892, page 2 Katoomba Court POLICE. WEDNESDAY. Before 
+             J. K. Cleeve, P.M. and F. C. Goyder, J. P. William O'Regan on remand was charged with stealing nine pigs. John 
+             Thomas Henwood, auctioneer, of Batt, Rodd and Purves, deposed: Know William Baird of Katoomba, hold a bill of 
+             sale over his property. The bill of sale was given me on September this year; don't know where that bill of sale
+              is; it is not in court; owned some pigs at Katoomba last week; there were nine; the pigs came into my 
+             possession under a bill of sale; sent Sidney Eager to take possession of the pigs about a fortnight ago; sent 
+             him to William Baird's, Katoomba: have not sold any pigs at Katoomba; value them at £13 10. By Defendant: the 
+             bill of sale was not registered. By the Bench: Have...
+       124    
+       125 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       125 +  **Rationale:** Court report includes case of "Irwin... charged with carrying about spirituous liquor for sale 
+           + without a license". Multiple witnesses testified about defendant selling whisky at 6d. a drink at Nellie's Glen 
+           + without proper licensing. This is a prosecution for illegal liquor sales/licensing violation.
+       126    
+       127    ---
+       128    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       130    
+       131    - **Date:** 21 March 1891
+       132    - **Publication:** Katoomba Times
+       133 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       134 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       133 +  - **Proposed Tag:** `Liquor licensing` | `Illegal liquor sales` | `Minors`
+       134 +  - **Hierarchy Path:** Activities > Commercial activities > Liquor trade > Liquor licensing | Events > Criminal 
+           + events > Illegal liquor sales | Associated Concepts > Age groups > Minors
+       135    
+       136    **Snippet:**
+       137    > Katoomba Times (NSW : 1889 - 1894), Saturday 21 March 1891, page 3 Katoomba Police Court. Wednesday. Before 
+             Mr. J. K. Cleeve, P.M., and Mr. J. W. J.P. Mr. W. J. Hill appeared for defendant. Joseph Nimmo was charged with 
+             supplying drink to Walter Meredith, a lad supposed to be under the age of 16. Sergeant Thorndyke deposed: 
+             Defendant is the person referred to in my information; I produce a certificate purporting to be a certificate of
+              the birth of one Walter Meredith, the person referred to in my information as being under 14 years of age; 
+             Walter Meredith handed it to me last Wednesday as a certificate of his birth; know nothing of the case, but have
+              witnesses to call. By Mr. Hill: This certificate is in the same state now as when Meridith gave it to me, and 
+             has been in my custody ever since. Walter Meredith deposed:...
+       138    
+       139 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       139 +  **Rationale:** Prosecution of Joseph Nimmo for "supplying drink to Walter Meredith, a lad supposed to be under 
+           + the age of 16". Defendant allegedly supplied whisky to minor. This is a liquor licensing violation - illegal to 
+           + serve alcohol to persons under 16 years of age.
+       140    
+       141    ---
+       142    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       144    
+       145    - **Date:** 17 March 1893
+       146    - **Publication:** Katoomba Times
+       147 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       148 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       147 +  - **Proposed Tag:** `Drunkenness` | `Theft` | `Whisky` | `Rum`
+       148 +  - **Hierarchy Path:** Events > Criminal events > Drunkenness | Events > Criminal events > Theft | Associated 
+           + Concepts > Materials > Consumable materials > Alcoholic beverages > Whisky | Associated Concepts > Materials > 
+           + Consumable materials > Alcoholic beverages > Rum
+       149    
+       150    **Snippet:**
+       151    > Katoomba Times (NSW : 1889 - 1894), Friday 17 March 1893, page 2 Katoomba Court. POLICE. WEDNESDAY. Before 
+             Mr. J. K. Cleeve, P.M., and five JJ.P. One drunk, Frank Kewell, paid 5s. for his spree. James Burn was charged 
+             with damaging a seat on the Katoomba Reserve. He did not appear. Warrant to be issued. - Herild, similarly 
+             charged. Did not appear. Warrant to be issued. Peter Saunders, Henry Brown, and Archibald Prentice were charged 
+             with stealing whisky, &c. from Richard Allen, Katoomba South. John Illingworth, police constable, Katoomba, 
+             deposed to arresting Saunders and Brown at Hoffman's on 9th instant: said to Mrs. Hoffman, "Did this man come 
+             here last night," meaning Saunders; she said, "Saunders came here about 9 o'clock last night with Brown and 
+             Prentice;" she said he had three bottles of grog in his possession; bottles now produced I had in my possession 
+             at the time; Mrs....
+       152    
+       153 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       153 +  **Rationale:** Court report covers two alcohol-related cases: (1) Frank Kewell fined 5s for public drunkenness,
+           +  and (2) Peter Saunders, Henry Brown, and Archibald Prentice charged with stealing whisky and rum from Richard 
+           + Allen at Katoomba South. Defendants "drank" the stolen rum. Both criminal drunkenness and theft of alcoholic 
+           + beverages.
+       154    
+       155    ---
+       156    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       158    
+       159    - **Date:** 9 September 1892
+       160    - **Publication:** Katoomba Times
+       161 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       162 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       161 +  - **Proposed Tag:** `Drinking` | `Indigenous Australians` | `Publicans` | `Megalong Valley`
+       162 +  - **Hierarchy Path:** Activities > Lifestyle and leisure > Social activities > Drinking | Agents > People > 
+           + Cultural groups > Indigenous Australians | Agents > People > Occupations > Hospitality workers > Publicans | 
+           + Places > Valleys > Megalong Valley
+       163    
+       164    **Snippet:**
+       165    > Katoomba Times (NSW : 1889 - 1894), Friday 9 September 1892, page 3 MEGALONG MATTERS: [BY PLATYPUS.] "'Tis 
+             sweet to hear at eventide The echoes of the bush." Mr. CHAPMAN, the district surveyor, is busy in the Valley 
+             surveying newly selected areas. Some of us have increased our holdings and any new comers must go father back 
+             towards Breakfast Creek, where there is plenty of good grazing land. The grass is growing beautifully and 
+             abundance of rain has fallen to justify the prohesy of a splendid season. Last week the River Cox was in fairly 
+             high flood and our school teacher, Mr. W. Chapman, was flood bound for a day or two; another experience to him 
+             of "what may happen to a man in Australia." As an inducement to our dark-skinned brethren to keep away from the 
+             townships and consequently from "looking on the wine when it is red" two...
+       166    
+       167 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       167 +  **Rationale:** Article discusses Indigenous Australians and drinking using Biblical reference: "keep away from 
+           + the townships and consequently from 'looking on the wine when it is red'". Also mentions a publican who served 
+           + liquor during a cattle sale: "The butcher (the buyer) was also a publican, and after the deal the usual liquor 
+           + up was proposed". Describes people "gloriously drunk on a regular 'razzle dazzle'". Social commentary on 
+           + drinking behaviour and Indigenous people.
+       168    
+       169    ---
+       170    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 3 additions and 3 removals                                       
+       172    
+       173    - **Date:** 18 August 1893
+       174    - **Publication:** Katoomba Times
+       175 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       176 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       175 +  - **Proposed Tag:** `Liquor trade` | `Mr Wilkinson` | `Megalong Valley`
+       176 +  - **Hierarchy Path:** Activities > Commercial activities > Liquor trade | Agents > People > Occupations > 
+           + Hospitality workers > Liquor merchants > Mr Wilkinson | Places > Valleys > Megalong Valley
+       177    
+       178    **Snippet:**
+       179    > Katoomba Times (NSW : 1889 - 1894), Friday 18 August 1893, page 3 MEGALONG VALLEY. From Our Correspondent. 
+             The past fortnight has been rather uneventful, and there is nothing of special interest to relate. The miners 
+             here have not as yet started on full time, owing to the ships not having arrived. Mr. Wilkinson is doing a fair 
+             trade with his wholesale liquor business, and notwithstanding things seem to go along quiet and orderly. There 
+             are a few cases of measles amongst the children here, but nothing to cause any sierious alarm. The camp-shifting
+              has done a little good to somebody as it has increased the number of boarders at Mrs. Brydon's, Middle Camp, 
+             who appears to be a very hardworking woman striving to support herself and family of little children. A very 
+             strong feeling of indignation exists here against the Government for not making a passable road from here...
+       180    
+       181 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       181 +  **Rationale:** Article specifically mentions "Mr. Wilkinson is doing a fair trade with his wholesale liquor 
+           + business" at Megalong Valley mining settlement. This is about liquor trade/commerce and a specific merchant. 
+           + Tags for commercial activity (liquor trade), the person (Mr Wilkinson as liquor merchant), and location.
+       182    
+       183    ---
+       184    
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 4 additions and 4 removals                                       
+       185    ### 12. Megalong Valley.
+       186    
+       187    - **Date:** 23 June 1893
+       188 -  - **Publication:** 
+       189 -  - **Proposed Tag:** [TO BE DETERMINED - NEEDS MANUAL ANALYSIS]
+       190 -  - **Hierarchy Path:** [TO BE DETERMINED]
+       188 +  - **Publication:** Katoomba Times
+       189 +  - **Proposed Tag:** `Liquor licensing` | `Hotels` | `Sly-grog shops` | `Gambling` | `Megalong Valley`
+       190 +  - **Hierarchy Path:** Activities > Commercial activities > Liquor trade > Liquor licensing | Built Environment 
+           + > Buildings > Accommodation buildings > Hotels | Events > Criminal events > Illegal liquor sales (sly-grog) | 
+           + Activities > Leisure activities > Gambling | Places > Valleys > Megalong Valley
+       191    
+       192    **Snippet:**
+       193    > Katoomba Times (NSW : 1889 - 1894), Friday 23 June 1893, page 2 MEGALONG VALLEY. From a Correspondent. Rev. 
+             M. S. Fletcher, B.A., took advantage of the fine weather last Sunday and came down to preach the gospel in the 
+             afternoon at Clarke's Hall. A Sunday School has been established by Messrs. Dyson and Walsh, who deserve every 
+             credit, considering they came a distance of over 10 miles, and have to swim a river occasionally on the journey.
+              I have it from good authority that our local school teacher, Mr. O'Hara, is likely to have the school premises 
+             changed to a larger house, situated on Mr. Waudby's land, top camp. The miners are in no way reconciled as yet 
+             about the moving and shifting of camp. A friendly little picnic took place last Saturday afternoon in Mr. 
+             Waudy's paddock, and a very en-joyable time was spent by those who took...
+       194    
+       195 -  **Rationale:** [TO BE DETERMINED - Please review context and assign appropriate tag]
+       195 +  **Rationale:** Full text discusses application for a public house (hotel) licence at Megalong Valley. Editor's 
+           + comment notes "many of the residents are against the project" but argues "a hotel would be preferable to the 
+           + sly-grog and gambling shanties which are said to exist at the Mines at present... A public house is watched by 
+           + the police, and the Licensing Act is strict enough". About liquor licensing, illegal sly-grog operations, and 
+           + debate over establishing legal hotel versus unlicensed establishments.
+       196    
+       197    ---
+       198    
+
+● Perfect! I've completed the Alcohol tag rationalisation report. Here's a summary:
+
+  Alcohol Tag Analysis - Complete
+
+  Report: reports/alcohol_rationalisation_report.md
+
+  Summary of Findings
+
+  All 12 items analysed with specific tag recommendations:
+
+  Tag Distribution:
+  - Criminal events (5 items): Drunkenness charges, illegal liquor sales, licensing violations
+  - Liquor trade/commerce (6 items): Beer prices, wholesale liquor business, licensing applications
+  - Drinking behaviour (3 items): Social drinking culture, intoxication commentary
+  - Misapplied tags (2 items): #1 (rape case) and #5 (death inquest) - alcohol was incidental, not primary subject
+
+  Key Patterns:
+  1. Court cases (items 2, 7, 8, 9): Prosecutions for drunkenness, underage service, unlicensed sales
+  2. Megalong Valley (items 3, 10, 11, 12): Mining settlement drinking culture, liquor trade, Mr Wilkinson's wholesale business
+  3. Commentary (items 2, 3, 4): Editorial opinions on beer prices, drinking rates
+  4. Licensing issues (items 7, 8, 12): Illegal sales, sly-grog shops, hotel licence applications
+
+  Recommended Action:
+  - Deprecate generic "Alcohol" tag entirely
+  - Replace with specific tags based on context (see report for each item)
+  - Some items need multiple tags (e.g., drunkenness + theft + whisky)
+
+  The report is ready for your review. Shall I proceed to analyse the final deferred item ("Post" tag) next?
+
+> Ok, the report needs some work. We still want to tag the entries with something related to alchohol if they mention 'alcohol' 
+'drinking' 'drunk' 'drunkenness' or any specific kind of alcohol (beer, wine, rum, grog, etc.). Also, please ensure that the 
+mention of alcohol or a related term is in the excerpt you provide - the first one omits the part of the source that discusses 
+alcohol, so I can't evaluate it. Please regenerate the report and I'll look again. 
+
+● You're absolutely right. Let me regenerate the report with excerpts that actually show the alcohol-related content and keep
+  appropriate alcohol tags. I'll create an improved analysis:
+
+● Write(scripts/31_generate_alcohol_report_v2.py)
+  ⎿  Wrote 427 lines to scripts/31_generate_alcohol_report_v2.py                       
+     #!/usr/bin/env python3
+     """
+     Script 31: Generate Improved Alcohol Tag Rationalisation Report
+     This script generates a detailed report for items tagged "Alcohol" with:
+     1. Excerpts that actually show alcohol-related content
+     2. Specific alcohol-related tag recommendations
+     3. Context about how alcohol is discussed in each item
+     The principle: If an item mentions alcohol/drinking/drunk/beer/wine/rum/grog/etc.,
+     … +417 lines (ctrl+o to expand)
+
+● Bash(./run.sh 31_generate_alcohol_report_v2.py)
+  ⎿  ➜ Running: scripts/31_generate_alcohol_report_v2.py
+
+     ✓ Configuration loaded successfully
+     … +21 lines (ctrl+o to expand)
+
+● Perfect! I've regenerated the alcohol rationalisation report with significant improvements:
+
+  Key Changes
+
+  1. Alcohol-relevant snippets: Every excerpt now shows the actual alcohol-related content (drinking, rum, beer, liquor, grog,
+  etc.) so you can evaluate the context.
+
+  2. Maintains alcohol tagging: All 12 items keep alcohol-related tags - we're making them specific not removing them:
+  - Generic "Alcohol" → Specific tags like "Drinking", "Beer", "Rum", "Whisky", "Liquor trade", "Drunkenness"
+
+  3. Better context: Snippets extracted around alcohol keywords instead of just article beginnings.
+
+  Examples of Improvements
+
+  Item 1 (Rape case):
+  - Old snippet: Started with rape charge details (no alcohol visible)
+  - New snippet: Shows "they brought a pint of rum (accused had it) they had a drink each..."
+  - Tags: Drinking | Rum | Sexual assault | Carrington Hotel
+
+  Item 11 (Megalong Valley):
+  - Snippet: Shows "Mr. Wilkinson is doing a fair trade with his wholesale liquor business"
+  - Tags: Liquor trade | Mr Wilkinson | Megalong Valley
+
+  The report is now ready for your review at reports/alcohol_rationalisation_report.md. All items maintain alcohol-related
+  tagging with contextually appropriate specific tags.
+
+  Shall I update the todo list and then proceed to the final deferred item ("Post" tag)?
+
+> Now that you've examined these sources, can you suggest where I should place 'alcohol' in the primary schemas? We probably 
+need somthing to cover the liquor trade under activities, something under crimal activity, our current entry under physical and 
+health conditions, but what else? Please *propose* some tags with their hierarchies for me to review, adapt, and applyl, but 
+don't make any changes yourself yet. 
+
+● Excellent question. Based on analysing the 12 items, here's a comprehensive proposal for alcohol-related tags across the
+  primary facets:
+
+  Proposed Alcohol-Related Tag Hierarchies
+
+  1. ACTIVITIES Facet
+
+  Social/Lifestyle Activities:
+  Activities
+  └── Lifestyle and leisure
+      └── Social activities
+          └── Drinking
+
+  Commercial Activities:
+  Activities
+  └── Commercial activities
+      └── Liquor trade
+          ├── Liquor licensing
+          ├── Liquor sales
+          └── Wholesale liquor business
+
+  Rationale: Items 3, 6, 11 show wholesale liquor business (Mr Wilkinson), items 7, 8, 12 discuss licensing, item 4 discusses
+  beer pricing/sales.
+
+  ---
+  2. EVENTS Facet
+
+  Criminal Events:
+  Events
+  └── Criminal events
+      ├── Drunkenness  [already added in previous session]
+      └── Illegal liquor sales
+          ├── Sly-grog operations
+          ├── Unlicensed sales
+          └── Serving alcohol to minors
+
+  Rationale: Items 2, 9 have drunkenness prosecutions; items 7, 8, 12 involve illegal/unlicensed liquor sales.
+
+  ---
+  3. ASSOCIATED CONCEPTS Facet
+
+  Physical and Health Conditions:
+  Associated Concepts
+  └── Physical and health conditions
+      └── Drunkenness (intoxication)  [already added in previous session]
+
+  Materials:
+  Associated Concepts
+  └── Materials
+      └── Consumable materials
+          └── Alcoholic beverages
+              ├── Beer
+              ├── Wine
+              ├── Spirits
+              │   ├── Whisky
+              │   ├── Rum
+              │   ├── Brandy
+              │   └── Gin
+              └── Grog  [or as synonym for mixed spirits?]
+
+  Rationale: Items specifically mention beer (2, 3, 4), whisky (3, 7, 8, 9), rum (1, 3, 9), brandy (3), wine (10), gin (9).
+  These are materials/substances being consumed or traded.
+
+  ---
+  4. AGENTS Facet
+
+  Occupations - Hospitality Workers:
+  Agents
+  └── People
+      └── Occupations
+          └── Hospitality workers
+              ├── Publicans  [already exists?]
+              ├── Hotelliers  [already added in accommodation work]
+              └── Liquor merchants
+                  └── Mr Wilkinson  [specific person from item 11]
+
+  Rationale: Item 10 mentions publican, item 11 specifically identifies Mr Wilkinson as wholesale liquor merchant.
+
+  ---
+  Questions for Your Consideration
+
+  1. "Grog" - Should this be:
+    - A separate alcoholic beverage type?
+    - A synonym for "Spirits" or "Mixed alcoholic beverages"?
+    - A historical Australian/colonial term that deserves its own tag?
+  2. "Liquor licensing" - Should this be:
+    - Under Commercial activities > Liquor trade (as I proposed)?
+    - Under Legal/Regulatory activities (if such a category exists)?
+    - Both (poly-hierarchical)?
+  3. "Temperance" - None of the 12 items discussed temperance, but should we add:
+  Agents
+  └── Organisations
+      └── Social organisations
+          └── Temperance societies
+  4. "Sly-grog operations" vs "Illegal liquor sales" - Should these be:
+    - Separate tags (sly-grog is a specific type of illegal operation)?
+    - Parent-child relationship (Illegal liquor sales > Sly-grog operations)?
+  5. Level of specificity for spirits - Do we need individual tags for Whisky, Rum, Brandy, Gin? Or just:
+  Alcoholic beverages
+  ├── Beer
+  ├── Wine
+  └── Spirits
+
+  Summary of Additions Needed
+
+  Minimum required:
+  - Activities > Commercial activities > Liquor trade
+  - Events > Criminal events > Illegal liquor sales
+  - Associated Concepts > Materials > Consumable materials > Alcoholic beverages (with sub-types)
+  - Agents > Occupations > Hospitality workers > Liquor merchants
+
+  Optional enhancements:
+  - More granular spirits categorisation
+  - Temperance societies
+  - Sly-grog as distinct from general illegal sales
+  - Wholesale vs retail liquor trade distinction
+
+  What are your preferences on these questions?
+
+> ok, some feedback:\
+\
+I'd like to not proliferate tags, so could we simplify the hierarchy to:
+
+Activities > Social behaviours > Drinking (alcohol) - where it is now but with the parenthetical (alcohol) added for clarity? To
+ add clarity, maybe we should rename 'Social and welfare activities' to 'Charitable and welfare activities'?
+
+I agree with commercial activities *except* I want to ask if 'Liquor licensing' should go under 'Regulatory processes' > 
+'Licensing' instead? Hotel licensing should be created go there too, I know I saw a bunch of mentions of it when we were working
+ on 'accommodation', please put that on the to-do list. 
+
+Under 'Events' > 'Criminal events', let's change the hierarchy to 'Criminal events' > 'Alcohol-related' > Drunkenness | Sly-grog
+ operations | Unlicensed Sales | Serving alcohol to minors
+
+I don't think I want to open another top-level facet unless we have to, especially not to only accommodate alcohol. Perhaps we 
+can, at least for now, place 'Alcoholic beverages' under 'Social behaviours' > 'Drinking (alcohol) > Alcoholic beverages > 
+[list]
+
+Agree with Occupations, looks good.
+
+Answers to questions:
+
+(1) Grog should be its own tag under 'Alcoholic beverages' > 'Mixed alcoholic beverages' (if they appear, 'cocktails' and 
+similar would go here as well.
+
+(2) Licensing should go under the legal activity as above.
+
+(3) Don't add temperance until we encounter it.
+
+(4) Parent-child under Illegal liquor sales.
+
+(5) Use the specific tags since we have them. 
+
+● Excellent feedback! Let me create a clear final proposal incorporating all your decisions:
+
+  Final Proposed Alcohol-Related Tag Hierarchies
+
+  1. ACTIVITIES Facet
+
+  Social Behaviours:
+  Activities
+  └── Social behaviours  [RENAME from "Social activities"]
+      └── Drinking (alcohol)  [ADD "(alcohol)" to existing tag]
+          └── Alcoholic beverages  [NEW - materials placed here, not separate facet]
+              ├── Beer
+              ├── Wine
+              ├── Spirits
+              │   ├── Whisky
+              │   ├── Rum
+              │   ├── Brandy
+              │   └── Gin
+              └── Mixed alcoholic beverages
+                  └── Grog
+
+  Commercial Activities:
+  Activities
+  └── Commercial activities
+      └── Liquor trade
+          ├── Liquor sales
+          └── Wholesale liquor business
+
+  Regulatory Processes:
+  Activities
+  └── Regulatory processes
+      └── Licensing
+          ├── Liquor licensing  [MOVED from Commercial activities]
+          └── Hotel licensing   [NEW - from accommodation work]
+
+  Charitable and Welfare Activities:
+  Activities
+  └── Charitable and welfare activities  [RENAME from "Social and welfare activities"]
+      [existing children unchanged]
+
+  ---
+  2. EVENTS Facet
+
+  Criminal Events:
+  Events
+  └── Criminal events
+      ├── Alcohol-related  [NEW parent category]
+      │   ├── Drunkenness  [MOVE here from direct child of Criminal events]
+      │   ├── Illegal liquor sales  [NEW]
+      │   │   ├── Sly-grog operations  [NEW - child of Illegal liquor sales]
+      │   │   └── Unlicensed sales  [NEW - child of Illegal liquor sales]
+      │   └── Serving alcohol to minors  [NEW]
+      [other criminal events continue as direct children]
+
+  ---
+  3. ASSOCIATED CONCEPTS Facet
+
+  Physical and Health Conditions:
+  Associated Concepts
+  └── Physical and health conditions
+      └── Drunkenness (intoxication)  [NO CHANGE - already exists]
+
+  ---
+  4. AGENTS Facet
+
+  Occupations:
+  Agents
+  └── People
+      └── Occupations
+          └── Hospitality workers
+              ├── Hotelliers  [already exists]
+              ├── Publicans  [already exists]
+              └── Liquor merchants  [NEW]
+                  └── Mr Wilkinson  [specific person]
+
+  ---
+  Summary of Changes Required
+
+  Renames:
+
+  1. Activities > Social activities → Activities > Social behaviours
+  2. Activities > Social and welfare activities → Activities > Charitable and welfare activities
+  3. Activities > Social behaviours > Drinking → Activities > Social behaviours > Drinking (alcohol)
+
+  Moves:
+
+  1. Events > Criminal events > Drunkenness → Events > Criminal events > Alcohol-related > Drunkenness
+
+  New Tags to Add:
+
+  Activities:
+  - Alcoholic beverages (under Drinking (alcohol))
+  - Beer, Wine, Spirits, Whisky, Rum, Brandy, Gin (under Alcoholic beverages)
+  - Mixed alcoholic beverages, Grog (under Alcoholic beverages)
+  - Liquor trade, Liquor sales, Wholesale liquor business (under Commercial activities)
+  - Regulatory processes (if doesn't exist)
+  - Licensing, Liquor licensing, Hotel licensing (under Regulatory processes)
+
+  Events:
+  - Alcohol-related (under Criminal events)
+  - Illegal liquor sales, Sly-grog operations, Unlicensed sales (under Alcohol-related)
+  - Serving alcohol to minors (under Alcohol-related)
+
+  Agents:
+  - Liquor merchants (under Hospitality workers)
+  - Mr Wilkinson (under Liquor merchants)
+
+  ---
+  TODO List Items
+
+● Perfect! I've updated the todo list.
+
+  Does this final proposal match your vision? A few specific points to confirm:
+
+  1. Alcoholic beverages under Activities rather than Associated Concepts > Materials - this is unconventional but if it makes
+  sense for your taxonomy, I'll implement it that way. Or did you mean they should appear in both places (poly-hierarchical)?
+  2. "Drunkenness (intoxication)" stays under Associated Concepts > Physical and health conditions unchanged, correct?
+  3. Hotel licensing - Should I review the accommodation rationalisation report to identify specific hotel licensing references,
+   or will you handle that separately?
+
+  Once you confirm, I'll implement all these changes in scripts/22_generate_poly_hierarchy.py and regenerate the visualisations.
+
+> Note that 'Social behaviours' already exists and contains 'Drinking' 'Gampbling' and 'Temperance' - you are expanding it not 
+renaming or creating it. Under 'criminal events', are 'sly-grog sales' just a type of 'Unlicensed sales'? Have we 
+over-complicated that subcategory?\
+\
+(1) I think you are right, it doesn't really fit under activities. Go ahead and impliment plan A and create a 'materials' 
+top-level facet.\
+(2) Yes, correct.\
+(3) Please put this on the to-do list. 
+
+● You're absolutely right on both counts. Let me revise:
+
+  Revised Final Proposal
+
+  Simplification of Criminal Events
+
+  You're correct - "Sly-grog operations" is just the Australian colonial term for unlicensed liquor sales. Let's simplify:
+
+  Events
+  └── Criminal events
+      └── Alcohol-related
+          ├── Drunkenness
+          ├── Unlicensed sales  [with "Sly-grog operations" as synonym]
+          └── Serving alcohol to minors
+
+  This removes one unnecessary hierarchy level.
+
+  ---
+  Materials as New Top-Level Facet (Plan A)
+
+  Since alcoholic beverages don't fit well under Activities, create new 7th primary facet:
+
+  Materials  [NEW TOP-LEVEL FACET]
+  └── Consumable materials
+      └── Alcoholic beverages
+          ├── Beer
+          ├── Wine
+          ├── Spirits
+          │   ├── Whisky
+          │   ├── Rum
+          │   ├── Brandy
+          │   └── Gin
+          └── Mixed alcoholic beverages
+              └── Grog
+
+  ---
+  Activities Facet (Corrected)
+
+  Social Behaviours [EXISTING - EXPAND IT]:
+  Activities
+  └── Social behaviours  [already exists]
+      ├── Drinking (alcohol)  [RENAME from "Drinking"]
+      ├── Gambling  [already exists]
+      └── Temperance  [already exists]
+
+  Commercial Activities:
+  Activities
+  └── Commercial activities
+      └── Liquor trade  [NEW]
+          ├── Liquor sales
+          └── Wholesale liquor business
+
+  Regulatory Processes:
+  Activities
+  └── Regulatory processes
+      └── Licensing
+          ├── Liquor licensing  [NEW]
+          └── Hotel licensing   [NEW - defer to todo]
+
+  Charitable and Welfare Activities:
+  Activities
+  └── Charitable and welfare activities  [RENAME from "Social and welfare activities"]
+      [existing children unchanged]
+
+  ---
+  Updated TODO List
+
+● Perfect! Updated todo list reflects hotel licensing review as separate task.
+
+  Summary of Changes to Implement
+
+  NEW:
+  - Materials as 7th primary facet (with Consumable materials > Alcoholic beverages hierarchy)
+  - Liquor trade under Commercial activities
+  - Licensing under Regulatory processes (with Liquor licensing child)
+  - Alcohol-related parent under Criminal events
+  - Liquor merchants under Hospitality workers
+
+  RENAMES:
+  - Drinking → Drinking (alcohol)
+  - Social and welfare activities → Charitable and welfare activities
+
+  MOVES:
+  - Drunkenness from direct child of Criminal events → under Alcohol-related
+
+  SYNONYMS:
+  - Sly-grog operations → synonym for Unlicensed sales
+
+  This creates 7 primary facets instead of 6. Shall I proceed with implementing these changes in
+  scripts/22_generate_poly_hierarchy.py?
+
+> I think that we have the hierarchy sorted out, but what about tagging specific sources? Do I still need to review the 12 
+instances of alcohol and confirm their tagging? If so, please regenerate the report with you suggeted tags and I'll confirm. 
+
+● Yes, you're absolutely right! We've designed the vocabulary structure, but you still need to confirm the specific tags for
+  each of the 12 items. Let me regenerate the report with tags using the NEW hierarchies we just agreed on:
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       32    
+       33    - **Date:** 6 September 1890
+       34    - **Publication:** Nepean Times
+       35 -  - **Proposed Tags:** `Drinking` | `Rum` | `Sexual assault` | `Carrington Hotel`
+       36 -  - **Hierarchy Path:** Activities > Lifestyle and leisure > Social activities > Drinking | Associated Concepts > 
+          -  Materials > Consumable materials > Alcoholic beverages > 
+          -  Rum | Events > Criminal events > Sexual assault | Built Environment > Buildings > Accommodation buildings > 
+          -  Hotels > Carrington Hotel
+       35 +  - **Proposed Tags:** `Drinking (alcohol)` | `Rum` | `Sexual assault` | `Carrington Hotel`
+       36 +  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | 
+          +  Materials > Consumable materials > Alcoholic beverages > Spirits > 
+          +  Rum | Events > Criminal events > Sexual assault | Built Environment > Buildings > Accommodation buildings > 
+          +  Hotels > Carrington Hotel
+       37    
+       38    **Snippet (showing alcohol-related content):**
+       39    > was in Katoomba this week with my husband, I have a little house there to live in: I know accused and remember
+             Wednesday night last; I don't know the day of the month; my husband went up the town at dusk and I remained at 
+            home and went to bed; about 11 o'clock my husband came home with accused; I got up and let them in and gave them 
+            some tea; they brought a pint of rum (accused had it) they had a drink each and I had a little warmed up by my 
+            husband; I said to my husband "I can't sit up" and he said "Very well go to bed;" I have been sick for a long 
+            time under medical treatment; I went to bed and went to sleep, leaving accused and my husband sitting down by the
+             fire; the next thing I knew was that accused hold...
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 1 addition and 1 removal                                         
+       47    - **Date:** 29 April 1892
+       48    - **Publication:** Katoomba Times
+       49    - **Proposed Tags:** `Drunkenness` | `Drunkenness (intoxication)` | `Beer` | `Lithgow`
+       50 -  - **Hierarchy Path:** Events > Criminal events > 
+          -  Drunkenness | Associated Concepts > Physical and health conditions > Drunkenness (intoxication) | 
+          -  Associated Concepts > Materials > Consumable materials > Alcoholic beverages > Beer | Places > Towns > Lithgow
+       50 +  - **Hierarchy Path:** Events > Criminal events > Alcohol-related > 
+          +  Drunkenness | Associated Concepts > Physical and health conditions > Drunkenness (intoxication) | 
+          +  Materials > Consumable materials > Alcoholic beverages > Beer | Places > Towns > Lithgow
+       51    
+       52    **Snippet (showing alcohol-related content):**
+       53    > Gradually the Lithgow licensed dispensers of alcoholic stimulants are coming down to the "thripenny" beers. We
+             predict, that there will be nearly double the amount of drunkenness at the black-diamond fields in consequence.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       60    
+       61    - **Date:** 25 August 1893
+       62    - **Publication:** Katoomba Times
+       63 -  - **Proposed Tags:** `Drinking` | `Whisky` | `Beer` | `Rum` | `Brandy` | `Liquor trade` | `Megalong Valley`
+       64 -  - **Hierarchy Path:** Activities > Lifestyle and leisure > Social activities > Drinking | Associated Concepts > 
+          -  Materials > Consumable materials > Alcoholic beverages > Whisky | Associated Concepts > 
+          -  Materials > Consumable materials > Alcoholic beverages > Beer | Associated Concepts > 
+          -  Materials > Consumable materials > Alcoholic beverages > Rum | Associated Concepts > 
+          -  Materials > Consumable materials > Alcoholic beverages > 
+          -  Brandy | Activities > Commercial activities > Liquor trade | Places > Valleys > Megalong Valley
+       63 +  - **Proposed Tags:** `Drinking (alcohol)
+          +  ` | `Whisky` | `Beer` | `Rum` | `Brandy` | `Liquor trade` | `Megalong Valley`
+       64 +  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | 
+          +  Materials > Consumable materials > Alcoholic beverages > Spirits > Whisky | 
+          +  Materials > Consumable materials > Alcoholic beverages > Beer | 
+          +  Materials > Consumable materials > Alcoholic beverages > Spirits > Rum | 
+          +  Materials > Consumable materials > Alcoholic beverages > Spirits > 
+          +  Brandy | Activities > Commercial activities > Liquor trade | Places > Valleys > Megalong Valley
+       65    
+       66    **Snippet (showing alcohol-related content):**
+       67    > Its beer and its whiskey, its rum and its brandy, re-tailed per case, makes not infrequently a few of the 
+            "noted' residents gloriously tight. Last Thursday a son of St.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 1 addition and 1 removal                                        
+       75    - **Date:** 10 February 1893
+       76    - **Publication:** Katoomba Times
+       77    - **Proposed Tags:** `Beer` | `Liquor trade`
+       78 -  - **Hierarchy Path:** Associated Concepts > 
+          -  Materials > Consumable materials > Alcoholic beverages > Beer | Activities > Commercial activities > Liquor 
+          -  trade
+       78 +  - **Hierarchy Path:** 
+          +  Materials > Consumable materials > Alcoholic beverages > Beer | Activities > Commercial activities > Liquor 
+          +  trade
+       79    
+       80    **Snippet (showing alcohol-related content):**
+       81    > There is a talk of cheap beer at Katoomba. We haven't yet sampled it and what's more, we don't believe cheap 
+            beer is to be obtained here.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       88    
+       89    - **Date:** 28 January 1893
+       90    - **Publication:** Nepean Times
+       91 -  - **Proposed Tags:** `Drinking` | `Death` | `Inquests` | `Ruined Castle Shale Mine` | `South Katoomba`
+       92 -  - **Hierarchy Path:** Activities > Lifestyle and leisure > Social activities > Drinking 
+          -  | Events > Death | Events > Legal proceedings > Inquests | Built Environment > Structures > Industrial 
+          -  structures > Mining sites > Ruined Castle Shale Mine | Places > Towns > Katoomba > South Katoomba
+       91 +  - **Proposed Tags:** `Drinking (alcohol)` | `Death` | `Inquests` | `Ruined Castle Shale Mine` | `South Katoomba`
+       92 +  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) 
+          +  | Events > Death | Events > Legal proceedings > Inquests | Built Environment > Structures > Industrial 
+          +  structures > Mining sites > Ruined Castle Shale Mine | Places > Towns > Katoomba > South Katoomba
+       93    
+       94    **Snippet (showing alcohol-related content):**
+       95    > I last saw him alive at five o'clock, on Monday last he was then apparently quite well, and was in his hut by 
+            himself he was then sober, on the morning of same day I saw him a little the worse of liquor, he was in the habit
+             of taking a drink occasionally.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       116    
+       117    - **Date:** 14 October 1892
+       118    - **Publication:** Katoomba Times
+       119 -  - **Proposed Tags:** `Liquor licensing` | `Illegal liquor sales` | `Whisky` | `Nellie's Glen`
+       120 -  - **Hierarchy Path:** Activities > Commercial activities > Liquor trade 
+           -  > Liquor licensing | Events > Criminal events > Illegal liquor sales | Associated Concepts > 
+           -  Materials > Consumable materials > Alcoholic beverages > 
+           -  Whisky | Places > Natural features > Gullies > Nellie's Glen
+       119 +  - **Proposed Tags:** `Liquor licensing` | `Unlicensed sales` | `Whisky` | `Nellie's Glen`
+       120 +  - **Hierarchy Path:** Activities > Regulatory processes > Licensing 
+           +  > Liquor licensing | Events > Criminal events > Alcohol-related > Unlicensed sales | 
+           +  Materials > Consumable materials > Alcoholic beverages > Spirits > 
+           +  Whisky | Places > Natural features > Gullies > Nellie's Glen
+       121    
+       122    **Snippet (showing alcohol-related content):**
+       123    > Constable Illingworth deposed: From information received I went to Bonnie Doon and saw defendant; he was 
+             carrying liquor; he said he had orders to take drink down to the men; he then handed me orders now produced; the
+              pieces of paper were given to me after the seizure; seized 12 bottles liquor; also seized a parcel of tobacco 
+             and a box of cigars, boy's suit of clothes, one mare and saddle and bridle; when I seized the liquor he refused 
+             to tell me where he got it; he said, "I would rather not say where I go it;" on the first of the month in compan
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                    
+       130    
+       131    - **Date:** 21 March 1891
+       132    - **Publication:** Katoomba Times
+       133 -  - **Proposed Tags:** `Liquor licensing` | `Illegal liquor sales` | `Whisky` | `Minors`
+       134 -  - **Hierarchy Path:** Activities > Commercial activities > Liquor trade 
+           -  > Liquor licensing | Events > Criminal events > Illegal liquor sales | Associated Concepts >
+           -   Materials > Consumable materials > Alcoholic beverages > Whisky | Associated Concepts > Age groups > Minors
+       133 +  - **Proposed Tags:** `Liquor licensing` | `Serving alcohol to minors` | `Whisky` | `Minors`
+       134 +  - **Hierarchy Path:** Activities > Regulatory processes > Licensing 
+           +  > Liquor licensing | Events > Criminal events > Alcohol-related > Serving alcohol to minors |
+           +   Materials > Consumable materials > Alcoholic beverages > Spirits > 
+           +  Whisky | Associated Concepts > Age groups > Minors
+       135    
+       136    **Snippet (showing alcohol-related content):**
+       137    > Katoomba Times (NSW : 1889 - 1894), Saturday 21 March 1891, page 3
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 1 addition and 1 removal                                         
+       151    - **Date:** 17 March 1893
+       152    - **Publication:** Katoomba Times
+       153    - **Proposed Tags:** `Drunkenness` | `Theft` | `Whisky` | `Rum` | `South Katoomba`
+       154 -  - **Hierarchy Path:** Events > Criminal events > Drunkenness | Events > Criminal events > Theft | 
+           -  Associated Concepts > Materials > Consumable materials > Alcoholic beverages > Whisky | Associated Concepts > 
+           -  Materials > Consumable materials > Alcoholic beverages > Rum | Places > Towns > Katoomba > South Katoomba
+       154 +  - **Hierarchy Path:** Events > Criminal events > Alcohol-related > 
+           +  Drunkenness | Events > Criminal events > Theft | Materials > Consumable materials > Alcoholic beverages > 
+           +  Spirits > Whisky | Materials > Consumable materials > Alcoholic beverages > Spirits > 
+           +  Rum | Places > Towns > Katoomba > South Katoomba
+       155    
+       156    **Snippet (showing alcohol-related content):**
+       157    > Charles Hoffman, shipwright, South Katoomba, deposed; Saw the prisoners at my place on the 8th; they came 
+             together; they had three bottles with them; Saunders had the bottles; they were not drunk; they stayed at my 
+             house that night; the bottle of rum was the first opened; they drank it; they asked me to have a drink; I had 
+             one; when they first came I told them to go out; they would not go; I then put them to bed; they were drunk when
+              they went to bed; found a gin bottle behind the safe; I gave it to Mr. Allen.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       164    
+       165    - **Date:** 9 September 1892
+       166    - **Publication:** Katoomba Times
+       167 -  - **Proposed Tags:** `Drinking
+           -  ` | `Wine` | `Liquor trade` | `Indigenous Australians` | `Publicans` | `Megalong Valley`
+       168 -  - **Hierarchy Path:** Activities > Lifestyle and leisure > Social activities > Drinking | 
+           -  Associated Concepts > 
+           -  Materials > Consumable materials > Alcoholic beverages > Wine | Activities > Commercial activities > Liquor 
+           -  trade | Agents > People > Cultural groups > Indigenous Australians | Agents > People > Occupations > 
+           -  Hospitality workers > Publicans | Places > Valleys > Megalong Valley
+       167 +  - **Proposed Tags:** `Drinking (alcohol)
+           +  ` | `Wine` | `Liquor trade` | `Indigenous Australians` | `Publicans` | `Megalong Valley`
+       168 +  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | 
+           +  Materials > Consumable materials > Alcoholic beverages > Wine | Activities > Commercial activities > Liquor 
+           +  trade | Agents > People > Cultural groups > Indigenous Australians | Agents > People > Occupations > 
+           +  Hospitality workers > Publicans | Places > Valleys > Megalong Valley
+       169    
+       170    **Snippet (showing alcohol-related content):**
+       171    > She found them all gloriously drunk on a regular "razzle dazzle" and set to work with a few buckets of water 
+             and her stick to sober them up sufficiently to get a start on for home. When the reckoning was called for the 
+             cattle were worth about £40,and £15 were also liquidated and "hot coppers" were about for a week after.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       196    
+       197    - **Date:** 23 June 1893
+       198    - **Publication:** Katoomba Times
+       199 -  - **Proposed Tags:** `Liquor licensing` | `Hotels` | `Sly-grog shops` | `Gambling` | `Megalong Valley`
+       200 -  - **Hierarchy Path:** Activities > Commercial activities > Liquor trade 
+           -  > Liquor licensing | Built Environment > Buildings > Accommodation buildings > Hotels | Events > Criminal 
+           -  events > Illegal liquor sales | Activities > Leisure activities > Gambling | Places > Valleys > Megalong Valley
+       199 +  - **Proposed Tags:** `Liquor licensing` | `Hotels` | `Unlicensed sales` | `Gambling` | `Megalong Valley`
+       200 +  - **Hierarchy Path:** Activities > Regulatory processes > Licensing 
+           +  > Liquor licensing | Built Environment > Buildings > Accommodation buildings > Hotels | Events > Criminal 
+           +  events > Alcohol-related > Unlicensed sales | Activities > Social behaviours
+           +   > Gambling | Places > Valleys > Megalong Valley
+       201    
+       202    **Snippet (showing alcohol-related content):**
+       203    > [We should think a hotel would be preferable to the sly-grog and gambling shanties which are said to exist at
+              the Mines at present. We take a public house to be the lesser of the two evils.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 17 additions and 13 removals                           
+       210    
+       211    ### Alcohol-Related Tag Categories
+       212    
+       213 -  **1. Drinking (Activity)**
+       213 +  **1. Drinking (alcohol) - Social Behaviour**
+       214    - Use when: Article discusses drinking behaviour, pub culture, social drinking
+       215 -  - Hierarchy: `Activities > Lifestyle and leisure > Social activities > Drinking`
+       215 +  - Hierarchy: `Activities > Social behaviours > Drinking (alcohol)`
+       216    
+       217    **2. Drunkenness (Criminal Event)**
+       218    - Use when: Court cases, charges, fines for public drunkenness
+       219 -  - Hierarchy: `Events > Criminal events > Drunkenness`
+       219 +  - Hierarchy: `Events > Criminal events > Alcohol-related > Drunkenness`
+       220    
+       221    **3. Drunkenness (Physical Condition)**
+       222    - Use when: State of intoxication, not criminal prosecution
+       223    - Hierarchy: `Associated Concepts > Physical and health conditions > Drunkenness (intoxication)`
+       224    
+       225    **4. Specific Alcoholic Beverages (Materials)**
+       226 -  - Beer: `Associated Concepts > Materials > Consumable materials > Alcoholic beverages > Beer`
+       227 -  - Wine: `Associated Concepts > Materials > Consumable materials > Alcoholic beverages > Wine`
+       228 -  - Whisky: `Associated Concepts > Materials > Consumable materials > Alcoholic beverages > Whisky`
+       229 -  - Rum: `Associated Concepts > Materials > Consumable materials > Alcoholic beverages > Rum`
+       230 -  - Brandy: `Associated Concepts > Materials > Consumable materials > Alcoholic beverages > Brandy`
+       226 +  - Beer: `Materials > Consumable materials > Alcoholic beverages > Beer`
+       227 +  - Wine: `Materials > Consumable materials > Alcoholic beverages > Wine`
+       228 +  - Whisky: `Materials > Consumable materials > Alcoholic beverages > Spirits > Whisky`
+       229 +  - Rum: `Materials > Consumable materials > Alcoholic beverages > Spirits > Rum`
+       230 +  - Brandy: `Materials > Consumable materials > Alcoholic beverages > Spirits > Brandy`
+       231 +  - Gin: `Materials > Consumable materials > Alcoholic beverages > Spirits > Gin`
+       232 +  - Grog: `Materials > Consumable materials > Alcoholic beverages > Mixed alcoholic beverages > Grog`
+       233    
+       234    **5. Liquor Trade (Commercial Activity)**
+       235    - Use when: Buying/selling alcohol, liquor business, alcohol commerce
+       236    - Hierarchy: `Activities > Commercial activities > Liquor trade`
+       237 +  - Sub-categories: `Liquor sales`, `Wholesale liquor business`
+       238    
+       239 -  **6. Liquor Licensing (Regulatory)**
+       239 +  **6. Liquor Licensing (Regulatory Activity)**
+       240    - Use when: Liquor licences, licensing laws, licensed premises
+       241 -  - Hierarchy: `Activities > Commercial activities > Liquor trade > Liquor licensing`
+       241 +  - Hierarchy: `Activities > Regulatory processes > Licensing > Liquor licensing`
+       242    
+       243 -  **7. Illegal Liquor Sales (Criminal Event)**
+       244 -  - Use when: Sly-grog shops, unlicensed sales, selling to minors
+       245 -  - Hierarchy: `Events > Criminal events > Illegal liquor sales`
+       243 +  **7. Alcohol-Related Criminal Events**
+       244 +  - Unlicensed sales: `Events > Criminal events > Alcohol-related > Unlicensed sales`
+       245 +    - Note: "Sly-grog operations" is a synonym for unlicensed sales
+       246 +  - Serving alcohol to minors: `Events > Criminal events > Alcohol-related > Serving alcohol to minors`
+       247    
+       248    **8. Hospitality Workers (Occupations)**
+       249    - Publicans: `Agents > People > Occupations > Hospitality workers > Publicans`
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 11 additions and 3 removals                                     
+       253    ### Multiple Tags
+       254    
+       255    Most items warrant multiple tags. Examples:
+       256 -  - Article mentioning court case for drunk: `Drunkenness` (criminal event)
+       257 -  - Same article discussing amount of beer consumed: + `Beer` (material)
+       258 -  - Publican charged with serving minors: `Liquor licensing` + `Illegal liquor sales` + `Publicans` + `Minors`
+       256 +  - Article mentioning court case for drunk: `Drunkenness` (under Alcohol-related criminal events)
+       257 +  - Same article discussing amount of beer consumed: + `Beer` (under Materials)
+       258 +  - Publican charged with serving minors: `Liquor licensing` + `Serving alcohol to minors
+           +  ` + `Publicans` + `Minors`
+       259    - Hotel fire: `Hotels` + `Fires`
+       260 +  - Wholesale liquor merchant: `Liquor trade` + `Wholesale liquor business` + specific person tag
+       261    
+       262    Use pipe separator (|) to denote multiple tags in this report.
+       263    
+       264 +  ### Key Notes
+       265 +  
+       266 +  - **Materials Facet:** New 7th primary facet created specifically to house consumable materials including 
+           + alcoholic beverages
+       267 +  - **Alcohol-related parent:** All alcohol-related criminal events now grouped under this intermediate category
+       268 +  - **Regulatory processes:** Licensing separated from commercial activities as a regulatory function
+       269 +  - **Sly-grog:** Use "Unlicensed sales" tag; "Sly-grog operations" is a historical synonym
+       270 +  
+       271    ---
+       272    
+       273    **Next Steps:**
+
+● Perfect! I've regenerated the Alcohol Rationalisation Report with all 12 items now using the new agreed hierarchies:
+
+  Key Updates in Report
+
+  Hierarchy Changes Applied:
+
+  1. Materials Facet (NEW 7th primary facet):
+    - All alcoholic beverages now under: Materials > Consumable materials > Alcoholic beverages
+    - Spirits organised as children: Whisky, Rum, Brandy, Gin
+    - Mixed alcoholic beverages > Grog
+  2. Activities Updated:
+    - Drinking → Drinking (alcohol) under Social behaviours
+    - Liquor trade under Commercial activities
+    - Liquor licensing under Regulatory processes > Licensing
+  3. Events > Criminal events:
+    - New Alcohol-related parent category
+    - Drunkenness moved under Alcohol-related
+    - Unlicensed sales (with sly-grog as synonym)
+    - Serving alcohol to minors
+  4. Agents:
+    - Liquor merchants added under Hospitality workers
+
+  Sample Tag Changes:
+
+  Item 1 (Rape case):
+  - Tags: Drinking (alcohol) | Rum | Sexual assault | Carrington Hotel
+  - Rum now: Materials > ... > Spirits > Rum
+
+  Item 7 (Unlicensed sales):
+  - Tags: Liquor licensing | Unlicensed sales | Whisky | Nellie's Glen
+  - Licensing now: Activities > Regulatory processes > Licensing > Liquor licensing
+  - Unlicensed sales: Events > Criminal events > Alcohol-related > Unlicensed sales
+
+  Item 11 (Mr Wilkinson):
+  - Tags: Liquor trade | Mr Wilkinson | Megalong Valley
+  - Liquor trade: Activities > Commercial activities > Liquor trade
+
+  The report is ready for your review at reports/alcohol_rationalisation_report.md. Please confirm the tagging for all 12 items,
+   and I'll then implement the hierarchy changes in the scripts.
+
+> Here is my feedback: ### 1. A Charge of Rape.
+If 'grog' is mentioned elsewhere in the source (it's not in the snippet), add it.
+
+### 2. Mountain Mixtures.
+Please add the tag: Activities > Commercial activities > Liquor trade
+
+### 5. Found dead.
+Add 'Drunkenness (intoxication)'
+
+### 7. Katoomba Court.
+Is 'whisky' mentioned specifically? Only tag with the specific type of liguor if mentioned specifically, otherwise just 
+'spirits'
+
+### 8. Katoomba Police Court.
+Instead of 'Associated Concepts > Age groups > Minors' please use 'Agents > People > Demographic groups > Children' and add 
+'minors' to the thesaurus as a synonym for 'Children'. Let me know if you think we need a new demographic category for something
+ like 'Adolescents' distinguished from 'Children'. Do you think we should include 'licensing' under all license violations, or 
+restrict it to when 'licensing' is explicitly discussed?
+
+### 9. Katoomba Court.
+Please add 'Shipwright' as an occupation in the appropriate place.
+
+Add: Consumable materials > Alcoholic beverages > Spirits > Gin (explicitly mentioned) 
+
+Please check all 'whisky' tags to make sure the word 'whisky' or 'whiskey' (synonyms, should be in thesaurus) appear in the 
+source (I see from your rationale that it does here)
+
+Please add 'Drunkenness (intoxication)' with appropriate hierarchy
+
+Please add 'Activities > Social behaviours > Drinking (alcohol)'
+
+### 10. Megalong Matters.
+Please add 'Drunkenness (intoxication)' with appropriate hierarchy
+
+### 12. Megalong Valley.
+Add 'Pub' with appropriate hierarchy, noting that 'public house' is a synonym for 'pub'. Put it on the to-do list to change 
+'pub' in the hierarchy to 'Public house' (primary term) with 'Pub' as synonym in the thesaurus. 
+  ⎿  Found 34 new diagnostic issues in 1 file (ctrl-o to expand)
+
+● Excellent feedback! Let me work through these systematically. First, I need to check the full text for specific mentions
+  (grog, whisky, etc.), then update the report.
+
+● Bash(python3 << 'EOF'
+      from pyzotero import zotero…)
+  ⎿  Error: Traceback (most recent call last):
+       File "<stdin>", line 1, in <module>
+     ModuleNotFoundError: No module named 'pyzotero'
+
+● Write(scripts/32_check_specific_mentions.py)
+  ⎿  Wrote 78 lines to scripts/32_check_specific_mentions.py    
+     #!/usr/bin/env python3
+     """Check for specific alcohol mentions in items 1, 7, 9."""
+     import sys
+     from pathlib import Path
+     from html.parser import HTMLParser
+     import re
+     sys.path.append(str(Path(__file__).parent))
+     import config
+     … +68 lines (ctrl+o to expand)
+
+● Bash(./run.sh 32_check_specific_mentions.py)
+  ⎿  ➜ Running: scripts/32_check_specific_mentions.py
+
+     ✓ Configuration loaded successfully
+     … +17 lines (ctrl+o to expand)
+
+● Perfect! Now I can make the corrections. Let me update the report with all your feedback:
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       32    
+       33    - **Date:** 6 September 1890
+       34    - **Publication:** Nepean Times
+       35 -  - **Proposed Tags:** `Drinking (alcohol)` | `Rum` | `Sexual assault` | `Carrington Hotel`
+       36 -  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | Materials > Consumable materials > 
+          -  Alcoholic beverages > Spirits > Rum | 
+          -  Events > Criminal events > Sexual assault | Built Environment > Buildings > Accommodation buildings > Hotels > 
+          -  Carrington Hotel
+       35 +  - **Proposed Tags:** `Drinking (alcohol)` | `Rum` | `Grog` | `Sexual assault` | `Carrington Hotel`
+       36 +  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | Materials > Consumable materials > 
+          +  Alcoholic beverages > Spirits > Rum | 
+          +  Materials > Consumable materials > Alcoholic beverages > Mixed alcoholic beverages > Grog | 
+          +  Events > Criminal events > Sexual assault | Built Environment > Buildings > Accommodation buildings > Hotels > 
+          +  Carrington Hotel
+       37    
+       38    **Snippet (showing alcohol-related content):**
+       39    > was in Katoomba this week with my husband, I have a little house there to live in: I know accused and remember
+             Wednesday night last; I don't know the day of the month; my husband went up the town at dusk and I remained at 
+            home and went to bed; about 11 o'clock my husband came home with accused; I got up and let them in and gave them 
+            some tea; they brought a pint of rum (accused had it) they had a drink each and I had a little warmed up by my 
+            husband; I said to my husband "I can't sit up" and he said "Very well go to bed;" I have been sick for a long 
+            time under medical treatment; I went to bed and went to sleep, leaving accused and my husband sitting down by the
+             fire; the next thing I knew was that accused hold...
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       46    
+       47    - **Date:** 29 April 1892
+       48    - **Publication:** Katoomba Times
+       49 -  - **Proposed Tags:** `Drunkenness` | `Drunkenness (intoxication)` | `Beer` | `Lithgow`
+       50 -  - **Hierarchy Path:** Events > Criminal events > Alcohol-related > Drunkenness | Associated Concepts > Physical 
+          -  and health conditions > Drunkenness (intoxication) | Materials > Consumable materials > Alcoholic beverages > 
+          -  Beer | Places > Towns > Lithgow
+       49 +  - **Proposed Tags:** `Drunkenness` | `Drunkenness (intoxication)` | `Beer` | `Liquor trade` | `Lithgow`
+       50 +  - **Hierarchy Path:** Events > Criminal events > Alcohol-related > Drunkenness | Associated Concepts > Physical 
+          +  and health conditions > Drunkenness (intoxication) | Materials > Consumable materials > Alcoholic beverages > 
+          +  Beer | Activities > Commercial activities > Liquor trade | Places > Towns > Lithgow
+       51    
+       52    **Snippet (showing alcohol-related content):**
+       53    > Gradually the Lithgow licensed dispensers of alcoholic stimulants are coming down to the "thripenny" beers. We
+             predict, that there will be nearly double the amount of drunkenness at the black-diamond fields in consequence.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       88    
+       89    - **Date:** 28 January 1893
+       90    - **Publication:** Nepean Times
+       91 -  - **Proposed Tags:** `Drinking (alcohol)` | `Death` | `Inquests` | `Ruined Castle Shale Mine` | `South Katoomba`
+       92 -  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | 
+          -  Events > Death | Events > Legal proceedings > Inquests | Built Environment > Structures > Industrial structures 
+          -  > Mining sites > Ruined Castle Shale Mine | Places > Towns > Katoomba > South Katoomba
+       91 +  - **Proposed Tags:** `Drinking (alcohol)` | `Drunkenness (intoxication)` | `
+          +  Death` | `Inquests` | `Ruined Castle Shale Mine` | `South Katoomba`
+       92 +  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | 
+          +  Associated Concepts > Physical and health conditions > Drunkenness (intoxication) | 
+          +  Events > Death | Events > Legal proceedings > Inquests | Built Environment > Structures > Industrial structures 
+          +  > Mining sites > Ruined Castle Shale Mine | Places > Towns > Katoomba > South Katoomba
+       93    
+       94    **Snippet (showing alcohol-related content):**
+       95    > I last saw him alive at five o'clock, on Monday last he was then apparently quite well, and was in his hut by 
+            himself he was then sober, on the morning of same day I saw him a little the worse of liquor, he was in the habit
+             of taking a drink occasionally.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       130    
+       131    - **Date:** 21 March 1891
+       132    - **Publication:** Katoomba Times
+       133 -  - **Proposed Tags:** `Liquor licensing` | `Serving alcohol to minors` | `Whisky` | `Minors`
+       134 -  - **Hierarchy Path:** Activities > Regulatory processes > Licensing > Liquor licensing | Events > Criminal 
+           -  events > Alcohol-related > Serving alcohol to minors | Materials > Consumable materials > Alcoholic beverages >
+           -   Spirits > Whisky | Associated Concepts > Age groups > Minors
+       133 +  - **Proposed Tags:** `Liquor licensing` | `Serving alcohol to minors` | `Whisky` | `Children`
+       134 +  - **Hierarchy Path:** Activities > Regulatory processes > Licensing > Liquor licensing | Events > Criminal 
+           +  events > Alcohol-related > Serving alcohol to minors | Materials > Consumable materials > Alcoholic beverages >
+           +   Spirits > Whisky | Agents > People > Demographic groups > Children
+       135    
+       136    **Snippet (showing alcohol-related content):**
+       137    > Katoomba Times (NSW : 1889 - 1894), Saturday 21 March 1891, page 3
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       150    
+       151    - **Date:** 17 March 1893
+       152    - **Publication:** Katoomba Times
+       153 -  - **Proposed Tags:** `Drunkenness` | `Theft` | `Whisky` | `Rum` | `South Katoomba`
+       154 -  - **Hierarchy Path:** Events > Criminal events > Alcohol-related > Drunkenness | 
+           -  Events > Criminal events > Theft | Materials > Consumable materials > Alcoholic beverages > Spirits > Whisky | 
+           -  Materials > Consumable materials > Alcoholic beverages > Spirits > Rum | 
+           -  Places > Towns > Katoomba > South Katoomba
+       153 +  - **Proposed Tags:** `Drinking (alcohol)` | `Drunkenness` | `Drunkenness (intoxication)` | `
+           +  Theft` | `Whisky` | `Rum` | `Gin` | `Shipwright` | `South Katoomba`
+       154 +  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | 
+           +  Events > Criminal events > Alcohol-related > Drunkenness | 
+           +  Associated Concepts > Physical and health conditions > Drunkenness (intoxication) | 
+           +  Events > Criminal events > Theft | Materials > Consumable materials > Alcoholic beverages > Spirits > Whisky | 
+           +  Materials > Consumable materials > Alcoholic beverages > Spirits > Rum | 
+           +  Materials > Consumable materials > Alcoholic beverages > Spirits > Gin | Agents > People > Occupations > 
+           +  Maritime workers > Shipwright | Places > Towns > Katoomba > South Katoomba
+       155    
+       156    **Snippet (showing alcohol-related content):**
+       157    > Charles Hoffman, shipwright, South Katoomba, deposed; Saw the prisoners at my place on the 8th; they came 
+             together; they had three bottles with them; Saunders had the bottles; they were not drunk; they stayed at my 
+             house that night; the bottle of rum was the first opened; they drank it; they asked me to have a drink; I had 
+             one; when they first came I told them to go out; they would not go; I then put them to bed; they were drunk when
+              they went to bed; found a gin bottle behind the safe; I gave it to Mr. Allen.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       164    
+       165    - **Date:** 9 September 1892
+       166    - **Publication:** Katoomba Times
+       167 -  - **Proposed Tags:** `Drinking (alcohol)` | `
+           -  Wine` | `Liquor trade` | `Indigenous Australians` | `Publicans` | `Megalong Valley`
+       168 -  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | 
+           -  Materials > Consumable materials > Alcoholic beverages > Wine | Activities > Commercial activities > Liquor 
+           -  trade | Agents > People > Cultural groups > Indigenous Australians | Agents > People > Occupations > 
+           -  Hospitality workers > Publicans | Places > Valleys > Megalong Valley
+       167 +  - **Proposed Tags:** `Drinking (alcohol)` | `Drunkenness (intoxication)` | `
+           +  Wine` | `Liquor trade` | `Indigenous Australians` | `Publicans` | `Megalong Valley`
+       168 +  - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | 
+           +  Associated Concepts > Physical and health conditions > Drunkenness (intoxication) | 
+           +  Materials > Consumable materials > Alcoholic beverages > Wine | Activities > Commercial activities > Liquor 
+           +  trade | Agents > People > Cultural groups > Indigenous Australians | Agents > People > Occupations > 
+           +  Hospitality workers > Publicans | Places > Valleys > Megalong Valley
+       169    
+       170    **Snippet (showing alcohol-related content):**
+       171    > She found them all gloriously drunk on a regular "razzle dazzle" and set to work with a few buckets of water 
+             and her stick to sober them up sufficiently to get a start on for home. When the reckoning was called for the 
+             cattle were worth about £40,and £15 were also liquidated and "hot coppers" were about for a week after.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       196    
+       197    - **Date:** 23 June 1893
+       198    - **Publication:** Katoomba Times
+       199 -  - **Proposed Tags:** `Liquor licensing` | `Hotels` | `Unlicensed sales` | `Gambling` | `Megalong Valley`
+       200 -  - **Hierarchy Path:** Activities > Regulatory processes > Licensing > Liquor licensing | Built Environment > 
+           -  Buildings > Accommodation buildings > Hotels | 
+           -  Events > Criminal events > Alcohol-related > Unlicensed sales | Activities > Social behaviours > Gambling | 
+           -  Places > Valleys > Megalong Valley
+       199 +  - **Proposed Tags:** `Liquor licensing` | `Hotels` | `Public house` | `
+           +  Unlicensed sales` | `Gambling` | `Megalong Valley`
+       200 +  - **Hierarchy Path:** Activities > Regulatory processes > Licensing > Liquor licensing | Built Environment > 
+           +  Buildings > Accommodation buildings > Hotels | 
+           +  Built Environment > Buildings > Hospitality venues > Public house | 
+           +  Events > Criminal events > Alcohol-related > Unlicensed sales | Activities > Social behaviours > Gambling | 
+           +  Places > Valleys > Megalong Valley
+       201    
+       202    **Snippet (showing alcohol-related content):**
+       203    > [We should think a hotel would be preferable to the sly-grog and gambling shanties which are said to exist at
+              the Mines at present. We take a public house to be the lesser of the two evils.
+
+● Perfect! All corrections made. Now let me update the TODO list and answer your questions:
+
+● Responses to Your Questions
+
+  Question 1: Adolescents Category
+
+  My recommendation: Yes, we should create an "Adolescents" category.
+
+  Rationale:
+  - Historical legal distinction: The case mentions "under 16" as the legal drinking age threshold
+  - This isn't quite "children" (young kids) nor "adults" (over 16/18)
+  - Victorian/Edwardian Australia had specific legal categories for youth (14-18 roughly)
+  - Other possible uses: Working age restrictions, school-leaving age, criminal responsibility
+
+  Proposed structure:
+  Agents
+  └── People
+      └── Demographic groups
+          ├── Children  [under ~12-14]
+          ├── Adolescents  [~12-18]
+          └── Adults
+
+  Then "Minors" could be a broader term that encompasses both Children AND Adolescents (anyone under legal majority, typically
+  21 in colonial Australia). Or we could make "Minors" a synonym for whichever group is most commonly referenced.
+
+  Alternative: Keep it simple with just "Children" (as you suggested) and use "minors" as synonym, assuming most references
+  don't require the adolescent distinction.
+
+  What's your preference?
+
+  ---
+  Question 2: When to Tag "Liquor licensing"
+
+  My recommendation: Tag "Liquor licensing" when licensing is materially relevant to the article's subject, not just when the 
+  word appears.
+
+  Include licensing tag when:
+  - Article discusses licensing applications, hearings, or decisions
+  - Licensing status is central to understanding the event (e.g., unlicensed sales prosecution)
+  - Article debates liquor licensing policy/regulations
+
+  Exclude licensing tag when:
+  - Licensing is merely contextual (e.g., "licensed publican John Smith did X")
+  - Focus is entirely on the criminal act, not the regulatory framework
+
+  For the current items:
+  - Item 7 (unlicensed sales): YES - licensing violation is the crime
+  - Item 8 (serving minors): DEBATABLE - it's a licensing violation, but about age not lack of license
+  - Item 12 (hotel application): YES - specifically about seeking a licence
+
+  Your call: Should item #8 keep the Liquor licensing tag? The crime is specifically about violating licensing conditions (age
+  restrictions), so I'd lean towards YES.
+
+  ---
+  Summary of Report Updates
+
+  All 12 items updated with your feedback:
+
+  ✅ Item 1: Added Grog✅ Item 2: Added Liquor trade✅ Item 5: Added Drunkenness (intoxication)✅ Item 7: Whisky confirmed
+  (mentioned in source)✅ Item 8: Changed Minors → Children (Demographic groups)✅ Item 9: Added Gin, Shipwright, Drunkenness
+  (intoxication), Drinking (alcohol)✅ Item 10: Added Drunkenness (intoxication)✅ Item 12: Added Public house
+
+  The updated report is ready for your final review at reports/alcohol_rationalisation_report.md.
+
+  What are your decisions on Adolescents category and licensing tag usage?
+
+> Please create the 'Adolescents' tag as you suggest. Ok, keep the licensing tag on #8, and your general approach is fine. 
+
+● Perfect! Let me update the todo list with the Adolescents tag:
+
+● Excellent! All alcohol tags approved and ready to implement.
+
+  Summary of Decisions
+
+  ✅ Adolescents category: Create under Agents > People > Demographic groups > Adolescents✅ Item #8 licensing tag: Keep it
+  (licensing violation is material to the case)✅ Licensing tag general rule: Tag when licensing is materially relevant to the
+  subject, not just mentioned in passing
+
+  Ready to Implement
+
+  I'm now ready to implement all the alcohol-related hierarchies in scripts/22_generate_poly_hierarchy.py. This will include:
+
+  Major structural changes:
+  1. Create Materials as 7th primary facet with full alcoholic beverages hierarchy
+  2. Create Alcohol-related parent under Criminal events
+  3. Add Regulatory processes > Licensing hierarchy
+  4. Add Liquor trade under Commercial activities
+  5. Rename Drinking → Drinking (alcohol)
+  6. Rename Social and welfare activities → Charitable and welfare activities
+  7. Move Drunkenness under Alcohol-related
+
+  New tags to add:
+  - Adolescents (Demographic groups)
+  - Shipwright (Maritime workers)
+  - All alcoholic beverage types (Beer, Wine, Spirits, Whisky, Rum, Brandy, Gin, Grog)
+  - Liquor merchants, Public house, etc.
+
+  Synonyms to add:
+  - Minors → Children
+  - Whisky/Whiskey
+  - Pub → Public house
+  - Sly-grog operations → Unlicensed sales
+
+  Shall I proceed with implementing all these changes in scripts/22_generate_poly_hierarchy.py and regenerating the
+  visualisations?
+
+> 'Minors' should be a term in the thesaurus that covers both 'children' AND 'adolescents' 
+
+● Ah, excellent clarification! So "Minors" is a broader term that encompasses both Children AND Adolescents, not just a synonym
+  for one of them.
+
+● Perfect! Updated the todo. So the thesaurus relationship will be:
+
+  Minors (broader term)
+  - Children (narrower term - younger kids, roughly under 12-14)
+  - Adolescents (narrower term - youth/teens, roughly 12-18)
+
+  This makes historical sense because in colonial Australia, "minors" meant anyone under legal majority (21 years), which
+  included both children and adolescents.
+
+  Wait - I just realised: In Item #8, the boy was "under the age of 16" (actually 14 based on the birth certificate), which
+  makes him an Adolescent, not a Child. Should I update the report to tag him with Adolescents instead of Children?
+
+  Current tagging:
+  Item #8: ... | `Children`
+  Hierarchy: ... | Agents > People > Demographic groups > Children
+
+  Should be:
+  Item #8: ... | `Adolescents`
+  Hierarchy: ... | Agents > People > Demographic groups > Adolescents
+
+  Shall I make that correction before implementing?
+
+> Yes, please make that correction to 'Adolescents'. Do not start implementing yet, however, we only have 10% context remaining.
+ Instead, please do a git commit and push, and then prepare a /compact message for a smooth handover to the next session. 
+
+● Perfect! Let me make that correction first, then do the git commit and prepare the handover.
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 2 additions and 2 removals                                       
+       130    
+       131    - **Date:** 21 March 1891
+       132    - **Publication:** Katoomba Times
+       133 -  - **Proposed Tags:** `Liquor licensing` | `Serving alcohol to minors` | `Whisky` | `Children`
+       134 -  - **Hierarchy Path:** Activities > Regulatory processes > Licensing > Liquor licensing | Events > Criminal 
+           -  events > Alcohol-related > Serving alcohol to minors | Materials > Consumable materials > Alcoholic beverages >
+           -   Spirits > Whisky | Agents > People > Demographic groups > Children
+       133 +  - **Proposed Tags:** `Liquor licensing` | `Serving alcohol to minors` | `Whisky` | `Adolescents`
+       134 +  - **Hierarchy Path:** Activities > Regulatory processes > Licensing > Liquor licensing | Events > Criminal 
+           +  events > Alcohol-related > Serving alcohol to minors | Materials > Consumable materials > Alcoholic beverages >
+           +   Spirits > Whisky | Agents > People > Demographic groups > Adolescents
+       135    
+       136    **Snippet (showing alcohol-related content):**
+       137    > Katoomba Times (NSW : 1889 - 1894), Saturday 21 March 1891, page 3
+
+● Now let me check what needs to be committed and do the git operations:
+
+● Bash(git status --short)
+  ⎿  ?? data/poly_hierarchy_additions.csv.backup                  
+     ?? data/poly_hierarchy_additions.csv.backup-2025-10-20
+     ?? data/poly_hierarchy_additions.csv.backup-2025-10-22-112901
+     … +6 lines (ctrl+o to expand)
+
+● Bash(git add reports/alcohol_rationalisation_report.md scripts/29_analyse_alcohol_tag.py scripts/30_analyse_alcohol_contexts.py
+      scripts/31_generate_alcohol_report_v2…)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +14 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Add alcohol tag rationalisation report and analysis scripts…)
+  ⎿  [main e9070b4] Add alcohol tag rationalisation report and analysis scripts
+      5 files changed, 1285 insertions(+)
+      create mode 100644 reports/alcohol_rationalisation_report.md
+     … +4 lines (ctrl+o to expand)
+
+● Bash(git push)
+  ⎿  To github.com:shale-heritage/blue-mountains.git
+        01453ed..e9070b4  main -> main
+
+● Excellent! Now let me prepare the handover message:
+
+  ---
+  Session Handover: Alcohol Tag Rationalisation Complete - Ready to Implement
+
+  ✅ Accomplished This Session
+
+  Alcohol Tag Analysis (12 items):
+  - Generated comprehensive alcohol rationalisation report with KWIC (Key Word In Context) analysis
+  - All 12 items analysed with full-text snippets showing actual alcohol-related content
+  - User reviewed and approved all proposed tags
+  - Report saved: reports/alcohol_rationalisation_report.md
+
+  Vocabulary Structure Designed:
+  - Created new Materials primary facet (7th facet) for consumable materials including alcoholic beverages
+  - Designed Alcohol-related criminal events hierarchy
+  - Designed Regulatory processes > Licensing hierarchy
+  - Designed Liquor trade commercial activities hierarchy
+
+  Git Status:
+  - Committed: alcohol_rationalisation_report.md + 4 analysis scripts (29-32)
+  - Pushed to remote (commit e9070b4)
+
+  ---
+  🎯 Current State - READY TO IMPLEMENT
+
+  All decisions finalised and approved:
+
+  1. New Materials Facet (7th Primary Facet)
+
+  Materials
+  └── Consumable materials
+      └── Alcoholic beverages
+          ├── Beer
+          ├── Wine
+          ├── Spirits
+          │   ├── Whisky
+          │   ├── Rum
+          │   ├── Brandy
+          │   └── Gin
+          └── Mixed alcoholic beverages
+              └── Grog
+
+  2. Activities Facet Changes
+
+  Activities
+  ├── Social behaviours  [EXISTING - EXPAND]
+  │   ├── Drinking (alcohol)  [RENAME from "Drinking"]
+  │   ├── Gambling  [already exists]
+  │   └── Temperance  [already exists]
+  │
+  ├── Commercial activities
+  │   └── Liquor trade  [NEW]
+  │       ├── Liquor sales
+  │       └── Wholesale liquor business
+  │
+  ├── Regulatory processes  [NEW or expand existing]
+  │   └── Licensing  [NEW]
+  │       ├── Liquor licensing
+  │       └── Hotel licensing  [defer - from accommodation work]
+  │
+  └── Charitable and welfare activities  [RENAME from "Social and welfare activities"]
+
+  3. Events Facet Changes
+
+  Events
+  └── Criminal events
+      └── Alcohol-related  [NEW parent category]
+          ├── Drunkenness  [MOVE from direct child of Criminal events]
+          ├── Unlicensed sales  [NEW]
+          └── Serving alcohol to minors  [NEW]
+
+  4. Agents Facet Changes
+
+  Agents
+  └── People
+      ├── Demographic groups
+      │   ├── Children  [already exists]
+      │   └── Adolescents  [NEW - ages ~12-18]
+      │
+      └── Occupations
+          ├── Hospitality workers
+          │   └── Liquor merchants  [NEW]
+          │       └── Mr Wilkinson
+          │
+          └── Maritime workers  [NEW category]
+              └── Shipwright  [NEW]
+
+  5. Built Environment Changes
+
+  Built Environment
+  └── Buildings
+      └── Hospitality venues
+          └── Public house  [NEW - "Pub" will be synonym]
+
+  6. Thesaurus Additions
+
+  - Minors → broader term covering both Children AND Adolescents
+  - Whisky/Whiskey → synonyms (both spellings valid)
+  - Pub → synonym for Public house (primary term)
+  - Sly-grog operations → synonym for Unlicensed sales
+
+  ---
+  📋 Implementation Checklist
+
+  File to modify: scripts/22_generate_poly_hierarchy.py
+
+  Major structural changes:
+  1. ✅ Add Materials as 7th primary facet with full hierarchy
+  2. ✅ Create Alcohol-related parent under Criminal events
+  3. ✅ Move Drunkenness under Alcohol-related
+  4. ✅ Add Regulatory processes > Licensing
+  5. ✅ Add Liquor trade under Commercial activities
+  6. ✅ Rename "Drinking" → "Drinking (alcohol)"
+  7. ✅ Rename "Social and welfare activities" → "Charitable and welfare activities"
+
+  New tags to add:
+  - Adolescents (Demographic groups)
+  - Shipwright (Maritime workers - NEW occupation category)
+  - Public house (Hospitality venues)
+  - All alcoholic beverage types (Beer, Wine, Spirits, Whisky, Rum, Brandy, Gin, Grog)
+  - Liquor trade, Liquor sales, Wholesale liquor business
+  - Liquor licensing
+  - Unlicensed sales, Serving alcohol to minors
+  - Liquor merchants, Mr Wilkinson
+
+  Synonyms to add:
+  - Minors (broader term for Children + Adolescents)
+  - Whisky/Whiskey (synonyms)
+  - Pub → Public house
+  - Sly-grog operations → Unlicensed sales
+
+  After implementation:
+  1. Run scripts/22_generate_poly_hierarchy.py to regenerate CSV
+  2. Run scripts/23_visualise_poly_hierarchy.py to regenerate visualisations
+  3. Verify Materials facet appears as 7th primary facet
+  4. Verify all alcohol-related hierarchies are correct
+  5. Git commit changes
+
+  ---
+  🔑 Key Decisions Made
+
+  Adolescents vs Children:
+  - Created separate "Adolescents" category (ages ~12-18)
+  - "Minors" is broader term covering both Children AND Adolescents
+  - Item #8 tags 14-year-old as "Adolescents" (not Children)
+
+  Licensing Tag Usage:
+  - Tag "Liquor licensing" when licensing is materially relevant (central to article subject)
+  - Include when: licensing applications, violations are the crime, policy debates
+  - Exclude when: merely contextual mention (e.g., "licensed publican did X")
+
+  Sly-grog Simplification:
+  - "Sly-grog operations" = Australian colonial term for unlicensed liquor sales
+  - Use "Unlicensed sales" as primary tag
+  - "Sly-grog operations" as historical synonym
+
+  Public House vs Pub:
+  - "Public house" is primary/preferred term (more formal, historical)
+  - "Pub" is synonym (colloquial)
+
+  Materials as Top-Level Facet:
+  - Alcoholic beverages didn't fit well under Activities
+  - Created new 7th primary facet specifically for consumable materials
+  - Extensible for future non-alcohol materials (food, tobacco, etc.)
+
+  ---
+  📊 Alcohol Items Summary (All Approved)
+
+  | #   | Title             | Key Tags                                                          | Notes
+          |
+  |-----|-------------------|-------------------------------------------------------------------|-------------------------------
+  --------|
+  | 1   | Rape case         | Drinking, Rum, Grog, Sexual assault                               | Grog mentioned in full text
+          |
+  | 2   | Mountain Mixtures | Drunkenness (both), Beer, Liquor trade                            | Court cases + beer pricing
+          |
+  | 3   | Mountain Mixtures | Drinking, Whisky, Beer, Rum, Brandy, Liquor trade                 | Megalong Valley drinking
+  culture      |
+  | 4   | Mountain Mixtures | Beer, Liquor trade                                                | Beer pricing commentary
+          |
+  | 5   | Found dead        | Drinking, Drunkenness (intoxication)                              | Inquest - habitual drinking
+          |
+  | 6   | Mountain Mixtures | Liquor trade, Hotelliers, Fires                                   | Hotel fire at Oberon
+          |
+  | 7   | Katoomba Court    | Liquor licensing, Unlicensed sales, Whisky                        | Illegal liquor sales at
+  Nellie's Glen |
+  | 8   | Police Court      | Liquor licensing, Serving to minors, Whisky, Adolescents          | 14-year-old served whisky
+          |
+  | 9   | Katoomba Court    | Drinking, Drunkenness (both), Theft, Whisky, Rum, Gin, Shipwright | Theft of spirits + drunk
+          |
+  | 10  | Megalong Matters  | Drinking, Drunkenness (intox), Wine, Publicans                    | Indigenous + drinking
+  commentary      |
+  | 11  | Megalong Valley   | Liquor trade, Mr Wilkinson                                        | Wholesale liquor merchant
+          |
+  | 12  | Megalong Valley   | Liquor licensing, Hotels, Public house, Unlicensed sales          | Hotel licence application vs
+  sly-grog |
+
+  ---
+  📝 Current TODO List
+
+  IMMEDIATE PRIORITY:
+  1. ✅ Implement alcohol hierarchies in scripts/22_generate_poly_hierarchy.py
+    - Add Materials facet
+    - Add all alcohol-related tags and hierarchies
+    - Add Adolescents, Shipwright, Public house
+    - Add all synonyms/broader terms
+
+  Deferred/Future:
+  2. Review accommodation report for hotel licensing references
+  3. Disambiguate Post tag (9 uses) - building vs. service
+  4. Phase 2: Pattern A standardisation (retrofit Clergy, Medical professionals, Law enforcement)
+  5. Merge poly_hierarchy_additions.csv into tag_consolidation_map.csv
+  6. Fix taxonomy issues: "mining settlement" → "mining district", "hospitality venues" issues
+
+  ---
+  ⚠️ Important Context for Next Session
+
+  Spelling: UK/Australian English throughout (colour, behaviour, organisation, analyse, licence [noun], license [verb])
+
+  Pattern A Hierarchy:
+  - Plural Parent (category) > Singular Generic (taggable) > Specific Instances
+  - Example: Hotels > Hotel > Carrington Hotel
+  - Already applied to new alcohol tags
+
+  File Relationships:
+  - poly_hierarchy_additions.csv = Generated vocabulary structure (NOT yet in master)
+  - tag_consolidation_map.csv = MASTER file for Zotero changes
+  - Must merge before applying to Zotero!
+
+  Project Structure:
+  - 7 primary facets (was 6, adding Materials)
+  - Activities, Agents, Associated Concepts, Built Environment, Events, Information Forms, Places, Materials [NEW]
+
+  ---
+  Ready to implement! Start next session with: Implementing alcohol hierarchies in scripts/22_generate_poly_hierarchy.py per the
+   detailed checklist above.
+
+
+
