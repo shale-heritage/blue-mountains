@@ -1,6 +1,6 @@
 # Zotero Tag Extraction Summary
 
-**Generated:** 2025-10-11 10:34:43
+**Generated:** 2025-10-19 12:59:39
 **Zotero Group ID:** 2258643
 
 ---
@@ -34,18 +34,18 @@
 | 6 | Weather | 49 | 1.3% |
 | 7 | Shale mines | 48 | 1.3% |
 | 8 | Recreation for miners | 46 | 1.2% |
-| 9 | Court | 45 | 1.2% |
-| 10 | Court cases | 45 | 1.2% |
+| 9 | Court cases | 45 | 1.2% |
+| 10 | Court | 45 | 1.2% |
 | 11 | A.K.O. & M. Company | 42 | 1.1% |
-| 12 | Megalong | 41 | 1.1% |
-| 13 | Salvation Army | 41 | 1.1% |
+| 12 | Salvation Army | 41 | 1.1% |
+| 13 | Megalong | 41 | 1.1% |
 | 14 | Sports | 39 | 1.0% |
 | 15 | Lithgow | 38 | 1.0% |
 | 16 | Meredith family | 36 | 0.9% |
 | 17 | Church | 34 | 0.9% |
 | 18 | Railway | 33 | 0.9% |
-| 19 | Miners | 32 | 0.8% |
-| 20 | Mining | 32 | 0.8% |
+| 19 | Mining | 32 | 0.8% |
+| 20 | Miners | 32 | 0.8% |
 
 ---
 

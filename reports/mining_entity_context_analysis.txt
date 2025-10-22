@@ -1,0 +1,194 @@
+➜ Running: scripts/24_check_mining_entity_context.py
+
+✓ Configuration loaded successfully
+  Zotero Group ID: 2258643
+  Library Type: group
+  Read-only API key: Available
+  Read-write API key: Available
+================================================================================
+MINING ENTITY CONTEXT CHECK
+================================================================================
+
+Checking whether tags refer to corporate entities or physical sites...
+
+Connecting to Zotero group library 2258643...
+
+================================================================================
+TAG: Colliery
+================================================================================
+
+Found 4 item(s) with tag 'Colliery'
+
+[1] Local Jottings.
+    Date: 19 July 1890
+    Notes: 1 found
+    Note 1: Found 'Colliery' 1 time(s)
+    Context: ...one-fourth of its members.
+Mr. John Norton will address the electors at Katoomba on Wednesday, and Mount Victoria on Thursday.
+Reported that Katoomba Colliery changed hands this week.
+A dastardly libel against the Vernon boys has been published by a notorious ex-criminal, Joe Bragg, and he is supposed to be...
+
+[2] The Collieries and Big-Head Mines of New South Wales
+    Date: 1887
+    Notes: None found
+
+[3] New South Wales Railway Enquiry
+    Date: 13 December 1905
+    Notes: 1 found
+    Note 1: Found 'Colliery' 2 time(s)
+    Context: ...mmission to-day took further evidence concerning the coal contracts. W. A. Dickson, chairman of the company which had been the lessee of the Katoomba colliery, stated that in April, 1903, a tender was sent in from that colliery for the supply of coal to the Railway Commissioners. A sample of the coal was te...
+
+[4] Mountain Industries.
+    Date: 7 April 1903
+    Notes: 1 found
+    Note 1: Tag 'Colliery' not found in note text
+    Note excerpt: Evening News (Sydney, NSW : 1869 - 1931), Tuesday 7 April 1903, page 7
+
+MOUNTAIN INDUSTRIES.
+LITHGOW, Tuesday. - Operations at the various collieries throughout the valley are still characterised by d...
+
+
+================================================================================
+TAG: Katoomba Coal and Shale Mines
+================================================================================
+
+Found 2 item(s) with tag 'Katoomba Coal and Shale Mines'
+
+[1] Mountain Mixtures.
+    Date: 20 November 1891
+    Notes: 1 found
+    Note 1: Found 'Katoomba Coal and Shale Mines' 1 time(s)
+    Context: ...or a number of months, is convalescent.
+Not nearly so many drunk cases at Katoomba Court. Dear Mr. Fosbery, kind sir, do take away one blue coat!
+The Katoomba Coal and Shale Mines are in full swing, and the Company require 500 men. Where are the unemployed?
+It is said that the proprietor of the Carrington intends erecting store...
+
+[2] Testimonial to a Mine Manager.
+    Date: 9 August 1890
+    Notes: 1 found
+    Note 1: Tag 'Katoomba Coal and Shale Mines' not found in note text
+    Note excerpt: Katoomba Times (NSW : 1889 - 1894), Saturday 9 August 1890, page 2
+
+TESTIMONIAL TO A MINE MANAGER.
+FRIDAY evening, at Alderman Edwards' Centennial Hotel, the Mayor (Mr. A. A. Smith) being in the chair...
+
+
+================================================================================
+TAG: South Clifton Tunnel Mine
+================================================================================
+
+Found 2 item(s) with tag 'South Clifton Tunnel Mine'
+
+[1] Deplorable State.
+    Date: 14 February 1911
+    Notes: 1 found
+    Note 1: Tag 'South Clifton Tunnel Mine' not found in note text
+    Note excerpt: Illawarra Mercury (Wollongong, NSW : 1856 - 1950), Tuesday 14 February 1911, page 2
+
+DEPLORABLE STATE.
+HOUSE ACCOMMODATION. 
+AT COLEDALE, SCARBOROUGH AND CLIFTON. 
+LARGE FAMILIES LIVING IN TWO ROOMS.
+...
+
+[2] South Clifton Fatality
+    Date: 31 May 1910
+    Notes: 1 found
+    Note 1: Found 'South Clifton Tunnel Mine' 3 time(s)
+    Context: ...by the deputy coroner (Mr. W. [?]. Rees), concerning the death of John Meredith, a wheeler, who was killed the previous day by a fall of stone in the South Clifton Tunnel Mine. The inquest was ad-journed, and resumed at the Wollongong Courthouse on Friday. Mr. P. J. Pratt appeared for Mr. Meredith, and Mr. A. A. Lysaght for...
+
+
+================================================================================
+TAG: New South Wales Shale and Oil Co.
+================================================================================
+
+Found 2 item(s) with tag 'New South Wales Shale and Oil Co.'
+
+[1] [untitled]
+    Date: 4 Novemeber 1895
+    Notes: 1 found
+    Note 1: Tag 'New South Wales Shale and Oil Co.' not found in note text
+    Note excerpt: Evening News (Sydney, NSW : 1869 - 1931), Monday 4 November 1895, page 2
+
+The New South Wales Shale and Oil Company, Katoomba, discharged all the single men from the shale mine on Saturday, in consequ...
+
+[2] Megalong Matters
+    Date: 28 Oct 1892
+    Notes: 1 found
+    Note 1: Found 'New South Wales Shale and Oil Co.' 1 time(s)
+    Context: ...ite with a view to recommending that a building be erected as soon as possible. 
+Two new stores are now open at the shale mines, one belonging to the New South Wales Shale and Oil Co. and the other to Mr. James, late of Katoomba. Although we wish both success in their enterprise, the district is scarcely populous enough to maintain...
+
+
+================================================================================
+TAG: A.K.O. & M. Company
+================================================================================
+
+Found 5 item(s) with tag 'A.K.O. & M. Company'
+
+[1] Katoomba Items.
+    Date: 28 April 1899
+    Notes: 1 found
+    Note 1: Tag 'A.K.O. & M. Company' not found in note text
+    Note excerpt: Lithgow Mercury (NSW : 1898 - 1954), Friday 28 April 1899, page 4
+
+KATOOMBA ITEMS.
+Katoomba, Wednesday.— It is reported that the Australian Kerosene Oil and Shale Company contemplate re-opening the sh...
+
+[2] Mountain Mixtures.
+    Date: 23 March 1894
+    Notes: 1 found
+    Note 1: Tag 'A.K.O. & M. Company' not found in note text
+    Note excerpt: Katoomba Times (NSW : 1889 - 1894), Friday 23 March 1894, page 2
+
+Mountain Mixtures.
+A chiel's amang ye takin' notes an faith we'll prent 'em
+Good Friday.
+House rents at Katoomba are on the decline.
+R...
+
+[3] Mountain Mixtures.
+    Date: 4 December 1891
+    Notes: 1 found
+    Note 1: Tag 'A.K.O. & M. Company' not found in note text
+    Note excerpt: December 1891, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes, an' faith we'll print 'em."
+Getting on - Katoomba band.
+Very slippery - Pipeclay footpaths.
+Is it not cruel to abuse one's p...
+
+[4] Mountain Mixtures.
+    Date: 22 January 1892
+    Notes: 1 found
+    Note 1: Tag 'A.K.O. & M. Company' not found in note text
+    Note excerpt: Katoomba Times (NSW : 1889 - 1894), Friday 22 January 1892, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes, an' faith we'll print 'em."
+Beautiful weather.
+Plenty of visitors on the Mounta...
+
+[5] Mountain Mixtures.
+    Date: 30 June 1893
+    Notes: 1 found
+    Note 1: Tag 'A.K.O. & M. Company' not found in note text
+    Note excerpt: Katoomba Times (NSW : 1889 - 1894), Friday 30 June 1893, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes, an faith we'll prent 'em 
+Skating at Katoomba gone out of fashion altogether. 
+Don...
+
+
+================================================================================
+SUMMARY
+================================================================================
+
+Total contexts extracted: 5
+
+Context samples collected. Review output above to determine:
+  1. Does 'Colliery' refer to a specific entity or generic term?
+  2. Do tags without 'Company'/'Co.' refer to mines (sites) or companies?
+  3. Should these be classified as Organizations or Places?

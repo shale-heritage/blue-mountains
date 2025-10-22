@@ -1,6 +1,6 @@
 # Tag Analysis Report
 
-**Generated:** 2025-10-08 23:26:35
+**Generated:** 2025-10-19 12:59:51
 **Zotero Group ID:** 2258643
 
 ---
@@ -11,7 +11,7 @@
 
 Found **332** pairs of similar tags that may need consolidation.
 
-These represent potential duplicates, spelling variations, or related terms that should be standardized.
+These represent potential duplicates, spelling variations, or related terms that should be standardized.  # noqa: E501
 
 ### Top 20 Most Similar Tag Pairs (Recommended for Review)
 
@@ -83,7 +83,7 @@ These suggest opportunities to create a hierarchical taxonomy.
 | Katoomba band | Katoomba | 7 | 123 |
 
 
-**Note:** These are detected based on substring matching. Manual review recommended to determine true hierarchical relationships.
+**Note:** These are detected based on substring matching. Manual review recommended to determine true hierarchical relationships.  # noqa: E501
 
 ---
 
@@ -135,7 +135,7 @@ This reveals thematic clusters and suggests potential tag categories.
 
 **Strong Thematic Clusters:** Tags that frequently appear together suggest content categories.
 
-**Visualization:** See `visualizations/tag_cooccurrence.png` for network graph showing relationships between top tags.
+**Visualization:** See `visualizations/tag_cooccurrence.png` for network graph showing relationships between top tags.  # noqa: E501
 
 ---
 

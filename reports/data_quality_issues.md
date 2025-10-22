@@ -1,6 +1,6 @@
 # Data Quality Issues Report
 
-**Generated:** 2025-10-08 23:27:20
+**Generated:** 2025-10-19 13:00:27
 **Zotero Group ID:** 2258643
 
 ---
@@ -741,7 +741,7 @@ These items have multiple child items (attachments). This may indicate:
 
 ### Action Required
 
-**HIGH PRIORITY:** Review these items to determine if they contain multiple distinct primary sources that should be separated into individual entries.
+**HIGH PRIORITY:** Review these items to determine if they contain multiple distinct primary sources that should be separated into individual entries.  # noqa: E501
 
 ### Items to Review:
 
@@ -787,7 +787,7 @@ These items have multiple child items (attachments). This may indicate:
 
 **Count:** 848 items
 
-These items have no PDF or other attachments. This may indicate:
+These items have no PDF (Portable Document Format) or other attachments. This may indicate:
 - Missing files that need to be uploaded
 - Items created as placeholders
 - Items where text was entered directly (check notes field)
