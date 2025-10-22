@@ -1,0 +1,137 @@
+POLY-HIERARCHICAL TAXONOMY VISUALIZATION OVERVIEW
+================================================================================
+
+This directory contains ASCII tree diagrams for the complete
+poly-hierarchical taxonomy structure.
+
+STRUCTURE:
+--------------------------------------------------------------------------------
+
+PRIMARY FACETS (Form-Based, Getty AAT Compatible):
+
+  - Activities
+    File: primary_activities.txt
+
+  - Agents
+    File: primary_agents.txt
+
+  - Associated Concepts
+    File: primary_associated_concepts.txt
+
+  - Built Environment
+    File: primary_built_environment.txt
+
+  - Events
+    File: primary_events.txt
+
+  - Information Forms
+    File: primary_information_forms.txt
+
+  - Places
+    File: primary_places.txt
+
+
+THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
+
+  - Alcohol & Temperance
+    File: theme_alcohol__temperance.txt
+
+  - Arts & Culture
+    File: theme_arts__culture.txt
+
+  - Communications & Postal Services
+    File: theme_communications__postal_services.txt
+
+  - Community institutions
+    File: theme_community_institutions.txt
+
+  - Economy & Labour
+    File: theme_economy__labour.txt
+
+  - Education
+    File: theme_education.txt
+
+  - Environment & Weather
+    File: theme_environment__weather.txt
+
+  - Family & Domestic Life
+    File: theme_family__domestic_life.txt
+
+  - Health & Medicine
+    File: theme_health__medicine.txt
+
+  - Justice & Crime
+    File: theme_justice__crime.txt
+
+  - Military & War
+    File: theme_military__war.txt
+
+  - Mining & Industry
+    File: theme_mining__industry.txt
+
+  - Politics & Governance
+    File: theme_politics__governance.txt
+
+  - Race & Ethnicity
+    File: theme_race__ethnicity.txt
+
+  - Religion
+    File: theme_religion.txt
+
+  - Social issues
+    File: theme_social_issues.txt
+
+  - Sport & Recreation
+    File: theme_sport__recreation.txt
+
+  - Tourism & Accommodation
+    File: theme_tourism__accommodation.txt
+
+  - Transport & Infrastructure
+    File: theme_transport__infrastructure.txt
+
+  - Women & Gender
+    File: theme_women__gender.txt
+
+
+================================================================================
+
+POLY-HIERARCHY EXPLANATION:
+
+Tags may appear in MULTIPLE trees. This is intentional.
+
+Example: 'Hotels' appears in:
+  1. Agents > Organizations > Hospitality businesses > Hotels
+  2. Built Environment > Accommodation buildings > Hotels
+  3. Alcohol & Temperance > Alcohol-related venues > Hotels
+  4. Tourism & Accommodation > Accommodation > Hotels
+
+This enables:
+  - Flexible querying from multiple perspectives
+  - Getty AAT compatibility (primary facets)
+  - Thematic exhibitions and tours (thematic groupings)
+
+================================================================================
+
+OVERALL STATISTICS:
+
+Primary Facets:
+  - Top-level facets: 7
+  - Total nodes: 410
+  - Total relationships: 419
+  - Parent nodes: 137
+  - Leaf nodes: 273
+
+Thematic Groupings:
+  - Top-level themes: 20
+  - Total nodes: 175
+  - Total relationships: 181
+  - Parent nodes: 67
+  - Leaf nodes: 108
+
+TOTAL HIERARCHY RELATIONSHIPS: 600
+
+================================================================================
+Generated: 2025-10-20
+Script: scripts/23_visualise_poly_hierarchy.py
+Source: data/poly_hierarchy_additions.csv

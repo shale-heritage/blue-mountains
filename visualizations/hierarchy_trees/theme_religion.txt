@@ -1,0 +1,18 @@
+THEMATIC GROUPING: Religion
+================================================================================
+
+Religion
+├── Cardinal Moran
+├── Clergy
+├── Religious buildings
+└── Religious organizations
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 5
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

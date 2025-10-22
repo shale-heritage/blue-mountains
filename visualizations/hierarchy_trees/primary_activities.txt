@@ -1,0 +1,42 @@
+PRIMARY FACET: Activities
+================================================================================
+
+Activities
+├── Communication activities
+│   ├── Advertising
+│   ├── Fundraising
+│   └── Postal services
+│       └── Post
+├── Economic activities
+│   ├── Mining
+│   │   ├── Coal mining
+│   │   │   ├── Coal
+│   │   │   └── Coal mines
+│   │   ├── Gold mining
+│   │   └── Shale mining
+│   │       └── Shale mines
+│   ├── Tourism
+│   └── Transport
+│       ├── Horses
+│       └── Trucking
+├── Military activities
+│   └── Military
+├── Recreation activities
+│   ├── Horseback riding
+│   ├── Recreation for miners
+│   └── Sports
+├── Regulatory processes
+│   └── Licensing
+├── Social & welfare activities
+│   ├── Charity
+│   └── Unemployment relief
+└── Social behaviours
+    ├── Drinking
+    ├── Gambling
+    └── Temperance
+
+
+STATISTICS:
+  Total nodes in facet: 33
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

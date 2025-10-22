@@ -1,0 +1,111 @@
+PRIMARY FACET: Built Environment
+================================================================================
+
+Built Environment
+├── Accommodation buildings
+│   ├── Boarding houses
+│   │   ├── Boarding house
+│   │   └── Orama Boarding House
+│   ├── Cottages
+│   │   └── Cottage
+│   ├── Dwellings
+│   │   └── Miners' dwellings
+│   ├── Hotels
+│   │   ├── Allen's Hotel
+│   │   ├── Belgravia Hotel
+│   │   ├── Brown's Hotel
+│   │   ├── Carrington Hotel
+│   │   ├── Centennial Hotel
+│   │   ├── Comet Hotel
+│   │   ├── Delaney's Hotel
+│   │   ├── Falls Hotel
+│   │   ├── Family Hotel
+│   │   ├── Fryer's Family Hotel
+│   │   ├── Grand Hotel
+│   │   ├── Grand Hotel (Sydney)
+│   │   ├── Great Western Hotel
+│   │   ├── Hoffman's House
+│   │   ├── Hotel
+│   │   ├── Hotel Wentworth
+│   │   ├── Hydora House Hotel
+│   │   ├── Imperial Hotel
+│   │   ├── Katoomba Family Hotel
+│   │   ├── Katoomba Hotel
+│   │   ├── Leura Hotel
+│   │   ├── Megalong Hotel
+│   │   ├── Montrose House
+│   │   ├── Mount Victoria Hotel
+│   │   ├── Mrs Long's Hotel
+│   │   ├── Oxford Hotel (Sydney)
+│   │   ├── Railway Hotel
+│   │   └── Wentworth Falls Hotel
+│   └── Stables
+│       └── Stable
+├── Civic buildings
+│   ├── Council buildings
+│   │   └── Council Chambers
+│   ├── Court buildings
+│   │   ├── Courthouse
+│   │   └── Katoomba Court
+│   ├── Police facilities
+│   │   └── Police station
+│   └── Postal facilities
+│       └── Post office
+├── Commercial buildings
+│   ├── Bank
+│   └── Store
+├── Community buildings
+│   └── Halls
+│       ├── Clarke's Hall
+│       ├── Masonic Hall
+│       ├── Mount Victoria Hall
+│       ├── Odd Fellows' Hall
+│       ├── Schools of Arts
+│       │   ├── Katoomba School of Arts
+│       │   ├── Katoomba School of Arts
+│       │   ├── School of Arts
+│       │   └── School of Arts
+│       └── Waudby's Hall
+├── Educational buildings
+│   └── Schools
+│       ├── Katoomba Public School
+│       ├── Katoomba Superior Public School
+│       ├── Megalong Valley School
+│       ├── Mount Victoria School
+│       └── School
+├── Hospitality venues
+│   └── Pubs
+│       └── Pub
+├── Infrastructure
+│   ├── Mining infrastructure
+│   │   └── Tramway
+│   ├── Transport infrastructure
+│   │   ├── Railway
+│   │   │   ├── Great Western Railway
+│   │   │   ├── Railway infrastructure
+│   │   │   │   ├── Katoomba station
+│   │   │   │   └── Zig Zag
+│   │   │   └── Railway operations
+│   │   │       └── Tourist trains
+│   │   └── Roads
+│   │       ├── Jenolan Caves Road
+│   │       ├── Nellie's Glen Road
+│   │       └── Nellie's Glen Track
+│   └── Utilities
+│       ├── Gas
+│       └── Sewerage
+└── Religious buildings
+    └── Churches
+        ├── Church
+        ├── Congregational Church
+        ├── Katoomba Congregational Church
+        ├── Methodist Church
+        ├── Roman Catholic Church
+        ├── St Hilda's Church
+        └── Wesleyan Church
+
+
+STATISTICS:
+  Total nodes in facet: 102
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

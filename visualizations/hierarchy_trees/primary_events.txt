@@ -1,0 +1,59 @@
+PRIMARY FACET: Events
+================================================================================
+
+Events
+├── Criminal events
+│   ├── Assault
+│   ├── Bigamy
+│   ├── Desertion
+│   ├── Drunkenness
+│   ├── Fighting
+│   ├── Rape
+│   ├── Sexual violence
+│   └── Theft
+├── Cultural events
+│   ├── Concert
+│   ├── Corroboree
+│   └── Debate
+├── Disasters & accidents
+│   ├── Accident
+│   │   └── Mining accidents
+│   │       └── Mount Kembla Disaster
+│   └── Fire
+├── Economic events
+│   ├── Mine closure
+│   └── Strike
+├── Historical events
+│   └── World War I
+├── Legal events
+│   ├── Bankruptcy
+│   ├── Court cases
+│   └── Divorce
+├── Life events
+│   ├── Death
+│   │   └── Death notice
+│   ├── Funeral
+│   └── Marriage
+├── Political events
+│   ├── Election
+│   ├── Petition
+│   └── Public meeting
+├── Social events
+│   ├── Ball
+│   ├── Dance
+│   └── Flower show
+└── Sporting events
+    ├── Athletics
+    ├── Billiards
+    ├── Cricket
+    │   └── Girls' cricket
+    ├── Football
+    ├── Rugby
+    ├── Shooting
+    └── Tennis
+
+
+STATISTICS:
+  Total nodes in facet: 50
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

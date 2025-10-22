@@ -1,0 +1,23 @@
+THEMATIC GROUPING: Health & Medicine
+================================================================================
+
+Health & Medicine
+├── Health conditions
+│   ├── Death
+│   ├── Disease
+│   ├── Illness
+│   └── Injury
+├── Health-related events
+│   ├── Accident
+│   └── Mining accidents
+└── Medical professionals
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 10
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

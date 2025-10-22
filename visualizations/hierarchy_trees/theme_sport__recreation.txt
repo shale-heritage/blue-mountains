@@ -1,0 +1,20 @@
+THEMATIC GROUPING: Sport & Recreation
+================================================================================
+
+Sport & Recreation
+├── Recreation themes
+│   ├── Recreation for miners
+│   ├── Reserves
+│   └── Sports
+├── Sporting events
+└── Sports clubs
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 7
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

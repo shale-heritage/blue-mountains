@@ -1,0 +1,31 @@
+THEMATIC GROUPING: Mining & Industry
+================================================================================
+
+Mining & Industry
+├── Mines & mining districts
+│   ├── Coal mining
+│   └── Shale mines
+├── Mining activities
+│   ├── Mine closure
+│   ├── Mining
+│   └── Recreation for miners
+├── Mining companies
+├── Mining incidents
+│   ├── Accident
+│   └── Mining accidents
+├── Mining infrastructure
+├── Mining settlements
+└── Mining workforce
+    ├── Miners
+    ├── Miners' dwellings
+    └── Miners' families
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 18
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

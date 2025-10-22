@@ -1,0 +1,21 @@
+THEMATIC GROUPING: Women & Gender
+================================================================================
+
+Women & Gender
+├── Gender-related vulnerabilities
+│   ├── Rape
+│   ├── Sexual violence
+│   └── Widows
+└── Women as demographic group
+    ├── Girls' cricket
+    └── Women
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 8
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

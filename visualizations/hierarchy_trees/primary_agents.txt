@@ -1,0 +1,226 @@
+PRIMARY FACET: Agents
+================================================================================
+
+Agents
+├── Animals
+│   ├── Cattle
+│   ├── Dogs
+│   └── Horses
+├── Organizations
+│   ├── Civic organizations
+│   │   ├── Labour organizations
+│   │   │   └── Unions
+│   │   └── Progress committees
+│   │       ├── Katoomba Progress Association
+│   │       ├── Leura Progress Association
+│   │       ├── Megalong Progress Committee
+│   │       ├── Mount Victoria Progress Committee
+│   │       └── Wentworth Falls Progress Association
+│   ├── Commercial businesses
+│   │   ├── Financial institutions
+│   │   │   └── Bank
+│   │   ├── Hospitality businesses
+│   │   │   ├── Boarding houses
+│   │   │   │   ├── Boarding house
+│   │   │   │   └── Orama Boarding House
+│   │   │   └── Hotels
+│   │   │       ├── Allen's Hotel
+│   │   │       ├── Belgravia Hotel
+│   │   │       ├── Brown's Hotel
+│   │   │       ├── Carrington Hotel
+│   │   │       ├── Centennial Hotel
+│   │   │       ├── Comet Hotel
+│   │   │       ├── Delaney's Hotel
+│   │   │       ├── Falls Hotel
+│   │   │       ├── Family Hotel
+│   │   │       ├── Fryer's Family Hotel
+│   │   │       ├── Grand Hotel
+│   │   │       ├── Grand Hotel (Sydney)
+│   │   │       ├── Great Western Hotel
+│   │   │       ├── Hoffman's House
+│   │   │       ├── Hotel
+│   │   │       ├── Hotel Wentworth
+│   │   │       ├── Hydora House Hotel
+│   │   │       ├── Imperial Hotel
+│   │   │       ├── Katoomba Family Hotel
+│   │   │       ├── Katoomba Hotel
+│   │   │       ├── Leura Hotel
+│   │   │       ├── Megalong Hotel
+│   │   │       ├── Montrose House
+│   │   │       ├── Mount Victoria Hotel
+│   │   │       ├── Mrs Long's Hotel
+│   │   │       ├── Oxford Hotel (Sydney)
+│   │   │       ├── Railway Hotel
+│   │   │       └── Wentworth Falls Hotel
+│   │   ├── Mining companies
+│   │   │   ├── Australian Kerosene Oil and Mineral Company
+│   │   │   ├── Gladstone Coal Company
+│   │   │   ├── Katoomba Coal and Shale Company
+│   │   │   ├── New South Wales Shale and Oil Company
+│   │   │   ├── South Clifton Mine Company
+│   │   │   ├── Sunny Corner Mining Company
+│   │   │   └── Waudby and Company
+│   │   ├── Retailers and stores
+│   │   │   ├── Douglas and Company
+│   │   │   ├── Nimmo's
+│   │   │   ├── Peckman Bros
+│   │   │   ├── Store
+│   │   │   └── Tabrett and Company
+│   │   └── Transport & logistics businesses
+│   │       └── Trucking
+│   ├── Cultural & recreational organizations
+│   │   ├── Cultural societies
+│   │   │   ├── Chess and Draughts Club
+│   │   │   ├── Horticulture society
+│   │   │   ├── Katoomba Amateur Dramatic Club
+│   │   │   └── Schools of Arts
+│   │   │       ├── Katoomba School of Arts
+│   │   │       ├── Katoomba School of Arts
+│   │   │       ├── School of Arts
+│   │   │       └── School of Arts
+│   │   ├── Performance groups
+│   │   │   ├── Bands
+│   │   │   │   ├── Band
+│   │   │   │   └── Katoomba band
+│   │   │   ├── Choirs
+│   │   │   │   └── Choir
+│   │   │   └── Minstrel troupes
+│   │   │       └── Katoomba Amateur Minstrels
+│   │   └── Sports clubs
+│   │       ├── Athletic clubs
+│   │       │   └── Katoomba Athletic Club
+│   │       ├── Cricket clubs
+│   │       │   ├── Katoomba Cricket Club
+│   │       │   └── Megalong Cricket Club
+│   │       ├── Football clubs
+│   │       │   └── Katoomba Football Club
+│   │       ├── Rifle clubs
+│   │       │   └── Rifle club
+│   │       └── Tennis clubs
+│   │           ├── Katoomba Tennis Club
+│   │           └── Lawn Tennis Club
+│   ├── Fraternal orders & lodges
+│   │   └── Lodges
+│   │       ├── Freemasons
+│   │       ├── Independent Order of Odd Fellows
+│   │       ├── Independent lodges
+│   │       │   └── Mountaineer Lodge
+│   │       └── United Ancient Order of Druids
+│   │           └── Druid's Lodge (local lodge)
+│   ├── Government bodies
+│   │   ├── Councils
+│   │   │   ├── Katoomba Council
+│   │   │   └── Lithgow Council
+│   │   ├── Courts
+│   │   │   ├── Court
+│   │   │   ├── Katoomba Court
+│   │   │   ├── Licensing Court
+│   │   │   ├── Police court
+│   │   │   └── Supreme Court
+│   │   ├── Other government bodies
+│   │   │   └── Aborigines' Protection Board
+│   │   └── Railway authorities
+│   │       └── Railway commission
+│   └── Religious organizations
+│       ├── Churches
+│       │   ├── Church
+│       │   ├── Congregational Church
+│       │   ├── Katoomba Congregational Church
+│       │   ├── Methodist Church
+│       │   ├── Roman Catholic Church
+│       │   ├── St Hilda's Church
+│       │   └── Wesleyan Church
+│       ├── Religious education
+│       │   └── Sunday school
+│       └── Religious social movements
+│           ├── Good Templars
+│           └── Salvation Army
+└── People
+    ├── Demographic groups
+    │   ├── Children
+    │   ├── Families
+    │   │   └── Miners' families
+    │   ├── Men
+    │   ├── Widows
+    │   └── Women
+    ├── Ethnic groups
+    │   ├── Aboriginal people
+    │   ├── Chinese people
+    │   └── Irish culture
+    └── Occupations
+        ├── Clergy
+        │   ├── Cardinal Moran
+        │   ├── Reverence M C Brown
+        │   ├── Reverend A Sutherland
+        │   ├── Reverend Canon Kemmis
+        │   ├── Reverend F V Pratt
+        │   ├── Reverend J H Maclean
+        │   ├── Reverend M S Fletcher
+        │   └── Reverend R M Laverty
+        ├── Hospitality workers
+        │   ├── Hotelliers
+        │   │   ├── Allen
+        │   │   ├── Biles
+        │   │   ├── Brown
+        │   │   ├── F. C. Goyder
+        │   │   ├── Hotellier
+        │   │   ├── Isabellea J. Long
+        │   │   ├── Manuell
+        │   │   ├── Mr A. G. Rowell
+        │   │   ├── Mr Alf. Goodare
+        │   │   ├── Mr D Thomson
+        │   │   ├── Mr D. Brown
+        │   │   ├── Mr D. Thompson
+        │   │   ├── Mr Delaney
+        │   │   ├── Mr Edwards
+        │   │   ├── Mr Ellis
+        │   │   ├── Mr J. Nimmo
+        │   │   ├── Mr Joe Nimmo
+        │   │   ├── Mr Manuel
+        │   │   ├── Mr N. Delaney
+        │   │   ├── Mr P. G. Whittall
+        │   │   ├── Mr R. Fryer
+        │   │   ├── Mr Wilson
+        │   │   ├── Mrs (Joe) Nimmo
+        │   │   ├── Mrs (R.) Fryer
+        │   │   ├── Mrs Brown
+        │   │   ├── Mrs Long
+        │   │   ├── Richard Allen
+        │   │   ├── Rubina Fryer
+        │   │   └── W. Green
+        │   └── Publican
+        ├── Law enforcement
+        │   └── Police
+        │       ├── Constable John Hamilton
+        │       ├── Constable O'Reilly
+        │       ├── Constable Orr
+        │       ├── Constable White
+        │       ├── Senior-Constable Illingworth
+        │       ├── Senior-Constable Thorncroft
+        │       └── Sergeant Thorndyke
+        ├── Legal officials
+        │   └── Coroners
+        │       ├── Coroner
+        │       └── Coroner Lethbridge
+        ├── Medical professionals
+        │   ├── Dr Morgan
+        │   ├── Dr Prangley
+        │   ├── Dr Spark
+        │   └── Dr Watkins
+        ├── Military personnel
+        │   └── Soldiers
+        ├── Miners
+        ├── Other goods and services
+        │   └── Coach and buggy business
+        │       └── Mr Thomas Cale
+        └── Public officials
+            ├── Aldermen
+            ├── Licensing inspector
+            ├── Minister for Mines
+            └── Stationmaster
+
+
+STATISTICS:
+  Total nodes in facet: 217
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

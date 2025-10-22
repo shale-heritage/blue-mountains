@@ -1,0 +1,25 @@
+THEMATIC GROUPING: Social issues
+================================================================================
+
+Social issues
+├── Economic hardship
+│   ├── Bankruptcy
+│   ├── Charity
+│   ├── Unemployment
+│   └── Unemployment relief
+├── Victims of crime & violence
+│   └── Widows
+└── Vulnerable populations
+    ├── Children
+    ├── Miners' families
+    └── Widows
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 12
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

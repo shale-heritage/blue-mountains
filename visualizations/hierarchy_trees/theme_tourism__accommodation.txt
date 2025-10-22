@@ -1,0 +1,22 @@
+THEMATIC GROUPING: Tourism & Accommodation
+================================================================================
+
+Tourism & Accommodation
+├── Accommodation
+├── Tourism activities
+│   ├── Tourism
+│   └── Tourist trains
+└── Tourist attractions
+    ├── Jenolan Caves
+    ├── Natural features
+    └── Waterfalls
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 9
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

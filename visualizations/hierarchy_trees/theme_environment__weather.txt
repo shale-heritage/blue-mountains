@@ -1,0 +1,21 @@
+THEMATIC GROUPING: Environment & Weather
+================================================================================
+
+Environment & Weather
+├── Animals
+├── Natural features
+├── Natural resources
+│   ├── Coal
+│   └── Shale mines
+└── Weather & climate
+    └── Weather
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 8
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

@@ -1,0 +1,31 @@
+THEMATIC GROUPING: Alcohol & Temperance
+================================================================================
+
+Alcohol & Temperance
+├── Alcohol consumption & behaviour
+│   ├── Alcohol
+│   ├── Drinking
+│   └── Drunkeness
+├── Alcohol-related venues
+│   ├── Hotels
+│   └── Pubs
+├── Hospitality workers
+├── Licensing & regulation
+│   ├── Licensing
+│   ├── Licensing Act
+│   ├── Licensing Court
+│   ├── Licensing inspector
+│   └── Publican's License
+└── Temperance organizations & movements
+    ├── Good Templars
+    └── Temperance
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 18
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv
