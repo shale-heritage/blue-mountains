@@ -1,0 +1,1840 @@
+
+ ▐▛███▜▌   Claude Code v2.0.22
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+════════════════════════════════════════════ Conversation compacted · ctrl+o for history ═══════════════════════════════════════════
+
+> /compact ● Session Summary - Taxonomy Refinement & Consolidation (2025-10-21)
+
+  Completed Work
+
+  1. Fixed Visualization Script Bug
+  - Fixed regex in script 23 to properly parse "- THEMATIC" markers with parenthetical notes
+  - Removed 7 erroneous visualization files that were treating intermediate categories as separate facets
+
+  2. Built Environment Corrections
+  - Singular/plural: "Stores" → "Store"
+  - Added "Schools of Arts" intermediate category (following Schools pattern)
+  - Capitalized road names: "Jenolan Caves Road", "Nellie's Glen Road", "Nellie's Glen Track"
+
+  3. Events Facet Refinements
+  - Removed "Concert" duplication (now only under Cultural events, not Social)
+  - Standardized to singular: "Concerts" → "Concert", "Dances" → "Dance"
+  - Fixed verb to noun: "Debating" → "Debate"
+  - Changed "Billiard" → "Billiards" (standard cue sports term)
+  - Mount Kembla Disaster: Moved under Mining accidents with synonyms for "Port Kembla disaster" and "Mount Kembla Colliery
+  Disaster"
+
+  4. Information Forms (Getty AAT Alignment)
+  - Renamed "Information objects" → "Information Forms" (Getty AAT terminology)
+  - Added "Licenses" intermediate category for "Publican's License"
+  - Later expanded with Legal documents structure (see #6)
+
+  5. Places Consolidation (Major Restructure)
+  - Created "Towns" category with Katoomba (>Carrington) and Megalong (>Middle camp)
+  - Moved "Reserves" under Places (was separate facet)
+  - Standardized reserve names to singular: "Wentworth Falls Reserve", "Katoomba Rifle Reserve"
+  - Removed "Ruined Castle" from Mountain features to prevent "Ruined Castle Shale Mine" appearing in both Mining districts and
+  Natural features
+  - Added TODO to verify if Ruined Castle is used independently as topographic feature
+
+  6. Legal & Regulatory Frameworks Consolidation
+  - Identified "Licensing" as regulatory process (Activity) vs legal documents (Information Forms)
+  - Moved: Activities > Regulatory processes > Licensing
+  - Restructured Information Forms:
+  Information Forms
+  ├── Legal documents
+  │   ├── Legislation → Licensing Act
+  │   └── Licenses → Publican's License
+  └── Maps
+  - Removed "Legal & regulatory frameworks" as separate facet
+
+  Key Outcomes
+
+  - Primary facets: 14 → 10 (consolidated 4 small facets)
+  - CSV: 542 lines (541 data + 1 header)
+  - Getty AAT alignment: Improved (Information Forms, proper document/process separation)
+  - Consistency: All reserves singular, all roads capitalized, proper singular/plural throughout
+  - Poly-hierarchy: Maintained for all relocated items
+
+  Files Modified
+
+  - scripts/22_generate_poly_hierarchy.py (primary taxonomy structure)
+  - scripts/23_visualise_poly_hierarchy.py (regex parsing fix)
+  - data/poly_hierarchy_additions.csv (regenerated)
+  - All visualization files in visualizations/hierarchy_trees/ (regenerated, stale files removed)
+
+  Next Steps
+
+  - Continue manual facet review
+  - Later: Verify Ruined Castle usage in full text (topographic vs mining district)
+  - Later: Check Athletics tag usage (generic sports vs track & field)
+  - Phase 1.3: Getty AAT mapping
+
+  Session ready for handover - all consolidations complete, taxonomy cleaner and more Getty AAT-aligned! 
+  ⎿  Compacted (ctrl+o to see full summary)
+  ⎿  Read visualizations/hierarchy_trees/primary_information_forms.txt (17 lines)
+  ⎿  Read visualizations/hierarchy_trees/primary_activities.txt (38 lines)
+  ⎿  Referenced file scripts/22_generate_poly_hierarchy.py
+  ⎿  Read visualizations/hierarchy_trees/primary_places.txt (47 lines)
+
+> welcome back, let's finish cleaning up primary facets. First, I think we can move \
+\
+Historical periods & events
+└── World War I\
+\
+to \
+\
+primary_events --> historical events --> World War I 
+  ⎿  ⧉ Selected 2 lines from visualizations/hierarchy_trees/primary_historical_periods__events.txt in Visual Studio Code
+
+● Good idea! That consolidates another small facet. Let me make this change.
+
+  I'll need to:
+  1. Add "Historical events" intermediate category under Events
+  2. Move "World War I" from Historical periods & events to Events > Historical events
+  3. Remove "Historical periods & events" as a separate facet
+  4. Check for thematic references if any
+  5. Regenerate everything
+
+  Let me first check the current structure in script 22:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 50 lines
+
+● Search(pattern: "Historical periods", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "World War I", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Bash(grep -i "world war" /home/shawn/Code/blue-mountains/data/poly_hierarchy_additions.csv)
+  ⎿  World War I,World War I,hierarchy,parent=Historical periods & events
+     World War I,World War I,hierarchy,parent=Military events - THEMATIC
+
+● Search(pattern: "(?i)historical", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Search(pattern: "^        # Events", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "^\s+\['Events', 'Events'", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 70 lines
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 20 lines
+
+● Now I'll make the changes. First, I'll add "Historical events" to the Events facet:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 4 additions                                                      
+       484            ['Mount Kembla Disaster', 'Mount Kembla Disaster', 'hierarchy', 'parent=Mining accidents'],
+       485            ['Fire', 'Fire', 'hierarchy', 'parent=Disasters & accidents'],
+       486    
+       487 +          # Historical events
+       488 +          ['Historical events', 'Historical events', 'hierarchy', 'parent=Events'],
+       489 +          ['World War I', 'World War I', 'hierarchy', 'parent=Historical events'],
+       490 +  
+       491            # Synonyms for Mount Kembla Disaster
+       492            ['Port Kembla disaster', 'Mount Kembla Disaster', 'synonym', 'Historical misnomer - actually Mount 
+             Kembla (not Port Kembla)'],
+       493            ['Mount Kembla Colliery Disaster', 'Mount Kembla Disaster', 'synonym', 'Alternative name for 1902 
+             mining disaster'],
+
+● Now I'll remove the old "Historical periods & events" section:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 4 removals                                                    
+       547            ['Charity', 'Charity', 'hierarchy', 'parent=Social issues'],
+       548            ['Widows', 'Widows', 'hierarchy', 'parent=Social issues'],
+       549    
+       550 -          # Historical periods
+       551 -          ['Historical periods & events', 'Historical periods & events', 'hierarchy', 'parent=(conceptual 
+           - facet)'],
+       552 -          ['World War I', 'World War I', 'hierarchy', 'parent=Historical periods & events'],
+       553 -  
+       550            # Information Forms (Getty AAT-aligned terminology)
+       551            ['Information Forms', 'Information Forms', 'hierarchy', 'parent=(conceptual facet)'],
+       552            ['Legal documents', 'Legal documents', 'hierarchy', 'parent=Information Forms'],
+
+● Good! Now let me regenerate the CSV and visualizations:
+
+● Bash(python3 scripts/22_generate_poly_hierarchy.py)
+  ⎿  Generating comprehensive poly-hierarchical taxonomy...
+
+     Generating primary facet hierarchies...
+     … +13 lines (ctrl+o to expand)
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py)
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +129 lines (ctrl+o to expand)
+
+● Perfect! Let me check that the consolidation worked correctly:
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 49 lines
+
+● Excellent! World War I is now correctly positioned under Events > Historical events (line 17-18). Let me verify that old
+  "Historical periods & events" file was removed:
+
+● Bash(ls visualizations/hierarchy_trees/ | grep -i historical)
+  ⎿  primary_historical_periods__events.txt
+
+● There's a stale file from the old structure. Let me remove it and also check that "Unemployment" issue I noticed in the
+  output:
+
+● Bash(rm visualizations/hierarchy_trees/primary_historical_periods__events.txt)
+  ⎿  (No content)
+
+● Search(pattern: "^\s+\['Unemployment', 'Unemployment', 'hierarchy'", path: "scripts/22_generate_poly_hierarchy.py", output_mode:
+        "content")
+  ⎿  Found 3 lines (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 15 lines
+
+● Search(pattern: "Social issues.*thematic grouping", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 20 lines
+
+● I found the issue! There's an orphaned "Social concepts" section (lines 542-548) that's creating duplicate entries. The proper
+   "Social issues" thematic grouping exists later in the file with correct "- THEMATIC" markers. Let me remove the orphaned
+  section:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 7 removals                                         
+       540        # ========================================================================
+       541    
+       542        rows.extend([
+       543 -          # Social concepts
+       544 -          ['Social issues', 'Social issues', 'hierarchy', 'parent=(thematic facet)'],
+       545 -          ['Unemployment', 'Unemployment', 'hierarchy', 'parent=Social issues'],
+       546 -          ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=Unemployment'],
+       547 -          ['Charity', 'Charity', 'hierarchy', 'parent=Social issues'],
+       548 -          ['Widows', 'Widows', 'hierarchy', 'parent=Social issues'],
+       549 -  
+       543            # Information Forms (Getty AAT-aligned terminology)
+       544            ['Information Forms', 'Information Forms', 'hierarchy', 'parent=(conceptual facet)'],
+       545            ['Legal documents', 'Legal documents', 'hierarchy', 'parent=Information Forms'],
+
+● Excellent! Now let me regenerate to fix the duplicate:
+
+● Bash(python3 scripts/22_generate_poly_hierarchy.py && python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | grep -A3
+      "Identified.*top-level primary")
+  ⎿  Generating comprehensive poly-hierarchical taxonomy...
+
+     Generating primary facet hierarchies...
+     … +17 lines (ctrl+o to expand)
+
+● Perfect! Now we're down to 8 primary facets. Let me run the full visualization to see the complete list:
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | grep -A20 "Identified.*top-level primary")
+  ⎿  Identified 8 top-level primary facets:
+       - Activities
+       - Agents
+     … +18 lines (ctrl+o to expand)
+
+● Excellent! We now have 8 primary facets (down from the original 14):
+
+  1. Activities
+  2. Agents
+  3. Animals
+  4. Built Environment
+  5. Environmental conditions
+  6. Events (now includes Historical events > World War I)
+  7. Information Forms
+  8. Places
+
+  Let me verify the CSV line count and check the Events visualization:
+
+● Bash(wc -l data/poly_hierarchy_additions.csv)
+  ⎿  537 data/poly_hierarchy_additions.csv
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 10 lines
+
+● Perfect! The consolidation is complete:
+
+  Summary
+
+  Successfully consolidated "Historical periods & events" into "Events"
+
+  - CSV: 542 → 537 lines (net -5 lines)
+  - Primary facets: 10 → 8 ✓
+  - World War I now under: Events > Historical events
+
+  Also fixed:
+  - Removed orphaned "Social concepts" section that was creating duplicate "Unemployment" facet
+  - Removed stale visualization file: primary_historical_periods__events.txt
+
+  Current primary facets (8):
+  1. Activities
+  2. Agents
+  3. Animals
+  4. Built Environment
+  5. Environmental conditions
+  6. Events ← now includes Historical events
+  7. Information Forms
+  8. Places
+
+  Progress from original 14 facets:
+  - Previous session: 14 → 10 (consolidated Katoomba, Megalong, Reserves, Legal & regulatory frameworks)
+  - This session: 10 → 8 (consolidated Historical periods & events, removed orphan)
+  - Total reduction: 14 → 8 facets (43% consolidation)
+
+  What would you like to tackle next?
+
+> Finally, since they are both small facets, can we combine 'animals' and 'environmental conditions' somehow? It's not quite 
+'nature' since the animals include domestic animals. Does Getty provide any possible solution here? 
+
+● Excellent question! Let me check what's in both facets and then research Getty AAT's approach to this.
+
+● Read(visualizations/hierarchy_trees/primary_animals.txt)
+  ⎿  Read 13 lines
+
+● Read(visualizations/hierarchy_trees/primary_environmental_conditions.txt)
+  ⎿  Read 12 lines
+
+● Let me research Getty AAT's approach to organizing these concepts:
+
+● Fetch(https://www.getty.edu/vow/AATHierarchy?find=&logic=AND&note=&page=1&subjectid=300264089)
+  ⎿  Received 17.3KB (200 OK)
+
+● Web Search("Getty AAT facets living organisms animals natural phenomena weather hierarchy")
+  ⎿  Did 1 search in 21s                                                                                                       
+
+● Excellent! Getty AAT has a solution. Let me check what's currently in our Agents facet:
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 170 lines
+
+● Perfect! According to Getty AAT structure:
+
+  Getty AAT Solution:
+
+  The Agents facet includes "Living Organisms" - this is where animals belong in Getty AAT hierarchy.
+
+  For weather/environmental conditions, Getty AAT has an "Associated Concepts" facet that includes "abstract concepts and
+  phenomena" - this covers natural phenomena like weather.
+
+  Proposed Consolidation:
+
+  Option A (Most Getty-aligned):
+  Agents
+  ├── Demographic groups
+  ├── Occupations
+  ├── Organizations
+  └── Living Organisms ← NEW
+      ├── Dogs
+      └── Horses
+
+  Associated Concepts ← NEW FACET
+  └── Physical phenomena
+      └── Weather
+  - Result: 8 → 8 facets (Animals merged into Agents, Environmental conditions becomes Associated Concepts)
+  - Pros: Follows Getty AAT structure exactly
+  - Cons: "Associated Concepts" with only 1 sub-category feels light
+
+  Option B (Pragmatic hybrid):
+  Agents
+  ├── Demographic groups
+  ├── Occupations
+  ├── Organizations
+  └── Living Organisms ← NEW
+      ├── Dogs
+      └── Horses
+  Keep "Environmental conditions" separate (weather is historically important)
+  - Result: 8 → 7 facets
+  - Pros: Simpler, weather stays visible
+  - Cons: Less Getty-aligned for weather
+
+  My recommendation: Option A - it's most Getty-aligned and "Associated Concepts" could accommodate future abstract concepts if
+  needed (e.g., if you later find tags like "nostalgia," "progress," "modernity" etc.).
+
+  Which approach do you prefer?
+
+> Ok, under 'Agents', please add 'Animals' (we can map that to 'living organisms' and in our context it is much clearer). Then 
+Keep Enviornmental conditions' but rename to 'natural phenomena' 
+
+● Perfect! That's a great pragmatic solution - Getty-aligned but with clearer terminology for your context.
+
+  Let me make those changes:
+
+● Search(pattern: "^\s+\['Animals', 'Animals'", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 2 lines (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 15 lines
+
+● Search(pattern: "^\s+\['Agents', 'Agents'", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "^    # FACET 2:", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Search(pattern: "^\s+# People", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Bash(grep -n "Agents" /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py | head -5)
+  ⎿  60:        ['Demographic groups', 'Demographic groups', 'hierarchy', 'parent=Agents (new top-level facet)'],
+     69:        ['Occupations', 'Occupations', 'hierarchy', 'parent=Agents (new top-level facet)'],
+     124:        ['Organizations', 'Organizations', 'hierarchy', 'parent=Agents (new top-level facet)'],
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 15 lines
+
+● Search(pattern: "^\s+\['Organizations', 'Organizations'", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Bash(awk '/\[.Organizations., .Organizations., .hierarchy/{start=NR} start && /^    \]\)$/{print NR; exit}'
+      /home/shawn/Code/blue-mountains/scripts/22_generate_poly_…)
+  ⎿  273
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 12 lines
+
+● First, I'll add Animals as a section under Agents:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 7 additions                                                 
+       272            ['Aborigines\' Protection Board', 'Aborigines\' Protection Board', 'hierarchy', 'parent=Other 
+             government bodies'],
+       273        ])
+       274    
+       275 +      # --- 1.7 Animals (Living Organisms) ---
+       276 +      rows.extend([
+       277 +          ['Animals', 'Animals', 'hierarchy', 'parent=Agents (new top-level facet)'],
+       278 +          ['Horses', 'Horses', 'hierarchy', 'parent=Animals'],
+       279 +          ['Dogs', 'Dogs', 'hierarchy', 'parent=Animals'],
+       280 +      ])
+       281 +  
+       282        # ========================================================================
+       283        # FACET 2: PLACES
+       284        # ========================================================================
+
+● Now remove the old Animals section:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 12 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 3 additions and 8 removals                                       
+       556            ['Publican\'s License', 'Publican\'s License', 'hierarchy', 'parent=Licenses'],
+       557            ['Maps', 'Maps', 'hierarchy', 'parent=Information Forms'],
+       558    
+       559 -          # Environmental conditions
+       560 -          ['Environmental conditions', 'Environmental conditions', 'hierarchy', 'parent=(conceptual facet)'],
+       561 -          ['Weather', 'Weather', 'hierarchy', 'parent=Environmental conditions'],
+       562 -  
+       563 -          # Animals
+       564 -          ['Animals', 'Animals', 'hierarchy', 'parent=(conceptual facet)'],
+       565 -          ['Horses', 'Horses', 'hierarchy', 'parent=Animals'],
+       566 -          ['Dogs', 'Dogs', 'hierarchy', 'parent=Animals'],
+       559 +          # Natural phenomena
+       560 +          ['Natural phenomena', 'Natural phenomena', 'hierarchy', 'parent=(conceptual facet)'],
+       561 +          ['Weather', 'Weather', 'hierarchy', 'parent=Natural phenomena'],
+       562        ])
+       563    
+       564        return rows
+
+● Now let me check if there are thematic references that need updating:
+
+● Bash(grep -n "Environment & Weather" /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py | head -3)
+  ⎿  904:        ['Environment & Weather', 'Environment & Weather', 'hierarchy', 'parent=(thematic grouping)'],     
+     905:        ['Weather & climate', 'Weather & climate', 'hierarchy', 'parent=Environment & Weather - THEMATIC'],
+     907:        ['Natural features', 'Natural features', 'hierarchy', 'parent=Environment & Weather - THEMATIC'],
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 15 lines
+
+● Perfect! The thematic reference is fine - that's the poly-hierarchy working correctly (Animals appears in both Agents for
+  form-based classification AND in Environment & Weather for domain-based thematic grouping).
+
+  Now let me regenerate:
+
+● Bash(python3 scripts/22_generate_poly_hierarchy.py && python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | tail -20)
+  ⎿  Generating comprehensive poly-hierarchical taxonomy...
+
+     Generating primary facet hierarchies...
+     … +32 lines (ctrl+o to expand)
+
+● Excellent! Down to 7 primary facets. Let me verify the changes:
+
+● Bash(ls visualizations/hierarchy_trees/primary_*.txt)
+  ⎿  visualizations/hierarchy_trees/primary_activities.txt
+     visualizations/hierarchy_trees/primary_agents.txt
+     visualizations/hierarchy_trees/primary_animals.txt
+     … +7 lines (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 20 lines
+
+● Great! Animals is now in Agents (lines 5-7). Let me check Natural phenomena and remove stale files:
+
+● Read(visualizations/hierarchy_trees/primary_natural_phenomena.txt)
+  ⎿  Read 12 lines
+
+● Bash(rm visualizations/hierarchy_trees/primary_animals.txt visualizations/hierarchy_trees/primary_environmental_conditions.txt
+      visualizations/hierarchy_trees/primary…)
+  ⎿  (No content)
+
+● Perfect! Let me verify the final count:
+
+● Bash(ls visualizations/hierarchy_trees/primary_*.txt | wc -l)
+  ⎿  7
+
+● Bash(ls visualizations/hierarchy_trees/primary_*.txt)
+  ⎿  visualizations/hierarchy_trees/primary_activities.txt       
+     visualizations/hierarchy_trees/primary_agents.txt
+     visualizations/hierarchy_trees/primary_built_environment.txt
+     … +4 lines (ctrl+o to expand)
+
+● Perfect! Let me verify the CSV line count:
+
+● Bash(wc -l data/poly_hierarchy_additions.csv)
+  ⎿  537 data/poly_hierarchy_additions.csv
+
+● Summary - Final Facet Consolidation Complete!
+
+  Successfully consolidated Animals and renamed Environmental conditions
+
+  Changes Made:
+
+  1. Animals → Agents > Animals
+    - Moved Animals from standalone facet into Agents facet (following Getty AAT "Living Organisms" pattern)
+    - Structure now: Agents > Animals > [Dogs, Horses]
+    - Still appears in thematic grouping "Environment & Weather" (poly-hierarchy)
+  2. Environmental conditions → Natural phenomena
+    - Renamed to align with Getty AAT "Associated Concepts" terminology
+    - More accurate term for abstract concepts like weather
+  3. Removed stale files:
+    - primary_animals.txt
+    - primary_environmental_conditions.txt
+    - primary_unemployment.txt (duplicate from earlier fix)
+
+  Final Results:
+
+  CSV: 537 lines (536 data + 1 header) - maintained
+
+  Primary Facets: 14 → 7 ✓ (50% reduction!)
+
+  1. Activities (28 nodes)
+  2. Agents (163 nodes) ← now includes Animals
+  3. Built Environment (67 nodes)
+  4. Events (39 nodes) ← includes Historical events
+  5. Information Forms (7 nodes)
+  6. Natural phenomena (2 nodes) ← renamed from Environmental conditions
+  7. Places (37 nodes)
+
+  Thematic groupings: 20 (unchanged)
+
+  Getty AAT Alignment:
+
+  ✓ Agents facet includes Living Organisms (our "Animals")✓ Associated Concepts pattern (our "Natural phenomena")✓ Information 
+  Forms terminology✓ Events includes historical periods
+
+  The taxonomy is now significantly cleaner, more consolidated, and better aligned with Getty AAT standards while maintaining
+  clarity for your Blue Mountains historical context!
+
+> ok, I was just looking at the 'unemployment' primary facet, and I don't think we actually fixed that did we? where did we move
+ it to? 
+
+● Good catch! You're right - I removed it as a stale file but didn't verify where Unemployment actually went. Let me check:
+
+● Bash(grep "^Unemployment," data/poly_hierarchy_additions.csv)
+  ⎿  Unemployment,Unemployment,hierarchy,parent=Economic hardship - THEMATIC
+     Unemployment,Unemployment,hierarchy,parent=Economic distress - THEMATIC
+
+● Bash(grep -i "unemployment" data/poly_hierarchy_additions.csv)
+  ⎿  Unemployment,Unemployment,hierarchy,parent=Economic hardship - THEMATIC              
+     Unemployment relief,Unemployment relief,hierarchy,parent=Economic hardship - THEMATIC
+     Unemployment,Unemployment,hierarchy,parent=Economic distress - THEMATIC
+     Unemployment relief,Unemployment relief,hierarchy,parent=Economic distress - THEMATIC
+
+● You're absolutely right - Unemployment only has THEMATIC relationships now (appears in two thematic groupings: "Economic
+  hardship" and "Economic distress"), but has NO primary facet relationship.
+
+  When I removed that orphaned "Social concepts" section earlier, I inadvertently removed Unemployment's only primary facet
+  parent.
+
+  Unemployment is an abstract social/economic concept. According to Getty AAT, these belong in the "Associated Concepts" facet.
+
+  Here's what I suggest:
+
+  Rename "Natural phenomena" → "Associated Concepts" (more Getty-aligned) and structure it like:
+
+  Associated Concepts
+  ├── Physical phenomena
+  │   └── Weather
+  └── Social & economic concepts
+      ├── Unemployment
+      └── Unemployment relief
+
+  This follows Getty AAT's pattern where "Associated Concepts" includes abstract concepts and phenomena from various domains
+  (natural, social, economic, cultural, etc.).
+
+  Would you like me to implement this structure?
+
+> This is OK, but 'unemployment relief' should be a child of unemployment. Before you do that, however, could you look at the 
+full text in 'notes' linked to the Zotero entry and see if 'unemployment relief' instead refers to an 'economic event'? 
+
+● Good thinking! Let me check the Zotero entries tagged with "unemployment relief" to see the context:
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Error: Traceback (most recent call last):
+       File "<stdin>", line 9, in <module>
+     AttributeError: 'str' object has no attribute 'get'
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Type of data: <class 'dict'> 
+     Length: 2
+     First key: metadata
+     … +2 lines (ctrl+o to expand)
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Keys: ['metadata', 'tags']   
+
+     Tags structure:
+     … +3 lines (ctrl+o to expand)
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Found tags: ['Unemployment relief']                                             
+
+     ================================================================================
+     … +12 lines (ctrl+o to expand)
+
+● Bash(ls data/*.json)
+  ⎿  data/raw_tags.json   
+     data/tag_network.json
+
+● Bash(find . -name "*.json" -type f | grep -v node_modules | grep -v ".git")
+  ⎿  ./.claude/settings.local.json
+     ./codemeta.json
+     ./data/tag_network.json
+     … +2 lines (ctrl+o to expand)
+
+● Bash(ls -lh data/)
+  ⎿  total 3.4M                                                                    
+     -rw-rw-r-- 1 shawn shawn  37K Oct 21 17:16 poly_hierarchy_additions.csv
+     -rw-rw-r-- 1 shawn shawn  38K Oct 20 19:37 poly_hierarchy_additions.csv.backup
+     … +13 lines (ctrl+o to expand)
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Keys: ['generated_at', 'cooccurrences']
+     Type: <class 'dict'>
+     … +2 lines (ctrl+o to expand)
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Top level keys: ['metadata', 'tags']                            
+
+     Metadata keys: ['generated_at', 'zotero_group_id', 'statistics']
+     … +7 lines (ctrl+o to expand)
+
+● Bash(find . -name "*zotero*" -o -name "*export*" | grep -v ".git" | head -10)
+  ⎿  ./venv/lib/python3.12/site-packages/pip/_vendor/rich/__pycache__/_export_format.cpython-312.pyc
+     ./venv/lib/python3.12/site-packages/pip/_vendor/rich/_export_format.py
+     ./venv/lib/python3.12/site-packages/pyzotero-1.7.3.dist-info
+     … +7 lines (ctrl+o to expand)
+
+● Bash(ls archive/)
+  ⎿  zotero.ipynb
+
+● Bash(ls scripts/ | head -10)
+  ⎿  01_extract_tags.py                
+     02_analyze_tags.py
+     03_inspect_multiple_attachments.py
+     … +7 lines (ctrl+o to expand)
+
+● Read(scripts/09_analyse_variants_in_context.py)
+  ⎿  Read 80 lines
+
+● Read(scripts/09_analyse_variants_in_context.py)
+  ⎿  Read 60 lines
+
+● Bash(python3 << 'EOF' timeout: 1m 0s
+      import sys…)
+  ⎿  Error: Traceback (most recent call last):
+       File "<stdin>", line 3, in <module>
+     ModuleNotFoundError: No module named 'pyzotero'
+
+● Bash(source venv/bin/activate && python3 << 'EOF' timeout: 1m 0s
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +107 lines (ctrl+o to expand)
+
+● Perfect! I can now see the context. Here's what "unemployment relief" refers to in these articles:
+
+  Analysis of "Unemployment Relief" Usage:
+
+  From the 6 Zotero entries:
+
+  1. "Concert in Aid of Katoomba Miners' Families" (1894) - A fundraising event (concert)
+  2. "Mountain Mixtures" (1894) - "Lawson contributes £9 1s. towards Katoomba miners' relief fund"→ References the
+  fund/organization
+  3. "Brevities" (1894) - "A committee meeting of the Katoomba South Distress Fund"→ The committee/organization providing aid
+  4. "The Unemployed at Katoomba" (1894) - "the local relief committee"; "relief would be afforded to the families"→ Both the
+  organization (relief committee) and the activity (providing aid)
+  5. "Summary" (1890) - "subscriptions in aid of the wives of Katoomba miners"→ Fundraising activity
+
+  Recommendation:
+
+  "Unemployment relief" is NOT a one-time economic event like a strike or mine closure.
+
+  It's a multi-faceted concept referring to:
+  - The activity/process of providing aid to unemployed families (charity work, fundraising)
+  - The organizations administering aid (relief committees, distress funds)
+  - The funds themselves (money collected)
+
+  Proposed Structure:
+
+  Activities > Economic activities > Charitable activities
+  Economic activities
+  └── Charitable activities
+      └── Unemployment relief
+
+  This positions it as an ongoing activity (like fundraising, providing aid) rather than an event or abstract concept.
+
+  And: "Unemployment" itself remains in "Associated Concepts > Social & economic concepts" as an abstract social condition.
+
+  Does this make sense? Should I implement this structure?
+
+> yes, 'unemployment' itself should remain under 'concepts', and I agree about moving it to 'activities', but should 'charitable
+ activities' be a child of 'economic activities', or be it's own catagory ('Activities'-->'Cheritable activities') or something 
+else? 
+
+● Great question! Let me think about this taxonomically. Looking at our current Activities structure:
+
+  Activities
+  ├── Communication activities
+  │   ├── Advertising
+  │   └── Fundraising ← (already here!)
+  ├── Economic activities
+  │   ├── Mining
+  │   ├── Tourism
+  │   └── Transport
+  ├── Military activities
+  ├── Recreation activities
+  ├── Regulatory processes
+  └── Social behaviours
+      ├── Drinking
+      ├── Gambling
+      └── Temperance
+
+  I notice we already have "Fundraising" under Communication activities. From the contexts we saw:
+  - "Concert in aid of families" = fundraising event
+  - "Subscriptions in aid" = fundraising
+  - But "relief would be afforded to the families" = actual provision of aid
+
+  So:
+  - Fundraising (Communication activity) = soliciting/collecting donations
+  - Unemployment relief (different activity) = distributing aid to families
+
+  Options:
+
+  Option A: Social & welfare activities (most Getty AAT-aligned)
+  Activities
+  └── Social & welfare activities
+      └── Unemployment relief
+  Charity/welfare work is social/humanitarian, not economic/commercial.
+
+  Option B: Charitable activities (simpler)
+  Activities
+  └── Charitable activities
+      └── Unemployment relief
+  Direct and clear.
+
+  Option C: Under Social behaviours?
+  No - that's individual behaviors (drinking, gambling). Unemployment relief is organized/institutional.
+
+  My recommendation: Option A - "Social & welfare activities" is more accurate (it's organized welfare work, not just individual
+   charity), and leaves room for other welfare concepts if found (poor relief, etc.).
+
+  What do you think?
+
+> Implement Option A, thank you 
+
+● Perfect! Let me implement this now.
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 50 lines
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 15 lines
+
+● Now I'll add Social & welfare activities to the Activities facet:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 4 additions                                                     
+       540            # Regulatory processes
+       541            ['Regulatory processes', 'Regulatory processes', 'hierarchy', 'parent=Activities'],
+       542            ['Licensing', 'Licensing', 'hierarchy', 'parent=Regulatory processes'],
+       543 +  
+       544 +          # Social & welfare activities
+       545 +          ['Social & welfare activities', 'Social & welfare activities', 'hierarchy', 'parent=Activities'],
+       546 +          ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=Social & welfare activities'],
+       547        ])
+       548    
+       549        # ========================================================================
+
+● Now I need to rename "Natural phenomena" to "Associated Concepts" and add the proper structure:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 15 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 10 additions and 3 removals                                
+       560            ['Publican\'s License', 'Publican\'s License', 'hierarchy', 'parent=Licenses'],
+       561            ['Maps', 'Maps', 'hierarchy', 'parent=Information Forms'],
+       562    
+       563 -          # Natural phenomena
+       564 -          ['Natural phenomena', 'Natural phenomena', 'hierarchy', 'parent=(conceptual facet)'],
+       565 -          ['Weather', 'Weather', 'hierarchy', 'parent=Natural phenomena'],
+       563 +          # Associated Concepts (Getty AAT-aligned: abstract concepts and phenomena)
+       564 +          ['Associated Concepts', 'Associated Concepts', 'hierarchy', 'parent=(conceptual facet)'],
+       565 +  
+       566 +          # Physical phenomena
+       567 +          ['Physical phenomena', 'Physical phenomena', 'hierarchy', 'parent=Associated Concepts'],
+       568 +          ['Weather', 'Weather', 'hierarchy', 'parent=Physical phenomena'],
+       569 +  
+       570 +          # Social & economic concepts
+       571 +          ['Social & economic concepts', 'Social & economic concepts', 'hierarchy', 'parent=Associated 
+           + Concepts'],
+       572 +          ['Unemployment', 'Unemployment', 'hierarchy', 'parent=Social & economic concepts'],
+       573        ])
+       574    
+       575        return rows
+
+● Excellent! Now let me regenerate and check the results:
+
+● Bash(python3 scripts/22_generate_poly_hierarchy.py && python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | grep -A10
+      "Identified.*top-level primary")
+  ⎿  Generating comprehensive poly-hierarchical taxonomy...
+
+     Generating primary facet hierarchies...
+     … +24 lines (ctrl+o to expand)
+
+● Perfect! Let me verify the new structures and clean up stale files:
+
+● Read(visualizations/hierarchy_trees/primary_activities.txt)
+  ⎿  Read 40 lines
+
+● Read(visualizations/hierarchy_trees/primary_associated_concepts.txt)
+  ⎿  Read 15 lines
+
+● Bash(rm visualizations/hierarchy_trees/primary_natural_phenomena.txt && ls visualizations/hierarchy_trees/primary_*.txt)
+  ⎿  visualizations/hierarchy_trees/primary_activities.txt         
+     visualizations/hierarchy_trees/primary_agents.txt
+     visualizations/hierarchy_trees/primary_associated_concepts.txt
+     … +4 lines (ctrl+o to expand)
+
+● Bash(wc -l data/poly_hierarchy_additions.csv)
+  ⎿  542 data/poly_hierarchy_additions.csv
+
+● Perfect! Implementation complete. Here's what changed:
+
+  Summary - Unemployment Relief Restructuring
+
+  Changes Made:
+
+  1. Added "Social & welfare activities" to Activities facet:
+  Activities
+  └── Social & welfare activities
+      └── Unemployment relief
+  This correctly positions unemployment relief as an organized welfare activity (providing aid to families), distinct from
+  fundraising (which is a communication activity).
+
+  2. Renamed "Natural phenomena" → "Associated Concepts" with proper Getty AAT structure:
+  Associated Concepts
+  ├── Physical phenomena
+  │   └── Weather
+  └── Social & economic concepts
+      └── Unemployment
+  This follows Getty AAT's pattern where:
+  - Unemployment (the abstract social/economic condition/concept)
+  - Unemployment relief (the organized activity of providing aid)
+
+  are correctly separated by type.
+
+  Final Results:
+
+  CSV: 542 lines (541 data + 1 header)
+
+  Primary Facets: 7 (maintained)
+
+  1. Activities (30 nodes) ← now includes Social & welfare activities
+  2. Agents (163 nodes)
+  3. Associated Concepts (5 nodes) ← renamed, now includes Unemployment concept
+  4. Built Environment (67 nodes)
+  5. Events (39 nodes)
+  6. Information Forms (7 nodes)
+  7. Places (37 nodes)
+
+  Getty AAT Alignment:
+
+  ✓ Associated Concepts facet for abstract concepts (unemployment as social condition)✓ Activities > Social & welfare activities
+   for organized welfare work (unemployment relief as activity)✓ Clear separation between concept vs. activity
+
+  The taxonomy now correctly distinguishes between the abstract concept of unemployment and the concrete activity of providing
+  relief to unemployed families!
+
+> ok, I am pretty happy with our primary facets. Could we do a quality assurance check and make sure that every tag is assigned 
+to at least one primary facet? 
+
+● Excellent idea! Let me create a quick quality assurance check to verify every tag has at least one primary facet assignment:
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Error: Traceback (most recent call last):
+       File "<stdin>", line 20, in <module>
+     KeyError: 'tag'
+
+     Total tags in Zotero: 481
+
+● Bash(head -3 data/poly_hierarchy_additions.csv)
+  ⎿  old_tag,new_tag,action,notes                                                       
+     Demographic groups,Demographic groups,hierarchy,parent=Agents (new top-level facet)
+     Women,Women,hierarchy,parent=Demographic groups
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Total tags in Zotero: 481                 
+     Tags with primary facet relationships: 321
+     Tags appearing in thematic groupings: 175
+     … +153 lines (ctrl+o to expand)
+
+● This is very revealing! We have two issues:
+
+  Issue 1: 90 tags with ONLY thematic relationships (no primary facet)
+
+  Most of these are intermediate thematic category nodes (like "Alcohol & Temperance", "Mining & Industry"), which is expected -
+   they're organizational categories, not actual tags.
+
+  However, some are actual tags that should have primary facets:
+  - Aboriginal people, Chinese people, Indigenous peoples → should be under Agents > Demographic groups
+  - Accommodation → should be under Activities > Economic activities (or is it same as Hotels/Boarding houses?)
+  - Alcohol, Disease, Illness, Injury → concepts or substances?
+  - Post → Activities > Communication? or Built Environment?
+  - Miners, Miners' families → Agents > Demographic groups or Occupations?
+
+  Issue 2: 262 tags completely missing from hierarchy
+
+  These fall into categories:
+  1. Named entities we haven't processed yet (families, specific people)
+  2. Place names (Blackheath, Lawson, Leura, Lithgow, Bathurst, Hartley Vale)
+  3. Variant names we've already consolidated ("Concerts" → "Concert", "Dances" → "Dance", "Billiard" → "Billiards")
+  4. Company variants ("A.K.O. & M. Company", "Douglas & Co.")
+
+  Would you like me to:
+
+  Option A: Focus on fixing the 90 tags with only thematic relationships (verify which are real tags vs category nodes, add
+  primary facets for real tags)?
+
+  Option B: Also address the high-frequency missing tags (Blackheath, Lawson, Leura, Lithgow used 22-38 times each)?
+
+  Option C: Both?
+
+  What's your priority?
+
+> Let's address the 90 tags with only thematic relationships. As you noted, omitted intermediate tags that organise 'actual' 
+source tags are fine, I only want to look at 'actual' tags applied to sources, and only the 'revised' ones that are still in 
+play after our initial cleanup. 
+
+● Good thinking! Let me filter for actual tags that are still in play:
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Tags consolidated/retired: 2                                                    
+
+     ================================================================================
+     … +57 lines (ctrl+o to expand)
+
+● Perfect! We have 22 actual tags that need primary facet assignments. Let me categorize these by logical grouping:
+
+  22 Tags Needing Primary Facets
+
+  Category 1: Demographic Groups (5 tags)
+
+  - Aboriginal people (8 uses) → Agents > Demographic groups
+  - Chinese people (3 uses) → Agents > Demographic groups
+  - Miners (32 uses) → Agents > Demographic groups OR Occupations?
+  - Miners' families (7 uses) → Agents > Demographic groups
+  - Reference to the Irish or Irish culture (5 uses) → Associated Concepts > Cultural identity?
+
+  Category 2: Health & Medical (4 tags)
+
+  - Injury (17 uses) → Associated Concepts? Or Events?
+  - Illness (16 uses) → Associated Concepts?
+  - Disease (8 uses) → Associated Concepts?
+  - Drunkeness (16 uses) → Social behaviours OR Legal proceedings (crime)?
+
+  Category 3: Crimes/Legal Matters (7 tags)
+
+  - Theft (11 uses) → Events > Legal proceedings?
+  - Rape (5 uses) → Events > Legal proceedings
+  - Fighting (5 uses) → Events > Legal proceedings OR Social behaviours?
+  - Assault (2 uses) → Events > Legal proceedings
+  - Bigamy (1 use) → Events > Legal proceedings
+  - Sexual violence (1 use) → Events > Legal proceedings
+  - Desertion (3 uses) → Events > Legal proceedings? Or Life events?
+
+  Category 4: Economic/Social Issues (3 tags)
+
+  - Bankruptcy (4 uses) → Events > Economic events?
+  - Charity (18 uses) → Activities > Social & welfare activities
+  - Divorce (3 uses) → Events > Life events
+
+  Category 5: Unclear - Need Context (3 tags)
+
+  - Accommodation (64 uses!) → Same as Hotels/Boarding houses? Or broader?
+  - Alcohol (12 uses) → Substance? Activity?
+  - Post (9 uses) → Communication activity? Or Built Environment (post office)?
+
+  Should I:
+  1. Start by checking the context for the unclear ones (Accommodation, Alcohol, Post)?
+  2. Or proceed with the straightforward assignments first and circle back?
+
+  What's your preference?
+
+> Before we proceed, can you look at the Getty taxonomy and see if it offers any guidance for organising these tags? We don't 
+need to follow it slavishly, but let's not reinvent the wheel if we can apply it relatively straightforwardly 
+
+● Excellent idea! Let me research Getty AAT's approach to organizing these types of concepts:
+
+● Web Search("Getty AAT facets demographic groups ethnic groups people by occupation hierarchy 2025")
+  ⎿  Did 5 searches in 64s                                                                                                     
+
+● Web Search("Getty AAT "associated concepts" crime theft assault injury illness disease hierarchy")
+  ⎿  Did 6 searches in 59s                                                                                                     
+
+● Web Search("Getty AAT activities facet "processes and techniques" crime legal proceedings")
+  ⎿  Did 5 searches in 44s                                                                                                     
+
+● Based on my research, here's what Getty AAT tells us:
+
+  Getty AAT Structure Applicable to Our Tags:
+
+  Agents Facet has hierarchies for:
+
+  - People (including people by occupation, demographic groups, ethnic groups)
+  - Organizations
+  - Living Organisms
+
+  Activities Facet has hierarchies for:
+
+  - Disciplines
+  - Functions
+  - Events
+  - Physical and Mental Activities
+  - Processes and Techniques
+
+  Associated Concepts Facet:
+
+  - Abstract concepts and phenomena (beauty, freedom, socialism, etc.)
+
+  Getty-Informed Recommendations for Our 22 Tags:
+
+  Agents > Demographic groups (Getty: "People")
+
+  - Aboriginal people ✓
+  - Chinese people ✓
+  - Miners ✓ (people by occupation)
+  - Miners' families ✓
+  - Reference to the Irish or Irish culture → Actually: Associated Concepts (cultural identity concept, not demographic group)
+
+  Activities > Events (Getty has "Events" hierarchy within Activities)
+
+  - Theft ✓ (criminal event)
+  - Rape ✓
+  - Fighting ✓
+  - Assault ✓
+  - Bigamy ✓
+  - Sexual violence ✓
+  - Desertion ✓ (legal event)
+  - Bankruptcy ✓ (economic event)
+  - Divorce ✓ (legal/life event)
+
+  Activities > Social & welfare activities
+
+  - Charity ✓ (we already have this category!)
+
+  Associated Concepts > Physical/health conditions
+
+  - Injury ✓ (physical condition/state)
+  - Illness ✓
+  - Disease ✓
+  - Drunkeness → Question: state/condition OR criminal offence?
+
+  Need Context Check (could be multiple things):
+
+  - Accommodation - Built Environment (buildings) OR Activities (hospitality service)?
+  - Alcohol - Materials/substances OR Activities (consumption)?
+  - Post - Activities (postal service) OR Built Environment (post office)?
+
+  Should I proceed with these Getty-aligned assignments, and check context for the 4 unclear ones (Accommodation, Alcohol, Post,
+   Drunkeness)?
+
+> Please plan how to approach the following changes.\
+\
+Let's refine a little. 
+
+Agents-->People is good and we should add the 'people' level. Under people, let's use 'demographic groups' and 'ethnic groups' 
+separately. Occupations stays as-is.
+
+I think our existing Activities and Events parent facets are fine and should not be dramatically changed to align with Getty.
+
+Associated Concepts is fine.
+
+So, under Agents, please instantiate: 'Agents-->People-->Ethnic Groups-->Aboriginal people | Chinese people'
+
+I *suspect* 'Reference to the Irish or Irish culture' is an idiosyncratic tag from the RA, and just needs to be 'Irish People' 
+and go under 'ethnic groups', BUT please look at the full text to confirm. 
+
+Events can stay separate rather than under activities (can be mapped later). We need to add 'Criminal event' and the various 
+events you list as its children. Isn't 'Desertion' just another criminal event (please confirm this means 'desertion from the 
+military)? I would suggest changing 'Legal proceedings' to 'Legal event'. Regarding 'Bankruptcy' and 'Divorce', what are your 
+thoughts on those as legal vs. economic vs. life events?
+
+I'm happy with 'Associated Concepts --> Physical and health conditions' --> Injury | Illness | Disease'. If 'public drunkeness' 
+was prosecuted as a crime, it should go under 'criminal activity' as above, but probably be changed to 'Public drunkenness' 
+explicity; if it's just the 'state of being drunk' it can go here under physical and health conditions. We'll need to check the 
+full text to distinguish. 'Drinking' may need to be placed under 'Activities' as well if it's used that way.
+
+As noted, we need a context check for accommodation, alcohol, and post. 
+
+● Excellent refinements! Let me research the unclear items by checking their usage contexts in the full text, then present a
+  comprehensive plan.
+
+● Bash(source venv/bin/activate && python3 << 'EOF'
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +146 lines (ctrl+o to expand)
+
+● Excellent research data! Here's what I found:
+
+  Context Analysis Results:
+
+  ✅ Clear Classifications:
+
+  1. "Reference to the Irish or Irish culture" - NOT about Irish people as demographic
+    - Examples: "The Irish Boy" (song), "Father Mathew, the Irish Temperance Apostle"
+    - Recommendation: This is about Irish cultural references in entertainment/performances
+    - Suggest: Rename to "Irish culture" → Associated Concepts > Cultural identity & heritage
+  2. "Desertion" - NOT military desertion
+    - Examples: "charged with child desertion", "Deserting Wives and Families"
+    - Confirm: This is abandonment of family (criminal offense)
+    - Recommend: Events > Criminal events
+  3. "Bankruptcy" - Legal proceedings
+    - Examples: "bankrupt estate", "official assignee", "apply for a certificate"
+    - Recommend: Events > Legal events (formal court proceedings)
+  4. "Divorce" - Legal proceedings
+    - Examples: "IN DIVORCE", "before Mr. Justice Windeyer"
+    - Recommend: Events > Legal events (court cases)
+  5. "Drunkeness" - Criminal offense
+    - Examples: "drunk cases at Katoomba Court", "paid over 17s. 6d.", "raising the fines"
+    - Confirm: This is PUBLIC DRUNKENNESS prosecuted as crime
+    - Recommend: Rename to "Public drunkenness" → Events > Criminal events
+  6. "Post" - Postal service activity
+    - Examples: "postmistress", "post office", "postal authorities"
+    - Recommend: Activities > Communication activities > Postal services
+
+  ❓ Need Clarification:
+
+  7. "Accommodation" - Hospitality service vs. Built Environment
+    - Examples: "furnished cottages", "hotel and boarding house keepers"
+    - Seems to reference AVAILABILITY/SERVICE, not buildings themselves
+    - Question: Should this be:
+        - A) Activities > Economic activities > Tourism/hospitality services
+      - B) Merge with existing "Hotels" and "Boarding houses" under Built Environment
+  8. "Alcohol" - Substance vs. redundant tag
+    - Contexts show mentions in legal testimony (rape case, death inquest)
+    - We already have "Drinking" (activity) and "Drunkeness" (state/crime)
+    - Question: Should this be:
+        - A) Synonym/merge with "Drinking"
+      - B) Associated Concepts > Materials/substances
+      - C) Keep separate as physical substance
+
+  Let me ask you these clarifying questions:
+                                                                                                                               
+● User answered Claude's questions:
+  ⎿
+     · How should 'Accommodation' (64 uses) be classified - as a service/activity or as buildings? → We will need to rationalise
+      'accommodation' separately, in your examples it covers people-->occupations ('keepers') and built environment - this is an
+      enatiled task. 
+     · How should 'Alcohol' (12 uses) be handled - it appears in various contexts (testimony, inquests)? → Again, we'll need to 
+     review each in context, the tag is too broad and needs division.
+     · Should 'Irish culture' remain a separate concept or be handled differently? → People-->Ethnic Groups-->Irish culture 
+     (note we use 'culture' here instead of 'people' to distinguish that it refers to Irish cultural touchstones
+
+● Perfect! Now I have all the information needed. Let me present the comprehensive plan:
+  ⎿  User rejected Claude's plan:
+     ╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+     │ Plan: Add Primary Facet Assignments for 22 Tags                                                                             │
+     │                                                                                                                             │
+     │ Phase 1: Structural Changes to Agents Facet                                                                                 │
+     │                                                                                                                             │
+     │ Add "People" hierarchy under Agents:                                                                                        │
+     │ - Agents > People (new intermediate level)                                                                                  │
+     │   - Demographic groups (move existing + add new)                                                                            │
+     │   - Ethnic groups (new category)                                                                                            │
+     │   - Occupations (existing, unchanged)                                                                                       │
+     │   - Organizations (existing, unchanged)                                                                                     │
+     │   - Animals (existing, unchanged)                                                                                           │
+     │                                                                                                                             │
+     │ Phase 2: Add Ethnic Groups                                                                                                  │
+     │                                                                                                                             │
+     │ Under Agents > People > Ethnic groups:                                                                                      │
+     │ - Aboriginal people (8 uses)                                                                                                │
+     │ - Chinese people (3 uses)                                                                                                   │
+     │ - Irish culture (5 uses) - renamed from "Reference to the Irish or Irish culture"                                           │
+     │                                                                                                                             │
+     │ Note: Using "Irish culture" (not "Irish people") to indicate references to Irish cultural touchstones rather than           │
+     │ demographic group.                                                                                                          │
+     │                                                                                                                             │
+     │ Phase 3: Expand Demographic Groups                                                                                          │
+     │                                                                                                                             │
+     │ Under Agents > People > Demographic groups (in addition to existing Children, Men, Women, Widows):                          │
+     │ - Miners (32 uses)                                                                                                          │
+     │ - Miners' families (7 uses)                                                                                                 │
+     │                                                                                                                             │
+     │ Phase 4: Events - Add Criminal Events & Rename Legal Proceedings                                                            │
+     │                                                                                                                             │
+     │ Add Events > Criminal events:                                                                                               │
+     │ - Theft (11 uses)                                                                                                           │
+     │ - Rape (5 uses)                                                                                                             │
+     │ - Fighting (5 uses)                                                                                                         │
+     │ - Assault (2 uses)                                                                                                          │
+     │ - Bigamy (1 use)                                                                                                            │
+     │ - Sexual violence (1 use)                                                                                                   │
+     │ - Desertion (3 uses) - confirmed as child/family desertion, not military                                                    │
+     │ - Public drunkenness (16 uses) - renamed from "Drunkeness"                                                                  │
+     │                                                                                                                             │
+     │ Rename "Legal proceedings" → "Legal events" and add:                                                                        │
+     │ - Court cases (existing)                                                                                                    │
+     │ - Bankruptcy (4 uses) - formal legal proceedings                                                                            │
+     │ - Divorce (3 uses) - formal legal proceedings                                                                               │
+     │                                                                                                                             │
+     │ Phase 5: Activities - Add Postal Services                                                                                   │
+     │                                                                                                                             │
+     │ Under Activities > Communication activities:                                                                                │
+     │ - Advertising (existing)                                                                                                    │
+     │ - Fundraising (existing)                                                                                                    │
+     │ - Postal services (new category)                                                                                            │
+     │   - Post (9 uses)                                                                                                           │
+     │                                                                                                                             │
+     │ Phase 6: Activities - Add Charity                                                                                           │
+     │                                                                                                                             │
+     │ Under Activities > Social & welfare activities (existing category):                                                         │
+     │ - Unemployment relief (existing)                                                                                            │
+     │ - Charity (18 uses) - new addition                                                                                          │
+     │                                                                                                                             │
+     │ Phase 7: Associated Concepts - Add Health Conditions                                                                        │
+     │                                                                                                                             │
+     │ Under Associated Concepts > Physical and health conditions (new category):                                                  │
+     │ - Injury (17 uses)                                                                                                          │
+     │ - Illness (16 uses)                                                                                                         │
+     │ - Disease (8 uses)                                                                                                          │
+     │                                                                                                                             │
+     │ Phase 8: Flag Entailed Tasks                                                                                                │
+     │                                                                                                                             │
+     │ Create TODO comments in script for future review:                                                                           │
+     │ - Accommodation (64 uses) - needs rationalization (covers both occupations and built environment)                           │
+     │ - Alcohol (12 uses) - too broad, needs context review and division                                                          │
+     │                                                                                                                             │
+     │ Summary of Changes:                                                                                                         │
+     │                                                                                                                             │
+     │ - Structural additions: 3 (People level, Ethnic groups, Criminal events, Physical and health conditions, Postal services)   │
+     │ - Structural renames: 1 (Legal proceedings → Legal events)                                                                  │
+     │ - Tag assignments: 19 actual tags                                                                                           │
+     │ - Tag renames: 2 (Reference to Irish → Irish culture, Drunkeness → Public drunkenness)                                      │
+     │ - Flagged for later: 2 (Accommodation, Alcohol)                                                                             │
+     │                                                                                                                             │
+     │ Files to modify:                                                                                                            │
+     │ - scripts/22_generate_poly_hierarchy.py                                                                                     │
+     │ - Regenerate: data/poly_hierarchy_additions.csv                                                                             │
+     │ - Regenerate: visualizations/hierarchy_trees/*.txt                                                                          │
+     ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+> Your plan is a solid foundation but needs adjustment.
+
+- Add 'people' hierarchy under 'agents' - YES
+- Proposed 'Ethnic groups' and child categories - YES
+- 'Miners' should go under 'occupations'
+- 'Families' should go under 'demographic groups' with 'Miners' families a child tag.
+- Is 'child/family desertion' a crime? Or just a social pathology? We'll need to see the source text to decide, DO NOT CHANGE 
+WITHOUT REVIEW
+- I need to see the source text for drunkenness to determine how it should be categories, DO NOT CHANGE WITHOUT REVIEW
+- New 'Legal events' and child tags - YES
+- Placement of 'postal services --> post' is OK for now, but I suggest that we review source text to disabmiguate building from 
+service. 
+- Is 'unemployment relief' a form a charity? If so it should be a child entity.
+- Physical and health conditions - YES
+
+Add anything we defer to the TODO comments. 
+
+● Thank you for the clarification! Let me revise the plan:
+
+  Revised Plan: Add Primary Facet Assignments for 22 Tags
+
+  Phase 1: Structural Changes to Agents Facet
+
+  Add "People" hierarchy under Agents:
+  - Agents > People (new intermediate level)
+    - Demographic groups (existing + expand)
+    - Ethnic groups (new category)
+    - Occupations (existing + expand)
+    - Organizations (existing, unchanged)
+    - Animals (existing, unchanged)
+
+  Phase 2: Add Ethnic Groups
+
+  Under Agents > People > Ethnic groups (new):
+  - Aboriginal people (8 uses)
+  - Chinese people (3 uses)
+  - Irish culture (5 uses) - renamed from "Reference to the Irish or Irish culture"
+
+  Phase 3: Expand Demographic Groups
+
+  Under Agents > People > Demographic groups (add to existing):
+  - Families (new category)
+    - Miners' families (7 uses)
+
+  Phase 4: Expand Occupations
+
+  Under Agents > People > Occupations (add to existing):
+  - Miners (32 uses)
+
+  Phase 5: Events - Add Legal Events (rename) and Criminal Events
+
+  Rename "Legal proceedings" → "Legal events" and expand:
+  - Court cases (existing)
+  - Bankruptcy (4 uses)
+  - Divorce (3 uses)
+
+  Add Events > Criminal events (new):
+  - Theft (11 uses)
+  - Rape (5 uses)
+  - Fighting (5 uses)
+  - Assault (2 uses)
+  - Bigamy (1 use)
+  - Sexual violence (1 use)
+
+  Phase 6: Activities - Expand Communication Activities
+
+  Under Activities > Communication activities:
+  - Advertising (existing)
+  - Fundraising (existing)
+  - Postal services (new)
+    - Post (9 uses)
+
+  TODO: Review source text to disambiguate post office (building) from postal service (activity)
+
+  Phase 7: Activities - Review Social & Welfare Activities Structure
+
+  Question for implementation: Should structure be:
+  - A) Social & welfare activities > Charity > Unemployment relief (charity is parent)
+  - B) Social & welfare activities > [Charity, Unemployment relief] (siblings)
+
+  Will implement based on whether unemployment relief is a FORM OF charity.
+
+  Phase 8: Associated Concepts - Add Physical & Health Conditions
+
+  Under Associated Concepts > Physical and health conditions (new):
+  - Injury (17 uses)
+  - Illness (16 uses)
+  - Disease (8 uses)
+
+  Phase 9: Deferred Items (Add TODO Comments)
+
+  Items requiring source text review before categorization:
+  1. Desertion (3 uses) - Is child/family desertion a crime or social pathology? Review needed.
+  2. Drunkeness (16 uses) - Need source review to determine: public drunkenness (crime) vs. state of being drunk (condition)
+  3. Accommodation (64 uses) - Needs rationalization (covers occupations + built environment)
+  4. Alcohol (12 uses) - Too broad, needs context review and division
+  5. Post (9 uses) - Disambiguate building vs service
+
+  Summary:
+
+  - Tags assigned now: 17
+  - Structural changes: Add People level, Ethnic groups, Families category, Criminal events, Postal services, Physical & health
+  conditions, rename Legal proceedings
+  - Tags deferred: 5 (need source text review or rationalization)
+  - Tag renames: 1 (Reference to Irish → Irish culture)
+
+  Should I proceed with this revised plan?
+
+> yes, please proceed 
+                                                                                                 
+●User approved Claude's plan:
+  ⎿  Add Primary Facet Assignments for 22 Tags
+
+     Phase 1: Structural Changes to Agents Facet
+
+     Add "People" intermediate hierarchy level under Agents with sub-categories:
+     - Demographic groups (existing + expand with Families)
+     - Ethnic groups (new category)
+     - Occupations (existing + expand with Miners)
+
+     Phase 2: Agents > People > Ethnic Groups (NEW)
+
+     - Aboriginal people (8 uses)
+     - Chinese people (3 uses)
+     - Irish culture (5 uses) - renamed from "Reference to the Irish or Irish culture"
+
+     Phase 3: Agents > People > Demographic Groups
+
+     Add new "Families" category:
+     - Families > Miners' families (7 uses)
+
+     Phase 4: Agents > People > Occupations
+
+     Add:
+     - Miners (32 uses)
+
+     Phase 5: Events - Rename & Expand Legal Events
+
+     Rename "Legal proceedings" → "Legal events" and add:
+     - Bankruptcy (4 uses)
+     - Divorce (3 uses)
+
+     Phase 6: Events > Criminal Events (NEW)
+
+     - Theft (11 uses)
+     - Rape (5 uses)
+     - Fighting (5 uses)
+     - Assault (2 uses)
+     - Bigamy (1 use)
+     - Sexual violence (1 use)
+
+     Phase 7: Activities > Communication Activities
+
+     Add new "Postal services" category:
+     - Post (9 uses)
+     TODO: Review source text to disambiguate post office (building) vs postal service (activity)
+
+     Phase 8: Activities > Social & Welfare Activities
+
+     Determine structure and add Charity (18 uses)
+
+     Phase 9: Associated Concepts > Physical & Health Conditions (NEW)
+
+     - Injury (17 uses)
+     - Illness (16 uses)
+     - Disease (8 uses)
+
+     Phase 10: Add TODO Comments for Deferred Items
+
+     - Desertion (3 uses) - Review: crime or social pathology?
+     - Drunkeness (16 uses) - Review: public crime vs. condition?
+     - Accommodation (64 uses) - Needs rationalization
+     - Alcohol (12 uses) - Too broad, needs division
+
+     Files modified:
+     - scripts/22_generate_poly_hierarchy.py
+     - Regenerate: data/poly_hierarchy_additions.csv
+     - Regenerate: visualizations/hierarchy_trees/*.txt
+  ⎿
+
+● Great! Let me start implementing. First, let me read the current Agents section to understand the structure:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 80 lines
+
+● Now let me check where the Animals section is:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 15 lines
+
+● Now let me start implementing. First, I'll restructure the Agents facet to add the People hierarchy:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 19 additions and 2 removals                                   
+       55        # FACET 1: AGENTS
+       56        # ========================================================================
+       57    
+       58 -      # --- 1.3 Demographic Groups ---
+       58 +      # --- 1.1 People ---
+       59        rows.extend([
+       60 -          ['Demographic groups', 'Demographic groups', 'hierarchy', 'parent=Agents (new top-level facet)'],
+       60 +          ['People', 'People', 'hierarchy', 'parent=Agents (new top-level facet)'],
+       61 +      ])
+       62 +  
+       63 +      # --- 1.2 Demographic Groups ---
+       64 +      rows.extend([
+       65 +          ['Demographic groups', 'Demographic groups', 'hierarchy', 'parent=People'],
+       66            ['Women', 'Women', 'hierarchy', 'parent=Demographic groups'],
+       67            ['Men', 'Men', 'hierarchy', 'parent=Demographic groups'],
+       68            ['Children', 'Children', 'hierarchy', 'parent=Demographic groups'],
+       69            ['Widows', 'Widows', 'hierarchy', 'parent=Demographic groups'],
+       70 +  
+       71 +          # Families
+       72 +          ['Families', 'Families', 'hierarchy', 'parent=Demographic groups'],
+       73 +          ['Miners\' families', 'Miners\' families', 'hierarchy', 'parent=Families'],
+       74        ])
+       75    
+       76 +      # --- 1.3 Ethnic Groups ---
+       77 +      rows.extend([
+       78 +          ['Ethnic groups', 'Ethnic groups', 'hierarchy', 'parent=People'],
+       79 +          ['Aboriginal people', 'Aboriginal people', 'hierarchy', 'parent=Ethnic groups'],
+       80 +          ['Chinese people', 'Chinese people', 'hierarchy', 'parent=Ethnic groups'],
+       81 +          ['Irish culture', 'Irish culture', 'hierarchy', 'parent=Ethnic groups'],
+       82 +      ])
+       83 +  
+       84        # --- 1.4 Occupations ---
+       85        rows.extend([
+       86            ['Occupations', 'Occupations', 'hierarchy', 'parent=Agents (new top-level facet)'],
+
+● Now update Occupations to parent=People and add Miners:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 4 additions and 1 removal                          
+       83    
+       84        # --- 1.4 Occupations ---
+       85        rows.extend([
+       86 -          ['Occupations', 'Occupations', 'hierarchy', 'parent=Agents (new top-level facet)'],
+       86 +          ['Occupations', 'Occupations', 'hierarchy', 'parent=People'],
+       87    
+       88 +          # Miners
+       89 +          ['Miners', 'Miners', 'hierarchy', 'parent=Occupations'],
+       90 +  
+       91            # Medical professionals
+       92            ['Medical professionals', 'Medical professionals', 'hierarchy', 'parent=Occupations'],
+       93            ['Dr Spark', 'Dr Spark', 'hierarchy', 'parent=Medical professionals'],
+
+● Now let me find and update the Events section:
+
+● Search(pattern: "Legal proceedings", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 50 lines
+
+● Now let me rename Legal proceedings to Legal events and expand it:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 14 additions and 3 removals                 
+       489            ['Debate', 'Debate', 'hierarchy', 'parent=Cultural events'],
+       490            ['Corroboree', 'Corroboree', 'hierarchy', 'parent=Cultural events'],
+       491    
+       492 -          # Legal proceedings
+       493 -          ['Legal proceedings', 'Legal proceedings', 'hierarchy', 'parent=Events'],
+       494 -          ['Court cases', 'Court cases', 'hierarchy', 'parent=Legal proceedings'],
+       492 +          # Legal events
+       493 +          ['Legal events', 'Legal events', 'hierarchy', 'parent=Events'],
+       494 +          ['Court cases', 'Court cases', 'hierarchy', 'parent=Legal events'],
+       495 +          ['Bankruptcy', 'Bankruptcy', 'hierarchy', 'parent=Legal events'],
+       496 +          ['Divorce', 'Divorce', 'hierarchy', 'parent=Legal events'],
+       497    
+       498 +          # Criminal events
+       499 +          ['Criminal events', 'Criminal events', 'hierarchy', 'parent=Events'],
+       500 +          ['Theft', 'Theft', 'hierarchy', 'parent=Criminal events'],
+       501 +          ['Rape', 'Rape', 'hierarchy', 'parent=Criminal events'],
+       502 +          ['Fighting', 'Fighting', 'hierarchy', 'parent=Criminal events'],
+       503 +          ['Assault', 'Assault', 'hierarchy', 'parent=Criminal events'],
+       504 +          ['Bigamy', 'Bigamy', 'hierarchy', 'parent=Criminal events'],
+       505 +          ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=Criminal events'],
+       506 +  
+       507            # Political events
+       508            ['Political events', 'Political events', 'hierarchy', 'parent=Events'],
+       509            ['Election', 'Election', 'hierarchy', 'parent=Political events'],
+
+● Now let me find and update the Activities > Communication activities section:
+
+● Search(pattern: "Communication activities", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 5 additions                                                 
+       564            ['Advertising', 'Advertising', 'hierarchy', 'parent=Communication activities'],
+       565            ['Fundraising', 'Fundraising', 'hierarchy', 'parent=Communication activities'],
+       566    
+       567 +          # Postal services
+       568 +          # TODO: Review source text to disambiguate post office (building) vs postal service (activity)
+       569 +          ['Postal services', 'Postal services', 'hierarchy', 'parent=Communication activities'],
+       570 +          ['Post', 'Post', 'hierarchy', 'parent=Postal services'],
+       571 +  
+       572            # Military activities
+       573            ['Military activities', 'Military activities', 'hierarchy', 'parent=Activities'],
+       574            ['Military', 'Military', 'hierarchy', 'parent=Military activities'],
+
+● Now let me find the Social & welfare activities section to add Charity:
+
+● Search(pattern: "Social & welfare activities", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 3 lines (ctrl+o to expand)
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition                                                      
+       579    
+       580            # Social & welfare activities
+       581            ['Social & welfare activities', 'Social & welfare activities', 'hierarchy', 'parent=Activities'],
+       582 +          ['Charity', 'Charity', 'hierarchy', 'parent=Social & welfare activities'],
+       583            ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=Social & welfare activities'],
+       584        ])
+       585    
+
+● Now let me find the Associated Concepts section to add Physical and health conditions:
+
+● Search(pattern: "Associated Concepts", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 15 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 6 additions                                                        
+       607            # Social & economic concepts
+       608            ['Social & economic concepts', 'Social & economic concepts', 'hierarchy', 'parent=Associated 
+             Concepts'],
+       609            ['Unemployment', 'Unemployment', 'hierarchy', 'parent=Social & economic concepts'],
+       610 +  
+       611 +          # Physical and health conditions
+       612 +          ['Physical and health conditions', 'Physical and health conditions', 'hierarchy', 'parent=Associated 
+           + Concepts'],
+       613 +          ['Injury', 'Injury', 'hierarchy', 'parent=Physical and health conditions'],
+       614 +          ['Illness', 'Illness', 'hierarchy', 'parent=Physical and health conditions'],
+       615 +          ['Disease', 'Disease', 'hierarchy', 'parent=Physical and health conditions'],
+       616        ])
+       617    
+       618        return rows
+
+● Now let me update the thematic reference to Legal events:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 10 lines
+
+● Bash(grep -n "Legal proceedings.*THEMATIC" /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py)
+  ⎿  681:        ['Legal proceedings', 'Legal proceedings', 'hierarchy', 'parent=Justice & Crime - THEMATIC'],
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                                   
+       678            ['Justice & Crime', 'Justice & Crime', 'hierarchy', 'parent=(thematic grouping)'],
+       679            ['Courts', 'Courts', 'hierarchy', 'parent=Justice & Crime - THEMATIC'],
+       680            ['Court buildings', 'Court buildings', 'hierarchy', 'parent=Justice & Crime - THEMATIC'],
+       681 -          ['Legal proceedings', 'Legal proceedings', 'hierarchy', 'parent=Justice & Crime - THEMATIC'],
+       681 +          ['Legal events', 'Legal events', 'hierarchy', 'parent=Justice & Crime - THEMATIC'],
+       682            ['Law enforcement', 'Law enforcement', 'hierarchy', 'parent=Justice & Crime - THEMATIC'],
+       683            ['Police station', 'Police station', 'hierarchy', 'parent=Justice & Crime - THEMATIC'],
+       684            ['Legal officials', 'Legal officials', 'hierarchy', 'parent=Justice & Crime - THEMATIC'],
+
+● Now let me add a synonym mapping for the Irish culture tag rename. First, let me check where other synonyms are defined:
+
+● Search(pattern: "synonym", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 14 lines (ctrl+o to expand)
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 3 additions                                                         
+       79            ['Aboriginal people', 'Aboriginal people', 'hierarchy', 'parent=Ethnic groups'],
+       80            ['Chinese people', 'Chinese people', 'hierarchy', 'parent=Ethnic groups'],
+       81            ['Irish culture', 'Irish culture', 'hierarchy', 'parent=Ethnic groups'],
+       82 +  
+       83 +          # Synonym for Irish culture tag
+       84 +          ['Reference to the Irish or Irish culture', 'Irish culture', 'synonym', 'Renamed to emphasize cultural 
+          + references rather than demographic group'],
+       85        ])
+       86    
+       87        # --- 1.4 Occupations ---
+
+● Now let me add TODO comments for the deferred items. I'll add them right before the return statement:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 29 additions                               
+       618            ['Disease', 'Disease', 'hierarchy', 'parent=Physical and health conditions'],
+       619        ])
+       620    
+       621 +      # ========================================================================
+       622 +      # DEFERRED TAGS - REQUIRE SOURCE TEXT REVIEW OR RATIONALIZATION
+       623 +      # ========================================================================
+       624 +      # The following tags need further analysis before primary facet assignment:
+       625 +      #
+       626 +      # 1. Desertion (3 uses) - Child/family desertion: Is this a criminal offense
+       627 +      #    or social pathology? Review source text to determine if should be under
+       628 +      #    Events > Criminal events or elsewhere.
+       629 +      #
+       630 +      # 2. Drunkeness (16 uses) - Need to distinguish: Is this "public drunkenness"
+       631 +      #    (criminal offense → Events > Criminal events) or "state of being drunk"
+       632 +      #    (physical condition → Associated Concepts > Physical and health conditions)?
+       633 +      #    Review source text to determine proper classification.
+       634 +      #
+       635 +      # 3. Accommodation (64 uses) - Requires rationalization. Contexts show it
+       636 +      #    covers both occupations (boarding house "keepers") and built environment
+       637 +      #    (hotels, cottages). May need to be split or merged with existing tags.
+       638 +      #
+       639 +      # 4. Alcohol (12 uses) - Too broad. Appears in various contexts (legal
+       640 +      #    testimony, inquests). May overlap with "Drinking" (activity). Needs
+       641 +      #    context review to determine if should be: substance/material, activity,
+       642 +      #    or merged with existing tags.
+       643 +      #
+       644 +      # 5. Post (9 uses) - Added to Activities > Communication activities > Postal
+       645 +      #    services, but needs review to disambiguate post office (building) from
+       646 +      #    postal service (activity). May need separate built environment entry.
+       647 +      #
+       648 +      # ========================================================================
+       649 +  
+       650        return rows
+       651    
+       652    
+
+● Excellent! Now let me regenerate the CSV and visualizations:
+
+● Bash(python3 scripts/22_generate_poly_hierarchy.py)
+  ⎿  Generating comprehensive poly-hierarchical taxonomy...
+
+     Generating primary facet hierarchies...
+     … +13 lines (ctrl+o to expand)
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | tail -30)
+  ⎿    ✓ Saved to: visualizations/hierarchy_trees/theme_tourism__accommodation.txt   
+     Generating tree for: Transport & Infrastructure
+       ✓ Saved to: visualizations/hierarchy_trees/theme_transport__infrastructure.txt
+     … +26 lines (ctrl+o to expand)
+
+● Great! Now let me verify the changes by checking the updated facets:
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 35 lines
+
+● Bash(grep -A5 "^Agents$" /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_agents.txt | head -20)
+  ⎿  Agents                       
+     ├── Animals
+     │   ├── Dogs
+     … +3 lines (ctrl+o to expand)
+
+● Bash(grep "^People," data/poly_hierarchy_additions.csv | head -5)
+  ⎿  People,People,hierarchy,parent=Agents (new top-level facet)
+
+● Bash(grep -E "^(Demographic groups|Ethnic groups|Occupations)," data/poly_hierarchy_additions.csv)
+  ⎿  Demographic groups,Demographic groups,hierarchy,parent=People
+     Ethnic groups,Ethnic groups,hierarchy,parent=People
+     Occupations,Occupations,hierarchy,parent=People
+
+● Bash(grep -E "(People|Demographic|Ethnic|Occupations|Miners)"
+      /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_agents.txt | head -20)
+  ⎿  └── People                      
+         ├── Demographic groups
+         │   │   └── Miners' families
+     … +3 lines (ctrl+o to expand)
+
+● Perfect! People is there. Let me check the complete structure:
+
+● Bash(wc -l /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  180 /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_agents.txt
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 40 lines
+
+● Bash(tail -n 15 /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_agents.txt | head -14)
+  ⎿          │   └── Dr Watkins    
+             ├── Military personnel
+             │   └── Soldiers
+     … +11 lines (ctrl+o to expand)
+
+● Bash(grep -n -B2 -A8 "└── People" /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  123-│           ├── Good Templars 
+     124-│           └── Salvation Army
+     125:└── People
+     … +8 lines (ctrl+o to expand)
+
+● Bash(grep -n -A25 "└── People" /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  125:└── People                
+     126-    ├── Demographic groups
+     127-    │   ├── Children
+     … +23 lines (ctrl+o to expand)
+
+● Excellent! Now let me check the Events facet to verify the changes:
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 58 lines
+
+● Perfect! Now let me check Activities for the new additions:
+
+● Read(visualizations/hierarchy_trees/primary_activities.txt)
+  ⎿  Read 43 lines
+
+● Perfect! Now let me check Associated Concepts:
+
+● Read(visualizations/hierarchy_trees/primary_associated_concepts.txt)
+  ⎿  Read 19 lines
+
+● Excellent! Now let me verify the coverage improvement:
+
+● Bash(wc -l data/poly_hierarchy_additions.csv)
+  ⎿  567 data/poly_hierarchy_additions.csv
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Total tags in Zotero: 481                   
+     Tags with primary facet relationships: 345
+     Improvement: Added 24 tags to primary facets
+     … +20 lines (ctrl+o to expand)
+
+● Perfect! Let me create a final summary:
+
+  Summary: Primary Facet Assignment Complete
+
+  ✅ Successfully Implemented
+
+  Structural Changes:
+  1. ✓ Added "People" hierarchy under Agents
+  2. ✓ Added "Ethnic groups" category under People
+  3. ✓ Added "Families" category under Demographic groups
+  4. ✓ Added "Criminal events" category under Events
+  5. ✓ Renamed "Legal proceedings" → "Legal events"
+  6. ✓ Added "Postal services" category under Communication activities
+  7. ✓ Added "Physical and health conditions" category under Associated Concepts
+
+  Tags Assigned (18 actual tags):
+  - ✓ Aboriginal people → Agents > People > Ethnic groups
+  - ✓ Chinese people → Agents > People > Ethnic groups
+  - ✓ Irish culture → Agents > People > Ethnic groups (renamed from "Reference to the Irish or Irish culture")
+  - ✓ Miners → Agents > People > Occupations
+  - ✓ Miners' families → Agents > People > Demographic groups > Families
+  - ✓ Charity → Activities > Social & welfare activities
+  - ✓ Theft → Events > Criminal events
+  - ✓ Rape → Events > Criminal events
+  - ✓ Fighting → Events > Criminal events
+  - ✓ Assault → Events > Criminal events
+  - ✓ Bigamy → Events > Criminal events
+  - ✓ Sexual violence → Events > Criminal events
+  - ✓ Bankruptcy → Events > Legal events
+  - ✓ Divorce → Events > Legal events
+  - ✓ Post → Activities > Communication activities > Postal services
+  - ✓ Injury → Associated Concepts > Physical and health conditions
+  - ✓ Illness → Associated Concepts > Physical and health conditions
+  - ✓ Disease → Associated Concepts > Physical and health conditions
+
+  Deferred for Later Review (5 tags with TODO comments):
+  1. Desertion (3 uses) - Crime vs. social pathology?
+  2. Drunkeness (16 uses) - Public crime vs. physical condition?
+  3. Accommodation (64 uses) - Needs rationalization
+  4. Alcohol (12 uses) - Too broad, needs division
+  5. Post (9 uses) - Already assigned, but needs building vs. service disambiguation
+
+  📊 Results
+
+  - CSV: 542 → 567 lines (+25 lines)
+  - Primary facet coverage: 321 → 345 tags (+24 tags)
+  - Coverage improvement: 7.5% increase in tags with primary facets
+  - Primary facets: 7 (unchanged)
+  - Files modified: scripts/22_generate_poly_hierarchy.py
+  - Files regenerated: data/poly_hierarchy_additions.csv, all visualization files
+
+  All changes successfully implemented and verified!
+
+
+

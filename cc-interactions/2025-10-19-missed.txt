@@ -1,0 +1,54 @@
+Forgot to export three conversatons today, two before and one after the 'a' export. 
+
+The first two conversatoins involved restarting work (review of what was done last time, with some corrections and modifications to the 'folksonomy_logic.md' document), plus cautious automated correction of tags (being careful not to consolidate personal or family names and only deal with obvious typos or inconsistencies, plus creation of some obvious hierarchies).
+
+The /compact message from the third missing conversation follows.
+
+● ✅ Session Handover Complete
+
+  I've created a comprehensive handover document at SESSION_HANDOVER.md that captures everything from this session.
+
+  Key Accomplishments
+
+  1. CRITICAL FIX: Family Name Protection ✅
+  - Removed Peckman/Penman family merge
+  - Added strict principle: NO family/person name merges without primary sources
+  - All family names now flagged for manual review
+
+  2. Automated 47 High-Confidence Decisions ✅
+  - 13 false positives (substring coincidences) → KEEP_SEPARATE
+  - 34 generic→specific hierarchies → HIERARCHY
+  - Current status: 0 merges, 139 hierarchies, 96 keep-separate
+
+  3. Analysis Reports Created ✅
+  - reports/review_summary.md - Current state with critical principles
+  - reports/naming_variants_review.md - Ready for your review
+  - reports/triage_report.md - Categorization of flagged pairs
+
+  Ready for Next Session
+
+  Immediate next step: Review reports/naming_variants_review.md
+  - 6 naming variant pairs analysed
+  - Decisions proposed with confidence levels
+  - High confidence: Druid's Lodge (can implement immediately)
+  - Medium: Katoomba South/coal mining pairs (recommend quick check)
+  - Low: School names (needs date investigation)
+
+  Then: Review all 139 hierarchies for usefulness (as you requested)
+
+  Remaining work: 98 pairs still flagged (family names, mining domain, contextual)
+
+  Estimated time to complete: 55-80 minutes of manual review
+
+  ---
+  All work is saved and documented. The next session can pick up exactly where we left off!
+
+  Todos
+  ☒ Triage flagged pairs into decision categories (false positives, hierarchies, variants, contextual)
+  ☒ Apply 47 automated high-confidence decisions (13 false positives + 34 hierarchies)
+  ☒ URGENT: Undo Peckman/Penman family merge - requires primary source review
+  ☒ Update review_summary.md to reflect current state (0 merges, 98 flagged pairs)
+  ☒ Create naming variants analysis report
+  ☐ User to review and approve naming variant decisions
+  ☐ Review all 139 hierarchies for usefulness and completeness
+  ☐ Update consolidation decisions and regenerate outputs

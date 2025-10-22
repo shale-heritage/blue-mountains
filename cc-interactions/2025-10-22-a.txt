@@ -1,0 +1,2530 @@
+
+ ▐▛███▜▌   Claude Code v2.0.22
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+
+> /clear 
+  ⎿  (no content)
+
+> Hi CC, /compact failed last chat, please review cc-interactions/2025-10-21-c.txt to see what we were working on. Here's the 
+summary of what we finished at the end of our last session:   Summary: Primary Facet Assignment Complete
+
+  ✅ Successfully Implemented
+
+  Structural Changes:
+  1. ✓ Added "People" hierarchy under Agents
+  2. ✓ Added "Ethnic groups" category under People
+  3. ✓ Added "Families" category under Demographic groups
+  4. ✓ Added "Criminal events" category under Events
+  5. ✓ Renamed "Legal proceedings" → "Legal events"
+  6. ✓ Added "Postal services" category under Communication activities
+  7. ✓ Added "Physical and health conditions" category under Associated Concepts
+
+  Tags Assigned (18 actual tags):
+  - ✓ Aboriginal people → Agents > People > Ethnic groups
+  - ✓ Chinese people → Agents > People > Ethnic groups
+  - ✓ Irish culture → Agents > People > Ethnic groups (renamed from "Reference to the Irish or Irish culture")
+  - ✓ Miners → Agents > People > Occupations
+  - ✓ Miners' families → Agents > People > Demographic groups > Families
+  - ✓ Charity → Activities > Social & welfare activities
+  - ✓ Theft → Events > Criminal events
+  - ✓ Rape → Events > Criminal events
+  - ✓ Fighting → Events > Criminal events
+  - ✓ Assault → Events > Criminal events
+  - ✓ Bigamy → Events > Criminal events
+  - ✓ Sexual violence → Events > Criminal events
+  - ✓ Bankruptcy → Events > Legal events
+  - ✓ Divorce → Events > Legal events
+  - ✓ Post → Activities > Communication activities > Postal services
+  - ✓ Injury → Associated Concepts > Physical and health conditions
+  - ✓ Illness → Associated Concepts > Physical and health conditions
+  - ✓ Disease → Associated Concepts > Physical and health conditions
+
+  Deferred for Later Review (5 tags with TODO comments):
+  1. Desertion (3 uses) - Crime vs. social pathology?
+  2. Drunkeness (16 uses) - Public crime vs. physical condition?
+  3. Accommodation (64 uses) - Needs rationalization
+  4. Alcohol (12 uses) - Too broad, needs division
+  5. Post (9 uses) - Already assigned, but needs building vs. service disambiguation
+
+  📊 Results
+
+  - CSV: 542 → 567 lines (+25 lines)
+  - Primary facet coverage: 321 → 345 tags (+24 tags)
+  - Coverage improvement: 7.5% increase in tags with primary facets
+  - Primary facets: 7 (unchanged)
+  - Files modified: scripts/22_generate_poly_hierarchy.py
+  - Files regenerated: data/poly_hierarchy_additions.csv, all visualization files
+
+  All changes successfully implemented and verified! 
+
+● I'll review the previous session to understand the context and pick up where you left off.
+
+● Read(cc-interactions/2025-10-21-c.txt)
+  ⎿  Read 1841 lines
+
+● Thanks for providing that summary! I've reviewed the previous session (cc-interactions/2025-10-21-c.txt) and can confirm the
+  excellent progress made:
+
+  What Was Completed:
+
+  Primary Facet Consolidation & Assignment:
+  - Successfully reduced primary facets from 14 → 7 (50% reduction)
+  - Restructured Agents facet with new "People" hierarchy
+  - Added new categories: Ethnic groups, Families, Criminal events, Physical and health conditions, Postal services
+  - Assigned 18 tags to primary facets (321 → 345 total coverage)
+  - Renamed "Legal proceedings" → "Legal events"
+  - Renamed "Environmental conditions" → "Associated Concepts" (Getty AAT-aligned)
+
+  Current Primary Facets (7):
+  1. Activities (30 nodes)
+  2. Agents (163 nodes) - now includes People > [Demographic groups, Ethnic groups, Occupations]
+  3. Associated Concepts (5 nodes)
+  4. Built Environment (67 nodes)
+  5. Events (39 nodes) - now includes Criminal events and Historical events
+  6. Information Forms (7 nodes)
+  7. Places (37 nodes)
+
+  Deferred Items: 5 tags flagged with TODO comments for context review (Desertion, Drunkeness, Accommodation, Alcohol, Post
+  building/service disambiguation)
+
+  Ready to Continue
+
+  What would you like to work on next? Options:
+  1. Address some of the deferred items (review source text for Desertion, Drunkeness, etc.)
+  2. Continue QA work on remaining unassigned tags
+  3. Work on documentation updates
+  4. Something else?
+
+> Yes, I'd like to work through the deferred items category by category. Can you show me the text related to 'desertion' 
+alongside the leading choices for tag placement in the hierarchy? 
+
+● I'll fetch the full text contexts for "Desertion" and present the placement options.
+
+● Bash(source venv/bin/activate && python3 << 'EOF' timeout: 1m 0s
+      import sys…)
+  ⎿  Error: Traceback (most recent call last):
+       File "<stdin>", line 11, in <module>
+     KeyError: 'zotero_group_id'
+
+     ✓ Configuration loaded successfully
+
+● Read(.claude/settings.local.json)
+  ⎿  Read 12 lines
+
+● Bash(find . -name "*.json" -type f | grep -E "(config|settings|zotero)" | grep -v node_modules | grep -v venv)
+  ⎿  ./.claude/settings.local.json
+
+● Read(scripts/09_analyse_variants_in_context.py)
+  ⎿  Read 50 lines
+
+● Bash(ls -la scripts/config.py)
+  ⎿  -rw-rw-r-- 1 shawn shawn 13485 Oct 12 05:43 scripts/config.py
+
+● Read(scripts/config.py)
+  ⎿  Read 100 lines
+
+● Read(scripts/config.py)
+  ⎿  Read 50 lines
+
+● Bash(source venv/bin/activate && python3 << 'EOF' timeout: 1m 0s
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +39 lines (ctrl+o to expand)
+
+● Perfect! I've retrieved the contexts for "Desertion". Here's what I found:
+
+  Desertion (3 uses) - Full Text Evidence
+
+  Context 1: "Deserting Wives and Families, Service, &c." (1987)
+
+  "...A warrant has been issued by the Helensburgh Bench for the arrest of James Meredith, charged with child desertion..."
+
+  Context 2: "Deserting Wives and Families, Service, etc." (1915)
+
+  "...A warrant has been issued by the Children's Court Bench, Sydney, for the arrest of Frank Flynn, charged with child 
+  desertion..."
+
+  Context 3: "The Inquest." (1896)
+
+  - No full text available
+
+  ---
+  Analysis
+
+  Clear Evidence: "Desertion" refers to child desertion / family desertion - the criminal offense of abandoning one's children
+  or family.
+
+  Legal Status:
+  - Warrants issued for arrests
+  - Tried in Children's Court and magistrate benches
+  - Formal criminal charges
+
+  This is NOT a social pathology or life event - it's a prosecuted criminal offense.
+
+  ---
+  Hierarchy Placement Options
+
+  Option A: Events > Criminal events (RECOMMENDED)
+
+  Events
+  └── Criminal events
+      ├── Theft
+      ├── Rape
+      ├── Fighting
+      ├── Assault
+      ├── Bigamy
+      ├── Sexual violence
+      └── Desertion ← ADD HERE
+
+  Rationale: Consistent with other criminal offenses (theft, assault, bigamy). Warrants were issued and people were formally
+  charged, making this clearly a criminal proceeding.
+
+  Option B: Events > Legal events
+
+  Events
+  └── Legal events
+      ├── Court cases
+      ├── Bankruptcy
+      ├── Divorce
+      └── Desertion ← ADD HERE
+
+  Rationale: While technically accurate (it's a legal matter), this category is currently for civil/administrative legal
+  proceedings (bankruptcy, divorce), not crimes.
+
+  ---
+  Recommendation
+
+  Place under Events > Criminal events - The evidence clearly shows this is a criminal offense prosecuted through the legal
+  system, consistent with the other criminal events already in that category.
+
+  Should I proceed with this classification?
+
+> Yes, proceed, then let's proceed to the next category and do the same thing - you analyse the full text, and then ask me 
+questions or for decisions on ambiguous cases. As here, explain your reasoning. Here's our checklist:\
+\
+  Deferred for Later Review (5 tags with TODO comments):
+  1. Desertion (3 uses) - Crime vs. social pathology? [DONE]
+  2. Drunkeness (16 uses) - Public crime vs. physical condition?
+  3. Accommodation (64 uses) - Needs rationalization
+  4. Alcohol (12 uses) - Too broad, needs division
+  5. Post (9 uses) - Already assigned, but needs building vs. service disambiguation 
+
+● I'll create a task list for tracking progress, add Desertion to Criminal events, then move to analyzing Drunkeness.
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 20 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition                                  
+       506            ['Assault', 'Assault', 'hierarchy', 'parent=Criminal events'],
+       507            ['Bigamy', 'Bigamy', 'hierarchy', 'parent=Criminal events'],
+       508            ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=Criminal events'],
+       509 +          ['Desertion', 'Desertion', 'hierarchy', 'parent=Criminal events'],
+       510    
+       511            # Political events
+       512            ['Political events', 'Political events', 'hierarchy', 'parent=Events'],
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 35 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 4 additions and 8 removals                 
+       624        # ========================================================================
+       625        # The following tags need further analysis before primary facet assignment:
+       626        #
+       627 -      # 1. Desertion (3 uses) - Child/family desertion: Is this a criminal offense
+       628 -      #    or social pathology? Review source text to determine if should be under
+       629 -      #    Events > Criminal events or elsewhere.
+       630 -      #
+       631 -      # 2. Drunkeness (16 uses) - Need to distinguish: Is this "public drunkenness"
+       627 +      # 1. Drunkeness (16 uses) - Need to distinguish: Is this "public drunkenness"
+       628        #    (criminal offense → Events > Criminal events) or "state of being drunk"
+       629        #    (physical condition → Associated Concepts > Physical and health conditions)?
+       630        #    Review source text to determine proper classification.
+       631        #
+       632 -      # 3. Accommodation (64 uses) - Requires rationalization. Contexts show it
+       632 +      # 2. Accommodation (64 uses) - Requires rationalization. Contexts show it
+       633        #    covers both occupations (boarding house "keepers") and built environment
+       634        #    (hotels, cottages). May need to be split or merged with existing tags.
+       635        #
+       636 -      # 4. Alcohol (12 uses) - Too broad. Appears in various contexts (legal
+       636 +      # 3. Alcohol (12 uses) - Too broad. Appears in various contexts (legal
+       637        #    testimony, inquests). May overlap with "Drinking" (activity). Needs
+       638        #    context review to determine if should be: substance/material, activity,
+       639        #    or merged with existing tags.
+       640        #
+       641 -      # 5. Post (9 uses) - Added to Activities > Communication activities > Postal
+       641 +      # 4. Post (9 uses) - Added to Activities > Communication activities > Postal
+       642        #    services, but needs review to disambiguate post office (building) from
+       643        #    postal service (activity). May need separate built environment entry.
+       644        #
+
+● Bash(python3 scripts/22_generate_poly_hierarchy.py && wc -l data/poly_hierarchy_additions.csv)
+  ⎿  Generating comprehensive poly-hierarchical taxonomy...
+
+     Generating primary facet hierarchies...
+     … +14 lines (ctrl+o to expand)
+
+● Bash(source venv/bin/activate && python3 << 'EOF' timeout: 1m 0s
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +174 lines (ctrl+o to expand)
+
+● Excellent! I've retrieved 16 items tagged with "Drunkeness". Here's my analysis:
+
+  ---
+  Drunkeness (16 uses) - Full Text Evidence
+
+  Criminal Offense Contexts (Primary Usage - 11 instances)
+
+  Court Cases & Fines:
+  1. "drunk cases at Katoomba Court... the magistrates are raising the fines"
+  2. "A Blackheath drunk, disorderly and obscene language man, paid over 17s. 6d. at Katoomba court"
+  3. "one drunk and disorderly, paid 10s. for his spree"
+  4. "appeared at Katoomba court on a charge of drunkenness"
+  5. "James Hutchison was fined the minimum for drunkenness"
+  6. "Evan Meredith, for drunkenness and disorderly conduct, was fined 7s 6d"
+  7. "William Fell, for a similar offence, was fined 12s 6d"
+  8. "Two drunks at Katoomba Court this week"
+  9. "One drunk, Frank Kewell, paid 5s. for his spree"
+  10. "Not nearly so many drunk cases at Katoomba Court"
+  11. "there will be nearly double the amount of drunkenness at the black-diamond fields"
+
+  State of Intoxication Contexts (Secondary Usage - 5 instances)
+
+  Describing Physical/Mental State:
+  1. "told Susan to go to bed as he was drunk" (private domestic situation)
+  2. "they were drunk when they went to bed" (private state)
+  3. "found them all gloriously drunk on a regular 'razzle dazzle'" (private state)
+  4. "I don't remember anything, I was drunk" (testimony about mental state)
+  5. "The fate of poor Johnson should be a warning to those men... going down the pass... in a drunken coalition" (dangerous
+  behaviour, not court case)
+
+  Neutral Context (1 instance)
+
+  1. "No drunkenness or rowdyism was observable" at elections (descriptive, no legal context)
+
+  ---
+  Analysis
+
+  Predominant Usage (69%): Public drunkenness as a criminal offense prosecuted in magistrate courts with fines
+  - Consistently appears with court proceedings
+  - Specific monetary fines recorded (5s., 7s. 6d., 10s., 12s. 6d., 17s. 6d.)
+  - Often paired with "drunk and disorderly" or "obscene language"
+  - Magistrates actively "raising the fines"
+
+  Secondary Usage (31%): State of being intoxicated in private/domestic contexts
+  - Not prosecuted
+  - Describes physical/mental condition
+
+  ---
+  Hierarchy Placement Options
+
+  Option A: Events > Criminal events as "Public drunkenness" (RECOMMENDED)
+
+  Events
+  └── Criminal events
+      ├── Desertion
+      ├── Theft
+      ├── Assault
+      └── Public drunkenness ← RENAME & ADD HERE
+
+  Rationale:
+  - 69% of uses are criminal prosecutions
+  - Consistent with historical reality: public drunkenness was a prosecutable offense in 19th/early 20th century Australia
+  - Renaming to "Public drunkenness" clarifies this is the criminal offense, not just the state of intoxication
+  - Maintains consistency with other criminal events
+
+  Option B: Split the tag
+
+  - "Public drunkenness" → Events > Criminal events (court cases)
+  - "Intoxication" → Associated Concepts > Physical and health conditions (state)
+
+  Rationale: Technically most accurate, but requires manual re-tagging of all 16 items
+
+  Option C: Associated Concepts > Physical and health conditions as "Drunkeness"
+
+  Associated Concepts
+  └── Physical and health conditions
+      ├── Injury
+      ├── Illness
+      └── Drunkeness ← ADD HERE
+
+  Rationale: Describes a physical/mental state, but ignores that 69% of uses are legal proceedings
+
+  ---
+  My Recommendation
+
+  Option A: Rename "Drunkeness" → "Public drunkenness" and place under Events > Criminal events
+
+  Reasoning:
+  1. Predominant usage (11/16 = 69%) is criminal prosecutions in court
+  2. The criminal offense of "public drunkenness" (being intoxicated in public spaces) was the specific charge in these cases
+  3. Private intoxication wasn't illegal - the offense was being drunk in public
+  4. Renaming clarifies the distinction: this tag is about the crime, not the state
+  5. Consistent with historical legal practice in colonial Australia
+
+  Should I proceed with Option A, or do you prefer a different approach?
+
+> I would like Option B: the tag *split* between 'Drunkenness' under 'Criminal events' and 'Drunkenness (intoxicaton)' under 
+'Physical and health conditions'. Note that example 11 "there will be nearly double the amount of drunkenness at the 
+black-diamond fields" is intoxication NOT the crime of drunkenness. Please manually align the tags in this manner. 
+
+● Excellent correction on example 11 - you're absolutely right. Let me implement Option B with the split categorization.
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition                                  
+       507            ['Bigamy', 'Bigamy', 'hierarchy', 'parent=Criminal events'],
+       508            ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=Criminal events'],
+       509            ['Desertion', 'Desertion', 'hierarchy', 'parent=Criminal events'],
+       510 +          ['Drunkenness', 'Drunkenness', 'hierarchy', 'parent=Criminal events'],
+       511    
+       512            # Political events
+       513            ['Political events', 'Political events', 'hierarchy', 'parent=Events'],
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition                                                          
+       618            ['Injury', 'Injury', 'hierarchy', 'parent=Physical and health conditions'],
+       619            ['Illness', 'Illness', 'hierarchy', 'parent=Physical and health conditions'],
+       620            ['Disease', 'Disease', 'hierarchy', 'parent=Physical and health conditions'],
+       621 +          ['Drunkenness (intoxication)', 'Drunkenness (intoxication)', 'hierarchy', 'parent=Physical and health 
+           + conditions'],
+       622        ])
+       623    
+       624        # ========================================================================
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 27 additions and 4 removals                                        
+       626        # ========================================================================
+       627        # The following tags need further analysis before primary facet assignment:
+       628        #
+       629 -      # 1. Drunkeness (16 uses) - Need to distinguish: Is this "public drunkenness"
+       630 -      #    (criminal offense → Events > Criminal events) or "state of being drunk"
+       631 -      #    (physical condition → Associated Concepts > Physical and health conditions)?
+       632 -      #    Review source text to determine proper classification.
+       629 +      # 1. Drunkeness (16 uses) - TAG SPLIT REQUIRED - Manual re-tagging needed in Zotero
+       630 +      #    The original "Drunkeness" tag has been split into two concepts:
+       631        #
+       632 +      #    A) "Drunkenness" → Events > Criminal events (10 instances)
+       633 +      #       Court cases where people were charged/fined for public drunkenness:
+       634 +      #       - "Jottings" (1891): "drunk cases at Katoomba Court"
+       635 +      #       - "Moutains Mixtures" (1893): "drunk, disorderly... paid over 17s. 6d."
+       636 +      #       - "Mountain Mixtures" (1894): "drunk and disorderly, paid 10s."
+       637 +      #       - "Mountain Mixtures" (1893): "charge of drunkenness... fined"
+       638 +      #       - "Katoomba Police Court" (1892): "fined the minimum for drunkenness"
+       639 +      #       - "Newsettes" (1891): "drunkenness and disorderly conduct, fined 7s 6d"
+       640 +      #       - "Newsettes" (1891): William Fell fined 12s 6d
+       641 +      #       - "Mountain Mixtures" (1892): "Two drunks at Katoomba Court"
+       642 +      #       - "Katoomba Court" (1893): "One drunk... paid 5s."
+       643 +      #       - "Mountain Mixtures" (1891): "drunk cases at Katoomba Court"
+       644 +      #
+       645 +      #    B) "Drunkenness (intoxication)" → Associated Concepts > Physical and health conditions (6 instances)
+       646 +      #       References to state of being intoxicated (not criminal proceedings):
+       647 +      #       - "Police Court" (1904): "told Susan to go to bed as he was drunk"
+       648 +      #       - "Katoomba Court" (1893): "they were drunk when they went to bed"
+       649 +      #       - "Megalong Matters" (1892): "found them all gloriously drunk"
+       650 +      #       - "Katoomba Court" (1893): testimony "I was drunk"
+       651 +      #       - "Mountain Mixtures" (1893): "going down the pass... in a drunken coalition"
+       652 +      #       - "Mountain Mixtures" (1892): "double the amount of drunkenness at black-diamond fields"
+       653 +      #       - "Katoomba Municipal Elections" (1890): "No drunkenness or rowdyism was observable"
+       654 +      #
+       655 +      #    TODO: Manually re-tag these 16 Zotero items based on context above.
+       656 +      #
+       657        # 2. Accommodation (64 uses) - Requires rationalization. Contexts show it
+       658        #    covers both occupations (boarding house "keepers") and built environment
+       659        #    (hotels, cottages). May need to be split or merged with existing tags.
+
+● Bash(python3 scripts/22_generate_poly_hierarchy.py && echo "CSV generated: $(wc -l data/poly_hierarchy_additions.csv)")
+  ⎿  Generating comprehensive poly-hierarchical taxonomy...
+
+     Generating primary facet hierarchies...
+     … +14 lines (ctrl+o to expand)
+
+● Bash(grep -E "(Drunkenness|Drunkeness)" data/poly_hierarchy_additions.csv)
+  ⎿  Drunkenness,Drunkenness,hierarchy,parent=Criminal events                                             
+     Drunkenness (intoxication),Drunkenness (intoxication),hierarchy,parent=Physical and health conditions
+     Drunkeness,Drunkeness,hierarchy,parent=Social order offences - THEMATIC
+     Drunkeness,Drunkeness,hierarchy,parent=Alcohol consumption & behaviour - THEMATIC
+
+● Bash(source venv/bin/activate && python3 << 'EOF' timeout: 1m 0s
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +69 lines (ctrl+o to expand)
+
+● It appears none of the first 15 items have full text with the word "accommodation" in it. Let me try a broader search to find
+  items that DO have context:
+
+● Bash(source venv/bin/activate && python3 << 'EOF' timeout: 1m 0s
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +57 lines (ctrl+o to expand)
+
+● Good! Found 9 contexts. Now let me check what the other 55 items (without the word "accommodation") are actually about:
+
+● Bash(source venv/bin/activate && python3 << 'EOF' timeout: 1m 0s
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +99 lines (ctrl+o to expand)
+
+● Perfect! Now I can see the pattern. Here's my analysis:
+
+  ---
+  Accommodation (64 uses) - Analysis
+
+  Usage Pattern
+
+  9 items have the word "accommodation" in full text:
+  - Lodging/hospitality: "accommodation for Visitors", "splendid accommodation... from humble cottage to... the Carrington"
+  - Public facilities: "station accommodation", "post office accommodation"
+
+  55 items are tagged topically (word doesn't appear):
+  - All relate to hotels, boarding houses, cottages, rooms, visitors, guests
+  - Articles about hospitality industry, tourism, visitor services
+
+  Key Finding
+
+  "Accommodation" is being used as a broad topical tag that encompasses:
+  1. Tourist/visitor lodging services (hospitality)
+  2. Buildings that provide lodging (hotels, boarding houses, cottages)
+  3. Public building facilities (railway stations, post offices)
+
+  Relationship to Existing Tags
+
+  Checking our current hierarchy, we already have:
+  - Built Environment > Buildings > Hotels
+  - Built Environment > Buildings > Boarding houses
+
+  "Accommodation" appears to be a parent concept that encompasses these specific building types.
+
+  ---
+  Hierarchy Placement Options
+
+  Option A: Merge with existing building tags (SIMPLE)
+
+  Remove "Accommodation" as redundant - items should be tagged with specific building types:
+  - Hotel → Built Environment > Buildings > Hotels
+  - Boarding house → Built Environment > Buildings > Boarding houses
+  - Station facilities → Built Environment > Infrastructure > Railway stations
+
+  Rationale: More specific tagging is better; "accommodation" is too vague
+
+  Option B: Create intermediate category under Buildings (HIERARCHICAL)
+
+  Built Environment
+  └── Buildings
+      └── Accommodation buildings ← NEW PARENT CATEGORY
+          ├── Hotels (existing)
+          ├── Boarding houses (existing)
+          └── Cottages (if needed)
+
+  Rationale: Preserves the conceptual grouping, maintains existing tags
+
+  Option C: Split by function (COMPLEX)
+
+  1. Public facilities (station/post office accommodation) → Built Environment > Infrastructure
+  2. Tourist lodging → Activities > Economic activities > Tourism/Hospitality services (new category)
+
+  Rationale: Distinguishes physical buildings from economic service activity
+
+  Option D: Keep as thematic grouping only
+
+  Don't assign "Accommodation" a primary facet - leave it only in thematic groupings for topical discovery
+
+  Rationale: It's a topical tag, not a specific entity type
+
+  ---
+  My Recommendation
+
+  Option A - Deprecate "Accommodation" and use specific building types
+
+  Reasoning:
+  1. 86% of tagged items don't even use the word "accommodation"
+  2. We already have specific tags for the actual entities (Hotels, Boarding houses)
+  3. The RA applied this topically when items were about hospitality/tourism
+  4. More specific tagging improves precision
+  5. "Accommodation" is too abstract for a controlled vocabulary
+
+  Alternative: If you want to preserve the topical grouping, use Option D - keep it only in thematic groupings (e.g., "Tourism &
+   Accommodation - THEMATIC") but don't assign a primary facet.
+
+  What's your preference?
+
+> I am happy to deprecate 'accommodation' and use specific building types, but then what do we do with the other uses of 
+accommodation? Ideally, I'd like to see a report about how each of the uses will be retagged (including position of that tag in 
+the hierarchy) before anything is changed. I'll manually check it then. In the report, I need the relevant snippet of text and 
+the proposed tag. 
+
+● Excellent idea! Let me create a detailed report analyzing all 64 uses and proposing specific replacement tags. This will take
+  a moment to fetch and analyze.
+
+● Bash(source venv/bin/activate && python3 << 'EOF'
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +791 lines (ctrl+o to expand)
+
+● The report is quite long. Let me save it to a file for easier review:
+
+● Bash(source venv/bin/activate && python3 << 'EOF' > reports/accommodation_rationalization_report.md
+      import sys…)
+  ⎿  (No content)
+
+● Bash(wc -l reports/accommodation_rationalization_report.md && echo "---" && tail -40
+      reports/accommodation_rationalization_report.md)
+  ⎿  998 reports/accommodation_rationalization_report.md
+     ---
+     ## 64. The Megalong Hotel
+     … +39 lines (ctrl+o to expand)
+
+● Perfect! I've generated a comprehensive report. Here's what I found:
+
+  Accommodation Tag Rationalization Summary
+
+  Report Location: reports/accommodation_rationalization_report.md (998 lines)
+
+  Proposed Tag Distribution:
+
+  - Hotels: 59 items (92%)
+  - Boarding houses: 2 items (3%)
+  - NEEDS MANUAL REVIEW: 3 items (5%) - no full text available
+
+  Key Findings:
+
+  1. Overwhelmingly hotel-focused: 92% of "Accommodation" tags are actually about specific hotels (Carrington Hotel, Family
+  Hotel, Railway Hotel, Megalong Hotel, etc.)
+  2. Very few boarding houses: Only 2 items explicitly about boarding houses
+  3. No other accommodation types found: No cottages, sanatoriums, or railway station facilities in the sample (though the word
+  "accommodation" appears in 2 railway station contexts)
+
+  Sample Entries from Report:
+
+  Item 1: "A Charge of Rape" (1890)
+  - Snippet: "...we then went to the Carrington Hotel; I called accused and said to him 'We are going to arrest you'..."
+  - Proposed: Hotels → Built Environment > Buildings > Hotels
+  - Rationale: Article mentions hotel
+
+  Item 37: "Notice of Application for a Publican's Licence" (1896)
+  - Snippet: "...to be known by the sign of 'Delaney's Family Hotel' containing six rooms..."
+  - Proposed: Hotels → Built Environment > Buildings > Hotels
+  - Rationale: Article about hotel licensing
+
+  Item 40: "Mountain Mixtures" (1893)
+  - Snippet: "At a certain Blue Mountain boarding house there was duck served up for the Xmas dinner..."
+  - Proposed: Boarding houses → Built Environment > Buildings > Boarding houses
+  - Rationale: Article about boarding house
+
+  Next Steps:
+
+  The full report is ready for your manual review at reports/accommodation_rationalization_report.md. Each of the 64 items
+  includes:
+  - Title, date, publication
+  - Full text snippet
+  - Proposed replacement tag
+  - Hierarchy path
+  - Rationale
+
+  Would you like me to:
+  1. Wait for you to review the report and provide feedback
+  2. Move on to analyzing the next deferred item (Alcohol)?
+  3. Something else?
+
+> I have thoroughly reviewed and updated the 'accommodation_rationalization_report', with corrections made in the file itself. I
+ have enhansed tags, including following the pattern of appending the name of the hotel or boarding house where possible. I have
+ also extracted the mention of a hotellier and (where available) the name of the hotellier and added an appropriate tag under 
+'Agents'. I have added Place > Town > [town name] tags where I could, plus a few other tags. All multiple tags are separated by 
+pipes (|). Please confirm that you can read and understand the tag changes I am suggesting; explain two or three to me in your 
+own words to make sure.\
+\
+I would like you to update the tag hierarchy and add the tag changes / additions to the comprehensive list.\
+\
+Just to confirm: As I understand you are keeping a CSV of tag changes and additions that will be applied later, this list is 
+up-to-date and comprehensive, but you have not applied it yet (please confirm)?\
+\
+Please make a plan to undertake the significant retagging necessary to implement my corrections / additions. 
+
+● I'll read the updated accommodation rationalization report to understand your tag changes.
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 100 lines
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 100 lines
+
+● Search(pattern: "^- \*\*Hierarchy Path:\*\*", path: "reports/accommodation_rationalization_report.md", output_mode: "content")
+  ⎿  Found 64 lines (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/primary_built_environment.txt)
+  ⎿  Read 96 lines
+
+● Search(pattern: "Occupation", path: "visualizations/hierarchy_trees/primary_agents.txt", output_mode: "content")
+  ⎿  Found 21 lines (ctrl+o to expand)
+
+● Search(pattern: "Hospitality workers", path: "visualizations/hierarchy_trees/primary_agents.txt", output_mode: "content")
+  ⎿  Found 11 lines (ctrl+o to expand)
+
+● Bash(head -20 data/poly_hierarchy_additions.csv)
+  ⎿  old_tag,new_tag,action,notes                                 
+     People,People,hierarchy,parent=Agents (new top-level facet)
+     Demographic groups,Demographic groups,hierarchy,parent=People
+     … +18 lines (ctrl+o to expand)
+
+● Excellent! I can now see your tag changes clearly. Let me explain a few examples to confirm my understanding:
+
+  Examples of Your Tag Changes (Confirming Understanding):
+
+  Example 1: Item #9 "Girls Cricket Match at Katoomba" (1895)
+
+  Your tags:
+  - Hotels > Katoomba Family Hotel (specific named hotel)
+  - Hotellier > Mrs Long (extracted the proprietress by name)
+
+  My understanding: You've identified the specific hotel mentioned (Katoomba Family Hotel) and created a tag for the individual
+  hotelier (Mrs Long) who is mentioned as "the hospitable proprietress". This captures both the building entity AND the person
+  operating it.
+
+  Example 2: Item #6 "Mountain Mixtures" (1892)
+
+  Your tags:
+  - Hotels > Wentworth Falls Hotel (specific hotel)
+  - Hotellier > Mr Wilson (seller)
+  - Hotellier > Mr Manuel (buyer)
+  - Places > Towns > Hatley Vale (location mentioned)
+
+  My understanding: You've captured a business transaction - two hoteliers (Wilson and Manuel) and the specific hotel changing
+  hands. You've also added the place tag for Hartley Vale (note: you wrote "Hatley Vale" which appears to be the spelling in the
+   source).
+
+  Example 3: Item #16 "Mountain Mixtures" (1892)
+
+  Your tags:
+  - Hotels > Wentwork Falls Hotel [sic - should be "Wentworth"]
+  - Hotellier > Mr N. Delaney
+  - Other goods and services > Coach and buggy business > Mr Thomas Cale
+
+  My understanding: This article mentions both Delaney's hotel business AND Thomas Cale's coach/buggy business - you've captured
+   both economic activities and the specific individuals running them, creating a new occupational category for "Coach and buggy
+   business".
+
+  ---
+  Confirmation: CSV Status
+
+  You are correct! The CSV file data/poly_hierarchy_additions.csv contains all the proposed hierarchy changes and tag mappings.
+  This CSV has been generated from scripts/22_generate_poly_hierarchy.py but has NOT yet been applied to the actual Zotero
+  library.
+
+  The CSV is a specification of what changes should be made - it needs to be manually imported/applied to Zotero to actually
+  re-tag the 481 items in the library.
+
+  ---
+  Now let me present a comprehensive plan for implementing your corrections:
+  ⎿  User rejected Claude's plan:
+     ╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+     │ Plan: Implement Accommodation Tag Rationalization with Enhanced Tagging                                                     │
+     │                                                                                                                             │
+     │ Overview                                                                                                                    │
+     │                                                                                                                             │
+     │ Implement 64 tag reassignments from the reviewed accommodation_rationalization_report.md, adding new hierarchy levels,      │
+     │ named entities (specific hotels), individual hoteliers, and place tags.                                                     │
+     │                                                                                                                             │
+     │ Phase 1: Update Hierarchy Structure (scripts/22_generate_poly_hierarchy.py)                                                 │
+     │                                                                                                                             │
+     │ 1.1 Add "Hotellier" under Hospitality workers                                                                               │
+     │                                                                                                                             │
+     │ Agents > People > Occupations > Hospitality workers > Hotellier                                                             │
+     │ Currently only has "Publican" - add "Hotellier" as peer category                                                            │
+     │                                                                                                                             │
+     │ 1.2 Add "Cottages" under Accommodation buildings                                                                            │
+     │                                                                                                                             │
+     │ Built Environment > Buildings > Accommodation buildings > Cottages                                                          │
+     │ Currently has Hotels and Boarding houses - add Cottages                                                                     │
+     │                                                                                                                             │
+     │ 1.3 Add "Stables" under Buildings                                                                                           │
+     │                                                                                                                             │
+     │ Built Environment > Buildings > Stables                                                                                     │
+     │ New building type for livery stables                                                                                        │
+     │                                                                                                                             │
+     │ 1.4 Add "Other goods and services" occupation category                                                                      │
+     │                                                                                                                             │
+     │ Agents > People > Occupations > Other goods and services                                                                    │
+     │   └── Coach and buggy business                                                                                              │
+     │ New category for non-hospitality service occupations                                                                        │
+     │                                                                                                                             │
+     │ 1.5 Add specific named hotels (NEW individual entities)                                                                     │
+     │                                                                                                                             │
+     │ Under Built Environment > Buildings > Accommodation buildings > Hotels:                                                     │
+     │ - Comet Hotel                                                                                                               │
+     │ - Falls Hotel                                                                                                               │
+     │ - Great Western Hotel                                                                                                       │
+     │ - Hotel Wentworth                                                                                                           │
+     │ - Hydora House Hotel                                                                                                        │
+     │ - Katoomba Hotel (already exists ✓)                                                                                         │
+     │ - Leura Hotel                                                                                                               │
+     │ - Mount Victoria Hotel (already exists ✓)                                                                                   │
+     │ - Orama Boarding House (under Boarding houses)                                                                              │
+     │ - Oxford Hotel (Sydney)                                                                                                     │
+     │ - Grand Hotel (Sydney)                                                                                                      │
+     │ - Fryer's Family Hotel                                                                                                      │
+     │                                                                                                                             │
+     │ 1.6 Add specific named hoteliers (NEW individual entities)                                                                  │
+     │                                                                                                                             │
+     │ Under Agents > People > Occupations > Hospitality workers > Hotellier:                                                      │
+     │ - Mrs Long                                                                                                                  │
+     │ - Mr Wilson                                                                                                                 │
+     │ - Mr Manuel                                                                                                                 │
+     │ - F. C. Goyder                                                                                                              │
+     │ - Rubina Fryer                                                                                                              │
+     │ - Isabellea J. Long                                                                                                         │
+     │ - Mr N. Delaney                                                                                                             │
+     │ - Mr Ellis                                                                                                                  │
+     │ - Mr Joe Nimmo                                                                                                              │
+     │ - Mrs (Joe) Nimmo                                                                                                           │
+     │ - Manuell                                                                                                                   │
+     │ - Mrs Brown                                                                                                                 │
+     │ - W. Green                                                                                                                  │
+     │ - Richard Allen                                                                                                             │
+     │ - Mr Alf. Goodare                                                                                                           │
+     │ - Mr R. Fryer                                                                                                               │
+     │ - Mrs (R.) Fryer                                                                                                            │
+     │ - Mr Edwards                                                                                                                │
+     │ - Biles                                                                                                                     │
+     │ - Mr J. Nimmo                                                                                                               │
+     │ - Mr D. Thompson                                                                                                            │
+     │ - Mr D. Brown                                                                                                               │
+     │ - Mr P. G. Whittall                                                                                                         │
+     │ - Allen                                                                                                                     │
+     │ - Mr Delaney                                                                                                                │
+     │ - Mr A. G. Rowell                                                                                                           │
+     │ - Mr D Thomson                                                                                                              │
+     │                                                                                                                             │
+     │ 1.7 Add Place tags for towns                                                                                                │
+     │                                                                                                                             │
+     │ Under Places > Towns:                                                                                                       │
+     │ - Katoomba (already exists ✓)                                                                                               │
+     │ - Leura (check if exists)                                                                                                   │
+     │ - Medlow (check if exists)                                                                                                  │
+     │ - Mount Victoria (check if exists)                                                                                          │
+     │ - Hartley Vale (check if exists)                                                                                            │
+     │ - Clarence (new)                                                                                                            │
+     │ - Lithgow (check if exists)                                                                                                 │
+     │ - South Katoomba (new - under Katoomba or as sibling?)                                                                      │
+     │ - Sydney (new - major city)                                                                                                 │
+     │ - Megalong (check if exists)                                                                                                │
+     │ - Blackheath (check if exists)                                                                                              │
+     │                                                                                                                             │
+     │ 1.8 Add natural feature tags                                                                                                │
+     │                                                                                                                             │
+     │ Under Places > Natural features > Gullies:                                                                                  │
+     │ - Nellie's Glen (check if exists)                                                                                           │
+     │                                                                                                                             │
+     │ 1.9 Add Animals category                                                                                                    │
+     │                                                                                                                             │
+     │ Under Agents > Animals:                                                                                                     │
+     │ - Cattle (new - for "Ayrahire cows" reference)                                                                              │
+     │                                                                                                                             │
+     │ Phase 2: Generate Synonym/Consolidation Entries                                                                             │
+     │                                                                                                                             │
+     │ Create synonym entries for "Accommodation" tag:                                                                             │
+     │ Accommodation,Hotels,consolidate,Deprecated: Use specific building type (Hotels/Boarding houses/Cottages)                   │
+     │                                                                                                                             │
+     │ Phase 3: Parse Report and Generate Tag Assignments                                                                          │
+     │                                                                                                                             │
+     │ 3.1 Parse accommodation_rationalization_report.md                                                                           │
+     │                                                                                                                             │
+     │ Extract all 64 items with their:                                                                                            │
+     │ - Item title                                                                                                                │
+     │ - Proposed hierarchy paths (pipe-separated)                                                                                 │
+     │ - Parse individual tags from paths                                                                                          │
+     │                                                                                                                             │
+     │ 3.2 Generate CSV rows for each tag assignment                                                                               │
+     │                                                                                                                             │
+     │ For each item, create rows like:                                                                                            │
+     │ [Item Title],Hotels,apply_to_zotero_item,"Item: [Title], Date: [Date]"                                                      │
+     │ [Item Title],Carrington Hotel,apply_to_zotero_item,"Item: [Title], Date: [Date]"                                            │
+     │ [Item Title],Katoomba,apply_to_zotero_item,"Item: [Title], Date: [Date]"                                                    │
+     │                                                                                                                             │
+     │ 3.3 Handle special cases                                                                                                    │
+     │                                                                                                                             │
+     │ - Items with "TBD" - flag for manual review                                                                                 │
+     │ - Typos in report (e.g., "Datoomba" → Katoomba, "Hatley Vale" vs "Hartley Vale")                                            │
+     │ - Incomplete paths (e.g., "ilt Environment" → "Built Environment")                                                          │
+     │                                                                                                                             │
+     │ Phase 4: Update poly_hierarchy_additions.csv                                                                                │
+     │                                                                                                                             │
+     │ Append new hierarchy definitions and tag assignments to CSV:                                                                │
+     │ - New hierarchy nodes (~40-50 new nodes)                                                                                    │
+     │ - 64 items × average 3-5 tags each = ~200-300 tag assignments                                                               │
+     │                                                                                                                             │
+     │ Phase 5: Regenerate Visualizations                                                                                          │
+     │                                                                                                                             │
+     │ Run scripts to regenerate:                                                                                                  │
+     │ - python3 scripts/22_generate_poly_hierarchy.py                                                                             │
+     │ - python3 scripts/23_visualise_poly_hierarchy.py                                                                            │
+     │                                                                                                                             │
+     │ Verify in visualization files:                                                                                              │
+     │ - Built Environment tree shows new hotels, cottages, stables                                                                │
+     │ - Agents tree shows hoteliers under Hospitality workers                                                                     │
+     │ - Places tree shows new towns                                                                                               │
+     │                                                                                                                             │
+     │ Phase 6: Documentation                                                                                                      │
+     │                                                                                                                             │
+     │ Update TODO comments in script 22:                                                                                          │
+     │ - Remove "Accommodation" from deferred list                                                                                 │
+     │ - Add note about manual Zotero import needed                                                                                │
+     │                                                                                                                             │
+     │ Questions for User:                                                                                                         │
+     │                                                                                                                             │
+     │ 1. South Katoomba placement: Should this be Places > Towns > Katoomba > South Katoomba (sub-locality) or Places > Towns >   │
+     │ South Katoomba (sibling)?                                                                                                   │
+     │ 2. Typo corrections: I noticed:                                                                                             │
+     │   - "Datoomba" (line 34) → Should be "Katoomba"?                                                                            │
+     │   - "Hatley Vale" vs "Hartley Vale" - which is correct?                                                                     │
+     │   - "ilt Environment" (line 619) → Should be "Built Environment"?                                                           │
+     │   - "Wentwork Falls Hotel" → Should be "Wentworth Falls Hotel"?                                                             │
+     │ 3. Hotellier vs individual names: Should individual hoteliers be:                                                           │
+     │   - Direct children of "Hotellier" category? OR                                                                             │
+     │   - Examples/instances that don't appear in hierarchy but are valid tags?                                                   │
+     │ 4. CSV application: The current CSV is a specification. Do you want me to:                                                  │
+     │   - Just update the CSV with new specifications?                                                                            │
+     │   - Create a separate import script for applying to Zotero?                                                                 │
+     │   - Document the manual import process?                                                                                     │
+     │                                                                                                                             │
+     │ Estimated Impact:                                                                                                           │
+     │                                                                                                                             │
+     │ - New hierarchy nodes: ~50                                                                                                  │
+     │ - CSV rows added: ~300                                                                                                      │
+     │ - Tags affected: 64 Zotero items                                                                                            │
+     │ - Primary facets: No change (7)                                                                                             │
+     │ - "Accommodation" tag: Deprecated, replaced with specific types                                                             │
+     ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+> I made an omission: 'stables' should be 'Built Environment > Buildings > Accommodation buildings > Stables' - please also 
+check for typos and consistency in the tags I have created. 
+  ⎿  ⧉ Selected 1 lines from reports/accommodation_rationalization_report.md in Visual Studio Code
+
+● I'll systematically check the accommodation report for typos and consistency issues. Let me analyze all the hierarchy paths
+  you've created.
+
+● Bash(grep -E "^\- \*\*Hierarchy Path:\*\*" /home/shawn/Code/blue-mountains/reports/accommodation_rationalization_report.md | sort
+      | uniq -c | sort -rn)
+  ⎿        3 - **Hierarchy Path:** TBD                                                                              
+           3 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels
+           2 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong Hotel
+     … +113 lines (ctrl+o to expand)
+
+● Bash(grep -n "Datoomba\|ilt Environment\|Wentwork\|hartley Vale\|Grant Hotel\|Mr D Thomson\|Mr D. Thompson"
+      /home/shawn/Code/blue-mountains/reports/accommodation_rat…)
+  ⎿ 19:- **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington Hotel | Places > Tow
+    ns > Katoomba
+    34:- **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns > Datoomba
+    … +121 lines (ctrl+o to expand)
+
+
+● Perfect! I've found the issues. Here's a systematic review of typos and consistency problems in your accommodation report:
+
+  ---
+  🔴 CRITICAL TYPOS (Need Correction)
+
+  1. Place Names
+
+  - Line 34: Datoomba → Should be **Katoomba**
+  - Line 379: hartley Vale (lowercase 'h') → Should be **Hartley Vale**
+
+  2. Building Names
+
+  - Line 244: Wentwork Falls Hotel → Should be **Wentworth Falls Hotel**
+  - Line 619: ilt Environment > Buildings → Should be **Built Environment > Buildings**
+
+  3. Stables Placement (Per Your Request)
+
+  - Line 79: Built Environment > Buildings > Stables → Should be Built Environment > Buildings > **Accommodation buildings** > 
+  Stables
+
+  4. Possible Hotel Name Typo
+
+  - Line 529: Grant Hotel → Is this **Grand Hotel**? (Context mentions "Grand and Imperial Hotels")
+
+  ---
+  ⚠️ CONSISTENCY ISSUES (Need Decision)
+
+  1. South Katoomba - Three Different Paths:
+
+  - Line 484: Places > Towns > Katoomba > South Katoomba ← Sub-locality under Katoomba
+  - Line 664: Places > South Katoomba ← Missing "Towns" parent entirely
+  - Line 889: Places > Towns > South Katoomba ← Sibling of Katoomba
+
+  Question: Which structure do you want?
+  - Option A: Sub-locality: Places > Towns > Katoomba > South Katoomba
+  - Option B: Separate town: Places > Towns > South Katoomba
+
+  2. Person Name Variations - Same Person or Different?
+
+  - Line 289: Mr D Thomson (no period after D, "Thomson")
+  - Line 799: Mr D. Thompson (period after D, "Thompson")
+
+  Question: Are these the same person (typo) or two different people?
+
+  3. Hotel Name Inconsistencies:
+
+  - Carrington: Sometimes "Carrington Hotel", sometimes just "Carrington" (line 874)
+  - Mount Victoria: "Mt Victoria Hotel" (line 844) vs "Mount Victoria" elsewhere
+
+  Recommendation: Standardize to full names: "Carrington Hotel", "Mount Victoria Hotel"
+
+  4. Incomplete Hotellier Tags (Missing Names):
+
+  These paths end with "...> Hotellier" but no person name:
+  - Line 49: General hoteliers/boarding house keepers mention
+  - Line 319: Mount Victoria hoteliers (generic)
+  - Line 379: Comet Hotel - ends with "...> Hotellier" (no name given)
+  - Line 844: Ends with "...> Hotellier" (after Mr P. G. Whittall already listed)
+  - Line 889: South Katoomba hotellier (no name)
+
+  Question: Should these be:
+  - Removed (tag only the building, not the person)?
+  - Tagged as general "Hotellier" category (not a specific person)?
+  - Flagged for manual review to find names?
+
+  ---
+  ✅ MINOR NOTES (Probably Intentional)
+
+  Person Name Formats - Appear Consistent:
+
+  - Men: "Mr [FirstInitial]. [Surname]" or "Mr [Surname]"
+  - Women: "Mrs [Surname]" or "Mrs ([Husband's name]) [Surname]"
+  - Examples look good: "Mrs (Joe) Nimmo", "Mrs (R.) Fryer"
+
+  Hotel Names with Location Suffixes:
+
+  - "Grand Hotel (Sydney)" ← Good, distinguishes from local hotels
+  - "Oxford Hotel (Sydney)" ← Good
+
+  ---
+  📋 SUMMARY OF CORRECTIONS NEEDED:
+
+  Must Fix:
+  1. Line 34: Datoomba → Katoomba
+  2. Line 79: Add "Accommodation buildings" before Stables
+  3. Line 244: Wentwork → Wentworth
+  4. Line 379: hartley → Hartley
+  5. Line 529: Grant → Grand (if confirmed)
+  6. Line 619: ilt Environment → Built Environment
+
+  Need Your Decision:
+  1. South Katoomba structure (sub-locality vs separate town)
+  2. Thomson/Thompson (same person or different)
+  3. What to do with incomplete "Hotellier" tags (5 instances)
+
+  Shall I prepare corrected versions of these lines for you to review?
+
+> 'Grant Hotel' should be 'Grand Hotel'
+
+In all cases standardise 'South Katoomba' to 'Places > Towns > Katoomba > South Katoomba'
+
+Mr D Thompson and Mr D. Thompson are the same person, for now standardise with dot
+
+Standardise to full name 'Carrington' to 'Carrington Hotel' and 'Mount Victoria Hotel'
+Standardise 'Mt Victoria' to 'Mount Victoria' (including hotel) and put 'Mr Victoria' in the thesaurus
+
+I have in some cases ended with 'Hotellier' when an unnamed hotellier or the generic job of hotellier is mentioned. To be 
+consistent, what should we do? Did we use plural / singular for this, e.g., 'Hotelliers' > 'Hotellier'? If so we probably need 
+to standardise 'Hotels' > 'Hotel' where there is a generic hotel too (and boarding houses, cottages).
+
+Include all information about people - initials, husband's name (in parentheses), etc. - we will try to properly and 
+consistently identify everyone later. 
+
+● Excellent question about the generic vs. specific terminology! Let me analyze the current hierarchy pattern to provide a
+  consistent answer.
+
+  Current Hierarchy Pattern (from existing structure):
+
+  Buildings:
+  - Hotels (plural category) > Carrington Hotel, Family Hotel, etc. (specific instances)
+  - Boarding houses (plural category) > specific instances
+
+  People/Occupations:
+  - Clergy (plural category) > Cardinal Moran, Reverend Brown, etc. (specific individuals)
+  - Medical professionals (plural category) > Dr Spark, Dr Prangley, etc. (specific individuals)
+  - Hospitality workers (plural category) > Publican (generic job)
+
+  ---
+  Recommended Standardization:
+
+  For People (Hotelliers):
+
+  Agents > People > Occupations > Hospitality workers > Hotelliers (plural parent)
+      ├── Mrs Long (specific person)
+      ├── Mr Wilson (specific person)
+      ├── F. C. Goyder (specific person)
+      └── [etc.]
+
+  When to use:
+  - Tag with specific person name when named individual mentioned
+  - Tag with parent category "Hotelliers" when:
+    - Text mentions "hoteliers" or "hotel keepers" generically (plural)
+    - Text mentions "a hotellier" without giving a name
+    - Text discusses the occupation generally
+
+  For Buildings (Hotels):
+
+  Built Environment > Buildings > Accommodation buildings > Hotels (plural parent)
+      ├── Carrington Hotel (specific building)
+      ├── Family Hotel (specific building)
+      └── [etc.]
+
+  When to use:
+  - Tag with specific hotel name when named
+  - Tag with parent category "Hotels" when:
+    - Text mentions "hotels" generally (plural)
+    - Text mentions "a hotel" or "the hotel" without naming it
+    - Text discusses hotels as a building type
+
+  Same pattern for:
+  - Boarding houses (plural) > Orama Boarding House (specific)
+  - Cottages (plural) > [specific cottage names if any]
+  - Stables (plural) > [specific stables if named]
+
+  ---
+  Answer to Your Question:
+
+  YES, use plural parent categories with specific instances under them:
+  - ✅ Hotelliers > Mr Wilson, Mrs Long, etc.
+  - ✅ Hotels > Carrington Hotel, Family Hotel (keep as is - don't change to "Hotel")
+  - ✅ Boarding houses > Orama Boarding House (keep as is)
+  - ✅ Cottages > [specific cottages]
+
+  For your incomplete "Hotellier" tags:
+  Change them to "Hotelliers" (plural parent category) to indicate generic/unnamed hoteliers.
+
+  ---
+  Summary of All Standardizations Needed:
+
+  1. ✅ Grant Hotel → Grand Hotel
+  2. ✅ South Katoomba → Places > Towns > Katoomba > South Katoomba (everywhere)
+  3. ✅ Mr D Thompson → Mr D. Thompson (with dot)
+  4. ✅ Carrington → Carrington Hotel
+  5. ✅ Mt Victoria → Mount Victoria (add "Mt Victoria" as synonym in thesaurus)
+  6. ✅ Mount Victoria Hotel (full name)
+  7. ✅ Incomplete "Hotellier" tags → Hotelliers (plural parent category)
+  8. ✅ Keep "Hotels", "Boarding houses", "Cottages", "Stables" as PLURAL parent categories
+
+  Should I now prepare a comprehensive plan to implement all these corrections and additions to the hierarchy?
+
+> Just to confirm, where you see just 'Hotellier(s)' you are going to change it to 'Hotelliers > Hotellier', where you see just 
+'Hotel(s)' you are going to change it to 'Hotels > Hotel'? Everything else looks good 
+
+● I need to clarify the pattern you want, because I want to make sure I implement this correctly:
+
+  Question on Generic Tag Structure:
+
+  Current Existing Pattern (from visualizations):
+  Agents > People > Occupations > Hospitality workers
+      └── Publican (singular, directly under parent)
+
+  Your Proposed Pattern:
+  Agents > People > Occupations > Hospitality workers > Hotelliers
+      ├── Mrs Long (specific person)
+      ├── Mr Wilson (specific person)
+      └── Hotellier (generic/unnamed)
+
+  So when I see in the report:
+  - Line 379: ...> Hotellier (ends here, unnamed person)
+    - Change to: ...> Hotelliers > Hotellier ✓
+
+  And for buildings:
+  - Line 109: ...> Hotels (ends here, generic hotel mention)
+    - Change to: ...> Hotels > Hotel ✓
+
+  ---
+  My Clarification Question:
+
+  Are you saying:
+  1. Create "Hotellier" as a generic singular child tag under "Hotelliers" (plural parent)?
+  2. Create "Hotel" as a generic singular child tag under "Hotels" (plural parent)?
+
+  This would give us:
+  Hotels (plural category)
+  ├── Carrington Hotel (specific named hotel)
+  ├── Family Hotel (specific named hotel)
+  └── Hotel (generic unnamed hotel)
+
+  Hotelliers (plural category)
+  ├── Mrs Long (specific named person)
+  ├── Mr Wilson (specific named person)
+  └── Hotellier (generic unnamed person)
+
+  Is this correct? If yes, I'll implement exactly this structure!
+
+> To confirm, that structure is consistent with what we have been doing? If not, please let me know our usual pattern 
+
+● Good catch! Let me check the actual existing pattern:
+
+  Current Pattern (from existing visualizations):
+
+  For People:
+  Agents > People > Occupations
+      ├── Clergy (plural parent)
+      │   ├── Cardinal Moran (specific person)
+      │   ├── Reverend Brown (specific person)
+      │   └── Reverend Sutherland (specific person)
+      │
+      ├── Hospitality workers (plural parent)
+      │   └── Publican (specific job title/person)
+      │
+      └── Medical professionals (plural parent)
+          ├── Dr Spark (specific person)
+          ├── Dr Prangley (specific person)
+          └── Dr Watkins (specific person)
+
+  For Buildings:
+  Built Environment > Buildings > Accommodation buildings
+      └── Hotels (plural parent)
+          ├── Carrington Hotel (specific building)
+          ├── Family Hotel (specific building)
+          └── Megalong Hotel (specific building)
+
+  The Actual Pattern is:
+
+  NO intermediate generic singular level!
+
+  - ❌ NOT: Hotels > Hotel (generic)
+  - ✅ INSTEAD: Tag directly with Hotels when generic/unnamed
+  - ❌ NOT: Hotelliers > Hotellier (generic)
+  - ✅ INSTEAD: Tag directly with Hotelliers when generic/unnamed
+
+  Correct Implementation:
+
+  When you see in the report:
+  - ...> Hotellier → Change to ...> Hotelliers (just the plural parent, no child)
+  - ...> Hotels → Keep as is (already correct - plural parent)
+
+  The hierarchy structure stays:
+  Hotelliers (plural category) = Used for both generic AND as parent for specific people
+  ├── Mrs Long
+  ├── Mr Wilson
+  └── [etc.]
+
+  Hotels (plural category) = Used for both generic AND as parent for specific hotels
+  ├── Carrington Hotel
+  └── [etc.]
+
+  So the tag can point to either:
+  1. The plural parent category itself (for generic mentions)
+  2. A specific named instance under that category
+
+  Is this the pattern you want me to follow?
+
+> If you look under 'religious organisations', I see we use the pattern Churches > Church, so that intermediate tags are only 
+used as categories. Which approach do you recommend? We are going to need to standardise. 
+
+● Excellent observation! Let me check the Religious organizations pattern:
+
+● Search(pattern: "Churches|Church", path: "visualizations/hierarchy_trees/primary_agents.txt", output_mode: "content")
+  ⎿  Found 24 lines (ctrl+o to expand)
+
+● Perfect! Now I can see the inconsistency. Let me analyze both patterns:
+
+  Current State (INCONSISTENT):
+
+  Pattern A: Two-Level (Churches model)
+
+  Religious organizations > Churches (plural parent - category only)
+      ├── Church (singular intermediate - taggable generic)
+      ├── Congregational Church (specific type)
+      ├── St Hilda's Church (specific named instance)
+      └── Wesleyan Church (specific type)
+
+  Pattern B: Flat (Hotels/Clergy model)
+
+  Accommodation buildings > Hotels (plural parent - both category AND taggable)
+      ├── Carrington Hotel (specific named instance)
+      └── Family Hotel (specific named instance)
+
+  Occupations > Clergy (plural parent - both category AND taggable)
+      ├── Cardinal Moran (specific person)
+      └── Reverend Brown (specific person)
+
+  ---
+  My Recommendation: Standardize on Pattern A (Churches model)
+
+  Why Pattern A (Two-Level) is Better:
+
+  1. Semantic Clarity:
+    - "Churches" = the category/concept
+    - "Church" = a generic/unspecified church
+    - "St Hilda's Church" = a specific named church
+  2. Tagging Clarity: When you see in text "a hotel" or "the church", you tag with the singular generic ("Hotel", "Church"), not
+   the plural category
+  3. Getty AAT Alignment: Getty AAT uses this pattern - intermediate levels between categories and instances
+  4. Consistency with Formal Thesauri: SKOS and other vocabulary standards use broader/narrower relationships this way
+  5. Future-Proofing: Makes poly-hierarchical relationships cleaner (a specific hotel can be under "Hotels > Hotel" in primary
+  facet AND under "Tourism" thematically)
+
+  Structure After Standardization:
+
+  Hotels (plural - category only, not directly taggable)
+  ├── Hotel (singular - generic/unnamed hotel)
+  ├── Carrington Hotel (specific instance)
+  └── Family Hotel (specific instance)
+
+  Hotelliers (plural - category only)
+  ├── Hotellier (singular - generic/unnamed hotellier)
+  ├── Mrs Long (specific person)
+  └── Mr Wilson (specific person)
+
+  Boarding houses (plural - category only)
+  ├── Boarding house (singular - generic)
+  └── Orama Boarding House (specific instance)
+
+  Cottages (plural - category only)
+  ├── Cottage (singular - generic)
+  └── [specific cottages if named]
+
+  Clergy (plural - category only) ← needs retrofit
+  ├── Clergyman (singular - generic)
+  ├── Cardinal Moran (specific)
+  └── Reverend Brown (specific)
+
+  Medical professionals (plural - category only) ← needs retrofit
+  ├── Medical professional (singular - generic)
+  ├── Dr Spark (specific)
+  └── Dr Prangley (specific)
+
+  ---
+  Impact of Standardization:
+
+  Need to retrofit:
+  - Clergy
+  - Medical professionals
+  - Law enforcement
+  - Hospitality workers (add "Publican" is already singular, so structure is: Hospitality workers > Publican, Hotellier, etc.)
+
+  Do you want me to:
+  1. Standardize EVERYTHING on Pattern A (Churches model)?
+  2. Include the retrofit of existing categories in the implementation plan?
+
+> Standardise everyting to pattern A - but would you recommend doing that now, as part of this operation, or deferring it to 
+another pass? 
+
+● Excellent project management question! Here's my recommendation:
+
+  My Recommendation: DEFER to Separate Pass
+
+  Why Defer:
+
+  1. Scope Management:
+    - Current task: Rationalize 64 accommodation items (already complex: ~40-50 new nodes, ~200-300 tag assignments)
+    - Standardization: Retrofit 5-6 existing categories (Clergy, Medical professionals, Law enforcement, etc.) affecting
+  potentially hundreds of existing items
+    - These are separate concerns - don't mix them
+  2. Risk Minimization:
+    - You've already carefully reviewed the accommodation report
+    - Adding standardization introduces changes to unrelated tags
+    - Better to validate accommodation changes first, then tackle standardization
+  3. Workflow Context:
+    - You're mid-way through deferred items (Accommodation → Alcohol → Post)
+    - Completing this workflow has momentum
+    - Standardization is a separate infrastructure improvement
+  4. Testing & Validation:
+    - Can test accommodation changes in isolation
+    - Can test standardization separately with focused verification
+
+  What to Do NOW:
+
+  ✅ Apply Pattern A to all NEW accommodation tags:
+  Hotels (plural parent - category)
+  ├── Hotel (singular - generic)
+  ├── Carrington Hotel (specific)
+  └── Family Hotel (specific)
+
+  Hotelliers (plural parent - category)
+  ├── Hotellier (singular - generic)
+  ├── Mrs Long (specific)
+  └── Mr Wilson (specific)
+
+  ✅ Document the inconsistency with TODO comment in script 22:
+  # TODO: HIERARCHY STANDARDIZATION NEEDED
+  # Current inconsistency: Churches uses two-level pattern (Churches > Church > specific),
+  # but Clergy, Medical professionals use flat pattern (Clergy > specific).
+  # Recommendation: Standardize ALL categories to two-level Churches pattern.
+  # Categories needing retrofit:
+  # - Clergy -> add "Clergyman" intermediate
+  # - Medical professionals -> add "Medical professional" intermediate  
+  # - Law enforcement -> add "Police officer" intermediate
+  # - Other occupation categories
+  # See: planning/hierarchy_standardization_plan.md
+
+  What to Do LATER (Separate Task):
+
+  🔄 Phase 2: Hierarchy Standardization Pass
+  - Audit all plural parent categories
+  - Add singular intermediates where missing
+  - Test and validate
+  - Update documentation
+
+  ---
+  My Answer: DEFER
+
+  Implement accommodation with Pattern A for new tags, document the standardization need, and tackle it as a focused separate
+  pass after completing the deferred items workflow.
+
+  Does this approach sound reasonable?
+
+> Yes, please approach it that way 
+
+● Excellent! Now I'll create a comprehensive implementation plan. Let me prepare this:
+                                                                                                                               
+●User approved Claude's plan:
+  ⎿  Implementation Plan: Accommodation Tag Rationalization with Pattern A Standardization
+
+     Overview
+
+     Implement 64 accommodation tag reassignments using Pattern A (Churches model) for new hierarchies, while documenting need 
+     for future standardization of existing categories.
+
+     ---
+     Phase 1: Correct Typos in Report (Manual - User Already Corrected)
+
+     Status: ✅ Assuming user has corrected these in the file
+
+     Corrections applied:
+     - Line 34: Datoomba → Katoomba
+     - Line 79: Stables path → Add "Accommodation buildings"
+     - Line 244: Wentwork Falls Hotel → Wentworth Falls Hotel
+     - Line 289: Mr D Thomson → Mr D. Thompson (standardize with dot)
+     - Line 379: hartley Vale → Hartley Vale
+     - Line 529: Grant Hotel → Grand Hotel
+     - Line 619: ilt Environment → Built Environment
+     - All South Katoomba → "Places > Towns > Katoomba > South Katoomba"
+     - All "Carrington" → "Carrington Hotel"
+     - All "Mt Victoria" → "Mount Victoria"
+     - All incomplete "Hotellier" → "Hotelliers > Hotellier"
+
+     ---
+     Phase 2: Update Hierarchy Structure (scripts/22_generate_poly_hierarchy.py)
+
+     2.1 Add Building Categories (Pattern A - Two-Level)
+
+     # Under Built Environment > Buildings > Accommodation buildings:
+
+     # Hotels - Two-level structure
+     ['Hotels', 'Hotels', 'hierarchy', 'parent=Accommodation buildings'],
+     ['Hotel', 'Hotel', 'hierarchy', 'parent=Hotels'],  # Generic/unnamed hotel
+
+     # Specific named hotels (new additions):
+     ['Comet Hotel', 'Comet Hotel', 'hierarchy', 'parent=Hotels'],
+     ['Falls Hotel', 'Falls Hotel', 'hierarchy', 'parent=Hotels'],
+     ['Grand Hotel (Sydney)', 'Grand Hotel (Sydney)', 'hierarchy', 'parent=Hotels'],
+     ['Great Western Hotel', 'Great Western Hotel', 'hierarchy', 'parent=Hotels'],
+     ['Hotel Wentworth', 'Hotel Wentworth', 'hierarchy', 'parent=Hotels'],
+     ['Hydora House Hotel', 'Hydora House Hotel', 'hierarchy', 'parent=Hotels'],
+     ['Katoomba Hotel', 'Katoomba Hotel', 'hierarchy', 'parent=Hotels'],  # Already exists
+     ['Leura Hotel', 'Leura Hotel', 'hierarchy', 'parent=Hotels'],
+     ['Mount Victoria Hotel', 'Mount Victoria Hotel', 'hierarchy', 'parent=Hotels'],
+     ['Oxford Hotel (Sydney)', 'Oxford Hotel (Sydney)', 'hierarchy', 'parent=Hotels'],
+     ['Fryer\'s Family Hotel', 'Fryer\'s Family Hotel', 'hierarchy', 'parent=Hotels'],
+
+     # Boarding houses - Two-level structure
+     ['Boarding houses', 'Boarding houses', 'hierarchy', 'parent=Accommodation buildings'],
+     ['Boarding house', 'Boarding house', 'hierarchy', 'parent=Boarding houses'],  # Generic
+     ['Orama Boarding House', 'Orama Boarding House', 'hierarchy', 'parent=Boarding houses'],
+
+     # Cottages - Two-level structure (NEW)
+     ['Cottages', 'Cottages', 'hierarchy', 'parent=Accommodation buildings'],
+     ['Cottage', 'Cottage', 'hierarchy', 'parent=Cottages'],  # Generic
+
+     # Stables - Two-level structure (NEW)
+     ['Stables', 'Stables', 'hierarchy', 'parent=Accommodation buildings'],
+     ['Stable', 'Stable', 'hierarchy', 'parent=Stables'],  # Generic
+
+     2.2 Add People/Occupation Categories (Pattern A)
+
+     # Under Agents > People > Occupations > Hospitality workers:
+
+     ['Hospitality workers', 'Hospitality workers', 'hierarchy', 'parent=Occupations'],
+
+     # Hotelliers - Two-level structure (NEW)
+     ['Hotelliers', 'Hotelliers', 'hierarchy', 'parent=Hospitality workers'],
+     ['Hotellier', 'Hotellier', 'hierarchy', 'parent=Hotelliers'],  # Generic/unnamed
+
+     # Specific named hotelliers (30+ individuals):
+     ['Mrs Long', 'Mrs Long', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr Wilson', 'Mr Wilson', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr Manuel', 'Mr Manuel', 'hierarchy', 'parent=Hotelliers'],
+     ['F. C. Goyder', 'F. C. Goyder', 'hierarchy', 'parent=Hotelliers'],
+     ['Rubina Fryer', 'Rubina Fryer', 'hierarchy', 'parent=Hotelliers'],
+     ['Isabellea J. Long', 'Isabellea J. Long', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr N. Delaney', 'Mr N. Delaney', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr Ellis', 'Mr Ellis', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr Joe Nimmo', 'Mr Joe Nimmo', 'hierarchy', 'parent=Hotelliers'],
+     ['Mrs (Joe) Nimmo', 'Mrs (Joe) Nimmo', 'hierarchy', 'parent=Hotelliers'],
+     ['Manuell', 'Manuell', 'hierarchy', 'parent=Hotelliers'],
+     ['Mrs Brown', 'Mrs Brown', 'hierarchy', 'parent=Hotelliers'],
+     ['W. Green', 'W. Green', 'hierarchy', 'parent=Hotelliers'],
+     ['Richard Allen', 'Richard Allen', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr Alf. Goodare', 'Mr Alf. Goodare', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr R. Fryer', 'Mr R. Fryer', 'hierarchy', 'parent=Hotelliers'],
+     ['Mrs (R.) Fryer', 'Mrs (R.) Fryer', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr Edwards', 'Mr Edwards', 'hierarchy', 'parent=Hotelliers'],
+     ['Biles', 'Biles', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr J. Nimmo', 'Mr J. Nimmo', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr D. Thompson', 'Mr D. Thompson', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr D. Brown', 'Mr D. Brown', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr P. G. Whittall', 'Mr P. G. Whittall', 'hierarchy', 'parent=Hotelliers'],
+     ['Allen', 'Allen', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr Delaney', 'Mr Delaney', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr A. G. Rowell', 'Mr A. G. Rowell', 'hierarchy', 'parent=Hotelliers'],
+     ['Mr D Thomson', 'Mr D Thomson', 'hierarchy', 'parent=Hotelliers'],
+     ['Brown', 'Brown', 'hierarchy', 'parent=Hotelliers'],
+
+     # Other goods and services (NEW category)
+     ['Other goods and services', 'Other goods and services', 'hierarchy', 'parent=Occupations'],
+     ['Coach and buggy business', 'Coach and buggy business', 'hierarchy', 'parent=Other goods and services'],
+     ['Mr Thomas Cale', 'Mr Thomas Cale', 'hierarchy', 'parent=Coach and buggy business'],
+
+     2.3 Add Place Tags
+
+     # Under Places > Towns (check which already exist):
+     ['Katoomba', 'Katoomba', 'hierarchy', 'parent=Towns'],  # Already exists
+     ['South Katoomba', 'South Katoomba', 'hierarchy', 'parent=Katoomba'],  # NEW - sub-locality
+     ['Leura', 'Leura', 'hierarchy', 'parent=Towns'],  # Check if exists
+     ['Medlow', 'Medlow', 'hierarchy', 'parent=Towns'],  # Check if exists
+     ['Mount Victoria', 'Mount Victoria', 'hierarchy', 'parent=Towns'],  # Check if exists
+     ['Hartley Vale', 'Hartley Vale', 'hierarchy', 'parent=Towns'],  # Check if exists
+     ['Clarence', 'Clarence', 'hierarchy', 'parent=Towns'],  # NEW
+     ['Lithgow', 'Lithgow', 'hierarchy', 'parent=Towns'],  # Check if exists
+     ['Sydney', 'Sydney', 'hierarchy', 'parent=Towns'],  # NEW - major city
+     ['Megalong', 'Megalong', 'hierarchy', 'parent=Towns'],  # Check if exists
+     ['Blackheath', 'Blackheath', 'hierarchy', 'parent=Towns'],  # Check if exists
+
+     # Under Places > Natural features > Gullies:
+     ['Nellie\'s Glen', 'Nellie\'s Glen', 'hierarchy', 'parent=Gullies'],  # Check if exists
+
+     2.4 Add Animals Category
+
+     # Under Agents > Animals:
+     ['Cattle', 'Cattle', 'hierarchy', 'parent=Animals'],  # NEW
+
+     2.5 Add Synonyms
+
+     # Deprecate Accommodation tag:
+     ['Accommodation', 'Hotels', 'consolidate', 'Deprecated: Use specific building type (Hotels/Boarding houses/Cottages). See 
+     reports/accommodation_rationalization_report.md'],
+
+     # Add Mt Victoria synonym:
+     ['Mt Victoria', 'Mount Victoria', 'synonym', 'Abbreviation of Mount Victoria'],
+     ['Mt Victoria Hotel', 'Mount Victoria Hotel', 'synonym', 'Abbreviation'],
+
+     2.6 Add TODO Comment for Future Standardization
+
+     # ========================================================================
+     # TODO: HIERARCHY STANDARDIZATION NEEDED (Deferred to separate pass)
+     # ========================================================================
+     # Current inconsistency: Churches uses two-level pattern (Churches > Church > specific),
+     # but several existing categories use flat pattern (category > specific only).
+     #
+     # PATTERN A (Churches model - CORRECT, use for all new additions):
+     #   Plural Parent (category only) > Singular Generic (taggable) > Specific Instances
+     #   Example: Hotels > Hotel > Carrington Hotel
+     #
+     # Categories already using Pattern A:
+     #   ✓ Churches > Church > St Hilda's Church
+     #   ✓ Hotels > Hotel > Carrington Hotel (NEW - this implementation)
+     #   ✓ Hotelliers > Hotellier > Mrs Long (NEW - this implementation)
+     #
+     # Categories needing retrofit to Pattern A (separate pass):
+     #   ⚠ Clergy > [needs: Clergyman] > Cardinal Moran
+     #   ⚠ Medical professionals > [needs: Medical professional] > Dr Spark
+     #   ⚠ Law enforcement > [needs: Police officer] > Constable Hamilton
+     #   ⚠ Hospitality workers > Publican (already singular, but structure inconsistent)
+     #
+     # Action required: Create planning/hierarchy_standardization_plan.md
+     # Estimate: ~5-6 categories, ~200+ existing tags may need review
+     # ========================================================================
+
+     ---
+     Phase 3: Parse Report and Generate Tag Assignments
+
+     3.1 Create Python Script to Parse Report
+
+     # scripts/29_parse_accommodation_report.py
+
+     """
+     Parse accommodation_rationalization_report.md and generate tag assignments
+     for appending to poly_hierarchy_additions.csv
+     """
+
+     import re
+     from pathlib import Path
+
+     def parse_hierarchy_path(path_str):
+         """Parse pipe-separated hierarchy paths into individual tags."""
+         paths = [p.strip() for p in path_str.split('|')]
+         tags = []
+         for path in paths:
+             # Extract leaf tag (last element after final >)
+             parts = [p.strip() for p in path.split('>')]
+             if parts:
+                 leaf_tag = parts[-1]
+                 tags.append((leaf_tag, path))
+         return tags
+
+     def parse_report(report_path):
+         """Parse report and extract tag assignments."""
+         with open(report_path, 'r') as f:
+             content = f.read()
+         
+         # Regex to extract each item block
+         pattern = r'## (\d+)\. (.+?)\n.*?- \*\*Date:\*\* (.+?)\n.*?- \*\*Hierarchy Path:\*\* (.+?)\n'
+         matches = re.findall(pattern, content, re.DOTALL)
+         
+         assignments = []
+         for num, title, date, hierarchy_path in matches:
+             if hierarchy_path == 'TBD':
+                 continue  # Skip items needing manual review
+             
+             tags = parse_hierarchy_path(hierarchy_path)
+             for tag, full_path in tags:
+                 assignments.append({
+                     'item_num': num,
+                     'item_title': title,
+                     'item_date': date,
+                     'tag': tag,
+                     'full_path': full_path
+                 })
+         
+         return assignments
+
+     # Run and output CSV rows
+     assignments = parse_report('reports/accommodation_rationalization_report.md')
+     print(f"Generated {len(assignments)} tag assignments for {len(set(a['item_num'] for a in assignments))} items")
+
+     3.2 Manual Review Points
+
+     Items flagged as "TBD" (3 items without full text) - need manual Zotero review:
+     - Item #24: "Blue Mountains Railway Tourist Guide"
+     - Item #30: "A Public Meeting"
+     - Item #48: "Licensing"
+
+     ---
+     Phase 4: Update CSV and Regenerate
+
+     4.1 Append to poly_hierarchy_additions.csv
+
+     # Backup current CSV
+     cp data/poly_hierarchy_additions.csv data/poly_hierarchy_additions.csv.backup-$(date +%Y-%m-%d)
+
+     # Regenerate with new hierarchy
+     python3 scripts/22_generate_poly_hierarchy.py
+
+     4.2 Verify CSV Changes
+
+     Expected additions:
+     - New hierarchy nodes: ~60-70 rows
+     - Specific hotels: ~15 new hotels
+     - Specific hotelliers: ~30 new people
+     - Places: ~10 new towns/locations
+     - Synonyms: 2-3 rows
+     - Total new rows: ~70-80 (node definitions only, not including per-item tag assignments)
+
+     4.3 Regenerate Visualizations
+
+     python3 scripts/23_visualise_poly_hierarchy.py
+
+     Verify new files show:
+     - Built Environment tree: Hotels > Hotel > [30+ specific hotels]
+     - Agents tree: Hotelliers > Hotellier > [30+ people]
+     - Places tree: New towns including Katoomba > South Katoomba
+
+     ---
+     Phase 5: Documentation Updates
+
+     5.1 Update Deferred Tags Section
+
+     Remove "Accommodation" from deferred list, update comment:
+     # 1. Accommodation (64 uses) - ✅ COMPLETED
+     #    Resolution: Deprecated "Accommodation" tag, replaced with specific types:
+     #    - Hotels > Hotel / [specific hotel names]
+     #    - Boarding houses > Boarding house / [specific names]
+     #    - Cottages > Cottage
+     #    Manual re-tagging required in Zotero for 64 items.
+     #    See: reports/accommodation_rationalization_report.md
+
+     5.2 Create Standardization Plan Document
+
+     # Create planning/hierarchy_standardization_plan.md
+
+     Outline:
+     - Current inconsistencies
+     - Pattern A definition
+     - Categories needing retrofit
+     - Impact analysis
+     - Implementation steps
+
+     ---
+     Phase 6: Validation
+
+     6.1 Check Visualization Outputs
+
+     # Count new nodes in visualizations
+     grep -c "Hotel" visualizations/hierarchy_trees/primary_built_environment.txt
+     grep -c "Hotellier" visualizations/hierarchy_trees/primary_agents.txt
+
+     6.2 Verify CSV Line Counts
+
+     # Before: 570 lines
+     # After: Expected ~640-650 lines
+     wc -l data/poly_hierarchy_additions.csv
+
+     6.3 Check for Typos in Generated CSV
+
+     # Search for known typos that shouldn't exist
+     grep -i "datoomba\|wentwork\|grant hotel\|ilt environment" data/poly_hierarchy_additions.csv
+     # Should return: nothing
+
+     ---
+     Summary of Changes
+
+     Hierarchy Additions:
+     - 1 new occupation category (Other goods and services)
+     - 1 new building category (Cottages)
+     - 1 new building category (Stables)
+     - Pattern A structure for: Hotels, Hotelliers, Boarding houses, Cottages, Stables
+     - ~15 specific hotels
+     - ~30 specific hotelliers
+     - ~10 new place tags
+     - 1 animals addition (Cattle)
+
+     Tag Deprecations:
+     - "Accommodation" → consolidated to specific types
+
+     Documentation:
+     - TODO for future standardization pass
+     - Planning doc for Pattern A retrofit
+     - Updated deferred tags list
+
+     Manual Steps Required After Implementation:
+     1. User must manually re-tag 64 items in Zotero using report as guide
+     2. 3 items need full-text review for appropriate tags
+
+     Estimated Impact:
+     - CSV rows: +70-80 hierarchy definitions
+     - Primary facets: No change (7)
+     - Zotero items requiring manual update: 64
+     - Future work flagged: Standardization of 5-6 existing categories
+  ⎿
+
+● Excellent! Let's begin implementation. First, I'll update the todo list to break down the accommodation rationalization into
+  sub-tasks:
+
+● Now let's begin implementation. First, I'll read the relevant sections of the hierarchy generation script to understand where
+  to add the new elements:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 50 lines
+
+● Let me find the Built Environment and Hospitality workers sections:
+
+● Search(pattern: "^    # FACET.*BUILT ENVIRONMENT|Accommodation buildings|Hospitality workers", path:
+        "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 10 lines (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 40 lines
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 60 lines
+
+● Let me check where individual hotels are currently defined under Organizations:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 80 lines
+
+● Now I understand the structure. Let me start implementing the changes systematically. I'll begin with adding the Hotelliers
+  hierarchy under Hospitality workers:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 37 additions                                                
+       137            ['Hospitality workers', 'Hospitality workers', 'hierarchy', 'parent=Occupations'],
+       138            ['Publican', 'Publican', 'hierarchy', 'parent=Hospitality workers'],
+       139    
+       140 +          # Hotelliers - Pattern A (Churches model): Hotelliers > Hotellier > specific people
+       141 +          ['Hotelliers', 'Hotelliers', 'hierarchy', 'parent=Hospitality workers'],
+       142 +          ['Hotellier', 'Hotellier', 'hierarchy', 'parent=Hotelliers'],  # Generic/unnamed hotellier
+       143 +          ['Mrs Long', 'Mrs Long', 'hierarchy', 'parent=Hotelliers'],
+       144 +          ['Mr Wilson', 'Mr Wilson', 'hierarchy', 'parent=Hotelliers'],
+       145 +          ['Mr Manuel', 'Mr Manuel', 'hierarchy', 'parent=Hotelliers'],
+       146 +          ['F. C. Goyder', 'F. C. Goyder', 'hierarchy', 'parent=Hotelliers'],
+       147 +          ['Rubina Fryer', 'Rubina Fryer', 'hierarchy', 'parent=Hotelliers'],
+       148 +          ['Isabellea J. Long', 'Isabellea J. Long', 'hierarchy', 'parent=Hotelliers'],
+       149 +          ['Mr N. Delaney', 'Mr N. Delaney', 'hierarchy', 'parent=Hotelliers'],
+       150 +          ['Mr Ellis', 'Mr Ellis', 'hierarchy', 'parent=Hotelliers'],
+       151 +          ['Mr Joe Nimmo', 'Mr Joe Nimmo', 'hierarchy', 'parent=Hotelliers'],
+       152 +          ['Mrs (Joe) Nimmo', 'Mrs (Joe) Nimmo', 'hierarchy', 'parent=Hotelliers'],
+       153 +          ['Manuell', 'Manuell', 'hierarchy', 'parent=Hotelliers'],
+       154 +          ['Mrs Brown', 'Mrs Brown', 'hierarchy', 'parent=Hotelliers'],
+       155 +          ['W. Green', 'W. Green', 'hierarchy', 'parent=Hotelliers'],
+       156 +          ['Richard Allen', 'Richard Allen', 'hierarchy', 'parent=Hotelliers'],
+       157 +          ['Mr Alf. Goodare', 'Mr Alf. Goodare', 'hierarchy', 'parent=Hotelliers'],
+       158 +          ['Mr R. Fryer', 'Mr R. Fryer', 'hierarchy', 'parent=Hotelliers'],
+       159 +          ['Mrs (R.) Fryer', 'Mrs (R.) Fryer', 'hierarchy', 'parent=Hotelliers'],
+       160 +          ['Mr Edwards', 'Mr Edwards', 'hierarchy', 'parent=Hotelliers'],
+       161 +          ['Biles', 'Biles', 'hierarchy', 'parent=Hotelliers'],
+       162 +          ['Mr J. Nimmo', 'Mr J. Nimmo', 'hierarchy', 'parent=Hotelliers'],
+       163 +          ['Mr D. Thompson', 'Mr D. Thompson', 'hierarchy', 'parent=Hotelliers'],
+       164 +          ['Mr D. Brown', 'Mr D. Brown', 'hierarchy', 'parent=Hotelliers'],
+       165 +          ['Mr P. G. Whittall', 'Mr P. G. Whittall', 'hierarchy', 'parent=Hotelliers'],
+       166 +          ['Allen', 'Allen', 'hierarchy', 'parent=Hotelliers'],
+       167 +          ['Mr Delaney', 'Mr Delaney', 'hierarchy', 'parent=Hotelliers'],
+       168 +          ['Mr A. G. Rowell', 'Mr A. G. Rowell', 'hierarchy', 'parent=Hotelliers'],
+       169 +          ['Mr D Thomson', 'Mr D Thomson', 'hierarchy', 'parent=Hotelliers'],
+       170 +          ['Brown', 'Brown', 'hierarchy', 'parent=Hotelliers'],
+       171 +  
+       172            # Military
+       173            ['Military personnel', 'Military personnel', 'hierarchy', 'parent=Occupations'],
+       174            ['Soldiers', 'Soldiers', 'hierarchy', 'parent=Military personnel'],
+       175 +  
+       176 +          # Other goods and services (NEW category)
+       177 +          ['Other goods and services', 'Other goods and services', 'hierarchy', 'parent=Occupations'],
+       178 +          ['Coach and buggy business', 'Coach and buggy business', 'hierarchy', 'parent=Other goods and 
+           + services'],
+       179 +          ['Mr Thomas Cale', 'Mr Thomas Cale', 'hierarchy', 'parent=Coach and buggy business'],
+       180        ])
+       181    
+       182        # --- 1.5 Organizations ---
+
+● Good progress! Now let me add Cattle to the Animals section:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition                               
+       337            ['Animals', 'Animals', 'hierarchy', 'parent=Agents (new top-level facet)'],
+       338            ['Horses', 'Horses', 'hierarchy', 'parent=Animals'],
+       339            ['Dogs', 'Dogs', 'hierarchy', 'parent=Animals'],
+       340 +          ['Cattle', 'Cattle', 'hierarchy', 'parent=Animals'],
+       341        ])
+       342    
+       343        # ========================================================================
+
+● Now let's update the Built Environment > Accommodation buildings section with Pattern A structure. Let me update it to add the
+   generic intermediates and new hotels:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 29 additions and 2 removals                                       
+       408    
+       409            # Accommodation buildings
+       410            ['Accommodation buildings', 'Accommodation buildings', 'hierarchy', 'parent=Built Environment'],
+       411 +  
+       412 +          # Hotels - Pattern A (Churches model): Hotels > Hotel > specific hotels
+       413            ['Hotels', 'Hotels', 'hierarchy', 'parent=Accommodation buildings'],
+       414 -          # NOTE: Individual hotels listed under Organizations > Hospitality businesses > Hotels
+       415 -          # Hotels category appears here for poly-hierarchy (building aspect), but individual hotels not 
+           - duplicated
+       414 +          ['Hotel', 'Hotel', 'hierarchy', 'parent=Hotels'],  # Generic/unnamed hotel
+       415 +          # NOTE: Individual hotels also appear under Organizations > Hospitality businesses (business aspect)
+       416 +          # This creates poly-hierarchy: hotels as buildings (here) AND hotels as businesses (Organizations)
+       417 +          # New hotels from accommodation rationalization:
+       418 +          ['Comet Hotel', 'Comet Hotel', 'hierarchy', 'parent=Hotels'],
+       419 +          ['Falls Hotel', 'Falls Hotel', 'hierarchy', 'parent=Hotels'],
+       420 +          ['Fryer\'s Family Hotel', 'Fryer\'s Family Hotel', 'hierarchy', 'parent=Hotels'],
+       421 +          ['Grand Hotel (Sydney)', 'Grand Hotel (Sydney)', 'hierarchy', 'parent=Hotels'],
+       422 +          ['Great Western Hotel', 'Great Western Hotel', 'hierarchy', 'parent=Hotels'],
+       423 +          ['Hotel Wentworth', 'Hotel Wentworth', 'hierarchy', 'parent=Hotels'],
+       424 +          ['Hydora House Hotel', 'Hydora House Hotel', 'hierarchy', 'parent=Hotels'],
+       425 +          ['Leura Hotel', 'Leura Hotel', 'hierarchy', 'parent=Hotels'],
+       426 +          ['Oxford Hotel (Sydney)', 'Oxford Hotel (Sydney)', 'hierarchy', 'parent=Hotels'],
+       427 +  
+       428 +          # Boarding houses - Pattern A
+       429            ['Boarding houses', 'Boarding houses', 'hierarchy', 'parent=Accommodation buildings'],
+       430 +          ['Boarding house', 'Boarding house', 'hierarchy', 'parent=Boarding houses'],  # Generic/unnamed
+       431 +          ['Orama Boarding House', 'Orama Boarding House', 'hierarchy', 'parent=Boarding houses'],
+       432 +  
+       433 +          # Cottages - Pattern A (NEW category)
+       434 +          ['Cottages', 'Cottages', 'hierarchy', 'parent=Accommodation buildings'],
+       435 +          ['Cottage', 'Cottage', 'hierarchy', 'parent=Cottages'],  # Generic/unnamed cottage
+       436 +  
+       437 +          # Stables - Pattern A (NEW category)
+       438 +          ['Stables', 'Stables', 'hierarchy', 'parent=Accommodation buildings'],
+       439 +          ['Stable', 'Stable', 'hierarchy', 'parent=Stables'],  # Generic/unnamed stable
+       440 +  
+       441 +          # Dwellings
+       442            ['Dwellings', 'Dwellings', 'hierarchy', 'parent=Accommodation buildings'],
+       443            ['Miners\' dwellings', 'Miners\' dwellings', 'hierarchy', 'parent=Dwellings'],
+       444    
+
+● Great! Now I need to add the place tags. Let me find and update the Places section:
+
+● Search(pattern: "Towns|Natural features|Gullies", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 50 lines (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 35 lines
+
+● Now let me update the Natural features and Towns sections:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 11 additions                                                         
+       374            ['Caves & geological features', 'Caves & geological features', 'hierarchy', 'parent=Natural features'],
+       375            ['Jenolan Caves', 'Jenolan Caves', 'hierarchy', 'parent=Caves & geological features'],
+       376            ['Jenolan Caves Road', 'Jenolan Caves Road', 'hierarchy', 'parent=Jenolan Caves'],
+       377 +          ['Gullies', 'Gullies', 'hierarchy', 'parent=Natural features'],
+       378 +          ['Nellie\'s Glen', 'Nellie\'s Glen', 'hierarchy', 'parent=Gullies'],
+       379    
+       380            # Mining settlements
+       381            ['Mining settlements', 'Mining settlements', 'hierarchy', 'parent=Places (existing facet)'],
+     ...
+       383            ['Towns', 'Towns', 'hierarchy', 'parent=Places (existing facet)'],
+       384            ['Katoomba', 'Katoomba', 'hierarchy', 'parent=Towns'],
+       385            ['Carrington', 'Carrington', 'hierarchy', 'parent=Katoomba'],
+       386 +          ['South Katoomba', 'South Katoomba', 'hierarchy', 'parent=Katoomba'],
+       387 +          ['Leura', 'Leura', 'hierarchy', 'parent=Towns'],
+       388 +          ['Medlow', 'Medlow', 'hierarchy', 'parent=Towns'],
+       389 +          ['Mount Victoria', 'Mount Victoria', 'hierarchy', 'parent=Towns'],
+       390 +          ['Hartley Vale', 'Hartley Vale', 'hierarchy', 'parent=Towns'],
+       391 +          ['Clarence', 'Clarence', 'hierarchy', 'parent=Towns'],
+       392 +          ['Lithgow', 'Lithgow', 'hierarchy', 'parent=Towns'],
+       393 +          ['Sydney', 'Sydney', 'hierarchy', 'parent=Towns'],
+       394 +          ['Blackheath', 'Blackheath', 'hierarchy', 'parent=Towns'],
+       395            ['Megalong', 'Megalong', 'hierarchy', 'parent=Towns'],
+       396            ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Megalong'],
+       397    
+
+● Perfect! Now I need to add synonyms and update the deferred tags section. Let me first find where the deferred tags comment
+  is:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 50 lines
+
+● Search(pattern: "DEFERRED TAGS|return rows", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 3 lines (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 50 lines
+
+● Let me check if there's a synonyms section or where they're typically added:
+
+● Search(pattern: "synonym|consolidate", path: "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 20 lines (ctrl+o to expand)
+
+● Now let me add the Mt Victoria synonym in the Places section:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 2 additions                                                        
+       408            # Place name variants/synonyms
+       409            ['Wentworth Falls Reserves', 'Wentworth Falls Reserve', 'synonym', 'Plural variant - standardised to 
+             singular'],
+       410            ['Katoomba Rifle Reserves', 'Katoomba Rifle Reserve', 'synonym', 'Plural variant - standardised to 
+             singular'],
+       411 +          ['Mt Victoria', 'Mount Victoria', 'synonym', 'Abbreviation of Mount Victoria (town)'],
+       412 +          ['Mt Victoria Hotel', 'Mount Victoria Hotel', 'synonym', 'Abbreviation of Mount Victoria Hotel'],
+       413        ])
+       414    
+       415        # ========================================================================
+
+● Now let me update the deferred tags section and add the standardization TODO:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 77 additions and 4 removals                                      
+       704        # ========================================================================
+       705        # The following tags need further analysis before primary facet assignment:
+       706        #
+       707 -      # 1. Drunkeness (16 uses) - TAG SPLIT REQUIRED - Manual re-tagging needed in Zotero
+       707 +      # 1. Drunkeness (16 uses) - ✅ COMPLETED - TAG SPLIT REQUIRED - Manual re-tagging needed in Zotero
+       708        #    The original "Drunkeness" tag has been split into two concepts:
+       709        #
+       710        #    A) "Drunkenness" → Events > Criminal events (10 instances)
+     ...
+       732        #
+       733        #    TODO: Manually re-tag these 16 Zotero items based on context above.
+       734        #
+       735 -      # 2. Accommodation (64 uses) - Requires rationalization. Contexts show it
+       736 -      #    covers both occupations (boarding house "keepers") and built environment
+       737 -      #    (hotels, cottages). May need to be split or merged with existing tags.
+       735 +      # 2. Accommodation (64 uses) - ✅ COMPLETED - DEPRECATED & RATIONALIZED
+       736 +      #    Resolution: "Accommodation" tag deprecated and replaced with specific building types
+       737 +      #    using Pattern A (Churches model) hierarchy structure:
+       738        #
+       739 +      #    New hierarchies created:
+       740 +      #    - Built Environment > Accommodation buildings > Hotels > Hotel > [15+ specific hotels]
+       741 +      #    - Built Environment > Accommodation buildings > Boarding houses > Boarding house > [specific]
+       742 +      #    - Built Environment > Accommodation buildings > Cottages > Cottage (NEW category)
+       743 +      #    - Built Environment > Accommodation buildings > Stables > Stable (NEW category)
+       744 +      #
+       745 +      #    Related additions:
+       746 +      #    - Agents > People > Occupations > Hospitality workers > Hotelliers > Hotellier > [30+ individuals]
+       747 +      #    - Agents > People > Occupations > Other goods and services > Coach and buggy business
+       748 +      #    - Places > Towns: Added 9 new towns (Leura, Medlow, Mount Victoria, Hartley Vale, etc.)
+       749 +      #    - Places > Towns > Katoomba > South Katoomba (sub-locality)
+       750 +      #    - Places > Natural features > Gullies > Nellie's Glen
+       751 +      #    - Agents > Animals > Cattle
+       752 +      #
+       753 +      #    Detailed retagging guidance: reports/accommodation_rationalization_report.md
+       754 +      #    TODO: Manually re-tag 64 Zotero items using report as guide (3 items need full-text review)
+       755 +      #
+       756        # 3. Alcohol (12 uses) - Too broad. Appears in various contexts (legal
+       757        #    testimony, inquests). May overlap with "Drinking" (activity). Needs
+       758        #    context review to determine if should be: substance/material, activity,
+     ...
+       747        #
+       748        # ========================================================================
+       749    
+       750 +      # ========================================================================
+       751 +      # TODO: HIERARCHY STANDARDIZATION (Deferred to separate pass - Phase 2)
+       752 +      # ========================================================================
+       753 +      # ISSUE: Inconsistent intermediate hierarchy patterns across vocabulary
+       754 +      #
+       755 +      # PATTERN A (Churches model - CORRECT, adopted for new additions):
+       756 +      #   Structure: Plural Parent (category) > Singular Generic > Specific Instances
+       757 +      #   Purpose: Separates category navigation from taggable entities
+       758 +      #   Example: Churches > Church > St Hilda's Church
+       759 +      #            Hotels > Hotel > Carrington Hotel
+       760 +      #            Hotelliers > Hotellier > Mrs Long
+       761 +      #
+       762 +      # PATTERN B (Flat model - INCONSISTENT, needs retrofit):
+       763 +      #   Structure: Plural Parent (both category AND taggable) > Specific Instances
+       764 +      #   Problem: Category serves dual purpose (navigation + tagging generic items)
+       765 +      #   Examples: Clergy > Cardinal Moran (missing "Clergyman" intermediate)
+       766 +      #             Medical professionals > Dr Spark (missing "Medical professional" intermediate)
+       767 +      #
+       768 +      # Categories already using Pattern A (✓ correct):
+       769 +      #   - Churches > Church > [specific churches]
+       770 +      #   - Hotels > Hotel > [specific hotels] (THIS implementation)
+       771 +      #   - Hotelliers > Hotellier > [specific people] (THIS implementation)
+       772 +      #   - Boarding houses > Boarding house > [specific] (THIS implementation)
+       773 +      #   - Cottages > Cottage > [specific] (THIS implementation)
+       774 +      #   - Stables > Stable > [specific] (THIS implementation)
+       775 +      #   - Courts > Court > [specific courts]
+       776 +      #   - Pubs > Pub (has generic intermediate)
+       777 +      #   - Schools > School > [specific schools]
+       778 +      #
+       779 +      # Categories needing retrofit to Pattern A (⚠ inconsistent):
+       780 +      #   - Clergy > [ADD: Clergyman] > Cardinal Moran, etc.
+       781 +      #   - Medical professionals > [ADD: Medical professional] > Dr Spark, etc.
+       782 +      #   - Law enforcement > [ADD: Police officer] > Constable Hamilton, etc.
+       783 +      #   - Other occupation categories (audit needed)
+       784 +      #
+       785 +      # Rationale for Pattern A:
+       786 +      #   1. Semantic clarity: Category vs instance vs generic concept are distinct
+       787 +      #   2. Getty AAT alignment: Matches formal thesaurus structure
+       788 +      #   3. Tagging clarity: Tag generic items with singular intermediate, not plural parent
+       789 +      #   4. Poly-hierarchy support: Cleaner relationships when items appear in multiple hierarchies
+       790 +      #   5. Future-proofing: Standard pattern for adding new categories
+       791 +      #
+       792 +      # Implementation plan:
+       793 +      #   1. Create planning/hierarchy_standardization_plan.md
+       794 +      #   2. Audit all plural parent categories across 7 primary facets
+       795 +      #   3. Identify categories using Pattern B
+       796 +      #   4. Add singular intermediates where missing
+       797 +      #   5. Update visualizations and documentation
+       798 +      #   6. Test and validate changes
+       799 +      #
+       800 +      # Estimated scope: ~5-6 categories, potentially ~200+ existing tags affected
+       801 +      # Priority: Medium (cosmetic consistency, not breaking functionality)
+       802 +      # Timeline: Separate focused pass after completing deferred items (Alcohol, Post)
+       803 +      #
+       804 +      # ========================================================================
+       805 +  
+       806        return rows
+       807    
+       808    
+
+● Excellent progress! Let me update the todo list and then regenerate the CSV:
+
+● Now let's back up the current CSV and regenerate:
+
+● Bash(cp data/poly_hierarchy_additions.csv data/poly_hierarchy_additions.csv.backup-$(date +%Y-%m-%d-%H%M%S) && echo "✓ Backup
+      created")
+  ⎿  ✓ Backup created
+
+● Bash(python3 scripts/22_generate_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  Generating comprehensive poly-hierarchical taxonomy...
+
+     Generating primary facet hierarchies...
+     … +13 lines (ctrl+o to expand)
+
+● Excellent! Let me verify the changes:
+
+● Bash(echo "Old CSV line count:" && wc -l data/poly_hierarchy_additions.csv.backup-* | tail -1 && echo "New CSV line count:" && wc
+      -l data/poly_hierarchy_additions.cs…)
+  ⎿  Old CSV line count:          
+      1102 total
+     New CSV line count:
+     … +6 lines (ctrl+o to expand)
+
+● Let me check the line counts more simply:
+
+● Bash(ls -lh data/poly_hierarchy_additions.csv* && wc -l data/poly_hierarchy_additions.csv*)
+  ⎿  -rw-rw-r-- 1 shawn shawn 43K Oct 22 11:29 data/poly_hierarchy_additions.csv                  
+     -rw-rw-r-- 1 shawn shawn 38K Oct 20 19:37 data/poly_hierarchy_additions.csv.backup
+     -rw-rw-r-- 1 shawn shawn 36K Oct 21 08:45 data/poly_hierarchy_additions.csv.backup-2025-10-20
+     … +8 lines (ctrl+o to expand)
+
+● Perfect! The CSV grew from 570 to 633 lines (+63 lines). Now let's regenerate the visualizations:
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +123 lines (ctrl+o to expand)
+
+● Excellent! Visualizations regenerated successfully. Let me verify the new additions are present:
+
+● Bash(echo "=== BUILT ENVIRONMENT - Accommodation buildings ===" && grep -A 30 "Accommodation buildings"
+      visualizations/hierarchy_trees/primary_built_environment.txt…)
+  ⎿  === BUILT ENVIRONMENT - Accommodation buildings ===
+     ├── Accommodation buildings
+     │   ├── Boarding houses
+     … +29 lines (ctrl+o to expand)
+
+● Bash(echo "=== AGENTS - Hospitality workers ===" && grep -A 35 "Hospitality workers"
+      visualizations/hierarchy_trees/primary_agents.txt | head -40)
+  ⎿  === AGENTS - Hospitality workers ===
+             ├── Hospitality workers
+             │   ├── Hotelliers
+     … +34 lines (ctrl+o to expand)
+
+● Bash(echo "=== PLACES - Towns ===" && grep -A 20 "^    ├── Towns" visualizations/hierarchy_trees/primary_places.txt)
+  ⎿  === PLACES - Towns ===
+
+● Bash(grep -A 25 "Towns" visualizations/hierarchy_trees/primary_places.txt | head -30)
+  ⎿  └── Towns                     
+         ├── Blackheath
+         ├── Clarence
+     … +17 lines (ctrl+o to expand)
+
+● Bash(grep -A 15 "Natural features" visualizations/hierarchy_trees/primary_places.txt)
+  ⎿  ├── Natural features               
+     │   ├── Caves & geological features
+     │   │   └── Jenolan Caves
+     … +13 lines (ctrl+o to expand)
+
+● Perfect! All additions are present. Let me finalize the todo list and create a summary:
+
+● Excellent! Let me create a final validation summary:
+
+● Bash(cat << 'EOF' > /tmp/accommodation_implementation_summary.txt
+      ================================================================================…)
+  ⎿  ================================================================================
+     ACCOMMODATION TAG RATIONALIZATION - IMPLEMENTATION SUMMARY
+     ================================================================================
+     … +121 lines (ctrl+o to expand)
+
+● Perfect! Let me check for any linting issues in the modified script:
+
+● ide - getDiagnostics (MCP)(uri: "file:///home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py")
+  ⎿  [                                                                                                                         
+       {
+         "uri": "file:///home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py",
+     … +3 lines (ctrl+o to expand)
+
+● Excellent! No linting issues. Here's the final summary:
+
+  ✅ Implementation Complete: Accommodation Tag Rationalization
+
+  What Was Accomplished:
+
+  1. Deferred Items Progress (2/5 complete):
+  - ✅ Desertion (3 uses) → Events > Criminal events
+  - ✅ Drunkeness (16 uses) → Split into "Drunkenness" (criminal) and "Drunkenness (intoxication)" (health condition)
+  - ✅ Accommodation (64 uses) → DEPRECATED, replaced with specific types using Pattern A
+  - ⏳ Alcohol (12 uses) - pending
+  - ⏳ Post (9 uses) - pending
+
+  2. Pattern A (Churches Model) Implemented for:
+  - Hotels > Hotel > [specific hotels]
+  - Hotelliers > Hotellier > [specific people]
+  - Boarding houses > Boarding house > [specific]
+  - Cottages > Cottage (NEW)
+  - Stables > Stable (NEW)
+
+  3. New Hierarchy Additions:
+  - 9 new hotels: Comet, Falls, Fryer's Family, Grand (Sydney), Great Western, Hotel Wentworth, Hydora House, Leura, Oxford
+  (Sydney)
+  - 30 hoteliers: Mrs Long, Mr Wilson, F. C. Goyder, and 27 others
+  - 9 new towns: Blackheath, Clarence, Hartley Vale, Leura, Lithgow, Medlow, Mount Victoria, Sydney, South Katoomba
+  - 5 new categories: Cottages, Stables, Hotelliers, Other goods and services, Gullies
+  - Synonyms: Mt Victoria → Mount Victoria
+
+  4. CSV & Visualizations:
+  - CSV: 570 → 633 lines (+63 rows, +11%)
+  - Primary facets: 366 → 431 relationships (+65)
+  - All 28 visualization trees regenerated successfully
+  - ✓ No linting issues
+
+  5. Documentation:
+  - Comprehensive Pattern A standardization TODO added (deferred to Phase 2)
+  - Accommodation marked complete in deferred tags section
+  - Detailed re-tagging guidance in reports/accommodation_rationalization_report.md
+
+  Next Steps (Manual Work Required):
+
+  ⚠️ Priority: Manual Zotero Re-tagging
+  - 64 items tagged "Accommodation" need re-tagging
+  - Use reports/accommodation_rationalization_report.md as guide
+  - 3 items need full-text review (#24, #30, #48)
+
+  🔄 Continue Deferred Items:
+  - Alcohol tag analysis
+  - Post tag disambiguation
+
+  📋 Future (Phase 2):
+  - Pattern A standardization for Clergy, Medical professionals, Law enforcement (~5-6 categories)
+
+  All changes validated and ready for use! 🎉
+
+> With the 'manual' zotero re-tagging, are the new tags in your master CSV? 
+  ⎿  ⧉ Selected 1 lines from reports/accommodation_rationalization_report.md in Visual Studio Code
+
+● Great question! Let me clarify the distinction:
+
+  What's in the CSV:
+
+  ✅ YES - Tag Entities & Hierarchy Structure:
+  Hotels,Hotels,hierarchy,parent=Accommodation buildings
+  Hotel,Hotel,hierarchy,parent=Hotels
+  Carrington Hotel,Carrington Hotel,hierarchy,parent=Hotels
+  Mrs Long,Mrs Long,hierarchy,parent=Hotelliers
+  Katoomba,Katoomba,hierarchy,parent=Towns
+  ...etc
+
+  The CSV (data/poly_hierarchy_additions.csv) contains:
+  - The vocabulary structure (which tags exist, their parent-child relationships)
+  - The tag entities themselves (Carrington Hotel, Mrs Long, South Katoomba, etc.)
+
+  What's NOT in the CSV:
+
+  ❌ NO - Item-Specific Tag Assignments:
+
+  The CSV does NOT contain instructions like:
+  "Item: A Charge of Rape (1890)" should be tagged with:
+    - Carrington Hotel
+    - Katoomba
+
+  That information only exists in: reports/accommodation_rationalization_report.md
+
+  ---
+  Why "Manual" Re-tagging is Required:
+
+  The CSV defines the controlled vocabulary (what tags exist), but the application of those tags to specific Zotero items must
+  be done manually:
+
+  1. Look at report: Item #1 "A Charge of Rape" → needs tags: Carrington Hotel, Katoomba
+  2. Open Zotero: Find that item
+  3. Apply tags: Manually add "Carrington Hotel" and "Katoomba" tags
+  4. Remove old tag: Remove "Accommodation" tag
+  5. Repeat: For all 64 items
+
+  ---
+  Could We Automate This?
+
+  Potentially yes, but not with current CSV structure. We'd need:
+  1. A separate CSV with item-to-tag mappings
+  2. A script to apply tags via Zotero API
+  3. Item identifiers (titles, keys, or DOIs)
+
+  Would you like me to:
+  1. Create a separate CSV for item-tag assignments (parseable from the report)?
+  2. Create a script to apply these via Zotero API?
+  3. Leave as manual (simpler, more controlled)?
+
+> Ok, pause for a minute, in our past work we've rationalised a number of tags, corrected typos / inconsistencies, and done 
+other work that required retagging of items in zotero. Where is all of this retagging information recoreded? 
+
+● Excellent question! Let me search for where tag consolidation and retagging information is stored:
+
+● Bash(find data -name "*consolidat*" -o -name "*map*" | head -10)
+  ⎿  data/tag_consolidation_map.csv
+
+● Bash(ls -lh data/*.csv | head -20)
+  ⎿  -rw-rw-r-- 1 shawn shawn  43K Oct 22 11:29 data/poly_hierarchy_additions.csv    
+     -rw-rw-r-- 1 shawn shawn  24K Oct 19 13:00 data/quality_duplicates.csv
+     -rw-rw-r-- 1 shawn shawn 9.8K Oct 19 13:00 data/quality_multiple_attachments.csv
+     … +6 lines (ctrl+o to expand)
+
+● Bash(head -20 data/tag_consolidation_map.csv && echo "..." && echo "Total lines: $(wc -l < data/tag_consolidation_map.csv)")
+  ⎿  old_tag,new_tag,action,notes                           
+     Child Tag,Child Tag,hierarchy,parent=Parent Tag
+     Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Katoomba
+     … +19 lines (ctrl+o to expand)
+
+● Bash(awk -F',' '{print $3}' data/tag_consolidation_map.csv | sort | uniq -c | sort -rn)
+  ⎿      775 hierarchy            
+         217 keep
+           2 merge
+     … +2 lines (ctrl+o to expand)
+
+● Bash(grep -v "^[^,]*,[^,]*,hierarchy," data/tag_consolidation_map.csv | head -30)
+  ⎿ old_tag,new_tag,action,notes                                                                                               
+    Mr John Waudby’s selection (Top Camp),Mr John Waudby’s selection (Top Camp),keep,Person names - likely different individual
+    s (preserve granularity per folksonomy_logic.md:517-522)
+    … +56 lines (ctrl+o to expand)
+
+
+● Bash(grep -E "merge|synonym|consolidate|deprecated" data/tag_consolidation_map.csv | head -20)
+  ⎿  Katoomba South,South Katoomba,merge,Naming variant - contextual evidence shows South Katoomba used in newspaper sources
+     I.O.O.F. Hall,Odd Fellows' Hall,merge,Same building - IOOF = Independent Order of Odd Fellows
+
+● Bash(grep -r "tag_consolidation_map" scripts/*.py | head -10)
+  ⎿  scripts/04_auto_categorize_tags.py:    - data/tag_consolidation_map.csv (machine-readable transformation rules)
+     scripts/04_auto_categorize_tags.py:    output_path = config.DATA_DIR / 'tag_consolidation_map.csv'
+     scripts/06_apply_automated_decisions.py:    map_file = base_dir / "data/tag_consolidation_map.csv"
+     … +6 lines (ctrl+o to expand)
+
+● Read(scripts/06_apply_automated_decisions.py)
+  ⎿  Read 50 lines
+
+● Perfect! I found it. Here's the answer:
+
+  📋 ALL Retagging Information is in: data/tag_consolidation_map.csv
+
+  This is the MASTER FILE where all tag consolidation/rationalization work is recorded.
+
+  What's in it:
+
+  - 996 lines (as of Oct 20)
+  - 775 hierarchy relationships (parent-child)
+  - 217 "keep" decisions (reviewed, decided to keep separate)
+  - 2 "merge" decisions (consolidate variants)
+
+  The Two CSV Files:
+
+  1. data/tag_consolidation_map.csv (996 lines)
+    - THE MASTER FILE ✅
+    - Contains ALL tag decisions from all past work
+    - This is what gets applied to Zotero
+  2. data/poly_hierarchy_additions.csv (633 lines)
+    - NEW additions I just generated
+    - Not yet appended to the master file ⚠️
+    - Needs to be appended to complete the workflow
+
+  The Missing Step:
+
+  According to scripts/22_generate_poly_hierarchy.py output:
+  Next steps:
+  1. Review generated CSV
+  2. Append to tag_consolidation_map.csv  ← WE HAVEN'T DONE THIS
+  3. Generate hierarchy visualization
+  4. Update folksonomy_logic.md
+
+  We've completed steps 1, 3, but NOT step 2!
+
+  Should I:
+
+  1. Append poly_hierarchy_additions.csv to tag_consolidation_map.csv now?
+  2. Check if there are conflicts before appending?
+  3. Leave it for you to review first?
+
+  The accommodation rationalization won't be in the master file until we append it!
+
+> Ok, let's take this systematically. We're running low on context so I'd like to do some housekeeping and preparation for 
+handover to the new chat. Please do a git commit and push with informative commit messages, it's been too long since we've done 
+that. Then generate a /compact message that includes a comprehensive to-do list. I want to finish reviewing alcohol and post 
+tags, then do tag standardisation around the hotels > hotel pattern, merge the poly_hierarchy_additions.csv into 
+tag_consolidation_map.csv (after checking for conflicts), correct some minor issues with the taxonomy I've seen ('mining 
+settlement' needs to be merged into 'mining district'; 'hospitality venues' needs to be merged into 'Accommodation and 
+Hospitality buildings'), and then we need to take stock of what's done and next steps. 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_built_environment.txt in Visual Studio Code
+
+● Perfect! Let me do a proper git commit and push, then generate the handover message.
+
+● Bash(git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +89 lines (ctrl+o to expand)
+
+● Bash(git add scripts/22_generate_poly_hierarchy.py scripts/23_visualise_poly_hierarchy.py data/poly_hierarchy_additions.csv
+      visualizations/hierarchy_trees/ reports/a…)
+  ⎿  Error: The following paths are ignored by one of your .gitignore files:
+     data/poly_hierarchy_additions.csv
+     hint: Use -f if you really want to add them.
+     hint: Turn this message off by running
+     hint: "git config advice.addIgnoredFile false"
+
+● Bash(git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +117 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Implement accommodation tag rationalization with Pattern A hierarchy…)
+  ⎿  [main 2861be2] Implement accommodation tag rationalization with Pattern A hierarchy
+      31 files changed, 3802 insertions(+)
+      create mode 100644 reports/accommodation_rationalization_report.md
+     … +30 lines (ctrl+o to expand)
+
+● Bash(git push)
+  ⎿  To github.com:shale-heritage/blue-mountains.git
+        a3f89e4..2861be2  main -> main
+
+● Perfect! Now let me generate the /compact handover message:
+
+  ---
+  Session Handover: Accommodation Rationalization Complete
+
+  ✅ Accomplished This Session
+
+  1. Completed Deferred Items (3/5)
+
+  - Desertion (3 uses) → Classified as Events > Criminal events (child/family desertion criminal offense)
+  - Drunkeness (16 uses) → Split into:
+    - "Drunkenness" → Events > Criminal events (10 court cases)
+    - "Drunkenness (intoxication)" → Associated Concepts > Physical and health conditions (6 non-criminal references)
+  - Accommodation (64 uses) → DEPRECATED, replaced with Pattern A hierarchies
+
+  2. Implemented Pattern A (Churches Model) Hierarchy
+
+  Pattern: Plural Parent (category) > Singular Generic (taggable) > Specific Instances
+
+  Applied to 6 new/updated categories:
+  - Hotels > Hotel > [9 new + existing hotels]
+  - Boarding houses > Boarding house > Orama Boarding House
+  - Cottages > Cottage (NEW category)
+  - Stables > Stable (NEW category)
+  - Hotelliers > Hotellier > [30 individuals: Mrs Long, Mr Wilson, F.C. Goyder, etc.]
+  - Coach and buggy business > Mr Thomas Cale (NEW occupation category)
+
+  3. Hierarchy Additions
+
+  - 9 new towns: Leura, Medlow, Mount Victoria, Hartley Vale, Clarence, Lithgow, Sydney, Blackheath, South Katoomba
+  (sub-locality under Katoomba)
+  - Gullies > Nellie's Glen (new natural feature category)
+  - Animals > Cattle
+  - Synonyms: Mt Victoria → Mount Victoria, Mt Victoria Hotel → Mount Victoria Hotel
+
+  4. Files & Statistics
+
+  - scripts/22_generate_poly_hierarchy.py (+~150 lines): Generates poly-hierarchical taxonomy CSV
+  - scripts/23_visualise_poly_hierarchy.py: Generates ASCII tree visualisations (28 files)
+  - reports/accommodation_rationalization_report.md (998 lines): Detailed retagging guide for 64 items
+  - data/poly_hierarchy_additions.csv: 570 → 633 lines (+63 relationships, +11%)
+  - Git: Committed and pushed (commit 2861be2)
+
+  ---
+  📋 COMPREHENSIVE TO-DO LIST
+
+  🔴 IMMEDIATE PRIORITY (Before Next Work)
+
+  1. Merge CSVs (CHECK CONFLICTS FIRST!)
+  # Check for conflicts between:
+  # - data/poly_hierarchy_additions.csv (633 lines - NEW work)
+  # - data/tag_consolidation_map.csv (996 lines - MASTER file)
+  ⚠️ Critical: poly_hierarchy_additions.csv NOT yet appended to master tag_consolidation_map.csv
+
+  2. Fix Taxonomy Issues (User Identified)
+  - Merge "Mining settlements" → "Mining districts"
+  - Merge "Hospitality venues" → "Accommodation buildings" (rename to "Accommodation and Hospitality buildings"?)
+
+  3. Manual Zotero Retagging
+  - 64 items tagged "Accommodation" need retagging
+  - Use reports/accommodation_rationalization_report.md as guide
+  - 3 items (#24, #30, #48) need full-text review
+
+  ---
+  🟡 CONTINUE DEFERRED ITEMS (2 remaining)
+
+  4. Alcohol Tag (12 uses) - Too broad, needs context review
+  - Fetch full text from Zotero
+  - Analyse: substance/material vs. activity vs. merge with "Drinking"
+  - Propose classification
+
+  5. Post Tag (9 uses) - Building vs. service disambiguation
+  - Already added to Activities > Communication activities > Postal services
+  - Need to disambiguate: post office (building) vs. postal service (activity)
+  - May need separate Built Environment entry
+
+  ---
+  🟢 PHASE 2: PATTERN A STANDARDIZATION
+
+  6. Retrofit Existing Categories to Pattern A
+  Categories using Pattern B (flat - inconsistent):
+  - Clergy > [ADD: Clergyman] > Cardinal Moran, etc.
+  - Medical professionals > [ADD: Medical professional] > Dr Spark, etc.
+  - Law enforcement > [ADD: Police officer] > Constable Hamilton, etc.
+  - Other occupations (audit needed)
+
+  Estimated scope: 5-6 categories, ~200+ tags affected
+  Documentation: See scripts/22_generate_poly_hierarchy.py lines 767-821
+
+  Steps:
+  1. Audit all plural parent categories across 7 primary facets
+  2. Identify Pattern B categories
+  3. Add singular intermediates
+  4. Update poly_hierarchy_additions.csv
+  5. Regenerate visualisations
+  6. Test and validate
+
+  ---
+  🔵 REMAINING WORK
+
+  7. Take Stock & Plan Next Steps
+  - Review what's completed vs. what remains
+  - Assess vocabulary coverage
+  - Plan Phase 1.3 (Getty AAT mapping?)
+
+  8. Documentation Updates
+  - Update folksonomy_logic.md with new structures
+  - Document Pattern A standardization decision
+  - Update phase instructions if needed
+
+  ---
+  🎯 CURRENT STATE
+
+  Primary Facets: 7 (stable)
+
+  1. Activities (30 nodes)
+  2. Agents (163 nodes) - expanded with 30 hoteliers
+  3. Associated Concepts (5 nodes)
+  4. Built Environment (67 nodes) - expanded with hotels, cottages, stables
+  5. Events (39 nodes) - added Desertion, Drunkenness
+  6. Information Forms (7 nodes)
+  7. Places (37 nodes) - added 9 towns, Gullies
+
+  Coverage
+
+  - Primary facet assignments: 345 tags (of ~481 total)
+  - Deferred items: 2 remaining (Alcohol, Post)
+  - CSV growth: +11% this session
+
+  ---
+  ⚠️ IMPORTANT WARNINGS
+
+  1. poly_hierarchy_additions.csv ≠ tag_consolidation_map.csv
+    - poly_hierarchy_additions.csv: Generated vocabulary structure (not applied)
+    - tag_consolidation_map.csv: MASTER file for actual Zotero changes
+    - Must merge before applying to Zotero!
+  2. Manual retagging required
+    - Scripts define vocabulary, NOT item-specific tag assignments
+    - Accommodation report has assignment guidance, but must be applied manually in Zotero
+  3. Pattern inconsistency remains
+    - New categories use Pattern A (correct)
+    - Existing categories use Pattern B (needs retrofit - Phase 2)
+
+  ---
+  📁 KEY FILES
+
+  Modified:
+  - scripts/22_generate_poly_hierarchy.py - Main taxonomy generator
+  - scripts/23_visualise_poly_hierarchy.py - Tree visualiser
+
+  Generated:
+  - data/poly_hierarchy_additions.csv (633 lines) - NOT YET MERGED
+  - visualizations/hierarchy_trees/*.txt (28 files)
+  - reports/accommodation_rationalization_report.md (998 lines)
+
+  Master file (TO UPDATE):
+  - data/tag_consolidation_map.csv (996 lines) - NEEDS MERGE
+
+  ---
+  Ready to continue with Alcohol & Post tag analysis, then CSV merge and taxonomy fixes!
+
+
+
