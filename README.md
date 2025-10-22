@@ -17,6 +17,7 @@ Research software for processing, analysing, and publishing historical newspaper
 
 ## Quick Links
 
+- [Quick Start (5 Minutes)](#quick-start-5-minutes)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Documentation](docs/)
@@ -24,6 +25,40 @@ Research software for processing, analysing, and publishing historical newspaper
 - [Citing This Software](#citing-this-software)
 - [Licence](#licence)
 - [Changelog](CHANGELOG.md)
+
+---
+
+## Quick Start (5 Minutes)
+
+**New to the project? Start here for the fastest setup:**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/shale-heritage/blue-mountains.git
+cd blue-mountains
+
+# 2. Run automated setup (creates venv, installs dependencies)
+./setup.sh
+
+# 3. Configure Zotero credentials
+nano .env  # Add your ZOTERO_API_KEY
+
+# 4. Run the tag extraction workflow
+./run.sh 01_extract_tags.py
+./run.sh 02_analyze_tags.py
+./run.sh 03_inspect_multiple_attachments.py
+```
+
+**What you get:**
+
+- Automated environment setup (no manual venv activation needed)
+- All dependencies installed correctly
+- Tag analysis reports in `reports/` directory
+- Data files ready for Phase 1.2 tag rationalisation
+
+**Prerequisites:** Python 3.12+, `python3-venv` package (on Debian/Ubuntu: `sudo apt install python3.12-venv`)
+
+See [Installation](#installation) below for detailed step-by-step instructions and troubleshooting.
 
 ---
 
@@ -128,13 +163,60 @@ CurateScape Mobile Heritage Tours (public engagement)
 
 - **Python 3.12 or higher**
 - **Git** for version control
+- **python3-venv package** (Debian/Ubuntu: `sudo apt install python3.12-venv`)
 - **Zotero API credentials:**
   - Group library access to Blue Mountains collection (or your own library for testing)
   - API key with read/write permissions: <https://www.zotero.org/settings/keys>
 
-### Step-by-Step Installation
+### Method 1: Automated Setup (Recommended)
 
-#### 1. Clone the Repository
+**Fastest and most reliable method:**
+
+```bash
+# Clone repository
+git clone https://github.com/shale-heritage/blue-mountains.git
+cd blue-mountains
+
+# Run automated setup script
+./setup.sh
+```
+
+**What `setup.sh` does:**
+
+1. Checks Python version (requires 3.12+)
+2. Checks for python3-venv package
+3. Creates virtual environment in `venv/`
+4. Installs all dependencies from `requirements.txt`
+5. Creates `.env` configuration file from template
+6. Verifies installation
+
+**If setup fails:**
+
+- Missing python3-venv: `sudo apt install python3.12-venv`
+- After installing venv, re-run: `./setup.sh`
+
+**Configure Zotero credentials:**
+
+```bash
+# Edit .env and add your API key
+nano .env
+```
+
+Required variables:
+
+```bash
+ZOTERO_GROUP_ID=2258643  # Or your own library ID
+ZOTERO_API_KEY_READONLY=your_readonly_key_here
+ZOTERO_LIBRARY_TYPE=group  # Or 'user'
+```
+
+Get your API key at: <https://www.zotero.org/settings/keys>
+
+### Method 2: Manual Setup (Advanced Users)
+
+**If you prefer manual control:**
+
+#### 1. Clone Repository
 
 ```bash
 git clone https://github.com/shale-heritage/blue-mountains.git
@@ -144,18 +226,17 @@ cd blue-mountains
 #### 2. Create Virtual Environment
 
 ```bash
-# Create virtual environment
+# Create venv
 python3 -m venv venv
 
-# Activate virtual environment
-# On Linux/macOS:
+# Activate (Linux/macOS)
 source venv/bin/activate
 
-# On Windows:
+# Activate (Windows)
 venv\Scripts\activate
 ```
 
-**Why a virtual environment?** Isolates project dependencies from system Python, preventing conflicts.
+**Why virtual environment?** Isolates dependencies from system Python.
 
 #### 3. Install Dependencies
 
@@ -163,48 +244,28 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-**Installed packages:**
+**Installed packages:** pyzotero, pandas, fuzzywuzzy, python-Levenshtein, networkx, matplotlib, seaborn, python-dotenv
 
-- `pyzotero`: Zotero API client
-- `pandas`: Data analysis and CSV export
-- `fuzzywuzzy`, `python-Levenshtein`: Fuzzy string matching
-- `networkx`: Network analysis
-- `matplotlib`, `seaborn`: Visualisation
-- `python-dotenv`: Environment variable management
+See [requirements.txt](requirements.txt) for versions.
 
-See [requirements.txt](requirements.txt) for details and version constraints.
-
-#### 4. Configure API Access
+#### 4. Configure Zotero Access
 
 ```bash
-# Copy example configuration
 cp .env.example .env
-
-# Edit .env and add your Zotero API key
-# Use your preferred text editor
-nano .env
+nano .env  # Add your credentials
 ```
 
-**Required variables in `.env`:**
-
-```bash
-ZOTERO_GROUP_ID=2258643  # Or your own group/user library ID
-ZOTERO_API_KEY=your_api_key_here
-ZOTERO_LIBRARY_TYPE=group  # Or 'user' for personal library
-```
-
-**Security:** Never commit `.env` to version control! It's already in `.gitignore`.
+**Security:** Never commit `.env` to Git (already in `.gitignore`)
 
 #### 5. Verify Installation
 
 ```bash
-# Test configuration loading
+source venv/bin/activate  # If not already activated
 python scripts/config.py
 
 # Expected output:
 # ✓ Configuration loaded successfully
 #   Zotero Group ID: 2258643
-#   Library Type: group
 ```
 
 ### Troubleshooting
@@ -229,20 +290,37 @@ python scripts/config.py
 
 ## Usage
 
-### Quick Start
+### Running Scripts
 
-Run scripts in order for the complete tag analysis workflow:
+**Method 1: Using the `run.sh` wrapper (Recommended)**
+
+The `run.sh` script automatically activates the virtual environment:
 
 ```bash
-# 1. Extract tags from Zotero
-python scripts/01_extract_tags.py
-
-# 2. Analyse tag patterns
-python scripts/02_analyze_tags.py
-
-# 3. Inspect data quality
-python scripts/03_inspect_multiple_attachments.py
+# Run complete workflow
+./run.sh 01_extract_tags.py
+./run.sh 02_analyze_tags.py
+./run.sh 03_inspect_multiple_attachments.py
 ```
+
+**Method 2: Manual activation**
+
+Alternatively, activate the venv manually:
+
+```bash
+source venv/bin/activate  # Activate venv
+python scripts/01_extract_tags.py
+python scripts/02_analyze_tags.py
+python scripts/03_inspect_multiple_attachments.py
+deactivate  # When finished
+```
+
+**Why use `run.sh`?**
+
+- No need to remember `source venv/bin/activate`
+- Prevents accidentally using wrong Python version
+- Works consistently across terminal sessions
+- Safer for collaborators
 
 ### Script Details
 

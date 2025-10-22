@@ -215,9 +215,12 @@ The 332 pairs fall into **natural groupings**. Process them in this order for ef
 **Critical guidance from folksonomy_logic.md:517-522**:
 > "Preserve all individual person tags - DO NOT merge similar names without verification. Many detected 'similar' names are actually different people."
 
+**Disambiguation approach (folksonomy_logic.md:205)**:
+> "Through Named Entity Recognition (NER) and biographical dictionary research; where disambiguation is uncertain, recognise ambiguity and state the possible candidate individuals (with approximately likelihood and reasoning wherever possible) - or in extreme cases where disambiguation is impossible, explicitly report that the identity of the person cannot be determined."
+
 **Examples**:
 - Line 148: Mr Wilson vs Mrs Wilson (KEEP SEPARATE - different people)
-- Line 186: Mr W Wilson vs Mr Wilson (KEEP SEPARATE - could be same person or different, needs verification)
+- Line 186: Mr W Wilson vs Mr Wilson (KEEP SEPARATE - could be same person or different, needs verification - FLAG FOR DISAMBIGUATION if consolidating later)
 - Line 193: Mr Thomas Meredith vs Mr Evan Thomas Meredith (KEEP SEPARATE - different people from Meredith family)
 
 ---

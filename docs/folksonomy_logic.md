@@ -109,7 +109,7 @@ These tags enable grouping, analysis, and public presentation of documents relat
 
 ### 2.2 Geographic Tags
 
-**Purpose:** Record where events occurred, enable spatial analysis, support heritage mapping, link to gazetteers (particularly Getty Thesaurus of Geographic Names - TGN - and an Australian gazetteer TBD).
+**Purpose:** Record where events occurred, enable spatial analysis, support heritage mapping, link to gazetteers (particularly Getty Thesaurus of Geographic Names - TGN - and Composite Gazetteer of Australia).
 
 **Spatial Hierarchy:**
 
@@ -538,13 +538,18 @@ An item about Katoomba Courthouse might receive:
 2. **Expand abbreviated names** using square brackets [  ] when identification is certain
    - Example: "Mr W. James" → "Mr W[illiam] James" (once confirmed via biographical research)
    - Example: "Mrs Smith" → "Mrs [Mary] Smith" (once identified)
-3. **Retain family tags** as separate thematic tags (e.g., "Meredith family")
+3. **Disambiguation approach** when names are ambiguous:
+   - Apply Named Entity Recognition (NER) and biographical dictionary research
+   - Where disambiguation is uncertain, recognise ambiguity and state the possible candidate individuals (with approximate likelihood and reasoning wherever possible)
+   - In extreme cases where disambiguation is impossible, explicitly report that the identity of the person cannot be determined
+   - Maintain separate tags for each possible individual rather than prematurely merging
+4. **Retain family tags** as separate thematic tags (e.g., "Meredith family")
    - Family tags are explicit, not inferred from individual co-occurrence
-4. **Named Entity Recognition (NER) principle:** Any proper noun that would be extracted during NER should eventually become a tag
+5. **Named Entity Recognition (NER) principle:** Any proper noun that would be extracted during NER should eventually become a tag
    - All person names → individual person tags
    - All place names → geographic tags
    - Consider grouping under "Named Entities" category for future organisation
-5. **Create person register** through:
+6. **Create person register** through:
    - Named Entity Recognition (NER) on primary source PDFs (full text analysis)
    - Cross-referencing with Australian Dictionary of Biography (ADB)
    - Genealogical research and family history sources
@@ -594,7 +599,40 @@ An item about Katoomba Courthouse might receive:
 - New South Wales
 - Jamison Valley, Megalong Valley (may not have TGN entries - create local gazetteer)
 
-### 6.2 Research Vocabularies Australia (RVA) Publication
+### 6.2 Composite Gazetteer of Australia Integration
+
+**Goal:** Map place names to Australian coordinates and feature types using the Composite Gazetteer of Australia (Geoscience Australia).
+
+**Decision (October 2025):** Use the **Composite Gazetteer of Australia** as the primary Australian gazetteer for this project (see `docs/gazetteer-comparison.md` for detailed comparison).
+
+**Rationale:**
+- More current data (2024-2025 vs 2012 for alternative)
+- Modern, easy-to-query format (GeoPackage/SQLite)
+- Well-structured 3-level categorisation (GROUP → CATEGORY → FEATURE)
+- Better Python integration for automated coordinate lookup
+- Comprehensive coverage (289,560 place names nationwide)
+
+**Relevant Blue Mountains coverage:**
+- Katoomba (LOCALITY, POPULATION CENTRE)
+- Jamison Valley (VALLEY - LANDFORM)
+- Jamison Creek (WATERCOURSE - WATERWAY)
+- Megalong Valley (VALLEY - LANDFORM)
+- Blue Mountains region administrative areas
+- Survey markers, lookouts, and landmarks
+
+**Supplementary reference:** Gazetteer of Australia 2012 retained for historical verification, particularly for Ruined Castle-specific features (Ruined Castle Hill, Ruined Castle Creek, Ruined Castle Ridge, Ruined Castle Gully).
+
+**Integration with Getty TGN:**
+
+Use both gazetteers for comprehensive geographic metadata:
+- **Getty TGN:** International standard URIs for linked open data
+- **Composite Gazetteer:** Australian-specific coordinates and local feature classifications
+- **Cross-referencing:** Combine both for complete place name records
+- **Priority:** Composite Gazetter is the canonical source, Getty TGN secondary
+
+**Implementation:** See `docs/gazetteer-comparison.md` for technical specifications and Python code examples for querying the Composite Gazetteer.
+
+### 6.3 Research Vocabularies Australia (RVA) Publication
 
 **Planned deliverable (Phase 1.3):** Publish project-specific controlled vocabulary to RVA.
 
@@ -607,7 +645,7 @@ An item about Katoomba Courthouse might receive:
 
 **SKOS format:** Prepare vocabulary in Simple Knowledge Organisation System (SKOS) for RVA submission.
 
-### 6.3 Australian Dictionary of Biography (ADB) Linking
+### 6.4 Australian Dictionary of Biography (ADB) Linking
 
 **Goal:** Link person tags to ADB entries where available.
 
@@ -674,6 +712,7 @@ An item about Katoomba Courthouse might receive:
 
 - **DO NOT merge similar person names** without verification (many are different people)
 - Expand abbreviated names using square brackets [ ] when certain
+- **Disambiguation approach:** When names are ambiguous, recognise uncertainty and state possible candidate individuals with approximate likelihood and reasoning; in extreme cases where disambiguation is impossible, explicitly report that identity cannot be determined
 - Retain separate family tags (explicit, not inferred)
 - **NER principle:** Any proper noun extractable via NER should become a tag
 - Create person register through:
@@ -774,6 +813,9 @@ An item about Katoomba Courthouse might receive:
    - Dates and temporal expressions
 3. **Create comprehensive registers:**
    - Person register with biographical links (ADB, genealogical databases)
+     - Apply disambiguation approach: where identity is uncertain, recognise ambiguity and state possible candidate individuals with approximate likelihood and reasoning
+     - In extreme cases where disambiguation is impossible, explicitly report that identity cannot be determined
+     - Maintain separate records for each possible individual rather than prematurely merging
    - Place name register with geospatial coordinates/gazetteer links (Getty TGN, local gazetteer)
    - Organization/institution register
 4. **Validate and enrich existing tags:**
@@ -781,6 +823,7 @@ An item about Katoomba Courthouse might receive:
    - Identify missing tags (entities not currently tagged)
    - Identify tag errors or inconsistencies
    - Expand abbreviated names using full text context
+   - Apply disambiguation approach when resolving ambiguous person names
 5. **Tag untagged items** (853 items) using NER + rationalised vocabulary
 
 **Implementation approaches:**
@@ -810,8 +853,8 @@ An item about Katoomba Courthouse might receive:
 
 - spaCy with custom historical NER model (19th-century Australian text)
 - Stanford NER
-- GPT-4 or Claude for zero-shot entity extraction
-- Local LLMs (Llama, Mistral) with custom prompts
+- GPT-5 or Claude Sonnet 4.5 for zero-shot entity extraction
+- Local LLMs (GPT-OSS:120b; Gemma3:27b; qwen3-thinking:30b) with custom prompts
 - Historical NER models trained on period-appropriate corpora
 
 ---
