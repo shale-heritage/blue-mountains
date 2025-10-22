@@ -1,0 +1,21 @@
+PRIMARY FACET: Materials
+================================================================================
+
+Materials
+└── Consumable materials
+    └── Alcoholic beverages
+        ├── Beer
+        ├── Mixed alcoholic beverages
+        │   └── Grog
+        ├── Spirits
+        │   ├── Brandy
+        │   ├── Gin
+        │   ├── Rum
+        │   └── Whisky
+        └── Wine
+
+
+STATISTICS:
+  Total nodes in facet: 12
+  Generated: 2025-10-20
+  Source: data/poly_hierarchy_additions.csv

@@ -3,9 +3,10 @@ THEMATIC GROUPING: Alcohol & Temperance
 
 Alcohol & Temperance
 ├── Alcohol consumption & behaviour
-│   ├── Alcohol
-│   ├── Drinking
-│   └── Drunkeness
+│   ├── Alcoholic beverages
+│   ├── Drinking (alcohol)
+│   ├── Drunkenness
+│   └── Drunkenness (intoxication)
 ├── Alcohol-related venues
 │   ├── Hotels
 │   └── Pubs
@@ -26,6 +27,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 18
+  Total nodes in theme: 19
   Generated: 2025-10-20
   Source: data/poly_hierarchy_additions.csv

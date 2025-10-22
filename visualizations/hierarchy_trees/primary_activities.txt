@@ -2,6 +2,13 @@ PRIMARY FACET: Activities
 ================================================================================
 
 Activities
+├── Charitable and welfare activities
+│   ├── Charity
+│   └── Unemployment relief
+├── Commercial activities
+│   └── Liquor trade
+│       ├── Liquor sales
+│       └── Wholesale liquor business
 ├── Communication activities
 │   ├── Advertising
 │   ├── Fundraising
@@ -27,16 +34,14 @@ Activities
 │   └── Sports
 ├── Regulatory processes
 │   └── Licensing
-├── Social & welfare activities
-│   ├── Charity
-│   └── Unemployment relief
+│       └── Liquor licensing
 └── Social behaviours
-    ├── Drinking
+    ├── Drinking (alcohol)
     ├── Gambling
     └── Temperance
 
 
 STATISTICS:
-  Total nodes in facet: 33
+  Total nodes in facet: 38
   Generated: 2025-10-20
   Source: data/poly_hierarchy_additions.csv

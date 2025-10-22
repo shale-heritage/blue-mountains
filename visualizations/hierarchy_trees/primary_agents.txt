@@ -137,6 +137,7 @@ Agents
 │           └── Salvation Army
 └── People
     ├── Demographic groups
+    │   ├── Adolescents
     │   ├── Children
     │   ├── Families
     │   │   └── Miners' families
@@ -188,6 +189,8 @@ Agents
         │   │   ├── Richard Allen
         │   │   ├── Rubina Fryer
         │   │   └── W. Green
+        │   ├── Liquor merchants
+        │   │   └── Mr Wilkinson
         │   └── Publican
         ├── Law enforcement
         │   └── Police
@@ -202,6 +205,8 @@ Agents
         │   └── Coroners
         │       ├── Coroner
         │       └── Coroner Lethbridge
+        ├── Maritime workers
+        │   └── Shipwright
         ├── Medical professionals
         │   ├── Dr Morgan
         │   ├── Dr Prangley
@@ -221,6 +226,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 217
+  Total nodes in facet: 222
   Generated: 2025-10-20
   Source: data/poly_hierarchy_additions.csv

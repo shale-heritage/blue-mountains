@@ -3,10 +3,13 @@ PRIMARY FACET: Events
 
 Events
 ├── Criminal events
+│   ├── Alcohol-related
+│   │   ├── Drunkenness
+│   │   ├── Serving alcohol to minors
+│   │   └── Unlicensed sales
 │   ├── Assault
 │   ├── Bigamy
 │   ├── Desertion
-│   ├── Drunkenness
 │   ├── Fighting
 │   ├── Rape
 │   ├── Sexual violence
@@ -54,6 +57,6 @@ Events
 
 
 STATISTICS:
-  Total nodes in facet: 50
+  Total nodes in facet: 53
   Generated: 2025-10-20
   Source: data/poly_hierarchy_additions.csv

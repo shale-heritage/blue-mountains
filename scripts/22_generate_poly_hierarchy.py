@@ -66,6 +66,7 @@ def generate_primary_facets():
         ['Women', 'Women', 'hierarchy', 'parent=Demographic groups'],
         ['Men', 'Men', 'hierarchy', 'parent=Demographic groups'],
         ['Children', 'Children', 'hierarchy', 'parent=Demographic groups'],
+        ['Adolescents', 'Adolescents', 'hierarchy', 'parent=Demographic groups'],
         ['Widows', 'Widows', 'hierarchy', 'parent=Demographic groups'],
 
         # Families
@@ -82,6 +83,9 @@ def generate_primary_facets():
 
         # Synonym for Irish culture tag
         ['Reference to the Irish or Irish culture', 'Irish culture', 'synonym', 'Renamed to emphasize cultural references rather than demographic group'],
+
+        # Broader term for minors (covers both Children and Adolescents)
+        ['Minors', 'Children', 'broader', 'Broader term covering both Children and Adolescents (ages <18)'],
     ])
 
     # --- 1.4 Occupations ---
@@ -137,6 +141,10 @@ def generate_primary_facets():
         ['Hospitality workers', 'Hospitality workers', 'hierarchy', 'parent=Occupations'],
         ['Publican', 'Publican', 'hierarchy', 'parent=Hospitality workers'],
 
+        # Liquor merchants
+        ['Liquor merchants', 'Liquor merchants', 'hierarchy', 'parent=Hospitality workers'],
+        ['Mr Wilkinson', 'Mr Wilkinson', 'hierarchy', 'parent=Liquor merchants'],
+
         # Hotelliers - Pattern A (Churches model): Hotelliers > Hotellier > specific people
         ['Hotelliers', 'Hotelliers', 'hierarchy', 'parent=Hospitality workers'],
         ['Hotellier', 'Hotellier', 'hierarchy', 'parent=Hotelliers'],  # Generic/unnamed hotellier
@@ -172,6 +180,10 @@ def generate_primary_facets():
         # Military
         ['Military personnel', 'Military personnel', 'hierarchy', 'parent=Occupations'],
         ['Soldiers', 'Soldiers', 'hierarchy', 'parent=Military personnel'],
+
+        # Maritime workers
+        ['Maritime workers', 'Maritime workers', 'hierarchy', 'parent=Occupations'],
+        ['Shipwright', 'Shipwright', 'hierarchy', 'parent=Maritime workers'],
 
         # Other goods and services (NEW category)
         ['Other goods and services', 'Other goods and services', 'hierarchy', 'parent=Occupations'],
@@ -457,8 +469,9 @@ def generate_primary_facets():
 
         # Hospitality venues
         ['Hospitality venues', 'Hospitality venues', 'hierarchy', 'parent=Built Environment'],
+        ['Public house', 'Public house', 'hierarchy', 'parent=Hospitality venues'],
+        ['Pub', 'Public house', 'synonym', 'Colloquial term for public house'],
         ['Pubs', 'Pubs', 'hierarchy', 'parent=Hospitality venues'],
-        ['Pub', 'Pub', 'hierarchy', 'parent=Pubs'],
 
         # Civic buildings
         ['Civic buildings', 'Civic buildings', 'hierarchy', 'parent=Built Environment'],
@@ -585,7 +598,13 @@ def generate_primary_facets():
         ['Bigamy', 'Bigamy', 'hierarchy', 'parent=Criminal events'],
         ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=Criminal events'],
         ['Desertion', 'Desertion', 'hierarchy', 'parent=Criminal events'],
-        ['Drunkenness', 'Drunkenness', 'hierarchy', 'parent=Criminal events'],
+
+        # Alcohol-related criminal events
+        ['Alcohol-related', 'Alcohol-related', 'hierarchy', 'parent=Criminal events'],
+        ['Drunkenness', 'Drunkenness', 'hierarchy', 'parent=Alcohol-related'],
+        ['Unlicensed sales', 'Unlicensed sales', 'hierarchy', 'parent=Alcohol-related'],
+        ['Sly-grog operations', 'Unlicensed sales', 'synonym', 'Australian colonial term for unlicensed liquor sales'],
+        ['Serving alcohol to minors', 'Serving alcohol to minors', 'hierarchy', 'parent=Alcohol-related'],
 
         # Political events
         ['Political events', 'Political events', 'hierarchy', 'parent=Events'],
@@ -630,6 +649,12 @@ def generate_primary_facets():
         ['Trucking', 'Trucking', 'hierarchy', 'parent=Transport'],
         ['Horses', 'Horses', 'hierarchy', 'parent=Transport'],
 
+        # Commercial activities
+        ['Commercial activities', 'Commercial activities', 'hierarchy', 'parent=Activities'],
+        ['Liquor trade', 'Liquor trade', 'hierarchy', 'parent=Commercial activities'],
+        ['Liquor sales', 'Liquor sales', 'hierarchy', 'parent=Liquor trade'],
+        ['Wholesale liquor business', 'Wholesale liquor business', 'hierarchy', 'parent=Liquor trade'],
+
         # Recreation activities
         ['Recreation activities', 'Recreation activities', 'hierarchy', 'parent=Activities'],
         ['Recreation for miners', 'Recreation for miners', 'hierarchy', 'parent=Recreation activities'],
@@ -638,7 +663,8 @@ def generate_primary_facets():
 
         # Social behaviours
         ['Social behaviours', 'Social behaviours', 'hierarchy', 'parent=Activities'],
-        ['Drinking', 'Drinking', 'hierarchy', 'parent=Social behaviours'],
+        ['Drinking (alcohol)', 'Drinking (alcohol)', 'hierarchy', 'parent=Social behaviours'],
+        ['Drinking', 'Drinking (alcohol)', 'synonym', 'Renamed for clarity - refers specifically to alcohol consumption'],
         ['Gambling', 'Gambling', 'hierarchy', 'parent=Social behaviours'],
         ['Temperance', 'Temperance', 'hierarchy', 'parent=Social behaviours'],
 
@@ -659,11 +685,12 @@ def generate_primary_facets():
         # Regulatory processes
         ['Regulatory processes', 'Regulatory processes', 'hierarchy', 'parent=Activities'],
         ['Licensing', 'Licensing', 'hierarchy', 'parent=Regulatory processes'],
+        ['Liquor licensing', 'Liquor licensing', 'hierarchy', 'parent=Licensing'],
 
-        # Social & welfare activities
-        ['Social & welfare activities', 'Social & welfare activities', 'hierarchy', 'parent=Activities'],
-        ['Charity', 'Charity', 'hierarchy', 'parent=Social & welfare activities'],
-        ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=Social & welfare activities'],
+        # Charitable and welfare activities
+        ['Charitable and welfare activities', 'Charitable and welfare activities', 'hierarchy', 'parent=Activities'],
+        ['Charity', 'Charity', 'hierarchy', 'parent=Charitable and welfare activities'],
+        ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=Charitable and welfare activities'],
     ])
 
     # ========================================================================
@@ -697,6 +724,35 @@ def generate_primary_facets():
         ['Illness', 'Illness', 'hierarchy', 'parent=Physical and health conditions'],
         ['Disease', 'Disease', 'hierarchy', 'parent=Physical and health conditions'],
         ['Drunkenness (intoxication)', 'Drunkenness (intoxication)', 'hierarchy', 'parent=Physical and health conditions'],
+    ])
+
+    # ========================================================================
+    # FACET 7: MATERIALS
+    # ========================================================================
+    # New facet added 2025-10-22 for consumable materials (alcohol rationalization)
+
+    rows.extend([
+        ['Materials', 'Materials', 'hierarchy', 'parent=(new top-level facet)'],
+
+        # Consumable materials
+        ['Consumable materials', 'Consumable materials', 'hierarchy', 'parent=Materials'],
+
+        # Alcoholic beverages
+        ['Alcoholic beverages', 'Alcoholic beverages', 'hierarchy', 'parent=Consumable materials'],
+        ['Beer', 'Beer', 'hierarchy', 'parent=Alcoholic beverages'],
+        ['Wine', 'Wine', 'hierarchy', 'parent=Alcoholic beverages'],
+
+        # Spirits
+        ['Spirits', 'Spirits', 'hierarchy', 'parent=Alcoholic beverages'],
+        ['Whisky', 'Whisky', 'hierarchy', 'parent=Spirits'],
+        ['Whiskey', 'Whisky', 'synonym', 'Alternative spelling of whisky (both spellings valid)'],
+        ['Rum', 'Rum', 'hierarchy', 'parent=Spirits'],
+        ['Brandy', 'Brandy', 'hierarchy', 'parent=Spirits'],
+        ['Gin', 'Gin', 'hierarchy', 'parent=Spirits'],
+
+        # Mixed alcoholic beverages
+        ['Mixed alcoholic beverages', 'Mixed alcoholic beverages', 'hierarchy', 'parent=Alcoholic beverages'],
+        ['Grog', 'Grog', 'hierarchy', 'parent=Mixed alcoholic beverages'],
     ])
 
     # ========================================================================
@@ -898,7 +954,7 @@ def generate_thematic_groupings():
         ['Property crimes', 'Property crimes', 'hierarchy', 'parent=Crimes - THEMATIC'],
         ['Theft', 'Theft', 'hierarchy', 'parent=Property crimes - THEMATIC'],
         ['Social order offences', 'Social order offences', 'hierarchy', 'parent=Crimes - THEMATIC'],
-        ['Drunkeness', 'Drunkeness', 'hierarchy', 'parent=Social order offences - THEMATIC'],
+        ['Drunkenness', 'Drunkenness', 'hierarchy', 'parent=Social order offences - THEMATIC'],
         ['Gambling', 'Gambling', 'hierarchy', 'parent=Social order offences - THEMATIC'],
         ['Desertion', 'Desertion', 'hierarchy', 'parent=Social order offences - THEMATIC'],
         ['Other crimes', 'Other crimes', 'hierarchy', 'parent=Crimes - THEMATIC'],
@@ -952,9 +1008,10 @@ def generate_thematic_groupings():
         ['Good Templars', 'Good Templars', 'hierarchy', 'parent=Temperance organizations & movements - THEMATIC'],
         ['Temperance', 'Temperance', 'hierarchy', 'parent=Temperance organizations & movements - THEMATIC'],
         ['Alcohol consumption & behaviour', 'Alcohol consumption & behaviour', 'hierarchy', 'parent=Alcohol & Temperance - THEMATIC'],
-        ['Alcohol', 'Alcohol', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
-        ['Drinking', 'Drinking', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
-        ['Drunkeness', 'Drunkeness', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
+        ['Alcoholic beverages', 'Alcoholic beverages', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
+        ['Drinking (alcohol)', 'Drinking (alcohol)', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
+        ['Drunkenness', 'Drunkenness', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
+        ['Drunkenness (intoxication)', 'Drunkenness (intoxication)', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
         ['Licensing & regulation', 'Licensing & regulation', 'hierarchy', 'parent=Alcohol & Temperance - THEMATIC'],
         ['Licensing', 'Licensing', 'hierarchy', 'parent=Licensing & regulation - THEMATIC'],
         ['Licensing Act', 'Licensing Act', 'hierarchy', 'parent=Licensing & regulation - THEMATIC'],
