@@ -133,42 +133,52 @@ def extract_kwic_snippets(full_text, keywords, context_chars=150):
 
 def classify_post_usage(snippets):
     """
-    Analyse snippets to suggest classification.
+    Analyse snippets to suggest specific tags.
 
     Parameters:
         snippets: List of KWIC snippets
 
     Returns:
-        str: Suggested classification with rationale
+        tuple: (suggested_tags list, rationale string)
     """
     combined_text = ' '.join(snippets).lower()
 
-    # Building indicators
-    building_terms = ['post office building', 'post office site', 'erected', 'constructed',
-                      'building', 'site', 'location', 'premises']
+    suggested_tags = []
+    rationale_parts = []
 
-    # Service indicators
-    service_terms = ['postal service', 'mail', 'letter', 'delivery', 'postmaster',
-                     'postage', 'correspondence', 'telegraph', 'sent', 'received']
+    # Check for postmaster/postmistress (occupation)
+    if 'postmaster' in combined_text or 'postmistress' in combined_text:
+        suggested_tags.append('Postmaster')
+        rationale_parts.append('postmaster/postmistress mentioned')
 
-    # Official indicators
-    official_terms = ['postmaster', 'post office inspector', 'postal official',
-                      'postal department']
+    # Check for post office (building)
+    if 'post office' in combined_text:
+        # Check if it's about the building/location
+        building_indicators = ['removed to', 'relocated', 'at the', 'building', 'site',
+                               'painted', 'painting', 'erected', 'established']
+        if any(term in combined_text for term in building_indicators):
+            suggested_tags.append('Post office')
+            rationale_parts.append('post office building/location')
 
-    building_score = sum(1 for term in building_terms if term in combined_text)
-    service_score = sum(1 for term in service_terms if term in combined_text)
-    official_score = sum(1 for term in official_terms if term in combined_text)
+    # Check for postal services/department
+    service_indicators = ['postal authorities', 'postal department', 'postal service',
+                         'mail', 'complaint against postal', 'letter']
+    if any(term in combined_text for term in service_indicators):
+        if 'postal authorities' in combined_text or 'postal department' in combined_text:
+            suggested_tags.append('Postal Department')
+            rationale_parts.append('postal authorities/department')
+        else:
+            suggested_tags.append('Postal services')
+            rationale_parts.append('postal services/mail')
 
-    if building_score > service_score and building_score > 0:
-        return "Post office (building)", "Mentions physical building/site"
-    elif service_score > building_score and service_score > 0:
-        return "Postal services (activity)", "Mentions postal/mail services"
-    elif official_score > 0:
-        return "Public officials (postmaster)", "Mentions postal officials"
-    elif building_score > 0 and service_score > 0:
-        return "Both building and services", "Mentions both aspects"
-    else:
-        return "Unclear - manual review needed", "Insufficient context"
+    # If no specific indicators found
+    if not suggested_tags:
+        suggested_tags.append('Post office')  # Default to building
+        rationale_parts.append('mentions post office (default)')
+
+    rationale = 'Context shows: ' + ', '.join(rationale_parts)
+
+    return suggested_tags, rationale
 
 
 def analyse_post_items(zot):
@@ -220,8 +230,8 @@ def analyse_post_items(zot):
         keywords = ['post office', 'post', 'postal', 'postmaster', 'mail', 'letter']
         snippets = extract_kwic_snippets(full_text, keywords)
 
-        # Classify usage
-        classification, rationale = classify_post_usage(snippets)
+        # Classify usage and suggest tags
+        suggested_tags, rationale = classify_post_usage(snippets)
 
         analysed_items.append({
             'title': title,
@@ -229,7 +239,7 @@ def analyse_post_items(zot):
             'publication': pub,
             'key': item_key,
             'snippets': snippets,
-            'classification': classification,
+            'suggested_tags': suggested_tags,
             'rationale': rationale,
             'full_text_length': len(full_text)
         })
@@ -239,7 +249,7 @@ def analyse_post_items(zot):
 
 def generate_report(items, output_path):
     """
-    Generate markdown report for user review.
+    Generate markdown report for user review with pre-filled suggestions.
 
     Parameters:
         items: List of analysed items
@@ -249,46 +259,44 @@ def generate_report(items, output_path):
 
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write("# Post Tag Analysis Report\n\n")
-        f.write("**Generated:** 2025-10-22\n")
+        f.write("**Generated:** 2025-10-22 (Updated)\n")
         f.write("**Purpose:** Disambiguate 'Post' tag usage\n\n")
         f.write("---\n\n")
 
         f.write("## Instructions\n\n")
         f.write("For each item below:\n\n")
-        f.write("1. Review the snippets showing 'Post' usage in context\n")
-        f.write("2. Determine the correct classification:\n")
-        f.write("   - **Post office** (building) → Tag with building tag\n")
-        f.write("   - **Postal services** (activity) → Tag with activity tag\n")
-        f.write("   - **Postmaster** (occupation) → Tag with occupation tag\n")
-        f.write("   - **Multiple** → Tag with multiple appropriate tags\n")
-        f.write("3. Write the desired tag(s) in the 'DECISION' field\n\n")
+        f.write("1. Review the suggested tags based on context analysis\n")
+        f.write("2. **Answer YES/NO/OTHER** for the suggested tags\n")
+        f.write("3. If OTHER, write your preferred tags in the field provided\n\n")
+        f.write("**Available tags:**\n")
+        f.write("- `Postmaster` (occupation) - Agents > People > Occupations > Public officials > Postmasters > Postmaster\n")
+        f.write("- `Post office` (building) - Built Environment > Civic buildings > Postal facilities > Post office\n")
+        f.write("- `Postal services` (activity) - Activities > Communication activities > Postal services\n")
+        f.write("- `Postal Department` (government body) - Agents > Organizations > Government bodies > Postal authorities > Postal Department\n\n")
         f.write("---\n\n")
 
         for i, item in enumerate(items, 1):
             f.write(f"## {i}. {item['title']}\n\n")
             f.write(f"- **Date:** {item['date']}\n")
             f.write(f"- **Publication:** {item['publication']}\n")
-            f.write(f"- **Zotero Key:** {item['key']}\n")
-            f.write(f"- **Full Text Available:** {'Yes' if item['full_text_length'] > 100 else 'No (limited context)'}\n\n")
+            f.write(f"- **Zotero Key:** {item['key']}\n\n")
 
-            f.write(f"**Suggested Classification:** {item['classification']}\n")
+            # Format suggested tags
+            tags_formatted = ' | '.join(f'`{tag}`' for tag in item['suggested_tags'])
+            f.write(f"**Suggested Tags:** {tags_formatted}\n")
             f.write(f"**Rationale:** {item['rationale']}\n\n")
 
             f.write("**Snippets (showing post-related content):**\n\n")
 
             if item['snippets']:
-                for snippet in item['snippets']:
+                for snippet in item['snippets'][:3]:  # Limit to 3 most relevant
                     f.write(f"> {snippet}\n\n")
             else:
                 f.write("> *No snippets found - limited full text available*\n\n")
 
-            f.write("**DECISION:**\n\n")
-            f.write("- [ ] Post office (building)\n")
-            f.write("- [ ] Postal services (activity)\n")
-            f.write("- [ ] Postmaster (occupation)\n")
-            f.write("- [ ] Multiple (specify): ________________\n")
-            f.write("- [ ] Remove 'Post' tag (not relevant)\n\n")
-            f.write("**Proposed Tags:** ________________\n\n")
+            f.write("**DECISION:** ")
+            f.write("YES / NO / OTHER: ________________\n\n")
+
             f.write("---\n\n")
 
     print(f"✓ Report generated: {output_path}")

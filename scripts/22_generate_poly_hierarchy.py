@@ -137,6 +137,12 @@ def generate_primary_facets():
         ['Stationmaster', 'Stationmaster', 'hierarchy', 'parent=Public officials'],
         ['Minister for Mines', 'Minister for Mines', 'hierarchy', 'parent=Public officials'],
 
+        # Postmasters - Pattern A (Churches model): Postmasters > Postmaster > specific people
+        ['Postmasters', 'Postmasters', 'hierarchy', 'parent=Public officials'],
+        ['Postmaster', 'Postmaster', 'hierarchy', 'parent=Postmasters'],  # Generic/unnamed postmaster
+        ['Mrs. H. Corston', 'Mrs. H. Corston', 'hierarchy', 'parent=Postmasters'],
+        ['Mrs. James', 'Mrs. James', 'hierarchy', 'parent=Postmasters'],
+
         # Hospitality workers
         ['Hospitality workers', 'Hospitality workers', 'hierarchy', 'parent=Occupations'],
         ['Publican', 'Publican', 'hierarchy', 'parent=Hospitality workers'],
@@ -340,6 +346,9 @@ def generate_primary_facets():
         ['Lithgow Council', 'Lithgow Council', 'hierarchy', 'parent=Councils'],
         ['Railway authorities', 'Railway authorities', 'hierarchy', 'parent=Government bodies'],
         ['Railway commission', 'Railway commission', 'hierarchy', 'parent=Railway authorities'],
+        ['Postal authorities', 'Postal authorities', 'hierarchy', 'parent=Government bodies'],
+        ['Postal Department', 'Postal Department', 'hierarchy', 'parent=Postal authorities'],
+        ['Post Office Department', 'Postal Department', 'synonym', 'Historical name for Postal Department'],
         ['Other government bodies', 'Other government bodies', 'hierarchy', 'parent=Government bodies'],
         ['Aborigines\' Protection Board', 'Aborigines\' Protection Board', 'hierarchy', 'parent=Other government bodies'],
     ])
