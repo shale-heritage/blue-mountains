@@ -144,11 +144,17 @@ def generate_primary_facets():
         ['Postmasters', 'Postmasters', 'hierarchy', 'parent=Postal employees'],
         ['Postmaster', 'Postmaster', 'hierarchy', 'parent=Postmasters'],  # Generic/unnamed postmaster
         ['Mrs. H. Corston', 'Mrs. H. Corston', 'hierarchy', 'parent=Postmasters'],
+        ['Mrs. A. Smith', 'Mrs. A. Smith', 'hierarchy', 'parent=Postmasters'],
         ['Mrs. James', 'Mrs. James', 'hierarchy', 'parent=Postmasters'],
+        ['Mrs. England', 'Mrs. England', 'hierarchy', 'parent=Postmasters'],
 
         # Postboys - Pattern A: Postboys > Postboy
         ['Postboys', 'Postboys', 'hierarchy', 'parent=Postal employees'],
         ['Postboy', 'Postboy', 'hierarchy', 'parent=Postboys'],  # Generic/unnamed postboy
+
+        # Mailmen - Pattern A: Mailmen > Mailman
+        ['Mailmen', 'Mailmen', 'hierarchy', 'parent=Postal employees'],
+        ['Mailman', 'Mailman', 'hierarchy', 'parent=Mailmen'],  # Generic/unnamed mailman
 
         # Hospitality workers
         ['Hospitality workers', 'Hospitality workers', 'hierarchy', 'parent=Occupations'],
