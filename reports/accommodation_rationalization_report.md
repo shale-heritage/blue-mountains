@@ -15,7 +15,7 @@
 
 - **Date:** 6 September 1890
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Carrington Hotel`
+- **Proposed Tag:** `Carrington Hotel` | `Katoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington Hotel | Places > Towns > Katoomba
 
 **Snippet:**
@@ -30,7 +30,7 @@
 
 - **Date:** 26 April 1890
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Datoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns > Datoomba
 
 **Snippet:**
@@ -45,7 +45,7 @@
 
 - **Date:** 9 October 1903
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Cottage` | `Boarding house` | `Hotellier`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Built Environment > Buildings > Accommodation buildings > Cottages | Built Environment > Buildings > Accommodation buildings > Boarding houses | Agents > People > Occupations > Hospitality workers > Hotellier
 
 **Snippet:**
@@ -60,7 +60,7 @@
 
 - **Date:** 7 July 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Leura`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns > Leura
 
 **Snippet:**
@@ -75,7 +75,7 @@
 
 - **Date:** 21 October 1892
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel Wentworth` | `Stable`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Hotel Wentworth | Built Environment > Buildings > Stables
 
 **Snippet:**
@@ -90,7 +90,7 @@
 
 - **Date:** 9 September 1892
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Wentworth Falls Hotel` | `Mr Wilson` | `Mr Manuel` | `Hatley Vale`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Wentworth Falls Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Wilson | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Manuel | Places > Towns > Hatley Vale
 
 **Snippet:**
@@ -120,7 +120,7 @@
 
 - **Date:** 17 November 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Boarding house` | `Hotellier`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Built Environment > Buildings > Accommodation buildings > Boarding houses | Agents > People > Occupations > Hospitality workers > Hotellier
 
 **Snippet:**
@@ -135,7 +135,7 @@
 
 - **Date:** 26 April 1895
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Katoomba Family Hotel` | `Mrs Long`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba Family Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Long
 
 **Snippet:**
@@ -150,7 +150,7 @@
 
 - **Date:** 7 February 1896
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Megalong Hotel`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong Hotel
 
 **Snippet:**
@@ -165,7 +165,7 @@
 
 - **Date:** 4 December 1891
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Boarding houses`
+- **Proposed Tag:** `Orama Boarding House`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Boarding houses > Orama Boarding House
 
 **Snippet:**
@@ -180,7 +180,7 @@
 
 - **Date:** 5 June 1896
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Megalong Hotel`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong Hotel
 
 **Snippet:**
@@ -210,7 +210,7 @@
 
 - **Date:** 21 September 1894
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `F. C. Goyder`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > F. C. Goyder
 
 **Snippet:**
@@ -225,7 +225,7 @@
 
 - **Date:** 26 March 1892
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Fryer's Family Hotel` | `Rubina Fryer` | `Isabellea J. Long`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Fryer's Family Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Rubina Fryer | Agents > People > Occupations > Hospitality workers > Hotellier > Isabellea J. Long
 
 **Snippet:**
@@ -240,7 +240,7 @@
 
 - **Date:** 22 January 1892
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Wentwork Falls Hotel` | `Mr N. Delaney` | `Mr Thomas Cale`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Wentwork Falls Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr N. Delaney | Agents > People > Occupations > Other goods and services > Coach and buggy business > Mr Thomas Cale
 
 **Snippet:**
@@ -255,7 +255,7 @@
 
 - **Date:** 23 June 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Imperial Hotel` | `Mount Victoria`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Imperial Hotel | Places > Towns > Mount Victoria
 
 **Snippet:**
@@ -270,7 +270,7 @@
 
 - **Date:** 4 August 1905
 - **Publication:** Lithgow Mercury
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Katoomba Family Hotel` | `Mrs Long`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba Family Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Long
 
 **Snippet:**
@@ -285,7 +285,7 @@
 
 - **Date:** 25 May 1889
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Mr D Thomson`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mr D Thomson
 
 **Snippet:**
@@ -300,7 +300,7 @@
 
 - **Date:** 21 September 1889
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Carrington Hotel`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington Hotel
 
 **Snippet:**
@@ -315,7 +315,7 @@
 
 - **Date:** 20 November 1891
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Hotellier` | `Mount Victoria`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier | Places > Towns > Mount Victoria
 
 **Snippet:**
@@ -330,7 +330,7 @@
 
 - **Date:** 29 April 1892
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Belgravia Hotel` | `Mr Ellis` | `Medlow`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Belgravia Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Ellis | Places > Towns > Medlow
 
 **Snippet:**
@@ -345,7 +345,7 @@
 
 - **Date:** 1 September 1905
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Falls Hotel` | `Cattle`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Falls Hotel | Agents > Animals > Cattle
 
 **Snippet:**
@@ -360,7 +360,7 @@
 
 - **Date:** 1890s
 - **Publication:** N/A
-- **Proposed Tag:** `NEEDS MANUAL REVIEW`
+- **Proposed Tag:** `TBD`
 - **Hierarchy Path:** TBD
 
 **Snippet:**
@@ -375,7 +375,7 @@
 
 - **Date:** 23 March 1917
 - **Publication:** Blue Mountain Echo
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Comet Hotel` | `Clarence` | `hartley Vale` | `Lithgow` | `Hotellier`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Comet Hotel | Places > Towns > Clarence | Places > Towns > hartley Vale | Places > Towns > Lithgow | Agents > People > Occupations > Hospitality workers > Hotellier
 
 **Snippet:**
@@ -390,7 +390,7 @@
 
 - **Date:** 3 December 1926
 - **Publication:** Blue Mountain Echo
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Family Hotel` | `Katoomba` | `Mr Joe Nimmo` | `Mrs (Joe) Nimmo`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Family Hotel | Places > Towns > Katoomba | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Joe Nimmo | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs (Joe) Nimmo
 
 **Snippet:**
@@ -405,7 +405,7 @@
 
 - **Date:** 4 May 1894
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Manuell`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Manuell
 
 **Snippet:**
@@ -420,7 +420,7 @@
 
 - **Date:** 5 May 1894
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Mr Wilson`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Wilson
 
 **Snippet:**
@@ -435,7 +435,7 @@
 
 - **Date:** 1 December 1905
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Railway Hotel` | `Katoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Railway Hotel | Places > Towns > Katoomba
 
 **Snippet:**
@@ -450,7 +450,7 @@
 
 - **Date:** 13 January 1905
 - **Publication:** Mountaineer
-- **Proposed Tag:** `NEEDS MANUAL REVIEW`
+- **Proposed Tag:** `TBD`
 - **Hierarchy Path:** TBD
 
 **Snippet:**
@@ -465,7 +465,7 @@
 
 - **Date:** 17 March 1905
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Mrs Long` | `Nellie's Glen`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Long | Places > Natural features > Gullies > Nellie's Glen
 
 **Snippet:**
@@ -480,7 +480,7 @@
 
 - **Date:** 26 August 1904
 - **Publication:** Blue Mountain Gazette
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Mrs Brown` | `South Katoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Brown | Places > Towns > Katoomba > South Katoomba
 
 **Snippet:**
@@ -495,7 +495,7 @@
 
 - **Date:** 21 March 1902
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Mrs Long`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Long
 
 **Snippet:**
@@ -510,7 +510,7 @@
 
 - **Date:** 27 December 1901
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Megalong Hotel` | `Nellie's Glen`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong Hotel | Places > Natural features > Gullies > Nellie's Glen
 
 **Snippet:**
@@ -525,7 +525,7 @@
 
 - **Date:** 18 March 1898
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Grant Hotel` | `Imperial Hotel`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Grant Hotel | Built Environment > Buildings > Accommodation buildings > Hotels > Imperial Hotel
 
 **Snippet:**
@@ -540,7 +540,7 @@
 
 - **Date:** 3 July 1896
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Katoomba Hotel`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba Hotel
 
 **Snippet:**
@@ -555,7 +555,7 @@
 
 - **Date:** 19 June 1896
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Delaney's Family Hotel`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Delaney's Family Hotel
 
 **Snippet:**
@@ -585,7 +585,7 @@
 
 - **Date:** 8 February 1895
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Belgravia Hotel` | `Medlow` | `W. Green`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Belgravia Hotel | Places > Towns > Medlow | Agents > People > Occupations > Hospitality workers > Hotellier > W. Green
 
 **Snippet:**
@@ -600,7 +600,7 @@
 
 - **Date:** 29 December 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Boarding houses`
+- **Proposed Tag:** `Boarding house`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Boarding houses
 
 **Snippet:**
@@ -615,7 +615,7 @@
 
 - **Date:** 14 July 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Leura Hotel` | `Cottage` | `Katoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Leura Hotel | ilt Environment > Buildings > Accommodation buildings > Cottages | Places > Towns > Katoomba
 
 **Snippet:**
@@ -630,7 +630,7 @@
 
 - **Date:** 7 July 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Katoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns > Katoomba
 
 **Snippet:**
@@ -645,7 +645,7 @@
 
 - **Date:** 8 July 1893
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Carrington Hotel` | `F. C. Goyder` | `Hotel` | `Leura` | `Megalong`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > F. C. Goyder | Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns > Leura | Places > Towns > Megalong
 
 **Snippet:**
@@ -660,7 +660,7 @@
 
 - **Date:** 16 June 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Centennial Hotel` | `Richard Allen` | `South Katoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Centennial Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Richard Allen | Places > South Katoomba
 
 **Snippet:**
@@ -675,7 +675,7 @@
 
 - **Date:** 2 June 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hydora House Hotel` | `Mr Alf. Goodare` | `Blackheath`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Hydora House Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Alf. Goodare | Places > Towns > Blackheath
 
 **Snippet:**
@@ -690,7 +690,7 @@
 
 - **Date:** 2 December 1892
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Boarding house`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Built Environment > Buildings > Accommodation buildings > Boarding houses
 
 **Snippet:**
@@ -705,7 +705,7 @@
 
 - **Date:** 18 November 1892
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Boarding house`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Built Environment > Buildings > Accommodation buildings > Boarding houses
 
 **Snippet:**
@@ -720,7 +720,7 @@
 
 - **Date:** 1 October 1892
 - **Publication:** Nepean Times
-- **Proposed Tag:** `NEEDS MANUAL REVIEW`
+- **Proposed Tag:** `TBD`
 - **Hierarchy Path:** TBD
 
 **Snippet:**
@@ -735,7 +735,7 @@
 
 - **Date:** 11 March 1892
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Katoomba Family Hotel` | `Mr R. Fryer` | `Mrs (R.) Fryer`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba Family Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr R. Fryer | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs (R.) Fryer
 
 **Snippet:**
@@ -750,7 +750,7 @@
 
 - **Date:** 9 August 1890
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Centennial Hotel` | `Mr Edwards`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Centennial Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Edwards
 
 **Snippet:**
@@ -765,7 +765,7 @@
 
 - **Date:** 5 July 1890
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Centennial Hotel` | `Mr Edwards`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Centennial Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Edwards
 
 **Snippet:**
@@ -780,7 +780,7 @@
 
 - **Date:** 7 January 1888
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Carrington Hotel` | `Katoomba Hotel` | `Biles` | `Boarding house` | `Katoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington Hotel | Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Biles | Built Environment > Buildings > Accommodation buildings > Boarding houses | Places > Towns > Katoomba
 
 **Snippet:**
@@ -795,7 +795,7 @@
 
 - **Date:** 29 September 1888
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Mr J. Nimmo` | `Mr D. Thompson`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mr J. Nimmo | Agents > People > Occupations > Hospitality workers > Hotellier > Mr D. Thompson
 
 **Snippet:**
@@ -810,7 +810,7 @@
 
 - **Date:** 12 December 1885
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Mr D. Brown`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mr D. Brown
 
 **Snippet:**
@@ -825,7 +825,7 @@
 
 - **Date:** 20 November 1885
 - **Publication:** Sydney Morning Herald
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Great Western Hotel` | `Katoomba`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Great Western Hotel | Places > Towns > Katoomba
 
 **Snippet:**
@@ -840,7 +840,7 @@
 
 - **Date:** 13 July 1885
 - **Publication:** Sydney Morning Herald
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Mt Victoria Hotel` | `Mr P. G. Whittall` | `Grand Hotel (Sydney)` | `Sydney` | `Hotellier`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Mt Victoria Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr P. G. Whittall | Built Environment > Buildings > Accommodation buildings > Hotels > Grand Hotel (Sydney) | Places > Towns > Sydney | Agents > People > Occupations > Hospitality workers > Hotellier
 
 **Snippet:**
@@ -855,7 +855,7 @@
 
 - **Date:** 17 March 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Allen`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Allen
 
 **Snippet:**
@@ -870,7 +870,7 @@
 
 - **Date:** 14 July 1888
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Carrington` | `Cottage`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington | Built Environment > Buildings > Accommodation buildings > Cottages
 
 **Snippet:**
@@ -885,7 +885,7 @@
 
 - **Date:** 21 April 1903
 - **Publication:** Lithgow Mercury
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Centennial Hotel` | `South Katoomba` | `Hotellier`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Centennial Hotel | Places > Towns > South Katoomba | Agents > People > Occupations > Hospitality workers > Hotellier
 
 **Snippet:**
@@ -900,7 +900,7 @@
 
 - **Date:** 19 December 1885
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Brown`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Brown
 
 **Snippet:**
@@ -915,7 +915,7 @@
 
 - **Date:** 27 October 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Hotel` | `Mr Delaney`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Delaney
 
 **Snippet:**
@@ -930,7 +930,7 @@
 
 - **Date:** 24 February 1883
 - **Publication:** Nepean Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Great Western Hotel` | `Mr A. G. Rowell` | `Oxford Hotel (Sydney)` | `Sydney`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Great Western Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr A. G. Rowell | Built Environment > Buildings > Accommodation buildings > Hotels > Oxford Hotel (Sydney) | Places > Towns > Sydney
 
 **Snippet:**
@@ -945,7 +945,7 @@
 
 - **Date:** 9 June 1893
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Megalong Hotel` | `Megalong`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong Hotel | Places > Towns > Megalong
 
 **Snippet:**
@@ -960,7 +960,7 @@
 
 - **Date:** 21 September 1894
 - **Publication:** Mountaineer
-- **Proposed Tag:** `Hotel`
+- **Proposed Tag:** `Megalong Hotel` | `Megalong` | `Katoomba` | `Nellie's Glen`
 - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong Hotel | Places > Towns > Megalong | Places > Towns > Katoomba | Places > Natural features > Gullies > Nellie's Glen
 
 **Snippet:**
