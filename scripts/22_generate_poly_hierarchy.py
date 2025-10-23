@@ -148,13 +148,11 @@ def generate_primary_facets():
         ['Mrs. James', 'Mrs. James', 'hierarchy', 'parent=Postmasters'],
         ['Mrs. England', 'Mrs. England', 'hierarchy', 'parent=Postmasters'],
 
-        # Postboys - Pattern A: Postboys > Postboy
-        ['Postboys', 'Postboys', 'hierarchy', 'parent=Postal employees'],
-        ['Postboy', 'Postboy', 'hierarchy', 'parent=Postboys'],  # Generic/unnamed postboy
-
-        # Mailmen - Pattern A: Mailmen > Mailman
+        # Mailmen - Pattern A: Mailmen > Mailman/Postboy (both mail delivery occupations)
         ['Mailmen', 'Mailmen', 'hierarchy', 'parent=Postal employees'],
-        ['Mailman', 'Mailman', 'hierarchy', 'parent=Mailmen'],  # Generic/unnamed mailman
+        ['Mailman', 'Mailman', 'hierarchy', 'parent=Mailmen'],  # Generic mail carrier
+        ['Postman', 'Mailman', 'synonym', 'Alternative term for mailman'],
+        ['Postboy', 'Postboy', 'hierarchy', 'parent=Mailmen'],  # Junior mail carrier/assistant
 
         # Hospitality workers
         ['Hospitality workers', 'Hospitality workers', 'hierarchy', 'parent=Occupations'],
@@ -389,6 +387,7 @@ def generate_primary_facets():
         ['Nellie\'s Glen Shale Mine', 'Nellie\'s Glen Shale Mine', 'hierarchy', 'parent=Nellie\'s Glen'],
         ['South Clifton', 'South Clifton', 'hierarchy', 'parent=Mining districts'],
         ['South Clifton Tunnel Mine', 'South Clifton Tunnel Mine', 'hierarchy', 'parent=South Clifton'],
+        ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Mining districts'],
 
         # Natural features
         ['Natural features', 'Natural features', 'hierarchy', 'parent=Places (existing facet)'],
@@ -411,9 +410,8 @@ def generate_primary_facets():
         ['Gullies', 'Gullies', 'hierarchy', 'parent=Natural features'],
         ['Nellie\'s Glen', 'Nellie\'s Glen', 'hierarchy', 'parent=Gullies'],
 
-        # Mining settlements
-        ['Mining settlements', 'Mining settlements', 'hierarchy', 'parent=Places (existing facet)'],
-        ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Mining settlements'],
+        # Mining settlements - DEPRECATED, merged into Mining districts
+        # Items tagged "Mining settlements" should be reviewed and retagged as specific mining districts
 
         # Towns (settlements with places/localities within them)
         ['Towns', 'Towns', 'hierarchy', 'parent=Places (existing facet)'],
@@ -429,7 +427,7 @@ def generate_primary_facets():
         ['Sydney', 'Sydney', 'hierarchy', 'parent=Towns'],
         ['Blackheath', 'Blackheath', 'hierarchy', 'parent=Towns'],
         ['Megalong', 'Megalong', 'hierarchy', 'parent=Towns'],
-        ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Megalong'],
+        ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Megalong (also appears under Mining districts)'],
 
         # Reserves (recreational lands)
         ['Reserves', 'Reserves', 'hierarchy', 'parent=Places (existing facet)'],
@@ -453,11 +451,11 @@ def generate_primary_facets():
     rows.extend([
         ['Built Environment', 'Built Environment', 'hierarchy', 'parent=(new top-level facet)'],
 
-        # Accommodation buildings
-        ['Accommodation buildings', 'Accommodation buildings', 'hierarchy', 'parent=Built Environment'],
+        # Accommodation and hospitality venues (merged from Accommodation buildings + Hospitality venues)
+        ['Accommodation and hospitality venues', 'Accommodation and hospitality venues', 'hierarchy', 'parent=Built Environment'],
 
         # Hotels - Pattern A (Churches model): Hotels > Hotel > specific hotels
-        ['Hotels', 'Hotels', 'hierarchy', 'parent=Accommodation buildings'],
+        ['Hotels', 'Hotels', 'hierarchy', 'parent=Accommodation and hospitality venues'],
         ['Hotel', 'Hotel', 'hierarchy', 'parent=Hotels'],  # Generic/unnamed hotel
         # NOTE: Individual hotels also appear under Organizations > Hospitality businesses (business aspect)
         # This creates poly-hierarchy: hotels as buildings (here) AND hotels as businesses (Organizations)
@@ -473,27 +471,26 @@ def generate_primary_facets():
         ['Oxford Hotel (Sydney)', 'Oxford Hotel (Sydney)', 'hierarchy', 'parent=Hotels'],
 
         # Boarding houses - Pattern A
-        ['Boarding houses', 'Boarding houses', 'hierarchy', 'parent=Accommodation buildings'],
+        ['Boarding houses', 'Boarding houses', 'hierarchy', 'parent=Accommodation and hospitality venues'],
         ['Boarding house', 'Boarding house', 'hierarchy', 'parent=Boarding houses'],  # Generic/unnamed
         ['Orama Boarding House', 'Orama Boarding House', 'hierarchy', 'parent=Boarding houses'],
 
         # Cottages - Pattern A (NEW category)
-        ['Cottages', 'Cottages', 'hierarchy', 'parent=Accommodation buildings'],
+        ['Cottages', 'Cottages', 'hierarchy', 'parent=Accommodation and hospitality venues'],
         ['Cottage', 'Cottage', 'hierarchy', 'parent=Cottages'],  # Generic/unnamed cottage
 
         # Stables - Pattern A (NEW category)
-        ['Stables', 'Stables', 'hierarchy', 'parent=Accommodation buildings'],
+        ['Stables', 'Stables', 'hierarchy', 'parent=Accommodation and hospitality venues'],
         ['Stable', 'Stable', 'hierarchy', 'parent=Stables'],  # Generic/unnamed stable
 
         # Dwellings
-        ['Dwellings', 'Dwellings', 'hierarchy', 'parent=Accommodation buildings'],
+        ['Dwellings', 'Dwellings', 'hierarchy', 'parent=Accommodation and hospitality venues'],
         ['Miners\' dwellings', 'Miners\' dwellings', 'hierarchy', 'parent=Dwellings'],
 
-        # Hospitality venues
-        ['Hospitality venues', 'Hospitality venues', 'hierarchy', 'parent=Built Environment'],
-        ['Public house', 'Public house', 'hierarchy', 'parent=Hospitality venues'],
+        # Public houses - Pattern A (merged from previous Hospitality venues)
+        ['Public houses', 'Public houses', 'hierarchy', 'parent=Accommodation and hospitality venues'],
+        ['Public house', 'Public house', 'hierarchy', 'parent=Public houses'],
         ['Pub', 'Public house', 'synonym', 'Colloquial term for public house'],
-        ['Pubs', 'Pubs', 'hierarchy', 'parent=Hospitality venues'],
 
         # Civic buildings
         ['Civic buildings', 'Civic buildings', 'hierarchy', 'parent=Built Environment'],
@@ -623,7 +620,7 @@ def generate_primary_facets():
 
         # Alcohol-related criminal events
         ['Alcohol-related', 'Alcohol-related', 'hierarchy', 'parent=Criminal events'],
-        ['Drunkenness', 'Drunkenness', 'hierarchy', 'parent=Alcohol-related'],
+        ['Drunkenness (crime)', 'Drunkenness (crime)', 'hierarchy', 'parent=Alcohol-related'],
         ['Unlicensed sales', 'Unlicensed sales', 'hierarchy', 'parent=Alcohol-related'],
         ['Sly-grog operations', 'Unlicensed sales', 'synonym', 'Australian colonial term for unlicensed liquor sales'],
         ['Serving alcohol to minors', 'Serving alcohol to minors', 'hierarchy', 'parent=Alcohol-related'],
@@ -669,7 +666,7 @@ def generate_primary_facets():
         ['Tourism', 'Tourism', 'hierarchy', 'parent=Economic activities'],
         ['Transport', 'Transport', 'hierarchy', 'parent=Economic activities'],
         ['Trucking', 'Trucking', 'hierarchy', 'parent=Transport'],
-        ['Horses', 'Horses', 'hierarchy', 'parent=Transport'],
+        ['Horseborne transportation', 'Horseborne transportation', 'hierarchy', 'parent=Transport'],
 
         # Commercial activities
         ['Commercial activities', 'Commercial activities', 'hierarchy', 'parent=Activities'],
@@ -695,10 +692,10 @@ def generate_primary_facets():
         ['Advertising', 'Advertising', 'hierarchy', 'parent=Communication activities'],
         ['Fundraising', 'Fundraising', 'hierarchy', 'parent=Communication activities'],
 
-        # Postal services
-        # TODO: Review source text to disambiguate post office (building) vs postal service (activity)
+        # Postal services - Pattern A: Postal services (plural) > Postal service (singular)
         ['Postal services', 'Postal services', 'hierarchy', 'parent=Communication activities'],
-        ['Post', 'Post', 'hierarchy', 'parent=Postal services'],
+        ['Postal service', 'Postal service', 'hierarchy', 'parent=Postal services'],
+        ['Post', 'Postal service', 'synonym', 'Generic term for postal service (deprecated - use specific tags)'],
 
         # Military activities
         ['Military activities', 'Military activities', 'hierarchy', 'parent=Activities'],
@@ -981,7 +978,7 @@ def generate_thematic_groupings():
         ['Property crimes', 'Property crimes', 'hierarchy', 'parent=Crimes - THEMATIC'],
         ['Theft', 'Theft', 'hierarchy', 'parent=Property crimes - THEMATIC'],
         ['Social order offences', 'Social order offences', 'hierarchy', 'parent=Crimes - THEMATIC'],
-        ['Drunkenness', 'Drunkenness', 'hierarchy', 'parent=Social order offences - THEMATIC'],
+        ['Drunkenness (crime)', 'Drunkenness (crime)', 'hierarchy', 'parent=Social order offences - THEMATIC'],
         ['Gambling', 'Gambling', 'hierarchy', 'parent=Social order offences - THEMATIC'],
         ['Desertion', 'Desertion', 'hierarchy', 'parent=Social order offences - THEMATIC'],
         ['Other crimes', 'Other crimes', 'hierarchy', 'parent=Crimes - THEMATIC'],
@@ -1030,14 +1027,14 @@ def generate_thematic_groupings():
         ['Alcohol & Temperance', 'Alcohol & Temperance', 'hierarchy', 'parent=(thematic grouping)'],
         ['Alcohol-related venues', 'Alcohol-related venues', 'hierarchy', 'parent=Alcohol & Temperance - THEMATIC'],
         ['Hotels', 'Hotels', 'hierarchy', 'parent=Alcohol-related venues - THEMATIC'],
-        ['Pubs', 'Pubs', 'hierarchy', 'parent=Alcohol-related venues - THEMATIC'],
+        ['Public houses', 'Public houses', 'hierarchy', 'parent=Alcohol-related venues - THEMATIC'],
         ['Temperance organizations & movements', 'Temperance organizations & movements', 'hierarchy', 'parent=Alcohol & Temperance - THEMATIC'],
         ['Good Templars', 'Good Templars', 'hierarchy', 'parent=Temperance organizations & movements - THEMATIC'],
         ['Temperance', 'Temperance', 'hierarchy', 'parent=Temperance organizations & movements - THEMATIC'],
         ['Alcohol consumption & behaviour', 'Alcohol consumption & behaviour', 'hierarchy', 'parent=Alcohol & Temperance - THEMATIC'],
         ['Alcoholic beverages', 'Alcoholic beverages', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
         ['Drinking (alcohol)', 'Drinking (alcohol)', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
-        ['Drunkenness', 'Drunkenness', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
+        ['Drunkenness (crime)', 'Drunkenness (crime)', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
         ['Drunkenness (intoxication)', 'Drunkenness (intoxication)', 'hierarchy', 'parent=Alcohol consumption & behaviour - THEMATIC'],
         ['Licensing & regulation', 'Licensing & regulation', 'hierarchy', 'parent=Alcohol & Temperance - THEMATIC'],
         ['Licensing', 'Licensing', 'hierarchy', 'parent=Licensing & regulation - THEMATIC'],
