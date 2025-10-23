@@ -480,14 +480,14 @@
 
 - **Date:** 26 August 1904
 - **Publication:** Blue Mountain Gazette
-- **Proposed Tag:** `Hotel` | `Mrs Brown` | `South Katoomba`
-- **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Brown | Places > Towns > Katoomba > South Katoomba
+- **Proposed Tag:** `Railway Hotel` | `Mrs Brown` | `South Katoomba`
+- **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Railway Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Brown | Places > Towns > Katoomba > South Katoomba
 
 **Snippet:**
 
 > We hear that Mrs. Brown, who has had the hotel at South Katoomba for a number of years, has purchased the right to take over Bashford's Railway Hotel.
 
-**Rationale:** Article mentions hotel
+**Rationale:** Article mentions Railway Hotel specifically and Mrs Brown as hotellier
 
 ---
 
