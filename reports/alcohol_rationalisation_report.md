@@ -102,7 +102,7 @@ The "Alcohol" tag is too broad and encompasses multiple distinct concepts:
 
 - **Date:** 3 March 1893
 - **Publication:** Katoomba Times
-- **Proposed Tags:** `Liquor trade` | `Hotelliers` | `Fires` | `Megalong Valley` | `Oberon`
+- **Proposed Tags:** `Liquor trade` | `Hotellier` | `Fires` | `Megalong Valley` | `Oberon`
 - **Hierarchy Path:** Activities > Commercial activities > Liquor trade | Agents > People > Occupations > Hospitality workers > Hotelliers | Events > Disasters > Fires | Places > Valleys > Megalong Valley | Places > Towns > Oberon
 
 **Snippet (showing alcohol-related content):**
@@ -164,7 +164,7 @@ Joseph Nimmo was charged with supplying drink to Walter Meredith, a lad supposed
 
 - **Date:** 9 September 1892
 - **Publication:** Katoomba Times
-- **Proposed Tags:** `Drinking (alcohol)` | `Drunkenness (intoxication)` | `Wine` | `Liquor trade` | `Indigenous Australians` | `Publicans` | `Megalong Valley`
+- **Proposed Tags:** `Drinking (alcohol)` | `Drunkenness (intoxication)` | `Wine` | `Liquor trade` | `Indigenous Australians` | `Publican` | `Megalong Valley`
 - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | Associated Concepts > Physical and health conditions > Drunkenness (intoxication) | Materials > Consumable materials > Alcoholic beverages > Wine | Activities > Commercial activities > Liquor trade | Agents > People > Cultural groups > Indigenous Australians | Agents > People > Occupations > Hospitality workers > Publicans | Places > Valleys > Megalong Valley
 
 **Snippet (showing alcohol-related content):**
@@ -196,7 +196,7 @@ The past fortnight has been rather uneventful, and there is nothing of special i
 
 - **Date:** 23 June 1893
 - **Publication:** Katoomba Times
-- **Proposed Tags:** `Liquor licensing` | `Hotels` | `Public house` | `Unlicensed sales` | `Gambling` | `Megalong Valley`
+- **Proposed Tags:** `Liquor licensing` | `Hotel` | `Public house` | `Unlicensed sales` | `Gambling` | `Megalong Valley`
 - **Hierarchy Path:** Activities > Regulatory processes > Licensing > Liquor licensing | Built Environment > Buildings > Accommodation buildings > Hotels | Built Environment > Buildings > Hospitality venues > Public house | Events > Criminal events > Alcohol-related > Unlicensed sales | Activities > Social behaviours > Gambling | Places > Valleys > Megalong Valley
 
 **Snippet (showing alcohol-related content):**
