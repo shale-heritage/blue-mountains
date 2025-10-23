@@ -14,7 +14,8 @@ For each item below:
 3. If OTHER, write your preferred tags in the field provided
 
 **Available tags:**
-- `Postmaster` (occupation) - Agents > People > Occupations > Public officials > Postmasters > Postmaster
+- `Postmaster` (occupation) - Agents > People > Occupations > Public officials > Postal employees > Postmasters > Postmaster
+- `Postboy` (occupation) - Agents > People > Occupations > Public officials > Postal employees > Postboys > Postboy
 - `Post office` (building) - Built Environment > Civic buildings > Postal facilities > Post office
 - `Postal services` (activity) - Activities > Communication activities > Postal services
 - `Postal Department` (government body) - Agents > Organizations > Government bodies > Postal authorities > Postal Department

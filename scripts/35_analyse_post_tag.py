@@ -151,6 +151,11 @@ def classify_post_usage(snippets):
         suggested_tags.append('Postmaster')
         rationale_parts.append('postmaster/postmistress mentioned')
 
+    # Check for postboy (occupation)
+    if 'post boy' in combined_text or 'postboy' in combined_text:
+        suggested_tags.append('Postboy')
+        rationale_parts.append('postboy mentioned')
+
     # Check for post office (building)
     if 'post office' in combined_text:
         # Check if it's about the building/location
@@ -269,7 +274,8 @@ def generate_report(items, output_path):
         f.write("2. **Answer YES/NO/OTHER** for the suggested tags\n")
         f.write("3. If OTHER, write your preferred tags in the field provided\n\n")
         f.write("**Available tags:**\n")
-        f.write("- `Postmaster` (occupation) - Agents > People > Occupations > Public officials > Postmasters > Postmaster\n")
+        f.write("- `Postmaster` (occupation) - Agents > People > Occupations > Public officials > Postal employees > Postmasters > Postmaster\n")
+        f.write("- `Postboy` (occupation) - Agents > People > Occupations > Public officials > Postal employees > Postboys > Postboy\n")
         f.write("- `Post office` (building) - Built Environment > Civic buildings > Postal facilities > Post office\n")
         f.write("- `Postal services` (activity) - Activities > Communication activities > Postal services\n")
         f.write("- `Postal Department` (government body) - Agents > Organizations > Government bodies > Postal authorities > Postal Department\n\n")

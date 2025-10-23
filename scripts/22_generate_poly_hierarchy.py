@@ -137,11 +137,18 @@ def generate_primary_facets():
         ['Stationmaster', 'Stationmaster', 'hierarchy', 'parent=Public officials'],
         ['Minister for Mines', 'Minister for Mines', 'hierarchy', 'parent=Public officials'],
 
+        # Postal employees - intermediate grouping for all postal-related occupations
+        ['Postal employees', 'Postal employees', 'hierarchy', 'parent=Public officials'],
+
         # Postmasters - Pattern A (Churches model): Postmasters > Postmaster > specific people
-        ['Postmasters', 'Postmasters', 'hierarchy', 'parent=Public officials'],
+        ['Postmasters', 'Postmasters', 'hierarchy', 'parent=Postal employees'],
         ['Postmaster', 'Postmaster', 'hierarchy', 'parent=Postmasters'],  # Generic/unnamed postmaster
         ['Mrs. H. Corston', 'Mrs. H. Corston', 'hierarchy', 'parent=Postmasters'],
         ['Mrs. James', 'Mrs. James', 'hierarchy', 'parent=Postmasters'],
+
+        # Postboys - Pattern A: Postboys > Postboy
+        ['Postboys', 'Postboys', 'hierarchy', 'parent=Postal employees'],
+        ['Postboy', 'Postboy', 'hierarchy', 'parent=Postboys'],  # Generic/unnamed postboy
 
         # Hospitality workers
         ['Hospitality workers', 'Hospitality workers', 'hierarchy', 'parent=Occupations'],
