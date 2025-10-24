@@ -387,7 +387,6 @@ def generate_primary_facets():
         ['Nellie\'s Glen Shale Mine', 'Nellie\'s Glen Shale Mine', 'hierarchy', 'parent=Nellie\'s Glen'],
         ['South Clifton', 'South Clifton', 'hierarchy', 'parent=Mining districts'],
         ['South Clifton Tunnel Mine', 'South Clifton Tunnel Mine', 'hierarchy', 'parent=South Clifton'],
-        ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Mining districts'],
 
         # Natural features
         ['Natural features', 'Natural features', 'hierarchy', 'parent=Places (existing facet)'],
@@ -427,7 +426,7 @@ def generate_primary_facets():
         ['Sydney', 'Sydney', 'hierarchy', 'parent=Towns'],
         ['Blackheath', 'Blackheath', 'hierarchy', 'parent=Towns'],
         ['Megalong', 'Megalong', 'hierarchy', 'parent=Towns'],
-        ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Megalong (also appears under Mining districts)'],
+        ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Megalong'],
 
         # Reserves (recreational lands)
         ['Reserves', 'Reserves', 'hierarchy', 'parent=Places (existing facet)'],
@@ -1014,6 +1013,7 @@ def generate_thematic_groupings():
         ['Recreation for miners', 'Recreation for miners', 'hierarchy', 'parent=Mining activities - THEMATIC'],
         ['Mining infrastructure', 'Mining infrastructure', 'hierarchy', 'parent=Mining & Industry - THEMATIC'],
         ['Mining settlements', 'Mining settlements', 'hierarchy', 'parent=Mining & Industry - THEMATIC'],
+        ['Middle camp', 'Middle camp', 'hierarchy', 'parent=Mining settlements - THEMATIC'],
         ['Mining incidents', 'Mining incidents', 'hierarchy', 'parent=Mining & Industry - THEMATIC'],
         ['Mining accidents', 'Mining accidents', 'hierarchy', 'parent=Mining incidents - THEMATIC'],
         ['Accident', 'Accident', 'hierarchy', 'parent=Mining incidents - THEMATIC'],
@@ -1268,40 +1268,92 @@ def generate_thematic_groupings():
 
 
 def main():
-    """Generate complete poly-hierarchical taxonomy CSV."""
-    print("Generating comprehensive poly-hierarchical taxonomy...")
+    """
+    Generate complete poly-hierarchical taxonomy and append to consolidated CSV.
+
+    UPDATED 2025-10-24: Now appends directly to tag_map_consolidated.csv
+    (single source of truth). No longer creates separate poly_hierarchy_additions.csv.
+    """
+    print("=" * 80)
+    print("POLY-HIERARCHICAL TAXONOMY GENERATOR")
+    print("=" * 80)
     print()
 
     # Generate primary facets
-    print("Generating primary facet hierarchies...")
+    print("Phase 1: Generating primary facet hierarchies...")
     primary_rows = generate_primary_facets()
     print(f"  Generated {len(primary_rows)} primary facet relationships")
+    print()
 
     # Generate thematic groupings
-    print("Generating thematic grouping hierarchies...")
+    print("Phase 2: Generating thematic grouping hierarchies...")
     thematic_rows = generate_thematic_groupings()
     print(f"  Generated {len(thematic_rows)} thematic relationships")
+    print()
 
     # Combine
-    all_rows = primary_rows + thematic_rows
-    print()
-    print(f"TOTAL: {len(all_rows)} new hierarchy relationships")
+    all_new_rows = primary_rows + thematic_rows
+    print(f"TOTAL NEW: {len(all_new_rows)} hierarchy relationships generated")
     print()
 
-    # Write to output file
-    output_file = Path('data/poly_hierarchy_additions.csv')
-    with open(output_file, 'w', newline='', encoding='utf-8') as f:
+    # Load existing consolidated CSV
+    consolidated_file = Path('data/tag_map_consolidated.csv')
+    if not consolidated_file.exists():
+        print(f"ERROR: {consolidated_file} not found!")
+        print("Expected single source of truth file does not exist.")
+        return 1
+
+    print("Phase 3: Loading existing consolidated taxonomy...")
+    existing_rows = []
+    with open(consolidated_file, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            existing_rows.append([
+                row['old_tag'],
+                row['new_tag'],
+                row['action'],
+                row['notes']
+            ])
+
+    print(f"  Loaded {len(existing_rows)} existing relationships")
+    print()
+
+    # Deduplicate: Remove new rows that already exist
+    print("Phase 4: Deduplicating new rows against existing...")
+    existing_set = {tuple(row) for row in existing_rows}
+    new_unique_rows = [row for row in all_new_rows if tuple(row) not in existing_set]
+    duplicates = len(all_new_rows) - len(new_unique_rows)
+
+    print(f"  New unique relationships: {len(new_unique_rows)}")
+    print(f"  Duplicates (already exist): {duplicates}")
+    print()
+
+    if len(new_unique_rows) == 0:
+        print("✓ No new relationships to add. Consolidated file is up to date.")
+        return 0
+
+    # Append new unique rows
+    print(f"Phase 5: Appending {len(new_unique_rows)} new relationships...")
+    all_rows = existing_rows + new_unique_rows
+
+    # Sort by old_tag for consistency
+    all_rows_sorted = sorted(all_rows, key=lambda x: x[0])
+
+    # Write back to consolidated file
+    with open(consolidated_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(['old_tag', 'new_tag', 'action', 'notes'])
-        writer.writerows(all_rows)
+        writer.writerows(all_rows_sorted)
 
-    print(f"Written to: {output_file}")
+    print(f"✓ Updated {consolidated_file}")
+    print(f"  Total relationships: {len(all_rows_sorted)}")
     print()
+    print("=" * 80)
     print("Next steps:")
-    print("1. Review generated CSV")
-    print("2. Append to tag_consolidation_map.csv")
-    print("3. Generate hierarchy visualization")
-    print("4. Update folksonomy_logic.md")
+    print("1. Review updated tag_map_consolidated.csv")
+    print("2. Regenerate hierarchy visualizations if needed")
+    print("3. Update documentation if hierarchy structure changed")
+    print("=" * 80)
 
 
 if __name__ == '__main__':

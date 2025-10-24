@@ -1,0 +1,996 @@
+old_tag,new_tag,action,notes
+Child Tag,Child Tag,hierarchy,parent=Parent Tag
+Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Katoomba
+Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Katoomba
+Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Katoomba
+Katoomba Progress Association,Katoomba Progress Association,hierarchy,parent=Katoomba
+Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Katoomba
+Katoomba Council,Katoomba Council,hierarchy,parent=Katoomba
+Katoomba Falls,Katoomba Falls,hierarchy,parent=Katoomba
+Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=Katoomba
+Katoomba South,Katoomba South,hierarchy,parent=Katoomba
+Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=Katoomba
+Katoomba Cricket Club,Katoomba Cricket Club,hierarchy,parent=Katoomba
+Katoomba coal mines,Katoomba coal mines,hierarchy,parent=Katoomba
+Katoomba Amateur Dramatic Club,Katoomba Amateur Dramatic Club,hierarchy,parent=Katoomba
+Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Katoomba
+Katoomba South mines,Katoomba South mines,hierarchy,parent=Katoomba
+Katoomba station,Katoomba station,hierarchy,parent=Katoomba
+Katoomba band,Katoomba band,hierarchy,parent=Katoomba
+Katoomba Tennis Club,Katoomba Tennis Club,hierarchy,parent=Katoomba
+Katoomba Superior Public School,Katoomba Superior Public School,hierarchy,parent=Katoomba
+Katoomba Amateur Minstrels,Katoomba Amateur Minstrels,hierarchy,parent=Katoomba
+Katoomba Public School,Katoomba Public School,hierarchy,parent=Katoomba
+Katoomba Football Club,Katoomba Football Club,hierarchy,parent=Katoomba
+Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=Katoomba
+Katoomba Street,Katoomba Street,hierarchy,parent=Katoomba
+Katoomba Court,Katoomba Court,hierarchy,parent=Katoomba
+Katoomba Coal and Shale Mines,Katoomba Coal and Shale Mines,hierarchy,parent=Katoomba
+South Katoomba,South Katoomba,hierarchy,parent=Katoomba
+Death notice,Death notice,hierarchy,parent=Death
+Megalong Shale Mines,Megalong Shale Mines,hierarchy,parent=Shale mines
+Katoomba Coal and Shale Mines,Katoomba Coal and Shale Mines,hierarchy,parent=Shale mines
+Recreation for miners,Recreation for miners,hierarchy,parent=Miners
+Court cases,Court cases,hierarchy,parent=Court
+Supreme Court,Supreme Court,hierarchy,parent=Court
+Katoomba Court,Katoomba Court,hierarchy,parent=Court
+Police court,Police court,hierarchy,parent=Court
+Courthouse,Courthouse,hierarchy,parent=Court
+Licensing Court,Licensing Court,hierarchy,parent=Court
+Megalong Valley School,Megalong Valley School,hierarchy,parent=Megalong
+Megalong Hotel,Megalong Hotel,hierarchy,parent=Megalong
+Megalong Shale Mines,Megalong Shale Mines,hierarchy,parent=Megalong
+Megalong Cricket Club,Megalong Cricket Club,hierarchy,parent=Megalong
+Megalong Progress Committee,Megalong Progress Committee,hierarchy,parent=Megalong
+Lithgow Council,Lithgow Council,hierarchy,parent=Lithgow
+Wesleyan Church,Wesleyan Church,hierarchy,parent=Church
+St Hilda's Church,St Hilda's Church,hierarchy,parent=Church
+Congregational Church,Congregational Church,hierarchy,parent=Church
+Roman Catholic Church,Roman Catholic Church,hierarchy,parent=Church
+Methodist Church,Methodist Church,hierarchy,parent=Church
+Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Church
+Great Western Railway,Great Western Railway,hierarchy,parent=Railway
+Railway Hotel,Railway Hotel,hierarchy,parent=Railway
+Railway commission,Railway commission,hierarchy,parent=Railway
+Mining accidents,Mining accidents,hierarchy,parent=Mining
+Mining settlements,Mining settlements,hierarchy,parent=Mining
+Megalong Valley School,Megalong Valley School,hierarchy,parent=Megalong Valley
+Megalong Valley,Megalong Valley,hierarchy,parent=Megalong
+Police court,Police court,hierarchy,parent=Police
+Police station,Police station,hierarchy,parent=Police
+Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Ruined Castle
+Nellie's Glen track,Nellie's Glen track,hierarchy,parent=Nellie's Glen
+Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen
+Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen
+Wentworth Falls Progress Association,Wentworth Falls Progress Association,hierarchy,parent=Wentworth Falls
+Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=Wentworth Falls
+Wentworth Falls Reserves,Wentworth Falls Reserves,hierarchy,parent=Wentworth Falls
+Hartley Vale mines,Hartley Vale mines,hierarchy,parent=Hartley Vale
+Unemployment relief,Unemployment relief,hierarchy,parent=Unemployment
+Licensing inspector,Licensing inspector,hierarchy,parent=Licensing
+Licensing Act,Licensing Act,hierarchy,parent=Licensing
+Licensing Court,Licensing Court,hierarchy,parent=Licensing
+Coal mine,Coal mine,hierarchy,parent=Coal
+Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=Mount Victoria
+Mount Victoria School,Mount Victoria School,hierarchy,parent=Mount Victoria
+Mount Victoria Progress Committee,Mount Victoria Progress Committee,hierarchy,parent=Mount Victoria
+Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=Mount Victoria
+Cricket clubs,Cricket clubs,hierarchy,parent=Cricket
+Girls' cricket,Girls' cricket,hierarchy,parent=Cricket
+Leura Falls,Leura Falls,hierarchy,parent=Leura
+Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=School of Arts
+Leura Progress Association,Leura Progress Association,hierarchy,parent=Leura
+Leura Reserve,Leura Reserve,hierarchy,parent=Leura
+Carrington Hotel,Carrington Hotel,hierarchy,parent=Carrington
+Mount Victoria School,Mount Victoria School,hierarchy,parent=School
+Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Congregational Church
+School of Arts,School of Arts,hierarchy,parent=School
+Megalong Valley School,Megalong Valley School,hierarchy,parent=School
+Katoomba Public School,Katoomba Public School,hierarchy,parent=School
+Rifle reserves,Rifle reserves,hierarchy,parent=Reserves
+Wentworth Falls Reserves,Wentworth Falls Reserves,hierarchy,parent=Reserves
+Gold mining,Gold mining,hierarchy,parent=Mining
+South Katoomba Reserve,South Katoomba Reserve,hierarchy,parent=South Katoomba
+Post office,Post office,hierarchy,parent=Post
+Jenolan Caves road,Jenolan Caves road,hierarchy,parent=Jenolan Caves
+Katoomba South mines,Katoomba South mines,hierarchy,parent=Katoomba South
+Katoomba Superior Public School,Katoomba Superior Public School,hierarchy,parent=School
+Katoomba band,Katoomba band,hierarchy,parent=Band
+Football clubs,Football clubs,hierarchy,parent=Football
+Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Reserves
+Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Rifle reserves
+Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=Sunny Corner
+Sunday school,Sunday school,hierarchy,parent=School
+Port Kembla disaster,Port Kembla disaster,hierarchy,parent=Port Kembla
+Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=Family Hotel
+Coroner Lethbridge,Coroner Lethbridge,hierarchy,parent=Coroner
+Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=Coal
+Katoomba Coal and Shale Mines,Katoomba Coal and Shale Mines,hierarchy,parent=Coal
+Katoomba coal mines,Katoomba coal mines,hierarchy,parent=Coal
+Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Coal
+Katoomba Cricket Club,Katoomba Cricket Club,hierarchy,parent=Cricket
+Megalong Cricket Club,Megalong Cricket Club,hierarchy,parent=Cricket
+Katoomba Football Club,Katoomba Football Club,hierarchy,parent=Football
+Mining accidents,Mining accidents,hierarchy,parent=Accident
+Katoomba Tennis Club,Katoomba Tennis Club,hierarchy,parent=Tennis
+Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=Mining
+Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Shale mines
+Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Shale mines
+Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=Shale mines
+South Katoomba Reserve,South Katoomba Reserve,hierarchy,parent=Reserves
+Leura Reserve,Leura Reserve,hierarchy,parent=Reserves
+Lithgow Council,Lithgow Council,hierarchy,parent=Councils
+Katoomba Council,Katoomba Council,hierarchy,parent=Councils
+Megalong Hotel,Megalong Hotel,hierarchy,parent=Hotels
+Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=Hotels
+Mrs Long's Hotel,Mrs Long's Hotel,hierarchy,parent=Hotels
+Family Hotel,Family Hotel,hierarchy,parent=Hotels
+Belgravia Hotel,Belgravia Hotel,hierarchy,parent=Hotels
+Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
+Grand Hotel,Grand Hotel,hierarchy,parent=Hotels
+Allen's Hotel,Allen's Hotel,hierarchy,parent=Hotels
+Centennial Hotel,Centennial Hotel,hierarchy,parent=Hotels
+Brown's Hotel,Brown's Hotel,hierarchy,parent=Hotels
+Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Hotels
+Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=Hotels
+Imperial Hotel,Imperial Hotel,hierarchy,parent=Hotels
+Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=Hotels
+Delaney's Hotel,Delaney's Hotel,hierarchy,parent=Hotels
+Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Roads
+Jenolan Caves road,Jenolan Caves road,hierarchy,parent=Roads
+Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=Coal
+Katoomba Coal and Shale Mines,Katoomba Coal and Shale Mines,hierarchy,parent=Coal
+Katoomba coal mines,Katoomba coal mines,hierarchy,parent=Coal
+Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Coal
+Katoomba Cricket Club,Katoomba Cricket Club,hierarchy,parent=Cricket
+Megalong Cricket Club,Megalong Cricket Club,hierarchy,parent=Cricket
+Katoomba Football Club,Katoomba Football Club,hierarchy,parent=Football
+Mining accidents,Mining accidents,hierarchy,parent=Accident
+Katoomba Tennis Club,Katoomba Tennis Club,hierarchy,parent=Tennis
+Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=Mining
+Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Shale mines
+Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Shale mines
+Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=Shale mines
+South Katoomba Reserve,South Katoomba Reserve,hierarchy,parent=Reserves
+Leura Reserve,Leura Reserve,hierarchy,parent=Reserves
+Lithgow Council,Lithgow Council,hierarchy,parent=Councils
+Katoomba Council,Katoomba Council,hierarchy,parent=Councils
+Megalong Hotel,Megalong Hotel,hierarchy,parent=Hotels
+Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=Hotels
+Mrs Long's Hotel,Mrs Long's Hotel,hierarchy,parent=Hotels
+Family Hotel,Family Hotel,hierarchy,parent=Hotels
+Belgravia Hotel,Belgravia Hotel,hierarchy,parent=Hotels
+Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
+Grand Hotel,Grand Hotel,hierarchy,parent=Hotels
+Allen's Hotel,Allen's Hotel,hierarchy,parent=Hotels
+Centennial Hotel,Centennial Hotel,hierarchy,parent=Hotels
+Brown's Hotel,Brown's Hotel,hierarchy,parent=Hotels
+Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Hotels
+Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=Hotels
+Imperial Hotel,Imperial Hotel,hierarchy,parent=Hotels
+Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=Hotels
+Delaney's Hotel,Delaney's Hotel,hierarchy,parent=Hotels
+Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Roads
+Jenolan Caves road,Jenolan Caves road,hierarchy,parent=Roads
+Mr John Waudby’s selection (Top Camp),Mr John Waudby’s selection (Top Camp),keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr John Waudby,Mr John Waudby,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr H W Copeland,Mr H W Copeland,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr H Scope,Mr H Scope,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr D McKillop,Mr D McKillop,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr G McKillop,Mr G McKillop,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Joseph Meredith,Mr Joseph Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr John Meredith,Mr John Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Joseph Meredith,Mr Joseph Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Stephen Meredith,Mr Stephen Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Joseph Meredith,Mr Joseph Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Joseph Meredith,Mr Joseph Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Stephen Meredith,Mr Stephen Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr John Meredith,Mr John Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Clarke,Mr William Clarke,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Frederick Goyder,Mr William Frederick Goyder,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William O'Regan,Mr William O'Regan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Clarke,Mr William Clarke,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Baird,Mr William Baird,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Frederick Goyder,Mr William Frederick Goyder,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Baird,Mr William Baird,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Routley Davey,Mr James Routley Davey,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Routley Davey,Mr James Routley Davey,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Hughes,Mr James Hughes,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Harry Edwards,Mr Harry Edwards,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W H Edwards,Mr W H Edwards,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Frederick Goyder,Mr William Frederick Goyder,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Miller,Mr James Miller,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Webb,Mr James Webb,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Hutchinson,Mr James Hutchinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Smith Richardson,Mr Thomas Smith Richardson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr A Smith,Mr A Smith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William O'Regan,Mr William O'Regan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Clarke,Mr William Clarke,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Wilson,Mr Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Wilson,Mrs Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Walter Meredith,Mr Walter Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Eleanor Meredith,Mrs Eleanor Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Greenbank,Mr Thomas Greenbank,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Neale,Mr Thomas Neale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Lynch,Mr William Lynch,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Lynch,Mr William Lynch,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr S Whitehead,Mr S Whitehead,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W Whitehead,Mr W Whitehead,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Evan Thomas Meredith,Mr Evan Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr George Palmer,Mr George Palmer,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr George James,Mr George James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William George Schoeffler,Mr William George Schoeffler,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William George Long,Mr William George Long,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr George Palmer,Mr George Palmer,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr George Potter,Mr George Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William George Schoeffler,Mr William George Schoeffler,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Harry Peckman,Mr Harry Peckman,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Harry Eaton,Mr Harry Eaton,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Wallace,Mr William Wallace,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Joanna Meredith,Mrs Joanna Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr John Meredith,Mr John Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr A G Rowell,Mr A G Rowell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C Rowell,Mr C Rowell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Hughes,Mr James Hughes,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Hutchinson,Mr James Hutchinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Walter Meredith,Mr Walter Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Meredith,Mr Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Wallace,Mr William Wallace,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Clarke,Mr William Clarke,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Wallace,Mr William Wallace,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William George Schoeffler,Mr William George Schoeffler,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Phillips,Mr William Phillips,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William George Long,Mr William George Long,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Miller,Mr James Miller,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Meredith,Mr Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Crawford,Mr Crawford,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Henry Crawford Brown,Mr Henry Crawford Brown,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Cale,Mr Thomas Cale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Neale,Mr Thomas Neale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W Wilson,Mr W Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Wilson,Mr Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Meredith,Mr Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Evan Thomas Meredith,Mr Evan Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Miss Emily Potter,Miss Emily Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Miss Nelly Potter,Miss Nelly Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Webb,Mr James Webb,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas McLaughlin,Mr Thomas McLaughlin,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Cale,Mr Thomas Cale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W Wilson,Mr W Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Wilson,Mrs Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Miss Edith Delaney,Miss Edith Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Miss Ettie Delaney,Miss Ettie Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Albert C Wilson,Mr Albert C Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W Wilson,Mr W Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Husband,Mr William Husband,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Baird,Mr William Baird,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Austin,Mr William Austin,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Husband,Mr William Husband,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Austin,Mr William Austin,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Baird,Mr William Baird,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Curnow,Mr William Curnow,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Meredith,Mr Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Neale,Mr Thomas Neale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Robert Nimmo,Mr Robert Nimmo,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Robert Mulholland,Mr Robert Mulholland,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Davey,Mrs Davey,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Delaney,Mrs Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Phillips,Mr William Phillips,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William George Long,Mr William George Long,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Thomas,Mr William Thomas,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C Wilkinson,Mr C Wilkinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Albert C Wilson,Mr Albert C Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C Wilkinson,Mr C Wilkinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W Wilson,Mr W Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Hutchinson,Mr James Hutchinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Dr Watkins,Dr Watkins,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+"Mrs Elizabeth Eaton (previously Flynn, nee Watkins)","Mrs Elizabeth Eaton (previously Flynn, nee Watkins)",keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Miller,Mr James Miller,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Hughes,Mr James Hughes,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Dr Morgan,Dr Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr David Morgan,Mr David Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Watson,Mr Watson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs W Watson,Mrs W Watson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Pub,Pub,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Public meeting,Public meeting,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Pub,Pub,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Publican,Publican,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Bank,Bank,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Greenbank family,Greenbank family,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Band,Band,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Mr William Husband,Mr William Husband,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Band,Band,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Mr Robert J Husband,Mr Robert J Husband,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Football,Football,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Ball,Ball,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Mining,Mining,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Drinking,Drinking,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Horses,Horses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Boarding houses,Boarding houses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Death,Death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Debating,Debating,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Theft,Theft,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Athletics,Athletics,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Weather,Weather,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Death,Death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Dogs,Dogs,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Gas,Gas,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Death,Death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Pub,Pub,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Public meeting,Public meeting,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Pub,Pub,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Publican,Publican,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Bank,Bank,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Greenbank family,Greenbank family,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Band,Band,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Mr William Husband,Mr William Husband,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Band,Band,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Mr Robert J Husband,Mr Robert J Husband,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Football,Football,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Ball,Ball,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Mining,Mining,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Drinking,Drinking,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Horses,Horses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Boarding houses,Boarding houses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Death,Death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Debating,Debating,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Theft,Theft,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Athletics,Athletics,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Weather,Weather,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Death,Death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Dogs,Dogs,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Gas,Gas,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Death,Death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Katoomba South,South Katoomba,merge,Naming variant - contextual evidence shows South Katoomba used in newspaper sources
+Druid's Lodge,Druid's Lodge,hierarchy,parent=Lodges
+Mountaineer Lodge,Mountaineer Lodge,hierarchy,parent=Lodges
+I.O.O.F. Hall,Odd Fellows' Hall,merge,Same building - IOOF = Independent Order of Odd Fellows
+Church,Church,hierarchy,parent=Religion
+Sunday school,Sunday school,hierarchy,parent=Religion
+Lodges,Lodges,hierarchy,parent=Community institutions
+Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=Lodges
+Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=Halls
+Masonic Hall,Masonic Hall,hierarchy,parent=Lodges
+Masonic Hall,Masonic Hall,hierarchy,parent=Halls
+Halls,Halls,hierarchy,parent=Community institutions
+School of Arts,School of Arts,hierarchy,parent=Halls
+School of Arts,School of Arts,hierarchy,parent=Cultural societies
+Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Halls
+Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Cultural societies
+Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=School of Arts
+Clarke's Hall,Clarke's Hall,hierarchy,parent=Halls
+Waudby's Hall,Waudby's Hall,hierarchy,parent=Halls
+Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=Halls
+Civic organisations,Civic organisations,hierarchy,parent=Community institutions
+Progress committees,Progress committees,hierarchy,parent=Civic organisations
+Katoomba Progress Association,Katoomba Progress Association,hierarchy,parent=Civic organisations
+Leura Progress Association,Leura Progress Association,hierarchy,parent=Civic organisations
+Wentworth Falls Progress Association,Wentworth Falls Progress Association,hierarchy,parent=Civic organisations
+Mount Victoria Progress Committee,Mount Victoria Progress Committee,hierarchy,parent=Civic organisations
+Megalong Progress Committee,Megalong Progress Committee,hierarchy,parent=Civic organisations
+Cultural societies,Cultural societies,hierarchy,parent=Community institutions
+Horticulture society,Horticulture society,hierarchy,parent=Cultural societies
+Katoomba Amateur Dramatic Club,Katoomba Amateur Dramatic Club,hierarchy,parent=Cultural societies
+Chess and Draughts Club,Chess and Draughts Club,hierarchy,parent=Cultural societies
+Civic buildings,Civic buildings,hierarchy,parent=Community institutions
+Council Chambers,Council Chambers,hierarchy,parent=Civic buildings
+Religious organisations,Religious organisations,hierarchy,parent=Religion
+Religious buildings,Religious buildings,hierarchy,parent=Religion
+Church,Church,hierarchy,parent=Religious organisations
+Church,Church,hierarchy,parent=Religious buildings
+Methodist Church,Methodist Church,hierarchy,parent=Religious organisations
+Methodist Church,Methodist Church,hierarchy,parent=Religious buildings
+Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Religious organisations
+Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Religious buildings
+Wesleyan Church,Wesleyan Church,hierarchy,parent=Religious organisations
+Congregational Church,Congregational Church,hierarchy,parent=Religious organisations
+Roman Catholic Church,Roman Catholic Church,hierarchy,parent=Religious buildings
+St Hilda's Church,St Hilda's Church,hierarchy,parent=Religious organisations
+St Hilda's Church,St Hilda's Church,hierarchy,parent=Religious buildings
+Demographic groups,Demographic groups,hierarchy,parent=Agents (new top-level facet)
+Women,Women,hierarchy,parent=Demographic groups
+Men,Men,hierarchy,parent=Demographic groups
+Children,Children,hierarchy,parent=Demographic groups
+Widows,Widows,hierarchy,parent=Demographic groups
+Occupations,Occupations,hierarchy,parent=Agents (new top-level facet)
+Medical professionals,Medical professionals,hierarchy,parent=Occupations
+Dr Spark,Dr Spark,hierarchy,parent=Medical professionals
+Dr Prangley,Dr Prangley,hierarchy,parent=Medical professionals
+Dr Watkins,Dr Watkins,hierarchy,parent=Medical professionals
+Dr Morgan,Dr Morgan,hierarchy,parent=Medical professionals
+Clergy,Clergy,hierarchy,parent=Occupations
+Reverend F V Pratt,Reverend F V Pratt,hierarchy,parent=Clergy
+Reverend Canon Kemmis,Reverend Canon Kemmis,hierarchy,parent=Clergy
+Reverend M S Fletcher,Reverend M S Fletcher,hierarchy,parent=Clergy
+Reverend J H Maclean,Reverend J H Maclean,hierarchy,parent=Clergy
+Reverend A Sutherland,Reverend A Sutherland,hierarchy,parent=Clergy
+Reverence M C Brown,Reverence M C Brown,hierarchy,parent=Clergy
+Reverend R M Laverty,Reverend R M Laverty,hierarchy,parent=Clergy
+Cardinal Moran,Cardinal Moran,hierarchy,parent=Clergy
+Law enforcement,Law enforcement,hierarchy,parent=Occupations
+Police,Police,hierarchy,parent=Law enforcement
+Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=Law enforcement
+Senior-Constable Thorncroft,Senior-Constable Thorncroft,hierarchy,parent=Law enforcement
+Constable Orr,Constable Orr,hierarchy,parent=Law enforcement
+Constable John Hamilton,Constable John Hamilton,hierarchy,parent=Law enforcement
+Constable O'Reilly,Constable O'Reilly,hierarchy,parent=Law enforcement
+Constable White,Constable White,hierarchy,parent=Law enforcement
+Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=Law enforcement
+Legal officials,Legal officials,hierarchy,parent=Occupations
+Coroner,Coroner,hierarchy,parent=Legal officials
+Coroner Lethbridge,Coroner Lethbridge,hierarchy,parent=Legal officials
+Public officials,Public officials,hierarchy,parent=Occupations
+Aldermen,Aldermen,hierarchy,parent=Public officials
+Licensing inspector,Licensing inspector,hierarchy,parent=Public officials
+Stationmaster,Stationmaster,hierarchy,parent=Public officials
+Minister for Mines,Minister for Mines,hierarchy,parent=Public officials
+Hospitality workers,Hospitality workers,hierarchy,parent=Occupations
+Publican,Publican,hierarchy,parent=Hospitality workers
+Military personnel,Military personnel,hierarchy,parent=Occupations
+Soldiers,Soldiers,hierarchy,parent=Military personnel
+Organizations,Organizations,hierarchy,parent=Agents (new top-level facet)
+Commercial businesses,Commercial businesses,hierarchy,parent=Organizations
+Mining companies,Mining companies,hierarchy,parent=Commercial businesses
+A.K.O. & M. Company,A.K.O. & M. Company,hierarchy,parent=Mining companies
+Australian Kerosene Shale and Oil Company,Australian Kerosene Shale and Oil Company,hierarchy,parent=Mining companies
+Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Mining companies
+Katoomba Coal and Shale Mines,Katoomba Coal and Shale Mines,hierarchy,parent=Mining companies
+Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=Mining companies
+Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=Mining companies
+South Clifton Mine Co.,South Clifton Mine Co.,hierarchy,parent=Mining companies
+South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=Mining companies
+New South Wales Shale and Oil Co.,New South Wales Shale and Oil Co.,hierarchy,parent=Mining companies
+Waudby & Co.,Waudby & Co.,hierarchy,parent=Mining companies
+Colliery,Colliery,hierarchy,parent=Mining companies
+Retailers & stores,Retailers & stores,hierarchy,parent=Commercial businesses
+Stores,Stores,hierarchy,parent=Retailers & stores
+Peckman Bros,Peckman Bros,hierarchy,parent=Retailers & stores
+Nimmo's,Nimmo's,hierarchy,parent=Retailers & stores
+Tabrett and Co.,Tabrett and Co.,hierarchy,parent=Retailers & stores
+Douglas & Co.,Douglas & Co.,hierarchy,parent=Retailers & stores
+Financial institutions,Financial institutions,hierarchy,parent=Commercial businesses
+Bank,Bank,hierarchy,parent=Financial institutions
+Hospitality businesses,Hospitality businesses,hierarchy,parent=Commercial businesses
+Hotels,Hotels,hierarchy,parent=Hospitality businesses
+Megalong Hotel,Megalong Hotel,hierarchy,parent=Hotels
+Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=Hotels
+Mrs Long's Hotel,Mrs Long's Hotel,hierarchy,parent=Hotels
+Family Hotel,Family Hotel,hierarchy,parent=Hotels
+Belgravia Hotel,Belgravia Hotel,hierarchy,parent=Hotels
+Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
+Grand Hotel,Grand Hotel,hierarchy,parent=Hotels
+Allen's Hotel,Allen's Hotel,hierarchy,parent=Hotels
+Centennial Hotel,Centennial Hotel,hierarchy,parent=Hotels
+Brown's Hotel,Brown's Hotel,hierarchy,parent=Hotels
+Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Hotels
+Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=Hotels
+Imperial Hotel,Imperial Hotel,hierarchy,parent=Hotels
+Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=Hotels
+Delaney's Hotel,Delaney's Hotel,hierarchy,parent=Hotels
+Carrington Hotel,Carrington Hotel,hierarchy,parent=Hotels
+Hoffman's House,Hoffman's House,hierarchy,parent=Hotels
+Montrose House,Montrose House,hierarchy,parent=Hotels
+Boarding houses,Boarding houses,hierarchy,parent=Hospitality businesses
+Transport & logistics businesses,Transport & logistics businesses,hierarchy,parent=Commercial businesses
+Trucking,Trucking,hierarchy,parent=Transport & logistics businesses
+Religious organizations,Religious organizations,hierarchy,parent=Organizations
+Churches,Churches,hierarchy,parent=Religious organizations
+Church,Church,hierarchy,parent=Churches
+Wesleyan Church,Wesleyan Church,hierarchy,parent=Churches
+Congregational Church,Congregational Church,hierarchy,parent=Churches
+Methodist Church,Methodist Church,hierarchy,parent=Churches
+Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Churches
+St Hilda's Church,St Hilda's Church,hierarchy,parent=Churches
+Roman Catholic Church,Roman Catholic Church,hierarchy,parent=Churches
+Religious social movements,Religious social movements,hierarchy,parent=Religious organizations
+Salvation Army,Salvation Army,hierarchy,parent=Religious social movements
+Good Templars,Good Templars,hierarchy,parent=Religious social movements
+Religious education,Religious education,hierarchy,parent=Religious organizations
+Sunday school,Sunday school,hierarchy,parent=Religious education
+Fraternal orders & lodges,Fraternal orders & lodges,hierarchy,parent=Organizations
+Lodges,Lodges,hierarchy,parent=Fraternal orders & lodges
+Odd Fellows,Odd Fellows,hierarchy,parent=Lodges
+Oddfellows,Oddfellows,hierarchy,parent=Odd Fellows
+Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=Odd Fellows
+Masons,Masons,hierarchy,parent=Lodges
+Masonic Hall,Masonic Hall,hierarchy,parent=Masons
+Druids,Druids,hierarchy,parent=Lodges
+U.A.O.D.,U.A.O.D.,hierarchy,parent=Druids
+Druid's Lodge,Druid's Lodge,hierarchy,parent=Druids
+Independent lodges,Independent lodges,hierarchy,parent=Lodges
+Mountaineer Lodge,Mountaineer Lodge,hierarchy,parent=Independent lodges
+Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Organizations
+Sports clubs,Sports clubs,hierarchy,parent=Cultural & recreational organizations
+Cricket clubs,Cricket clubs,hierarchy,parent=Sports clubs
+Katoomba Cricket Club,Katoomba Cricket Club,hierarchy,parent=Cricket clubs
+Megalong Cricket Club,Megalong Cricket Club,hierarchy,parent=Cricket clubs
+Football clubs,Football clubs,hierarchy,parent=Sports clubs
+Katoomba Football Club,Katoomba Football Club,hierarchy,parent=Football clubs
+Tennis clubs,Tennis clubs,hierarchy,parent=Sports clubs
+Katoomba Tennis Club,Katoomba Tennis Club,hierarchy,parent=Tennis clubs
+Lawn Tennis Club,Lawn Tennis Club,hierarchy,parent=Tennis clubs
+Athletic clubs,Athletic clubs,hierarchy,parent=Sports clubs
+Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=Athletic clubs
+Rifle clubs,Rifle clubs,hierarchy,parent=Sports clubs
+Rifle club,Rifle club,hierarchy,parent=Rifle clubs
+Performance groups,Performance groups,hierarchy,parent=Cultural & recreational organizations
+Choirs,Choirs,hierarchy,parent=Performance groups
+Choir,Choir,hierarchy,parent=Choirs
+Bands,Bands,hierarchy,parent=Performance groups
+Band,Band,hierarchy,parent=Bands
+Katoomba band,Katoomba band,hierarchy,parent=Bands
+Minstrel troupes,Minstrel troupes,hierarchy,parent=Performance groups
+Katoomba Amateur Minstrels,Katoomba Amateur Minstrels,hierarchy,parent=Minstrel troupes
+Cultural societies,Cultural societies,hierarchy,parent=Cultural & recreational organizations
+School of Arts,School of Arts,hierarchy,parent=Cultural societies
+Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Cultural societies
+Horticulture society,Horticulture society,hierarchy,parent=Cultural societies
+Katoomba Amateur Dramatic Club,Katoomba Amateur Dramatic Club,hierarchy,parent=Cultural societies
+Chess and Draughts Club,Chess and Draughts Club,hierarchy,parent=Cultural societies
+Civic organizations,Civic organizations,hierarchy,parent=Organizations
+Progress committees,Progress committees,hierarchy,parent=Civic organizations
+Katoomba Progress Association,Katoomba Progress Association,hierarchy,parent=Progress committees
+Leura Progress Association,Leura Progress Association,hierarchy,parent=Progress committees
+Wentworth Falls Progress Association,Wentworth Falls Progress Association,hierarchy,parent=Progress committees
+Mount Victoria Progress Committee,Mount Victoria Progress Committee,hierarchy,parent=Progress committees
+Megalong Progress Committee,Megalong Progress Committee,hierarchy,parent=Progress committees
+Labour organizations,Labour organizations,hierarchy,parent=Civic organizations
+Unions,Unions,hierarchy,parent=Labour organizations
+Government bodies,Government bodies,hierarchy,parent=Organizations
+Courts,Courts,hierarchy,parent=Government bodies
+Court,Court,hierarchy,parent=Courts
+Supreme Court,Supreme Court,hierarchy,parent=Courts
+Police court,Police court,hierarchy,parent=Courts
+Licensing Court,Licensing Court,hierarchy,parent=Courts
+Katoomba Court,Katoomba Court,hierarchy,parent=Courts
+Councils,Councils,hierarchy,parent=Government bodies
+Katoomba Council,Katoomba Council,hierarchy,parent=Councils
+Lithgow Council,Lithgow Council,hierarchy,parent=Councils
+Railway authorities,Railway authorities,hierarchy,parent=Government bodies
+Railway commission,Railway commission,hierarchy,parent=Railway authorities
+Other government bodies,Other government bodies,hierarchy,parent=Government bodies
+Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Other government bodies
+Mining districts,Mining districts,hierarchy,parent=Places (existing facet)
+Ruined Castle,Ruined Castle,hierarchy,parent=Mining districts
+Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Ruined Castle
+Nellie's Glen,Nellie's Glen,hierarchy,parent=Mining districts
+Nellie's Glen track,Nellie's Glen track,hierarchy,parent=Nellie's Glen
+Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen
+Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen
+Natural features,Natural features,hierarchy,parent=Places (existing facet)
+Waterfalls,Waterfalls,hierarchy,parent=Natural features
+Katoomba Falls,Katoomba Falls,hierarchy,parent=Waterfalls
+Leura Falls,Leura Falls,hierarchy,parent=Waterfalls
+Minnehaha,Minnehaha,hierarchy,parent=Waterfalls
+Valleys,Valleys,hierarchy,parent=Natural features
+Megalong Valley,Megalong Valley,hierarchy,parent=Valleys
+Kanimbla Valley,Kanimbla Valley,hierarchy,parent=Valleys
+Jamieson Valley,Jamieson Valley,hierarchy,parent=Valleys
+Mountain features,Mountain features,hierarchy,parent=Natural features
+Narrow Neck,Narrow Neck,hierarchy,parent=Mountain features
+Ruined Castle,Ruined Castle,hierarchy,parent=Mountain features
+Caves & geological features,Caves & geological features,hierarchy,parent=Natural features
+Jenolan Caves,Jenolan Caves,hierarchy,parent=Caves & geological features
+Jenolan Caves road,Jenolan Caves road,hierarchy,parent=Jenolan Caves
+Mining settlements,Mining settlements,hierarchy,parent=Places (existing facet)
+Middle camp,Middle camp,hierarchy,parent=Mining settlements
+Middle camp,Middle camp,hierarchy,parent=Megalong
+Carrington,Carrington,hierarchy,parent=Katoomba
+Built Environment,Built Environment,hierarchy,parent=(new top-level facet)
+Accommodation buildings,Accommodation buildings,hierarchy,parent=Built Environment
+Hotels,Hotels,hierarchy,parent=Accommodation buildings
+Megalong Hotel,Megalong Hotel,hierarchy,parent=Hotels
+Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=Hotels
+Mrs Long's Hotel,Mrs Long's Hotel,hierarchy,parent=Hotels
+Family Hotel,Family Hotel,hierarchy,parent=Hotels
+Belgravia Hotel,Belgravia Hotel,hierarchy,parent=Hotels
+Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
+Grand Hotel,Grand Hotel,hierarchy,parent=Hotels
+Allen's Hotel,Allen's Hotel,hierarchy,parent=Hotels
+Centennial Hotel,Centennial Hotel,hierarchy,parent=Hotels
+Brown's Hotel,Brown's Hotel,hierarchy,parent=Hotels
+Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Hotels
+Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=Hotels
+Imperial Hotel,Imperial Hotel,hierarchy,parent=Hotels
+Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=Hotels
+Delaney's Hotel,Delaney's Hotel,hierarchy,parent=Hotels
+Carrington Hotel,Carrington Hotel,hierarchy,parent=Hotels
+Hoffman's House,Hoffman's House,hierarchy,parent=Hotels
+Montrose House,Montrose House,hierarchy,parent=Hotels
+Boarding houses,Boarding houses,hierarchy,parent=Accommodation buildings
+Dwellings,Dwellings,hierarchy,parent=Accommodation buildings
+Miners' dwellings,Miners' dwellings,hierarchy,parent=Dwellings
+Hospitality venues,Hospitality venues,hierarchy,parent=Built Environment
+Pubs,Pubs,hierarchy,parent=Hospitality venues
+Pub,Pub,hierarchy,parent=Pubs
+Civic buildings,Civic buildings,hierarchy,parent=Built Environment
+Court buildings,Court buildings,hierarchy,parent=Civic buildings
+Courthouse,Courthouse,hierarchy,parent=Court buildings
+Katoomba Court,Katoomba Court,hierarchy,parent=Court buildings
+Council buildings,Council buildings,hierarchy,parent=Civic buildings
+Council Chambers,Council Chambers,hierarchy,parent=Council buildings
+Police facilities,Police facilities,hierarchy,parent=Civic buildings
+Police station,Police station,hierarchy,parent=Police facilities
+Postal facilities,Postal facilities,hierarchy,parent=Civic buildings
+Post office,Post office,hierarchy,parent=Postal facilities
+Educational buildings,Educational buildings,hierarchy,parent=Built Environment
+Schools,Schools,hierarchy,parent=Educational buildings
+School,School,hierarchy,parent=Schools
+Mount Victoria School,Mount Victoria School,hierarchy,parent=Schools
+Katoomba Public School,Katoomba Public School,hierarchy,parent=Schools
+Katoomba Superior Public School,Katoomba Superior Public School,hierarchy,parent=Schools
+Megalong Valley School,Megalong Valley School,hierarchy,parent=Schools
+Religious buildings,Religious buildings,hierarchy,parent=Built Environment
+Churches,Churches,hierarchy,parent=Religious buildings
+Church,Church,hierarchy,parent=Churches
+Methodist Church,Methodist Church,hierarchy,parent=Churches
+Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Churches
+Roman Catholic Church,Roman Catholic Church,hierarchy,parent=Churches
+St Hilda's Church,St Hilda's Church,hierarchy,parent=Churches
+Community buildings,Community buildings,hierarchy,parent=Built Environment
+Halls,Halls,hierarchy,parent=Community buildings
+School of Arts,School of Arts,hierarchy,parent=Halls
+Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Halls
+Clarke's Hall,Clarke's Hall,hierarchy,parent=Halls
+Waudby's Hall,Waudby's Hall,hierarchy,parent=Halls
+Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=Halls
+Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=Halls
+Masonic Hall,Masonic Hall,hierarchy,parent=Halls
+Commercial buildings,Commercial buildings,hierarchy,parent=Built Environment
+Stores,Stores,hierarchy,parent=Commercial buildings
+Bank,Bank,hierarchy,parent=Commercial buildings
+Infrastructure,Infrastructure,hierarchy,parent=Built Environment
+Transport infrastructure,Transport infrastructure,hierarchy,parent=Infrastructure
+Railway,Railway,hierarchy,parent=Transport infrastructure
+Great Western Railway,Great Western Railway,hierarchy,parent=Railway
+Railway infrastructure,Railway infrastructure,hierarchy,parent=Railway
+Katoomba station,Katoomba station,hierarchy,parent=Railway infrastructure
+Zig Zag,Zig Zag,hierarchy,parent=Railway infrastructure
+Railway operations,Railway operations,hierarchy,parent=Railway
+Tourist trains,Tourist trains,hierarchy,parent=Railway operations
+Roads,Roads,hierarchy,parent=Transport infrastructure
+Jenolan Caves road,Jenolan Caves road,hierarchy,parent=Roads
+Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Roads
+Nellie's Glen track,Nellie's Glen track,hierarchy,parent=Roads
+Mining infrastructure,Mining infrastructure,hierarchy,parent=Infrastructure
+Colliery,Colliery,hierarchy,parent=Mining infrastructure
+Tramway,Tramway,hierarchy,parent=Mining infrastructure
+Utilities,Utilities,hierarchy,parent=Infrastructure
+Sewerage,Sewerage,hierarchy,parent=Utilities
+Gas,Gas,hierarchy,parent=Utilities
+Events,Events,hierarchy,parent=(new top-level facet)
+Life events,Life events,hierarchy,parent=Events
+Death,Death,hierarchy,parent=Life events
+Death notice,Death notice,hierarchy,parent=Death
+Marriage,Marriage,hierarchy,parent=Life events
+Funeral,Funeral,hierarchy,parent=Life events
+Social events,Social events,hierarchy,parent=Events
+Concerts,Concerts,hierarchy,parent=Social events
+Dances,Dances,hierarchy,parent=Social events
+Ball,Ball,hierarchy,parent=Social events
+Flower show,Flower show,hierarchy,parent=Social events
+Sporting events,Sporting events,hierarchy,parent=Events
+Cricket,Cricket,hierarchy,parent=Sporting events
+Girls' cricket,Girls' cricket,hierarchy,parent=Cricket
+Football,Football,hierarchy,parent=Sporting events
+Tennis,Tennis,hierarchy,parent=Sporting events
+Athletics,Athletics,hierarchy,parent=Sporting events
+Rugby,Rugby,hierarchy,parent=Sporting events
+Shooting,Shooting,hierarchy,parent=Sporting events
+Billiard,Billiard,hierarchy,parent=Sporting events
+Cultural events,Cultural events,hierarchy,parent=Events
+Concerts,Concerts,hierarchy,parent=Cultural events
+Debating,Debating,hierarchy,parent=Cultural events
+Corroboree,Corroboree,hierarchy,parent=Cultural events
+Legal proceedings,Legal proceedings,hierarchy,parent=Events
+Court cases,Court cases,hierarchy,parent=Legal proceedings
+Political events,Political events,hierarchy,parent=Events
+Election,Election,hierarchy,parent=Political events
+Public meeting,Public meeting,hierarchy,parent=Political events
+Petition,Petition,hierarchy,parent=Political events
+Economic events,Economic events,hierarchy,parent=Events
+Strike,Strike,hierarchy,parent=Economic events
+Mine closure,Mine closure,hierarchy,parent=Economic events
+Disasters & accidents,Disasters & accidents,hierarchy,parent=Events
+Accident,Accident,hierarchy,parent=Disasters & accidents
+Mining accidents,Mining accidents,hierarchy,parent=Accident
+Fire,Fire,hierarchy,parent=Disasters & accidents
+Port Kembla disaster,Port Kembla disaster,hierarchy,parent=Disasters & accidents
+Activities,Activities,hierarchy,parent=(new top-level facet)
+Economic activities,Economic activities,hierarchy,parent=Activities
+Mining,Mining,hierarchy,parent=Economic activities
+Shale mining,Shale mining,hierarchy,parent=Mining
+Shale mines,Shale mines,hierarchy,parent=Shale mining
+Coal mining,Coal mining,hierarchy,parent=Mining
+Coal,Coal,hierarchy,parent=Coal mining
+Coal mine,Coal mine,hierarchy,parent=Coal mining
+Gold mining,Gold mining,hierarchy,parent=Mining
+Tourism,Tourism,hierarchy,parent=Economic activities
+Trucking,Trucking,hierarchy,parent=Economic activities
+Recreation activities,Recreation activities,hierarchy,parent=Activities
+Recreation for miners,Recreation for miners,hierarchy,parent=Recreation activities
+Sports,Sports,hierarchy,parent=Recreation activities
+Horses,Horses,hierarchy,parent=Recreation activities
+Social behaviours,Social behaviours,hierarchy,parent=Activities
+Drinking,Drinking,hierarchy,parent=Social behaviours
+Gambling,Gambling,hierarchy,parent=Social behaviours
+Temperance,Temperance,hierarchy,parent=Social behaviours
+Communication activities,Communication activities,hierarchy,parent=Activities
+Advertising,Advertising,hierarchy,parent=Communication activities
+Fundraising,Fundraising,hierarchy,parent=Communication activities
+Military activities,Military activities,hierarchy,parent=Activities
+Military,Military,hierarchy,parent=Military activities
+Social issues,Social issues,hierarchy,parent=(thematic facet)
+Unemployment,Unemployment,hierarchy,parent=Social issues
+Unemployment relief,Unemployment relief,hierarchy,parent=Unemployment
+Charity,Charity,hierarchy,parent=Social issues
+Widows,Widows,hierarchy,parent=Social issues
+Legal & regulatory frameworks,Legal & regulatory frameworks,hierarchy,parent=(conceptual facet)
+Licensing,Licensing,hierarchy,parent=Legal & regulatory frameworks
+Licensing Act,Licensing Act,hierarchy,parent=Legal & regulatory frameworks
+Historical periods & events,Historical periods & events,hierarchy,parent=(conceptual facet)
+World War I,World War I,hierarchy,parent=Historical periods & events
+Information objects,Information objects,hierarchy,parent=(conceptual facet)
+Maps,Maps,hierarchy,parent=Information objects
+Publican's License,Publican's License,hierarchy,parent=Information objects
+Environmental conditions,Environmental conditions,hierarchy,parent=(conceptual facet)
+Weather,Weather,hierarchy,parent=Environmental conditions
+Animals,Animals,hierarchy,parent=(conceptual facet)
+Horses,Horses,hierarchy,parent=Animals
+Dogs,Dogs,hierarchy,parent=Animals
+Reserves,Reserves,hierarchy,parent=(place type)
+Rifle reserves,Rifle reserves,hierarchy,parent=Reserves
+Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Rifle reserves
+Wentworth Falls Reserves,Wentworth Falls Reserves,hierarchy,parent=Reserves
+Leura Reserve,Leura Reserve,hierarchy,parent=Reserves
+South Katoomba Reserve,South Katoomba Reserve,hierarchy,parent=Reserves
+Health & Medicine,Health & Medicine,hierarchy,parent=(thematic grouping)
+Medical professionals,Medical professionals,hierarchy,parent=Health & Medicine - THEMATIC
+Health conditions,Health conditions,hierarchy,parent=Health & Medicine
+Illness,Illness,hierarchy,parent=Health conditions
+Disease,Disease,hierarchy,parent=Health conditions
+Injury,Injury,hierarchy,parent=Health conditions
+Death,Death,hierarchy,parent=Health conditions - THEMATIC
+Health-related events,Health-related events,hierarchy,parent=Health & Medicine
+Accident,Accident,hierarchy,parent=Health-related events - THEMATIC
+Mining accidents,Mining accidents,hierarchy,parent=Health-related events - THEMATIC
+Education,Education,hierarchy,parent=(thematic grouping)
+Educational buildings,Educational buildings,hierarchy,parent=Education - THEMATIC
+Sunday school,Sunday school,hierarchy,parent=Education - THEMATIC (religious education)
+Religion,Religion,hierarchy,parent=(thematic grouping)
+Religious organizations,Religious organizations,hierarchy,parent=Religion - THEMATIC
+Religious buildings,Religious buildings,hierarchy,parent=Religion - THEMATIC
+Clergy,Clergy,hierarchy,parent=Religion - THEMATIC
+Cardinal Moran,Cardinal Moran,hierarchy,parent=Religion - THEMATIC (religious figure)
+Justice & Crime,Justice & Crime,hierarchy,parent=(thematic grouping)
+Courts,Courts,hierarchy,parent=Justice & Crime - THEMATIC
+Court buildings,Court buildings,hierarchy,parent=Justice & Crime - THEMATIC
+Legal proceedings,Legal proceedings,hierarchy,parent=Justice & Crime - THEMATIC
+Law enforcement,Law enforcement,hierarchy,parent=Justice & Crime - THEMATIC
+Police station,Police station,hierarchy,parent=Justice & Crime - THEMATIC
+Legal officials,Legal officials,hierarchy,parent=Justice & Crime - THEMATIC
+Crimes,Crimes,hierarchy,parent=Justice & Crime
+Violent crimes,Violent crimes,hierarchy,parent=Crimes
+Assault,Assault,hierarchy,parent=Violent crimes
+Fighting,Fighting,hierarchy,parent=Violent crimes
+Rape,Rape,hierarchy,parent=Violent crimes
+Sexual violence,Sexual violence,hierarchy,parent=Violent crimes
+Property crimes,Property crimes,hierarchy,parent=Crimes
+Theft,Theft,hierarchy,parent=Property crimes
+Social order offences,Social order offences,hierarchy,parent=Crimes
+Drunkeness,Drunkeness,hierarchy,parent=Social order offences
+Gambling,Gambling,hierarchy,parent=Social order offences - THEMATIC
+Desertion,Desertion,hierarchy,parent=Social order offences
+Other crimes,Other crimes,hierarchy,parent=Crimes
+Bigamy,Bigamy,hierarchy,parent=Other crimes
+Victims of crime & violence,Victims of crime & violence,hierarchy,parent=Justice & Crime - THEMATIC (virtual grouping)
+Widows,Widows,hierarchy,parent=Victims of crime & violence - THEMATIC
+Legal outcomes,Legal outcomes,hierarchy,parent=Justice & Crime
+Divorce,Divorce,hierarchy,parent=Legal outcomes
+Bankruptcy,Bankruptcy,hierarchy,parent=Legal outcomes
+Mining & Industry,Mining & Industry,hierarchy,parent=(thematic grouping)
+Mining companies,Mining companies,hierarchy,parent=Mining & Industry - THEMATIC
+Mines & mining districts,Mines & mining districts,hierarchy,parent=Mining & Industry
+Shale mines,Shale mines,hierarchy,parent=Mines & mining districts - THEMATIC
+Coal mining,Coal mining,hierarchy,parent=Mines & mining districts - THEMATIC
+Mining workforce,Mining workforce,hierarchy,parent=Mining & Industry
+Miners,Miners,hierarchy,parent=Mining workforce
+Miners' families,Miners' families,hierarchy,parent=Mining workforce
+Miners' dwellings,Miners' dwellings,hierarchy,parent=Mining workforce - THEMATIC
+Mining activities,Mining activities,hierarchy,parent=Mining & Industry
+Mining,Mining,hierarchy,parent=Mining activities - THEMATIC
+Mine closure,Mine closure,hierarchy,parent=Mining activities - THEMATIC
+Recreation for miners,Recreation for miners,hierarchy,parent=Mining activities
+Mining infrastructure,Mining infrastructure,hierarchy,parent=Mining & Industry - THEMATIC
+Mining settlements,Mining settlements,hierarchy,parent=Mining & Industry - THEMATIC
+Mining incidents,Mining incidents,hierarchy,parent=Mining & Industry
+Mining accidents,Mining accidents,hierarchy,parent=Mining incidents - THEMATIC
+Accident,Accident,hierarchy,parent=Mining incidents - THEMATIC
+Alcohol & Temperance,Alcohol & Temperance,hierarchy,parent=(thematic grouping)
+Alcohol-related venues,Alcohol-related venues,hierarchy,parent=Alcohol & Temperance
+Hotels,Hotels,hierarchy,parent=Alcohol-related venues - THEMATIC
+Pubs,Pubs,hierarchy,parent=Alcohol-related venues - THEMATIC
+Temperance organizations & movements,Temperance organizations & movements,hierarchy,parent=Alcohol & Temperance
+Good Templars,Good Templars,hierarchy,parent=Temperance organizations & movements - THEMATIC
+Temperance,Temperance,hierarchy,parent=Temperance organizations & movements - THEMATIC
+Alcohol consumption & behaviour,Alcohol consumption & behaviour,hierarchy,parent=Alcohol & Temperance
+Alcohol,Alcohol,hierarchy,parent=Alcohol consumption & behaviour
+Drinking,Drinking,hierarchy,parent=Alcohol consumption & behaviour - THEMATIC
+Drunkeness,Drunkeness,hierarchy,parent=Alcohol consumption & behaviour - THEMATIC
+Licensing & regulation,Licensing & regulation,hierarchy,parent=Alcohol & Temperance
+Licensing,Licensing,hierarchy,parent=Licensing & regulation - THEMATIC
+Licensing Act,Licensing Act,hierarchy,parent=Licensing & regulation - THEMATIC
+Licensing Court,Licensing Court,hierarchy,parent=Licensing & regulation - THEMATIC
+Licensing inspector,Licensing inspector,hierarchy,parent=Licensing & regulation - THEMATIC
+Publican's License,Publican's License,hierarchy,parent=Licensing & regulation - THEMATIC
+Hospitality workers,Hospitality workers,hierarchy,parent=Alcohol & Temperance - THEMATIC
+Sport & Recreation,Sport & Recreation,hierarchy,parent=(thematic grouping)
+Sporting events,Sporting events,hierarchy,parent=Sport & Recreation - THEMATIC
+Sports clubs,Sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
+Recreation themes,Recreation themes,hierarchy,parent=Sport & Recreation
+Recreation for miners,Recreation for miners,hierarchy,parent=Recreation themes - THEMATIC
+Sports,Sports,hierarchy,parent=Recreation themes - THEMATIC
+Reserves,Reserves,hierarchy,parent=Recreation themes - THEMATIC (recreational lands)
+Arts & Culture,Arts & Culture,hierarchy,parent=(thematic grouping)
+Cultural organizations,Cultural organizations,hierarchy,parent=Arts & Culture - THEMATIC
+Cultural venues,Cultural venues,hierarchy,parent=Arts & Culture
+Halls,Halls,hierarchy,parent=Cultural venues - THEMATIC
+Cultural events,Cultural events,hierarchy,parent=Arts & Culture - THEMATIC
+Cultural activities,Cultural activities,hierarchy,parent=Arts & Culture
+Advertising,Advertising,hierarchy,parent=Cultural activities - THEMATIC
+Community institutions,Community institutions,hierarchy,parent=(thematic grouping)
+Civic organizations,Civic organizations,hierarchy,parent=Community institutions - THEMATIC
+Civic buildings,Civic buildings,hierarchy,parent=Community institutions - THEMATIC
+Fraternal orders & lodges,Fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
+Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Community institutions - THEMATIC
+Community buildings,Community buildings,hierarchy,parent=Community institutions - THEMATIC
+Social issues,Social issues,hierarchy,parent=(thematic grouping)
+Economic hardship,Economic hardship,hierarchy,parent=Social issues
+Unemployment,Unemployment,hierarchy,parent=Economic hardship - THEMATIC
+Unemployment relief,Unemployment relief,hierarchy,parent=Economic hardship - THEMATIC
+Charity,Charity,hierarchy,parent=Economic hardship - THEMATIC
+Bankruptcy,Bankruptcy,hierarchy,parent=Economic hardship - THEMATIC
+Vulnerable populations,Vulnerable populations,hierarchy,parent=Social issues
+Widows,Widows,hierarchy,parent=Vulnerable populations - THEMATIC
+Miners' families,Miners' families,hierarchy,parent=Vulnerable populations - THEMATIC
+Children,Children,hierarchy,parent=Vulnerable populations - THEMATIC
+Victims of crime & violence,Victims of crime & violence,hierarchy,parent=Social issues - THEMATIC (virtual grouping)
+Race & Ethnicity,Race & Ethnicity,hierarchy,parent=(thematic grouping)
+Marginalised groups,Marginalised groups,hierarchy,parent=Race & Ethnicity
+Indigenous peoples,Indigenous peoples,hierarchy,parent=Marginalised groups
+Aboriginal people,Aboriginal people,hierarchy,parent=Indigenous peoples
+Corroboree,Corroboree,hierarchy,parent=Indigenous peoples - THEMATIC
+Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Indigenous peoples - THEMATIC
+Chinese community,Chinese community,hierarchy,parent=Marginalised groups
+Chinese people,Chinese people,hierarchy,parent=Chinese community
+Racial stereotyping & performance,Racial stereotyping & performance,hierarchy,parent=Race & Ethnicity
+Minstrel shows,Minstrel shows,hierarchy,parent=Racial stereotyping & performance
+Katoomba Amateur Minstrels,Katoomba Amateur Minstrels,hierarchy,parent=Minstrel shows - THEMATIC
+Cultural identity & heritage,Cultural identity & heritage,hierarchy,parent=Race & Ethnicity
+Reference to the Irish or Irish culture,Reference to the Irish or Irish culture,hierarchy,parent=Cultural identity & heritage
+Women & Gender,Women & Gender,hierarchy,parent=(thematic grouping)
+Women as demographic group,Women as demographic group,hierarchy,parent=Women & Gender
+Women,Women,hierarchy,parent=Women as demographic group - THEMATIC
+Girls' cricket,Girls' cricket,hierarchy,parent=Women as demographic group - THEMATIC
+Gender-related vulnerabilities,Gender-related vulnerabilities,hierarchy,parent=Women & Gender
+Widows,Widows,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
+Sexual violence,Sexual violence,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
+Rape,Rape,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
+Family & Domestic Life,Family & Domestic Life,hierarchy,parent=(thematic grouping)
+Families,Families,hierarchy,parent=Family & Domestic Life - THEMATIC (all family tags)
+Miners' families,Miners' families,hierarchy,parent=Families - THEMATIC
+Family members by demographic,Family members by demographic,hierarchy,parent=Family & Domestic Life
+Women,Women,hierarchy,parent=Family members by demographic - THEMATIC
+Men,Men,hierarchy,parent=Family members by demographic - THEMATIC
+Children,Children,hierarchy,parent=Family members by demographic - THEMATIC
+Widows,Widows,hierarchy,parent=Family members by demographic - THEMATIC
+Life events,Life events,hierarchy,parent=Family & Domestic Life - THEMATIC
+Domestic accommodation,Domestic accommodation,hierarchy,parent=Family & Domestic Life
+Miners' dwellings,Miners' dwellings,hierarchy,parent=Domestic accommodation - THEMATIC
+Boarding houses,Boarding houses,hierarchy,parent=Domestic accommodation - THEMATIC
+Hotels,Hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect)
+Economy & Labour,Economy & Labour,hierarchy,parent=(thematic grouping)
+Industries,Industries,hierarchy,parent=Economy & Labour
+Mining,Mining,hierarchy,parent=Industries - THEMATIC
+Tourism,Tourism,hierarchy,parent=Industries - THEMATIC
+Businesses,Businesses,hierarchy,parent=Economy & Labour
+Commercial businesses,Commercial businesses,hierarchy,parent=Businesses - THEMATIC
+Labour relations,Labour relations,hierarchy,parent=Economy & Labour
+Strike,Strike,hierarchy,parent=Labour relations - THEMATIC
+Unions,Unions,hierarchy,parent=Labour relations - THEMATIC
+Workforce,Workforce,hierarchy,parent=Economy & Labour
+Miners,Miners,hierarchy,parent=Workforce - THEMATIC
+Economic distress,Economic distress,hierarchy,parent=Economy & Labour
+Unemployment,Unemployment,hierarchy,parent=Economic distress - THEMATIC
+Unemployment relief,Unemployment relief,hierarchy,parent=Economic distress - THEMATIC
+Bankruptcy,Bankruptcy,hierarchy,parent=Economic distress - THEMATIC
+Transport & Infrastructure,Transport & Infrastructure,hierarchy,parent=(thematic grouping)
+Railway,Railway,hierarchy,parent=Transport & Infrastructure - THEMATIC
+Roads,Roads,hierarchy,parent=Transport & Infrastructure - THEMATIC
+Mining transport,Mining transport,hierarchy,parent=Transport & Infrastructure
+Tramway,Tramway,hierarchy,parent=Mining transport - THEMATIC
+Commercial transport,Commercial transport,hierarchy,parent=Transport & Infrastructure
+Trucking,Trucking,hierarchy,parent=Commercial transport - THEMATIC
+Utilities,Utilities,hierarchy,parent=Transport & Infrastructure - THEMATIC
+Tourism & Accommodation,Tourism & Accommodation,hierarchy,parent=(thematic grouping)
+Tourism activities,Tourism activities,hierarchy,parent=Tourism & Accommodation
+Tourism,Tourism,hierarchy,parent=Tourism activities - THEMATIC
+Tourist trains,Tourist trains,hierarchy,parent=Tourism activities - THEMATIC
+Accommodation,Accommodation,hierarchy,parent=Tourism & Accommodation - THEMATIC
+Tourist attractions,Tourist attractions,hierarchy,parent=Tourism & Accommodation
+Waterfalls,Waterfalls,hierarchy,parent=Tourist attractions - THEMATIC
+Jenolan Caves,Jenolan Caves,hierarchy,parent=Tourist attractions - THEMATIC
+Natural features,Natural features,hierarchy,parent=Tourist attractions - THEMATIC
+Politics & Governance,Politics & Governance,hierarchy,parent=(thematic grouping)
+Government bodies,Government bodies,hierarchy,parent=Politics & Governance - THEMATIC
+Political events,Political events,hierarchy,parent=Politics & Governance - THEMATIC
+Public officials,Public officials,hierarchy,parent=Politics & Governance - THEMATIC
+Military & War,Military & War,hierarchy,parent=(thematic grouping)
+Military events,Military events,hierarchy,parent=Military & War
+World War I,World War I,hierarchy,parent=Military events
+Military personnel,Military personnel,hierarchy,parent=Military & War - THEMATIC
+Military organizations,Military organizations,hierarchy,parent=Military & War
+Military,Military,hierarchy,parent=Military organizations - THEMATIC
+Environment & Weather,Environment & Weather,hierarchy,parent=(thematic grouping)
+Weather & climate,Weather & climate,hierarchy,parent=Environment & Weather
+Weather,Weather,hierarchy,parent=Weather & climate
+Natural features,Natural features,hierarchy,parent=Environment & Weather - THEMATIC
+Animals,Animals,hierarchy,parent=Environment & Weather - THEMATIC
+Natural resources,Natural resources,hierarchy,parent=Environment & Weather
+Coal,Coal,hierarchy,parent=Natural resources - THEMATIC
+Shale mines,Shale mines,hierarchy,parent=Natural resources - THEMATIC
+Communications & Postal Services,Communications & Postal Services,hierarchy,parent=(thematic grouping)
+Postal services,Postal services,hierarchy,parent=Communications & Postal Services
+Post office,Post office,hierarchy,parent=Postal services - THEMATIC
+Post,Post,hierarchy,parent=Postal services
+Advertising,Advertising,hierarchy,parent=Communications & Postal Services - THEMATIC
+Information objects,Information objects,hierarchy,parent=Communications & Postal Services - THEMATIC
