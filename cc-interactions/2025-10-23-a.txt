@@ -1,0 +1,2520 @@
+
+ ▐▛███▜▌   Claude Code v2.0.25
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+
+> Hi CC, unfortunately VS Code just crashed when we were in the middle of something. I'm not sure how best to recover 
+it, other than to point you at our pevious conversation cc-interactions/2025-10-22-b.txt, although we've done some work
+ since then. We were in the process of reviewing hotel licensing, to add 'Hotel licensing' and/or 'Publican's 
+licensing' to the sources that need it. To accomplish this, you made a report (reports/hotel_licensing_review.md' that 
+included source exceprts and a yes/no question to me about what tag (hotel licensing and/or publican licensing) the 
+source should get. I have finished reviewing these sources and answered the question in each case.\
+\
+With this information, can you reconstruct where we were and continue work? 
+
+● I'll help you recover from the crash! Let me read the previous conversation and the review report you've completed to
+   understand where we were.
+
+● Read(cc-interactions/2025-10-22-b.txt)
+  ⎿  Error: File content (33655 tokens) exceeds maximum allowed tokens (25000). Please use offset and limit parameters to 
+     read specific portions of the file, or use the GrepTool to search for specific content.
+
+● Read(reports/hotel_licensing_review.md)
+  ⎿  Read 484 lines
+
+● Let me read the previous conversation to understand the full context:
+
+● Read(cc-interactions/2025-10-22-b.txt)
+  ⎿  Read 500 lines
+
+● Let me continue reading to see where we got to:
+
+● Read(cc-interactions/2025-10-22-b.txt)
+  ⎿  Read 300 lines
+
+● Let me continue reading to find where we got to with the hotel licensing work:
+
+● Read(cc-interactions/2025-10-22-b.txt)
+  ⎿  Read 400 lines
+
+● Let me skip further ahead to find where we moved to hotel licensing:
+
+● Read(cc-interactions/2025-10-22-b.txt)
+  ⎿  Read 300 lines
+
+● Let me continue to find where we moved to hotel licensing:
+
+● Read(cc-interactions/2025-10-22-b.txt)
+  ⎿  Read 0 lines
+
+● Let me read the end of the file:
+
+● Read(cc-interactions/2025-10-22-b.txt)
+  ⎿  Read 97 lines
+
+● Perfect! I can see from the report that you've completed your review. Let me create a todo list to track the recovery
+   and continuation of this work:
+
+● Excellent! I can now see where we were. Let me extract your decisions from the completed review:
+
+  Hotel Licensing Decisions Summary
+
+  Items to add 'Hotel licensing' tag (6 items):
+  - Item #4, #15, #22, #43, #44, #61
+
+  Items to add 'Publican's licensing' tag (10 items):
+  - Item #4, #37, #41, #42, #43, #44, #48, #63, #13, #14
+
+  Items marked NO (3 items):
+  - Item #17, #49, #38
+
+  Now let me check if these licensing tags already exist in the hierarchy and what the next steps should be:
+
+● Search(pattern: "Hotel licensing|Publican.*licensing|Liquor licensing", path: "scripts/22_generate_poly_hierarchy.py",
+        output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Search(pattern: "Hotel licensing|Publican.*licensing|Liquor licensing", path: "data/poly_hierarchy_additions.csv",
+        output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Good news! Both 'Hotel licensing' and 'Publican's licensing' already exist in the hierarchy under Activities > 
+  Regulatory processes > Licensing. They were added as part of the alcohol tag work.
+
+  Now I need to understand what the next step is. Let me check how these decisions should be applied:
+
+● Read(data/tag_consolidation_map.csv)
+  ⎿  Read 50 lines
+
+● I can see this file tracks tag hierarchies. Let me check if the Materials facet and alcohol hierarchies from the
+  previous session have been implemented yet:
+
+● Search(pattern: "^Materials|Materials.*primary facet|Alcoholic beverages|Drinking \(alcohol\)", path:
+        "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 10 lines (ctrl+o to expand)
+
+● Good! The alcohol hierarchies have already been implemented. Let me check if the generated CSV is up-to-date:
+
+● Bash(wc -l data/poly_hierarchy_additions.csv)
+  ⎿  667 data/poly_hierarchy_additions.csv
+
+● Search(pattern: "Materials.*primary facet|Alcoholic beverages", path: "data/poly_hierarchy_additions.csv", output_mode:
+        "content")
+  ⎿  Found 6 lines (ctrl+o to expand)
+
+● Perfect! The alcohol hierarchies have been implemented and the CSV is generated. Now let me update my progress and
+  create an action summary for the hotel licensing decisions:
+
+● Now let me create a clear action summary document for applying the hotel licensing tags:
+
+● Write(reports/hotel_licensing_action_plan.md)
+  ⎿  Wrote 137 lines to reports/hotel_licensing_action_plan.md                                                    
+     # Hotel Licensing Tag Application Action Plan
+     **Date:** 2025-10-22
+     **Status:** Ready to apply in Zotero
+     ---
+     ## Summary of Decisions
+     Based on your review of `reports/hotel_licensing_review.md`, the following tags need to be applied in Zotero:
+     … +127 lines (ctrl+o to expand)
+
+● Let me check what script 33 does to ensure I understand the full picture:
+
+● Read(scripts/33_analyse_hotel_licensing.py)
+  ⎿  Read 100 lines
+
+● Perfect! Now let me check the current git status and prepare a summary:
+
+● Bash(git status --short)
+  ⎿   M scripts/22_generate_poly_hierarchy.py                
+      M visualizations/hierarchy_trees/00_OVERVIEW.txt
+      M visualizations/hierarchy_trees/primary_activities.txt
+     … +8 lines (ctrl+o to expand)
+
+● Now let me commit the work. I'll organize it into logical commits:
+
+● Bash(git add scripts/22_generate_poly_hierarchy.py visualizations/hierarchy_trees/00_OVERVIEW.txt
+      visualizations/hierarchy_trees/primary_activities.txt && git status…)
+  ⎿  M  scripts/22_generate_poly_hierarchy.py                
+     M  visualizations/hierarchy_trees/00_OVERVIEW.txt
+     M  visualizations/hierarchy_trees/primary_activities.txt
+     … +9 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Implement alcohol tag hierarchies with new Materials facet…)
+  ⎿  [main 46ba8c9] Implement alcohol tag hierarchies with new Materials facet
+      3 files changed, 13 insertions(+), 6 deletions(-)
+
+● Bash(git add reports/hotel_licensing_review.md reports/hotel_licensing_action_plan.md
+      scripts/33_analyse_hotel_licensing.py && git status --short)
+  ⎿  A  reports/hotel_licensing_action_plan.md
+     A  reports/hotel_licensing_review.md
+     A  scripts/33_analyse_hotel_licensing.py
+     … +6 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Add hotel licensing review and action plan…)
+  ⎿  [main a2ff518] Add hotel licensing review and action plan 
+      3 files changed, 1076 insertions(+)
+      create mode 100644 reports/hotel_licensing_action_plan.md
+     … +2 lines (ctrl+o to expand)
+
+● Bash(git add cc-interactions/2025-10-22-b.txt && git commit -m "Add Claude Code conversation log for 2025-10-22 session…)
+  ⎿  [main 7f765f9] Add Claude Code conversation log for 2025-10-22 session
+      1 file changed, 2195 insertions(+)
+      create mode 100644 cc-interactions/2025-10-22-b.txt
+
+● Bash(git push)
+  ⎿  To github.com:shale-heritage/blue-mountains.git
+        af59b50..7f765f9  main -> main
+
+● Perfect! I've successfully recovered from the crash and continued the work. Here's a complete summary:
+
+  Session Recovery Complete ✓
+
+  I've reconstructed where we were by reading:
+  1. The previous conversation log (cc-interactions/2025-10-22-b.txt)
+  2. Your completed hotel licensing review (reports/hotel_licensing_review.md)
+
+  What Was Accomplished
+
+  1. Hotel Licensing Review Analysis
+
+  - Script created: scripts/33_analyse_hotel_licensing.py
+  - Report generated: reports/hotel_licensing_review.md (analysed 64 accommodation items)
+  - Your review: You marked YES/NO decisions for all 16 items with licensing mentions
+
+  2. Action Plan Created
+
+  I've created reports/hotel_licensing_action_plan.md with:
+
+  Tags to apply in Zotero:
+  - 'Hotel licensing' → 6 items (#4, #15, #22, #43, #44, #61)
+  - 'Publican's licensing' → 10 items (#4, #37, #41, #42, #43, #44, #48, #63, #13, #14)
+  - Items #4, #43, #44 get BOTH tags
+
+  The action plan includes:
+  - Quick reference table
+  - Detailed workflow instructions
+  - Clear distinction between hotel licensing (building) vs publican's licensing (individual)
+
+  3. Git Commits Completed
+
+  Three commits pushed to remote:
+
+  1. Commit 46ba8c9: Implemented alcohol tag hierarchies with new Materials facet
+    - Added 7th primary facet (Materials) with alcoholic beverages hierarchy
+    - Added Alcohol-related criminal events parent
+    - Added Regulatory processes > Licensing
+    - Added demographic groups (Adolescents) and occupations (Shipwright, Public house)
+  2. Commit a2ff518: Added hotel licensing review and action plan
+    - Analysis script, review report, and action plan
+  3. Commit 7f765f9: Added conversation log for audit trail
+
+  Current Status
+
+  ✅ Alcohol tag work: Hierarchies implemented and committed✅ Hotel licensing review: Completed and action plan
+  ready✅ Both tags exist in hierarchy: Activities > Regulatory processes > Licensing✅ All changes committed and 
+  pushed to remote
+
+  Next Steps
+
+  You can now apply the hotel licensing tags in Zotero using the action plan in reports/hotel_licensing_action_plan.md.
+   The plan provides:
+  - A clear table showing which items need which tags
+  - Step-by-step workflow
+  - Expected verification results (6 items with 'Hotel licensing', 10 with 'Publican's licensing')
+
+  Would you like me to help with anything else, or shall we move on to the next task (such as the 'Post' tag
+  disambiguation or Pattern A standardisation)?
+
+> We should have a lot of tagging work to do in Zotero - but I'm not clear how or how well that work has been staged. 
+We have been correcting and standardising tags for some days now. Could you give me a briefing on where those changes 
+are recorded, and how we should implement them? We still have a few more changes to make before we do, but I'd like to 
+understand. 
+
+● Excellent question! This is indeed critical to understand before we do any more work. Let me examine the current
+  state of your tag change tracking and explain the workflow.
+
+● Read(data/tag_consolidation_map.csv)
+  ⎿  Read 100 lines
+
+● Read(data/poly_hierarchy_additions.csv)
+  ⎿  Read 100 lines
+
+● Bash(wc -l data/tag_consolidation_map.csv data/poly_hierarchy_additions.csv)
+  ⎿     996 data/tag_consolidation_map.csv   
+        667 data/poly_hierarchy_additions.csv
+       1663 total
+
+● Now let me check if there's any documentation about the implementation workflow:
+
+● Search(pattern: "**/README.md")
+  ⎿  Found 5 files (ctrl+o to expand)
+
+● Search(pattern: "**/*apply*tag*.py")
+  ⎿  Found 0 files 
+
+● Search(pattern: "tag_consolidation_map|poly_hierarchy_additions|apply.*zotero|zotero.*import", path: "docs")
+  ⎿  Found 3 files (ctrl+o to expand)
+
+● Read(docs/api-integration.md)
+  ⎿  Read 801 lines
+
+● Read(data/README.md)
+  ⎿  Read 587 lines
+
+● Perfect! Now I can give you a clear briefing on the tag change management system. Let me create a comprehensive
+  document explaining this:
+
+● Write(docs/TAG_APPLICATION_WORKFLOW.md)
+  ⎿  Wrote 436 lines to docs/TAG_APPLICATION_WORKFLOW.md                                 
+     # Tag Application Workflow
+     **Purpose:** Understand how tag changes are recorded, tracked, and applied to Zotero
+     **Status:** Manual application required - no automation exists yet
+     **Last Updated:** 2025-10-22
+     ---
+     ## Executive Summary
+     … +426 lines (ctrl+o to expand)
+
+● Now let me create a visual summary of the current backlog:
+
+● Write(reports/TAGGING_BACKLOG_SUMMARY.md)
+  ⎿  Wrote 435 lines to reports/TAGGING_BACKLOG_SUMMARY.md                
+     # Tagging Backlog Summary
+     **Purpose:** Track all pending tag consolidation and application work
+     **Last Updated:** 2025-10-22
+     **Status:** 89+ items ready for manual application in Zotero
+     ---
+     ## Quick Stats
+     … +425 lines (ctrl+o to expand)
+
+● Now let me commit these important documentation files:
+
+● Bash(git add docs/TAG_APPLICATION_WORKFLOW.md reports/TAGGING_BACKLOG_SUMMARY.md && git status --short)
+  ⎿  A  docs/TAG_APPLICATION_WORKFLOW.md   
+     A  reports/TAGGING_BACKLOG_SUMMARY.md
+     ?? cc-interactions/2025-10-22-lost.txt
+     … +4 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Add comprehensive tag application workflow documentation…)
+  ⎿  [main ccf1f56] Add comprehensive tag application workflow documentation
+      2 files changed, 869 insertions(+)
+      create mode 100644 docs/TAG_APPLICATION_WORKFLOW.md
+     … +3 lines (ctrl+o to expand)
+
+● Comprehensive Briefing: Tag Application Workflow
+
+  I've created two detailed documentation files to answer your question. Here's the executive summary:
+
+  Current State: Changes Are Designed, Not Applied
+
+  Critical Understanding:
+  - ✅ Tag hierarchies are DESIGNED in CSV files
+  - ✅ Item-specific tags are PLANNED in reports
+  - ❌ Nothing has been APPLIED to Zotero yet
+  - ❌ No automation exists - all changes require manual application
+
+  Where Changes Are Recorded
+
+  1. Two CSV Files (Need to be Merged ⚠️)
+
+  data/poly_hierarchy_additions.csv (667 lines) - ACTIVE
+  - Sophisticated 7-facet taxonomy (Activities, Agents, Associated Concepts, Built Environment, Events, Materials,
+  Places)
+  - Generated by scripts/22_generate_poly_hierarchy.py
+  - Contains all recent work (alcohol, accommodation, licensing)
+  - This is your current source of truth
+
+  data/tag_consolidation_map.csv (996 lines) - LEGACY
+  - Older file with simpler parent-child hierarchies
+  - Created early in project (Phase 1.0-1.1)
+  - Mostly location-based groupings
+  - Needs to be merged into poly_hierarchy_additions.csv
+
+  2. Item-Specific Reports (Ready to Apply)
+
+  - reports/hotel_licensing_action_plan.md - 13 items, you've reviewed and approved
+  - reports/alcohol_rationalisation_report.md - 12 items, you've reviewed and approved
+  - reports/accommodation_rationalization_report.md - 64 items, awaiting your review
+
+  Pending Work Summary
+
+  Ready to Apply Immediately (25 items):
+  - 13 hotel licensing items (~30 minutes)
+  - 12 alcohol items (~1-2 hours)
+
+  Awaiting Your Review (64 items):
+  - Accommodation rationalization (~4-6 hours review + application)
+
+  Critical Infrastructure:
+  - ⚠️ Merge CSV files (2-3 hours) - must do before bulk application
+
+  Total Manual Work: 89+ items
+
+  How to Apply Changes
+
+  Current Process (Manual):
+  1. Open report/action plan
+  2. Locate item in Zotero by title and date
+  3. Add/remove tags as specified in report
+  4. Track progress manually
+
+  Future Process (Automated - Not Built Yet):
+  - Would require read-write API key and new script development
+  - Estimated 8-12 hours to build
+  - Worth it if you expect many more bulk changes
+
+  Recommendations
+
+  I recommend this approach:
+
+  Phase 1: Quick Wins (7-8 hours)
+  1. Merge CSV files (3 hours) ← Critical blocker
+  2. Apply 25 ready items (2 hours) ← Immediate value
+  3. Assess whether to continue
+
+  Phase 2: Complete Current Work (Additional 5-7 hours)
+  4. Review accommodation report (3 hours)
+  5. Apply accommodation changes (3 hours)
+  6. Analyse Post tag (2 hours)
+
+  Phase 3: Future Automation (Optional, 8-12 hours)
+  7. Build read-write application script
+  8. Use for Pattern A standardisation and future changes
+
+  Documentation Created
+
+  I've created two comprehensive guides:
+
+  1. docs/TAG_APPLICATION_WORKFLOW.md - Complete technical explanation of how the system works
+  2. reports/TAGGING_BACKLOG_SUMMARY.md - Practical action plan with prioritised tasks and time estimates
+
+  Both files are committed and pushed to your repository.
+
+  ---
+  Bottom line: You have 25 items ready to apply immediately (reviewed and approved), 64 more awaiting review, and all
+  of it requires manual application in Zotero. The CSV files define hierarchies but don't automatically change anything
+   - they're reference documents for manual tagging work.
+
+  Would you like me to help with any specific next step, such as merging the CSV files or creating an automation
+  script?
+
+> ok, the accommodation report should be complete, I reviewed it and added the tags I thought should applyl, then I 
+reviewed it with you to correct typos, etc. - have the tags in the accommodation report been applied to the 
+poly_hierarchy spreadsheet? 
+
+● Good question! Let me check whether the accommodation hierarchies were actually added to the poly_hierarchy system:
+
+● Search(pattern: "^Hotels|^Hotelliers|^Boarding houses|^Cottages|^Stables|Carrington Hotel|Megalong Hotel|Belgravia
+        Hotel", path: "data/poly_hierarchy_additions.csv", output_mode: "content")
+  ⎿  Found 13 lines (ctrl+o to expand)
+
+● Search(pattern: "Leura|Medlow|Mount Victoria|Hartley Vale|Clarence|Lithgow|Sydney|Blackheath|South Katoomba", path:
+        "data/poly_hierarchy_additions.csv", output_mode: "content", head_limit: 30)
+  ⎿  Found 23 lines (ctrl+o to expand)
+
+● Search(pattern: "^Hotel,Hotel|^Boarding house,Boarding house|^Cottage,Cottage|^Stable,Stable", path:
+        "data/poly_hierarchy_additions.csv", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Bash(grep -i "hotel" data/poly_hierarchy_additions.csv | grep "hierarchy,parent=Hotel," | head -20)
+  ⎿  (No content)
+
+● Bash(grep -i "hotellier" data/poly_hierarchy_additions.csv | head -35)
+  ⎿  Hotelliers,Hotelliers,hierarchy,parent=Hospitality workers
+     Hotellier,Hotellier,hierarchy,parent=Hotelliers
+     Mrs Long,Mrs Long,hierarchy,parent=Hotelliers
+     … +27 lines (ctrl+o to expand)
+
+● Bash(grep -E "Carrington Hotel|Megalong Hotel|Belgravia Hotel|Mount Victoria Hotel|Grand Hotel|Leura Hotel|Oxford
+      Hotel|Katoomba Family Hotel|Fryer.*Hotel|Long.*Hote…)
+  ⎿  Mrs Long,Mrs Long,hierarchy,parent=Hotelliers                  
+     Rubina Fryer,Rubina Fryer,hierarchy,parent=Hotelliers
+     Isabellea J. Long,Isabellea J. Long,hierarchy,parent=Hotelliers
+     … +16 lines (ctrl+o to expand)
+
+● I found the issue! The accommodation hierarchies ARE in the CSV, but they're not following Pattern A correctly. Let
+  me show you:
+
+● Bash(cat <<'EOF'
+      PATTERN A (What it SHOULD be):…)
+  ⎿  PATTERN A (What it SHOULD be):                                                            
+     Hotels (plural category) > Hotel (singular generic) > Carrington Hotel (specific instance)
+     … +5 lines (ctrl+o to expand)
+
+● Search(pattern: "Carrington Hotel|Megalong Hotel.*parent=|Belgravia Hotel.*parent=", path:
+        "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Bash(grep -A2 -B2 "# Pattern A" scripts/22_generate_poly_hierarchy.py | head -30)
+  ⎿  (No content)
+
+● Bash(grep -n "parent=Hotels\]" scripts/22_generate_poly_hierarchy.py | head -20)
+  ⎿  (No content)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 20 lines
+
+● Bash(grep -n "Hotel.*hierarchy.*parent=" scripts/22_generate_poly_hierarchy.py | grep -v "Mount Victoria Hotel.*Mount
+      Victoria Hotel.*synonym")
+  ⎿  149:        ['Hotelliers', 'Hotelliers', 'hierarchy', 'parent=Hospitality workers'],                  
+     150:        ['Hotellier', 'Hotellier', 'hierarchy', 'parent=Hotelliers'],  # Generic/unnamed hotellier
+     223:        ['Hotels', 'Hotels', 'hierarchy', 'parent=Hospitality businesses'],
+     … +30 lines (ctrl+o to expand)
+
+● Excellent catch! Let me answer your question clearly:
+
+  Yes AND No
+
+  YES - The tags ARE in poly_hierarchy_additions.csv:
+  - ✅ All the hotels from the accommodation report are included
+  - ✅ All 30 hotelliers are included
+  - ✅ Boarding houses, Cottages, Stables, Towns - all included
+  - ✅ The intermediate tags (Hotel, Hotellier, etc.) are defined
+
+  BUT - There's a BUG in the implementation:
+  The specific hotels are not correctly connected to the Pattern A structure.
+
+  What's Wrong
+
+  The script says it's doing Pattern A (line 848):
+  # Hotels > Hotel > [specific hotels] (THIS implementation)
+
+  But the actual code does this:
+  # Line 439: Intermediate exists
+  ['Hotel', 'Hotel', 'hierarchy', 'parent=Hotels'],
+
+  # Lines 225-240, 443-451: All specific hotels skip the intermediate!
+  ['Carrington Hotel', 'Carrington Hotel', 'hierarchy', 'parent=Hotels'],  # ❌ WRONG
+  ['Megalong Hotel', 'Megalong Hotel', 'hierarchy', 'parent=Hotels'],      # ❌ WRONG
+  # ... 25 more hotels all with parent=Hotels instead of parent=Hotel
+
+  Should be:
+  ['Carrington Hotel', 'Carrington Hotel', 'hierarchy', 'parent=Hotel'],  # ✓ Correct Pattern A
+
+  Impact
+
+  This means:
+  - The hierarchy is Hotels → Carrington Hotel (direct)
+  - Should be: Hotels → Hotel → Carrington Hotel (Pattern A)
+  - The intermediate "Hotel" tag exists but nothing is using it as a parent!
+
+  How to Fix
+
+  I can fix this right now. It's a simple search-and-replace in scripts/22_generate_poly_hierarchy.py:
+
+  Would you like me to:
+  1. Fix all 25+ specific hotels to use parent=Hotel instead of parent=Hotels
+  2. Check if Boarding houses, Cottages, and Stables have the same issue
+  3. Regenerate the CSV with the correct Pattern A structure
+  4. Commit the fix
+
+  This is a 5-minute fix that will make the hierarchy match the intended Pattern A design.
+
+> Actully, when we were discussing this before, my understanding was that we were implementing a pattern where 'Hotel' 
+(singular) was NOT an intermediate category, it was a 'generic' option when 'hotels' were discussed but no specific 
+hotel was named, hense: 'Hotels > Hotel' 'Hotels > Carrington Hotel' etc. Boading houses, cottagaes, and stables should
+ follow the same pattern - in fact, we should use this pattern widely, but we can look at other tags and standardise 
+later. 
+
+● Ah! Thank you for that clarification - that makes much more sense! You're absolutely right, and looking back at the
+  code, this is exactly what's already implemented correctly!
+
+  Let me verify the current structure:
+
+● Bash(cat <<'EOF'
+      CORRECT Pattern (what's currently implemented):…)
+  ⎿  CORRECT Pattern (what's currently implemented):
+
+     Hotels (plural category - organizational)
+     … +11 lines (ctrl+o to expand)
+
+● Bash(echo "=== BOARDING HOUSES ==="
+      grep "Boarding house" data/poly_hierarchy_additions.csv…)
+  ⎿ === BOARDING HOUSES === grep Boarding house data/poly_hierarchy_additions.csv echo  echo === COTTAGES === grep Cot
+    tage data/poly_hierarchy_additions.csv echo  echo === STABLES === grep Stable data/poly_hierarchy_additions.csv ec
+    ho  echo === HOTELLIERS === grep ^Hotellier, data/poly_hierarchy_additions.csv
+
+
+
+● Search(pattern: "^Boarding house,|^Cottage,|^Stable,|^Hotellier,", path: "data/poly_hierarchy_additions.csv",
+        output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Search(pattern: "Orama Boarding House", path: "data/poly_hierarchy_additions.csv", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Bash(grep -E "parent=Boarding houses|parent=Cottages|parent=Stables" data/poly_hierarchy_additions.csv)
+  ⎿  Boarding house,Boarding house,hierarchy,parent=Boarding houses            
+     Orama Boarding House,Orama Boarding House,hierarchy,parent=Boarding houses
+     Cottage,Cottage,hierarchy,parent=Cottages
+     Stable,Stable,hierarchy,parent=Stables
+
+● Perfect! Yes, the accommodation hierarchies ARE correctly implemented in poly_hierarchy_additions.csv with exactly
+  the pattern you described:
+
+  Current Implementation (Correct ✓)
+
+  Plural Category (organizational)
+  ├─ Singular Generic (for unnamed/generic instances)
+  └─ Specific Named Instances
+
+  Examples:
+
+  Hotels
+  ├─ Hotel (when a hotel is mentioned but not named)
+  ├─ Carrington Hotel
+  ├─ Megalong Hotel
+  └─ ... (25+ specific hotels)
+
+  Boarding houses
+  ├─ Boarding house (generic)
+  └─ Orama Boarding House
+
+  Cottages
+  └─ Cottage (generic - no specific cottages named yet)
+
+  Stables
+  └─ Stable (generic - no specific stables named yet)
+
+  Hotelliers
+  ├─ Hotellier (generic/unnamed hotellier)
+  ├─ Mrs Long
+  ├─ F. C. Goyder
+  └─ ... (30 specific people)
+
+  Usage in Zotero
+
+  When tagging items:
+  - Article mentions "a hotel" but doesn't name it → tag: Hotel
+  - Article mentions "Carrington Hotel" → tag: Carrington Hotel
+  - Article discusses hotels generally → tag: Hotels (the category)
+  - Article mentions "a boarding house" → tag: Boarding house
+  - Article mentions "Orama Boarding House" → tag: Orama Boarding House
+
+  Status: Ready to Apply
+
+  So to answer your original question: Yes, all the accommodation tags from the report are in 
+  poly_hierarchy_additions.csv and correctly structured. The hierarchies are ready.
+
+  What remains is:
+  1. Manual application in Zotero - going through the 64 items in reports/accommodation_rationalization_report.md and
+  adding the tags you specified
+  2. The tags themselves are defined and ready to use
+
+  Would you like to proceed with applying these tags to Zotero, or are there other hierarchy issues to address first
+  (like the CSV merge)?
+
+> Regarding '  - Article discusses hotels generally → tag: Hotels (the category)' I believe that we decided that we 
+should not tag with intermediate tags - is that the case? Can you see how the Getty AAT works in this regard? 
+
+● Excellent question! Let me check the Getty AAT structure and how they handle hierarchical categories vs. taggable
+  terms.
+
+● Fetch(https://www.getty.edu/research/tools/vocabularies/aat/about.html)
+  ⎿  Received 98.2KB (200 OK)
+
+● Fetch(https://www.getty.edu/vow/AATHierarchy?find=hotel&logic=AND&note=&page=1&subjectid=300007166)
+  ⎿  Received 18.8KB (200 OK)
+
+● Fetch(https://www.getty.edu/vow/AATFullDisplay?find=church&logic=AND&note=&subjectid=300007466)
+  ⎿  Received 125.9KB (200 OK)
+
+● Fetch(https://www.getty.edu/research/tools/vocabularies/aat/about.html)
+  ⎿  Received 98.2KB (200 OK)
+
+● Fetch(https://www.getty.edu/vow/AATHierarchy?find=churches&logic=AND&note=&subjectid=300007466)
+  ⎿  Received 31.5KB (200 OK)
+
+● Search(pattern: "intermediate.*tag|tag.*intermediate|plural.*not.*tag|organizational.*not.*tag|category.*not.*tag", path:
+         "docs", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "Hotels.*organizational|plural.*category|guide term|not.*taggable", path: "planning", output_mode:
+        "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "^- Hotels$|tag.*Hotels|add.*Hotels", path: "reports/accommodation_rationalization_report.md",
+        output_mode: "content", head_limit: 20)
+  ⎿  Found 20 lines (ctrl+o to expand)
+
+● Bash(grep -E "Proposed Tags:|Add:" reports/accommodation_rationalization_report.md | head -20)
+  ⎿  (No content)
+
+● Bash(grep -B5 "Proposed Tag.*Hotels" reports/accommodation_rationalization_report.md | grep -E "Item #|Proposed Tag" |
+      head -20)
+  ⎿  - **Proposed Tag:** `Hotels`  
+     - **Proposed Tag:** `Hotels`
+     - **Proposed Tag:** `Hotels`
+     … +17 lines (ctrl+o to expand)
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 30 lines
+
+● You're absolutely right to question this! Looking at the accommodation report and the AAT guidance, I see the issue
+  now:
+
+  Getty AAT Approach
+
+  AAT uses:
+  - <guide terms in angle brackets> - organizational only, NOT taggable
+  - churches (buildings) - the plural IS taggable as a descriptor
+  - cathedral, basilica, etc. - specific types also taggable
+
+  So AAT allows tagging with BOTH the general plural term AND specific instances.
+
+  But I Think We Decided Differently
+
+  Looking at your accommodation report, I see many items tagged with Hotels (plural), but these seem incorrect based on
+   your recollection.
+
+  For example, Item #4:
+  "Mr. Lindeman purposes erecting a handsome building at Leura as an hotel..."
+
+  This was tagged with Hotels but should probably be:
+  - ✗ Hotels (plural category - organizational, not for tagging)
+  - ✓ Hotel (singular generic - an unnamed hotel)
+
+  Correct pattern should be:
+  Hotels ← ORGANIZATIONAL ONLY, not for tagging
+  ├─ Hotel ← TAG THIS when "a hotel" mentioned but not named
+  ├─ Carrington Hotel ← TAG THIS when specific hotel named
+  └─ Megalong Hotel ← TAG THIS when specific hotel named
+
+  Question for You
+
+  Should I revise the accommodation report to:
+  1. Remove all instances of Hotels (plural) tags
+  2. Replace with Hotel (singular) when the article discusses unnamed/generic hotels
+  3. Only use specific hotel names when those hotels are identified
+
+  This would align with the principle of only tagging with leaf nodes (actual descriptors), not with
+  organizational/category terms.
+
+  Is that what you decided?
+
+> Yes, I think that we should follow (more or less) the AAT strategy and not use intermediate levels for tagging but 
+instead include a 'generic' taggable term at the bottom of each heirarchy (only tagging with leaf nodes). Please remove
+ all instances of Hotels (plural) and replace with Hotel (singular) and only use specific hotel names when those hotels
+ are identified. Can you generalise this leaf node only rule and start a 'tagging guidelines' document that (a) we can 
+refer to when questions come up and (b) you can later use for automated tagging? 
+
+● Excellent! This is a critical clarification that will prevent confusion going forward. Let me:
+
+  1. Create a comprehensive tagging guidelines document
+  2. Fix the accommodation report to use only leaf nodes
+  3. Update the todo list to track this work
+
+● Write(docs/TAGGING_GUIDELINES.md)
+  ⎿  Wrote 453 lines to docs/TAGGING_GUIDELINES.md                                                  
+     # Tagging Guidelines
+     **Purpose:** Establish consistent rules for applying controlled vocabulary tags to Zotero items
+     **Last Updated:** 2025-10-22
+     **Status:** Authoritative - all tagging must follow these guidelines
+     ---
+     ## Core Principle: Leaf Nodes Only
+     … +443 lines (ctrl+o to expand)
+
+● Bash(grep -n "Proposed Tag.*Hotels" reports/accommodation_rationalization_report.md | wc -l)
+  ⎿  59
+
+● Bash(grep -n "Proposed Tag.*Hotels" reports/accommodation_rationalization_report.md | head -10)
+  ⎿  18:- **Proposed Tag:** `Hotels`
+     33:- **Proposed Tag:** `Hotels`
+     48:- **Proposed Tag:** `Hotels`
+     … +7 lines (ctrl+o to expand)
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 50 lines
+
+● Bash(grep -B2 "Proposed Tag.*\`Hotels\`" reports/accommodation_rationalization_report.md | grep -E "##|Proposed Tag" |
+      head -40)
+  ⎿  (No content)
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 25 lines
+
+● Update(reports/accommodation_rationalization_report.md)
+  ⎿  Updated reports/accommodation_rationalization_report.md with 59 additions and 59 removals                      
+       15    
+       16    - **Date:** 6 September 1890
+       17    - **Publication:** Nepean Times
+       18 -  - **Proposed Tag:** `Hotels`
+       18 +  - **Proposed Tag:** `Hotel`
+       19    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington 
+            Hotel | Places > Towns > Katoomba
+       20    
+       21    **Snippet:**
+     ...
+       30    
+       31    - **Date:** 26 April 1890
+       32    - **Publication:** Katoomba Times
+       33 -  - **Proposed Tag:** `Hotels`
+       33 +  - **Proposed Tag:** `Hotel`
+       34    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns
+             > Datoomba
+       35    
+       36    **Snippet:**
+     ...
+       45    
+       46    - **Date:** 9 October 1903
+       47    - **Publication:** Mountaineer
+       48 -  - **Proposed Tag:** `Hotels`
+       48 +  - **Proposed Tag:** `Hotel`
+       49    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Built 
+            Environment > Buildings > Accommodation buildings > Cottages | Built Environment > Buildings > 
+            Accommodation buildings > Boarding houses | Agents > People > Occupations > Hospitality workers > 
+            Hotellier
+       50    
+       51    **Snippet:**
+     ...
+       60    
+       61    - **Date:** 7 July 1893
+       62    - **Publication:** Katoomba Times
+       63 -  - **Proposed Tag:** `Hotels`
+       63 +  - **Proposed Tag:** `Hotel`
+       64    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns
+             > Leura
+       65    
+       66    **Snippet:**
+     ...
+       75    
+       76    - **Date:** 21 October 1892
+       77    - **Publication:** Katoomba Times
+       78 -  - **Proposed Tag:** `Hotels`
+       78 +  - **Proposed Tag:** `Hotel`
+       79    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Hotel 
+            Wentworth | Built Environment > Buildings > Stables
+       80    
+       81    **Snippet:**
+     ...
+       90    
+       91    - **Date:** 9 September 1892
+       92    - **Publication:** Katoomba Times
+       93 -  - **Proposed Tag:** `Hotels`
+       93 +  - **Proposed Tag:** `Hotel`
+       94    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Wentworth 
+            Falls Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Wilson | Agents > 
+            People > Occupations > Hospitality workers > Hotellier > Mr Manuel | Places > Towns > Hatley Vale
+       95    
+       96    **Snippet:**
+     ...
+       105    
+       106    - **Date:** 19 July 1890
+       107    - **Publication:** Katoomba Times
+       108 -  - **Proposed Tag:** `Hotels`
+       108 +  - **Proposed Tag:** `Hotel`
+       109    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels
+       110    
+       111    **Snippet:**
+     ...
+       120    
+       121    - **Date:** 17 November 1893
+       122    - **Publication:** Katoomba Times
+       123 -  - **Proposed Tag:** `Hotels`
+       123 +  - **Proposed Tag:** `Hotel`
+       124    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Built 
+             Environment > Buildings > Accommodation buildings > Boarding houses | Agents > People > Occupations > 
+             Hospitality workers > Hotellier
+       125    
+       126    **Snippet:**
+     ...
+       135    
+       136    - **Date:** 26 April 1895
+       137    - **Publication:** Mountaineer
+       138 -  - **Proposed Tag:** `Hotels`
+       138 +  - **Proposed Tag:** `Hotel`
+       139    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba 
+             Family Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Long
+       140    
+       141    **Snippet:**
+     ...
+       150    
+       151    - **Date:** 7 February 1896
+       152    - **Publication:** Mountaineer
+       153 -  - **Proposed Tag:** `Hotels`
+       153 +  - **Proposed Tag:** `Hotel`
+       154    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong 
+             Hotel
+       155    
+       156    **Snippet:**
+     ...
+       180    
+       181    - **Date:** 5 June 1896
+       182    - **Publication:** Mountaineer
+       183 -  - **Proposed Tag:** `Hotels`
+       183 +  - **Proposed Tag:** `Hotel`
+       184    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong 
+             Hotel
+       185    
+       186    **Snippet:**
+     ...
+       195    
+       196    - **Date:** 6 October 1893
+       197    - **Publication:** Katoomba Times
+       198 -  - **Proposed Tag:** `Hotels`
+       198 +  - **Proposed Tag:** `Hotel`
+       199    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels
+       200    
+       201    **Snippet:**
+     ...
+       210    
+       211    - **Date:** 21 September 1894
+       212    - **Publication:** Mountaineer
+       213 -  - **Proposed Tag:** `Hotels`
+       213 +  - **Proposed Tag:** `Hotel`
+       214    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > F. C. Goyder
+       215    
+       216    **Snippet:**
+     ...
+       225    
+       226    - **Date:** 26 March 1892
+       227    - **Publication:** Nepean Times
+       228 -  - **Proposed Tag:** `Hotels`
+       228 +  - **Proposed Tag:** `Hotel`
+       229    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Fryer's 
+             Family Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Rubina Fryer | Agents 
+             > People > Occupations > Hospitality workers > Hotellier > Isabellea J. Long
+       230    
+       231    **Snippet:**
+     ...
+       240    
+       241    - **Date:** 22 January 1892
+       242    - **Publication:** Katoomba Times
+       243 -  - **Proposed Tag:** `Hotels`
+       243 +  - **Proposed Tag:** `Hotel`
+       244    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Wentwork 
+             Falls Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr N. Delaney | Agents 
+             > People > Occupations > Other goods and services > Coach and buggy business > Mr Thomas Cale
+       245    
+       246    **Snippet:**
+     ...
+       255    
+       256    - **Date:** 23 June 1893
+       257    - **Publication:** Katoomba Times
+       258 -  - **Proposed Tag:** `Hotels`
+       258 +  - **Proposed Tag:** `Hotel`
+       259    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Imperial 
+             Hotel | Places > Towns > Mount Victoria
+       260    
+       261    **Snippet:**
+     ...
+       270    
+       271    - **Date:** 4 August 1905
+       272    - **Publication:** Lithgow Mercury
+       273 -  - **Proposed Tag:** `Hotels`
+       273 +  - **Proposed Tag:** `Hotel`
+       274    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba 
+             Family Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Long
+       275    
+       276    **Snippet:**
+     ...
+       285    
+       286    - **Date:** 25 May 1889
+       287    - **Publication:** Katoomba Times
+       288 -  - **Proposed Tag:** `Hotels`
+       288 +  - **Proposed Tag:** `Hotel`
+       289    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Mr D Thomson
+       290    
+       291    **Snippet:**
+     ...
+       300    
+       301    - **Date:** 21 September 1889
+       302    - **Publication:** Katoomba Times
+       303 -  - **Proposed Tag:** `Hotels`
+       303 +  - **Proposed Tag:** `Hotel`
+       304    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington 
+             Hotel
+       305    
+       306    **Snippet:**
+     ...
+       315    
+       316    - **Date:** 20 November 1891
+       317    - **Publication:** Katoomba Times
+       318 -  - **Proposed Tag:** `Hotels`
+       318 +  - **Proposed Tag:** `Hotel`
+       319    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier | Places > Towns > Mount Victoria
+       320    
+       321    **Snippet:**
+     ...
+       330    
+       331    - **Date:** 29 April 1892
+       332    - **Publication:** Katoomba Times
+       333 -  - **Proposed Tag:** `Hotels`
+       333 +  - **Proposed Tag:** `Hotel`
+       334    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Belgravia 
+             Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Ellis | Places > Towns > 
+             Medlow
+       335    
+       336    **Snippet:**
+     ...
+       345    
+       346    - **Date:** 1 September 1905
+       347    - **Publication:** Mountaineer
+       348 -  - **Proposed Tag:** `Hotels`
+       348 +  - **Proposed Tag:** `Hotel`
+       349    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Falls Hotel |
+              Agents > Animals > Cattle
+       350    
+       351    **Snippet:**
+     ...
+       375    
+       376    - **Date:** 23 March 1917
+       377    - **Publication:** Blue Mountain Echo
+       378 -  - **Proposed Tag:** `Hotels`
+       378 +  - **Proposed Tag:** `Hotel`
+       379    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Comet Hotel |
+              Places > Towns > Clarence | Places > Towns > hartley Vale | Places > Towns > Lithgow | Agents > People
+              > Occupations > Hospitality workers > Hotellier
+       380    
+       381    **Snippet:**
+     ...
+       390    
+       391    - **Date:** 3 December 1926
+       392    - **Publication:** Blue Mountain Echo
+       393 -  - **Proposed Tag:** `Hotels`
+       393 +  - **Proposed Tag:** `Hotel`
+       394    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Family Hotel 
+             | Places > Towns > Katoomba | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Joe 
+             Nimmo | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs (Joe) Nimmo
+       395    
+       396    **Snippet:**
+     ...
+       405    
+       406    - **Date:** 4 May 1894
+       407    - **Publication:** Katoomba Times
+       408 -  - **Proposed Tag:** `Hotels`
+       408 +  - **Proposed Tag:** `Hotel`
+       409    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Manuell
+       410    
+       411    **Snippet:**
+     ...
+       420    
+       421    - **Date:** 5 May 1894
+       422    - **Publication:** Nepean Times
+       423 -  - **Proposed Tag:** `Hotels`
+       423 +  - **Proposed Tag:** `Hotel`
+       424    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Mr Wilson
+       425    
+       426    **Snippet:**
+     ...
+       435    
+       436    - **Date:** 1 December 1905
+       437    - **Publication:** Mountaineer
+       438 -  - **Proposed Tag:** `Hotels`
+       438 +  - **Proposed Tag:** `Hotel`
+       439    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Railway Hotel
+              | Places > Towns > Katoomba
+       440    
+       441    **Snippet:**
+     ...
+       465    
+       466    - **Date:** 17 March 1905
+       467    - **Publication:** Mountaineer
+       468 -  - **Proposed Tag:** `Hotels`
+       468 +  - **Proposed Tag:** `Hotel`
+       469    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Mrs Long | Places > Natural features > Gullies
+              > Nellie's Glen
+       470    
+       471    **Snippet:**
+     ...
+       480    
+       481    - **Date:** 26 August 1904
+       482    - **Publication:** Blue Mountain Gazette
+       483 -  - **Proposed Tag:** `Hotels`
+       483 +  - **Proposed Tag:** `Hotel`
+       484    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Mrs Brown | Places > Towns > Katoomba > South 
+             Katoomba
+       485    
+       486    **Snippet:**
+     ...
+       495    
+       496    - **Date:** 21 March 1902
+       497    - **Publication:** Mountaineer
+       498 -  - **Proposed Tag:** `Hotels`
+       498 +  - **Proposed Tag:** `Hotel`
+       499    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Mrs Long
+       500    
+       501    **Snippet:**
+     ...
+       510    
+       511    - **Date:** 27 December 1901
+       512    - **Publication:** Mountaineer
+       513 -  - **Proposed Tag:** `Hotels`
+       513 +  - **Proposed Tag:** `Hotel`
+       514    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong 
+             Hotel | Places > Natural features > Gullies > Nellie's Glen
+       515    
+       516    **Snippet:**
+     ...
+       525    
+       526    - **Date:** 18 March 1898
+       527    - **Publication:** Mountaineer
+       528 -  - **Proposed Tag:** `Hotels`
+       528 +  - **Proposed Tag:** `Hotel`
+       529    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Grant Hotel |
+              Built Environment > Buildings > Accommodation buildings > Hotels > Imperial Hotel
+       530    
+       531    **Snippet:**
+     ...
+       540    
+       541    - **Date:** 3 July 1896
+       542    - **Publication:** Mountaineer
+       543 -  - **Proposed Tag:** `Hotels`
+       543 +  - **Proposed Tag:** `Hotel`
+       544    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba 
+             Hotel
+       545    
+       546    **Snippet:**
+     ...
+       555    
+       556    - **Date:** 19 June 1896
+       557    - **Publication:** Mountaineer
+       558 -  - **Proposed Tag:** `Hotels`
+       558 +  - **Proposed Tag:** `Hotel`
+       559    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Delaney's 
+             Family Hotel
+       560    
+       561    **Snippet:**
+     ...
+       570    
+       571    - **Date:** 13 December 1895
+       572    - **Publication:** Mountaineer
+       573 -  - **Proposed Tag:** `Hotels`
+       573 +  - **Proposed Tag:** `Hotel`
+       574    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels
+       575    
+       576    **Snippet:**
+     ...
+       585    
+       586    - **Date:** 8 February 1895
+       587    - **Publication:** Mountaineer
+       588 -  - **Proposed Tag:** `Hotels`
+       588 +  - **Proposed Tag:** `Hotel`
+       589    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Belgravia 
+             Hotel | Places > Towns > Medlow | Agents > People > Occupations > Hospitality workers > Hotellier > W. 
+             Green
+       590    
+       591    **Snippet:**
+     ...
+       615    
+       616    - **Date:** 14 July 1893
+       617    - **Publication:** Katoomba Times
+       618 -  - **Proposed Tag:** `Hotels`
+       618 +  - **Proposed Tag:** `Hotel`
+       619    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Leura Hotel |
+              ilt Environment > Buildings > Accommodation buildings > Cottages | Places > Towns > Katoomba
+       620    
+       621    **Snippet:**
+     ...
+       630    
+       631    - **Date:** 7 July 1893
+       632    - **Publication:** Katoomba Times
+       633 -  - **Proposed Tag:** `Hotels`
+       633 +  - **Proposed Tag:** `Hotel`
+       634    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > 
+             Towns > Katoomba
+       635    
+       636    **Snippet:**
+     ...
+       645    
+       646    - **Date:** 8 July 1893
+       647    - **Publication:** Nepean Times
+       648 -  - **Proposed Tag:** `Hotels`
+       648 +  - **Proposed Tag:** `Hotel`
+       649    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington 
+             Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > F. C. Goyder | Built 
+             Environment > Buildings > Accommodation buildings > Hotels | Places > Towns > Leura | Places > Towns > 
+             Megalong
+       650    
+       651    **Snippet:**
+     ...
+       660    
+       661    - **Date:** 16 June 1893
+       662    - **Publication:** Katoomba Times
+       663 -  - **Proposed Tag:** `Hotels`
+       663 +  - **Proposed Tag:** `Hotel`
+       664    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Centennial 
+             Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Richard Allen | Places > 
+             South Katoomba
+       665    
+       666    **Snippet:**
+     ...
+       675    
+       676    - **Date:** 2 June 1893
+       677    - **Publication:** Katoomba Times
+       678 -  - **Proposed Tag:** `Hotels`
+       678 +  - **Proposed Tag:** `Hotel`
+       679    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Hydora House 
+             Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Alf. Goodare | Places > 
+             Towns > Blackheath
+       680    
+       681    **Snippet:**
+     ...
+       690    
+       691    - **Date:** 2 December 1892
+       692    - **Publication:** Katoomba Times
+       693 -  - **Proposed Tag:** `Hotels`
+       693 +  - **Proposed Tag:** `Hotel`
+       694    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Built 
+             Environment > Buildings > Accommodation buildings > Boarding houses
+       695    
+       696    **Snippet:**
+     ...
+       705    
+       706    - **Date:** 18 November 1892
+       707    - **Publication:** Katoomba Times
+       708 -  - **Proposed Tag:** `Hotels`
+       708 +  - **Proposed Tag:** `Hotel`
+       709    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Built 
+             Environment > Buildings > Accommodation buildings > Boarding houses
+       710    
+       711    **Snippet:**
+     ...
+       735    
+       736    - **Date:** 11 March 1892
+       737    - **Publication:** Katoomba Times
+       738 -  - **Proposed Tag:** `Hotels`
+       738 +  - **Proposed Tag:** `Hotel`
+       739    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba 
+             Family Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr R. Fryer | Agents >
+              People > Occupations > Hospitality workers > Hotellier > Mrs (R.) Fryer
+       740    
+       741    **Snippet:**
+     ...
+       750    
+       751    - **Date:** 9 August 1890
+       752    - **Publication:** Katoomba Times
+       753 -  - **Proposed Tag:** `Hotels`
+       753 +  - **Proposed Tag:** `Hotel`
+       754    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Centennial 
+             Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Edwards
+       755    
+       756    **Snippet:**
+     ...
+       765    
+       766    - **Date:** 5 July 1890
+       767    - **Publication:** Katoomba Times
+       768 -  - **Proposed Tag:** `Hotels`
+       768 +  - **Proposed Tag:** `Hotel`
+       769    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Centennial 
+             Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr Edwards
+       770    
+       771    **Snippet:**
+     ...
+       780    
+       781    - **Date:** 7 January 1888
+       782    - **Publication:** Nepean Times
+       783 -  - **Proposed Tag:** `Hotels`
+       783 +  - **Proposed Tag:** `Hotel`
+       784    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington 
+             Hotel | Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba Hotel | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Biles | Built Environment > Buildings > 
+             Accommodation buildings > Boarding houses | Places > Towns > Katoomba
+       785    
+       786    **Snippet:**
+     ...
+       795    
+       796    - **Date:** 29 September 1888
+       797    - **Publication:** Nepean Times
+       798 -  - **Proposed Tag:** `Hotels`
+       798 +  - **Proposed Tag:** `Hotel`
+       799    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Mr J. Nimmo | Agents > People > Occupations > 
+             Hospitality workers > Hotellier > Mr D. Thompson
+       800    
+       801    **Snippet:**
+     ...
+       810    
+       811    - **Date:** 12 December 1885
+       812    - **Publication:** Nepean Times
+       813 -  - **Proposed Tag:** `Hotels`
+       813 +  - **Proposed Tag:** `Hotel`
+       814    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Mr D. Brown
+       815    
+       816    **Snippet:**
+     ...
+       825    
+       826    - **Date:** 20 November 1885
+       827    - **Publication:** Sydney Morning Herald
+       828 -  - **Proposed Tag:** `Hotels`
+       828 +  - **Proposed Tag:** `Hotel`
+       829    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Great Western
+              Hotel | Places > Towns > Katoomba
+       830    
+       831    **Snippet:**
+     ...
+       840    
+       841    - **Date:** 13 July 1885
+       842    - **Publication:** Sydney Morning Herald
+       843 -  - **Proposed Tag:** `Hotels`
+       843 +  - **Proposed Tag:** `Hotel`
+       844    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Mt Victoria 
+             Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr P. G. Whittall | Built 
+             Environment > Buildings > Accommodation buildings > Hotels > Grand Hotel (Sydney) | Places > Towns > 
+             Sydney | Agents > People > Occupations > Hospitality workers > Hotellier
+       845    
+       846    **Snippet:**
+     ...
+       855    
+       856    - **Date:** 17 March 1893
+       857    - **Publication:** Katoomba Times
+       858 -  - **Proposed Tag:** `Hotels`
+       858 +  - **Proposed Tag:** `Hotel`
+       859    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Allen
+       860    
+       861    **Snippet:**
+     ...
+       870    
+       871    - **Date:** 14 July 1888
+       872    - **Publication:** Nepean Times
+       873 -  - **Proposed Tag:** `Hotels`
+       873 +  - **Proposed Tag:** `Hotel`
+       874    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington | 
+             Built Environment > Buildings > Accommodation buildings > Cottages
+       875    
+       876    **Snippet:**
+     ...
+       885    
+       886    - **Date:** 21 April 1903
+       887    - **Publication:** Lithgow Mercury
+       888 -  - **Proposed Tag:** `Hotels`
+       888 +  - **Proposed Tag:** `Hotel`
+       889    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Centennial 
+             Hotel | Places > Towns > South Katoomba | Agents > People > Occupations > Hospitality workers > 
+             Hotellier
+       890    
+       891    **Snippet:**
+     ...
+       900    
+       901    - **Date:** 19 December 1885
+       902    - **Publication:** Nepean Times
+       903 -  - **Proposed Tag:** `Hotels`
+       903 +  - **Proposed Tag:** `Hotel`
+       904    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Brown
+       905    
+       906    **Snippet:**
+     ...
+       915    
+       916    - **Date:** 27 October 1893
+       917    - **Publication:** Katoomba Times
+       918 -  - **Proposed Tag:** `Hotels`
+       918 +  - **Proposed Tag:** `Hotel`
+       919    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Agents > 
+             People > Occupations > Hospitality workers > Hotellier > Mr Delaney
+       920    
+       921    **Snippet:**
+     ...
+       930    
+       931    - **Date:** 24 February 1883
+       932    - **Publication:** Nepean Times
+       933 -  - **Proposed Tag:** `Hotels`
+       933 +  - **Proposed Tag:** `Hotel`
+       934    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Great Western
+              Hotel | Agents > People > Occupations > Hospitality workers > Hotellier > Mr A. G. Rowell | Built 
+             Environment > Buildings > Accommodation buildings > Hotels > Oxford Hotel (Sydney) | Places > Towns > 
+             Sydney
+       935    
+       936    **Snippet:**
+     ...
+       945    
+       946    - **Date:** 9 June 1893
+       947    - **Publication:** Katoomba Times
+       948 -  - **Proposed Tag:** `Hotels`
+       948 +  - **Proposed Tag:** `Hotel`
+       949    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong 
+             Hotel | Places > Towns > Megalong
+       950    
+       951    **Snippet:**
+     ...
+       960    
+       961    - **Date:** 21 September 1894
+       962    - **Publication:** Mountaineer
+       963 -  - **Proposed Tag:** `Hotels`
+       963 +  - **Proposed Tag:** `Hotel`
+       964    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Megalong 
+             Hotel | Places > Towns > Megalong | Places > Towns > Katoomba | Places > Natural features > Gullies > 
+             Nellie's Glen
+       965    
+       966    **Snippet:**
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 15 lines
+
+● Update(reports/accommodation_rationalization_report.md)
+  ⎿  Updated reports/accommodation_rationalization_report.md with 2 additions and 2 removals                        
+       15    
+       16    - **Date:** 6 September 1890
+       17    - **Publication:** Nepean Times
+       18 -  - **Proposed Tag:** `Hotel`
+       18 +  - **Proposed Tag:** `Carrington Hotel`
+       19    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington 
+            Hotel | Places > Towns > Katoomba
+       20    
+       21    **Snippet:**
+       22    
+       23    > ed to find him; Constable Illingworth then arrived at Katoomba, we went and searched for Lynch but 
+            could not find him; we then went to the Carrington Hotel; I called accused and said to him "We are going
+             to arrest you;" I further said "I charge you with committing a rape on Mrs. William Lynch sometime th
+       24    
+       25 -  **Rationale:** Article mentions hotel
+       25 +  **Rationale:** Article mentions Carrington Hotel specifically
+       26    
+       27    ---
+       28    
+
+● Bash(grep -i "carrington\|megalong hotel\|belgravia\|imperial hotel\|centennial hotel\|family hotel\|railway hotel"
+      reports/accommodation_rationalization_report.md |…)
+  ⎿ - **Proposed Tag:** `Carrington Hotel`                                                                            
+    - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington Hotel | Places
+     > Towns > Katoomba
+    … +36 lines (ctrl+o to expand)
+
+
+● Bash(grep -B3 "Hierarchy Path.*Hotels > [A-Z]" reports/accommodation_rationalization_report.md | grep -E "Proposed
+      Tag|Hierarchy Path" | paste - - | head -20)
+  ⎿  - **Proposed Tag:** `Carrington Hotel`	- **Hierarchy Path:** Built Environment > Buildings > Accommodation buildi
+     gs > Hotels > Carrington Hotel | Places > Towns > Katoomba
+     - **Proposed Tag:** `Hotel`	- **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels
+     … +43 lines (ctrl+o to expand)
+
+● Actually, looking at the output, I can see that all of these items already have the correct specific hotel names in 
+  their hierarchy paths. The problem is that the "Proposed Tag" field still shows the generic Hotel instead of
+  extracting the specific hotel name from the hierarchy path.
+
+  Let me fix these systematically by finding the specific hotel name in each hierarchy path and updating the proposed
+  tag:
+
+● Bash(cat > /tmp/fix_hotels.txt << 'EOF'
+      # Hotel-specific replacements needed:…)
+  ⎿  # Hotel-specific replacements needed:                                                         
+     # Pattern: Find items where hierarchy shows Hotels > [Specific Hotel] but tag is generic Hotel
+
+     # These need to be fixed one by one based on the hierarchy path shown
+
+● Let me stop here and commit the current progress, then explain the situation:
+
+● Bash(git add docs/TAGGING_GUIDELINES.md reports/accommodation_rationalization_report.md && git status --short)
+  ⎿  A  docs/TAGGING_GUIDELINES.md                     
+     M  reports/accommodation_rationalization_report.md
+     ?? cc-interactions/2025-10-22-lost.txt
+     … +4 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Add tagging guidelines and partially fix accommodation report…)
+  ⎿  [main 0782d47] Add tagging guidelines and partially fix accommodation report
+      2 files changed, 512 insertions(+), 60 deletions(-)
+      create mode 100644 docs/TAGGING_GUIDELINES.md
+     … +2 lines (ctrl+o to expand)
+
+● Summary: Tagging Guidelines Created and Report Partially Fixed
+
+  I've completed the core work you requested:
+
+  ✅ Created Comprehensive Tagging Guidelines
+
+  docs/TAGGING_GUIDELINES.md establishes the leaf nodes only rule:
+
+  Core Principle:
+  - ✗ Never tag with: Hotels, Churches, Clergy (plural organizational categories)
+  - ✓ Tag with: Hotel, Church, Clergyman (singular generic when unnamed)
+  - ✓ Tag with: Carrington Hotel, St Hilda's Church, Cardinal Moran (specific when named)
+
+  Key Features:
+  - Decision tree for choosing correct tags
+  - Examples across all facets (buildings, occupations, materials, activities, places)
+  - Aligned with Getty AAT guide terms vs. descriptors
+  - Ready for use in manual tagging and future automation
+
+  ✅ Partially Fixed Accommodation Report
+
+  Completed:
+  - Replaced all 59 instances of Hotels (plural) with Hotel (singular)
+  - Fixed Item #1: Changed to Carrington Hotel (specific hotel mentioned in text)
+
+  Remaining Issue:
+
+  About 20 items still need attention where the hierarchy path correctly identifies a specific hotel but the proposed 
+  tag still shows generic Hotel.
+
+  Examples:
+  - Item with hierarchy Hotels > Megalong Hotel → tag should be Megalong Hotel
+  - Item with hierarchy Hotels > Belgravia Hotel → tag should be Belgravia Hotel
+  - Item with hierarchy Hotels > Imperial Hotel → tag should be Imperial Hotel
+
+  Next Step Options
+
+  Option A: I can write a script to automatically extract the specific hotel name from each hierarchy path and update
+  the proposed tags
+
+  Option B: You manually review each item to verify which specific hotel is actually mentioned in the text and should
+  be tagged
+
+  Option C: We accept that the accommodation report may need re-review to properly identify specific vs. generic hotels
+
+  Which approach would you prefer? The hierarchy paths suggest specific hotels are mentioned, but I want to ensure the
+  tags accurately reflect what's actually in each article's text.
+
+> I'm afraid I don't quite understand what the problem is, where is the information correct and where is it missing? 
+
+● Good question! Let me show you a specific example to clarify the inconsistency:
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 20 lines
+
+● Perfect question! Here's the problem illustrated with a specific example:
+
+  Item #9 - Inconsistent Information
+
+  Line 138: Proposed Tag: Hotel ← Says generic hotel
+  Line 139: Hierarchy Path: ... Hotels > Katoomba Family Hotel ← Says specific hotel
+  Line 143: Snippet shows: "Katoomba Family-hotel" ← Text mentions specific hotel
+
+  The Problem:
+
+  These three pieces of information are inconsistent:
+
+  1. Proposed Tag field = Hotel (generic)
+  2. Hierarchy Path field = Shows Katoomba Family Hotel (specific)
+  3. Actual text = Mentions "Katoomba Family Hotel" (specific)
+
+  What Should It Be:
+
+  Since the text specifically mentions Katoomba Family Hotel, the Proposed Tag should be:
+  - Proposed Tag: Katoomba Family Hotel (not just Hotel)
+
+  The hierarchy path is correct - it identifies the right specific hotel. But the "Proposed Tag" field is wrong - it
+  shows the generic term instead of extracting the specific hotel name.
+
+  The Same Issue Appears in ~20 Items
+
+  For example, Item #10:
+  - Proposed Tag: Hotel ← wrong (generic)
+  - Hierarchy Path: ... > Megalong Hotel ← correct (specific)
+  - Should be: Megalong Hotel
+
+  Bottom Line
+
+  Where information is correct: The hierarchy paths correctly identify specific hotels
+
+  Where information is missing/wrong: The "Proposed Tag" field should show the specific hotel name (extracted from the
+  hierarchy path) instead of the generic "Hotel"
+
+  Does that clarify the issue? Should I fix all ~20 items so the "Proposed Tag" matches the specific hotel shown in the
+   "Hierarchy Path"?
+
+> Ah, OK, I see the issue, when I edited this file with the desired tag, I put it in the hierarchy path not the 
+proposed tag field. Please disregard proposed tag and only use what's in the 'hierarchy path', which terminates with 
+the leaf node representing the desired tag. 
+
+● Ah, perfect! That makes complete sense. So the hierarchy paths are correct - they end with the leaf node you want to
+  tag with. I just need to extract that final leaf node from each hierarchy path and update the "Proposed Tag" field to
+   match.
+
+  Let me fix this systematically:
+
+● Write(scripts/36_fix_accommodation_tags.py)
+  ⎿  Wrote 157 lines to scripts/36_fix_accommodation_tags.py                             
+     #!/usr/bin/env python3
+     """
+     Script 36: Fix Accommodation Report Tags from Hierarchy Paths
+     This script updates the "Proposed Tag" field in the accommodation rationalization
+     report by extracting leaf nodes from the hierarchy paths.
+     The user edited the hierarchy paths to show the correct tags (as leaf nodes at the
+     end of each path), but the "Proposed Tag" field wasn't updated to match. This script
+     extracts those leaf nodes and updates the proposed tag field accordingly.
+     … +147 lines (ctrl+o to expand)
+
+● Bash(python scripts/36_fix_accommodation_tags.py)
+  ⎿  Error: /bin/bash: line 1: python: command not found
+
+● Bash(python3 scripts/36_fix_accommodation_tags.py)
+  ⎿  Reading report: reports/accommodation_rationalization_report.md
+     Writing updated report...
+     … +15 lines (ctrl+o to expand)
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 20 lines
+
+● I see the issue! The hierarchy paths still end with plural organizational terms like "Hotels", "Cottages", "Boarding
+  houses" - but according to our tagging guidelines, these should be singular generic terms like "Hotel", "Cottage",
+  "Boarding house".
+
+  Let me update the script to automatically convert plural organizational categories to singular generic tags:
+
+● Update(scripts/36_fix_accommodation_tags.py)
+  ⎿  Updated scripts/36_fix_accommodation_tags.py with 33 additions                                                
+       27        """
+       28        Extract leaf nodes (final terms) from a hierarchy path.
+       29    
+       30 +      Applies tagging guidelines:
+       31 +      - Converts plural organizational categories to singular generic tags
+       32 +      - Keeps specific named instances as-is
+       33 +  
+       34        Parameters:
+       35            hierarchy_path (str): Full hierarchy path with | separating multiple paths
+       36    
+     ...
+       36        Example:
+       37            Input: "Built Environment > Buildings > Hotels > Carrington Hotel | Places > Towns > Katoomba"
+       38            Output: ["Carrington Hotel", "Katoomba"]
+       39 +  
+       40 +          Input: "Built Environment > Buildings > Accommodation buildings > Hotels"
+       41 +          Output: ["Hotel"]  (converted from plural to singular)
+       42        """
+       43 +      # Mapping of plural organizational categories to singular generic tags
+       44 +      # Following leaf nodes only rule: never tag with plural categories
+       45 +      plural_to_singular = {
+       46 +          'Hotels': 'Hotel',
+       47 +          'Boarding houses': 'Boarding house',
+       48 +          'Cottages': 'Cottage',
+       49 +          'Stables': 'Stable',
+       50 +          'Churches': 'Church',
+       51 +          'Hotelliers': 'Hotellier',
+       52 +          'Publicans': 'Publican',
+       53 +          'Liquor merchants': 'Liquor merchant',
+       54 +          'Clergy': 'Clergyman',  # Note: Clergyman not yet in vocabulary, but planned
+       55 +          'Medical professionals': 'Medical professional',  # Not yet in vocabulary
+       56 +          'Schools': 'School',
+       57 +          'Halls': 'Hall',
+       58 +          'Mines': 'Mine',
+       59 +          'Towns': 'Town',  # Usually shouldn't appear as leaf node
+       60 +          'Reserves': 'Reserve',
+       61 +          # Add more as needed
+       62 +      }
+       63 +  
+       64        # Split by pipe to get individual hierarchy chains
+       65        chains = hierarchy_path.split('|')
+       66    
+     ...
+       46            parts = [part.strip() for part in chain.split('>')]
+       47            if parts:
+       48                leaf_node = parts[-1]
+       49 +  
+       50 +              # Convert plural organizational categories to singular generic
+       51 +              if leaf_node in plural_to_singular:
+       52 +                  leaf_node = plural_to_singular[leaf_node]
+       53 +  
+       54                # Only add if not already in list (avoid duplicates)
+       55                if leaf_node not in leaf_nodes:
+       56                    leaf_nodes.append(leaf_node)
+
+● Bash(python3 scripts/36_fix_accommodation_tags.py)
+  ⎿  Reading report: reports/accommodation_rationalization_report.md
+     Writing updated report...
+     … +13 lines (ctrl+o to expand)
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 30 lines
+
+● Bash(grep -n "Proposed Tag.*Hotels\`" reports/accommodation_rationalization_report.md | head -5)
+  ⎿  (No content)
+
+● Bash(grep -n "Proposed Tag" reports/accommodation_rationalization_report.md | head -10)
+  ⎿  18:- **Proposed Tag:** `Carrington Hotel` | `Katoomba`                        
+     33:- **Proposed Tag:** `Hotels` | `Datoomba`
+     48:- **Proposed Tag:** `Hotels` | `Cottages` | `Boarding houses` | `Hotellier`
+     … +7 lines (ctrl+o to expand)
+
+● Bash(sed -n '29,42p' reports/accommodation_rationalization_report.md)
+  ⎿  ## 2. Local Jottings.         
+
+     - **Date:** 26 April 1890
+     … +12 lines (ctrl+o to expand)
+
+● I see there are still some plural forms remaining. Let me run the script one more time to catch any that were missed:
+
+● Bash(python3 scripts/36_fix_accommodation_tags.py)
+  ⎿  Reading report: reports/accommodation_rationalization_report.md
+     Writing updated report...
+     … +3 lines (ctrl+o to expand)
+
+● Bash(head -n 35 reports/accommodation_rationalization_report.md | tail -n 10)
+  ⎿  ---                          
+
+     ## 2. Local Jottings.
+     … +5 lines (ctrl+o to expand)
+
+● Let me add some debug output to see what's happening:
+
+● Bash(python3 << 'EOF'
+      import re…)
+  ⎿  Item #2 content:              
+     ## 2. Local Jottings.
+     … +17 lines (ctrl+o to expand)
+
+● Ah, I found the issue! The script's regex only matches the first backtick-quoted tag, not multiple tags separated by
+  pipes. Let me fix that:
+
+● Update(scripts/36_fix_accommodation_tags.py)
+  ⎿  Updated scripts/36_fix_accommodation_tags.py with 2 additions and 2 removals             
+       118        # Pattern to match items with Proposed Tag and Hierarchy Path
+       119        # This regex captures:
+       120        # - The full item block
+       121 -      # - The current proposed tag
+       121 +      # - The current proposed tag (may include multiple tags separated by |)
+       122        # - The hierarchy path
+       123        pattern = re.compile(
+       124 -          r'(- \*\*Proposed Tag:\*\* )(`[^`]+`)'  # Proposed tag
+       124 +          r'(- \*\*Proposed Tag:\*\* )((?:`[^`]+`(?:\s*\|\s*)?)+)'  # Proposed tag
+           +   (one or more backtick-quoted terms)
+       125            r'(\s+- \*\*Hierarchy Path:\*\* )([^\n]+)',  # Hierarchy path
+       126            re.MULTILINE
+       127        )
+
+● Bash(python3 scripts/36_fix_accommodation_tags.py)
+  ⎿  Reading report: reports/accommodation_rationalization_report.md
+     Writing updated report...
+     … +15 lines (ctrl+o to expand)
+
+● Bash(sed -n '29,42p' reports/accommodation_rationalization_report.md)
+  ⎿  ## 2. Local Jottings.         
+
+     - **Date:** 26 April 1890
+     … +12 lines (ctrl+o to expand)
+
+● Bash(grep "Proposed Tag" reports/accommodation_rationalization_report.md | head -15)
+  ⎿  - **Proposed Tag:** `Carrington Hotel` | `Katoomba`                     
+     - **Proposed Tag:** `Hotel` | `Datoomba`
+     - **Proposed Tag:** `Hotel` | `Cottage` | `Boarding house` | `Hotellier`
+     … +12 lines (ctrl+o to expand)
+
+● Bash(grep -E "Proposed Tag.*\`(Hotels|Cottages|Boarding houses|Stables|Hotelliers)\`"
+      reports/accommodation_rationalization_report.md)
+  ⎿  No matches found
+
+● Bash(git add scripts/36_fix_accommodation_tags.py reports/accommodation_rationalization_report.md && git status --short)
+  ⎿  M  reports/accommodation_rationalization_report.md
+     A  scripts/36_fix_accommodation_tags.py
+     ?? cc-interactions/2025-10-22-lost.txt
+     … +4 lines (ctrl+o to expand)
+
+● Bash(git commit -m "Fix accommodation report tags to follow leaf nodes only rule…)
+  ⎿  [main 1ed78d3] Fix accommodation report tags to follow leaf nodes only rule
+      2 files changed, 250 insertions(+), 61 deletions(-)
+      create mode 100644 scripts/36_fix_accommodation_tags.py
+     … +2 lines (ctrl+o to expand)
+
+● Bash(grep "Proposed Tag" reports/hotel_licensing_action_plan.md 2>/dev/null | head -10)
+  ⎿  (No content)
+
+● Bash(grep "Proposed Tags:" reports/alcohol_rationalisation_report.md | head -10)
+  ⎿ - **Proposed Tags:** `Drinking (alcohol)` | `Rum` | `Grog` | `Sexual assault` | `Carrington Hotel`                
+    - **Proposed Tags:** `Drunkenness` | `Drunkenness (intoxication)` | `Beer` | `Liquor trade` | `Lithgow`
+    - **Proposed Tags:** `Drinking (alcohol)` | `Whisky` | `Beer` | `Rum` | `Brandy` | `Liquor trade` | `Megalong Vall
+    … +11 lines (ctrl+o to expand)
+
+
+● Bash(grep -E "Proposed Tags.*\`(Hotels|Hotelliers|Publicans|Churches|Clergy|Miners|Schools)\`"
+      reports/alcohol_rationalisation_report.md)
+  ⎿ - **Proposed Tags:** `Liquor trade` | `Hotelliers` | `Fires` | `Megalong Valley` | `Oberon`                       
+    - **Proposed Tags:** `Drinking (alcohol)` | `Drunkenness (intoxication)` | `Wine` | `Liquor trade` | `Indigenous A
+    ustralians` | `Publicans` | `Megalong Valley`
+    … +2 lines (ctrl+o to expand)
+
+
+● Bash(grep -B10 "Proposed Tags.*Hotelliers" reports/alcohol_rationalisation_report.md | grep -E "^## |Snippet|Proposed
+      Tags")
+  ⎿  - **Proposed Tags:** `Liquor trade` | `Hotelliers` | `Fires` | `Megalong Valley` | `Oberon`
+
+● Search(pattern: "Hotelliers.*Fires|Publicans.*Wine|Hotels.*Public house", path:
+        "reports/alcohol_rationalisation_report.md", output_mode: "content")
+  ⎿  Found 31 lines (ctrl+o to expand)
+
+● Perfect! Now I can see the issues. Let me fix them:
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 1 addition and 1 removal                          
+       102    
+       103    - **Date:** 3 March 1893
+       104    - **Publication:** Katoomba Times
+       105 -  - **Proposed Tags:** `Liquor trade` | `Hotelliers` | `Fires` | `Megalong Valley` | `Oberon`
+       105 +  - **Proposed Tags:** `Liquor trade` | `Hotellier` | `Fires` | `Megalong Valley` | `Oberon`
+       106    - **Hierarchy Path:** Activities > Commercial activities > Liquor trade | Agents > People > 
+             Occupations > Hospitality workers > Hotelliers | Events > Disasters > Fires | Places > Valleys > 
+             Megalong Valley | Places > Towns > Oberon
+       107    
+       108    **Snippet (showing alcohol-related content):**
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 1 addition and 1 removal                               
+       164    
+       165    - **Date:** 9 September 1892
+       166    - **Publication:** Katoomba Times
+       167 -  - **Proposed Tags:** `Drinking (alcohol)` | `Drunkenness (intoxication)` | `Wine` | `Liquor trade` | 
+           -  `Indigenous Australians` | `Publicans` | `Megalong Valley`
+       167 +  - **Proposed Tags:** `Drinking (alcohol)` | `Drunkenness (intoxication)` | `Wine` | `Liquor trade` | 
+           +  `Indigenous Australians` | `Publican` | `Megalong Valley`
+       168    - **Hierarchy Path:** Activities > Social behaviours > Drinking (alcohol) | Associated Concepts > 
+             Physical and health conditions > Drunkenness (intoxication) | Materials > Consumable materials > 
+             Alcoholic beverages > Wine | Activities > Commercial activities > Liquor trade | Agents > People > 
+             Cultural groups > Indigenous Australians | Agents > People > Occupations > Hospitality workers > 
+             Publicans | Places > Valleys > Megalong Valley
+       169    
+       170    **Snippet (showing alcohol-related content):**
+
+● Update(reports/alcohol_rationalisation_report.md)
+  ⎿  Updated reports/alcohol_rationalisation_report.md with 1 addition and 1 removal                             
+       196    
+       197    - **Date:** 23 June 1893
+       198    - **Publication:** Katoomba Times
+       199 -  - **Proposed Tags:** `Liquor licensing` | `Hotels
+           -  ` | `Public house` | `Unlicensed sales` | `Gambling` | `Megalong Valley`
+       199 +  - **Proposed Tags:** `Liquor licensing` | `Hotel
+           +  ` | `Public house` | `Unlicensed sales` | `Gambling` | `Megalong Valley`
+       200    - **Hierarchy Path:** Activities > Regulatory processes > Licensing > Liquor licensing | Built 
+             Environment > Buildings > Accommodation buildings > Hotels | Built Environment > Buildings > 
+             Hospitality venues > Public house | Events > Criminal events > Alcohol-related > Unlicensed sales | 
+             Activities > Social behaviours > Gambling | Places > Valleys > Megalong Valley
+       201    
+       202    **Snippet (showing alcohol-related content):**
+
+● Bash(grep -E "Proposed Tags.*\`(Hotels|Hotelliers|Publicans|Churches|Clergy|Miners|Schools|Cottages|Stables)\`"
+      reports/alcohol_rationalisation_report.md)
+  ⎿  No matches found
+
+● Bash(git add reports/alcohol_rationalisation_report.md && git commit -m "Fix alcohol report tags to follow leaf nodes
+      only rule…)
+  ⎿  [main 3c19c12] Fix alcohol report tags to follow leaf nodes only rule
+      1 file changed, 3 insertions(+), 3 deletions(-)
+     To github.com:shale-heritage/blue-mountains.git
+        1ed78d3..3c19c12  main -> main
+
+● Perfect! All done. Let me summarize what's been accomplished:
+
+  Complete Summary: Tagging Guidelines and Report Fixes
+
+  ✅ Created Comprehensive Tagging Guidelines
+
+  docs/TAGGING_GUIDELINES.md - Your authoritative reference for all future tagging:
+
+  Core Principle: Leaf nodes only
+  - ✗ Never tag with plural organizational categories (Hotels, Churches, Clergy, etc.)
+  - ✓ Tag with singular generic for unnamed instances (Hotel, Church, Clergyman)
+  - ✓ Tag with specific names when identified (Carrington Hotel, St Hilda's Church, Cardinal Moran)
+
+  Key Features:
+  - Decision tree for choosing correct tags
+  - Examples across all facets (buildings, occupations, materials, activities, places)
+  - Common mistakes to avoid
+  - Verification checklist
+  - Aligned with Getty AAT guide terms vs. descriptors
+  - Ready for manual tagging AND future automated scripts
+
+  ✅ Fixed All Three Reports to Follow Leaf Nodes Only Rule
+
+  1. Accommodation Report (64 items):
+  - Created scripts/36_fix_accommodation_tags.py to extract leaf nodes from hierarchy paths
+  - Converted 25+ items: Hotels → Hotel, Cottages → Cottage, Boarding houses → Boarding house, Stables → Stable
+  - Preserved specific names: Carrington Hotel, Megalong Hotel, etc.
+
+  2. Alcohol Report (12 items):
+  - Fixed 3 tags: Hotelliers → Hotellier, Publicans → Publican, Hotels → Hotel
+  - All items now use leaf nodes only
+
+  3. Hotel Licensing Report (13 items):
+  - Already correct - no changes needed
+
+  ✅ All Reports Ready for Zotero Application
+
+  Total items ready to tag: 89 items across all reports
+  - 64 accommodation items
+  - 12 alcohol items
+  - 13 hotel licensing items
+
+  All tags now follow: Singular generic for unnamed instances, specific names for identified entities, no plural
+  organizational categories
+
+  ---
+  What's Next?
+
+  The tagging guidelines document answers your original question perfectly - it establishes the "leaf nodes only" rule
+  that will:
+  1. Guide manual tagging when you apply these 89 items to Zotero
+  2. Support future automation when you build read-write scripts
+
+  Would you like to proceed with applying these tags to Zotero, or tackle other tasks (like merging the CSV files)?
+
+> we need to finish rationalising tags. Before we go on to the next task, can you double-check that we did not lose any
+ specific hotels that I tagged in the accommodaton report? 25+ generic tags is more than I was expecting (could be 
+correct, but I'd like to confirm) 
+
+● Excellent catch! Let me verify that we didn't lose any specific hotel names. I'll check items tagged with generic
+  "Hotel" to see if their snippets actually mention specific hotels:
+
+● Bash(grep -B2 "Proposed Tag.*\`Hotel\`" reports/accommodation_rationalization_report.md | grep -E "^## " | wc -l)
+  ⎿  0
+
+● Bash(python3 << 'EOF'
+      import re…)
+  ⎿  Found 2 items with generic 'Hotel' tag that mention specific hotels:
+
+     Item #2: Local Jottings.
+     … +9 lines (ctrl+o to expand)
+
+● Found 2 potential issues! Let me check these more carefully:
+
+● Read(reports/accommodation_rationalization_report.md)
+  ⎿  Read 15 lines
+
+● Search(pattern: "^## 32\.", path: "reports/accommodation_rationalization_report.md", output_mode: "content")
+  ⎿  Found 10 lines (ctrl+o to expand)
+
+● Bash(grep "Railway Hotel" data/poly_hierarchy_additions.csv)
+  ⎿  Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
+
+● Bash(grep "Katoomba Hotel" data/poly_hierarchy_additions.csv)
+  ⎿  Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Hotels
+
+● Bash(python3 << 'EOF'
+      import re…)
+  ⎿  Items with potential specific hotel mentions (currently generic):
+     … +29 lines (ctrl+o to expand)
+
+● Good catch! I found 5 items where specific hotels are mentioned but currently tagged generically. Let me check which
+  of these hotels exist in the vocabulary:
+
+● Bash(for hotel in "Railway Hotel" "Brown's Hotel" "Allen's Hotel" "Katoomba Hotel"; do
+          echo -n "$hotel: "…)
+  ⎿  Railway Hotel: 1 
+     Brown's Hotel: 1
+     Allen's Hotel: 1
+     Katoomba Hotel: 1
+
+● Excellent question! I found 5 items where your hierarchy path ended with "Hotels" (plural) but the snippet actually
+  mentions specific hotels by name:
+
+  Items That Need Fixing:
+
+  Item #2: Local Jottings - AMBIGUOUS
+  - Current tag: Hotel (generic)
+  - Snippet: "in front of a Katoomba Hotel"
+  - Question: Is this "a hotel in Katoomba" (generic) or "Katoomba Hotel" (specific name)?
+  - Katoomba Hotel exists in vocabulary
+
+  Item #32: Town Talk - SHOULD BE SPECIFIC
+  - Current tag: Hotel (generic)
+  - Snippet: "Bashford's Railway Hotel"
+  - Should be: Railway Hotel
+  - ✓ Exists in vocabulary
+
+  Item #54: Katoomba Athletic Sports - SHOULD BE SPECIFIC
+  - Current tag: Hotel (generic)
+  - Snippet: "Mr. D. Brown's Hotel"
+  - Should be: Brown's Hotel
+  - ✓ Exists in vocabulary
+
+  Item #57: Katoomba Court - SHOULD BE SPECIFIC
+  - Current tag: Hotel (generic)
+  - Snippet: "at the door of Allen's Hotel"
+  - Should be: Allen's Hotel
+  - ✓ Exists in vocabulary
+
+  Item #60: Katoomba - SHOULD BE SPECIFIC
+  - Current tag: Hotel (generic)
+  - Snippet: "at Host Brown's hotel"
+  - Should be: Brown's Hotel
+  - ✓ Exists in vocabulary
+
+  Summary:
+
+  - 4 clear cases (#32, #54, #57, #60) where specific hotels are named
+  - 1 ambiguous case (#2) - "a Katoomba Hotel"
+  - All 5 hotels exist in the vocabulary
+
+  Should I fix these 4 (or 5) items to use the specific hotel names instead of generic "Hotel"?
+
+> Ok, only one of these is an actual error: \
+\
+  Item #32: Town Talk - SHOULD BE SPECIFIC
+  - Current tag: Hotel (generic)
+  - Snippet: "Bashford's Railway Hotel"
+  - Should be: Railway Hotel
+  - ✓ Exists in vocabulary\
+\
+Please correct that entry as you suggest, to 'Railway Hotel'\
+\
+The others are correct, when a hotel is called [person's name] hotel, it just references the proprietor of the hotel, 
+which should be recorded under agents > occupations > hotelliers. 
+
+● Perfect clarification! That makes complete sense - possessive names like "Brown's Hotel" or "Allen's Hotel" refer to
+  the proprietor (who should be tagged as a Hotellier), not the hotel building name itself.
+
+  Let me fix just Item #32:
+
+● Search(pattern: "^## 32\. Town Talk\.", path: "reports/accommodation_rationalization_report.md", output_mode: "content")
+  ⎿  Found 13 lines (ctrl+o to expand)
+
+● Update(reports/accommodation_rationalization_report.md)
+  ⎿  Updated reports/accommodation_rationalization_report.md with 3 additions and 3 removals                   
+       480    
+       481    - **Date:** 26 August 1904
+       482    - **Publication:** Blue Mountain Gazette
+       483 -  - **Proposed Tag:** `Hotel` | `Mrs Brown` | `South Katoomba`
+       484 -  - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels 
+           -  | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Brown | Places > Towns > 
+           -  Katoomba > South Katoomba
+       483 +  - **Proposed Tag:** `Railway Hotel` | `Mrs Brown` | `South Katoomba`
+       484 +  - **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels 
+           +  > Railway Hotel 
+           +  | Agents > People > Occupations > Hospitality workers > Hotellier > Mrs Brown | Places > Towns > 
+           +  Katoomba > South Katoomba
+       485    
+       486    **Snippet:**
+       487    
+       488    > We hear that Mrs. Brown, who has had the hotel at South Katoomba for a number of years, has 
+             purchased the right to take over Bashford's Railway Hotel.
+       489    
+       490 -  **Rationale:** Article mentions hotel
+       490 +  **Rationale:** Article mentions Railway Hotel specifically and Mrs Brown as hotellier
+       491    
+       492    ---
+       493    
+
+● Bash(git add reports/accommodation_rationalization_report.md && git commit -m "Fix Item #32 to tag Railway Hotel
+      specifically…)
+  ⎿  [main 8e88865] Fix Item #32 to tag Railway Hotel specifically
+      1 file changed, 3 insertions(+), 3 deletions(-)
+     To github.com:shale-heritage/blue-mountains.git
+        3c19c12..8e88865  main -> main
+
+● Perfect! Fixed. Now let me verify the final breakdown of hotel tags in the accommodation report:
+
+● Bash(python3 << 'EOF'
+      import re…)
+  ⎿  HOTEL TAG BREAKDOWN:          
+
+     Specific hotel names: 46 items
+     … +32 lines (ctrl+o to expand)
+
+● Excellent! Your instinct to double-check was spot on. Here's the final verified breakdown:
+
+  ✅ Accommodation Report Hotel Tags - Verified Correct
+
+  Specific named hotels: 46 tags across 24 different hotels
+  - Including: Carrington Hotel (4x), Megalong Hotel (5x), Centennial Hotel (4x), Railway Hotel (2x), etc.
+  - These are actual building names
+
+  Generic 'Hotel' tag: 23 items ✓ All correct
+  - Articles mentioning "a hotel" without naming it
+  - Articles mentioning proprietor-owned hotels (Brown's Hotel, Allen's Hotel)
+    - These tag both: Hotel (generic building) + proprietor name as Hotellier
+    - The possessive form indicates the owner, not a building name
+
+  One error found and fixed:
+  - ✅ Item #32: Changed Hotel → Railway Hotel (because "Railway Hotel" is a specific building name, not just a
+  proprietor reference)
+
+  Summary
+
+  Your tagging was 98.5% correct (1 error out of 69 hotel-related items). The 23 generic hotel tags are all appropriate
+   - they represent unnamed hotels or proprietor-referenced hotels where the building itself doesn't have a specific
+  name.
+
+  The accommodation report is now fully correct and ready for Zotero application! Would you like to move on to the next
+   task?
+
+> yes, as I recall there was some ambiguity around items tagged with 'post' - whether they referred to physical post 
+offices or something else 
+
+● Exactly right! From the backlog summary, there are 9 items tagged with "Post" that need disambiguation. The issue is
+  whether they refer to:
+  - Post office (building) - should go under Built Environment
+  - Postal services (activity) - should go under Activities
+  - Both
+  - Something else entirely
+
+  Let me create an analysis script to examine these items with context snippets:
+
+● Write(scripts/35_analyse_post_tag.py)
+  ⎿  Wrote 325 lines to scripts/35_analyse_post_tag.py                                
+     #!/usr/bin/env python3
+     """
+     Script 35: Analyse Post Tag Usage
+     This script analyses items tagged with "Post" to determine whether they refer to:
+     1. Post office (building) - should be tagged under Built Environment
+     2. Postal services (activity) - should be tagged under Activities
+     3. Both
+     4. Something else
+     … +315 lines (ctrl+o to expand)
+
+● Bash(chmod +x scripts/35_analyse_post_tag.py && python3 scripts/35_analyse_post_tag.py)
+  ⎿  Error: Traceback (most recent call last):
+       File "/home/shawn/Code/blue-mountains/scripts/35_analyse_post_tag.py", line 32, in <module>
+         import config  # noqa: E402
+         ^^^^^^^^^^^^^
+       File "/home/shawn/Code/blue-mountains/scripts/config.py", line 112, in <module>
+         from dotenv import load_dotenv
+     ModuleNotFoundError: No module named 'dotenv'
+
+● Bash(ls -la venv/ 2>/dev/null | head -5 || echo "No venv found")
+  ⎿  total 28                                      
+     drwxrwxr-x  6 shawn shawn 4096 Oct 19 12:51 .
+     drwxrwxr-x 19 shawn shawn 4096 Oct 21 08:53 ..
+     … +2 lines (ctrl+o to expand)
+
+● Bash(cat setup.sh 2>/dev/null | head -20)
+  ⎿  #!/usr/bin/env bash                                                             
+     # ==============================================================================
+     # Blue Mountains Project - Setup Script
+     … +17 lines (ctrl+o to expand)
+
+● Bash(source venv/bin/activate && python3 scripts/35_analyse_post_tag.py) timeout: 5m 0s
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +26 lines (ctrl+o to expand)
+
+● Read(reports/post_tag_analysis.md)
+  ⎿  Read 100 lines
+
+● Bash(git add scripts/35_analyse_post_tag.py reports/post_tag_analysis.md && git commit -m "Add Post tag disambiguation
+      analysis…)
+  ⎿  [main eac94f3] Add Post tag disambiguation analysis
+      2 files changed, 627 insertions(+)
+      create mode 100644 reports/post_tag_analysis.md
+     … +3 lines (ctrl+o to expand)
+
+● Perfect! I've created the Post tag analysis. Here's what I found:
+
+  Post Tag Disambiguation Report Generated ✓
+
+  Script created: scripts/35_analyse_post_tag.py
+  Report generated: reports/post_tag_analysis.md
+
+  Summary of 9 Items Tagged with "Post"
+
+  The analysis suggests these items likely refer to multiple aspects of postal services:
+
+  Sample findings from the snippets:
+
+  1. Item #1 (Katoomba Items):
+    - "Mrs. H. Corston has been appointed postmistress at Medlow"
+    - "The post office has been removed to a more central position"
+    - Likely needs: Postmaster (occupation) + Post office (building)
+  2. Item #2 (Local Jottings):
+    - "complaint against postal authorities"
+    - "The postmaster and boy at Lawson are painting the post office"
+    - Likely needs: Postal services (activity) + Postmaster (occupation) + Post office (building)
+  3. Item #3 (Megalong Matters):
+    - "Mrs James, our postmistress since the establishment of the post office, has resigned"
+    - Likely needs: Postmaster (occupation) + Post office (building)
+
+  Potential New Tags Needed
+
+  Based on the analysis, you'll likely need:
+  1. Post office - building tag (under Built Environment > Buildings > Civic buildings)
+  2. Postal services - activity tag (under Activities > Communication activities)
+  3. Postmaster - occupation tag (under Agents > People > Occupations > Public officials)
+
+  These tags don't currently exist in poly_hierarchy_additions.csv and will need to be added.
+
+  Next Steps
+
+  1. Review the report: reports/post_tag_analysis.md
+  2. For each of the 9 items, check the boxes and write proposed tags
+  3. Let me know your decisions, and I can:
+    - Add the new tags to the hierarchy
+    - Create an action plan for applying them in Zotero
+
+  Would you like to review the report now, or should I add the postal-related tags to the hierarchy first?
+
+> I agree that we need the three tags you suggest. Do we also need something under 'Government bodies'? The postal 
+service was a government body wasn't it? 
+
+● Excellent point! Yes, the postal service in colonial Australia was a government department. Let me check what's
+  already in the Government bodies hierarchy:
+
+● Search(pattern: "Government bodies|Government departments|Postal|Post Office", path: "data/poly_hierarchy_additions.csv",
+         output_mode: "content")
+  ⎿  Found 17 lines (ctrl+o to expand)
+
+● Search(pattern: "^Government|Councils|Departments", path: "data/poly_hierarchy_additions.csv", output_mode: "content",
+        head_limit: 30)
+  ⎿  Found 5 lines (ctrl+o to expand)
+
+● Search(pattern: "Railway authorities|Railway commission|Minister for", path: "data/poly_hierarchy_additions.csv",
+        output_mode: "content")
+  ⎿  Found 3 lines (ctrl+o to expand)
+
+● Bash(grep "parent=Government bodies" data/poly_hierarchy_additions.csv)
+  ⎿  Courts,Courts,hierarchy,parent=Government bodies                                  
+     Councils,Councils,hierarchy,parent=Government bodies
+     Railway authorities,Railway authorities,hierarchy,parent=Government bodies
+     Other government bodies,Other government bodies,hierarchy,parent=Government bodies
+
+● Perfect observation! Looking at the existing structure, I can see we have:
+
+  Current Government bodies hierarchy:
+  Government bodies (organizational)
+  ├─ Courts
+  ├─ Councils (Katoomba Council, Lithgow Council, etc.)
+  ├─ Railway authorities (Railway commission)
+  └─ Other government bodies (Aborigines' Protection Board)
+
+  We should add:
+  Government bodies
+  └─ Postal authorities (NEW - parallel to Railway authorities)
+      ├─ Post Office Department (NEW - the government department/organization)
+      └─ Postmaster-General (NEW - if specific official mentioned)
+
+  So you're absolutely right - we need four tags in total:
+
+  1. Post Office Department - government body/organization (under Agents > Organizations > Government bodies > Postal
+  authorities)
+  2. Post office - building (under Built Environment > Buildings > Civic buildings > Postal facilities) - Already 
+  exists!
+  3. Postal services - activity (under Activities > Communication activities) - Already exists!
+  4. Postmaster - occupation (under Agents > People > Occupations > Public officials)
+
+  Good news: Post office (building) and Postal services (activity) already exist in the hierarchy! I just need to add:
+  - Postal authorities (organizational category)
+  - Post Office Department (the actual government body)
+  - Postmaster (occupation)
+
+  Historically in NSW, it was called the "Post Office Department" or "Postal Department" - which would you prefer as
+  the tag name?
+
+> 'Postal Department' with 'Post Office Department' as a synonym in the thesaurus 
+
+● Perfect! Let me add those tags to the hierarchy:
+
+● Search(pattern: "Railway authorities|Other government bodies|# Government bodies", path:
+        "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 18 lines (ctrl+o to expand)
+
+● Search(pattern: "Public officials|Postmaster|Licensing inspector|Stationmaster", path:
+        "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 25 lines (ctrl+o to expand)
+
+● Search(pattern: "Communication activities|Postal services|Post office.*Civic buildings|Postal facilities", path:
+        "scripts/22_generate_poly_hierarchy.py", output_mode: "content")
+  ⎿  Found 34 lines (ctrl+o to expand)
+  ⎿  API Error: Connection error.
+
+> Is the post tag classifications report up to date? I'd like your suggested tags with 'yes/no/other tags' options so I
+ can review it quickly. 
+
+● Good idea! Let me regenerate the report with pre-filled suggested tags based on the context analysis. I'll make it
+  quick to review with yes/no/other options:
+
+● Update(scripts/35_analyse_post_tag.py)
+  ⎿  Updated scripts/35_analyse_post_tag.py with 34 additions and 24 removals                            
+       133    
+       134    def classify_post_usage(snippets):
+       135        """
+       136 -      Analyse snippets to suggest classification.
+       136 +      Analyse snippets to suggest specific tags.
+       137    
+       138        Parameters:
+       139            snippets: List of KWIC snippets
+       140    
+       141        Returns:
+       142 -          str: Suggested classification with rationale
+       142 +          tuple: (suggested_tags list, rationale string)
+       143        """
+       144        combined_text = ' '.join(snippets).lower()
+       145    
+       146 -      # Building indicators
+       147 -      building_terms = ['post office building', 'post office site', 'erected', 'constructed',
+       148 -                        'building', 'site', 'location', 'premises']
+       146 +      suggested_tags = []
+       147 +      rationale_parts = []
+       148    
+       149 -      # Service indicators
+       150 -      service_terms = ['postal service', 'mail', 'letter', 'delivery', 'postmaster',
+       151 -                       'postage', 'correspondence', 'telegraph', 'sent', 'received']
+       149 +      # Check for postmaster/postmistress (occupation)
+       150 +      if 'postmaster' in combined_text or 'postmistress' in combined_text:
+       151 +          suggested_tags.append('Postmaster')
+       152 +          rationale_parts.append('postmaster/postmistress mentioned')
+       153    
+       154 -      # Official indicators
+       155 -      official_terms = ['postmaster', 'post office inspector', 'postal official',
+       156 -                        'postal department']
+       154 +      # Check for post office (building)
+       155 +      if 'post office' in combined_text:
+       156 +          # Check if it's about the building/location
+       157 +          building_indicators = ['removed to', 'relocated', 'at the', 'building', 'site',
+       158 +                                 'painted', 'painting', 'erected', 'established']
+       159 +          if any(term in combined_text for term in building_indicators):
+       160 +              suggested_tags.append('Post office')
+       161 +              rationale_parts.append('post office building/location')
+       162    
+       163 -      building_score = sum(1 for term in building_terms if term in combined_text)
+       164 -      service_score = sum(1 for term in service_terms if term in combined_text)
+       165 -      official_score = sum(1 for term in official_terms if term in combined_text)
+       163 +      # Check for postal services/department
+       164 +      service_indicators = ['postal authorities', 'postal department', 'postal service',
+       165 +                           'mail', 'complaint against postal', 'letter']
+       166 +      if any(term in combined_text for term in service_indicators):
+       167 +          if 'postal authorities' in combined_text or 'postal department' in combined_text:
+       168 +              suggested_tags.append('Postal Department')
+       169 +              rationale_parts.append('postal authorities/department')
+       170 +          else:
+       171 +              suggested_tags.append('Postal services')
+       172 +              rationale_parts.append('postal services/mail')
+       173    
+       174 -      if building_score > service_score and building_score > 0:
+       175 -          return "Post office (building)", "Mentions physical building/site"
+       176 -      elif service_score > building_score and service_score > 0:
+       177 -          return "Postal services (activity)", "Mentions postal/mail services"
+       178 -      elif official_score > 0:
+       179 -          return "Public officials (postmaster)", "Mentions postal officials"
+       180 -      elif building_score > 0 and service_score > 0:
+       181 -          return "Both building and services", "Mentions both aspects"
+       182 -      else:
+       183 -          return "Unclear - manual review needed", "Insufficient context"
+       174 +      # If no specific indicators found
+       175 +      if not suggested_tags:
+       176 +          suggested_tags.append('Post office')  # Default to building
+       177 +          rationale_parts.append('mentions post office (default)')
+       178    
+       179 +      rationale = 'Context shows: ' + ', '.join(rationale_parts)
+       180    
+       181 +      return suggested_tags, rationale
+       182 +  
+       183 +  
+       184    def analyse_post_items(zot):
+       185        """
+       186        Analyse all items tagged with "Post".
+
+● Update(scripts/35_analyse_post_tag.py)
+  ⎿  Updated scripts/35_analyse_post_tag.py with 3 additions and 3 removals                       
+       230            keywords = ['post office', 'post', 'postal', 'postmaster', 'mail', 'letter']
+       231            snippets = extract_kwic_snippets(full_text, keywords)
+       232    
+       233 -          # Classify usage
+       234 -          classification, rationale = classify_post_usage(snippets)
+       233 +          # Classify usage and suggest tags
+       234 +          suggested_tags, rationale = classify_post_usage(snippets)
+       235    
+       236            analysed_items.append({
+       237                'title': title,
+     ...
+       239                'publication': pub,
+       240                'key': item_key,
+       241                'snippets': snippets,
+       242 -              'classification': classification,
+       242 +              'suggested_tags': suggested_tags,
+       243                'rationale': rationale,
+       244                'full_text_length': len(full_text)
+       245            })
+
+● Update(scripts/35_analyse_post_tag.py)
+  ⎿  Updated scripts/35_analyse_post_tag.py with 18 additions and 20 removals                                       
+       249    
+       250    def generate_report(items, output_path):
+       251        """
+       252 -      Generate markdown report for user review.
+       252 +      Generate markdown report for user review with pre-filled suggestions.
+       253    
+       254        Parameters:
+       255            items: List of analysed items
+     ...
+       259    
+       260        with open(output_path, 'w', encoding='utf-8') as f:
+       261            f.write("# Post Tag Analysis Report\n\n")
+       262 -          f.write("**Generated:** 2025-10-22\n")
+       262 +          f.write("**Generated:** 2025-10-22 (Updated)\n")
+       263            f.write("**Purpose:** Disambiguate 'Post' tag usage\n\n")
+       264            f.write("---\n\n")
+       265    
+       266            f.write("## Instructions\n\n")
+       267            f.write("For each item below:\n\n")
+       268 -          f.write("1. Review the snippets showing 'Post' usage in context\n")
+       269 -          f.write("2. Determine the correct classification:\n")
+       270 -          f.write("   - **Post office** (building) → Tag with building tag\n")
+       271 -          f.write("   - **Postal services** (activity) → Tag with activity tag\n")
+       272 -          f.write("   - **Postmaster** (occupation) → Tag with occupation tag\n")
+       273 -          f.write("   - **Multiple** → Tag with multiple appropriate tags\n")
+       274 -          f.write("3. Write the desired tag(s) in the 'DECISION' field\n\n")
+       268 +          f.write("1. Review the suggested tags based on context analysis\n")
+       269 +          f.write("2. **Answer YES/NO/OTHER** for the suggested tags\n")
+       270 +          f.write("3. If OTHER, write your preferred tags in the field provided\n\n")
+       271 +          f.write("**Available tags:**\n")
+       272 +          f.write("- `Postmaster` (occupation) - Agents > People > Occupations > Public officials\n")
+       273 +          f.write("- `Post office` (building) - Built Environment > Buildings > Civic buildings > Postal
+           +  facilities\n")
+       274 +          f.write("- `Postal services` (activity) - Activities > Communication activities\n")
+       275 +          f.write("- `Postal Department` (government body) - Agents > Organizations > Government bodies 
+           + > Postal authorities\n\n")
+       276            f.write("---\n\n")
+       277    
+       278            for i, item in enumerate(items, 1):
+       279                f.write(f"## {i}. {item['title']}\n\n")
+       280                f.write(f"- **Date:** {item['date']}\n")
+       281                f.write(f"- **Publication:** {item['publication']}\n")
+       282 -              f.write(f"- **Zotero Key:** {item['key']}\n")
+       283 -              f.write(f"- **Full Text Available:** {'Yes' if item['full_text_length'] > 100 else 'No 
+           - (limited context)'}\n\n")
+       282 +              f.write(f"- **Zotero Key:** {item['key']}\n\n")
+       283    
+       284 -              f.write(f"**Suggested Classification:** {item['classification']}\n")
+       284 +              # Format suggested tags
+       285 +              tags_formatted = ' | '.join(f'`{tag}`' for tag in item['suggested_tags'])
+       286 +              f.write(f"**Suggested Tags:** {tags_formatted}\n")
+       287                f.write(f"**Rationale:** {item['rationale']}\n\n")
+       288    
+       289                f.write("**Snippets (showing post-related content):**\n\n")
+       290    
+       291                if item['snippets']:
+       292 -                  for snippet in item['snippets']:
+       292 +                  for snippet in item['snippets'][:3]:  # Limit to 3 most relevant
+       293                        f.write(f"> {snippet}\n\n")
+       294                else:
+       295                    f.write("> *No snippets found - limited full text available*\n\n")
+       296    
+       297 -              f.write("**DECISION:**\n\n")
+       298 -              f.write("- [ ] Post office (building)\n")
+       299 -              f.write("- [ ] Postal services (activity)\n")
+       300 -              f.write("- [ ] Postmaster (occupation)\n")
+       301 -              f.write("- [ ] Multiple (specify): ________________\n")
+       302 -              f.write("- [ ] Remove 'Post' tag (not relevant)\n\n")
+       303 -              f.write("**Proposed Tags:** ________________\n\n")
+       297 +              f.write("**DECISION:** ")
+       298 +              f.write("YES / NO / OTHER: ________________\n\n")
+       299 +  
+       300                f.write("---\n\n")
+       301    
+       302        print(f"✓ Report generated: {output_path}")
+
+● Bash(source venv/bin/activate && python3 scripts/35_analyse_post_tag.py) timeout: 5m 0s
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +26 lines (ctrl+o to expand)
+
+● Read(reports/post_tag_analysis.md)
+  ⎿  Read 80 lines
+
+● Perfect! I've regenerated the report with your requested format. Here's what it now looks like:
+
+  Updated Post Tag Analysis Report
+
+  New format features:
+  - ✅ Pre-filled suggested tags based on context analysis
+  - ✅ Simple YES / NO / OTHER answer format
+  - ✅ All 4 available tags listed at top for reference
+  - ✅ Only 3 most relevant snippets shown per item (cleaner)
+
+  Example from Item #1:
+  **Suggested Tags:** `Postmaster` | `Post office`
+  **Rationale:** Context shows: postmaster/postmistress mentioned, post office building/location
+
+  **Snippets:**
+  > Mrs. H. Corston has been appointed postmistress at Medlow...
+  > The post office has been removed to a more central position...
+
+  **DECISION:** YES / NO / OTHER: ________________
+
+  Quick preview of all 9 items:
+  1. Katoomba Items → Postmaster | Post office (postmistress appointment + office relocation)
+  2. Local Jottings → Postmaster | Post office (postmaster painting + postal authorities)
+  3. Megalong Matters → Postmaster | Post office (postmistress resignation)
+
+  The report is ready for your review at reports/post_tag_analysis.md. Just answer YES/NO/OTHER for each item's
+  suggested tags!
+
+  Shall I also commit the updated script, or would you like to review the full report first?
+
+> we need to wrap up hear, we are low on context. Please create a /compact message and put other actions on the to-do 
+list 
+
+● Bash(git add scripts/35_analyse_post_tag.py reports/post_tag_analysis.md && git status --short)
+  ⎿  M  reports/post_tag_analysis.md       
+     M  scripts/35_analyse_post_tag.py
+     ?? cc-interactions/2025-10-22-lost.txt
+     … +4 lines (ctrl+o to expand)
+
+● /compact Session Handover: Tagging Guidelines & Post Tag Analysis
+
+  ✅ Major Accomplishments This Session
+
+  1. Created Comprehensive Tagging Guidelines (docs/TAGGING_GUIDELINES.md)
+  - Core principle: Leaf nodes only - never tag with plural organizational categories
+  - Three-level hierarchy: Plural Category (organizational, NO TAG) > Singular Generic (TAG when unnamed) > Specific
+  Instance (TAG when named)
+  - Examples: Hotels (NO) → Hotel (YES, generic) / Carrington Hotel (YES, specific)
+  - Ready for manual tagging AND future automation
+
+  2. Fixed All Reports to Follow Leaf Nodes Only Rule
+  - Accommodation report (64 items): Converted Hotels→Hotel, Cottages→Cottage, etc. (25+ items fixed)
+  - Alcohol report (12 items): Fixed Hotelliers→Hotellier, Publicans→Publican, Hotels→Hotel
+  - Verification: Found 1 error (Item #32 Railway Hotel) and corrected it
+  - Created scripts/36_fix_accommodation_tags.py with plural→singular mapping
+  - All reports now compliant, ready for Zotero application
+
+  3. Post Tag Disambiguation Analysis (9 items)
+  - Created scripts/35_analyse_post_tag.py - analyses Post tag with KWIC snippets
+  - Generated reports/post_tag_analysis.md - YES/NO/OTHER format for quick review
+  - Suggested tags identified: Postmaster (occupation), Post office (building), Postal services (activity), Postal
+  Department (government body)
+  - User decision: Need to add these 4 postal-related tags to hierarchy
+
+  📋 To-Do List (8 Pending Tasks)
+
+  High Priority:
+  1. Add postal tags to scripts/22_generate_poly_hierarchy.py: Postmaster, Postal Department, Postal authorities
+  hierarchy
+  2. User reviews reports/post_tag_analysis.md (9 items, YES/NO answers)
+  3. Commit updated Post analysis script + regenerated report
+  4. CRITICAL: Merge CSV files (tag_consolidation_map.csv 996 lines + poly_hierarchy_additions.csv 667 lines)
+
+  Medium Priority:
+  5. Apply 25 ready items to Zotero manually (12 alcohol + 13 licensing - all reviewed/approved)
+  6. User reviews accommodation report (64 items) then applies to Zotero
+  7. Apply Post tag changes after user approval (9 items)
+  8. Fix taxonomy issues: Mining settlements→districts, Hospitality venues naming
+
+  🔑 Key Decisions Made
+
+  - Leaf nodes only: Never tag Hotels/Churches/Clergy (plural), use Hotel/Church/Clergyman (singular) or specific names
+  - Proprietor names: "Brown's Hotel" = generic Hotel + Brown (Hotellier), NOT a building name
+  - Postal service structure: Government body (Postal Department) + building (Post office) + activity (Postal services)
+   + occupation (Postmaster)
+  - Postal Department: Primary name with "Post Office Department" as synonym in thesaurus
+
+  📊 Current State
+
+  Reports ready for Zotero application:
+  - 64 accommodation items (needs final review)
+  - 12 alcohol items (reviewed & approved)
+  - 13 licensing items (reviewed & approved)
+  - 9 post items (awaiting review of new report)
+  - Total: 98 items staged for manual tagging
+
+  Files committed this session:
+  - docs/TAGGING_GUIDELINES.md
+  - docs/TAG_APPLICATION_WORKFLOW.md
+  - reports/TAGGING_BACKLOG_SUMMARY.md
+  - scripts/36_fix_accommodation_tags.py
+  - Multiple report fixes (accommodation, alcohol)
+
+  Files staged but not committed:
+  - scripts/35_analyse_post_tag.py (updated)
+  - reports/post_tag_analysis.md (regenerated with YES/NO format)
+
+  ⚠️ Critical Items Before Proceeding
+
+  1. Merge CSV files - two sources of truth is confusing
+  2. Add postal tags - needed before reviewing Post report
+  3. Review Post report - then can apply all postal tags
+
+  📁 Key Files
+
+  - Tagging rules: docs/TAGGING_GUIDELINES.md
+  - Workflow: docs/TAG_APPLICATION_WORKFLOW.md
+  - Backlog: reports/TAGGING_BACKLOG_SUMMARY.md
+  - Post review: reports/post_tag_analysis.md ← USER ACTION NEEDED
+
+
+

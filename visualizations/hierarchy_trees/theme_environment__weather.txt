@@ -3,49 +3,11 @@ THEMATIC GROUPING: Environment & Weather
 
 Environment & Weather
 ├── Animals
-│   ├── Cattle
-│   ├── Dogs
-│   └── Horses
 ├── Natural features
-│   ├── Caves & geological features
-│   ├── Gullies
-│   ├── Mountain features
-│   ├── Valleys
-│   └── Waterfalls
-│       ├── Katoomba Falls
-│       ├── Leura Falls
-│       └── Minnehaha
 ├── Natural resources
 │   ├── Coal
-│   │   ├── Coal mine
-│   │   ├── Gladstone Coal Company
-│   │   ├── Katoomba Coal and Shale Company
-│   │   ├── Katoomba Coal and Shale Mines
-│   │   └── Katoomba coal mines
 │   └── Shale mines
-│       ├── Katoomba Coal and Shale Mines
-│       ├── Katoomba Shale Mine
-│       ├── Megalong Shale Mines
-│       ├── Nellie's Glen Shale Mine
-│       └── Ruined Castle Shale Mine
-├── Natural resources
-│   ├── Coal
-│   │   ├── Coal mine
-│   │   ├── Gladstone Coal Company
-│   │   ├── Katoomba Coal and Shale Company
-│   │   ├── Katoomba Coal and Shale Mines
-│   │   └── Katoomba coal mines
-│   └── Shale mines
-│       ├── Katoomba Coal and Shale Mines
-│       ├── Katoomba Shale Mine
-│       ├── Megalong Shale Mines
-│       ├── Nellie's Glen Shale Mine
-│       └── Ruined Castle Shale Mine
-├── Weather & climate
-│   ├── Weather
-│   └── Weather
 └── Weather & climate
-    ├── Weather
     └── Weather
 
 
@@ -54,6 +16,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 46
+  Total nodes in theme: 8
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -13,12 +13,57 @@ Places
 │   └── South Clifton
 │       └── South Clifton Tunnel Mine
 ├── Mining settlements
+│   └── Middle camp
 ├── Natural features
+│   ├── Caves & geological features
+│   │   └── Jenolan Caves
+│   │       ├── Jenolan Caves Road
+│   │       └── Jenolan Caves road
+│   ├── Gullies
+│   │   └── Nellie's Glen
+│   │       ├── Nellie's Glen Road
+│   │       ├── Nellie's Glen Shale Mine
+│   │       ├── Nellie's Glen Track
+│   │       └── Nellie's Glen track
+│   ├── Mountain features
+│   │   ├── Narrow Neck
+│   │   └── Ruined Castle
+│   │       └── Ruined Castle Shale Mine
+│   ├── Valleys
+│   │   ├── Jamieson Valley
+│   │   ├── Kanimbla Valley
+│   │   └── Megalong Valley
+│   │       └── Megalong Valley School
+│   └── Waterfalls
+│       ├── Katoomba Falls
+│       ├── Leura Falls
+│       └── Minnehaha
 ├── Reserves
+│   ├── Katoomba Rifle Reserves
+│   ├── Leura Reserve
+│   ├── Rifle reserves
+│   │   ├── Katoomba Rifle Reserve
+│   │   └── Katoomba Rifle Reserves
+│   ├── South Katoomba Reserve
+│   ├── Wentworth Falls Reserve
+│   └── Wentworth Falls Reserves
 └── Towns
+    ├── Blackheath
+    ├── Clarence
+    ├── Hartley Vale
+    │   └── Hartley Vale mines
+    ├── Katoomba
+    │   └── Katoomba South
+    ├── Leura
+    ├── Lithgow
+    │   └── Lithgow Council
+    ├── Medlow
+    ├── Megalong
+    ├── Mount Victoria
+    └── Sydney
 
 
 STATISTICS:
-  Total nodes in facet: 15
+  Total nodes in facet: 60
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

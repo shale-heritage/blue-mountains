@@ -15,8 +15,15 @@ Events
 │   ├── Sexual violence
 │   └── Theft
 ├── Cultural events
+│   ├── Concert
+│   ├── Concerts
+│   ├── Corroboree
+│   ├── Debate
+│   └── Debating
 ├── Disasters & accidents
 │   ├── Accident
+│   │   └── Mining accidents
+│   │       └── Mount Kembla Disaster
 │   ├── Fire
 │   └── Port Kembla disaster
 ├── Economic events
@@ -25,9 +32,20 @@ Events
 ├── Historical events
 │   └── World War I
 ├── Legal events
+│   ├── Bankruptcy
+│   ├── Court cases
+│   └── Divorce
 ├── Legal proceedings
+│   └── Court cases
 ├── Life events
+│   ├── Death
+│   │   └── Death notice
+│   ├── Funeral
+│   └── Marriage
 ├── Political events
+│   ├── Election
+│   ├── Petition
+│   └── Public meeting
 ├── Social events
 │   ├── Ball
 │   ├── Concerts
@@ -35,9 +53,27 @@ Events
 │   ├── Dances
 │   └── Flower show
 └── Sporting events
+    ├── Athletics
+    ├── Billiard
+    ├── Billiards
+    ├── Cricket
+    │   ├── Cricket clubs
+    │   │   ├── Katoomba Cricket Club
+    │   │   └── Megalong Cricket Club
+    │   ├── Girls' cricket
+    │   ├── Katoomba Cricket Club
+    │   └── Megalong Cricket Club
+    ├── Football
+    │   ├── Football clubs
+    │   │   └── Katoomba Football Club
+    │   └── Katoomba Football Club
+    ├── Rugby
+    ├── Shooting
+    └── Tennis
+        └── Katoomba Tennis Club
 
 
 STATISTICS:
-  Total nodes in facet: 34
+  Total nodes in facet: 70
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

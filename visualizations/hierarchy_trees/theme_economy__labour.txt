@@ -4,112 +4,18 @@ THEMATIC GROUPING: Economy & Labour
 Economy & Labour
 ├── Businesses
 │   └── Commercial businesses
-│       ├── Financial institutions
-│       ├── Hospitality businesses
-│       ├── Mining companies
-│       │   ├── A.K.O. & M. Company
-│       │   ├── Australian Kerosene Oil and Mineral Company
-│       │   ├── Australian Kerosene Shale and Oil Company
-│       │   ├── Colliery
-│       │   ├── Gladstone Coal Company
-│       │   ├── Katoomba Coal and Shale Company
-│       │   ├── Katoomba Coal and Shale Mines
-│       │   ├── New South Wales Shale and Oil Co.
-│       │   ├── New South Wales Shale and Oil Company
-│       │   ├── South Clifton Mine Co.
-│       │   ├── South Clifton Mine Company
-│       │   ├── South Clifton Tunnel Mine
-│       │   ├── Sunny Corner Mining Company
-│       │   ├── Waudby & Co.
-│       │   └── Waudby and Company
-│       ├── Retailers & stores
-│       ├── Retailers and stores
-│       └── Transport & logistics businesses
-├── Businesses
-│   └── Commercial businesses
-│       ├── Financial institutions
-│       ├── Hospitality businesses
-│       ├── Mining companies
-│       │   ├── A.K.O. & M. Company
-│       │   ├── Australian Kerosene Oil and Mineral Company
-│       │   ├── Australian Kerosene Shale and Oil Company
-│       │   ├── Colliery
-│       │   ├── Gladstone Coal Company
-│       │   ├── Katoomba Coal and Shale Company
-│       │   ├── Katoomba Coal and Shale Mines
-│       │   ├── New South Wales Shale and Oil Co.
-│       │   ├── New South Wales Shale and Oil Company
-│       │   ├── South Clifton Mine Co.
-│       │   ├── South Clifton Mine Company
-│       │   ├── South Clifton Tunnel Mine
-│       │   ├── Sunny Corner Mining Company
-│       │   ├── Waudby & Co.
-│       │   └── Waudby and Company
-│       ├── Retailers & stores
-│       ├── Retailers and stores
-│       └── Transport & logistics businesses
 ├── Economic distress
 │   ├── Bankruptcy
 │   ├── Unemployment
-│   │   └── Unemployment relief
-│   └── Unemployment relief
-├── Economic distress
-│   ├── Bankruptcy
-│   ├── Unemployment
-│   │   └── Unemployment relief
 │   └── Unemployment relief
 ├── Industries
 │   ├── Mining
-│   │   ├── Coal mining
-│   │   │   ├── Coal
-│   │   │   │   ├── Coal mine
-│   │   │   │   ├── Gladstone Coal Company
-│   │   │   │   ├── Katoomba Coal and Shale Company
-│   │   │   │   ├── Katoomba Coal and Shale Mines
-│   │   │   │   └── Katoomba coal mines
-│   │   │   ├── Coal mine
-│   │   │   └── Coal mines
-│   │   ├── Gold mining
-│   │   ├── Mining accidents
-│   │   │   └── Mount Kembla Disaster
-│   │   ├── Mining settlements
-│   │   │   ├── Middle camp
-│   │   │   └── Middle camp
-│   │   ├── Shale mining
-│   │   └── Sunny Corner Mining Company
-│   └── Tourism
-├── Industries
-│   ├── Mining
-│   │   ├── Coal mining
-│   │   │   ├── Coal
-│   │   │   │   ├── Coal mine
-│   │   │   │   ├── Gladstone Coal Company
-│   │   │   │   ├── Katoomba Coal and Shale Company
-│   │   │   │   ├── Katoomba Coal and Shale Mines
-│   │   │   │   └── Katoomba coal mines
-│   │   │   ├── Coal mine
-│   │   │   └── Coal mines
-│   │   ├── Gold mining
-│   │   ├── Mining accidents
-│   │   │   └── Mount Kembla Disaster
-│   │   ├── Mining settlements
-│   │   │   ├── Middle camp
-│   │   │   └── Middle camp
-│   │   ├── Shale mining
-│   │   └── Sunny Corner Mining Company
 │   └── Tourism
 ├── Labour relations
 │   ├── Strike
 │   └── Unions
-├── Labour relations
-│   ├── Strike
-│   └── Unions
-├── Workforce
-│   └── Miners
-│       └── Recreation for miners
 └── Workforce
     └── Miners
-        └── Recreation for miners
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -117,6 +23,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 109
+  Total nodes in theme: 15
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

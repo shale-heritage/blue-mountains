@@ -13,8 +13,33 @@ Activities
 │   ├── Advertising
 │   ├── Fundraising
 │   └── Postal services
+│       ├── Post
+│       │   └── Post office
+│       └── Postal service
 ├── Economic activities
 │   ├── Mining
+│   │   ├── Coal mining
+│   │   │   ├── Coal
+│   │   │   │   ├── Coal mine
+│   │   │   │   ├── Gladstone Coal Company
+│   │   │   │   ├── Katoomba Coal and Shale Company
+│   │   │   │   ├── Katoomba Coal and Shale Mines
+│   │   │   │   └── Katoomba coal mines
+│   │   │   ├── Coal mine
+│   │   │   └── Coal mines
+│   │   ├── Gold mining
+│   │   ├── Mining accidents
+│   │   │   └── Mount Kembla Disaster
+│   │   ├── Mining settlements
+│   │   │   └── Middle camp
+│   │   ├── Shale mining
+│   │   │   └── Shale mines
+│   │   │       ├── Katoomba Coal and Shale Mines
+│   │   │       ├── Katoomba Shale Mine
+│   │   │       ├── Megalong Shale Mines
+│   │   │       ├── Nellie's Glen Shale Mine
+│   │   │       └── Ruined Castle Shale Mine
+│   │   └── Sunny Corner Mining Company
 │   ├── Tourism
 │   ├── Transport
 │   │   ├── Horseborne transportation
@@ -29,6 +54,12 @@ Activities
 │   └── Sports
 ├── Regulatory processes
 │   └── Licensing
+│       ├── Hotel licensing
+│       ├── Licensing Act
+│       ├── Licensing Court
+│       ├── Licensing inspector
+│       ├── Liquor licensing
+│       └── Publican's licensing
 └── Social behaviours
     ├── Drinking
     ├── Drinking (alcohol)
@@ -37,6 +68,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 33
+  Total nodes in facet: 64
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

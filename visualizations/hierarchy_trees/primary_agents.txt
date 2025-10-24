@@ -3,39 +3,309 @@ PRIMARY FACET: Agents
 
 Agents
 ├── Animals
+│   ├── Cattle
+│   ├── Dogs
+│   └── Horses
 ├── Demographic groups
 │   ├── Adolescents
 │   ├── Children
 │   ├── Families
+│   │   ├── Greenbank family
+│   │   └── Miners' families
 │   ├── Men
 │   ├── Widows
 │   └── Women
 ├── Occupations
 │   ├── Clergy
+│   │   ├── Cardinal Moran
+│   │   ├── Reverence M C Brown
+│   │   ├── Reverend A Sutherland
+│   │   ├── Reverend Canon Kemmis
+│   │   ├── Reverend F V Pratt
+│   │   ├── Reverend J H Maclean
+│   │   ├── Reverend M S Fletcher
+│   │   └── Reverend R M Laverty
 │   ├── Hospitality workers
+│   │   ├── Hotelliers
+│   │   │   ├── Allen
+│   │   │   ├── Biles
+│   │   │   ├── Brown
+│   │   │   ├── F. C. Goyder
+│   │   │   ├── Hotellier
+│   │   │   ├── Isabellea J. Long
+│   │   │   ├── Manuell
+│   │   │   ├── Mr A. G. Rowell
+│   │   │   ├── Mr Alf. Goodare
+│   │   │   ├── Mr D Thomson
+│   │   │   ├── Mr D. Brown
+│   │   │   ├── Mr D. Thompson
+│   │   │   ├── Mr Delaney
+│   │   │   ├── Mr Edwards
+│   │   │   ├── Mr Ellis
+│   │   │   ├── Mr J. Nimmo
+│   │   │   ├── Mr Joe Nimmo
+│   │   │   ├── Mr Manuel
+│   │   │   ├── Mr N. Delaney
+│   │   │   ├── Mr P. G. Whittall
+│   │   │   ├── Mr R. Fryer
+│   │   │   ├── Mr Wilson
+│   │   │   ├── Mrs (Joe) Nimmo
+│   │   │   ├── Mrs (R.) Fryer
+│   │   │   ├── Mrs Brown
+│   │   │   ├── Mrs Long
+│   │   │   ├── Richard Allen
+│   │   │   ├── Rubina Fryer
+│   │   │   └── W. Green
+│   │   ├── Liquor merchants
+│   │   │   └── Mr Wilkinson
+│   │   └── Publican
 │   ├── Law enforcement
+│   │   ├── Constable John Hamilton
+│   │   ├── Constable O'Reilly
+│   │   ├── Constable Orr
+│   │   ├── Constable White
+│   │   ├── Police
+│   │   │   ├── Constable John Hamilton
+│   │   │   ├── Constable O'Reilly
+│   │   │   ├── Constable Orr
+│   │   │   ├── Constable White
+│   │   │   ├── Police court
+│   │   │   ├── Police station
+│   │   │   ├── Senior-Constable Illingworth
+│   │   │   ├── Senior-Constable Thorncroft
+│   │   │   └── Sergeant Thorndyke
+│   │   ├── Police
+│   │   │   ├── Constable John Hamilton
+│   │   │   ├── Constable O'Reilly
+│   │   │   ├── Constable Orr
+│   │   │   ├── Constable White
+│   │   │   ├── Police court
+│   │   │   ├── Police station
+│   │   │   ├── Senior-Constable Illingworth
+│   │   │   ├── Senior-Constable Thorncroft
+│   │   │   └── Sergeant Thorndyke
+│   │   ├── Senior-Constable Illingworth
+│   │   ├── Senior-Constable Thorncroft
+│   │   └── Sergeant Thorndyke
 │   ├── Legal officials
+│   │   ├── Coroner
+│   │   │   └── Coroner Lethbridge
+│   │   ├── Coroner Lethbridge
+│   │   └── Coroners
+│   │       ├── Coroner
+│   │       │   └── Coroner Lethbridge
+│   │       └── Coroner Lethbridge
 │   ├── Maritime workers
 │   │   └── Shipwright
 │   ├── Medical professionals
+│   │   ├── Dr Morgan
+│   │   ├── Dr Prangley
+│   │   ├── Dr Spark
+│   │   └── Dr Watkins
 │   ├── Military personnel
+│   │   └── Soldiers
 │   ├── Miners
+│   │   └── Recreation for miners
 │   ├── Other goods and services
 │   │   └── Coach and buggy business
 │   │       └── Mr Thomas Cale
 │   └── Public officials
+│       ├── Aldermen
+│       ├── Licensing inspector
+│       ├── Minister for Mines
+│       ├── Postal employees
+│       │   ├── Mailmen
+│       │   │   ├── Mailman
+│       │   │   └── Postboy
+│       │   └── Postmasters
+│       │       ├── Mrs. A. Smith
+│       │       ├── Mrs. England
+│       │       ├── Mrs. H. Corston
+│       │       ├── Mrs. James
+│       │       └── Postmaster
+│       └── Stationmaster
 ├── Organizations
 │   ├── Civic organizations
+│   │   ├── Labour organizations
+│   │   │   └── Unions
+│   │   └── Progress committees
+│   │       ├── Katoomba Progress Association
+│   │       ├── Leura Progress Association
+│   │       ├── Megalong Progress Committee
+│   │       ├── Mount Victoria Progress Committee
+│   │       └── Wentworth Falls Progress Association
 │   ├── Commercial businesses
+│   │   ├── Financial institutions
+│   │   │   └── Bank
+│   │   ├── Hospitality businesses
+│   │   │   ├── Boarding houses
+│   │   │   │   ├── Boarding house
+│   │   │   │   └── Orama Boarding House
+│   │   │   └── Hotels
+│   │   │       ├── Allen's Hotel
+│   │   │       ├── Belgravia Hotel
+│   │   │       ├── Brown's Hotel
+│   │   │       ├── Carrington Hotel
+│   │   │       ├── Centennial Hotel
+│   │   │       ├── Comet Hotel
+│   │   │       ├── Delaney's Hotel
+│   │   │       ├── Falls Hotel
+│   │   │       ├── Family Hotel
+│   │   │       │   └── Katoomba Family Hotel
+│   │   │       ├── Fryer's Family Hotel
+│   │   │       ├── Grand Hotel
+│   │   │       ├── Grand Hotel (Sydney)
+│   │   │       ├── Great Western Hotel
+│   │   │       ├── Hoffman's House
+│   │   │       ├── Hotel
+│   │   │       ├── Hotel Wentworth
+│   │   │       ├── Hydora House Hotel
+│   │   │       ├── Imperial Hotel
+│   │   │       ├── Katoomba Family Hotel
+│   │   │       ├── Katoomba Hotel
+│   │   │       ├── Leura Hotel
+│   │   │       ├── Megalong Hotel
+│   │   │       ├── Montrose House
+│   │   │       ├── Mount Victoria Hotel
+│   │   │       ├── Mrs Long's Hotel
+│   │   │       ├── Oxford Hotel (Sydney)
+│   │   │       ├── Railway Hotel
+│   │   │       └── Wentworth Falls Hotel
+│   │   ├── Mining companies
+│   │   │   ├── A.K.O. & M. Company
+│   │   │   ├── Australian Kerosene Oil and Mineral Company
+│   │   │   ├── Australian Kerosene Shale and Oil Company
+│   │   │   ├── Colliery
+│   │   │   ├── Gladstone Coal Company
+│   │   │   ├── Katoomba Coal and Shale Company
+│   │   │   ├── Katoomba Coal and Shale Mines
+│   │   │   ├── New South Wales Shale and Oil Co.
+│   │   │   ├── New South Wales Shale and Oil Company
+│   │   │   ├── South Clifton Mine Co.
+│   │   │   ├── South Clifton Mine Company
+│   │   │   ├── South Clifton Tunnel Mine
+│   │   │   ├── Sunny Corner Mining Company
+│   │   │   ├── Waudby & Co.
+│   │   │   └── Waudby and Company
+│   │   ├── Retailers & stores
+│   │   │   ├── Douglas & Co.
+│   │   │   ├── Nimmo's
+│   │   │   ├── Peckman Bros
+│   │   │   ├── Stores
+│   │   │   └── Tabrett and Co.
+│   │   ├── Retailers and stores
+│   │   │   ├── Douglas and Company
+│   │   │   ├── Nimmo's
+│   │   │   ├── Peckman Bros
+│   │   │   ├── Store
+│   │   │   └── Tabrett and Company
+│   │   └── Transport & logistics businesses
+│   │       └── Trucking
 │   ├── Cultural & recreational organizations
+│   │   ├── Cultural societies
+│   │   │   ├── Chess and Draughts Club
+│   │   │   ├── Horticulture society
+│   │   │   ├── Katoomba Amateur Dramatic Club
+│   │   │   ├── Katoomba School of Arts
+│   │   │   ├── School of Arts
+│   │   │   │   └── Katoomba School of Arts
+│   │   │   └── Schools of Arts
+│   │   │       ├── Katoomba School of Arts
+│   │   │       └── School of Arts
+│   │   │           └── Katoomba School of Arts
+│   │   ├── Performance groups
+│   │   │   ├── Bands
+│   │   │   │   ├── Band
+│   │   │   │   │   └── Katoomba band
+│   │   │   │   └── Katoomba band
+│   │   │   ├── Choirs
+│   │   │   │   └── Choir
+│   │   │   └── Minstrel troupes
+│   │   │       └── Katoomba Amateur Minstrels
+│   │   └── Sports clubs
+│   │       ├── Athletic clubs
+│   │       │   └── Katoomba Athletic Club
+│   │       ├── Cricket clubs
+│   │       │   ├── Katoomba Cricket Club
+│   │       │   └── Megalong Cricket Club
+│   │       ├── Football clubs
+│   │       │   └── Katoomba Football Club
+│   │       ├── Rifle clubs
+│   │       │   └── Rifle club
+│   │       └── Tennis clubs
+│   │           ├── Katoomba Tennis Club
+│   │           └── Lawn Tennis Club
 │   ├── Fraternal orders & lodges
+│   │   └── Lodges
+│   │       ├── Druid's Lodge
+│   │       ├── Druids
+│   │       │   ├── Druid's Lodge
+│   │       │   └── U.A.O.D.
+│   │       ├── Freemasons
+│   │       ├── Independent Order of Odd Fellows
+│   │       ├── Independent lodges
+│   │       │   └── Mountaineer Lodge
+│   │       ├── Masonic Hall
+│   │       ├── Masons
+│   │       │   └── Masonic Hall
+│   │       ├── Mountaineer Lodge
+│   │       ├── Odd Fellows
+│   │       │   ├── Odd Fellows' Hall
+│   │       │   └── Oddfellows
+│   │       ├── Odd Fellows' Hall
+│   │       └── United Ancient Order of Druids
+│   │           └── Druid's Lodge (local lodge)
 │   ├── Government bodies
+│   │   ├── Councils
+│   │   │   ├── Katoomba Council
+│   │   │   └── Lithgow Council
+│   │   ├── Courts
+│   │   │   ├── Court
+│   │   │   │   ├── Court cases
+│   │   │   │   ├── Courthouse
+│   │   │   │   ├── Katoomba Court
+│   │   │   │   ├── Licensing Court
+│   │   │   │   ├── Police court
+│   │   │   │   └── Supreme Court
+│   │   │   ├── Katoomba Court
+│   │   │   ├── Licensing Court
+│   │   │   ├── Police court
+│   │   │   └── Supreme Court
+│   │   ├── Other government bodies
+│   │   │   └── Aborigines' Protection Board
+│   │   ├── Postal authorities
+│   │   │   └── Postal Department
+│   │   └── Railway authorities
+│   │       └── Railway commission
 │   └── Religious organizations
+│       ├── Churches
+│       │   ├── Church
+│       │   │   ├── Congregational Church
+│       │   │   │   └── Katoomba Congregational Church
+│       │   │   ├── Katoomba Congregational Church
+│       │   │   ├── Methodist Church
+│       │   │   ├── Roman Catholic Church
+│       │   │   ├── St Hilda's Church
+│       │   │   └── Wesleyan Church
+│       │   ├── Congregational Church
+│       │   │   └── Katoomba Congregational Church
+│       │   ├── Katoomba Congregational Church
+│       │   ├── Methodist Church
+│       │   ├── Roman Catholic Church
+│       │   ├── St Hilda's Church
+│       │   └── Wesleyan Church
+│       ├── Religious education
+│       │   └── Sunday school
+│       └── Religious social movements
+│           ├── Good Templars
+│           └── Salvation Army
 └── People
     ├── Demographic groups
     │   ├── Adolescents
     │   ├── Children
     │   ├── Families
+    │   │   ├── Greenbank family
+    │   │   └── Miners' families
     │   ├── Men
     │   ├── Widows
     │   └── Women
@@ -43,23 +313,121 @@ Agents
     │   ├── Aboriginal people
     │   ├── Chinese people
     │   └── Irish culture
+    ├── Families
+    │   ├── Greenbank family
+    │   └── Miners' families
     └── Occupations
         ├── Clergy
+        │   ├── Cardinal Moran
+        │   ├── Reverence M C Brown
+        │   ├── Reverend A Sutherland
+        │   ├── Reverend Canon Kemmis
+        │   ├── Reverend F V Pratt
+        │   ├── Reverend J H Maclean
+        │   ├── Reverend M S Fletcher
+        │   └── Reverend R M Laverty
         ├── Hospitality workers
+        │   ├── Hotelliers
+        │   │   ├── Allen
+        │   │   ├── Biles
+        │   │   ├── Brown
+        │   │   ├── F. C. Goyder
+        │   │   ├── Hotellier
+        │   │   ├── Isabellea J. Long
+        │   │   ├── Manuell
+        │   │   ├── Mr A. G. Rowell
+        │   │   ├── Mr Alf. Goodare
+        │   │   ├── Mr D Thomson
+        │   │   ├── Mr D. Brown
+        │   │   ├── Mr D. Thompson
+        │   │   ├── Mr Delaney
+        │   │   ├── Mr Edwards
+        │   │   ├── Mr Ellis
+        │   │   ├── Mr J. Nimmo
+        │   │   ├── Mr Joe Nimmo
+        │   │   ├── Mr Manuel
+        │   │   ├── Mr N. Delaney
+        │   │   ├── Mr P. G. Whittall
+        │   │   ├── Mr R. Fryer
+        │   │   ├── Mr Wilson
+        │   │   ├── Mrs (Joe) Nimmo
+        │   │   ├── Mrs (R.) Fryer
+        │   │   ├── Mrs Brown
+        │   │   ├── Mrs Long
+        │   │   ├── Richard Allen
+        │   │   ├── Rubina Fryer
+        │   │   └── W. Green
+        │   ├── Liquor merchants
+        │   │   └── Mr Wilkinson
+        │   └── Publican
         ├── Law enforcement
+        │   ├── Constable John Hamilton
+        │   ├── Constable O'Reilly
+        │   ├── Constable Orr
+        │   ├── Constable White
+        │   ├── Police
+        │   │   ├── Constable John Hamilton
+        │   │   ├── Constable O'Reilly
+        │   │   ├── Constable Orr
+        │   │   ├── Constable White
+        │   │   ├── Police court
+        │   │   ├── Police station
+        │   │   ├── Senior-Constable Illingworth
+        │   │   ├── Senior-Constable Thorncroft
+        │   │   └── Sergeant Thorndyke
+        │   ├── Police
+        │   │   ├── Constable John Hamilton
+        │   │   ├── Constable O'Reilly
+        │   │   ├── Constable Orr
+        │   │   ├── Constable White
+        │   │   ├── Police court
+        │   │   ├── Police station
+        │   │   ├── Senior-Constable Illingworth
+        │   │   ├── Senior-Constable Thorncroft
+        │   │   └── Sergeant Thorndyke
+        │   ├── Senior-Constable Illingworth
+        │   ├── Senior-Constable Thorncroft
+        │   └── Sergeant Thorndyke
         ├── Legal officials
+        │   ├── Coroner
+        │   │   └── Coroner Lethbridge
+        │   ├── Coroner Lethbridge
+        │   └── Coroners
+        │       ├── Coroner
+        │       │   └── Coroner Lethbridge
+        │       └── Coroner Lethbridge
         ├── Maritime workers
         │   └── Shipwright
         ├── Medical professionals
+        │   ├── Dr Morgan
+        │   ├── Dr Prangley
+        │   ├── Dr Spark
+        │   └── Dr Watkins
         ├── Military personnel
+        │   └── Soldiers
         ├── Miners
+        │   └── Recreation for miners
         ├── Other goods and services
         │   └── Coach and buggy business
         │       └── Mr Thomas Cale
         └── Public officials
+            ├── Aldermen
+            ├── Licensing inspector
+            ├── Minister for Mines
+            ├── Postal employees
+            │   ├── Mailmen
+            │   │   ├── Mailman
+            │   │   └── Postboy
+            │   └── Postmasters
+            │       ├── Mrs. A. Smith
+            │       ├── Mrs. England
+            │       ├── Mrs. H. Corston
+            │       ├── Mrs. James
+            │       └── Postmaster
+            └── Stationmaster
 
 
 STATISTICS:
-  Total nodes in facet: 56
+  Total nodes in facet: 424
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

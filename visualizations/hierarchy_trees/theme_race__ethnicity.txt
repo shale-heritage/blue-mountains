@@ -3,53 +3,15 @@ THEMATIC GROUPING: Race & Ethnicity
 
 Race & Ethnicity
 ├── Cultural identity & heritage
-│   ├── Reference to the Irish or Irish culture
-│   └── Reference to the Irish or Irish culture
-├── Cultural identity & heritage
-│   ├── Reference to the Irish or Irish culture
 │   └── Reference to the Irish or Irish culture
 ├── Marginalised groups
 │   ├── Chinese community
-│   │   ├── Chinese people
 │   │   └── Chinese people
-│   ├── Chinese community
-│   │   ├── Chinese people
-│   │   └── Chinese people
-│   ├── Indigenous peoples
-│   │   ├── Aboriginal people
-│   │   ├── Aboriginal people
-│   │   ├── Aborigines' Protection Board
-│   │   └── Corroboree
 │   └── Indigenous peoples
-│       ├── Aboriginal people
 │       ├── Aboriginal people
 │       ├── Aborigines' Protection Board
 │       └── Corroboree
-├── Marginalised groups
-│   ├── Chinese community
-│   │   ├── Chinese people
-│   │   └── Chinese people
-│   ├── Chinese community
-│   │   ├── Chinese people
-│   │   └── Chinese people
-│   ├── Indigenous peoples
-│   │   ├── Aboriginal people
-│   │   ├── Aboriginal people
-│   │   ├── Aborigines' Protection Board
-│   │   └── Corroboree
-│   └── Indigenous peoples
-│       ├── Aboriginal people
-│       ├── Aboriginal people
-│       ├── Aborigines' Protection Board
-│       └── Corroboree
-├── Racial stereotyping & performance
-│   ├── Minstrel shows
-│   │   └── Katoomba Amateur Minstrels
-│   └── Minstrel shows
-│       └── Katoomba Amateur Minstrels
 └── Racial stereotyping & performance
-    ├── Minstrel shows
-    │   └── Katoomba Amateur Minstrels
     └── Minstrel shows
         └── Katoomba Amateur Minstrels
 
@@ -59,6 +21,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 51
+  Total nodes in theme: 13
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

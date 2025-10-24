@@ -6,43 +6,10 @@ Tourism & Accommodation
 ├── Tourism activities
 │   ├── Tourism
 │   └── Tourist trains
-├── Tourism activities
-│   ├── Tourism
-│   └── Tourist trains
-├── Tourist attractions
-│   ├── Jenolan Caves
-│   │   ├── Jenolan Caves Road
-│   │   └── Jenolan Caves road
-│   ├── Natural features
-│   │   ├── Caves & geological features
-│   │   ├── Gullies
-│   │   ├── Mountain features
-│   │   ├── Valleys
-│   │   └── Waterfalls
-│   │       ├── Katoomba Falls
-│   │       ├── Leura Falls
-│   │       └── Minnehaha
-│   └── Waterfalls
-│       ├── Katoomba Falls
-│       ├── Leura Falls
-│       └── Minnehaha
 └── Tourist attractions
     ├── Jenolan Caves
-    │   ├── Jenolan Caves Road
-    │   └── Jenolan Caves road
     ├── Natural features
-    │   ├── Caves & geological features
-    │   ├── Gullies
-    │   ├── Mountain features
-    │   ├── Valleys
-    │   └── Waterfalls
-    │       ├── Katoomba Falls
-    │       ├── Leura Falls
-    │       └── Minnehaha
     └── Waterfalls
-        ├── Katoomba Falls
-        ├── Leura Falls
-        └── Minnehaha
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -50,6 +17,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 42
+  Total nodes in theme: 9
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -988,15 +988,3 @@ Mrs Joanna Meredith,Mrs Joanna Meredith,hierarchy,parent=People - THEMATIC
 Mrs Meredith,Mrs Meredith,hierarchy,parent=People - THEMATIC
 Mrs W Watson,Mrs W Watson,hierarchy,parent=People - THEMATIC
 Mrs Wilson,Mrs Wilson,hierarchy,parent=People - THEMATIC
-Families,Families,hierarchy,parent=People
-Greenbank family,Greenbank family,hierarchy,parent=Families
-Katoomba South,Katoomba South,hierarchy,parent=Katoomba
-Legal concepts,Legal concepts,hierarchy,parent=Associated Concepts
-Licenses,Licenses,hierarchy,parent=Legal concepts
-Publican's License,Publican's License,hierarchy,parent=Licenses
-Minors,Minors,merge,MANUAL REVIEW NEEDED: Merge to either Child or Adolescent based on context. Thesaurus entry: Minors = Child + Adolescent
-Mount Kembla Colliery Disaster,Mount Kembla Disaster,merge,Synonym - standardise to Mount Kembla Disaster
-Mt Victoria,Mount Victoria,merge,Variant spelling - standardise to Mount Victoria
-Post Office Department,Post Department,merge,Synonym - standardise to Post Department
-Postman,Mailman,merge,Synonym - standardise to Mailman
-Whiskey,Whisky,merge,Variant spelling - standardise to Whisky

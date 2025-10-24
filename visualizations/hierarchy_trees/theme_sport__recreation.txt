@@ -5,38 +5,9 @@ Sport & Recreation
 ├── Recreation themes
 │   ├── Recreation for miners
 │   ├── Reserves
-│   │   ├── Katoomba Rifle Reserves
-│   │   ├── Leura Reserve
-│   │   ├── Rifle reserves
-│   │   ├── South Katoomba Reserve
-│   │   ├── Wentworth Falls Reserve
-│   │   └── Wentworth Falls Reserves
-│   └── Sports
-├── Recreation themes
-│   ├── Recreation for miners
-│   ├── Reserves
-│   │   ├── Katoomba Rifle Reserves
-│   │   ├── Leura Reserve
-│   │   ├── Rifle reserves
-│   │   ├── South Katoomba Reserve
-│   │   ├── Wentworth Falls Reserve
-│   │   └── Wentworth Falls Reserves
 │   └── Sports
 ├── Sporting events
-│   ├── Athletics
-│   ├── Billiard
-│   ├── Billiards
-│   ├── Cricket
-│   ├── Football
-│   ├── Rugby
-│   ├── Shooting
-│   └── Tennis
 └── Sports clubs
-    ├── Athletic clubs
-    ├── Cricket clubs
-    ├── Football clubs
-    ├── Rifle clubs
-    └── Tennis clubs
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -44,6 +15,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 36
+  Total nodes in theme: 7
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

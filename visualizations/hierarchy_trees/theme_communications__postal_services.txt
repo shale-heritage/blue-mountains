@@ -4,25 +4,10 @@ THEMATIC GROUPING: Communications & Postal Services
 Communications & Postal Services
 ├── Advertising
 ├── Information Forms
-│   ├── Legal documents
-│   └── Maps
 ├── Information objects
-│   ├── Maps
-│   └── Publican's License
-├── Postal services
-│   ├── Post
-│   │   └── Post office
-│   ├── Post
-│   │   └── Post office
-│   ├── Post office
-│   └── Postal service
 └── Postal services
     ├── Post
-    │   └── Post office
-    ├── Post
-    │   └── Post office
-    ├── Post office
-    └── Postal service
+    └── Post office
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -30,6 +15,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 22
+  Total nodes in theme: 7
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
