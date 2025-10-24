@@ -4,6 +4,12 @@ THEMATIC GROUPING: Economy & Labour
 Economy & Labour
 ├── Businesses
 │   └── Commercial businesses
+├── Businesses
+│   └── Commercial businesses
+├── Economic distress
+│   ├── Bankruptcy
+│   ├── Unemployment
+│   └── Unemployment relief
 ├── Economic distress
 │   ├── Bankruptcy
 │   ├── Unemployment
@@ -11,9 +17,17 @@ Economy & Labour
 ├── Industries
 │   ├── Mining
 │   └── Tourism
+├── Industries
+│   ├── Mining
+│   └── Tourism
 ├── Labour relations
 │   ├── Strike
 │   └── Unions
+├── Labour relations
+│   ├── Strike
+│   └── Unions
+├── Workforce
+│   └── Miners
 └── Workforce
     └── Miners
 
@@ -23,6 +37,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 15
+  Total nodes in theme: 29
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

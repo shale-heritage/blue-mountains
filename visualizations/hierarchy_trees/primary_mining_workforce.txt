@@ -1,0 +1,13 @@
+PRIMARY FACET: Mining workforce
+================================================================================
+
+Mining workforce
+├── Miners
+│   └── Recreation for miners
+└── Miners' families
+
+
+STATISTICS:
+  Total nodes in facet: 4
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

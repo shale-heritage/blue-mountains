@@ -6,7 +6,8 @@ Places
 │   ├── Nellie's Glen
 │   │   ├── Nellie's Glen Road
 │   │   ├── Nellie's Glen Shale Mine
-│   │   └── Nellie's Glen Track
+│   │   ├── Nellie's Glen Track
+│   │   └── Nellie's Glen track
 │   ├── Ruined Castle
 │   │   └── Ruined Castle Shale Mine
 │   └── South Clifton
@@ -16,45 +17,98 @@ Places
 ├── Natural features
 │   ├── Caves & geological features
 │   │   └── Jenolan Caves
-│   │       └── Jenolan Caves Road
+│   │       ├── Jenolan Caves Road
+│   │       └── Jenolan Caves road
 │   ├── Gullies
 │   │   └── Nellie's Glen
 │   │       ├── Nellie's Glen Road
 │   │       ├── Nellie's Glen Shale Mine
-│   │       └── Nellie's Glen Track
+│   │       ├── Nellie's Glen Track
+│   │       └── Nellie's Glen track
 │   ├── Mountain features
-│   │   └── Narrow Neck
+│   │   ├── Narrow Neck
+│   │   └── Ruined Castle
+│   │       └── Ruined Castle Shale Mine
 │   ├── Valleys
 │   │   ├── Jamieson Valley
 │   │   ├── Kanimbla Valley
 │   │   └── Megalong Valley
+│   │       └── Megalong Valley School
 │   └── Waterfalls
 │       ├── Katoomba Falls
 │       ├── Leura Falls
 │       └── Minnehaha
 ├── Reserves
+│   ├── Katoomba Rifle Reserves
 │   ├── Leura Reserve
 │   ├── Rifle reserves
-│   │   └── Katoomba Rifle Reserve
+│   │   ├── Katoomba Rifle Reserve
+│   │   └── Katoomba Rifle Reserves
 │   ├── South Katoomba Reserve
-│   └── Wentworth Falls Reserve
+│   ├── Wentworth Falls Reserve
+│   └── Wentworth Falls Reserves
 └── Towns
     ├── Blackheath
     ├── Clarence
     ├── Hartley Vale
+    │   └── Hartley Vale mines
     ├── Katoomba
     │   ├── Carrington
+    │   │   └── Carrington Hotel
+    │   ├── Katoomba Amateur Dramatic Club
+    │   ├── Katoomba Amateur Minstrels
+    │   ├── Katoomba Athletic Club
+    │   ├── Katoomba Coal and Shale Company
+    │   ├── Katoomba Coal and Shale Mines
+    │   ├── Katoomba Congregational Church
+    │   ├── Katoomba Council
+    │   ├── Katoomba Court
+    │   ├── Katoomba Cricket Club
+    │   ├── Katoomba Falls
+    │   ├── Katoomba Family Hotel
+    │   ├── Katoomba Football Club
+    │   ├── Katoomba Hotel
+    │   ├── Katoomba Progress Association
+    │   ├── Katoomba Public School
+    │   ├── Katoomba Rifle Reserves
+    │   ├── Katoomba School of Arts
+    │   ├── Katoomba Shale Mine
+    │   ├── Katoomba South
+    │   │   └── Katoomba South mines
+    │   ├── Katoomba South mines
+    │   ├── Katoomba Street
+    │   ├── Katoomba Superior Public School
+    │   ├── Katoomba Tennis Club
+    │   ├── Katoomba band
+    │   ├── Katoomba coal mines
+    │   ├── Katoomba station
     │   └── South Katoomba
+    │       └── South Katoomba Reserve
     ├── Leura
+    │   ├── Leura Falls
+    │   ├── Leura Progress Association
+    │   └── Leura Reserve
     ├── Lithgow
+    │   └── Lithgow Council
     ├── Medlow
     ├── Megalong
+    │   ├── Megalong Cricket Club
+    │   ├── Megalong Hotel
+    │   ├── Megalong Progress Committee
+    │   ├── Megalong Shale Mines
+    │   ├── Megalong Valley
+    │   │   └── Megalong Valley School
+    │   ├── Megalong Valley School
     │   └── Middle camp
     ├── Mount Victoria
+    │   ├── Mount Victoria Hall
+    │   ├── Mount Victoria Hotel
+    │   ├── Mount Victoria Progress Committee
+    │   └── Mount Victoria School
     └── Sydney
 
 
 STATISTICS:
-  Total nodes in facet: 51
+  Total nodes in facet: 105
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

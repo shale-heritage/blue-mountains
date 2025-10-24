@@ -4,7 +4,7 @@ PRIMARY FACET: Events
 Events
 ├── Criminal events
 │   ├── Alcohol-related
-│   │   ├── Drunkenness
+│   │   ├── Drunkenness (crime)
 │   │   ├── Serving alcohol to minors
 │   │   └── Unlicensed sales
 │   ├── Assault
@@ -16,13 +16,16 @@ Events
 │   └── Theft
 ├── Cultural events
 │   ├── Concert
+│   ├── Concerts
 │   ├── Corroboree
-│   └── Debate
+│   ├── Debate
+│   └── Debating
 ├── Disasters & accidents
 │   ├── Accident
 │   │   └── Mining accidents
 │   │       └── Mount Kembla Disaster
-│   └── Fire
+│   ├── Fire
+│   └── Port Kembla disaster
 ├── Economic events
 │   ├── Mine closure
 │   └── Strike
@@ -32,6 +35,8 @@ Events
 │   ├── Bankruptcy
 │   ├── Court cases
 │   └── Divorce
+├── Legal proceedings
+│   └── Court cases
 ├── Life events
 │   ├── Death
 │   │   └── Death notice
@@ -43,20 +48,32 @@ Events
 │   └── Public meeting
 ├── Social events
 │   ├── Ball
+│   ├── Concerts
 │   ├── Dance
+│   ├── Dances
 │   └── Flower show
 └── Sporting events
     ├── Athletics
+    ├── Billiard
     ├── Billiards
     ├── Cricket
-    │   └── Girls' cricket
+    │   ├── Cricket clubs
+    │   │   ├── Katoomba Cricket Club
+    │   │   └── Megalong Cricket Club
+    │   ├── Girls' cricket
+    │   ├── Katoomba Cricket Club
+    │   └── Megalong Cricket Club
     ├── Football
+    │   ├── Football clubs
+    │   │   └── Katoomba Football Club
+    │   └── Katoomba Football Club
     ├── Rugby
     ├── Shooting
     └── Tennis
+        └── Katoomba Tennis Club
 
 
 STATISTICS:
-  Total nodes in facet: 53
+  Total nodes in facet: 70
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

@@ -4,11 +4,25 @@ THEMATIC GROUPING: Alcohol & Temperance
 Alcohol & Temperance
 ├── Alcohol consumption & behaviour
 │   ├── Alcoholic beverages
+│   ├── Drinking
 │   ├── Drinking (alcohol)
-│   ├── Drunkenness
+│   ├── Drunkeness
+│   ├── Drunkenness (crime)
+│   └── Drunkenness (intoxication)
+├── Alcohol consumption & behaviour
+│   ├── Alcoholic beverages
+│   ├── Drinking
+│   ├── Drinking (alcohol)
+│   ├── Drunkeness
+│   ├── Drunkenness (crime)
 │   └── Drunkenness (intoxication)
 ├── Alcohol-related venues
 │   ├── Hotels
+│   ├── Public houses
+│   └── Pubs
+├── Alcohol-related venues
+│   ├── Hotels
+│   ├── Public houses
 │   └── Pubs
 ├── Hospitality workers
 ├── Licensing & regulation
@@ -17,6 +31,15 @@ Alcohol & Temperance
 │   ├── Licensing Court
 │   ├── Licensing inspector
 │   └── Publican's License
+├── Licensing & regulation
+│   ├── Licensing
+│   ├── Licensing Act
+│   ├── Licensing Court
+│   ├── Licensing inspector
+│   └── Publican's License
+├── Temperance organizations & movements
+│   ├── Good Templars
+│   └── Temperance
 └── Temperance organizations & movements
     ├── Good Templars
     └── Temperance
@@ -27,6 +50,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 19
+  Total nodes in theme: 42
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

@@ -4,8 +4,12 @@ THEMATIC GROUPING: Arts & Culture
 Arts & Culture
 ├── Cultural activities
 │   └── Advertising
+├── Cultural activities
+│   └── Advertising
 ├── Cultural events
 ├── Cultural organizations
+├── Cultural venues
+│   └── Halls
 └── Cultural venues
     └── Halls
 
@@ -15,6 +19,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 7
+  Total nodes in theme: 11
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

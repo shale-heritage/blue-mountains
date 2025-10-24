@@ -4,11 +4,11 @@ Script 23: Visualise Poly-Hierarchical Taxonomy Structure
 
 Generates ASCII tree diagrams for all primary facets and thematic groupings.
 
-Reads from: data/poly_hierarchy_additions.csv
+Reads from: data/tag_map_consolidated.csv (single source of truth)
 Outputs to: visualizations/hierarchy_trees/
 
 Author: Claude Code
-Date: 2025-10-20
+Date: 2025-10-20 (Updated: 2025-10-24 to use consolidated CSV)
 """
 
 import csv
@@ -57,7 +57,7 @@ def build_hierarchy_tree(csv_path: Path) -> Tuple[Dict[str, List[str]], Dict[str
     Build parent-child mappings from CSV.
 
     Args:
-        csv_path: Path to poly_hierarchy_additions.csv
+        csv_path: Path to tag_map_consolidated.csv
 
     Returns:
         Tuple of (primary_hierarchies, thematic_hierarchies)
@@ -243,7 +243,7 @@ def main():
     print()
 
     # Setup paths
-    csv_path = Path('data/poly_hierarchy_additions.csv')
+    csv_path = Path('data/tag_map_consolidated.csv')
     output_dir = Path('visualizations/hierarchy_trees')
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -290,7 +290,7 @@ def main():
             f.write("\nSTATISTICS:\n")
             f.write(f"  Total nodes in facet: {node_count}\n")
             f.write(f"  Generated: 2025-10-20\n")
-            f.write(f"  Source: data/poly_hierarchy_additions.csv\n")
+            f.write(f"  Source: data/tag_map_consolidated.csv\n")
 
         print(f"  ✓ Saved to: {output_path}")
 
@@ -336,7 +336,7 @@ def main():
             f.write("\nSTATISTICS:\n")
             f.write(f"  Total nodes in theme: {node_count}\n")
             f.write(f"  Generated: 2025-10-20\n")
-            f.write(f"  Source: data/poly_hierarchy_additions.csv\n")
+            f.write(f"  Source: data/tag_map_consolidated.csv\n")
 
         print(f"  ✓ Saved to: {output_path}")
 
@@ -412,7 +412,7 @@ def main():
         f.write("=" * 80 + "\n")
         f.write("Generated: 2025-10-20\n")
         f.write("Script: scripts/23_visualise_poly_hierarchy.py\n")
-        f.write("Source: data/poly_hierarchy_additions.csv\n")
+        f.write("Source: data/tag_map_consolidated.csv\n")
 
     print(f"✓ Saved summary to: {summary_path}")
     print()

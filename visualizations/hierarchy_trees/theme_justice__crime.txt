@@ -11,7 +11,21 @@ Justice & Crime
 │   │   └── Theft
 │   ├── Social order offences
 │   │   ├── Desertion
-│   │   ├── Drunkenness
+│   │   ├── Drunkenness (crime)
+│   │   └── Gambling
+│   └── Violent crimes
+│       ├── Assault
+│       ├── Fighting
+│       ├── Rape
+│       └── Sexual violence
+├── Crimes
+│   ├── Other crimes
+│   │   └── Bigamy
+│   ├── Property crimes
+│   │   └── Theft
+│   ├── Social order offences
+│   │   ├── Desertion
+│   │   ├── Drunkenness (crime)
 │   │   └── Gambling
 │   └── Violent crimes
 │       ├── Assault
@@ -24,6 +38,10 @@ Justice & Crime
 ├── Legal outcomes
 │   ├── Bankruptcy
 │   └── Divorce
+├── Legal outcomes
+│   ├── Bankruptcy
+│   └── Divorce
+├── Legal proceedings
 ├── Police station
 └── Victims of crime & violence
     └── Widows
@@ -34,6 +52,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 26
+  Total nodes in theme: 44
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

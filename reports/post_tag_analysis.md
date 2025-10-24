@@ -39,8 +39,7 @@ For each item below:
 
 > t will provide employment for a large number of people. Mrs. H. Corston has been appointed **post**mistress at Medlow, vice Mrs. A. Smith, resigned. The **post** office has been removed to a more central position to meet the convenience of the inhabitants. The weather continues delightfully fine and bright, m
 
-**DECISION:** YES / NO / OTHER: ________________
-
+**DECISION:** YES - PLUS: postmasters > Mrs H. Corston | postmasters > Mrs A. Smith
 ---
 
 ## 2. Local Jottings.
@@ -60,8 +59,7 @@ For each item below:
 
 > s is the first complaint against **post**al authorities since the KATOOMBA TIMES and BLUE MOUNTAINEER was first started. Government job on at Lawson. The **post**master and boy at Lawson are painting the **post** office. Government supplying the paint and brushes. They have enough pound pots of paint to do all the
 
-**DECISION:** YES / NO / OTHER: ________________
-
+**DECISION:** YES - PLUS postboy
 ---
 
 ## 3. Megalong Matters.
@@ -81,7 +79,7 @@ For each item below:
 
 > little going on to disturb the tranquility of the valley; there-fore little to chronicle. Mrs James, our **post**mistress since the establishment of the **post** office, has resigned, and will probably vacate her position at the end of the month. All regret the departure of this lady whose uniform courtesy and
 
-**DECISION:** YES / NO / OTHER: ________________
+**DECISION:** YES - PLUS postmasters > Mrs James
 
 ---
 
@@ -98,7 +96,7 @@ For each item below:
 
 > eived from the Lands Department, forestry branch, notifying that 85 trees had been forwarded to the Association. From the Deputy P.M.G., re the penny **post**age to the effect that it was regretted the department could not extend the system to Katoomba. Mr. J. Hurley, M.L.A., wrote, notifying that he would
 
-**DECISION:** YES / NO / OTHER: ________________
+**DECISION:** NO / OTHER: Postal services | Postal Department
 
 ---
 
@@ -119,7 +117,7 @@ For each item below:
 
 > red for the applicant. Sergeant Morris opposed the granting of the license. After the evidence of applicant and J. Makin in favour, it was decided to **post**pone the hearing till Friday, 30th October, at Katoomba. Rumour says that some alterations are again on foot at the local opal and shale mines. It is
 
-**DECISION:** YES / NO / OTHER: ________________
+**DECISION:** NO: ONLY 'Post office' NOT 'Postal services'
 
 ---
 
@@ -140,7 +138,7 @@ For each item below:
 
 > l have every reason to believe that the lightning process is far and away ahead in all respects of the other foul smelling stuff. We notice that the **post**al department are introducing a parcels **post** system for all cities and large towns in N.S.W. Katoomba Council might petition to have the arrangement e
 
-**DECISION:** YES / NO / OTHER: ________________
+**DECISION:** YES - AND 'Postal Department'
 
 ---
 
@@ -161,7 +159,7 @@ For each item below:
 
 > way yelps out a bushel of abuse at the expense of Hartley's Member. Why not say out straight that it is a capitalist organ ? — it is owned by mighty e**mail** capitalists, by the way. Cook and Donald are a heap better than Jack Hurley, anyway, and the said owners did not cry out at him once. But, after all,
 
-**DECISION:** YES / NO / OTHER: ________________
+**DECISION:** YES
 
 ---
 
@@ -182,7 +180,7 @@ For each item below:
 
 > irly settled down to her work, and I understand a new office is shortly to be erected, and better provisions made in various ways for carring out the **postal** business. The aboriginals of this neighbourhood and Cox's river have decided to hold a corroboree here on Saturday 22nd instant. No doubt a good num
 
-**DECISION:** YES / NO / OTHER: ________________
+**DECISION:** NO, instead: postmasters > Mrs England | postmasters > postmaster | postal services
 
 ---
 
@@ -203,7 +201,7 @@ For each item below:
 
 > y get strong again to follow his calling, as a better hearted fellow never walked; always ready and willing to help when appealed to. Our friend the **mail**man recently, to give the horse a rest for awhile, tried the Black's Ladder route by "shank's pony," but cut it pretty fine to time. "Your own" accomp
 
-**DECISION:** YES / NO / OTHER: ________________
+**DECISION:** YES AND 'Post office' | 'Postal employees > Mailmen > Mailman' (new tag)
 
 ---
 

@@ -6,6 +6,10 @@ Sport & Recreation
 │   ├── Recreation for miners
 │   ├── Reserves
 │   └── Sports
+├── Recreation themes
+│   ├── Recreation for miners
+│   ├── Reserves
+│   └── Sports
 ├── Sporting events
 └── Sports clubs
 
@@ -15,6 +19,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 7
+  Total nodes in theme: 11
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

@@ -4,6 +4,10 @@ THEMATIC GROUPING: Transport & Infrastructure
 Transport & Infrastructure
 ├── Commercial transport
 │   └── Trucking
+├── Commercial transport
+│   └── Trucking
+├── Mining transport
+│   └── Tramway
 ├── Mining transport
 │   └── Tramway
 ├── Railway
@@ -16,6 +20,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 8
+  Total nodes in theme: 12
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

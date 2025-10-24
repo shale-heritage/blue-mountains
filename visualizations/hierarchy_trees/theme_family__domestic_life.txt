@@ -6,8 +6,17 @@ Family & Domestic Life
 │   ├── Boarding houses
 │   ├── Hotels
 │   └── Miners' dwellings
+├── Domestic accommodation
+│   ├── Boarding houses
+│   ├── Hotels
+│   └── Miners' dwellings
 ├── Families
 │   └── Miners' families
+├── Family members by demographic
+│   ├── Children
+│   ├── Men
+│   ├── Widows
+│   └── Women
 ├── Family members by demographic
 │   ├── Children
 │   ├── Men
@@ -21,6 +30,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 13
+  Total nodes in theme: 22
   Generated: 2025-10-20
-  Source: data/poly_hierarchy_additions.csv
+  Source: data/tag_map_consolidated.csv

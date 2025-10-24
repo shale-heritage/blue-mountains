@@ -15,23 +15,86 @@ PRIMARY FACETS (Form-Based, Getty AAT Compatible):
   - Agents
     File: primary_agents.txt
 
+  - Alcohol consumption & behaviour
+    File: primary_alcohol_consumption__behaviour.txt
+
   - Associated Concepts
     File: primary_associated_concepts.txt
 
   - Built Environment
     File: primary_built_environment.txt
 
+  - Civic organisations
+    File: primary_civic_organisations.txt
+
+  - Crimes
+    File: primary_crimes.txt
+
+  - Cultural identity & heritage
+    File: primary_cultural_identity__heritage.txt
+
+  - Environmental conditions
+    File: primary_environmental_conditions.txt
+
   - Events
     File: primary_events.txt
+
+  - Health conditions
+    File: primary_health_conditions.txt
+
+  - Historical periods & events
+    File: primary_historical_periods__events.txt
 
   - Information Forms
     File: primary_information_forms.txt
 
+  - Information objects
+    File: primary_information_objects.txt
+
+  - Legal & regulatory frameworks
+    File: primary_legal__regulatory_frameworks.txt
+
+  - Legal outcomes
+    File: primary_legal_outcomes.txt
+
+  - Marginalised groups
+    File: primary_marginalised_groups.txt
+
   - Materials
     File: primary_materials.txt
 
+  - Military events
+    File: primary_military_events.txt
+
+  - Mining activities
+    File: primary_mining_activities.txt
+
+  - Mining workforce
+    File: primary_mining_workforce.txt
+
+  - Parent Tag
+    File: primary_parent_tag.txt
+
   - Places
     File: primary_places.txt
+
+  - Port Kembla
+    File: primary_port_kembla.txt
+
+  - Racial stereotyping & performance
+    File: primary_racial_stereotyping__performance.txt
+
+  - Religious organisations
+    File: primary_religious_organisations.txt
+
+  - Sunny Corner
+    File: primary_sunny_corner.txt
+
+  - Weather & climate
+    File: primary_weather__climate.txt
+
+  - Wentworth Falls
+    File: primary_wentworth_falls.txt
 
 
 THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
@@ -119,22 +182,22 @@ This enables:
 OVERALL STATISTICS:
 
 Primary Facets:
-  - Top-level facets: 8
-  - Total nodes: 437
-  - Total relationships: 445
-  - Parent nodes: 147
-  - Leaf nodes: 290
+  - Top-level facets: 29
+  - Total nodes: 522
+  - Total relationships: 682
+  - Parent nodes: 209
+  - Leaf nodes: 313
 
 Thematic Groupings:
   - Top-level themes: 20
-  - Total nodes: 176
-  - Total relationships: 182
-  - Parent nodes: 67
-  - Leaf nodes: 109
+  - Total nodes: 187
+  - Total relationships: 238
+  - Parent nodes: 68
+  - Leaf nodes: 119
 
-TOTAL HIERARCHY RELATIONSHIPS: 627
+TOTAL HIERARCHY RELATIONSHIPS: 920
 
 ================================================================================
 Generated: 2025-10-20
 Script: scripts/23_visualise_poly_hierarchy.py
-Source: data/poly_hierarchy_additions.csv
+Source: data/tag_map_consolidated.csv
