@@ -1,98 +1,156 @@
-# Session Handover: Primary Facet Cleanup
+# Session Handover: Getty AAT Primary Facet Cleanup COMPLETE
 
 **Date:** 2025-10-24
-**Session:** Primary Hierarchy Structure Analysis
+**Session:** Primary Hierarchy Structure Analysis and Cleanup
+**Status:** ✅ COMPLETE
+
+---
 
 ## What We Accomplished
 
-### 1. CSV Merge Completed (Earlier Session)
-- ✅ Merged tag_consolidation_map.csv + poly_hierarchy_additions.csv → tag_map_consolidated.csv
-- ✅ 1071 unique relationships (removed 227 duplicates)
-- ✅ Single source of truth established
-- ✅ Towns thematic grouping added (45 entries across 5 towns)
-- ✅ Visualizations regenerated (86 files: 82 primary + 21 thematic + overview)
+### 1. Getty AAT Root Structure ✅
+- Added 7 Getty AAT primary facet root entries
+- Removed 167 orphaned primary parent relationships (preserved all thematic)
+- Restored 4 missing Town → parent=Towns relationships
+- Result: Clean 7-facet Getty AAT structure
 
-### 2. Problem Identified
-- 82 primary visualization trees instead of 7 Getty AAT facets
-- Orphaned hierarchies creating false roots
-- Need to align with Getty AAT structure
+### 2. Visualization Script Bug Fix ✅
+- **Critical bug found:** Tags with both primary AND thematic parents were incorrectly classified entirely as thematic
+- **Impact:** Built Environment > Community buildings > Halls hierarchy appeared missing (but was in CSV)
+- **Fix:** Changed from tag-level to relationship-level classification in script 23
+- **Result:** Correct generation of 7 primary trees (was incorrectly showing 54)
 
-### 3. Analysis Approach Refined
-Changed from complex reorganization to surgical approach:
-- Keep correctly Getty-connected hierarchies (171 found)
-- Remove orphaned primary roots (60 found)
-- Restore missing archive relationships (4 found)
-- Assign unassigned tags (110 found)
+### 3. Leaf Node Assignment ✅
+- Filtered 157 unassigned → identified only 13 actual leaf nodes
+- Added People thematic hierarchy with 73 individuals
+- Applied 3 Getty facet assignments
+- Created 6 merge operations for synonym standardisation
+- Verified 3 items already had synonym entries
 
-### 4. Analysis Script Created & Run
-- Created `scripts/40_analyze_primary_structure.py`
-- Generated `reports/primary_structure_analysis.md`
-- Decision: FIX CURRENT (don't revert to archive)
+### 4. Comprehensive Verification ✅
+- Archive comparison: Confirmed no critical content lost (15 intentional removals, 327 additions)
+- Verified all halls/lodges preserved in Built Environment
+- Generated detailed analysis reports
+
+---
 
 ## Current State
 
-**Analysis Complete:**
-- ✅ 171 Getty-connected hierarchies identified (KEEP)
-- ✅ 60 orphaned roots identified (REMOVE primary parent only)
-- ✅ 4 missing Town relationships identified (RESTORE)
-- ✅ 110 unassigned tags identified (ASSIGN to Getty facets)
+**CSV Statistics:**
+- Total rows: 1001 (989 data + header)
+- Primary hierarchies: 607 relationships
+- Thematic hierarchies: 266 relationships
+- Getty-connected: 171 primary parents
 
-**Files Created:**
-- `scripts/38_audit_primary_facets.py` - Initial audit
-- `scripts/40_analyze_primary_structure.py` - Comprehensive analyzer
-- `reports/primary_facets_audit.md` - Initial audit with user annotations
-- `reports/primary_structure_analysis.md` - Comprehensive analysis
-- `planning/PRIMARY_FACET_CLEANUP_PLAN.md` - Complete execution plan
+**Visualization:**
+- 7 Getty AAT primary facets ✓
+- 22 thematic groupings ✓
+- 30 total files generated
 
-## Next Steps (Priority Order)
+**Getty AAT Primary Facets:**
+1. Agents
+2. Places
+3. Built Environment
+4. Activities
+5. Events
+6. Associated Concepts
+7. Materials
 
-### 1. Create Script 41: Automated Fixes
-**File:** `scripts/41_fix_primary_structure.py`
+**Thematic Groupings:**
+Towns, People, Alcohol & Temperance, Arts & Culture, Communications & Postal Services, Community institutions, Economy & Labour, Education, Environment & Weather, Family & Domestic Life, Health & Medicine, Justice & Crime, Military & War, Mining & Industry, Politics & Governance, Race & Ethnicity, Religion, Social issues, Sport & Recreation, Tourism & Accommodation, Transport & Infrastructure, Women & Gender
 
-**Actions:**
-- Add 7 Getty AAT root entries
-- Remove 60 orphaned primary parent relationships (preserve thematic)
-- Restore 4 missing Town → parent=Towns relationships
-- Generate list of 110 unassigned tags for manual assignment
+---
 
-### 2. Run Script 41
-Apply automated fixes, verify thematic hierarchies preserved
+## Scripts Created (This Session)
 
-### 3. Assign Unassigned Tags
-Either interactive script or manual review - assign 110 tags to Getty facets
+- `scripts/38_audit_primary_facets.py` - Initial primary facet audit
+- `scripts/40_analyze_primary_structure.py` - Comprehensive structure analysis
+- `scripts/41_fix_primary_structure.py` - Automated Getty root addition and orphan removal
+- `scripts/42_filter_leaf_nodes_for_assignment.py` - Leaf node identification
+- `scripts/43_comprehensive_archive_comparison.py` - Archive comparison
+- `scripts/44_apply_leaf_node_assignments.py` - Apply Getty facet assignments
 
-### 4. Regenerate Visualizations
-Run script 23, verify 7 primary trees
-
-### 5. Commit Changes
-Comprehensive commit with all cleanup
+---
 
 ## Key Decisions Made
 
-1. **Don't revert to archive** - Only 4 missing relationships, manageable to fix
-2. **Preserve thematic hierarchies** - Don't touch "- THEMATIC" relationships
-3. **Preserve Towns thematic** - Keep Towns > [Town] > [intermediates] > [entities]
-4. **Remove only primary parents** - Never remove tags themselves
-5. **Towns in primary = place names only** - Remove non-place children from primary (they exist elsewhere)
+1. **FIX current structure** (don't revert to archive) - Only 4 missing relationships, manageable
+2. **Preserve ALL thematic hierarchies** - Including Towns > [Town] > [entities]
+3. **Poly-hierarchy support** - Tags can have both primary AND thematic parents
+4. **People thematic hierarchy** - Created alongside Towns for browsing individuals
+5. **Relationship-level classification** - Each CSV row classified independently (not tag-level)
 
-## Important Notes
+---
 
-- **Thematic hierarchies are valuable** - They provide exhibition views
-- **All tags should have primary parent** - Primary = form-based, Thematic = domain-based
-- **Towns special case** - Primary has only locales, Thematic has all entities
-- **Getty-connected = correct** - 171 hierarchies already properly structured
+## Key Files
 
-## Files to Review
+**Data:**
+- `data/tag_map_consolidated.csv` - Single source of truth (1001 rows)
 
-1. `planning/PRIMARY_FACET_CLEANUP_PLAN.md` - Complete plan
-2. `reports/primary_structure_analysis.md` - Analysis results
-3. `reports/primary_facets_audit.md` - User-annotated audit (has context)
+**Reports:**
+- `reports/primary_structure_analysis.md` - Comprehensive analysis results
+- `reports/leaf_nodes_for_assignment.md` - Filtered leaf node list
+- `reports/archive_comparison_comprehensive.md` - Detailed archive comparison
 
-## Context for Next Session
+**Planning:**
+- `planning/PRIMARY_FACET_CLEANUP_PLAN.md` - Complete execution plan
 
-We're cleaning up a folksonomy that grew organically and now needs Getty AAT alignment. The merge went well, but visualization showed structural issues. Analysis reveals most structure is correct (171 Getty-connected), just need to:
-- Add Getty roots (foundation)
-- Remove orphaned roots (declutter)  
-- Assign stragglers (completeness)
+**Visualizations:**
+- `visualizations/hierarchy_trees/primary_*.txt` - 7 Getty facet trees
+- `visualizations/hierarchy_trees/theme_*.txt` - 22 thematic trees
+- `visualizations/hierarchy_trees/00_OVERVIEW.txt` - Summary document
 
-Expected outcome: 7 clean Getty AAT primary facets + 21 thematic groupings for flexible querying.
+---
+
+## Next Steps (Future Sessions)
+
+### Immediate
+- No immediate actions required - primary facet cleanup complete!
+
+### Phase 1.3 Suggestions
+- Getty AAT mapping refinement (optional deeper alignment)
+- Thesaurus entries for synonyms and variants
+- Scope notes for ambiguous terms
+
+### Future Enhancements
+- Expand People thematic hierarchy with occupations, family relationships as sub-nodes
+- Review and expand intermediate facet hierarchies
+- Add more specific geographic place names under Places > Towns
+
+---
+
+## Session Notes
+
+**Challenge Encountered:**
+User reported Odd Fellows' Hall / Halls hierarchy appeared missing in Built Environment. Investigation revealed:
+- Data was present in CSV
+- Visualization script had critical bug
+- Bug caused tags with dual parents to be misclassified
+- Fix applied and verified
+
+**Problem Resolution:**
+1. Confirmed hierarchy present in CSV
+2. Identified visualization script bug (tag-level vs relationship-level classification)
+3. Fixed build_hierarchy_tree() function
+4. Regenerated visualizations correctly showing 7 primary trees
+5. Verified all expected hierarchies present
+
+**Outcome:**
+Clean Getty AAT-aligned primary taxonomy with robust poly-hierarchy support.
+
+---
+
+## Commit Information
+
+**Commit:** 9706f16
+**Message:** Complete Getty AAT primary facet cleanup and leaf node assignment
+**Files changed:** 56 files, 11702 insertions(+), 2847 deletions(-)
+**Pushed to:** main branch
+
+---
+
+## For Next Session
+
+**Status:** Primary facet cleanup complete and committed. Ready for Phase 1.3 (Getty AAT mapping refinement) or other taxonomy work.
+
+**Key Achievement:** Successfully reduced 82 orphaned primary trees → 7 clean Getty AAT primary facets while preserving all valuable thematic hierarchies and poly-hierarchical relationships.
