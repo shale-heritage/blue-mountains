@@ -3,14 +3,56 @@ THEMATIC GROUPING: Community institutions
 
 Community institutions
 ├── Civic buildings
+│   ├── Council Chambers
+│   ├── Council buildings
+│   ├── Court buildings
+│   │   ├── Courthouse
+│   │   └── Katoomba Court
+│   ├── Police facilities
+│   └── Postal facilities
 ├── Civic buildings
+│   ├── Council Chambers
+│   ├── Council buildings
+│   ├── Court buildings
+│   │   ├── Courthouse
+│   │   └── Katoomba Court
+│   ├── Police facilities
+│   └── Postal facilities
 ├── Civic organisations
 ├── Civic organizations
+│   ├── Labour organizations
+│   └── Progress committees
 ├── Community buildings
+│   └── Halls
+│       ├── Clarke's Hall
+│       ├── Katoomba School of Arts
+│       ├── Masonic Hall
+│       ├── Mount Victoria Hall
+│       ├── Odd Fellows' Hall
+│       ├── School of Arts
+│       ├── Schools of Arts
+│       └── Waudby's Hall
 ├── Cultural & recreational organizations
+│   ├── Cultural societies
+│   ├── Performance groups
+│   └── Sports clubs
+│       ├── Athletic clubs
+│       ├── Cricket clubs
+│       ├── Football clubs
+│       ├── Rifle clubs
+│       └── Tennis clubs
 ├── Cultural societies
 ├── Fraternal orders & lodges
+│   └── Lodges
 ├── Halls
+│   ├── Clarke's Hall
+│   ├── Katoomba School of Arts
+│   ├── Masonic Hall
+│   ├── Mount Victoria Hall
+│   ├── Odd Fellows' Hall
+│   ├── School of Arts
+│   ├── Schools of Arts
+│   └── Waudby's Hall
 └── Lodges
 
 
@@ -19,6 +61,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 11
+  Total nodes in theme: 53
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

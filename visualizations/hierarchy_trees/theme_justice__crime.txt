@@ -3,45 +3,130 @@ THEMATIC GROUPING: Justice & Crime
 
 Justice & Crime
 ├── Court buildings
+│   ├── Courthouse
+│   └── Katoomba Court
 ├── Courts
+│   ├── Court
+│   ├── Katoomba Court
+│   ├── Licensing Court
+│   ├── Police court
+│   └── Supreme Court
 ├── Crimes
 │   ├── Other crimes
+│   │   ├── Bigamy
+│   │   └── Bigamy
+│   ├── Other crimes
+│   │   ├── Bigamy
 │   │   └── Bigamy
 │   ├── Property crimes
+│   │   ├── Theft
+│   │   └── Theft
+│   ├── Property crimes
+│   │   ├── Theft
 │   │   └── Theft
 │   ├── Social order offences
 │   │   ├── Desertion
+│   │   ├── Desertion
+│   │   ├── Drunkeness
 │   │   ├── Drunkenness (crime)
 │   │   └── Gambling
+│   ├── Social order offences
+│   │   ├── Desertion
+│   │   ├── Desertion
+│   │   ├── Drunkeness
+│   │   ├── Drunkenness (crime)
+│   │   └── Gambling
+│   ├── Violent crimes
+│   │   ├── Assault
+│   │   ├── Assault
+│   │   ├── Fighting
+│   │   ├── Fighting
+│   │   ├── Rape
+│   │   ├── Rape
+│   │   ├── Sexual violence
+│   │   └── Sexual violence
 │   └── Violent crimes
 │       ├── Assault
+│       ├── Assault
+│       ├── Fighting
 │       ├── Fighting
 │       ├── Rape
+│       ├── Rape
+│       ├── Sexual violence
 │       └── Sexual violence
 ├── Crimes
 │   ├── Other crimes
+│   │   ├── Bigamy
+│   │   └── Bigamy
+│   ├── Other crimes
+│   │   ├── Bigamy
 │   │   └── Bigamy
 │   ├── Property crimes
+│   │   ├── Theft
+│   │   └── Theft
+│   ├── Property crimes
+│   │   ├── Theft
 │   │   └── Theft
 │   ├── Social order offences
 │   │   ├── Desertion
+│   │   ├── Desertion
+│   │   ├── Drunkeness
 │   │   ├── Drunkenness (crime)
 │   │   └── Gambling
+│   ├── Social order offences
+│   │   ├── Desertion
+│   │   ├── Desertion
+│   │   ├── Drunkeness
+│   │   ├── Drunkenness (crime)
+│   │   └── Gambling
+│   ├── Violent crimes
+│   │   ├── Assault
+│   │   ├── Assault
+│   │   ├── Fighting
+│   │   ├── Fighting
+│   │   ├── Rape
+│   │   ├── Rape
+│   │   ├── Sexual violence
+│   │   └── Sexual violence
 │   └── Violent crimes
 │       ├── Assault
+│       ├── Assault
+│       ├── Fighting
 │       ├── Fighting
 │       ├── Rape
+│       ├── Rape
+│       ├── Sexual violence
 │       └── Sexual violence
 ├── Law enforcement
+│   ├── Constable John Hamilton
+│   ├── Constable O'Reilly
+│   ├── Constable Orr
+│   ├── Constable White
+│   ├── Police
+│   ├── Police
+│   ├── Senior-Constable Illingworth
+│   ├── Senior-Constable Thorncroft
+│   └── Sergeant Thorndyke
 ├── Legal events
+│   ├── Bankruptcy
+│   ├── Court cases
+│   └── Divorce
 ├── Legal officials
+│   ├── Coroner
+│   ├── Coroner Lethbridge
+│   └── Coroners
 ├── Legal outcomes
 │   ├── Bankruptcy
+│   ├── Bankruptcy
+│   ├── Divorce
 │   └── Divorce
 ├── Legal outcomes
 │   ├── Bankruptcy
+│   ├── Bankruptcy
+│   ├── Divorce
 │   └── Divorce
 ├── Legal proceedings
+│   └── Court cases
 ├── Police station
 └── Victims of crime & violence
     └── Widows
@@ -52,6 +137,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 44
+  Total nodes in theme: 129
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

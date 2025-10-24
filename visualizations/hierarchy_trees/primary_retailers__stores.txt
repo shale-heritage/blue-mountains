@@ -1,0 +1,15 @@
+PRIMARY FACET: Retailers & stores
+================================================================================
+
+Retailers & stores
+├── Douglas & Co.
+├── Nimmo's
+├── Peckman Bros
+├── Stores
+└── Tabrett and Co.
+
+
+STATISTICS:
+  Total nodes in facet: 6
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

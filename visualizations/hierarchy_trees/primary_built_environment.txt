@@ -4,183 +4,38 @@ PRIMARY FACET: Built Environment
 Built Environment
 ├── Accommodation and hospitality venues
 │   ├── Boarding houses
-│   │   ├── Boarding house
-│   │   └── Orama Boarding House
 │   ├── Cottages
 │   │   └── Cottage
 │   ├── Dwellings
 │   │   └── Miners' dwellings
 │   ├── Hotels
-│   │   ├── Allen's Hotel
-│   │   ├── Belgravia Hotel
-│   │   ├── Brown's Hotel
-│   │   ├── Carrington Hotel
-│   │   ├── Centennial Hotel
-│   │   ├── Comet Hotel
-│   │   ├── Delaney's Hotel
-│   │   ├── Falls Hotel
-│   │   ├── Family Hotel
-│   │   │   └── Katoomba Family Hotel
-│   │   ├── Fryer's Family Hotel
-│   │   ├── Grand Hotel
-│   │   ├── Grand Hotel (Sydney)
-│   │   ├── Great Western Hotel
-│   │   ├── Hoffman's House
-│   │   ├── Hotel
-│   │   ├── Hotel Wentworth
-│   │   ├── Hydora House Hotel
-│   │   ├── Imperial Hotel
-│   │   ├── Katoomba Family Hotel
-│   │   ├── Katoomba Hotel
-│   │   ├── Leura Hotel
-│   │   ├── Megalong Hotel
-│   │   ├── Montrose House
-│   │   ├── Mount Victoria Hotel
-│   │   ├── Mrs Long's Hotel
-│   │   ├── Oxford Hotel (Sydney)
-│   │   ├── Railway Hotel
-│   │   └── Wentworth Falls Hotel
 │   ├── Public houses
-│   │   └── Public house
 │   └── Stables
 │       └── Stable
 ├── Accommodation buildings
 │   ├── Boarding houses
-│   │   ├── Boarding house
-│   │   └── Orama Boarding House
 │   ├── Dwellings
 │   │   └── Miners' dwellings
 │   └── Hotels
-│       ├── Allen's Hotel
-│       ├── Belgravia Hotel
-│       ├── Brown's Hotel
-│       ├── Carrington Hotel
-│       ├── Centennial Hotel
-│       ├── Comet Hotel
-│       ├── Delaney's Hotel
-│       ├── Falls Hotel
-│       ├── Family Hotel
-│       │   └── Katoomba Family Hotel
-│       ├── Fryer's Family Hotel
-│       ├── Grand Hotel
-│       ├── Grand Hotel (Sydney)
-│       ├── Great Western Hotel
-│       ├── Hoffman's House
-│       ├── Hotel
-│       ├── Hotel Wentworth
-│       ├── Hydora House Hotel
-│       ├── Imperial Hotel
-│       ├── Katoomba Family Hotel
-│       ├── Katoomba Hotel
-│       ├── Leura Hotel
-│       ├── Megalong Hotel
-│       ├── Montrose House
-│       ├── Mount Victoria Hotel
-│       ├── Mrs Long's Hotel
-│       ├── Oxford Hotel (Sydney)
-│       ├── Railway Hotel
-│       └── Wentworth Falls Hotel
 ├── Civic buildings
-│   ├── Council Chambers
-│   ├── Council buildings
-│   │   └── Council Chambers
-│   ├── Court buildings
-│   │   ├── Courthouse
-│   │   └── Katoomba Court
-│   ├── Police facilities
-│   │   └── Police station
-│   └── Postal facilities
-│       └── Post office
 ├── Commercial buildings
 │   ├── Bank
 │   ├── Store
 │   └── Stores
 ├── Community buildings
-│   └── Halls
-│       ├── Clarke's Hall
-│       ├── Katoomba School of Arts
-│       ├── Masonic Hall
-│       ├── Mount Victoria Hall
-│       ├── Odd Fellows' Hall
-│       ├── School of Arts
-│       │   └── Katoomba School of Arts
-│       ├── Schools of Arts
-│       │   ├── Katoomba School of Arts
-│       │   └── School of Arts
-│       │       └── Katoomba School of Arts
-│       └── Waudby's Hall
 ├── Educational buildings
-│   └── Schools
-│       ├── Katoomba Public School
-│       ├── Katoomba Superior Public School
-│       ├── Megalong Valley School
-│       ├── Mount Victoria School
-│       └── School
-│           ├── Katoomba Public School
-│           ├── Katoomba Superior Public School
-│           ├── Megalong Valley School
-│           ├── Mount Victoria School
-│           ├── School of Arts
-│           │   └── Katoomba School of Arts
-│           └── Sunday school
 ├── Hospitality venues
 │   └── Pubs
-│       └── Pub
 ├── Infrastructure
 │   ├── Mining infrastructure
-│   │   ├── Colliery
-│   │   └── Tramway
 │   ├── Transport infrastructure
 │   │   ├── Railway
-│   │   │   ├── Great Western Railway
-│   │   │   ├── Railway Hotel
-│   │   │   ├── Railway commission
-│   │   │   ├── Railway infrastructure
-│   │   │   │   ├── Katoomba station
-│   │   │   │   └── Zig Zag
-│   │   │   └── Railway operations
-│   │   │       └── Tourist trains
 │   │   └── Roads
-│   │       ├── Jenolan Caves Road
-│   │       ├── Jenolan Caves road
-│   │       ├── Nellie's Glen Road
-│   │       ├── Nellie's Glen Track
-│   │       └── Nellie's Glen track
 │   └── Utilities
-│       ├── Gas
-│       └── Sewerage
 └── Religious buildings
-    ├── Church
-    │   ├── Congregational Church
-    │   │   └── Katoomba Congregational Church
-    │   ├── Katoomba Congregational Church
-    │   ├── Methodist Church
-    │   ├── Roman Catholic Church
-    │   ├── St Hilda's Church
-    │   └── Wesleyan Church
-    ├── Churches
-    │   ├── Church
-    │   │   ├── Congregational Church
-    │   │   │   └── Katoomba Congregational Church
-    │   │   ├── Katoomba Congregational Church
-    │   │   ├── Methodist Church
-    │   │   ├── Roman Catholic Church
-    │   │   ├── St Hilda's Church
-    │   │   └── Wesleyan Church
-    │   ├── Congregational Church
-    │   │   └── Katoomba Congregational Church
-    │   ├── Katoomba Congregational Church
-    │   ├── Methodist Church
-    │   ├── Roman Catholic Church
-    │   ├── St Hilda's Church
-    │   └── Wesleyan Church
-    ├── Katoomba Congregational Church
-    ├── Methodist Church
-    ├── Roman Catholic Church
-    └── St Hilda's Church
 
 
 STATISTICS:
-  Total nodes in facet: 177
+  Total nodes in facet: 32
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

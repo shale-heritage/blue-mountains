@@ -11,8 +11,20 @@ Transport & Infrastructure
 ├── Mining transport
 │   └── Tramway
 ├── Railway
+│   ├── Great Western Railway
+│   ├── Railway Hotel
+│   ├── Railway commission
+│   ├── Railway infrastructure
+│   └── Railway operations
 ├── Roads
+│   ├── Jenolan Caves Road
+│   ├── Jenolan Caves road
+│   ├── Nellie's Glen Road
+│   ├── Nellie's Glen Track
+│   └── Nellie's Glen track
 └── Utilities
+    ├── Gas
+    └── Sewerage
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -20,6 +32,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 12
+  Total nodes in theme: 24
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -7,11 +7,32 @@ Arts & Culture
 ├── Cultural activities
 │   └── Advertising
 ├── Cultural events
+│   ├── Concert
+│   ├── Concerts
+│   ├── Corroboree
+│   ├── Debate
+│   └── Debating
 ├── Cultural organizations
 ├── Cultural venues
 │   └── Halls
+│       ├── Clarke's Hall
+│       ├── Katoomba School of Arts
+│       ├── Masonic Hall
+│       ├── Mount Victoria Hall
+│       ├── Odd Fellows' Hall
+│       ├── School of Arts
+│       ├── Schools of Arts
+│       └── Waudby's Hall
 └── Cultural venues
     └── Halls
+        ├── Clarke's Hall
+        ├── Katoomba School of Arts
+        ├── Masonic Hall
+        ├── Mount Victoria Hall
+        ├── Odd Fellows' Hall
+        ├── School of Arts
+        ├── Schools of Arts
+        └── Waudby's Hall
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -19,6 +40,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 11
+  Total nodes in theme: 32
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

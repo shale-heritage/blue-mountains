@@ -1,0 +1,20 @@
+PRIMARY FACET: Cultural societies
+================================================================================
+
+Cultural societies
+├── Chess and Draughts Club
+├── Horticulture society
+├── Katoomba Amateur Dramatic Club
+├── Katoomba School of Arts
+├── School of Arts
+│   └── Katoomba School of Arts
+└── Schools of Arts
+    ├── Katoomba School of Arts
+    └── School of Arts
+        └── Katoomba School of Arts
+
+
+STATISTICS:
+  Total nodes in facet: 11
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

@@ -1,0 +1,22 @@
+PRIMARY FACET: Schools
+================================================================================
+
+Schools
+├── Katoomba Public School
+├── Katoomba Superior Public School
+├── Megalong Valley School
+├── Mount Victoria School
+└── School
+    ├── Katoomba Public School
+    ├── Katoomba Superior Public School
+    ├── Megalong Valley School
+    ├── Mount Victoria School
+    ├── School of Arts
+    │   └── Katoomba School of Arts
+    └── Sunday school
+
+
+STATISTICS:
+  Total nodes in facet: 13
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

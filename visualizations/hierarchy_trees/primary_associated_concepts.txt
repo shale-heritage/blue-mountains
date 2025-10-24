@@ -11,10 +11,9 @@ Associated Concepts
 │   └── Weather
 └── Social & economic concepts
     └── Unemployment
-        └── Unemployment relief
 
 
 STATISTICS:
-  Total nodes in facet: 11
+  Total nodes in facet: 10
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

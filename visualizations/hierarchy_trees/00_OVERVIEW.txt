@@ -15,23 +15,44 @@ PRIMARY FACETS (Form-Based, Getty AAT Compatible):
   - Agents
     File: primary_agents.txt
 
-  - Alcohol consumption & behaviour
-    File: primary_alcohol_consumption__behaviour.txt
-
   - Associated Concepts
     File: primary_associated_concepts.txt
+
+  - Athletic clubs
+    File: primary_athletic_clubs.txt
 
   - Built Environment
     File: primary_built_environment.txt
 
+  - Carrington
+    File: primary_carrington.txt
+
+  - Caves & geological features
+    File: primary_caves__geological_features.txt
+
+  - Churches
+    File: primary_churches.txt
+
   - Civic organisations
     File: primary_civic_organisations.txt
 
-  - Crimes
-    File: primary_crimes.txt
+  - Coroners
+    File: primary_coroners.txt
 
-  - Cultural identity & heritage
-    File: primary_cultural_identity__heritage.txt
+  - Council buildings
+    File: primary_council_buildings.txt
+
+  - Councils
+    File: primary_councils.txt
+
+  - Court
+    File: primary_court.txt
+
+  - Cricket
+    File: primary_cricket.txt
+
+  - Cultural societies
+    File: primary_cultural_societies.txt
 
   - Environmental conditions
     File: primary_environmental_conditions.txt
@@ -39,62 +60,146 @@ PRIMARY FACETS (Form-Based, Getty AAT Compatible):
   - Events
     File: primary_events.txt
 
-  - Health conditions
-    File: primary_health_conditions.txt
+  - Family Hotel
+    File: primary_family_hotel.txt
+
+  - Financial institutions
+    File: primary_financial_institutions.txt
+
+  - Football
+    File: primary_football.txt
+
+  - Gullies
+    File: primary_gullies.txt
+
+  - Hartley Vale
+    File: primary_hartley_vale.txt
 
   - Historical periods & events
     File: primary_historical_periods__events.txt
 
-  - Information Forms
-    File: primary_information_forms.txt
+  - Hospitality businesses
+    File: primary_hospitality_businesses.txt
 
-  - Information objects
-    File: primary_information_objects.txt
+  - Hotelliers
+    File: primary_hotelliers.txt
+
+  - Katoomba South
+    File: primary_katoomba_south.txt
+
+  - Labour organizations
+    File: primary_labour_organizations.txt
 
   - Legal & regulatory frameworks
     File: primary_legal__regulatory_frameworks.txt
 
-  - Legal outcomes
-    File: primary_legal_outcomes.txt
+  - Legal documents
+    File: primary_legal_documents.txt
 
-  - Marginalised groups
-    File: primary_marginalised_groups.txt
+  - Liquor merchants
+    File: primary_liquor_merchants.txt
+
+  - Lithgow
+    File: primary_lithgow.txt
+
+  - Lodges
+    File: primary_lodges.txt
 
   - Materials
     File: primary_materials.txt
 
-  - Military events
-    File: primary_military_events.txt
+  - Mixed alcoholic beverages
+    File: primary_mixed_alcoholic_beverages.txt
 
-  - Mining activities
-    File: primary_mining_activities.txt
+  - Mountain features
+    File: primary_mountain_features.txt
 
-  - Mining workforce
-    File: primary_mining_workforce.txt
+  - Other government bodies
+    File: primary_other_government_bodies.txt
 
   - Parent Tag
     File: primary_parent_tag.txt
 
+  - Performance groups
+    File: primary_performance_groups.txt
+
   - Places
     File: primary_places.txt
+
+  - Police
+    File: primary_police.txt
+
+  - Police facilities
+    File: primary_police_facilities.txt
 
   - Port Kembla
     File: primary_port_kembla.txt
 
-  - Racial stereotyping & performance
-    File: primary_racial_stereotyping__performance.txt
+  - Postal authorities
+    File: primary_postal_authorities.txt
+
+  - Postal employees
+    File: primary_postal_employees.txt
+
+  - Postal facilities
+    File: primary_postal_facilities.txt
+
+  - Railway authorities
+    File: primary_railway_authorities.txt
+
+  - Railway infrastructure
+    File: primary_railway_infrastructure.txt
+
+  - Railway operations
+    File: primary_railway_operations.txt
+
+  - Religious education
+    File: primary_religious_education.txt
 
   - Religious organisations
     File: primary_religious_organisations.txt
 
+  - Religious social movements
+    File: primary_religious_social_movements.txt
+
+  - Retailers & stores
+    File: primary_retailers__stores.txt
+
+  - Retailers and stores
+    File: primary_retailers_and_stores.txt
+
+  - Rifle clubs
+    File: primary_rifle_clubs.txt
+
+  - Rifle reserves
+    File: primary_rifle_reserves.txt
+
+  - Schools
+    File: primary_schools.txt
+
+  - Shale mining
+    File: primary_shale_mining.txt
+
+  - South Katoomba
+    File: primary_south_katoomba.txt
+
+  - Spirits
+    File: primary_spirits.txt
+
   - Sunny Corner
     File: primary_sunny_corner.txt
 
-  - Weather & climate
-    File: primary_weather__climate.txt
+  - Tennis
+    File: primary_tennis.txt
 
-  - Wentworth Falls
-    File: primary_wentworth_falls.txt
+  - Tennis clubs
+    File: primary_tennis_clubs.txt
+
+  - Transport & logistics businesses
+    File: primary_transport__logistics_businesses.txt
+
+  - Valleys
+    File: primary_valleys.txt
 
 
 THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
@@ -153,6 +258,9 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Tourism & Accommodation
     File: theme_tourism__accommodation.txt
 
+  - Towns
+    File: theme_towns.txt
+
   - Transport & Infrastructure
     File: theme_transport__infrastructure.txt
 
@@ -182,20 +290,20 @@ This enables:
 OVERALL STATISTICS:
 
 Primary Facets:
-  - Top-level facets: 29
-  - Total nodes: 522
-  - Total relationships: 682
-  - Parent nodes: 209
-  - Leaf nodes: 313
+  - Top-level facets: 64
+  - Total nodes: 368
+  - Total relationships: 366
+  - Parent nodes: 128
+  - Leaf nodes: 240
 
 Thematic Groupings:
-  - Top-level themes: 20
-  - Total nodes: 187
-  - Total relationships: 238
-  - Parent nodes: 68
-  - Leaf nodes: 119
+  - Top-level themes: 21
+  - Total nodes: 409
+  - Total relationships: 555
+  - Parent nodes: 129
+  - Leaf nodes: 280
 
-TOTAL HIERARCHY RELATIONSHIPS: 920
+TOTAL HIERARCHY RELATIONSHIPS: 921
 
 ================================================================================
 Generated: 2025-10-20

@@ -1,0 +1,14 @@
+PRIMARY FACET: Spirits
+================================================================================
+
+Spirits
+├── Brandy
+├── Gin
+├── Rum
+└── Whisky
+
+
+STATISTICS:
+  Total nodes in facet: 5
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

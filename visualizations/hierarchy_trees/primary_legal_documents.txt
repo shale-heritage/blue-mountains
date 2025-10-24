@@ -1,0 +1,14 @@
+PRIMARY FACET: Legal documents
+================================================================================
+
+Legal documents
+├── Legislation
+│   └── Licensing Act
+└── Licenses
+    └── Publican's License
+
+
+STATISTICS:
+  Total nodes in facet: 5
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

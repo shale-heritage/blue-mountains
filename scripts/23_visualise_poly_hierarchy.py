@@ -66,6 +66,7 @@ def build_hierarchy_tree(csv_path: Path) -> Tuple[Dict[str, List[str]], Dict[str
     primary = defaultdict(list)
     thematic = defaultdict(list)
     thematic_roots = set()  # Track tags that are roots of thematic groupings
+    thematic_nodes = set()  # Track ALL tags that are part of thematic trees
 
     # First pass: identify thematic grouping roots
     with open(csv_path, 'r', encoding='utf-8') as f:
@@ -74,15 +75,24 @@ def build_hierarchy_tree(csv_path: Path) -> Tuple[Dict[str, List[str]], Dict[str
             if row['action'] == 'hierarchy':
                 if 'parent=(thematic grouping)' in row['notes']:
                     thematic_roots.add(row['new_tag'])
+                    thematic_nodes.add(row['new_tag'])
 
-    # Second pass: build hierarchies
+    # Second pass: identify all nodes with THEMATIC markers
+    with open(csv_path, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row['action'] == 'hierarchy':
+                tag_name = row['new_tag']
+                parent, is_thematic = parse_parent_from_notes(row['notes'])
+
+                if is_thematic:
+                    thematic_nodes.add(tag_name)
+
+    # Third pass: build hierarchies
     # A relationship is THEMATIC if:
     # 1. Row has "- THEMATIC" marker, OR
-    # 2. Parent is a thematic grouping root
+    # 2. Parent is ANY node in the thematic tree (not just roots)
     # Otherwise it's PRIMARY
-    #
-    # Note: With complete "- THEMATIC" markers in CSV, we don't need
-    # recursive parent tracking - each relationship is explicitly marked.
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -91,7 +101,7 @@ def build_hierarchy_tree(csv_path: Path) -> Tuple[Dict[str, List[str]], Dict[str
                 parent, is_thematic = parse_parent_from_notes(row['notes'])
 
                 if parent:
-                    if is_thematic or parent in thematic_roots:
+                    if is_thematic or parent in thematic_nodes:
                         thematic[parent].append(tag_name)
                     else:
                         primary[parent].append(tag_name)

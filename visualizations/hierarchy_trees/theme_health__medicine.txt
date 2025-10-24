@@ -4,21 +4,39 @@ THEMATIC GROUPING: Health & Medicine
 Health & Medicine
 ├── Health conditions
 │   ├── Death
+│   │   └── Death notice
+│   ├── Disease
 │   ├── Disease
 │   ├── Illness
+│   ├── Illness
+│   ├── Injury
 │   └── Injury
 ├── Health conditions
 │   ├── Death
+│   │   └── Death notice
+│   ├── Disease
 │   ├── Disease
 │   ├── Illness
+│   ├── Illness
+│   ├── Injury
 │   └── Injury
 ├── Health-related events
 │   ├── Accident
+│   │   └── Mining accidents
+│   │       └── Mount Kembla Disaster
 │   └── Mining accidents
+│       └── Mount Kembla Disaster
 ├── Health-related events
 │   ├── Accident
+│   │   └── Mining accidents
+│   │       └── Mount Kembla Disaster
 │   └── Mining accidents
+│       └── Mount Kembla Disaster
 └── Medical professionals
+    ├── Dr Morgan
+    ├── Dr Prangley
+    ├── Dr Spark
+    └── Dr Watkins
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -26,6 +44,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 18
+  Total nodes in theme: 36
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

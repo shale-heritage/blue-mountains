@@ -1,0 +1,18 @@
+PRIMARY FACET: Performance groups
+================================================================================
+
+Performance groups
+├── Bands
+│   ├── Band
+│   │   └── Katoomba band
+│   └── Katoomba band
+├── Choirs
+│   └── Choir
+└── Minstrel troupes
+    └── Katoomba Amateur Minstrels
+
+
+STATISTICS:
+  Total nodes in facet: 9
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

@@ -3,16 +3,10 @@ PRIMARY FACET: Legal & regulatory frameworks
 
 Legal & regulatory frameworks
 ├── Licensing
-│   ├── Hotel licensing
-│   ├── Licensing Act
-│   ├── Licensing Court
-│   ├── Licensing inspector
-│   ├── Liquor licensing
-│   └── Publican's licensing
 └── Licensing Act
 
 
 STATISTICS:
-  Total nodes in facet: 9
+  Total nodes in facet: 3
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

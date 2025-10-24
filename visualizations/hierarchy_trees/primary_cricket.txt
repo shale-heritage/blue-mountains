@@ -1,0 +1,16 @@
+PRIMARY FACET: Cricket
+================================================================================
+
+Cricket
+├── Cricket clubs
+│   ├── Katoomba Cricket Club
+│   └── Megalong Cricket Club
+├── Girls' cricket
+├── Katoomba Cricket Club
+└── Megalong Cricket Club
+
+
+STATISTICS:
+  Total nodes in facet: 7
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

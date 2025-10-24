@@ -1,0 +1,28 @@
+PRIMARY FACET: Lodges
+================================================================================
+
+Lodges
+├── Druid's Lodge
+├── Druids
+│   ├── Druid's Lodge
+│   └── U.A.O.D.
+├── Freemasons
+├── Independent Order of Odd Fellows
+├── Independent lodges
+│   └── Mountaineer Lodge
+├── Masonic Hall
+├── Masons
+│   └── Masonic Hall
+├── Mountaineer Lodge
+├── Odd Fellows
+│   ├── Odd Fellows' Hall
+│   └── Oddfellows
+├── Odd Fellows' Hall
+└── United Ancient Order of Druids
+    └── Druid's Lodge (local lodge)
+
+
+STATISTICS:
+  Total nodes in facet: 19
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv
