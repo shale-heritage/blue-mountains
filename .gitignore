@@ -19,6 +19,7 @@ __pycache__/
 # Data files (may contain sensitive information)
 data/*.json
 data/*.csv
+data/*.backup*
 backups/*.json
 backups/*.csv
 
