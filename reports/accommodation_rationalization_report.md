@@ -30,8 +30,8 @@
 
 - **Date:** 26 April 1890
 - **Publication:** Katoomba Times
-- **Proposed Tag:** `Hotel` | `Datoomba`
-- **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns > Datoomba
+- **Proposed Tag:** `Hotel` | `Katoomba`
+- **Hierarchy Path:** Built Environment > Buildings > Accommodation buildings > Hotels | Places > Towns > Katoomba
 
 **Snippet:**
 
