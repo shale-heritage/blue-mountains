@@ -56,6 +56,7 @@ Beer,Beer,hierarchy,parent=Alcoholic beverages
 Belgravia Hotel,Belgravia Hotel,hierarchy,parent=Hotels
 Bigamy,Bigamy,hierarchy,parent=Criminal events
 Bigamy,Bigamy,hierarchy,parent=Other crimes - THEMATIC
+Bashford,Bashford,hierarchy,parent=Hotelliers
 Biles,Biles,hierarchy,parent=Hotelliers
 Billiard,Billiard,hierarchy,parent=Sporting events
 Billiards,Billiards,hierarchy,parent=Sporting events
@@ -539,6 +540,7 @@ Mr Harry Eaton,Mr Harry Eaton,keep,Person names - likely different individuals (
 Mr Harry Edwards,Mr Harry Edwards,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Harry Peckman,Mr Harry Peckman,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Henry Crawford Brown,Mr Henry Crawford Brown,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr J. Hudson,Mr J. Hudson,hierarchy,parent=Hotelliers
 Mr J. Nimmo,Mr J. Nimmo,hierarchy,parent=Hotelliers
 Mr James Hughes,Mr James Hughes,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr James Hutchinson,Mr James Hutchinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
@@ -551,6 +553,7 @@ Mr John Meredith,Mr John Meredith,keep,Person names - likely different individua
 Mr John Waudby,Mr John Waudby,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr John Waudby’s selection (Top Camp),Mr John Waudby’s selection (Top Camp),keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Joseph Meredith,Mr Joseph Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Lindeman,Mr Lindeman,hierarchy,parent=Hotelliers
 Mr Manuel,Mr Manuel,hierarchy,parent=Hotelliers
 Mr N. Delaney,Mr N. Delaney,hierarchy,parent=Hotelliers
 Mr P. G. Whittall,Mr P. G. Whittall,hierarchy,parent=Hotelliers
@@ -989,6 +992,7 @@ Mrs Meredith,Mrs Meredith,hierarchy,parent=People - THEMATIC
 Mrs W Watson,Mrs W Watson,hierarchy,parent=People - THEMATIC
 Mrs Wilson,Mrs Wilson,hierarchy,parent=People - THEMATIC
 Families,Families,hierarchy,parent=People
+Delaney family,Delaney family,hierarchy,parent=Families
 Greenbank family,Greenbank family,hierarchy,parent=Families
 Katoomba South,Katoomba South,hierarchy,parent=Katoomba
 Legal concepts,Legal concepts,hierarchy,parent=Associated Concepts
