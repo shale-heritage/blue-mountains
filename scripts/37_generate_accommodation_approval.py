@@ -35,16 +35,23 @@ def parse_report():
             date_match = re.search(r'\*\*Date:\*\* (.+?)\n', item_content)
             pub_match = re.search(r'\*\*Publication:\*\* (.+?)\n', item_content)
             tags_match = re.search(r'\*\*Proposed Tag:\*\* (.+?)\n', item_content)
+            hierarchy_match = re.search(r'\*\*Hierarchy Path:\*\* (.+?)\n', item_content)
+            snippet_match = re.search(r'\*\*Snippet:\*\*\n\n> (.+?)\n\n', item_content, re.DOTALL)
             rationale_match = re.search(r'\*\*Rationale:\*\* (.+?)(?:\n|$)', item_content)
 
             title = title_match.group(1).strip() if title_match else "Unknown"
             date = date_match.group(1).strip() if date_match else "Unknown"
             publication = pub_match.group(1).strip() if pub_match else "Unknown"
             proposed_tags = tags_match.group(1).strip() if tags_match else "None"
+            hierarchy_paths = hierarchy_match.group(1).strip() if hierarchy_match else "Unknown"
+            snippet = snippet_match.group(1).strip() if snippet_match else "No snippet available"
             rationale = rationale_match.group(1).strip() if rationale_match else "No rationale"
 
             # Clean up proposed tags - split by | and clean
             tag_list = [t.strip().strip('`') for t in proposed_tags.split('|')]
+
+            # Clean up hierarchy paths - split by | and clean
+            hierarchy_list = [h.strip() for h in hierarchy_paths.split('|')]
 
             parsed_items.append({
                 'number': number,
@@ -52,6 +59,8 @@ def parse_report():
                 'date': date,
                 'publication': publication,
                 'tags': tag_list,
+                'hierarchies': hierarchy_list,
+                'snippet': snippet,
                 'rationale': rationale
             })
 
@@ -81,6 +90,13 @@ def generate_approval_document(items):
         f.write("**Example:**\n")
         f.write("```\n")
         f.write("### 1. Some Article Title\n")
+        f.write("**Proposed new tags with full taxonomy:**\n")
+        f.write("- `Carrington Hotel`\n")
+        f.write("  **Taxonomy:** Built Environment > Buildings > Hotels > Carrington Hotel\n")
+        f.write("\n")
+        f.write("**Evidence from source:**\n")
+        f.write("> we then went to the Carrington Hotel; I called accused...\n")
+        f.write("\n")
         f.write("[A] APPROVE  \n")
         f.write("[ ] MODIFY  \n")
         f.write("[ ] REJECT\n")
@@ -95,10 +111,15 @@ def generate_approval_document(items):
             f.write(f"**Publication:** {item['publication']}\n\n")
 
             f.write(f"**Current tags:** Remove `Accommodation`\n\n")
-            f.write(f"**Proposed new tags:**\n")
-            for tag in item['tags']:
-                f.write(f"- `{tag}`\n")
-            f.write(f"\n")
+            f.write(f"**Proposed new tags with full taxonomy:**\n\n")
+
+            # Write tags with their hierarchy paths
+            for tag, hierarchy in zip(item['tags'], item['hierarchies']):
+                f.write(f"- `{tag}`  \n")
+                f.write(f"  **Taxonomy:** {hierarchy}\n\n")
+
+            f.write(f"**Evidence from source:**\n\n")
+            f.write(f"> {item['snippet']}\n\n")
 
             f.write(f"**Rationale:** {item['rationale']}\n\n")
 
