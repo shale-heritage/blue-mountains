@@ -3,10 +3,46 @@ THEMATIC GROUPING: Environment & Weather
 
 Environment & Weather
 ├── Animals
+│   ├── Animal
+│   ├── Cattle
+│   ├── Dogs
+│   └── Horses
 ├── Natural features
+│   ├── Caves & geological features
+│   │   └── Jenolan Caves
+│   │       ├── Jenolan Cave
+│   │       ├── Jenolan Caves Road
+│   │       └── Jenolan Caves road
+│   ├── Gullies
+│   │   └── Nellie's Glen
+│   │       ├── Nellie's Glen Road
+│   │       ├── Nellie's Glen Shale Mine
+│   │       ├── Nellie's Glen Track
+│   │       └── Nellie's Glen track
+│   ├── Mountain features
+│   │   ├── Mountain feature
+│   │   ├── Narrow Neck
+│   │   └── Ruined Castle
+│   │       └── Ruined Castle Shale Mine
+│   ├── Valleys
+│   │   ├── Jamieson Valley
+│   │   ├── Kanimbla Valley
+│   │   ├── Megalong Valley
+│   │   │   └── Megalong Valley School
+│   │   └── Valley
+│   └── Waterfalls
+│       ├── Katoomba Falls
+│       ├── Leura Falls
+│       ├── Minnehaha
+│       └── Waterfall
 ├── Natural resources
 │   ├── Coal
 │   └── Shale mines
+│       ├── Katoomba Shale Mine
+│       ├── Megalong Shale Mines
+│       ├── Nellie's Glen Shale Mine
+│       ├── Ruined Castle Shale Mine
+│       └── Shale mine
 └── Weather & climate
     └── Weather
 
@@ -16,6 +52,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 8
+  Total nodes in theme: 44
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

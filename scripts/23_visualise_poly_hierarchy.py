@@ -52,7 +52,7 @@ def parse_parent_from_notes(notes: str) -> Tuple[str, bool]:
     return None, False
 
 
-def build_hierarchy_tree(csv_path: Path) -> Tuple[Dict[str, List[str]], Dict[str, List[str]]]:
+def build_hierarchy_tree(csv_path: Path) -> Tuple[Dict[str, List[str]], Dict[str, List[str]], Dict[str, List[str]]]:
     """
     Build parent-child mappings from CSV.
 
@@ -68,11 +68,14 @@ def build_hierarchy_tree(csv_path: Path) -> Tuple[Dict[str, List[str]], Dict[str
         csv_path: Path to tag_map_consolidated.csv
 
     Returns:
-        Tuple of (primary_hierarchies, thematic_hierarchies)
-        Each is a dict mapping parent -> list of children
+        Tuple of (primary_hierarchies, thematic_hierarchies, combined_hierarchies)
+        - primary: Dict mapping parent -> list of children (primary relationships only)
+        - thematic: Dict mapping parent -> list of children (thematic relationships only)
+        - combined: Dict mapping parent -> list of children (all relationships merged)
     """
     primary = defaultdict(list)
     thematic = defaultdict(list)
+    combined = defaultdict(list)
 
     # Single pass: classify each relationship individually
     with open(csv_path, 'r', encoding='utf-8') as f:
@@ -88,7 +91,18 @@ def build_hierarchy_tree(csv_path: Path) -> Tuple[Dict[str, List[str]], Dict[str
                     else:
                         primary[parent].append(tag_name)
 
-    return primary, thematic
+                    # Add to combined hierarchy (for mixed traversal in thematic trees)
+                    combined[parent].append(tag_name)
+
+    # Deduplicate children lists (handles duplicate CSV rows with different annotations)
+    for parent in primary:
+        primary[parent] = list(dict.fromkeys(primary[parent]))  # Preserves order
+    for parent in thematic:
+        thematic[parent] = list(dict.fromkeys(thematic[parent]))
+    for parent in combined:
+        combined[parent] = list(dict.fromkeys(combined[parent]))
+
+    return primary, thematic, combined
 
 
 def identify_top_level_facets(hierarchies: Dict[str, List[str]]) -> List[str]:
@@ -240,10 +254,11 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"Reading hierarchy data from: {csv_path}")
-    primary, thematic = build_hierarchy_tree(csv_path)
+    primary, thematic, combined = build_hierarchy_tree(csv_path)
 
     print(f"✓ Loaded {len(primary)} primary parent-child relationships")
     print(f"✓ Loaded {len(thematic)} thematic parent-child relationships")
+    print(f"✓ Built combined hierarchy for mixed traversal")
     print()
 
     # ========================================================================
@@ -304,9 +319,11 @@ def main():
     print()
 
     # Generate tree for each thematic grouping
+    # Use combined hierarchy to traverse both thematic AND primary relationships
+    # This ensures thematic trees show full depth (e.g., Community institutions -> Civic buildings -> Court buildings)
     for theme in thematic_groupings:
         print(f"Generating tree for: {theme}")
-        tree = generate_facet_tree(theme, thematic)
+        tree = generate_facet_tree(theme, combined)
 
         # Save to file
         safe_filename = re.sub(r'[^\w\s-]', '', theme).replace(' ', '_').lower()

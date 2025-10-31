@@ -3,6 +3,7 @@ PRIMARY FACET: Places
 
 Places
 ├── Mining districts
+│   ├── Mining district
 │   ├── Nellie's Glen
 │   │   ├── Nellie's Glen Road
 │   │   ├── Nellie's Glen Shale Mine
@@ -13,10 +14,19 @@ Places
 │   └── South Clifton
 │       └── South Clifton Tunnel Mine
 ├── Mining settlements
-│   └── Middle camp
+│   ├── Middle camp
+│   ├── Mining settlement
+│   ├── Nellie's Glen
+│   │   ├── Nellie's Glen Road
+│   │   ├── Nellie's Glen Shale Mine
+│   │   ├── Nellie's Glen Track
+│   │   └── Nellie's Glen track
+│   └── Ruined Castle
+│       └── Ruined Castle Shale Mine
 ├── Natural features
 │   ├── Caves & geological features
 │   │   └── Jenolan Caves
+│   │       ├── Jenolan Cave
 │   │       ├── Jenolan Caves Road
 │   │       └── Jenolan Caves road
 │   ├── Gullies
@@ -26,24 +36,29 @@ Places
 │   │       ├── Nellie's Glen Track
 │   │       └── Nellie's Glen track
 │   ├── Mountain features
+│   │   ├── Mountain feature
 │   │   ├── Narrow Neck
 │   │   └── Ruined Castle
 │   │       └── Ruined Castle Shale Mine
 │   ├── Valleys
 │   │   ├── Jamieson Valley
 │   │   ├── Kanimbla Valley
-│   │   └── Megalong Valley
-│   │       └── Megalong Valley School
+│   │   ├── Megalong Valley
+│   │   │   └── Megalong Valley School
+│   │   └── Valley
 │   └── Waterfalls
 │       ├── Katoomba Falls
 │       ├── Leura Falls
-│       └── Minnehaha
+│       ├── Minnehaha
+│       └── Waterfall
 ├── Reserves
 │   ├── Katoomba Rifle Reserves
 │   ├── Leura Reserve
+│   ├── Reserve
 │   ├── Rifle reserves
 │   │   ├── Katoomba Rifle Reserve
-│   │   └── Katoomba Rifle Reserves
+│   │   ├── Katoomba Rifle Reserves
+│   │   └── Rifle reserve
 │   ├── South Katoomba Reserve
 │   ├── Wentworth Falls Reserve
 │   └── Wentworth Falls Reserves
@@ -60,10 +75,11 @@ Places
     ├── Medlow
     ├── Megalong
     ├── Mount Victoria
-    └── Sydney
+    ├── Sydney
+    └── Town
 
 
 STATISTICS:
-  Total nodes in facet: 60
+  Total nodes in facet: 76
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

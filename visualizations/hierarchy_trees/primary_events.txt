@@ -9,6 +9,7 @@ Events
 │   │   └── Unlicensed sales
 │   ├── Assault
 │   ├── Bigamy
+│   ├── Criminal event
 │   ├── Desertion
 │   ├── Fighting
 │   ├── Rape
@@ -18,46 +19,62 @@ Events
 │   ├── Concert
 │   ├── Concerts
 │   ├── Corroboree
+│   ├── Cultural event
 │   ├── Debate
 │   └── Debating
 ├── Disasters & accidents
 │   ├── Accident
 │   │   └── Mining accidents
+│   │       ├── Mining accident
 │   │       └── Mount Kembla Disaster
+│   ├── Disasters & accident
 │   ├── Fire
 │   └── Port Kembla disaster
 ├── Economic events
+│   ├── Economic event
 │   ├── Mine closure
 │   └── Strike
 ├── Historical events
+│   ├── Historical event
 │   └── World War I
 ├── Legal events
 │   ├── Bankruptcy
 │   ├── Court cases
-│   └── Divorce
+│   ├── Divorce
+│   └── Legal event
 ├── Legal proceedings
-│   └── Court cases
+│   ├── Court cases
+│   └── Legal proceeding
 ├── Life events
 │   ├── Death
 │   │   └── Death notice
 │   ├── Funeral
+│   ├── Life event
 │   └── Marriage
+├── Mining events
+│   ├── Mine closure
+│   └── Mining accidents
+│       ├── Mining accident
+│       └── Mount Kembla Disaster
 ├── Political events
 │   ├── Election
 │   ├── Petition
+│   ├── Political event
 │   └── Public meeting
 ├── Social events
 │   ├── Ball
 │   ├── Concerts
 │   ├── Dance
 │   ├── Dances
-│   └── Flower show
+│   ├── Flower show
+│   └── Social event
 └── Sporting events
     ├── Athletics
     ├── Billiard
     ├── Billiards
     ├── Cricket
     │   ├── Cricket clubs
+    │   │   ├── Cricket club
     │   │   ├── Katoomba Cricket Club
     │   │   └── Megalong Cricket Club
     │   ├── Girls' cricket
@@ -65,15 +82,17 @@ Events
     │   └── Megalong Cricket Club
     ├── Football
     │   ├── Football clubs
+    │   │   ├── Football club
     │   │   └── Katoomba Football Club
     │   └── Katoomba Football Club
     ├── Rugby
     ├── Shooting
+    ├── Sporting event
     └── Tennis
         └── Katoomba Tennis Club
 
 
 STATISTICS:
-  Total nodes in facet: 70
+  Total nodes in facet: 89
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

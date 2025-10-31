@@ -8,8 +8,42 @@ Tourism & Accommodation
 │   └── Tourist trains
 └── Tourist attractions
     ├── Jenolan Caves
+    │   ├── Jenolan Cave
+    │   ├── Jenolan Caves Road
+    │   └── Jenolan Caves road
     ├── Natural features
+    │   ├── Caves & geological features
+    │   │   └── Jenolan Caves
+    │   │       ├── Jenolan Cave
+    │   │       ├── Jenolan Caves Road
+    │   │       └── Jenolan Caves road
+    │   ├── Gullies
+    │   │   └── Nellie's Glen
+    │   │       ├── Nellie's Glen Road
+    │   │       ├── Nellie's Glen Shale Mine
+    │   │       ├── Nellie's Glen Track
+    │   │       └── Nellie's Glen track
+    │   ├── Mountain features
+    │   │   ├── Mountain feature
+    │   │   ├── Narrow Neck
+    │   │   └── Ruined Castle
+    │   │       └── Ruined Castle Shale Mine
+    │   ├── Valleys
+    │   │   ├── Jamieson Valley
+    │   │   ├── Kanimbla Valley
+    │   │   ├── Megalong Valley
+    │   │   │   └── Megalong Valley School
+    │   │   └── Valley
+    │   └── Waterfalls
+    │       ├── Katoomba Falls
+    │       ├── Leura Falls
+    │       ├── Minnehaha
+    │       └── Waterfall
     └── Waterfalls
+        ├── Katoomba Falls
+        ├── Leura Falls
+        ├── Minnehaha
+        └── Waterfall
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -17,6 +51,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 9
+  Total nodes in theme: 43
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

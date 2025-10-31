@@ -5,9 +5,56 @@ Sport & Recreation
 ├── Recreation themes
 │   ├── Recreation for miners
 │   ├── Reserves
+│   │   ├── Katoomba Rifle Reserves
+│   │   ├── Leura Reserve
+│   │   ├── Reserve
+│   │   ├── Rifle reserves
+│   │   │   ├── Katoomba Rifle Reserve
+│   │   │   ├── Katoomba Rifle Reserves
+│   │   │   └── Rifle reserve
+│   │   ├── South Katoomba Reserve
+│   │   ├── Wentworth Falls Reserve
+│   │   └── Wentworth Falls Reserves
 │   └── Sports
 ├── Sporting events
+│   ├── Athletics
+│   ├── Billiard
+│   ├── Billiards
+│   ├── Cricket
+│   │   ├── Cricket clubs
+│   │   │   ├── Cricket club
+│   │   │   ├── Katoomba Cricket Club
+│   │   │   └── Megalong Cricket Club
+│   │   ├── Girls' cricket
+│   │   ├── Katoomba Cricket Club
+│   │   └── Megalong Cricket Club
+│   ├── Football
+│   │   ├── Football clubs
+│   │   │   ├── Football club
+│   │   │   └── Katoomba Football Club
+│   │   └── Katoomba Football Club
+│   ├── Rugby
+│   ├── Shooting
+│   ├── Sporting event
+│   └── Tennis
+│       └── Katoomba Tennis Club
 └── Sports clubs
+    ├── Athletic clubs
+    │   ├── Athletic club
+    │   └── Katoomba Athletic Club
+    ├── Cricket clubs
+    │   ├── Cricket club
+    │   ├── Katoomba Cricket Club
+    │   └── Megalong Cricket Club
+    ├── Football clubs
+    │   ├── Football club
+    │   └── Katoomba Football Club
+    ├── Rifle clubs
+    │   └── Rifle club
+    └── Tennis clubs
+        ├── Katoomba Tennis Club
+        ├── Lawn Tennis Club
+        └── Tennis club
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -15,6 +62,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 7
+  Total nodes in theme: 54
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

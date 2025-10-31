@@ -9,6 +9,7 @@ Built Environment
 │   ├── Cottages
 │   │   └── Cottage
 │   ├── Dwellings
+│   │   ├── Dwelling
 │   │   └── Miners' dwellings
 │   ├── Hotels
 │   │   ├── Allen's Hotel
@@ -49,6 +50,7 @@ Built Environment
 │   │   ├── Boarding house
 │   │   └── Orama Boarding House
 │   ├── Dwellings
+│   │   ├── Dwelling
 │   │   └── Miners' dwellings
 │   └── Hotels
 │       ├── Allen's Hotel
@@ -81,33 +83,43 @@ Built Environment
 │       ├── Railway Hotel
 │       └── Wentworth Falls Hotel
 ├── Civic buildings
+│   ├── Civic building
 │   ├── Council Chambers
 │   ├── Council buildings
-│   │   └── Council Chambers
+│   │   ├── Council Chambers
+│   │   └── Council building
 │   ├── Court buildings
+│   │   ├── Court building
 │   │   ├── Courthouse
 │   │   └── Katoomba Court
 │   ├── Police facilities
+│   │   ├── Police facility
 │   │   └── Police station
 │   └── Postal facilities
-│       └── Post office
+│       ├── Post office
+│       └── Postal facility
 ├── Commercial buildings
 │   ├── Bank
+│   ├── Commercial building
 │   ├── Store
 │   └── Stores
 ├── Community buildings
 │   └── Halls
 │       ├── Clarke's Hall
+│       ├── Hall
 │       ├── Katoomba School of Arts
 │       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
 │       ├── School of Arts
-│       │   └── Katoomba School of Arts
+│       │   ├── Katoomba School of Arts
+│       │   └── School of Art
 │       ├── Schools of Arts
 │       │   ├── Katoomba School of Arts
-│       │   └── School of Arts
-│       │       └── Katoomba School of Arts
+│       │   ├── School of Arts
+│       │   │   ├── Katoomba School of Arts
+│       │   │   └── School of Art
+│       │   └── Schools of Art
 │       └── Waudby's Hall
 ├── Educational buildings
 │   └── Schools
@@ -121,14 +133,27 @@ Built Environment
 │           ├── Megalong Valley School
 │           ├── Mount Victoria School
 │           ├── School of Arts
-│           │   └── Katoomba School of Arts
+│           │   ├── Katoomba School of Arts
+│           │   └── School of Art
 │           └── Sunday school
 ├── Hospitality venues
 │   └── Pubs
 │       └── Pub
+├── Industrial buildings
+│   └── Mines
+│       ├── Coal mines
+│       │   ├── Coal mine
+│       │   ├── Katoomba coal mines
+│       │   └── South Clifton Tunnel Mine
+│       ├── Mine
+│       └── Shale mines
+│           ├── Katoomba Shale Mine
+│           ├── Megalong Shale Mines
+│           ├── Nellie's Glen Shale Mine
+│           ├── Ruined Castle Shale Mine
+│           └── Shale mine
 ├── Infrastructure
 │   ├── Mining infrastructure
-│   │   ├── Colliery
 │   │   └── Tramway
 │   ├── Transport infrastructure
 │   │   ├── Railway
@@ -139,48 +164,37 @@ Built Environment
 │   │   │   │   ├── Katoomba station
 │   │   │   │   └── Zig Zag
 │   │   │   └── Railway operations
+│   │   │       ├── Railway operation
 │   │   │       └── Tourist trains
 │   │   └── Roads
 │   │       ├── Jenolan Caves Road
 │   │       ├── Jenolan Caves road
 │   │       ├── Nellie's Glen Road
 │   │       ├── Nellie's Glen Track
-│   │       └── Nellie's Glen track
+│   │       ├── Nellie's Glen track
+│   │       └── Road
 │   └── Utilities
 │       ├── Gas
-│       └── Sewerage
+│       ├── Sewerage
+│       └── Utility
 └── Religious buildings
     ├── Church
-    │   ├── Congregational Church
-    │   │   └── Katoomba Congregational Church
-    │   ├── Katoomba Congregational Church
-    │   ├── Methodist Church
-    │   ├── Roman Catholic Church
-    │   ├── St Hilda's Church
-    │   └── Wesleyan Church
     ├── Churches
     │   ├── Church
-    │   │   ├── Congregational Church
-    │   │   │   └── Katoomba Congregational Church
-    │   │   ├── Katoomba Congregational Church
-    │   │   ├── Methodist Church
-    │   │   ├── Roman Catholic Church
-    │   │   ├── St Hilda's Church
-    │   │   └── Wesleyan Church
     │   ├── Congregational Church
     │   │   └── Katoomba Congregational Church
-    │   ├── Katoomba Congregational Church
     │   ├── Methodist Church
     │   ├── Roman Catholic Church
     │   ├── St Hilda's Church
     │   └── Wesleyan Church
     ├── Katoomba Congregational Church
     ├── Methodist Church
+    ├── Religious building
     ├── Roman Catholic Church
     └── St Hilda's Church
 
 
 STATISTICS:
-  Total nodes in facet: 177
+  Total nodes in facet: 191
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

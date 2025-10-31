@@ -30,6 +30,9 @@ PRIMARY FACETS (Form-Based, Getty AAT Compatible):
   - Places
     File: primary_places.txt
 
+  - Settlements
+    File: primary_settlements.txt
+
 
 THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
 
@@ -122,20 +125,20 @@ This enables:
 OVERALL STATISTICS:
 
 Primary Facets:
-  - Top-level facets: 7
-  - Total nodes: 484
-  - Total relationships: 584
-  - Parent nodes: 174
-  - Leaf nodes: 310
+  - Top-level facets: 8
+  - Total nodes: 564
+  - Total relationships: 642
+  - Parent nodes: 171
+  - Leaf nodes: 393
 
 Thematic Groupings:
   - Top-level themes: 22
-  - Total nodes: 262
-  - Total relationships: 266
-  - Parent nodes: 70
-  - Leaf nodes: 192
+  - Total nodes: 260
+  - Total relationships: 264
+  - Parent nodes: 69
+  - Leaf nodes: 191
 
-TOTAL HIERARCHY RELATIONSHIPS: 850
+TOTAL HIERARCHY RELATIONSHIPS: 906
 
 ================================================================================
 Generated: 2025-10-20

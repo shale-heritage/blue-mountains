@@ -5,19 +5,49 @@ Mining & Industry
 ├── Mines & mining districts
 │   ├── Coal mining
 │   └── Shale mines
+│       ├── Katoomba Shale Mine
+│       ├── Megalong Shale Mines
+│       ├── Nellie's Glen Shale Mine
+│       ├── Ruined Castle Shale Mine
+│       └── Shale mine
 ├── Mining activities
 │   ├── Mine closure
 │   ├── Mining
+│   │   ├── Coal mining
+│   │   ├── Gold mining
+│   │   └── Shale mining
 │   └── Recreation for miners
 ├── Mining companies
+│   ├── Australian Kerosene Oil and Mineral Company
+│   ├── Katoomba Coal and Shale Company
+│   ├── Mining company
+│   ├── New South Wales Shale and Oil Company
+│   ├── South Clifton Mine Company
+│   └── Waudby and Company
 ├── Mining incidents
 │   ├── Accident
+│   │   └── Mining accidents
+│   │       ├── Mining accident
+│   │       └── Mount Kembla Disaster
 │   └── Mining accidents
+│       ├── Mining accident
+│       └── Mount Kembla Disaster
 ├── Mining infrastructure
+│   └── Tramway
 ├── Mining settlements
-│   └── Middle camp
+│   ├── Middle camp
+│   ├── Mining settlement
+│   ├── Nellie's Glen
+│   │   ├── Nellie's Glen Road
+│   │   ├── Nellie's Glen Shale Mine
+│   │   ├── Nellie's Glen Track
+│   │   └── Nellie's Glen track
+│   └── Ruined Castle
+│       └── Ruined Castle Shale Mine
 └── Mining workforce
     ├── Miners
+    │   ├── Miner
+    │   └── Recreation for miners
     ├── Miners' dwellings
     └── Miners' families
 
@@ -27,6 +57,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 19
+  Total nodes in theme: 49
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

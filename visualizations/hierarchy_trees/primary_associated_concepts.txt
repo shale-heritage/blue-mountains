@@ -4,12 +4,14 @@ PRIMARY FACET: Associated Concepts
 Associated Concepts
 ├── Legal concepts
 │   └── Licenses
+│       ├── License
 │       └── Publican's License
 ├── Physical and health conditions
 │   ├── Disease
 │   ├── Drunkenness (intoxication)
 │   ├── Illness
-│   └── Injury
+│   ├── Injury
+│   └── Physical and health condition
 ├── Physical phenomena
 │   └── Weather
 └── Social & economic concepts
@@ -18,6 +20,6 @@ Associated Concepts
 
 
 STATISTICS:
-  Total nodes in facet: 14
+  Total nodes in facet: 16
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

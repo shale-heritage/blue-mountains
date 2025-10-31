@@ -3,7 +3,15 @@ THEMATIC GROUPING: Justice & Crime
 
 Justice & Crime
 ├── Court buildings
+│   ├── Court building
+│   ├── Courthouse
+│   └── Katoomba Court
 ├── Courts
+│   ├── Court
+│   ├── Katoomba Court
+│   ├── Licensing Court
+│   ├── Police court
+│   └── Supreme Court
 ├── Crimes
 │   ├── Other crimes
 │   │   └── Bigamy
@@ -19,12 +27,43 @@ Justice & Crime
 │       ├── Rape
 │       └── Sexual violence
 ├── Law enforcement
+│   ├── Constable John Hamilton
+│   ├── Constable O'Reilly
+│   ├── Constable Orr
+│   ├── Constable White
+│   ├── Police
+│   │   ├── Constable John Hamilton
+│   │   ├── Constable O'Reilly
+│   │   ├── Constable Orr
+│   │   ├── Constable White
+│   │   ├── Police court
+│   │   ├── Police station
+│   │   ├── Senior-Constable Illingworth
+│   │   ├── Senior-Constable Thorncroft
+│   │   └── Sergeant Thorndyke
+│   ├── Senior-Constable Illingworth
+│   ├── Senior-Constable Thorncroft
+│   └── Sergeant Thorndyke
 ├── Legal events
+│   ├── Bankruptcy
+│   ├── Court cases
+│   ├── Divorce
+│   └── Legal event
 ├── Legal officials
+│   ├── Coroner
+│   │   └── Coroner Lethbridge
+│   ├── Coroner Lethbridge
+│   ├── Coroners
+│   │   ├── Coroner
+│   │   │   └── Coroner Lethbridge
+│   │   └── Coroner Lethbridge
+│   └── Legal official
 ├── Legal outcomes
 │   ├── Bankruptcy
 │   └── Divorce
 ├── Legal proceedings
+│   ├── Court cases
+│   └── Legal proceeding
 ├── Police station
 └── Victims of crime & violence
     └── Widows
@@ -35,6 +74,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 27
+  Total nodes in theme: 66
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

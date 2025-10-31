@@ -3,8 +3,46 @@ THEMATIC GROUPING: Politics & Governance
 
 Politics & Governance
 ├── Government bodies
+│   ├── Councils
+│   │   ├── Council
+│   │   ├── Katoomba Council
+│   │   └── Lithgow Council
+│   ├── Courts
+│   │   ├── Court
+│   │   ├── Katoomba Court
+│   │   ├── Licensing Court
+│   │   ├── Police court
+│   │   └── Supreme Court
+│   ├── Other government bodies
+│   │   ├── Aborigines' Protection Board
+│   │   └── Other government body
+│   ├── Postal authorities
+│   │   ├── Postal Department
+│   │   └── Postal authority
+│   └── Railway authorities
+│       ├── Railway authority
+│       └── Railway commission
 ├── Political events
+│   ├── Election
+│   ├── Petition
+│   ├── Political event
+│   └── Public meeting
 └── Public officials
+    ├── Aldermen
+    ├── Licensing inspector
+    ├── Minister for Mines
+    ├── Postal employees
+    │   ├── Mailmen
+    │   │   ├── Mailman
+    │   │   └── Postboy
+    │   └── Postmasters
+    │       ├── Mrs. A. Smith
+    │       ├── Mrs. England
+    │       ├── Mrs. H. Corston
+    │       ├── Mrs. James
+    │       └── Postmaster
+    ├── Public official
+    └── Stationmaster
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -12,6 +50,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 4
+  Total nodes in theme: 42
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

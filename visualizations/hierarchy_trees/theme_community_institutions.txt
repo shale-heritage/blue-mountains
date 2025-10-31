@@ -3,10 +3,119 @@ THEMATIC GROUPING: Community institutions
 
 Community institutions
 ├── Civic buildings
+│   ├── Civic building
+│   ├── Council Chambers
+│   ├── Council buildings
+│   │   ├── Council Chambers
+│   │   └── Council building
+│   ├── Court buildings
+│   │   ├── Court building
+│   │   ├── Courthouse
+│   │   └── Katoomba Court
+│   ├── Police facilities
+│   │   ├── Police facility
+│   │   └── Police station
+│   └── Postal facilities
+│       ├── Post office
+│       └── Postal facility
 ├── Civic organizations
+│   ├── Labour organizations
+│   │   ├── Labour organization
+│   │   └── Unions
+│   └── Progress committees
+│       ├── Katoomba Progress Association
+│       ├── Leura Progress Association
+│       ├── Megalong Progress Committee
+│       ├── Mount Victoria Progress Committee
+│       ├── Progress committee
+│       └── Wentworth Falls Progress Association
 ├── Community buildings
+│   └── Halls
+│       ├── Clarke's Hall
+│       ├── Hall
+│       ├── Katoomba School of Arts
+│       ├── Masonic Hall
+│       ├── Mount Victoria Hall
+│       ├── Odd Fellows' Hall
+│       ├── School of Arts
+│       │   ├── Katoomba School of Arts
+│       │   └── School of Art
+│       ├── Schools of Arts
+│       │   ├── Katoomba School of Arts
+│       │   ├── School of Arts
+│       │   │   ├── Katoomba School of Arts
+│       │   │   └── School of Art
+│       │   └── Schools of Art
+│       └── Waudby's Hall
 ├── Cultural & recreational organizations
+│   ├── Cultural societies
+│   │   ├── Chess and Draughts Club
+│   │   ├── Cultural society
+│   │   ├── Horticulture society
+│   │   ├── Katoomba Amateur Dramatic Club
+│   │   ├── Katoomba School of Arts
+│   │   ├── School of Arts
+│   │   │   ├── Katoomba School of Arts
+│   │   │   └── School of Art
+│   │   └── Schools of Arts
+│   │       ├── Katoomba School of Arts
+│   │       ├── School of Arts
+│   │       │   ├── Katoomba School of Arts
+│   │       │   └── School of Art
+│   │       └── Schools of Art
+│   ├── Performance groups
+│   │   ├── Bands
+│   │   │   ├── Band
+│   │   │   │   └── Katoomba band
+│   │   │   └── Katoomba band
+│   │   ├── Choirs
+│   │   │   └── Choir
+│   │   └── Minstrel troupes
+│   │       ├── Katoomba Amateur Minstrels
+│   │       └── Minstrel troupe
+│   └── Sports clubs
+│       ├── Athletic clubs
+│       │   ├── Athletic club
+│       │   └── Katoomba Athletic Club
+│       ├── Cricket clubs
+│       │   ├── Cricket club
+│       │   ├── Katoomba Cricket Club
+│       │   └── Megalong Cricket Club
+│       ├── Football clubs
+│       │   ├── Football club
+│       │   └── Katoomba Football Club
+│       ├── Rifle clubs
+│       │   └── Rifle club
+│       └── Tennis clubs
+│           ├── Katoomba Tennis Club
+│           ├── Lawn Tennis Club
+│           └── Tennis club
 └── Fraternal orders & lodges
+    └── Lodges
+        ├── Druid's Lodge
+        ├── Druids
+        │   ├── Druid
+        │   ├── Druid's Lodge
+        │   └── U.A.O.D.
+        ├── Freemasons
+        ├── Independent Order of Odd Fellows
+        ├── Independent lodges
+        │   ├── Independent lodge
+        │   └── Mountaineer Lodge
+        ├── Lodge
+        ├── Masonic Hall
+        ├── Masons
+        │   ├── Mason
+        │   └── Masonic Hall
+        ├── Mountaineer Lodge
+        ├── Odd Fellows
+        │   ├── Odd Fellow
+        │   ├── Odd Fellows' Hall
+        │   └── Oddfellows
+        ├── Odd Fellows' Hall
+        └── United Ancient Order of Druids
+            ├── Druid's Lodge (local lodge)
+            └── United Ancient Order of Druid
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -14,6 +123,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 6
+  Total nodes in theme: 115
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

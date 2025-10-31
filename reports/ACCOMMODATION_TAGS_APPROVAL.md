@@ -63,7 +63,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -81,8 +81,8 @@ For each item below:
 - `Hotel`  
   **Taxonomy:** Built Environment > Buildings > Accommodation buildings > Hotels
 
-- `Datoomba`  
-  **Taxonomy:** Places > Towns > Datoomba
+- `Katoomba`  
+  **Taxonomy:** Places > Towns > Katoomba
 
 **Evidence from source:**
 
@@ -92,7 +92,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -127,7 +127,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -157,7 +157,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Also need:
+Regulatory processes > Licensing > Hotel licensing AND
+Occupations > Hospitality workers > Hotelliers > Mr Lindeman
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -186,7 +188,11 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  The proper taxonomy for Stables is:
+Built Environment > Buildings > Accommodation and hospitality venues > Stables
+Also add:
+Occupations > Hospitality workers > Hotelliers > Mr J. Hudson AND
+Places > Towns > Wentworth Falls
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -221,7 +227,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct, also ADD:
+Places > Towns > Wentworth Falls
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -247,7 +254,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct, also ADD:
+Places > Towns > Sydney
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -278,7 +286,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -307,7 +315,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -334,7 +342,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct and also add:
+Places > Towns > Megalong
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -359,7 +368,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -386,7 +395,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct and also add:
+Places > Towns > Megalong
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -412,7 +422,10 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct and also add:
+Regulatory Processes > Licensing > Publican's licensing AND
+Occupations > Hospitality workers > Hotelliers > Mr Delaney AND
+Places > Towns > Katoomba
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -427,7 +440,7 @@ For each item below:
 **Proposed new tags with full taxonomy:**
 
 - `Hotel`  
-  **Taxonomy:** Built Environment > Buildings > Accommodation buildings > Hotels
+  **Taxonomy:** Built Environment > Buildings > Accommodation buildings > Hotels > Carrington Hotel
 
 - `F. C. Goyder`  
   **Taxonomy:** Agents > People > Occupations > Hospitality workers > Hotellier > F. C. Goyder
@@ -441,7 +454,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct and add:
+Places > Towns > Katoomba
+
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -473,7 +488,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct and add:
+Places > Towns > Katoomba
+Activities > Regulatory processes > Licensing > Hotel licensing
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -505,7 +522,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct and Add:
+Places > Towns > Wentworth Falls
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -533,7 +551,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -563,7 +581,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct and also add:
+Places > Towns > Katoomba
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -591,7 +610,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -618,7 +637,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  above tags correct and also add:
+Places > Towns > Katoomba
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -650,7 +670,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  above tags correct and also add:
+Places > Towns > Mount Victoria
+
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -682,7 +704,10 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  above tags correct and also add:
+Places > Towns > Katoomba
+Activities > Regulatory processes> > Licensing > Hotel licensing
+
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -710,7 +735,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -737,7 +762,7 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  No tags; add to (new) to-do list for content extraction
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -764,7 +789,7 @@ For each item below:
   **Taxonomy:** Places > Towns > Lithgow
 
 - `Hotellier`  
-  **Taxonomy:** Agents > People > Occupations > Hospitality workers > Hotellier
+  **Taxonomy:** Agents > People > Occupations > Hospitality workers > Hotellier > Joseph Nimmo
 
 **Evidence from source:**
 
@@ -775,7 +800,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Correct Hotellier to:
+  **Taxonomy:** Agents > People > Occupations > Hospitality workers > Hotellier > Joseph Nimmo
+
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -810,7 +837,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[ ] **MODIFY** - Write changes here:  Above tags correct and add:
+Places > Towns > Katoomba
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -838,7 +866,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -867,7 +895,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -896,7 +924,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -923,7 +951,7 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  No tags; add to (new) to-do list for content extraction
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -954,7 +982,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -987,7 +1015,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags are correct and add:
+Agents > People > Occupations > Hospitality workers > Hotellier > Bashford
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1015,7 +1044,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1045,7 +1074,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here: above tags are correct, and add:
+Places > Towns > Megalong
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1073,7 +1103,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1100,7 +1130,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  tag correct and and:
+Places > Towns > Katoomba
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1126,7 +1157,10 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Correct and add:
+Activities > Regulatory processes > Licensing > Hotel licensing AND
+Agents > Demographic groups > Families > Delaney family AND
+Places > Towns > Megalong
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1151,7 +1185,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1183,7 +1217,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1209,7 +1243,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1241,7 +1275,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1271,7 +1305,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Tags correct EXCEPT note that you must use leaf nodes (e.g., 'Hotels > Hotel'). Please also add:
+Activities > Regulatory processes > Licensing > Hotel licensing
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1309,7 +1344,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Tags above correct, please also add:
+Activities > Regulatory processes > Licensing > Hotel licensing
+Places > Towns > Katoomba
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1341,7 +1378,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Tags correct, please also add:
+Activities > Regulatory processes > Licensing > Hotel licensing
+Please also make a note in a to-do list to look up what sort of crime 'infringing Section 63 of the Licensing Act' was.
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1372,7 +1411,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1402,7 +1441,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Above tags correct and add:
+Agents > People > Occupations > Hospitality workers > Hotellier
+
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1431,7 +1472,12 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  above tags correct and also add:
+Agents > People > Occupations > Hospitality workers > Hotellier
+EXCEPT I notice this taxonomy does not match our pattern, it should be:
+Agents > People > Occupations > Hospitality workers > Hotelliers > Hotellier
+And in all cases where a person is named, 'Hotelliers' should be plural, like this:
+Agents > People > Occupations > Hospitality workers > Hotelliers > [name of hotellier]
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1457,7 +1503,7 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  No tags; add to (new) to-do list for content extraction
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1489,7 +1535,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  above tags correct and also add:
+Activities > Regulatory processes > Licensing > Hotel licensing
+
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1517,7 +1565,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1546,7 +1594,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1585,7 +1633,10 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Most tags above correct, except fix 'Boarding house' to:
+Built Environment > Buildings > Accommodation and hospitality venues > Boarding houses
+AND ADD:
+Built Environment > Buildings > Accommodation buildings > Hotels > Hotel
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1617,7 +1668,10 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Tags above correct also add:
+Built Environment > Buildings > Accommodation buildings > Hotels > Katoomba Hotel AND
+Places > Towns > Katoomba
+
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1646,7 +1700,9 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  To match our pattern all tags must end in a leaf node, should be corrected to:
+Built Environment > Buildings > Accommodation buildings > Hotels > Hotel
+(not only here but in all instances)
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1674,7 +1730,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1713,7 +1769,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Unless an unnamed hotellier is mentioned elsewhere in this article, please keep the other tags but delete:
+Agents > People > Occupations > Hospitality workers > Hotellier
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1741,7 +1798,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1771,7 +1828,12 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  Standardise from:
+Built Environment > Buildings > Accommodation buildings > Hotels > Carrington
+TO:
+Built Environment > Buildings > Accommodation buildings > Hotels > Carrington Hotel
+Other tags correct, but also add:
+Places > Towns > Katoomba
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1802,7 +1864,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1831,7 +1893,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1861,7 +1923,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  tags above correct and add:
+Activities > Regulatory processes > Licensing > Hotel licensing
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1895,7 +1958,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 
@@ -1925,7 +1988,8 @@ For each item below:
 **Your decision:**
 
 [ ] **APPROVE** - Apply tags as proposed  
-[ ] **MODIFY** - Write changes here:  
+[X] **MODIFY** - Write changes here:  tags above correct and add:
+Activities > Regulatory processes > Licensing > Publican's licensing
 [ ] **REJECT** - Explain reason:  
 
 ---
@@ -1959,7 +2023,7 @@ For each item below:
 
 **Your decision:**
 
-[ ] **APPROVE** - Apply tags as proposed  
+[X] **APPROVE** - Apply tags as proposed  
 [ ] **MODIFY** - Write changes here:  
 [ ] **REJECT** - Explain reason:  
 

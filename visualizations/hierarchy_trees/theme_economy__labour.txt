@@ -4,18 +4,85 @@ THEMATIC GROUPING: Economy & Labour
 Economy & Labour
 ├── Businesses
 │   └── Commercial businesses
+│       ├── Financial institutions
+│       │   ├── Bank
+│       │   └── Financial institution
+│       ├── Hospitality businesses
+│       │   ├── Boarding houses
+│       │   │   ├── Boarding house
+│       │   │   └── Orama Boarding House
+│       │   └── Hotels
+│       │       ├── Allen's Hotel
+│       │       ├── Belgravia Hotel
+│       │       ├── Brown's Hotel
+│       │       ├── Carrington Hotel
+│       │       ├── Centennial Hotel
+│       │       ├── Comet Hotel
+│       │       ├── Delaney's Hotel
+│       │       ├── Falls Hotel
+│       │       ├── Family Hotel
+│       │       │   └── Katoomba Family Hotel
+│       │       ├── Fryer's Family Hotel
+│       │       ├── Grand Hotel
+│       │       ├── Grand Hotel (Sydney)
+│       │       ├── Great Western Hotel
+│       │       ├── Hoffman's House
+│       │       ├── Hotel
+│       │       ├── Hotel Wentworth
+│       │       ├── Hydora House Hotel
+│       │       ├── Imperial Hotel
+│       │       ├── Katoomba Family Hotel
+│       │       ├── Katoomba Hotel
+│       │       ├── Leura Hotel
+│       │       ├── Megalong Hotel
+│       │       ├── Montrose House
+│       │       ├── Mount Victoria Hotel
+│       │       ├── Mrs Long's Hotel
+│       │       ├── Oxford Hotel (Sydney)
+│       │       ├── Railway Hotel
+│       │       └── Wentworth Falls Hotel
+│       ├── Mining companies
+│       │   ├── Australian Kerosene Oil and Mineral Company
+│       │   ├── Katoomba Coal and Shale Company
+│       │   ├── Mining company
+│       │   ├── New South Wales Shale and Oil Company
+│       │   ├── South Clifton Mine Company
+│       │   └── Waudby and Company
+│       ├── Retailers & stores
+│       │   ├── Douglas & Co.
+│       │   ├── Nimmo's
+│       │   ├── Peckman Bros
+│       │   ├── Retailers & store
+│       │   ├── Stores
+│       │   └── Tabrett and Co.
+│       ├── Retailers and stores
+│       │   ├── Douglas and Company
+│       │   ├── Nimmo's
+│       │   ├── Peckman Bros
+│       │   ├── Retailers and store
+│       │   ├── Store
+│       │   └── Tabrett and Company
+│       └── Transport & logistics businesses
+│           ├── Transport & logistics business
+│           └── Trucking
 ├── Economic distress
 │   ├── Bankruptcy
 │   ├── Unemployment
+│   │   └── Unemployment relief
 │   └── Unemployment relief
 ├── Industries
 │   ├── Mining
+│   │   ├── Coal mining
+│   │   ├── Gold mining
+│   │   └── Shale mining
 │   └── Tourism
 ├── Labour relations
 │   ├── Strike
 │   └── Unions
 └── Workforce
     └── Miners
+        ├── Miner
+        └── Recreation for miners
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -23,6 +90,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 15
+  Total nodes in theme: 82
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
