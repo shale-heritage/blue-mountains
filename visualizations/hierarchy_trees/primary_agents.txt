@@ -6,7 +6,9 @@ Agents
 │   ├── Animal
 │   ├── Cattle
 │   ├── Dogs
-│   └── Horses
+│   ├── Horses
+│   └── Wild animals
+│       └── Wild horses
 ├── Organizations
 │   ├── Civic organizations
 │   │   ├── Labour organizations
@@ -164,12 +166,15 @@ Agents
 │   │   ├── Other government bodies
 │   │   │   ├── Aborigines' Protection Board
 │   │   │   └── Other government body
+│   │   ├── Police
 │   │   ├── Postal authorities
 │   │   │   ├── Postal Department
 │   │   │   └── Postal authority
 │   │   └── Railway authorities
 │   │       ├── Railway authority
 │   │       └── Railway commission
+│   ├── Military organizations
+│   │   └── N.S.W. Mounted Rifles
 │   └── Religious organizations
 │       ├── Churches
 │       │   ├── Church
@@ -209,6 +214,10 @@ Agents
     │   ├── Greenbank family
     │   └── Miners' families
     └── Occupations
+        ├── Agriculture workers
+        │   └── Animal breeders
+        │       └── Horse breeder
+        │           └── Mr Hardie Clydesdale
         ├── Clergy
         │   ├── Cardinal Moran
         │   ├── Reverence M C Brown
@@ -258,23 +267,19 @@ Agents
         │   │   └── Mr Wilkinson
         │   └── Publican
         ├── Law enforcement
-        │   ├── Constable John Hamilton
-        │   ├── Constable O'Reilly
-        │   ├── Constable Orr
-        │   ├── Constable White
-        │   ├── Police
-        │   │   ├── Constable John Hamilton
-        │   │   ├── Constable O'Reilly
-        │   │   ├── Constable Orr
-        │   │   ├── Constable White
-        │   │   ├── Police court
-        │   │   ├── Police station
-        │   │   ├── Senior-Constable Illingworth
-        │   │   ├── Senior-Constable Thorncroft
-        │   │   └── Sergeant Thorndyke
-        │   ├── Senior-Constable Illingworth
-        │   ├── Senior-Constable Thorncroft
-        │   └── Sergeant Thorndyke
+        │   └── Policing
+        ├── Law enforcement personnel
+        │   └── Police officers
+        │       ├── Constable
+        │       │   ├── Constable John Hamilton
+        │       │   ├── Constable O'Reilly
+        │       │   ├── Constable Orr
+        │       │   └── Constable White
+        │       ├── Senior-Constable
+        │       │   ├── Senior-Constable Illingworth
+        │       │   └── Senior-Constable Thorncroft
+        │       └── Sergeant
+        │           └── Sergeant Thorndyke
         ├── Legal officials
         │   ├── Coroner
         │   │   └── Coroner Lethbridge
@@ -294,7 +299,9 @@ Agents
         │   ├── Dr Watkins
         │   └── Medical professional
         ├── Military personnel
+        │   ├── Major Sir Charles George Gordon
         │   └── Soldiers
+        │       └── Major Sir Charles George Gordon
         ├── Miners
         │   ├── Miner
         │   └── Recreation for miners
@@ -320,6 +327,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 316
+  Total nodes in facet: 323
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

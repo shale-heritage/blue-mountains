@@ -2,6 +2,10 @@ THEMATIC GROUPING: People
 ================================================================================
 
 People
+├── Constable John Hamilton
+├── Constable O'Reilly
+├── Constable Orr
+├── Constable White
 ├── Demographic groups
 │   ├── Adolescents
 │   ├── Children
@@ -24,6 +28,7 @@ People
 │   ├── Family
 │   ├── Greenbank family
 │   └── Miners' families
+├── Major Sir Charles George Gordon
 ├── Miss Edith Delaney
 ├── Miss Emily Potter
 ├── Miss Ettie Delaney
@@ -44,6 +49,7 @@ People
 ├── Mr George Potter
 ├── Mr H Scope
 ├── Mr H W Copeland
+├── Mr Hardie Clydesdale
 ├── Mr Harry Eaton
 ├── Mr Harry Edwards
 ├── Mr Harry Peckman
@@ -97,115 +103,120 @@ People
 ├── Mrs Meredith
 ├── Mrs W Watson
 ├── Mrs Wilson
-└── Occupations
-    ├── Clergy
-    │   ├── Cardinal Moran
-    │   ├── Reverence M C Brown
-    │   ├── Reverend A Sutherland
-    │   ├── Reverend Canon Kemmis
-    │   ├── Reverend F V Pratt
-    │   ├── Reverend J H Maclean
-    │   ├── Reverend M S Fletcher
-    │   └── Reverend R M Laverty
-    ├── Hospitality workers
-    │   ├── Hospitality worker
-    │   ├── Hotelliers
-    │   │   ├── Allen
-    │   │   ├── Bashford
-    │   │   ├── Biles
-    │   │   ├── Brown
-    │   │   ├── F. C. Goyder
-    │   │   ├── Hotellier
-    │   │   ├── Isabellea J. Long
-    │   │   ├── Manuell
-    │   │   ├── Mr A. G. Rowell
-    │   │   ├── Mr Alf. Goodare
-    │   │   ├── Mr D Thomson
-    │   │   ├── Mr D. Brown
-    │   │   ├── Mr D. Thompson
-    │   │   ├── Mr Delaney
-    │   │   ├── Mr Edwards
-    │   │   ├── Mr Ellis
-    │   │   ├── Mr J. Hudson
-    │   │   ├── Mr J. Nimmo
-    │   │   ├── Mr Joe Nimmo
-    │   │   ├── Mr Lindeman
-    │   │   ├── Mr Manuel
-    │   │   ├── Mr N. Delaney
-    │   │   ├── Mr P. G. Whittall
-    │   │   ├── Mr R. Fryer
-    │   │   ├── Mr Wilson
-    │   │   ├── Mrs (Joe) Nimmo
-    │   │   ├── Mrs (R.) Fryer
-    │   │   ├── Mrs Brown
-    │   │   ├── Mrs Long
-    │   │   ├── Richard Allen
-    │   │   ├── Rubina Fryer
-    │   │   └── W. Green
-    │   ├── Liquor merchants
-    │   │   ├── Liquor merchant
-    │   │   └── Mr Wilkinson
-    │   └── Publican
-    ├── Law enforcement
-    │   ├── Constable John Hamilton
-    │   ├── Constable O'Reilly
-    │   ├── Constable Orr
-    │   ├── Constable White
-    │   ├── Police
-    │   │   ├── Constable John Hamilton
-    │   │   ├── Constable O'Reilly
-    │   │   ├── Constable Orr
-    │   │   ├── Constable White
-    │   │   ├── Police court
-    │   │   ├── Police station
-    │   │   ├── Senior-Constable Illingworth
-    │   │   ├── Senior-Constable Thorncroft
-    │   │   └── Sergeant Thorndyke
-    │   ├── Senior-Constable Illingworth
-    │   ├── Senior-Constable Thorncroft
-    │   └── Sergeant Thorndyke
-    ├── Legal officials
-    │   ├── Coroner
-    │   │   └── Coroner Lethbridge
-    │   ├── Coroner Lethbridge
-    │   ├── Coroners
-    │   │   ├── Coroner
-    │   │   │   └── Coroner Lethbridge
-    │   │   └── Coroner Lethbridge
-    │   └── Legal official
-    ├── Maritime workers
-    │   ├── Maritime worker
-    │   └── Shipwright
-    ├── Medical professionals
-    │   ├── Dr Morgan
-    │   ├── Dr Prangley
-    │   ├── Dr Spark
-    │   ├── Dr Watkins
-    │   └── Medical professional
-    ├── Military personnel
-    │   └── Soldiers
-    ├── Miners
-    │   ├── Miner
-    │   └── Recreation for miners
-    ├── Other goods and services
-    │   └── Coach and buggy business
-    │       └── Mr Thomas Cale
-    └── Public officials
-        ├── Aldermen
-        ├── Licensing inspector
-        ├── Minister for Mines
-        ├── Postal employees
-        │   ├── Mailmen
-        │   │   ├── Mailman
-        │   │   └── Postboy
-        │   └── Postmasters
-        │       ├── Mrs. A. Smith
-        │       ├── Mrs. England
-        │       ├── Mrs. H. Corston
-        │       ├── Mrs. James
-        │       └── Postmaster
-        ├── Public official
-        └── Stationmaster
+├── Occupations
+│   ├── Agriculture workers
+│   │   └── Animal breeders
+│   │       └── Horse breeder
+│   │           └── Mr Hardie Clydesdale
+│   ├── Clergy
+│   │   ├── Cardinal Moran
+│   │   ├── Reverence M C Brown
+│   │   ├── Reverend A Sutherland
+│   │   ├── Reverend Canon Kemmis
+│   │   ├── Reverend F V Pratt
+│   │   ├── Reverend J H Maclean
+│   │   ├── Reverend M S Fletcher
+│   │   └── Reverend R M Laverty
+│   ├── Hospitality workers
+│   │   ├── Hospitality worker
+│   │   ├── Hotelliers
+│   │   │   ├── Allen
+│   │   │   ├── Bashford
+│   │   │   ├── Biles
+│   │   │   ├── Brown
+│   │   │   ├── F. C. Goyder
+│   │   │   ├── Hotellier
+│   │   │   ├── Isabellea J. Long
+│   │   │   ├── Manuell
+│   │   │   ├── Mr A. G. Rowell
+│   │   │   ├── Mr Alf. Goodare
+│   │   │   ├── Mr D Thomson
+│   │   │   ├── Mr D. Brown
+│   │   │   ├── Mr D. Thompson
+│   │   │   ├── Mr Delaney
+│   │   │   ├── Mr Edwards
+│   │   │   ├── Mr Ellis
+│   │   │   ├── Mr J. Hudson
+│   │   │   ├── Mr J. Nimmo
+│   │   │   ├── Mr Joe Nimmo
+│   │   │   ├── Mr Lindeman
+│   │   │   ├── Mr Manuel
+│   │   │   ├── Mr N. Delaney
+│   │   │   ├── Mr P. G. Whittall
+│   │   │   ├── Mr R. Fryer
+│   │   │   ├── Mr Wilson
+│   │   │   ├── Mrs (Joe) Nimmo
+│   │   │   ├── Mrs (R.) Fryer
+│   │   │   ├── Mrs Brown
+│   │   │   ├── Mrs Long
+│   │   │   ├── Richard Allen
+│   │   │   ├── Rubina Fryer
+│   │   │   └── W. Green
+│   │   ├── Liquor merchants
+│   │   │   ├── Liquor merchant
+│   │   │   └── Mr Wilkinson
+│   │   └── Publican
+│   ├── Law enforcement
+│   │   └── Policing
+│   ├── Law enforcement personnel
+│   │   └── Police officers
+│   │       ├── Constable
+│   │       │   ├── Constable John Hamilton
+│   │       │   ├── Constable O'Reilly
+│   │       │   ├── Constable Orr
+│   │       │   └── Constable White
+│   │       ├── Senior-Constable
+│   │       │   ├── Senior-Constable Illingworth
+│   │       │   └── Senior-Constable Thorncroft
+│   │       └── Sergeant
+│   │           └── Sergeant Thorndyke
+│   ├── Legal officials
+│   │   ├── Coroner
+│   │   │   └── Coroner Lethbridge
+│   │   ├── Coroner Lethbridge
+│   │   ├── Coroners
+│   │   │   ├── Coroner
+│   │   │   │   └── Coroner Lethbridge
+│   │   │   └── Coroner Lethbridge
+│   │   └── Legal official
+│   ├── Maritime workers
+│   │   ├── Maritime worker
+│   │   └── Shipwright
+│   ├── Medical professionals
+│   │   ├── Dr Morgan
+│   │   ├── Dr Prangley
+│   │   ├── Dr Spark
+│   │   ├── Dr Watkins
+│   │   └── Medical professional
+│   ├── Military personnel
+│   │   ├── Major Sir Charles George Gordon
+│   │   └── Soldiers
+│   │       └── Major Sir Charles George Gordon
+│   ├── Miners
+│   │   ├── Miner
+│   │   └── Recreation for miners
+│   ├── Other goods and services
+│   │   └── Coach and buggy business
+│   │       └── Mr Thomas Cale
+│   └── Public officials
+│       ├── Aldermen
+│       ├── Licensing inspector
+│       ├── Minister for Mines
+│       ├── Postal employees
+│       │   ├── Mailmen
+│       │   │   ├── Mailman
+│       │   │   └── Postboy
+│       │   └── Postmasters
+│       │       ├── Mrs. A. Smith
+│       │       ├── Mrs. England
+│       │       ├── Mrs. H. Corston
+│       │       ├── Mrs. James
+│       │       └── Postmaster
+│       ├── Public official
+│       └── Stationmaster
+├── Senior-Constable Illingworth
+├── Senior-Constable Thorncroft
+└── Sergeant Thorndyke
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -213,6 +224,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 205
+  Total nodes in theme: 216
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

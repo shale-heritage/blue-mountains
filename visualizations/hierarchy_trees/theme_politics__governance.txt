@@ -16,6 +16,7 @@ Politics & Governance
 │   ├── Other government bodies
 │   │   ├── Aborigines' Protection Board
 │   │   └── Other government body
+│   ├── Police
 │   ├── Postal authorities
 │   │   ├── Postal Department
 │   │   └── Postal authority
@@ -50,6 +51,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 42
+  Total nodes in theme: 43
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

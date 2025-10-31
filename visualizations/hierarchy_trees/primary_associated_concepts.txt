@@ -3,6 +3,8 @@ PRIMARY FACET: Associated Concepts
 
 Associated Concepts
 ├── Legal concepts
+│   ├── Laws
+│   │   └── Licensing Act
 │   └── Licenses
 │       ├── License
 │       └── Publican's License
@@ -20,6 +22,6 @@ Associated Concepts
 
 
 STATISTICS:
-  Total nodes in facet: 16
+  Total nodes in facet: 18
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

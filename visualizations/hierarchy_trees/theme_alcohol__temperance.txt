@@ -16,7 +16,6 @@ Alcohol & Temperance
 │   │   │   ├── Spirit
 │   │   │   └── Whisky
 │   │   └── Wine
-│   ├── Drinking
 │   ├── Drinking (alcohol)
 │   ├── Drunkeness
 │   ├── Drunkenness (crime)
@@ -98,13 +97,13 @@ Alcohol & Temperance
 ├── Licensing & regulation
 │   ├── Licensing
 │   │   ├── Hotel licensing
-│   │   ├── Licensing Act
-│   │   ├── Licensing Court
-│   │   ├── Licensing inspector
 │   │   ├── Liquor licensing
 │   │   └── Publican's licensing
 │   ├── Licensing Act
 │   ├── Licensing Court
+│   ├── Licensing cases
+│   │   ├── Licensing offences
+│   │   └── Liquor licensing applications
 │   ├── Licensing inspector
 │   └── Publican's License
 └── Temperance organizations & movements
@@ -117,6 +116,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 109
+  Total nodes in theme: 108
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

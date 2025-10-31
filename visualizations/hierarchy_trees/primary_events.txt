@@ -2,6 +2,17 @@ PRIMARY FACET: Events
 ================================================================================
 
 Events
+├── Accidents
+│   ├── Agricultural accidents
+│   │   └── Livestock accidents
+│   │       └── Animal attacks
+│   │           └── Goring
+│   └── Transport accidents
+│       └── Animal-powered transport accidents
+│           └── Horse accidents
+│               ├── Horse-drawn vehicle accidents
+│               ├── Horseback riding accidents
+│               └── Runaway horse incidents
 ├── Criminal events
 │   ├── Alcohol-related
 │   │   ├── Drunkenness (crime)
@@ -40,11 +51,18 @@ Events
 ├── Legal events
 │   ├── Bankruptcy
 │   ├── Court cases
+│   │   └── Property offences
+│   │       └── Stock trespass
 │   ├── Divorce
 │   └── Legal event
 ├── Legal proceedings
 │   ├── Court cases
-│   └── Legal proceeding
+│   │   └── Property offences
+│   │       └── Stock trespass
+│   ├── Legal proceeding
+│   └── Licensing cases
+│       ├── Licensing offences
+│       └── Liquor licensing applications
 ├── Life events
 │   ├── Death
 │   │   └── Death notice
@@ -80,6 +98,8 @@ Events
     │   ├── Girls' cricket
     │   ├── Katoomba Cricket Club
     │   └── Megalong Cricket Club
+    ├── Equestrian events
+    │   └── Horse races
     ├── Football
     │   ├── Football clubs
     │   │   ├── Football club
@@ -93,6 +113,6 @@ Events
 
 
 STATISTICS:
-  Total nodes in facet: 89
+  Total nodes in facet: 109
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

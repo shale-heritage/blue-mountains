@@ -2,6 +2,8 @@ THEMATIC GROUPING: Sport & Recreation
 ================================================================================
 
 Sport & Recreation
+├── Horse racing
+├── Military sports
 ├── Recreation themes
 │   ├── Recreation for miners
 │   ├── Reserves
@@ -16,6 +18,7 @@ Sport & Recreation
 │   │   ├── Wentworth Falls Reserve
 │   │   └── Wentworth Falls Reserves
 │   └── Sports
+├── Spectator sports
 ├── Sporting events
 │   ├── Athletics
 │   ├── Billiard
@@ -28,6 +31,8 @@ Sport & Recreation
 │   │   ├── Girls' cricket
 │   │   ├── Katoomba Cricket Club
 │   │   └── Megalong Cricket Club
+│   ├── Equestrian events
+│   │   └── Horse races
 │   ├── Football
 │   │   ├── Football clubs
 │   │   │   ├── Football club
@@ -62,6 +67,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 54
+  Total nodes in theme: 59
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

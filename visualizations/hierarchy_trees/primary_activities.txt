@@ -12,6 +12,10 @@ Activities
 │   ├── Fundraising
 │   └── Postal services
 ├── Economic activities
+│   ├── Agriculture
+│   │   └── Animal husbandry
+│   │       └── Animal breeding
+│   │           └── Horse breeding
 │   ├── Economic activity
 │   ├── Liquor trade
 │   │   ├── Liquor sales
@@ -25,32 +29,29 @@ Activities
 │   │   ├── Horseborne transportation
 │   │   └── Trucking
 │   └── Trucking
-├── Military activities
-│   ├── Military
-│   └── Military activity
 ├── Recreation activities
 │   ├── Horseback riding
-│   ├── Horses
+│   ├── Military sports
 │   ├── Recreation activity
 │   ├── Recreation for miners
-│   └── Sports
-├── Regulatory processes
-│   └── Licensing
-│       ├── Hotel licensing
-│       ├── Licensing Act
-│       ├── Licensing Court
-│       ├── Licensing inspector
-│       ├── Liquor licensing
-│       └── Publican's licensing
-└── Social behaviours
-    ├── Drinking
-    ├── Drinking (alcohol)
-    ├── Gambling
-    ├── Social behaviour
-    └── Temperance
+│   └── Spectator sports
+├── Social behaviours
+│   ├── Drinking (alcohol)
+│   ├── Gambling
+│   ├── Social behaviour
+│   └── Temperance
+└── Societal activities
+    ├── Law enforcement
+    │   └── Policing
+    ├── Military activities
+    └── Regulatory processes
+        └── Licensing
+            ├── Hotel licensing
+            ├── Liquor licensing
+            └── Publican's licensing
 
 
 STATISTICS:
-  Total nodes in facet: 47
+  Total nodes in facet: 48
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
