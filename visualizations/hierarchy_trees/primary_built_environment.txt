@@ -2,7 +2,7 @@ PRIMARY FACET: Built Environment
 ================================================================================
 
 Built Environment
-├── Accommodation and hospitality venues
+├── Accommodation buildings
 │   ├── Boarding houses
 │   │   ├── Boarding house
 │   │   └── Orama Boarding House
@@ -18,11 +18,10 @@ Built Environment
 │   │   ├── Carrington Hotel
 │   │   ├── Centennial Hotel
 │   │   ├── Comet Hotel
-│   │   ├── Delaney's Hotel
 │   │   ├── Falls Hotel
-│   │   ├── Family Hotel
+│   │   ├── Family Hotels
+│   │   │   ├── Delaney's Family Hotel
 │   │   │   └── Katoomba Family Hotel
-│   │   ├── Fryer's Family Hotel
 │   │   ├── Grand Hotel
 │   │   ├── Grand Hotel (Sydney)
 │   │   ├── Great Western Hotel
@@ -31,7 +30,6 @@ Built Environment
 │   │   ├── Hotel Wentworth
 │   │   ├── Hydora House Hotel
 │   │   ├── Imperial Hotel
-│   │   ├── Katoomba Family Hotel
 │   │   ├── Katoomba Hotel
 │   │   ├── Leura Hotel
 │   │   ├── Megalong Hotel
@@ -43,83 +41,32 @@ Built Environment
 │   │   └── Wentworth Falls Hotel
 │   ├── Public houses
 │   │   └── Public house
+│   ├── Pubs
+│   │   └── Pub
 │   └── Stables
 │       └── Stable
-├── Accommodation buildings
-│   ├── Boarding houses
-│   │   ├── Boarding house
-│   │   └── Orama Boarding House
-│   ├── Dwellings
-│   │   ├── Dwelling
-│   │   └── Miners' dwellings
-│   └── Hotels
-│       ├── Allen's Hotel
-│       ├── Belgravia Hotel
-│       ├── Brown's Hotel
-│       ├── Carrington Hotel
-│       ├── Centennial Hotel
-│       ├── Comet Hotel
-│       ├── Delaney's Hotel
-│       ├── Falls Hotel
-│       ├── Family Hotel
-│       │   └── Katoomba Family Hotel
-│       ├── Fryer's Family Hotel
-│       ├── Grand Hotel
-│       ├── Grand Hotel (Sydney)
-│       ├── Great Western Hotel
-│       ├── Hoffman's House
-│       ├── Hotel
-│       ├── Hotel Wentworth
-│       ├── Hydora House Hotel
-│       ├── Imperial Hotel
-│       ├── Katoomba Family Hotel
-│       ├── Katoomba Hotel
-│       ├── Leura Hotel
-│       ├── Megalong Hotel
-│       ├── Montrose House
-│       ├── Mount Victoria Hotel
-│       ├── Mrs Long's Hotel
-│       ├── Oxford Hotel (Sydney)
-│       ├── Railway Hotel
-│       └── Wentworth Falls Hotel
 ├── Civic buildings
-│   ├── Civic building
 │   ├── Council Chambers
-│   ├── Council buildings
-│   │   ├── Council Chambers
-│   │   └── Council building
 │   ├── Court buildings
-│   │   ├── Court building
 │   │   ├── Courthouse
 │   │   └── Katoomba Court
 │   ├── Police facilities
-│   │   ├── Police facility
 │   │   └── Police station
 │   └── Postal facilities
-│       ├── Post office
-│       └── Postal facility
+│       └── Post office
 ├── Commercial buildings
 │   ├── Bank
-│   ├── Commercial building
-│   ├── Store
-│   └── Stores
+│   └── Commercial building
 ├── Community buildings
 │   └── Halls
 │       ├── Clarke's Hall
 │       ├── Hall
-│       ├── Katoomba School of Arts
 │       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
-│       ├── School of Arts
-│       │   ├── Katoomba School of Arts
-│       │   └── School of Art
 │       ├── Schools of Arts
 │       │   ├── Katoomba School of Arts
-│       │   ├── School of Arts
-│       │   │   ├── Katoomba School of Arts
-│       │   │   └── School of Art
-│       │   └── Schools of Art
+│       │   └── School of Arts
 │       └── Waudby's Hall
 ├── Educational buildings
 │   └── Schools
@@ -128,17 +75,6 @@ Built Environment
 │       ├── Megalong Valley School
 │       ├── Mount Victoria School
 │       └── School
-│           ├── Katoomba Public School
-│           ├── Katoomba Superior Public School
-│           ├── Megalong Valley School
-│           ├── Mount Victoria School
-│           ├── School of Arts
-│           │   ├── Katoomba School of Arts
-│           │   └── School of Art
-│           └── Sunday school
-├── Hospitality venues
-│   └── Pubs
-│       └── Pub
 ├── Industrial buildings
 │   └── Mines
 │       ├── Coal mines
@@ -178,23 +114,17 @@ Built Environment
 │       ├── Sewerage
 │       └── Utility
 └── Religious buildings
-    ├── Church
-    ├── Churches
-    │   ├── Church
-    │   ├── Congregational Church
-    │   │   └── Katoomba Congregational Church
-    │   ├── Methodist Church
-    │   ├── Roman Catholic Church
-    │   ├── St Hilda's Church
-    │   └── Wesleyan Church
-    ├── Katoomba Congregational Church
-    ├── Methodist Church
-    ├── Religious building
-    ├── Roman Catholic Church
-    └── St Hilda's Church
+    └── Churches
+        ├── Church
+        ├── Congregational Church
+        │   └── Katoomba Congregational Church
+        ├── Methodist Church
+        ├── Roman Catholic Church
+        ├── St Hilda's Church
+        └── Wesleyan Church
 
 
 STATISTICS:
-  Total nodes in facet: 191
+  Total nodes in facet: 121
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

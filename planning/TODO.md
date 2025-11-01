@@ -39,6 +39,107 @@
 
 ## 🔄 IN PROGRESS
 
+### Dual-Nature Entity Tagging Strategy Review
+**Status:** For Future Review
+**Priority:** MEDIUM (affects core taxonomy design)
+**Added:** 2025-10-31
+
+**Issue:**
+
+During Built Environment rationalisation, tension emerged between two approaches for handling dual-nature entities (entities that are both organizations AND physical structures):
+
+**Current Approach (Polyhierarchy):**
+- Single tag name (e.g., "Katoomba School of Arts") appears in BOTH facets
+- Line 709: `Schools of Arts → Cultural societies` (Agents - organization)
+- Line 710: `Schools of Arts (venues) → Halls` (Built Environment - building)
+- Temporary solution: Added "(venues)" qualifier to parent node in Built Environment to clarify
+
+**Alternative Approach (Disambiguation):**
+- Separate tags with parenthetical qualifiers: "Katoomba School of Arts (organization)" vs "Katoomba School of Arts (venue)"
+- Each tag unique in primary taxonomies
+- Reserve polyhierarchy strictly for thematic groupings
+- Model: Alcohol-related tags like "Drunkenness (crime)" vs "Drunkenness (intoxication)"
+
+**Trade-offs Identified:**
+
+*Polyhierarchy Approach (current):*
+- ✅ **Historical accuracy:** Sources say "School of Arts", not "School of Arts hall"
+- ✅ **Single tag application:** Cataloguers tag once, appears in both contexts
+- ✅ **Simpler for users:** Don't need to choose organization vs building
+- ✅ **Follows Getty AAT dual-nature pattern** (needs verification)
+- ❌ **Ambiguity in visualization:** Not immediately clear which aspect is shown
+- ❌ **Conceptual complexity:** Same tag name means different things in different contexts
+- ❌ **Harder to maintain:** Polyhierarchical relationships more complex
+
+*Disambiguation Approach (alternative):*
+- ✅ **Explicit clarity:** Each tag has unambiguous meaning
+- ✅ **Unique identifiers:** No tag name duplication across primary taxonomies
+- ✅ **Simpler mental model:** One tag = one concept
+- ✅ **Easier facet browsing:** Clear what each tag represents
+- ❌ **Cataloguing burden:** Must choose organization vs venue at tagging time
+- ❌ **Departs from source terminology:** Sources don't use these qualifiers
+- ❌ **Duplication:** Same entity tagged twice for dual-nature items
+- ❌ **May not align with Getty AAT practice** (needs verification)
+
+**Entities Affected:**
+
+Currently using polyhierarchy:
+- Schools of Arts (8+ entities)
+- Churches (7 entities: generic Church, Methodist Church, Roman Catholic Church, St Hilda's Church, etc.)
+- Potentially: Masonic Hall, Oddfellows' Hall (dual organization/venue nature)
+
+**Research Needed:**
+
+1. **Getty AAT Investigation:**
+   - How does Getty AAT handle dual-nature entities?
+   - Do they use polyhierarchy or disambiguation?
+   - Examples: churches, fraternal halls, schools
+   - Consult: vocab.getty.edu/page/aat/[relevant IDs]
+
+2. **SKOS Best Practices:**
+   - Standard approach for concepts with multiple broader terms
+   - RVA (Research Vocabularies Australia) requirements
+   - Interoperability implications
+
+3. **User Testing:**
+   - Which approach better serves cataloguers?
+   - Which approach better serves researchers browsing the taxonomy?
+   - Can polyhierarchy be adequately explained in UI?
+
+4. **Impact Analysis:**
+   - How many entities affected? (currently ~15-20)
+   - Cost of migration if we change approach?
+   - Backward compatibility with already-tagged items?
+
+**Decision Criteria:**
+
+Priority order for evaluation:
+1. Getty AAT alignment (interoperability requirement)
+2. SKOS/RVA compatibility (publication requirement)
+3. User experience for cataloguers (productivity)
+4. User experience for researchers (discoverability)
+5. Maintainability (long-term sustainability)
+
+**Temporary Solution Implemented:**
+
+Added "(venues)" qualifier to parent nodes in Built Environment to provide visual clarity while maintaining polyhierarchy:
+- Built Environment > Halls > Schools of Arts (venues)
+
+This is a stopgap that provides some disambiguation in visualization without changing the fundamental approach.
+
+**Recommendation for Review:**
+
+- Research Getty AAT practice thoroughly (priority 1)
+- If Getty uses polyhierarchy: Keep current approach, improve visualization clarity
+- If Getty uses disambiguation: Plan migration to parenthetical qualifiers
+- Consider hybrid: Polyhierarchy for major entities (Churches), disambiguation for minor ones
+
+**Dependencies:** Phase 1.3 (Getty AAT mapping) will inform this decision
+
+**Timeline:** Review before applying tags to Zotero (Phase 1.4)
+
+---
+
 ### Phase 1.2.2: Tag Definitions & Scope Notes
 **Status:** Not started
 **Priority:** HIGH

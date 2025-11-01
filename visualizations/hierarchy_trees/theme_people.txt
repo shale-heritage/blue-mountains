@@ -156,8 +156,6 @@ People
 │   │   │   ├── Liquor merchant
 │   │   │   └── Mr Wilkinson
 │   │   └── Publican
-│   ├── Law enforcement
-│   │   └── Policing
 │   ├── Law enforcement personnel
 │   │   └── Police officers
 │   │       ├── Constable
@@ -171,12 +169,8 @@ People
 │   │       └── Sergeant
 │   │           └── Sergeant Thorndyke
 │   ├── Legal officials
-│   │   ├── Coroner
-│   │   │   └── Coroner Lethbridge
-│   │   ├── Coroner Lethbridge
 │   │   ├── Coroners
 │   │   │   ├── Coroner
-│   │   │   │   └── Coroner Lethbridge
 │   │   │   └── Coroner Lethbridge
 │   │   └── Legal official
 │   ├── Maritime workers
@@ -189,7 +183,6 @@ People
 │   │   ├── Dr Watkins
 │   │   └── Medical professional
 │   ├── Military personnel
-│   │   ├── Major Sir Charles George Gordon
 │   │   └── Soldiers
 │   │       └── Major Sir Charles George Gordon
 │   ├── Miners
@@ -224,6 +217,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 216
+  Total nodes in theme: 209
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

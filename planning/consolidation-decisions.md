@@ -864,3 +864,1776 @@ This restructure reinforces fundamental taxonomic principles:
 4. **Rank structure:** Occupational hierarchies should reflect organizational ranks (Constable < Senior-Constable < Sergeant)
 
 ---
+
+## Domestic Animals Classification
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+- Created `Domestic animals` as new intermediate category under `Animals`
+- Moved `Cattle` from direct child of `Animals` to child of `Domestic animals`
+- Moved `Dogs` from direct child of `Animals` to child of `Domestic animals`
+- Moved `Horses` from direct child of `Animals` to child of `Domestic animals`
+- Retained `Animal` (singular generic) as direct child of `Animals`
+- Retained `Wild animals` structure unchanged
+
+**Rationale:**
+
+The Animals hierarchy lacked parallel structure with asymmetric organization:
+
+**Before:**
+```
+Animals
+├── Animal (generic)
+├── Cattle
+├── Dogs
+├── Horses
+└── Wild animals
+    └── Wild horses
+```
+
+Creating a `Domestic animals` category provides:
+
+1. **Symmetry:** Domestic/Wild distinction creates clear organizing principle
+2. **Getty AAT alignment:** AAT distinguishes between domestic and wild animals as fundamental characteristic
+3. **Semantic clarity:** Makes the domestication status explicit for browsing users
+4. **Logical grouping:** Cattle, dogs, and horses in 19th century Australian context are clearly domestic animals
+
+**After:**
+```
+Animals
+├── Animal (generic - for when domestic/wild not specified)
+├── Domestic animals
+│   ├── Cattle
+│   ├── Dogs
+│   └── Horses
+└── Wild animals
+    └── Wild horses
+```
+
+**Evidence:**
+
+Historical context supports this classification:
+
+- **Cattle:** Domestic livestock raised for agricultural purposes
+- **Dogs:** Domestic companion/working animals
+- **Horses:** Domestic animals used for transportation, work, and recreation
+- **Wild horses:** Feral horses in Blue Mountains region (distinct from domestic horses)
+
+The collection context shows these animals in clearly domestic roles:
+- Cattle: Stock trespass cases (owned, managed animals)
+- Dogs: Companion animals in domestic settings
+- Horses: Transport, recreation, horse breeding businesses
+- Wild horses: Pest management, culling operations
+
+**Getty AAT alignment:**
+
+Getty AAT makes the domestic/wild distinction fundamental to animal classification:
+
+- **Domestic animals (AAT: 300265135):** "Animals adapted through breeding in captivity to a life intimately associated with and advantageous to humans"
+- **Wild animals:** Animals not domesticated or under direct human control
+
+**Impact:**
+
+- **No retagging required:** This is purely hierarchical reorganization
+- **Improved browsing:** Users can now filter by domestication status
+- **Parallel structure:** Domestic animals / Wild animals creates symmetrical organization
+- **Future-proofing:** Clear placement for additional domestic animal types (chickens, pigs, etc.)
+- **Maintains generic term:** "Animal" remains available for contexts where domestic/wild is not specified
+
+**Key Principles:**
+
+This reorganization demonstrates:
+
+1. **Parallel structure:** Creating symmetric hierarchies improves navigability
+2. **Semantic transparency:** Making implicit distinctions (domestic/wild) explicit in hierarchy
+3. **Getty AAT alignment:** Following authoritative vocabulary structure principles
+4. **Flexibility:** Generic term "Animal" preserved for ambiguous cases
+
+---
+
+## Retailer and Store Tag Consolidation
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+Parent category consolidation:
+
+- `Retailers & stores` → `Retailers and Stores` (standardised plural parent)
+- `Retailers and stores` → `Retailers and Stores` (merged duplicate)
+- **Preferred term:** `Retailers and Stores` (plural parent, never directly applied)
+
+Generic leaf node (for unspecified retailer items):
+
+- `Store` → `Retailer or Store` (singular generic leaf)
+- `Stores` → `Retailer or Store` (singular generic leaf)
+- `Retailers & store` → `Retailer or Store` (singular generic leaf)
+- `Retailers and store` → `Retailer or Store` (singular generic leaf)
+- **Preferred term:** `Retailer or Store` (singular, applied to generic items)
+
+Business name standardisation:
+
+- `Douglas & Co.` → `Douglas and Company` (with abbreviated form as synonym)
+- `Peckman Bros` → `Peckman Brothers` (with abbreviated form as synonym)
+- `Tabrett and Co.` → `Tabrett and Company` (with abbreviated form as synonym)
+- `Nimmo's` → retained as is (already in full form)
+
+**Rationale:**
+
+Duplication issue identified in hierarchy visualisation where two parallel branches existed:
+
+1. `Retailers & stores` (with ampersand)
+2. `Retailers and stores` (with "and")
+
+Both branches contained nearly identical children with minor naming variants, creating confusion and data quality issues. The consolidation addresses several problems:
+
+1. **Eliminate redundancy:** Two identical parent categories with slightly different punctuation
+2. **Standardise pattern:** Plural parent ("Retailers and Stores") + singular generic leaf ("Retailer or Store") matches established taxonomy pattern (e.g., Hotels > Hotel, Schools > School)
+3. **Spell out abbreviations:** Full business names improve clarity and searchability
+4. **Preserve alternates:** Abbreviated forms retained as synonyms for historical references
+
+**Evidence:**
+
+Hierarchy tree analysis showed duplicate branches:
+
+```
+│   │   ├── Retailers & stores
+│   │   │   ├── Douglas & Co.
+│   │   │   ├── Nimmo's
+│   │   │   ├── Peckman Bros
+│   │   │   ├── Retailers & store
+│   │   │   ├── Stores
+│   │   │   └── Tabrett and Co.
+│   │   ├── Retailers and stores
+│   │   │   ├── Douglas and Company
+│   │   │   ├── Nimmo's
+│   │   │   ├── Peckman Bros
+│   │   │   ├── Retailers and store
+│   │   │   ├── Store
+│   │   │   └── Tabrett and Company
+```
+
+**Changes implemented:**
+
+1. **Parent consolidation:**
+   - Merged duplicate "Retailers & stores" and "Retailers and stores" entries
+   - New preferred term: "Retailers and Stores" (plural parent, never directly applied)
+   - Maintains parent: Commercial businesses
+   - Follows standard pattern: plural parent for category
+
+2. **Generic leaf node:**
+   - Created: "Retailer or Store" (singular, for generic/unspecified retailer items)
+   - Parent: Retailers and Stores
+   - Consolidates: Store, Stores, Retailers & store, Retailers and store
+   - Applied to items tagged generically without specific business name
+
+3. **Business names - specific leaf nodes with full forms as preferred:**
+   - Douglas and Company (primary) ← Douglas & Co. (synonym)
+   - Peckman Brothers (primary) ← Peckman Bros (synonym)
+   - Tabrett and Company (primary) ← Tabrett and Co. (synonym)
+   - Nimmo's (unchanged)
+   - All have parent: Retailers and Stores
+
+**Impact:**
+
+- **Hierarchy cleanup:** Single clean branch replaces two duplicate branches
+- **Pattern consistency:** Follows established taxonomy pattern (plural parent + singular generic leaf + specific leaves)
+- **Improved clarity:** Clear distinction between parent category, generic instances, and specific businesses
+- **Better searchability:** Full business names more discoverable than abbreviations
+- **Historical preservation:** Abbreviated forms retained as synonyms for archival references
+- **Tagging precision:** Generic "Retailer or Store" available for unspecified businesses, specific names for identified ones
+
+**Getty AAT alignment:**
+
+- AAT uses "stores (built works)" for retail buildings
+- AAT uses "retailers" for commercial entities/organisations
+- Our "Retailer or Store" accommodates both senses with parent relationships:
+  - Parent: Commercial businesses (Agents facet - organisational sense)
+  - Can also relate to Built Environment facet where appropriate
+
+**Key Principles:**
+
+This consolidation demonstrates:
+
+1. **Eliminate duplication:** Remove parallel redundant hierarchies
+2. **Leaf-node tagging pattern:** Only leaf nodes (specific businesses and generic term) used for tagging; plural parent never directly applied
+3. **Standardise naming:** Consistent use of spelled-out business names
+4. **Preserve historical forms:** Abbreviations retained as synonyms
+5. **Taxonomic consistency:** Matches established pattern across entire taxonomy (Hotels > Hotel, Schools > School, etc.)
+6. **Quality control:** Regular hierarchy visualisation catches duplication issues
+
+---
+
+## Schools of Arts Tag Consolidation and Recursive Nesting Fix
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+Parent category issues:
+
+- `Schools of Arts` (plural parent - had polyhierarchical parents)
+- `School of Arts` (singular - was incorrectly acting as both parent AND leaf)
+
+Generic leaf consolidation:
+
+- `School of Arts` (singular generic leaf - proper role)
+- `School of Art` → `School of Arts` (variant spelling without 's' on Art)
+
+Plural variant consolidation:
+
+- `Schools of Art` → `Schools of Arts` (variant spelling without 's' on Art)
+
+Specific institution:
+
+- `Katoomba School of Arts` (specific leaf - had multiple incorrect parents)
+
+**Rationale:**
+
+Hierarchy visualisation revealed severe structural problems in the Schools of Arts taxonomy:
+
+1. **Recursive nesting:** "School of Arts" appeared as both a parent node AND a child node, creating infinite loops in the hierarchy
+2. **Multiple incorrect parents:** "Katoomba School of Arts" had four parent relationships instead of one
+3. **Ambiguous role:** "School of Arts" was simultaneously acting as:
+   - A parent of other schools
+   - A generic term for unspecified Schools of Arts
+   - A child of "Schools of Arts"
+   - A child of "Cultural societies", "Halls", and "School"
+4. **Spelling variants:** "School of Art" and "Schools of Art" (without 's' on "Arts")
+
+This violated the leaf-node tagging pattern and created navigational confusion.
+
+**Evidence:**
+
+Original problematic structure from hierarchy tree:
+
+```
+│   │   │   ├── Katoomba School of Arts
+│   │   │   ├── School of Arts
+│   │   │   │   ├── Katoomba School of Arts (duplicate!)
+│   │   │   │   └── School of Art
+│   │   │   └── Schools of Arts
+│   │   │       ├── Katoomba School of Arts (duplicate!)
+│   │   │       ├── School of Arts (recursive!)
+│   │   │       │   ├── Katoomba School of Arts (duplicate!)
+│   │   │       │   └── School of Art
+│   │   │       └── Schools of Art
+```
+
+CSV showed:
+- "School of Arts" had 4 parent relationships (Cultural societies, Halls, School, Schools of Arts)
+- "Katoomba School of Arts" had 4 parent relationships (Cultural societies, Halls, School of Arts, Schools of Arts)
+- "School of Arts" also had children (creating the recursive structure)
+
+**Changes implemented:**
+
+1. **Clarified parent node:**
+   - **Schools of Arts** remains the plural parent
+   - Maintains polyhierarchical relationships to: Cultural societies, Halls
+   - Never directly applied to items
+
+2. **Fixed generic leaf:**
+   - **School of Arts** now ONLY a singular generic leaf under "Schools of Arts"
+   - Removed incorrect parent relationships (Cultural societies, Halls, School)
+   - Removed child relationships (no longer acts as parent)
+   - Applied to items mentioning "a School of Arts" without specifying which one
+
+3. **Consolidated spelling variants:**
+   - "School of Art" (no 's' on Art) → synonym of "School of Arts"
+   - "Schools of Art" (no 's' on Art) → synonym of "Schools of Arts"
+
+4. **Fixed specific institution:**
+   - **Katoomba School of Arts** now has single parent: Schools of Arts
+   - Removed incorrect parent relationships (Cultural societies, Halls, School of Arts)
+   - Appears exactly once in hierarchy as a leaf node
+
+**Impact:**
+
+- **Eliminated recursion:** "School of Arts" no longer creates circular parent-child relationships
+- **Fixed duplication:** "Katoomba School of Arts" appears once instead of four times
+- **Pattern compliance:** Now follows leaf-node tagging pattern (plural parent + singular generic + specific leaves)
+- **Navigation clarity:** Users can now browse: Schools of Arts > School of Arts (generic) OR Schools of Arts > Katoomba School of Arts (specific)
+- **Polyhierarchy preserved:** "Schools of Arts" maintains appropriate relationships to Cultural societies and Halls at parent level
+
+**Getty AAT alignment:**
+
+- AAT 300026030: "schools of arts" (community halls in Australian/New Zealand context)
+- AAT structure: plural parent terms with specific instances as narrower terms
+- Our structure now matches: Schools of Arts (parent) > specific institutions (narrower terms)
+
+**Historical context:**
+
+Schools of Arts in the Blue Mountains context were community institutions combining:
+- Meeting halls (hence relationship to Halls)
+- Cultural/educational societies (hence relationship to Cultural societies)
+- NOT educational "schools" in the modern sense (removed incorrect "School" parent)
+
+The dual polyhierarchical relationship to both "Cultural societies" and "Halls" is appropriate because these institutions functioned as both organisations AND buildings.
+
+**Key Principles:**
+
+This consolidation demonstrates:
+
+1. **Prevent recursive structures:** A node cannot be both parent and child
+2. **Single responsibility:** Each term has ONE clear role (parent, generic leaf, or specific leaf)
+3. **Leaf-node tagging:** Only leaves are tagged; parents organise
+4. **Polyhierarchy at parent level:** Multiple broader terms applied to parent node, not duplicated to all children
+5. **Spelling standardisation:** "Arts" (with 's') is standard Australian terminology for these institutions
+6. **Quality control:** Hierarchy visualisation essential for catching structural anomalies
+
+---
+
+## Bands Duplication Fix
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+- `Bands` (plural parent)
+- `Band` (singular generic leaf)
+- `Katoomba band` (specific leaf - had duplicate parent relationships)
+
+**Rationale:**
+
+Similar to the Schools of Arts issue, "Katoomba band" had two parent relationships:
+1. Parent: Band (incorrect - creating nested structure)
+2. Parent: Bands (correct - direct child of plural parent)
+
+This caused "Katoomba band" to appear twice in the hierarchy.
+
+**Evidence:**
+
+Original problematic structure:
+```
+Bands
+├── Band
+│   └── Katoomba band (child of Band)
+└── Katoomba band (child of Bands)
+```
+
+**Changes implemented:**
+
+- Removed parent relationship: Katoomba band → Band
+- Retained correct relationship: Katoomba band → Bands
+- Result: Katoomba band appears once as a leaf node
+
+**Corrected structure:**
+```
+Bands (plural parent)
+├── Band (singular generic leaf)
+└── Katoomba band (specific leaf)
+```
+
+**Impact:**
+
+- **Eliminated duplication:** Specific band now appears once
+- **Pattern compliance:** Follows leaf-node tagging pattern
+- **Navigation clarity:** Clear hierarchy with no nested redundancy
+
+**Key Principle:**
+
+Specific named entities (like "Katoomba band") should be direct children of the plural parent, not children of the generic singular leaf. Both the generic leaf ("Band") and specific leaves ("Katoomba band") are peers at the same hierarchical level.
+
+---
+
+## Lodges Taxonomy Comprehensive Rationalisation
+
+**Date:** 2025-10-31
+
+**Context:**
+
+Fraternal organizations (lodges) taxonomy had multiple structural problems that accumulated despite previous corrections in October 2025. This rationalisation addresses variant names still in hierarchy, duplicate placements, building/organization mixing, and terminology clarity issues.
+
+**Tags affected:**
+
+### Variant Names → Synonyms
+- `Druids` → `United Ancient Order of Druids` (synonym: informal name)
+- `U.A.O.D.` → `United Ancient Order of Druids` (synonym: acronym)
+- `Masons` → `Freemasons` (synonym: informal name)
+- `Oddfellows` → `Odd Fellows` (synonym: variant spelling)
+
+### Duplicate Placements Fixed
+- `Druid's Lodge` - removed 2 incorrect parents (Druids, Lodges), kept only under United Ancient Order of Druids
+- `Mountaineer Lodge` - removed duplicate under Lodges, kept only under Unaffiliated lodges
+- `Masonic Hall` - removed organizational parents (Lodges, Masons), kept only under Halls (Built Environment)
+- `Odd Fellows' Hall` - removed organizational parents (Lodges, Odd Fellows), kept only under Halls (Built Environment)
+
+### Terminology Clarification
+- `Independent lodges` → `Unaffiliated lodges` (avoids confusion with "Independent Order of Odd Fellows")
+- `Independent lodge` → `Unaffiliated lodge` (singular generic)
+
+### Unnecessary Terms Removed
+- `United Ancient Order of Druid` (singular generic) - not needed; use plural form only
+
+**Rationale:**
+
+### 1. Variant Names Still in Hierarchy
+Despite October 2025 validation report stating variants should be synonyms, these terms were still appearing as hierarchy nodes:
+- **Druids** and **U.A.O.D.** under Lodges (should be synonyms of United Ancient Order of Druids)
+- **Masons** under Lodges (should be synonym of Freemasons)
+- **Oddfellows** under Odd Fellows (should be synonym)
+
+This violated the established pattern: "Synonyms and variant names are NOT represented as child tags in the hierarchy."
+
+### 2. Triple Duplication of Druid's Lodge
+`Druid's Lodge` appeared THREE times:
+- As child of "Druids" (incorrect - Druids shouldn't exist as hierarchy node)
+- As child of "Lodges" (incorrect - should only be under specific organization)
+- As "Druid's Lodge (local lodge)" under "United Ancient Order of Druids" (✓ correct)
+
+Only the qualified form under UAOD is correct - this represents a specific local chapter.
+
+### 3. Building/Organization Confusion
+**Masonic Hall** and **Odd Fellows' Hall** are BUILDINGS (Built Environment facet), not organizations (Agents facet).
+
+Previous validation report (October 2025) established:
+- Source text: "forming a Druid's Lodge" = organization
+- Masonic Hall → Built Environment (BUILDING) ✅
+- Odd Fellows' Hall → Built Environment (BUILDING) ✅
+
+However, these buildings still had organizational parents creating polyhierarchical confusion.
+
+### 4. Terminology Ambiguity: "Independent"
+**Problem:** "Independent Order of Odd Fellows" (IOOF) is the official NAME of the organization - the word "Independent" is part of the proper name, NOT a description of affiliation status.
+
+**Confusion:** "Independent lodges" category was meant for lodges unaffiliated with national/international bodies (e.g., Mountaineer Lodge), but this creates ambiguity:
+- Is "Independent Order of Odd Fellows" an "independent lodge"? NO - it's a national organization.
+- Is "Mountaineer Lodge" an "independent lodge"? YES - it's locally unaffiliated.
+
+**Solution:** Rename to "Unaffiliated lodges" for clarity.
+
+**Getty AAT Check:** Getty AAT has no specific guidance on fraternal lodge affiliation terminology. "Unaffiliated" is clearer and unambiguous.
+
+### 5. Unnecessary Singular Generic
+"United Ancient Order of Druid" (singular) serves no purpose - the organization has specific local chapters (like Druid's Lodge), but no generic usage requiring a singular form.
+
+**Evidence:**
+
+Original problematic structure from hierarchy tree:
+
+```
+Fraternal orders & lodges
+└── Lodges
+    ├── Druid's Lodge (duplicate #1)
+    ├── Druids (should be synonym)
+    │   ├── Druid (singular)
+    │   ├── Druid's Lodge (duplicate #2)
+    │   └── U.A.O.D. (should be synonym)
+    ├── Freemasons
+    ├── Independent Order of Odd Fellows
+    ├── Independent lodges (ambiguous name)
+    │   ├── Independent lodge (singular)
+    │   └── Mountaineer Lodge
+    ├── Lodge (generic)
+    ├── Masonic Hall (BUILDING mixed with organizations!)
+    ├── Masons (should be synonym)
+    │   ├── Mason (singular)
+    │   └── Masonic Hall (duplicate!)
+    ├── Mountaineer Lodge (duplicate!)
+    ├── Odd Fellows
+    │   ├── Odd Fellow (singular)
+    │   ├── Odd Fellows' Hall (BUILDING!)
+    │   └── Oddfellows (should be synonym)
+    ├── Odd Fellows' Hall (duplicate!)
+    └── United Ancient Order of Druids
+        ├── Druid's Lodge (local lodge) (✓ correct)
+        └── United Ancient Order of Druid (unnecessary singular)
+```
+
+**Changes implemented:**
+
+### 1. Converted Variants to Synonyms
+```csv
+United Ancient Order of Druids,Druids,synonym,Informal name for United Ancient Order of Druids
+United Ancient Order of Druids,U.A.O.D.,synonym,Acronym for United Ancient Order of Druids
+Freemasons,Masons,synonym,Informal name for Freemasons
+Odd Fellows,Oddfellows,synonym,Variant spelling of Odd Fellows
+```
+
+### 2. Eliminated Duplicate Placements
+**Druid's Lodge:**
+- DELETED: parent=Druids
+- DELETED: parent=Lodges
+- KEPT: Druid's Lodge (local lodge), parent=United Ancient Order of Druids
+
+**Mountaineer Lodge:**
+- DELETED: parent=Lodges
+- KEPT: parent=Unaffiliated lodges
+
+**Masonic Hall (building separation):**
+- DELETED: parent=Lodges
+- DELETED: parent=Masons (which no longer exists as hierarchy node)
+- KEPT: parent=Halls (Built Environment facet)
+
+**Odd Fellows' Hall (building separation):**
+- DELETED: parent=Lodges
+- DELETED: parent=Odd Fellows
+- KEPT: parent=Halls (Built Environment facet)
+
+### 3. Renamed for Clarity
+```csv
+Independent lodges → Unaffiliated lodges
+Independent lodge → Unaffiliated lodge (singular generic)
+```
+Updated Mountaineer Lodge parent accordingly.
+
+### 4. Removed Unnecessary Terms
+DELETED: United Ancient Order of Druid (singular generic not needed)
+
+**Corrected structure:**
+
+```
+Fraternal orders & lodges
+└── Lodges
+    ├── Lodge (generic leaf)
+    ├── Freemasons (specific organization leaf)
+    ├── Odd Fellows (specific organization leaf)
+    ├── United Ancient Order of Druids (specific organization)
+    │   └── Druid's Lodge (local lodge) (local chapter leaf)
+    └── Unaffiliated lodges
+        ├── Unaffiliated lodge (generic leaf)
+        └── Mountaineer Lodge (specific unaffiliated lodge leaf)
+```
+
+**Synonyms (not in hierarchy):**
+- Masons → Freemasons
+- Oddfellows → Odd Fellows
+- Druids → United Ancient Order of Druids
+- U.A.O.D. → United Ancient Order of Druids
+
+**Buildings (separate Built Environment facet):**
+- Masonic Hall (parent: Halls)
+- Odd Fellows' Hall (parent: Halls)
+
+**Impact:**
+
+- **Eliminated all duplication:** Each entity appears exactly once in correct location
+- **Separated building/organization facets:** Buildings in Built Environment, organizations in Agents
+- **Variant consolidation:** All informal names, acronyms, and spellings are synonyms (will merge in Zotero retagging)
+- **Terminology clarity:** "Unaffiliated lodges" unambiguous vs. "Independent Order of Odd Fellows"
+- **Pattern compliance:** Follows leaf-node tagging pattern consistently
+- **Zotero-ready:** Structure maps cleanly to tag application without confusion
+
+**Zotero Application Implications:**
+
+When these changes are applied to Zotero (Phase 1.4):
+
+1. **Synonyms will consolidate:**
+   - Items tagged "Masons" → retagged as "Freemasons"
+   - Items tagged "Druids" or "U.A.O.D." → retagged as "United Ancient Order of Druids"
+   - Items tagged "Oddfellows" → retagged as "Odd Fellows"
+
+2. **Buildings separated from organizations:**
+   - "Masonic Hall" and "Odd Fellows' Hall" remain valid tags in Built Environment
+   - No conflation with organizational tags
+
+3. **Clear tagging options:**
+   - Generic: "Lodge", "Unaffiliated lodge"
+   - Specific organizations: "Freemasons", "Odd Fellows", "United Ancient Order of Druids"
+   - Local chapters: "Druid's Lodge (local lodge)"
+   - Specific unaffiliated: "Mountaineer Lodge"
+
+4. **Parent nodes not applied:**
+   - "Lodges", "Unaffiliated lodges" are organizational only
+   - Only leaf nodes become actual Zotero tags
+
+**Getty AAT Alignment:**
+
+- AAT 300025950: "associations (organizations)" - broad term for organized groups
+- AAT has no specific "fraternal organizations" or "lodges" term
+- Our structure: Lodges as organizational category under "Fraternal orders & lodges"
+- Buildings (Halls) correctly placed in Objects/Built Environment facet per AAT pattern
+- Separation of organization/building senses follows AAT disambiguation practices
+
+**Historical Context:**
+
+Blue Mountains fraternal organizations were significant social institutions:
+- **Freemasons:** Met at Masonic Hall (building separate from organization)
+- **Odd Fellows (IOOF):** Independent Order of Odd Fellows met at Odd Fellows' Hall
+- **United Ancient Order of Druids:** Local chapter "Druid's Lodge" established 1892 (also known as Jersey Lodge U.A.O.D.)
+- **Mountaineer Lodge:** Local unaffiliated lodge, not part of national fraternal order
+
+**Key Principles:**
+
+This comprehensive rationalisation demonstrates:
+
+1. **Enforce synonym pattern:** Variants NEVER appear as hierarchy children
+2. **Eliminate duplication:** Each entity in ONE correct location only
+3. **Separate facets:** Buildings (Built Environment) vs. Organizations (Agents)
+4. **Terminology precision:** Use unambiguous terms ("Unaffiliated" not "Independent")
+5. **Remove unnecessary terms:** Singular generics only when actually needed for tagging
+6. **Leaf-node compliance:** Only leaves are taggable; parents organize
+7. **Zotero readiness:** Structure must map cleanly to actual tag application
+8. **Quality control:** Regular hierarchy visualization catches accumulated problems
+
+---
+
+## Removal of Unnecessary Singular Generics (Organizational Authorities)
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+Removed unnecessary singular generic forms:
+- `Postal authority` (singular generic under Postal authorities)
+- `Railway authority` (singular generic under Railway authorities)
+
+**Rationale:**
+
+Not all plural parent categories require a singular generic leaf. Singular generics serve a specific purpose: to tag items where the source text mentions the category generically without naming the specific entity.
+
+**When singular generics ARE needed:**
+- "stayed at a hotel" (without naming which) → tag as "Hotel"
+- "attended a school" (without naming which) → tag as "School"
+- "a mountain feature" (without specifying) → tag as "Mountain feature"
+
+**When singular generics are NOT needed:**
+- Source text would never say "a postal authority" generically
+- Source text would either:
+  1. Name the specific authority: "Postal Department"
+  2. Discuss postal services thematically
+- These are organizational entities that are always named/specific, not generic categories
+
+**Evidence:**
+
+Examination of usage patterns shows:
+- Postal authorities = specific government departments (e.g., "Postal Department")
+- Railway authorities = specific government commissions (e.g., "Railway commission")
+- No scenarios where you'd tag generically without knowing the specific entity name
+
+**Comparison with other categories:**
+
+**Keep singular generic (makes sense):**
+- Hotels → Hotel (source: "stayed at a hotel")
+- Schools → School (source: "attended a school")
+- Postal facilities → Postal facility (source: "a postal facility" - could be any post office/mail depot)
+- Public officials → Public official (source: "a public official" - unnamed official)
+
+**Remove singular generic (doesn't make sense):**
+- Postal authorities → ~~Postal authority~~ (would always be named: "Postal Department")
+- Railway authorities → ~~Railway authority~~ (would always be named: "Railway commission")
+
+**Corrected structure:**
+
+```
+Government bodies
+├── Postal authorities
+│   └── Postal Department (specific authority only)
+└── Railway authorities
+    └── Railway commission (specific authority only)
+```
+
+**Impact:**
+
+- **Clearer tagging guidance:** No confusion about when to use authority tags
+- **Pattern refinement:** Singular generics only where functionally needed
+- **Taxonomy precision:** Distinguishes between generic-able categories (hotels, schools) vs. always-specific entities (government authorities)
+
+**Key Principle:**
+
+**Singular generic leaves should only exist when there are realistic scenarios where source text would mention the category generically without naming the specific entity.** Government authorities, regulatory bodies, and official organizational entities are always named/specific in historical sources and don't require generic forms.
+
+This refinement clarifies the leaf-node tagging pattern: not every plural parent needs a singular generic - only those where generic tagging is semantically meaningful.
+
+---
+
+## Law Enforcement Facet Correction (Activity vs. Occupation)
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+Fixed incorrect facet placement:
+- `Law enforcement` - removed incorrect `parent=Occupations` relationship
+
+**Rationale:**
+
+Confusion between two semantically distinct concepts with similar names:
+
+1. **"Law enforcement" (ACTIVITY)** - The activity/function of enforcing laws
+2. **"Law enforcement personnel" (AGENTS/OCCUPATIONS)** - The people who perform law enforcement
+
+**Problem:** "Law enforcement" incorrectly had `parent=Occupations`, placing the ACTIVITY under the Agents facet.
+
+**Correct structure:**
+
+**Activities facet:**
+```
+Activities
+└── Societal activities
+    └── Law enforcement (the activity)
+        └── Policing (the activity of police work)
+```
+
+**Agents facet:**
+```
+People
+└── Occupations
+    └── Law enforcement personnel (the occupation category)
+        └── Police officers (the people)
+            ├── Constable (rank/occupation)
+            └── Senior-Constable (rank/occupation)
+```
+
+**Evidence:**
+
+Hierarchy tree showed "Law enforcement" appearing under Agents > Occupations, which is semantically incorrect. Activities (what people DO) belong in the Activities facet, not the Agents facet (WHO does things).
+
+**Comparison with similar facet distinctions:**
+
+- **Mining** (activity - Activities facet) vs. **Miners** (people - Agents facet)
+- **Teaching** (activity - Activities facet) vs. **Teachers** (people - Agents facet)
+- **Law enforcement** (activity - Activities facet) vs. **Law enforcement personnel** (people - Agents facet)
+
+**Changes implemented:**
+
+DELETED: `Law enforcement,Law enforcement,hierarchy,parent=Occupations`
+
+KEPT:
+- `Law enforcement,hierarchy,parent=Justice & Crime - THEMATIC` (thematic grouping)
+- `Law enforcement,hierarchy,parent=Societal activities` (correct facet - Activities)
+- `Law enforcement personnel,hierarchy,parent=Occupations` (people - correct facet - Agents)
+
+**Impact:**
+
+- **Facet purity:** Activities facet contains only activities; Agents facet contains only agents
+- **Semantic clarity:** Clear distinction between actions and actors
+- **Getty AAT alignment:** Follows AAT pattern of separating activities from agents
+- **Navigation improvement:** Users browsing "what people did" vs. "who did things" get correct results
+
+**Getty AAT Alignment:**
+
+AAT maintains strict separation between:
+- **Activities Facet** (300264087) - actions, processes, functions
+- **Agents Facet** (300264090) - people, organizations, groups
+
+Our correction aligns with this fundamental AAT principle.
+
+**Key Principle:**
+
+**Activities (what is DONE) vs. Agents (WHO does it):** Maintain strict facet separation. When terms are semantically similar (e.g., "law enforcement" vs. "law enforcement personnel"), ensure correct facet placement based on the fundamental distinction between actions and actors.
+
+---
+
+## Coroners Hierarchy Duplication and Nesting Fix
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+Fixed duplicate placements and recursive nesting:
+- `Coroner` - removed incorrect `parent=Legal officials`
+- `Coroner Lethbridge` - removed incorrect parents (`parent=Coroner`, `parent=Legal officials`)
+
+**Rationale:**
+
+Same pattern of problems seen throughout taxonomy rationalisation:
+
+1. **Quadruple duplication of Coroner Lethbridge** - appeared 4 times due to 3 parent relationships
+2. **Duplicate branch for Coroner** - appeared as both child of "Coroners" and "Legal officials"
+3. **Recursive nesting** - Coroner Lethbridge nested under Coroner under Coroners (violates leaf-node pattern)
+
+**Evidence:**
+
+Original problematic structure from hierarchy tree:
+
+```
+Legal officials
+├── Coroner
+│   └── Coroner Lethbridge (duplicate #1)
+├── Coroner Lethbridge (duplicate #2)
+├── Coroners
+│   ├── Coroner (recursive!)
+│   │   └── Coroner Lethbridge (duplicate #3)
+│   └── Coroner Lethbridge (duplicate #4)
+└── Legal official
+```
+
+CSV showed:
+- `Coroner` had 2 parent relationships: Coroners, Legal officials
+- `Coroner Lethbridge` had 3 parent relationships: Coroner, Coroners, Legal officials
+
+**Changes implemented:**
+
+DELETED:
+- `Coroner,hierarchy,parent=Legal officials` (creates duplicate branch)
+- `Coroner Lethbridge,hierarchy,parent=Coroner` (creates recursive nesting)
+- `Coroner Lethbridge,hierarchy,parent=Legal officials` (should only be under Coroners)
+
+KEPT:
+- `Coroners,hierarchy,parent=Legal officials` (category parent)
+- `Coroner,hierarchy,parent=Coroners` (singular generic leaf)
+- `Coroner Lethbridge,hierarchy,parent=Coroners` (specific person leaf)
+
+**Corrected structure:**
+
+```
+Legal officials
+├── Coroners (plural parent - category for coroners)
+│   ├── Coroner (singular generic leaf)
+│   └── Coroner Lethbridge (specific person leaf)
+└── Legal official (singular generic for unspecified legal official)
+```
+
+**Impact:**
+
+- **Eliminated quadruple duplication:** Coroner Lethbridge appears once
+- **Removed recursive nesting:** Singular generic and specific leaves are peers, not nested
+- **Pattern compliance:** Follows leaf-node tagging pattern consistently
+- **Clear structure:** Coroners as intermediate category under Legal officials
+
+**Key Principle:**
+
+This fix demonstrates the same principles applied throughout today's rationalisation session:
+1. Specific named entities (Coroner Lethbridge) are direct children of plural parent (Coroners)
+2. Generic singular (Coroner) and specific leaves are peers at same hierarchical level
+3. Each entity appears exactly once in correct location
+4. No recursive nesting of singular generic → specific pattern
+
+---
+
+## Military Personnel Duplication Fix
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+Fixed duplicate placement:
+- `Major Sir Charles George Gordon` - removed incorrect `parent=Military personnel`
+
+**Rationale:**
+
+Same duplication pattern - specific person appearing both as direct child of category parent AND as child of intermediate category.
+
+**Evidence:**
+
+Original structure:
+```
+Military personnel
+├── Major Sir Charles George Gordon (duplicate #1)
+└── Soldiers
+    └── Major Sir Charles George Gordon (duplicate #2)
+```
+
+**Changes implemented:**
+
+DELETED: `Major Sir Charles George Gordon,hierarchy,parent=Military personnel`
+
+KEPT: `Major Sir Charles George Gordon,hierarchy,parent=Soldiers`
+
+**Corrected structure:**
+
+```
+Military personnel (occupation category)
+└── Soldiers (specific military occupation)
+    └── Major Sir Charles George Gordon (specific person)
+```
+
+**Impact:**
+
+- **Eliminated duplication:** Specific person appears once in correct location
+- **Clear hierarchy:** Person under specific occupation (Soldiers) rather than generic category (Military personnel)
+- **Pattern compliance:** Follows established hierarchy pattern
+
+---
+
+## Unemployment vs. Unemployment Relief Facet Correction
+
+**Date:** 2025-10-31
+
+**Tags affected:**
+
+Fixed incorrect hierarchical relationship:
+- `Unemployment relief` - removed incorrect `parent=Unemployment`
+
+**Rationale:**
+
+Semantically incorrect parent-child relationship causing tagging problems.
+
+**Problem:**
+1. "Unemployment" couldn't be tagged (was a parent node with "Unemployment relief" as child)
+2. Semantically wrong relationship - unemployment relief is NOT a "type of" unemployment
+
+**Semantic distinction:**
+- **Unemployment** = CONCEPT/CONDITION (the state of being without work) → Associated Concepts facet
+- **Unemployment relief** = ACTIVITY (charitable/welfare efforts to help the unemployed) → Activities facet
+
+**Evidence:**
+
+Original problematic structure:
+```
+Associated Concepts
+└── Social & economic concepts
+    └── Unemployment (parent - can't be tagged!)
+        └── Unemployment relief (child)
+```
+
+This created two problems:
+1. "Unemployment" was untaggable due to having a child
+2. The relationship implies "unemployment relief" is a subcategory of "unemployment" (semantically incorrect)
+
+**Correct relationship:**
+
+These concepts are **related but not hierarchical**:
+- Both relate to **economic distress/hardship** (thematic grouping)
+- But they belong in **different primary facets** (Associated Concepts vs. Activities)
+- The relationship is: unemployment relief is a **response TO** unemployment, not a **type OF** unemployment
+
+**Changes implemented:**
+
+DELETED: `Unemployment relief,hierarchy,parent=Unemployment`
+
+KEPT:
+- **Unemployment** maintains parents:
+  - `parent=Social & economic concepts` (Associated Concepts facet)
+  - `parent=Economic distress - THEMATIC`
+  - `parent=Economic hardship - THEMATIC`
+
+- **Unemployment relief** maintains parents:
+  - `parent=Charitable and welfare activities` (Activities facet)
+  - `parent=Economic distress - THEMATIC`
+  - `parent=Economic hardship - THEMATIC`
+
+**Corrected structure:**
+
+**Associated Concepts facet:**
+```
+Social & economic concepts
+└── Unemployment (leaf - now taggable)
+```
+
+**Activities facet:**
+```
+Charitable and welfare activities
+└── Unemployment relief (leaf - taggable)
+```
+
+**Thematic groupings (maintain relationship without hierarchy):**
+```
+Economic distress - THEMATIC
+├── Unemployment
+└── Unemployment relief
+
+Economic hardship - THEMATIC
+├── Unemployment
+└── Unemployment relief
+```
+
+**Impact:**
+
+- **Both concepts now taggable:** As independent leaf nodes in appropriate facets
+- **Correct semantic relationships:** Related through thematic groupings, not parent-child
+- **Facet purity:** Concepts in Associated Concepts, activities in Activities
+- **Improved precision:** Can tag unemployment (the condition) separately from unemployment relief (the response)
+
+**Key Principle:**
+
+**Not all semantic relationships should be expressed as parent-child hierarchies.** When concepts are related but belong to different facets (e.g., a condition and a response to that condition), maintain the relationship through **thematic groupings** rather than creating inappropriate hierarchical dependencies that prevent both concepts from being taggable.
+
+This aligns with Getty AAT practice of using polyhierarchical relationships and associative relationships rather than forcing all related concepts into strict parent-child hierarchies.
+
+---
+
+## Unemployment Insurance - Financial Services Activity (2025-10-31)
+
+**Decision:** Add "Unemployment insurance" as a new leaf node under a new Financial services hierarchy in the Activities facet, with polyhierarchical relationships to thematic groupings.
+
+**Context:**
+
+User requested addition of "Unemployment insurance" to distinguish it from "Unemployment relief" already in the taxonomy. Research into late 19th/early 20th century Australian social welfare context revealed important distinctions.
+
+**Historical Context (Late 19th - Early 20th Century Australia):**
+
+- **Private/mutual aid provision:** Unemployment insurance was provided primarily by friendly societies (Oddfellows, Druids, etc.) and trade unions through voluntary, contributory schemes
+- **No government programme:** State unemployment benefits did not exist in Australia until 1945
+- **Commercial/mutual nature:** Members paid premiums into schemes that provided benefits during unemployment
+- **Distinct from relief:** Government "unemployment relief" (sustenance programmes from 1930s) was charitable/welfare assistance, while unemployment insurance was a financial service/mutual aid arrangement
+
+**Getty AAT Alignment:**
+
+- AAT includes "insurance" (AAT:300055719) under economic concepts with scope note: "Coverage by contract whereby for a stipulated consideration one party undertakes to indemnify or guarantee another against loss by a specified contingency or peril"
+- Insurance provision (the activity) belongs in Activities facet, while insurance (the concept) belongs in Associated Concepts facet
+- This follows AAT pattern of distinguishing concepts from activities
+
+**Rationale:**
+
+Three related but distinct concepts now exist:
+
+1. **Unemployment** (Associated Concepts facet) - the social/economic condition of being unemployed
+2. **Unemployment relief** (Activities facet > Charitable and welfare activities) - government or charitable assistance provided to the unemployed
+3. **Unemployment insurance** (Activities facet > Economic activities > Financial services) - commercial/mutual aid insurance coverage for unemployment
+
+**Structure Added:**
+
+**Activities facet:**
+```
+Activities
+└── Economic activities
+    └── Financial services (new parent)
+        └── Insurance provision (new parent)
+            └── Unemployment insurance (new leaf - taggable)
+```
+
+**Polyhierarchical relationships maintained via thematic groupings:**
+```
+Economic distress - THEMATIC
+├── Unemployment
+├── Unemployment relief
+└── Unemployment insurance (NEW)
+
+Economic hardship - THEMATIC
+├── Unemployment
+├── Unemployment relief
+└── Unemployment insurance (NEW)
+```
+
+**CSV Entries Added:**
+
+Lines 210-214 in tag_map_consolidated.csv:
+```csv
+Financial services,Financial services,hierarchy,parent=Economic activities
+Insurance provision,Insurance provision,hierarchy,parent=Financial services
+Unemployment insurance,Unemployment insurance,hierarchy,parent=Insurance provision
+Unemployment insurance,Unemployment insurance,hierarchy,parent=Economic distress - THEMATIC
+Unemployment insurance,Unemployment insurance,hierarchy,parent=Economic hardship - THEMATIC
+```
+
+**Impact:**
+
+- **Three-way distinction:** Clear separation between condition, charitable response, and commercial/mutual aid response
+- **Accurate historical representation:** Reflects the actual nature of unemployment insurance in the Blue Mountains period (1890s-1930s)
+- **Extensible structure:** Financial services > Insurance provision hierarchy can accommodate future insurance-related tags (life insurance, fire insurance, etc.)
+- **Facet purity:** Economic activities in Activities facet, concepts in Associated Concepts facet
+- **Getty AAT alignment:** Follows AAT pattern for distinguishing concepts from activities
+
+**Key Principle:**
+
+**Financial services and insurance provision are economic activities, not charitable activities.** Even when serving social welfare functions (as friendly societies did), insurance operates on commercial/mutual aid principles (premiums, contracts, coverage) rather than charitable principles (donations, need-based assistance). This distinction is critical for accurate historical representation and aligns with Getty AAT structure.
+
+---
+
+## Hunting - Corrected Facet Placement (2025-10-31)
+
+**Decision:** Move "Hunting" from erroneous top-level facet to Activities facet under Economic activities.
+
+**Issue:**
+
+An erroneous top-level facet "Hunting" was created (visualizations/hierarchy_trees/primary_hunting.txt) containing only "Wild horse culling". This violated the taxonomy structure which should have seven primary facets aligned with Getty AAT.
+
+**Context:**
+
+- "Wild horse culling" was tagged with `parent=Hunting`
+- However, "Hunting" was not defined in tag_map_consolidated.csv with its own parent
+- This created an orphaned parent node that generated a spurious top-level facet
+- Hunting is an activity, not a facet
+
+**Resolution:**
+
+Added Hunting as a parent under Economic activities (alongside Agriculture, Mining, Tourism, etc.):
+
+```csv
+Hunting,Hunting,hierarchy,parent=Economic activities
+Wild horse culling,Wild horse culling,hierarchy,parent=Hunting
+```
+
+**Structure:**
+
+```
+Activities (facet)
+└── Economic activities
+    ├── Agriculture
+    │   └── Animal husbandry
+    │       └── Animal breeding
+    │           └── Horse breeding
+    └── Hunting (NEW parent)
+        └── Wild horse culling (existing leaf)
+```
+
+**Rationale:**
+
+- **Economic activity classification:** Hunting (including culling for pest control/management) is an economic activity, similar to agriculture and mining
+- **Resource management:** Wild horse culling is a land/resource management activity, making it appropriate under Economic activities
+- **Getty AAT alignment:** Hunting in the AAT is classified under Activities, not as a top-level facet
+- **Facet integrity:** Maintains the seven primary facets without spurious additions
+
+**Files Updated:**
+
+- `data/tag_map_consolidated.csv:1059` - Added Hunting parent definition
+- Removed `visualizations/hierarchy_trees/primary_hunting.txt` - Erroneous file deleted
+
+**Note on Classification:**
+
+Hunting could alternatively fit under Recreation activities if the collection contained sport hunting references. However, given the specific context of "wild horse culling" (pest control/land management), Economic activities is more appropriate. Future hunting-related tags should be evaluated based on their specific context (sport/recreation vs. commercial/management).
+
+---
+
+## Settlements - Removed Duplicate Entry (2025-10-31)
+
+**Decision:** Remove duplicate "Mining settlements" entry that incorrectly referenced undefined "Settlements" parent, eliminating spurious top-level facet.
+
+**Issue:**
+
+An erroneous top-level facet "Settlements" was created (visualizations/hierarchy_trees/primary_settlements.txt) due to a duplicate CSV entry. "Mining settlements" had two parent definitions:
+- Line 454: Correct entry with `parent=Places (existing facet)`
+- Line 1039: Duplicate entry with `parent=Settlements` (undefined parent)
+
+The undefined "Settlements" parent created an orphaned node that generated a spurious eighth facet.
+
+**Context:**
+
+Mining settlements was correctly positioned under Places facet (alongside Mining districts, Natural features, Reserves, and Towns), but the duplicate entry with the undefined parent caused the visualization script to generate an extra facet file.
+
+**Resolution:**
+
+Removed the duplicate entry at line 1039:
+```csv
+Mining settlements,Mining settlements,hierarchy,parent=Settlements   # REMOVED
+```
+
+Retained the correct entries:
+```csv
+Mining settlements,Mining settlements,hierarchy,parent=Mining & Industry - THEMATIC  (line 453)
+Mining settlements,Mining settlements,hierarchy,parent=Places (existing facet)        (line 454)
+```
+
+**Correct Structure:**
+
+```
+Places (facet)
+├── Mining districts
+│   ├── Mining district
+│   ├── Nellie's Glen
+│   ├── Ruined Castle
+│   └── South Clifton
+├── Mining settlements
+│   ├── Mining settlement
+│   ├── Middle camp
+│   ├── Nellie's Glen (poly-hierarchy)
+│   └── Ruined Castle (poly-hierarchy)
+├── Natural features
+├── Reserves
+└── Towns
+```
+
+**Polyhierarchical Relationships:**
+
+- **Mining settlements** has two valid parents:
+  - `parent=Places (existing facet)` - Primary facet placement
+  - `parent=Mining & Industry - THEMATIC` - Thematic grouping
+- Individual settlements like Nellie's Glen and Ruined Castle appear in both Mining districts and Mining settlements (poly-hierarchy representing dual nature as geographic areas and settlement locations)
+
+**Rationale:**
+
+- **Facet integrity:** Settlements is not a Getty AAT primary facet; it belongs under Places
+- **Duplicate removal:** Only one hierarchical parent definition should exist (line 454); thematic relationships are maintained separately (line 453)
+- **Getty AAT alignment:** Places facet encompasses all geographic locations including settlements, districts, natural features, and towns
+
+**Files Updated:**
+
+- `data/tag_map_consolidated.csv:1039` - Removed duplicate entry
+- Removed `visualizations/hierarchy_trees/primary_settlements.txt` - Erroneous file deleted
+
+**Impact:**
+
+- Maintains seven primary facets aligned with Getty AAT structure
+- Preserves correct polyhierarchical relationships for mining settlements
+- Mining settlements remains correctly positioned under Places facet
+
+---
+
+## Built Environment - Accommodation Consolidation (2025-10-31)
+
+**Decision:** Consolidate "Accommodation and hospitality venues" and "Hospitality venues" into "Accommodation buildings" for consistency with Built Environment taxonomy.
+
+**Issue:**
+
+Built Environment facet had redundant and inconsistent parent nodes:
+- "Accommodation and hospitality venues" (with 6 children: Boarding houses, Cottages, Dwellings, Hotels, Public houses, Stables)
+- "Accommodation buildings" (with 3 duplicate children: Boarding houses, Dwellings, Hotels)
+- "Hospitality venues" (with 1 child: Pubs)
+
+This created duplication in the hierarchy visualizations and violated the naming consistency pattern.
+
+**Context:**
+
+Analysis of all Built Environment children revealed a clear pattern:
+- Civic **buildings**
+- Commercial **buildings**
+- Community **buildings**
+- Educational **buildings**
+- Industrial **buildings**
+- Religious **buildings**
+- Infrastructure (different category)
+
+Only the accommodation-related categories used "venues" terminology, breaking the consistent "buildings" pattern used for 7 out of 10 direct children of Built Environment.
+
+**Getty AAT Alignment:**
+
+Getty AAT classifies accommodation structures as building types (e.g., "single dwellings" AAT:300005424, "hotels" AAT:300007166) under the Objects facet, emphasising their physical/architectural nature rather than functional "venue" designation.
+
+**Resolution:**
+
+1. **Removed parent nodes:**
+   - Line 17: `Accommodation and hospitality venues,hierarchy,parent=Built Environment` (REMOVED)
+   - Line 284: `Hospitality venues,hierarchy,parent=Built Environment` (REMOVED)
+
+2. **Retained and consolidated under:**
+   - `Accommodation buildings,hierarchy,parent=Built Environment`
+
+3. **Updated all children** to use `parent=Accommodation buildings`:
+   - Boarding houses
+   - Cottages
+   - Dwellings
+   - Hotels
+   - Public houses
+   - Pubs
+   - Stables
+
+4. **Removed duplicate entries** where children had both parents listed
+
+**Final Structure:**
+
+```
+Built Environment (facet)
+└── Accommodation buildings
+    ├── Boarding houses
+    │   ├── Boarding house
+    │   └── Orama Boarding House
+    ├── Cottages
+    │   └── Cottage
+    ├── Dwellings
+    │   ├── Dwelling
+    │   └── Miners' dwellings
+    ├── Hotels
+    │   ├── Hotel (generic)
+    │   └── [30+ specific hotels]
+    ├── Public houses
+    │   └── Public house
+    ├── Pubs
+    │   └── Pub
+    └── Stables
+        └── Stable
+```
+
+**Rationale:**
+
+- **Internal consistency:** Matches the "buildings" suffix used by all other Built Environment categories
+- **Simplicity:** Single clear parent instead of three overlapping categories
+- **Getty AAT alignment:** Emphasises physical/architectural classification appropriate for Built Environment facet
+- **Eliminates duplication:** One parent definition per child, with polyhierarchical relationships maintained through thematic groupings (e.g., Alcohol-related venues, Hospitality businesses)
+- **Semantic clarity:** "Accommodation buildings" clearly indicates these are architectural structures
+
+**Polyhierarchical Relationships Preserved:**
+
+Children maintain appropriate thematic relationships:
+- Hotels → Alcohol-related venues - THEMATIC
+- Hotels → Hospitality businesses
+- Boarding houses → Hospitality businesses
+- Public houses → Alcohol-related venues - THEMATIC
+- Pubs → Alcohol-related venues - THEMATIC
+
+**Impact:**
+
+- **Consistency:** All Built Environment categories now follow "buildings" naming convention (except Infrastructure)
+- **Deduplication:** Removed 2 redundant parent nodes and multiple duplicate child entries
+- **Clarity:** Single unambiguous parent for all accommodation structures
+- **Maintainability:** Simpler hierarchy easier to visualise and maintain
+
+**Key Principle:**
+
+**Within a facet, maintain consistent terminology patterns.** When most categories use a specific suffix ("buildings"), outliers using different terminology ("venues") should be evaluated for consolidation unless there is a compelling semantic distinction. The Built Environment facet represents physical structures, making "buildings" more appropriate than "venues" (which emphasises function over form).
+
+---
+
+## Civic Buildings - Remove Unused Generics (2025-10-31)
+
+**Decision:** Remove unused generic terms and redundant "Council buildings" intermediate parent, simplifying to direct "Civic buildings > Council Chambers" relationship.
+
+**Issue:**
+
+Civic buildings had confusing duplication and unused generic terms:
+- Council Chambers appeared twice (direct child of Civic buildings AND child of Council buildings)
+- "Council buildings" intermediate parent with only one used child
+- Two unused generic singular terms: "Civic building" and "Council building"
+
+**Evidence from Collection:**
+
+Tag frequency analysis revealed:
+- ✅ "Council Chambers" - 7 items tagged (USED)
+- ❌ "Civic building" - 0 items tagged (UNUSED)
+- ❌ "Council building" - 0 items tagged (UNUSED)
+- Note: "Councils" (27 items) exists but in Agents facet as organizations, not buildings
+
+**Previous Structure:**
+```
+Civic buildings
+├── Civic building (singular generic - UNUSED)
+├── Council Chambers (direct child)
+└── Council buildings (intermediate parent)
+    ├── Council building (singular generic - UNUSED)
+    └── Council Chambers (duplicate!)
+```
+
+**Simplified Structure:**
+```
+Civic buildings
+├── Council Chambers (specific building - USED)
+├── Court buildings
+│   └── Court building (generic - KEPT as used)
+├── Police facilities
+└── Postal facilities
+```
+
+**Changes Made:**
+
+1. **Removed entries:**
+   - Line 135: `Council Chambers,hierarchy,parent=Council buildings` (duplicate removed)
+   - Line 136: `Council buildings,hierarchy,parent=Civic buildings` (unused parent removed)
+   - Line 943: `Civic building,hierarchy,parent=Civic buildings (singular generic term)` (unused generic removed)
+   - Line 946: `Council building,hierarchy,parent=Council buildings (singular generic term)` (unused generic removed)
+
+2. **Retained:**
+   - Line 134: `Council Chambers,hierarchy,parent=Civic buildings` (direct, simple relationship)
+
+**Rationale:**
+
+- **Evidence-based pruning:** Only keep terms that are actually used in the collection
+- **Simplicity:** Avoid creating unnecessary intermediate parents when there's only one child
+- **YAGNI principle:** Don't create generic placeholders until collection evidence shows they're needed
+- **Clarity:** Direct parent-child relationships are easier to understand and maintain
+
+**Note on Court buildings:**
+
+"Court buildings" intermediate parent was KEPT because:
+- Multiple children exist (Court building, Courthouse, Katoomba Court)
+- "Court building" generic is likely used (pending frequency verification if needed)
+- Represents a genuine subcategory of civic buildings
+
+**Impact:**
+
+- Removed duplication of Council Chambers
+- Removed 2 unused parent nodes
+- Removed 2 unused generic singular terms
+- Cleaner, simpler hierarchy based on actual collection usage
+- Maintains appropriate structure for categories with multiple children (Court buildings, Police facilities, Postal facilities)
+
+**Key Principle:**
+
+**Don't create generic placeholders or intermediate parents without evidence from the collection.** The taxonomy should reflect actual tagging needs, not theoretical completeness. When only one specific instance exists (Council Chambers), use a direct relationship rather than creating an unused intermediate parent and generic term.
+
+**Follow-up (same session):** Removed additional unused generic leaf nodes:
+- "Court building" (0 items) - removed from Court buildings parent
+- "Police facility" (0 items) - removed from Police facilities parent
+- "Postal facility" (0 items) - removed from Postal facilities parent
+
+Kept only used terms: Courthouse (8 items), Katoomba Court (8 items), Police station (4 items), Post office (23 items).
+
+**Final Civic buildings structure:**
+```
+Civic buildings
+├── Council Chambers
+├── Court buildings
+│   ├── Courthouse
+│   └── Katoomba Court
+├── Police facilities
+│   └── Police station
+└── Postal facilities
+    └── Post office
+```
+
+Intermediate parents (Court buildings, Police facilities, Postal facilities) were retained as organizational nodes despite having few children, pending further review of whether they should be flattened.
+
+---
+
+## Schools of Arts - Dual-Nature Verification (2025-10-31)
+
+**Decision:** VERIFIED - Current polyhierarchical structure correctly represents dual nature of Schools of Arts entities.
+
+**Issue Raised:**
+
+User questioned whether "Schools of Arts" appearing under "Halls" in Built Environment was correct, or if it should be:
+1. Renamed to "Schools of Arts hall" to clarify it's the building, OR
+2. Moved to be a higher-level category under Community buildings, OR
+3. Kept as an organization-only term in Agents facet
+
+**Context Review:**
+
+Schools of Arts were historical community institutions (similar to Mechanics' Institutes or Literary Institutes) that operated cultural/educational programmes AND maintained physical hall buildings. This is a **known dual-nature entity** documented in:
+- `reports/schools_of_arts_analysis.md` (town-specific investigation)
+- `reports/dual_nature_analysis_churches_councils.md` (organizational vs. venue usage)
+
+**Current Structure:**
+
+The CSV correctly implements polyhierarchical relationships:
+
+Line 709: `Schools of Arts,hierarchy,parent=Cultural societies` (Agents facet - organization)
+Line 710: `Schools of Arts,hierarchy,parent=Halls` (Built Environment facet - building)
+
+**How It Appears in Visualizations:**
+
+**Agents facet:**
+```
+Cultural societies
+└── Schools of Arts (the institution/organization)
+    ├── Katoomba School of Arts
+    └── School of Arts (generic)
+```
+
+**Built Environment facet:**
+```
+Community buildings
+└── Halls
+    └── Schools of Arts (the hall/building)
+        ├── Katoomba School of Arts
+        └── School of Arts (generic)
+```
+
+**Verification:**
+
+This is the **CORRECT implementation** of dual-nature tagging. The tag "Schools of Arts" can be applied to items discussing:
+- The cultural/educational organization (appears under Cultural societies in Agents)
+- The physical hall building (appears under Halls in Built Environment)
+
+**Why Not Rename to "Schools of Arts hall"?**
+
+The polyhierarchical approach is superior to renaming because:
+1. **Historical accuracy:** Sources refer to them as "School of Arts", not "School of Arts hall"
+2. **Single tag for dual contexts:** Cataloguers apply one tag, hierarchy shows both aspects
+3. **Getty AAT pattern:** Dual-nature entities maintain same term in multiple facets
+4. **Established pattern:** Already used for Churches, Councils (building vs. organization)
+
+**Why Not Make Schools of Arts a Top-Level Category?**
+
+Schools of Arts are not numerous enough to warrant their own category under Community buildings. They are a specific type of community hall, appropriately categorized under "Halls" alongside Masonic Hall, Oddfellows' Hall, etc.
+
+**Rationale:**
+
+- **Dual-nature correctly modelled:** Polyhierarchical structure allows same tag to represent both aspects
+- **Context-appropriate classification:** Organization under Cultural societies, building under Halls
+- **User experience:** Tag once, appears in both facets appropriately
+- **Maintains historical terminology:** Uses "School of Arts" as sources do
+
+**Status:** Structure verified as correct. No changes needed.
+
+**Key Principle:**
+
+**Dual-nature entities use polyhierarchical relationships, not disambiguation suffixes.** When an entity has both organizational and physical aspects (Schools of Arts, Churches), use the same term in multiple facets rather than creating separate "X (organization)" and "X (building)" variants. This matches source terminology and provides better user experience.
+
+---
+
+## Decision 2025-10-31: Schools of Arts (venues) Parent Node Qualifier
+
+**Date:** 2025-10-31
+**Issue:** Dual-nature entity visualization clarity
+**Tags Affected:** Schools of Arts hierarchy in Built Environment facet
+**Decision:** Add parenthetical qualifier to parent node (not leaf nodes)
+
+**Context:**
+
+User requested clarification in visualization to distinguish the physical venue aspect of Schools of Arts from the organizational aspect. Initial request suggested adding "(venue)" to leaf nodes, but analysis revealed this would conflict with the polyhierarchical approach already established.
+
+**Investigation:**
+
+1. **Current structure is correct:** Schools of Arts already polyhierarchical
+   - Line 709: parent=Cultural societies (organizational aspect)
+   - Line 710: parent=Halls (physical building aspect)
+
+2. **Alcohol tag pattern examined:** Found "Drunkenness (crime)" vs "Drunkenness (intoxication)" are SEPARATE tags (disambiguation), NOT polyhierarchical - different pattern
+
+3. **Trade-off identified:** Two competing approaches:
+   - **Polyhierarchy:** Same tag in multiple facets (current approach)
+   - **Disambiguation:** Separate tags with parentheticals (alcohol model)
+
+**Attempted Solution (FAILED):**
+
+Attempted to add qualifier to PARENT node in Built Environment facet only:
+
+**CSV Change Attempted (line 710):**
+```csv
+# Attempted change:
+Schools of Arts (venues),Schools of Arts,hierarchy,parent=Halls
+```
+
+**Why This Failed:**
+
+The CSV structure doesn't support different display names for the same tag in different facets. The visualization script uses `new_tag` as the node name, so:
+
+1. **Renaming problem:** Changing `new_tag` to "Schools of Arts (venues)" actually RENAMES the tag
+2. **Broken relationships:** Child nodes (`Katoomba School of Arts`, `School of Arts`) reference `parent=Schools of Arts`, not `parent=Schools of Arts (venues)`
+3. **Cross-facet impact:** The rename would affect ALL facets, not just Built Environment
+4. **Missing children:** The renamed parent node appeared without children in visualization
+
+**Solution: Reverted Changes**
+
+Reverted to original polyhierarchical structure without display qualifiers:
+```csv
+# Line 710 (reverted):
+Schools of Arts,Schools of Arts,hierarchy,parent=Halls
+
+# Line 340 (reverted):
+Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Schools of Arts
+
+# Line 707 (reverted):
+School of Arts,School of Arts,hierarchy,parent=Schools of Arts
+```
+
+**Lessons Learned:**
+
+1. **CSV structure limitation:** Cannot have facet-specific display names with current data model
+2. **Reinforces disambiguation approach:** This limitation supports the user's intuition that separate tags with parenthetical qualifiers (e.g., "Schools of Arts (organization)" vs "Schools of Arts (venue)") may be necessary
+3. **Polyhierarchy vs disambiguation:** The current polyhierarchical approach works but lacks visualization clarity that disambiguation would provide
+
+**Strategic Decision Deferred:**
+
+User identified fundamental tension between polyhierarchy vs disambiguation approaches. Added comprehensive review item to planning/TODO.md (lines 42-140) documenting:
+- Trade-offs between approaches
+- Entities affected (~15-20)
+- Research needed (Getty AAT practice investigation)
+- Decision criteria (prioritizing Getty AAT alignment)
+- **New evidence:** CSV structure limitation makes disambiguation approach more attractive
+
+**Files Modified:**
+- planning/TODO.md (new section lines 42-140) - strategic review item
+- CLAUDE.md (interim guidance removed - not technically feasible)
+- visualizations/hierarchy_trees/ (regenerated with original structure)
+
+**Status:** No changes implemented. Polyhierarchical structure maintained without qualifiers. Strategic review pending Getty AAT research in Phase 1.3.
+
+---
+
+## Decision 2025-10-31: Educational Buildings Hierarchy Correction
+
+**Date:** 2025-10-31
+**Issue:** Duplicate school names in Educational buildings visualization
+**Tags Affected:** Katoomba Public School, Katoomba Superior Public School, Megalong Valley School, Mount Victoria School, Sunday school
+**Decision:** Remove incorrect `parent=School` relationships for named schools
+
+**Problem Identified:**
+
+User reported duplication in Educational buildings hierarchy:
+```
+├── Educational buildings
+│   └── Schools
+│       ├── Katoomba Public School        ← direct child of Schools
+│       ├── Katoomba Superior Public School
+│       ├── Megalong Valley School
+│       ├── Mount Victoria School
+│       └── School                        ← generic leaf node
+│           ├── Katoomba Public School    ← DUPLICATE
+│           ├── Katoomba Superior Public School
+│           ├── Megalong Valley School
+│           ├── Mount Victoria School
+│           └── Sunday school             ← incorrect placement
+```
+
+**Root Cause:**
+
+Each named school had TWO parent relationships in the CSV:
+1. `parent=Schools` (plural - correct parent category)
+2. `parent=School` (singular - incorrect, treating generic leaf as intermediate parent)
+
+This violated the leaf-node tagging pattern where "School" (singular) should be a generic leaf node alongside named schools, NOT a parent of named schools.
+
+**CSV Changes:**
+
+Removed 5 incorrect `parent=School` relationships:
+
+```csv
+# Line 334 REMOVED:
+Katoomba Public School,Katoomba Public School,hierarchy,parent=School
+
+# Line 342 REMOVED:
+Katoomba Superior Public School,Katoomba Superior Public School,hierarchy,parent=School
+
+# Line 399 REMOVED:
+Megalong Valley School,Megalong Valley School,hierarchy,parent=School
+
+# Line 463 REMOVED:
+Mount Victoria School,Mount Victoria School,hierarchy,parent=School
+
+# Line 757 REMOVED:
+Sunday school,Sunday school,hierarchy,parent=School
+```
+
+**Correct Structure After Fix:**
+
+```
+├── Educational buildings
+│   └── Schools
+│       ├── Katoomba Public School
+│       ├── Katoomba Superior Public School
+│       ├── Megalong Valley School
+│       ├── Mount Victoria School
+│       └── School                        ← generic leaf only
+```
+
+Sunday school correctly remains under Religious education (Agents facet):
+```
+Agents > Religious organizations > Religious education > Sunday school
+```
+
+**Rationale:**
+
+1. **Follows leaf-node pattern:** "School" is a generic leaf for unspecified schools, not a category parent
+2. **Eliminates duplication:** Named schools appear once under "Schools" parent
+3. **Correct Sunday school placement:** Religious education activity, not secular educational building
+4. **Matches other patterns:** Same structure as Hotels > Hotel, Retailers and Stores > Retailer or Store
+
+**Files Modified:**
+- data/tag_map_consolidated.csv (removed 5 lines)
+- visualizations/hierarchy_trees/primary_built_environment.txt (regenerated clean)
+- visualizations/hierarchy_trees/primary_agents.txt (regenerated, Sunday school correctly placed)
+
+**Status:** Fix implemented and verified.
+
+---
+
+## Decision 2025-10-31: Religious Buildings Hierarchy Correction
+
+**Date:** 2025-10-31
+**Issue:** Duplicate church names in Religious buildings visualization
+**Tags Affected:** Church (generic), Methodist Church, Roman Catholic Church, St Hilda's Church, Katoomba Congregational Church
+**Decision:** Remove incorrect `parent=Religious buildings` relationships for churches
+
+**Problem Identified:**
+
+User reported duplication in Religious buildings hierarchy:
+```
+└── Religious buildings
+    ├── Church                           ← generic, direct child
+    ├── Churches
+    │   ├── Church                       ← DUPLICATE generic
+    │   ├── Congregational Church
+    │   │   └── Katoomba Congregational Church
+    │   ├── Methodist Church
+    │   ├── Roman Catholic Church
+    │   ├── St Hilda's Church
+    │   └── Wesleyan Church
+    ├── Katoomba Congregational Church   ← DUPLICATE
+    ├── Methodist Church                 ← DUPLICATE
+    ├── Religious building
+    ├── Roman Catholic Church            ← DUPLICATE
+    └── St Hilda's Church                ← DUPLICATE
+```
+
+**Root Cause:**
+
+Same issue as Educational buildings - named churches and the generic "Church" had TWO parent relationships:
+1. `parent=Churches` (correct - the plural parent category)
+2. `parent=Religious buildings` (incorrect - bypassing the intermediate parent)
+
+**CSV Changes:**
+
+Removed 5 incorrect `parent=Religious buildings` relationships:
+
+```csv
+# Line 89 REMOVED:
+Church,Church,hierarchy,parent=Religious buildings
+
+# Line 322 REMOVED:
+Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Religious buildings
+
+# Line 402 REMOVED:
+Methodist Church,Methodist Church,hierarchy,parent=Religious buildings
+
+# Line 692 REMOVED:
+Roman Catholic Church,Roman Catholic Church,hierarchy,parent=Religious buildings
+
+# Line 744 REMOVED:
+St Hilda's Church,St Hilda's Church,hierarchy,parent=Religious buildings
+```
+
+**Correct Structure After Fix:**
+
+```
+└── Religious buildings
+    ├── Churches
+    │   ├── Church                       ← generic leaf only
+    │   ├── Congregational Church
+    │   │   └── Katoomba Congregational Church
+    │   ├── Methodist Church
+    │   ├── Roman Catholic Church
+    │   ├── St Hilda's Church
+    │   └── Wesleyan Church
+    └── Religious building               ← generic for non-church buildings
+```
+
+**Rationale:**
+
+1. **Follows leaf-node pattern:** Named churches are children of "Churches" parent, not direct children of "Religious buildings"
+2. **Eliminates duplication:** Each church appears once in correct location
+3. **Proper nesting:** "Churches" is the intermediate parent between "Religious buildings" and specific churches
+4. **Consistent with other categories:** Matches pattern used for Schools, Hotels, etc.
+5. **Preserves dual-nature polyhierarchy:** Churches also appear in Agents facet under Religious organizations
+
+**Note on Dual-Nature:**
+
+These churches are polyhierarchical entities appearing in both:
+- Built Environment > Religious buildings > Churches (physical buildings)
+- Agents > Religious organizations > Churches (organizational entities)
+
+This fix only corrected the Built Environment facet structure - the polyhierarchical relationships across facets remain intact.
+
+**Files Modified:**
+- data/tag_map_consolidated.csv (removed 5 lines)
+- visualizations/hierarchy_trees/primary_built_environment.txt (regenerated clean)
+
+**Status:** Fix implemented and verified.
+
+---
+
+## Decision 2025-10-31: Remove Unused "Religious building" Generic
+
+**Date:** 2025-10-31
+**Issue:** Unnecessary generic "Religious building" with zero usage
+**Tags Affected:** Religious building
+**Decision:** Remove unused generic term
+
+**Context:**
+
+After fixing Religious buildings hierarchy duplication, user noted that "Religious building" generic is unnecessary since "Church" already serves as the generic leaf node.
+
+**Evidence:**
+
+Tag frequency check:
+- `Church`: 34 items (actively used)
+- `Religious building`: 0 items (never used)
+
+**Rationale:**
+
+1. **YAGNI principle:** "You Aren't Gonna Need It" - don't create structure until data shows need
+2. **Church is sufficient:** All religious buildings in the collection are churches
+3. **Zero usage:** No items tagged with "Religious building" in 304+ tagged sources
+4. **Simplification:** Reduces unnecessary choice for cataloguers
+5. **Future expansion:** If non-church religious buildings appear (e.g., synagogue, mosque), can add then
+
+**CSV Change:**
+
+```csv
+# Line 978 REMOVED:
+Religious building,Religious building,hierarchy,parent=Religious buildings (singular generic term)
+```
+
+**Structure After Removal:**
+
+```
+└── Religious buildings
+    └── Churches
+        ├── Church                    ← generic covers all unspecified churches
+        ├── Congregational Church
+        │   └── Katoomba Congregational Church
+        ├── Methodist Church
+        ├── Roman Catholic Church
+        ├── St Hilda's Church
+        └── Wesleyan Church
+```
+
+**Files Modified:**
+- data/tag_map_consolidated.csv (removed 1 line)
+- visualizations/hierarchy_trees/primary_built_environment.txt (regenerated)
+
+**Status:** Implemented and verified.
+
+---

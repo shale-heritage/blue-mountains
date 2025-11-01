@@ -4,9 +4,10 @@ PRIMARY FACET: Agents
 Agents
 ├── Animals
 │   ├── Animal
-│   ├── Cattle
-│   ├── Dogs
-│   ├── Horses
+│   ├── Domestic animals
+│   │   ├── Cattle
+│   │   ├── Dogs
+│   │   └── Horses
 │   └── Wild animals
 │       └── Wild horses
 ├── Organizations
@@ -36,11 +37,10 @@ Agents
 │   │   │       ├── Carrington Hotel
 │   │   │       ├── Centennial Hotel
 │   │   │       ├── Comet Hotel
-│   │   │       ├── Delaney's Hotel
 │   │   │       ├── Falls Hotel
-│   │   │       ├── Family Hotel
+│   │   │       ├── Family Hotels
+│   │   │       │   ├── Delaney's Family Hotel
 │   │   │       │   └── Katoomba Family Hotel
-│   │   │       ├── Fryer's Family Hotel
 │   │   │       ├── Grand Hotel
 │   │   │       ├── Grand Hotel (Sydney)
 │   │   │       ├── Great Western Hotel
@@ -49,7 +49,6 @@ Agents
 │   │   │       ├── Hotel Wentworth
 │   │   │       ├── Hydora House Hotel
 │   │   │       ├── Imperial Hotel
-│   │   │       ├── Katoomba Family Hotel
 │   │   │       ├── Katoomba Hotel
 │   │   │       ├── Leura Hotel
 │   │   │       ├── Megalong Hotel
@@ -66,19 +65,11 @@ Agents
 │   │   │   ├── New South Wales Shale and Oil Company
 │   │   │   ├── South Clifton Mine Company
 │   │   │   └── Waudby and Company
-│   │   ├── Retailers & stores
-│   │   │   ├── Douglas & Co.
-│   │   │   ├── Nimmo's
-│   │   │   ├── Peckman Bros
-│   │   │   ├── Retailers & store
-│   │   │   ├── Stores
-│   │   │   └── Tabrett and Co.
-│   │   ├── Retailers and stores
+│   │   ├── Retailers and Stores
 │   │   │   ├── Douglas and Company
 │   │   │   ├── Nimmo's
-│   │   │   ├── Peckman Bros
-│   │   │   ├── Retailers and store
-│   │   │   ├── Store
+│   │   │   ├── Peckman Brothers
+│   │   │   ├── Retailer or Store
 │   │   │   └── Tabrett and Company
 │   │   └── Transport & logistics businesses
 │   │       ├── Transport & logistics business
@@ -89,20 +80,12 @@ Agents
 │   │   │   ├── Cultural society
 │   │   │   ├── Horticulture society
 │   │   │   ├── Katoomba Amateur Dramatic Club
-│   │   │   ├── Katoomba School of Arts
-│   │   │   ├── School of Arts
-│   │   │   │   ├── Katoomba School of Arts
-│   │   │   │   └── School of Art
 │   │   │   └── Schools of Arts
 │   │   │       ├── Katoomba School of Arts
-│   │   │       ├── School of Arts
-│   │   │       │   ├── Katoomba School of Arts
-│   │   │       │   └── School of Art
-│   │   │       └── Schools of Art
+│   │   │       └── School of Arts
 │   │   ├── Performance groups
 │   │   │   ├── Bands
 │   │   │   │   ├── Band
-│   │   │   │   │   └── Katoomba band
 │   │   │   │   └── Katoomba band
 │   │   │   ├── Choirs
 │   │   │   │   └── Choir
@@ -128,30 +111,15 @@ Agents
 │   │           └── Tennis club
 │   ├── Fraternal orders & lodges
 │   │   └── Lodges
-│   │       ├── Druid's Lodge
-│   │       ├── Druids
-│   │       │   ├── Druid
-│   │       │   ├── Druid's Lodge
-│   │       │   └── U.A.O.D.
 │   │       ├── Freemasons
 │   │       ├── Independent Order of Odd Fellows
-│   │       ├── Independent lodges
-│   │       │   ├── Independent lodge
-│   │       │   └── Mountaineer Lodge
 │   │       ├── Lodge
-│   │       ├── Masonic Hall
-│   │       ├── Masons
-│   │       │   ├── Mason
-│   │       │   └── Masonic Hall
-│   │       ├── Mountaineer Lodge
 │   │       ├── Odd Fellows
-│   │       │   ├── Odd Fellow
-│   │       │   ├── Odd Fellows' Hall
-│   │       │   └── Oddfellows
-│   │       ├── Odd Fellows' Hall
+│   │       ├── Unaffiliated lodges
+│   │       │   ├── Mountaineer Lodge
+│   │       │   └── Unaffiliated lodge
 │   │       └── United Ancient Order of Druids
-│   │           ├── Druid's Lodge (local lodge)
-│   │           └── United Ancient Order of Druid
+│   │           └── Druid's Lodge (local lodge)
 │   ├── Government bodies
 │   │   ├── Councils
 │   │   │   ├── Council
@@ -168,10 +136,8 @@ Agents
 │   │   │   └── Other government body
 │   │   ├── Police
 │   │   ├── Postal authorities
-│   │   │   ├── Postal Department
-│   │   │   └── Postal authority
+│   │   │   └── Postal Department
 │   │   └── Railway authorities
-│   │       ├── Railway authority
 │   │       └── Railway commission
 │   ├── Military organizations
 │   │   └── N.S.W. Mounted Rifles
@@ -266,8 +232,6 @@ Agents
         │   │   ├── Liquor merchant
         │   │   └── Mr Wilkinson
         │   └── Publican
-        ├── Law enforcement
-        │   └── Policing
         ├── Law enforcement personnel
         │   └── Police officers
         │       ├── Constable
@@ -281,12 +245,8 @@ Agents
         │       └── Sergeant
         │           └── Sergeant Thorndyke
         ├── Legal officials
-        │   ├── Coroner
-        │   │   └── Coroner Lethbridge
-        │   ├── Coroner Lethbridge
         │   ├── Coroners
         │   │   ├── Coroner
-        │   │   │   └── Coroner Lethbridge
         │   │   └── Coroner Lethbridge
         │   └── Legal official
         ├── Maritime workers
@@ -299,7 +259,6 @@ Agents
         │   ├── Dr Watkins
         │   └── Medical professional
         ├── Military personnel
-        │   ├── Major Sir Charles George Gordon
         │   └── Soldiers
         │       └── Major Sir Charles George Gordon
         ├── Miners
@@ -327,6 +286,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 323
+  Total nodes in facet: 282
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

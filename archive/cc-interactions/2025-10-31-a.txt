@@ -1018,5 +1018,70 @@ They are different - does this make sense?
 
   All visualizations have been regenerated. Ready to continue your manual review!
 
+> /export archive/cc-interactions/2025-10-31-a.txt 
+  ⎿  Conversation exported to: archive/cc-interactions/2025-10-31-a.txt
+
+> please commit and push, creating informative brief and detailed commit messages 
+
+● I'll commit and push all the changes with comprehensive commit messages:
+
+● Bash(git add -A && git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +48 lines (ctrl+o to expand)
+
+● Bash(git commit -m "refactor(taxonomy): comprehensive hierarchy reorganisation and mining facet restructuring…)
+  ⎿  [main 855c49b] refactor(taxonomy): comprehensive hierarchy reorganisation and mining facet restructuring
+      46 files changed, 7156 insertions(+), 484 deletions(-)
+      create mode 100644 .claude/settings.json
+     … +13 lines (ctrl+o to expand)
+
+● Bash(git push)
+  ⎿  To github.com:shale-heritage/blue-mountains.git
+        eab2c97..855c49b  main -> main
+
+● ✅ Changes committed and pushed successfully!
+
+  Commit Summary
+
+  Type: refactor(taxonomy)Subject: Comprehensive hierarchy reorganisation and mining facet restructuringCommit: 855c49b
+
+  Changes Included
+
+  Scripts Created (5):
+
+  - scripts/40_fix_csv_hierarchy_issues.py - Fixed 18 duplicate/incorrect relationships
+  - scripts/41_add_singular_generics.py - Added 87 singular generic terms
+  - scripts/42_fix_awkward_singulars.py - Cleaned up awkward pluralisation
+  - scripts/43_fix_postal_hierarchy.py - Postal hierarchy reorganisation
+  - scripts/44_reorganize_mining_taxonomy.py - Mining facet reorganisation
+
+  Documentation Created (4):
+
+  - docs/HIERARCHY_VISUALIZATION_FIXES.md
+  - docs/CSV_HIERARCHY_FIXES_SUMMARY.md
+  - docs/SINGULAR_GENERICS_ADDITION_SUMMARY.md
+  - docs/MINING_REORGANIZATION_SUMMARY.md
+
+  Key Changes:
+
+  1. Fixed Agents facet Getty AAT alignment (People → Demographic groups/Occupations)
+  2. Added 83 singular generics (plural > singular pattern)
+  3. Merged Commercial activities into Economic activities
+  4. Reorganised mining taxonomy across 5 facets (Activities, Built Environment, Places, Events, Materials)
+  5. Standardised 6 mining company name variants
+  6. Fixed visualisation script (deduplication, mixed traversal)
+
+  Statistics:
+
+  - 46 files changed (+7,156 insertions, -484 deletions)
+  - CSV: 1,005 → 1,066 rows (final clean state)
+  - Primary facets: 7 → 8 (added Materials)
+  - Total nodes: 564
+  - Total relationships: 907
+
+  All hierarchy visualisations regenerated to reflect the changes. The taxonomy now follows Getty AAT principles with
+  proper facet separation and the plural > singular generic pattern throughout.
+
 
 

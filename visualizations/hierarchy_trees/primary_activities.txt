@@ -17,6 +17,11 @@ Activities
 │   │       └── Animal breeding
 │   │           └── Horse breeding
 │   ├── Economic activity
+│   ├── Financial services
+│   │   └── Insurance provision
+│   │       └── Unemployment insurance
+│   ├── Hunting
+│   │   └── Wild horse culling
 │   ├── Liquor trade
 │   │   ├── Liquor sales
 │   │   └── Wholesale liquor business
@@ -52,6 +57,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 48
+  Total nodes in facet: 53
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

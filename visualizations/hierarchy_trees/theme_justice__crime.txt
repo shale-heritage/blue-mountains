@@ -3,7 +3,6 @@ THEMATIC GROUPING: Justice & Crime
 
 Justice & Crime
 ├── Court buildings
-│   ├── Court building
 │   ├── Courthouse
 │   └── Katoomba Court
 ├── Courts
@@ -36,12 +35,8 @@ Justice & Crime
 │   ├── Divorce
 │   └── Legal event
 ├── Legal officials
-│   ├── Coroner
-│   │   └── Coroner Lethbridge
-│   ├── Coroner Lethbridge
 │   ├── Coroners
 │   │   ├── Coroner
-│   │   │   └── Coroner Lethbridge
 │   │   └── Coroner Lethbridge
 │   └── Legal official
 ├── Legal outcomes
@@ -66,6 +61,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 58
+  Total nodes in theme: 53
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

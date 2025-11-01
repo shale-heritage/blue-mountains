@@ -3,21 +3,14 @@ THEMATIC GROUPING: Community institutions
 
 Community institutions
 ├── Civic buildings
-│   ├── Civic building
 │   ├── Council Chambers
-│   ├── Council buildings
-│   │   ├── Council Chambers
-│   │   └── Council building
 │   ├── Court buildings
-│   │   ├── Court building
 │   │   ├── Courthouse
 │   │   └── Katoomba Court
 │   ├── Police facilities
-│   │   ├── Police facility
 │   │   └── Police station
 │   └── Postal facilities
-│       ├── Post office
-│       └── Postal facility
+│       └── Post office
 ├── Civic organizations
 │   ├── Labour organizations
 │   │   ├── Labour organization
@@ -33,19 +26,12 @@ Community institutions
 │   └── Halls
 │       ├── Clarke's Hall
 │       ├── Hall
-│       ├── Katoomba School of Arts
 │       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
-│       ├── School of Arts
-│       │   ├── Katoomba School of Arts
-│       │   └── School of Art
 │       ├── Schools of Arts
 │       │   ├── Katoomba School of Arts
-│       │   ├── School of Arts
-│       │   │   ├── Katoomba School of Arts
-│       │   │   └── School of Art
-│       │   └── Schools of Art
+│       │   └── School of Arts
 │       └── Waudby's Hall
 ├── Cultural & recreational organizations
 │   ├── Cultural societies
@@ -53,20 +39,12 @@ Community institutions
 │   │   ├── Cultural society
 │   │   ├── Horticulture society
 │   │   ├── Katoomba Amateur Dramatic Club
-│   │   ├── Katoomba School of Arts
-│   │   ├── School of Arts
-│   │   │   ├── Katoomba School of Arts
-│   │   │   └── School of Art
 │   │   └── Schools of Arts
 │   │       ├── Katoomba School of Arts
-│   │       ├── School of Arts
-│   │       │   ├── Katoomba School of Arts
-│   │       │   └── School of Art
-│   │       └── Schools of Art
+│   │       └── School of Arts
 │   ├── Performance groups
 │   │   ├── Bands
 │   │   │   ├── Band
-│   │   │   │   └── Katoomba band
 │   │   │   └── Katoomba band
 │   │   ├── Choirs
 │   │   │   └── Choir
@@ -92,30 +70,15 @@ Community institutions
 │           └── Tennis club
 └── Fraternal orders & lodges
     └── Lodges
-        ├── Druid's Lodge
-        ├── Druids
-        │   ├── Druid
-        │   ├── Druid's Lodge
-        │   └── U.A.O.D.
         ├── Freemasons
         ├── Independent Order of Odd Fellows
-        ├── Independent lodges
-        │   ├── Independent lodge
-        │   └── Mountaineer Lodge
         ├── Lodge
-        ├── Masonic Hall
-        ├── Masons
-        │   ├── Mason
-        │   └── Masonic Hall
-        ├── Mountaineer Lodge
         ├── Odd Fellows
-        │   ├── Odd Fellow
-        │   ├── Odd Fellows' Hall
-        │   └── Oddfellows
-        ├── Odd Fellows' Hall
+        ├── Unaffiliated lodges
+        │   ├── Mountaineer Lodge
+        │   └── Unaffiliated lodge
         └── United Ancient Order of Druids
-            ├── Druid's Lodge (local lodge)
-            └── United Ancient Order of Druid
+            └── Druid's Lodge (local lodge)
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -123,6 +86,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 115
+  Total nodes in theme: 78
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

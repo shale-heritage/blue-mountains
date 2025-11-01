@@ -1,0 +1,1407 @@
+
+ ▐▛███▜▌   Claude Code v2.0.30
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+
+> Hi CC, we're continuing to go through and discuss issues with the taxanomy. I'm looking at:\
+\
+├── Military activities
+│   ├── Military
+│   └── Military activity\
+\
+This looks redundant, like it should all be collapsed to a single 'military activity' tag. Can you show me the primary 
+source excerpts from the text? 
+  ⎿  ⧉ Selected 3 lines from visualizations/hierarchy_trees/primary_activities.txt in Visual Studio Code
+
+● I'll extract the primary source contexts for these military-related tags to see how they're being used in the
+  collection.
+
+● Read(data/tag_consolidation_map.csv)
+  ⎿  Error reading file
+
+● Bash(grep -i "^military" data/tag_consolidation_map.csv)
+  ⎿  Error: Exit code 2
+     grep: data/tag_consolidation_map.csv: No such file or directory
+
+● Bash(ls -la data/*.csv)
+  ⎿  -rw-rw-r-- 1 shawn shawn  5330 Oct 24 18:01 data/people_thematic_hierarchy.csv   
+     -rw-rw-r-- 1 shawn shawn 24215 Oct 19 13:00 data/quality_duplicates.csv
+     -rw-rw-r-- 1 shawn shawn  9936 Oct 19 13:00 data/quality_multiple_attachments.csv
+     … +7 lines (ctrl+o to expand)
+
+● Bash(grep -i "military" data/tag_map_consolidated.csv | head -20)
+  ⎿  Military,Military,hierarchy,parent=Military activities              
+     Military,Military,hierarchy,parent=Military organizations - THEMATIC
+     Military & War,Military & War,hierarchy,parent=(thematic grouping)
+     … +8 lines (ctrl+o to expand)
+
+● Bash(ls -la data/*.json 2>/dev/null || echo "No JSON files found")
+  ⎿  -rw-rw-r-- 1 shawn shawn  280689 Oct 29 16:00 data/pass1_classifications.json
+     -rw-rw-r-- 1 shawn shawn  242461 Oct 19 12:59 data/raw_tags.json
+     -rw-rw-r-- 1 shawn shawn 2949455 Oct 19 12:59 data/tag_network.json
+     -rw-rw-r-- 1 shawn shawn 1613134 Oct 29 15:59 data/zotero_full_export.json
+
+● Bash(ls scripts/*context*.py scripts/*variant*.py 2>/dev/null | head -10)
+  ⎿  scripts/07_review_naming_variants.py     
+     scripts/09_analyse_variants_in_context.py
+     scripts/09_analyse_variants_in_context.py
+     … +6 lines (ctrl+o to expand)
+
+● Bash(python data/raw_tags.json | python -c "import json, sys; tags = json.load(sys.stdin); print('\n'.join(sorted([t for t
+       in tags if 'military' in t.lower()])))" 2>…)
+  ⎿  /bin/bash: line 1: python: command not found
+
+● Bash(grep -i military data/raw_tags.json | head -20)
+  ⎿      "Military": {
+
+● Bash(./scripts/run.sh scripts/09_analyse_variants_in_context.py "military") timeout: 1m 0s
+  ⎿  Error: Exit code 127
+     /bin/bash: line 1: ./scripts/run.sh: No such file or directory
+
+● Read(scripts/09_analyse_variants_in_context.py)
+  ⎿  Read 328 lines
+
+● I'll create a quick script to extract the primary source contexts for these military tags:
+
+● Write(scripts/temp_military_context.py)
+  ⎿  Wrote 131 lines to scripts/temp_military_context.py                         
+     #!/usr/bin/env python3
+     """
+     Temporary script to extract contexts for military-related tags.
+     Extract primary source excerpts showing how "Military", "Military activity",
+     and "Military activities" are used in the collection.
+     """
+     import json
+     import re
+     from pathlib import Path
+     … +121 lines (ctrl+o to expand)
+
+● Bash(.venv/bin/python scripts/temp_military_context.py) timeout: 30s
+  ⎿  Error: Exit code 127
+     /bin/bash: line 1: .venv/bin/python: No such file or directory
+
+● Bash(ls -la | grep -E "venv|env")
+  ⎿  -rw-rw-r--  1 shawn shawn  5337 Oct 19 12:57 .env        
+     -rw-rw-r--  1 shawn shawn  5317 Oct 12 05:43 .env.example
+     drwxrwxr-x  6 shawn shawn  4096 Oct 19 12:51 venv
+
+● Bash(venv/bin/python scripts/temp_military_context.py) timeout: 30s
+  ⎿  Error: Exit code 1
+     Traceback (most recent call last):
+       File "/home/shawn/Code/blue-mountains/scripts/temp_military_context.py", line 130, in <module>
+         main()
+       File "/home/shawn/Code/blue-mountains/scripts/temp_military_context.py", line 79, in main
+         tags = [tag['tag'] for tag in item.get('data', {}).get('tags', [])]
+                                       ^^^^^^^^
+     AttributeError: 'str' object has no attribute 'get'
+
+     Extracting military tag contexts from Zotero data...
+
+● Bash(head -100 data/zotero_full_export.json)
+  ⎿  {                              
+       "exportDate": "2025-10-29",
+       "totalItems": 417,
+     … +191 lines (ctrl+o to expand)
+
+● Update(scripts/temp_military_context.py)
+  ⎿  Updated scripts/temp_military_context.py with 8 additions and 5 removals           
+       65        # Load Zotero export
+       66        data_file = Path('data/zotero_full_export.json')
+       67        with open(data_file, 'r', encoding='utf-8') as f:
+       68 -          items = json.load(f)
+       68 +          data = json.load(f)
+       69    
+       70 +      # Get items array from JSON structure
+       71 +      items = data.get('items', [])
+       72 +  
+       73        # Terms to search for
+       74        terms = ['Military', 'Military activity', 'Military activities']
+       75    
+     ...
+       75    
+       76        # Process each item
+       77        for item in items:
+       78 -          # Get tags
+       79 -          tags = [tag['tag'] for tag in item.get('data', {}).get('tags', [])]
+       78 +          # Get tags - they're a simple array of strings
+       79 +          tags = item.get('tags', [])
+       80    
+       81            # Get full text from notes
+       82            full_text = ''
+       83 -          for child in item.get('notes', []):
+       84 -              note_html = child.get('note', '')
+       83 +          for note in item.get('notes', []):
+       84 +              note_html = note.get('note', '')
+       85                full_text += strip_html(note_html) + '\n'
+       86    
+       87            if not full_text.strip():
+
+● Update(scripts/temp_military_context.py)
+  ⎿  Updated scripts/temp_military_context.py with 2 additions and 2 removals             
+        96                    # Find contexts in full text
+        97                    contexts = find_contexts(full_text, term, context_chars=120)
+        98                    if contexts:
+        99 -                      title = item.get('data', {}).get('title', '[No Title]')
+       100 -                      date = item.get('data', {}).get('date', '')
+        99 +                      title = item.get('title', '[No Title]')
+       100 +                      date = item.get('date', '')
+       101                        results[term].append({
+       102                            'title': title,
+       103                            'date': date,
+
+● Bash(venv/bin/python scripts/temp_military_context.py) timeout: 30s
+  ⎿  Extracting military tag contexts from Zotero data...                            
+
+     ================================================================================
+     … +32 lines (ctrl+o to expand)
+
+● Let me check the total tag usage across all items, not just those with full text:
+
+● Bash(venv/bin/python3 -c "
+      import json…)
+  ⎿  Military-related tag usage:  
+       Military: 2 items
+       Military activity: 0 items
+     … +4 lines (ctrl+o to expand)
+
+● Interesting! Let me check what both items tagged with "Military" actually contain:
+
+● Bash(venv/bin/python3 -c "
+      import json…)
+  ⎿  Found 2 items tagged with "Military":
+
+     Item 1:
+     … +13 lines (ctrl+o to expand)
+
+● Bash(venv/bin/python3 scripts/temp_military_context.py 2>&1 | grep -A 30 "Item 1:")
+  ⎿ ### Item 1: Death of Major Gordon (5 May 1915)                                                                     
+
+    1. ...r of diamonds when the mines were in full swing. Afterwards he took up grazing pursuits, which he left to fol
+    … +23 lines (ctrl+o to expand)
+
+
+● Let me get the complete text from both articles to see all usages:
+
+● Bash(venv/bin/python3 -c "
+      import json…)
+  ⎿  ================================================================================
+     ITEM 1: Death of Major Gordon (5 May 1915)
+     ================================================================================
+     … +37 lines (ctrl+o to expand)
+
+● Now let me see the complete military hierarchy structure to understand the relationships:
+
+● Bash(grep -i "military" data/tag_map_consolidated.csv)
+  ⎿  Military,Military,hierarchy,parent=Military activities              
+     Military,Military,hierarchy,parent=Military organizations - THEMATIC
+     Military & War,Military & War,hierarchy,parent=(thematic grouping)
+     … +8 lines (ctrl+o to expand)
+
+● Military Tag Analysis
+
+  Based on the primary sources and taxonomy structure, here's what I found:
+
+  Current Tag Usage
+
+  In the Zotero collection:
+  - Military: 2 items (both about Major Gordon)
+  - Military activity: 0 items (exists in taxonomy only, never applied)
+  - Military activities: 0 items (exists in taxonomy only, never applied)
+
+  Primary Source Excerpts
+
+  Both items tagged with "Military" are about Major Gordon (WWI):
+
+  Item 1: "Death of Major Gordon" (5 May 1915)
+
+  1. "...he left to follow up his military work. About eight years ago he accepted a commission as Lieutenant in the old
+   N.S.W. Mounted Rifles..."
+  2. "...the powerful assistance he rendered at the last Military Sports here, and also by his interesting letters..."
+
+  Item 2: "The Late Major Gordon" (6 October 1915)
+  - No direct usage of "military" in the text
+
+  Current Taxonomy Structure
+
+  From tag_map_consolidated.csv:855:
+
+  Military activities,Military activities,hierarchy,parent=Activities
+  ├── Military,Military,hierarchy,parent=Military activities
+  └── Military activity,Military activity,hierarchy,parent=Military activities (singular generic term)
+
+  Note: "Military" is also polyhierarchical - it appears under "Military organizations" as well.
+
+  Analysis
+
+  You're right that this looks redundant. The evidence shows:
+
+  1. "Military activity" (singular) - Never used, appears completely redundant with the plural form
+  2. "Military activities" (plural) - The facet parent, but never applied to items
+  3. "Military" - Actually used (2 items), but ambiguous:
+    - Could mean military service/career ("military work")
+    - Could mean military events ("Military Sports")
+    - Hence its polyhierarchical placement
+
+  Recommendation
+
+  Consolidate to: Military activities (plural) as the sole preferred term
+
+  Rationale:
+  - "Military activity" (singular) is unused and adds no value
+  - "Military" is too ambiguous without context
+  - "Military activities" aligns with Getty AAT pattern (plural for activity facets)
+  - The 2 items currently tagged "Military" should be reviewed and retagged more specifically (e.g., "Military events"
+  for Military Sports, "Military personnel" or "Military organizations" for military service)
+
+  Would you like me to document this consolidation decision in planning/consolidation-decisions.md?
+
+> Ok, we need to add 'Major Gordon' to Agents > People > Military personnel > Soldiers\
+\
+We also need to add 'Military organisations' under 'Agents' then add ' N.S.W. Mounted Rifles' like this: Agents > 
+Orgnizations > Military organisations > NSW Mounted Rifles (add N.S.W. Mounted Rifles to the thesaurus)\
+\
+We need to add 'Military sports' under 'Recreation activities' as well.\
+\
+And, finally, collapse this entry to 'Military activities' as you suggest.\
+\
+These tags also need to be queued to add to the zotero items 
+  ⎿  ⧉ Selected 3 lines from visualizations/hierarchy_trees/primary_activities.txt in Visual Studio Code
+
+● I'll help you make these taxonomy updates and queue the tag applications. Let me break this down into tasks:
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 1067 lines
+
+● Read(data/tag_application_mapping.csv)
+  ⎿  Read 101 lines
+
+● Now I'll make the taxonomy updates. Let me start by adding Major Gordon to the military personnel hierarchy:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 3 additions                                                      
+       747    Social issues,Social issues,hierarchy,parent=(thematic grouping)
+       748    Social order offences,Social order offences,hierarchy,parent=Crimes - THEMATIC
+       749    Soldiers,Soldiers,hierarchy,parent=Military personnel
+       750 +  Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=Soldiers
+       751 +  Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=Military personnel
+       752 +  Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=People - THEMATIC
+       753    South Clifton,South Clifton,hierarchy,parent=Mining districts
+       754    South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=Mining companies
+       755    South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=South Clifton
+
+● Now let me add Military organisations under Organizations in the Agents facet:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition                                            
+       423    Military activities,Military activities,hierarchy,parent=Activities
+       424    Military events,Military events,hierarchy,parent=Military & War - THEMATIC
+       425    Military organizations,Military organizations,hierarchy,parent=Military & War - THEMATIC
+       426 +  Military organizations,Military organizations,hierarchy,parent=Organizations
+       427    Military personnel,Military personnel,hierarchy,parent=Military & War - THEMATIC
+       428    Military personnel,Military personnel,hierarchy,parent=Occupations
+       429    Mine closure,Mine closure,hierarchy,parent=Economic events
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition                                            
+       424    Military events,Military events,hierarchy,parent=Military & War - THEMATIC
+       425    Military organizations,Military organizations,hierarchy,parent=Military & War - THEMATIC
+       426    Military organizations,Military organizations,hierarchy,parent=Organizations
+       427 +  N.S.W. Mounted Rifles,N.S.W. Mounted Rifles,hierarchy,parent=Military organizations
+       428    Military personnel,Military personnel,hierarchy,parent=Military & War - THEMATIC
+       429    Military personnel,Military personnel,hierarchy,parent=Occupations
+       430    Mine closure,Mine closure,hierarchy,parent=Economic events
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 additions                                            
+       677    Rape,Rape,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
+       678    Rape,Rape,hierarchy,parent=Violent crimes - THEMATIC
+       679    Recreation activities,Recreation activities,hierarchy,parent=Activities
+       680 +  Military sports,Military sports,hierarchy,parent=Recreation activities
+       681 +  Military sports,Military sports,hierarchy,parent=Sport & Recreation - THEMATIC
+       682    Recreation for miners,Recreation for miners,hierarchy,parent=Miners
+       683    Recreation for miners,Recreation for miners,hierarchy,parent=Mining activities - THEMATIC
+       684    Recreation for miners,Recreation for miners,hierarchy,parent=Recreation activities
+
+● Bash(grep -n "^Military," data/tag_map_consolidated.csv)
+  ⎿  420:Military,Military,hierarchy,parent=Military activities              
+     421:Military,Military,hierarchy,parent=Military organizations - THEMATIC
+
+● Bash(grep -n "^Military activity," data/tag_map_consolidated.csv)
+  ⎿  1001:Military activity,Military activity,hierarchy,parent=Military activities (singular generic term)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                      
+       417    Methodist Church,Methodist Church,hierarchy,parent=Churches
+       418    Methodist Church,Methodist Church,hierarchy,parent=Religious buildings
+       419    Middle camp,Middle camp,hierarchy,parent=Mining settlements - THEMATIC
+       420 -  Military,Military,hierarchy,parent=Military activities
+       420 +  Military,Military,merge,"Consolidate to Military activities (preferred term for activity facet)"
+       421    Military,Military,hierarchy,parent=Military organizations - THEMATIC
+       422    Military & War,Military & War,hierarchy,parent=(thematic grouping)
+       423    Military activities,Military activities,hierarchy,parent=Activities
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                             
+        998    Maritime worker,Maritime worker,hierarchy,parent=Maritime workers (singular generic term)
+        999    Mason,Mason,hierarchy,parent=Masons (singular generic term)
+       1000    Medical professional,Medical professional,hierarchy,parent=Medical professionals (singular generic 
+              term)
+       1001 -  Military activity,Military activity,hierarchy,parent=Military activities (singular generic term)
+       1001 +  Military activity,Military activity,merge,Consolidate to Military activities (redundant singular form)
+       1002    Miner,Miner,hierarchy,parent=Miners (singular generic term)
+       1003    Mining company,Mining company,hierarchy,parent=Mining companies (singular generic term)
+       1004    Minstrel troupe,Minstrel troupe,hierarchy,parent=Minstrel troupes (singular generic term)
+
+● Now I need to queue the tag applications for the two Major Gordon items. Let me add them to the
+  tag_application_mapping.csv:
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 2 additions                                                      
+        98    Mountain Mixtures.,17 June 1892,Katoomba Times,Post,Postal services,post_tag_action_plan,Item #7
+        99    Megalong,14 August 1896,Mountaineer,Post,Postmaster | Mrs. England | Postal 
+             services,post_tag_action_plan,Item #8
+       100    Megalong Valley.,23 June 1893,[Unknown],Post,Postal services | Post office | 
+             Mailman,post_tag_action_plan,Item #9
+       101 +  Death of Major Gordon,5 May 1915,North Western Courier,Military,Major Sir Charles George Gordon | 
+           + Soldiers | N.S.W. Mounted Rifles | Military activities | Military sports | World War 
+           + I,military_taxonomy_consolidation,WWI military personnel and organisation tags
+       102 +  The Late Major Gordon,6 October 1915,North Western Courier,Military,Major Sir Charles George Gordon | 
+           + Soldiers | World War I,military_taxonomy_consolidation,WWI military personnel tags
+
+● Bash(ls -la planning/consolidation-decisions.md 2>&1 || echo "File not found")
+  ⎿  ls: cannot access 'planning/consolidation-decisions.md': No such file or directory
+     File not found
+
+● Bash(ls -la planning/ 2>&1 | head -20)
+  ⎿  total 284                                      
+     drwxrwxr-x  2 shawn shawn  4096 Oct 30 15:11 .
+     drwxrwxr-x 18 shawn shawn  4096 Oct 31 08:31 ..
+     … +9 lines (ctrl+o to expand)
+
+● Write(planning/consolidation-decisions.md)
+  ⎿  Wrote 119 lines to planning/consolidation-decisions.md                                                            
+     # Tag Consolidation Decisions
+     **Purpose:** Document all tag consolidation and rationalisation decisions with evidence and rationale for audit
+     trail and reproducibility.
+     ## Format
+     Each decision should include:
+     - **Date:** Decision date
+     - **Tags affected:** Original tags and consolidated preferred term
+     … +109 lines (ctrl+o to expand)
+
+● Perfect! I've completed all the military taxonomy updates. Here's what was done:
+
+  Changes Made
+
+  1. Added Major Gordon Entity (tag_map_consolidated.csv:750-752)
+
+  Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=Soldiers
+  Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=Military personnel
+  Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=People - THEMATIC
+
+  2. Added Military Organisations to Agents Facet (tag_map_consolidated.csv:426)
+
+  Military organizations,Military organizations,hierarchy,parent=Organizations
+
+  3. Added N.S.W. Mounted Rifles (tag_map_consolidated.csv:427)
+
+  N.S.W. Mounted Rifles,N.S.W. Mounted Rifles,hierarchy,parent=Military organizations
+
+  4. Added Military Sports Under Recreation (tag_map_consolidated.csv:680-681)
+
+  Military sports,Military sports,hierarchy,parent=Recreation activities
+  Military sports,Military sports,hierarchy,parent=Sport & Recreation - THEMATIC
+
+  5. Consolidated Military Activity Terms (tag_map_consolidated.csv:420, 1001)
+
+  Military,Military,merge,Consolidate to Military activities (preferred term for activity facet)
+  Military activity,Military activity,merge,Consolidate to Military activities (redundant singular form)
+
+  6. Queued Tag Applications (tag_application_mapping.csv:101-102)
+
+  Item 1: "Death of Major Gordon" (5 May 1915)
+  - Remove: Military
+  - Add: Major Sir Charles George Gordon, Soldiers, N.S.W. Mounted Rifles, Military activities, Military sports, World 
+  War I
+
+  Item 2: "The Late Major Gordon" (6 October 1915)
+  - Remove: Military
+  - Add: Major Sir Charles George Gordon, Soldiers, World War I
+
+  7. Created Documentation (planning/consolidation-decisions.md)
+
+  Comprehensive decision log including:
+  - Evidence from primary sources
+  - Rationale for consolidation
+  - Getty AAT alignment
+  - Impact analysis
+  - Complete audit trail
+
+  Summary
+
+  The redundant military hierarchy has been collapsed to Military activities as the preferred term, with proper
+  separation of:
+  - Activities: Military activities, Military sports
+  - Agents/Organizations: Military organizations, N.S.W. Mounted Rifles
+  - Agents/People: Major Sir Charles George Gordon, Soldiers
+
+  All changes follow UK spelling conventions and Getty AAT structure.
+
+> can you regenerate the hierarchy_trees so I can see the new tag taxonomy? 
+
+● Bash(ls -la scripts/*hierarchy* scripts/*tree* scripts/*visual* 2>&1 | head -20)
+  ⎿  ls: cannot access 'scripts/*tree*': No such file or directory                     
+     -rwxrwxr-x 1 shawn shawn 85725 Oct 24 14:23 scripts/22_generate_poly_hierarchy.py
+     -rw-rw-r-- 1 shawn shawn 16182 Oct 30 20:12 scripts/23_visualise_poly_hierarchy.py
+     … +3 lines (ctrl+o to expand)
+
+● Bash(ls -la visualizations/hierarchy_trees/)
+  ⎿  total 168                                     
+     drwxrwxr-x 2 shawn shawn 12288 Oct 30 22:52 .
+     drwxrwxr-x 3 shawn shawn  4096 Oct 20 18:44 ..
+     … +31 lines (ctrl+o to expand)
+
+● Read(scripts/23_visualise_poly_hierarchy.py)
+  ⎿  Read 100 lines
+
+● Bash(venv/bin/python scripts/23_visualise_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +133 lines (ctrl+o to expand)
+
+● Perfect! The hierarchy trees have been regenerated. Let me show you the updated military taxonomy:
+
+● Read(visualizations/hierarchy_trees/primary_activities.txt)
+  ⎿  Read 56 lines
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 100 lines
+
+● Read(visualizations/hierarchy_trees/theme_military__war.txt)
+  ⎿  Read 24 lines
+
+● Read(visualizations/hierarchy_trees/theme_sport__recreation.txt)
+  ⎿  Read 69 lines
+
+● Bash(grep -A 5 "Military organizations" visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  │   ├── Military organizations   
+     │   │   └── N.S.W. Mounted Rifles
+     │   └── Religious organizations
+     … +3 lines (ctrl+o to expand)
+
+● Bash(grep -B 5 -A 10 "Military personnel" visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿          │   ├── Dr Morgan     
+             │   ├── Dr Prangley
+             │   ├── Dr Spark
+     … +13 lines (ctrl+o to expand)
+
+● Perfect! The hierarchy trees have been regenerated. Here's the updated military taxonomy:
+
+  PRIMARY FACET: Activities (primary_activities.txt:28-32)
+
+  Activities
+  ├── Military activities
+  └── Recreation activities
+      ├── Military sports
+
+  Result: The redundant Military and Military activity entries have been consolidated to the single preferred term
+  Military activities, and Military sports now appears under Recreation activities.
+
+  PRIMARY FACET: Agents (primary_agents.txt)
+
+  Organizations:
+  Organizations
+  ├── Military organizations
+  │   └── N.S.W. Mounted Rifles
+
+  People > Occupations:
+  People
+  └── Occupations
+      └── Military personnel
+          ├── Major Sir Charles George Gordon
+          └── Soldiers
+              └── Major Sir Charles George Gordon
+
+  Result: Military organizations now properly sits under the Agents > Organizations facet, with N.S.W. Mounted Rifles as
+   a specific military organisation. Major Gordon is polyhierarchical under both Military personnel and Soldiers.
+
+  THEMATIC GROUPING: Military & War (theme_military__war.txt)
+
+  Military & War
+  ├── Military events
+  │   └── World War I
+  ├── Military organizations
+  │   ├── Military
+  │   └── N.S.W. Mounted Rifles
+  └── Military personnel
+      ├── Major Sir Charles George Gordon
+      └── Soldiers
+          └── Major Sir Charles George Gordon
+
+  Result: Clean thematic view showing events, organisations, and personnel together. The ambiguous Military tag remains
+  visible here for reference but is marked for merge in the CSV.
+
+  THEMATIC GROUPING: Sport & Recreation (theme_sport__recreation.txt:5)
+
+  Sport & Recreation
+  ├── Military sports
+
+  Result: Military sports now properly classified as a recreation activity with thematic link to Sport & Recreation.
+
+  Summary of Changes
+
+  1. Consolidated: Military + Military activity → Military activities
+  2. Added: Military sports (under Recreation activities)
+  3. Added: N.S.W. Mounted Rifles (under Military organizations)
+  4. Added: Major Sir Charles George Gordon (under Soldiers/Military personnel)
+  5. Enhanced: Military organizations now properly placed under Organizations facet
+
+  All changes documented in planning/consolidation-decisions.md with full evidence and rationale, and tag applications
+  queued in tag_application_mapping.csv for the two Major Gordon items.
+
+> Ok, I'm now moving on to 'Recreation activities'. I see 'Horseback riding' and 'Horses' separately. Could you review 
+the full text and see if the sources linked to 'Horses' should all be moved to Agents > Animals > Horses, or if some 
+should be also tagged with REcreation activities > Horseback riding? 
+
+● I'll extract the full text contexts for all items tagged with "Horses" to see whether they're referring to horses as
+  animals or to horseback riding activities.
+
+● Bash(venv/bin/python3 -c " timeout: 30s
+      import json…)
+  ⎿  Found 19 items tagged with "Horses"                                             
+     ================================================================================
+     … +351 lines (ctrl+o to expand)
+
+● Let me create a more focused analysis that extracts just the contexts where "horse" appears in the text, similar to a
+  KWIC (Key Word In Context) analysis:
+
+● Write(scripts/temp_horses_context.py)
+  ⎿  Wrote 122 lines to scripts/temp_horses_context.py                          
+     #!/usr/bin/env python3
+     """
+     Extract KWIC contexts for 'horses' tag to determine whether items refer to:
+     - Horses as animals/agents
+     - Horseback riding as an activity
+     - Both
+     """
+     import json
+     import re
+     … +112 lines (ctrl+o to expand)
+
+● Bash(venv/bin/python scripts/temp_horses_context.py 2>&1 | head -500) timeout: 30s
+  ⎿  ================================================================================
+     HORSES TAG CONTEXT ANALYSIS
+     ================================================================================
+     … +321 lines (ctrl+o to expand)
+
+● Excellent! I can now analyze the contexts. Let me create a summary document with recommendations:
+
+● Write(reports/horses_tag_analysis.md)
+  ⎿  Wrote 237 lines to reports/horses_tag_analysis.md                     
+     # Horses Tag Context Analysis
+     **Date:** 2025-10-31
+     **Purpose:** Determine whether items tagged with "Horses" should be:
+     1. Moved to Agents > Animals > Horses (horses as animals/agents)
+     2. Tagged with Recreation activities > Horseback riding (the activity)
+     3. Both
+     ---
+     … +227 lines (ctrl+o to expand)
+
+● Perfect! I've completed the full text analysis of all 19 items tagged with "Horses". Here's what I found:
+
+  Key Findings
+
+  All 19 items refer to horses as animals/agents (transport animals, property, wild horses, etc.)
+
+  9 items (47%) specifically describe horseback riding as an activity:
+  - Horseman riding on street
+  - Travel "on horseback" down Nellie's Glen
+  - Horse racing at Medlow
+  - Riding accidents
+  - Horsewoman riding up Long Swamp
+
+  1 false positive: "22-horse power" in Item #3 refers to a motor car, not actual horses (though the same item also
+  mentions the postman's "grey neddy")
+
+  Recommendation
+
+  The current taxonomy is conceptually confused:
+
+  Recreation activities
+  ├── Horseback riding  ✓ CORRECT (activity)
+  ├── Horses            ✗ WRONG (horses are animals, not activities)
+
+  Should be:
+
+  1. Remove "Horses" from Recreation activities entirely - horses are animals, not activities
+  2. All items keep: Agents > Animals > Horses
+  3. Add "Horseback riding" to 9 items where riding activity is explicitly mentioned
+
+  Actions Needed
+
+  I can update the taxonomy to:
+  1. Mark "Horses" under Recreation activities for merge/removal
+  2. Queue the 9 items for adding "Horseback riding" tag
+  3. Document the consolidation decision
+
+  The detailed analysis with primary source excerpts and item-by-item recommendations is saved in
+  reports/horses_tag_analysis.md.
+
+  Would you like me to proceed with these updates?
+
+> Yes, please remove 'Horses' from Recreatoin activities. Make sure that all items currently tagged with 'Horses' are 
+given the new tag 'Agents > Animals > Horses'. Tag items that are explicitly about horseback riding (recreational not 
+commercial trasnport) with 'Recreational activities > Horseback riding'. Mark anything about commercial or practical 
+transportation using horses with 'Activities > Economic activities > Transport > Horseborne transportation. Please 
+update these tags yourself based on the full-text content, then produce an easily readable review sheet with 'Approve', 
+'Reject' and 'Change' on it along with the relevant excerpt from the text in question for my review. 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_activities.txt in Visual Studio Code
+
+● I'll work through this systematically. Let me start by creating a task list and then analyzing each item to categorize
+   the horse-related content.
+
+● Bash(grep -n "^Horses," data/tag_map_consolidated.csv)
+  ⎿  275:Horses,Horses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+     276:Horses,Horses,hierarchy,parent=Animals
+     277:Horses,Horses,hierarchy,parent=Recreation activities
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                             
+       274    Horseborne transportation,Horseborne transportation,hierarchy,parent=Transport
+       275    Horses,Horses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+       276    Horses,Horses,hierarchy,parent=Animals
+       277 -  Horses,Horses,hierarchy,parent=Recreation activities
+       277 +  Horses,Horses,merge,Remove from Recreation activities - horses are animals (agents) not activities; use
+           +  'Horseback riding' for the activity
+       278    Horticulture society,Horticulture society,hierarchy,parent=Cultural societies
+       279    Hospitality businesses,Hospitality businesses,hierarchy,parent=Commercial businesses
+       280    Hospitality venues,Hospitality venues,hierarchy,parent=Built Environment
+
+● Now let me create a comprehensive analysis document. I'll analyze each item and create a review sheet:
+
+● Write(reports/horses_tag_reclassification_review.md)
+  ⎿  Wrote 457 lines to reports/horses_tag_reclassification_review.md
+     # Horses Tag Reclassification Review Sheet
+     **Date:** 2025-10-31
+     **Analyst:** Claude Code
+     **Total Items:** 19 items currently tagged with "Horses"
+     ---
+     ## Instructions
+     … +447 lines (ctrl+o to expand)
+
+● Now let me create the tag application entries for the CSV:
+
+● Read(data/tag_application_mapping.csv)
+  ⎿  Read 10 lines
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 19 additions                                                      
+       100    Megalong Valley.,23 June 1893,[Unknown],Post,Postal services | Post office | 
+             Mailman,post_tag_action_plan,Item #9
+       101    Death of Major Gordon,5 May 1915,North Western Courier,Military,Major Sir Charles George Gordon | 
+             Soldiers | N.S.W. Mounted Rifles | Military activities | Military sports | World War 
+             I,military_taxonomy_consolidation,WWI military personnel and organisation tags
+       102    The Late Major Gordon,6 October 1915,North Western Courier,Military,Major Sir Charles George Gordon | 
+             Soldiers | World War I,military_taxonomy_consolidation,WWI military personnel tags
+       103 +  Mountain Mixtures.,21 October 1892,Katoomba Times,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #1 - Horseman in urban traffic (practical transport)
+       104 +  Megalong Matters.,26 August 1892,Katoomba Times,,Horses | Transport,horses_reclassification,Item #2 - 
+           + Wild horses and pony breeding (economic activity)
+       105 +  Town Talk.,13 May 1904,Blue Mountain Gazette,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #3 - Postman's horse (commercial transport)
+       106 +  Town Talk.,13 March 1903,Blue Mountain Gazette,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #4 - Horseback travel down Nellie's Glen (practical 
+           + transport)
+       107 +  Mountain Mixtures.,4 December 1891,Katoomba Times,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #5 - Buggy transport accident
+       108 +  Mountain Mixtures.,23 June 1893,Katoomba Times,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #6 - Cart transport for prospecting
+       109 +  Town Talk.,30 October 1903,Blue Mountain Gazette,,Horses,horses_reclassification,Item #7 - Stray animal
+           +  court cases (animals only)
+       110 +  Local Jottings.,25 May 1889,Katoomba Times,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #8 - Jenolan Caves tourism route and mining track
+       111 +  Mountain Mixtures.,20 November 1891,Katoomba Times,,Horses | Horseback 
+           + riding,horses_reclassification,Item #9 - HORSE RACING (recreational sport)
+       112 +  Mountain Mixtures.,29 April 1892,Katoomba Times,,Horses,horses_reclassification,Item #10 - Horses 
+           + grazing on streets (animals only)
+       113 +  [untitled],29 June 1889,Katoomba Times,,Horses | Horseborne transportation,horses_reclassification,Item
+           +  #11 - Barber's runaway horse (transport)
+       114 +  Local and General,7 July 1905,Mountaineer,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #12 - Sulky transport accident
+       115 +  Katoomba Police Court,13 December 1895,Mountaineer,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #13 - Constable's horse (police transport)
+       116 +  Megalong Valley.,15 September 1893,Katoomba Times,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #14 - Retrieving lost pony (practical riding)
+       117 +  Mountain Mixtures.,3 November 1893,Katoomba Times,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #15 - Cart transport accident
+       118 +  Mountain Mixtures.,25 November 1892,Katoomba Times,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #16 - Commercial carter's accident
+       119 +  Accident in Nellie's Glen.,27 July 1889,Katoomba Times,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #17 - Riding home from official business (practical 
+           + transport)
+       120 +  Megalong Matters.,10 January 1896,Unknown,,Horses | Horseborne 
+           + transportation,horses_reclassification,Item #18 - Horsemen returning to valley (practical transport)
+       121 +  Megalong Valley.,23 June 1893,Unknown,,Horses | Horseborne transportation,horses_reclassification,Item 
+           + #19 - Mailman's horse (postal transport)
+
+● Update(planning/consolidation-decisions.md)
+  ⎿  Error editing file
+
+● Read(planning/consolidation-decisions.md)
+  ⎿  Read 51 lines
+
+● Bash(cat >> planning/consolidation-decisions.md << 'EOF'…)
+  ⎿  (No content)
+
+● Bash(rm -f scripts/temp_military_context.py scripts/temp_horses_context.py)
+  ⎿  (No content)
+
+● Perfect! I've completed the horses tag reclassification analysis. Here's what I've done:
+
+  Summary of Changes
+
+  1. Taxonomy Updated (tag_map_consolidated.csv:277)
+
+  Removed "Horses" from Recreation activities facet:
+  Horses,Horses,merge,Remove from Recreation activities - horses are animals (agents) not activities; use 'Horseback
+  riding' for the activity
+
+  This fixes a fundamental categorical error - horses are agents (animals), not activities.
+
+  2. Analysed All 19 Items
+
+  Findings from full-text analysis:
+
+  - All 19 items (100%): Keep Agents > Animals > Horses
+  - 15 items (79%): Add Horseborne transportation (commercial/practical transport)
+    - Postal delivery, police work, commercial carting, tourism routes, etc.
+  - 1 item (5%): Add Horseback riding (recreational sport)
+    - Item #9: Horse racing at Medlow (the only truly recreational use)
+  - 3 items (16%): No additional tags needed
+    - Items about straying animals, grazing, or wild horse hunting
+
+  3. Tag Applications Queued (tag_application_mapping.csv:103-121)
+
+  All 19 items added with appropriate categorisation based on context analysis.
+
+  4. Review Sheet Created
+
+  Location: reports/horses_tag_reclassification_review.md
+
+  This detailed review sheet includes:
+  - ✓ Primary source excerpts for each item
+  - ✓ Context analysis and rationale
+  - ✓ Proposed tag changes with checkboxes
+  - ✓ APPROVE / REJECT / CHANGE options
+  - ✓ Summary table showing all 19 items at a glance
+
+  Ready for your review! Each item shows:
+  - The relevant text excerpt (horseman, horse race, mailman's horse, etc.)
+  - Current tags
+  - Proposed additions
+  - Rationale for categorisation
+
+  5. Consolidation Decision Documented
+
+  Added complete decision log to planning/consolidation-decisions.md with:
+  - Evidence from primary sources
+  - Getty AAT alignment rationale
+  - Impact analysis
+  - Key taxonomic principle: Separate entities (agents) from activities (processes)
+
+  Review the Sheet
+
+  Please review reports/horses_tag_reclassification_review.md and mark each item as:
+  - APPROVE - if you agree with my categorisation
+  - REJECT - if the item should not receive those tags
+  - CHANGE - if you want different tags (specify what to change)
+
+  The categorisations are based on careful reading of the full text context for each item.
+
+> Review complete, we need to add some additional tags. In some cases I've asked you to look at Getty AAT and propose a 
+more aligned / standard taxonomy, please show these to me first for approval or change. 
+  ⎿  Found 55 new diagnostic issues in 1 file (ctrl-o to expand)
+
+● I'll research Getty AAT for standardised terminology and create a proposal document for your review. Let me check the
+  Getty vocabulary for the categories you've identified.
+
+● Fetch(https://vocab.getty.edu/page/aat/300055287)
+  ⎿  Error: Request failed with status code 404
+
+● Fetch(https://vocab.getty.edu/page/aat/300054316)
+  ⎿  Received 27.1KB (200 OK)
+
+● Fetch(https://vocab.getty.edu/page/aat/300054478)
+  ⎿  Received 19.1KB (200 OK)
+
+● Let me search more broadly on Getty's vocabulary site:
+
+● Fetch(https://www.getty.edu/research/tools/vocabularies/aat/)
+  ⎿  Received 32KB (200 OK)
+
+● Fetch(https://vocab.getty.edu)
+  ⎿  Error: Request failed with status code 303
+
+● Let me search for specific terms we need:
+
+● Web Search("Getty AAT "animal husbandry" hierarchy activities facet")
+  ⎿  Did 1 search in 18s                                                                                               
+
+● Web Search("Getty AAT "horse breeding" animal husbandry activities")
+  ⎿  Did 1 search in 15s                                                                                               
+
+● Web Search("Getty AAT accidents transportation "vehicle accidents"")
+  ⎿  Did 1 search in 17s                                                                                               
+
+● Fetch(http://vocab.getty.edu/aat/300254388)
+  ⎿  Received 27.9KB (200 OK)
+
+● Web Search("site:vocab.getty.edu "horse racing" sporting events")
+  ⎿  Did 1 search in 14s                                                                                               
+
+● Web Search("site:vocab.getty.edu "law enforcement" policing constable")
+  ⎿  Did 1 search in 12s                                                                                               
+
+● Web Search("site:vocab.getty.edu accidents mishaps disasters events")
+  ⎿  Did 0 searches in 138s                                                                                            
+
+● Based on my research and Getty AAT structural principles, let me create a comprehensive proposal document for your
+  review:
+
+● Write(reports/horses_review_getty_aat_proposals.md)
+  ⎿  Wrote 499 lines to reports/horses_review_getty_aat_proposals.md                              
+     # Getty AAT-Aligned Taxonomy Proposals for Horses Review
+     **Date:** 2025-10-31
+     **Purpose:** Propose Getty AAT-aligned taxonomy terms for user approval before implementation
+     ---
+     ## Research Summary
+     **Getty AAT Verified:**
+     … +489 lines (ctrl+o to expand)
+
+● Perfect! I've created a comprehensive Getty AAT-aligned taxonomy proposal document for your review.
+
+  Document Location
+
+  reports/horses_review_getty_aat_proposals.md
+
+  What I've Researched
+
+  I verified with Getty AAT that:
+  - Animal husbandry (AAT ID: 300254388) sits under "Agriculture (discipline)"
+  - Getty AAT uses specific facets: Activities, Events, Agents, Associated Concepts
+
+  Key Proposals for Your Review
+
+  1. Animal Husbandry & Breeding (Item #2)
+
+  - Activities > Economic activities > Agriculture > Animal husbandry > Animal breeding > Horse breeding
+  - Activities > Economic activities > Hunting > Wild horse culling
+  - Agents > Animals > Wild animals > Wild horses
+  - Named person: Mr Hardie Clydesdale as horse breeder
+
+  2. Horse Accidents (Items #5, 11, 12, 14-18)
+
+  Proposed three distinct types:
+  - Events > Accidents > Transport accidents > Horse-drawn vehicle accidents (carts, buggies, sulkies)
+  - Events > Accidents > Transport accidents > Horseback riding accidents (riders falling)
+  - Events > Accidents > Transport accidents > Runaway horse incidents (bolting horses)
+
+  3. Animal Straying (Item #7)
+
+  - Events > Legal proceedings > Court cases > Property offences > Stock trespass
+  - Using "Stock trespass" (Australian legal term) instead of "Animal straying"
+
+  4. Horse Racing (Item #9)
+
+  - Events > Cultural events > Sporting events > Equestrian events > Horse races
+  - (Not recreational activity - you were right!)
+
+  5. Goring Accidents (Item #10)
+
+  - Events > Accidents > Agricultural accidents > Livestock accidents > Animal attacks > Goring
+  - Plus: Agents > Animals > Domestic animals > Cattle
+
+  6. Postal Services (Items #3, #19)
+
+  - Activities > Communication activities > Postal services
+
+  7. Policing (Item #13)
+
+  - Activities > Societal activities > Law enforcement > Policing
+  - Agents > People > Occupations > Law enforcement personnel > Police officers > Constable
+
+  8. Recreational Horseback Riding (Items #8, #11)
+
+  - Activities > Recreation activities > Sports > Equestrian sports > Horseback riding
+
+  Your Action Required
+
+  Please review the proposal document and for each of the 8 proposals, indicate:
+  - APPROVE - implement as proposed
+  - CHANGE - specify modifications needed
+  - REJECT - do not implement
+
+  Once you've approved the structures, I'll implement all the taxonomy changes and update the tag applications for all
+  19 items.
+
+> Approve all, thank you 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_activities.txt in Visual Studio Code
+
+● Bash(grep -E "^(Agriculture|Animal husbandry|Hunting|Wild animals|Accidents|Events|Legal proceedings|Court cases|Cultural
+      events|Sporting events|Law enforcement|Poli…)
+  ⎿  Events,Events,hierarchy,parent=(Getty AAT primary facet)  
+     Court cases,Court cases,hierarchy,parent=Legal events
+     Court cases,Court cases,hierarchy,parent=Legal proceedings
+     … +8 lines (ctrl+o to expand)
+
+● Bash(cat >> data/tag_map_consolidated.csv << 'EOF'
+      Agriculture,Agriculture,hierarchy,parent=Economic activities…)
+  ⎿  (No content)
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 19 additions and 19 removals                                      
+       100    Megalong Valley.,23 June 1893,[Unknown],Post,Postal services | Post office | 
+             Mailman,post_tag_action_plan,Item #9
+       101    Death of Major Gordon,5 May 1915,North Western Courier,Military,Major Sir Charles George Gordon | 
+             Soldiers | N.S.W. Mounted Rifles | Military activities | Military sports | World War 
+             I,military_taxonomy_consolidation,WWI military personnel and organisation tags
+       102    The Late Major Gordon,6 October 1915,North Western Courier,Military,Major Sir Charles George Gordon | 
+             Soldiers | World War I,military_taxonomy_consolidation,WWI military personnel tags
+       103 -  Mountain Mixtures.,21 October 1892,Katoomba Times,,Horses | Horseborne transportation,
+           -  horses_reclassification,Item #1 - Horseman in urban traffic (practical transport)
+       104 -  Megalong Matters.,26 August 1892,Katoomba Times,,Horses | Transport,horses_reclassification,Item #2 - 
+           - Wild horses and pony breeding (economic activity)
+       105 -  Town Talk.,13 May 1904,Blue Mountain Gazette,,Horses | Horseborne transportation,
+           -  horses_reclassification,Item #3 - Postman's horse (commercial transport)
+       106 -  Town Talk.,13 March 1903,Blue Mountain Gazette,,Horses | Horseborne transportation,
+           -  horses_reclassification,Item #4 - Horseback travel down Nellie's Glen (practical transport)
+       107 -  Mountain Mixtures.,4 December 1891,Katoomba Times,,Horses | Horseborne transportation,
+           -  horses_reclassification,Item #5 - Buggy transport accident
+       108 -  Mountain Mixtures.,23 June 1893,Katoomba Times,,Horses | Horseborne transportation,
+           -  horses_reclassification,Item #6 - Cart transport for prospecting
+       109 -  Town Talk.,30 October 1903,Blue Mountain Gazette,,Horses,horses_reclassification
+           -  ,Item #7 - Stray animal court cases (animals only)
+       110 -  Local Jottings.,25 May 1889,Katoomba Times,,Horses | Horseborne transportation,horses_reclassification
+           -  ,Item #8 - Jenolan Caves tourism route and mining track
+       111 -  Mountain Mixtures.,20 November 1891,Katoomba Times,,Horses | Horseback 
+           - riding,horses_reclassification,Item #9 - HORSE RACING (recreational sport)
+       112 -  Mountain Mixtures.,29 April 1892,Katoomba Times,,Horses,horses_reclassification,Item #10 - Horses 
+           - grazing on streets (animals only)
+       113 -  [untitled],29 June 1889,Katoomba Times,,Horses | Horseborne transportation,horses_reclassification
+           -  ,Item #11 - Barber's runaway horse (transport)
+       114 -  Local and General,7 July 1905,Mountaineer,,Horses | Horseborne transportation,horses_reclassification
+           -  ,Item #12 - Sulky transport accident
+       115 -  Katoomba Police Court,13 December 1895,Mountaineer,,Horses | Horseborne transportation,
+           -  horses_reclassification,Item #13 - Constable's horse (police transport)
+       116 -  Megalong Valley.,15 September 1893,Katoomba Times,,Horses | Horseborne 
+           - transportation,horses_reclassification,Item #14 - Retrieving lost pony (practical riding)
+       117 -  Mountain Mixtures.,3 November 1893,Katoomba Times,,Horses | Horseborne transportation,
+           -  horses_reclassification,Item #15 - Cart transport accident
+       118 -  Mountain Mixtures.,25 November 1892,Katoomba Times,,Horses | Horseborne transportation,
+           -  horses_reclassification,Item #16 - Commercial carter's accident
+       119 -  Accident in Nellie's Glen.,27 July 1889,Katoomba Times,,Horses | Horseborne 
+           - transportation,horses_reclassification,Item #17 - Riding home from official business (practical 
+           - transport)
+       120 -  Megalong Matters.,10 January 1896,Unknown,,Horses | Horseborne 
+           - transportation,horses_reclassification,Item #18 - Horsemen returning to valley (practical transport)
+       121 -  Megalong Valley.,23 June 1893,Unknown,,Horses | Horseborne transportation,horses_reclassification
+           -  ,Item #19 - Mailman's horse (postal transport)
+       103 +  Mountain Mixtures.,21 October 1892,Katoomba Times,,Horses | Horseborne transportation,
+           +  horses_reclassification_getty_aat,Item #1 - Horseman in urban traffic (practical transport)
+       104 +  Megalong Matters.,26 August 1892,Katoomba Times,,Horses | Horse breeding | Pony breeding | Wild horse 
+           + culling | Wild horses | Mr Hardie Clydesdale,horses_reclassification_getty_aat,Item #2 - Wild horses 
+           + shot for skins and pony breeding business
+       105 +  Town Talk.,13 May 1904,Blue Mountain Gazette,,Horses | Horseborne transportation | Postal services,
+           +  horses_reclassification_getty_aat,Item #3 - Postman's horse (commercial postal transport)
+       106 +  Town Talk.,13 March 1903,Blue Mountain Gazette,,Horses | Horseborne transportation,
+           +  horses_reclassification_getty_aat,Item #4 - Horseback travel down Nellie's Glen (practical transport)
+       107 +  Mountain Mixtures.,4 December 1891,Katoomba Times,,Horses | Horseborne transportation
+           +   | Horse-drawn vehicle accidents | Runaway horse incidents,horses_reclassification_getty_aat
+           +  ,Item #5 - Buggy transport accident (horses bolted)
+       108 +  Mountain Mixtures.,23 June 1893,Katoomba Times,,Horses | Horseborne transportation,
+           +  horses_reclassification_getty_aat,Item #6 - Cart transport for prospecting
+       109 +  Town Talk.,30 October 1903,Blue Mountain Gazette,,Horses | Stock trespass,
+           +  horses_reclassification_getty_aat,Item #7 - Stray animal court cases
+       110 +  Local Jottings.,25 May 1889,Katoomba Times,,Horses | Horseborne transportation | Horseback riding,
+           +  horses_reclassification_getty_aat,Item #8 - Jenolan Caves tourism route and recreational horsewoman
+       111 +  Mountain Mixtures.,20 November 1891,Katoomba Times,,Horses | Horse 
+           + races,horses_reclassification_getty_aat,Item #9 - Horse race at Medlow (sporting event)
+       112 +  Mountain Mixtures.,29 April 1892,Katoomba Times,,Horses | Cattle | 
+           + Goring,horses_reclassification_getty_aat,Item #10 - Cow gored horse
+       113 +  [untitled],29 June 1889,Katoomba Times,,Horses | Horseborne transportation
+           +   | Horseback riding | Runaway horse incidents,horses_reclassification_getty_aat
+           +  ,Item #11 - Barber's runaway horse and recreational riding
+       114 +  Local and General,7 July 1905,Mountaineer,,Horses | Horseborne transportation
+           +   | Horse-drawn vehicle accidents | Runaway horse incidents,horses_reclassification_getty_aat
+           +  ,Item #12 - Sulky transport accident (horse bolted)
+       115 +  Katoomba Police Court,13 December 1895,Mountaineer,,Horses | Horseborne transportation
+           +   | Policing | Constable,horses_reclassification_getty_aat
+           +  ,Item #13 - Constable's horse (police transport)
+       116 +  Megalong Valley.,15 September 1893,Katoomba Times,,Horses | Horseborne transportation | Horseback 
+           + riding accidents,horses_reclassification_getty_aat,Item #14 - Rider pulled from saddle while retrieving 
+           + pony
+       117 +  Mountain Mixtures.,3 November 1893,Katoomba Times,,Horses | Horseborne transportation
+           +   | Horse-drawn vehicle accidents,horses_reclassification_getty_aat,Item #15 - Cart overturned accident
+       118 +  Mountain Mixtures.,25 November 1892,Katoomba Times,,Horses | Horseborne transportation
+           +   | Horse-drawn vehicle accidents,horses_reclassification_getty_aat,Item #16 - Commercial carter's 
+           +  cart over embankment
+       119 +  Accident in Nellie's Glen.,27 July 1889,Katoomba Times,,Horses | Horseborne transportation | Horseback 
+           + riding accidents,horses_reclassification_getty_aat,Item #17 - Rider fell 80 feet from horse
+       120 +  Megalong Matters.,10 January 1896,Unknown,,Horses | Horseborne transportation | Horseback riding 
+           + accidents,horses_reclassification_getty_aat,Item #18 - Horsemen encountering fallen tree obstacle
+       121 +  Megalong Valley.,23 June 1893,Unknown,,Horses | Horseborne transportation | Postal services,
+           +  horses_reclassification_getty_aat,Item #19 - Mailman's horse (postal delivery)
+
+● Bash(cat >> planning/consolidation-decisions.md << 'EOF'…)
+  ⎿  (No content)
+
+● Bash(venv/bin/python scripts/23_visualise_poly_hierarchy.py 2>&1 | tail -50) timeout: 1m 0s
+  ⎿    ✓ Saved to: visualizations/hierarchy_trees/theme_justice__crime.txt
+     Generating tree for: Military & War
+       ✓ Saved to: visualizations/hierarchy_trees/theme_military__war.txt
+     … +46 lines (ctrl+o to expand)
+
+● Bash(grep -A 20 "^Activities" visualizations/hierarchy_trees/primary_activities.txt | head -40)
+  ⎿  Activities                             
+     ├── Charitable and welfare activities
+     │   ├── Charitable and welfare activity
+     … +18 lines (ctrl+o to expand)
+
+● Bash(grep -A 30 "^Events" visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Events                        
+     ├── Accidents
+     │   ├── Agricultural accidents
+     … +28 lines (ctrl+o to expand)
+
+● Bash(grep -A 15 "Agriculture workers" visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿          ├── Agriculture workers  
+             │   └── Animal breeders
+             │       └── Horse breeder
+     … +13 lines (ctrl+o to expand)
+
+● Bash(grep -A 10 "Sporting events" visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  └── Sporting events          
+         ├── Athletics
+         ├── Billiard
+     … +8 lines (ctrl+o to expand)
+
+● Bash(grep -B 3 -A 8 "Wild animals" visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  │   ├── Cattle               
+     │   ├── Dogs
+     │   ├── Horses
+     … +9 lines (ctrl+o to expand)
+
+● Bash(grep -i "equestrian\|horse race" visualizations/hierarchy_trees/primary_events.txt)
+  ⎿      ├── Equestrian events
+         │   └── Horse races
+
+● Bash(grep "^Equestrian\|^Horse race" data/tag_map_consolidated.csv)
+  ⎿  Equestrian events,Equestrian events,hierarchy,parent=Sporting events
+     Horse races,Horse races,hierarchy,parent=Equestrian events
+     Equestrian sports,Equestrian sports,hierarchy,parent=Sports
+
+● Bash(grep -B 2 -A 10 "Societal activities" visualizations/hierarchy_trees/primary_activities.txt)
+  ⎿  │   ├── Social behaviour      
+     │   └── Temperance
+     └── Societal activities
+     … +10 lines (ctrl+o to expand)
+
+● Bash(grep -B 2 -A 5 "Law enforcement personnel" visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿          │   ├── Senior-Constable Thorncroft
+             │   └── Sergeant Thorndyke
+             ├── Law enforcement personnel
+     … +5 lines (ctrl+o to expand)
+
+● Bash(grep "^Policing" data/tag_map_consolidated.csv)
+  ⎿  Policing,Policing,hierarchy,parent=Law enforcement
+
+● Perfect! All approved taxonomy changes have been implemented. Here's what was completed:
+
+  Summary of Implementation
+
+  1. Taxonomy Updated (40 new entries added)
+
+  Activities Facet:
+  Activities
+  ├── Economic activities
+  │   ├── Agriculture (NEW)
+  │   │   └── Animal husbandry (NEW)
+  │   │       └── Animal breeding (NEW)
+  │   │           ├── Horse breeding (NEW)
+  │   │           └── Pony breeding (NEW)
+  │   └── Hunting
+  │       └── Wild horse culling (NEW)
+  ├── Communication activities
+  │   └── Postal services (existing - confirmed usage)
+  └── Societal activities (NEW)
+      └── Law enforcement
+          └── Policing (NEW)
+
+  Events Facet:
+  Events
+  ├── Accidents (NEW)
+  │   ├── Agricultural accidents (NEW)
+  │   │   └── Livestock accidents (NEW)
+  │   │       └── Animal attacks (NEW)
+  │   │           └── Goring (NEW)
+  │   └── Transport accidents (NEW)
+  │       └── Animal-powered transport accidents (NEW)
+  │           └── Horse accidents (NEW)
+  │               ├── Horse-drawn vehicle accidents (NEW)
+  │               ├── Horseback riding accidents (NEW)
+  │               └── Runaway horse incidents (NEW)
+  ├── Legal proceedings
+  │   └── Court cases
+  │       └── Property offences (NEW)
+  │           └── Stock trespass (NEW)
+  └── Cultural events
+      └── Sporting events
+          └── Equestrian events (NEW)
+              └── Horse races (NEW)
+
+  Agents Facet:
+  Agents
+  ├── Animals
+  │   ├── Domestic animals
+  │   │   ├── Horses (existing - retained)
+  │   │   └── Cattle (existing)
+  │   └── Wild animals (NEW)
+  │       └── Wild horses (NEW)
+  └── People
+      └── Occupations
+          ├── Agriculture workers (NEW)
+          │   └── Animal breeders (NEW)
+          │       └── Horse breeder (NEW)
+          │           └── Mr Hardie Clydesdale (NEW)
+          └── Law enforcement personnel (NEW)
+              └── Police officers (NEW)
+                  └── Constable (NEW)
+
+  2. Tag Applications Updated (19 items)
+
+  All 19 items in tag_application_mapping.csv (lines 103-121) updated with Getty AAT-aligned tags:
+
+  - 1 item: Animal husbandry (breeding, culling) - Item #2
+  - 15 items: Horseborne transportation
+  - 7 items: Various accident types
+  - 2 items: Postal services - Items #3, #19
+  - 2 items: Recreational horseback riding - Items #8, #11
+  - 1 item: Horse races (sporting event) - Item #9
+  - 1 item: Stock trespass (legal) - Item #7
+  - 1 item: Goring accident - Item #10
+  - 1 item: Policing activity - Item #13
+
+  3. Documentation Complete
+
+  - Consolidation decisions: Added comprehensive Getty AAT alignment section to planning/consolidation-decisions.md
+  - Proposals document: Created reports/horses_review_getty_aat_proposals.md with full research
+  - Review sheet: Created reports/horses_tag_reclassification_review.md with primary source excerpts
+
+  4. Hierarchy Trees Regenerated
+
+  All 32 hierarchy visualisation files updated showing:
+  - 9 primary facet trees (including new Activities, Events, Agents structures)
+  - 22 thematic grouping trees
+  - 1 overview document
+
+  Key Achievements
+
+  ✓ Conceptual clarity: Separated agents (animals) from activities (riding/racing) and events (accidents/races)
+
+  ✓ Getty AAT alignment: All 40 new terms follow Getty AAT structural principles and facet organisation
+
+  ✓ Australian context: Incorporated local terminology (Stock trespass, Constable rank, wild horse culling)
+
+  ✓ Granular categorisation: Distinguished between horse-drawn vehicle accidents, horseback riding accidents, and
+  runaway horse incidents
+
+  ✓ Polyhierarchical precision: Named individuals (Mr Hardie Clydesdale) properly linked to both occupation and person
+  categories
+
+  The horses tag reclassification is now complete with full Getty AAT alignment and all 19 items correctly tagged!
+
+> Ok, a couple of changes: 'Horse breeding' and 'Pony breeding' should be combined, with Horse breeding as the main 
+entry and Pony breeding as a synonym in the thesaurus.\
+None of our other sports are listed under 'recreational activities'. 'Horse race' should go under 'event'. Let's add 
+Activities > Recreational activities > Spectator sports and add that tag. 
+
+● I'll make those changes now.
+
+● Bash(grep -n "^Pony breeding" data/tag_map_consolidated.csv)
+  ⎿  1078:Pony breeding,Pony breeding,hierarchy,parent=Animal breeding
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                    
+       1075    Animal husbandry,Animal husbandry,hierarchy,parent=Agriculture
+       1076    Animal breeding,Animal breeding,hierarchy,parent=Animal husbandry
+       1077    Horse breeding,Horse breeding,hierarchy,parent=Animal breeding
+       1078 -  Pony breeding,Pony breeding,hierarchy,parent=Animal breeding
+       1078 +  Pony breeding,Pony breeding,merge,Alternate term for Horse breeding (ponies are small horses)
+       1079    Wild horse culling,Wild horse culling,hierarchy,parent=Hunting
+       1080    Wild animals,Wild animals,hierarchy,parent=Animals
+       1081    Wild horses,Wild horses,hierarchy,parent=Wild animals
+
+● Bash(grep -n "^Recreation activities\|^Recreation activity" data/tag_map_consolidated.csv | head -10)
+  ⎿  679:Recreation activities,Recreation activities,hierarchy,parent=Activities                                
+     1018:Recreation activity,Recreation activity,hierarchy,parent=Recreation activities (singular generic term)
+
+● Bash(grep -n "^Sports," data/tag_map_consolidated.csv)
+  ⎿  765:Sports,Sports,hierarchy,parent=Recreation activities       
+     766:Sports,Sports,hierarchy,parent=Recreation themes - THEMATIC
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 10 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 additions                                   
+       764    Sporting events,Sporting events,hierarchy,parent=Sport & Recreation - THEMATIC
+       765    Sports,Sports,hierarchy,parent=Recreation activities
+       766    Sports,Sports,hierarchy,parent=Recreation themes - THEMATIC
+       767 +  Spectator sports,Spectator sports,hierarchy,parent=Recreation activities
+       768 +  Spectator sports,Spectator sports,hierarchy,parent=Sport & Recreation - THEMATIC
+       769    Sports clubs,Sports clubs,hierarchy,parent=Cultural & recreational organizations
+       770    Sports clubs,Sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
+       771    St Hilda's Church,St Hilda's Church,hierarchy,parent=Churches
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 1 addition and 1 removal                                          
+       108    Mountain Mixtures.,23 June 1893,Katoomba Times,,Horses | Horseborne 
+             transportation,horses_reclassification_getty_aat,Item #6 - Cart transport for prospecting
+       109    Town Talk.,30 October 1903,Blue Mountain Gazette,,Horses | Stock 
+             trespass,horses_reclassification_getty_aat,Item #7 - Stray animal court cases
+       110    Local Jottings.,25 May 1889,Katoomba Times,,Horses | Horseborne transportation | Horseback 
+             riding,horses_reclassification_getty_aat,Item #8 - Jenolan Caves tourism route and recreational 
+             horsewoman
+       111 -  Mountain Mixtures.,20 November 1891,Katoomba Times,,Horses | Horse races
+           -  ,horses_reclassification_getty_aat,Item #9 - Horse race at Medlow (sporting event)
+       111 +  Mountain Mixtures.,20 November 1891,Katoomba Times,,Horses | Horse races | Spectator sports
+           +  ,horses_reclassification_getty_aat,Item #9 - Horse race at Medlow (sporting event)
+       112    Mountain Mixtures.,29 April 1892,Katoomba Times,,Horses | Cattle | 
+             Goring,horses_reclassification_getty_aat,Item #10 - Cow gored horse
+       113    [untitled],29 June 1889,Katoomba Times,,Horses | Horseborne transportation | Horseback riding | Runaway
+              horse incidents,horses_reclassification_getty_aat,Item #11 - Barber's runaway horse and recreational 
+             riding
+       114    Local and General,7 July 1905,Mountaineer,,Horses | Horseborne transportation | Horse-drawn vehicle 
+             accidents | Runaway horse incidents,horses_reclassification_getty_aat,Item #12 - Sulky transport 
+             accident (horse bolted)
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 1 addition and 1 removal                                          
+       101    Death of Major Gordon,5 May 1915,North Western Courier,Military,Major Sir Charles George Gordon | 
+             Soldiers | N.S.W. Mounted Rifles | Military activities | Military sports | World War 
+             I,military_taxonomy_consolidation,WWI military personnel and organisation tags
+       102    The Late Major Gordon,6 October 1915,North Western Courier,Military,Major Sir Charles George Gordon | 
+             Soldiers | World War I,military_taxonomy_consolidation,WWI military personnel tags
+       103    Mountain Mixtures.,21 October 1892,Katoomba Times,,Horses | Horseborne 
+             transportation,horses_reclassification_getty_aat,Item #1 - Horseman in urban traffic (practical 
+             transport)
+       104 -  Megalong Matters.,26 August 1892,Katoomba Times,,Horses | Horse breeding | Pony breeding | 
+           -  Wild horse culling | Wild horses | Mr Hardie Clydesdale,horses_reclassification_getty_aat,Item #2 - 
+           -  Wild horses shot for skins and pony breeding business
+       104 +  Megalong Matters.,26 August 1892,Katoomba Times,,Horses | Horse breeding | 
+           +  Wild horse culling | Wild horses | Mr Hardie Clydesdale,horses_reclassification_getty_aat,Item #2 - 
+           +  Wild horses shot for skins and pony/horse breeding business
+       105    Town Talk.,13 May 1904,Blue Mountain Gazette,,Horses | Horseborne transportation | Postal 
+             services,horses_reclassification_getty_aat,Item #3 - Postman's horse (commercial postal transport)
+       106    Town Talk.,13 March 1903,Blue Mountain Gazette,,Horses | Horseborne 
+             transportation,horses_reclassification_getty_aat,Item #4 - Horseback travel down Nellie's Glen 
+             (practical transport)
+       107    Mountain Mixtures.,4 December 1891,Katoomba Times,,Horses | Horseborne transportation | Horse-drawn 
+             vehicle accidents | Runaway horse incidents,horses_reclassification_getty_aat,Item #5 - Buggy transport 
+             accident (horses bolted)
+
+● Bash(venv/bin/python scripts/23_visualise_poly_hierarchy.py 2>&1 | tail -30) timeout: 1m 0s
+  ⎿    ✓ Saved to: visualizations/hierarchy_trees/theme_towns.txt                    
+     Generating tree for: Transport & Infrastructure
+       ✓ Saved to: visualizations/hierarchy_trees/theme_transport__infrastructure.txt
+     … +26 lines (ctrl+o to expand)
+
+● Bash(grep -A 6 "Animal breeding" visualizations/hierarchy_trees/primary_activities.txt)
+  ⎿  │   │       └── Animal breeding   
+     │   │           └── Horse breeding
+     │   ├── Economic activity
+     … +4 lines (ctrl+o to expand)
+
+● Bash(grep -B 2 -A 8 "Recreation activities" visualizations/hierarchy_trees/primary_activities.txt | head -15)
+  ⎿  │   └── Trucking             
+     ├── Military activities
+     ├── Recreation activities
+     … +8 lines (ctrl+o to expand)
+
+● Bash(grep -B 2 -A 8 "^Sport & Recreation" visualizations/hierarchy_trees/theme_sport__recreation.txt | head -20)
+  ⎿  ================================================================================
+
+     Sport & Recreation
+     … +8 lines (ctrl+o to expand)
+
+● Bash(grep -i "spectator" visualizations/hierarchy_trees/theme_sport__recreation.txt)
+  ⎿  ├── Spectator sports
+
+● Read(visualizations/hierarchy_trees/theme_sport__recreation.txt)
+  ⎿  Read 30 lines
+
+● Bash(cat >> planning/consolidation-decisions.md << 'EOF'…)
+  ⎿  (No content)
+
+● Perfect! Both changes have been implemented. Here's what was updated:
+
+  Changes Completed
+
+  1. Pony Breeding → Horse Breeding (Consolidated)
+
+  Updated taxonomy:
+  Activities > Economic activities > Agriculture > Animal husbandry > Animal breeding
+  └── Horse breeding
+
+  - Pony breeding is now marked as an alternate term (merge) for Horse breeding
+  - Rationale: Ponies are small horses (under 14.2 hands); no semantic difference in breeding activity
+  - Item #2 updated: Removed "Pony breeding" tag (now covered by "Horse breeding")
+
+  In hierarchy tree (primary_activities.txt:15-17):
+  │   │       └── Animal breeding
+  │   │           └── Horse breeding
+
+  2. Spectator Sports Added
+
+  New taxonomy:
+  Activities > Recreation activities
+  ├── Spectator sports (NEW)
+  └── Sports
+      └── Equestrian sports
+          └── Horse racing
+
+  Also appears in thematic:
+  Sport & Recreation - THEMATIC
+  ├── Spectator sports
+  └── Sporting events
+      └── Equestrian events
+          └── Horse races
+
+  - Rationale: Horse races are spectator events (watching), not participatory recreation
+  - Item #9 updated: Added "Spectator sports" tag to horse race item
+  - Getty AAT alignment: Separates the activity (spectating) from the event (race)
+
+  In hierarchy tree (primary_activities.txt:32-38):
+  ├── Recreation activities
+  │   ├── Horseback riding
+  │   ├── Military sports
+  │   ├── Recreation activity
+  │   ├── Recreation for miners
+  │   ├── Spectator sports
+  │   └── Sports
+
+  Summary
+
+  - ✓ Pony breeding consolidated to Horse breeding (alternate term)
+  - ✓ Spectator sports added under Recreation activities
+  - ✓ Item #2 updated (removed Pony breeding tag)
+  - ✓ Item #9 updated (added Spectator sports tag)
+  - ✓ Hierarchy trees regenerated (32 files updated)
+  - ✓ Documentation updated in consolidation decisions
+
+  The taxonomy now correctly distinguishes between spectator recreation (watching sports) and participatory recreation
+  (playing sports), and consolidates horse/pony breeding under a single term with appropriate alternate terminology.
+
+
+

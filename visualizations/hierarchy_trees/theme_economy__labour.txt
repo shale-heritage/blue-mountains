@@ -18,11 +18,10 @@ Economy & Labour
 │       │       ├── Carrington Hotel
 │       │       ├── Centennial Hotel
 │       │       ├── Comet Hotel
-│       │       ├── Delaney's Hotel
 │       │       ├── Falls Hotel
-│       │       ├── Family Hotel
+│       │       ├── Family Hotels
+│       │       │   ├── Delaney's Family Hotel
 │       │       │   └── Katoomba Family Hotel
-│       │       ├── Fryer's Family Hotel
 │       │       ├── Grand Hotel
 │       │       ├── Grand Hotel (Sydney)
 │       │       ├── Great Western Hotel
@@ -31,7 +30,6 @@ Economy & Labour
 │       │       ├── Hotel Wentworth
 │       │       ├── Hydora House Hotel
 │       │       ├── Imperial Hotel
-│       │       ├── Katoomba Family Hotel
 │       │       ├── Katoomba Hotel
 │       │       ├── Leura Hotel
 │       │       ├── Megalong Hotel
@@ -48,19 +46,11 @@ Economy & Labour
 │       │   ├── New South Wales Shale and Oil Company
 │       │   ├── South Clifton Mine Company
 │       │   └── Waudby and Company
-│       ├── Retailers & stores
-│       │   ├── Douglas & Co.
-│       │   ├── Nimmo's
-│       │   ├── Peckman Bros
-│       │   ├── Retailers & store
-│       │   ├── Stores
-│       │   └── Tabrett and Co.
-│       ├── Retailers and stores
+│       ├── Retailers and Stores
 │       │   ├── Douglas and Company
 │       │   ├── Nimmo's
-│       │   ├── Peckman Bros
-│       │   ├── Retailers and store
-│       │   ├── Store
+│       │   ├── Peckman Brothers
+│       │   ├── Retailer or Store
 │       │   └── Tabrett and Company
 │       └── Transport & logistics businesses
 │           ├── Transport & logistics business
@@ -68,7 +58,7 @@ Economy & Labour
 ├── Economic distress
 │   ├── Bankruptcy
 │   ├── Unemployment
-│   │   └── Unemployment relief
+│   ├── Unemployment insurance
 │   └── Unemployment relief
 ├── Industries
 │   ├── Mining
@@ -90,6 +80,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 82
+  Total nodes in theme: 72
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

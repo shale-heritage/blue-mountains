@@ -18,10 +18,8 @@ Politics & Governance
 │   │   └── Other government body
 │   ├── Police
 │   ├── Postal authorities
-│   │   ├── Postal Department
-│   │   └── Postal authority
+│   │   └── Postal Department
 │   └── Railway authorities
-│       ├── Railway authority
 │       └── Railway commission
 ├── Political events
 │   ├── Election
@@ -51,6 +49,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 43
+  Total nodes in theme: 41
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
