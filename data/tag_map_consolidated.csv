@@ -10,9 +10,10 @@ Aboriginal people,Aboriginal people,hierarchy,parent=Ethnic groups
 Aboriginal people,Aboriginal people,hierarchy,parent=Indigenous peoples - THEMATIC
 Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Indigenous peoples - THEMATIC
 Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Other government bodies
-Accident,Accident,hierarchy,parent=Disasters & accidents
+Accident,Accident,hierarchy,parent=Accidents
 Accident,Accident,hierarchy,parent=Health-related events - THEMATIC
 Accident,Accident,hierarchy,parent=Mining incidents - THEMATIC
+Disaster,Disaster,hierarchy,parent=Accidents
 Accommodation,Accommodation,hierarchy,parent=Tourism & Accommodation - THEMATIC
 Accommodation buildings,Accommodation buildings,hierarchy,parent=Built Environment
 Adolescents,Adolescents,hierarchy,parent=Demographic groups
@@ -157,7 +158,7 @@ Cultural identity & heritage,Cultural identity & heritage,hierarchy,parent=Race 
 Cultural organizations,Cultural organizations,hierarchy,parent=Arts & Culture - THEMATIC
 Cultural societies,Cultural societies,hierarchy,parent=Cultural & recreational organizations
 Cultural venues,Cultural venues,hierarchy,parent=Arts & Culture - THEMATIC
-Dance,Dance,hierarchy,parent=Social events
+Dances,Dance,merge,Singular form merged into plural (26 items tagged with Dances)
 Dances,Dances,hierarchy,parent=Social events
 Death,Death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Death,Death,hierarchy,parent=Health conditions - THEMATIC
@@ -171,7 +172,6 @@ Delaney's Hotel,Delaney's Hotel,merge,Variant name - use Delaney's Family Hotel 
 Demographic groups,Demographic groups,hierarchy,parent=People
 Desertion,Desertion,hierarchy,parent=Criminal events
 Desertion,Desertion,hierarchy,parent=Social order offences - THEMATIC
-Disasters & accidents,Disasters & accidents,hierarchy,parent=Events
 Disease,Disease,hierarchy,parent=Health conditions - THEMATIC
 Disease,Disease,hierarchy,parent=Physical and health conditions
 Divorce,Divorce,hierarchy,parent=Legal events
@@ -227,7 +227,7 @@ Family members by demographic,Family members by demographic,hierarchy,parent=Fam
 Fighting,Fighting,hierarchy,parent=Criminal events
 Fighting,Fighting,hierarchy,parent=Violent crimes - THEMATIC
 Financial institutions,Financial institutions,hierarchy,parent=Commercial businesses
-Fire,Fire,hierarchy,parent=Disasters & accidents
+Fire,Fire,hierarchy,parent=Accidents
 Flower show,Flower show,hierarchy,parent=Social events
 Football,Football,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Football,Football,hierarchy,parent=Sporting events
@@ -605,7 +605,6 @@ Political events,Political events,hierarchy,parent=Events
 Political events,Political events,hierarchy,parent=Politics & Governance - THEMATIC
 Politics & Governance,Politics & Governance,hierarchy,parent=(thematic grouping)
 Mount Kembla Disaster,Port Kembla disaster,synonym,Historical misnomer - actually Mount Kembla (not Port Kembla)
-Port Kembla disaster,Port Kembla disaster,hierarchy,parent=Disasters & accidents
 Postal service,Post,synonym,Generic term for postal service (deprecated - use specific tags)
 Postal Department,Post Office Department,synonym,Historical name for Postal Department
 Post office,Post office,hierarchy,parent=Postal facilities
@@ -649,9 +648,8 @@ Railway commission,Railway commission,hierarchy,parent=Railway
 Railway commission,Railway commission,hierarchy,parent=Railway authorities
 Railway infrastructure,Railway infrastructure,hierarchy,parent=Railway
 Railway operations,Railway operations,hierarchy,parent=Railway
-Rape,Rape,hierarchy,parent=Criminal events
-Rape,Rape,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
-Rape,Rape,hierarchy,parent=Violent crimes - THEMATIC
+Sexual violence,Rape,merge,Specific term merged into broader category (rape is a type of sexual violence)
+Sexual violence,Rape,synonym,Specific type of sexual violence - retained as synonym for search/discovery
 Recreation activities,Recreation activities,hierarchy,parent=Activities
 Military sports,Military sports,hierarchy,parent=Recreation activities
 Military sports,Military sports,hierarchy,parent=Sport & Recreation - THEMATIC
@@ -939,7 +937,6 @@ Criminal event,Criminal event,hierarchy,parent=Criminal events (singular generic
 Cultural event,Cultural event,hierarchy,parent=Cultural events (singular generic term)
 Cultural society,Cultural society,hierarchy,parent=Cultural societies (singular generic term)
 Demographic group,Demographic group,hierarchy,parent=Demographic groups (singular generic term)
-Disasters & accident,Disasters & accident,hierarchy,parent=Disasters & accidents (singular generic term)
 Dwelling,Dwelling,hierarchy,parent=Dwellings (singular generic term)
 Economic activity,Economic activity,hierarchy,parent=Economic activities (singular generic term)
 Economic event,Economic event,hierarchy,parent=Economic events (singular generic term)
@@ -957,7 +954,6 @@ Legal event,Legal event,hierarchy,parent=Legal events (singular generic term)
 Legal official,Legal official,hierarchy,parent=Legal officials (singular generic term)
 Legal proceeding,Legal proceeding,hierarchy,parent=Legal proceedings (singular generic term)
 License,License,hierarchy,parent=Licenses (singular generic term)
-Life event,Life event,hierarchy,parent=Life events (singular generic term)
 Liquor merchant,Liquor merchant,hierarchy,parent=Liquor merchants (singular generic term)
 Lodge,Lodge,hierarchy,parent=Lodges (singular generic term)
 Maritime worker,Maritime worker,hierarchy,parent=Maritime workers (singular generic term)
@@ -970,7 +966,6 @@ Mixed alcoholic beverage,Mixed alcoholic beverage,hierarchy,parent=Mixed alcohol
 Mountain feature,Mountain feature,hierarchy,parent=Mountain features (singular generic term)
 Other government body,Other government body,hierarchy,parent=Other government bodies (singular generic term)
 Physical and health condition,Physical and health condition,hierarchy,parent=Physical and health conditions (singular generic term)
-Political event,Political event,hierarchy,parent=Political events (singular generic term)
 Progress committee,Progress committee,hierarchy,parent=Progress committees (singular generic term)
 Public official,Public official,hierarchy,parent=Public officials (singular generic term)
 Railway operation,Railway operation,hierarchy,parent=Railway operations (singular generic term)
@@ -1017,11 +1012,6 @@ Mining settlement,Mining settlement,hierarchy,parent=Mining settlements (singula
 Middle camp,Middle camp,hierarchy,parent=Mining settlements
 Nellie's Glen,Nellie's Glen,hierarchy,parent=Mining settlements (poly-hierarchy with districts)
 Ruined Castle,Ruined Castle,hierarchy,parent=Mining settlements (poly-hierarchy with districts)
-Mining events,Mining events,hierarchy,parent=Events
-Mining accidents,Mining accidents,hierarchy,parent=Mining events
-Mining accident,Mining accident,hierarchy,parent=Mining accidents (singular generic term)
-Mount Kembla Disaster,Mount Kembla Disaster,hierarchy,parent=Mining accidents
-Mine closure,Mine closure,hierarchy,parent=Mining events
 Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,"parent=Mining companies (primary: absorbs A.K.O. & M. Company, Australian Kerosene Shale and Oil Company)"
 Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Mining companies (primary: absorbs Katoomba Coal and Shale Mines)
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=Mining companies (primary: absorbs New South Wales Shale and Oil Co.)

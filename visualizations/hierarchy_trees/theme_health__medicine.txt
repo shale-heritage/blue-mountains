@@ -11,11 +11,7 @@ Health & Medicine
 ├── Health-related events
 │   ├── Accident
 │   │   └── Mining accidents
-│   │       ├── Mining accident
-│   │       └── Mount Kembla Disaster
 │   └── Mining accidents
-│       ├── Mining accident
-│       └── Mount Kembla Disaster
 └── Medical professionals
     ├── Dr Morgan
     ├── Dr Prangley
@@ -29,6 +25,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 21
+  Total nodes in theme: 17
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

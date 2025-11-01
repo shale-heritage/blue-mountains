@@ -2637,3 +2637,192 @@ Religious building,Religious building,hierarchy,parent=Religious buildings (sing
 **Status:** Implemented and verified.
 
 ---
+
+## Decision 2025-10-31: Merge "Rape" into "Sexual violence"
+
+**Date:** 2025-10-31
+**Issue:** Two closely related tags with low usage
+**Tags Affected:** Rape (5 items), Sexual violence (1 item)
+**Decision:** Merge "Rape" → "Sexual violence", retain "Rape" as synonym
+
+**Evidence:**
+
+Tag frequency:
+- `Rape`: 5 items (0.13%)
+- `Sexual violence`: 1 item (0.03%)
+- **Total**: 6 items
+
+Both tags had identical parent relationships:
+- Events > Criminal events
+- Gender-related vulnerabilities - THEMATIC
+- Violent crimes - THEMATIC
+
+**Rationale:**
+
+1. **Broader, more inclusive term:** "Sexual violence" is the umbrella category; rape is a specific type
+2. **Low usage:** Only 6 items total across both tags
+3. **Semantic relationship:** Rape is a subset of sexual violence
+4. **Modern terminology:** "Sexual violence" is more commonly used in contemporary research and cataloguing
+5. **Maintains searchability:** "Rape" retained as synonym for discoverability
+
+**CSV Changes:**
+
+```csv
+# Lines 652-653 (replaced 3 hierarchy lines):
+Sexual violence,Rape,merge,Specific term merged into broader category (rape is a type of sexual violence)
+Sexual violence,Rape,synonym,Specific type of sexual violence - retained as synonym for search/discovery
+
+# REMOVED:
+Rape,Rape,hierarchy,parent=Criminal events
+Rape,Rape,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
+Rape,Rape,hierarchy,parent=Violent crimes - THEMATIC
+```
+
+**Result:**
+
+All 6 items will be tagged with "Sexual violence". Users searching for "Rape" will find these items via the synonym relationship.
+
+**Structure:**
+```
+Events > Criminal events > Sexual violence
+  (synonym: Rape)
+```
+
+**Files Modified:**
+- data/tag_map_consolidated.csv (3 hierarchy lines removed, 2 lines added: merge + synonym)
+
+**Status:** Implemented, pending regeneration of hierarchy trees.
+
+---
+
+## Decision 2025-10-31: Consolidate Accidents and Disasters Structure
+
+**Date:** 2025-10-31
+**Issue:** Duplicate accident/disaster categories in Events facet
+**Tags Affected:** Disasters & accidents (parent), Port Kembla disaster, Accident, Fire, Disaster (new)
+**Decision:** Merge "Disasters & accidents" → "Accidents", consolidate disaster references
+
+**Problem Identified:**
+
+Events facet had two separate top-level categories for similar concepts:
+1. "Accidents" (parent with Agricultural accidents, Transport accidents)
+2. "Disasters & accidents" (separate parent with Accident, Fire, Port Kembla disaster)
+
+Additionally, "Port Kembla disaster" was a historical misnomer for "Mount Kembla Disaster" (1902 mining disaster).
+
+**Evidence:**
+
+Tag frequency:
+- `Disasters & accidents`: 0 items (parent node only)
+- `Port Kembla disaster`: Part of existing Mount Kembla Disaster synonym chain
+
+**Rationale:**
+
+1. **Eliminate redundancy:** "Disasters & accidents" duplicates "Accidents" functionality
+2. **Simplify structure:** Single "Accidents" parent clearer for users
+3. **Correct historical error:** Port Kembla disaster is actually Mount Kembla (different location)
+4. **Add clarity:** Provide both "Accident" and "Disaster" as generic catch-all terms
+5. **Consistent categorisation:** All accidents and disasters under single parent
+
+**CSV Changes:**
+
+```csv
+# REMOVED (line 174):
+Disasters & accidents,Disasters & accidents,hierarchy,parent=Events
+
+# REMOVED (line 608):
+Port Kembla disaster,Port Kembla disaster,hierarchy,parent=Disasters & accidents
+
+# REMOVED (line 940):
+Disasters & accident,Disasters & accident,hierarchy,parent=Disasters & accidents (singular generic term)
+
+# UPDATED (line 13):
+Accident,Accident,hierarchy,parent=Accidents  # was parent=Disasters & accidents
+
+# UPDATED (line 230):
+Fire,Fire,hierarchy,parent=Accidents  # was parent=Disasters & accidents
+
+# ADDED (line 16):
+Disaster,Disaster,hierarchy,parent=Accidents  # new generic catch-all
+```
+
+**Result:**
+
+Consolidated structure:
+```
+Events > Accidents
+├── Accident                    ← generic for unspecified accidents
+├── Disaster                    ← generic for unspecified disasters
+├── Fire                        ← can be accident or disaster
+├── Agricultural accidents
+├── Transport accidents
+└── Mining accidents
+    ├── Mining accident
+    └── Mount Kembla Disaster   ← (synonyms: Port Kembla disaster, Mount Kembla Colliery Disaster)
+```
+
+**Note on Port Kembla vs Mount Kembla:**
+
+The Mount Kembla Disaster (1902) is one of Australia's worst mining disasters. "Port Kembla disaster" is a historical misnomer - the disaster occurred at Mount Kembla, not Port Kembla (two different locations in the Illawarra region). The synonym chain already correctly identifies this:
+- Preferred: "Mount Kembla Disaster"
+- Synonyms: "Port Kembla disaster", "Mount Kembla Colliery Disaster"
+
+**Files Modified:**
+- data/tag_map_consolidated.csv (3 lines removed, 1 line added, 2 lines updated)
+
+**Status:** Implemented, pending regeneration of hierarchy trees.
+
+---
+
+## Decision 2025-10-31: Remove Redundant "Mining events" Category
+
+**Date:** 2025-10-31
+**Issue:** Duplicate categorization in Events facet
+**Tags Affected:** Mining events (parent), Mining accidents, Mine closure
+**Decision:** Remove "Mining events" category - children already exist elsewhere
+
+**Problem Identified:**
+
+"Mining events" existed as a parent under Events with two children:
+- Mine closure (already under Economic events)
+- Mining accidents (already under Accidents)
+
+Both children were duplicated, making the "Mining events" parent redundant.
+
+**Evidence:**
+
+All children have primary locations elsewhere:
+- `Mine closure`: Events > Economic events > Mine closure
+- `Mining accidents`: Events > Accidents > Mining accidents
+
+**Rationale:**
+
+1. **Eliminate duplication:** Both children already properly categorized
+2. **Simplify structure:** No need for separate mining-specific events category
+3. **Consistent with domain organization:** Mining activities/companies in other facets, events distributed by type
+
+**CSV Changes:**
+
+```csv
+# REMOVED (line 1017):
+Mining events,Mining events,hierarchy,parent=Events
+
+# REMOVED (line 1018):
+Mining accidents,Mining accidents,hierarchy,parent=Mining events
+
+# REMOVED (line 1021):
+Mine closure,Mine closure,hierarchy,parent=Mining events
+```
+
+**Result:**
+
+Children remain in their primary locations:
+- Economic events > Mine closure
+- Accidents > Mining accidents > Mining accident, Mount Kembla Disaster
+
+**Files Modified:**
+- data/tag_map_consolidated.csv (3 lines removed)
+
+**Status:** Implemented, pending regeneration of hierarchy trees.
+
+---

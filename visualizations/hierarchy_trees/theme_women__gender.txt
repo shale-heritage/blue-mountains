@@ -3,7 +3,6 @@ THEMATIC GROUPING: Women & Gender
 
 Women & Gender
 ├── Gender-related vulnerabilities
-│   ├── Rape
 │   ├── Sexual violence
 │   └── Widows
 └── Women as demographic group
@@ -16,6 +15,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 8
+  Total nodes in theme: 7
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

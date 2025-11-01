@@ -3,10 +3,14 @@ PRIMARY FACET: Events
 
 Events
 ├── Accidents
+│   ├── Accident
+│   │   └── Mining accidents
 │   ├── Agricultural accidents
 │   │   └── Livestock accidents
 │   │       └── Animal attacks
 │   │           └── Goring
+│   ├── Disaster
+│   ├── Fire
 │   └── Transport accidents
 │       └── Animal-powered transport accidents
 │           └── Horse accidents
@@ -23,7 +27,6 @@ Events
 │   ├── Criminal event
 │   ├── Desertion
 │   ├── Fighting
-│   ├── Rape
 │   ├── Sexual violence
 │   └── Theft
 ├── Cultural events
@@ -33,14 +36,6 @@ Events
 │   ├── Cultural event
 │   ├── Debate
 │   └── Debating
-├── Disasters & accidents
-│   ├── Accident
-│   │   └── Mining accidents
-│   │       ├── Mining accident
-│   │       └── Mount Kembla Disaster
-│   ├── Disasters & accident
-│   ├── Fire
-│   └── Port Kembla disaster
 ├── Economic events
 │   ├── Economic event
 │   ├── Mine closure
@@ -67,22 +62,14 @@ Events
 │   ├── Death
 │   │   └── Death notice
 │   ├── Funeral
-│   ├── Life event
 │   └── Marriage
-├── Mining events
-│   ├── Mine closure
-│   └── Mining accidents
-│       ├── Mining accident
-│       └── Mount Kembla Disaster
 ├── Political events
 │   ├── Election
 │   ├── Petition
-│   ├── Political event
 │   └── Public meeting
 ├── Social events
 │   ├── Ball
 │   ├── Concerts
-│   ├── Dance
 │   ├── Dances
 │   ├── Flower show
 │   └── Social event
@@ -113,6 +100,6 @@ Events
 
 
 STATISTICS:
-  Total nodes in facet: 109
+  Total nodes in facet: 96
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
