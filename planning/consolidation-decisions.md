@@ -3589,3 +3589,142 @@ Many items currently tagged with club names may actually be about matches/events
 **Status:** Implemented 2025-11-02
 
 ---
+
+## Regression Fixes: Taxonomy Cleanup
+
+**Date:** 2025-11-02
+
+**Context:** After regenerating hierarchy trees post-sporting events review, identified several pre-existing structural issues that violated taxonomy principles.
+
+### Issues Identified
+
+1. **Clubs appearing under Activities facet** (instead of exclusively under Agents)
+2. **Hunting appearing in both Recreation and Economic activities** (polyhierarchy without justification)
+3. **Recreation for miners as primary tag** (should be thematic only)
+4. **Wild horse culling and feral dog control miscategorised** as recreational/economic rather than public health
+
+### Fixes Applied
+
+#### 1. Public Health and Safety Activities (NEW)
+
+**Created structure:**
+```
+Activities > Societal activities > Public health and safety activities
+└── Animal control
+    ├── Feral dog control (NEW)
+    └── Wild horse culling (MOVED from Hunting)
+```
+
+**Rationale:**
+
+**Wild horse culling (1890s Blue Mountains):**
+- **Primary purpose:** Population control for public safety and land management
+- **Context:** Feral horses competing with livestock, damaging land, causing accidents
+- **Economic aspect:** Secondary (payment to encourage participation)
+- **Evidence:** Sources mention shooting for skins, but in context of pest control
+
+**Feral dog control:**
+- **Source:** sporting_events_reclassification_review.md, item "Mountain Mixtures (1892-09-09)"
+- **Context:** "This is the month to register good dogs and to shoot or otherwise destroy yelping mongrels"
+- **Regulatory link:** Mentioned alongside dog registration (licensing system)
+- **Purpose:** Public order/safety, controlling nuisance/dangerous dogs
+
+**Both activities:**
+- **Organised community/government response** (not private recreation or purely commercial)
+- **Public benefit:** Safety, disease prevention, property protection
+- **Distinction from hunting:** Not for sport or primarily for economic gain
+
+#### 2. Removed Hunting Polyhierarchy
+
+**Before:**
+```
+Economic activities > Hunting
+Recreation activities > Hunting  ❌ REMOVED
+```
+
+**After:**
+```
+Economic activities > Hunting
+└── Recreational hunting
+```
+
+**Rationale:**
+- Hunting appears once under Economic activities
+- Recreational hunting as specific child term distinguishes sport hunting from commercial/subsistence
+- Removes unjustified polyhierarchy (Hunting in both Economic and Recreation)
+
+#### 3. Removed Clubs from Activities Facet
+
+**Removed relationships:**
+- Cricket clubs → Cricket ❌
+- Katoomba Cricket Club → Cricket ❌
+- Megalong Cricket Club → Cricket ❌
+- Football clubs → Football ❌
+- Katoomba Football Club → Football ❌
+
+**Retained:**
+- All clubs → Sports clubs (under Agents facet) ✓
+
+**Rationale:**
+- Clubs are ORGANISATIONS (Agents facet), not activities
+- Per sporting events review: clear facet separation between activities, events, and organisations
+- Violates Getty AAT facet principles to place organisations under activities
+
+#### 4. Recreation for Miners - Thematic Only
+
+**Removed:**
+- Recreation for miners → Recreation activities ❌
+
+**Retained:**
+- Recreation for miners → Miners (agent-based relationship)
+- Recreation for miners → Mining activities - THEMATIC
+- Recreation for miners → Recreation themes - THEMATIC
+
+**Rationale:**
+- Recreation for miners is a **demographic/context qualifier**, not a distinct activity type
+- Should appear in thematic hierarchies to enable cross-domain discovery
+- Should NOT appear in primary Activities hierarchy as standalone recreation type
+
+### Getty AAT Alignment
+
+These fixes improve alignment with Getty AAT structural principles:
+
+1. **Facet purity:** Agents (organisations) vs Activities (processes) properly separated
+2. **Purpose-based classification:** Wild horse/dog culling classified by primary purpose (public health) not secondary economic benefit
+3. **Thematic vs primary hierarchies:** Demographic qualifiers (Recreation for miners) correctly classified as thematic
+4. **Justified polyhierarchies:** Removed unjustified dual placement (Hunting); retained only where entity genuinely belongs in multiple facets
+
+### Files Modified
+
+**data/tag_map_consolidated.csv:**
+- Added: Public health and safety activities, Animal control, Feral dog control (lines 1117-1119)
+- Modified: Wild horse culling parent from Hunting → Animal control (line 1062)
+- Removed: Hunting → Recreation activities (former line 1061)
+- Removed: Cricket clubs → Cricket (line 151)
+- Removed: Katoomba Cricket Club → Cricket (line 339)
+- Removed: Megalong Cricket Club → Cricket (line 407)
+- Removed: Football clubs → Football (line 251)
+- Removed: Katoomba Football Club → Football (line 342)
+- Removed: Recreation for miners → Recreation activities (line 675)
+
+**visualizations/hierarchy_trees/:**
+- Regenerated all 30 trees to reflect fixes
+
+**scripts/:**
+- Created: check_cricket_item.py (full-text verification script for tag application review)
+
+### Verification
+
+**Hierarchy tree checks confirm:**
+- ✓ No clubs under Activities > Team sports
+- ✓ Hunting appears only under Economic activities (not Recreation)
+- ✓ Public health and safety activities > Animal control structure present
+- ✓ Recreation for miners absent from primary Activities tree (thematic only)
+
+### Outstanding Issues
+
+None identified. All regressions addressed.
+
+**Status:** Implemented 2025-11-02
+
+---

@@ -6,22 +6,9 @@ Sport & Recreation
 ├── Billiards
 ├── Coursing
 ├── Cricket
-│   ├── Cricket clubs
-│   │   ├── Cricket club
-│   │   ├── Katoomba Cricket Club
-│   │   └── Megalong Cricket Club
-│   ├── Katoomba Cricket Club
-│   └── Megalong Cricket Club
 ├── Cricket matches
 │   └── Cricket match
 ├── Football
-│   ├── Football clubs
-│   │   ├── Football club
-│   │   ├── Hartley Vale Natives Football Club
-│   │   ├── Katoomba Football Club
-│   │   ├── Lithgow Rovers
-│   │   └── Nepean Football Club
-│   └── Katoomba Football Club
 ├── Football matches
 │   └── Football match
 ├── Horse racing
@@ -109,6 +96,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 101
+  Total nodes in theme: 88
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
