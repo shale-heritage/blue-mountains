@@ -6,11 +6,10 @@ Sport & Recreation
 ├── Billiards
 ├── Coursing
 ├── Cricket
-├── Cricket matches
-│   └── Cricket match
+├── Cricket match
 ├── Football
-├── Football matches
-│   └── Football match
+├── Football match
+├── Horse races
 ├── Horse racing
 ├── Military sports
 ├── Recreation buildings
@@ -37,24 +36,17 @@ Sport & Recreation
 │   │   └── Wentworth Falls Reserves
 │   └── Sports
 ├── Rugby
-├── Rugby matches
-│   └── Rugby match
+├── Rugby match
 ├── Shooting
-├── Shooting matches
-│   └── Shooting match
+├── Shooting match
 ├── Spectator sports
 ├── Sporting events
 │   ├── Coursing
-│   ├── Cricket matches
-│   │   └── Cricket match
-│   ├── Equestrian events
-│   │   └── Horse races
-│   ├── Football matches
-│   │   └── Football match
-│   ├── Rugby matches
-│   │   └── Rugby match
-│   ├── Shooting matches
-│   │   └── Shooting match
+│   ├── Cricket match
+│   ├── Football match
+│   ├── Horse races
+│   ├── Rugby match
+│   ├── Shooting match
 │   └── Sporting event
 ├── Sports clubs
 │   ├── Athletic clubs
@@ -96,6 +88,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 88
+  Total nodes in theme: 80
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -245,9 +245,8 @@ Flower show,Flower show,hierarchy,parent=Social events
 Football,Football,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Football,Football,hierarchy,parent=Team sports
 Football,Football,hierarchy,parent=Sport & Recreation - THEMATIC
-Football matches,Football matches,hierarchy,parent=Sporting events
-Football matches,Football matches,hierarchy,parent=Sport & Recreation - THEMATIC
-Football match,Football match,hierarchy,parent=Football matches (singular generic term)
+Football match,Football match,hierarchy,parent=Sporting events (singular generic term)
+Football match,Football match,hierarchy,parent=Sport & Recreation - THEMATIC
 Football clubs,Football clubs,hierarchy,parent=Sports clubs
 Fraternal orders & lodges,Fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
 Fraternal orders & lodges,Fraternal orders & lodges,hierarchy,parent=Organizations
@@ -735,9 +734,8 @@ Shale mining,Shale mining,hierarchy,parent=Mining
 Shipwright,Shipwright,hierarchy,parent=Maritime workers
 Shooting,Shooting,hierarchy,parent=Recreation activities
 Shooting,Shooting,hierarchy,parent=Sport & Recreation - THEMATIC
-Shooting matches,Shooting matches,hierarchy,parent=Sporting events
-Shooting matches,Shooting matches,hierarchy,parent=Sport & Recreation - THEMATIC
-Shooting match,Shooting match,hierarchy,parent=Shooting matches (singular generic term)
+Shooting match,Shooting match,hierarchy,parent=Sporting events (singular generic term)
+Shooting match,Shooting match,hierarchy,parent=Sport & Recreation - THEMATIC
 Shooting match,Shooting competition,synonym,Alternative term for shooting match
 Unlicensed sales,Sly-grog operations,synonym,Australian colonial term for unlicensed liquor sales
 Social & economic concepts,Social & economic concepts,hierarchy,parent=Associated Concepts
@@ -1074,8 +1072,8 @@ Stock trespass,Stock trespass,hierarchy,parent=Property offences
 Animal trespass,Animal trespass,merge,Alternate term for Stock trespass
 Cattle straying,Cattle straying,merge,Use-for term for Stock trespass
 Horse straying,Horse straying,merge,Use-for term for Stock trespass
-Equestrian events,Equestrian events,hierarchy,parent=Sporting events
-Horse races,Horse races,hierarchy,parent=Equestrian events
+Horse races,Horse races,hierarchy,parent=Sporting events
+Horse races,Horse races,hierarchy,parent=Sport & Recreation - THEMATIC
 Equestrian sports,Equestrian sports,merge,Remove from Recreation activities hierarchy - use Spectator sports for watching horse racing; use Horse races (Events facet) for the sporting event itself
 Horse racing,Horse racing,merge,Remove from Recreation activities - use Spectator sports for watching horse racing; use Horse races (Events facet) for the sporting event itself
 Horse racing,Horse racing,hierarchy,parent=Sport & Recreation - THEMATIC
@@ -1091,12 +1089,10 @@ Police officers,Police officers,hierarchy,parent=Law enforcement personnel
 Constable,Constable,hierarchy,parent=Police officers
 Senior-Constable,Senior-Constable,hierarchy,parent=Police officers
 Sergeant,Sergeant,hierarchy,parent=Police officers
-Cricket matches,Cricket matches,hierarchy,parent=Sporting events
-Cricket matches,Cricket matches,hierarchy,parent=Sport & Recreation - THEMATIC
-Cricket match,Cricket match,hierarchy,parent=Cricket matches (singular generic term)
-Rugby matches,Rugby matches,hierarchy,parent=Sporting events
-Rugby matches,Rugby matches,hierarchy,parent=Sport & Recreation - THEMATIC
-Rugby match,Rugby match,hierarchy,parent=Rugby matches (singular generic term)
+Cricket match,Cricket match,hierarchy,parent=Sporting events (singular generic term)
+Cricket match,Cricket match,hierarchy,parent=Sport & Recreation - THEMATIC
+Rugby match,Rugby match,hierarchy,parent=Sporting events (singular generic term)
+Rugby match,Rugby match,hierarchy,parent=Sport & Recreation - THEMATIC
 Coursing,Coursing,hierarchy,parent=Sporting events
 Coursing,Coursing,hierarchy,parent=Sport & Recreation - THEMATIC
 Rugby clubs,Rugby clubs,hierarchy,parent=Sports clubs

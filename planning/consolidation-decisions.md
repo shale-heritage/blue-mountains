@@ -3728,3 +3728,75 @@ None identified. All regressions addressed.
 **Status:** Implemented 2025-11-02
 
 ---
+
+## Sporting Events Structure Simplification
+
+**Date:** 2025-11-02
+**Context:** Following completion of sporting events tag review and regression fixes, simplified Events > Sporting events hierarchy to match the flat pattern of Social events.
+
+### Rationale
+
+The sporting events hierarchy initially included intermediate plural parent nodes (Cricket matches, Football matches, etc.) which added unnecessary hierarchical depth:
+
+```
+└── Sporting events
+    ├── Coursing
+    ├── Cricket matches
+    │   └── Cricket match
+    ├── Equestrian events
+    │   └── Horse races
+    ├── Football matches
+    │   └── Football match
+    ├── Rugby matches
+    │   └── Rugby match
+    ├── Shooting matches
+    │   └── Shooting match
+    └── Sporting event
+```
+
+This pattern was inconsistent with the simpler, flatter Social events structure. Following the principle of minimal hierarchy until complexity justifies additional levels, simplified to direct parent-child relationships:
+
+```
+└── Sporting events
+    ├── Coursing
+    ├── Cricket match
+    ├── Football match
+    ├── Horse races
+    ├── Rugby match
+    ├── Shooting match
+    └── Sporting event
+```
+
+### Implementation
+
+**Removed intermediate parent nodes:**
+- Cricket matches (parent of Cricket match)
+- Football matches (parent of Football match)
+- Rugby matches (parent of Rugby match)
+- Shooting matches (parent of Shooting match)
+- Equestrian events (parent of Horse races)
+
+**Updated singular event types:**
+All singular sporting event types now have `parent=Sporting events` instead of their respective plural parents.
+
+**Maintained thematic tags:**
+Sport & Recreation - THEMATIC tags added to singular event types where needed (Horse races gained thematic tag during this change).
+
+### Pattern Consistency
+
+This change aligns with:
+- **Social events pattern:** Flat structure (Ball, Bazaar, Concert, etc. are direct children)
+- **Leaf-node tagging:** Parent nodes organise, leaf nodes are tagged
+- **Minimal hierarchy principle:** Add complexity only when justified by cataloguing needs
+
+If future cataloguing reveals need for finer distinctions (e.g., Test cricket vs local cricket), intermediate organisational nodes can be reintroduced with specific purpose.
+
+### Files Modified
+
+- `data/tag_map_consolidated.csv`: Removed 10 lines (plural parent nodes and their thematic tags), updated 5 lines (singular event parent references), added 1 line (Horse races thematic tag)
+- `visualizations/hierarchy_trees/primary_events.txt`: Sporting events now shows 7 direct children (down from 6 intermediate nodes)
+- `visualizations/hierarchy_trees/00_OVERVIEW.txt`: Updated statistics
+
+**Status:** Implemented 2025-11-02
+
+---

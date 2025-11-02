@@ -75,20 +75,15 @@ Events
 │   └── Social event
 └── Sporting events
     ├── Coursing
-    ├── Cricket matches
-    │   └── Cricket match
-    ├── Equestrian events
-    │   └── Horse races
-    ├── Football matches
-    │   └── Football match
-    ├── Rugby matches
-    │   └── Rugby match
-    ├── Shooting matches
-    │   └── Shooting match
+    ├── Cricket match
+    ├── Football match
+    ├── Horse races
+    ├── Rugby match
+    ├── Shooting match
     └── Sporting event
 
 
 STATISTICS:
-  Total nodes in facet: 85
+  Total nodes in facet: 80
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
