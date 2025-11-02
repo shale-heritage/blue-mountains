@@ -627,8 +627,6 @@ Postmasters,Postmasters,hierarchy,parent=Postal employees
 Progress committees,Progress committees,hierarchy,parent=Civic organizations
 Property crimes,Property crimes,hierarchy,parent=Crimes - THEMATIC
 Public house,Pub,synonym,Colloquial term for public house
-Pub,Pub,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-Pub,Pub,hierarchy,parent=Pubs
 Public house,Public house,hierarchy,parent=Public houses
 Public houses,Public houses,hierarchy,parent=Accommodation buildings
 Public houses,Public houses,hierarchy,parent=Alcohol-related venues - THEMATIC
@@ -641,8 +639,7 @@ Publican,Publican,hierarchy,parent=Hospitality workers
 Publican's licensing,Publican's License,synonym,Historical term for licence to operate public house serving alcohol
 Publican's License,Publican's License,hierarchy,parent=Licensing & regulation - THEMATIC
 Publican's licensing,Publican's licensing,hierarchy,parent=Licensing
-Pubs,Pubs,hierarchy,parent=Alcohol-related venues - THEMATIC
-Pubs,Pubs,hierarchy,parent=Accommodation buildings
+Public houses,Pubs,synonym,Colloquial short form - prefer full form Public houses
 Race & Ethnicity,Race & Ethnicity,hierarchy,parent=(thematic grouping)
 Racial stereotyping & performance,Racial stereotyping & performance,hierarchy,parent=Race & Ethnicity - THEMATIC
 Railway,Railway,hierarchy,parent=Transport & Infrastructure - THEMATIC

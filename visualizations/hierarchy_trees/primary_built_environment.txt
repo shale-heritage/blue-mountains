@@ -37,8 +37,6 @@ Built Environment
 │   │   └── Wentworth Falls Hotel
 │   ├── Public houses
 │   │   └── Public house
-│   ├── Pubs
-│   │   └── Pub
 │   └── Stables
 │       └── Stable
 ├── Civic buildings
@@ -128,6 +126,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 124
+  Total nodes in facet: 122
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
