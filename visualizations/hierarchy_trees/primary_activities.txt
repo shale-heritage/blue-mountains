@@ -29,10 +29,9 @@ Activities
 │   │   ├── Gold mining
 │   │   └── Shale mining
 │   ├── Tourism
-│   ├── Transport
-│   │   ├── Horseborne transportation
-│   │   └── Trucking
-│   └── Trucking
+│   └── Transport
+│       ├── Horseborne transportation
+│       └── Trucking
 ├── Recreation activities
 │   ├── Athletics
 │   ├── Billiards
@@ -68,6 +67,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 64
+  Total nodes in facet: 63
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

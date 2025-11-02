@@ -796,7 +796,6 @@ Transport & Infrastructure,Transport & Infrastructure,hierarchy,parent=(thematic
 Transport & logistics businesses,Transport & logistics businesses,hierarchy,parent=Commercial businesses
 Transport infrastructure,Transport infrastructure,hierarchy,parent=Infrastructure
 Trucking,Trucking,hierarchy,parent=Commercial transport - THEMATIC
-Trucking,Trucking,hierarchy,parent=Economic activities
 Trucking,Trucking,hierarchy,parent=Transport
 Trucking,Trucking,hierarchy,parent=Transport & logistics businesses
 United Ancient Order of Druids,U.A.O.D.,synonym,Acronym for United Ancient Order of Druids
