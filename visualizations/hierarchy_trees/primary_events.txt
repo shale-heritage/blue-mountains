@@ -31,7 +31,6 @@ Events
 │   └── Theft
 ├── Cultural events
 │   ├── Concert
-│   ├── Concerts
 │   ├── Corroboree
 │   ├── Cultural event
 │   ├── Debate
@@ -69,37 +68,27 @@ Events
 │   └── Public meeting
 ├── Social events
 │   ├── Ball
-│   ├── Concerts
-│   ├── Dances
+│   ├── Bazaar
+│   ├── Concert
+│   ├── Dance
 │   ├── Flower show
 │   └── Social event
 └── Sporting events
-    ├── Athletics
-    ├── Billiard
-    ├── Billiards
-    ├── Cricket
-    │   ├── Cricket clubs
-    │   │   ├── Cricket club
-    │   │   ├── Katoomba Cricket Club
-    │   │   └── Megalong Cricket Club
-    │   ├── Girls' cricket
-    │   ├── Katoomba Cricket Club
-    │   └── Megalong Cricket Club
+    ├── Coursing
+    ├── Cricket matches
+    │   └── Cricket match
     ├── Equestrian events
     │   └── Horse races
-    ├── Football
-    │   ├── Football clubs
-    │   │   ├── Football club
-    │   │   └── Katoomba Football Club
-    │   └── Katoomba Football Club
-    ├── Rugby
-    ├── Shooting
-    ├── Sporting event
-    └── Tennis
-        └── Katoomba Tennis Club
+    ├── Football matches
+    │   └── Football match
+    ├── Rugby matches
+    │   └── Rugby match
+    ├── Shooting matches
+    │   └── Shooting match
+    └── Sporting event
 
 
 STATISTICS:
-  Total nodes in facet: 96
+  Total nodes in facet: 85
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

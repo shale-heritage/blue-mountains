@@ -2,6 +2,7 @@ THEMATIC GROUPING: Family & Domestic Life
 ================================================================================
 
 Family & Domestic Life
+├── Childhood & adolescence
 ├── Domestic accommodation
 │   ├── Boarding houses
 │   │   ├── Boarding house
@@ -57,6 +58,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 49
+  Total nodes in theme: 50
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

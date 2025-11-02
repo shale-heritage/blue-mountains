@@ -36,7 +36,8 @@ Assault,Assault,hierarchy,parent=Criminal events
 Assault,Assault,hierarchy,parent=Violent crimes - THEMATIC
 Athletic clubs,Athletic clubs,hierarchy,parent=Sports clubs
 Athletics,Athletics,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-Athletics,Athletics,hierarchy,parent=Sporting events
+Athletics,Athletics,hierarchy,parent=Recreation activities
+Athletics,Athletics,hierarchy,parent=Sport & Recreation - THEMATIC
 Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=Mining companies
 Ball,Ball,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Ball,Ball,hierarchy,parent=Social events
@@ -56,8 +57,9 @@ Bigamy,Bigamy,hierarchy,parent=Criminal events
 Bigamy,Bigamy,hierarchy,parent=Other crimes - THEMATIC
 Bashford,Bashford,hierarchy,parent=Hotelliers
 Biles,Biles,hierarchy,parent=Hotelliers
-Billiard,Billiard,hierarchy,parent=Sporting events
-Billiards,Billiards,hierarchy,parent=Sporting events
+Billiards,Billiard,merge,Singular form merged into plural - standardise to Billiards
+Billiards,Billiards,hierarchy,parent=Recreation activities
+Billiards,Billiards,hierarchy,parent=Sport & Recreation - THEMATIC
 Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Blackheath,Blackheath,hierarchy,parent=Towns
 Boarding house,Boarding house,hierarchy,parent=Boarding houses
@@ -111,9 +113,9 @@ Communications & Postal Services,Communications & Postal Services,hierarchy,pare
 Community buildings,Community buildings,hierarchy,parent=Built Environment
 Community buildings,Community buildings,hierarchy,parent=Community institutions - THEMATIC
 Community institutions,Community institutions,hierarchy,parent=(thematic grouping)
+Concert,Concerts,merge,Plural form merged into singular (29 items)
 Concert,Concert,hierarchy,parent=Cultural events
-Concerts,Concerts,hierarchy,parent=Cultural events
-Concerts,Concerts,hierarchy,parent=Social events
+Concert,Concert,hierarchy,parent=Social events
 Congregational Church,Congregational Church,hierarchy,parent=Churches
 Constable John Hamilton,Constable John Hamilton,hierarchy,parent=Constable
 Constable John Hamilton,Constable John Hamilton,hierarchy,parent=People - THEMATIC
@@ -144,7 +146,8 @@ Licensing offences,Licensing offences,hierarchy,parent=Licensing cases
 Courthouse,Courthouse,hierarchy,parent=Court buildings
 Courts,Courts,hierarchy,parent=Government bodies
 Courts,Courts,hierarchy,parent=Justice & Crime - THEMATIC
-Cricket,Cricket,hierarchy,parent=Sporting events
+Cricket,Cricket,hierarchy,parent=Team sports
+Cricket,Cricket,hierarchy,parent=Sport & Recreation - THEMATIC
 Cricket clubs,Cricket clubs,hierarchy,parent=Cricket
 Cricket clubs,Cricket clubs,hierarchy,parent=Sports clubs
 Crimes,Crimes,hierarchy,parent=Justice & Crime - THEMATIC
@@ -158,8 +161,8 @@ Cultural identity & heritage,Cultural identity & heritage,hierarchy,parent=Race 
 Cultural organizations,Cultural organizations,hierarchy,parent=Arts & Culture - THEMATIC
 Cultural societies,Cultural societies,hierarchy,parent=Cultural & recreational organizations
 Cultural venues,Cultural venues,hierarchy,parent=Arts & Culture - THEMATIC
-Dances,Dance,merge,Singular form merged into plural (26 items tagged with Dances)
-Dances,Dances,hierarchy,parent=Social events
+Dance,Dances,merge,Plural form merged into singular (26 items)
+Dance,Dance,hierarchy,parent=Social events
 Death,Death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Death,Death,hierarchy,parent=Health conditions - THEMATIC
 Death,Death,hierarchy,parent=Life events
@@ -213,6 +216,16 @@ Economy & Labour,Economy & Labour,hierarchy,parent=(thematic grouping)
 Education,Education,hierarchy,parent=(thematic grouping)
 Educational buildings,Educational buildings,hierarchy,parent=Built Environment
 Educational buildings,Educational buildings,hierarchy,parent=Education - THEMATIC
+Recreation buildings,Recreation buildings,hierarchy,parent=Built Environment
+Recreation buildings,Recreation buildings,hierarchy,parent=Sport & Recreation - THEMATIC
+Sports facilities,Sports facilities,hierarchy,parent=Recreation buildings
+Cricket grounds,Cricket grounds,hierarchy,parent=Sports facilities
+Cricket ground,Cricket ground,hierarchy,parent=Cricket grounds (singular generic term)
+Rifle ranges,Rifle ranges,hierarchy,parent=Sports facilities
+Rifle range,Rifle range,hierarchy,parent=Rifle ranges (singular generic term)
+Ovals,Ovals,hierarchy,parent=Sports facilities
+Oval,Oval,hierarchy,parent=Ovals (singular generic term)
+Eskbank Oval,Eskbank Oval,hierarchy,parent=Ovals
 Election,Election,hierarchy,parent=Political events
 Environment & Weather,Environment & Weather,hierarchy,parent=(thematic grouping)
 Ethnic groups,Ethnic groups,hierarchy,parent=People
@@ -221,6 +234,7 @@ Falls Hotel,Falls Hotel,hierarchy,parent=Hotels
 Families,Families,hierarchy,parent=Demographic groups
 Families,Families,hierarchy,parent=Family & Domestic Life - THEMATIC (all family tags)
 Family & Domestic Life,Family & Domestic Life,hierarchy,parent=(thematic grouping)
+Childhood & adolescence,Childhood & adolescence,hierarchy,parent=Family & Domestic Life - THEMATIC
 Family Hotels,Family Hotels,hierarchy,parent=Hotels
 Family Hotel,Family Hotel,merge,Colloquial/generic reference to Katoomba Family Hotel - all instances in collection refer to this specific establishment in Katoomba
 Family members by demographic,Family members by demographic,hierarchy,parent=Family & Domestic Life - THEMATIC
@@ -230,7 +244,11 @@ Financial institutions,Financial institutions,hierarchy,parent=Commercial busine
 Fire,Fire,hierarchy,parent=Accidents
 Flower show,Flower show,hierarchy,parent=Social events
 Football,Football,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-Football,Football,hierarchy,parent=Sporting events
+Football,Football,hierarchy,parent=Team sports
+Football,Football,hierarchy,parent=Sport & Recreation - THEMATIC
+Football matches,Football matches,hierarchy,parent=Sporting events
+Football matches,Football matches,hierarchy,parent=Sport & Recreation - THEMATIC
+Football match,Football match,hierarchy,parent=Football matches (singular generic term)
 Football clubs,Football clubs,hierarchy,parent=Football
 Football clubs,Football clubs,hierarchy,parent=Sports clubs
 Fraternal orders & lodges,Fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
@@ -246,8 +264,6 @@ Gas,Gas,keep,Substring coincidence - semantically unrelated concepts (automated 
 Gas,Gas,hierarchy,parent=Utilities
 Gender-related vulnerabilities,Gender-related vulnerabilities,hierarchy,parent=Women & Gender - THEMATIC
 Gin,Gin,hierarchy,parent=Spirits
-Girls' cricket,Girls' cricket,hierarchy,parent=Cricket
-Girls' cricket,Girls' cricket,hierarchy,parent=Women as demographic group - THEMATIC
 Gold mining,Gold mining,hierarchy,parent=Mining
 Good Templars,Good Templars,hierarchy,parent=Religious social movements
 Good Templars,Good Templars,hierarchy,parent=Temperance organizations & movements - THEMATIC
@@ -327,6 +343,10 @@ Katoomba Falls,Katoomba Falls,hierarchy,parent=Waterfalls
 Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=Family Hotels
 Katoomba Football Club,Katoomba Football Club,hierarchy,parent=Football
 Katoomba Football Club,Katoomba Football Club,hierarchy,parent=Football clubs
+Hartley Vale Natives Football Club,Hartley Vale Natives Football Club,hierarchy,parent=Football clubs
+Hartley Vale Natives Football Club,Hartley Vale Football Club,synonym,Shortened name for Hartley Vale Natives Football Club
+Lithgow Rovers,Lithgow Rovers,hierarchy,parent=Football clubs
+Nepean Football Club,Nepean Football Club,hierarchy,parent=Football clubs
 Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Hotels
 Katoomba Progress Association,Katoomba Progress Association,hierarchy,parent=Progress committees
 Katoomba Public School,Katoomba Public School,hierarchy,parent=Schools
@@ -337,8 +357,8 @@ Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Rifle reserves
 Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Schools of Arts
 South Katoomba,Katoomba South,merge,Naming variant - contextual evidence shows South Katoomba used in newspaper sources
 Katoomba Superior Public School,Katoomba Superior Public School,hierarchy,parent=Schools
-Katoomba Tennis Club,Katoomba Tennis Club,hierarchy,parent=Tennis
-Katoomba Tennis Club,Katoomba Tennis Club,hierarchy,parent=Tennis clubs
+Katoomba Lawn Tennis Club,Katoomba Lawn Tennis Club,hierarchy,parent=Tennis clubs
+Katoomba Lawn Tennis Club,Katoomba Tennis Club,synonym,Shortened/historical name for Katoomba Lawn Tennis Club
 Katoomba band,Katoomba band,hierarchy,parent=Bands
 Katoomba station,Katoomba station,hierarchy,parent=Railway infrastructure
 Labour organizations,Labour organizations,hierarchy,parent=Civic organizations
@@ -651,6 +671,7 @@ Railway operations,Railway operations,hierarchy,parent=Railway
 Sexual violence,Rape,merge,Specific term merged into broader category (rape is a type of sexual violence)
 Sexual violence,Rape,synonym,Specific type of sexual violence - retained as synonym for search/discovery
 Recreation activities,Recreation activities,hierarchy,parent=Activities
+Team sports,Team sports,hierarchy,parent=Recreation activities
 Military sports,Military sports,hierarchy,parent=Recreation activities
 Military sports,Military sports,hierarchy,parent=Sport & Recreation - THEMATIC
 Recreation for miners,Recreation for miners,hierarchy,parent=Miners
@@ -682,12 +703,17 @@ Reverend R M Laverty,Reverend R M Laverty,hierarchy,parent=Clergy
 Richard Allen,Richard Allen,hierarchy,parent=Hotelliers
 Rifle club,Rifle club,hierarchy,parent=Rifle clubs
 Rifle clubs,Rifle clubs,hierarchy,parent=Sports clubs
+Katoomba Shooting Fishing and Excursion Club,Katoomba Shooting Fishing and Excursion Club,hierarchy,parent=Sports clubs
+Western Rifle Association,Western Rifle Association,hierarchy,parent=Rifle clubs
+Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Rifle clubs
+Mountain Rifle Reserves,Mountain Rifle Reserves,hierarchy,parent=Rifle clubs
 Rifle reserves,Rifle reserves,hierarchy,parent=Reserves
 Roads,Roads,hierarchy,parent=Transport & Infrastructure - THEMATIC
 Roads,Roads,hierarchy,parent=Transport infrastructure
 Roman Catholic Church,Roman Catholic Church,hierarchy,parent=Churches
 Rubina Fryer,Rubina Fryer,hierarchy,parent=Hotelliers
-Rugby,Rugby,hierarchy,parent=Sporting events
+Rugby,Rugby,hierarchy,parent=Team sports
+Rugby,Rugby,hierarchy,parent=Sport & Recreation - THEMATIC
 Ruined Castle,Ruined Castle,hierarchy,parent=Mining districts
 Ruined Castle,Ruined Castle,hierarchy,parent=Mountain features
 Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Ruined Castle
@@ -713,7 +739,12 @@ Shale mines,Shale mines,hierarchy,parent=Mines & mining districts - THEMATIC
 Shale mines,Shale mines,hierarchy,parent=Natural resources - THEMATIC
 Shale mining,Shale mining,hierarchy,parent=Mining
 Shipwright,Shipwright,hierarchy,parent=Maritime workers
-Shooting,Shooting,hierarchy,parent=Sporting events
+Shooting,Shooting,hierarchy,parent=Recreation activities
+Shooting,Shooting,hierarchy,parent=Sport & Recreation - THEMATIC
+Shooting matches,Shooting matches,hierarchy,parent=Sporting events
+Shooting matches,Shooting matches,hierarchy,parent=Sport & Recreation - THEMATIC
+Shooting match,Shooting match,hierarchy,parent=Shooting matches (singular generic term)
+Shooting match,Shooting competition,synonym,Alternative term for shooting match
 Unlicensed sales,Sly-grog operations,synonym,Australian colonial term for unlicensed liquor sales
 Social & economic concepts,Social & economic concepts,hierarchy,parent=Associated Concepts
 Social behaviours,Social behaviours,hierarchy,parent=Activities
@@ -729,6 +760,8 @@ South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=South Clift
 South Katoomba Reserve,South Katoomba Reserve,hierarchy,parent=Reserves
 Spirits,Spirits,hierarchy,parent=Alcoholic beverages
 Sport & Recreation,Sport & Recreation,hierarchy,parent=(thematic grouping)
+Women's sports,Women's sports,hierarchy,parent=Sport & Recreation - THEMATIC
+Youth sports,Youth sports,hierarchy,parent=Sport & Recreation - THEMATIC
 Sporting events,Sporting events,hierarchy,parent=Events
 Sporting events,Sporting events,hierarchy,parent=Sport & Recreation - THEMATIC
 Sports,Sports,merge,Remove from Recreation activities - use specific activity types (Spectator sports for watching events) or event types (Sporting events for the events themselves)
@@ -754,7 +787,8 @@ Tabrett and Company,Tabrett and Co.,synonym,Abbreviated form of Tabrett and Comp
 Temperance,Temperance,hierarchy,parent=Social behaviours
 Temperance,Temperance,hierarchy,parent=Temperance organizations & movements - THEMATIC
 Temperance organizations & movements,Temperance organizations & movements,hierarchy,parent=Alcohol & Temperance - THEMATIC
-Tennis,Tennis,hierarchy,parent=Sporting events
+Tennis,Tennis,hierarchy,parent=Recreation activities
+Tennis,Tennis,hierarchy,parent=Sport & Recreation - THEMATIC
 Tennis clubs,Tennis clubs,hierarchy,parent=Sports clubs
 Theft,Theft,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Theft,Theft,hierarchy,parent=Criminal events
@@ -916,6 +950,7 @@ Katoomba South,Katoomba South,hierarchy,parent=Katoomba
 Legal concepts,Legal concepts,hierarchy,parent=Associated Concepts
 Laws,Laws,hierarchy,parent=Legal concepts
 Licenses,Licenses,hierarchy,parent=Legal concepts
+Billiard License,Billiard License,hierarchy,parent=Licenses
 Publican's License,Publican's License,hierarchy,parent=Licenses
 Minors,Minors,merge,MANUAL REVIEW NEEDED: Merge to either Child or Adolescent based on context. Thesaurus entry: Minors = Child + Adolescent
 Mount Kembla Disaster,Mount Kembla Colliery Disaster,merge,Synonym - standardise to Mount Kembla Disaster
@@ -1023,6 +1058,8 @@ Animal breeding,Animal breeding,hierarchy,parent=Animal husbandry
 Horse breeding,Horse breeding,hierarchy,parent=Animal breeding
 Pony breeding,Pony breeding,merge,Alternate term for Horse breeding (ponies are small horses)
 Hunting,Hunting,hierarchy,parent=Economic activities
+Hunting,Hunting,hierarchy,parent=Recreation activities
+Recreational hunting,Recreational hunting,hierarchy,parent=Hunting (recreational activity)
 Wild horse culling,Wild horse culling,hierarchy,parent=Hunting
 Domestic animals,Domestic animals,hierarchy,parent=Animals
 Wild animals,Wild animals,hierarchy,parent=Animals
@@ -1061,3 +1098,19 @@ Police officers,Police officers,hierarchy,parent=Law enforcement personnel
 Constable,Constable,hierarchy,parent=Police officers
 Senior-Constable,Senior-Constable,hierarchy,parent=Police officers
 Sergeant,Sergeant,hierarchy,parent=Police officers
+Cricket matches,Cricket matches,hierarchy,parent=Sporting events
+Cricket matches,Cricket matches,hierarchy,parent=Sport & Recreation - THEMATIC
+Cricket match,Cricket match,hierarchy,parent=Cricket matches (singular generic term)
+Rugby matches,Rugby matches,hierarchy,parent=Sporting events
+Rugby matches,Rugby matches,hierarchy,parent=Sport & Recreation - THEMATIC
+Rugby match,Rugby match,hierarchy,parent=Rugby matches (singular generic term)
+Coursing,Coursing,hierarchy,parent=Sporting events
+Coursing,Coursing,hierarchy,parent=Sport & Recreation - THEMATIC
+Rugby clubs,Rugby clubs,hierarchy,parent=Sports clubs
+Rugby club,Rugby club,hierarchy,parent=Rugby clubs (singular generic term)
+Penrith Rugby Club,Penrith Rugby Club,hierarchy,parent=Rugby clubs
+Coursing clubs,Coursing clubs,hierarchy,parent=Sports clubs
+Coursing club,Coursing club,hierarchy,parent=Coursing clubs (singular generic term)
+Wallerawang Coursing Club,Wallerawang Coursing Club,hierarchy,parent=Coursing clubs
+Flower show,Flower show,hierarchy,parent=Social events
+Bazaar,Bazaar,hierarchy,parent=Social events

@@ -2,8 +2,39 @@ THEMATIC GROUPING: Sport & Recreation
 ================================================================================
 
 Sport & Recreation
+├── Athletics
+├── Billiards
+├── Coursing
+├── Cricket
+│   ├── Cricket clubs
+│   │   ├── Cricket club
+│   │   ├── Katoomba Cricket Club
+│   │   └── Megalong Cricket Club
+│   ├── Katoomba Cricket Club
+│   └── Megalong Cricket Club
+├── Cricket matches
+│   └── Cricket match
+├── Football
+│   ├── Football clubs
+│   │   ├── Football club
+│   │   ├── Hartley Vale Natives Football Club
+│   │   ├── Katoomba Football Club
+│   │   ├── Lithgow Rovers
+│   │   └── Nepean Football Club
+│   └── Katoomba Football Club
+├── Football matches
+│   └── Football match
 ├── Horse racing
 ├── Military sports
+├── Recreation buildings
+│   └── Sports facilities
+│       ├── Cricket grounds
+│       │   └── Cricket ground
+│       ├── Ovals
+│       │   ├── Eskbank Oval
+│       │   └── Oval
+│       └── Rifle ranges
+│           └── Rifle range
 ├── Recreation themes
 │   ├── Recreation for miners
 │   ├── Reserves
@@ -18,48 +49,59 @@ Sport & Recreation
 │   │   ├── Wentworth Falls Reserve
 │   │   └── Wentworth Falls Reserves
 │   └── Sports
+├── Rugby
+├── Rugby matches
+│   └── Rugby match
+├── Shooting
+├── Shooting matches
+│   └── Shooting match
 ├── Spectator sports
 ├── Sporting events
-│   ├── Athletics
-│   ├── Billiard
-│   ├── Billiards
-│   ├── Cricket
-│   │   ├── Cricket clubs
-│   │   │   ├── Cricket club
-│   │   │   ├── Katoomba Cricket Club
-│   │   │   └── Megalong Cricket Club
-│   │   ├── Girls' cricket
-│   │   ├── Katoomba Cricket Club
-│   │   └── Megalong Cricket Club
+│   ├── Coursing
+│   ├── Cricket matches
+│   │   └── Cricket match
 │   ├── Equestrian events
 │   │   └── Horse races
-│   ├── Football
-│   │   ├── Football clubs
-│   │   │   ├── Football club
-│   │   │   └── Katoomba Football Club
-│   │   └── Katoomba Football Club
-│   ├── Rugby
-│   ├── Shooting
-│   ├── Sporting event
-│   └── Tennis
-│       └── Katoomba Tennis Club
-└── Sports clubs
-    ├── Athletic clubs
-    │   ├── Athletic club
-    │   └── Katoomba Athletic Club
-    ├── Cricket clubs
-    │   ├── Cricket club
-    │   ├── Katoomba Cricket Club
-    │   └── Megalong Cricket Club
-    ├── Football clubs
-    │   ├── Football club
-    │   └── Katoomba Football Club
-    ├── Rifle clubs
-    │   └── Rifle club
-    └── Tennis clubs
-        ├── Katoomba Tennis Club
-        ├── Lawn Tennis Club
-        └── Tennis club
+│   ├── Football matches
+│   │   └── Football match
+│   ├── Rugby matches
+│   │   └── Rugby match
+│   ├── Shooting matches
+│   │   └── Shooting match
+│   └── Sporting event
+├── Sports clubs
+│   ├── Athletic clubs
+│   │   ├── Athletic club
+│   │   └── Katoomba Athletic Club
+│   ├── Coursing clubs
+│   │   ├── Coursing club
+│   │   └── Wallerawang Coursing Club
+│   ├── Cricket clubs
+│   │   ├── Cricket club
+│   │   ├── Katoomba Cricket Club
+│   │   └── Megalong Cricket Club
+│   ├── Football clubs
+│   │   ├── Football club
+│   │   ├── Hartley Vale Natives Football Club
+│   │   ├── Katoomba Football Club
+│   │   ├── Lithgow Rovers
+│   │   └── Nepean Football Club
+│   ├── Katoomba Shooting Fishing and Excursion Club
+│   ├── Rifle clubs
+│   │   ├── Katoomba Rifle Reserves
+│   │   ├── Mountain Rifle Reserves
+│   │   ├── Rifle club
+│   │   └── Western Rifle Association
+│   ├── Rugby clubs
+│   │   ├── Penrith Rugby Club
+│   │   └── Rugby club
+│   └── Tennis clubs
+│       ├── Katoomba Lawn Tennis Club
+│       ├── Lawn Tennis Club
+│       └── Tennis club
+├── Tennis
+├── Women's sports
+└── Youth sports
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -67,6 +109,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 59
+  Total nodes in theme: 101
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

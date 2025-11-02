@@ -96,17 +96,30 @@ Agents
 │   │       ├── Athletic clubs
 │   │       │   ├── Athletic club
 │   │       │   └── Katoomba Athletic Club
+│   │       ├── Coursing clubs
+│   │       │   ├── Coursing club
+│   │       │   └── Wallerawang Coursing Club
 │   │       ├── Cricket clubs
 │   │       │   ├── Cricket club
 │   │       │   ├── Katoomba Cricket Club
 │   │       │   └── Megalong Cricket Club
 │   │       ├── Football clubs
 │   │       │   ├── Football club
-│   │       │   └── Katoomba Football Club
+│   │       │   ├── Hartley Vale Natives Football Club
+│   │       │   ├── Katoomba Football Club
+│   │       │   ├── Lithgow Rovers
+│   │       │   └── Nepean Football Club
+│   │       ├── Katoomba Shooting Fishing and Excursion Club
 │   │       ├── Rifle clubs
-│   │       │   └── Rifle club
+│   │       │   ├── Katoomba Rifle Reserves
+│   │       │   ├── Mountain Rifle Reserves
+│   │       │   ├── Rifle club
+│   │       │   └── Western Rifle Association
+│   │       ├── Rugby clubs
+│   │       │   ├── Penrith Rugby Club
+│   │       │   └── Rugby club
 │   │       └── Tennis clubs
-│   │           ├── Katoomba Tennis Club
+│   │           ├── Katoomba Lawn Tennis Club
 │   │           ├── Lawn Tennis Club
 │   │           └── Tennis club
 │   ├── Fraternal orders & lodges
@@ -286,6 +299,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 282
+  Total nodes in facet: 295
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

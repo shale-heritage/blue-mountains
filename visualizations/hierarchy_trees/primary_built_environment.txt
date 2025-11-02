@@ -113,6 +113,15 @@ Built Environment
 │       ├── Gas
 │       ├── Sewerage
 │       └── Utility
+├── Recreation buildings
+│   └── Sports facilities
+│       ├── Cricket grounds
+│       │   └── Cricket ground
+│       ├── Ovals
+│       │   ├── Eskbank Oval
+│       │   └── Oval
+│       └── Rifle ranges
+│           └── Rifle range
 └── Religious buildings
     └── Churches
         ├── Church
@@ -125,6 +134,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 121
+  Total nodes in facet: 130
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

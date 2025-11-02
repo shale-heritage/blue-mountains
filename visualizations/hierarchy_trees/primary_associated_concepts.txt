@@ -6,6 +6,7 @@ Associated Concepts
 │   ├── Laws
 │   │   └── Licensing Act
 │   └── Licenses
+│       ├── Billiard License
 │       ├── License
 │       └── Publican's License
 ├── Physical and health conditions
@@ -21,6 +22,6 @@ Associated Concepts
 
 
 STATISTICS:
-  Total nodes in facet: 17
+  Total nodes in facet: 18
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

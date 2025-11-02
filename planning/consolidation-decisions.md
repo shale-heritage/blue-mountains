@@ -2826,3 +2826,766 @@ Children remain in their primary locations:
 **Status:** Implemented, pending regeneration of hierarchy trees.
 
 ---
+
+### Decision 2025-11-01-H: Social Events Singular Standardisation
+
+**Date:** 2025-11-01
+**Type:** Naming Convention / Standardisation
+
+**Issue:**
+Under Social events, leaf tags showed inconsistent plural/singular forms:
+- Plural: "Concerts" (29 items), "Dances" (26 items)
+- Singular: "Ball" (4 items), "Flower show" (2 items)
+
+**Analysis:**
+This violated the consistent singular naming pattern used for leaf nodes throughout the taxonomy. Following the leaf-node tagging pattern documented in CLAUDE.md, leaf tags should use singular forms (e.g., "Hotel" not "Hotels", "School" not "Schools").
+
+**Decision:**
+Standardise all Social events leaf tags to singular:
+- Concerts (29 items) → **Concert** (merge plural into singular)
+- Dances (26 items) → **Dance** (merge plural into singular)
+- Ball (4 items) → unchanged (already singular)
+- Flower show (2 items) → unchanged (already singular)
+
+**Rationale:**
+1. **Internal consistency:** Matches pattern used across entire taxonomy (Hotels > Hotel, Schools > School)
+2. **Leaf-node pattern compliance:** Singular generics and named entities are the standard
+3. **Getty AAT alignment:** AAT uses singular forms for event types
+4. **User clarity:** Consistent pattern makes tagging rules easier to follow
+
+**Hierarchy Result:**
+```
+Social events
+├── Ball
+├── Concert (was Concerts)
+├── Dance (was Dances)
+├── Flower show
+└── Social event
+```
+
+**Polyhierarchy Notes:**
+Concert also appears under Cultural events (dual classification preserved after merge).
+
+**Impact:**
+- 29 items previously tagged "Concerts" → "Concert"
+- 26 items previously tagged "Dances" → "Dance"
+- Total affected: 55 items
+
+**Files Modified:**
+- data/tag_map_consolidated.csv (lines 114-117, 161-162)
+  - Added merge entries for Concerts → Concert, Dances → Dance
+  - Updated hierarchy relationships to use singular forms
+
+**Status:** Implemented and verified in hierarchy visualizations.
+
+---
+
+## Sporting Events Reclassification: Cricket
+
+**Date:** 2025-11-02
+
+**Tags affected:**
+
+- `Cricket` - Enhanced with thematic tag and Built Environment additions
+- NEW: `Cricket grounds` (plural parent)
+- NEW: `Cricket ground` (singular generic)
+- NEW: `Recreation buildings` (Built Environment parent)
+- NEW: `Sports facilities` (under Recreation buildings)
+- NEW: `Women's sports` (thematic tag)
+- NEW: `Youth sports` (thematic tag)
+- NEW: `Childhood & adolescence` (thematic tag)
+- `Girls' cricket` - Enhanced with Women's sports thematic
+
+**Rationale:**
+
+Following systematic review of sporting events (see reports/sporting_events_reclassification_review.md), Cricket emerged as a well-documented sporting activity requiring:
+
+1. **Primary event hierarchy:** Cricket already correctly placed under Events > Sporting events
+2. **Built Environment support:** Cricket grounds are significant cultural heritage sites in the Blue Mountains requiring dedicated Built Environment hierarchy
+3. **Thematic enrichment:** Women's participation in cricket (Girls' cricket tag) warranted dedicated Women's sports thematic grouping
+4. **Structural consistency:** Recreation buildings parent provides logical home for all sports facilities
+
+**Evidence:**
+
+Analysis revealed:
+- Cricket clubs: Katoomba Cricket Club, Megalong Cricket Club (well-established organisations)
+- Girls' cricket: Multiple references to women's cricket matches and participation
+- Cricket grounds: Physical venues requiring Built Environment classification
+
+**Hierarchy Result:**
+
+```
+Events > Sporting events
+├── Cricket
+│   ├── Cricket clubs (polyhierarchy with Sports clubs)
+│   └── Girls' cricket (polyhierarchy with Women's sports - THEMATIC)
+
+Built Environment
+├── Recreation buildings (NEW)
+│   └── Sports facilities (NEW)
+│       ├── Cricket grounds (NEW plural parent)
+│       │   └── Cricket ground (NEW singular generic)
+│       └── Rifle ranges (added in Shooting review)
+
+Sport & Recreation - THEMATIC
+├── Cricket
+├── Women's sports (NEW)
+│   └── Girls' cricket
+└── Youth sports (NEW)
+
+Family & Domestic Life - THEMATIC
+└── Childhood & adolescence (NEW)
+```
+
+**Impact:**
+
+- Enhanced Cricket classification with thematic tag
+- New Built Environment infrastructure for sports facilities
+- Girls' cricket now discoverable via Women's sports thematic
+- Foundation laid for other sports facilities (rifle ranges, etc.)
+
+**Getty AAT Alignment:**
+
+- Sports facilities: Aligns with AAT 300343232 "sports facilities"
+- Recreation buildings: Follows AAT pattern for functional building classification
+- Women's sports: Cultural heritage significance of women's participation in sports
+
+**Files Modified:**
+
+- data/tag_map_consolidated.csv
+  - Lines 147-150: Enhanced Cricket with thematic tag
+  - Lines 217-223: Added Recreation buildings > Sports facilities > Cricket grounds hierarchy
+  - Lines 230: Added Childhood & adolescence thematic
+  - Lines 256-258: Enhanced Girls' cricket with Women's sports thematic
+  - Lines 738-739: Added Women's sports and Youth sports thematics
+
+**Status:** Implemented 2025-11-02
+
+---
+
+## Sporting Events Reclassification: Shooting
+
+**Date:** 2025-11-02
+
+**Tags affected:**
+
+- `Shooting` - MOVED from Events > Sporting events to Activities > Recreation activities
+- NEW: `Shooting matches` (Events > Sporting events)
+- NEW: `Shooting match` (singular generic)
+- SYNONYM: `Shooting competition` (synonym for Shooting match)
+- NEW: `Rifle ranges` (Built Environment > Sports facilities)
+- NEW: `Rifle range` (singular generic)
+- NEW: `Katoomba Shooting Fishing and Excursion Club` (specific club)
+- NEW: `Western Rifle Association` (specific club)
+- `Katoomba Rifle Reserves` - ADDED as club (dual-nature with existing place)
+- NEW: `Mountain Rifle Reserves` (specific club)
+- `Hunting` - ENHANCED with Recreation activities polyhierarchy
+- NEW: `Recreational hunting` (distinct from economic hunting)
+
+**Rationale:**
+
+Context analysis of 13 items tagged "Shooting" revealed semantic complexity requiring nuanced classification:
+
+1. **Activity vs Event distinction:** Shooting functions as both:
+   - **Activity:** General recreational shooting practice, training, club activities (NOT team sport)
+   - **Event:** Specific competitions, matches, tournaments
+
+2. **NOT a team sport:** Unlike cricket/football, shooting encompasses:
+   - Solo target practice
+   - Group recreational shooting
+   - Competitive team matches
+   - Individual competition
+
+   **Decision:** Place Shooting under Recreation activities (NOT under Team sports)
+
+3. **Hunting distinction:** Item-by-item analysis revealed:
+   - **Shooting sports:** Target practice, rifle clubs, competitions
+   - **Recreational hunting:** Sport/recreational hunting of game (Item 11)
+   - **Economic hunting:** Wild horse culling for commercial purposes (Items 8, 10)
+
+4. **Specific clubs identified:**
+   - Katoomba Shooting, Fishing, and Excursion Club (Item 2)
+   - Western Rifle Association (Item 4)
+   - Katoomba Rifle Reserves (Items 5, 7) - dual-nature: place AND club
+   - Mountain Rifle Reserves (Item 12)
+
+5. **Built Environment requirements:**
+   - Rifle ranges are physical sporting facilities (Item 9)
+   - Require Built Environment classification alongside Cricket grounds
+
+**Evidence:**
+
+**Item-by-item review findings:**
+
+- **Item 1:** "Lithgow reserves good fine-weather shooters" → Activity (recreational shooting)
+- **Item 2:** "Katoomba Shooting, Fishing, and Excursion Club will hold their half-yearly meeting" → Specific club organisation
+- **Item 3:** "Improvement is shown in the shooting all round" → Activity (practice/training)
+- **Item 4:** "Western Rifle Association" → Specific club organisation
+- **Item 5:** "Katoomba Rifle Reserves were put through the musketry course" → Club + Activity (training)
+- **Item 6:** "best shooters averaging 50... shoot the first stage of the ladies' £40 trophy" → Event (competition) + Women's sports thematic
+- **Item 7:** "Katoomba Rifle Reserves musketry shooting this week" → Club + Event (organised shooting)
+- **Item 8:** "destroy yelping mongrels... keep the canine 3s" → NOT shooting sports (dog control regulation) - REMOVE Shooting tag
+- **Item 9:** "Preparations are being made at Blackheath for active work at the rifle range" → Built Environment (facility)
+- **Item 10:** "Men were employed shooting [wild horses] for the skins" → Economic hunting (already appropriately tagged) - REMOVE Shooting tag
+- **Item 11:** "dissecting every animal he shoots" → Recreational hunting (distinct from shooting sports)
+- **Item 12:** "Mountain Rifle Reserves at the Association meeting at Sydney have won prizes" → Specific club + Event (competition)
+- **Item 13:** "Triangular rifle match at Katoomba" → Event (shooting match) ✓ APPROVED
+
+**Hierarchy Result:**
+
+```
+Activities
+├── Recreation activities
+│   ├── Shooting (MOVED from Events, NOT under Team sports)
+│   └── Hunting (ENHANCED polyhierarchy)
+│       └── Recreational hunting (NEW - distinct from shooting sports)
+├── Economic activities
+│   └── Hunting
+│       └── Wild horse culling
+
+Events > Sporting events
+├── Cricket
+└── Shooting matches (NEW)
+    └── Shooting match (NEW singular generic, "Shooting competition" as synonym)
+
+Built Environment > Recreation buildings > Sports facilities
+├── Cricket grounds
+│   └── Cricket ground
+└── Rifle ranges (NEW)
+    └── Rifle range (NEW singular generic)
+
+Agents > Organisations > Sports clubs
+├── Cricket clubs
+├── Rifle clubs
+│   ├── Rifle club (singular generic)
+│   ├── Western Rifle Association (NEW)
+│   ├── Katoomba Rifle Reserves (NEW - dual-nature with Place)
+│   └── Mountain Rifle Reserves (NEW)
+└── Katoomba Shooting Fishing and Excursion Club (NEW - multi-purpose club)
+
+Places
+└── Reserves
+    └── Rifle reserves
+        └── Katoomba Rifle Reserves (dual-nature with club)
+```
+
+**Dual-Nature Entity:**
+
+`Katoomba Rifle Reserves` exhibits dual-nature (place AND organisation):
+- **Place facet:** Physical reserve location for rifle practice
+- **Agents facet:** Organised club/unit using the reserve
+
+This polyhierarchical relationship preserves both aspects without disambiguation.
+
+**Impact:**
+
+- Shooting activity correctly classified under Recreation activities (NOT team sport)
+- Shooting competitions properly distinguished as Events
+- 4 specific rifle clubs/associations now individually tagged
+- Rifle ranges added to Built Environment sports facilities
+- Recreational hunting distinguished from shooting sports and economic hunting
+- 2 items (8, 10) appropriately de-tagged from Shooting (dog control and economic horse culling)
+
+**Getty AAT Alignment:**
+
+- Shooting (activity): AAT 300239470 "shooting (attacking)"
+- Rifle ranges: AAT 300007594 "shooting ranges"
+- Hunting: AAT 300239666 "hunting (function)"
+- Recreation activities: AAT 300054592 "recreational activities"
+
+**Files Modified:**
+
+- data/tag_map_consolidated.csv
+  - Lines 222-223: Added Rifle ranges > Rifle range hierarchy
+  - Lines 693-698: Added specific rifle clubs and association
+  - Lines 724-729: Restructured Shooting (activity) and added Shooting competitions (events)
+  - Lines 1046-1049: Enhanced Hunting with Recreation activities polyhierarchy and Recreational hunting
+
+**Tagging Guidance:**
+
+- Use `Shooting` (activity) for: practice, training, recreational shooting, club activities
+- Use `Shooting match` for: organised competitions, tournaments, matches (synonym: "Shooting competition")
+- Use `Recreational hunting` for: sport/recreational hunting of game animals
+- Use `Hunting` (under Economic activities) for: commercial hunting operations
+- Use `Wild horse culling` for: specific culling activities (economic or management)
+- Use specific club names when identifiable: Katoomba Rifle Reserves, Western Rifle Association, etc.
+- Use `Rifle range` (Built Environment) for: physical facilities/venues
+
+**Status:** Implemented 2025-11-02
+
+---
+
+## Sporting Events Reclassification: Football
+
+**Date:** 2025-11-02
+
+**Tags affected:**
+
+- `Football` - MOVED from Events > Sporting events to Activities > Recreation activities > Team sports
+- NEW: `Team sports` (under Recreation activities)
+- NEW: `Football matches` (Events > Sporting events)
+- NEW: `Football match` (singular generic)
+- NEW: `Hartley Vale Natives Football Club` (specific club)
+- SYNONYM: `Hartley Vale Football Club` (shortened synonym for Hartley Vale Natives Football Club)
+- NEW: `Lithgow Rovers` (specific club)
+- NEW: `Nepean Football Club` (specific club)
+- NEW: `Ovals` (Built Environment > Sports facilities)
+- NEW: `Oval` (singular generic)
+- NEW: `Eskbank Oval` (specific venue)
+- `Cricket` - MOVED to Team sports (from Sporting events directly)
+
+**Rationale:**
+
+Context analysis of 6 items tagged "Football" revealed that Football is fundamentally different from Shooting:
+
+1. **Team sport classification:** Unlike Shooting (which can be solo, group, or team), Football is inherently a team sport:
+   - Always requires two teams
+   - Organised club structure
+   - Competitive matches between clubs
+
+   **Decision:** Place Football under Activities > Recreation activities > Team sports
+
+2. **Activity vs Event distinction:** Football functions as both:
+   - **Activity:** The sport itself, team practice, club activities
+   - **Event:** Specific matches and competitions
+
+3. **Specific clubs identified:**
+   - Katoomba Football Club (Item 2 - already existed)
+   - Hartley Vale Natives Football Club (Items 3, 6 - "Hartley Vale Football Club" as synonym)
+   - Lithgow Rovers (Item 4)
+   - Nepean Football Club (Item 5)
+
+4. **Built Environment requirements:**
+   - Ovals are important sporting venues distinct from cricket grounds and rifle ranges
+   - Eskbank Oval specifically mentioned (Item 4)
+
+5. **Mining recreation thematic:**
+   - Multiple items reference miners playing football (Items 1, 2, 4)
+   - Links to existing "Recreation for miners" thematic tag
+
+**Evidence:**
+
+**Item-by-item review findings:**
+
+- **Item 1:** "A FOOTBALL match came off here... between Katoomba miners and Hartley Vale miners" → Event (match) + Recreation for miners
+- **Item 2:** "Katoomba Football Club and the Miner's Club" → Specific club + Event (match) + Recreation for miners
+- **Item 3:** "Hartley Vale Natives Football Club brought a successful season to a close" → Specific club + Activity
+- **Item 4:** "match was played... between Lithgow Rovers... on Eskbank oval" → Specific club (Lithgow Rovers) + Event (match) + Built Environment (Eskbank Oval)
+- **Item 5:** "The Nepean Football Club has been formed at Penrith" → Specific club
+- **Item 6:** "The Hartley Vale Football Club held a very successful social" → Specific club
+
+**Hierarchy Result:**
+
+```
+Activities > Recreation activities
+├── Team sports (NEW - distinct from solo/flexible sports)
+│   ├── Cricket (MOVED from Sporting events)
+│   └── Football (MOVED from Sporting events)
+│       └── Football clubs (polyhierarchy with Sports clubs)
+└── Shooting (NOT under Team sports - flexible participation)
+
+Events > Sporting events
+├── Cricket matches (existing)
+├── Football matches (NEW)
+│   └── Football match (NEW singular generic)
+└── Shooting matches (existing)
+
+Built Environment > Recreation buildings > Sports facilities
+├── Cricket grounds
+│   └── Cricket ground
+├── Rifle ranges
+│   └── Rifle range
+└── Ovals (NEW)
+    ├── Oval (NEW singular generic)
+    └── Eskbank Oval (NEW specific venue)
+
+Agents > Organisations > Sports clubs
+├── Cricket clubs
+├── Football clubs
+│   ├── Football club (singular generic)
+│   ├── Katoomba Football Club (existing)
+│   ├── Hartley Vale Natives Football Club (NEW, "Hartley Vale Football Club" as synonym)
+│   ├── Lithgow Rovers (NEW)
+│   └── Nepean Football Club (NEW)
+└── Rifle clubs
+```
+
+**Team Sports Distinction:**
+
+This review establishes clear criteria for Team sports classification:
+
+- **Team sports (inherently team-based):** Cricket, Football
+  - Always require two teams
+  - Cannot be played solo
+  - Organised club structure essential
+
+- **NOT team sports (flexible participation):** Shooting, individual athletics
+  - Can be solo, group, or team
+  - Club membership optional
+  - Competition can be individual or team
+
+**Impact:**
+
+- Football correctly classified as team sport (activity)
+- Football matches distinguished as events
+- 3 new football clubs individually tagged (Hartley Vale Natives FC, Lithgow Rovers, Nepean FC)
+- Hartley Vale Football Club established as synonym for full name
+- Ovals added to Built Environment sports facilities
+- Cricket also moved to Team sports for consistency
+- Recreation for miners thematic connections preserved
+
+**Getty AAT Alignment:**
+
+- Team sports: Follows AAT pattern for collective sport classification
+- Football: AAT 300222921 "football (action)"
+- Ovals: AAT 300007601 "ovals (stadium spaces)"
+- Sports facilities: AAT 300343232 "sports facilities"
+
+**Files Modified:**
+
+- data/tag_map_consolidated.csv
+  - Line 147: Cricket moved to Team sports
+  - Lines 224-226: Added Ovals > Oval > Eskbank Oval hierarchy
+  - Lines 242-249: Restructured Football (activity) and added Football matches (events)
+  - Lines 347-350: Added 3 specific football clubs (Hartley Vale Natives FC with synonym, Lithgow Rovers, Nepean FC)
+  - Line 664: Added Team sports under Recreation activities
+
+**Tagging Guidance:**
+
+- Use `Football` (activity) for: the sport, team practice, club activities, general references
+- Use `Football match` for: specific matches, competitions, tournaments
+- Use `Cricket` (activity) for: the sport, team practice, club activities, general references
+- Use specific club names when identifiable: Katoomba Football Club, Lithgow Rovers, etc.
+- Use `Oval` (Built Environment) for: physical sporting venues
+- Use `Recreation for miners` thematic when miners are participants
+
+**Status:** Implemented 2025-11-02
+
+---
+
+## Sporting Events Reclassification: Billiards
+
+**Date:** 2025-11-02
+
+**Tags affected:**
+
+- `Billiard` - MERGED into Billiards
+- `Billiards` - MOVED from Events > Sporting events to Activities > Recreation activities
+- NEW: `Billiard License` (under Legal concepts > Licenses)
+
+**Rationale:**
+
+Context analysis of 3 items tagged "Billiard" or "Billiards" revealed:
+
+1. **Activity not event:** Billiards is an indoor game played continuously, not as discrete competitive events:
+   - Item 1: Licensing context (Billiard License for hotel)
+   - Item 2: "playing a game of billiards" (recreational activity)
+   - Item 3: "billiard-room" (venue/facility reference)
+   - No evidence of competitive matches or tournaments
+
+2. **NOT a team sport:** Unlike Cricket/Football, billiards:
+   - Can be played solo (practice)
+   - Typically 1v1 (two individuals, not teams)
+   - Rarely organised as team competitions
+   - Similar participation flexibility to Shooting
+
+   **Decision:** Place under Recreation activities (NOT Team sports)
+
+3. **Singular/plural consolidation:**
+   - Both "Billiard" and "Billiards" existed
+   - Usage contexts show "billiards" (plural) as standard form
+   - "billiard" appears only as modifier (e.g., "billiard-room", "Billiard License")
+
+   **Decision:** Merge to "Billiards" (plural form as single preferred term)
+
+4. **Licensing context:**
+   - Item 1 references "Billiard License" for hotels
+   - Distinct from Publican's License (alcohol sales)
+   - Historical regulatory requirement for billiard tables in hotels
+
+**Evidence:**
+
+**Item-by-item review findings:**
+
+- **Item 1:** "The Billiard License for the same hotel, as also transferred" → Licensing (regulatory)
+- **Item 2:** "while playing a game of billiards... at the Carrington hotel" → Activity (recreational) + Recreation for miners
+- **Item 3:** "from Jim Nelson's billiard-room to the Mines" → Venue reference + mentions Katoomba Rifle Reserves (club already correctly tagged)
+
+**Hierarchy Result:**
+
+```
+Activities > Recreation activities
+├── Team sports
+│   ├── Cricket
+│   └── Football
+├── Billiards (NEW - NOT team sport, flexible participation)
+└── Shooting (NOT team sport, flexible participation)
+
+Legal concepts > Licenses
+├── Billiard License (NEW)
+└── Publican's License (existing)
+```
+
+**Recreation Activities Classification Criteria:**
+
+This review clarifies criteria for Recreation activities structure:
+
+**Team sports (inherently team-based):**
+- Cricket, Football
+- Always require two teams
+- Cannot be played solo
+
+**Flexible participation activities (NOT team sports):**
+- Billiards, Shooting
+- Can be solo, 1v1, or group
+- Individual or paired participation typical
+
+**Impact:**
+
+- Billiards correctly classified under Recreation activities (NOT Team sport)
+- "Billiard" merged into "Billiards" (single preferred term)
+- Billiard License added to Legal concepts for historical licensing contexts
+- Recreation for miners thematic connection maintained (Item 2)
+- Katoomba Rifle Reserves club reference (Item 3) already correctly tagged as dual-nature entity
+
+**Getty AAT Alignment:**
+
+- Billiards: AAT 300222757 "billiards (game)"
+- Recreation activities: AAT 300054592 "recreational activities"
+- Licenses: AAT 300027834 "licenses (permissions)"
+
+**Files Modified:**
+
+- data/tag_map_consolidated.csv
+  - Lines 59-61: Merged Billiard → Billiards, moved to Recreation activities with thematic tag
+  - Line 952: Added Billiard License under Legal concepts > Licenses
+
+**Tagging Guidance:**
+
+- Use `Billiards` for: playing billiards, billiard rooms/facilities, general references to the game
+- Use `Billiard License` for: licensing contexts, regulatory documents for billiard tables in hotels
+- Use `Recreation for miners` thematic when miners are participants
+
+**Status:** Implemented 2025-11-02
+
+---
+
+## Post-Taxonomy Application Notes: Zotero Item Tag Review
+
+**Date:** 2025-11-02
+
+**Context:** During sporting events review, identified items where club/organisation tags may have been misapplied as event tags.
+
+**Example: Katoomba Football Club**
+
+The taxonomy correctly places "Katoomba Football Club" under:
+- Football (activity)
+- Football clubs (organisation)
+
+However, specific Zotero items require review to ensure appropriate tagging:
+
+**Items requiring tag review:**
+1. **Mountain Mixtures (1893-06-02):** "Dr. Prangley president of Katoomba football club"
+   - Context: Club administration/organisation
+   - Recommendation: Club tag appropriate, no event tag needed
+
+2. **Football (1904-04-22):** "football match... between Katoomba Football Club and the Miner's Club"
+   - Context: Specific match mentioned
+   - Recommendation: Keep club tag + add "Football match" event tag
+
+3. **Mountain Mixtures (1893-06-30):** "Katoomba Football Club is evidently one of those little arrangements"
+   - Context: General club commentary
+   - Recommendation: Club tag appropriate, no event tag needed
+
+**Tagging Principle:**
+
+- **Organisation/club references:** Use club tag only (e.g., "Katoomba Football Club")
+- **Specific events/matches:** Use event tag (e.g., "Football match") + club tags for participants
+- **Activity references:** Use activity tag (e.g., "Football")
+
+**Status:** Noted for future Zotero tag application review (post-taxonomy implementation)
+
+---
+
+## Sporting Events Comprehensive Review and Rationalisation
+
+**Date:** 2025-11-02
+
+**Context:** Systematic review of all sporting-related tags to determine whether they represent specific events (Events facet), ongoing activities (Activities facet), or organisations (Agents facet). Generated detailed context analysis report using script 31_analyse_sporting_events.py with item-by-item recommendations.
+
+### Key Decisions
+
+#### 1. Events vs Activities Distinction
+
+**Principle established:** Distinguish between:
+- **Events facet:** Discrete occurrences (matches, competitions, meetings)
+- **Activities facet:** The sport/activity itself (cricket, football, tennis)
+- **Agents facet:** Clubs and organisations
+
+**Event naming convention:** Use specific event type names (e.g., "Cricket match", "Football match") rather than generic sport names in Events facet.
+
+#### 2. Gender-Neutral Events + Thematic Tags
+
+**Decision:** Do NOT create gender-specific event terms (e.g., "Girls' cricket match").
+
+**Rationale:**
+- Getty AAT uses gender-neutral base terms
+- Gender treated as ATTRIBUTE (modifier/thematic tag), not separate hierarchy
+- Avoids term proliferation (Girls' cricket match, Boys' cricket match, Women's cricket match, etc.)
+- Better searchability and aggregation
+
+**Implementation:**
+- REMOVED: `Girls' cricket` as separate event term
+- USE: `Cricket match` (gender-neutral) + thematic tags `Women's sports` and/or `Youth sports`
+- Historical article titles preserve original phrasing; controlled vocabulary remains neutral
+
+**Thematic tags for demographic context:**
+- `Women's sports` (Sport & Recreation + Women & Gender themes)
+- `Youth sports` (Sport & Recreation + Childhood & adolescence themes)
+
+#### 3. Club Name Consolidation
+
+**Katoomba Lawn Tennis Club:**
+- **Evidence:** 1893 formed as "Katoomba Tennis Club"; 1903 referenced as "Katoomba Lawn Tennis Club"
+- **Decision:** Use "Katoomba Lawn Tennis Club" as preferred term (later, more specific form)
+- **Synonym:** "Katoomba Tennis Club" → "Katoomba Lawn Tennis Club"
+
+#### 4. Tag Misapplication Identified
+
+**"At Katoomba (1893-11-10)" - Cricket Match Item:**
+
+**Current tags (INCORRECT):**
+- `Katoomba Cricket Club` ❌ (not mentioned)
+- `Megalong Cricket Club` ❌ (not mentioned)
+- `Cricket clubs` ❌ (not mentioned)
+
+**Full text analysis revealed:**
+- Single cricket reference: "promised cricket match - town v. mines - was damped down"
+- Match cancelled due to rain
+- Teams named ("town" vs "mines") but NO club organisations mentioned
+- Primary article content: Wesleyan Flower Show and Bazaar at Odd Fellows' Hall
+
+**Corrected tags:**
+- REMOVE: Katoomba Cricket Club, Megalong Cricket Club, Cricket clubs, generic Cricket/Sports tags
+- ADD: Cricket match (planned event, though cancelled)
+- ADD: Flower show, Bazaar (Events > Social events - NEW event types)
+- ADD: Odd Fellows' Hall (Built Environment)
+- ADD: Wesleyans (religious organisation)
+
+**Lesson:** Club tags were applied based on keyword "cricket" without verifying clubs actually mentioned. Demonstrates importance of full-text context analysis.
+
+#### 5. New Event Types Added
+
+**Social Events:**
+- `Flower show` (Events > Social events)
+- `Bazaar` (Events > Social events)
+
+**Sporting Events:**
+- `Cricket matches` (parent) with `Cricket match` (singular generic)
+- `Rugby matches` (parent) with `Rugby match` (singular generic)
+- `Coursing` (hare coursing competitions/meetings)
+
+**Note:** Football matches/Football match already existed in taxonomy.
+
+#### 6. New Organisations Added
+
+**Rugby clubs:**
+- `Rugby clubs` (parent under Sports clubs)
+- `Rugby club` (singular generic)
+- `Penrith Rugby Club` (specific club)
+
+**Coursing clubs:**
+- `Coursing clubs` (parent under Sports clubs)
+- `Coursing club` (singular generic)
+- `Wallerawang Coursing Club` (specific club)
+
+**Background:** Coursing is competitive canine sport where greyhounds chase hares by sight (not scent). Popular "gentlemanly sport" in 19th century, now illegal in many countries. Clubs held meetings/competitions requiring live hares.
+
+#### 7. Activities Reclassification
+
+**Moved from Events > Sporting events to Activities > Recreation activities:**
+
+- **Athletics** → Activities > Recreation activities (general sport/fitness activity)
+- **Tennis** → Activities > Recreation activities (not team sport - individual or doubles)
+
+**Moved from Events > Sporting events to Activities > Recreation activities > Team sports:**
+
+- **Rugby** → Team sports (alongside Cricket and Football)
+
+**Already correctly placed:**
+- Cricket → Team sports ✓
+- Football → Team sports ✓
+- Billiards → Recreation activities ✓
+- Shooting → Recreation activities ✓
+
+**Team Sports Criteria:**
+- Inherently team-based (always require two teams)
+- Cannot be played solo
+- Examples: Cricket, Football, Rugby
+
+**Flexible Participation Activities (NOT team sports):**
+- Can be solo, 1v1, or group
+- Individual or paired participation typical
+- Examples: Billiards, Shooting, Tennis, Athletics
+
+### Files Modified
+
+**data/tag_map_consolidated.csv:**
+- Removed: Girls' cricket (lines 266-268)
+- Moved: Athletics from Sporting events to Recreation activities
+- Moved: Tennis from Sporting events to Recreation activities
+- Moved: Rugby from Sporting events to Team sports
+- Updated: Katoomba Tennis Club → Katoomba Lawn Tennis Club with synonym
+- Added: Cricket matches, Cricket match (lines 1101-1103)
+- Added: Rugby matches, Rugby match (lines 1104-1106)
+- Added: Coursing (lines 1107-1108)
+- Added: Rugby clubs structure with Penrith Rugby Club (lines 1109-1111)
+- Added: Coursing clubs structure with Wallerawang Coursing Club (lines 1112-1114)
+- Added: Flower show, Bazaar (lines 1115-1116)
+
+**visualizations/hierarchy_trees/:**
+- Regenerated all 30 hierarchy trees (7 primary facets + 22 thematic groupings + overview)
+
+**scripts/:**
+- Created: 31_analyse_sporting_events.py (context analysis script)
+- Created: check_cricket_item.py (full text verification script)
+
+**reports/:**
+- Generated: sporting_events_reclassification_review.md (item-by-item analysis)
+
+### Tagging Guidance
+
+**For sporting content:**
+
+1. **Specific matches/competitions:** Use event tag (Cricket match, Football match, Rugby match, Shooting match, Coursing)
+2. **General sport/activity references:** Use activity tag (Cricket, Football, Rugby, Tennis, Shooting, Billiards, Athletics)
+3. **Clubs/organisations:** Use agent tag (Katoomba Cricket Club, Penrith Rugby Club, etc.)
+4. **Gender/demographic context:** Add thematic tags (Women's sports, Youth sports, Recreation for miners)
+
+**Common scenarios:**
+
+- "Football match between Katoomba Football Club and Miner's Club" → Football match (event) + club tags (agents)
+- "Girls playing cricket" → Cricket (activity) + Women's sports + Youth sports (thematics)
+- "Coursing club meeting cancelled due to lack of hares" → Coursing (event) + club tag (agent)
+- "Tennis club fencing being erected" → Club tag only (organisational infrastructure, not event/activity)
+
+### Getty AAT Alignment
+
+- Events as discrete occurrences vs activities as ongoing practices aligns with AAT facet structure
+- Gender-neutral terminology matches AAT approach (gender as attribute, not embedded in term)
+- Sport/activity terms: AAT 300054592 "recreational activities"
+- Individual sport references align with AAT specific game terms
+
+### Outstanding Issues
+
+**For future Zotero tag application:**
+
+Many items currently tagged with club names may actually be about matches/events rather than club organisations. Full-text context analysis recommended before applying tags, particularly:
+
+- Items tagged "Katoomba Football Club" - may need Football match event tag
+- Items tagged cricket club names - verify club actually mentioned vs match between teams
+- Tennis club tags - distinguish club administration content from matches/facilities
+
+**Status:** Implemented 2025-11-02
+
+---
