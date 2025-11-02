@@ -6,7 +6,6 @@ Places
 │   ├── Hartley Vale - mining district
 │   │   ├── Hartley Vale - settlement
 │   │   └── Hartley Vale mines
-│   ├── Mining district
 │   ├── Nellie's Glen - mining district
 │   │   ├── Nellie's Glen - settlement
 │   │   ├── Nellie's Glen Road
@@ -19,9 +18,8 @@ Places
 │       └── South Clifton Tunnel Mine
 ├── Natural features
 │   ├── Caves & geological features
-│   │   └── Jenolan Caves
-│   │       ├── Jenolan Cave
-│   │       └── Jenolan Caves Road
+│   │   ├── Jenolan Caves
+│   │   └── Jenolan Caves Road
 │   ├── Gullies
 │   │   └── Nellie's Glen - gully
 │   ├── Mountain features
@@ -32,7 +30,6 @@ Places
 │   │   ├── Jamieson Valley
 │   │   ├── Kanimbla Valley
 │   │   ├── Megalong Valley
-│   │   │   └── Megalong Valley School
 │   │   └── Valley
 │   └── Waterfalls
 │       ├── Katoomba Falls
@@ -60,6 +57,7 @@ Places
     │   └── Lithgow Council
     ├── Medlow
     ├── Megalong
+    │   ├── Megalong Valley School
     │   └── Middle camp - settlement
     ├── Mount Victoria
     ├── Sydney
@@ -67,6 +65,6 @@ Places
 
 
 STATISTICS:
-  Total nodes in facet: 63
+  Total nodes in facet: 61
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

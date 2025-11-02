@@ -12,9 +12,8 @@ Environment & Weather
 │       └── Wild horses
 ├── Natural features
 │   ├── Caves & geological features
-│   │   └── Jenolan Caves
-│   │       ├── Jenolan Cave
-│   │       └── Jenolan Caves Road
+│   │   ├── Jenolan Caves
+│   │   └── Jenolan Caves Road
 │   ├── Gullies
 │   │   └── Nellie's Glen - gully
 │   ├── Mountain features
@@ -25,7 +24,6 @@ Environment & Weather
 │   │   ├── Jamieson Valley
 │   │   ├── Kanimbla Valley
 │   │   ├── Megalong Valley
-│   │   │   └── Megalong Valley School
 │   │   └── Valley
 │   └── Waterfalls
 │       ├── Katoomba Falls
@@ -49,6 +47,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 41
+  Total nodes in theme: 39
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
