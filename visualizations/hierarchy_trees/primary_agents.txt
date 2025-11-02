@@ -111,8 +111,7 @@ Agents
 │   │       │   └── Nepean Football Club
 │   │       ├── Katoomba Shooting Fishing and Excursion Club
 │   │       ├── Rifle clubs
-│   │       │   ├── Katoomba Rifle Reserves
-│   │       │   ├── Mountain Rifle Reserves
+│   │       │   ├── Katoomba Civilian Rifle Club
 │   │       │   ├── Rifle club
 │   │       │   └── Western Rifle Association
 │   │       ├── Rugby clubs
@@ -153,7 +152,10 @@ Agents
 │   │   └── Railway authorities
 │   │       └── Railway commission
 │   ├── Military organizations
-│   │   └── N.S.W. Mounted Rifles
+│   │   ├── N.S.W. Mounted Rifles
+│   │   └── Volunteer rifle reserves
+│   │       ├── Katoomba Rifle Reserves
+│   │       └── Mountain Rifle Reserves
 │   └── Religious organizations
 │       ├── Churches
 │       │   ├── Church
@@ -299,6 +301,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 295
+  Total nodes in facet: 297
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

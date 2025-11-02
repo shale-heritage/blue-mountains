@@ -3919,3 +3919,258 @@ Mining & Industry - THEMATIC
 **Status:** Implemented 2025-11-02
 
 ---
+
+## Rifle-Related Tags Rationalisation
+
+**Date:** 2025-11-02
+
+### Problem Statement
+
+Rifle-related tags appeared confusingly across three different facets with incorrect classifications:
+
+**In Places facet (INCORRECT):**
+- `Rifle reserves` (parent category)
+- `Rifle reserve` (singular generic)
+- `Katoomba Rifle Reserve` (singular)
+- `Katoomba Rifle Reserves` (plural)
+
+**In Agents > Sports clubs (PARTIALLY INCORRECT):**
+- `Rifle clubs` (parent category)
+- `Rifle club` (singular generic)
+- `Katoomba Rifle Reserves` (volunteer military unit - incorrect location)
+- `Mountain Rifle Reserves` (volunteer military unit - incorrect location)
+- `Western Rifle Association` (civilian association - correct location)
+
+**In Built Environment > Sports facilities (CORRECT):**
+- `Rifle ranges` (parent category)
+- `Rifle range` (singular generic - physical shooting facilities)
+
+### Primary Source Evidence
+
+Analysis of 8 items with rifle-related tags (via script 32_analyse_rifle_contexts.py) revealed:
+
+#### "Katoomba Rifle Reserves" = Volunteer Military Unit (NOT a place)
+
+All 5 items show organisational/military context:
+
+**Example 1: Local Jottings (1889-09-21)**
+> "Katoomba Rifle Reserves want tenders for the clearing of 15ft. in width of scrub along the range."
+
+**Example 2: Mountain Mixtures (1891-12-04)**
+> "The Katoomba Rifle Reserves were put through the musketry course this week. Wonder if the Reserve Companies will fare badly under the new Government!"
+
+**Example 3: Local Jottings (1890-07-19)**
+> "Katoomba Rifle Reserves seem to be getting demoralised since Captain Fletcher left on a visit to England. If the acting-captain and the treasurer with the brass band do not stop that handicap tomfoolery, there will be a big row in the camp."
+
+**Example 4: Jottings (1891-05-23)**
+> "Katoomba Rifle Reserves musketry shooting this week."
+
+**Example 5: Local Jottings (1890-04-26)**
+> "Private Richardson, marker of the Katoomba Rifle Reserves, has gone to Goulburn. Two gay young sparks were sworn in on Monday night as volunteers."
+
+**Key indicators of military organisation:**
+- Military ranks: Captain Fletcher, Private Richardson, acting-captain
+- Organisational structure: treasurer, brass band, "Reserve Companies"
+- Military activities: musketry course, sworn in as volunteers
+- Personnel mobility: members "put through" training, individuals transferred
+- Language: "the Reserves" (plural referring to unit members), "camp" (military context)
+
+#### "Mountain Rifle Reserves" = Another Volunteer Military Unit
+
+**Example: Mountain Mixtures (1892-10-21)**
+> "Up to Wednesday the following members of Mountain Rifle Reserves at the Association meeting at Sydney have won prizes: Private Young, K., £7; Captain Prott. M. V., £5; A. Wilson, W. F., £1; Private Spark. K., £1."
+
+- Military ranks: Private Young, Captain Prott, Private Spark
+- Competitive shooting: Association meeting in Sydney with prizes
+- Distinct from Katoomba unit but same organisational type
+
+#### "Civilian Rifle Club" = NON-Military Sports Organisation (1893)
+
+**Example: Mountain Mixtures (1893-03-03)**
+> "Civilian rifle club formed at Katoomba. Dr. Spark president."
+> "One shilling per month is the subscription to Katoomba Civilian Rifle Club."
+
+- Explicitly "civilian" (not military)
+- Sports/recreation organisation with subscription fees
+- Formed in 1893, apparently distinct from or replacing earlier military reserves
+- Led by civilian (Dr. Spark) not military officer
+
+### Historical Context
+
+**Rifle Reserves in Colonial Australia:**
+
+In late 19th century New South Wales, "Rifle Reserves" were volunteer military units, part of the colonial defence system. They were NOT parcels of Crown land set aside for rifle practice (which would be called "rifle range reserves" or simply "rifle ranges").
+
+- **Volunteer military units:** Part-time defence forces, similar to modern Army Reserve
+- **Rank structure:** Officers (Captain), Non-Commissioned Officers (NCOs), Privates
+- **Training:** Regular musketry practice, competitive shooting
+- **"Reserve Companies":** Terminology used in sources confirms military nature
+- **Transition to civilian:** By 1893, civilian rifle clubs formed for recreational shooting
+
+### Reorganisation Decisions
+
+#### 1. Remove ALL rifle-related tags from Places facet
+
+**Rationale:** Primary sources never refer to rifle reserves as places/land parcels. The term consistently refers to military organisations.
+
+**Evidence:** No instances of "rifle reserve" used in land-tenure sense (e.g., "gazetted as rifle reserve", "Crown land set aside for rifle practice"). The word "reserve" refers to military reserves (volunteer units), not land reserves.
+
+**Tags removed:**
+- `Rifle reserves` (parent category under Reserves) - DELETED
+- `Rifle reserve` (singular generic) - DELETED
+- `Katoomba Rifle Reserve` (singular) - DELETED
+- `Katoomba Rifle Reserves` hierarchy under Reserves - DELETED
+- `Katoomba Rifle Reserves` hierarchy under Rifle reserves - DELETED
+- Synonym entry `Katoomba Rifle Reserve` → `Katoomba Rifle Reserves` - DELETED
+
+**Impact:** Removes 6 incorrect entries from Places facet
+
+#### 2. Create Military Organizations > Volunteer rifle reserves
+
+**New structure:**
+```
+Agents > Organizations > Military organizations
+├── N.S.W. Mounted Rifles (existing)
+└── Volunteer rifle reserves (new parent category)
+    ├── Volunteer rifle reserve (new singular generic)
+    ├── Katoomba Rifle Reserves (moved from Sports clubs)
+    └── Mountain Rifle Reserves (moved from Sports clubs)
+```
+
+**Rationale:** These are volunteer military units with rank structure, military training, and colonial defence role. They belong in Military organizations, not Sports clubs.
+
+**Getty AAT alignment:** 
+- AAT: `volunteer military forces` (300222235)
+- AAT: `rifle companies` (military units equipped with rifles)
+
+**Tags modified:**
+- `Katoomba Rifle Reserves` parent changed: `Rifle clubs` → `Volunteer rifle reserves`
+- `Mountain Rifle Reserves` parent changed: `Rifle clubs` → `Volunteer rifle reserves`
+
+**Tags created:**
+- `Volunteer rifle reserves` (parent category under Military organizations)
+- `Volunteer rifle reserve` (singular generic under Volunteer rifle reserves)
+
+**Impact:** 
+- 5 items tagged with `Katoomba Rifle Reserves` now correctly classified as military
+- 0 items currently tagged with `Mountain Rifle Reserves` but structure prepared for future use
+
+#### 3. Maintain Sports clubs > Rifle clubs for CIVILIAN organisations
+
+**Retained structure:**
+```
+Agents > Organizations > Cultural & recreational organizations > Sports clubs > Rifle clubs
+├── Rifle club (singular generic for civilian clubs)
+├── Katoomba Civilian Rifle Club (new, based on 1893 source)
+└── Western Rifle Association (existing, presumed civilian)
+```
+
+**Rationale:** Civilian rifle clubs are sports/recreation organisations, distinct from volunteer military units. The 1893 primary source explicitly distinguishes "civilian rifle club" from earlier military reserves.
+
+**Tags created:**
+- `Katoomba Civilian Rifle Club` (new entry based on 1893-03-03 primary source)
+
+**Tags retained:**
+- `Rifle club` (singular generic - kept for unspecified civilian clubs)
+- `Rifle clubs` (parent category - kept)
+- `Western Rifle Association` (kept under Rifle clubs, presumed civilian association)
+
+**Impact:**
+- 1 item tagged with `Rifle club` now clearly refers to civilian sports club
+- Structure prepared for future tagging of 1893 civilian club formation
+
+#### 4. Maintain Built Environment > Rifle ranges (physical facilities)
+
+**NO CHANGES - Already correct:**
+```
+Built Environment > Recreation buildings > Sports facilities > Rifle ranges
+├── Rifle ranges (parent category)
+└── Rifle range (singular generic for physical shooting facilities)
+```
+
+**Rationale:** Rifle ranges are physical built infrastructure (shooting facilities), distinct from the organisations that use them.
+
+**Getty AAT alignment:**
+- AAT: `rifle ranges` (shooting ranges specifically for rifle practice)
+- Belongs in Built Environment as physical structure
+
+### Threefold Distinction
+
+This reorganisation establishes clear semantic distinction:
+
+1. **Volunteer rifle reserves** (Agents > Military organizations)
+   - Organisational entities: volunteer military units
+   - Colonial defence forces with rank structure
+   - Example: Katoomba Rifle Reserves, Mountain Rifle Reserves
+
+2. **Rifle clubs** (Agents > Sports clubs)
+   - Organisational entities: civilian sports/recreation associations  
+   - Formed for competitive and recreational shooting
+   - Example: Katoomba Civilian Rifle Club, Western Rifle Association
+
+3. **Rifle ranges** (Built Environment > Sports facilities)
+   - Physical infrastructure: shooting facilities
+   - Buildings/structures where rifle practice occurs
+   - Example: Generic `Rifle range` (no specific named ranges in collection yet)
+
+### Implementation Details
+
+**CSV edits:**
+- Deleted lines 346-349 (Katoomba Rifle Reserve/Reserves from Places)
+- Deleted line 696 (Rifle reserves parent under Reserves)
+- Deleted line 999 (Rifle reserve singular generic under Rifle reserves)
+- Added lines 419-420 (Volunteer rifle reserves parent and singular generic under Military organizations)
+- Modified line 696 (Katoomba Rifle Reserves parent: `Rifle clubs` → `Volunteer rifle reserves`)
+- Modified line 697 (Mountain Rifle Reserves parent: `Rifle clubs` → `Volunteer rifle reserves`)
+- Added line 694 (Katoomba Civilian Rifle Club under Rifle clubs)
+
+**Analysis script created:**
+- `scripts/32_analyse_rifle_contexts.py` - Primary source context analysis for rifle-related tags
+- Generated report: `reports/rifle_contexts_analysis.md`
+
+**Files modified:**
+- `data/tag_map_consolidated.csv` - 6 deletions, 3 additions, 2 modifications
+- `visualizations/hierarchy_trees/` - All 30 tree files regenerated
+- `planning/consolidation-decisions.md` - This documentation
+
+### Statistics
+
+- Tags removed from Places facet: 6
+- Tags created in Military organizations: 2
+- Tags moved from Sports clubs to Military organizations: 2
+- Tags created in Sports clubs: 1
+- Items correctly reclassified: 5 (Katoomba Rifle Reserves)
+- Primary sources analysed: 8 items with rifle-related tags
+
+### Key Terminology Clarification
+
+**Historical term:** "Rifle Reserves" (capital R)
+- **NOT:** Land parcels (Crown reserves)
+- **IS:** Volunteer military units (reserve forces)
+- **Modern equivalent:** Army Reserve units
+- **Context:** Colonial defence system of 19th century NSW
+
+**Modern confusion:** The word "reserve" has dual meaning:
+1. Land tenure: Crown land set aside for public purpose
+2. Military: Part-time volunteer defence forces
+
+**Evidence from sources:** All 8 analysed items use "Rifle Reserves" in military sense (organisations with ranks, training, volunteers), never in land tenure sense.
+
+**Status:** Implemented 2025-11-02
+
+---
+
+### Post-Implementation Refinement
+
+**Removed unnecessary singular generic:**
+- Deleted `Volunteer rifle reserve` (singular generic) as volunteer rifle reserves are always named military units in historical sources
+- Follows leaf-node tagging pattern: only include singular generics when sources realistically refer to category without naming specific entity
+- All rifle reserves in collection are properly named (Katoomba Rifle Reserves, Mountain Rifle Reserves)
+
+**Final structure:**
+```
+Agents > Organizations > Military organizations > Volunteer rifle reserves
+├── Katoomba Rifle Reserves
+└── Mountain Rifle Reserves
+```
+

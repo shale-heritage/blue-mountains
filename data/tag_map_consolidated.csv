@@ -343,10 +343,6 @@ Nepean Football Club,Nepean Football Club,hierarchy,parent=Football clubs
 Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Hotels
 Katoomba Progress Association,Katoomba Progress Association,hierarchy,parent=Progress committees
 Katoomba Public School,Katoomba Public School,hierarchy,parent=Schools
-Katoomba Rifle Reserve,Katoomba Rifle Reserve,hierarchy,parent=Rifle reserves
-Katoomba Rifle Reserve,Katoomba Rifle Reserves,synonym,Plural variant - standardised to singular
-Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Reserves
-Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Rifle reserves
 Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Schools of Arts
 South Katoomba,Katoomba South,merge,Naming variant - contextual evidence shows South Katoomba used in newspaper sources
 Katoomba Superior Public School,Katoomba Superior Public School,hierarchy,parent=Schools
@@ -420,6 +416,7 @@ Military events,Military events,hierarchy,parent=Military & War - THEMATIC
 Military organizations,Military organizations,hierarchy,parent=Military & War - THEMATIC
 Military organizations,Military organizations,hierarchy,parent=Organizations
 N.S.W. Mounted Rifles,N.S.W. Mounted Rifles,hierarchy,parent=Military organizations
+Volunteer rifle reserves,Volunteer rifle reserves,hierarchy,parent=Military organizations
 Military personnel,Military personnel,hierarchy,parent=Military & War - THEMATIC
 Military personnel,Military personnel,hierarchy,parent=Occupations
 Mine closure,Mine closure,hierarchy,parent=Economic events
@@ -693,11 +690,11 @@ Reverend R M Laverty,Reverend R M Laverty,hierarchy,parent=Clergy
 Richard Allen,Richard Allen,hierarchy,parent=Hotelliers
 Rifle club,Rifle club,hierarchy,parent=Rifle clubs
 Rifle clubs,Rifle clubs,hierarchy,parent=Sports clubs
+Katoomba Civilian Rifle Club,Katoomba Civilian Rifle Club,hierarchy,parent=Rifle clubs
 Katoomba Shooting Fishing and Excursion Club,Katoomba Shooting Fishing and Excursion Club,hierarchy,parent=Sports clubs
 Western Rifle Association,Western Rifle Association,hierarchy,parent=Rifle clubs
-Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Rifle clubs
-Mountain Rifle Reserves,Mountain Rifle Reserves,hierarchy,parent=Rifle clubs
-Rifle reserves,Rifle reserves,hierarchy,parent=Reserves
+Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=Volunteer rifle reserves
+Mountain Rifle Reserves,Mountain Rifle Reserves,hierarchy,parent=Volunteer rifle reserves
 Roads,Roads,hierarchy,parent=Transport & Infrastructure - THEMATIC
 Roads,Roads,hierarchy,parent=Transport infrastructure
 Roman Catholic Church,Roman Catholic Church,hierarchy,parent=Churches
@@ -1001,7 +998,6 @@ Religious social movement,Religious social movement,hierarchy,parent=Religious s
 Reserve,Reserve,hierarchy,parent=Reserves (singular generic term)
 Retailer or Store,Retailers & store,synonym,Variant form consolidated to Retailer or Store
 Retailer or Store,Retailers and store,synonym,Variant form consolidated to Retailer or Store
-Rifle reserve,Rifle reserve,hierarchy,parent=Rifle reserves (singular generic term)
 Road,Road,hierarchy,parent=Roads (singular generic term)
 School of Arts,School of Art,synonym,Variant spelling - standardised to School of Arts
 Schools of Arts,Schools of Art,synonym,Variant spelling - standardised to Schools of Arts

@@ -37,13 +37,8 @@ Places
 │       ├── Minnehaha
 │       └── Waterfall
 ├── Reserves
-│   ├── Katoomba Rifle Reserves
 │   ├── Leura Reserve
 │   ├── Reserve
-│   ├── Rifle reserves
-│   │   ├── Katoomba Rifle Reserve
-│   │   ├── Katoomba Rifle Reserves
-│   │   └── Rifle reserve
 │   ├── South Katoomba Reserve
 │   ├── Wentworth Falls Reserve
 │   └── Wentworth Falls Reserves
@@ -65,6 +60,6 @@ Places
 
 
 STATISTICS:
-  Total nodes in facet: 61
+  Total nodes in facet: 56
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
