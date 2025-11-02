@@ -1052,7 +1052,6 @@ Animal breeding,Animal breeding,hierarchy,parent=Animal husbandry
 Horse breeding,Horse breeding,hierarchy,parent=Animal breeding
 Pony breeding,Pony breeding,merge,Alternate term for Horse breeding (ponies are small horses)
 Hunting,Hunting,hierarchy,parent=Economic activities
-Recreational hunting,Recreational hunting,hierarchy,parent=Hunting (recreational activity)
 Wild horse culling,Wild horse culling,hierarchy,parent=Animal control
 Domestic animals,Domestic animals,hierarchy,parent=Animals
 Wild animals,Wild animals,hierarchy,parent=Animals

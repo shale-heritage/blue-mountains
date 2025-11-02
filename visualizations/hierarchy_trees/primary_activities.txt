@@ -21,7 +21,6 @@ Activities
 │   │   └── Insurance provision
 │   │       └── Unemployment insurance
 │   ├── Hunting
-│   │   └── Recreational hunting
 │   ├── Liquor trade
 │   │   ├── Liquor sales
 │   │   └── Wholesale liquor business
@@ -68,6 +67,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 64
+  Total nodes in facet: 63
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
