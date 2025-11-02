@@ -22,7 +22,6 @@ Built Environment
 │   │   ├── Family Hotels
 │   │   │   ├── Delaney's Family Hotel
 │   │   │   └── Katoomba Family Hotel
-│   │   ├── Grand Hotel
 │   │   ├── Grand Hotel (Sydney)
 │   │   ├── Great Western Hotel
 │   │   ├── Hoffman's House
@@ -132,6 +131,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 128
+  Total nodes in facet: 127
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

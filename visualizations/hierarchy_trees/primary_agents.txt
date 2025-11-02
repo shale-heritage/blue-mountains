@@ -41,7 +41,6 @@ Agents
 │   │   │       ├── Family Hotels
 │   │   │       │   ├── Delaney's Family Hotel
 │   │   │       │   └── Katoomba Family Hotel
-│   │   │       ├── Grand Hotel
 │   │   │       ├── Grand Hotel (Sydney)
 │   │   │       ├── Great Western Hotel
 │   │   │       ├── Hoffman's House
@@ -301,6 +300,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 297
+  Total nodes in facet: 296
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
