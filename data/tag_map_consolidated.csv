@@ -945,6 +945,7 @@ Legal concepts,Legal concepts,hierarchy,parent=Associated Concepts
 Laws,Laws,hierarchy,parent=Legal concepts
 Licenses,Licenses,hierarchy,parent=Legal concepts
 Billiard License,Billiard License,hierarchy,parent=Licenses
+Billiard licensing,Billiard licensing,hierarchy,parent=Licensing
 Publican's License,Publican's License,hierarchy,parent=Licenses
 Minors,Minors,merge,MANUAL REVIEW NEEDED: Merge to either Child or Adolescent based on context. Thesaurus entry: Minors = Child + Adolescent
 Mount Kembla Disaster,Mount Kembla Colliery Disaster,merge,Synonym - standardise to Mount Kembla Disaster

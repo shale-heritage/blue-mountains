@@ -61,12 +61,13 @@ Activities
     │       └── Wild horse culling
     └── Regulatory processes
         └── Licensing
+            ├── Billiard licensing
             ├── Hotel licensing
             ├── Liquor licensing
             └── Publican's licensing
 
 
 STATISTICS:
-  Total nodes in facet: 63
+  Total nodes in facet: 64
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
