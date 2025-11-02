@@ -1,0 +1,145 @@
+✓ Configuration loaded successfully
+  Zotero Group ID: 2258643
+  Library Type: group
+  Read-only API key: Available
+  Read-write API key: Available
+================================================================================
+POSSESSIVE HOTEL NAME CONTEXT ANALYSIS
+================================================================================
+
+Determining whether possessive names are official trading names or
+informal references to proprietors' hotels...
+
+Connecting to Zotero group library 2258643...
+
+================================================================================
+HOTEL: Allen's Hotel
+================================================================================
+
+Found 2 item(s) with tag 'Allen's Hotel'
+
+[1] Katoomba Court (1893-03-17)
+    Date: 17 March 1893
+    Context: ...ave them to me; the bottles were empty; two smelt of gin and one of rum; asked Saunders where he got the bottles; he said, 'I got them at the door of Allen's Hotel last night and Archie Prentice gave them to me; then arrested him on a charge of stealing them; he replied, "I did not take them;" on the road to the...
+      → Official capitalisation used
+
+    Context: ...two bottles of gin, two bottles of whisky, and a bottle of brandy on the 8th instant; he made no reply to the charge; after [?] him he said he was at Allen's hotel on the 8th instant in the company of Brown, Saunders, and Daniel Gallagher; told him Saunders said he had given him (Saunders) a bottle of grog; he s...
+      → Lowercase/informal usage
+
+[2] Katoomba Court (1893-06-16)
+    Date: 16 June 1893
+    Context: ...nt. Mr. Gannon for defendant.
+Sergeant Thorndike, Licensing Inspector, proved formalities.
+John Johnson miner, deposed: Live three or four miles from Allen's hotel; remembering Sunday, 28th May; went from Katoomba to Ruined Castle that day; went into Allen's Hotel on my way home; it was about 11 o'clock in the m...
+      → Official capitalisation used
+
+    Context: ...on miner, deposed: Live three or four miles from Allen's hotel; remembering Sunday, 28th May; went from Katoomba to Ruined Castle that day; went into Allen's Hotel on my way home; it was about 11 o'clock in the morning; got some schnapps for my wife as she was ill; I did not pay for it; was served in the back pa...
+      → Official capitalisation used
+
+
+  PATTERN ANALYSIS:
+    Official name usage: 3 contexts
+    Informal references: 1 contexts
+    Proprietor mentions: 0 contexts
+    Licensee/role mentions: 0 contexts
+
+  RECOMMENDATION:
+    → Likely OFFICIAL trading name
+    → Keep as named hotel entity: Allen's Hotel
+
+================================================================================
+HOTEL: Brown's Hotel
+================================================================================
+
+Found 2 item(s) with tag 'Brown's Hotel'
+
+[1] Katoomba (1885-12-19)
+    Date: 19 December 1885
+    Context: ...interest is widespread and general. After the returning-officer had declared the result of the poll an adjournment was made to the large room at Host Brown's hotel.
+Mr. D. Brown, who upon rising was received with cheers, thanked the votes for placing him at the top of the list, which he said showed although comp...
+      → Lowercase/informal usage
+
+[2] Katoomba Athletic Sports (1885-12-12)
+    Date: 12 December 1885
+    Context: ...tchard and Annesley, 3 (divided.") Ten started.
+Standing Hop, Step, and Jump: F. Johnston, 28 feet, 1. Six entered.
+The settling took place at Mr. D. Brown's Hotel at 8 p.m., when the various amounts won were paid over. A protest was laid against Mr. D. Nicholson (winner of Katoomba Handicap) by Mr. F. Webster, ...
+      → Official capitalisation used
+
+
+  PATTERN ANALYSIS:
+    Official name usage: 1 contexts
+    Informal references: 1 contexts
+    Proprietor mentions: 0 contexts
+    Licensee/role mentions: 0 contexts
+
+  RECOMMENDATION:
+    → Likely OFFICIAL trading name
+    → Keep as named hotel entity: Brown's Hotel
+
+================================================================================
+HOTEL: Mrs Long's Hotel
+================================================================================
+
+Found 5 item(s) with tag 'Mrs Long's Hotel'
+
+[1] Licensing (1892-10-01)
+    Date: 1 October 1892
+[2] Megalong Notes (1902-03-21)
+    Date: 21 March 1902
+[3] St Joseph's New Church, Megalong (1905-03-17)
+    Date: 17 March 1905
+[4] Katoomba (1905-08-04)
+    Date: 4 August 1905
+[5] Granted (1892-03-26)
+    Date: 26 March 1892
+
+  PATTERN ANALYSIS:
+    Official name usage: 0 contexts
+    Informal references: 0 contexts
+    Proprietor mentions: 0 contexts
+    Licensee/role mentions: 0 contexts
+
+  RECOMMENDATION:
+    → Likely OFFICIAL trading name
+    → Keep as named hotel entity: Mrs Long's Hotel
+
+================================================================================
+HOTEL: Hoffman's House
+================================================================================
+
+Found 2 item(s) with tag 'Hoffman's House'
+
+[1] Katoomba Court (1893-03-17)
+    Date: 17 March 1893
+[2] Katoomba Court (1893-06-16)
+    Date: 16 June 1893
+
+  PATTERN ANALYSIS:
+    Official name usage: 0 contexts
+    Informal references: 0 contexts
+    Proprietor mentions: 0 contexts
+    Licensee/role mentions: 0 contexts
+
+  RECOMMENDATION:
+    → Likely OFFICIAL trading name
+    → Keep as named hotel entity: Hoffman's House
+
+================================================================================
+OVERALL GUIDANCE
+================================================================================
+
+Official trading names:
+  - Consistently capitalised in sources
+  - Used as proper nouns
+  - May appear in advertisements, legal notices
+
+Informal references:
+  - Sources mention proprietor by name and role
+  - References like 'at Brown's hotel' (lowercase)
+  - Text discusses landlord/licensee/proprietress by name
+
+If informal, retag as:
+  - Hotel (generic) for the establishment
+  - Person's name under Hotelliers for the proprietor
+

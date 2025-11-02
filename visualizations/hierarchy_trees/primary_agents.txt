@@ -31,9 +31,7 @@ Agents
 │   │   │   │   ├── Boarding house
 │   │   │   │   └── Orama Boarding House
 │   │   │   └── Hotels
-│   │   │       ├── Allen's Hotel
 │   │   │       ├── Belgravia Hotel
-│   │   │       ├── Brown's Hotel
 │   │   │       ├── Carrington Hotel
 │   │   │       ├── Centennial Hotel
 │   │   │       ├── Comet Hotel
@@ -53,7 +51,6 @@ Agents
 │   │   │       ├── Megalong Hotel
 │   │   │       ├── Montrose House
 │   │   │       ├── Mount Victoria Hotel
-│   │   │       ├── Mrs Long's Hotel
 │   │   │       ├── Oxford Hotel (Sydney)
 │   │   │       ├── Railway Hotel
 │   │   │       └── Wentworth Falls Hotel
@@ -300,6 +297,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 296
+  Total nodes in facet: 293
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

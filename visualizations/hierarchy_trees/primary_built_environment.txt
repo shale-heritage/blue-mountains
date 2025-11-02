@@ -12,9 +12,7 @@ Built Environment
 │   │   ├── Dwelling
 │   │   └── Miners' dwellings
 │   ├── Hotels
-│   │   ├── Allen's Hotel
 │   │   ├── Belgravia Hotel
-│   │   ├── Brown's Hotel
 │   │   ├── Carrington Hotel
 │   │   ├── Centennial Hotel
 │   │   ├── Comet Hotel
@@ -34,7 +32,6 @@ Built Environment
 │   │   ├── Megalong Hotel
 │   │   ├── Montrose House
 │   │   ├── Mount Victoria Hotel
-│   │   ├── Mrs Long's Hotel
 │   │   ├── Oxford Hotel (Sydney)
 │   │   ├── Railway Hotel
 │   │   └── Wentworth Falls Hotel
@@ -131,6 +128,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 127
+  Total nodes in facet: 124
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

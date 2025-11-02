@@ -28,7 +28,7 @@ Alcoholic beverages,Alcoholic beverages,hierarchy,parent=Alcohol consumption & b
 Alcoholic beverages,Alcoholic beverages,hierarchy,parent=Consumable materials
 Aldermen,Aldermen,hierarchy,parent=Public officials
 Allen,Allen,hierarchy,parent=Hotelliers
-Allen's Hotel,Allen's Hotel,hierarchy,parent=Hotels
+Hotel,Allen's Hotel,merge,Possessive form referring to hotel run by Allen (hotellier) - tag as Hotel + Allen
 Animals,Animals,hierarchy,parent=Agents (new top-level facet)
 Animals,Animals,hierarchy,parent=Environment & Weather - THEMATIC
 Arts & Culture,Arts & Culture,hierarchy,parent=(thematic grouping)
@@ -69,7 +69,7 @@ Boarding houses,Boarding houses,hierarchy,parent=Domestic accommodation - THEMAT
 Boarding houses,Boarding houses,hierarchy,parent=Hospitality businesses
 Brandy,Brandy,hierarchy,parent=Spirits
 Brown,Brown,hierarchy,parent=Hotelliers
-Brown's Hotel,Brown's Hotel,hierarchy,parent=Hotels
+Hotel,Brown's Hotel,merge,Possessive form referring to hotel run by Brown (hotellier) - tag as Hotel + Brown
 Businesses,Businesses,hierarchy,parent=Economy & Labour - THEMATIC
 Cardinal Moran,Cardinal Moran,hierarchy,parent=Clergy
 Cardinal Moran,Cardinal Moran,hierarchy,parent=Religion - THEMATIC (religious figure)
@@ -559,7 +559,7 @@ Mrs Eleanor Meredith,Mrs Eleanor Meredith,keep,Person names - likely different i
 "Mrs Elizabeth Eaton (previously Flynn, nee Watkins)","Mrs Elizabeth Eaton (previously Flynn, nee Watkins)",keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Joanna Meredith,Mrs Joanna Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Long,Mrs Long,hierarchy,parent=Hotelliers
-Mrs Long's Hotel,Mrs Long's Hotel,hierarchy,parent=Hotels
+Hotel,Mrs Long's Hotel,merge,Possessive form referring to hotel run by Mrs Long (hotellier) - tag as Hotel + Mrs Long
 Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs W Watson,Mrs W Watson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Wilson,Mrs Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)

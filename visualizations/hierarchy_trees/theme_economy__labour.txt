@@ -12,9 +12,7 @@ Economy & Labour
 │       │   │   ├── Boarding house
 │       │   │   └── Orama Boarding House
 │       │   └── Hotels
-│       │       ├── Allen's Hotel
 │       │       ├── Belgravia Hotel
-│       │       ├── Brown's Hotel
 │       │       ├── Carrington Hotel
 │       │       ├── Centennial Hotel
 │       │       ├── Comet Hotel
@@ -34,7 +32,6 @@ Economy & Labour
 │       │       ├── Megalong Hotel
 │       │       ├── Montrose House
 │       │       ├── Mount Victoria Hotel
-│       │       ├── Mrs Long's Hotel
 │       │       ├── Oxford Hotel (Sydney)
 │       │       ├── Railway Hotel
 │       │       └── Wentworth Falls Hotel
@@ -79,6 +76,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 71
+  Total nodes in theme: 68
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
