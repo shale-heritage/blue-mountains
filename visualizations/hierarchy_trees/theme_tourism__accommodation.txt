@@ -9,14 +9,12 @@ Tourism & Accommodation
 └── Tourist attractions
     ├── Jenolan Caves
     │   ├── Jenolan Cave
-    │   ├── Jenolan Caves Road
-    │   └── Jenolan Caves road
+    │   └── Jenolan Caves Road
     ├── Natural features
     │   ├── Caves & geological features
     │   │   └── Jenolan Caves
     │   │       ├── Jenolan Cave
-    │   │       ├── Jenolan Caves Road
-    │   │       └── Jenolan Caves road
+    │   │       └── Jenolan Caves Road
     │   ├── Gullies
     │   │   └── Nellie's Glen - gully
     │   ├── Mountain features
@@ -46,6 +44,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 38
+  Total nodes in theme: 36
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

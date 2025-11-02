@@ -104,10 +104,8 @@ Built Environment
 │   │   │       └── Tourist trains
 │   │   └── Roads
 │   │       ├── Jenolan Caves Road
-│   │       ├── Jenolan Caves road
 │   │       ├── Nellie's Glen Road
 │   │       ├── Nellie's Glen Track
-│   │       ├── Nellie's Glen track
 │   │       └── Road
 │   └── Utilities
 │       ├── Gas
@@ -134,6 +132,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 130
+  Total nodes in facet: 128
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

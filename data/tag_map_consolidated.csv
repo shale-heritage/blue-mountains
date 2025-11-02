@@ -320,8 +320,7 @@ Jenolan Caves,Jenolan Caves,hierarchy,parent=Caves & geological features
 Jenolan Caves,Jenolan Caves,hierarchy,parent=Tourist attractions - THEMATIC
 Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=Jenolan Caves
 Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=Roads
-Jenolan Caves road,Jenolan Caves road,hierarchy,parent=Jenolan Caves
-Jenolan Caves road,Jenolan Caves road,hierarchy,parent=Roads
+Jenolan Caves Road,Jenolan Caves road,synonym,Lowercase variant - use capitalised form
 Justice & Crime,Justice & Crime,hierarchy,parent=(thematic grouping)
 Kanimbla Valley,Kanimbla Valley,hierarchy,parent=Valleys
 Katoomba,Katoomba,hierarchy,parent=Towns - THEMATIC
@@ -587,8 +586,7 @@ Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Roads
 Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen - mining district
 Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Nellie's Glen - mining district
 Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Roads
-Nellie's Glen track,Nellie's Glen track,hierarchy,parent=Nellie's Glen - mining district
-Nellie's Glen track,Nellie's Glen track,hierarchy,parent=Roads
+Nellie's Glen Track,Nellie's Glen track,synonym,Lowercase variant - use capitalised form
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=Mining companies
 Nimmo's,Nimmo's,hierarchy,parent=Retailers and Stores
 Occupations,Occupations,hierarchy,parent=People
