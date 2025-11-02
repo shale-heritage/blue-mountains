@@ -3800,3 +3800,122 @@ If future cataloguing reveals need for finer distinctions (e.g., Test cricket vs
 **Status:** Implemented 2025-11-02
 
 ---
+
+## Mining Places Taxonomy Reorganisation
+
+**Date:** 2025-11-02
+**Context:** Comprehensive reorganisation of mining districts and settlements to support both Blue Mountains mining history and comparative regional contexts (miner itinerancy).
+
+### Rationale
+
+Mining-related places had accumulated inconsistencies:
+1. **Duplicated entries:** Mining districts and mining settlements contained the same entities (Nellie's Glen, Ruined Castle)
+2. **Missing structure:** Hartley Vale was under Towns despite being primarily a mining area
+3. **Unclear relationships:** Settlements needed to be children of their respective districts
+4. **Regional scope unclear:** South Clifton (Illawarra) mining needed distinction from Blue Mountains
+5. **Natural feature conflicts:** Nellie's Glen (gully) and Ruined Castle (rock formation) needed differentiation from mining contexts
+
+### Implementation
+
+**Removed Mining settlements category:**
+- Deprecated as a separate top-level category under Places
+- All mining-related inhabited places now structured under their respective districts or towns
+
+**Created qualified place names with hyphen format:**
+Using hyphens instead of parentheses to avoid conflicts with CSV parsing:
+- Hartley Vale - mining district
+- Hartley Vale - settlement
+- Nellie's Glen - mining district
+- Nellie's Glen - settlement
+- Nellie's Glen - gully
+- Ruined Castle - mining district
+- Ruined Castle - settlement
+- Ruined Castle - rock formation
+- South Clifton - Illawarra
+- Middle camp - settlement
+
+**Reorganised structure:**
+
+```
+Places
+├── Mining districts
+│   ├── Hartley Vale - mining district
+│   │   ├── Hartley Vale - settlement
+│   │   └── Hartley Vale mines
+│   ├── Nellie's Glen - mining district
+│   │   ├── Nellie's Glen - settlement
+│   │   ├── Nellie's Glen Road
+│   │   ├── Nellie's Glen Shale Mine
+│   │   ├── Nellie's Glen Track
+│   │   └── Nellie's Glen track
+│   ├── Ruined Castle - mining district
+│   │   ├── Ruined Castle - settlement
+│   │   └── Ruined Castle Shale Mine
+│   └── South Clifton - Illawarra
+│       └── South Clifton Tunnel Mine
+├── Natural features
+│   ├── Gullies
+│   │   └── Nellie's Glen - gully
+│   └── Mountain features
+│       └── Ruined Castle - rock formation
+└── Towns
+    └── Megalong
+        └── Middle camp - settlement
+```
+
+**Created Regional mining contexts thematic grouping:**
+To support comparative research on miner itinerancy between Blue Mountains and other NSW mining regions:
+
+```
+Mining & Industry - THEMATIC
+└── Regional mining contexts
+    ├── South Clifton - Illawarra
+    ├── South Clifton Mine Company
+    └── South Clifton Tunnel Mine
+```
+
+### Key Decisions
+
+**1. Hartley Vale moved from Towns to Mining districts:**
+- Primary significance is mining, not township
+- Has child "Hartley Vale mines" confirming mining district status
+- Web research confirms "Mining for coal and shale began in Hartley Vale in 1865"
+
+**2. Middle camp placed under Megalong (town):**
+- Historical evidence: "Mrs. Brydon's, Middle Camp" boarding house in Megalong Valley
+- Functions as settlement within larger Megalong area
+- Not significant enough to warrant separate mining district designation
+
+**3. South Clifton retained despite being outside Blue Mountains:**
+- Location: Illawarra/Wollongong coast, NOT Blue Mountains
+- Rationale: Essential for understanding miner movements between regions
+- Tag application: 5 items currently tagged (3× South Clifton Mine Co., 2× South Clifton Tunnel Mine)
+- Solution: Qualify with "- Illawarra" and include in "Regional mining contexts" theme
+
+**4. Natural feature polyhierarchy maintained:**
+- Nellie's Glen appears as both gully (natural feature) and mining district (human geography)
+- Ruined Castle appears as both rock formation (natural feature) and mining district (human geography)
+- Qualifiers distinguish contexts: "- gully" vs "- mining district", "- rock formation" vs "- mining district"
+
+**5. Hyphen format adopted for qualifiers:**
+- Issue: Visualisation script regex strips parenthetical qualifiers from parent names
+- Example: `parent=Hartley Vale (mining district)` was parsed as just "Hartley Vale"
+- Solution: Use hyphens: `Hartley Vale - mining district` preserves full qualifier
+- Alternative rejected: Modifying visualisation script would affect all existing entries
+
+### Files Modified
+
+- `data/tag_map_consolidated.csv`: Removed Mining settlements category, restructured all mining districts, created Regional mining contexts theme, updated all tag names and parent references to use hyphen format
+- `visualizations/hierarchy_trees/`: All 30 tree files regenerated
+- `planning/consolidation-decisions.md`: Documented reorganisation rationale
+
+### Statistics
+
+- Tags restructured: 15 (mining districts, settlements, and their children)
+- New qualified tags created: 10
+- Duplicate entries removed: 6
+- New thematic grouping: 1 (Regional mining contexts)
+
+**Status:** Implemented 2025-11-02
+
+---

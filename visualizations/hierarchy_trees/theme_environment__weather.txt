@@ -17,16 +17,11 @@ Environment & Weather
 │   │       ├── Jenolan Caves Road
 │   │       └── Jenolan Caves road
 │   ├── Gullies
-│   │   └── Nellie's Glen
-│   │       ├── Nellie's Glen Road
-│   │       ├── Nellie's Glen Shale Mine
-│   │       ├── Nellie's Glen Track
-│   │       └── Nellie's Glen track
+│   │   └── Nellie's Glen - gully
 │   ├── Mountain features
 │   │   ├── Mountain feature
 │   │   ├── Narrow Neck
-│   │   └── Ruined Castle
-│   │       └── Ruined Castle Shale Mine
+│   │   └── Ruined Castle - rock formation
 │   ├── Valleys
 │   │   ├── Jamieson Valley
 │   │   ├── Kanimbla Valley
@@ -55,6 +50,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 47
+  Total nodes in theme: 42
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

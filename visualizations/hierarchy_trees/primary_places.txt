@@ -3,26 +3,21 @@ PRIMARY FACET: Places
 
 Places
 ├── Mining districts
+│   ├── Hartley Vale - mining district
+│   │   ├── Hartley Vale - settlement
+│   │   └── Hartley Vale mines
 │   ├── Mining district
-│   ├── Nellie's Glen
+│   ├── Nellie's Glen - mining district
+│   │   ├── Nellie's Glen - settlement
 │   │   ├── Nellie's Glen Road
 │   │   ├── Nellie's Glen Shale Mine
 │   │   ├── Nellie's Glen Track
 │   │   └── Nellie's Glen track
-│   ├── Ruined Castle
+│   ├── Ruined Castle - mining district
+│   │   ├── Ruined Castle - settlement
 │   │   └── Ruined Castle Shale Mine
-│   └── South Clifton
+│   └── South Clifton - Illawarra
 │       └── South Clifton Tunnel Mine
-├── Mining settlements
-│   ├── Middle camp
-│   ├── Mining settlement
-│   ├── Nellie's Glen
-│   │   ├── Nellie's Glen Road
-│   │   ├── Nellie's Glen Shale Mine
-│   │   ├── Nellie's Glen Track
-│   │   └── Nellie's Glen track
-│   └── Ruined Castle
-│       └── Ruined Castle Shale Mine
 ├── Natural features
 │   ├── Caves & geological features
 │   │   └── Jenolan Caves
@@ -30,16 +25,11 @@ Places
 │   │       ├── Jenolan Caves Road
 │   │       └── Jenolan Caves road
 │   ├── Gullies
-│   │   └── Nellie's Glen
-│   │       ├── Nellie's Glen Road
-│   │       ├── Nellie's Glen Shale Mine
-│   │       ├── Nellie's Glen Track
-│   │       └── Nellie's Glen track
+│   │   └── Nellie's Glen - gully
 │   ├── Mountain features
 │   │   ├── Mountain feature
 │   │   ├── Narrow Neck
-│   │   └── Ruined Castle
-│   │       └── Ruined Castle Shale Mine
+│   │   └── Ruined Castle - rock formation
 │   ├── Valleys
 │   │   ├── Jamieson Valley
 │   │   ├── Kanimbla Valley
@@ -65,8 +55,6 @@ Places
 └── Towns
     ├── Blackheath
     ├── Clarence
-    ├── Hartley Vale
-    │   └── Hartley Vale mines
     ├── Katoomba
     │   └── Katoomba South
     ├── Leura
@@ -74,12 +62,13 @@ Places
     │   └── Lithgow Council
     ├── Medlow
     ├── Megalong
+    │   └── Middle camp - settlement
     ├── Mount Victoria
     ├── Sydney
     └── Town
 
 
 STATISTICS:
-  Total nodes in facet: 76
+  Total nodes in facet: 65
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

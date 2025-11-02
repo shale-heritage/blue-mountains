@@ -30,22 +30,17 @@ Mining & Industry
 │   └── Mining accidents
 ├── Mining infrastructure
 │   └── Tramway
-├── Mining settlements
-│   ├── Middle camp
-│   ├── Mining settlement
-│   ├── Nellie's Glen
-│   │   ├── Nellie's Glen Road
-│   │   ├── Nellie's Glen Shale Mine
-│   │   ├── Nellie's Glen Track
-│   │   └── Nellie's Glen track
-│   └── Ruined Castle
-│       └── Ruined Castle Shale Mine
-└── Mining workforce
-    ├── Miners
-    │   ├── Miner
-    │   └── Recreation for miners
-    ├── Miners' dwellings
-    └── Miners' families
+├── Mining workforce
+│   ├── Miners
+│   │   ├── Miner
+│   │   └── Recreation for miners
+│   ├── Miners' dwellings
+│   └── Miners' families
+└── Regional mining contexts
+    ├── South Clifton - Illawarra
+    │   └── South Clifton Tunnel Mine
+    ├── South Clifton Mine Company
+    └── South Clifton Tunnel Mine
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -53,6 +48,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 45
+  Total nodes in theme: 40
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
