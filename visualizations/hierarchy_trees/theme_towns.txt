@@ -4,15 +4,17 @@ THEMATIC GROUPING: Towns
 Towns
 ├── Blackheath
 ├── Clarence
-├── Katoomba
+├── Greater Katoomba
+│   ├── Katoomba
 │   └── Katoomba South
+├── Greater Megalong
+│   ├── Megalong
+│   └── Middle camp - settlement
+├── Katoomba
 ├── Leura
 ├── Lithgow
-│   └── Lithgow Council
 ├── Medlow
 ├── Megalong
-│   ├── Megalong Valley School
-│   └── Middle camp - settlement
 ├── Mount Victoria
 ├── Sydney
 ├── Town
@@ -24,6 +26,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 16
+  Total nodes in theme: 18
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

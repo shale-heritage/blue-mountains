@@ -45,15 +45,15 @@ Places
 └── Towns
     ├── Blackheath
     ├── Clarence
-    ├── Katoomba
+    ├── Greater Katoomba
+    │   ├── Katoomba
     │   └── Katoomba South
+    ├── Greater Megalong
+    │   ├── Megalong
+    │   └── Middle camp - settlement
     ├── Leura
     ├── Lithgow
-    │   └── Lithgow Council
     ├── Medlow
-    ├── Megalong
-    │   ├── Megalong Valley School
-    │   └── Middle camp - settlement
     ├── Mount Victoria
     ├── Sydney
     └── Town

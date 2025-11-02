@@ -4174,3 +4174,178 @@ Agents > Organizations > Military organizations > Volunteer rifle reserves
 └── Mountain Rifle Reserves
 ```
 
+
+## Towns Structure Leaf-Node Compliance
+
+**Date:** 2025-11-02
+
+### Problem Statement
+
+The Towns hierarchy violated the leaf-node tagging pattern by having towns with children, making the parent towns untaggable:
+
+**Problematic structure:**
+```
+Towns
+├── Katoomba (has children → CANNOT be tagged)
+│   └── Katoomba South (leaf → can be tagged)
+├── Lithgow (has children → CANNOT be tagged)
+│   └── Lithgow Council (misplaced - should be in Agents)
+├── Megalong (has children → CANNOT be tagged)
+│   ├── Megalong Valley School (misplaced - should be in Built Environment)
+│   └── Middle camp - settlement (leaf → can be tagged)
+```
+
+**Impact:**
+- **Katoomba:** 123 items tagged - but can't be tagged under current structure!
+- **Megalong:** 41 items tagged - but can't be tagged under current structure!
+- Misplaced entities: Lithgow Council (Agent), Megalong Valley School (Built Environment)
+
+### Leaf-Node Tagging Pattern Requirement
+
+**Pattern:** Only leaf nodes (tags without children) should be used for tagging items. Parent nodes organize the hierarchy but are never directly applied.
+
+**Why violated:** Towns like Katoomba and Megalong are substantive entities that need to be taggable, but having children makes them organizational nodes rather than leaves.
+
+**Solution options considered:**
+
+1. **Flatten hierarchy** - Remove parent-child relationships entirely
+   - ❌ Loses geographic relationships (South Katoomba IS part of Katoomba)
+   - ❌ Inconsistent with rest of taxonomy
+
+2. **Create geographic parent nodes** - "Greater X" contains suburbs/districts
+   - ✅ Maintains geographic relationships
+   - ✅ Makes all towns taggable as leaves
+   - ✅ Consistent with established patterns (e.g., mining districts)
+   - ✅ Selected approach
+
+### Restructuring Decisions
+
+#### 1. Create "Greater Katoomba" parent node
+
+**New structure:**
+```
+Towns > Greater Katoomba
+├── Katoomba (now taggable leaf)
+└── Katoomba South (already taggable leaf)
+```
+
+**Rationale:** 
+- Katoomba and South Katoomba are distinct localities within greater Katoomba area
+- Maintains geographic relationship while making both taggable
+- Tag usage: Katoomba (123 items), South Katoomba (10 items)
+
+**CSV changes:**
+- Created: `Greater Katoomba,Greater Katoomba,hierarchy,parent=Towns`
+- Modified: `Katoomba,Katoomba,hierarchy,parent=Greater Katoomba` (was parent=Towns)
+- Modified: `Katoomba South,Katoomba South,hierarchy,parent=Greater Katoomba` (was parent=Katoomba)
+- Thematic entry unchanged: `Katoomba,Katoomba,hierarchy,parent=Towns - THEMATIC` (points to actual town)
+
+#### 2. Create "Greater Megalong" parent node
+
+**New structure:**
+```
+Towns > Greater Megalong
+├── Megalong (now taggable leaf)
+└── Middle camp - settlement (already taggable leaf)
+```
+
+**Rationale:**
+- Megalong (town) and Middle camp (settlement) are distinct localities within Megalong Valley
+- Maintains geographic relationship while making both taggable
+- Tag usage: Megalong (41 items), Middle camp (2 items)
+
+**CSV changes:**
+- Created: `Greater Megalong,Greater Megalong,hierarchy,parent=Towns`
+- Modified: `Megalong,Megalong,hierarchy,parent=Greater Megalong` (was parent=Towns)
+- Modified: `Middle camp - settlement,Middle camp - settlement,hierarchy,parent=Greater Megalong` (was parent=Megalong)
+- Thematic entry unchanged: `Megalong,Megalong,hierarchy,parent=Towns - THEMATIC` (points to actual town)
+
+#### 3. Remove misplaced Lithgow Council from Places
+
+**Problem:** Lithgow Council appeared in both Agents > Councils (correct) and Places > Towns > Lithgow (incorrect)
+
+**Rationale:** 
+- Lithgow Council is an organizational entity (Agent), not a place
+- Should appear only in Agents facet
+- Its presence under Lithgow town created the same leaf-node violation
+
+**CSV changes:**
+- Deleted: `Lithgow Council,Lithgow Council,hierarchy,parent=Lithgow`
+- Retained: `Lithgow Council,Lithgow Council,hierarchy,parent=Councils` (correct primary location)
+
+**Result:** Lithgow town now has no children, is directly taggable, and follows leaf-node pattern
+
+#### 4. Remove misplaced Megalong Valley School from Places
+
+**Problem:** Megalong Valley School appeared in both Built Environment > Schools (correct) and Places > Towns > Megalong (incorrect)
+
+**Rationale:**
+- Schools are built structures (Built Environment), not places
+- Should appear only in Built Environment facet
+- Its presence under Megalong town created the leaf-node violation
+
+**CSV changes:**
+- Deleted: `Megalong Valley School,Megalong Valley School,hierarchy,parent=Megalong`
+- Retained: `Megalong Valley School,Megalong Valley School,hierarchy,parent=Schools` (correct primary location)
+
+### Final Towns Structure
+
+**All towns now follow leaf-node tagging pattern:**
+
+```
+Places > Towns
+├── Blackheath (leaf - taggable)
+├── Clarence (leaf - taggable)
+├── Greater Katoomba (organizational parent - not tagged)
+│   ├── Katoomba (leaf - taggable) ← 123 items
+│   └── Katoomba South (leaf - taggable) ← 10 items
+├── Greater Megalong (organizational parent - not tagged)
+│   ├── Megalong (leaf - taggable) ← 41 items
+│   └── Middle camp - settlement (leaf - taggable) ← 2 items
+├── Leura (leaf - taggable)
+├── Lithgow (leaf - taggable) ← now has no children
+├── Medlow (leaf - taggable)
+├── Mount Victoria (leaf - taggable)
+├── Sydney (leaf - taggable)
+└── Town (generic leaf - taggable)
+```
+
+**Key improvements:**
+- All substantive towns are now taggable leaves
+- Geographic relationships preserved via "Greater X" parent nodes
+- Misplaced organizational/built entities removed
+- Consistent with leaf-node pattern throughout taxonomy
+
+### Implementation Details
+
+**CSV edits:**
+- Added lines 856-857: Greater Katoomba parent and Katoomba as child
+- Modified line 938: Katoomba South parent changed to Greater Katoomba
+- Added lines 859-860: Greater Megalong parent and Megalong as child
+- Modified line 407: Middle camp - settlement parent changed to Greater Megalong
+- Deleted line 386: Lithgow Council under Lithgow town (kept line 385 under Councils)
+- Deleted line 403: Megalong Valley School under Megalong town (kept line 404 under Schools)
+
+**Files modified:**
+- `data/tag_map_consolidated.csv` - 2 deletions, 4 additions, 4 modifications
+- `visualizations/hierarchy_trees/` - All 30 tree files regenerated
+- `planning/consolidation-decisions.md` - This documentation
+
+### Statistics
+
+- Towns restructured: 2 (Katoomba, Megalong)
+- Parent categories created: 2 (Greater Katoomba, Greater Megalong)
+- Misplaced entries removed: 2 (Lithgow Council, Megalong Valley School)
+- Items now correctly taggable: 176 (123 Katoomba + 41 Megalong + 10 South Katoomba + 2 Middle camp)
+
+### Note on "Greater X" Naming Convention
+
+The "Greater X" naming convention:
+- Indicates geographic area encompassing multiple suburbs/localities
+- Distinguishes organizational parent from actual town name
+- Follows Australian naming conventions (e.g., Greater Sydney, Greater Melbourne)
+- Clearly signals to cataloguers that this is organizational node, not taggable place
+
+**Status:** Implemented 2025-11-02
+
+---
