@@ -105,7 +105,9 @@ Agents
 │   │       │   ├── Katoomba Football Club
 │   │       │   ├── Lithgow Rovers
 │   │       │   └── Nepean Football Club
-│   │       ├── Katoomba Shooting Fishing and Excursion Club
+│   │       ├── Outdoor recreation clubs
+│   │       │   ├── Katoomba Shooting Fishing and Excursion Club
+│   │       │   └── Outdoor recreation club
 │   │       ├── Rifle clubs
 │   │       │   ├── Katoomba Civilian Rifle Club
 │   │       │   ├── Rifle club
@@ -297,6 +299,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 293
+  Total nodes in facet: 295
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

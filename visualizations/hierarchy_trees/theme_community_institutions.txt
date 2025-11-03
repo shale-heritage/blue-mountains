@@ -68,7 +68,9 @@ Community institutions
 │       │   ├── Katoomba Football Club
 │       │   ├── Lithgow Rovers
 │       │   └── Nepean Football Club
-│       ├── Katoomba Shooting Fishing and Excursion Club
+│       ├── Outdoor recreation clubs
+│       │   ├── Katoomba Shooting Fishing and Excursion Club
+│       │   └── Outdoor recreation club
 │       ├── Rifle clubs
 │       │   ├── Katoomba Civilian Rifle Club
 │       │   ├── Rifle club
@@ -98,6 +100,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 90
+  Total nodes in theme: 92
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
