@@ -11,9 +11,9 @@ Agents
 │   └── Wild animals
 │       └── Wild horses
 ├── Organizations
-│   ├── Civic organizations
-│   │   ├── Labour organizations
-│   │   │   ├── Labour organization
+│   ├── Civic organisations
+│   │   ├── Labour organisations
+│   │   │   ├── Labour organisation
 │   │   │   └── Unions
 │   │   └── Progress committees
 │   │       ├── Katoomba Progress Association
@@ -70,7 +70,7 @@ Agents
 │   │   └── Transport & logistics businesses
 │   │       ├── Transport & logistics business
 │   │       └── Trucking
-│   ├── Cultural & recreational organizations
+│   ├── Cultural & recreational organisations
 │   │   ├── Cultural societies
 │   │   │   ├── Chess and Draughts Club
 │   │   │   ├── Cultural society
@@ -147,12 +147,12 @@ Agents
 │   │   │   └── Postal Department
 │   │   └── Railway authorities
 │   │       └── Railway commission
-│   ├── Military organizations
+│   ├── Military organisations
 │   │   ├── N.S.W. Mounted Rifles
 │   │   └── Volunteer rifle reserves
 │   │       ├── Katoomba Rifle Reserves
 │   │       └── Mountain Rifle Reserves
-│   └── Religious organizations
+│   └── Religious organisations
 │       ├── Churches
 │       │   ├── Church
 │       │   ├── Congregational Church

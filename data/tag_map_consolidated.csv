@@ -90,11 +90,11 @@ Chinese people,Chinese people,hierarchy,parent=Ethnic groups
 Choir,Choir,hierarchy,parent=Choirs
 Choirs,Choirs,hierarchy,parent=Performance groups
 Churches,Churches,hierarchy,parent=Religious buildings
-Churches,Churches,hierarchy,parent=Religious organizations
+Churches,Churches,hierarchy,parent=Religious organisations
 Civic buildings,Civic buildings,hierarchy,parent=Built Environment
 Civic buildings,Civic buildings,hierarchy,parent=Community institutions - THEMATIC
-Civic organizations,Civic organizations,hierarchy,parent=Community institutions - THEMATIC
-Civic organizations,Civic organizations,hierarchy,parent=Organizations
+Civic organisations,Civic organisations,hierarchy,parent=Community institutions - THEMATIC
+Civic organisations,Civic organisations,hierarchy,parent=Organizations
 Clarence,Clarence,hierarchy,parent=Towns
 Clarke's Hall,Clarke's Hall,hierarchy,parent=Halls
 Clergy,Clergy,hierarchy,parent=Occupations
@@ -151,14 +151,14 @@ Cricket,Cricket,hierarchy,parent=Sport & Recreation - THEMATIC
 Cricket clubs,Cricket clubs,hierarchy,parent=Sports clubs
 Crimes,Crimes,hierarchy,parent=Justice & Crime - THEMATIC
 Criminal events,Criminal events,hierarchy,parent=Events
-Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Community institutions - THEMATIC
-Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Organizations
+Cultural & recreational organisations,Cultural & recreational organisations,hierarchy,parent=Community institutions - THEMATIC
+Cultural & recreational organisations,Cultural & recreational organisations,hierarchy,parent=Organizations
 Cultural activities,Cultural activities,hierarchy,parent=Arts & Culture - THEMATIC
 Cultural events,Cultural events,hierarchy,parent=Arts & Culture - THEMATIC
 Cultural events,Cultural events,hierarchy,parent=Events
 Cultural identity & heritage,Cultural identity & heritage,hierarchy,parent=Race & Ethnicity - THEMATIC
-Cultural organizations,Cultural organizations,hierarchy,parent=Arts & Culture - THEMATIC
-Cultural societies,Cultural societies,hierarchy,parent=Cultural & recreational organizations
+Cultural organisations,Cultural organisations,hierarchy,parent=Arts & Culture - THEMATIC
+Cultural societies,Cultural societies,hierarchy,parent=Cultural & recreational organisations
 Cultural venues,Cultural venues,hierarchy,parent=Arts & Culture - THEMATIC
 Dance,Dances,merge,Plural form merged into singular (26 items)
 Dance,Dance,hierarchy,parent=Social events
@@ -263,7 +263,7 @@ Gender-related vulnerabilities,Gender-related vulnerabilities,hierarchy,parent=W
 Gin,Gin,hierarchy,parent=Spirits
 Gold mining,Gold mining,hierarchy,parent=Mining
 Good Templars,Good Templars,hierarchy,parent=Religious social movements
-Good Templars,Good Templars,hierarchy,parent=Temperance organizations & movements - THEMATIC
+Good Templars,Good Templars,hierarchy,parent=Temperance organisations & movements - THEMATIC
 Government bodies,Government bodies,hierarchy,parent=Organizations
 Government bodies,Government bodies,hierarchy,parent=Politics & Governance - THEMATIC
 Grand Hotel (Sydney),Grand Hotel,merge,Primary source evidence shows Grand Hotel refers to Phillip Street Sydney hotel
@@ -350,7 +350,7 @@ Katoomba Lawn Tennis Club,Katoomba Lawn Tennis Club,hierarchy,parent=Tennis club
 Katoomba Lawn Tennis Club,Katoomba Tennis Club,synonym,Shortened/historical name for Katoomba Lawn Tennis Club
 Katoomba band,Katoomba band,hierarchy,parent=Bands
 Katoomba station,Katoomba station,hierarchy,parent=Railway infrastructure
-Labour organizations,Labour organizations,hierarchy,parent=Civic organizations
+Labour organisations,Labour organisations,hierarchy,parent=Civic organisations
 Labour relations,Labour relations,hierarchy,parent=Economy & Labour - THEMATIC
 Law enforcement,Law enforcement,hierarchy,parent=Justice & Crime - THEMATIC
 Lawn Tennis Club,Lawn Tennis Club,hierarchy,parent=Tennis clubs
@@ -407,14 +407,14 @@ Methodist Church,Methodist Church,hierarchy,parent=Churches
 Middle camp - settlement,Middle camp - settlement,hierarchy,parent=Greater Megalong
 Middle camp - settlement,Middle camp,synonym,Unqualified form - use settlement qualifier for clarity
 Military,Military,merge,"Consolidate to Military activities (preferred term for activity facet)"
-Military,Military,hierarchy,parent=Military organizations - THEMATIC
+Military,Military,hierarchy,parent=Military organisations - THEMATIC
 Military & War,Military & War,hierarchy,parent=(thematic grouping)
 Military activities,Military activities,hierarchy,parent=Societal activities
 Military events,Military events,hierarchy,parent=Military & War - THEMATIC
-Military organizations,Military organizations,hierarchy,parent=Military & War - THEMATIC
-Military organizations,Military organizations,hierarchy,parent=Organizations
-N.S.W. Mounted Rifles,N.S.W. Mounted Rifles,hierarchy,parent=Military organizations
-Volunteer rifle reserves,Volunteer rifle reserves,hierarchy,parent=Military organizations
+Military organisations,Military organisations,hierarchy,parent=Military & War - THEMATIC
+Military organisations,Military organisations,hierarchy,parent=Organizations
+N.S.W. Mounted Rifles,N.S.W. Mounted Rifles,hierarchy,parent=Military organisations
+Volunteer rifle reserves,Volunteer rifle reserves,hierarchy,parent=Military organisations
 Military personnel,Military personnel,hierarchy,parent=Military & War - THEMATIC
 Military personnel,Military personnel,hierarchy,parent=Occupations
 Mine closure,Mine closure,hierarchy,parent=Economic events
@@ -596,7 +596,7 @@ Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=Hotels
 Peckman Brothers,Peckman Brothers,hierarchy,parent=Retailers and Stores
 Peckman Brothers,Peckman Bros,synonym,Abbreviated form of Peckman Brothers
 People,People,hierarchy,parent=Agents (new top-level facet)
-Performance groups,Performance groups,hierarchy,parent=Cultural & recreational organizations
+Performance groups,Performance groups,hierarchy,parent=Cultural & recreational organisations
 Petition,Petition,hierarchy,parent=Political events
 Physical and health conditions,Physical and health conditions,hierarchy,parent=Associated Concepts
 Physical phenomena,Physical phenomena,hierarchy,parent=Associated Concepts
@@ -623,7 +623,7 @@ Postboy,Postboy,hierarchy,parent=Mailmen
 Mailman,Postman,synonym,Alternative term for mailman
 Postmaster,Postmaster,hierarchy,parent=Postmasters
 Postmasters,Postmasters,hierarchy,parent=Postal employees
-Progress committees,Progress committees,hierarchy,parent=Civic organizations
+Progress committees,Progress committees,hierarchy,parent=Civic organisations
 Property crimes,Property crimes,hierarchy,parent=Crimes - THEMATIC
 Public house,Pub,synonym,Colloquial term for public house
 Public house,Public house,hierarchy,parent=Public houses
@@ -635,8 +635,8 @@ Public officials,Public officials,hierarchy,parent=Occupations
 Public officials,Public officials,hierarchy,parent=Politics & Governance - THEMATIC
 Publican,Publican,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Publican,Publican,hierarchy,parent=Hospitality workers
-Publican's licensing,Publican's License,synonym,Historical term for licence to operate public house serving alcohol
-Publican's License,Publican's License,hierarchy,parent=Licensing & regulation - THEMATIC
+Publican's licensing,Publican's Licence,synonym,Historical term for licence to operate public house serving alcohol
+Publican's Licence,Publican's Licence,hierarchy,parent=Licensing & regulation - THEMATIC
 Publican's licensing,Publican's licensing,hierarchy,parent=Licensing
 Public houses,Pubs,synonym,Colloquial short form - prefer full form Public houses
 Race & Ethnicity,Race & Ethnicity,hierarchy,parent=(thematic grouping)
@@ -664,10 +664,10 @@ Regulatory processes,Regulatory processes,hierarchy,parent=Societal activities
 Religion,Religion,hierarchy,parent=(thematic grouping)
 Religious buildings,Religious buildings,hierarchy,parent=Built Environment
 Religious buildings,Religious buildings,hierarchy,parent=Religion - THEMATIC
-Religious education,Religious education,hierarchy,parent=Religious organizations
-Religious organizations,Religious organizations,hierarchy,parent=Organizations
-Religious organizations,Religious organizations,hierarchy,parent=Religion - THEMATIC
-Religious social movements,Religious social movements,hierarchy,parent=Religious organizations
+Religious education,Religious education,hierarchy,parent=Religious organisations
+Religious organisations,Religious organisations,hierarchy,parent=Organizations
+Religious organisations,Religious organisations,hierarchy,parent=Religion - THEMATIC
+Religious social movements,Religious social movements,hierarchy,parent=Religious organisations
 Reserves,Reserves,hierarchy,parent=Places (existing facet)
 Reserves,Reserves,hierarchy,parent=Recreation themes - THEMATIC (recreational lands)
 Retailers and Stores,Retailers and Stores,hierarchy,parent=Commercial businesses
@@ -748,7 +748,7 @@ Sports,Sports,merge,Remove from Recreation activities - use specific activity ty
 Sports,Sports,hierarchy,parent=Recreation themes - THEMATIC
 Spectator sports,Spectator sports,hierarchy,parent=Recreation activities
 Spectator sports,Spectator sports,hierarchy,parent=Sport & Recreation - THEMATIC
-Sports clubs,Sports clubs,hierarchy,parent=Cultural & recreational organizations
+Sports clubs,Sports clubs,hierarchy,parent=Cultural & recreational organisations
 Sports clubs,Sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
 St Hilda's Church,St Hilda's Church,hierarchy,parent=Churches
 Stable,Stable,hierarchy,parent=Stables
@@ -765,8 +765,8 @@ Sydney,Sydney,hierarchy,parent=Towns
 Tabrett and Company,Tabrett and Company,hierarchy,parent=Retailers and Stores
 Tabrett and Company,Tabrett and Co.,synonym,Abbreviated form of Tabrett and Company
 Temperance,Temperance,hierarchy,parent=Social behaviours
-Temperance,Temperance,hierarchy,parent=Temperance organizations & movements - THEMATIC
-Temperance organizations & movements,Temperance organizations & movements,hierarchy,parent=Alcohol & Temperance - THEMATIC
+Temperance,Temperance,hierarchy,parent=Temperance organisations & movements - THEMATIC
+Temperance organisations & movements,Temperance organisations & movements,hierarchy,parent=Alcohol & Temperance - THEMATIC
 Tennis,Tennis,hierarchy,parent=Recreation activities
 Tennis,Tennis,hierarchy,parent=Sport & Recreation - THEMATIC
 Tennis clubs,Tennis clubs,hierarchy,parent=Sports clubs
@@ -799,7 +799,7 @@ Unemployment,Unemployment,hierarchy,parent=Social & economic concepts
 Unemployment relief,Unemployment relief,hierarchy,parent=Charitable and welfare activities
 Unemployment relief,Unemployment relief,hierarchy,parent=Economic distress - THEMATIC
 Unemployment relief,Unemployment relief,hierarchy,parent=Economic hardship - THEMATIC
-Unions,Unions,hierarchy,parent=Labour organizations
+Unions,Unions,hierarchy,parent=Labour organisations
 Unions,Unions,hierarchy,parent=Labour relations - THEMATIC
 United Ancient Order of Druids,United Ancient Order of Druids,hierarchy,parent=Lodges
 Unlicensed sales,Unlicensed sales,hierarchy,parent=Alcohol-related
@@ -930,10 +930,10 @@ Greenbank family,Greenbank family,hierarchy,parent=Families
 Katoomba South,Katoomba South,hierarchy,parent=Greater Katoomba
 Legal concepts,Legal concepts,hierarchy,parent=Associated Concepts
 Laws,Laws,hierarchy,parent=Legal concepts
-Licenses,Licenses,hierarchy,parent=Legal concepts
-Billiard License,Billiard License,hierarchy,parent=Licenses
+Licences,Licences,hierarchy,parent=Legal concepts
+Billiard Licence,Billiard Licence,hierarchy,parent=Licences
 Billiard licensing,Billiard licensing,hierarchy,parent=Licensing
-Publican's License,Publican's License,hierarchy,parent=Licenses
+Publican's Licence,Publican's Licence,hierarchy,parent=Licences
 Minors,Minors,merge,MANUAL REVIEW NEEDED: Merge to either Child or Adolescent based on context. Thesaurus entry: Minors = Child + Adolescent
 Mount Kembla Disaster,Mount Kembla Colliery Disaster,merge,Synonym - standardise to Mount Kembla Disaster
 Mount Victoria,Mt Victoria,merge,Variant spelling - standardise to Mount Victoria
@@ -966,11 +966,11 @@ Historical event,Historical event,hierarchy,parent=Historical events (singular g
 Hospitality worker,Hospitality worker,hierarchy,parent=Hospitality workers (singular generic term)
 Unaffiliated lodge,Unaffiliated lodge,hierarchy,parent=Unaffiliated lodges
 Jenolan Cave,Jenolan Caves,synonym,Singular form - always use plural as caves are a complex system
-Labour organization,Labour organization,hierarchy,parent=Labour organizations (singular generic term)
+Labour organisation,Labour organisation,hierarchy,parent=Labour organisations (singular generic term)
 Legal event,Legal event,hierarchy,parent=Legal events (singular generic term)
 Legal official,Legal official,hierarchy,parent=Legal officials (singular generic term)
 Legal proceeding,Legal proceeding,hierarchy,parent=Legal proceedings (singular generic term)
-License,License,hierarchy,parent=Licenses (singular generic term)
+Licence,Licence,hierarchy,parent=Licences (singular generic term)
 Liquor merchant,Liquor merchant,hierarchy,parent=Liquor merchants (singular generic term)
 Lodge,Lodge,hierarchy,parent=Lodges (singular generic term)
 Maritime worker,Maritime worker,hierarchy,parent=Maritime workers (singular generic term)
