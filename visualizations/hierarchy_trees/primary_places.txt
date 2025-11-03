@@ -2,27 +2,6 @@ PRIMARY FACET: Places
 ================================================================================
 
 Places
-├── Reserves
-│   ├── Leura Reserve
-│   ├── Reserve
-│   ├── South Katoomba Reserve
-│   ├── Wentworth Falls Reserve
-│   └── Wentworth Falls Reserves
-├── Towns
-│   ├── Blackheath
-│   ├── Clarence
-│   ├── Greater Katoomba
-│   │   ├── Katoomba
-│   │   └── Katoomba South
-│   ├── Greater Megalong
-│   │   ├── Megalong
-│   │   └── Middle camp (settlement)
-│   ├── Leura
-│   ├── Lithgow
-│   ├── Medlow
-│   ├── Mount Victoria
-│   ├── Sydney
-│   └── Town
 ├── mining districts
 │   ├── Hartley Vale mining district
 │   │   ├── Hartley Vale (settlement)
@@ -36,26 +15,47 @@ Places
 │   │   └── Ruined Castle Shale Mine
 │   └── South Clifton (Illawarra)
 │       └── South Clifton Tunnel Mine
-└── natural features
-    ├── Gullies
-    │   └── Nellie's Glen (gully)
-    ├── Valleys
-    │   ├── Jamieson Valley
-    │   ├── Kanimbla Valley
-    │   ├── Megalong Valley
-    │   └── Valley
-    ├── Waterfalls
-    │   ├── Katoomba Falls
-    │   ├── Leura Falls
-    │   ├── Minnehaha
-    │   └── Waterfall
-    ├── caves & geological features
-    │   ├── Jenolan Caves
-    │   └── Jenolan Caves Road
-    └── mountain features
-        ├── Narrow Neck
-        ├── Ruined Castle - rock formation
-        └── mountain feature
+├── natural features
+│   ├── caves & geological features
+│   │   ├── Jenolan Caves
+│   │   └── Jenolan Caves Road
+│   ├── gullies
+│   │   └── Nellie's Glen (gully)
+│   ├── mountain features
+│   │   ├── Narrow Neck
+│   │   ├── Ruined Castle - rock formation
+│   │   └── mountain feature
+│   ├── valleys
+│   │   ├── Jamieson Valley
+│   │   ├── Kanimbla Valley
+│   │   ├── Megalong Valley
+│   │   └── valley
+│   └── waterfalls
+│       ├── Katoomba Falls
+│       ├── Leura Falls
+│       ├── Minnehaha
+│       └── waterfall
+├── reserves
+│   ├── Leura Reserve
+│   ├── South Katoomba Reserve
+│   ├── Wentworth Falls Reserve
+│   ├── Wentworth Falls Reserves
+│   └── reserve
+└── towns
+    ├── Blackheath
+    ├── Clarence
+    ├── Greater Katoomba
+    │   ├── Katoomba
+    │   └── Katoomba South
+    ├── Greater Megalong
+    │   ├── Megalong
+    │   └── Middle camp (settlement)
+    ├── Leura
+    ├── Lithgow
+    ├── Medlow
+    ├── Mount Victoria
+    ├── Sydney
+    └── town
 
 
 STATISTICS:

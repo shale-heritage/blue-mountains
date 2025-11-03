@@ -96,9 +96,6 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Tourism & Accommodation
     File: theme_tourism__accommodation.txt
 
-  - Towns
-    File: theme_towns.txt
-
   - Women & Gender
     File: theme_women__gender.txt
 
@@ -116,6 +113,9 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
 
   - mining & industry
     File: theme_mining__industry.txt
+
+  - towns
+    File: theme_towns.txt
 
   - transport & infrastructure
     File: theme_transport__infrastructure.txt

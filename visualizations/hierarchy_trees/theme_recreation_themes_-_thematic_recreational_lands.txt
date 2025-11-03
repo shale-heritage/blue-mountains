@@ -2,12 +2,12 @@ THEMATIC GROUPING: Recreation themes - THEMATIC (recreational lands)
 ================================================================================
 
 Recreation themes - THEMATIC (recreational lands)
-└── Reserves
+└── reserves
     ├── Leura Reserve
-    ├── Reserve
     ├── South Katoomba Reserve
     ├── Wentworth Falls Reserve
-    └── Wentworth Falls Reserves
+    ├── Wentworth Falls Reserves
+    └── reserve
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

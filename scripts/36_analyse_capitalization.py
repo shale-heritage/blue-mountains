@@ -76,6 +76,8 @@ GENERIC_CATEGORIES = [
     'concepts', 'conditions', 'condition',
     'groups', 'group', 'families', 'family',
     'crimes', 'crime', 'violence',
+    'reserves', 'reserve', 'towns', 'town',
+    'gullies', 'gully', 'valleys', 'valley', 'waterfalls', 'waterfall',
 ]
 
 
@@ -89,6 +91,11 @@ def should_be_lowercase(term: str) -> bool:
     # Already all lowercase - no change needed
     if term == term.lower():
         return False  # No change
+
+    # Special cases - keep as-is
+    # Getty AAT primary facet names should remain capitalized
+    if term in ['THEMATIC', 'Getty AAT', 'Activities', 'Events', 'Associated Concepts']:
+        return False
 
     # Possessive forms are proper names - keep capitalized
     if "'" in term or "'" in term:
@@ -130,10 +137,6 @@ def should_be_lowercase(term: str) -> bool:
             if not has_proper:
                 # Pure generic construction - lowercase
                 return True
-
-    # Special cases - keep as-is
-    if term in ['THEMATIC', 'Getty AAT']:
-        return False
 
     # Conservative default: if we're not sure, keep current capitalization
     return False
