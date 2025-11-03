@@ -584,9 +584,9 @@ Nellie's Glen Road,Nellie's Glen track,synonym,Lowercase variant - use Nellie's 
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=Mining companies
 Nimmo's,Nimmo's,hierarchy,parent=Retailers and Stores
 Occupations,Occupations,hierarchy,parent=People
-Odd Fellows,Odd Fellows,hierarchy,parent=Lodges
+Independent Order of Odd Fellows,Odd Fellows,synonym,Common short form of Independent Order of Odd Fellows
 Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=Halls
-Odd Fellows,Oddfellows,synonym,Variant spelling of Odd Fellows
+Independent Order of Odd Fellows,Oddfellows,synonym,Variant spelling - use full formal name Independent Order of Odd Fellows
 Orama Boarding House,Orama Boarding House,hierarchy,parent=Boarding houses
 Organizations,Organizations,hierarchy,parent=Agents (new top-level facet)
 Other crimes,Other crimes,hierarchy,parent=Crimes - THEMATIC

@@ -124,7 +124,6 @@ Agents
 │   │       ├── Freemasons
 │   │       ├── Independent Order of Odd Fellows
 │   │       ├── Lodge
-│   │       ├── Odd Fellows
 │   │       ├── Unaffiliated lodges
 │   │       │   ├── Mountaineer Lodge
 │   │       │   └── Unaffiliated lodge
@@ -299,6 +298,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 295
+  Total nodes in facet: 294
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
