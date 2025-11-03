@@ -41,6 +41,7 @@ Activities
 │   ├── Horseback riding
 │   ├── Military sports
 │   ├── Recreation activity
+│   ├── Recreation for miners
 │   ├── Shooting
 │   ├── Spectator sports
 │   ├── Team sports
@@ -70,6 +71,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 66
+  Total nodes in facet: 67
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
