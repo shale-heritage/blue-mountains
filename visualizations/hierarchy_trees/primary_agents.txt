@@ -130,6 +130,7 @@ Agents
 │   │       └── United Ancient Order of Druids
 │   │           └── Druid's Lodge (local lodge)
 │   ├── Government bodies
+│   │   ├── Aborigines' Protection Board
 │   │   ├── Councils
 │   │   │   ├── Council
 │   │   │   ├── Katoomba Council
@@ -140,14 +141,9 @@ Agents
 │   │   │   ├── Licensing Court
 │   │   │   ├── Police court
 │   │   │   └── Supreme Court
-│   │   ├── Other government bodies
-│   │   │   ├── Aborigines' Protection Board
-│   │   │   └── Other government body
 │   │   ├── Police
-│   │   ├── Postal authorities
-│   │   │   └── Postal Department
-│   │   └── Railway authorities
-│   │       └── Railway commission
+│   │   ├── Postal Department
+│   │   └── Railway Commission
 │   ├── Military organisations
 │   │   ├── N.S.W. Mounted Rifles
 │   │   └── Volunteer rifle reserves
@@ -298,6 +294,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 294
+  Total nodes in facet: 290
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

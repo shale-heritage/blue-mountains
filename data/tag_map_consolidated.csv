@@ -9,7 +9,7 @@ Materials,Materials,hierarchy,parent=(Getty AAT primary facet)
 Aboriginal people,Aboriginal people,hierarchy,parent=Ethnic groups
 Aboriginal people,Aboriginal people,hierarchy,parent=Indigenous peoples - THEMATIC
 Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Indigenous peoples - THEMATIC
-Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Other government bodies
+Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Government bodies
 Accident,Accident,hierarchy,parent=Accidents
 Accident,Accident,hierarchy,parent=Health-related events - THEMATIC
 Accident,Accident,hierarchy,parent=Mining incidents - THEMATIC
@@ -591,7 +591,6 @@ Orama Boarding House,Orama Boarding House,hierarchy,parent=Boarding houses
 Organizations,Organizations,hierarchy,parent=Agents (new top-level facet)
 Other crimes,Other crimes,hierarchy,parent=Crimes - THEMATIC
 Other goods and services,Other goods and services,hierarchy,parent=Occupations
-Other government bodies,Other government bodies,hierarchy,parent=Government bodies
 Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=Hotels
 Peckman Brothers,Peckman Brothers,hierarchy,parent=Retailers and Stores
 Peckman Brothers,Peckman Bros,synonym,Abbreviated form of Peckman Brothers
@@ -613,8 +612,7 @@ Mount Kembla Disaster,Port Kembla disaster,synonym,Historical misnomer - actuall
 Postal service,Post,synonym,Generic term for postal service (deprecated - use specific tags)
 Postal Department,Post Office Department,synonym,Historical name for Postal Department
 Post office,Post office,hierarchy,parent=Postal facilities
-Postal Department,Postal Department,hierarchy,parent=Postal authorities
-Postal authorities,Postal authorities,hierarchy,parent=Government bodies
+Postal Department,Postal Department,hierarchy,parent=Government bodies
 Postal employees,Postal employees,hierarchy,parent=Public officials
 Postal facilities,Postal facilities,hierarchy,parent=Civic buildings
 Postal services,Postal services,hierarchy,parent=Communication activities
@@ -644,8 +642,7 @@ Racial stereotyping & performance,Racial stereotyping & performance,hierarchy,pa
 Railway,Railway,hierarchy,parent=Transport & Infrastructure - THEMATIC
 Railway,Railway,hierarchy,parent=Transport infrastructure
 Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
-Railway authorities,Railway authorities,hierarchy,parent=Government bodies
-Railway commission,Railway commission,hierarchy,parent=Railway authorities
+Railway Commission,Railway Commission,hierarchy,parent=Government bodies
 Railway infrastructure,Railway infrastructure,hierarchy,parent=Railway
 Railway operations,Railway operations,hierarchy,parent=Transport
 Sexual violence,Rape,merge,Specific term merged into broader category (rape is a type of sexual violence)
@@ -983,7 +980,6 @@ Mining company,Mining company,hierarchy,parent=Mining companies (singular generi
 Minstrel troupe,Minstrel troupe,hierarchy,parent=Minstrel troupes (singular generic term)
 Mixed alcoholic beverage,Mixed alcoholic beverage,hierarchy,parent=Mixed alcoholic beverages (singular generic term)
 Mountain feature,Mountain feature,hierarchy,parent=Mountain features (singular generic term)
-Other government body,Other government body,hierarchy,parent=Other government bodies (singular generic term)
 Physical and health condition,Physical and health condition,hierarchy,parent=Physical and health conditions (singular generic term)
 Progress committee,Progress committee,hierarchy,parent=Progress committees (singular generic term)
 Public official,Public official,hierarchy,parent=Public officials (singular generic term)
