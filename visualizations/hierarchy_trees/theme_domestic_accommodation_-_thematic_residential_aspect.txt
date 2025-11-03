@@ -2,19 +2,15 @@ THEMATIC GROUPING: Domestic accommodation - THEMATIC (residential aspect)
 ================================================================================
 
 Domestic accommodation - THEMATIC (residential aspect)
-└── Hotels
+└── hotels
     ├── Belgravia Hotel
     ├── Carrington Hotel
     ├── Centennial Hotel
     ├── Comet Hotel
     ├── Falls Hotel
-    ├── Family Hotels
-    │   ├── Delaney's Family Hotel
-    │   └── Katoomba Family Hotel
     ├── Grand Hotel (Sydney)
     ├── Great Western Hotel
     ├── Hoffman's House
-    ├── Hotel
     ├── Hotel Wentworth
     ├── Hydora House Hotel
     ├── Imperial Hotel
@@ -25,7 +21,11 @@ Domestic accommodation - THEMATIC (residential aspect)
     ├── Mount Victoria Hotel
     ├── Oxford Hotel (Sydney)
     ├── Railway Hotel
-    └── Wentworth Falls Hotel
+    ├── Wentworth Falls Hotel
+    ├── family hotels
+    │   ├── Delaney's Family Hotel
+    │   └── Katoomba Family Hotel
+    └── hotel
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

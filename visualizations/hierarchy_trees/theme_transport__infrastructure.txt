@@ -1,24 +1,24 @@
-THEMATIC GROUPING: Transport & Infrastructure
+THEMATIC GROUPING: transport & infrastructure
 ================================================================================
 
-Transport & Infrastructure
+transport & infrastructure
 ├── Commercial transport
 │   └── Trucking
-├── Mining transport
-│   └── Tramway
 ├── Railway
 │   ├── Great Western Railway
-│   └── Railway infrastructure
+│   └── railway infrastructure
 │       ├── Katoomba station
 │       └── Zig Zag
 ├── Roads
 │   ├── Jenolan Caves Road
 │   ├── Nellie's Glen Road
 │   └── Road
-└── Utilities
-    ├── Gas
-    ├── Sewerage
-    └── Utility
+├── Utilities
+│   ├── Gas
+│   ├── Sewerage
+│   └── Utility
+└── mining transport
+    └── Tramway
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

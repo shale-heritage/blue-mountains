@@ -2,47 +2,47 @@ THEMATIC GROUPING: Community institutions
 ================================================================================
 
 Community institutions
-├── Civic buildings
+├── civic buildings
 │   ├── Council Chambers
 │   ├── Court buildings
 │   │   ├── Courthouse
 │   │   └── Katoomba Court
 │   ├── Police facilities
 │   │   └── Police station
-│   └── Postal facilities
+│   └── postal facilities
 │       └── Post office
-├── Civic organisations
-│   ├── Labour organisations
-│   │   ├── Labour organisation
-│   │   └── Unions
-│   └── Progress committees
-│       ├── Katoomba Progress Association
-│       ├── Leura Progress Association
-│       ├── Megalong Progress Committee
-│       ├── Mount Victoria Progress Committee
-│       ├── Progress committee
-│       └── Wentworth Falls Progress Association
-├── Community buildings
-│   └── Halls
+├── civic organisations
+│   ├── Progress committees
+│   │   ├── Katoomba Progress Association
+│   │   ├── Leura Progress Association
+│   │   ├── Megalong Progress Committee
+│   │   ├── Mount Victoria Progress Committee
+│   │   ├── Progress committee
+│   │   └── Wentworth Falls Progress Association
+│   └── labour organisations
+│       ├── Unions
+│       └── labour organisation
+├── community buildings
+│   └── halls
 │       ├── Clarke's Hall
-│       ├── Hall
-│       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
-│       ├── Schools of Arts
-│       │   ├── Katoomba School of Arts
-│       │   └── School of Arts
-│       └── Waudby's Hall
-├── Cultural & recreational organisations
+│       ├── Waudby's Hall
+│       ├── hall
+│       ├── masonic hall
+│       └── schools of arts
+│           ├── Katoomba School of Arts
+│           └── school of arts
+├── cultural & recreational organisations
 │   ├── Cultural societies
-│   │   ├── Chess and Draughts Club
 │   │   ├── Cultural society
 │   │   ├── Horticulture society
 │   │   ├── Katoomba Amateur Dramatic Club
-│   │   └── Schools of Arts
+│   │   ├── chess and draughts club
+│   │   └── schools of arts
 │   │       ├── Katoomba School of Arts
-│   │       └── School of Arts
-│   ├── Performance groups
+│   │       └── school of arts
+│   ├── performance groups
 │   │   ├── Bands
 │   │   │   ├── Band
 │   │   │   └── Katoomba band
@@ -51,47 +51,47 @@ Community institutions
 │   │   └── Minstrel troupes
 │   │       ├── Katoomba Amateur Minstrels
 │   │       └── Minstrel troupe
-│   └── Sports clubs
-│       ├── Athletic clubs
-│       │   ├── Athletic club
-│       │   └── Katoomba Athletic Club
-│       ├── Coursing clubs
-│       │   ├── Coursing club
-│       │   └── Wallerawang Coursing Club
-│       ├── Cricket clubs
-│       │   ├── Cricket club
+│   └── sports clubs
+│       ├── athletic clubs
+│       │   ├── Katoomba Athletic Club
+│       │   └── athletic club
+│       ├── coursing clubs
+│       │   ├── Wallerawang Coursing Club
+│       │   └── coursing club
+│       ├── cricket clubs
 │       │   ├── Katoomba Cricket Club
-│       │   └── Megalong Cricket Club
-│       ├── Football clubs
-│       │   ├── Football club
+│       │   ├── Megalong Cricket Club
+│       │   └── cricket club
+│       ├── football clubs
 │       │   ├── Hartley Vale Natives Football Club
 │       │   ├── Katoomba Football Club
 │       │   ├── Lithgow Rovers
-│       │   └── Nepean Football Club
-│       ├── Outdoor recreation clubs
+│       │   ├── football club
+│       │   └── nepean football club
+│       ├── outdoor recreation clubs
 │       │   ├── Katoomba Shooting Fishing and Excursion Club
-│       │   └── Outdoor recreation club
-│       ├── Rifle clubs
+│       │   └── outdoor recreation club
+│       ├── rifle clubs
 │       │   ├── Katoomba Civilian Rifle Club
-│       │   ├── Rifle club
-│       │   └── Western Rifle Association
-│       ├── Rugby clubs
-│       │   ├── Penrith Rugby Club
-│       │   └── Rugby club
-│       └── Tennis clubs
+│       │   ├── Western Rifle Association
+│       │   └── rifle club
+│       ├── rugby clubs
+│       │   ├── penrith rugby club
+│       │   └── rugby club
+│       └── tennis clubs
 │           ├── Katoomba Lawn Tennis Club
-│           ├── Lawn Tennis Club
-│           └── Tennis club
-└── Fraternal orders & lodges
-    └── Lodges
+│           ├── lawn tennis club
+│           └── tennis club
+└── fraternal orders & lodges
+    └── lodges
         ├── Freemasons
         ├── Independent Order of Odd Fellows
-        ├── Lodge
-        ├── Unaffiliated lodges
-        │   ├── Mountaineer Lodge
-        │   └── Unaffiliated lodge
-        └── United Ancient Order of Druids
-            └── Druid's Lodge (local lodge)
+        ├── United Ancient Order of Druids
+        │   └── Druid's Lodge (local lodge)
+        ├── lodge
+        └── unaffiliated lodges
+            ├── mountaineer lodge
+            └── unaffiliated lodge
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

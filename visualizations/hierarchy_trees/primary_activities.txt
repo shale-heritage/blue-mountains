@@ -2,21 +2,25 @@ PRIMARY FACET: Activities
 ================================================================================
 
 Activities
-├── Charitable and welfare activities
-│   ├── Charitable and welfare activity
+├── Social behaviours
+│   ├── Drinking (alcohol)
+│   ├── Gambling
+│   ├── Social behaviour
+│   └── Temperance
+├── charitable and welfare activities
 │   ├── Charity
-│   └── Unemployment relief
-├── Communication activities
+│   ├── Unemployment relief
+│   └── charitable and welfare activity
+├── communication activities
 │   ├── Advertising
-│   ├── Communication activity
 │   ├── Fundraising
-│   └── Postal services
-├── Economic activities
+│   ├── Postal services
+│   └── communication activity
+├── economic activities
 │   ├── Agriculture
 │   │   └── Animal husbandry
 │   │       └── Animal breeding
 │   │           └── Horse breeding
-│   ├── Economic activity
 │   ├── Financial services
 │   │   └── Insurance provision
 │   │       └── Unemployment insurance
@@ -24,50 +28,46 @@ Activities
 │   ├── Liquor trade
 │   │   ├── Liquor sales
 │   │   └── Wholesale liquor business
-│   ├── Mining
-│   │   ├── Coal mining
-│   │   ├── Gold mining
-│   │   └── Shale mining
 │   ├── Tourism
-│   └── Transport
-│       ├── Horseborne transportation
-│       ├── Railway operations
-│       │   ├── Railway operation
-│       │   └── Tourist trains
-│       └── Trucking
-├── Recreation activities
+│   ├── Transport
+│   │   ├── Horseborne transportation
+│   │   ├── Railway operations
+│   │   │   ├── Railway operation
+│   │   │   └── Tourist trains
+│   │   └── Trucking
+│   ├── economic activity
+│   └── mining
+│       ├── coal mining
+│       ├── gold mining
+│       └── shale mining
+├── recreation activities
 │   ├── Athletics
 │   ├── Billiards
 │   ├── Horseback riding
 │   ├── Military sports
-│   ├── Recreation activity
-│   ├── Recreation for miners
 │   ├── Shooting
 │   ├── Spectator sports
 │   ├── Team sports
 │   │   ├── Cricket
 │   │   ├── Football
 │   │   └── Rugby
-│   └── Tennis
-├── Social behaviours
-│   ├── Drinking (alcohol)
-│   ├── Gambling
-│   ├── Social behaviour
-│   └── Temperance
-└── Societal activities
+│   ├── Tennis
+│   ├── recreation activity
+│   └── recreation for miners
+└── societal activities
     ├── Law enforcement
     │   └── Policing
-    ├── Military activities
-    ├── Public health and safety activities
-    │   └── Animal control
-    │       ├── Feral dog control
-    │       └── Wild horse culling
-    └── Regulatory processes
-        └── Licensing
-            ├── Billiard licensing
-            ├── Hotel licensing
-            ├── Liquor licensing
-            └── Publican's licensing
+    ├── Regulatory processes
+    │   └── Licensing
+    │       ├── Billiard licensing
+    │       ├── Liquor licensing
+    │       ├── Publican's licensing
+    │       └── hotel licensing
+    ├── military activities
+    └── public health and safety activities
+        └── Animal control
+            ├── Feral dog control
+            └── Wild horse culling
 
 
 STATISTICS:

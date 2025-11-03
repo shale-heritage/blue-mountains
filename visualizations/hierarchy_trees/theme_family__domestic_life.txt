@@ -1,19 +1,19 @@
-THEMATIC GROUPING: Family & Domestic Life
+THEMATIC GROUPING: family & domestic life
 ================================================================================
 
-Family & Domestic Life
+family & domestic life
 ├── Childhood & adolescence
 ├── Domestic accommodation
-│   ├── Boarding houses
-│   │   ├── Boarding house
-│   │   └── Orama Boarding House
-│   └── Miners' dwellings
-├── Family members by demographic
+│   ├── Miners' dwellings
+│   └── boarding houses
+│       ├── boarding house
+│       └── orama boarding house
+├── family members by demographic
 │   ├── Children
 │   ├── Men
 │   ├── Widows
 │   └── Women
-└── Life events
+└── life events
     ├── Death
     │   └── Death notice
     ├── Funeral

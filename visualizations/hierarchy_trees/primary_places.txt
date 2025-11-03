@@ -2,7 +2,28 @@ PRIMARY FACET: Places
 ================================================================================
 
 Places
-├── Mining districts
+├── Reserves
+│   ├── Leura Reserve
+│   ├── Reserve
+│   ├── South Katoomba Reserve
+│   ├── Wentworth Falls Reserve
+│   └── Wentworth Falls Reserves
+├── Towns
+│   ├── Blackheath
+│   ├── Clarence
+│   ├── Greater Katoomba
+│   │   ├── Katoomba
+│   │   └── Katoomba South
+│   ├── Greater Megalong
+│   │   ├── Megalong
+│   │   └── Middle camp (settlement)
+│   ├── Leura
+│   ├── Lithgow
+│   ├── Medlow
+│   ├── Mount Victoria
+│   ├── Sydney
+│   └── Town
+├── mining districts
 │   ├── Hartley Vale mining district
 │   │   ├── Hartley Vale (settlement)
 │   │   └── Hartley Vale mines
@@ -15,47 +36,26 @@ Places
 │   │   └── Ruined Castle Shale Mine
 │   └── South Clifton (Illawarra)
 │       └── South Clifton Tunnel Mine
-├── Natural features
-│   ├── Caves & geological features
-│   │   ├── Jenolan Caves
-│   │   └── Jenolan Caves Road
-│   ├── Gullies
-│   │   └── Nellie's Glen (gully)
-│   ├── Mountain features
-│   │   ├── Mountain feature
-│   │   ├── Narrow Neck
-│   │   └── Ruined Castle - rock formation
-│   ├── Valleys
-│   │   ├── Jamieson Valley
-│   │   ├── Kanimbla Valley
-│   │   ├── Megalong Valley
-│   │   └── Valley
-│   └── Waterfalls
-│       ├── Katoomba Falls
-│       ├── Leura Falls
-│       ├── Minnehaha
-│       └── Waterfall
-├── Reserves
-│   ├── Leura Reserve
-│   ├── Reserve
-│   ├── South Katoomba Reserve
-│   ├── Wentworth Falls Reserve
-│   └── Wentworth Falls Reserves
-└── Towns
-    ├── Blackheath
-    ├── Clarence
-    ├── Greater Katoomba
-    │   ├── Katoomba
-    │   └── Katoomba South
-    ├── Greater Megalong
-    │   ├── Megalong
-    │   └── Middle camp (settlement)
-    ├── Leura
-    ├── Lithgow
-    ├── Medlow
-    ├── Mount Victoria
-    ├── Sydney
-    └── Town
+└── natural features
+    ├── Gullies
+    │   └── Nellie's Glen (gully)
+    ├── Valleys
+    │   ├── Jamieson Valley
+    │   ├── Kanimbla Valley
+    │   ├── Megalong Valley
+    │   └── Valley
+    ├── Waterfalls
+    │   ├── Katoomba Falls
+    │   ├── Leura Falls
+    │   ├── Minnehaha
+    │   └── Waterfall
+    ├── caves & geological features
+    │   ├── Jenolan Caves
+    │   └── Jenolan Caves Road
+    └── mountain features
+        ├── Narrow Neck
+        ├── Ruined Castle - rock formation
+        └── mountain feature
 
 
 STATISTICS:

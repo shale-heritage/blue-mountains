@@ -2,28 +2,26 @@ PRIMARY FACET: Built Environment
 ================================================================================
 
 Built Environment
-├── Accommodation buildings
-│   ├── Boarding houses
-│   │   ├── Boarding house
-│   │   └── Orama Boarding House
+├── accommodation buildings
 │   ├── Cottages
 │   │   └── Cottage
 │   ├── Dwellings
 │   │   ├── Dwelling
 │   │   └── Miners' dwellings
-│   ├── Hotels
+│   ├── Stables
+│   │   └── Stable
+│   ├── boarding houses
+│   │   ├── boarding house
+│   │   └── orama boarding house
+│   ├── hotels
 │   │   ├── Belgravia Hotel
 │   │   ├── Carrington Hotel
 │   │   ├── Centennial Hotel
 │   │   ├── Comet Hotel
 │   │   ├── Falls Hotel
-│   │   ├── Family Hotels
-│   │   │   ├── Delaney's Family Hotel
-│   │   │   └── Katoomba Family Hotel
 │   │   ├── Grand Hotel (Sydney)
 │   │   ├── Great Western Hotel
 │   │   ├── Hoffman's House
-│   │   ├── Hotel
 │   │   ├── Hotel Wentworth
 │   │   ├── Hydora House Hotel
 │   │   ├── Imperial Hotel
@@ -34,73 +32,75 @@ Built Environment
 │   │   ├── Mount Victoria Hotel
 │   │   ├── Oxford Hotel (Sydney)
 │   │   ├── Railway Hotel
-│   │   └── Wentworth Falls Hotel
-│   ├── Public houses
-│   │   └── Public house
-│   └── Stables
-│       └── Stable
-├── Civic buildings
+│   │   ├── Wentworth Falls Hotel
+│   │   ├── family hotels
+│   │   │   ├── Delaney's Family Hotel
+│   │   │   └── Katoomba Family Hotel
+│   │   └── hotel
+│   └── public houses
+│       └── public house
+├── civic buildings
 │   ├── Council Chambers
 │   ├── Court buildings
 │   │   ├── Courthouse
 │   │   └── Katoomba Court
 │   ├── Police facilities
 │   │   └── Police station
-│   └── Postal facilities
+│   └── postal facilities
 │       └── Post office
-├── Commercial buildings
+├── commercial buildings
 │   ├── Bank
-│   └── Commercial building
-├── Community buildings
-│   └── Halls
+│   └── commercial building
+├── community buildings
+│   └── halls
 │       ├── Clarke's Hall
-│       ├── Hall
-│       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
-│       ├── Schools of Arts
-│       │   ├── Katoomba School of Arts
-│       │   └── School of Arts
-│       └── Waudby's Hall
-├── Educational buildings
-│   └── Schools
+│       ├── Waudby's Hall
+│       ├── hall
+│       ├── masonic hall
+│       └── schools of arts
+│           ├── Katoomba School of Arts
+│           └── school of arts
+├── educational buildings
+│   └── schools
 │       ├── Katoomba Public School
 │       ├── Katoomba Superior Public School
 │       ├── Megalong Valley School
 │       ├── Mount Victoria School
-│       └── School
-├── Industrial buildings
-│   └── Mines
-│       ├── Coal mines
-│       │   ├── Coal mine
+│       └── school
+├── industrial buildings
+│   └── mines
+│       ├── coal mines
 │       │   ├── Katoomba coal mines
-│       │   └── South Clifton Tunnel Mine
-│       ├── Mine
-│       └── Shale mines
+│       │   ├── South Clifton Tunnel Mine
+│       │   └── coal mine
+│       ├── mine
+│       └── shale mines
 │           ├── Katoomba Shale Mine
 │           ├── Megalong Shale Mines
 │           ├── Nellie's Glen Shale Mine
 │           ├── Ruined Castle Shale Mine
-│           └── Shale mine
-├── Infrastructure
-│   ├── Mining infrastructure
+│           └── shale mine
+├── infrastructure
+│   ├── Utilities
+│   │   ├── Gas
+│   │   ├── Sewerage
+│   │   └── Utility
+│   ├── mining infrastructure
 │   │   └── Tramway
-│   ├── Transport infrastructure
-│   │   ├── Railway
-│   │   │   ├── Great Western Railway
-│   │   │   └── Railway infrastructure
-│   │   │       ├── Katoomba station
-│   │   │       └── Zig Zag
-│   │   └── Roads
-│   │       ├── Jenolan Caves Road
-│   │       ├── Nellie's Glen Road
-│   │       └── Road
-│   └── Utilities
-│       ├── Gas
-│       ├── Sewerage
-│       └── Utility
-├── Recreation buildings
-│   └── Sports facilities
+│   └── transport infrastructure
+│       ├── Railway
+│       │   ├── Great Western Railway
+│       │   └── railway infrastructure
+│       │       ├── Katoomba station
+│       │       └── Zig Zag
+│       └── Roads
+│           ├── Jenolan Caves Road
+│           ├── Nellie's Glen Road
+│           └── Road
+├── recreation buildings
+│   └── sports facilities
 │       ├── Cricket grounds
 │       │   └── Cricket ground
 │       ├── Ovals
@@ -108,15 +108,15 @@ Built Environment
 │       │   └── Oval
 │       └── Rifle ranges
 │           └── Rifle range
-└── Religious buildings
-    └── Churches
-        ├── Church
+└── religious buildings
+    └── churches
         ├── Congregational Church
         │   └── Katoomba Congregational Church
         ├── Methodist Church
-        ├── Roman Catholic Church
         ├── St Hilda's Church
-        └── Wesleyan Church
+        ├── Wesleyan Church
+        ├── church
+        └── roman catholic church
 
 
 STATISTICS:

@@ -4,7 +4,7 @@ PRIMARY FACET: Events
 Events
 ├── Accidents
 │   ├── Accident
-│   │   └── Mining accidents
+│   │   └── mining accidents
 │   ├── Agricultural accidents
 │   │   └── Livestock accidents
 │   │       └── Animal attacks
@@ -17,38 +17,6 @@ Events
 │               ├── Horse-drawn vehicle accidents
 │               ├── Horseback riding accidents
 │               └── Runaway horse incidents
-├── Criminal events
-│   ├── Alcohol-related
-│   │   ├── Drunkenness (crime)
-│   │   ├── Serving alcohol to minors
-│   │   └── Unlicensed sales
-│   ├── Assault
-│   ├── Bigamy
-│   ├── Criminal event
-│   ├── Desertion
-│   ├── Fighting
-│   ├── Sexual violence
-│   └── Theft
-├── Cultural events
-│   ├── Concert
-│   ├── Corroboree
-│   ├── Cultural event
-│   ├── Debate
-│   └── Debating
-├── Economic events
-│   ├── Economic event
-│   ├── Mine closure
-│   └── Strike
-├── Historical events
-│   ├── Historical event
-│   └── World War I
-├── Legal events
-│   ├── Bankruptcy
-│   ├── Court cases
-│   │   └── Property offences
-│   │       └── Stock trespass
-│   ├── Divorce
-│   └── Legal event
 ├── Legal proceedings
 │   ├── Court cases
 │   │   └── Property offences
@@ -57,30 +25,62 @@ Events
 │   └── Licensing cases
 │       ├── Licensing offences
 │       └── Liquor licensing applications
-├── Life events
+├── criminal events
+│   ├── Alcohol-related
+│   │   ├── Serving alcohol to minors
+│   │   ├── Unlicensed sales
+│   │   └── drunkenness (crime)
+│   ├── Assault
+│   ├── Bigamy
+│   ├── Desertion
+│   ├── Fighting
+│   ├── Theft
+│   ├── criminal event
+│   └── sexual violence
+├── cultural events
+│   ├── Concert
+│   ├── Corroboree
+│   ├── Debate
+│   ├── Debating
+│   └── cultural event
+├── economic events
+│   ├── Strike
+│   ├── economic event
+│   └── mine closure
+├── historical events
+│   ├── World War I
+│   └── historical event
+├── legal events
+│   ├── Bankruptcy
+│   ├── Court cases
+│   │   └── Property offences
+│   │       └── Stock trespass
+│   ├── Divorce
+│   └── legal event
+├── life events
 │   ├── Death
 │   │   └── Death notice
 │   ├── Funeral
 │   └── Marriage
-├── Political events
+├── political events
 │   ├── Election
 │   ├── Petition
 │   └── Public meeting
-├── Social events
+├── social events
 │   ├── Ball
 │   ├── Bazaar
 │   ├── Concert
 │   ├── Dance
 │   ├── Flower show
-│   └── Social event
-└── Sporting events
+│   └── social event
+└── sporting events
     ├── Coursing
     ├── Cricket match
     ├── Football match
     ├── Horse races
     ├── Rugby match
     ├── Shooting match
-    └── Sporting event
+    └── sporting event
 
 
 STATISTICS:

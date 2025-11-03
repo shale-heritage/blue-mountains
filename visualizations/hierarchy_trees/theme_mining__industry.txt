@@ -1,41 +1,41 @@
-THEMATIC GROUPING: Mining & Industry
+THEMATIC GROUPING: mining & industry
 ================================================================================
 
-Mining & Industry
-├── Mines & mining districts
-│   ├── Coal mining
-│   └── Shale mines
+mining & industry
+├── mines & mining districts
+│   ├── coal mining
+│   └── shale mines
 │       ├── Katoomba Shale Mine
 │       ├── Megalong Shale Mines
 │       ├── Nellie's Glen Shale Mine
 │       ├── Ruined Castle Shale Mine
-│       └── Shale mine
-├── Mining activities
-│   ├── Mine closure
-│   ├── Mining
-│   │   ├── Coal mining
-│   │   ├── Gold mining
-│   │   └── Shale mining
-│   └── Recreation for miners
-├── Mining companies
+│       └── shale mine
+├── mining activities
+│   ├── mine closure
+│   ├── mining
+│   │   ├── coal mining
+│   │   ├── gold mining
+│   │   └── shale mining
+│   └── recreation for miners
+├── mining companies
 │   ├── Australian Kerosene Oil and Mineral Company
 │   ├── Katoomba Coal and Shale Company
-│   ├── Mining company
 │   ├── New South Wales Shale and Oil Company
 │   ├── South Clifton Mine Company
-│   └── Waudby and Company
-├── Mining incidents
+│   ├── Waudby and Company
+│   └── mining company
+├── mining incidents
 │   ├── Accident
-│   │   └── Mining accidents
-│   └── Mining accidents
-├── Mining infrastructure
+│   │   └── mining accidents
+│   └── mining accidents
+├── mining infrastructure
 │   └── Tramway
-├── Mining workforce
-│   ├── Miners
-│   │   └── Miner
+├── mining workforce
 │   ├── Miners' dwellings
-│   └── Miners' families
-└── Regional mining contexts
+│   ├── Miners' families
+│   └── miners
+│       └── miner
+└── regional mining contexts
     ├── South Clifton (Illawarra)
     │   └── South Clifton Tunnel Mine
     ├── South Clifton Mine Company

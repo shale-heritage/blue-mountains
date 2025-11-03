@@ -2,17 +2,17 @@ THEMATIC GROUPING: Military & War
 ================================================================================
 
 Military & War
-├── Military events
+├── Military personnel
+│   └── Soldiers
+│       └── Major Sir Charles George Gordon
+├── military events
 │   └── World War I
-├── Military organisations
-│   ├── Military
-│   ├── N.S.W. Mounted Rifles
-│   └── Volunteer rifle reserves
-│       ├── Katoomba Rifle Reserves
-│       └── Mountain Rifle Reserves
-└── Military personnel
-    └── Soldiers
-        └── Major Sir Charles George Gordon
+└── military organisations
+    ├── Military
+    ├── N.S.W. Mounted Rifles
+    └── Volunteer rifle reserves
+        ├── Katoomba Rifle Reserves
+        └── Mountain Rifle Reserves
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

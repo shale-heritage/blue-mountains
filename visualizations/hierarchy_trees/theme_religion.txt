@@ -11,30 +11,30 @@ Religion
 │   ├── Reverend J H Maclean
 │   ├── Reverend M S Fletcher
 │   └── Reverend R M Laverty
-├── Religious buildings
-│   └── Churches
-│       ├── Church
+├── religious buildings
+│   └── churches
 │       ├── Congregational Church
 │       │   └── Katoomba Congregational Church
 │       ├── Methodist Church
-│       ├── Roman Catholic Church
 │       ├── St Hilda's Church
-│       └── Wesleyan Church
-└── Religious organisations
-    ├── Churches
-    │   ├── Church
-    │   ├── Congregational Church
-    │   │   └── Katoomba Congregational Church
-    │   ├── Methodist Church
-    │   ├── Roman Catholic Church
-    │   ├── St Hilda's Church
-    │   └── Wesleyan Church
+│       ├── Wesleyan Church
+│       ├── church
+│       └── roman catholic church
+└── religious organisations
     ├── Religious education
-    │   └── Sunday school
-    └── Religious social movements
-        ├── Good Templars
-        ├── Religious social movement
-        └── Salvation Army
+    │   └── sunday school
+    ├── Religious social movements
+    │   ├── Good Templars
+    │   ├── Religious social movement
+    │   └── Salvation Army
+    └── churches
+        ├── Congregational Church
+        │   └── Katoomba Congregational Church
+        ├── Methodist Church
+        ├── St Hilda's Church
+        ├── Wesleyan Church
+        ├── church
+        └── roman catholic church
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

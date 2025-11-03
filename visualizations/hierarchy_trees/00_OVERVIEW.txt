@@ -60,26 +60,11 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Environment & Weather
     File: theme_environment__weather.txt
 
-  - Family & Domestic Life
-    File: theme_family__domestic_life.txt
-
-  - Family & Domestic Life - THEMATIC
-    File: theme_family__domestic_life_-_thematic.txt
-
   - Health & Medicine
     File: theme_health__medicine.txt
 
-  - Justice & Crime
-    File: theme_justice__crime.txt
-
-  - Justice & Crime - THEMATIC (virtual grouping)
-    File: theme_justice__crime_-_thematic_virtual_grouping.txt
-
   - Military & War
     File: theme_military__war.txt
-
-  - Mining & Industry
-    File: theme_mining__industry.txt
 
   - People
     File: theme_people.txt
@@ -114,11 +99,26 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Towns
     File: theme_towns.txt
 
-  - Transport & Infrastructure
-    File: theme_transport__infrastructure.txt
-
   - Women & Gender
     File: theme_women__gender.txt
+
+  - family & domestic life
+    File: theme_family__domestic_life.txt
+
+  - family & domestic life - THEMATIC
+    File: theme_family__domestic_life_-_thematic.txt
+
+  - justice & crime
+    File: theme_justice__crime.txt
+
+  - justice & crime - THEMATIC (virtual grouping)
+    File: theme_justice__crime_-_thematic_virtual_grouping.txt
+
+  - mining & industry
+    File: theme_mining__industry.txt
+
+  - transport & infrastructure
+    File: theme_transport__infrastructure.txt
 
 
 ================================================================================

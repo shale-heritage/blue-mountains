@@ -18,22 +18,18 @@ Alcohol & Temperance
 │   │   └── Wine
 │   ├── Drinking (alcohol)
 │   ├── Drunkeness
-│   ├── Drunkenness (crime)
-│   └── Drunkenness (intoxication)
+│   ├── Drunkenness (intoxication)
+│   └── drunkenness (crime)
 ├── Alcohol-related venues
-│   ├── Hotels
+│   ├── hotels
 │   │   ├── Belgravia Hotel
 │   │   ├── Carrington Hotel
 │   │   ├── Centennial Hotel
 │   │   ├── Comet Hotel
 │   │   ├── Falls Hotel
-│   │   ├── Family Hotels
-│   │   │   ├── Delaney's Family Hotel
-│   │   │   └── Katoomba Family Hotel
 │   │   ├── Grand Hotel (Sydney)
 │   │   ├── Great Western Hotel
 │   │   ├── Hoffman's House
-│   │   ├── Hotel
 │   │   ├── Hotel Wentworth
 │   │   ├── Hydora House Hotel
 │   │   ├── Imperial Hotel
@@ -44,54 +40,19 @@ Alcohol & Temperance
 │   │   ├── Mount Victoria Hotel
 │   │   ├── Oxford Hotel (Sydney)
 │   │   ├── Railway Hotel
-│   │   └── Wentworth Falls Hotel
-│   └── Public houses
-│       └── Public house
-├── Hospitality workers
-│   ├── Hospitality worker
-│   ├── Hotelliers
-│   │   ├── Allen
-│   │   ├── Bashford
-│   │   ├── Biles
-│   │   ├── Brown
-│   │   ├── F. C. Goyder
-│   │   ├── Hotellier
-│   │   ├── Isabellea J. Long
-│   │   ├── Manuell
-│   │   ├── Mr A. G. Rowell
-│   │   ├── Mr Alf. Goodare
-│   │   ├── Mr D Thomson
-│   │   ├── Mr D. Brown
-│   │   ├── Mr D. Thompson
-│   │   ├── Mr Delaney
-│   │   ├── Mr Edwards
-│   │   ├── Mr Ellis
-│   │   ├── Mr J. Hudson
-│   │   ├── Mr J. Nimmo
-│   │   ├── Mr Joe Nimmo
-│   │   ├── Mr Lindeman
-│   │   ├── Mr Manuel
-│   │   ├── Mr N. Delaney
-│   │   ├── Mr P. G. Whittall
-│   │   ├── Mr R. Fryer
-│   │   ├── Mr Wilson
-│   │   ├── Mrs (Joe) Nimmo
-│   │   ├── Mrs (R.) Fryer
-│   │   ├── Mrs Brown
-│   │   ├── Mrs Long
-│   │   ├── Richard Allen
-│   │   ├── Rubina Fryer
-│   │   └── W. Green
-│   ├── Liquor merchants
-│   │   ├── Liquor merchant
-│   │   └── Mr Wilkinson
-│   └── Publican
+│   │   ├── Wentworth Falls Hotel
+│   │   ├── family hotels
+│   │   │   ├── Delaney's Family Hotel
+│   │   │   └── Katoomba Family Hotel
+│   │   └── hotel
+│   └── public houses
+│       └── public house
 ├── Licensing & regulation
 │   ├── Licensing
 │   │   ├── Billiard licensing
-│   │   ├── Hotel licensing
 │   │   ├── Liquor licensing
-│   │   └── Publican's licensing
+│   │   ├── Publican's licensing
+│   │   └── hotel licensing
 │   ├── Licensing Act
 │   ├── Licensing Court
 │   ├── Licensing cases
@@ -99,7 +60,46 @@ Alcohol & Temperance
 │   │   └── Liquor licensing applications
 │   ├── Licensing inspector
 │   └── Publican's Licence
-└── Temperance organisations & movements
+├── hospitality workers
+│   ├── Liquor merchants
+│   │   ├── Liquor merchant
+│   │   └── Mr Wilkinson
+│   ├── Publican
+│   ├── hospitality worker
+│   └── hotelliers
+│       ├── Allen
+│       ├── Bashford
+│       ├── Biles
+│       ├── Brown
+│       ├── F. C. Goyder
+│       ├── Isabellea J. Long
+│       ├── Manuell
+│       ├── Mr A. G. Rowell
+│       ├── Mr Alf. Goodare
+│       ├── Mr D Thomson
+│       ├── Mr D. Brown
+│       ├── Mr D. Thompson
+│       ├── Mr Delaney
+│       ├── Mr Edwards
+│       ├── Mr Ellis
+│       ├── Mr J. Hudson
+│       ├── Mr J. Nimmo
+│       ├── Mr Joe Nimmo
+│       ├── Mr Lindeman
+│       ├── Mr Manuel
+│       ├── Mr N. Delaney
+│       ├── Mr P. G. Whittall
+│       ├── Mr R. Fryer
+│       ├── Mr Wilson
+│       ├── Mrs (Joe) Nimmo
+│       ├── Mrs (R.) Fryer
+│       ├── Mrs Brown
+│       ├── Mrs Long
+│       ├── Richard Allen
+│       ├── Rubina Fryer
+│       ├── W. Green
+│       └── hotellier
+└── temperance organisations & movements
     ├── Good Templars
     └── Temperance
 

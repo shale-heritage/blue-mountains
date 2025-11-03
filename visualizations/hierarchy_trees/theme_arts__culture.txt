@@ -2,26 +2,26 @@ THEMATIC GROUPING: Arts & Culture
 ================================================================================
 
 Arts & Culture
-├── Cultural activities
+├── Cultural venues
+│   └── halls
+│       ├── Clarke's Hall
+│       ├── Mount Victoria Hall
+│       ├── Odd Fellows' Hall
+│       ├── Waudby's Hall
+│       ├── hall
+│       ├── masonic hall
+│       └── schools of arts
+│           ├── Katoomba School of Arts
+│           └── school of arts
+├── cultural activities
 │   └── Advertising
-├── Cultural events
+├── cultural events
 │   ├── Concert
 │   ├── Corroboree
-│   ├── Cultural event
 │   ├── Debate
-│   └── Debating
-├── Cultural organisations
-└── Cultural venues
-    └── Halls
-        ├── Clarke's Hall
-        ├── Hall
-        ├── Masonic Hall
-        ├── Mount Victoria Hall
-        ├── Odd Fellows' Hall
-        ├── Schools of Arts
-        │   ├── Katoomba School of Arts
-        │   └── School of Arts
-        └── Waudby's Hall
+│   ├── Debating
+│   └── cultural event
+└── cultural organisations
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

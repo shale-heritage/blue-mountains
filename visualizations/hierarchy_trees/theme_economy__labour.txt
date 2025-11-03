@@ -8,22 +8,18 @@ Economy & Labour
 │       │   ├── Bank
 │       │   └── Financial institution
 │       ├── Hospitality businesses
-│       │   ├── Boarding houses
-│       │   │   ├── Boarding house
-│       │   │   └── Orama Boarding House
-│       │   └── Hotels
+│       │   ├── boarding houses
+│       │   │   ├── boarding house
+│       │   │   └── orama boarding house
+│       │   └── hotels
 │       │       ├── Belgravia Hotel
 │       │       ├── Carrington Hotel
 │       │       ├── Centennial Hotel
 │       │       ├── Comet Hotel
 │       │       ├── Falls Hotel
-│       │       ├── Family Hotels
-│       │       │   ├── Delaney's Family Hotel
-│       │       │   └── Katoomba Family Hotel
 │       │       ├── Grand Hotel (Sydney)
 │       │       ├── Great Western Hotel
 │       │       ├── Hoffman's House
-│       │       ├── Hotel
 │       │       ├── Hotel Wentworth
 │       │       ├── Hydora House Hotel
 │       │       ├── Imperial Hotel
@@ -34,40 +30,44 @@ Economy & Labour
 │       │       ├── Mount Victoria Hotel
 │       │       ├── Oxford Hotel (Sydney)
 │       │       ├── Railway Hotel
-│       │       └── Wentworth Falls Hotel
-│       ├── Mining companies
-│       │   ├── Australian Kerosene Oil and Mineral Company
-│       │   ├── Katoomba Coal and Shale Company
-│       │   ├── Mining company
-│       │   ├── New South Wales Shale and Oil Company
-│       │   ├── South Clifton Mine Company
-│       │   └── Waudby and Company
+│       │       ├── Wentworth Falls Hotel
+│       │       ├── family hotels
+│       │       │   ├── Delaney's Family Hotel
+│       │       │   └── Katoomba Family Hotel
+│       │       └── hotel
 │       ├── Retailers and Stores
 │       │   ├── Douglas and Company
 │       │   ├── Nimmo's
 │       │   ├── Peckman Brothers
 │       │   ├── Retailer or Store
 │       │   └── Tabrett and Company
-│       └── Transport & logistics businesses
-│           ├── Transport & logistics business
-│           └── Trucking
+│       ├── Transport & logistics businesses
+│       │   ├── Transport & logistics business
+│       │   └── Trucking
+│       └── mining companies
+│           ├── Australian Kerosene Oil and Mineral Company
+│           ├── Katoomba Coal and Shale Company
+│           ├── New South Wales Shale and Oil Company
+│           ├── South Clifton Mine Company
+│           ├── Waudby and Company
+│           └── mining company
 ├── Economic distress
 │   ├── Bankruptcy
 │   ├── Unemployment
 │   ├── Unemployment insurance
 │   └── Unemployment relief
 ├── Industries
-│   ├── Mining
-│   │   ├── Coal mining
-│   │   ├── Gold mining
-│   │   └── Shale mining
-│   └── Tourism
+│   ├── Tourism
+│   └── mining
+│       ├── coal mining
+│       ├── gold mining
+│       └── shale mining
 ├── Labour relations
 │   ├── Strike
 │   └── Unions
 └── Workforce
-    └── Miners
-        └── Miner
+    └── miners
+        └── miner
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

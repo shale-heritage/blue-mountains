@@ -17,26 +17,26 @@ Politics & Governance
 │   ├── Police
 │   ├── Postal Department
 │   └── Railway Commission
-├── Political events
-│   ├── Election
-│   ├── Petition
-│   └── Public meeting
-└── Public officials
-    ├── Aldermen
-    ├── Licensing inspector
-    ├── Minister for Mines
-    ├── Postal employees
-    │   ├── Mailmen
-    │   │   ├── Mailman
-    │   │   └── Postboy
-    │   └── Postmasters
-    │       ├── Mrs. A. Smith
-    │       ├── Mrs. England
-    │       ├── Mrs. H. Corston
-    │       ├── Mrs. James
-    │       └── Postmaster
-    ├── Public official
-    └── Stationmaster
+├── Public officials
+│   ├── Aldermen
+│   ├── Licensing inspector
+│   ├── Public official
+│   ├── Stationmaster
+│   ├── minister for mines
+│   └── postal employees
+│       ├── Mailmen
+│       │   ├── Mailman
+│       │   └── Postboy
+│       └── Postmasters
+│           ├── Mrs. A. Smith
+│           ├── Mrs. England
+│           ├── Mrs. H. Corston
+│           ├── Mrs. James
+│           └── Postmaster
+└── political events
+    ├── Election
+    ├── Petition
+    └── Public meeting
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

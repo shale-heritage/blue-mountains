@@ -1,7 +1,7 @@
-THEMATIC GROUPING: Justice & Crime
+THEMATIC GROUPING: justice & crime
 ================================================================================
 
-Justice & Crime
+justice & crime
 ├── Court buildings
 │   ├── Courthouse
 │   └── Katoomba Court
@@ -11,28 +11,8 @@ Justice & Crime
 │   ├── Licensing Court
 │   ├── Police court
 │   └── Supreme Court
-├── Crimes
-│   ├── Other crimes
-│   │   └── Bigamy
-│   ├── Property crimes
-│   │   └── Theft
-│   ├── Social order offences
-│   │   ├── Desertion
-│   │   ├── Drunkenness (crime)
-│   │   └── Gambling
-│   └── Violent crimes
-│       ├── Assault
-│       ├── Fighting
-│       └── Sexual violence
 ├── Law enforcement
 │   └── Policing
-├── Legal events
-│   ├── Bankruptcy
-│   ├── Court cases
-│   │   └── Property offences
-│   │       └── Stock trespass
-│   ├── Divorce
-│   └── Legal event
 ├── Legal officials
 │   ├── Coroners
 │   │   ├── Coroner
@@ -50,7 +30,27 @@ Justice & Crime
 │       ├── Licensing offences
 │       └── Liquor licensing applications
 ├── Police
-└── Police station
+├── Police station
+├── crimes
+│   ├── Social order offences
+│   │   ├── Desertion
+│   │   ├── Gambling
+│   │   └── drunkenness (crime)
+│   ├── other crimes
+│   │   └── Bigamy
+│   ├── property crimes
+│   │   └── Theft
+│   └── violent crimes
+│       ├── Assault
+│       ├── Fighting
+│       └── sexual violence
+└── legal events
+    ├── Bankruptcy
+    ├── Court cases
+    │   └── Property offences
+    │       └── Stock trespass
+    ├── Divorce
+    └── legal event
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
