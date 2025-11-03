@@ -7,36 +7,7 @@ Family & Domestic Life
 │   ├── Boarding houses
 │   │   ├── Boarding house
 │   │   └── Orama Boarding House
-│   ├── Hotels
-│   │   ├── Belgravia Hotel
-│   │   ├── Carrington Hotel
-│   │   ├── Centennial Hotel
-│   │   ├── Comet Hotel
-│   │   ├── Falls Hotel
-│   │   ├── Family Hotels
-│   │   │   ├── Delaney's Family Hotel
-│   │   │   └── Katoomba Family Hotel
-│   │   ├── Grand Hotel (Sydney)
-│   │   ├── Great Western Hotel
-│   │   ├── Hoffman's House
-│   │   ├── Hotel
-│   │   ├── Hotel Wentworth
-│   │   ├── Hydora House Hotel
-│   │   ├── Imperial Hotel
-│   │   ├── Katoomba Hotel
-│   │   ├── Leura Hotel
-│   │   ├── Megalong Hotel
-│   │   ├── Montrose House
-│   │   ├── Mount Victoria Hotel
-│   │   ├── Oxford Hotel (Sydney)
-│   │   ├── Railway Hotel
-│   │   └── Wentworth Falls Hotel
 │   └── Miners' dwellings
-├── Families
-│   ├── Delaney family
-│   ├── Family
-│   ├── Greenbank family
-│   └── Miners' families
 ├── Family members by demographic
 │   ├── Children
 │   ├── Men
@@ -54,6 +25,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 46
+  Total nodes in theme: 17
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

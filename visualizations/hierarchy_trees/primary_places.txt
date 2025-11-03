@@ -3,24 +3,24 @@ PRIMARY FACET: Places
 
 Places
 ├── Mining districts
-│   ├── Hartley Vale - mining district
-│   │   ├── Hartley Vale - settlement
+│   ├── Hartley Vale mining district
+│   │   ├── Hartley Vale (settlement)
 │   │   └── Hartley Vale mines
-│   ├── Nellie's Glen - mining district
-│   │   ├── Nellie's Glen - settlement
+│   ├── Nellie's Glen mining district
+│   │   ├── Nellie's Glen (settlement)
 │   │   ├── Nellie's Glen Road
 │   │   └── Nellie's Glen Shale Mine
-│   ├── Ruined Castle - mining district
-│   │   ├── Ruined Castle - settlement
+│   ├── Ruined Castle mining district
+│   │   ├── Ruined Castle (settlement)
 │   │   └── Ruined Castle Shale Mine
-│   └── South Clifton - Illawarra
+│   └── South Clifton (Illawarra)
 │       └── South Clifton Tunnel Mine
 ├── Natural features
 │   ├── Caves & geological features
 │   │   ├── Jenolan Caves
 │   │   └── Jenolan Caves Road
 │   ├── Gullies
-│   │   └── Nellie's Glen - gully
+│   │   └── Nellie's Glen (gully)
 │   ├── Mountain features
 │   │   ├── Mountain feature
 │   │   ├── Narrow Neck
@@ -49,7 +49,7 @@ Places
     │   └── Katoomba South
     ├── Greater Megalong
     │   ├── Megalong
-    │   └── Middle camp - settlement
+    │   └── Middle camp (settlement)
     ├── Leura
     ├── Lithgow
     ├── Medlow

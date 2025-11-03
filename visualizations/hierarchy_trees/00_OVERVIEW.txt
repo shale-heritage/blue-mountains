@@ -45,11 +45,17 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Community institutions
     File: theme_community_institutions.txt
 
+  - Domestic accommodation - THEMATIC (residential aspect)
+    File: theme_domestic_accommodation_-_thematic_residential_aspect.txt
+
   - Economy & Labour
     File: theme_economy__labour.txt
 
   - Education
     File: theme_education.txt
+
+  - Education - THEMATIC (religious education)
+    File: theme_education_-_thematic_religious_education.txt
 
   - Environment & Weather
     File: theme_environment__weather.txt
@@ -57,11 +63,17 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Family & Domestic Life
     File: theme_family__domestic_life.txt
 
+  - Family & Domestic Life - THEMATIC
+    File: theme_family__domestic_life_-_thematic.txt
+
   - Health & Medicine
     File: theme_health__medicine.txt
 
   - Justice & Crime
     File: theme_justice__crime.txt
+
+  - Justice & Crime - THEMATIC (virtual grouping)
+    File: theme_justice__crime_-_thematic_virtual_grouping.txt
 
   - Military & War
     File: theme_military__war.txt
@@ -78,11 +90,20 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Race & Ethnicity
     File: theme_race__ethnicity.txt
 
+  - Recreation themes - THEMATIC (recreational lands)
+    File: theme_recreation_themes_-_thematic_recreational_lands.txt
+
   - Religion
     File: theme_religion.txt
 
+  - Religion - THEMATIC (religious figure)
+    File: theme_religion_-_thematic_religious_figure.txt
+
   - Social issues
     File: theme_social_issues.txt
+
+  - Social issues - THEMATIC (virtual grouping)
+    File: theme_social_issues_-_thematic_virtual_grouping.txt
 
   - Sport & Recreation
     File: theme_sport__recreation.txt
@@ -129,10 +150,10 @@ Primary Facets:
   - Leaf nodes: 403
 
 Thematic Groupings:
-  - Top-level themes: 22
-  - Total nodes: 290
+  - Top-level themes: 29
+  - Total nodes: 297
   - Total relationships: 294
-  - Parent nodes: 69
+  - Parent nodes: 76
   - Leaf nodes: 221
 
 TOTAL HIERARCHY RELATIONSHIPS: 887

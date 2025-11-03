@@ -2,14 +2,13 @@ THEMATIC GROUPING: Education
 ================================================================================
 
 Education
-├── Educational buildings
-│   └── Schools
-│       ├── Katoomba Public School
-│       ├── Katoomba Superior Public School
-│       ├── Megalong Valley School
-│       ├── Mount Victoria School
-│       └── School
-└── Sunday school
+└── Educational buildings
+    └── Schools
+        ├── Katoomba Public School
+        ├── Katoomba Superior Public School
+        ├── Megalong Valley School
+        ├── Mount Victoria School
+        └── School
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -17,6 +16,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 9
+  Total nodes in theme: 8
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

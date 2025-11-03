@@ -34,18 +34,35 @@ def parse_parent_from_notes(notes: str) -> Tuple[str, bool]:
         "parent=Occupations" -> ("Occupations", False)
     """
     # Extract parent name from notes field
-    # Pattern: parent=NAME [- THEMATIC] [(additional info)]
-    # We want to extract just NAME, stripping both the marker and any parenthetical
+    # Pattern: parent=NAME [- THEMATIC] [(explanatory note)]
+    # We want to extract NAME, stripping "- THEMATIC" and explanatory parentheticals
+    # BUT preserving semantic parentheticals like (Illawarra), (settlement), (gully)
 
     # Special case: if parent is ONLY a parenthetical marker (e.g., "(thematic grouping)")
     # then there's no actual parent - this is a root node marker
     if re.match(r'parent=\([^)]+\)$', notes):
         return None, False
 
-    # Extract parent name, stripping "- THEMATIC" suffix and any parenthetical notes
-    match = re.search(r'parent=(.+?)(?:\s*-\s*THEMATIC)?(?:\s*\([^)]+\))?$', notes)
+    # Extract parent name, stripping "- THEMATIC" suffix
+    match = re.search(r'parent=(.+?)(?:\s*-\s*THEMATIC)?$', notes)
     if match:
         parent = match.group(1).strip()
+
+        # Only strip parentheticals that contain explanatory phrases
+        # (not semantic qualifiers like location names or entity types)
+        explanatory_patterns = [
+            r'\s*\(new top-level facet\)$',
+            r'\s*\(singular generic term\)$',
+            r'\s*\(thematic grouping\)$',
+            r'\s*\(Getty AAT primary facet\)$',
+            r'\s*\(existing facet\)$',
+            r'\s*\(primary:[^)]+\)$',
+            r'\s*\(all [^)]+tags\)$',
+        ]
+
+        for pattern in explanatory_patterns:
+            parent = re.sub(pattern, '', parent).strip()
+
         is_thematic = '- THEMATIC' in notes or 'thematic' in notes.lower()
         return parent, is_thematic
 

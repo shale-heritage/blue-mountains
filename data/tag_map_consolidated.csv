@@ -274,7 +274,7 @@ Grog,Grog,hierarchy,parent=Mixed alcoholic beverages
 Gullies,Gullies,hierarchy,parent=Natural features
 Halls,Halls,hierarchy,parent=Community buildings
 Halls,Halls,hierarchy,parent=Cultural venues - THEMATIC
-Hartley Vale - mining district,Hartley Vale,synonym,Unqualified form - use mining district qualifier for clarity
+Hartley Vale mining district,Hartley Vale,synonym,Unqualified form - use mining district qualifier for clarity
 Health & Medicine,Health & Medicine,hierarchy,parent=(thematic grouping)
 Health conditions,Health conditions,hierarchy,parent=Health & Medicine - THEMATIC
 Health-related events,Health-related events,hierarchy,parent=Health & Medicine - THEMATIC
@@ -403,8 +403,8 @@ Megalong Valley School,Megalong Valley School,hierarchy,parent=Schools
 Men,Men,hierarchy,parent=Demographic groups
 Men,Men,hierarchy,parent=Family members by demographic - THEMATIC
 Methodist Church,Methodist Church,hierarchy,parent=Churches
-Middle camp - settlement,Middle camp - settlement,hierarchy,parent=Greater Megalong
-Middle camp - settlement,Middle camp,synonym,Unqualified form - use settlement qualifier for clarity
+Middle camp (settlement),Middle camp (settlement),hierarchy,parent=Greater Megalong
+Middle camp (settlement),Middle camp,synonym,Unqualified form - use settlement qualifier for clarity
 Military,Military,merge,"Consolidate to Military activities (preferred term for activity facet)"
 Military,Military,hierarchy,parent=Military organisations - THEMATIC
 Military & War,Military & War,hierarchy,parent=(thematic grouping)
@@ -573,11 +573,11 @@ Natural features,Natural features,hierarchy,parent=Environment & Weather - THEMA
 Natural features,Natural features,hierarchy,parent=Places (existing facet)
 Natural features,Natural features,hierarchy,parent=Tourist attractions - THEMATIC
 Natural resources,Natural resources,hierarchy,parent=Environment & Weather - THEMATIC
-Nellie's Glen - gully,Nellie's Glen - gully,hierarchy,parent=Gullies
-Nellie's Glen - mining district,Nellie's Glen,synonym,Unqualified form - use mining district qualifier for mining context; gully qualifier for natural feature
-Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen - mining district
+Nellie's Glen (gully),Nellie's Glen (gully),hierarchy,parent=Gullies
+Nellie's Glen mining district,Nellie's Glen,synonym,Unqualified form - use mining district qualifier for mining context; gully qualifier for natural feature
+Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen mining district
 Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Roads
-Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen - mining district
+Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen mining district
 Nellie's Glen Road,Nellie's Glen Track,synonym,Informal local term for same route - prefer formal Road designation
 Nellie's Glen Road,Nellie's Glen track,synonym,Lowercase variant - use Nellie's Glen Road
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=Mining companies
@@ -692,8 +692,8 @@ Rubina Fryer,Rubina Fryer,hierarchy,parent=Hotelliers
 Rugby,Rugby,hierarchy,parent=Team sports
 Rugby,Rugby,hierarchy,parent=Sport & Recreation - THEMATIC
 Ruined Castle - rock formation,Ruined Castle - rock formation,hierarchy,parent=Mountain features
-Ruined Castle - mining district,Ruined Castle,synonym,Unqualified form - use mining district qualifier for mining context; rock formation qualifier for natural feature
-Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Ruined Castle - mining district
+Ruined Castle mining district,Ruined Castle,synonym,Unqualified form - use mining district qualifier for mining context; rock formation qualifier for natural feature
+Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Ruined Castle mining district
 Rum,Rum,hierarchy,parent=Spirits
 Salvation Army,Salvation Army,hierarchy,parent=Religious social movements
 School,School,hierarchy,parent=Schools
@@ -730,7 +730,7 @@ Social order offences,Social order offences,hierarchy,parent=Crimes - THEMATIC
 Soldiers,Soldiers,hierarchy,parent=Military personnel
 Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=Soldiers
 Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=People - THEMATIC
-South Clifton - Illawarra,South Clifton,synonym,Unqualified form - use Illawarra qualifier to distinguish from Blue Mountains locations
+South Clifton (Illawarra),South Clifton,synonym,Unqualified form - use Illawarra qualifier to distinguish from Blue Mountains locations
 South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=Mining companies
 South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=Regional mining contexts - THEMATIC
 South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=Coal mines
@@ -1016,16 +1016,16 @@ Megalong Shale Mines,Megalong Shale Mines,hierarchy,parent=Shale mines
 Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Shale mines
 Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Shale mines
 Mining districts,Mining districts,hierarchy,parent=Places
-Hartley Vale - mining district,Hartley Vale - mining district,hierarchy,parent=Mining districts
-Hartley Vale - settlement,Hartley Vale - settlement,hierarchy,parent=Hartley Vale - mining district
-Hartley Vale mines,Hartley Vale mines,hierarchy,parent=Hartley Vale - mining district
-Nellie's Glen - mining district,Nellie's Glen - mining district,hierarchy,parent=Mining districts
-Nellie's Glen - settlement,Nellie's Glen - settlement,hierarchy,parent=Nellie's Glen - mining district
-Ruined Castle - mining district,Ruined Castle - mining district,hierarchy,parent=Mining districts
-Ruined Castle - settlement,Ruined Castle - settlement,hierarchy,parent=Ruined Castle - mining district
-South Clifton - Illawarra,South Clifton - Illawarra,hierarchy,parent=Mining districts
-South Clifton - Illawarra,South Clifton - Illawarra,hierarchy,parent=Regional mining contexts - THEMATIC
-South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=South Clifton - Illawarra
+Hartley Vale mining district,Hartley Vale mining district,hierarchy,parent=Mining districts
+Hartley Vale (settlement),Hartley Vale (settlement),hierarchy,parent=Hartley Vale mining district
+Hartley Vale mines,Hartley Vale mines,hierarchy,parent=Hartley Vale mining district
+Nellie's Glen mining district,Nellie's Glen mining district,hierarchy,parent=Mining districts
+Nellie's Glen (settlement),Nellie's Glen (settlement),hierarchy,parent=Nellie's Glen mining district
+Ruined Castle mining district,Ruined Castle mining district,hierarchy,parent=Mining districts
+Ruined Castle (settlement),Ruined Castle (settlement),hierarchy,parent=Ruined Castle mining district
+South Clifton (Illawarra),South Clifton (Illawarra),hierarchy,parent=Mining districts
+South Clifton (Illawarra),South Clifton (Illawarra),hierarchy,parent=Regional mining contexts - THEMATIC
+South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=South Clifton (Illawarra)
 Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,"parent=Mining companies (primary: absorbs A.K.O. & M. Company, Australian Kerosene Shale and Oil Company)"
 Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Mining companies (primary: absorbs Katoomba Coal and Shale Mines)
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=Mining companies (primary: absorbs New South Wales Shale and Oil Co.)
