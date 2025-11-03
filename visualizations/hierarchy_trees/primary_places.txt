@@ -9,8 +9,7 @@ Places
 │   ├── Nellie's Glen - mining district
 │   │   ├── Nellie's Glen - settlement
 │   │   ├── Nellie's Glen Road
-│   │   ├── Nellie's Glen Shale Mine
-│   │   └── Nellie's Glen Track
+│   │   └── Nellie's Glen Shale Mine
 │   ├── Ruined Castle - mining district
 │   │   ├── Ruined Castle - settlement
 │   │   └── Ruined Castle Shale Mine
@@ -60,6 +59,6 @@ Places
 
 
 STATISTICS:
-  Total nodes in facet: 56
+  Total nodes in facet: 55
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

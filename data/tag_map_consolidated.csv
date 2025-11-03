@@ -579,9 +579,8 @@ Nellie's Glen - mining district,Nellie's Glen,synonym,Unqualified form - use min
 Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen - mining district
 Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Roads
 Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen - mining district
-Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Nellie's Glen - mining district
-Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Roads
-Nellie's Glen Track,Nellie's Glen track,synonym,Lowercase variant - use capitalised form
+Nellie's Glen Road,Nellie's Glen Track,synonym,Informal local term for same route - prefer formal Road designation
+Nellie's Glen Road,Nellie's Glen track,synonym,Lowercase variant - use Nellie's Glen Road
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=Mining companies
 Nimmo's,Nimmo's,hierarchy,parent=Retailers and Stores
 Occupations,Occupations,hierarchy,parent=People
@@ -645,12 +644,10 @@ Racial stereotyping & performance,Racial stereotyping & performance,hierarchy,pa
 Railway,Railway,hierarchy,parent=Transport & Infrastructure - THEMATIC
 Railway,Railway,hierarchy,parent=Transport infrastructure
 Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
-Railway Hotel,Railway Hotel,hierarchy,parent=Railway
 Railway authorities,Railway authorities,hierarchy,parent=Government bodies
-Railway commission,Railway commission,hierarchy,parent=Railway
 Railway commission,Railway commission,hierarchy,parent=Railway authorities
 Railway infrastructure,Railway infrastructure,hierarchy,parent=Railway
-Railway operations,Railway operations,hierarchy,parent=Railway
+Railway operations,Railway operations,hierarchy,parent=Transport
 Sexual violence,Rape,merge,Specific term merged into broader category (rape is a type of sexual violence)
 Sexual violence,Rape,synonym,Specific type of sexual violence - retained as synonym for search/discovery
 Recreation activities,Recreation activities,hierarchy,parent=Activities

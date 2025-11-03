@@ -31,6 +31,9 @@ Activities
 │   ├── Tourism
 │   └── Transport
 │       ├── Horseborne transportation
+│       ├── Railway operations
+│       │   ├── Railway operation
+│       │   └── Tourist trains
 │       └── Trucking
 ├── Recreation activities
 │   ├── Athletics
@@ -67,6 +70,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 63
+  Total nodes in facet: 66
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

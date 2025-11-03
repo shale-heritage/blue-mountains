@@ -88,18 +88,12 @@ Built Environment
 │   ├── Transport infrastructure
 │   │   ├── Railway
 │   │   │   ├── Great Western Railway
-│   │   │   ├── Railway Hotel
-│   │   │   ├── Railway commission
-│   │   │   ├── Railway infrastructure
-│   │   │   │   ├── Katoomba station
-│   │   │   │   └── Zig Zag
-│   │   │   └── Railway operations
-│   │   │       ├── Railway operation
-│   │   │       └── Tourist trains
+│   │   │   └── Railway infrastructure
+│   │   │       ├── Katoomba station
+│   │   │       └── Zig Zag
 │   │   └── Roads
 │   │       ├── Jenolan Caves Road
 │   │       ├── Nellie's Glen Road
-│   │       ├── Nellie's Glen Track
 │   │       └── Road
 │   └── Utilities
 │       ├── Gas
@@ -126,6 +120,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 122
+  Total nodes in facet: 116
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
