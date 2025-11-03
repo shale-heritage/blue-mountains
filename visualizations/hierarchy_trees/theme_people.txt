@@ -10,11 +10,6 @@ People
 │   ├── Adolescents
 │   ├── Children
 │   ├── Demographic group
-│   ├── Families
-│   │   ├── Delaney family
-│   │   ├── Family
-│   │   ├── Greenbank family
-│   │   └── Miners' families
 │   ├── Men
 │   ├── Widows
 │   └── Women
@@ -217,6 +212,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 209
+  Total nodes in theme: 204
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

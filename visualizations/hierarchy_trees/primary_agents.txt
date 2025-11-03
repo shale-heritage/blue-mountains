@@ -169,11 +169,6 @@ Agents
     │   ├── Adolescents
     │   ├── Children
     │   ├── Demographic group
-    │   ├── Families
-    │   │   ├── Delaney family
-    │   │   ├── Family
-    │   │   ├── Greenbank family
-    │   │   └── Miners' families
     │   ├── Men
     │   ├── Widows
     │   └── Women
@@ -294,6 +289,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 290
+  Total nodes in facet: 285
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
