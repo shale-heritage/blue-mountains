@@ -11,8 +11,6 @@ justice & crime
 │   ├── Licensing Court
 │   ├── Police court
 │   └── Supreme Court
-├── Law enforcement
-│   └── Policing
 ├── Legal officials
 │   ├── Coroners
 │   │   ├── Coroner
@@ -44,6 +42,8 @@ justice & crime
 │       ├── Assault
 │       ├── Fighting
 │       └── sexual violence
+├── law enforcement
+│   └── Policing
 └── legal events
     ├── Bankruptcy
     ├── Court cases

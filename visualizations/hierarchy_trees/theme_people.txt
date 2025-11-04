@@ -91,18 +91,6 @@ People
 │   │   ├── Reverend J H Maclean
 │   │   ├── Reverend M S Fletcher
 │   │   └── Reverend R M Laverty
-│   ├── Law enforcement personnel
-│   │   └── Police officers
-│   │       ├── Constable
-│   │       │   ├── Constable John Hamilton
-│   │       │   ├── Constable O'Reilly
-│   │       │   ├── Constable Orr
-│   │       │   └── Constable White
-│   │       ├── Senior-Constable
-│   │       │   ├── Senior-Constable Illingworth
-│   │       │   └── Senior-Constable Thorncroft
-│   │       └── Sergeant
-│   │           └── Sergeant Thorndyke
 │   ├── Legal officials
 │   │   ├── Coroners
 │   │   │   ├── Coroner
@@ -179,6 +167,18 @@ People
 │   │       ├── Rubina Fryer
 │   │       ├── W. Green
 │   │       └── hotellier
+│   ├── law enforcement personnel
+│   │   └── Police officers
+│   │       ├── Constable
+│   │       │   ├── Constable John Hamilton
+│   │       │   ├── Constable O'Reilly
+│   │       │   ├── Constable Orr
+│   │       │   └── Constable White
+│   │       ├── Senior-Constable
+│   │       │   ├── Senior-Constable Illingworth
+│   │       │   └── Senior-Constable Thorncroft
+│   │       └── Sergeant
+│   │           └── Sergeant Thorndyke
 │   ├── maritime workers
 │   │   ├── Shipwright
 │   │   └── maritime worker
@@ -202,8 +202,8 @@ People
 └── families
     ├── Delaney family
     ├── Greenbank family
-    ├── Miners' families
-    └── family
+    ├── family
+    └── miners' families
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

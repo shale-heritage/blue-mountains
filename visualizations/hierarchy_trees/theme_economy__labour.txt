@@ -53,9 +53,9 @@ Economy & Labour
 │           └── mining company
 ├── Economic distress
 │   ├── Bankruptcy
-│   ├── Unemployment
-│   ├── Unemployment insurance
-│   └── Unemployment relief
+│   ├── unemployment
+│   ├── unemployment insurance
+│   └── unemployment relief
 ├── Industries
 │   ├── Tourism
 │   └── mining

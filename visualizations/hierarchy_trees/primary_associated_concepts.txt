@@ -3,21 +3,21 @@ PRIMARY FACET: Associated Concepts
 
 Associated Concepts
 ├── legal concepts
-│   ├── Laws
+│   ├── laws
 │   │   └── Licensing Act
-│   └── Licences
-│       ├── Billiard Licence
-│       ├── Licence
-│       └── Publican's Licence
+│   └── licences
+│       ├── billiard licence
+│       ├── licence
+│       └── publican's licence
 ├── physical and health conditions
-│   ├── Disease
-│   ├── Drunkenness (intoxication)
-│   ├── Illness
-│   └── Injury
+│   ├── disease
+│   ├── drunkenness (intoxication)
+│   ├── illness
+│   └── injury
 ├── physical phenomena
-│   └── Weather
+│   └── weather
 └── social & economic concepts
-    └── Unemployment
+    └── unemployment
 
 
 STATISTICS:

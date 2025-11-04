@@ -25,16 +25,16 @@ mining & industry
 │   ├── Waudby and Company
 │   └── mining company
 ├── mining incidents
-│   ├── Accident
+│   ├── accident
 │   │   └── mining accidents
 │   └── mining accidents
 ├── mining infrastructure
 │   └── Tramway
 ├── mining workforce
-│   ├── Miners' dwellings
-│   ├── Miners' families
-│   └── miners
-│       └── miner
+│   ├── miners
+│   │   └── miner
+│   ├── miners' dwellings
+│   └── miners' families
 └── regional mining contexts
     ├── South Clifton (Illawarra)
     │   └── South Clifton Tunnel Mine

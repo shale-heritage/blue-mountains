@@ -11,11 +11,11 @@ Health & Medicine
 ├── health conditions
 │   ├── Death
 │   │   └── Death notice
-│   ├── Disease
-│   ├── Illness
-│   └── Injury
+│   ├── disease
+│   ├── illness
+│   └── injury
 └── health-related events
-    ├── Accident
+    ├── accident
     │   └── mining accidents
     └── mining accidents
 

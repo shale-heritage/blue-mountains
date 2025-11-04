@@ -1,7 +1,7 @@
-THEMATIC GROUPING: Environment & Weather
+THEMATIC GROUPING: environment & weather
 ================================================================================
 
-Environment & Weather
+environment & weather
 ├── Animals
 │   ├── Animal
 │   ├── Domestic animals
@@ -18,28 +18,28 @@ Environment & Weather
 │       ├── Nellie's Glen Shale Mine
 │       ├── Ruined Castle Shale Mine
 │       └── shale mine
-├── Weather & climate
-│   └── Weather
-└── natural features
-    ├── caves & geological features
-    │   ├── Jenolan Caves
-    │   └── Jenolan Caves Road
-    ├── gullies
-    │   └── Nellie's Glen (gully)
-    ├── mountain features
-    │   ├── Narrow Neck
-    │   ├── Ruined Castle - rock formation
-    │   └── mountain feature
-    ├── valleys
-    │   ├── Jamieson Valley
-    │   ├── Kanimbla Valley
-    │   ├── Megalong Valley
-    │   └── valley
-    └── waterfalls
-        ├── Katoomba Falls
-        ├── Leura Falls
-        ├── Minnehaha
-        └── waterfall
+├── natural features
+│   ├── caves & geological features
+│   │   ├── Jenolan Caves
+│   │   └── Jenolan Caves Road
+│   ├── gullies
+│   │   └── Nellie's Glen (gully)
+│   ├── mountain features
+│   │   ├── Narrow Neck
+│   │   ├── Ruined Castle - rock formation
+│   │   └── mountain feature
+│   ├── valleys
+│   │   ├── Jamieson Valley
+│   │   ├── Kanimbla Valley
+│   │   ├── Megalong Valley
+│   │   └── valley
+│   └── waterfalls
+│       ├── Katoomba Falls
+│       ├── Leura Falls
+│       ├── Minnehaha
+│       └── waterfall
+└── weather & climate
+    └── weather
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

@@ -2,21 +2,6 @@ PRIMARY FACET: Events
 ================================================================================
 
 Events
-├── Accidents
-│   ├── Accident
-│   │   └── mining accidents
-│   ├── Agricultural accidents
-│   │   └── Livestock accidents
-│   │       └── Animal attacks
-│   │           └── Goring
-│   ├── Disaster
-│   ├── Fire
-│   └── Transport accidents
-│       └── Animal-powered transport accidents
-│           └── Horse accidents
-│               ├── Horse-drawn vehicle accidents
-│               ├── Horseback riding accidents
-│               └── Runaway horse incidents
 ├── Legal proceedings
 │   ├── Court cases
 │   │   └── Property offences
@@ -25,6 +10,21 @@ Events
 │   └── Licensing cases
 │       ├── Licensing offences
 │       └── Liquor licensing applications
+├── accidents
+│   ├── Fire
+│   ├── accident
+│   │   └── mining accidents
+│   ├── agricultural accidents
+│   │   └── livestock accidents
+│   │       └── Animal attacks
+│   │           └── Goring
+│   ├── disaster
+│   └── transport accidents
+│       └── animal-powered transport accidents
+│           └── horse accidents
+│               ├── Runaway horse incidents
+│               ├── horse-drawn vehicle accidents
+│               └── horseback riding accidents
 ├── criminal events
 │   ├── Alcohol-related
 │   │   ├── Serving alcohol to minors

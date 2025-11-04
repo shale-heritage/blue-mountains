@@ -4,10 +4,10 @@ THEMATIC GROUPING: family & domestic life
 family & domestic life
 ├── Childhood & adolescence
 ├── Domestic accommodation
-│   ├── Miners' dwellings
-│   └── boarding houses
-│       ├── boarding house
-│       └── orama boarding house
+│   ├── boarding houses
+│   │   ├── boarding house
+│   │   └── orama boarding house
+│   └── miners' dwellings
 ├── family members by demographic
 │   ├── Children
 │   ├── Men

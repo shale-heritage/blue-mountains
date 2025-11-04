@@ -9,8 +9,8 @@ Activities
 │   └── Temperance
 ├── charitable and welfare activities
 │   ├── Charity
-│   ├── Unemployment relief
-│   └── charitable and welfare activity
+│   ├── charitable and welfare activity
+│   └── unemployment relief
 ├── communication activities
 │   ├── Advertising
 │   ├── Fundraising
@@ -22,8 +22,8 @@ Activities
 │   │       └── Animal breeding
 │   │           └── Horse breeding
 │   ├── Financial services
-│   │   └── Insurance provision
-│   │       └── Unemployment insurance
+│   │   └── insurance provision
+│   │       └── unemployment insurance
 │   ├── Hunting
 │   ├── Liquor trade
 │   │   ├── Liquor sales
@@ -55,14 +55,14 @@ Activities
 │   ├── recreation activity
 │   └── recreation for miners
 └── societal activities
-    ├── Law enforcement
-    │   └── Policing
     ├── Regulatory processes
     │   └── Licensing
     │       ├── Billiard licensing
     │       ├── Liquor licensing
     │       ├── Publican's licensing
     │       └── hotel licensing
+    ├── law enforcement
+    │   └── Policing
     ├── military activities
     └── public health and safety activities
         └── Animal control

@@ -3,36 +3,36 @@ THEMATIC GROUPING: Tourism & Accommodation
 
 Tourism & Accommodation
 ├── Accommodation
-├── Tourist attractions
-│   ├── Jenolan Caves
-│   ├── natural features
-│   │   ├── caves & geological features
-│   │   │   ├── Jenolan Caves
-│   │   │   └── Jenolan Caves Road
-│   │   ├── gullies
-│   │   │   └── Nellie's Glen (gully)
-│   │   ├── mountain features
-│   │   │   ├── Narrow Neck
-│   │   │   ├── Ruined Castle - rock formation
-│   │   │   └── mountain feature
-│   │   ├── valleys
-│   │   │   ├── Jamieson Valley
-│   │   │   ├── Kanimbla Valley
-│   │   │   ├── Megalong Valley
-│   │   │   └── valley
-│   │   └── waterfalls
-│   │       ├── Katoomba Falls
-│   │       ├── Leura Falls
-│   │       ├── Minnehaha
-│   │       └── waterfall
-│   └── waterfalls
-│       ├── Katoomba Falls
-│       ├── Leura Falls
-│       ├── Minnehaha
-│       └── waterfall
-└── tourism activities
-    ├── Tourism
-    └── Tourist trains
+├── tourism activities
+│   ├── Tourism
+│   └── Tourist trains
+└── tourist attractions
+    ├── Jenolan Caves
+    ├── natural features
+    │   ├── caves & geological features
+    │   │   ├── Jenolan Caves
+    │   │   └── Jenolan Caves Road
+    │   ├── gullies
+    │   │   └── Nellie's Glen (gully)
+    │   ├── mountain features
+    │   │   ├── Narrow Neck
+    │   │   ├── Ruined Castle - rock formation
+    │   │   └── mountain feature
+    │   ├── valleys
+    │   │   ├── Jamieson Valley
+    │   │   ├── Kanimbla Valley
+    │   │   ├── Megalong Valley
+    │   │   └── valley
+    │   └── waterfalls
+    │       ├── Katoomba Falls
+    │       ├── Leura Falls
+    │       ├── Minnehaha
+    │       └── waterfall
+    └── waterfalls
+        ├── Katoomba Falls
+        ├── Leura Falls
+        ├── Minnehaha
+        └── waterfall
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

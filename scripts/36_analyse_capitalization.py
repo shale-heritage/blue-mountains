@@ -57,6 +57,12 @@ PROPER_NOUN_INDICATORS = [
     # Organizations
     'Police', 'Court', 'Council',  # When standalone as proper body
 
+    # Specific historical events/legislation (proper nouns)
+    'Licensing Act', 'Mount Kembla', 'Kembla',
+
+    # People and saints (for possessive buildings/institutions)
+    'Clarke', 'Waudby', 'Allen', 'Brown', 'Long', 'St Hilda', 'Hilda', 'St',
+
     # Time periods/styles (if any)
     'Victorian', 'Georgian',
 ]
@@ -78,6 +84,11 @@ GENERIC_CATEGORIES = [
     'crimes', 'crime', 'violence',
     'reserves', 'reserve', 'towns', 'town',
     'gullies', 'gully', 'valleys', 'valley', 'waterfalls', 'waterfall',
+    'accidents', 'accident', 'disaster', 'disasters',
+    'disease', 'diseases', 'illness', 'illnesses', 'injury', 'injuries',
+    'weather', 'unemployment', 'insurance', 'relief',
+    'laws', 'law', 'licences', 'licence', 'attractions', 'attraction',
+    'drunkenness', 'intoxication',
 ]
 
 
@@ -94,12 +105,26 @@ def should_be_lowercase(term: str) -> bool:
 
     # Special cases - keep as-is
     # Getty AAT primary facet names should remain capitalized
-    if term in ['THEMATIC', 'Getty AAT', 'Activities', 'Events', 'Associated Concepts']:
+    if term in ['THEMATIC', 'Getty AAT', 'Activities', 'Events', 'Associated Concepts',
+                'Agents', 'Places', 'Built Environment', 'Materials']:
         return False
 
-    # Possessive forms are proper names - keep capitalized
+    # Possessive forms - distinguish between proper names and generic descriptives
     if "'" in term or "'" in term:
-        return False  # Keep capitalization (possessive = proper name)
+        # Extract the possessive part (word before apostrophe)
+        possessive_word = term.split("'")[0].strip().split()[-1]
+
+        # If the possessive is a known proper noun, keep capitalized
+        # e.g., "Allen's Hotel", "Mrs Long's Hotel", "Odd Fellows' Hall"
+        for proper in PROPER_NOUN_INDICATORS:
+            # Check if possessive word appears in the proper noun indicator
+            # OR if proper noun indicator matches the possessive word
+            if (possessive_word.lower() in proper.lower() or
+                proper.lower() in possessive_word.lower()):
+                return False  # Keep capitalization (proper possessive)
+
+        # Otherwise, it's a generic possessive like "publican's licence"
+        # Let it fall through to normal processing
 
     # Check if contains capital letter in middle (not just first letter)
     # This indicates a proper noun within the term
