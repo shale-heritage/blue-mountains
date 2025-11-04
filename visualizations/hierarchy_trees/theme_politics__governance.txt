@@ -2,41 +2,41 @@ THEMATIC GROUPING: Politics & Governance
 ================================================================================
 
 Politics & Governance
-├── Government bodies
+├── government bodies
 │   ├── Aborigines' Protection Board
-│   ├── Councils
-│   │   ├── Council
-│   │   ├── Katoomba Council
-│   │   └── Lithgow Council
-│   ├── Courts
-│   │   ├── Court
-│   │   ├── Katoomba Court
-│   │   ├── Licensing Court
-│   │   ├── Police court
-│   │   └── Supreme Court
-│   ├── Police
+│   ├── New South Wales Police
 │   ├── Postal Department
-│   └── Railway Commission
-├── Public officials
-│   ├── Aldermen
-│   ├── Licensing inspector
-│   ├── Public official
-│   ├── Stationmaster
-│   ├── minister for mines
-│   └── postal employees
-│       ├── Mailmen
-│       │   ├── Mailman
-│       │   └── Postboy
-│       └── Postmasters
-│           ├── Mrs. A. Smith
-│           ├── Mrs. England
-│           ├── Mrs. H. Corston
-│           ├── Mrs. James
-│           └── Postmaster
-└── political events
-    ├── Election
-    ├── Petition
-    └── Public meeting
+│   ├── Railway Commission
+│   ├── councils
+│   │   ├── Katoomba Council
+│   │   ├── Lithgow Council
+│   │   └── council
+│   └── courts
+│       ├── Katoomba Court
+│       ├── Licensing Court
+│       ├── Police Court
+│       ├── Supreme Court
+│       └── court
+├── political events
+│   ├── election
+│   ├── petition
+│   └── public meeting
+└── public officials
+    ├── aldermen
+    ├── licensing inspector
+    ├── minister for mines
+    ├── postal employees
+    │   ├── mailmen
+    │   │   ├── mailman
+    │   │   └── postboy
+    │   └── postmasters
+    │       ├── Mrs A Smith
+    │       ├── Mrs England
+    │       ├── Mrs H Corston
+    │       ├── Mrs James
+    │       └── postmaster
+    ├── public official
+    └── stationmaster
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

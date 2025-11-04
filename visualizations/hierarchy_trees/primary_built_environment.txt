@@ -3,16 +3,14 @@ PRIMARY FACET: Built Environment
 
 Built Environment
 ├── accommodation buildings
-│   ├── Cottages
-│   │   └── Cottage
-│   ├── Dwellings
-│   │   ├── Dwelling
-│   │   └── miners' dwellings
-│   ├── Stables
-│   │   └── Stable
 │   ├── boarding houses
-│   │   ├── boarding house
-│   │   └── orama boarding house
+│   │   ├── Orama Boarding House
+│   │   └── boarding house
+│   ├── cottages
+│   │   └── cottage
+│   ├── dwellings
+│   │   ├── dwelling
+│   │   └── miners' dwellings
 │   ├── hotels
 │   │   ├── Belgravia Hotel
 │   │   ├── Carrington Hotel
@@ -37,28 +35,30 @@ Built Environment
 │   │   │   ├── Delaney's Family Hotel
 │   │   │   └── Katoomba Family Hotel
 │   │   └── hotel
-│   └── public houses
-│       └── public house
+│   ├── public houses
+│   │   └── public house
+│   └── stables
+│       └── stable
 ├── civic buildings
-│   ├── Council Chambers
-│   ├── Court buildings
-│   │   ├── Courthouse
-│   │   └── Katoomba Court
-│   ├── Police facilities
-│   │   └── Police station
+│   ├── council chambers
+│   ├── court buildings
+│   │   ├── Katoomba Courthouse
+│   │   └── courthouse
+│   ├── police facilities
+│   │   └── police station
 │   └── postal facilities
-│       └── Post office
+│       └── post office
 ├── commercial buildings
-│   ├── Bank
+│   ├── bank
 │   └── commercial building
 ├── community buildings
 │   └── halls
 │       ├── Clarke's Hall
+│       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
 │       ├── Waudby's Hall
 │       ├── hall
-│       ├── masonic hall
 │       └── schools of arts
 │           ├── Katoomba School of Arts
 │           └── school of arts
@@ -72,7 +72,7 @@ Built Environment
 ├── industrial buildings
 │   └── mines
 │       ├── coal mines
-│       │   ├── Katoomba coal mines
+│       │   ├── Katoomba Coal Mines
 │       │   ├── South Clifton Tunnel Mine
 │       │   └── coal mine
 │       ├── mine
@@ -83,40 +83,40 @@ Built Environment
 │           ├── Ruined Castle Shale Mine
 │           └── shale mine
 ├── infrastructure
-│   ├── Utilities
-│   │   ├── Gas
-│   │   ├── Sewerage
-│   │   └── Utility
 │   ├── mining infrastructure
-│   │   └── Tramway
-│   └── transport infrastructure
-│       ├── Railway
-│       │   ├── Great Western Railway
-│       │   └── railway infrastructure
-│       │       ├── Katoomba station
-│       │       └── Zig Zag
-│       └── Roads
-│           ├── Jenolan Caves Road
-│           ├── Nellie's Glen Road
-│           └── Road
+│   │   └── tramway
+│   ├── transport infrastructure
+│   │   ├── railway
+│   │   │   ├── Great Western Railway
+│   │   │   └── railway infrastructure
+│   │   │       ├── Katoomba station
+│   │   │       └── Zig Zag
+│   │   └── roads
+│   │       ├── Jenolan Caves Road
+│   │       ├── Nellie's Glen Road
+│   │       └── road
+│   └── utilities
+│       ├── gas
+│       ├── sewerage
+│       └── utility
 ├── recreation buildings
 │   └── sports facilities
-│       ├── Cricket grounds
-│       │   └── Cricket ground
-│       ├── Ovals
+│       ├── cricket grounds
+│       │   └── cricket ground
+│       ├── ovals
 │       │   ├── Eskbank Oval
-│       │   └── Oval
-│       └── Rifle ranges
-│           └── Rifle range
+│       │   └── oval
+│       └── rifle ranges
+│           └── rifle range
 └── religious buildings
     └── churches
         ├── Congregational Church
         │   └── Katoomba Congregational Church
         ├── Methodist Church
+        ├── Roman Catholic Church
         ├── St Hilda's Church
         ├── Wesleyan Church
-        ├── church
-        └── roman catholic church
+        └── church
 
 
 STATISTICS:

@@ -2,22 +2,22 @@ THEMATIC GROUPING: family & domestic life
 ================================================================================
 
 family & domestic life
-├── Childhood & adolescence
 ├── Domestic accommodation
 │   ├── boarding houses
-│   │   ├── boarding house
-│   │   └── orama boarding house
+│   │   ├── Orama Boarding House
+│   │   └── boarding house
 │   └── miners' dwellings
+├── childhood & adolescence
 ├── family members by demographic
-│   ├── Children
-│   ├── Men
-│   ├── Widows
-│   └── Women
+│   ├── children
+│   ├── men
+│   ├── widows
+│   └── women
 └── life events
-    ├── Death
-    │   └── Death notice
-    ├── Funeral
-    └── Marriage
+    ├── death
+    │   └── death notice
+    ├── funeral
+    └── marriage
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

@@ -2,22 +2,22 @@ PRIMARY FACET: Materials
 ================================================================================
 
 Materials
-├── Coal
-├── Consumable materials
-│   └── Alcoholic beverages
-│       ├── Alcoholic beverage
-│       ├── Beer
-│       ├── Mixed alcoholic beverages
-│       │   ├── Grog
-│       │   └── Mixed alcoholic beverage
-│       ├── Spirits
-│       │   ├── Brandy
-│       │   ├── Gin
-│       │   ├── Rum
-│       │   ├── Spirit
-│       │   └── Whisky
-│       └── Wine
-└── Shale
+├── coal
+├── consumable materials
+│   └── alcoholic beverages
+│       ├── alcoholic beverage
+│       ├── beer
+│       ├── mixed alcoholic beverages
+│       │   ├── grog
+│       │   └── mixed alcoholic beverage
+│       ├── spirits
+│       │   ├── brandy
+│       │   ├── gin
+│       │   ├── rum
+│       │   ├── spirit
+│       │   └── whisky
+│       └── wine
+└── shale
 
 
 STATISTICS:

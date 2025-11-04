@@ -2,23 +2,34 @@ PRIMARY FACET: Agents
 ================================================================================
 
 Agents
-├── Animals
-│   ├── Animal
-│   ├── Domestic animals
-│   │   ├── Cattle
-│   │   ├── Dogs
-│   │   └── Horses
-│   └── Wild animals
-│       └── Wild horses
-├── Organizations
-│   ├── Commercial businesses
-│   │   ├── Financial institutions
-│   │   │   ├── Bank
-│   │   │   └── Financial institution
-│   │   ├── Hospitality businesses
+├── animals
+│   ├── animal
+│   ├── domestic animals
+│   │   ├── cattle
+│   │   ├── dogs
+│   │   └── horses
+│   └── wild animals
+│       └── wild horses
+├── organisations
+│   ├── civic organisations
+│   │   ├── labour organisations
+│   │   │   ├── labour organisation
+│   │   │   └── unions
+│   │   └── progress committees
+│   │       ├── Katoomba Progress Association
+│   │       ├── Leura Progress Association
+│   │       ├── Megalong Progress Committee
+│   │       ├── Mount Victoria Progress Committee
+│   │       ├── Wentworth Falls Progress Association
+│   │       └── progress committee
+│   ├── commercial businesses
+│   │   ├── financial institutions
+│   │   │   ├── bank
+│   │   │   └── financial institution
+│   │   ├── hospitality businesses
 │   │   │   ├── boarding houses
-│   │   │   │   ├── boarding house
-│   │   │   │   └── orama boarding house
+│   │   │   │   ├── Orama Boarding House
+│   │   │   │   └── boarding house
 │   │   │   └── hotels
 │   │   │       ├── Belgravia Hotel
 │   │   │       ├── Carrington Hotel
@@ -43,66 +54,40 @@ Agents
 │   │   │       │   ├── Delaney's Family Hotel
 │   │   │       │   └── Katoomba Family Hotel
 │   │   │       └── hotel
-│   │   ├── Retailers and Stores
+│   │   ├── mining companies
+│   │   │   ├── Australian Kerosene Oil and Mineral Company
+│   │   │   ├── Katoomba Coal and Shale Company
+│   │   │   ├── New South Wales Shale and Oil Company
+│   │   │   ├── South Clifton Mine Company
+│   │   │   ├── Waudby and Company
+│   │   │   └── mining company
+│   │   ├── retailers and stores
 │   │   │   ├── Douglas and Company
 │   │   │   ├── Nimmo's
 │   │   │   ├── Peckman Brothers
-│   │   │   ├── Retailer or Store
-│   │   │   └── Tabrett and Company
-│   │   ├── Transport & logistics businesses
-│   │   │   ├── Transport & logistics business
-│   │   │   └── Trucking
-│   │   └── mining companies
-│   │       ├── Australian Kerosene Oil and Mineral Company
-│   │       ├── Katoomba Coal and Shale Company
-│   │       ├── New South Wales Shale and Oil Company
-│   │       ├── South Clifton Mine Company
-│   │       ├── Waudby and Company
-│   │       └── mining company
-│   ├── Government bodies
-│   │   ├── Aborigines' Protection Board
-│   │   ├── Councils
-│   │   │   ├── Council
-│   │   │   ├── Katoomba Council
-│   │   │   └── Lithgow Council
-│   │   ├── Courts
-│   │   │   ├── Court
-│   │   │   ├── Katoomba Court
-│   │   │   ├── Licensing Court
-│   │   │   ├── Police court
-│   │   │   └── Supreme Court
-│   │   ├── Police
-│   │   ├── Postal Department
-│   │   └── Railway Commission
-│   ├── civic organisations
-│   │   ├── Progress committees
-│   │   │   ├── Katoomba Progress Association
-│   │   │   ├── Leura Progress Association
-│   │   │   ├── Megalong Progress Committee
-│   │   │   ├── Mount Victoria Progress Committee
-│   │   │   ├── Progress committee
-│   │   │   └── Wentworth Falls Progress Association
-│   │   └── labour organisations
-│   │       ├── Unions
-│   │       └── labour organisation
+│   │   │   ├── Tabrett and Company
+│   │   │   └── retailer or store
+│   │   └── transport & logistics businesses
+│   │       ├── transport & logistics business
+│   │       └── trucking
 │   ├── cultural & recreational organisations
-│   │   ├── Cultural societies
-│   │   │   ├── Cultural society
-│   │   │   ├── Horticulture society
+│   │   ├── cultural societies
 │   │   │   ├── Katoomba Amateur Dramatic Club
 │   │   │   ├── chess and draughts club
+│   │   │   ├── cultural society
+│   │   │   ├── horticulture society
 │   │   │   └── schools of arts
 │   │   │       ├── Katoomba School of Arts
 │   │   │       └── school of arts
 │   │   ├── performance groups
-│   │   │   ├── Bands
-│   │   │   │   ├── Band
-│   │   │   │   └── Katoomba band
-│   │   │   ├── Choirs
-│   │   │   │   └── Choir
-│   │   │   └── Minstrel troupes
+│   │   │   ├── bands
+│   │   │   │   ├── Katoomba band
+│   │   │   │   └── band
+│   │   │   ├── choirs
+│   │   │   │   └── choir
+│   │   │   └── minstrel troupes
 │   │   │       ├── Katoomba Amateur Minstrels
-│   │   │       └── Minstrel troupe
+│   │   │       └── minstrel troupe
 │   │   └── sports clubs
 │   │       ├── athletic clubs
 │   │       │   ├── Katoomba Athletic Club
@@ -142,149 +127,164 @@ Agents
 │   │       │   └── Druid's Lodge (local lodge)
 │   │       ├── lodge
 │   │       └── unaffiliated lodges
-│   │           ├── mountaineer lodge
+│   │           ├── Mountaineer Lodge
 │   │           └── unaffiliated lodge
+│   ├── government bodies
+│   │   ├── Aborigines' Protection Board
+│   │   ├── New South Wales Police
+│   │   ├── Postal Department
+│   │   ├── Railway Commission
+│   │   ├── councils
+│   │   │   ├── Katoomba Council
+│   │   │   ├── Lithgow Council
+│   │   │   └── council
+│   │   └── courts
+│   │       ├── Katoomba Court
+│   │       ├── Licensing Court
+│   │       ├── Police Court
+│   │       ├── Supreme Court
+│   │       └── court
 │   ├── military organisations
-│   │   ├── N.S.W. Mounted Rifles
+│   │   ├── NSW Mounted Rifles
 │   │   └── volunteer rifle reserves
 │   │       ├── Katoomba Rifle Reserves
-│   │       └── mountain rifle reserves
+│   │       └── Mountain Rifle Reserves
 │   └── religious organisations
-│       ├── Religious education
+│       ├── churches
+│       │   ├── Congregational Church
+│       │   │   └── Katoomba Congregational Church
+│       │   ├── Methodist Church
+│       │   ├── Roman Catholic Church
+│       │   ├── St Hilda's Church
+│       │   ├── Wesleyan Church
+│       │   └── church
+│       ├── religious education
 │       │   └── sunday school
-│       ├── Religious social movements
-│       │   ├── Good Templars
-│       │   ├── Religious social movement
-│       │   └── Salvation Army
-│       └── churches
-│           ├── Congregational Church
-│           │   └── Katoomba Congregational Church
-│           ├── Methodist Church
-│           ├── St Hilda's Church
-│           ├── Wesleyan Church
-│           ├── church
-│           └── roman catholic church
-└── People
-    ├── Occupations
-    │   ├── Clergy
-    │   │   ├── Cardinal Moran
-    │   │   ├── Reverence M C Brown
-    │   │   ├── Reverend A Sutherland
-    │   │   ├── Reverend Canon Kemmis
-    │   │   ├── Reverend F V Pratt
-    │   │   ├── Reverend J H Maclean
-    │   │   ├── Reverend M S Fletcher
-    │   │   └── Reverend R M Laverty
-    │   ├── Legal officials
-    │   │   ├── Coroners
-    │   │   │   ├── Coroner
-    │   │   │   └── Coroner Lethbridge
-    │   │   └── Legal official
-    │   ├── Medical professionals
-    │   │   ├── Dr Morgan
-    │   │   ├── Dr Prangley
-    │   │   ├── Dr Spark
-    │   │   ├── Dr Watkins
-    │   │   └── Medical professional
-    │   ├── Military personnel
-    │   │   └── Soldiers
-    │   │       └── Major Sir Charles George Gordon
-    │   ├── Other goods and services
-    │   │   └── Coach and buggy business
-    │   │       └── Mr Thomas Cale
-    │   ├── Public officials
-    │   │   ├── Aldermen
-    │   │   ├── Licensing inspector
-    │   │   ├── Public official
-    │   │   ├── Stationmaster
-    │   │   ├── minister for mines
-    │   │   └── postal employees
-    │   │       ├── Mailmen
-    │   │       │   ├── Mailman
-    │   │       │   └── Postboy
-    │   │       └── Postmasters
-    │   │           ├── Mrs. A. Smith
-    │   │           ├── Mrs. England
-    │   │           ├── Mrs. H. Corston
-    │   │           ├── Mrs. James
-    │   │           └── Postmaster
-    │   ├── agriculture workers
-    │   │   └── Animal breeders
-    │   │       └── Horse breeder
-    │   │           └── Mr Hardie Clydesdale
-    │   ├── hospitality workers
-    │   │   ├── Liquor merchants
-    │   │   │   ├── Liquor merchant
-    │   │   │   └── Mr Wilkinson
-    │   │   ├── Publican
-    │   │   ├── hospitality worker
-    │   │   └── hotelliers
-    │   │       ├── Allen
-    │   │       ├── Bashford
-    │   │       ├── Biles
-    │   │       ├── Brown
-    │   │       ├── F. C. Goyder
-    │   │       ├── Isabellea J. Long
-    │   │       ├── Manuell
-    │   │       ├── Mr A. G. Rowell
-    │   │       ├── Mr Alf. Goodare
-    │   │       ├── Mr D Thomson
-    │   │       ├── Mr D. Brown
-    │   │       ├── Mr D. Thompson
-    │   │       ├── Mr Delaney
-    │   │       ├── Mr Edwards
-    │   │       ├── Mr Ellis
-    │   │       ├── Mr J. Hudson
-    │   │       ├── Mr J. Nimmo
-    │   │       ├── Mr Joe Nimmo
-    │   │       ├── Mr Lindeman
-    │   │       ├── Mr Manuel
-    │   │       ├── Mr N. Delaney
-    │   │       ├── Mr P. G. Whittall
-    │   │       ├── Mr R. Fryer
-    │   │       ├── Mr Wilson
-    │   │       ├── Mrs (Joe) Nimmo
-    │   │       ├── Mrs (R.) Fryer
-    │   │       ├── Mrs Brown
-    │   │       ├── Mrs Long
-    │   │       ├── Richard Allen
-    │   │       ├── Rubina Fryer
-    │   │       ├── W. Green
-    │   │       └── hotellier
-    │   ├── law enforcement personnel
-    │   │   └── Police officers
-    │   │       ├── Constable
-    │   │       │   ├── Constable John Hamilton
-    │   │       │   ├── Constable O'Reilly
-    │   │       │   ├── Constable Orr
-    │   │       │   └── Constable White
-    │   │       ├── Senior-Constable
-    │   │       │   ├── Senior-Constable Illingworth
-    │   │       │   └── Senior-Constable Thorncroft
-    │   │       └── Sergeant
-    │   │           └── Sergeant Thorndyke
-    │   ├── maritime workers
-    │   │   ├── Shipwright
-    │   │   └── maritime worker
-    │   └── miners
-    │       └── miner
+│       └── religious social movements
+│           ├── Good Templars
+│           ├── Salvation Army
+│           └── religious social movement
+└── people
     ├── demographic groups
-    │   ├── Adolescents
-    │   ├── Children
-    │   ├── Men
-    │   ├── Widows
-    │   ├── Women
-    │   └── demographic group
+    │   ├── adolescents
+    │   ├── children
+    │   ├── demographic group
+    │   ├── men
+    │   ├── widows
+    │   └── women
     ├── ethnic groups
     │   ├── Aboriginal people
     │   ├── Chinese people
     │   ├── Irish culture
     │   └── ethnic group
-    └── families
-        ├── Delaney family
-        ├── Greenbank family
-        ├── family
-        └── miners' families
+    ├── families
+    │   ├── Delaney family
+    │   ├── Greenbank family
+    │   ├── family
+    │   └── miners' families
+    └── occupations
+        ├── agriculture workers
+        │   └── animal breeders
+        │       └── horse breeder
+        │           └── Mr Hardie Clydesdale
+        ├── clergy
+        │   ├── Cardinal Moran
+        │   ├── Reverence M C Brown
+        │   ├── Reverend A Sutherland
+        │   ├── Reverend Canon Kemmis
+        │   ├── Reverend F V Pratt
+        │   ├── Reverend J H Maclean
+        │   ├── Reverend M S Fletcher
+        │   └── Reverend R M Laverty
+        ├── hospitality workers
+        │   ├── hospitality worker
+        │   ├── hotelliers
+        │   │   ├── Allen
+        │   │   ├── Bashford
+        │   │   ├── Biles
+        │   │   ├── Brown
+        │   │   ├── F C Goyder
+        │   │   ├── Isabellea J Long
+        │   │   ├── Manuell
+        │   │   ├── Mr A G Rowell
+        │   │   ├── Mr Alf Goodare
+        │   │   ├── Mr D Brown
+        │   │   ├── Mr D Thompson
+        │   │   ├── Mr D Thomson
+        │   │   ├── Mr Delaney
+        │   │   ├── Mr Edwards
+        │   │   ├── Mr Ellis
+        │   │   ├── Mr J Hudson
+        │   │   ├── Mr J Nimmo
+        │   │   ├── Mr Joe Nimmo
+        │   │   ├── Mr Lindeman
+        │   │   ├── Mr Manuel
+        │   │   ├── Mr N Delaney
+        │   │   ├── Mr P G Whittall
+        │   │   ├── Mr R Fryer
+        │   │   ├── Mr Wilson
+        │   │   ├── Mrs (Joe) Nimmo
+        │   │   ├── Mrs (R.) Fryer
+        │   │   ├── Mrs Brown
+        │   │   ├── Mrs Long
+        │   │   ├── Richard Allen
+        │   │   ├── Rubina Fryer
+        │   │   ├── W Green
+        │   │   └── hotellier
+        │   ├── liquor merchants
+        │   │   ├── Mr Wilkinson
+        │   │   └── liquor merchant
+        │   └── publican
+        ├── law enforcement personnel
+        │   └── police officers
+        │       ├── constable
+        │       │   ├── Constable John Hamilton
+        │       │   ├── Constable O'Reilly
+        │       │   ├── Constable Orr
+        │       │   └── Constable White
+        │       ├── senior-constable
+        │       │   ├── Senior-Constable Illingworth
+        │       │   └── Senior-Constable Thorncroft
+        │       └── sergeant
+        │           └── Sergeant Thorndyke
+        ├── legal officials
+        │   ├── coroners
+        │   │   ├── Coroner Lethbridge
+        │   │   └── coroner
+        │   └── legal official
+        ├── maritime workers
+        │   ├── maritime worker
+        │   └── shipwright
+        ├── medical professionals
+        │   ├── Dr Morgan
+        │   ├── Dr Prangley
+        │   ├── Dr Spark
+        │   ├── Dr Watkins
+        │   └── medical professional
+        ├── military personnel
+        │   └── soldiers
+        │       └── Major Sir Charles George Gordon
+        ├── miners
+        │   └── miner
+        ├── other goods and services
+        │   └── coach and buggy business
+        │       └── Mr Thomas Cale
+        └── public officials
+            ├── aldermen
+            ├── licensing inspector
+            ├── minister for mines
+            ├── postal employees
+            │   ├── mailmen
+            │   │   ├── mailman
+            │   │   └── postboy
+            │   └── postmasters
+            │       ├── Mrs A Smith
+            │       ├── Mrs England
+            │       ├── Mrs H Corston
+            │       ├── Mrs James
+            │       └── postmaster
+            ├── public official
+            └── stationmaster
 
 
 STATISTICS:

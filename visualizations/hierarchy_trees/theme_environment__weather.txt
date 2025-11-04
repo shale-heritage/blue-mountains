@@ -2,22 +2,22 @@ THEMATIC GROUPING: environment & weather
 ================================================================================
 
 environment & weather
-├── Animals
-│   ├── Animal
-│   ├── Domestic animals
-│   │   ├── Cattle
-│   │   ├── Dogs
-│   │   └── Horses
-│   └── Wild animals
-│       └── Wild horses
 ├── Natural resources
-│   ├── Coal
+│   ├── coal
 │   └── shale mines
 │       ├── Katoomba Shale Mine
 │       ├── Megalong Shale Mines
 │       ├── Nellie's Glen Shale Mine
 │       ├── Ruined Castle Shale Mine
 │       └── shale mine
+├── animals
+│   ├── animal
+│   ├── domestic animals
+│   │   ├── cattle
+│   │   ├── dogs
+│   │   └── horses
+│   └── wild animals
+│       └── wild horses
 ├── natural features
 │   ├── caves & geological features
 │   │   ├── Jenolan Caves

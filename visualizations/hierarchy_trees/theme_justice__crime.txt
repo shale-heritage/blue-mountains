@@ -2,55 +2,55 @@ THEMATIC GROUPING: justice & crime
 ================================================================================
 
 justice & crime
-├── Court buildings
-│   ├── Courthouse
-│   └── Katoomba Court
-├── Courts
-│   ├── Court
+├── Legal outcomes
+│   ├── bankruptcy
+│   └── divorce
+├── New South Wales Police
+├── court buildings
+│   ├── Katoomba Courthouse
+│   └── courthouse
+├── courts
 │   ├── Katoomba Court
 │   ├── Licensing Court
-│   ├── Police court
-│   └── Supreme Court
-├── Legal officials
-│   ├── Coroners
-│   │   ├── Coroner
-│   │   └── Coroner Lethbridge
-│   └── Legal official
-├── Legal outcomes
-│   ├── Bankruptcy
-│   └── Divorce
-├── Legal proceedings
-│   ├── Court cases
-│   │   └── Property offences
-│   │       └── Stock trespass
-│   ├── Legal proceeding
-│   └── Licensing cases
-│       ├── Licensing offences
-│       └── Liquor licensing applications
-├── Police
-├── Police station
+│   ├── Police Court
+│   ├── Supreme Court
+│   └── court
 ├── crimes
 │   ├── Social order offences
-│   │   ├── Desertion
-│   │   ├── Gambling
-│   │   └── drunkenness (crime)
+│   │   ├── desertion
+│   │   ├── drunkenness (crime)
+│   │   └── gambling
 │   ├── other crimes
-│   │   └── Bigamy
+│   │   └── bigamy
 │   ├── property crimes
-│   │   └── Theft
+│   │   └── theft
 │   └── violent crimes
-│       ├── Assault
-│       ├── Fighting
+│       ├── assault
+│       ├── fighting
 │       └── sexual violence
 ├── law enforcement
-│   └── Policing
-└── legal events
-    ├── Bankruptcy
-    ├── Court cases
-    │   └── Property offences
-    │       └── Stock trespass
-    ├── Divorce
-    └── legal event
+│   └── policing
+├── legal events
+│   ├── bankruptcy
+│   ├── court cases
+│   │   └── property offences
+│   │       └── stock trespass
+│   ├── divorce
+│   └── legal event
+├── legal officials
+│   ├── coroners
+│   │   ├── Coroner Lethbridge
+│   │   └── coroner
+│   └── legal official
+├── legal proceedings
+│   ├── court cases
+│   │   └── property offences
+│   │       └── stock trespass
+│   ├── legal proceeding
+│   └── licensing cases
+│       ├── licensing offences
+│       └── liquor licensing applications
+└── police station
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

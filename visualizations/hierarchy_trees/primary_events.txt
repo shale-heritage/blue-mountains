@@ -2,84 +2,84 @@ PRIMARY FACET: Events
 ================================================================================
 
 Events
-├── Legal proceedings
-│   ├── Court cases
-│   │   └── Property offences
-│   │       └── Stock trespass
-│   ├── Legal proceeding
-│   └── Licensing cases
-│       ├── Licensing offences
-│       └── Liquor licensing applications
 ├── accidents
-│   ├── Fire
 │   ├── accident
 │   │   └── mining accidents
 │   ├── agricultural accidents
 │   │   └── livestock accidents
-│   │       └── Animal attacks
-│   │           └── Goring
+│   │       └── animal attacks
+│   │           └── goring
 │   ├── disaster
+│   ├── fire
 │   └── transport accidents
 │       └── animal-powered transport accidents
 │           └── horse accidents
-│               ├── Runaway horse incidents
 │               ├── horse-drawn vehicle accidents
-│               └── horseback riding accidents
+│               ├── horseback riding accidents
+│               └── runaway horse incidents
 ├── criminal events
-│   ├── Alcohol-related
-│   │   ├── Serving alcohol to minors
-│   │   ├── Unlicensed sales
-│   │   └── drunkenness (crime)
-│   ├── Assault
-│   ├── Bigamy
-│   ├── Desertion
-│   ├── Fighting
-│   ├── Theft
+│   ├── alcohol-related
+│   │   ├── drunkenness (crime)
+│   │   ├── serving alcohol to minors
+│   │   └── unlicensed sales
+│   ├── assault
+│   ├── bigamy
 │   ├── criminal event
-│   └── sexual violence
+│   ├── desertion
+│   ├── fighting
+│   ├── sexual violence
+│   └── theft
 ├── cultural events
-│   ├── Concert
 │   ├── Corroboree
-│   ├── Debate
-│   ├── Debating
-│   └── cultural event
+│   ├── concert
+│   ├── cultural event
+│   ├── debate
+│   └── debating
 ├── economic events
-│   ├── Strike
 │   ├── economic event
-│   └── mine closure
+│   ├── mine closure
+│   └── strike
 ├── historical events
 │   ├── World War I
 │   └── historical event
 ├── legal events
-│   ├── Bankruptcy
-│   ├── Court cases
-│   │   └── Property offences
-│   │       └── Stock trespass
-│   ├── Divorce
+│   ├── bankruptcy
+│   ├── court cases
+│   │   └── property offences
+│   │       └── stock trespass
+│   ├── divorce
 │   └── legal event
+├── legal proceedings
+│   ├── court cases
+│   │   └── property offences
+│   │       └── stock trespass
+│   ├── legal proceeding
+│   └── licensing cases
+│       ├── licensing offences
+│       └── liquor licensing applications
 ├── life events
-│   ├── Death
-│   │   └── Death notice
-│   ├── Funeral
-│   └── Marriage
+│   ├── death
+│   │   └── death notice
+│   ├── funeral
+│   └── marriage
 ├── political events
-│   ├── Election
-│   ├── Petition
-│   └── Public meeting
+│   ├── election
+│   ├── petition
+│   └── public meeting
 ├── social events
-│   ├── Ball
-│   ├── Bazaar
-│   ├── Concert
-│   ├── Dance
-│   ├── Flower show
+│   ├── ball
+│   ├── bazaar
+│   ├── concert
+│   ├── dance
+│   ├── flower show
 │   └── social event
 └── sporting events
-    ├── Coursing
-    ├── Cricket match
-    ├── Football match
-    ├── Horse races
-    ├── Rugby match
-    ├── Shooting match
+    ├── coursing
+    ├── cricket match
+    ├── football match
+    ├── horse races
+    ├── rugby match
+    ├── shooting match
     └── sporting event
 
 

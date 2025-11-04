@@ -1,56 +1,56 @@
-THEMATIC GROUPING: Community institutions
+THEMATIC GROUPING: community institutions
 ================================================================================
 
-Community institutions
+community institutions
 ├── civic buildings
-│   ├── Council Chambers
-│   ├── Court buildings
-│   │   ├── Courthouse
-│   │   └── Katoomba Court
-│   ├── Police facilities
-│   │   └── Police station
+│   ├── council chambers
+│   ├── court buildings
+│   │   ├── Katoomba Courthouse
+│   │   └── courthouse
+│   ├── police facilities
+│   │   └── police station
 │   └── postal facilities
-│       └── Post office
+│       └── post office
 ├── civic organisations
-│   ├── Progress committees
-│   │   ├── Katoomba Progress Association
-│   │   ├── Leura Progress Association
-│   │   ├── Megalong Progress Committee
-│   │   ├── Mount Victoria Progress Committee
-│   │   ├── Progress committee
-│   │   └── Wentworth Falls Progress Association
-│   └── labour organisations
-│       ├── Unions
-│       └── labour organisation
+│   ├── labour organisations
+│   │   ├── labour organisation
+│   │   └── unions
+│   └── progress committees
+│       ├── Katoomba Progress Association
+│       ├── Leura Progress Association
+│       ├── Megalong Progress Committee
+│       ├── Mount Victoria Progress Committee
+│       ├── Wentworth Falls Progress Association
+│       └── progress committee
 ├── community buildings
 │   └── halls
 │       ├── Clarke's Hall
+│       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
 │       ├── Waudby's Hall
 │       ├── hall
-│       ├── masonic hall
 │       └── schools of arts
 │           ├── Katoomba School of Arts
 │           └── school of arts
 ├── cultural & recreational organisations
-│   ├── Cultural societies
-│   │   ├── Cultural society
-│   │   ├── Horticulture society
+│   ├── cultural societies
 │   │   ├── Katoomba Amateur Dramatic Club
 │   │   ├── chess and draughts club
+│   │   ├── cultural society
+│   │   ├── horticulture society
 │   │   └── schools of arts
 │   │       ├── Katoomba School of Arts
 │   │       └── school of arts
 │   ├── performance groups
-│   │   ├── Bands
-│   │   │   ├── Band
-│   │   │   └── Katoomba band
-│   │   ├── Choirs
-│   │   │   └── Choir
-│   │   └── Minstrel troupes
+│   │   ├── bands
+│   │   │   ├── Katoomba band
+│   │   │   └── band
+│   │   ├── choirs
+│   │   │   └── choir
+│   │   └── minstrel troupes
 │   │       ├── Katoomba Amateur Minstrels
-│   │       └── Minstrel troupe
+│   │       └── minstrel troupe
 │   └── sports clubs
 │       ├── athletic clubs
 │       │   ├── Katoomba Athletic Club
@@ -90,7 +90,7 @@ Community institutions
         │   └── Druid's Lodge (local lodge)
         ├── lodge
         └── unaffiliated lodges
-            ├── mountaineer lodge
+            ├── Mountaineer Lodge
             └── unaffiliated lodge
 
 

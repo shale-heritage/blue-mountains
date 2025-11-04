@@ -5,22 +5,22 @@ Arts & Culture
 ├── Cultural venues
 │   └── halls
 │       ├── Clarke's Hall
+│       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
 │       ├── Waudby's Hall
 │       ├── hall
-│       ├── masonic hall
 │       └── schools of arts
 │           ├── Katoomba School of Arts
 │           └── school of arts
 ├── cultural activities
-│   └── Advertising
+│   └── advertising
 ├── cultural events
-│   ├── Concert
 │   ├── Corroboree
-│   ├── Debate
-│   ├── Debating
-│   └── cultural event
+│   ├── concert
+│   ├── cultural event
+│   ├── debate
+│   └── debating
 └── cultural organisations
 
 

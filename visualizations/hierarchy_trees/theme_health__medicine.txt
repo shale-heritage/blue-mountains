@@ -1,23 +1,23 @@
-THEMATIC GROUPING: Health & Medicine
+THEMATIC GROUPING: health & medicine
 ================================================================================
 
-Health & Medicine
-├── Medical professionals
-│   ├── Dr Morgan
-│   ├── Dr Prangley
-│   ├── Dr Spark
-│   ├── Dr Watkins
-│   └── Medical professional
+health & medicine
 ├── health conditions
-│   ├── Death
-│   │   └── Death notice
+│   ├── death
+│   │   └── death notice
 │   ├── disease
 │   ├── illness
 │   └── injury
-└── health-related events
-    ├── accident
-    │   └── mining accidents
-    └── mining accidents
+├── health-related events
+│   ├── accident
+│   │   └── mining accidents
+│   └── mining accidents
+└── medical professionals
+    ├── Dr Morgan
+    ├── Dr Prangley
+    ├── Dr Spark
+    ├── Dr Watkins
+    └── medical professional
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

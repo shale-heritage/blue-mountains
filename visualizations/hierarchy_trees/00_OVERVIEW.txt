@@ -33,17 +33,8 @@ PRIMARY FACETS (Form-Based, Getty AAT Compatible):
 
 THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
 
-  - Alcohol & Temperance
-    File: theme_alcohol__temperance.txt
-
   - Arts & Culture
     File: theme_arts__culture.txt
-
-  - Communications & Postal Services
-    File: theme_communications__postal_services.txt
-
-  - Community institutions
-    File: theme_community_institutions.txt
 
   - Domestic accommodation - THEMATIC (residential aspect)
     File: theme_domestic_accommodation_-_thematic_residential_aspect.txt
@@ -51,29 +42,11 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Economy & Labour
     File: theme_economy__labour.txt
 
-  - Education
-    File: theme_education.txt
-
-  - Education - THEMATIC (religious education)
-    File: theme_education_-_thematic_religious_education.txt
-
-  - Health & Medicine
-    File: theme_health__medicine.txt
-
-  - Military & War
-    File: theme_military__war.txt
-
-  - People
-    File: theme_people.txt
-
   - Politics & Governance
     File: theme_politics__governance.txt
 
   - Race & Ethnicity
     File: theme_race__ethnicity.txt
-
-  - Recreation themes - THEMATIC (recreational lands)
-    File: theme_recreation_themes_-_thematic_recreational_lands.txt
 
   - Religion
     File: theme_religion.txt
@@ -87,14 +60,20 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Social issues - THEMATIC (virtual grouping)
     File: theme_social_issues_-_thematic_virtual_grouping.txt
 
-  - Sport & Recreation
-    File: theme_sport__recreation.txt
+  - alcohol & temperance
+    File: theme_alcohol__temperance.txt
 
-  - Tourism & Accommodation
-    File: theme_tourism__accommodation.txt
+  - communications & postal services
+    File: theme_communications__postal_services.txt
 
-  - Women & Gender
-    File: theme_women__gender.txt
+  - community institutions
+    File: theme_community_institutions.txt
+
+  - education
+    File: theme_education.txt
+
+  - education - THEMATIC (religious education)
+    File: theme_education_-_thematic_religious_education.txt
 
   - environment & weather
     File: theme_environment__weather.txt
@@ -105,20 +84,41 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - family & domestic life - THEMATIC
     File: theme_family__domestic_life_-_thematic.txt
 
+  - health & medicine
+    File: theme_health__medicine.txt
+
   - justice & crime
     File: theme_justice__crime.txt
 
   - justice & crime - THEMATIC (virtual grouping)
     File: theme_justice__crime_-_thematic_virtual_grouping.txt
 
+  - military & war
+    File: theme_military__war.txt
+
   - mining & industry
     File: theme_mining__industry.txt
+
+  - people
+    File: theme_people.txt
+
+  - recreation themes - THEMATIC (recreational lands)
+    File: theme_recreation_themes_-_thematic_recreational_lands.txt
+
+  - sport & recreation
+    File: theme_sport__recreation.txt
+
+  - tourism & accommodation
+    File: theme_tourism__accommodation.txt
 
   - towns
     File: theme_towns.txt
 
   - transport & infrastructure
     File: theme_transport__infrastructure.txt
+
+  - women & gender
+    File: theme_women__gender.txt
 
 
 ================================================================================
@@ -144,10 +144,10 @@ OVERALL STATISTICS:
 
 Primary Facets:
   - Top-level facets: 7
-  - Total nodes: 586
+  - Total nodes: 587
   - Total relationships: 593
   - Parent nodes: 183
-  - Leaf nodes: 403
+  - Leaf nodes: 404
 
 Thematic Groupings:
   - Top-level themes: 29

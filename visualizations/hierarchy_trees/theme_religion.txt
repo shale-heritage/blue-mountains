@@ -2,7 +2,7 @@ THEMATIC GROUPING: Religion
 ================================================================================
 
 Religion
-├── Clergy
+├── clergy
 │   ├── Cardinal Moran
 │   ├── Reverence M C Brown
 │   ├── Reverend A Sutherland
@@ -16,25 +16,25 @@ Religion
 │       ├── Congregational Church
 │       │   └── Katoomba Congregational Church
 │       ├── Methodist Church
+│       ├── Roman Catholic Church
 │       ├── St Hilda's Church
 │       ├── Wesleyan Church
-│       ├── church
-│       └── roman catholic church
+│       └── church
 └── religious organisations
-    ├── Religious education
+    ├── churches
+    │   ├── Congregational Church
+    │   │   └── Katoomba Congregational Church
+    │   ├── Methodist Church
+    │   ├── Roman Catholic Church
+    │   ├── St Hilda's Church
+    │   ├── Wesleyan Church
+    │   └── church
+    ├── religious education
     │   └── sunday school
-    ├── Religious social movements
-    │   ├── Good Templars
-    │   ├── Religious social movement
-    │   └── Salvation Army
-    └── churches
-        ├── Congregational Church
-        │   └── Katoomba Congregational Church
-        ├── Methodist Church
-        ├── St Hilda's Church
-        ├── Wesleyan Church
-        ├── church
-        └── roman catholic church
+    └── religious social movements
+        ├── Good Templars
+        ├── Salvation Army
+        └── religious social movement
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

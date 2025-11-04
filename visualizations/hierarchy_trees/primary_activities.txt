@@ -2,72 +2,72 @@ PRIMARY FACET: Activities
 ================================================================================
 
 Activities
-├── Social behaviours
-│   ├── Drinking (alcohol)
-│   ├── Gambling
-│   ├── Social behaviour
-│   └── Temperance
 ├── charitable and welfare activities
-│   ├── Charity
 │   ├── charitable and welfare activity
+│   ├── charity
 │   └── unemployment relief
 ├── communication activities
-│   ├── Advertising
-│   ├── Fundraising
-│   ├── Postal services
-│   └── communication activity
+│   ├── advertising
+│   ├── communication activity
+│   ├── fundraising
+│   └── postal services
 ├── economic activities
-│   ├── Agriculture
-│   │   └── Animal husbandry
-│   │       └── Animal breeding
-│   │           └── Horse breeding
-│   ├── Financial services
+│   ├── agriculture
+│   │   └── animal husbandry
+│   │       └── animal breeding
+│   │           └── horse breeding
+│   ├── economic activity
+│   ├── financial services
 │   │   └── insurance provision
 │   │       └── unemployment insurance
-│   ├── Hunting
-│   ├── Liquor trade
-│   │   ├── Liquor sales
-│   │   └── Wholesale liquor business
-│   ├── Tourism
-│   ├── Transport
-│   │   ├── Horseborne transportation
-│   │   ├── Railway operations
-│   │   │   ├── Railway operation
-│   │   │   └── Tourist trains
-│   │   └── Trucking
-│   ├── economic activity
-│   └── mining
-│       ├── coal mining
-│       ├── gold mining
-│       └── shale mining
+│   ├── hunting
+│   ├── liquor trade
+│   │   ├── liquor sales
+│   │   └── wholesale liquor business
+│   ├── mining
+│   │   ├── coal mining
+│   │   ├── gold mining
+│   │   └── shale mining
+│   ├── tourism
+│   └── transport
+│       ├── horseborne transportation
+│       ├── railway operations
+│       │   ├── railway operation
+│       │   └── tourist trains
+│       └── trucking
 ├── recreation activities
-│   ├── Athletics
-│   ├── Billiards
-│   ├── Horseback riding
-│   ├── Military sports
-│   ├── Shooting
-│   ├── Spectator sports
-│   ├── Team sports
-│   │   ├── Cricket
-│   │   ├── Football
-│   │   └── Rugby
-│   ├── Tennis
+│   ├── athletics
+│   ├── billiards
+│   ├── horseback riding
+│   ├── military sports
 │   ├── recreation activity
-│   └── recreation for miners
+│   ├── recreation for miners
+│   ├── shooting
+│   ├── spectator sports
+│   ├── team sports
+│   │   ├── cricket
+│   │   ├── football
+│   │   └── rugby
+│   └── tennis
+├── social behaviours
+│   ├── drinking (alcohol)
+│   ├── gambling
+│   ├── social behaviour
+│   └── temperance
 └── societal activities
-    ├── Regulatory processes
-    │   └── Licensing
-    │       ├── Billiard licensing
-    │       ├── Liquor licensing
-    │       ├── Publican's licensing
-    │       └── hotel licensing
     ├── law enforcement
-    │   └── Policing
+    │   └── policing
     ├── military activities
-    └── public health and safety activities
-        └── Animal control
-            ├── Feral dog control
-            └── Wild horse culling
+    ├── public health and safety activities
+    │   └── animal control
+    │       ├── feral dog control
+    │       └── wild horse culling
+    └── regulatory processes
+        └── licensing
+            ├── billiard licensing
+            ├── hotel licensing
+            ├── liquor licensing
+            └── publican's licensing
 
 
 STATISTICS:

@@ -1,25 +1,7 @@
-THEMATIC GROUPING: Alcohol & Temperance
+THEMATIC GROUPING: alcohol & temperance
 ================================================================================
 
-Alcohol & Temperance
-├── Alcohol consumption & behaviour
-│   ├── Alcoholic beverages
-│   │   ├── Alcoholic beverage
-│   │   ├── Beer
-│   │   ├── Mixed alcoholic beverages
-│   │   │   ├── Grog
-│   │   │   └── Mixed alcoholic beverage
-│   │   ├── Spirits
-│   │   │   ├── Brandy
-│   │   │   ├── Gin
-│   │   │   ├── Rum
-│   │   │   ├── Spirit
-│   │   │   └── Whisky
-│   │   └── Wine
-│   ├── Drinking (alcohol)
-│   ├── Drunkeness
-│   ├── drunkenness (crime)
-│   └── drunkenness (intoxication)
+alcohol & temperance
 ├── Alcohol-related venues
 │   ├── hotels
 │   │   ├── Belgravia Hotel
@@ -47,61 +29,79 @@ Alcohol & Temperance
 │   │   └── hotel
 │   └── public houses
 │       └── public house
-├── Licensing & regulation
-│   ├── Licensing
-│   │   ├── Billiard licensing
-│   │   ├── Liquor licensing
-│   │   ├── Publican's licensing
-│   │   └── hotel licensing
+├── alcohol consumption & behaviour
+│   ├── Drunkeness
+│   ├── alcoholic beverages
+│   │   ├── alcoholic beverage
+│   │   ├── beer
+│   │   ├── mixed alcoholic beverages
+│   │   │   ├── grog
+│   │   │   └── mixed alcoholic beverage
+│   │   ├── spirits
+│   │   │   ├── brandy
+│   │   │   ├── gin
+│   │   │   ├── rum
+│   │   │   ├── spirit
+│   │   │   └── whisky
+│   │   └── wine
+│   ├── drinking (alcohol)
+│   ├── drunkenness (crime)
+│   └── drunkenness (intoxication)
+├── hospitality workers
+│   ├── hospitality worker
+│   ├── hotelliers
+│   │   ├── Allen
+│   │   ├── Bashford
+│   │   ├── Biles
+│   │   ├── Brown
+│   │   ├── F C Goyder
+│   │   ├── Isabellea J Long
+│   │   ├── Manuell
+│   │   ├── Mr A G Rowell
+│   │   ├── Mr Alf Goodare
+│   │   ├── Mr D Brown
+│   │   ├── Mr D Thompson
+│   │   ├── Mr D Thomson
+│   │   ├── Mr Delaney
+│   │   ├── Mr Edwards
+│   │   ├── Mr Ellis
+│   │   ├── Mr J Hudson
+│   │   ├── Mr J Nimmo
+│   │   ├── Mr Joe Nimmo
+│   │   ├── Mr Lindeman
+│   │   ├── Mr Manuel
+│   │   ├── Mr N Delaney
+│   │   ├── Mr P G Whittall
+│   │   ├── Mr R Fryer
+│   │   ├── Mr Wilson
+│   │   ├── Mrs (Joe) Nimmo
+│   │   ├── Mrs (R.) Fryer
+│   │   ├── Mrs Brown
+│   │   ├── Mrs Long
+│   │   ├── Richard Allen
+│   │   ├── Rubina Fryer
+│   │   ├── W Green
+│   │   └── hotellier
+│   ├── liquor merchants
+│   │   ├── Mr Wilkinson
+│   │   └── liquor merchant
+│   └── publican
+├── licensing & regulation
 │   ├── Licensing Act
 │   ├── Licensing Court
-│   ├── Licensing cases
-│   │   ├── Licensing offences
-│   │   └── Liquor licensing applications
-│   ├── Licensing inspector
+│   ├── licensing
+│   │   ├── billiard licensing
+│   │   ├── hotel licensing
+│   │   ├── liquor licensing
+│   │   └── publican's licensing
+│   ├── licensing cases
+│   │   ├── licensing offences
+│   │   └── liquor licensing applications
+│   ├── licensing inspector
 │   └── publican's licence
-├── hospitality workers
-│   ├── Liquor merchants
-│   │   ├── Liquor merchant
-│   │   └── Mr Wilkinson
-│   ├── Publican
-│   ├── hospitality worker
-│   └── hotelliers
-│       ├── Allen
-│       ├── Bashford
-│       ├── Biles
-│       ├── Brown
-│       ├── F. C. Goyder
-│       ├── Isabellea J. Long
-│       ├── Manuell
-│       ├── Mr A. G. Rowell
-│       ├── Mr Alf. Goodare
-│       ├── Mr D Thomson
-│       ├── Mr D. Brown
-│       ├── Mr D. Thompson
-│       ├── Mr Delaney
-│       ├── Mr Edwards
-│       ├── Mr Ellis
-│       ├── Mr J. Hudson
-│       ├── Mr J. Nimmo
-│       ├── Mr Joe Nimmo
-│       ├── Mr Lindeman
-│       ├── Mr Manuel
-│       ├── Mr N. Delaney
-│       ├── Mr P. G. Whittall
-│       ├── Mr R. Fryer
-│       ├── Mr Wilson
-│       ├── Mrs (Joe) Nimmo
-│       ├── Mrs (R.) Fryer
-│       ├── Mrs Brown
-│       ├── Mrs Long
-│       ├── Richard Allen
-│       ├── Rubina Fryer
-│       ├── W. Green
-│       └── hotellier
 └── temperance organisations & movements
     ├── Good Templars
-    └── Temperance
+    └── temperance
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.

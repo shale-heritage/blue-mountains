@@ -1,76 +1,76 @@
-THEMATIC GROUPING: Sport & Recreation
+THEMATIC GROUPING: sport & recreation
 ================================================================================
 
-Sport & Recreation
-├── Athletics
-├── Billiards
-├── Coursing
-├── Cricket
-├── Cricket match
-├── Football
-├── Football match
-├── Horse races
-├── Horse racing
-├── Military sports
-├── Recreation themes
-│   ├── Sports
-│   └── recreation for miners
-├── Rugby
-├── Rugby match
-├── Shooting
-├── Shooting match
-├── Spectator sports
-├── Tennis
-├── Women's sports
-├── Youth sports
+sport & recreation
+├── athletics
+├── billiards
+├── coursing
+├── cricket
+├── cricket match
+├── football
+├── football match
+├── horse races
+├── horse racing
+├── military sports
 ├── recreation buildings
 │   └── sports facilities
-│       ├── Cricket grounds
-│       │   └── Cricket ground
-│       ├── Ovals
+│       ├── cricket grounds
+│       │   └── cricket ground
+│       ├── ovals
 │       │   ├── Eskbank Oval
-│       │   └── Oval
-│       └── Rifle ranges
-│           └── Rifle range
+│       │   └── oval
+│       └── rifle ranges
+│           └── rifle range
+├── recreation themes
+│   ├── recreation for miners
+│   └── sports
+├── rugby
+├── rugby match
+├── shooting
+├── shooting match
+├── spectator sports
 ├── sporting events
-│   ├── Coursing
-│   ├── Cricket match
-│   ├── Football match
-│   ├── Horse races
-│   ├── Rugby match
-│   ├── Shooting match
+│   ├── coursing
+│   ├── cricket match
+│   ├── football match
+│   ├── horse races
+│   ├── rugby match
+│   ├── shooting match
 │   └── sporting event
-└── sports clubs
-    ├── athletic clubs
-    │   ├── Katoomba Athletic Club
-    │   └── athletic club
-    ├── coursing clubs
-    │   ├── Wallerawang Coursing Club
-    │   └── coursing club
-    ├── cricket clubs
-    │   ├── Katoomba Cricket Club
-    │   ├── Megalong Cricket Club
-    │   └── cricket club
-    ├── football clubs
-    │   ├── Hartley Vale Natives Football Club
-    │   ├── Katoomba Football Club
-    │   ├── Lithgow Rovers
-    │   ├── football club
-    │   └── nepean football club
-    ├── outdoor recreation clubs
-    │   ├── Katoomba Shooting Fishing and Excursion Club
-    │   └── outdoor recreation club
-    ├── rifle clubs
-    │   ├── Katoomba Civilian Rifle Club
-    │   ├── Western Rifle Association
-    │   └── rifle club
-    ├── rugby clubs
-    │   ├── penrith rugby club
-    │   └── rugby club
-    └── tennis clubs
-        ├── Katoomba Lawn Tennis Club
-        ├── lawn tennis club
-        └── tennis club
+├── sports clubs
+│   ├── athletic clubs
+│   │   ├── Katoomba Athletic Club
+│   │   └── athletic club
+│   ├── coursing clubs
+│   │   ├── Wallerawang Coursing Club
+│   │   └── coursing club
+│   ├── cricket clubs
+│   │   ├── Katoomba Cricket Club
+│   │   ├── Megalong Cricket Club
+│   │   └── cricket club
+│   ├── football clubs
+│   │   ├── Hartley Vale Natives Football Club
+│   │   ├── Katoomba Football Club
+│   │   ├── Lithgow Rovers
+│   │   ├── football club
+│   │   └── nepean football club
+│   ├── outdoor recreation clubs
+│   │   ├── Katoomba Shooting Fishing and Excursion Club
+│   │   └── outdoor recreation club
+│   ├── rifle clubs
+│   │   ├── Katoomba Civilian Rifle Club
+│   │   ├── Western Rifle Association
+│   │   └── rifle club
+│   ├── rugby clubs
+│   │   ├── penrith rugby club
+│   │   └── rugby club
+│   └── tennis clubs
+│       ├── Katoomba Lawn Tennis Club
+│       ├── lawn tennis club
+│       └── tennis club
+├── tennis
+├── women's sports
+└── youth sports
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
