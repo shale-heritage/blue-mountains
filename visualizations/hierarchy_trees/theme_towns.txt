@@ -2,20 +2,35 @@ THEMATIC GROUPING: towns
 ================================================================================
 
 towns
+├── Bathurst
 ├── Blackheath
+├── Burragorang
+├── Capertee
 ├── Clarence
 ├── Greater Katoomba
+│   ├── Carrington
+│   │   └── Katoomba Street
 │   ├── Katoomba
 │   └── Katoomba South
 ├── Greater Megalong
 │   ├── Megalong
-│   └── Middle camp (settlement)
+│   ├── Middle Camp (settlement)
+│   └── Top Camp (settlement)
 ├── Katoomba
+├── Lawson
 ├── Leura
 ├── Lithgow
 ├── Medlow
 ├── Megalong
 ├── Mount Victoria
+├── Newcastle
+├── Oberon
+├── Parramatta
+├── Penrith
+├── Port Kembla
+├── Rockley
+├── Springwood
+├── Sunny Corner
 ├── Sydney
 ├── Wentworth Falls
 └── town
@@ -26,6 +41,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 18
+  Total nodes in theme: 33
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

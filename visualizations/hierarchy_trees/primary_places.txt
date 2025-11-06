@@ -8,18 +8,18 @@ Places
 │   │   └── Hartley Vale mines
 │   ├── Nellie's Glen mining district
 │   │   ├── Nellie's Glen (settlement)
-│   │   ├── Nellie's Glen Road
-│   │   └── Nellie's Glen Shale Mine
+│   │   └── Nellie's Glen Shale Mine (site)
 │   ├── Ruined Castle mining district
 │   │   ├── Ruined Castle (settlement)
-│   │   └── Ruined Castle Shale Mine
+│   │   └── Ruined Castle Shale Mine (site)
 │   └── South Clifton (Illawarra)
-│       └── South Clifton Tunnel Mine
+│       └── South Clifton Tunnel Mine (site)
 ├── natural features
 │   ├── caves & geological features
 │   │   ├── Jenolan Caves
 │   │   └── Jenolan Caves Road
 │   ├── gullies
+│   │   ├── Break Neck Gully
 │   │   └── Nellie's Glen (gully)
 │   ├── mountain features
 │   │   ├── Narrow Neck
@@ -42,23 +42,38 @@ Places
 │   ├── Wentworth Falls Reserves
 │   └── reserve
 └── towns
+    ├── Bathurst
     ├── Blackheath
+    ├── Burragorang
+    ├── Capertee
     ├── Clarence
     ├── Greater Katoomba
+    │   ├── Carrington
+    │   │   └── Katoomba Street
     │   ├── Katoomba
     │   └── Katoomba South
     ├── Greater Megalong
     │   ├── Megalong
-    │   └── Middle camp (settlement)
+    │   ├── Middle Camp (settlement)
+    │   └── Top Camp (settlement)
+    ├── Lawson
     ├── Leura
     ├── Lithgow
     ├── Medlow
     ├── Mount Victoria
+    ├── Newcastle
+    ├── Oberon
+    ├── Parramatta
+    ├── Penrith
+    ├── Port Kembla
+    ├── Rockley
+    ├── Springwood
+    ├── Sunny Corner
     ├── Sydney
     └── town
 
 
 STATISTICS:
-  Total nodes in facet: 55
+  Total nodes in facet: 70
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

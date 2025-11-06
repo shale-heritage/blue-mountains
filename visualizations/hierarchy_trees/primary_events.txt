@@ -59,7 +59,8 @@ Events
 │       └── liquor licensing applications
 ├── life events
 │   ├── death
-│   │   └── death notice
+│   │   ├── death notice
+│   │   └── suicide
 │   ├── funeral
 │   └── marriage
 ├── political events
@@ -84,6 +85,6 @@ Events
 
 
 STATISTICS:
-  Total nodes in facet: 80
+  Total nodes in facet: 81
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

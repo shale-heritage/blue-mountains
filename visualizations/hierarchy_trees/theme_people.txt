@@ -97,10 +97,138 @@ people
 │   ├── Irish culture
 │   └── ethnic group
 ├── families
+│   ├── Austin family
+│   ├── Brydon family
+│   ├── Davey family
 │   ├── Delaney family
+│   ├── Eaton family
+│   ├── Evans family
+│   ├── Flynn family
+│   ├── Gordon family
+│   ├── Goyder family
+│   │   └── Goyder brothers
 │   ├── Greenbank family
+│   ├── Hartman family
+│   ├── Husband family
+│   ├── Meredith family
+│   ├── Peckman family
+│   ├── Penman family
+│   ├── Tabrett family
+│   ├── Watkins family
 │   ├── family
 │   └── miners' families
+├── named persons
+│   ├── Miss Bradley
+│   ├── Miss Edwards
+│   ├── Miss Eva Peckman
+│   ├── Miss Levina Kitch
+│   ├── Miss Nellie North
+│   ├── Mr A J Parcell
+│   ├── Mr A Thorneycroft
+│   ├── Mr A W Stephen
+│   ├── Mr Ah Narm
+│   ├── Mr Allan West
+│   ├── Mr Arthur L Morris
+│   ├── Mr Arthur Wright
+│   ├── Mr Banfield
+│   ├── Mr C J Ellis
+│   ├── Mr C W Craig
+│   ├── Mr Charles E Hoffman
+│   ├── Mr Charles Pratt
+│   ├── Mr Charles Wooller
+│   ├── Mr Christopher Webb
+│   ├── Mr Clydesdale
+│   ├── Mr D J Dunbar
+│   ├── Mr D Morsby
+│   ├── Mr D O'Keefe
+│   ├── Mr Dalwood
+│   ├── Mr David Hamilton
+│   ├── Mr Douglass
+│   ├── Mr E E Medlicott
+│   ├── Mr E Jordan
+│   ├── Mr Edward J Delaney
+│   ├── Mr Edward Pearson
+│   ├── Mr Frederick Charles Goyder
+│   ├── Mr G Donald
+│   ├── Mr G Griffiths
+│   ├── Mr G R Dibbs
+│   ├── Mr G W Spring
+│   ├── Mr Gannon
+│   ├── Mr George Bremmer Dunn
+│   ├── Mr George Frederick Goyder
+│   ├── Mr George H Cooper
+│   ├── Mr George Susans
+│   ├── Mr H Roberts
+│   ├── Mr J Annesley
+│   ├── Mr J B North
+│   ├── Mr J H Humbley
+│   ├── Mr J K Cleeve
+│   ├── Mr J R Nash
+│   ├── Mr John Duff
+│   ├── Mr John Fitzpatrick
+│   ├── Mr John Geggie
+│   ├── Mr John Henry Mitchell
+│   ├── Mr John Hurley
+│   ├── Mr John Norton
+│   ├── Mr John Still O'Hara
+│   ├── Mr John W Fletcher
+│   ├── Mr Jones
+│   ├── Mr Joseph Cook
+│   ├── Mr Joseph Edwards
+│   ├── Mr Joseph Nimmo
+│   ├── Mr Kitch
+│   ├── Mr L H Howell
+│   ├── Mr Lewis Duff
+│   ├── Mr Louis Cohen
+│   ├── Mr Mark Foy
+│   ├── Mr Messitter
+│   ├── Mr Neate
+│   ├── Mr Nick Zimmo
+│   ├── Mr O Purslow
+│   ├── Mr O'Hare
+│   ├── Mr O'Sullivan
+│   ├── Mr Owen Owens
+│   ├── Mr P McAviney
+│   ├── Mr P Mullany
+│   ├── Mr Parker
+│   ├── Mr Penrose
+│   ├── Mr Percy Hammond
+│   ├── Mr Peter O'Donnell
+│   ├── Mr Preston
+│   ├── Mr R J Bronger
+│   ├── Mr Ralph Hartman
+│   ├── Mr Robert Brydon
+│   ├── Mr Robert H Esgate
+│   ├── Mr Robert Russell
+│   ├── Mr Rodrigeuz
+│   ├── Mr Rubina Fryer
+│   ├── Mr S E Hewett
+│   ├── Mr Samuel Austin
+│   ├── Mr Sheard
+│   ├── Mr Stanley Gayfer
+│   ├── Mr T J Cale
+│   ├── Mr T Tiernan
+│   ├── Mr Thomas Austin
+│   ├── Mr Thomas Cook
+│   ├── Mr Thomas Hollins
+│   ├── Mr W Hocking
+│   ├── Mr W J Hart
+│   ├── Mr W McMillan
+│   ├── Mr Wilfred Moss
+│   ├── Mr Wrench
+│   ├── Mr Zack Nimmo
+│   ├── Mrs Christina Brydon
+│   ├── Mrs Elizabeth Nimmo
+│   ├── Mrs Ellen Hoffman (nee Gavin)
+│   ├── Mrs Emma Matilda Waudby (nee Phair)
+│   ├── Mrs Evelyn Gordon (nee Günther)
+│   ├── Mrs Grace Richmond Battram (nee Jones)
+│   ├── Mrs Isabella Long (nee Clune)
+│   ├── Mrs Mary Duff (nee Evans)
+│   ├── Mrs Percy Fowles (nee Nimmo)
+│   ├── Mrs Rose Anna (Fanny) Lynch (nee Fisher)
+│   ├── Mrs S Hindman
+│   └── Ms May Porter
 └── occupations
     ├── agriculture workers
     │   └── animal breeders
@@ -211,6 +339,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 203
+  Total nodes in theme: 331
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

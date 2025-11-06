@@ -122,3 +122,13 @@ Megalong Valley.,23 June 1893,Unknown,,Horses | Horseborne transportation | Post
 [untitled],29 June 1889,Katoomba Times,Drinking,Drinking (alcohol),drinking_consolidation,Consolidate Drinking to Drinking (alcohol)
 Katoomba Municipal Elections.,5 July 1890,Katoomba Times,Drinking,Drinking (alcohol),drinking_consolidation,Consolidate Drinking to Drinking (alcohol) - item mentions drunkenness
 Death of Mrs. Nimmo,3 December 1926,Blue Mountain Echo,Family Hotel,Katoomba Family Hotel | Mr Joe Nimmo | Mrs (Joe) Nimmo | Katoomba,family_hotels_rationalization,Change generic "Family Hotel" to specific "Katoomba Family Hotel" - add owners and location
+Mountain Mixtures.,9 September 1892,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site) | Nellie's Glen Shale Mine | Ruined Castle Shale Mine (site) | Ruined Castle Shale Mine,orphaned_tags_retagging_decisions,Mining settlements #1
+Unionism of To-day.,1 September 1893,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site) | Nellie's Glen Shale Mine,orphaned_tags_retagging_decisions,Mining settlements #2
+Megalong Mines.,1 September 1893,Katoomba Times,Mining settlements | Trucking,Nellie's Glen (settlement) | Bonnie Doon Track | Nellie's Glen (gully) | miners' dwellings | truck system,orphaned_tags_retagging_decisions,Mining settlements #3 + Trucking
+Great Wentworth Falls Coal and Shale Mining Company.,31 August 1885,Evening News,Mining settlements,Great Wentworth Falls Coal and Shale Mining Company,orphaned_tags_retagging_decisions,Mining settlements #4 - add company tag
+Megalong Valley.,18 August 1893,Katoomba Times,Mining settlements,disease | Nellie's Glen (settlement) | Nellie's Glen Road | Break Neck Gully,orphaned_tags_retagging_decisions,Mining settlements #5
+Mountain Mixtures,25 August 1893,Katoomba Times,Illness | Trucking,disease | truck system | cattle trucking yard,orphaned_tags_retagging_decisions,Trucking + Illness replacement
+Mountain Mixtures.,21 October 1892,Katoomba Times,Rifle reserves,shooting | injury,orphaned_tags_retagging_decisions,Rifle reserves #1
+Town Talk.,13 May 1904,Blue Mountain Gazette,Rifle reserves,cycling | bicycle club | rifle range | rifle club,orphaned_tags_retagging_decisions,Rifle reserves #2
+Mountain Mixtures.,20 November 1891,Katoomba Times,Katoomba Coal and Shale Mines,Katoomba Coal and Shale Company,orphaned_tags_final_resolution,Company name variant
+Testimonial to a Mine Manager.,9 August 1890,Katoomba Times,Katoomba Coal and Shale Mines,Katoomba Coal and Shale Company,orphaned_tags_final_resolution,Company name variant

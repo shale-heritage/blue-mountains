@@ -19,9 +19,12 @@ mining & industry
 │   └── recreation for miners
 ├── mining companies
 │   ├── Australian Kerosene Oil and Mineral Company
+│   ├── Gladstone Coal Company
+│   ├── Great Wentworth Falls Coal and Shale Mining Company
 │   ├── Katoomba Coal and Shale Company
 │   ├── New South Wales Shale and Oil Company
 │   ├── South Clifton Mine Company
+│   ├── Sunny Corner Mining Company
 │   ├── Waudby and Company
 │   └── mining company
 ├── mining incidents
@@ -37,7 +40,7 @@ mining & industry
 │   └── miners' families
 └── regional mining contexts
     ├── South Clifton (Illawarra)
-    │   └── South Clifton Tunnel Mine
+    │   └── South Clifton Tunnel Mine (site)
     ├── South Clifton Mine Company
     └── South Clifton Tunnel Mine
 
@@ -47,6 +50,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 39
+  Total nodes in theme: 42
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

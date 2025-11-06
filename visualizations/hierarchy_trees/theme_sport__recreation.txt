@@ -7,6 +7,7 @@ sport & recreation
 ├── coursing
 ├── cricket
 ├── cricket match
+├── cycling
 ├── football
 ├── football match
 ├── horse races
@@ -41,6 +42,8 @@ sport & recreation
 │   ├── athletic clubs
 │   │   ├── Katoomba Athletic Club
 │   │   └── athletic club
+│   ├── bicycle clubs
+│   │   └── bicycle club
 │   ├── coursing clubs
 │   │   ├── Wallerawang Coursing Club
 │   │   └── coursing club
@@ -78,6 +81,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 70
+  Total nodes in theme: 73
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

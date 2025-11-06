@@ -14,6 +14,7 @@ Politics & Governance
 │   └── courts
 │       ├── Katoomba Court
 │       ├── Licensing Court
+│       ├── Penrith Police Court
 │       ├── Police Court
 │       ├── Supreme Court
 │       └── court
@@ -44,6 +45,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 36
+  Total nodes in theme: 37
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

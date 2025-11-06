@@ -3,7 +3,6 @@ THEMATIC GROUPING: transport & infrastructure
 
 transport & infrastructure
 ├── commercial transport
-│   └── trucking
 ├── mining transport
 │   └── tramway
 ├── railway
@@ -12,7 +11,9 @@ transport & infrastructure
 │       ├── Katoomba station
 │       └── Zig Zag
 ├── roads
+│   ├── Bonnie Doon Track
 │   ├── Jenolan Caves Road
+│   ├── Katoomba Street
 │   ├── Nellie's Glen Road
 │   └── road
 └── utilities
@@ -26,6 +27,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 18
+  Total nodes in theme: 19
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -52,14 +52,19 @@ bankruptcy,bankruptcy,hierarchy,parent=Economic hardship - THEMATIC
 bankruptcy,bankruptcy,hierarchy,parent=legal events
 bankruptcy,bankruptcy,hierarchy,parent=Legal outcomes - THEMATIC
 beer,beer,hierarchy,parent=alcoholic beverages
+beer sales,beer sales,hierarchy,parent=liquor trade
 Belgravia Hotel,Belgravia Hotel,hierarchy,parent=hotels
 bigamy,bigamy,hierarchy,parent=criminal events
 bigamy,bigamy,hierarchy,parent=other crimes - THEMATIC
+bicycle clubs,bicycle clubs,hierarchy,parent=sports clubs
+bicycle club,bicycle club,hierarchy,parent=bicycle clubs
 Bashford,Bashford,hierarchy,parent=hotelliers
 Biles,Biles,hierarchy,parent=hotelliers
 billiards,billiard,merge,Singular form merged into plural - standardise to Billiards
 billiards,billiards,hierarchy,parent=recreation activities
 billiards,billiards,hierarchy,parent=sport & recreation - THEMATIC
+cycling,cycling,hierarchy,parent=recreation activities
+cycling,cycling,hierarchy,parent=sport & recreation - THEMATIC
 Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Blackheath,Blackheath,hierarchy,parent=towns
 boarding house,boarding house,hierarchy,parent=boarding houses
@@ -68,6 +73,7 @@ boarding houses,boarding houses,hierarchy,parent=accommodation buildings
 boarding houses,boarding houses,hierarchy,parent=Domestic accommodation - THEMATIC
 boarding houses,boarding houses,hierarchy,parent=hospitality businesses
 brandy,brandy,hierarchy,parent=spirits
+Bonnie Doon Track,Bonnie Doon Track,hierarchy,parent=roads
 Brown,Brown,hierarchy,parent=hotelliers
 hotel,Brown's Hotel,merge,Possessive form referring to hotel run by Brown (hotellier) - tag as Hotel + Brown
 businesses,businesses,hierarchy,parent=Economy & Labour - THEMATIC
@@ -183,6 +189,7 @@ dogs,dogs,hierarchy,parent=domestic animals
 Domestic accommodation,Domestic accommodation,hierarchy,parent=family & domestic life - THEMATIC
 Douglas and Company,Douglas and Company,hierarchy,parent=retailers and stores
 Douglas and Company,Douglas & Co.,synonym,Abbreviated form of Douglas and Company
+Great Wentworth Falls Coal and Shale Mining Company,Great Wentworth Falls Coal and Shale Mining Company,hierarchy,parent=mining companies
 Dr Morgan,Dr Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Dr Morgan,Dr Morgan,hierarchy,parent=medical professionals
 Dr Prangley,Dr Prangley,hierarchy,parent=medical professionals
@@ -271,6 +278,7 @@ Great Western Hotel,Great Western Hotel,hierarchy,parent=hotels
 Great Western Railway,Great Western Railway,hierarchy,parent=railway
 Greenbank family,Greenbank family,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 grog,grog,hierarchy,parent=mixed alcoholic beverages
+Break Neck Gully,Break Neck Gully,hierarchy,parent=gullies
 gullies,gullies,hierarchy,parent=natural features
 halls,halls,hierarchy,parent=community buildings
 halls,halls,hierarchy,parent=Cultural venues - THEMATIC
@@ -403,8 +411,9 @@ Megalong Valley School,Megalong Valley School,hierarchy,parent=schools
 men,men,hierarchy,parent=demographic groups
 men,men,hierarchy,parent=family members by demographic - THEMATIC
 Methodist Church,Methodist Church,hierarchy,parent=churches
-Middle camp (settlement),Middle camp (settlement),hierarchy,parent=Greater Megalong
-Middle camp (settlement),Middle camp,synonym,Unqualified form - use settlement qualifier for clarity
+Middle Camp (settlement),Middle Camp (settlement),hierarchy,parent=Greater Megalong
+Middle Camp (settlement),Middle Camp,synonym,Unqualified form - use settlement qualifier for clarity
+Top Camp (settlement),Top Camp (settlement),hierarchy,parent=Greater Megalong
 military,military,merge,Consolidate to Military activities (preferred term for activity facet)
 military,military,hierarchy,parent=military organisations - THEMATIC
 military & war,military & war,hierarchy,parent=(thematic grouping)
@@ -425,6 +434,7 @@ miners,miners,hierarchy,parent=Workforce - THEMATIC
 miners' dwellings,miners' dwellings,hierarchy,parent=Domestic accommodation - THEMATIC
 miners' dwellings,miners' dwellings,hierarchy,parent=dwellings
 miners' dwellings,miners' dwellings,hierarchy,parent=mining workforce - THEMATIC
+miners' dwellings,miners' huts,synonym,Informal term for miners' dwellings
 miners' families,miners' families,hierarchy,parent=families
 miners' families,miners' families,hierarchy,parent=families - THEMATIC
 miners' families,miners' families,hierarchy,parent=mining workforce - THEMATIC
@@ -479,6 +489,7 @@ Mr Crawford,Mr Crawford,keep,Person names - likely different individuals (preser
 Mr D McKillop,Mr D McKillop,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr D Thomson,Mr D Thomson,hierarchy,parent=hotelliers
 Mr D Brown,Mr D Brown,hierarchy,parent=hotelliers
+Mr D Brown,Mr David Brown,synonym,Full first name variant of abbreviated form
 Mr D Thompson,Mr D Thompson,hierarchy,parent=hotelliers
 Mr David Morgan,Mr David Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Delaney,Mr Delaney,hierarchy,parent=hotelliers
@@ -576,13 +587,14 @@ natural features,natural features,hierarchy,parent=tourist attractions - THEMATI
 Natural resources,Natural resources,hierarchy,parent=environment & weather - THEMATIC
 Nellie's Glen (gully),Nellie's Glen (gully),hierarchy,parent=gullies
 Nellie's Glen mining district,Nellie's Glen,synonym,Unqualified form - use mining district qualifier for mining context; gully qualifier for natural feature
-Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen mining district
 Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=roads
-Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen mining district
+Nellie's Glen Shale Mine (site),Nellie's Glen Shale Mine (site),hierarchy,parent=Nellie's Glen mining district
+Nellie's Glen Shale Mine (site),Megalong mines,synonym,"Historical reference term for shale mining operations in Megalong Valley - refers to the geographic site of Nellie's Glen Shale Mine"
 Nellie's Glen Road,Nellie's Glen Track,synonym,Informal local term for same route - prefer formal Road designation
 Nellie's Glen Road,Nellie's Glen track,synonym,Lowercase variant - use Nellie's Glen Road
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
 Nimmo's,Nimmo's,hierarchy,parent=retailers and stores
+P. Mullany and Company,P. Mullany and Company,hierarchy,parent=retailers and stores
 occupations,occupations,hierarchy,parent=people
 Independent Order of Odd Fellows,Odd Fellows,synonym,Common short form of Independent Order of Odd Fellows
 Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=halls
@@ -603,6 +615,7 @@ New South Wales Police,New South Wales Police,hierarchy,parent=government bodies
 New South Wales Police,New South Wales Police,hierarchy,parent=justice & crime - THEMATIC
 New South Wales Police,NSW Police,synonym,Abbreviated form - use full name New South Wales Police
 New South Wales Police,Police,synonym,Short form - use full official name New South Wales Police
+Penrith Police Court,Penrith Police Court,hierarchy,parent=courts
 Police Court,Police Court,hierarchy,parent=courts
 police facilities,police facilities,hierarchy,parent=civic buildings
 police station,police station,hierarchy,parent=justice & crime - THEMATIC
@@ -696,7 +709,7 @@ rugby,rugby,hierarchy,parent=team sports
 rugby,rugby,hierarchy,parent=sport & recreation - THEMATIC
 Ruined Castle - rock formation,Ruined Castle - rock formation,hierarchy,parent=mountain features
 Ruined Castle mining district,Ruined Castle,synonym,Unqualified form - use mining district qualifier for mining context; rock formation qualifier for natural feature
-Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Ruined Castle mining district
+Ruined Castle Shale Mine (site),Ruined Castle Shale Mine (site),hierarchy,parent=Ruined Castle mining district
 rum,rum,hierarchy,parent=spirits
 Salvation Army,Salvation Army,hierarchy,parent=religious social movements
 school,school,hierarchy,parent=schools
@@ -733,6 +746,7 @@ Social order offences,Social order offences,hierarchy,parent=crimes - THEMATIC
 soldiers,soldiers,hierarchy,parent=military personnel
 Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=soldiers
 Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=people - THEMATIC
+Major Sir Charles George Gordon,Mr Charles George Gordon,synonym,Variant form without military rank and honorific
 South Clifton (Illawarra),South Clifton,synonym,Unqualified form - use Illawarra qualifier to distinguish from Blue Mountains locations
 South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies
 South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=regional mining contexts - THEMATIC
@@ -790,9 +804,10 @@ transport,transport,hierarchy,parent=economic activities
 transport & infrastructure,transport & infrastructure,hierarchy,parent=(thematic grouping)
 transport & logistics businesses,transport & logistics businesses,hierarchy,parent=commercial businesses
 transport infrastructure,transport infrastructure,hierarchy,parent=infrastructure
-trucking,trucking,hierarchy,parent=commercial transport - THEMATIC
-trucking,trucking,hierarchy,parent=transport
-trucking,trucking,hierarchy,parent=transport & logistics businesses
+truck system,truck system,hierarchy,parent=economic activities
+truck system,trucking,synonym,"Historical term for the truck system - 19th century exploitative labor practice of paying workers in goods, credit, or company store tokens instead of cash wages (outlawed by NSW Truck Act 1900)"
+cattle trucking yards,cattle trucking yards,hierarchy,parent=transport infrastructure
+cattle trucking yard,cattle trucking yard,hierarchy,parent=cattle trucking yards
 United Ancient Order of Druids,U.A.O.D.,synonym,Acronym for United Ancient Order of Druids
 unemployment,unemployment,hierarchy,parent=Economic distress - THEMATIC
 unemployment,unemployment,hierarchy,parent=Economic hardship - THEMATIC
@@ -836,6 +851,7 @@ widows,widows,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
 widows,widows,hierarchy,parent=victims of crime & violence - THEMATIC
 widows,widows,hierarchy,parent=Vulnerable populations - THEMATIC
 wine,wine,hierarchy,parent=alcoholic beverages
+wine sales,wine sales,hierarchy,parent=liquor trade
 women,women,hierarchy,parent=demographic groups
 women,women,hierarchy,parent=family members by demographic - THEMATIC
 women,women,hierarchy,parent=women as demographic group - THEMATIC
@@ -1017,6 +1033,7 @@ shale mine,shale mine,hierarchy,parent=shale mines (singular generic term)
 Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=shale mines
 Megalong Shale Mines,Megalong Shale Mines,hierarchy,parent=shale mines
 Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=shale mines
+Nellie's Glen Shale Mine,Glen Shale Mine,synonym,Short form of Nellie's Glen Shale Mine - use full name for clarity
 Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=shale mines
 mining districts,mining districts,hierarchy,parent=Places
 Hartley Vale mining district,Hartley Vale mining district,hierarchy,parent=mining districts
@@ -1024,13 +1041,15 @@ Hartley Vale (settlement),Hartley Vale (settlement),hierarchy,parent=Hartley Val
 Hartley Vale mines,Hartley Vale mines,hierarchy,parent=Hartley Vale mining district
 Nellie's Glen mining district,Nellie's Glen mining district,hierarchy,parent=mining districts
 Nellie's Glen (settlement),Nellie's Glen (settlement),hierarchy,parent=Nellie's Glen mining district
+Nellie's Glen (settlement),Megalong miners' camp,synonym,"Historical term for the mining settlement at Nellie's Glen in Megalong Valley"
 Ruined Castle mining district,Ruined Castle mining district,hierarchy,parent=mining districts
 Ruined Castle (settlement),Ruined Castle (settlement),hierarchy,parent=Ruined Castle mining district
 South Clifton (Illawarra),South Clifton (Illawarra),hierarchy,parent=mining districts
 South Clifton (Illawarra),South Clifton (Illawarra),hierarchy,parent=regional mining contexts - THEMATIC
-South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=South Clifton (Illawarra)
+South Clifton Tunnel Mine (site),South Clifton Tunnel Mine (site),hierarchy,parent=South Clifton (Illawarra)
 Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,"parent=mining companies (primary: absorbs A.K.O. & M. Company, Australian Kerosene Shale and Oil Company)"
 Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies (primary: absorbs Katoomba Coal and Shale Mines)
+Katoomba Coal and Shale Company,Katoomba Coal and Shale Mines,synonym,Variant name for Katoomba Coal and Shale Company - refers to the company and its operations
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies (primary: absorbs New South Wales Shale and Oil Co.)
 South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies (primary: absorbs South Clifton Mine Co.)
 Waudby and Company,Waudby and Company,hierarchy,parent=mining companies (primary: absorbs Waudby & Co.)
@@ -1095,3 +1114,161 @@ bazaar,bazaar,hierarchy,parent=social events
 public health and safety activities,public health and safety activities,hierarchy,parent=societal activities
 animal control,animal control,hierarchy,parent=public health and safety activities
 feral dog control,feral dog control,hierarchy,parent=animal control
+Austin family,Austin family,hierarchy,parent=families
+Brydon family,Brydon family,hierarchy,parent=families
+Davey family,Davey family,hierarchy,parent=families
+Eaton family,Eaton family,hierarchy,parent=families
+Evans family,Evans family,hierarchy,parent=families
+Flynn family,Flynn family,hierarchy,parent=families
+Gordon family,Gordon family,hierarchy,parent=families
+Goyder family,Goyder family,hierarchy,parent=families
+Goyder brothers,Goyder brothers,hierarchy,parent=Goyder family
+Hartman family,Hartman family,hierarchy,parent=families
+Husband family,Husband family,hierarchy,parent=families
+Meredith family,Meredith family,hierarchy,parent=families
+Peckman family,Peckman family,hierarchy,parent=families
+Penman family,Penman family,hierarchy,parent=families
+Tabrett family,Tabrett family,hierarchy,parent=families
+Watkins family,Watkins family,hierarchy,parent=families
+Bathurst,Bathurst,hierarchy,parent=towns
+Burragorang,Burragorang,hierarchy,parent=towns
+Capertee,Capertee,hierarchy,parent=towns
+Lawson,Lawson,hierarchy,parent=towns
+Newcastle,Newcastle,hierarchy,parent=towns
+Oberon,Oberon,hierarchy,parent=towns
+Parramatta,Parramatta,hierarchy,parent=towns
+Penrith,Penrith,hierarchy,parent=towns
+Port Kembla,Port Kembla,hierarchy,parent=towns
+Rockley,Rockley,hierarchy,parent=towns
+Springwood,Springwood,hierarchy,parent=towns
+Sunny Corner,Sunny Corner,hierarchy,parent=towns
+Australian Kerosene Oil and Mineral Company,A.K.O. & M. Company,synonym,Abbreviated form with periods
+Australian Kerosene Oil and Mineral Company,Australian Kerosene Shale and Oil Company,synonym,Variant name for Australian Kerosene Oil and Mineral Company
+New South Wales Shale and Oil Company,New South Wales Shale and Oil Co.,synonym,Abbreviated form
+South Clifton Mine Company,South Clifton Mine Co.,synonym,Abbreviated form  
+Waudby and Company,Waudby & Co.,synonym,Abbreviated form with ampersand
+Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=mining companies
+Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=mining companies
+suicide,suicide,hierarchy,parent=death
+publican's licence,Publican's License,synonym,US spelling variant of UK spelling publican's licence
+named persons,named persons,hierarchy,parent=people
+Miss Bradley,Miss Bradley,hierarchy,parent=named persons
+Miss Edwards,Miss Edwards,hierarchy,parent=named persons
+Miss Eva Peckman,Miss Eva Peckman,hierarchy,parent=named persons
+Miss Levina Kitch,Miss Levina Kitch,hierarchy,parent=named persons
+Miss Nellie North,Miss Nellie North,hierarchy,parent=named persons
+Mr A J Parcell,Mr A J Parcell,hierarchy,parent=named persons
+Mr A Thorneycroft,Mr A Thorneycroft,hierarchy,parent=named persons
+Mr A W Stephen,Mr A W Stephen,hierarchy,parent=named persons
+Mr Ah Narm,Mr Ah Narm,hierarchy,parent=named persons
+Mr Allan West,Mr Allan West,hierarchy,parent=named persons
+Mr Arthur L Morris,Mr Arthur L Morris,hierarchy,parent=named persons
+Mr Arthur Wright,Mr Arthur Wright,hierarchy,parent=named persons
+Mr Banfield,Mr Banfield,hierarchy,parent=named persons
+Mr C J Ellis,Mr C J Ellis,hierarchy,parent=named persons
+Mr C W Craig,Mr C W Craig,hierarchy,parent=named persons
+Mr Charles E Hoffman,Mr Charles E Hoffman,hierarchy,parent=named persons
+Mr Charles Pratt,Mr Charles Pratt,hierarchy,parent=named persons
+Mr Charles Wooller,Mr Charles Wooller,hierarchy,parent=named persons
+Mr Christopher Webb,Mr Christopher Webb,hierarchy,parent=named persons
+Mr Clydesdale,Mr Clydesdale,hierarchy,parent=named persons
+Mr D J Dunbar,Mr D J Dunbar,hierarchy,parent=named persons
+Mr D Morsby,Mr D Morsby,hierarchy,parent=named persons
+Mr D O'Keefe,Mr D O'Keefe,hierarchy,parent=named persons
+Mr Dalwood,Mr Dalwood,hierarchy,parent=named persons
+Mr David Hamilton,Mr David Hamilton,hierarchy,parent=named persons
+Mr Douglass,Mr Douglass,hierarchy,parent=named persons
+Mr E E Medlicott,Mr E E Medlicott,hierarchy,parent=named persons
+Mr E Jordan,Mr E Jordan,hierarchy,parent=named persons
+Mr Edward J Delaney,Mr Edward J Delaney,hierarchy,parent=named persons
+Mr Edward Pearson,Mr Edward Pearson,hierarchy,parent=named persons
+Mr Frederick Charles Goyder,Mr Frederick Charles Goyder,hierarchy,parent=named persons
+Mr G Donald,Mr G Donald,hierarchy,parent=named persons
+Mr G Griffiths,Mr G Griffiths,hierarchy,parent=named persons
+Mr G R Dibbs,Mr G R Dibbs,hierarchy,parent=named persons
+Mr G W Spring,Mr G W Spring,hierarchy,parent=named persons
+Mr Gannon,Mr Gannon,hierarchy,parent=named persons
+Mr George Bremmer Dunn,Mr George Bremmer Dunn,hierarchy,parent=named persons
+Mr George Frederick Goyder,Mr George Frederick Goyder,hierarchy,parent=named persons
+Mr George H Cooper,Mr George H Cooper,hierarchy,parent=named persons
+Mr George Susans,Mr George Susans,hierarchy,parent=named persons
+Mr H Roberts,Mr H Roberts,hierarchy,parent=named persons
+Mr J Annesley,Mr J Annesley,hierarchy,parent=named persons
+Mr J B North,Mr J B North,hierarchy,parent=named persons
+Mr J H Humbley,Mr J H Humbley,hierarchy,parent=named persons
+Mr J K Cleeve,Mr J K Cleeve,hierarchy,parent=named persons
+Mr J R Nash,Mr J R Nash,hierarchy,parent=named persons
+Mr John Duff,Mr John Duff,hierarchy,parent=named persons
+Mr John Fitzpatrick,Mr John Fitzpatrick,hierarchy,parent=named persons
+Mr John Geggie,Mr John Geggie,hierarchy,parent=named persons
+Mr John Henry Mitchell,Mr John Henry Mitchell,hierarchy,parent=named persons
+Mr John Hurley,Mr John Hurley,hierarchy,parent=named persons
+Mr John Norton,Mr John Norton,hierarchy,parent=named persons
+Mr John Still O'Hara,Mr John Still O'Hara,hierarchy,parent=named persons
+Mr John W Fletcher,Mr John W Fletcher,hierarchy,parent=named persons
+Mr Jones,Mr Jones,hierarchy,parent=named persons
+Mr Joseph Cook,Mr Joseph Cook,hierarchy,parent=named persons
+Mr Joseph Edwards,Mr Joseph Edwards,hierarchy,parent=named persons
+Mr Joseph Nimmo,Mr Joseph Nimmo,hierarchy,parent=named persons
+Mr Kitch,Mr Kitch,hierarchy,parent=named persons
+Mr L H Howell,Mr L H Howell,hierarchy,parent=named persons
+Mr Lewis Duff,Mr Lewis Duff,hierarchy,parent=named persons
+Mr Louis Cohen,Mr Louis Cohen,hierarchy,parent=named persons
+Mr Mark Foy,Mr Mark Foy,hierarchy,parent=named persons
+Mr Messitter,Mr Messitter,hierarchy,parent=named persons
+Mr Neate,Mr Neate,hierarchy,parent=named persons
+Mr Nick Zimmo,Mr Nick Zimmo,hierarchy,parent=named persons
+Mr O Purslow,Mr O Purslow,hierarchy,parent=named persons
+Mr O'Hare,Mr O'Hare,hierarchy,parent=named persons
+Mr O'Sullivan,Mr O'Sullivan,hierarchy,parent=named persons
+Mr Owen Owens,Mr Owen Owens,hierarchy,parent=named persons
+Mr P McAviney,Mr P McAviney,hierarchy,parent=named persons
+Mr P Mullany,Mr P Mullany,hierarchy,parent=named persons
+Mr Parker,Mr Parker,hierarchy,parent=named persons
+Mr Penrose,Mr Penrose,hierarchy,parent=named persons
+Mr Percy Hammond,Mr Percy Hammond,hierarchy,parent=named persons
+Mr Peter O'Donnell,Mr Peter O'Donnell,hierarchy,parent=named persons
+Mr Preston,Mr Preston,hierarchy,parent=named persons
+Mr R J Bronger,Mr R J Bronger,hierarchy,parent=named persons
+Mr Ralph Hartman,Mr Ralph Hartman,hierarchy,parent=named persons
+Mr Robert Brydon,Mr Robert Brydon,hierarchy,parent=named persons
+Mr Robert H Esgate,Mr Robert H Esgate,hierarchy,parent=named persons
+Mr Robert Russell,Mr Robert Russell,hierarchy,parent=named persons
+Mr Rodrigeuz,Mr Rodrigeuz,hierarchy,parent=named persons
+Mr Rubina Fryer,Mr Rubina Fryer,hierarchy,parent=named persons
+Mr S E Hewett,Mr S E Hewett,hierarchy,parent=named persons
+Mr Samuel Austin,Mr Samuel Austin,hierarchy,parent=named persons
+Mr Sheard,Mr Sheard,hierarchy,parent=named persons
+Mr Stanley Gayfer,Mr Stanley Gayfer,hierarchy,parent=named persons
+Mr T J Cale,Mr T J Cale,hierarchy,parent=named persons
+Mr T Tiernan,Mr T Tiernan,hierarchy,parent=named persons
+Mr Thomas Austin,Mr Thomas Austin,hierarchy,parent=named persons
+Mr Thomas Cook,Mr Thomas Cook,hierarchy,parent=named persons
+Mr Thomas Hollins,Mr Thomas Hollins,hierarchy,parent=named persons
+Mr W Hocking,Mr W Hocking,hierarchy,parent=named persons
+Mr W J Hart,Mr W J Hart,hierarchy,parent=named persons
+Mr W McMillan,Mr W McMillan,hierarchy,parent=named persons
+Mr Wilfred Moss,Mr Wilfred Moss,hierarchy,parent=named persons
+Mr Wrench,Mr Wrench,hierarchy,parent=named persons
+Mr Zack Nimmo,Mr Zack Nimmo,hierarchy,parent=named persons
+Mrs Christina Brydon,Mrs Christina Brydon,hierarchy,parent=named persons
+Mrs Elizabeth Nimmo,Mrs Elizabeth Nimmo,hierarchy,parent=named persons
+Mrs Ellen Hoffman (nee Gavin),Mrs Ellen Hoffman (nee Gavin),hierarchy,parent=named persons
+Mrs Emma Matilda Waudby (nee Phair),Mrs Emma Matilda Waudby (nee Phair),hierarchy,parent=named persons
+Mrs Evelyn Gordon (nee Günther),Mrs Evelyn Gordon (nee Günther),hierarchy,parent=named persons
+Mrs Grace Richmond Battram (nee Jones),Mrs Grace Richmond Battram (nee Jones),hierarchy,parent=named persons
+Mrs Isabella Long (nee Clune),Mrs Isabella Long (nee Clune),hierarchy,parent=named persons
+Mrs Mary Duff (nee Evans),Mrs Mary Duff (nee Evans),hierarchy,parent=named persons
+Mrs Percy Fowles (nee Nimmo),Mrs Percy Fowles (nee Nimmo),hierarchy,parent=named persons
+Mrs Rose Anna (Fanny) Lynch (nee Fisher),Mrs Rose Anna (Fanny) Lynch (nee Fisher),hierarchy,parent=named persons
+Mrs S Hindman,Mrs S Hindman,hierarchy,parent=named persons
+Ms May Porter,Ms May Porter,hierarchy,parent=named persons
+coal mine,Colliery,synonym,UK/Australian term for coal mine
+Druid's Lodge (local lodge),Druid's Lodge,synonym,Short form without qualifier
+cricket,Girls' cricket,merge,Tag with cricket + women (demographic group) + adolescents (if applicable) instead of gender-specific sport term per consolidation decision
+coal mine,Katoomba South mines,merge,Geographical folksonomy - tag with Katoomba South (location) + coal mine (or specific mine name if identified)
+Carrington,Carrington,hierarchy,parent=Greater Katoomba
+Katoomba Street,Katoomba Street,hierarchy,parent=roads
+Katoomba Street,Katoomba Street,hierarchy,parent=Carrington
+document types,document types,hierarchy,parent=Associated Concepts
+Maps,Maps,hierarchy,parent=document types

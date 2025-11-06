@@ -2,6 +2,8 @@ PRIMARY FACET: Associated Concepts
 ================================================================================
 
 Associated Concepts
+├── document types
+│   └── Maps
 ├── legal concepts
 │   ├── laws
 │   │   └── Licensing Act
@@ -21,6 +23,6 @@ Associated Concepts
 
 
 STATISTICS:
-  Total nodes in facet: 17
+  Total nodes in facet: 19
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

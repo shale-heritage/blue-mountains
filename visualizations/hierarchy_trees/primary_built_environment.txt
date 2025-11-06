@@ -86,13 +86,17 @@ Built Environment
 │   ├── mining infrastructure
 │   │   └── tramway
 │   ├── transport infrastructure
+│   │   ├── cattle trucking yards
+│   │   │   └── cattle trucking yard
 │   │   ├── railway
 │   │   │   ├── Great Western Railway
 │   │   │   └── railway infrastructure
 │   │   │       ├── Katoomba station
 │   │   │       └── Zig Zag
 │   │   └── roads
+│   │       ├── Bonnie Doon Track
 │   │       ├── Jenolan Caves Road
+│   │       ├── Katoomba Street
 │   │       ├── Nellie's Glen Road
 │   │       └── road
 │   └── utilities
@@ -120,6 +124,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 116
+  Total nodes in facet: 120
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

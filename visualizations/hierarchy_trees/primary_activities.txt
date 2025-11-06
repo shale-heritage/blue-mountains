@@ -22,22 +22,25 @@ Activities
 │   │       └── unemployment insurance
 │   ├── hunting
 │   ├── liquor trade
+│   │   ├── beer sales
 │   │   ├── liquor sales
-│   │   └── wholesale liquor business
+│   │   ├── wholesale liquor business
+│   │   └── wine sales
 │   ├── mining
 │   │   ├── coal mining
 │   │   ├── gold mining
 │   │   └── shale mining
 │   ├── tourism
-│   └── transport
-│       ├── horseborne transportation
-│       ├── railway operations
-│       │   ├── railway operation
-│       │   └── tourist trains
-│       └── trucking
+│   ├── transport
+│   │   ├── horseborne transportation
+│   │   └── railway operations
+│   │       ├── railway operation
+│   │       └── tourist trains
+│   └── truck system
 ├── recreation activities
 │   ├── athletics
 │   ├── billiards
+│   ├── cycling
 │   ├── horseback riding
 │   ├── military sports
 │   ├── recreation activity
@@ -71,6 +74,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 67
+  Total nodes in facet: 70
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

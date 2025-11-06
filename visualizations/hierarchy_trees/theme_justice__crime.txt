@@ -12,6 +12,7 @@ justice & crime
 ├── courts
 │   ├── Katoomba Court
 │   ├── Licensing Court
+│   ├── Penrith Police Court
 │   ├── Police Court
 │   ├── Supreme Court
 │   └── court
@@ -58,6 +59,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 50
+  Total nodes in theme: 51
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

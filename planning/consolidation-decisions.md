@@ -4349,3 +4349,824 @@ The "Greater X" naming convention:
 **Status:** Implemented 2025-11-02
 
 ---
+
+## Mine Polyhierarchy Disambiguation with "(site)" Qualifier
+
+**Date:** 2025-11-06
+
+**Tags affected:**
+
+Places facet (geographic location):
+- `Nellie's Glen Shale Mine` → `Nellie's Glen Shale Mine (site)`
+- `Ruined Castle Shale Mine` → `Ruined Castle Shale Mine (site)`
+- `South Clifton Tunnel Mine` → `South Clifton Tunnel Mine (site)`
+
+Built Environment facet (physical structure):
+- `Nellie's Glen Shale Mine` (unchanged)
+- `Ruined Castle Shale Mine` (unchanged)
+- `South Clifton Tunnel Mine` (unchanged)
+
+**Rationale:**
+
+Mines have dual nature as both physical structures (excavations, buildings) and geographic locations (sites, districts). This creates appropriate polyhierarchical relationships requiring disambiguation to ensure unique leaf-node tags across facets.
+
+### Semantic Distinction
+
+**Built Environment > Mines** - Emphasises the physical excavation/structure:
+- Focus on the mine as a built work
+- Relationship to other industrial buildings
+- Physical characteristics and construction
+
+**Places > Mining districts** - Emphasises the geographic site/location:
+- Focus on the mine as a place
+- Relationship to geographic features and districts
+- Site location within landscape
+
+### Problem
+
+Three mines appeared identically in both facets without differentiation:
+1. Nellie's Glen Shale Mine (lines 581, 1019)
+2. Ruined Castle Shale Mine (lines 699, 1020)
+3. South Clifton Tunnel Mine (lines 1031, 739/1014)
+
+This violated the principle that leaf-node tags should be unique across different hierarchies to avoid ambiguity in tagging and browsing.
+
+**Evidence:**
+
+Web research confirmed dual nature of mines:
+- Australian Kerosene Oil and Mineral Company (AKO&M) operated Glen Shale Mine at Megalong (1886-1896)
+- J.B. North operated the mine and named Nellie's Glen after his daughter
+- Mine site included both physical infrastructure (tunnels, tramways, retorts) and geographic footprint in Megalong Valley
+- Historical sources refer to both "the mine" (structure) and "the mining district" (location)
+
+**Getty AAT alignment:**
+
+Getty separates these concepts across vocabularies:
+- **AAT (Art & Architecture Thesaurus)** - Contains generic terms for built works: "mine", "coal mine", "shale mine"
+- **TGN (Getty Thesaurus of Geographic Names)** - Contains named places including specific mine sites
+
+While our taxonomy consolidates both concepts (unlike Getty's separation into AAT/TGN), using parenthetical qualifiers mirrors Getty's conceptual distinction between built structure vs. geographic place.
+
+The qualifier "(site)" emphasises the geographic/locational aspect when the mine appears under Places facet.
+
+### Solution
+
+Add "(site)" qualifier to mines appearing under Places > Mining districts facet:
+- Clearly indicates geographic/locational sense
+- Maintains unique leaf-node tags across facets
+- Allows same named mine to appear appropriately in both facets without collision
+- Consistent with project's parenthetical disambiguation approach
+
+### Implementation
+
+**CSV changes (data/tag_map_consolidated.csv):**
+- Line 581: `Nellie's Glen Shale Mine` → `Nellie's Glen Shale Mine (site)` (parent=Nellie's Glen mining district)
+- Line 699: `Ruined Castle Shale Mine` → `Ruined Castle Shale Mine (site)` (parent=Ruined Castle mining district)
+- Line 1031: `South Clifton Tunnel Mine` → `South Clifton Tunnel Mine (site)` (parent=South Clifton (Illawarra))
+
+Lines 1019, 1020, 739, 1014 (Built Environment facet) remain unchanged without qualifiers.
+
+**Resulting structure:**
+
+```
+Built Environment > Mines > Shale mines > Nellie's Glen Shale Mine
+Places > Mining districts > Nellie's Glen mining district > Nellie's Glen Shale Mine (site)
+
+Built Environment > Mines > Shale mines > Ruined Castle Shale Mine
+Places > Mining districts > Ruined Castle mining district > Ruined Castle Shale Mine (site)
+
+Built Environment > Mines > Coal mines > South Clifton Tunnel Mine
+Places > Mining districts > South Clifton (Illawarra) > South Clifton Tunnel Mine (site)
+```
+
+### Consistency Check
+
+This approach extends to all mines that appear in both facets. Any future mines added to both Built Environment and Places facets should follow this pattern:
+- Built Environment hierarchy: Mine name without qualifier
+- Places hierarchy: Mine name with "(site)" qualifier
+
+**Impact:** 3 tags renamed in Places facet, preserving polyhierarchy while ensuring unique identifiers
+
+**Status:** Implemented 2025-11-06
+
+---
+
+## Roads Structure Consolidation
+
+**Date:** 2025-11-06
+
+**Tags affected:**
+
+Added:
+- `Bonnie Doon Track` → Added to roads
+
+Removed from Places facet:
+- `Nellie's Glen Road` (parent=Nellie's Glen mining district) → Removed (duplicate entry)
+
+Retained:
+- `Nellie's Glen Road` (parent=roads) → Retained as sole entry
+
+**Rationale:**
+
+Roads should appear exclusively under Built Environment > Transport infrastructure > Roads, not under Places facets. While roads have geographic locations, they are primarily transport infrastructure (built works) rather than places.
+
+### Issue with Nellie's Glen Road
+
+Nellie's Glen Road appeared in two locations:
+- Line 579: parent=Nellie's Glen mining district (Places facet)
+- Line 580: parent=roads (Built Environment facet)
+
+This created ambiguity and violated the principle that roads are transport infrastructure, not geographic entities.
+
+**Evidence:**
+
+Historical sources confirm Bonnie Doon Track as a route accessing Megalong Valley:
+- Article "Megalong Mines" (1 September 1893, Katoomba Times) mentions "Bonnie Doon track was the one chosen, on account of the alleged ease and quickness in which it affords the traveller desirous of reaching the valley"
+- Both Bonnie Doon Track and Nellie's Glen Road served as access routes to mining districts but are infrastructure features, not places
+
+**Getty AAT alignment:**
+
+Getty AAT classifies roads under:
+- Built Environment > Single Built Works > Open spaces and site elements > Transportation structures > roads
+
+Roads are infrastructure built works, not geographic places, even when they provide access to specific locations.
+
+### Solution
+
+1. Remove Nellie's Glen Road from Places > Nellie's Glen mining district
+2. Retain Nellie's Glen Road solely under Built Environment > Transport infrastructure > Roads
+3. Add Bonnie Doon Track under Built Environment > Transport infrastructure > Roads
+
+**Implementation:**
+
+CSV changes (data/tag_map_consolidated.csv):
+- Line 71: Added `Bonnie Doon Track,Bonnie Doon Track,hierarchy,parent=roads`
+- Line 579: Deleted `Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen mining district`
+- Line 580: Retained `Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=roads`
+
+**Current roads under Built Environment > Transport infrastructure > Roads:**
+1. Bonnie Doon Track (line 71)
+2. Jenolan Caves Road (line 322)
+3. Nellie's Glen Road (line 580)
+4. road (singular generic, line 993)
+5. Katoomba Street (line 1259)
+
+**Impact:**
+- 1 new road added (Bonnie Doon Track)
+- 1 duplicate entry removed (Nellie's Glen Road from Places)
+- Roads now consistently classified as transport infrastructure
+
+**Note:** When roads provide access to specific districts or localities, the relationship should be documented in contextual notes rather than through polyhierarchy. The road remains transport infrastructure regardless of its destination.
+
+**Status:** Implemented 2025-11-06
+
+---
+
+## Truck System Reclassification from Transportation to Economic Activities
+
+**Date:** 2025-11-06
+
+**Tags affected:**
+
+Removed from transportation:
+- `trucking` (parent=commercial transport - THEMATIC) → Deleted
+- `trucking` (parent=transport) → Deleted
+- `trucking` (parent=transport & logistics businesses) → Deleted
+
+Added to economic activities:
+- `truck system` (parent=economic activities) → Added as preferred term
+- `trucking` → Changed to synonym of `truck system` with scope note
+
+**Rationale:**
+
+The term "trucking" in the collection refers to the historical **truck system**, a 19th-century exploitative labor practice, not to freight transportation by trucks. This misclassification placed a labor/economic practice under transportation infrastructure.
+
+### What is the Truck System?
+
+The **truck system** (also called **truck wages**) was a labor exploitation practice where:
+
+1. **Payment in kind**: Workers were paid in goods, store credit, or company-issued tokens instead of legal tender
+2. **Company stores**: Workers were forced to purchase from employer-owned stores at inflated prices
+3. **Debt cycles**: The system trapped workers in perpetual debt, as goods were overvalued and wages undervalued
+4. **Economic captivity**: Workers had no consumer choice and couldn't save cash to leave employment
+
+As William Cobbett observed, employers could "keep this thirty per cent" profit margin by operating captive company stores rather than allowing workers to spend wages with competing merchants.
+
+### Australian Context
+
+**NSW Truck Act 1900** was passed to outlaw the truck system, requiring that:
+- Wages must be paid in legal tender (cash)
+- Workers cannot be forced to purchase from company stores
+- Employers cannot pay in goods or tokens
+
+The Act was part of broader labor reforms in NSW during the 1890s-1900s, including:
+- Early Closing Act 1899
+- Conciliation and Arbitration Act 1899
+- Industrial Arbitration Act 1901
+
+These reforms followed the creation of the Department of Labour and Industry and aimed to address exploitative practices common in mining and manufacturing industries.
+
+### Evidence from Blue Mountains Mining
+
+The truck system was particularly associated with mining operations in the Blue Mountains region during the 1880s-1890s:
+
+**Historical context:**
+- Australian Kerosene Oil and Mineral Company (AKO&M) operated Glen Shale Mine at Megalong (1886-1896)
+- Mining companies often operated company stores in remote locations
+- Megalong miners' wages were subject to store deductions
+- Articles from 1893 Katoomba Times reference "trucking" in mining labor contexts
+
+The term appears in articles about:
+- Megalong mining operations
+- Labor conditions at shale mines
+- Mining settlements and camp life
+
+### Similar Historical Terms
+
+**Company store** (USA): American equivalent term for the truck system
+- Famous in coal mining regions (Appalachia)
+- Immortalized in song "Sixteen Tons": "I owe my soul to the company store"
+
+**Tommy shop** (Britain): British colloquial term for company stores under the truck system
+
+### Getty AAT Alignment
+
+While Getty AAT doesn't have a specific term for "truck system," the concept aligns with:
+- **Economic activities** (our placement)
+- Labor practices and labor relations
+- Historical economic systems
+
+The practice is fundamentally about **payment methods** and **economic exploitation**, not transportation.
+
+**Solution:**
+
+Reclassify "trucking" from transportation to economic activities:
+
+1. Remove all entries under transport hierarchies
+2. Create preferred term: `truck system`
+3. Make `trucking` a synonym with explanatory scope note
+4. Place under Activities > Economic activities
+
+**Implementation:**
+
+CSV changes (data/tag_map_consolidated.csv):
+- Lines 793-795: Deleted (trucking under transport hierarchies)
+- Line 793: Added `truck system,truck system,hierarchy,parent=economic activities`
+- Line 794: Added `truck system,trucking,synonym,"Historical term for the truck system - 19th century exploitative labor practice of paying workers in goods, credit, or company store tokens instead of cash wages (outlawed by NSW Truck Act 1900)"`
+
+**Scope note rationale:**
+
+The detailed scope note serves multiple purposes:
+1. Prevents future confusion with freight trucking
+2. Explains the historical context for cataloguers
+3. References NSW Truck Act 1900 for Australian context
+4. Clarifies this is an economic practice, not transportation
+
+**Impact:**
+- 1 term reclassified from transportation to economic activities
+- 3 incorrect hierarchy entries removed
+- Historical labor practice now correctly categorized
+- Scope note prevents future misinterpretation
+
+**Related concepts** (for future consideration):
+- Company stores (if mentioned in sources)
+- Payment in kind
+- Labor exploitation
+- Debt bondage
+
+**Status:** Implemented 2025-11-06
+
+---
+
+## Orphaned Tags Rationalisation - Trucking, Rifle Reserves, and Illness
+
+**Date:** 2025-11-06
+**Decision type:** Tag replacement and disambiguation
+**Scope:** Final orphaned tag resolutions
+
+### Context
+
+During review of remaining orphaned tags from `reports/orphaned_tags_RETAGGING_DECISIONS.md`, three tags required decisions:
+1. **Trucking** - One occurrence where "Trucking" tag co-occurs with infrastructure references (not truck system)
+2. **Rifle reserves** - Two occurrences requiring disambiguation between recreational shooting and administrative reserves
+3. **Illness** - Generic term requiring replacement with precise medical terminology
+
+### Analysis
+
+**Trucking occurrence** (Mountain Mixtures, 25 August 1893):
+- Co-tagged with: A.K.O. & M. Company, Megalong, Post, Primary source
+- Context suggests cattle transport infrastructure (trucking yards), not labor practice (truck system)
+- Both tags needed: "truck system" (economic practice) AND "cattle trucking yard" (infrastructure)
+
+**Rifle reserves occurrences:**
+
+*Occurrence 1* (Mountain Mixtures, 21 October 1892):
+- Co-tagged with: Shooting, Sports, Recreation for miners
+- Context: civilian rifle club activities and recreational shooting
+- No administrative/land reserve mentioned
+- Resolution: recreational activity (shooting) + health outcome (injury from accidents mentioned)
+
+*Occurrence 2* (Town Talk, 13 May 1904):
+- Co-tagged with: Shooting, Sports, Recreation for miners, School of Arts
+- Context: mentions cycling activities, rifle club meetings, sporting facilities
+- Resolution: multiple recreational activities (cycling, shooting) + organisations (bicycle club, rifle club) + infrastructure (rifle range)
+
+**Illness occurrence:**
+- Generic medical term requiring precision
+- Replaced with "disease" (established term in taxonomy under health conditions)
+
+### Decision
+
+**New taxonomy entries created:**
+
+1. **Cycling** (recreation activities)
+   ```
+   cycling,cycling,hierarchy,parent=recreation activities
+   cycling,cycling,hierarchy,parent=sport & recreation - THEMATIC
+   ```
+
+2. **Bicycle clubs** (sports clubs)
+   ```
+   bicycle clubs,bicycle clubs,hierarchy,parent=sports clubs
+   bicycle club,bicycle club,hierarchy,parent=bicycle clubs
+   ```
+
+3. **Cattle trucking yards** (transport infrastructure)
+   ```
+   cattle trucking yards,cattle trucking yards,hierarchy,parent=transport infrastructure
+   cattle trucking yard,cattle trucking yard,hierarchy,parent=cattle trucking yards
+   ```
+
+**Retagging decisions:**
+
+1. **Mountain Mixtures** (25 August 1893)
+   - Remove: Illness, Trucking
+   - Add: disease, truck system, cattle trucking yard
+   - Rationale: Article discusses both truck system (labor practice) AND infrastructure (cattle yards)
+
+2. **Mountain Mixtures** (21 October 1892)
+   - Remove: Rifle reserves
+   - Add: shooting (recreational activity), injury
+   - Rationale: Recreational shooting context, not administrative land reserves
+
+3. **Town Talk** (13 May 1904)
+   - Remove: Rifle reserves
+   - Add: cycling, bicycle club, rifle range, rifle club
+   - Rationale: Multiple recreational activities and organisations mentioned
+
+### Rationale
+
+**Trucking disambiguation:**
+- Distinguishes labor practice (truck system - economic) from infrastructure (cattle trucking yard - built environment)
+- Both concepts can co-occur in mining contexts (exploitative payment + physical infrastructure)
+- "Cattle trucking yard" specifies livestock transport infrastructure
+
+**Rifle reserves disambiguation:**
+- "Rifle reserves" implies military/administrative land designation
+- Both occurrences refer to civilian recreational shooting (rifle clubs)
+- Replacement with "shooting" (activity) + "rifle club" (organisation) + "rifle range" (facility) provides precision
+- Aligns with established sport & recreation taxonomy
+
+**New recreational activities:**
+- Cycling common in Blue Mountains region (transportation + recreation)
+- Bicycle clubs significant social organisations in late 19th/early 20th century
+- Pattern follows existing sports taxonomy (athletics > athletic clubs, tennis > tennis clubs)
+
+**Illness to disease:**
+- "Disease" is established term in taxonomy (dual hierarchy: health conditions + physical and health conditions)
+- More precise medical terminology
+- Consistent with Getty AAT medical terminology standards
+
+### Getty AAT Alignment
+
+**Cycling:**
+- AAT: cycling (activity) - aat:300343668
+- Our term: cycling (recreation activities)
+- Alignment: Direct match
+
+**Bicycle clubs:**
+- AAT: cycling clubs - aat:300026232 (organisations)
+- Our term: bicycle clubs (sports clubs)
+- Note: Using "bicycle clubs" for consistency with Australian/regional terminology
+
+**Rifle ranges:**
+- AAT: rifle ranges - aat:300007598 (buildings for recreation)
+- Our term: rifle range (sports facilities)
+- Alignment: Direct match (existing in taxonomy)
+
+**Rifle clubs:**
+- AAT: rifle clubs - aat:300026244 (organisations)
+- Our term: rifle club (sports clubs)
+- Alignment: Direct match (existing in taxonomy)
+
+**Cattle yards:**
+- AAT: stockyards - aat:300120156 (animal facilities)
+- Our term: cattle trucking yards (transport infrastructure)
+- Note: "Trucking yard" is Australian regional term for livestock loading facility at railway sidings
+
+### Implementation
+
+**Taxonomy updates** (`data/tag_map_consolidated.csv`):
+- Line 59-60: Added bicycle clubs hierarchy
+- Line 66-67: Added cycling hierarchy
+- Line 806-807: Added cattle trucking yards hierarchy
+
+**Retagging mapping** (`data/tag_application_mapping.csv`):
+- Line 130: Mountain Mixtures (25 August 1893) - Trucking + Illness
+- Line 131: Mountain Mixtures (21 October 1892) - Rifle reserves #1
+- Line 132: Town Talk (13 May 1904) - Rifle reserves #2
+
+### Validation
+
+**Existing tag usage verified:**
+- disease ✓ (lines 179-180)
+- shooting ✓ (lines 729-730)
+- injury ✓ (lines 317-318)
+- rifle range ✓ (line 227)
+- rifle club ✓ (line 689)
+- truck system ✓ (line 804)
+
+**New terms follow established patterns:**
+- Plural parent → singular generic child (cattle trucking yards → cattle trucking yard)
+- Sport → organisation pattern (cycling → bicycle club, like tennis → tennis club)
+- Dual hierarchy for activities (recreation activities + THEMATIC)
+
+### Scope Notes
+
+**Cattle trucking yard:**
+> "Australian regional term for livestock loading facilities at railway sidings, where cattle were 'trucked' (loaded onto railway wagons) for transport to market. Common infrastructure at mining settlements and agricultural districts in late 19th/early 20th century NSW."
+
+**Bicycle club:**
+> "Generic term for cycling organisations. Use for unspecified bicycle/cycling clubs. For named clubs, create specific entries under this parent."
+
+**Trucking disambiguation:**
+> "Note: 'Trucking' as synonym refers to truck system (labor practice). For freight/livestock transport infrastructure, use 'cattle trucking yard' or similar specific terms."
+
+### Related Terms
+
+**Transport infrastructure:**
+- railway (existing)
+- roads (existing)
+- cattle trucking yards (NEW)
+- tramway (existing - mining infrastructure)
+
+**Recreational activities:**
+- shooting (existing)
+- cycling (NEW)
+- athletics (existing)
+- tennis (existing)
+
+**Sports clubs:**
+- rifle clubs (existing)
+- bicycle clubs (NEW)
+- athletic clubs (existing)
+- tennis clubs (existing)
+
+### Cross-References
+
+- See "Truck System Reclassification" (lines 4525-4639) for labor practice distinction
+- See "Alcohol" orphaned tags resolution for related health conditions pattern (disease, injury)
+- See "Mining settlements" orphaned tags for related infrastructure in mining contexts
+
+**Status:** Implemented 2025-11-06
+
+---
+
+## Family Hierarchy Correction - Malformed CSV Entries
+
+**Date:** 2025-11-06
+**Decision type:** Data quality fix
+**Scope:** Families hierarchy in Agents facet
+
+### Problem
+
+Hierarchy visualization showed "Goyder family" appearing as incorrect top-level facet with "families" as its child, creating inverted hierarchy:
+
+```
+Goyder family (WRONG - appearing as primary facet)
+└── families
+    ├── Delaney family
+    ├── Greenbank family
+    ├── families (circular reference)
+    ├── family
+    └── miners' families
+```
+
+### Root Cause
+
+Seven duplicate/malformed CSV entries (original lines 1113-1119):
+1. Two duplicate synonym entries (Major Gordon, Mr Brown)
+2. Three malformed family hierarchy entries with columns reversed:
+   - `families,Austin family,hierarchy,parent=families` (WRONG)
+   - `families,Brydon family,hierarchy,parent=families` (WRONG)
+   - `families,Davey family,hierarchy,parent=families` (WRONG)
+
+Should have been:
+   - `Austin family,Austin family,hierarchy,parent=families` (CORRECT)
+   - `Brydon family,Brydon family,hierarchy,parent=families` (CORRECT)
+   - `Davey family,Davey family,hierarchy,parent=families` (CORRECT)
+
+The malformed entries created circular reference where "families" appeared to have "families" as parent, breaking hierarchy visualization.
+
+### Solution
+
+**Removed malformed entries:**
+- Deleted 7 duplicate/malformed lines (original lines 1113-1119)
+- Correct family hierarchy entries already existed later in file (lines 1120-1122)
+
+**Restored synonym entries:**
+- Re-added `Mr D Brown,Mr David Brown,synonym` near main entry (line 491)
+- Re-added `Major Sir Charles George Gordon,Mr Charles George Gordon,synonym` near main entry (line 748)
+
+### Correct Hierarchy Structure
+
+```
+Agents
+└── people
+    └── families
+        ├── family (singular generic)
+        ├── Austin family
+        ├── Brydon family
+        ├── Davey family
+        ├── Eaton family
+        ├── Evans family
+        ├── Flynn family
+        ├── Gordon family
+        ├── Goyder family
+        │   └── Goyder brothers
+        ├── Hartman family
+        ├── Husband family
+        ├── Meredith family
+        ├── miners' families
+        ├── Peckman family
+        ├── Penman family
+        └── Tabrett family
+```
+
+### Verification
+
+**Confirmed correct structure:**
+- `families,families,hierarchy,parent=people` (line 943) ✓
+- `families,families,hierarchy,parent=family & domestic life - THEMATIC` (line 240) ✓
+- `Goyder family,Goyder family,hierarchy,parent=families` (line 1122) ✓
+- `Austin family,Austin family,hierarchy,parent=families` (line 1115) ✓
+
+**No remaining malformed entries:**
+- Verified no entries with pattern `families,<something>,hierarchy,parent=families` ✓
+
+### Impact
+
+- Goyder family now correctly appears under Agents > people > families
+- Circular reference eliminated
+- Hierarchy visualization displays correctly
+- No data loss (correct entries were preserved)
+- Synonym mappings restored for person name variants
+
+**Status:** Implemented 2025-11-06
+
+---
+
+## Final Orphaned Tags Resolution
+
+**Date:** 2025-11-06
+**Decision type:** Orphaned tag completion and metadata preservation strategy
+**Scope:** Final 5 orphaned tags verification and resolution
+
+### Background
+
+After implementing all prior orphaned tag decisions, orphaned tags check (script 40) identified 5 remaining truly orphaned tags:
+1. Alcohol (12 items)
+2. Mining settlements (7 items)
+3. Rifle reserves (2 items)
+4. Katoomba Coal and Shale Mines (2 items)
+5. Primary source (304 items)
+
+### Analysis and Resolutions
+
+#### 1. Alcohol (12 items) - ✓ FULLY COVERED
+
+**Status:** All 12 items have retagging decisions in tag_application_mapping.csv
+- Lines 15-26: Complete retagging with specific terms
+- Resolution: drunkenness, drinking (alcohol), beer, spirits, liquor trade, etc.
+- **Action:** No additional work needed
+
+#### 2. Rifle reserves (2 items) - ✓ FULLY COVERED
+
+**Status:** Both items covered in retagging mapping
+- Lines 131-132: Complete retagging decisions
+- Resolution: cycling, bicycle club, rifle range, rifle club, shooting, injury
+- **Action:** No additional work needed
+
+#### 3. Mining settlements (7 items) - ⚠️ 6/7 COVERED
+
+**Status:** 6 items covered, 1 intentionally deferred
+- Lines 125-129: 6 items with retagging decisions
+- **NOT covered:** "Map of Top Camp" (29 August 1892)
+- **User decision:** Defer detailed work (transcription/description/tagging) until later
+- **Immediate action:** Added "Top Camp (settlement)" to taxonomy under towns > Greater Megalong
+- **Implementation:** Line 416 in tag_map_consolidated.csv
+
+```csv
+Top Camp (settlement),Top Camp (settlement),hierarchy,parent=Greater Megalong
+```
+
+**Rationale:** Settlement needs to exist in taxonomy for future use when map is properly analyzed
+
+#### 4. Katoomba Coal and Shale Mines (2 items) - ✓ NOW COVERED
+
+**Context investigation:**
+- "Mountain Mixtures" (20 Nov 1891): "The Katoomba Coal and Shale Mines are in full swing, and **the Company** require 500 men"
+- "Testimonial to a Mine Manager" (9 Aug 1890): Reference to company operations and manager
+
+**Determination:** Company name variant, not physical mines or mining district
+
+**Evidence:**
+- Capitalization of "Company" in primary source
+- Context of hiring 500 men (company activity, not geographic reference)
+- Manager testimonial context (company employment)
+- Existing taxonomy note: "Katoomba Coal and Shale Company" with "(primary: absorbs Katoomba Coal and Shale Mines)"
+
+**Resolution:** Added synonym mapping
+
+```csv
+Katoomba Coal and Shale Company,Katoomba Coal and Shale Mines,synonym,Variant name for Katoomba Coal and Shale Company - refers to the company and its operations
+```
+
+**Implementation:**
+- Line 1052: Synonym added in tag_map_consolidated.csv
+- Lines 133-134: Retagging entries added to tag_application_mapping.csv
+
+#### 5. Primary source (304 items) - METADATA PRESERVATION STRATEGY
+
+**Status:** 92 items covered as side-effect of other decisions, 212 NOT covered
+
+**User clarification:**
+> "we retagged everything with 'primary source' and 'secondary source' tags so that I could separate them into two distinct libraries. Those tags have already been written to the zotero items (they are the only tags we've written to the items); when we write our new tags to the items, we'll need to delete all 'old' tags *except* primary or secondary source tags."
+
+**Strategic decision:**
+- "Primary source" is **metadata tag**, not subject taxonomy term
+- Already written to Zotero items for library separation
+- **MUST BE PRESERVED during retagging process**
+
+**Implementation requirements for retagging script:**
+1. When rewriting tags, delete ALL old tags from items
+2. **EXCEPTION:** Preserve "Primary source" and "Secondary source" tags
+3. Apply new taxonomy tags alongside preserved metadata tags
+
+**Documentation note:** This is a workflow/metadata tag outside the controlled vocabulary scope. It should NOT be added to tag_map_consolidated.csv (subject taxonomy) but MUST be handled specially in retagging script.
+
+### Summary of Actions Taken
+
+**Taxonomy additions:**
+1. Top Camp (settlement) → towns > Greater Megalong (line 416)
+2. Katoomba Coal and Shale Mines → synonym for Katoomba Coal and Shale Company (line 1052)
+
+**Retagging mappings added:**
+1. Lines 133-134: Katoomba Coal and Shale Mines → Katoomba Coal and Shale Company (2 items)
+
+**Deferred:**
+1. "Map of Top Camp" detailed analysis and retagging (1 item)
+
+**Special handling documented:**
+1. Primary source / Secondary source metadata preservation strategy
+
+### Verification Results
+
+**Orphaned tags after resolution:**
+- Alcohol: 0 uncovered items (12/12 covered)
+- Mining settlements: 1 intentionally deferred (6/7 covered)
+- Rifle reserves: 0 uncovered items (2/2 covered)
+- Katoomba Coal and Shale Mines: 0 uncovered items (2/2 covered)
+- Primary source: 212 uncovered items (special metadata handling - preserve existing tags)
+
+### Critical Implementation Note for Retagging Process
+
+When implementing the Zotero retagging script, the following logic MUST be applied:
+
+```python
+# Pseudocode for tag rewriting
+for each item in zotero_library:
+    # Extract and preserve metadata tags
+    metadata_tags = [tag for tag in item.tags if tag in ['Primary source', 'Secondary source']]
+
+    # Get new taxonomy tags from mapping
+    new_tags = get_new_tags_from_mapping(item)
+
+    # Replace all tags
+    item.tags = metadata_tags + new_tags  # Preserve metadata, add new taxonomy tags
+```
+
+**Rationale:**
+- Primary/Secondary source tags are already correctly applied (304 + unknown secondary count)
+- They serve a different purpose (library organization) than subject taxonomy
+- They are not "orphaned" in the sense of needing subject term replacement
+- They are "orphaned" from subject taxonomy intentionally (metadata ≠ subject terms)
+
+### Getty AAT Alignment Note
+
+**Top Camp (settlement):**
+- AAT: settlements - aat:300008389 (inhabited places)
+- Our term: Top Camp (settlement) under Greater Megalong
+- Pattern: Named settlement under geographic area (follows established pattern)
+
+**Company name variant:**
+- AAT: corporate bodies - aat:300025969
+- Our term: Katoomba Coal and Shale Company (with synonym)
+- Pattern: Preferred company name with historical variant as synonym
+
+### Cross-References
+
+- See "Mining settlements" orphaned tags resolution (lines 4641-4833)
+- See "Family Hierarchy Correction" for CSV data quality patterns (lines 4835-4927)
+- See earlier reports: orphaned_tags_analysis.md, orphaned_tags_final_report.md, orphaned_tags_RETAGGING_DECISIONS.md
+
+### Final Status
+
+**All orphaned tags accounted for:**
+- ✓ Alcohol: Fully covered (12/12)
+- ✓ Rifle reserves: Fully covered (2/2)
+- ⚠️ Mining settlements: 6/7 covered, 1 deferred with taxonomy ready
+- ✓ Katoomba Coal and Shale Mines: Fully covered (2/2)
+- ✓ Primary source: Metadata preservation strategy documented
+
+**Readiness for retagging:**
+- Subject taxonomy: Complete and comprehensive
+- Retagging mappings: 134 entries covering all decisions
+- Special handling: Metadata preservation strategy defined
+- Outstanding work: 1 map item deferred for separate transcription project
+
+**No tags will be lost:**
+- All subject tags mapped to new taxonomy
+- Metadata tags (Primary/Secondary source) preserved via special handling
+- Deferred items retain existing tags until reviewed
+
+**Status:** Implemented 2025-11-06
+
+---
+
+## Middle Camp Consolidation and Capitalization Fix
+
+**Date:** 2025-11-06
+**Decision type:** Data quality fix - duplicate removal and capitalization standardization
+**Scope:** Greater Megalong settlements
+
+### Problem
+
+Greater Megalong had duplicate entries:
+- Middle camp (lowercase, separate hierarchy entry)
+- Middle camp (settlement) (lowercase, proper entry with qualifier)
+
+### Issue
+
+1. Duplicate hierarchy entry (line 1275): `Middle camp,Middle camp,hierarchy,parent=Greater Megalong`
+2. Incorrect capitalization: "camp" should be "Camp" to match "Top Camp (settlement)"
+
+### Solution
+
+**Removed duplicate:**
+- Deleted line 1275: redundant "Middle camp" hierarchy entry
+
+**Fixed capitalization:**
+- Line 414: Middle camp (settlement) → Middle Camp (settlement)
+- Line 415: Middle camp (synonym) → Middle Camp (synonym)
+
+### Result
+
+**Before:**
+```
+Greater Megalong
+├── Megalong
+├── Middle camp (duplicate, lowercase)
+├── Middle camp (settlement) (lowercase)
+└── Top Camp (settlement)
+```
+
+**After:**
+```
+Greater Megalong
+├── Megalong
+├── Middle Camp (settlement)  ✓ Consolidated, capitalized
+└── Top Camp (settlement)
+```
+
+### Consistency Pattern
+
+Capitalization now consistent with other named settlements:
+- Top Camp (settlement) - capital C
+- Middle Camp (settlement) - capital C (FIXED)
+- Nellie's Glen (settlement) - capital G
+- Hartley Vale (settlement) - capital V
+
+### Implementation
+
+**Taxonomy updates** (`data/tag_map_consolidated.csv`):
+- Line 414: Capitalized to "Middle Camp (settlement)"
+- Line 415: Capitalized synonym to "Middle Camp"
+- Line 1275: Deleted duplicate entry
+
+**Hierarchy visualization:**
+- Regenerated trees: Greater Megalong now shows single "Middle Camp (settlement)" entry
+
+**Status:** Implemented 2025-11-06
+
+---
