@@ -34,7 +34,8 @@ PROPER_NOUN_INDICATORS = [
     'Ruined Castle', 'South Clifton', 'Illawarra', 'Jenolan', 'Middle camp',
     'Wentworth Falls', 'Burragorang', 'Kanimbla', 'Jamieson', 'Wallerawang',
     'N.S.W.', 'New South Wales', 'Australia', 'Australian', 'Queensland',
-    'Blue Mountains', 'Great Western', 'Western', 'Zig Zag',
+    'Blue Mountains', 'Great Western', 'Western', 'Zig Zag', 'Eskbank',
+    'Penrith', 'Nepean',
 
     # Ethnic/cultural proper adjectives
     'Aboriginal', 'Chinese', 'Irish', 'Inuit', 'German', 'English',
@@ -49,13 +50,20 @@ PROPER_NOUN_INDICATORS = [
     'Leura', 'Megalong', 'Montrose', 'Oxford', 'Wentworth',
 
     # Government bodies (official names)
-    'Railway Commission', 'Postal Department', "Aborigines' Protection Board",
+    'Railway Commission', 'Postal Department', 'Post Department', 'Post Office Department',
+    "Aborigines' Protection Board",
 
-    # Specific families
-    'Delaney', 'Greenbank', 'Goyder', 'Fryer',
+    # Specific families and people
+    'Delaney', 'Greenbank', 'Goyder', 'Fryer', 'Manuell',
+    'Bashford', 'Biles', 'Rowell', 'Goodare', 'Thomson', 'Thompson',
+    'Edwards', 'Ellis', 'Hudson', 'Nimmo', 'Lindeman', 'Manuel',
+    'Whittall', 'Wilson', 'Peckman', 'Tabrett',
 
-    # Organizations
-    'Police', 'Court', 'Council',  # When standalone as proper body
+    # Organizations (only when standalone, not part of compound phrases)
+    # Note: "Police" as organization is handled separately below
+    'Court', 'Council',  # When standalone as proper body
+    'Douglas and Company', 'Nimmo\'s', 'Peckman Brothers', 'Tabrett and Company',
+    'Waudby and Company',
 
     # Specific historical events/legislation (proper nouns)
     'Licensing Act', 'Mount Kembla', 'Kembla',
@@ -89,6 +97,64 @@ GENERIC_CATEGORIES = [
     'weather', 'unemployment', 'insurance', 'relief',
     'laws', 'law', 'licences', 'licence', 'attractions', 'attraction',
     'drunkenness', 'intoxication',
+
+    # Social activities
+    'behaviours', 'behaviour', 'drinking', 'drink', 'gambling', 'gamble',
+    'temperance', 'charity', 'charitable', 'welfare',
+
+    # Communication activities
+    'advertising', 'fundraising', 'postal', 'services', 'service',
+    'communication',
+
+    # Economic activities
+    'agriculture', 'agricultural', 'husbandry', 'breeding', 'breed',
+    'hunting', 'hunt', 'tourism', 'tourist', 'transport', 'transportation',
+    'trucking', 'trade', 'sales', 'sale', 'business', 'businesses',
+    'liquor', 'wholesale', 'financial', 'operations', 'operation',
+    'horseborne', 'railway', 'trains', 'train',
+
+    # Recreation activities
+    'athletics', 'athletic', 'billiards', 'billiard', 'riding', 'ride',
+    'sports', 'sport', 'cricket', 'football', 'rugby', 'tennis',
+    'shooting', 'shoot', 'spectator', 'team', 'horseback',
+    'military', 'recreation', 'recreational',
+
+    # Societal activities
+    'regulatory', 'regulation', 'processes', 'process', 'licensing',
+    'policing', 'control', 'culling', 'cull',
+    'enforcement', 'public', 'health', 'safety', 'societal',
+    'animal', 'feral', 'wild', 'dog', 'horse',
+
+    # Organizations and bodies
+    'organizations', 'organisation', 'organisations', 'bodies', 'body',
+    'government', 'councils', 'council', 'courts', 'court',
+    'committees', 'committee', 'unions', 'union',
+    'societies', 'society', 'movements', 'movement',
+    'bands', 'band', 'choirs', 'choir', 'troupes', 'troupe',
+    'retailers', 'retailer', 'stores', 'store', 'merchants', 'merchant',
+    'companies', 'company', 'businesses', 'business',
+    'institutions', 'institution', 'bank', 'banks',
+    'education', 'educational',
+
+    # People and occupations
+    'people', 'person', 'occupations', 'occupation',
+    'clergy', 'officials', 'official', 'professionals', 'professional',
+    'officers', 'officer', 'personnel', 'employees', 'employee',
+    'constable', 'constables', 'sergeant', 'sergeants',
+    'coroners', 'coroner', 'shipwright', 'shipwrights',
+    'soldiers', 'soldier', 'aldermen', 'alderman',
+    'stationmaster', 'stationmasters', 'mailmen', 'mailman',
+    'postboy', 'postboys', 'postmasters', 'postmaster',
+    'publican', 'publicans', 'hotellier', 'hotelliers',
+    'breeder', 'breeders',
+
+    # Demographic groups
+    'adolescents', 'adolescent', 'children', 'child',
+    'men', 'man', 'widows', 'widow', 'women', 'woman',
+    'adults', 'adult', 'youth', 'youths',
+
+    # Animals (generic)
+    'animals', 'cattle', 'dogs', 'horses',
 ]
 
 
@@ -108,6 +174,25 @@ def should_be_lowercase(term: str) -> bool:
     if term in ['THEMATIC', 'Getty AAT', 'Activities', 'Events', 'Associated Concepts',
                 'Agents', 'Places', 'Built Environment', 'Materials']:
         return False
+
+    # Title + Name patterns - preserve capitalization
+    # e.g., "Constable John Hamilton", "Mr Harry Peckman", "Dr Morgan", "Reverend Smith"
+    title_patterns = [
+        'Mr ', 'Mrs ', 'Mrs. ', 'Ms ', 'Miss ', 'Dr ', 'Dr. ',
+        'Reverend ', 'Reverence ', 'Cardinal ', 'Major ', 'Sir ',
+        'Constable ', 'Sergeant ', 'Senior-Constable ',
+        'Coroner ', 'Minister ', 'Alderman '
+    ]
+    for title in title_patterns:
+        if term.startswith(title):
+            # Check if followed by capitalized name
+            remainder = term[len(title):].strip()
+            if remainder and remainder[0].isupper():
+                return False  # Title + proper name - keep capitalized
+
+    # Special case: "Police" standalone (organization) vs "Police" in compounds (generic)
+    if term == 'Police':
+        return False  # Standalone "Police" is the organization - keep capitalized
 
     # Possessive forms - distinguish between proper names and generic descriptives
     if "'" in term or "'" in term:
@@ -141,11 +226,6 @@ def should_be_lowercase(term: str) -> bool:
         if first_word[0].isupper() and first_word not in ['The', 'A', 'An']:
             return False  # Keep denomination names capitalized
 
-    # Check if it's a known proper noun indicator
-    for proper in PROPER_NOUN_INDICATORS:
-        if proper in term:
-            return False  # Keep capitalization (proper noun)
-
     # Check if this is a PURE generic category (no proper nouns mixed in)
     term_lower = term.lower()
 
@@ -158,7 +238,37 @@ def should_be_lowercase(term: str) -> bool:
     for generic in GENERIC_CATEGORIES:
         if generic in term_lower:
             # Contains generic term - check if it ONLY contains generics
-            has_proper = any(proper.lower() in term_lower for proper in PROPER_NOUN_INDICATORS)
+            # Use sophisticated matching to avoid false positives like "St" matching "postal"
+            term_words = set(term_lower.split())
+            has_proper = False
+
+            for proper in PROPER_NOUN_INDICATORS:
+                proper_lower = proper.lower()
+
+                # Multi-word proper nouns - check if they appear in the term
+                # (either exact match or as part of a longer name)
+                if ' ' in proper_lower:
+                    if proper_lower in term_lower:
+                        has_proper = True
+                        break
+                # Single-word proper nouns
+                else:
+                    # Short words (<=3 chars) like "St" need exact word match to avoid false positives
+                    if len(proper) <= 3:
+                        if proper_lower in term_words:
+                            has_proper = True
+                            break
+                    # Longer proper nouns can match as substring
+                    else:
+                        if proper_lower in term_lower:
+                            # But check it's not a substring of a different word
+                            # e.g., "Police" shouldn't match "policing"
+                            if (proper_lower in term_words or
+                                any(word.startswith(proper_lower) or word.endswith(proper_lower)
+                                    for word in term_words)):
+                                has_proper = True
+                                break
+
             if not has_proper:
                 # Pure generic construction - lowercase
                 return True
