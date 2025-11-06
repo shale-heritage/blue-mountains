@@ -2,22 +2,10 @@
   "permissions": {
     "allow": [
       "Read(/home/shawn/Code/blue-mountains/**)",
-      
       "WebFetch(domain:vocab.getty.edu)",
       "WebFetch(domain:www.getty.edu)",
-      "WebFetch(domain:www.zotero.org)",
-      
-      "Bash(python scripts/*.py *)",
-      "Bash(python:scripts/*.py:*)",
-      "Bash(venv/bin/python scripts/*.py *)",
-      "Bash(venv/bin/python:scripts/*.py:*)",
-      "Bash(.venv/bin/python scripts/*.py *)",
-      "Bash(.venv/bin/python:scripts/*.py:*)",
-      
-      "Bash(./scripts/*.py *)",
-      "Bash(./scripts/*.sh *)"
+      "WebFetch(domain:www.zotero.org)"
     ],
-    
     "deny": [],
     "ask": []
   }
