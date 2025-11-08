@@ -572,79 +572,71 @@ def generate_primary_facets():
         ['Events', 'Events', 'hierarchy', 'parent=(new top-level facet)'],
 
         # Life events
-        ['Life events', 'Life events', 'hierarchy', 'parent=Events'],
-        ['Death', 'Death', 'hierarchy', 'parent=Life events'],
-        ['Death notice', 'Death notice', 'hierarchy', 'parent=Death'],
-        ['Marriage', 'Marriage', 'hierarchy', 'parent=Life events'],
-        ['Funeral', 'Funeral', 'hierarchy', 'parent=Life events'],
+        ['life events', 'life events', 'hierarchy', 'parent=Events'],
+        ['death', 'death', 'hierarchy', 'parent=life events'],
+        ['death notice', 'death notice', 'hierarchy', 'parent=death'],
+        ['marriage', 'marriage', 'hierarchy', 'parent=life events'],
+        ['funeral', 'funeral', 'hierarchy', 'parent=life events'],
 
         # Social events
-        ['Social events', 'Social events', 'hierarchy', 'parent=Events'],
-        ['Dance', 'Dance', 'hierarchy', 'parent=Social events'],
-        ['Ball', 'Ball', 'hierarchy', 'parent=Social events'],
-        ['Flower show', 'Flower show', 'hierarchy', 'parent=Social events'],
+        ['social events', 'social events', 'hierarchy', 'parent=Events'],
+        ['dance', 'dance', 'hierarchy', 'parent=social events'],
+        ['ball', 'ball', 'hierarchy', 'parent=social events'],
+        ['flower show', 'flower show', 'hierarchy', 'parent=social events'],
 
         # Sporting events
-        ['Sporting events', 'Sporting events', 'hierarchy', 'parent=Events'],
-        ['Cricket', 'Cricket', 'hierarchy', 'parent=Sporting events'],
-        ['Girls\' cricket', 'Girls\' cricket', 'hierarchy', 'parent=Cricket'],
-        ['Football', 'Football', 'hierarchy', 'parent=Sporting events'],
-        ['Tennis', 'Tennis', 'hierarchy', 'parent=Sporting events'],
-        ['Athletics', 'Athletics', 'hierarchy', 'parent=Sporting events'],
-        ['Rugby', 'Rugby', 'hierarchy', 'parent=Sporting events'],
-        ['Shooting', 'Shooting', 'hierarchy', 'parent=Sporting events'],
-        ['Billiards', 'Billiards', 'hierarchy', 'parent=Sporting events'],
+        ['sporting events', 'sporting events', 'hierarchy', 'parent=Events'],
+        ['cricket', 'cricket', 'hierarchy', 'parent=sporting events'],
+        ['football', 'football', 'hierarchy', 'parent=sporting events'],
+        ['tennis', 'tennis', 'hierarchy', 'parent=sporting events'],
+        ['athletics', 'athletics', 'hierarchy', 'parent=sporting events'],
+        ['rugby', 'rugby', 'hierarchy', 'parent=sporting events'],
+        ['shooting', 'shooting', 'hierarchy', 'parent=sporting events'],
+        ['billiards', 'billiards', 'hierarchy', 'parent=sporting events'],
 
         # Cultural events
-        ['Cultural events', 'Cultural events', 'hierarchy', 'parent=Events'],
-        ['Concert', 'Concert', 'hierarchy', 'parent=Cultural events'],
-        ['Debate', 'Debate', 'hierarchy', 'parent=Cultural events'],
-        ['Corroboree', 'Corroboree', 'hierarchy', 'parent=Cultural events'],
+        ['cultural events', 'cultural events', 'hierarchy', 'parent=Events'],
+        ['concert', 'concert', 'hierarchy', 'parent=cultural events'],
+        ['debate', 'debate', 'hierarchy', 'parent=cultural events'],
+        ['corroboree', 'corroboree', 'hierarchy', 'parent=cultural events'],
 
         # Legal events
-        ['Legal events', 'Legal events', 'hierarchy', 'parent=Events'],
-        ['Court cases', 'Court cases', 'hierarchy', 'parent=Legal events'],
-        ['Bankruptcy', 'Bankruptcy', 'hierarchy', 'parent=Legal events'],
-        ['Divorce', 'Divorce', 'hierarchy', 'parent=Legal events'],
+        ['legal events', 'legal events', 'hierarchy', 'parent=Events'],
+        ['court cases', 'court cases', 'hierarchy', 'parent=legal events'],
+        ['bankruptcy', 'bankruptcy', 'hierarchy', 'parent=legal events'],
+        ['divorce', 'divorce', 'hierarchy', 'parent=legal events'],
 
         # Criminal events
-        ['Criminal events', 'Criminal events', 'hierarchy', 'parent=Events'],
-        ['Theft', 'Theft', 'hierarchy', 'parent=Criminal events'],
-        ['Rape', 'Rape', 'hierarchy', 'parent=Criminal events'],
-        ['Fighting', 'Fighting', 'hierarchy', 'parent=Criminal events'],
-        ['Assault', 'Assault', 'hierarchy', 'parent=Criminal events'],
-        ['Bigamy', 'Bigamy', 'hierarchy', 'parent=Criminal events'],
-        ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=Criminal events'],
-        ['Desertion', 'Desertion', 'hierarchy', 'parent=Criminal events'],
+        ['criminal events', 'criminal events', 'hierarchy', 'parent=Events'],
+        ['theft', 'theft', 'hierarchy', 'parent=criminal events'],
+        ['rape', 'rape', 'hierarchy', 'parent=criminal events'],
+        ['fighting', 'fighting', 'hierarchy', 'parent=criminal events'],
+        ['assault', 'assault', 'hierarchy', 'parent=criminal events'],
+        ['bigamy', 'bigamy', 'hierarchy', 'parent=criminal events'],
+        ['sexual violence', 'sexual violence', 'hierarchy', 'parent=criminal events'],
+        ['desertion', 'desertion', 'hierarchy', 'parent=criminal events'],
 
         # Alcohol-related criminal events
-        ['Alcohol-related', 'Alcohol-related', 'hierarchy', 'parent=Criminal events'],
-        ['Drunkenness (crime)', 'Drunkenness (crime)', 'hierarchy', 'parent=Alcohol-related'],
-        ['Unlicensed sales', 'Unlicensed sales', 'hierarchy', 'parent=Alcohol-related'],
-        ['Sly-grog operations', 'Unlicensed sales', 'synonym', 'Australian colonial term for unlicensed liquor sales'],
-        ['Serving alcohol to minors', 'Serving alcohol to minors', 'hierarchy', 'parent=Alcohol-related'],
+        ['alcohol-related', 'alcohol-related', 'hierarchy', 'parent=criminal events'],
+        ['drunkenness (crime)', 'drunkenness (crime)', 'hierarchy', 'parent=alcohol-related'],
+        ['unlicensed sales', 'unlicensed sales', 'hierarchy', 'parent=alcohol-related'],
+        ['sly-grog operations', 'unlicensed sales', 'synonym', 'Australian colonial term for unlicensed liquor sales'],
+        ['serving alcohol to minors', 'serving alcohol to minors', 'hierarchy', 'parent=alcohol-related'],
 
         # Political events
-        ['Political events', 'Political events', 'hierarchy', 'parent=Events'],
-        ['Election', 'Election', 'hierarchy', 'parent=Political events'],
-        ['Public meeting', 'Public meeting', 'hierarchy', 'parent=Political events'],
-        ['Petition', 'Petition', 'hierarchy', 'parent=Political events'],
+        ['political events', 'political events', 'hierarchy', 'parent=Events'],
+        ['election', 'election', 'hierarchy', 'parent=political events'],
+        ['public meeting', 'public meeting', 'hierarchy', 'parent=political events'],
+        ['petition', 'petition', 'hierarchy', 'parent=political events'],
 
         # Economic events
-        ['Economic events', 'Economic events', 'hierarchy', 'parent=Events'],
-        ['Strike', 'Strike', 'hierarchy', 'parent=Economic events'],
-        ['Mine closure', 'Mine closure', 'hierarchy', 'parent=Economic events'],
-
-        # Disasters & accidents
-        ['Disasters & accidents', 'Disasters & accidents', 'hierarchy', 'parent=Events'],
-        ['Accident', 'Accident', 'hierarchy', 'parent=Disasters & accidents'],
-        ['Mining accidents', 'Mining accidents', 'hierarchy', 'parent=Accident'],
-        ['Mount Kembla Disaster', 'Mount Kembla Disaster', 'hierarchy', 'parent=Mining accidents'],
-        ['Fire', 'Fire', 'hierarchy', 'parent=Disasters & accidents'],
+        ['economic events', 'economic events', 'hierarchy', 'parent=Events'],
+        ['strike', 'strike', 'hierarchy', 'parent=economic events'],
+        ['mine closure', 'mine closure', 'hierarchy', 'parent=economic events'],
 
         # Historical events
-        ['Historical events', 'Historical events', 'hierarchy', 'parent=Events'],
-        ['World War I', 'World War I', 'hierarchy', 'parent=Historical events'],
+        ['historical events', 'historical events', 'hierarchy', 'parent=Events'],
+        ['World War I', 'World War I', 'hierarchy', 'parent=historical events'],
 
         # Synonyms for Mount Kembla Disaster
         ['Port Kembla disaster', 'Mount Kembla Disaster', 'synonym', 'Historical misnomer - actually Mount Kembla (not Port Kembla)'],
@@ -654,30 +646,30 @@ def generate_primary_facets():
         ['Activities', 'Activities', 'hierarchy', 'parent=(new top-level facet)'],
 
         # Economic activities
-        ['Economic activities', 'Economic activities', 'hierarchy', 'parent=Activities'],
-        ['Mining', 'Mining', 'hierarchy', 'parent=Economic activities'],
+        ['economic activities', 'economic activities', 'hierarchy', 'parent=Activities'],
+        ['Mining', 'Mining', 'hierarchy', 'parent=economic activities'],
         ['Shale mining', 'Shale mining', 'hierarchy', 'parent=Mining'],
         ['Shale mines', 'Shale mines', 'hierarchy', 'parent=Shale mining'],
         ['Coal mining', 'Coal mining', 'hierarchy', 'parent=Mining'],
         ['Coal', 'Coal', 'hierarchy', 'parent=Coal mining'],
         ['Coal mines', 'Coal mines', 'hierarchy', 'parent=Coal mining'],
         ['Gold mining', 'Gold mining', 'hierarchy', 'parent=Mining'],
-        ['Tourism', 'Tourism', 'hierarchy', 'parent=Economic activities'],
-        ['Transport', 'Transport', 'hierarchy', 'parent=Economic activities'],
+        ['Tourism', 'Tourism', 'hierarchy', 'parent=economic activities'],
+        ['Transport', 'Transport', 'hierarchy', 'parent=economic activities'],
         ['Trucking', 'Trucking', 'hierarchy', 'parent=Transport'],
         ['Horseborne transportation', 'Horseborne transportation', 'hierarchy', 'parent=Transport'],
 
         # Commercial activities
-        ['Commercial activities', 'Commercial activities', 'hierarchy', 'parent=Activities'],
-        ['Liquor trade', 'Liquor trade', 'hierarchy', 'parent=Commercial activities'],
+        ['commercial activities', 'commercial activities', 'hierarchy', 'parent=Activities'],
+        ['Liquor trade', 'Liquor trade', 'hierarchy', 'parent=commercial activities'],
         ['Liquor sales', 'Liquor sales', 'hierarchy', 'parent=Liquor trade'],
         ['Wholesale liquor business', 'Wholesale liquor business', 'hierarchy', 'parent=Liquor trade'],
 
         # Recreation activities
-        ['Recreation activities', 'Recreation activities', 'hierarchy', 'parent=Activities'],
-        ['Recreation for miners', 'Recreation for miners', 'hierarchy', 'parent=Recreation activities'],
-        ['Sports', 'Sports', 'hierarchy', 'parent=Recreation activities'],
-        ['Horseback riding', 'Horseback riding', 'hierarchy', 'parent=Recreation activities'],
+        ['recreation activities', 'recreation activities', 'hierarchy', 'parent=Activities'],
+        ['Recreation for miners', 'Recreation for miners', 'hierarchy', 'parent=recreation activities'],
+        ['Sports', 'Sports', 'hierarchy', 'parent=recreation activities'],
+        ['Horseback riding', 'Horseback riding', 'hierarchy', 'parent=recreation activities'],
 
         # Social behaviours
         ['Social behaviours', 'Social behaviours', 'hierarchy', 'parent=Activities'],
@@ -687,18 +679,18 @@ def generate_primary_facets():
         ['Temperance', 'Temperance', 'hierarchy', 'parent=Social behaviours'],
 
         # Communication activities
-        ['Communication activities', 'Communication activities', 'hierarchy', 'parent=Activities'],
-        ['Advertising', 'Advertising', 'hierarchy', 'parent=Communication activities'],
-        ['Fundraising', 'Fundraising', 'hierarchy', 'parent=Communication activities'],
+        ['communication activities', 'communication activities', 'hierarchy', 'parent=Activities'],
+        ['Advertising', 'Advertising', 'hierarchy', 'parent=communication activities'],
+        ['Fundraising', 'Fundraising', 'hierarchy', 'parent=communication activities'],
 
         # Postal services - Pattern A: Postal services (plural) > Postal service (singular)
-        ['Postal services', 'Postal services', 'hierarchy', 'parent=Communication activities'],
+        ['Postal services', 'Postal services', 'hierarchy', 'parent=communication activities'],
         ['Postal service', 'Postal service', 'hierarchy', 'parent=Postal services'],
         ['Post', 'Postal service', 'synonym', 'Generic term for postal service (deprecated - use specific tags)'],
 
         # Military activities
-        ['Military activities', 'Military activities', 'hierarchy', 'parent=Activities'],
-        ['Military', 'Military', 'hierarchy', 'parent=Military activities'],
+        ['military activities', 'military activities', 'hierarchy', 'parent=Activities'],
+        ['Military', 'Military', 'hierarchy', 'parent=military activities'],
 
         # Regulatory processes
         ['Regulatory processes', 'Regulatory processes', 'hierarchy', 'parent=Activities'],
@@ -711,9 +703,9 @@ def generate_primary_facets():
         ['Publican\'s License', 'Publican\'s licensing', 'synonym', 'Historical term for licence to operate public house serving alcohol'],
 
         # Charitable and welfare activities
-        ['Charitable and welfare activities', 'Charitable and welfare activities', 'hierarchy', 'parent=Activities'],
-        ['Charity', 'Charity', 'hierarchy', 'parent=Charitable and welfare activities'],
-        ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=Charitable and welfare activities'],
+        ['charitable and welfare activities', 'charitable and welfare activities', 'hierarchy', 'parent=Activities'],
+        ['Charity', 'Charity', 'hierarchy', 'parent=charitable and welfare activities'],
+        ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=charitable and welfare activities'],
     ])
 
     # ========================================================================
@@ -1132,7 +1124,6 @@ def generate_thematic_groupings():
         ['Women & Gender', 'Women & Gender', 'hierarchy', 'parent=(thematic grouping)'],
         ['Women as demographic group', 'Women as demographic group', 'hierarchy', 'parent=Women & Gender - THEMATIC'],
         ['Women', 'Women', 'hierarchy', 'parent=Women as demographic group - THEMATIC'],
-        ['Girls\' cricket', 'Girls\' cricket', 'hierarchy', 'parent=Women as demographic group - THEMATIC'],
         ['Gender-related vulnerabilities', 'Gender-related vulnerabilities', 'hierarchy', 'parent=Women & Gender - THEMATIC'],
         ['Widows', 'Widows', 'hierarchy', 'parent=Gender-related vulnerabilities - THEMATIC'],
         ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=Gender-related vulnerabilities - THEMATIC'],
