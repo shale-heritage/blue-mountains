@@ -33,8 +33,26 @@ PRIMARY FACETS (Form-Based, Getty AAT Compatible):
 
 THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
 
+  - Alcohol & Temperance
+    File: theme_alcohol__temperance.txt
+
   - Arts & Culture
     File: theme_arts__culture.txt
+
+  - Businesses
+    File: theme_businesses.txt
+
+  - Commercial transport
+    File: theme_commercial_transport.txt
+
+  - Communications & Postal Services
+    File: theme_communications__postal_services.txt
+
+  - Community institutions
+    File: theme_community_institutions.txt
+
+  - Crimes
+    File: theme_crimes.txt
 
   - Domestic accommodation - THEMATIC (residential aspect)
     File: theme_domestic_accommodation_-_thematic_residential_aspect.txt
@@ -42,11 +60,53 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
   - Economy & Labour
     File: theme_economy__labour.txt
 
+  - Environment & Weather
+    File: theme_environment__weather.txt
+
+  - Family & Domestic Life
+    File: theme_family__domestic_life.txt
+
+  - Health-related events
+    File: theme_health-related_events.txt
+
+  - Indigenous peoples
+    File: theme_indigenous_peoples.txt
+
+  - Justice & Crime
+    File: theme_justice__crime.txt
+
+  - Licensing & regulation
+    File: theme_licensing__regulation.txt
+
+  - Marginalised groups
+    File: theme_marginalised_groups.txt
+
+  - Military & War
+    File: theme_military__war.txt
+
+  - Military events
+    File: theme_military_events.txt
+
+  - Mining & Industry
+    File: theme_mining__industry.txt
+
+  - Mining incidents
+    File: theme_mining_incidents.txt
+
+  - Mining workforce
+    File: theme_mining_workforce.txt
+
   - Politics & Governance
     File: theme_politics__governance.txt
 
+  - Postal services
+    File: theme_postal_services.txt
+
   - Race & Ethnicity
     File: theme_race__ethnicity.txt
+
+  - Racial stereotyping & performance
+    File: theme_racial_stereotyping__performance.txt
 
   - Religion
     File: theme_religion.txt
@@ -59,6 +119,18 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
 
   - Social issues - THEMATIC (virtual grouping)
     File: theme_social_issues_-_thematic_virtual_grouping.txt
+
+  - Sport & Recreation
+    File: theme_sport__recreation.txt
+
+  - Tourism & Accommodation
+    File: theme_tourism__accommodation.txt
+
+  - Tourist attractions
+    File: theme_tourist_attractions.txt
+
+  - Women & Gender
+    File: theme_women__gender.txt
 
   - alcohol & temperance
     File: theme_alcohol__temperance.txt
@@ -144,19 +216,19 @@ OVERALL STATISTICS:
 
 Primary Facets:
   - Top-level facets: 7
-  - Total nodes: 750
-  - Total relationships: 752
-  - Parent nodes: 189
-  - Leaf nodes: 561
+  - Total nodes: 796
+  - Total relationships: 817
+  - Parent nodes: 200
+  - Leaf nodes: 596
 
 Thematic Groupings:
-  - Top-level themes: 29
-  - Total nodes: 297
-  - Total relationships: 294
-  - Parent nodes: 75
-  - Leaf nodes: 222
+  - Top-level themes: 53
+  - Total nodes: 329
+  - Total relationships: 329
+  - Parent nodes: 101
+  - Leaf nodes: 228
 
-TOTAL HIERARCHY RELATIONSHIPS: 1046
+TOTAL HIERARCHY RELATIONSHIPS: 1146
 
 ================================================================================
 Generated: 2025-10-20

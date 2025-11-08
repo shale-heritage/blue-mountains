@@ -4,22 +4,34 @@ PRIMARY FACET: Places
 Places
 ├── mining districts
 │   ├── Hartley Vale mining district
-│   │   ├── Hartley Vale (settlement)
 │   │   └── Hartley Vale mines
+│   ├── Nellie's Glen
+│   │   ├── Nellie's Glen Road
+│   │   ├── Nellie's Glen Shale Mine
+│   │   └── Nellie's Glen Track
 │   ├── Nellie's Glen mining district
 │   │   ├── Nellie's Glen (settlement)
 │   │   └── Nellie's Glen Shale Mine (site)
+│   ├── Ruined Castle
+│   │   └── Ruined Castle Shale Mine
 │   ├── Ruined Castle mining district
 │   │   ├── Ruined Castle (settlement)
 │   │   └── Ruined Castle Shale Mine (site)
+│   ├── South Clifton
+│   │   └── South Clifton Tunnel Mine
 │   └── South Clifton (Illawarra)
 │       └── South Clifton Tunnel Mine (site)
 ├── natural features
 │   ├── caves & geological features
 │   │   ├── Jenolan Caves
+│   │   │   └── Jenolan Caves Road
 │   │   └── Jenolan Caves Road
 │   ├── gullies
 │   │   ├── Break Neck Gully
+│   │   ├── Nellie's Glen
+│   │   │   ├── Nellie's Glen Road
+│   │   │   ├── Nellie's Glen Shale Mine
+│   │   │   └── Nellie's Glen Track
 │   │   └── Nellie's Glen (gully)
 │   ├── mountain features
 │   │   ├── Narrow Neck
@@ -40,7 +52,9 @@ Places
 │   ├── South Katoomba Reserve
 │   ├── Wentworth Falls Reserve
 │   ├── Wentworth Falls Reserves
-│   └── reserve
+│   ├── reserve
+│   └── rifle reserves
+│       └── Katoomba Rifle Reserve
 └── towns
     ├── Bathurst
     ├── Blackheath
@@ -51,15 +65,26 @@ Places
     │   ├── Carrington
     │   │   └── Katoomba Street
     │   ├── Katoomba
+    │   │   ├── Carrington
+    │   │   │   └── Katoomba Street
+    │   │   └── South Katoomba
     │   └── Katoomba South
     ├── Greater Megalong
     │   ├── Megalong
+    │   │   └── Middle camp
     │   ├── Middle Camp (settlement)
     │   └── Top Camp (settlement)
+    ├── Hartley Vale
+    ├── Katoomba
+    │   ├── Carrington
+    │   │   └── Katoomba Street
+    │   └── South Katoomba
     ├── Lawson
     ├── Leura
     ├── Lithgow
     ├── Medlow
+    ├── Megalong
+    │   └── Middle camp
     ├── Mount Victoria
     ├── Newcastle
     ├── Oberon
@@ -74,6 +99,6 @@ Places
 
 
 STATISTICS:
-  Total nodes in facet: 70
+  Total nodes in facet: 95
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

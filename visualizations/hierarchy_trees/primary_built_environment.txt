@@ -2,6 +2,7 @@ PRIMARY FACET: Built Environment
 ================================================================================
 
 Built Environment
+├── accommodation and hospitality venues
 ├── accommodation buildings
 │   ├── boarding houses
 │   │   ├── Orama Boarding House
@@ -12,22 +13,30 @@ Built Environment
 │   │   ├── dwelling
 │   │   └── miners' dwellings
 │   ├── hotels
+│   │   ├── Allen's Hotel
 │   │   ├── Belgravia Hotel
+│   │   ├── Brown's Hotel
 │   │   ├── Carrington Hotel
 │   │   ├── Centennial Hotel
 │   │   ├── Comet Hotel
+│   │   ├── Delaney's Hotel
 │   │   ├── Falls Hotel
+│   │   ├── Family Hotel
+│   │   ├── Fryer's Family Hotel
+│   │   ├── Grand Hotel
 │   │   ├── Grand Hotel (Sydney)
 │   │   ├── Great Western Hotel
 │   │   ├── Hoffman's House
 │   │   ├── Hotel Wentworth
 │   │   ├── Hydora House Hotel
 │   │   ├── Imperial Hotel
+│   │   ├── Katoomba Family Hotel
 │   │   ├── Katoomba Hotel
 │   │   ├── Leura Hotel
 │   │   ├── Megalong Hotel
 │   │   ├── Montrose House
 │   │   ├── Mount Victoria Hotel
+│   │   ├── Mrs Long's Hotel
 │   │   ├── Oxford Hotel (Sydney)
 │   │   ├── Railway Hotel
 │   │   ├── Wentworth Falls Hotel
@@ -40,8 +49,10 @@ Built Environment
 │   └── stables
 │       └── stable
 ├── civic buildings
+│   ├── Council buildings
 │   ├── council chambers
 │   ├── court buildings
+│   │   ├── Katoomba Court
 │   │   ├── Katoomba Courthouse
 │   │   └── courthouse
 │   ├── police facilities
@@ -49,6 +60,7 @@ Built Environment
 │   └── postal facilities
 │       └── post office
 ├── commercial buildings
+│   ├── Store
 │   ├── bank
 │   └── commercial building
 ├── community buildings
@@ -72,11 +84,13 @@ Built Environment
 ├── industrial buildings
 │   └── mines
 │       ├── coal mines
+│       │   ├── Hermitage Coal Mine
 │       │   ├── Katoomba Coal Mines
 │       │   ├── South Clifton Tunnel Mine
 │       │   └── coal mine
 │       ├── mine
 │       └── shale mines
+│           ├── Hartley Vale Shale Mine
 │           ├── Katoomba Shale Mine
 │           ├── Megalong Shale Mines
 │           ├── Nellie's Glen Shale Mine
@@ -98,6 +112,7 @@ Built Environment
 │   │       ├── Jenolan Caves Road
 │   │       ├── Katoomba Street
 │   │       ├── Nellie's Glen Road
+│   │       ├── Nellie's Glen Track
 │   │       └── road
 │   └── utilities
 │       ├── gas
@@ -116,6 +131,7 @@ Built Environment
     └── churches
         ├── Congregational Church
         │   └── Katoomba Congregational Church
+        ├── Katoomba Congregational Church
         ├── Methodist Church
         ├── Roman Catholic Church
         ├── St Hilda's Church
@@ -124,6 +140,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 120
+  Total nodes in facet: 136
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

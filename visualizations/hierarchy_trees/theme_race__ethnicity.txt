@@ -9,8 +9,7 @@ Race & Ethnicity
 │   │   └── Chinese people
 │   └── indigenous peoples
 │       ├── Aboriginal people
-│       ├── Aborigines' Protection Board
-│       └── Corroboree
+│       └── Aborigines' Protection Board
 └── racial stereotyping & performance
     └── Minstrel shows
         └── Katoomba Amateur Minstrels
@@ -21,6 +20,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 13
+  Total nodes in theme: 12
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -4,13 +4,14 @@ PRIMARY FACET: Events
 Events
 ├── accidents
 │   ├── accident
-│   │   └── mining accidents
 │   ├── agricultural accidents
 │   │   └── livestock accidents
 │   │       └── animal attacks
 │   │           └── goring
 │   ├── disaster
 │   ├── fire
+│   ├── mining accidents
+│   │   └── Mount Kembla Disaster
 │   └── transport accidents
 │       └── animal-powered transport accidents
 │           └── horse accidents
@@ -30,8 +31,8 @@ Events
 │   ├── sexual violence
 │   └── theft
 ├── cultural events
-│   ├── Corroboree
 │   ├── concert
+│   ├── corroboree
 │   ├── cultural event
 │   ├── debate
 │   └── debating
@@ -85,6 +86,6 @@ Events
 
 
 STATISTICS:
-  Total nodes in facet: 81
+  Total nodes in facet: 82
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -1,0 +1,76 @@
+THEMATIC GROUPING: Businesses
+================================================================================
+
+Businesses
+└── commercial businesses
+    ├── financial institutions
+    │   ├── bank
+    │   └── financial institution
+    ├── hospitality businesses
+    │   ├── boarding houses
+    │   │   ├── Orama Boarding House
+    │   │   └── boarding house
+    │   └── hotels
+    │       ├── Allen's Hotel
+    │       ├── Belgravia Hotel
+    │       ├── Brown's Hotel
+    │       ├── Carrington Hotel
+    │       ├── Centennial Hotel
+    │       ├── Comet Hotel
+    │       ├── Delaney's Hotel
+    │       ├── Falls Hotel
+    │       ├── Family Hotel
+    │       ├── Fryer's Family Hotel
+    │       ├── Grand Hotel
+    │       ├── Grand Hotel (Sydney)
+    │       ├── Great Western Hotel
+    │       ├── Hoffman's House
+    │       ├── Hotel Wentworth
+    │       ├── Hydora House Hotel
+    │       ├── Imperial Hotel
+    │       ├── Katoomba Family Hotel
+    │       ├── Katoomba Hotel
+    │       ├── Leura Hotel
+    │       ├── Megalong Hotel
+    │       ├── Montrose House
+    │       ├── Mount Victoria Hotel
+    │       ├── Mrs Long's Hotel
+    │       ├── Oxford Hotel (Sydney)
+    │       ├── Railway Hotel
+    │       ├── Wentworth Falls Hotel
+    │       ├── family hotels
+    │       │   ├── Delaney's Family Hotel
+    │       │   └── Katoomba Family Hotel
+    │       └── hotel
+    ├── mining companies
+    │   ├── Australian Kerosene Oil and Mineral Company
+    │   ├── Gladstone Coal Company
+    │   ├── Great Wentworth Falls Coal and Shale Mining Company
+    │   ├── Katoomba Coal and Shale Company
+    │   ├── New South Wales Shale and Oil Company
+    │   ├── South Clifton Mine Company
+    │   ├── Sunny Corner Mining Company
+    │   ├── Waudby and Company
+    │   └── mining company
+    ├── retailers and stores
+    │   ├── Douglas and Company
+    │   ├── Nimmo's
+    │   ├── P. Mullany and Company
+    │   ├── Peckman Bros
+    │   ├── Peckman Brothers
+    │   ├── Store
+    │   ├── Tabrett and Company
+    │   └── retailer or store
+    └── transport & logistics businesses
+        ├── Trucking
+        └── transport & logistics business
+
+
+NOTE: Tags in thematic groupings may also appear in primary facets.
+This is intentional poly-hierarchy design for flexible querying.
+
+
+STATISTICS:
+  Total nodes in theme: 63
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

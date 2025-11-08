@@ -3,8 +3,10 @@ THEMATIC GROUPING: community institutions
 
 community institutions
 ├── civic buildings
+│   ├── Council buildings
 │   ├── council chambers
 │   ├── court buildings
+│   │   ├── Katoomba Court
 │   │   ├── Katoomba Courthouse
 │   │   └── courthouse
 │   ├── police facilities
@@ -15,6 +17,7 @@ community institutions
 │   ├── labour organisations
 │   │   ├── labour organisation
 │   │   └── unions
+│   ├── labour organizations
 │   └── progress committees
 │       ├── Katoomba Progress Association
 │       ├── Leura Progress Association
@@ -82,6 +85,7 @@ community institutions
 │       │   └── rugby club
 │       └── tennis clubs
 │           ├── Katoomba Lawn Tennis Club
+│           ├── Katoomba Tennis Club
 │           ├── lawn tennis club
 │           └── tennis club
 └── fraternal orders & lodges
@@ -90,6 +94,8 @@ community institutions
         ├── Independent Order of Odd Fellows
         ├── United Ancient Order of Druids
         │   └── Druid's Lodge (local lodge)
+        ├── independent lodges
+        │   └── Mountaineer Lodge
         ├── lodge
         └── unaffiliated lodges
             ├── Mountaineer Lodge
@@ -101,6 +107,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 93
+  Total nodes in theme: 99
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

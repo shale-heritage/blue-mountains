@@ -11,17 +11,26 @@ towns
 │   ├── Carrington
 │   │   └── Katoomba Street
 │   ├── Katoomba
+│   │   ├── Carrington
+│   │   │   └── Katoomba Street
+│   │   └── South Katoomba
 │   └── Katoomba South
 ├── Greater Megalong
 │   ├── Megalong
+│   │   └── Middle camp
 │   ├── Middle Camp (settlement)
 │   └── Top Camp (settlement)
+├── Hartley Vale
 ├── Katoomba
+│   ├── Carrington
+│   │   └── Katoomba Street
+│   └── South Katoomba
 ├── Lawson
 ├── Leura
 ├── Lithgow
 ├── Medlow
 ├── Megalong
+│   └── Middle camp
 ├── Mount Victoria
 ├── Newcastle
 ├── Oberon
@@ -41,6 +50,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 33
+  Total nodes in theme: 42
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

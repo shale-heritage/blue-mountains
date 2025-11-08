@@ -1,12 +1,8 @@
-THEMATIC GROUPING: communications & postal services
+THEMATIC GROUPING: Military events
 ================================================================================
 
-communications & postal services
-├── Information Forms
-├── Information objects
-├── advertising
-└── postal services
-    └── Postal service
+Military events
+└── World War I
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -14,6 +10,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 6
+  Total nodes in theme: 2
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -251,24 +251,34 @@ people
     │   │   ├── Biles
     │   │   ├── Brown
     │   │   ├── F C Goyder
+    │   │   ├── F. C. Goyder
     │   │   ├── Isabellea J Long
+    │   │   ├── Isabellea J. Long
     │   │   ├── Manuell
     │   │   ├── Mr A G Rowell
+    │   │   ├── Mr A. G. Rowell
     │   │   ├── Mr Alf Goodare
+    │   │   ├── Mr Alf. Goodare
     │   │   ├── Mr D Brown
     │   │   ├── Mr D Thompson
     │   │   ├── Mr D Thomson
+    │   │   ├── Mr D. Brown
+    │   │   ├── Mr D. Thompson
     │   │   ├── Mr Delaney
     │   │   ├── Mr Edwards
     │   │   ├── Mr Ellis
     │   │   ├── Mr J Hudson
     │   │   ├── Mr J Nimmo
+    │   │   ├── Mr J. Nimmo
     │   │   ├── Mr Joe Nimmo
     │   │   ├── Mr Lindeman
     │   │   ├── Mr Manuel
     │   │   ├── Mr N Delaney
+    │   │   ├── Mr N. Delaney
     │   │   ├── Mr P G Whittall
+    │   │   ├── Mr P. G. Whittall
     │   │   ├── Mr R Fryer
+    │   │   ├── Mr R. Fryer
     │   │   ├── Mr Wilson
     │   │   ├── Mrs (Joe) Nimmo
     │   │   ├── Mrs (R.) Fryer
@@ -277,6 +287,7 @@ people
     │   │   ├── Richard Allen
     │   │   ├── Rubina Fryer
     │   │   ├── W Green
+    │   │   ├── W. Green
     │   │   └── hotellier
     │   ├── liquor merchants
     │   │   ├── Mr Wilkinson
@@ -329,6 +340,10 @@ people
         │       ├── Mrs England
         │       ├── Mrs H Corston
         │       ├── Mrs James
+        │       ├── Mrs. A. Smith
+        │       ├── Mrs. England
+        │       ├── Mrs. H. Corston
+        │       ├── Mrs. James
         │       └── postmaster
         ├── public official
         └── stationmaster
@@ -339,6 +354,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 331
+  Total nodes in theme: 346
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

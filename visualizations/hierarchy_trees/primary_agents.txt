@@ -15,6 +15,7 @@ Agents
 │   │   ├── labour organisations
 │   │   │   ├── labour organisation
 │   │   │   └── unions
+│   │   ├── labour organizations
 │   │   └── progress committees
 │   │       ├── Katoomba Progress Association
 │   │       ├── Leura Progress Association
@@ -31,22 +32,30 @@ Agents
 │   │   │   │   ├── Orama Boarding House
 │   │   │   │   └── boarding house
 │   │   │   └── hotels
+│   │   │       ├── Allen's Hotel
 │   │   │       ├── Belgravia Hotel
+│   │   │       ├── Brown's Hotel
 │   │   │       ├── Carrington Hotel
 │   │   │       ├── Centennial Hotel
 │   │   │       ├── Comet Hotel
+│   │   │       ├── Delaney's Hotel
 │   │   │       ├── Falls Hotel
+│   │   │       ├── Family Hotel
+│   │   │       ├── Fryer's Family Hotel
+│   │   │       ├── Grand Hotel
 │   │   │       ├── Grand Hotel (Sydney)
 │   │   │       ├── Great Western Hotel
 │   │   │       ├── Hoffman's House
 │   │   │       ├── Hotel Wentworth
 │   │   │       ├── Hydora House Hotel
 │   │   │       ├── Imperial Hotel
+│   │   │       ├── Katoomba Family Hotel
 │   │   │       ├── Katoomba Hotel
 │   │   │       ├── Leura Hotel
 │   │   │       ├── Megalong Hotel
 │   │   │       ├── Montrose House
 │   │   │       ├── Mount Victoria Hotel
+│   │   │       ├── Mrs Long's Hotel
 │   │   │       ├── Oxford Hotel (Sydney)
 │   │   │       ├── Railway Hotel
 │   │   │       ├── Wentworth Falls Hotel
@@ -68,10 +77,13 @@ Agents
 │   │   │   ├── Douglas and Company
 │   │   │   ├── Nimmo's
 │   │   │   ├── P. Mullany and Company
+│   │   │   ├── Peckman Bros
 │   │   │   ├── Peckman Brothers
+│   │   │   ├── Store
 │   │   │   ├── Tabrett and Company
 │   │   │   └── retailer or store
 │   │   └── transport & logistics businesses
+│   │       ├── Trucking
 │   │       └── transport & logistics business
 │   ├── cultural & recreational organisations
 │   │   ├── cultural societies
@@ -122,6 +134,7 @@ Agents
 │   │       │   └── rugby club
 │   │       └── tennis clubs
 │   │           ├── Katoomba Lawn Tennis Club
+│   │           ├── Katoomba Tennis Club
 │   │           ├── lawn tennis club
 │   │           └── tennis club
 │   ├── fraternal orders & lodges
@@ -130,6 +143,8 @@ Agents
 │   │       ├── Independent Order of Odd Fellows
 │   │       ├── United Ancient Order of Druids
 │   │       │   └── Druid's Lodge (local lodge)
+│   │       ├── independent lodges
+│   │       │   └── Mountaineer Lodge
 │   │       ├── lodge
 │   │       └── unaffiliated lodges
 │   │           ├── Mountaineer Lodge
@@ -138,18 +153,23 @@ Agents
 │   │   ├── Aborigines' Protection Board
 │   │   ├── New South Wales Police
 │   │   ├── Postal Department
-│   │   ├── Railway Commission
 │   │   ├── councils
 │   │   │   ├── Katoomba Council
 │   │   │   ├── Lithgow Council
 │   │   │   └── council
-│   │   └── courts
-│   │       ├── Katoomba Court
-│   │       ├── Licensing Court
-│   │       ├── Penrith Police Court
-│   │       ├── Police Court
-│   │       ├── Supreme Court
-│   │       └── court
+│   │   ├── courts
+│   │   │   ├── Katoomba Court
+│   │   │   ├── Licensing Court
+│   │   │   ├── Penrith Police Court
+│   │   │   ├── Supreme Court
+│   │   │   ├── court
+│   │   │   └── police court
+│   │   ├── other government bodies
+│   │   │   └── Aborigines' Protection Board
+│   │   ├── postal authorities
+│   │   │   └── Postal Department
+│   │   ├── railway authorities
+│   │   └── railway commission
 │   ├── military organisations
 │   │   ├── NSW Mounted Rifles
 │   │   └── volunteer rifle reserves
@@ -159,6 +179,7 @@ Agents
 │       ├── churches
 │       │   ├── Congregational Church
 │       │   │   └── Katoomba Congregational Church
+│       │   ├── Katoomba Congregational Church
 │       │   ├── Methodist Church
 │       │   ├── Roman Catholic Church
 │       │   ├── St Hilda's Church
@@ -338,24 +359,34 @@ Agents
         │   │   ├── Biles
         │   │   ├── Brown
         │   │   ├── F C Goyder
+        │   │   ├── F. C. Goyder
         │   │   ├── Isabellea J Long
+        │   │   ├── Isabellea J. Long
         │   │   ├── Manuell
         │   │   ├── Mr A G Rowell
+        │   │   ├── Mr A. G. Rowell
         │   │   ├── Mr Alf Goodare
+        │   │   ├── Mr Alf. Goodare
         │   │   ├── Mr D Brown
         │   │   ├── Mr D Thompson
         │   │   ├── Mr D Thomson
+        │   │   ├── Mr D. Brown
+        │   │   ├── Mr D. Thompson
         │   │   ├── Mr Delaney
         │   │   ├── Mr Edwards
         │   │   ├── Mr Ellis
         │   │   ├── Mr J Hudson
         │   │   ├── Mr J Nimmo
+        │   │   ├── Mr J. Nimmo
         │   │   ├── Mr Joe Nimmo
         │   │   ├── Mr Lindeman
         │   │   ├── Mr Manuel
         │   │   ├── Mr N Delaney
+        │   │   ├── Mr N. Delaney
         │   │   ├── Mr P G Whittall
+        │   │   ├── Mr P. G. Whittall
         │   │   ├── Mr R Fryer
+        │   │   ├── Mr R. Fryer
         │   │   ├── Mr Wilson
         │   │   ├── Mrs (Joe) Nimmo
         │   │   ├── Mrs (R.) Fryer
@@ -364,6 +395,7 @@ Agents
         │   │   ├── Richard Allen
         │   │   ├── Rubina Fryer
         │   │   ├── W Green
+        │   │   ├── W. Green
         │   │   └── hotellier
         │   ├── liquor merchants
         │   │   ├── Mr Wilkinson
@@ -416,12 +448,16 @@ Agents
             │       ├── Mrs England
             │       ├── Mrs H Corston
             │       ├── Mrs James
+            │       ├── Mrs. A. Smith
+            │       ├── Mrs. England
+            │       ├── Mrs. H. Corston
+            │       ├── Mrs. James
             │       └── postmaster
             ├── public official
             └── stationmaster
 
 
 STATISTICS:
-  Total nodes in facet: 418
+  Total nodes in facet: 454
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

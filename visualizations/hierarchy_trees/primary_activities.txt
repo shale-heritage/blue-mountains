@@ -6,11 +6,13 @@ Activities
 │   ├── charitable and welfare activity
 │   ├── charity
 │   └── unemployment relief
+├── commercial activities
 ├── communication activities
 │   ├── advertising
 │   ├── communication activity
 │   ├── fundraising
 │   └── postal services
+│       └── Postal service
 ├── economic activities
 │   ├── agriculture
 │   │   └── animal husbandry
@@ -32,11 +34,13 @@ Activities
 │   │   └── shale mining
 │   ├── tourism
 │   ├── transport
+│   │   ├── Trucking
 │   │   ├── horseborne transportation
 │   │   └── railway operations
 │   │       ├── railway operation
 │   │       └── tourist trains
 │   └── truck system
+├── military activities
 ├── recreation activities
 │   ├── athletics
 │   ├── billiards
@@ -74,6 +78,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 70
+  Total nodes in facet: 74
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

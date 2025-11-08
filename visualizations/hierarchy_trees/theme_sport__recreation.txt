@@ -69,6 +69,7 @@ sport & recreation
 │   │   └── rugby club
 │   └── tennis clubs
 │       ├── Katoomba Lawn Tennis Club
+│       ├── Katoomba Tennis Club
 │       ├── lawn tennis club
 │       └── tennis club
 ├── tennis
@@ -81,6 +82,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 73
+  Total nodes in theme: 74
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

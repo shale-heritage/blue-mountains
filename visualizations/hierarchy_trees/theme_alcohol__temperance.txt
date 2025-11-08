@@ -4,22 +4,30 @@ THEMATIC GROUPING: alcohol & temperance
 alcohol & temperance
 ├── Alcohol-related venues
 │   ├── hotels
+│   │   ├── Allen's Hotel
 │   │   ├── Belgravia Hotel
+│   │   ├── Brown's Hotel
 │   │   ├── Carrington Hotel
 │   │   ├── Centennial Hotel
 │   │   ├── Comet Hotel
+│   │   ├── Delaney's Hotel
 │   │   ├── Falls Hotel
+│   │   ├── Family Hotel
+│   │   ├── Fryer's Family Hotel
+│   │   ├── Grand Hotel
 │   │   ├── Grand Hotel (Sydney)
 │   │   ├── Great Western Hotel
 │   │   ├── Hoffman's House
 │   │   ├── Hotel Wentworth
 │   │   ├── Hydora House Hotel
 │   │   ├── Imperial Hotel
+│   │   ├── Katoomba Family Hotel
 │   │   ├── Katoomba Hotel
 │   │   ├── Leura Hotel
 │   │   ├── Megalong Hotel
 │   │   ├── Montrose House
 │   │   ├── Mount Victoria Hotel
+│   │   ├── Mrs Long's Hotel
 │   │   ├── Oxford Hotel (Sydney)
 │   │   ├── Railway Hotel
 │   │   ├── Wentworth Falls Hotel
@@ -55,24 +63,34 @@ alcohol & temperance
 │   │   ├── Biles
 │   │   ├── Brown
 │   │   ├── F C Goyder
+│   │   ├── F. C. Goyder
 │   │   ├── Isabellea J Long
+│   │   ├── Isabellea J. Long
 │   │   ├── Manuell
 │   │   ├── Mr A G Rowell
+│   │   ├── Mr A. G. Rowell
 │   │   ├── Mr Alf Goodare
+│   │   ├── Mr Alf. Goodare
 │   │   ├── Mr D Brown
 │   │   ├── Mr D Thompson
 │   │   ├── Mr D Thomson
+│   │   ├── Mr D. Brown
+│   │   ├── Mr D. Thompson
 │   │   ├── Mr Delaney
 │   │   ├── Mr Edwards
 │   │   ├── Mr Ellis
 │   │   ├── Mr J Hudson
 │   │   ├── Mr J Nimmo
+│   │   ├── Mr J. Nimmo
 │   │   ├── Mr Joe Nimmo
 │   │   ├── Mr Lindeman
 │   │   ├── Mr Manuel
 │   │   ├── Mr N Delaney
+│   │   ├── Mr N. Delaney
 │   │   ├── Mr P G Whittall
+│   │   ├── Mr P. G. Whittall
 │   │   ├── Mr R Fryer
+│   │   ├── Mr R. Fryer
 │   │   ├── Mr Wilson
 │   │   ├── Mrs (Joe) Nimmo
 │   │   ├── Mrs (R.) Fryer
@@ -81,6 +99,7 @@ alcohol & temperance
 │   │   ├── Richard Allen
 │   │   ├── Rubina Fryer
 │   │   ├── W Green
+│   │   ├── W. Green
 │   │   └── hotellier
 │   ├── liquor merchants
 │   │   ├── Mr Wilkinson
@@ -109,6 +128,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 101
+  Total nodes in theme: 120
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

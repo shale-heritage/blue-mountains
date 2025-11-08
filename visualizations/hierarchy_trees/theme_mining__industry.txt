@@ -5,6 +5,7 @@ mining & industry
 ├── mines & mining districts
 │   ├── coal mining
 │   └── shale mines
+│       ├── Hartley Vale Shale Mine
 │       ├── Katoomba Shale Mine
 │       ├── Megalong Shale Mines
 │       ├── Nellie's Glen Shale Mine
@@ -29,8 +30,8 @@ mining & industry
 │   └── mining company
 ├── mining incidents
 │   ├── accident
-│   │   └── mining accidents
 │   └── mining accidents
+│       └── Mount Kembla Disaster
 ├── mining infrastructure
 │   └── tramway
 ├── mining workforce
@@ -50,6 +51,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 42
+  Total nodes in theme: 43
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
