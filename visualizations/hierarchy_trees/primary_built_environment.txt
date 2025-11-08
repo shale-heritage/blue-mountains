@@ -56,6 +56,7 @@ Built Environment
 │   │   ├── Katoomba Courthouse
 │   │   └── courthouse
 │   ├── police facilities
+│   │   ├── police quarters
 │   │   └── police station
 │   └── postal facilities
 │       └── post office
@@ -84,18 +85,16 @@ Built Environment
 ├── industrial buildings
 │   └── mines
 │       ├── coal mines
-│       │   ├── Hermitage Coal Mine
-│       │   ├── Katoomba Coal Mines
-│       │   ├── South Clifton Tunnel Mine
-│       │   └── coal mine
-│       ├── mine
+│       │   ├── Hermitage Coal Mine (facility)
+│       │   ├── Katoomba Coal Mines (facility)
+│       │   ├── South Clifton Tunnel Mine (facility)
+│       │   └── coal mine (facility)
+│       ├── mine (facility)
 │       └── shale mines
-│           ├── Hartley Vale Shale Mine
-│           ├── Katoomba Shale Mine
-│           ├── Megalong Shale Mines
-│           ├── Nellie's Glen Shale Mine
-│           ├── Ruined Castle Shale Mine
-│           └── shale mine
+│           ├── Katoomba Shale Mine (facility)
+│           ├── Megalong Shale Mines (facility)
+│           ├── Nellie's Glen Shale Mine (facility)
+│           └── shale mine (facility)
 ├── infrastructure
 │   ├── mining infrastructure
 │   │   └── tramway
@@ -112,7 +111,6 @@ Built Environment
 │   │       ├── Jenolan Caves Road
 │   │       ├── Katoomba Street
 │   │       ├── Nellie's Glen Road
-│   │       ├── Nellie's Glen Track
 │   │       └── road
 │   └── utilities
 │       ├── gas
@@ -129,17 +127,15 @@ Built Environment
 │           └── rifle range
 └── religious buildings
     └── churches
-        ├── Congregational Church
-        │   └── Katoomba Congregational Church
-        ├── Katoomba Congregational Church
-        ├── Methodist Church
-        ├── Roman Catholic Church
-        ├── St Hilda's Church
-        ├── Wesleyan Church
-        └── church
+        ├── Katoomba Congregational Church (building)
+        ├── Methodist Church (building)
+        ├── Roman Catholic Church (building)
+        ├── St Hilda's Church (building)
+        ├── Wesleyan Church (building)
+        └── church (building)
 
 
 STATISTICS:
-  Total nodes in facet: 136
+  Total nodes in facet: 132
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

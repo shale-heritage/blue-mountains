@@ -5,12 +5,10 @@ mining & industry
 ├── mines & mining districts
 │   ├── coal mining
 │   └── shale mines
-│       ├── Hartley Vale Shale Mine
-│       ├── Katoomba Shale Mine
-│       ├── Megalong Shale Mines
-│       ├── Nellie's Glen Shale Mine
-│       ├── Ruined Castle Shale Mine
-│       └── shale mine
+│       ├── Katoomba Shale Mine (facility)
+│       ├── Megalong Shale Mines (facility)
+│       ├── Nellie's Glen Shale Mine (facility)
+│       └── shale mine (facility)
 ├── mining activities
 │   ├── mine closure
 │   ├── mining
@@ -31,7 +29,8 @@ mining & industry
 ├── mining incidents
 │   ├── accident
 │   └── mining accidents
-│       └── Mount Kembla Disaster
+│       ├── Mount Kembla Disaster
+│       └── mining accident
 ├── mining infrastructure
 │   └── tramway
 ├── mining workforce
@@ -43,7 +42,7 @@ mining & industry
     ├── South Clifton (Illawarra)
     │   └── South Clifton Tunnel Mine (site)
     ├── South Clifton Mine Company
-    └── South Clifton Tunnel Mine
+    └── South Clifton Tunnel Mine (facility)
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -51,6 +50,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 43
+  Total nodes in theme: 42
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

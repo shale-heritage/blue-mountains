@@ -9,64 +9,170 @@ Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=other
 Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Indigenous peoples - THEMATIC
 accident,accident,hierarchy,parent=Health-related events - THEMATIC
 accident,accident,hierarchy,parent=Mining incidents - THEMATIC
+accident,accident,hierarchy,parent=accidents
+accident,accident,hierarchy,parent=health-related events - THEMATIC
+accident,accident,hierarchy,parent=mining incidents - THEMATIC
+accidents,accidents,hierarchy,parent=Events
 Accommodation,Accommodation,hierarchy,parent=tourism & accommodation - THEMATIC
 Accommodation,Accommodation,hierarchy,parent=Tourism & Accommodation - THEMATIC
 accommodation and hospitality venues,accommodation and hospitality venues,hierarchy,parent=Built Environment
+accommodation buildings,accommodation buildings,hierarchy,parent=Built Environment
 Activities,Activities,hierarchy,parent=(Getty AAT primary facet)
 Activities,Activities,hierarchy,parent=(new top-level facet)
+adolescents,adolescents,hierarchy,parent=demographic groups
+advertising,advertising,hierarchy,parent=communication activities
+advertising,advertising,hierarchy,parent=communications & postal services - THEMATIC
+advertising,advertising,hierarchy,parent=cultural activities - THEMATIC
 Agents,Agents,hierarchy,parent=(Getty AAT primary facet)
+agricultural accidents,agricultural accidents,hierarchy,parent=accidents
+agriculture,agriculture,hierarchy,parent=economic activities
+agriculture workers,agriculture workers,hierarchy,parent=occupations
+alcohol & temperance,alcohol & temperance,hierarchy,parent=(thematic grouping)
+alcohol consumption & behaviour,alcohol consumption & behaviour,hierarchy,parent=alcohol & temperance - THEMATIC
 alcohol-related,alcohol-related,hierarchy,parent=criminal events
 Alcohol-related venues,Alcohol-related venues,hierarchy,parent=alcohol & temperance - THEMATIC
 Alcohol-related venues,Alcohol-related venues,hierarchy,parent=Alcohol & Temperance - THEMATIC
+alcoholic beverage,alcoholic beverage,hierarchy,parent=alcoholic beverages (singular generic term)
+alcoholic beverages,alcoholic beverages,hierarchy,parent=alcohol consumption & behaviour - THEMATIC
+alcoholic beverages,alcoholic beverages,hierarchy,parent=consumable materials
+aldermen,aldermen,hierarchy,parent=public officials
 Allen,Allen,hierarchy,parent=hotelliers
-Allen's Hotel,hotel,merge,Possessive form referring to hotel run by Allen (hotellier) - tag as Hotel + Allen
 Allen's Hotel,Allen's Hotel,hierarchy,parent=hotels
+Allen's Hotel,hotel,merge,Possessive form referring to hotel run by Allen (hotellier) - tag as Hotel + Allen
+animal,animal,hierarchy,parent=animals (singular generic term)
+animal attacks,animal attacks,hierarchy,parent=livestock accidents
+animal breeders,animal breeders,hierarchy,parent=agriculture workers
+animal breeding,animal breeding,hierarchy,parent=animal husbandry
+animal control,animal control,hierarchy,parent=public health and safety activities
+animal husbandry,animal husbandry,hierarchy,parent=agriculture
+animal trespass,animal trespass,merge,Alternate term for Stock trespass
+animal-powered transport accidents,animal-powered transport accidents,hierarchy,parent=transport accidents
 animals,animals,hierarchy,parent=Agents
 animals,animals,hierarchy,parent=Environment & Weather - THEMATIC
+animals,animals,hierarchy,parent=environment & weather - THEMATIC
 Arts & Culture,Arts & Culture,hierarchy,parent=(thematic grouping)
+assault,assault,hierarchy,parent=criminal events
+assault,assault,hierarchy,parent=violent crimes - THEMATIC
 Associated Concepts,Associated Concepts,hierarchy,parent=(Getty AAT primary facet)
 Associated Concepts,Associated Concepts,hierarchy,parent=(conceptual facet)
+athletic club,athletic club,hierarchy,parent=athletic clubs (singular generic term)
 athletic clubs,athletic clubs,hierarchy,parent=sports clubs
+athletics,athletics,hierarchy,parent=recreation activities
+athletics,athletics,hierarchy,parent=sport & recreation - THEMATIC
+athletics,athletics,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Austin family,Austin family,hierarchy,parent=families
 Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
 Australian Kerosene Shale and Oil Company,Australian Kerosene Oil and Mineral Company,synonym,Variant name for Australian Kerosene Oil and Mineral Company
+ball,ball,hierarchy,parent=social events
+ball,ball,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+band,band,hierarchy,parent=bands
+band,band,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+bands,bands,hierarchy,parent=performance groups
+bank,bank,hierarchy,parent=commercial buildings
+bank,bank,hierarchy,parent=financial institutions
+bank,bank,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+bankruptcy,bankruptcy,hierarchy,parent=Economic distress - THEMATIC
+bankruptcy,bankruptcy,hierarchy,parent=Economic hardship - THEMATIC
+bankruptcy,bankruptcy,hierarchy,parent=legal events
+bankruptcy,bankruptcy,hierarchy,parent=Legal outcomes - THEMATIC
 Bashford,Bashford,hierarchy,parent=hotelliers
 Bathurst,Bathurst,hierarchy,parent=towns
+bazaar,bazaar,hierarchy,parent=social events
+beer,beer,hierarchy,parent=alcoholic beverages
+beer sales,beer sales,hierarchy,parent=liquor trade
 Belgravia Hotel,Belgravia Hotel,hierarchy,parent=hotels
+bicycle club,bicycle club,hierarchy,parent=bicycle clubs
+bicycle clubs,bicycle clubs,hierarchy,parent=sports clubs
+bigamy,bigamy,hierarchy,parent=criminal events
+bigamy,bigamy,hierarchy,parent=other crimes - THEMATIC
 Biles,Biles,hierarchy,parent=hotelliers
-Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+billiard,billiards,merge,Singular form merged into plural - standardise to Billiards
+billiard licence,billiard licence,hierarchy,parent=licences
+billiard licensing,billiard licensing,hierarchy,parent=licensing
+billiards,billiards,hierarchy,parent=recreation activities
+billiards,billiards,hierarchy,parent=sport & recreation - THEMATIC
 Blackheath,Blackheath,hierarchy,parent=towns
+Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+boarding house,boarding house,hierarchy,parent=boarding houses
+boarding houses,boarding houses,hierarchy,parent=accommodation buildings
+boarding houses,boarding houses,hierarchy,parent=Domestic accommodation - THEMATIC
+boarding houses,boarding houses,hierarchy,parent=hospitality businesses
+boarding houses,boarding houses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Bonnie Doon Track,Bonnie Doon Track,hierarchy,parent=roads
+brandy,brandy,hierarchy,parent=spirits
 Break Neck Gully,Break Neck Gully,hierarchy,parent=gullies
 Brown,Brown,hierarchy,parent=hotelliers
-Brown's Hotel,hotel,merge,Possessive form referring to hotel run by Brown (hotellier) - tag as Hotel + Brown
 Brown's Hotel,Brown's Hotel,hierarchy,parent=hotels
+Brown's Hotel,hotel,merge,Possessive form referring to hotel run by Brown (hotellier) - tag as Hotel + Brown
 Brydon family,Brydon family,hierarchy,parent=families
 Built Environment,Built Environment,hierarchy,parent=(Getty AAT primary facet)
 Built Environment,Built Environment,hierarchy,parent=(new top-level facet)
 Burragorang,Burragorang,hierarchy,parent=towns
+businesses,businesses,hierarchy,parent=Economy & Labour - THEMATIC
 Capertee,Capertee,hierarchy,parent=towns
 Cardinal Moran,Cardinal Moran,hierarchy,parent=clergy
 Cardinal Moran,Cardinal Moran,hierarchy,parent=Religion - THEMATIC (religious figure)
 Carrington,Carrington,hierarchy,parent=Greater Katoomba
 Carrington,Carrington,hierarchy,parent=Katoomba
 Carrington Hotel,Carrington Hotel,hierarchy,parent=hotels
+cattle,cattle,hierarchy,parent=domestic animals
+cattle straying,cattle straying,merge,Use-for term for Stock trespass
+cattle trucking yard,cattle trucking yard,hierarchy,parent=cattle trucking yards
+cattle trucking yards,cattle trucking yards,hierarchy,parent=transport infrastructure
+caves & geological features,caves & geological features,hierarchy,parent=natural features
 Centennial Hotel,Centennial Hotel,hierarchy,parent=hotels
 charitable and welfare activities,charitable and welfare activities,hierarchy,parent=Activities
+charitable and welfare activity,charitable and welfare activity,hierarchy,parent=charitable and welfare activities (singular generic term)
+charity,charity,hierarchy,parent=charitable and welfare activities
+charity,charity,hierarchy,parent=Economic hardship - THEMATIC
+chess and draughts club,chess and draughts club,hierarchy,parent=cultural societies
+childhood & adolescence,childhood & adolescence,hierarchy,parent=family & domestic life - THEMATIC
+children,children,hierarchy,parent=demographic groups
+children,children,hierarchy,parent=family members by demographic - THEMATIC
+children,children,hierarchy,parent=Vulnerable populations - THEMATIC
 Chinese community,Chinese community,hierarchy,parent=marginalised groups - THEMATIC
 Chinese community,Chinese community,hierarchy,parent=Marginalised groups - THEMATIC
 Chinese people,Chinese people,hierarchy,parent=Chinese community - THEMATIC
 Chinese people,Chinese people,hierarchy,parent=ethnic groups
+choir,choir,hierarchy,parent=choirs
+choirs,choirs,hierarchy,parent=performance groups
+church (building),church (building),hierarchy,parent=churches (singular generic term)
+churches,churches,hierarchy,parent=religious buildings
+churches,churches,hierarchy,parent=religious organisations
+civic buildings,civic buildings,hierarchy,parent=Built Environment
+civic buildings,civic buildings,hierarchy,parent=community institutions - THEMATIC
+civic organisations,civic organisations,hierarchy,parent=community institutions - THEMATIC
+civic organisations,civic organisations,hierarchy,parent=organisations
 Clarence,Clarence,hierarchy,parent=towns
 Clarke's Hall,Clarke's Hall,hierarchy,parent=halls
-Colliery,coal mine,synonym,UK/Australian term for coal mine
+clergy,clergy,hierarchy,parent=occupations
+clergy,clergy,hierarchy,parent=Religion - THEMATIC
+coach and buggy business,coach and buggy business,hierarchy,parent=other goods and services
+coal,coal,hierarchy,parent=Natural resources - THEMATIC
+coal,coal,hierarchy,parent=Materials
+coal mine (facility),coal mine (facility),hierarchy,parent=coal mines (singular generic term)
+coal mines,coal mines,hierarchy,parent=mines
+coal mining,coal mining,hierarchy,parent=mines & mining districts - THEMATIC
+coal mining,coal mining,hierarchy,parent=mining
+Colliery,coal mine (facility),synonym,UK/Australian term for coal mine
 Comet Hotel,Comet Hotel,hierarchy,parent=hotels
 commercial activities,commercial activities,hierarchy,parent=Activities
+commercial building,commercial building,hierarchy,parent=commercial buildings (singular generic term)
+commercial buildings,commercial buildings,hierarchy,parent=Built Environment
 commercial businesses,commercial businesses,hierarchy,parent=organisations
 commercial businesses,commercial businesses,hierarchy,parent=Businesses - THEMATIC
+commercial businesses,commercial businesses,hierarchy,parent=businesses - THEMATIC
+commercial transport,commercial transport,hierarchy,parent=transport & infrastructure - THEMATIC
 communication activities,communication activities,hierarchy,parent=Activities
+communication activity,communication activity,hierarchy,parent=communication activities (singular generic term)
+communications & postal services,communications & postal services,hierarchy,parent=(thematic grouping)
+community buildings,community buildings,hierarchy,parent=Built Environment
+community buildings,community buildings,hierarchy,parent=community institutions - THEMATIC
+community institutions,community institutions,hierarchy,parent=(thematic grouping)
+concert,concert,hierarchy,parent=cultural events
+concert,concert,hierarchy,parent=social events
 Concerts,concert,merge,Plural form merged into singular (29 items)
-Congregational Church,Congregational Church,hierarchy,parent=churches
+constable,constable,hierarchy,parent=police officers
 Constable John Hamilton,Constable John Hamilton,hierarchy,parent=constable
 Constable John Hamilton,Constable John Hamilton,hierarchy,parent=people - THEMATIC
 Constable O'Reilly,Constable O'Reilly,hierarchy,parent=constable
@@ -75,40 +181,123 @@ Constable Orr,Constable Orr,hierarchy,parent=constable
 Constable Orr,Constable Orr,hierarchy,parent=people - THEMATIC
 Constable White,Constable White,hierarchy,parent=constable
 Constable White,Constable White,hierarchy,parent=people - THEMATIC
+consumable materials,consumable materials,hierarchy,parent=Materials
+coroner,coroner,hierarchy,parent=coroners
 Coroner Lethbridge,Coroner Lethbridge,hierarchy,parent=coroners
+coroners,coroners,hierarchy,parent=legal officials
+corroboree,corroboree,hierarchy,parent=cultural events
+corroboree,corroboree,hierarchy,parent=Indigenous peoples - THEMATIC
+cottage,cottage,hierarchy,parent=cottages
+cottages,cottages,hierarchy,parent=accommodation buildings
+council,council,hierarchy,parent=councils (singular generic term)
 Council buildings,Council buildings,hierarchy,parent=civic buildings
+council chambers,council chambers,hierarchy,parent=civic buildings
+councils,councils,hierarchy,parent=government bodies
+coursing,coursing,hierarchy,parent=sporting events
+coursing,coursing,hierarchy,parent=sport & recreation - THEMATIC
+coursing club,coursing club,hierarchy,parent=coursing clubs (singular generic term)
+coursing clubs,coursing clubs,hierarchy,parent=sports clubs
+court,court,hierarchy,parent=courts (singular generic term)
+court buildings,court buildings,hierarchy,parent=civic buildings
+court buildings,court buildings,hierarchy,parent=justice & crime - THEMATIC
+court cases,court cases,hierarchy,parent=legal events
+court cases,court cases,hierarchy,parent=legal proceedings
+courthouse,courthouse,hierarchy,parent=court buildings
+courts,courts,hierarchy,parent=government bodies
+courts,courts,hierarchy,parent=justice & crime - THEMATIC
+cricket,cricket,hierarchy,parent=team sports
+cricket,cricket,hierarchy,parent=sport & recreation - THEMATIC
+cricket club,cricket club,hierarchy,parent=cricket clubs (singular generic term)
 cricket clubs,cricket clubs,hierarchy,parent=sports clubs
+cricket ground,cricket ground,hierarchy,parent=cricket grounds (singular generic term)
+cricket grounds,cricket grounds,hierarchy,parent=sports facilities
+cricket match,cricket match,hierarchy,parent=sporting events (singular generic term)
+cricket match,cricket match,hierarchy,parent=sport & recreation - THEMATIC
+crimes,crimes,hierarchy,parent=justice & crime - THEMATIC
+criminal event,criminal event,hierarchy,parent=criminal events (singular generic term)
+criminal events,criminal events,hierarchy,parent=Events
+cultural & recreational organisations,cultural & recreational organisations,hierarchy,parent=community institutions - THEMATIC
+cultural & recreational organisations,cultural & recreational organisations,hierarchy,parent=organisations
+cultural activities,cultural activities,hierarchy,parent=Arts & Culture - THEMATIC
+cultural event,cultural event,hierarchy,parent=cultural events (singular generic term)
+cultural events,cultural events,hierarchy,parent=Arts & Culture - THEMATIC
+cultural events,cultural events,hierarchy,parent=Events
 Cultural identity & heritage,Cultural identity & heritage,hierarchy,parent=Race & Ethnicity - THEMATIC
+cultural organisations,cultural organisations,hierarchy,parent=Arts & Culture - THEMATIC
 Cultural organizations,Cultural organizations,hierarchy,parent=Arts & Culture - THEMATIC
+cultural societies,cultural societies,hierarchy,parent=cultural & recreational organisations
+cultural society,cultural society,hierarchy,parent=cultural societies (singular generic term)
 Cultural venues,Cultural venues,hierarchy,parent=Arts & Culture - THEMATIC
+cycling,cycling,hierarchy,parent=recreation activities
+cycling,cycling,hierarchy,parent=sport & recreation - THEMATIC
+dance,dance,hierarchy,parent=social events
 Dances,dance,merge,Plural form merged into singular (26 items)
 Davey family,Davey family,hierarchy,parent=families
+death,death,hierarchy,parent=health conditions - THEMATIC
+death,death,hierarchy,parent=life events
+death,death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+death notice,death notice,hierarchy,parent=death
+debate,debate,hierarchy,parent=cultural events
+debating,debating,hierarchy,parent=cultural events
+debating,debating,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Delaney family,Delaney family,hierarchy,parent=families
 Delaney's Family Hotel,Delaney's Family Hotel,hierarchy,parent=family hotels
-Delaney's Hotel,Delaney's Hotel,merge,"Variant name - use Delaney's Family Hotel (official name includes ""Family Hotel"" designation per 1896 license application)"
 Delaney's Hotel,Delaney's Hotel,hierarchy,parent=hotels
+Delaney's Hotel,Delaney's Hotel,merge,"Variant name - use Delaney's Family Hotel (official name includes ""Family Hotel"" designation per 1896 license application)"
+demographic group,demographic group,hierarchy,parent=demographic groups (singular generic term)
 demographic groups,demographic groups,hierarchy,parent=people
+desertion,desertion,hierarchy,parent=criminal events
+desertion,desertion,hierarchy,parent=Social order offences - THEMATIC
+disaster,disaster,hierarchy,parent=accidents
+disease,disease,hierarchy,parent=health conditions - THEMATIC
+disease,disease,hierarchy,parent=physical and health conditions
+divorce,divorce,hierarchy,parent=legal events
+divorce,divorce,hierarchy,parent=Legal outcomes - THEMATIC
+document types,document types,hierarchy,parent=Associated Concepts
+dogs,dogs,hierarchy,parent=domestic animals
+dogs,dogs,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Domestic accommodation,Domestic accommodation,hierarchy,parent=family & domestic life - THEMATIC
 Domestic accommodation,Domestic accommodation,hierarchy,parent=Family & Domestic Life - THEMATIC
+domestic animals,domestic animals,hierarchy,parent=animals
 Douglas & Co.,Douglas and Company,synonym,Abbreviated form of Douglas and Company
 Douglas and Company,Douglas and Company,hierarchy,parent=retailers and stores
-Dr Morgan,Dr Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Dr Morgan,Dr Morgan,hierarchy,parent=medical professionals
+Dr Morgan,Dr Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Dr Prangley,Dr Prangley,hierarchy,parent=medical professionals
 Dr Spark,Dr Spark,hierarchy,parent=medical professionals
-Dr Watkins,Dr Watkins,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Dr Watkins,Dr Watkins,hierarchy,parent=medical professionals
+Dr Watkins,Dr Watkins,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+drinking,drinking,merge,Consolidate to Drinking (alcohol) - all instances in collection refer to alcohol consumption (Blue Mountains temperance-era newspapers)
 Drinking,Drinking (alcohol),synonym,Renamed for clarity - refers specifically to alcohol consumption
+drinking (alcohol),drinking (alcohol),hierarchy,parent=alcohol consumption & behaviour - THEMATIC
+drinking (alcohol),drinking (alcohol),hierarchy,parent=social behaviours
 Druid's Lodge,Druid's Lodge (local lodge),synonym,Short form without qualifier
 Druid's Lodge (local lodge),Druid's Lodge (local lodge),hierarchy,parent=United Ancient Order of Druids
 Druids,United Ancient Order of Druids,synonym,Informal name for United Ancient Order of Druids
 Drunkeness,Drunkeness,hierarchy,parent=alcohol consumption & behaviour - THEMATIC
+drunkenness (crime),drunkenness (crime),hierarchy,parent=alcohol consumption & behaviour - THEMATIC
+drunkenness (crime),drunkenness (crime),hierarchy,parent=alcohol-related
+drunkenness (crime),drunkenness (crime),hierarchy,parent=Social order offences - THEMATIC
+drunkenness (intoxication),drunkenness (intoxication),hierarchy,parent=alcohol consumption & behaviour - THEMATIC
+drunkenness (intoxication),drunkenness (intoxication),hierarchy,parent=physical and health conditions
+dwelling,dwelling,hierarchy,parent=dwellings (singular generic term)
+dwellings,dwellings,hierarchy,parent=accommodation buildings
 Eaton family,Eaton family,hierarchy,parent=families
 economic activities,economic activities,hierarchy,parent=Activities
+economic activity,economic activity,hierarchy,parent=economic activities (singular generic term)
 Economic distress,Economic distress,hierarchy,parent=Economy & Labour - THEMATIC
+economic event,economic event,hierarchy,parent=economic events (singular generic term)
+economic events,economic events,hierarchy,parent=Events
 Economic hardship,Economic hardship,hierarchy,parent=Social issues - THEMATIC
 Economy & Labour,Economy & Labour,hierarchy,parent=(thematic grouping)
+education,education,hierarchy,parent=(thematic grouping)
+educational buildings,educational buildings,hierarchy,parent=Built Environment
+educational buildings,educational buildings,hierarchy,parent=education - THEMATIC
+election,election,hierarchy,parent=political events
+environment & weather,environment & weather,hierarchy,parent=(thematic grouping)
+equestrian sports,equestrian sports,merge,Remove from Recreation activities hierarchy - use Spectator sports for watching horse racing; use Horse races (Events facet) for the sporting event itself
 Eskbank Oval,Eskbank Oval,hierarchy,parent=ovals
+ethnic group,ethnic group,hierarchy,parent=ethnic groups (singular generic term)
 ethnic groups,ethnic groups,hierarchy,parent=people
 Evans family,Evans family,hierarchy,parent=families
 Events,Events,hierarchy,parent=(Getty AAT primary facet)
@@ -116,75 +305,153 @@ Events,Events,hierarchy,parent=(new top-level facet)
 F C Goyder,F C Goyder,hierarchy,parent=hotelliers
 F. C. Goyder,F. C. Goyder,hierarchy,parent=hotelliers
 Falls Hotel,Falls Hotel,hierarchy,parent=hotels
+families,families,hierarchy,parent=family & domestic life - THEMATIC (all family tags)
+families,families,hierarchy,parent=people
+family,family,hierarchy,parent=families (singular generic term)
+family & domestic life,family & domestic life,hierarchy,parent=(thematic grouping)
 Family Hotel,Family Hotel,hierarchy,parent=hotels
+family hotel,family hotel,merge,Colloquial/generic reference to Katoomba Family Hotel - all instances in collection refer to this specific establishment in Katoomba
+family hotels,family hotels,hierarchy,parent=hotels
+family members by demographic,family members by demographic,hierarchy,parent=family & domestic life - THEMATIC
+feral dog control,feral dog control,hierarchy,parent=animal control
+fighting,fighting,hierarchy,parent=criminal events
+fighting,fighting,hierarchy,parent=violent crimes - THEMATIC
+financial institution,financial institution,hierarchy,parent=financial institutions (singular generic term)
 financial institutions,financial institutions,hierarchy,parent=commercial businesses
+financial services,financial services,hierarchy,parent=economic activities
+fire,fire,hierarchy,parent=accidents
+flower show,flower show,hierarchy,parent=social events
 Flynn family,Flynn family,hierarchy,parent=families
+football,football,hierarchy,parent=team sports
+football,football,hierarchy,parent=sport & recreation - THEMATIC
+football,football,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+football club,football club,hierarchy,parent=football clubs (singular generic term)
 football clubs,football clubs,hierarchy,parent=sports clubs
+football match,football match,hierarchy,parent=sporting events (singular generic term)
+football match,football match,hierarchy,parent=sport & recreation - THEMATIC
 fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=organisations
 fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
+fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=community institutions - THEMATIC
 Freemasons,Freemasons,hierarchy,parent=lodges
+Fryer's Family Hotel,Fryer's Family Hotel,hierarchy,parent=hotels
 Fryer's Family Hotel,Fryer's Family Hotel,merge,Owner-specific name for Katoomba Family Hotel during Fryer family ownership (1892) - use Katoomba Family Hotel as preferred term
 Fryer's Family Hotel,Katoomba Family Hotel,synonym,Historical name used during Fryer family ownership period (pre-March 1892)
-Fryer's Family Hotel,Fryer's Family Hotel,hierarchy,parent=hotels
+fundraising,fundraising,hierarchy,parent=communication activities
+funeral,funeral,hierarchy,parent=life events
+gambling,gambling,hierarchy,parent=social behaviours
+gambling,gambling,hierarchy,parent=Social order offences - THEMATIC
+gas,gas,hierarchy,parent=utilities
+gas,gas,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Gender-related vulnerabilities,Gender-related vulnerabilities,hierarchy,parent=women & gender - THEMATIC
 Gender-related vulnerabilities,Gender-related vulnerabilities,hierarchy,parent=Women & Gender - THEMATIC
+gin,gin,hierarchy,parent=spirits
 Girls' cricket,cricket,merge,Tag with cricket + women (demographic group) + adolescents (if applicable) instead of gender-specific sport term per consolidation decision
 Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=mining companies
-Glen Shale Mine,Nellie's Glen Shale Mine,synonym,Short form of Nellie's Glen Shale Mine - use full name for clarity
+Glen Shale Mine,Nellie's Glen Shale Mine (facility),synonym,Short form of Nellie's Glen Shale Mine - use full name for clarity
+gold mining,gold mining,hierarchy,parent=mining
 Good Templars,Good Templars,hierarchy,parent=religious social movements
 Good Templars,Good Templars,hierarchy,parent=temperance organisations & movements - THEMATIC
 Good Templars,Good Templars,hierarchy,parent=Temperance organizations & movements - THEMATIC
 Gordon family,Gordon family,hierarchy,parent=families
+goring,goring,hierarchy,parent=animal attacks
 government bodies,government bodies,hierarchy,parent=organisations
 government bodies,government bodies,hierarchy,parent=Politics & Governance - THEMATIC
 Goyder brothers,Goyder brothers,hierarchy,parent=Goyder family
 Goyder family,Goyder family,hierarchy,parent=families
-Grand Hotel,Grand Hotel (Sydney),merge,Primary source evidence shows Grand Hotel refers to Phillip Street Sydney hotel
 Grand Hotel,Grand Hotel,hierarchy,parent=hotels
+Grand Hotel,Grand Hotel (Sydney),merge,Primary source evidence shows Grand Hotel refers to Phillip Street Sydney hotel
 Grand Hotel (Sydney),Grand Hotel (Sydney),hierarchy,parent=hotels
 Great Wentworth Falls Coal and Shale Mining Company,Great Wentworth Falls Coal and Shale Mining Company,hierarchy,parent=mining companies
 Great Western Hotel,Great Western Hotel,hierarchy,parent=hotels
 Great Western Railway,Great Western Railway,hierarchy,parent=railway
 Greater Katoomba,Greater Katoomba,hierarchy,parent=towns
 Greater Megalong,Greater Megalong,hierarchy,parent=towns
-Greenbank family,Greenbank family,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Greenbank family,Greenbank family,hierarchy,parent=families
-Hartley Vale,Hartley Vale mining district,synonym,Unqualified form refers to the town - use mining district qualifier when referring to the mining district
+Greenbank family,Greenbank family,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+grog,grog,hierarchy,parent=mixed alcoholic beverages
+gullies,gullies,hierarchy,parent=natural features
+hall,hall,hierarchy,parent=halls (singular generic term)
+halls,halls,hierarchy,parent=community buildings
+halls,halls,hierarchy,parent=Cultural venues - THEMATIC
 Hartley Vale,Hartley Vale,hierarchy,parent=towns - THEMATIC
 Hartley Vale,Hartley Vale,hierarchy,parent=towns
+Hartley Vale,Hartley Vale mining district,synonym,Unqualified form refers to the town - use mining district qualifier when referring to the mining district
+Hartley Vale Cricket Club,Hartley Vale Cricket Club,hierarchy,parent=cricket clubs
 Hartley Vale Football Club,Hartley Vale Natives Football Club,synonym,Shortened name for Hartley Vale Natives Football Club
-Hartley Vale Natives Football Club,Hartley Vale Natives Football Club,hierarchy,parent=football clubs
-Hartley Vale Shale Mine,Hartley Vale Shale Mine,hierarchy,parent=shale mines
-Hartley Vale mines,Hartley Vale mines,hierarchy,parent=Hartley Vale mining district
+Hartley Vale mines,Hartley Vale Shale Mine (site),merge,Generic plural form consolidated into site-specific qualified form
 Hartley Vale mining district,Hartley Vale mining district,hierarchy,parent=mining districts
+Hartley Vale Natives Football Club,Hartley Vale Natives Football Club,hierarchy,parent=football clubs
+Hartley Vale Shale Mine,Hartley Vale Shale Mine (site),merge,Use site-qualified form for consistency with other mining district structures
+Hartley Vale Shale Mine (site),Hartley Vale Shale Mine (site),hierarchy,parent=Hartley Vale mining district
 Hartman family,Hartman family,hierarchy,parent=families
-Hermitage Coal Mine,Hermitage Coal Mine,hierarchy,parent=coal mines
+health & medicine,health & medicine,hierarchy,parent=(thematic grouping)
+health conditions,health conditions,hierarchy,parent=health & medicine - THEMATIC
+health-related events,health-related events,hierarchy,parent=health & medicine - THEMATIC
+Helensburgh,Helensburgh,hierarchy,parent=towns
+Hermitage Coal Mine (facility),Hermitage Coal Mine (facility),hierarchy,parent=coal mines
 Hermitage Coal Mine,Hermitage colliery,synonym,Historical term for Hermitage Coal Mine - use standard mine nomenclature
+historical event,historical event,hierarchy,parent=historical events (singular generic term)
+historical events,historical events,hierarchy,parent=Events
 Hoffman's House,Hoffman's House,hierarchy,parent=hotels
+horse accidents,horse accidents,hierarchy,parent=animal-powered transport accidents
+horse breeder,horse breeder,hierarchy,parent=animal breeders
+horse breeding,horse breeding,hierarchy,parent=animal breeding
+horse races,horse races,hierarchy,parent=sporting events
+horse races,horse races,hierarchy,parent=sport & recreation - THEMATIC
+horse racing,horse racing,hierarchy,parent=sport & recreation - THEMATIC
+horse racing,horse racing,merge,Remove from Recreation activities - use Spectator sports for watching horse racing; use Horse races (Events facet) for the sporting event itself
+horse straying,horse straying,merge,Use-for term for Stock trespass
+horse-drawn vehicle accidents,horse-drawn vehicle accidents,hierarchy,parent=horse accidents
+horseback riding,horseback riding,hierarchy,parent=recreation activities
+horseback riding accidents,horseback riding accidents,hierarchy,parent=horse accidents
+horseborne transportation,horseborne transportation,hierarchy,parent=transport
+horses,horses,hierarchy,parent=domestic animals
+horses,horses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+horses,horses,merge,Remove from Recreation activities - horses are animals (agents) not activities; use 'Horseback riding' for the activity
+horticulture society,horticulture society,hierarchy,parent=cultural societies
 hospitality businesses,hospitality businesses,hierarchy,parent=commercial businesses
+hospitality worker,hospitality worker,hierarchy,parent=hospitality workers (singular generic term)
+hospitality workers,hospitality workers,hierarchy,parent=alcohol & temperance - THEMATIC
+hospitality workers,hospitality workers,hierarchy,parent=occupations
+hotel,hotel,hierarchy,parent=hotels
+hotel licensing,hotel licensing,hierarchy,parent=licensing
 Hotel Wentworth,Hotel Wentworth,hierarchy,parent=hotels
+hotellier,hotellier,hierarchy,parent=hotelliers
+hotelliers,hotelliers,hierarchy,parent=hospitality workers
+hotels,hotels,hierarchy,parent=accommodation buildings
+hotels,hotels,hierarchy,parent=Alcohol-related venues - THEMATIC
+hotels,hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect)
+hotels,hotels,hierarchy,parent=hospitality businesses
+hunting,hunting,hierarchy,parent=economic activities
 Husband family,Husband family,hierarchy,parent=families
 Hydora House Hotel,Hydora House Hotel,hierarchy,parent=hotels
 I.O.O.F. Hall,Odd Fellows' Hall,merge,Same building - IOOF = Independent Order of Odd Fellows
+illness,illness,hierarchy,parent=health conditions - THEMATIC
+illness,illness,hierarchy,parent=physical and health conditions
 Imperial Hotel,Imperial Hotel,hierarchy,parent=hotels
-Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=lodges
 independent lodges,independent lodges,hierarchy,parent=lodges
+Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=lodges
+indigenous peoples,indigenous peoples,hierarchy,parent=marginalised groups - THEMATIC
+industrial buildings,industrial buildings,hierarchy,parent=Built Environment
 Industries,Industries,hierarchy,parent=Economy & Labour - THEMATIC
 Information Forms,Information Forms,hierarchy,parent=communications & postal services - THEMATIC
 Information Forms,Information Forms,hierarchy,parent=Communications & Postal Services - THEMATIC
 Information objects,Information objects,hierarchy,parent=communications & postal services - THEMATIC
+infrastructure,infrastructure,hierarchy,parent=Built Environment
+injury,injury,hierarchy,parent=health conditions - THEMATIC
+injury,injury,hierarchy,parent=physical and health conditions
+insurance provision,insurance provision,hierarchy,parent=financial services
 Irish culture,Irish culture,hierarchy,parent=ethnic groups
 Isabellea J Long,Isabellea J Long,hierarchy,parent=hotelliers
 Isabellea J. Long,Isabellea J. Long,hierarchy,parent=hotelliers
 Jamieson Valley,Jamieson Valley,hierarchy,parent=valleys
 Jenolan Caves,Jenolan Caves,hierarchy,parent=caves & geological features
 Jenolan Caves,Jenolan Caves,hierarchy,parent=tourist attractions - THEMATIC
-Jenolan Caves,Jenolan Cave,synonym,Singular form - always use plural as caves are a complex system
 Jenolan Caves,Jenolan Caves,hierarchy,parent=Tourist attractions - THEMATIC
-Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=caves & geological features
+Jenolan Caves,Jenolan Cave,synonym,Singular form - always use plural as caves are a complex system
 Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=roads
-Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=Jenolan Caves
 Jenolan Caves road,Jenolan Caves Road,synonym,Lowercase variant - use capitalised form
+justice & crime,justice & crime,hierarchy,parent=(thematic grouping)
 Kanimbla Valley,Kanimbla Valley,hierarchy,parent=valleys
 Katoomba,Katoomba,hierarchy,parent=towns - THEMATIC
 Katoomba,Katoomba,hierarchy,parent=Greater Katoomba
@@ -193,12 +460,12 @@ Katoomba Amateur Dramatic Club,Katoomba Amateur Dramatic Club,hierarchy,parent=c
 Katoomba Amateur Minstrels,Katoomba Amateur Minstrels,hierarchy,parent=Minstrel shows - THEMATIC
 Katoomba Amateur Minstrels,Katoomba Amateur Minstrels,hierarchy,parent=minstrel troupes
 Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=athletic clubs
+Katoomba band,Katoomba band,hierarchy,parent=bands
 Katoomba Civilian Rifle Club,Katoomba Civilian Rifle Club,hierarchy,parent=rifle clubs
-Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines
 Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies
 Katoomba Coal and Shale Mines,Katoomba Coal and Shale Company,synonym,Variant name for Katoomba Coal and Shale Company - refers to the company and its operations
-Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Congregational Church
-Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=churches
+Katoomba Coal Mines (facility),Katoomba Coal Mines (facility),hierarchy,parent=coal mines
+Katoomba Congregational Church (building),Katoomba Congregational Church (building),hierarchy,parent=churches
 Katoomba Council,Katoomba Council,hierarchy,parent=councils
 Katoomba Court,Katoomba Court,hierarchy,parent=courts
 Katoomba Court,Katoomba Court,hierarchy,parent=court buildings
@@ -216,97 +483,195 @@ Katoomba Rifle Reserve,Katoomba Rifle Reserve,hierarchy,parent=rifle reserves
 Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=volunteer rifle reserves
 Katoomba Rifle Reserves,Katoomba Rifle Reserve,synonym,Plural variant - standardised to singular
 Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=schools of arts
-Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=shale mines
+Katoomba Shale Mine (facility),Katoomba Shale Mine (facility),hierarchy,parent=shale mines
 Katoomba Shooting Fishing and Excursion Club,Katoomba Shooting Fishing and Excursion Club,hierarchy,parent=outdoor recreation clubs
-Katoomba South,South Katoomba,merge,Naming variant - contextual evidence shows South Katoomba used in newspaper sources
 Katoomba South,Katoomba South,hierarchy,parent=Greater Katoomba
-Katoomba South mines,coal mine,merge,Geographical folksonomy - tag with Katoomba South (location) + coal mine (or specific mine name if identified)
+Katoomba South,South Katoomba,merge,Naming variant - contextual evidence shows South Katoomba used in newspaper sources
+Katoomba South mines,coal mine (facility),merge,Geographical folksonomy - tag with Katoomba South (location) + coal mine (or specific mine name if identified)
+Katoomba station,Katoomba station,hierarchy,parent=railway infrastructure
 Katoomba Street,Katoomba Street,hierarchy,parent=roads
 Katoomba Street,Katoomba Street,hierarchy,parent=Carrington
 Katoomba Superior Public School,Katoomba Superior Public School,hierarchy,parent=schools
-Katoomba Tennis Club,Katoomba Lawn Tennis Club,synonym,Shortened/historical name for Katoomba Lawn Tennis Club
 Katoomba Tennis Club,Katoomba Tennis Club,hierarchy,parent=tennis clubs
-Katoomba band,Katoomba band,hierarchy,parent=bands
-Katoomba station,Katoomba station,hierarchy,parent=railway infrastructure
+Katoomba Tennis Club,Katoomba Lawn Tennis Club,synonym,Shortened/historical name for Katoomba Lawn Tennis Club
+labour organisation,labour organisation,hierarchy,parent=labour organisations (singular generic term)
+labour organisations,labour organisations,hierarchy,parent=civic organisations
 labour organizations,labour organizations,hierarchy,parent=civic organisations
 Labour relations,Labour relations,hierarchy,parent=Economy & Labour - THEMATIC
+law enforcement,law enforcement,hierarchy,parent=justice & crime - THEMATIC
+law enforcement,law enforcement,hierarchy,parent=societal activities
+law enforcement personnel,law enforcement personnel,hierarchy,parent=occupations
+lawn tennis club,lawn tennis club,hierarchy,parent=tennis clubs
+laws,laws,hierarchy,parent=legal concepts
 Lawson,Lawson,hierarchy,parent=towns
+legal concepts,legal concepts,hierarchy,parent=Associated Concepts
+legal event,legal event,hierarchy,parent=legal events (singular generic term)
+legal events,legal events,hierarchy,parent=Events
+legal events,legal events,hierarchy,parent=justice & crime - THEMATIC
+legal official,legal official,hierarchy,parent=legal officials (singular generic term)
+legal officials,legal officials,hierarchy,parent=justice & crime - THEMATIC
+legal officials,legal officials,hierarchy,parent=occupations
 Legal outcomes,Legal outcomes,hierarchy,parent=justice & crime - THEMATIC
 Legal outcomes,Legal outcomes,hierarchy,parent=Justice & Crime - THEMATIC
+legal proceeding,legal proceeding,hierarchy,parent=legal proceedings (singular generic term)
+legal proceedings,legal proceedings,hierarchy,parent=Events
+legal proceedings,legal proceedings,hierarchy,parent=justice & crime - THEMATIC
 Leura,Leura,hierarchy,parent=towns - THEMATIC
 Leura,Leura,hierarchy,parent=towns
 Leura Falls,Leura Falls,hierarchy,parent=waterfalls
 Leura Hotel,Leura Hotel,hierarchy,parent=hotels
 Leura Progress Association,Leura Progress Association,hierarchy,parent=progress committees
 Leura Reserve,Leura Reserve,hierarchy,parent=reserves
+licence,licence,hierarchy,parent=licences (singular generic term)
+licences,licences,hierarchy,parent=legal concepts
+licensing,licensing,hierarchy,parent=licensing & regulation - THEMATIC
+licensing,licensing,hierarchy,parent=regulatory processes
+licensing & regulation,licensing & regulation,hierarchy,parent=alcohol & temperance - THEMATIC
 Licensing Act,Licensing Act,hierarchy,parent=laws
 Licensing Act,Licensing Act,hierarchy,parent=licensing & regulation - THEMATIC
 Licensing Act,Licensing Act,hierarchy,parent=Licensing & regulation - THEMATIC
+licensing cases,licensing cases,hierarchy,parent=legal proceedings
+licensing cases,licensing cases,hierarchy,parent=licensing & regulation - THEMATIC
 Licensing Court,Licensing Court,hierarchy,parent=courts
 Licensing Court,Licensing Court,hierarchy,parent=licensing & regulation - THEMATIC
 Licensing Court,Licensing Court,hierarchy,parent=Licensing & regulation - THEMATIC
+licensing inspector,licensing inspector,hierarchy,parent=licensing & regulation - THEMATIC
+licensing inspector,licensing inspector,hierarchy,parent=public officials
+licensing offences,licensing offences,hierarchy,parent=licensing cases
+life events,life events,hierarchy,parent=Events
+life events,life events,hierarchy,parent=family & domestic life - THEMATIC
+liquor licensing,liquor licensing,hierarchy,parent=licensing
+liquor licensing applications,liquor licensing applications,hierarchy,parent=licensing cases
+liquor merchant,liquor merchant,hierarchy,parent=liquor merchants (singular generic term)
+liquor merchants,liquor merchants,hierarchy,parent=hospitality workers
+liquor sales,liquor sales,hierarchy,parent=liquor trade
+liquor trade,liquor trade,hierarchy,parent=economic activities
 Lithgow,Lithgow,hierarchy,parent=towns
 Lithgow Council,Lithgow Council,hierarchy,parent=councils
 Lithgow Rovers,Lithgow Rovers,hierarchy,parent=football clubs
+livestock accidents,livestock accidents,hierarchy,parent=agricultural accidents
+lodge,lodge,hierarchy,parent=lodges (singular generic term)
+lodges,lodges,hierarchy,parent=fraternal orders & lodges
+mailman,mailman,hierarchy,parent=mailmen
+mailmen,mailmen,hierarchy,parent=postal employees
 Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=soldiers
 Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=people - THEMATIC
 Manuell,Manuell,hierarchy,parent=hotelliers
 Maps,Maps,hierarchy,parent=document types
+marginalised groups,marginalised groups,hierarchy,parent=Race & Ethnicity - THEMATIC
+maritime worker,maritime worker,hierarchy,parent=maritime workers (singular generic term)
+maritime workers,maritime workers,hierarchy,parent=occupations
+marriage,marriage,hierarchy,parent=life events
 Masonic Hall,Masonic Hall,hierarchy,parent=halls
 Masons,Freemasons,synonym,Informal name for Freemasons
 Materials,Materials,hierarchy,parent=(Getty AAT primary facet)
 Materials,Materials,hierarchy,parent=(new top-level facet)
+medical professional,medical professional,hierarchy,parent=medical professionals (singular generic term)
+medical professionals,medical professionals,hierarchy,parent=health & medicine - THEMATIC
+medical professionals,medical professionals,hierarchy,parent=occupations
 Medlow,Medlow,hierarchy,parent=towns
 Megalong,Megalong,hierarchy,parent=towns - THEMATIC
 Megalong,Megalong,hierarchy,parent=Greater Megalong
 Megalong,Megalong,hierarchy,parent=towns
 Megalong Cricket Club,Megalong Cricket Club,hierarchy,parent=cricket clubs
 Megalong Hotel,Megalong Hotel,hierarchy,parent=hotels
-Megalong Progress Committee,Megalong Progress Committee,hierarchy,parent=progress committees
-Megalong Shale Mines,Megalong Shale Mines,hierarchy,parent=shale mines
-Megalong Valley,Megalong Valley,hierarchy,parent=valleys
-Megalong Valley School,Megalong Valley School,hierarchy,parent=schools
 Megalong miners' camp,Nellie's Glen (settlement),synonym,Historical term for the mining settlement at Nellie's Glen in Megalong Valley
 Megalong mines,Nellie's Glen Shale Mine (site),synonym,Historical reference term for shale mining operations in Megalong Valley - refers to the geographic site of Nellie's Glen Shale Mine
+Megalong Progress Committee,Megalong Progress Committee,hierarchy,parent=progress committees
+Megalong Shale Mines (facility),Megalong Shale Mines (facility),hierarchy,parent=shale mines
+Megalong Valley,Megalong Valley,hierarchy,parent=valleys
+Megalong Valley School,Megalong Valley School,hierarchy,parent=schools
+men,men,hierarchy,parent=demographic groups
+men,men,hierarchy,parent=family members by demographic - THEMATIC
 Meredith family,Meredith family,hierarchy,parent=families
-Methodist Church,Methodist Church,hierarchy,parent=churches
-Middle Camp,Middle Camp (settlement),synonym,Unqualified form - use settlement qualifier for clarity
-Middle Camp (settlement),Middle Camp (settlement),hierarchy,parent=Greater Megalong
+Methodist Church (building),Methodist Church (building),hierarchy,parent=churches
 Middle camp,Middle camp,hierarchy,parent=Megalong
 Middle camp,Middle camp,hierarchy,parent=Mining settlements - THEMATIC
+Middle Camp,Middle Camp (settlement),synonym,Unqualified form - use settlement qualifier for clarity
+Middle Camp (settlement),Middle Camp (settlement),hierarchy,parent=Greater Megalong
+military,military,hierarchy,parent=military organisations - THEMATIC
+military,military,merge,Consolidate to Military activities (preferred term for activity facet)
+military & war,military & war,hierarchy,parent=(thematic grouping)
 military activities,military activities,hierarchy,parent=Activities
+military activities,military activities,hierarchy,parent=societal activities
+military activity,military activity,merge,Consolidate to Military activities (redundant singular form)
+military events,military events,hierarchy,parent=military & war - THEMATIC
+military organisations,military organisations,hierarchy,parent=military & war - THEMATIC
+military organisations,military organisations,hierarchy,parent=organisations
 Military organizations,Military organizations,hierarchy,parent=Military & War - THEMATIC
+military personnel,military personnel,hierarchy,parent=military & war - THEMATIC
+military personnel,military personnel,hierarchy,parent=occupations
+military sports,military sports,hierarchy,parent=recreation activities
+military sports,military sports,hierarchy,parent=sport & recreation - THEMATIC
+mine (facility),mine (facility),hierarchy,parent=mines (singular generic term)
+mine closure,mine closure,hierarchy,parent=economic events
+mine closure,mine closure,hierarchy,parent=mining activities - THEMATIC
+miner,miner,hierarchy,parent=miners (singular generic term)
 miners,miners,hierarchy,parent=occupations
 miners,miners,hierarchy,parent=Mining workforce - THEMATIC
 miners,miners,hierarchy,parent=Workforce - THEMATIC
+miners,miners,hierarchy,parent=mining workforce - THEMATIC
+miners' dwellings,miners' dwellings,hierarchy,parent=Domestic accommodation - THEMATIC
+miners' dwellings,miners' dwellings,hierarchy,parent=dwellings
+miners' dwellings,miners' dwellings,hierarchy,parent=mining workforce - THEMATIC
+miners' families,miners' families,hierarchy,parent=families
+miners' families,miners' families,hierarchy,parent=families - THEMATIC
+miners' families,miners' families,hierarchy,parent=mining workforce - THEMATIC
+miners' families,miners' families,hierarchy,parent=Vulnerable populations - THEMATIC
+miners' huts,miners' dwellings,synonym,Informal term for miners' dwellings
+mines,mines,hierarchy,parent=industrial buildings
+mines & mining districts,mines & mining districts,hierarchy,parent=mining & industry - THEMATIC
+mining,mining,hierarchy,parent=economic activities
+mining,mining,hierarchy,parent=Industries - THEMATIC
+mining,mining,hierarchy,parent=mining activities - THEMATIC
+mining,mining,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+mining & industry,mining & industry,hierarchy,parent=(thematic grouping)
+mining accident,mining accident,hierarchy,parent=mining accidents (singular generic term)
 mining accidents,mining accidents,hierarchy,parent=accidents
 mining accidents,mining accidents,hierarchy,parent=Health-related events - THEMATIC
 mining accidents,mining accidents,hierarchy,parent=Mining incidents - THEMATIC
+mining accidents,mining accidents,hierarchy,parent=health-related events - THEMATIC
+mining accidents,mining accidents,hierarchy,parent=mining incidents - THEMATIC
+mining activities,mining activities,hierarchy,parent=mining & industry - THEMATIC
 mining companies,mining companies,hierarchy,parent=commercial businesses
 mining companies,mining companies,hierarchy,parent=Mining & Industry - THEMATIC
+mining companies,mining companies,hierarchy,parent=mining & industry - THEMATIC
+mining company,mining company,hierarchy,parent=mining companies (singular generic term)
+mining districts,mining districts,hierarchy,parent=Places (existing facet)
+mining districts,mining districts,hierarchy,parent=Places
+mining incidents,mining incidents,hierarchy,parent=mining & industry - THEMATIC
+mining infrastructure,mining infrastructure,hierarchy,parent=infrastructure
+mining infrastructure,mining infrastructure,hierarchy,parent=mining & industry - THEMATIC
 Mining settlements,Mining settlements,hierarchy,parent=Mining & Industry - THEMATIC
+mining transport,mining transport,hierarchy,parent=transport & infrastructure - THEMATIC
+mining workforce,mining workforce,hierarchy,parent=mining & industry - THEMATIC
+minister for mines,minister for mines,hierarchy,parent=public officials
 Minnehaha,Minnehaha,hierarchy,parent=waterfalls
 Minors,children,broader,Broader term covering both Children and Adolescents (ages <18)
-Minors,Minors,merge,MANUAL REVIEW NEEDED: Merge to either Child or Adolescent based on context. Thesaurus entry: Minors = Child + Adolescent
 Minors,Children,broader,Broader term covering both Children and Adolescents (ages <18)
+Minors,Minors,merge,MANUAL REVIEW NEEDED: Merge to either Child or Adolescent based on context. Thesaurus entry: Minors = Child + Adolescent
 Minstrel shows,Minstrel shows,hierarchy,parent=racial stereotyping & performance - THEMATIC
 Minstrel shows,Minstrel shows,hierarchy,parent=Racial stereotyping & performance - THEMATIC
+minstrel troupe,minstrel troupe,hierarchy,parent=minstrel troupes (singular generic term)
+minstrel troupes,minstrel troupes,hierarchy,parent=performance groups
 Miss Bradley,Miss Bradley,hierarchy,parent=named persons
-Miss Edith Delaney,Miss Edith Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Miss Edith Delaney,Miss Edith Delaney,hierarchy,parent=people - THEMATIC
+Miss Edith Delaney,Miss Edith Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Miss Edwards,Miss Edwards,hierarchy,parent=named persons
-Miss Emily Potter,Miss Emily Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Miss Emily Potter,Miss Emily Potter,hierarchy,parent=people - THEMATIC
-Miss Ettie Delaney,Miss Ettie Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Miss Emily Potter,Miss Emily Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Miss Ettie Delaney,Miss Ettie Delaney,hierarchy,parent=people - THEMATIC
+Miss Ettie Delaney,Miss Ettie Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Miss Eva Peckman,Miss Eva Peckman,hierarchy,parent=named persons
 Miss Levina Kitch,Miss Levina Kitch,hierarchy,parent=named persons
 Miss Nellie North,Miss Nellie North,hierarchy,parent=named persons
-Miss Nelly Potter,Miss Nelly Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Miss Nelly Potter,Miss Nelly Potter,hierarchy,parent=people - THEMATIC
+Miss Nelly Potter,Miss Nelly Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+mixed alcoholic beverage,mixed alcoholic beverage,hierarchy,parent=mixed alcoholic beverages (singular generic term)
+mixed alcoholic beverages,mixed alcoholic beverages,hierarchy,parent=alcoholic beverages
 Montrose House,Montrose House,hierarchy,parent=hotels
-Mount Kembla Colliery Disaster,Mount Kembla Disaster,synonym,Alternative name for 1902 mining disaster
 Mount Kembla Colliery Disaster,Mount Kembla Disaster,merge,Synonym - standardise to Mount Kembla Disaster
+Mount Kembla Colliery Disaster,Mount Kembla Disaster,synonym,Alternative name for 1902 mining disaster
 Mount Kembla Disaster,Mount Kembla Disaster,hierarchy,parent=mining accidents
 Mount Victoria,Mount Victoria,hierarchy,parent=towns - THEMATIC
 Mount Victoria,Mount Victoria,hierarchy,parent=towns
@@ -314,21 +679,23 @@ Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=halls
 Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=hotels
 Mount Victoria Progress Committee,Mount Victoria Progress Committee,hierarchy,parent=progress committees
 Mount Victoria School,Mount Victoria School,hierarchy,parent=schools
+mountain feature,mountain feature,hierarchy,parent=mountain features (singular generic term)
+mountain features,mountain features,hierarchy,parent=natural features
 Mountain Rifle Reserves,Mountain Rifle Reserves,hierarchy,parent=volunteer rifle reserves
 Mountaineer Lodge,Mountaineer Lodge,hierarchy,parent=unaffiliated lodges
 Mountaineer Lodge,Mountaineer Lodge,hierarchy,parent=independent lodges
-Mr A G Rowell,Mr A G Rowell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr A G Rowell,Mr A G Rowell,hierarchy,parent=hotelliers
 Mr A G Rowell,Mr A G Rowell,hierarchy,parent=people - THEMATIC
+Mr A G Rowell,Mr A G Rowell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr A J Parcell,Mr A J Parcell,hierarchy,parent=named persons
-Mr A Smith,Mr A Smith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr A Smith,Mr A Smith,hierarchy,parent=people - THEMATIC
+Mr A Smith,Mr A Smith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr A Thorneycroft,Mr A Thorneycroft,hierarchy,parent=named persons
 Mr A W Stephen,Mr A W Stephen,hierarchy,parent=named persons
 Mr A. G. Rowell,Mr A. G. Rowell,hierarchy,parent=hotelliers
 Mr Ah Narm,Mr Ah Narm,hierarchy,parent=named persons
-Mr Albert C Wilson,Mr Albert C Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Albert C Wilson,Mr Albert C Wilson,hierarchy,parent=people - THEMATIC
+Mr Albert C Wilson,Mr Albert C Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Alf Goodare,Mr Alf Goodare,hierarchy,parent=hotelliers
 Mr Alf. Goodare,Mr Alf. Goodare,hierarchy,parent=hotelliers
 Mr Allan West,Mr Allan West,hierarchy,parent=named persons
@@ -336,25 +703,25 @@ Mr Arthur L Morris,Mr Arthur L Morris,hierarchy,parent=named persons
 Mr Arthur Wright,Mr Arthur Wright,hierarchy,parent=named persons
 Mr Banfield,Mr Banfield,hierarchy,parent=named persons
 Mr C J Ellis,Mr C J Ellis,hierarchy,parent=named persons
-Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr C James,Mr C James,hierarchy,parent=people - THEMATIC
-Mr C Rowell,Mr C Rowell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr C James,Mr C James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr C Rowell,Mr C Rowell,hierarchy,parent=people - THEMATIC
+Mr C Rowell,Mr C Rowell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr C W Craig,Mr C W Craig,hierarchy,parent=named persons
-Mr C Wilkinson,Mr C Wilkinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr C Wilkinson,Mr C Wilkinson,hierarchy,parent=people - THEMATIC
+Mr C Wilkinson,Mr C Wilkinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Charles E Hoffman,Mr Charles E Hoffman,hierarchy,parent=named persons
 Mr Charles George Gordon,Major Sir Charles George Gordon,synonym,Variant form without military rank and honorific
 Mr Charles Pratt,Mr Charles Pratt,hierarchy,parent=named persons
 Mr Charles Wooller,Mr Charles Wooller,hierarchy,parent=named persons
 Mr Christopher Webb,Mr Christopher Webb,hierarchy,parent=named persons
 Mr Clydesdale,Mr Clydesdale,hierarchy,parent=named persons
-Mr Crawford,Mr Crawford,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Crawford,Mr Crawford,hierarchy,parent=people - THEMATIC
+Mr Crawford,Mr Crawford,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr D Brown,Mr D Brown,hierarchy,parent=hotelliers
 Mr D J Dunbar,Mr D J Dunbar,hierarchy,parent=named persons
-Mr D McKillop,Mr D McKillop,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr D McKillop,Mr D McKillop,hierarchy,parent=people - THEMATIC
+Mr D McKillop,Mr D McKillop,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr D Morsby,Mr D Morsby,hierarchy,parent=named persons
 Mr D O'Keefe,Mr D O'Keefe,hierarchy,parent=named persons
 Mr D Thompson,Mr D Thompson,hierarchy,parent=hotelliers
@@ -364,8 +731,8 @@ Mr D. Thompson,Mr D. Thompson,hierarchy,parent=hotelliers
 Mr Dalwood,Mr Dalwood,hierarchy,parent=named persons
 Mr David Brown,Mr D Brown,synonym,Full first name variant of abbreviated form
 Mr David Hamilton,Mr David Hamilton,hierarchy,parent=named persons
-Mr David Morgan,Mr David Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr David Morgan,Mr David Morgan,hierarchy,parent=people - THEMATIC
+Mr David Morgan,Mr David Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Delaney,Mr Delaney,hierarchy,parent=hotelliers
 Mr Douglass,Mr Douglass,hierarchy,parent=named persons
 Mr E E Medlicott,Mr E E Medlicott,hierarchy,parent=named persons
@@ -374,41 +741,41 @@ Mr Edward J Delaney,Mr Edward J Delaney,hierarchy,parent=named persons
 Mr Edward Pearson,Mr Edward Pearson,hierarchy,parent=named persons
 Mr Edwards,Mr Edwards,hierarchy,parent=hotelliers
 Mr Ellis,Mr Ellis,hierarchy,parent=hotelliers
-Mr Evan Thomas Meredith,Mr Evan Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Evan Thomas Meredith,Mr Evan Thomas Meredith,hierarchy,parent=people - THEMATIC
+Mr Evan Thomas Meredith,Mr Evan Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Frederick Charles Goyder,Mr Frederick Charles Goyder,hierarchy,parent=named persons
 Mr G Donald,Mr G Donald,hierarchy,parent=named persons
 Mr G Griffiths,Mr G Griffiths,hierarchy,parent=named persons
-Mr G McKillop,Mr G McKillop,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr G McKillop,Mr G McKillop,hierarchy,parent=people - THEMATIC
+Mr G McKillop,Mr G McKillop,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr G R Dibbs,Mr G R Dibbs,hierarchy,parent=named persons
 Mr G W Spring,Mr G W Spring,hierarchy,parent=named persons
 Mr Gannon,Mr Gannon,hierarchy,parent=named persons
 Mr George Bremmer Dunn,Mr George Bremmer Dunn,hierarchy,parent=named persons
 Mr George Frederick Goyder,Mr George Frederick Goyder,hierarchy,parent=named persons
 Mr George H Cooper,Mr George H Cooper,hierarchy,parent=named persons
-Mr George James,Mr George James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr George James,Mr George James,hierarchy,parent=people - THEMATIC
-Mr George Palmer,Mr George Palmer,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr George James,Mr George James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr George Palmer,Mr George Palmer,hierarchy,parent=people - THEMATIC
-Mr George Potter,Mr George Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr George Palmer,Mr George Palmer,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr George Potter,Mr George Potter,hierarchy,parent=people - THEMATIC
+Mr George Potter,Mr George Potter,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr George Susans,Mr George Susans,hierarchy,parent=named persons
 Mr H Roberts,Mr H Roberts,hierarchy,parent=named persons
-Mr H Scope,Mr H Scope,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr H Scope,Mr H Scope,hierarchy,parent=people - THEMATIC
-Mr H W Copeland,Mr H W Copeland,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr H Scope,Mr H Scope,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr H W Copeland,Mr H W Copeland,hierarchy,parent=people - THEMATIC
+Mr H W Copeland,Mr H W Copeland,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Hardie Clydesdale,Mr Hardie Clydesdale,hierarchy,parent=horse breeder
 Mr Hardie Clydesdale,Mr Hardie Clydesdale,hierarchy,parent=people - THEMATIC
-Mr Harry Eaton,Mr Harry Eaton,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Harry Eaton,Mr Harry Eaton,hierarchy,parent=people - THEMATIC
-Mr Harry Edwards,Mr Harry Edwards,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Harry Eaton,Mr Harry Eaton,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Harry Edwards,Mr Harry Edwards,hierarchy,parent=people - THEMATIC
-Mr Harry Peckman,Mr Harry Peckman,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Harry Edwards,Mr Harry Edwards,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Harry Peckman,Mr Harry Peckman,hierarchy,parent=people - THEMATIC
-Mr Henry Crawford Brown,Mr Henry Crawford Brown,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Harry Peckman,Mr Harry Peckman,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Henry Crawford Brown,Mr Henry Crawford Brown,hierarchy,parent=people - THEMATIC
+Mr Henry Crawford Brown,Mr Henry Crawford Brown,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr J Annesley,Mr J Annesley,hierarchy,parent=named persons
 Mr J B North,Mr J B North,hierarchy,parent=named persons
 Mr J H Humbley,Mr J H Humbley,hierarchy,parent=named persons
@@ -417,38 +784,38 @@ Mr J K Cleeve,Mr J K Cleeve,hierarchy,parent=named persons
 Mr J Nimmo,Mr J Nimmo,hierarchy,parent=hotelliers
 Mr J R Nash,Mr J R Nash,hierarchy,parent=named persons
 Mr J. Nimmo,Mr J. Nimmo,hierarchy,parent=hotelliers
-Mr James Hughes,Mr James Hughes,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr James Hughes,Mr James Hughes,hierarchy,parent=people - THEMATIC
-Mr James Hutchinson,Mr James Hutchinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Hughes,Mr James Hughes,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr James Hutchinson,Mr James Hutchinson,hierarchy,parent=people - THEMATIC
-Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Hutchinson,Mr James Hutchinson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr James Meredith,Mr James Meredith,hierarchy,parent=people - THEMATIC
-Mr James Miller,Mr James Miller,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Meredith,Mr James Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr James Miller,Mr James Miller,hierarchy,parent=people - THEMATIC
-Mr James Routley Davey,Mr James Routley Davey,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Miller,Mr James Miller,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr James Routley Davey,Mr James Routley Davey,hierarchy,parent=people - THEMATIC
-Mr James Webb,Mr James Webb,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr James Routley Davey,Mr James Routley Davey,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr James Webb,Mr James Webb,hierarchy,parent=people - THEMATIC
+Mr James Webb,Mr James Webb,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Joe Nimmo,Mr Joe Nimmo,hierarchy,parent=hotelliers
 Mr John Duff,Mr John Duff,hierarchy,parent=named persons
 Mr John Fitzpatrick,Mr John Fitzpatrick,hierarchy,parent=named persons
 Mr John Geggie,Mr John Geggie,hierarchy,parent=named persons
 Mr John Henry Mitchell,Mr John Henry Mitchell,hierarchy,parent=named persons
 Mr John Hurley,Mr John Hurley,hierarchy,parent=named persons
-Mr John Meredith,Mr John Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr John Meredith,Mr John Meredith,hierarchy,parent=people - THEMATIC
+Mr John Meredith,Mr John Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr John Norton,Mr John Norton,hierarchy,parent=named persons
 Mr John Still O'Hara,Mr John Still O'Hara,hierarchy,parent=named persons
 Mr John W Fletcher,Mr John W Fletcher,hierarchy,parent=named persons
-Mr John Waudby,Mr John Waudby,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr John Waudby,Mr John Waudby,hierarchy,parent=people - THEMATIC
-Mr John Waudby’s selection (Top Camp),Mr John Waudby’s selection (Top Camp),keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr John Waudby,Mr John Waudby,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr John Waudby’s selection (Top Camp),Mr John Waudby’s selection (Top Camp),hierarchy,parent=people - THEMATIC
+Mr John Waudby’s selection (Top Camp),Mr John Waudby’s selection (Top Camp),keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Jones,Mr Jones,hierarchy,parent=named persons
 Mr Joseph Cook,Mr Joseph Cook,hierarchy,parent=named persons
 Mr Joseph Edwards,Mr Joseph Edwards,hierarchy,parent=named persons
-Mr Joseph Meredith,Mr Joseph Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Joseph Meredith,Mr Joseph Meredith,hierarchy,parent=people - THEMATIC
+Mr Joseph Meredith,Mr Joseph Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Joseph Nimmo,Mr Joseph Nimmo,hierarchy,parent=named persons
 Mr Kitch,Mr Kitch,hierarchy,parent=named persons
 Mr L H Howell,Mr L H Howell,hierarchy,parent=named persons
@@ -481,90 +848,90 @@ Mr R. Fryer,Mr R. Fryer,hierarchy,parent=hotelliers
 Mr Ralph Hartman,Mr Ralph Hartman,hierarchy,parent=named persons
 Mr Robert Brydon,Mr Robert Brydon,hierarchy,parent=named persons
 Mr Robert H Esgate,Mr Robert H Esgate,hierarchy,parent=named persons
-Mr Robert J Husband,Mr Robert J Husband,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Mr Robert J Husband,Mr Robert J Husband,hierarchy,parent=people - THEMATIC
-Mr Robert Mulholland,Mr Robert Mulholland,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Robert J Husband,Mr Robert J Husband,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 Mr Robert Mulholland,Mr Robert Mulholland,hierarchy,parent=people - THEMATIC
-Mr Robert Nimmo,Mr Robert Nimmo,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Robert Mulholland,Mr Robert Mulholland,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Robert Nimmo,Mr Robert Nimmo,hierarchy,parent=people - THEMATIC
+Mr Robert Nimmo,Mr Robert Nimmo,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Robert Russell,Mr Robert Russell,hierarchy,parent=named persons
 Mr Rodrigeuz,Mr Rodrigeuz,hierarchy,parent=named persons
 Mr Rubina Fryer,Mr Rubina Fryer,hierarchy,parent=named persons
 Mr S E Hewett,Mr S E Hewett,hierarchy,parent=named persons
-Mr S Whitehead,Mr S Whitehead,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr S Whitehead,Mr S Whitehead,hierarchy,parent=people - THEMATIC
+Mr S Whitehead,Mr S Whitehead,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Samuel Austin,Mr Samuel Austin,hierarchy,parent=named persons
 Mr Sheard,Mr Sheard,hierarchy,parent=named persons
 Mr Stanley Gayfer,Mr Stanley Gayfer,hierarchy,parent=named persons
-Mr Stephen Meredith,Mr Stephen Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Stephen Meredith,Mr Stephen Meredith,hierarchy,parent=people - THEMATIC
+Mr Stephen Meredith,Mr Stephen Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr T J Cale,Mr T J Cale,hierarchy,parent=named persons
 Mr T Tiernan,Mr T Tiernan,hierarchy,parent=named persons
 Mr Thomas Austin,Mr Thomas Austin,hierarchy,parent=named persons
-Mr Thomas Cale,Mr Thomas Cale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Thomas Cale,Mr Thomas Cale,hierarchy,parent=coach and buggy business
+Mr Thomas Cale,Mr Thomas Cale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Thomas Cook,Mr Thomas Cook,hierarchy,parent=named persons
-Mr Thomas Greenbank,Mr Thomas Greenbank,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Thomas Greenbank,Mr Thomas Greenbank,hierarchy,parent=people - THEMATIC
+Mr Thomas Greenbank,Mr Thomas Greenbank,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Thomas Hollins,Mr Thomas Hollins,hierarchy,parent=named persons
-Mr Thomas McLaughlin,Mr Thomas McLaughlin,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Thomas McLaughlin,Mr Thomas McLaughlin,hierarchy,parent=people - THEMATIC
-Mr Thomas Meredith,Mr Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas McLaughlin,Mr Thomas McLaughlin,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Thomas Meredith,Mr Thomas Meredith,hierarchy,parent=people - THEMATIC
-Mr Thomas Neale,Mr Thomas Neale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Meredith,Mr Thomas Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Thomas Neale,Mr Thomas Neale,hierarchy,parent=people - THEMATIC
-Mr Thomas Smith Richardson,Mr Thomas Smith Richardson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Neale,Mr Thomas Neale,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Thomas Smith Richardson,Mr Thomas Smith Richardson,hierarchy,parent=people - THEMATIC
-Mr W H Edwards,Mr W H Edwards,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Thomas Smith Richardson,Mr Thomas Smith Richardson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr W H Edwards,Mr W H Edwards,hierarchy,parent=people - THEMATIC
+Mr W H Edwards,Mr W H Edwards,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr W Hocking,Mr W Hocking,hierarchy,parent=named persons
 Mr W J Hart,Mr W J Hart,hierarchy,parent=named persons
-Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr W James,Mr W James,hierarchy,parent=people - THEMATIC
+Mr W James,Mr W James,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr W McMillan,Mr W McMillan,hierarchy,parent=named persons
-Mr W Whitehead,Mr W Whitehead,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr W Whitehead,Mr W Whitehead,hierarchy,parent=people - THEMATIC
-Mr W Wilson,Mr W Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W Whitehead,Mr W Whitehead,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr W Wilson,Mr W Wilson,hierarchy,parent=people - THEMATIC
-Mr Walter Meredith,Mr Walter Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr W Wilson,Mr W Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Walter Meredith,Mr Walter Meredith,hierarchy,parent=people - THEMATIC
-Mr Watson,Mr Watson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr Walter Meredith,Mr Walter Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Watson,Mr Watson,hierarchy,parent=people - THEMATIC
+Mr Watson,Mr Watson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Wilfred Moss,Mr Wilfred Moss,hierarchy,parent=named persons
 Mr Wilkinson,Mr Wilkinson,hierarchy,parent=liquor merchants
-Mr William Austin,Mr William Austin,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Austin,Mr William Austin,hierarchy,parent=people - THEMATIC
-Mr William Baird,Mr William Baird,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Austin,Mr William Austin,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Baird,Mr William Baird,hierarchy,parent=people - THEMATIC
-Mr William Clarke,Mr William Clarke,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Baird,Mr William Baird,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Clarke,Mr William Clarke,hierarchy,parent=people - THEMATIC
-Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Clarke,Mr William Clarke,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Cole,Mr William Cole,hierarchy,parent=people - THEMATIC
-Mr William Curnow,Mr William Curnow,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Cole,Mr William Cole,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Curnow,Mr William Curnow,hierarchy,parent=people - THEMATIC
-Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Curnow,Mr William Curnow,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Fell,Mr William Fell,hierarchy,parent=people - THEMATIC
-Mr William Frederick Goyder,Mr William Frederick Goyder,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Fell,Mr William Fell,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Frederick Goyder,Mr William Frederick Goyder,hierarchy,parent=people - THEMATIC
-Mr William George Long,Mr William George Long,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Frederick Goyder,Mr William Frederick Goyder,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William George Long,Mr William George Long,hierarchy,parent=people - THEMATIC
-Mr William George Schoeffler,Mr William George Schoeffler,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William George Long,Mr William George Long,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William George Schoeffler,Mr William George Schoeffler,hierarchy,parent=people - THEMATIC
+Mr William George Schoeffler,Mr William George Schoeffler,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Husband,Mr William Husband,hierarchy,parent=people - THEMATIC
 Mr William Husband,Mr William Husband,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Husband,Mr William Husband,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-Mr William Husband,Mr William Husband,hierarchy,parent=people - THEMATIC
-Mr William Lynch,Mr William Lynch,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Lynch,Mr William Lynch,hierarchy,parent=people - THEMATIC
-Mr William O'Regan,Mr William O'Regan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Lynch,Mr William Lynch,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William O'Regan,Mr William O'Regan,hierarchy,parent=people - THEMATIC
-Mr William Phillips,Mr William Phillips,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William O'Regan,Mr William O'Regan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Phillips,Mr William Phillips,hierarchy,parent=people - THEMATIC
-Mr William Thomas,Mr William Thomas,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Phillips,Mr William Phillips,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Thomas,Mr William Thomas,hierarchy,parent=people - THEMATIC
-Mr William Wallace,Mr William Wallace,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Thomas,Mr William Thomas,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr William Wallace,Mr William Wallace,hierarchy,parent=people - THEMATIC
-Mr Wilson,Mr Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mr William Wallace,Mr William Wallace,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Wilson,Mr Wilson,hierarchy,parent=hotelliers
+Mr Wilson,Mr Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mr Wrench,Mr Wrench,hierarchy,parent=named persons
 Mr Zack Nimmo,Mr Zack Nimmo,hierarchy,parent=named persons
 Mrs (Joe) Nimmo,Mrs (Joe) Nimmo,hierarchy,parent=hotelliers
@@ -572,14 +939,14 @@ Mrs (R.) Fryer,Mrs (R.) Fryer,hierarchy,parent=hotelliers
 Mrs A Smith,Mrs A Smith,hierarchy,parent=postmasters
 Mrs Brown,Mrs Brown,hierarchy,parent=hotelliers
 Mrs Christina Brydon,Mrs Christina Brydon,hierarchy,parent=named persons
-Mrs Davey,Mrs Davey,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Davey,Mrs Davey,hierarchy,parent=people - THEMATIC
-Mrs Delaney,Mrs Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Davey,Mrs Davey,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Delaney,Mrs Delaney,hierarchy,parent=people - THEMATIC
-Mrs Eleanor Meredith,Mrs Eleanor Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Delaney,Mrs Delaney,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Eleanor Meredith,Mrs Eleanor Meredith,hierarchy,parent=people - THEMATIC
-"Mrs Elizabeth Eaton (previously Flynn, nee Watkins)","Mrs Elizabeth Eaton (previously Flynn, nee Watkins)",keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs Eleanor Meredith,Mrs Eleanor Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 "Mrs Elizabeth Eaton (previously Flynn, nee Watkins)","Mrs Elizabeth Eaton (previously Flynn, nee Watkins)",hierarchy,parent=people - THEMATIC
+"Mrs Elizabeth Eaton (previously Flynn, nee Watkins)","Mrs Elizabeth Eaton (previously Flynn, nee Watkins)",keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Elizabeth Nimmo,Mrs Elizabeth Nimmo,hierarchy,parent=named persons
 Mrs Ellen Hoffman (nee Gavin),Mrs Ellen Hoffman (nee Gavin),hierarchy,parent=named persons
 Mrs Emma Matilda Waudby (nee Phair),Mrs Emma Matilda Waudby (nee Phair),hierarchy,parent=named persons
@@ -589,622 +956,160 @@ Mrs Grace Richmond Battram (nee Jones),Mrs Grace Richmond Battram (nee Jones),hi
 Mrs H Corston,Mrs H Corston,hierarchy,parent=postmasters
 Mrs Isabella Long (nee Clune),Mrs Isabella Long (nee Clune),hierarchy,parent=named persons
 Mrs James,Mrs James,hierarchy,parent=postmasters
-Mrs Joanna Meredith,Mrs Joanna Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Joanna Meredith,Mrs Joanna Meredith,hierarchy,parent=people - THEMATIC
+Mrs Joanna Meredith,Mrs Joanna Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Long,Mrs Long,hierarchy,parent=hotelliers
-Mrs Long's Hotel,hotel,merge,Possessive form referring to hotel run by Mrs Long (hotellier) - tag as Hotel + Mrs Long
 Mrs Long's Hotel,Mrs Long's Hotel,hierarchy,parent=hotels
+Mrs Long's Hotel,hotel,merge,Possessive form referring to hotel run by Mrs Long (hotellier) - tag as Hotel + Mrs Long
 Mrs Mary Duff (nee Evans),Mrs Mary Duff (nee Evans),hierarchy,parent=named persons
-Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Meredith,Mrs Meredith,hierarchy,parent=people - THEMATIC
+Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Percy Fowles (nee Nimmo),Mrs Percy Fowles (nee Nimmo),hierarchy,parent=named persons
 Mrs Rose Anna (Fanny) Lynch (nee Fisher),Mrs Rose Anna (Fanny) Lynch (nee Fisher),hierarchy,parent=named persons
 Mrs S Hindman,Mrs S Hindman,hierarchy,parent=named persons
-Mrs W Watson,Mrs W Watson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs W Watson,Mrs W Watson,hierarchy,parent=people - THEMATIC
-Mrs Wilson,Mrs Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+Mrs W Watson,Mrs W Watson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs Wilson,Mrs Wilson,hierarchy,parent=people - THEMATIC
+Mrs Wilson,Mrs Wilson,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
 Mrs. A. Smith,Mrs. A. Smith,hierarchy,parent=postmasters
 Mrs. England,Mrs. England,hierarchy,parent=postmasters
 Mrs. H. Corston,Mrs. H. Corston,hierarchy,parent=postmasters
 Mrs. James,Mrs. James,hierarchy,parent=postmasters
 Ms May Porter,Ms May Porter,hierarchy,parent=named persons
-Mt Victoria,Mount Victoria,synonym,Abbreviation of Mount Victoria (town)
 Mt Victoria,Mount Victoria,merge,Variant spelling - standardise to Mount Victoria
+Mt Victoria,Mount Victoria,synonym,Abbreviation of Mount Victoria (town)
 Mt Victoria Hotel,Mount Victoria Hotel,synonym,Abbreviation of Mount Victoria Hotel
 N.S.W. Mounted Rifles,NSW Mounted Rifles,synonym,Punctuated form - use minimal punctuation standard NSW Mounted Rifles
-NSW Mounted Rifles,NSW Mounted Rifles,hierarchy,parent=military organisations
-NSW Police,New South Wales Police,synonym,Abbreviated form - use full name New South Wales Police
+named persons,named persons,hierarchy,parent=people
 Narrow Neck,Narrow Neck,hierarchy,parent=mountain features
+natural features,natural features,hierarchy,parent=environment & weather - THEMATIC
+natural features,natural features,hierarchy,parent=Places (existing facet)
+natural features,natural features,hierarchy,parent=tourist attractions - THEMATIC
 Natural resources,Natural resources,hierarchy,parent=environment & weather - THEMATIC
 Natural resources,Natural resources,hierarchy,parent=Environment & Weather - THEMATIC
 Nellie's Glen,Nellie's Glen mining district,synonym,Unqualified form - use mining district qualifier for mining context; gully qualifier for natural feature
-Nellie's Glen,Nellie's Glen,hierarchy,parent=mining districts
-Nellie's Glen,Nellie's Glen,hierarchy,parent=gullies
 Nellie's Glen (gully),Nellie's Glen (gully),hierarchy,parent=gullies
 Nellie's Glen (settlement),Nellie's Glen (settlement),hierarchy,parent=Nellie's Glen mining district
+Nellie's Glen mining district,Nellie's Glen mining district,hierarchy,parent=mining districts
 Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=roads
-Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen
-Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=shale mines
-Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen
+Nellie's Glen Shale Mine (facility),Nellie's Glen Shale Mine (facility),hierarchy,parent=shale mines
 Nellie's Glen Shale Mine (site),Nellie's Glen Shale Mine (site),hierarchy,parent=Nellie's Glen mining district
 Nellie's Glen Track,Nellie's Glen Road,synonym,Informal local term for same route - prefer formal Road designation
-Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Nellie's Glen
-Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=roads
-Nellie's Glen mining district,Nellie's Glen mining district,hierarchy,parent=mining districts
 Nellie's Glen track,Nellie's Glen Road,synonym,Lowercase variant - use Nellie's Glen Road
+nepean football club,nepean football club,hierarchy,parent=football clubs
 New South Wales Police,New South Wales Police,hierarchy,parent=government bodies
 New South Wales Police,New South Wales Police,hierarchy,parent=justice & crime - THEMATIC
 New South Wales Shale and Oil Co.,New South Wales Shale and Oil Company,synonym,Abbreviated form
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
 Newcastle,Newcastle,hierarchy,parent=towns
 Nimmo's,Nimmo's,hierarchy,parent=retailers and stores
+NSW Mounted Rifles,NSW Mounted Rifles,hierarchy,parent=military organisations
+NSW Police,New South Wales Police,synonym,Abbreviated form - use full name New South Wales Police
 Oberon,Oberon,hierarchy,parent=towns
+occupations,occupations,hierarchy,parent=people
 Odd Fellows,Independent Order of Odd Fellows,synonym,Common short form of Independent Order of Odd Fellows
 Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=halls
 Oddfellows,Independent Order of Odd Fellows,synonym,Variant spelling - use full formal name Independent Order of Odd Fellows
 Orama Boarding House,Orama Boarding House,hierarchy,parent=boarding houses
 organisations,organisations,hierarchy,parent=Agents
+other crimes,other crimes,hierarchy,parent=crimes - THEMATIC
+other goods and services,other goods and services,hierarchy,parent=occupations
 other government bodies,other government bodies,hierarchy,parent=government bodies
+outdoor recreation club,outdoor recreation club,hierarchy,parent=outdoor recreation clubs (singular generic term)
+outdoor recreation clubs,outdoor recreation clubs,hierarchy,parent=sports clubs
+oval,oval,hierarchy,parent=ovals (singular generic term)
+ovals,ovals,hierarchy,parent=sports facilities
 Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=hotels
 P. Mullany and Company,P. Mullany and Company,hierarchy,parent=retailers and stores
 Parramatta,Parramatta,hierarchy,parent=towns
-Peckman Bros,Peckman Brothers,synonym,Abbreviated form of Peckman Brothers
 Peckman Bros,Peckman Bros,hierarchy,parent=retailers and stores
+Peckman Bros,Peckman Brothers,synonym,Abbreviated form of Peckman Brothers
 Peckman Brothers,Peckman Brothers,hierarchy,parent=retailers and stores
 Peckman family,Peckman family,hierarchy,parent=families
 Penman family,Penman family,hierarchy,parent=families
 Penrith,Penrith,hierarchy,parent=towns
 Penrith Police Court,Penrith Police Court,hierarchy,parent=courts
+penrith rugby club,penrith rugby club,hierarchy,parent=rugby clubs
+people,people,hierarchy,parent=Agents
+people,people,hierarchy,parent=(thematic grouping)
 performance groups,performance groups,hierarchy,parent=cultural & recreational organisations
+petition,petition,hierarchy,parent=political events
+physical and health conditions,physical and health conditions,hierarchy,parent=Associated Concepts
+physical phenomena,physical phenomena,hierarchy,parent=Associated Concepts
 Places,Places,hierarchy,parent=(Getty AAT primary facet)
 Police,New South Wales Police,synonym,Short form - use full official name New South Wales Police
 police court,police court,hierarchy,parent=courts
 police facilities,police facilities,hierarchy,parent=civic buildings
-Politics & Governance,Politics & Governance,hierarchy,parent=(thematic grouping)
-Port Kembla,Port Kembla,hierarchy,parent=towns
-Port Kembla disaster,Mount Kembla Disaster,synonym,Historical misnomer - actually Mount Kembla (not Port Kembla)
-Post,postal service,synonym,Generic term for postal service (deprecated - use specific tags)
-Post,Postal service,synonym,Generic term for postal service (deprecated - use specific tags)
-Post,Post,hierarchy,parent=Postal services - THEMATIC
-Post Office Department,Postal Department,synonym,Historical name for Postal Department
-Post Office Department,Post Department,merge,Synonym - standardise to Post Department
-Postal Department,Postal Department,hierarchy,parent=government bodies
-Postal Department,Postal Department,hierarchy,parent=postal authorities
-postal authorities,postal authorities,hierarchy,parent=government bodies
-postal facilities,postal facilities,hierarchy,parent=civic buildings
-Postal service,Postal service,hierarchy,parent=postal services
-Postman,Mailman,synonym,Alternative term for mailman
-progress committees,progress committees,hierarchy,parent=civic organisations
-Pub,public house,synonym,Colloquial term for public house
-Pub,Public house,synonym,Colloquial term for public house
-Publican's License,publican's licence,synonym,US spelling variant of UK spelling publican's licence
-Publican's License,Publican's licensing,synonym,Historical term for licence to operate public house serving alcohol
-Pubs,public houses,synonym,Colloquial short form - prefer full form Public houses
-Race & Ethnicity,Race & Ethnicity,hierarchy,parent=(thematic grouping)
-railway commission,railway commission,hierarchy,parent=government bodies
-Railway Hotel,Railway Hotel,hierarchy,parent=hotels
-railway authorities,railway authorities,hierarchy,parent=government bodies
-Rape,sexual violence,merge,Specific term merged into broader category (rape is a type of sexual violence)
-Rape,sexual violence,synonym,Specific type of sexual violence - retained as synonym for search/discovery
-recreation activities,recreation activities,hierarchy,parent=Activities
-Reference to the Irish or Irish culture,Irish culture,synonym,Renamed to emphasize cultural references rather than demographic group
-Reference to the Irish or Irish culture,Reference to the Irish or Irish culture,hierarchy,parent=Cultural identity & heritage - THEMATIC
-Religion,Religion,hierarchy,parent=(thematic grouping)
-Reverence M C Brown,Reverence M C Brown,hierarchy,parent=clergy
-Reverend A Sutherland,Reverend A Sutherland,hierarchy,parent=clergy
-Reverend Canon Kemmis,Reverend Canon Kemmis,hierarchy,parent=clergy
-Reverend F V Pratt,Reverend F V Pratt,hierarchy,parent=clergy
-Reverend J H Maclean,Reverend J H Maclean,hierarchy,parent=clergy
-Reverend M S Fletcher,Reverend M S Fletcher,hierarchy,parent=clergy
-Reverend R M Laverty,Reverend R M Laverty,hierarchy,parent=clergy
-Richard Allen,Richard Allen,hierarchy,parent=hotelliers
-rifle clubs,rifle clubs,hierarchy,parent=sports clubs
-rifle reserves,rifle reserves,hierarchy,parent=reserves
-Rockley,Rockley,hierarchy,parent=towns
-Roman Catholic Church,Roman Catholic Church,hierarchy,parent=churches
-Rubina Fryer,Rubina Fryer,hierarchy,parent=hotelliers
-Ruined Castle,Ruined Castle mining district,synonym,Unqualified form - use mining district qualifier for mining context; rock formation qualifier for natural feature
-Ruined Castle,Ruined Castle,hierarchy,parent=mining districts
-Ruined Castle (settlement),Ruined Castle (settlement),hierarchy,parent=Ruined Castle mining district
-Ruined Castle - rock formation,Ruined Castle - rock formation,hierarchy,parent=mountain features
-Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=shale mines
-Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=Ruined Castle
-Ruined Castle Shale Mine (site),Ruined Castle Shale Mine (site),hierarchy,parent=Ruined Castle mining district
-Ruined Castle mining district,Ruined Castle mining district,hierarchy,parent=mining districts
-Salvation Army,Salvation Army,hierarchy,parent=religious social movements
-Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=senior-constable
-Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=people - THEMATIC
-Senior-Constable Thorncroft,Senior-Constable Thorncroft,hierarchy,parent=senior-constable
-Senior-Constable Thorncroft,Senior-Constable Thorncroft,hierarchy,parent=people - THEMATIC
-Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=sergeant
-Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=people - THEMATIC
-Sly-grog operations,Unlicensed sales,synonym,Australian colonial term for unlicensed liquor sales
-Social issues,Social issues,hierarchy,parent=(thematic grouping)
-Social order offences,Social order offences,hierarchy,parent=crimes - THEMATIC
-Social order offences,Social order offences,hierarchy,parent=Crimes - THEMATIC
-South Clifton,South Clifton (Illawarra),synonym,Unqualified form - use Illawarra qualifier to distinguish from Blue Mountains locations
-South Clifton,South Clifton,hierarchy,parent=mining districts
-South Clifton (Illawarra),South Clifton (Illawarra),hierarchy,parent=mining districts
-South Clifton (Illawarra),South Clifton (Illawarra),hierarchy,parent=regional mining contexts - THEMATIC
-South Clifton Mine Co.,South Clifton Mine Company,synonym,Abbreviated form  
-South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies
-South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=regional mining contexts - THEMATIC
-South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=coal mines
-South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=regional mining contexts - THEMATIC
-South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=South Clifton
-South Clifton Tunnel Mine (site),South Clifton Tunnel Mine (site),hierarchy,parent=South Clifton (Illawarra)
-South Katoomba,South Katoomba,hierarchy,parent=Katoomba
-South Katoomba Reserve,South Katoomba Reserve,hierarchy,parent=reserves
-sports clubs,sports clubs,hierarchy,parent=cultural & recreational organisations
-sports clubs,sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
-Springwood,Springwood,hierarchy,parent=towns
-St Hilda's Church,St Hilda's Church,hierarchy,parent=churches
-Store,Store,hierarchy,parent=retailers and stores
-Store,Store,hierarchy,parent=commercial buildings
-Sunny Corner,Sunny Corner,hierarchy,parent=towns
-Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=mining companies
-Supreme Court,Supreme Court,hierarchy,parent=courts
-Sydney,Sydney,hierarchy,parent=towns
-Tabrett and Co.,Tabrett and Company,synonym,Abbreviated form of Tabrett and Company
-Tabrett and Company,Tabrett and Company,hierarchy,parent=retailers and stores
-Tabrett family,Tabrett family,hierarchy,parent=families
-Temperance organizations & movements,Temperance organizations & movements,hierarchy,parent=Alcohol & Temperance - THEMATIC
-tennis clubs,tennis clubs,hierarchy,parent=sports clubs
-Top Camp (settlement),Top Camp (settlement),hierarchy,parent=Greater Megalong
-transport & logistics businesses,transport & logistics businesses,hierarchy,parent=commercial businesses
-Trucking,Trucking,hierarchy,parent=transport & logistics businesses
-Trucking,Trucking,hierarchy,parent=transport
-Trucking,Trucking,hierarchy,parent=Commercial transport - THEMATIC
-U.A.O.D.,United Ancient Order of Druids,synonym,Acronym for United Ancient Order of Druids
-United Ancient Order of Druids,United Ancient Order of Druids,hierarchy,parent=lodges
-Vulnerable populations,Vulnerable populations,hierarchy,parent=Social issues - THEMATIC
-W Green,W Green,hierarchy,parent=hotelliers
-W. Green,W. Green,hierarchy,parent=hotelliers
-Wallerawang Coursing Club,Wallerawang Coursing Club,hierarchy,parent=coursing clubs
-Watkins family,Watkins family,hierarchy,parent=families
-Waudby & Co.,Waudby and Company,synonym,Abbreviated form with ampersand
-Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
-Waudby's Hall,Waudby's Hall,hierarchy,parent=halls
-Wentworth Falls,Wentworth Falls,hierarchy,parent=towns - THEMATIC
-Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=hotels
-Wentworth Falls Progress Association,Wentworth Falls Progress Association,hierarchy,parent=progress committees
-Wentworth Falls Reserve,Wentworth Falls Reserve,hierarchy,parent=reserves
-Wentworth Falls Reserves,Wentworth Falls Reserve,synonym,Plural variant - standardised to singular
-Wentworth Falls Reserves,Wentworth Falls Reserves,hierarchy,parent=reserves
-Wesleyan Church,Wesleyan Church,hierarchy,parent=churches
-Western Rifle Association,Western Rifle Association,hierarchy,parent=rifle clubs
-Whiskey,Whisky,synonym,Alternative spelling of whisky (both spellings valid)
-Whiskey,Whisky,merge,Variant spelling - standardise to Whisky
-Workforce,Workforce,hierarchy,parent=Economy & Labour - THEMATIC
-World War I,World War I,hierarchy,parent=historical events
-World War I,World War I,hierarchy,parent=military events - THEMATIC
-World War I,World War I,hierarchy,parent=Military events - THEMATIC
-Zig Zag,Zig Zag,hierarchy,parent=railway infrastructure
-accident,accident,hierarchy,parent=accidents
-accident,accident,hierarchy,parent=health-related events - THEMATIC
-accident,accident,hierarchy,parent=mining incidents - THEMATIC
-accidents,accidents,hierarchy,parent=Events
-accommodation buildings,accommodation buildings,hierarchy,parent=Built Environment
-adolescents,adolescents,hierarchy,parent=demographic groups
-advertising,advertising,hierarchy,parent=communication activities
-advertising,advertising,hierarchy,parent=communications & postal services - THEMATIC
-advertising,advertising,hierarchy,parent=cultural activities - THEMATIC
-agricultural accidents,agricultural accidents,hierarchy,parent=accidents
-agriculture,agriculture,hierarchy,parent=economic activities
-agriculture workers,agriculture workers,hierarchy,parent=occupations
-alcohol & temperance,alcohol & temperance,hierarchy,parent=(thematic grouping)
-alcohol consumption & behaviour,alcohol consumption & behaviour,hierarchy,parent=alcohol & temperance - THEMATIC
-alcoholic beverage,alcoholic beverage,hierarchy,parent=alcoholic beverages (singular generic term)
-alcoholic beverages,alcoholic beverages,hierarchy,parent=alcohol consumption & behaviour - THEMATIC
-alcoholic beverages,alcoholic beverages,hierarchy,parent=consumable materials
-aldermen,aldermen,hierarchy,parent=public officials
-animal,animal,hierarchy,parent=animals (singular generic term)
-animal attacks,animal attacks,hierarchy,parent=livestock accidents
-animal breeders,animal breeders,hierarchy,parent=agriculture workers
-animal breeding,animal breeding,hierarchy,parent=animal husbandry
-animal control,animal control,hierarchy,parent=public health and safety activities
-animal husbandry,animal husbandry,hierarchy,parent=agriculture
-animal trespass,animal trespass,merge,Alternate term for Stock trespass
-animal-powered transport accidents,animal-powered transport accidents,hierarchy,parent=transport accidents
-animals,animals,hierarchy,parent=environment & weather - THEMATIC
-assault,assault,hierarchy,parent=criminal events
-assault,assault,hierarchy,parent=violent crimes - THEMATIC
-athletic club,athletic club,hierarchy,parent=athletic clubs (singular generic term)
-athletics,athletics,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-athletics,athletics,hierarchy,parent=recreation activities
-athletics,athletics,hierarchy,parent=sport & recreation - THEMATIC
-ball,ball,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-ball,ball,hierarchy,parent=social events
-band,band,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-band,band,hierarchy,parent=bands
-bands,bands,hierarchy,parent=performance groups
-bank,bank,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-bank,bank,hierarchy,parent=commercial buildings
-bank,bank,hierarchy,parent=financial institutions
-bankruptcy,bankruptcy,hierarchy,parent=Economic distress - THEMATIC
-bankruptcy,bankruptcy,hierarchy,parent=Economic hardship - THEMATIC
-bankruptcy,bankruptcy,hierarchy,parent=legal events
-bankruptcy,bankruptcy,hierarchy,parent=Legal outcomes - THEMATIC
-bazaar,bazaar,hierarchy,parent=social events
-beer,beer,hierarchy,parent=alcoholic beverages
-beer sales,beer sales,hierarchy,parent=liquor trade
-bicycle club,bicycle club,hierarchy,parent=bicycle clubs
-bicycle clubs,bicycle clubs,hierarchy,parent=sports clubs
-bigamy,bigamy,hierarchy,parent=criminal events
-bigamy,bigamy,hierarchy,parent=other crimes - THEMATIC
-billiard,billiards,merge,Singular form merged into plural - standardise to Billiards
-billiard licence,billiard licence,hierarchy,parent=licences
-billiard licensing,billiard licensing,hierarchy,parent=licensing
-billiards,billiards,hierarchy,parent=recreation activities
-billiards,billiards,hierarchy,parent=sport & recreation - THEMATIC
-boarding house,boarding house,hierarchy,parent=boarding houses
-boarding houses,boarding houses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-boarding houses,boarding houses,hierarchy,parent=accommodation buildings
-boarding houses,boarding houses,hierarchy,parent=Domestic accommodation - THEMATIC
-boarding houses,boarding houses,hierarchy,parent=hospitality businesses
-brandy,brandy,hierarchy,parent=spirits
-businesses,businesses,hierarchy,parent=Economy & Labour - THEMATIC
-cattle,cattle,hierarchy,parent=domestic animals
-cattle straying,cattle straying,merge,Use-for term for Stock trespass
-cattle trucking yard,cattle trucking yard,hierarchy,parent=cattle trucking yards
-cattle trucking yards,cattle trucking yards,hierarchy,parent=transport infrastructure
-caves & geological features,caves & geological features,hierarchy,parent=natural features
-charitable and welfare activity,charitable and welfare activity,hierarchy,parent=charitable and welfare activities (singular generic term)
-charity,charity,hierarchy,parent=charitable and welfare activities
-charity,charity,hierarchy,parent=Economic hardship - THEMATIC
-chess and draughts club,chess and draughts club,hierarchy,parent=cultural societies
-childhood & adolescence,childhood & adolescence,hierarchy,parent=family & domestic life - THEMATIC
-children,children,hierarchy,parent=demographic groups
-children,children,hierarchy,parent=family members by demographic - THEMATIC
-children,children,hierarchy,parent=Vulnerable populations - THEMATIC
-choir,choir,hierarchy,parent=choirs
-choirs,choirs,hierarchy,parent=performance groups
-church,church,hierarchy,parent=churches (singular generic term)
-churches,churches,hierarchy,parent=religious buildings
-churches,churches,hierarchy,parent=religious organisations
-civic buildings,civic buildings,hierarchy,parent=Built Environment
-civic buildings,civic buildings,hierarchy,parent=community institutions - THEMATIC
-civic organisations,civic organisations,hierarchy,parent=community institutions - THEMATIC
-civic organisations,civic organisations,hierarchy,parent=organisations
-clergy,clergy,hierarchy,parent=occupations
-clergy,clergy,hierarchy,parent=Religion - THEMATIC
-coach and buggy business,coach and buggy business,hierarchy,parent=other goods and services
-coal,coal,hierarchy,parent=Natural resources - THEMATIC
-coal,coal,hierarchy,parent=Materials
-coal mine,coal mine,hierarchy,parent=coal mines (singular generic term)
-coal mines,coal mines,hierarchy,parent=mines
-coal mining,coal mining,hierarchy,parent=mines & mining districts - THEMATIC
-coal mining,coal mining,hierarchy,parent=mining
-commercial building,commercial building,hierarchy,parent=commercial buildings (singular generic term)
-commercial buildings,commercial buildings,hierarchy,parent=Built Environment
-commercial businesses,commercial businesses,hierarchy,parent=businesses - THEMATIC
-commercial transport,commercial transport,hierarchy,parent=transport & infrastructure - THEMATIC
-communication activity,communication activity,hierarchy,parent=communication activities (singular generic term)
-communications & postal services,communications & postal services,hierarchy,parent=(thematic grouping)
-community buildings,community buildings,hierarchy,parent=Built Environment
-community buildings,community buildings,hierarchy,parent=community institutions - THEMATIC
-community institutions,community institutions,hierarchy,parent=(thematic grouping)
-concert,concert,hierarchy,parent=cultural events
-concert,concert,hierarchy,parent=social events
-constable,constable,hierarchy,parent=police officers
-consumable materials,consumable materials,hierarchy,parent=Materials
-coroner,coroner,hierarchy,parent=coroners
-coroners,coroners,hierarchy,parent=legal officials
-cottage,cottage,hierarchy,parent=cottages
-cottages,cottages,hierarchy,parent=accommodation buildings
-council,council,hierarchy,parent=councils (singular generic term)
-council chambers,council chambers,hierarchy,parent=civic buildings
-councils,councils,hierarchy,parent=government bodies
-coursing,coursing,hierarchy,parent=sporting events
-coursing,coursing,hierarchy,parent=sport & recreation - THEMATIC
-coursing club,coursing club,hierarchy,parent=coursing clubs (singular generic term)
-coursing clubs,coursing clubs,hierarchy,parent=sports clubs
-court,court,hierarchy,parent=courts (singular generic term)
-court buildings,court buildings,hierarchy,parent=civic buildings
-court buildings,court buildings,hierarchy,parent=justice & crime - THEMATIC
-court cases,court cases,hierarchy,parent=legal events
-court cases,court cases,hierarchy,parent=legal proceedings
-courthouse,courthouse,hierarchy,parent=court buildings
-courts,courts,hierarchy,parent=government bodies
-courts,courts,hierarchy,parent=justice & crime - THEMATIC
-cricket,cricket,hierarchy,parent=team sports
-cricket,cricket,hierarchy,parent=sport & recreation - THEMATIC
-cricket club,cricket club,hierarchy,parent=cricket clubs (singular generic term)
-cricket ground,cricket ground,hierarchy,parent=cricket grounds (singular generic term)
-cricket grounds,cricket grounds,hierarchy,parent=sports facilities
-cricket match,cricket match,hierarchy,parent=sporting events (singular generic term)
-cricket match,cricket match,hierarchy,parent=sport & recreation - THEMATIC
-crimes,crimes,hierarchy,parent=justice & crime - THEMATIC
-criminal event,criminal event,hierarchy,parent=criminal events (singular generic term)
-criminal events,criminal events,hierarchy,parent=Events
-cultural & recreational organisations,cultural & recreational organisations,hierarchy,parent=community institutions - THEMATIC
-cultural & recreational organisations,cultural & recreational organisations,hierarchy,parent=organisations
-cultural activities,cultural activities,hierarchy,parent=Arts & Culture - THEMATIC
-cultural event,cultural event,hierarchy,parent=cultural events (singular generic term)
-cultural events,cultural events,hierarchy,parent=Arts & Culture - THEMATIC
-cultural events,cultural events,hierarchy,parent=Events
-cultural organisations,cultural organisations,hierarchy,parent=Arts & Culture - THEMATIC
-cultural societies,cultural societies,hierarchy,parent=cultural & recreational organisations
-cultural society,cultural society,hierarchy,parent=cultural societies (singular generic term)
-cycling,cycling,hierarchy,parent=recreation activities
-cycling,cycling,hierarchy,parent=sport & recreation - THEMATIC
-dance,dance,hierarchy,parent=social events
-death,death,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-death,death,hierarchy,parent=health conditions - THEMATIC
-death,death,hierarchy,parent=life events
-death notice,death notice,hierarchy,parent=death
-debate,debate,hierarchy,parent=cultural events
-debating,debating,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-debating,debating,hierarchy,parent=cultural events
-demographic group,demographic group,hierarchy,parent=demographic groups (singular generic term)
-desertion,desertion,hierarchy,parent=criminal events
-desertion,desertion,hierarchy,parent=Social order offences - THEMATIC
-disaster,disaster,hierarchy,parent=accidents
-disease,disease,hierarchy,parent=health conditions - THEMATIC
-disease,disease,hierarchy,parent=physical and health conditions
-divorce,divorce,hierarchy,parent=legal events
-divorce,divorce,hierarchy,parent=Legal outcomes - THEMATIC
-document types,document types,hierarchy,parent=Associated Concepts
-dogs,dogs,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-dogs,dogs,hierarchy,parent=domestic animals
-domestic animals,domestic animals,hierarchy,parent=animals
-drinking,drinking,merge,Consolidate to Drinking (alcohol) - all instances in collection refer to alcohol consumption (Blue Mountains temperance-era newspapers)
-drinking (alcohol),drinking (alcohol),hierarchy,parent=alcohol consumption & behaviour - THEMATIC
-drinking (alcohol),drinking (alcohol),hierarchy,parent=social behaviours
-drunkenness (crime),drunkenness (crime),hierarchy,parent=alcohol consumption & behaviour - THEMATIC
-drunkenness (crime),drunkenness (crime),hierarchy,parent=alcohol-related
-drunkenness (crime),drunkenness (crime),hierarchy,parent=Social order offences - THEMATIC
-drunkenness (intoxication),drunkenness (intoxication),hierarchy,parent=alcohol consumption & behaviour - THEMATIC
-drunkenness (intoxication),drunkenness (intoxication),hierarchy,parent=physical and health conditions
-dwelling,dwelling,hierarchy,parent=dwellings (singular generic term)
-dwellings,dwellings,hierarchy,parent=accommodation buildings
-economic activity,economic activity,hierarchy,parent=economic activities (singular generic term)
-economic event,economic event,hierarchy,parent=economic events (singular generic term)
-economic events,economic events,hierarchy,parent=Events
-education,education,hierarchy,parent=(thematic grouping)
-educational buildings,educational buildings,hierarchy,parent=Built Environment
-educational buildings,educational buildings,hierarchy,parent=education - THEMATIC
-election,election,hierarchy,parent=political events
-environment & weather,environment & weather,hierarchy,parent=(thematic grouping)
-equestrian sports,equestrian sports,merge,Remove from Recreation activities hierarchy - use Spectator sports for watching horse racing; use Horse races (Events facet) for the sporting event itself
-ethnic group,ethnic group,hierarchy,parent=ethnic groups (singular generic term)
-families,families,hierarchy,parent=family & domestic life - THEMATIC (all family tags)
-families,families,hierarchy,parent=people
-family,family,hierarchy,parent=families (singular generic term)
-family & domestic life,family & domestic life,hierarchy,parent=(thematic grouping)
-family hotel,family hotel,merge,Colloquial/generic reference to Katoomba Family Hotel - all instances in collection refer to this specific establishment in Katoomba
-family hotels,family hotels,hierarchy,parent=hotels
-family members by demographic,family members by demographic,hierarchy,parent=family & domestic life - THEMATIC
-feral dog control,feral dog control,hierarchy,parent=animal control
-fighting,fighting,hierarchy,parent=criminal events
-fighting,fighting,hierarchy,parent=violent crimes - THEMATIC
-financial institution,financial institution,hierarchy,parent=financial institutions (singular generic term)
-financial services,financial services,hierarchy,parent=economic activities
-fire,fire,hierarchy,parent=accidents
-flower show,flower show,hierarchy,parent=social events
-football,football,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-football,football,hierarchy,parent=team sports
-football,football,hierarchy,parent=sport & recreation - THEMATIC
-football club,football club,hierarchy,parent=football clubs (singular generic term)
-football match,football match,hierarchy,parent=sporting events (singular generic term)
-football match,football match,hierarchy,parent=sport & recreation - THEMATIC
-fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=community institutions - THEMATIC
-fundraising,fundraising,hierarchy,parent=communication activities
-funeral,funeral,hierarchy,parent=life events
-gambling,gambling,hierarchy,parent=social behaviours
-gambling,gambling,hierarchy,parent=Social order offences - THEMATIC
-gas,gas,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-gas,gas,hierarchy,parent=utilities
-gin,gin,hierarchy,parent=spirits
-gold mining,gold mining,hierarchy,parent=mining
-goring,goring,hierarchy,parent=animal attacks
-grog,grog,hierarchy,parent=mixed alcoholic beverages
-gullies,gullies,hierarchy,parent=natural features
-hall,hall,hierarchy,parent=halls (singular generic term)
-halls,halls,hierarchy,parent=community buildings
-halls,halls,hierarchy,parent=Cultural venues - THEMATIC
-health & medicine,health & medicine,hierarchy,parent=(thematic grouping)
-health conditions,health conditions,hierarchy,parent=health & medicine - THEMATIC
-health-related events,health-related events,hierarchy,parent=health & medicine - THEMATIC
-historical event,historical event,hierarchy,parent=historical events (singular generic term)
-historical events,historical events,hierarchy,parent=Events
-horse accidents,horse accidents,hierarchy,parent=animal-powered transport accidents
-horse breeder,horse breeder,hierarchy,parent=animal breeders
-horse breeding,horse breeding,hierarchy,parent=animal breeding
-horse races,horse races,hierarchy,parent=sporting events
-horse races,horse races,hierarchy,parent=sport & recreation - THEMATIC
-horse racing,horse racing,merge,Remove from Recreation activities - use Spectator sports for watching horse racing; use Horse races (Events facet) for the sporting event itself
-horse racing,horse racing,hierarchy,parent=sport & recreation - THEMATIC
-horse straying,horse straying,merge,Use-for term for Stock trespass
-horse-drawn vehicle accidents,horse-drawn vehicle accidents,hierarchy,parent=horse accidents
-horseback riding,horseback riding,hierarchy,parent=recreation activities
-horseback riding accidents,horseback riding accidents,hierarchy,parent=horse accidents
-horseborne transportation,horseborne transportation,hierarchy,parent=transport
-horses,horses,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-horses,horses,hierarchy,parent=domestic animals
-horses,horses,merge,Remove from Recreation activities - horses are animals (agents) not activities; use 'Horseback riding' for the activity
-horticulture society,horticulture society,hierarchy,parent=cultural societies
-hospitality worker,hospitality worker,hierarchy,parent=hospitality workers (singular generic term)
-hospitality workers,hospitality workers,hierarchy,parent=alcohol & temperance - THEMATIC
-hospitality workers,hospitality workers,hierarchy,parent=occupations
-hotel,hotel,hierarchy,parent=hotels
-hotel licensing,hotel licensing,hierarchy,parent=licensing
-hotellier,hotellier,hierarchy,parent=hotelliers
-hotelliers,hotelliers,hierarchy,parent=hospitality workers
-hotels,hotels,hierarchy,parent=accommodation buildings
-hotels,hotels,hierarchy,parent=Alcohol-related venues - THEMATIC
-hotels,hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect)
-hotels,hotels,hierarchy,parent=hospitality businesses
-hunting,hunting,hierarchy,parent=economic activities
-illness,illness,hierarchy,parent=health conditions - THEMATIC
-illness,illness,hierarchy,parent=physical and health conditions
-indigenous peoples,indigenous peoples,hierarchy,parent=marginalised groups - THEMATIC
-industrial buildings,industrial buildings,hierarchy,parent=Built Environment
-infrastructure,infrastructure,hierarchy,parent=Built Environment
-injury,injury,hierarchy,parent=health conditions - THEMATIC
-injury,injury,hierarchy,parent=physical and health conditions
-insurance provision,insurance provision,hierarchy,parent=financial services
-justice & crime,justice & crime,hierarchy,parent=(thematic grouping)
-labour organisation,labour organisation,hierarchy,parent=labour organisations (singular generic term)
-labour organisations,labour organisations,hierarchy,parent=civic organisations
-law enforcement,law enforcement,hierarchy,parent=justice & crime - THEMATIC
-law enforcement,law enforcement,hierarchy,parent=societal activities
-law enforcement personnel,law enforcement personnel,hierarchy,parent=occupations
-lawn tennis club,lawn tennis club,hierarchy,parent=tennis clubs
-laws,laws,hierarchy,parent=legal concepts
-legal concepts,legal concepts,hierarchy,parent=Associated Concepts
-legal event,legal event,hierarchy,parent=legal events (singular generic term)
-legal events,legal events,hierarchy,parent=Events
-legal events,legal events,hierarchy,parent=justice & crime - THEMATIC
-legal official,legal official,hierarchy,parent=legal officials (singular generic term)
-legal officials,legal officials,hierarchy,parent=justice & crime - THEMATIC
-legal officials,legal officials,hierarchy,parent=occupations
-legal proceeding,legal proceeding,hierarchy,parent=legal proceedings (singular generic term)
-legal proceedings,legal proceedings,hierarchy,parent=Events
-legal proceedings,legal proceedings,hierarchy,parent=justice & crime - THEMATIC
-licence,licence,hierarchy,parent=licences (singular generic term)
-licences,licences,hierarchy,parent=legal concepts
-licensing,licensing,hierarchy,parent=licensing & regulation - THEMATIC
-licensing,licensing,hierarchy,parent=regulatory processes
-licensing & regulation,licensing & regulation,hierarchy,parent=alcohol & temperance - THEMATIC
-licensing cases,licensing cases,hierarchy,parent=legal proceedings
-licensing cases,licensing cases,hierarchy,parent=licensing & regulation - THEMATIC
-licensing inspector,licensing inspector,hierarchy,parent=licensing & regulation - THEMATIC
-licensing inspector,licensing inspector,hierarchy,parent=public officials
-licensing offences,licensing offences,hierarchy,parent=licensing cases
-life events,life events,hierarchy,parent=Events
-life events,life events,hierarchy,parent=family & domestic life - THEMATIC
-liquor licensing,liquor licensing,hierarchy,parent=licensing
-liquor licensing applications,liquor licensing applications,hierarchy,parent=licensing cases
-liquor merchant,liquor merchant,hierarchy,parent=liquor merchants (singular generic term)
-liquor merchants,liquor merchants,hierarchy,parent=hospitality workers
-liquor sales,liquor sales,hierarchy,parent=liquor trade
-liquor trade,liquor trade,hierarchy,parent=economic activities
-livestock accidents,livestock accidents,hierarchy,parent=agricultural accidents
-lodge,lodge,hierarchy,parent=lodges (singular generic term)
-lodges,lodges,hierarchy,parent=fraternal orders & lodges
-mailman,mailman,hierarchy,parent=mailmen
-mailmen,mailmen,hierarchy,parent=postal employees
-marginalised groups,marginalised groups,hierarchy,parent=Race & Ethnicity - THEMATIC
-maritime worker,maritime worker,hierarchy,parent=maritime workers (singular generic term)
-maritime workers,maritime workers,hierarchy,parent=occupations
-marriage,marriage,hierarchy,parent=life events
-medical professional,medical professional,hierarchy,parent=medical professionals (singular generic term)
-medical professionals,medical professionals,hierarchy,parent=health & medicine - THEMATIC
-medical professionals,medical professionals,hierarchy,parent=occupations
-men,men,hierarchy,parent=demographic groups
-men,men,hierarchy,parent=family members by demographic - THEMATIC
-military,military,merge,Consolidate to Military activities (preferred term for activity facet)
-military,military,hierarchy,parent=military organisations - THEMATIC
-military & war,military & war,hierarchy,parent=(thematic grouping)
-military activities,military activities,hierarchy,parent=societal activities
-military activity,military activity,merge,Consolidate to Military activities (redundant singular form)
-military events,military events,hierarchy,parent=military & war - THEMATIC
-military organisations,military organisations,hierarchy,parent=military & war - THEMATIC
-military organisations,military organisations,hierarchy,parent=organisations
-military personnel,military personnel,hierarchy,parent=military & war - THEMATIC
-military personnel,military personnel,hierarchy,parent=occupations
-military sports,military sports,hierarchy,parent=recreation activities
-military sports,military sports,hierarchy,parent=sport & recreation - THEMATIC
-mine,mine,hierarchy,parent=mines (singular generic term)
-mine closure,mine closure,hierarchy,parent=economic events
-mine closure,mine closure,hierarchy,parent=mining activities - THEMATIC
-miner,miner,hierarchy,parent=miners (singular generic term)
-miners,miners,hierarchy,parent=mining workforce - THEMATIC
-miners' dwellings,miners' dwellings,hierarchy,parent=Domestic accommodation - THEMATIC
-miners' dwellings,miners' dwellings,hierarchy,parent=dwellings
-miners' dwellings,miners' dwellings,hierarchy,parent=mining workforce - THEMATIC
-miners' families,miners' families,hierarchy,parent=families
-miners' families,miners' families,hierarchy,parent=families - THEMATIC
-miners' families,miners' families,hierarchy,parent=mining workforce - THEMATIC
-miners' families,miners' families,hierarchy,parent=Vulnerable populations - THEMATIC
-miners' huts,miners' dwellings,synonym,Informal term for miners' dwellings
-mines,mines,hierarchy,parent=industrial buildings
-mines & mining districts,mines & mining districts,hierarchy,parent=mining & industry - THEMATIC
-mining,mining,keep,Substring coincidence - semantically unrelated concepts (automated triage)
-mining,mining,hierarchy,parent=economic activities
-mining,mining,hierarchy,parent=Industries - THEMATIC
-mining,mining,hierarchy,parent=mining activities - THEMATIC
-mining & industry,mining & industry,hierarchy,parent=(thematic grouping)
-mining accidents,mining accidents,hierarchy,parent=health-related events - THEMATIC
-mining accidents,mining accidents,hierarchy,parent=mining incidents - THEMATIC
-mining activities,mining activities,hierarchy,parent=mining & industry - THEMATIC
-mining companies,mining companies,hierarchy,parent=mining & industry - THEMATIC
-mining company,mining company,hierarchy,parent=mining companies (singular generic term)
-mining districts,mining districts,hierarchy,parent=Places (existing facet)
-mining districts,mining districts,hierarchy,parent=Places
-mining incidents,mining incidents,hierarchy,parent=mining & industry - THEMATIC
-mining infrastructure,mining infrastructure,hierarchy,parent=infrastructure
-mining infrastructure,mining infrastructure,hierarchy,parent=mining & industry - THEMATIC
-mining transport,mining transport,hierarchy,parent=transport & infrastructure - THEMATIC
-mining workforce,mining workforce,hierarchy,parent=mining & industry - THEMATIC
-minister for mines,minister for mines,hierarchy,parent=public officials
-minstrel troupe,minstrel troupe,hierarchy,parent=minstrel troupes (singular generic term)
-minstrel troupes,minstrel troupes,hierarchy,parent=performance groups
-mixed alcoholic beverage,mixed alcoholic beverage,hierarchy,parent=mixed alcoholic beverages (singular generic term)
-mixed alcoholic beverages,mixed alcoholic beverages,hierarchy,parent=alcoholic beverages
-mountain feature,mountain feature,hierarchy,parent=mountain features (singular generic term)
-mountain features,mountain features,hierarchy,parent=natural features
-named persons,named persons,hierarchy,parent=people
-natural features,natural features,hierarchy,parent=environment & weather - THEMATIC
-natural features,natural features,hierarchy,parent=Places (existing facet)
-natural features,natural features,hierarchy,parent=tourist attractions - THEMATIC
-nepean football club,nepean football club,hierarchy,parent=football clubs
-occupations,occupations,hierarchy,parent=people
-other crimes,other crimes,hierarchy,parent=crimes - THEMATIC
-other goods and services,other goods and services,hierarchy,parent=occupations
-outdoor recreation club,outdoor recreation club,hierarchy,parent=outdoor recreation clubs (singular generic term)
-outdoor recreation clubs,outdoor recreation clubs,hierarchy,parent=sports clubs
-oval,oval,hierarchy,parent=ovals (singular generic term)
-ovals,ovals,hierarchy,parent=sports facilities
-penrith rugby club,penrith rugby club,hierarchy,parent=rugby clubs
-people,people,hierarchy,parent=Agents
-people,people,hierarchy,parent=(thematic grouping)
-petition,petition,hierarchy,parent=political events
-physical and health conditions,physical and health conditions,hierarchy,parent=Associated Concepts
-physical phenomena,physical phenomena,hierarchy,parent=Associated Concepts
+police officer,police officer,hierarchy,parent=police officers (singular generic term)
 police officers,police officers,hierarchy,parent=law enforcement personnel
+police quarters,police quarters,hierarchy,parent=police facilities
 police station,police station,hierarchy,parent=justice & crime - THEMATIC
 police station,police station,hierarchy,parent=police facilities
 policing,policing,hierarchy,parent=law enforcement
 political events,political events,hierarchy,parent=Events
 political events,political events,hierarchy,parent=Politics & Governance - THEMATIC
+Politics & Governance,Politics & Governance,hierarchy,parent=(thematic grouping)
 pony breeding,pony breeding,merge,Alternate term for Horse breeding (ponies are small horses)
+Port Kembla,Port Kembla,hierarchy,parent=towns
+Port Kembla disaster,Mount Kembla Disaster,synonym,Historical misnomer - actually Mount Kembla (not Port Kembla)
+Post,Post,hierarchy,parent=Postal services - THEMATIC
+Post,postal service,synonym,Generic term for postal service (deprecated - use specific tags)
+Post,Postal service,synonym,Generic term for postal service (deprecated - use specific tags)
 post office,post office,hierarchy,parent=postal facilities
+Post Office Department,Post Department,merge,Synonym - standardise to Post Department
+Post Office Department,Postal Department,synonym,Historical name for Postal Department
+postal authorities,postal authorities,hierarchy,parent=government bodies
+Postal Department,Postal Department,hierarchy,parent=government bodies
+Postal Department,Postal Department,hierarchy,parent=postal authorities
 postal employees,postal employees,hierarchy,parent=public officials
+postal facilities,postal facilities,hierarchy,parent=civic buildings
+Postal service,Postal service,hierarchy,parent=postal services
 postal services,postal services,hierarchy,parent=communication activities
 postal services,postal services,hierarchy,parent=communications & postal services - THEMATIC
 postboy,postboy,hierarchy,parent=mailmen
-postman,mailman,synonym,Alternative term for mailman
 postman,mailman,merge,Synonym - standardise to Mailman
+Postman,Mailman,synonym,Alternative term for mailman
+postman,mailman,synonym,Alternative term for mailman
 postmaster,postmaster,hierarchy,parent=postmasters
 postmasters,postmasters,hierarchy,parent=postal employees
 progress committee,progress committee,hierarchy,parent=progress committees (singular generic term)
+progress committees,progress committees,hierarchy,parent=civic organisations
 property crimes,property crimes,hierarchy,parent=crimes - THEMATIC
 property offences,property offences,hierarchy,parent=court cases
+Pub,public house,synonym,Colloquial term for public house
+Pub,Public house,synonym,Colloquial term for public house
 pub,public house,synonym,Short form (UK/Australian) - lowercase variant
 public health and safety activities,public health and safety activities,hierarchy,parent=societal activities
 public house,public house,hierarchy,parent=public houses
 public houses,public houses,hierarchy,parent=accommodation buildings
 public houses,public houses,hierarchy,parent=Alcohol-related venues - THEMATIC
-public meeting,public meeting,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 public meeting,public meeting,hierarchy,parent=political events
+public meeting,public meeting,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 public official,public official,hierarchy,parent=public officials (singular generic term)
 public officials,public officials,hierarchy,parent=occupations
 public officials,public officials,hierarchy,parent=Politics & Governance - THEMATIC
-publican,publican,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 publican,publican,hierarchy,parent=hospitality workers
-publican's licence,publican's licensing,synonym,Historical term for licence to operate public house serving alcohol
+publican,publican,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 publican's licence,publican's licence,hierarchy,parent=licensing & regulation - THEMATIC
 publican's licence,publican's licence,hierarchy,parent=licences
+publican's licence,publican's licensing,synonym,Historical term for licence to operate public house serving alcohol
+Publican's License,publican's licence,synonym,US spelling variant of UK spelling publican's licence
+Publican's License,Publican's licensing,synonym,Historical term for licence to operate public house serving alcohol
 publican's licensing,publican's licensing,hierarchy,parent=licensing
+Pubs,public houses,synonym,Colloquial short form - prefer full form Public houses
+Race & Ethnicity,Race & Ethnicity,hierarchy,parent=(thematic grouping)
 racial stereotyping & performance,racial stereotyping & performance,hierarchy,parent=Race & Ethnicity - THEMATIC
 railway,railway,hierarchy,parent=transport & infrastructure - THEMATIC
 railway,railway,hierarchy,parent=transport infrastructure
+railway authorities,railway authorities,hierarchy,parent=government bodies
+railway commission,railway commission,hierarchy,parent=railway authorities
+Railway Hotel,Railway Hotel,hierarchy,parent=hotels
 railway infrastructure,railway infrastructure,hierarchy,parent=railway
 railway operation,railway operation,hierarchy,parent=railway operations (singular generic term)
 railway operations,railway operations,hierarchy,parent=transport
+Rape,sexual violence,merge,Specific term merged into broader category (rape is a type of sexual violence)
+Rape,sexual violence,synonym,Specific type of sexual violence - retained as synonym for search/discovery
+recreation activities,recreation activities,hierarchy,parent=Activities
 recreation activity,recreation activity,hierarchy,parent=recreation activities (singular generic term)
 recreation buildings,recreation buildings,hierarchy,parent=Built Environment
 recreation buildings,recreation buildings,hierarchy,parent=sport & recreation - THEMATIC
@@ -1212,8 +1117,11 @@ recreation for miners,recreation for miners,hierarchy,parent=recreation activiti
 recreation for miners,recreation for miners,hierarchy,parent=mining activities - THEMATIC
 recreation for miners,recreation for miners,hierarchy,parent=recreation themes - THEMATIC
 recreation themes,recreation themes,hierarchy,parent=sport & recreation - THEMATIC
+Reference to the Irish or Irish culture,Reference to the Irish or Irish culture,hierarchy,parent=Cultural identity & heritage - THEMATIC
+Reference to the Irish or Irish culture,Irish culture,synonym,Renamed to emphasize cultural references rather than demographic group
 regional mining contexts,regional mining contexts,hierarchy,parent=mining & industry - THEMATIC
 regulatory processes,regulatory processes,hierarchy,parent=societal activities
+Religion,Religion,hierarchy,parent=(thematic grouping)
 religious buildings,religious buildings,hierarchy,parent=Built Environment
 religious buildings,religious buildings,hierarchy,parent=Religion - THEMATIC
 religious education,religious education,hierarchy,parent=religious organisations
@@ -1228,20 +1136,40 @@ retailer or store,retailer or store,hierarchy,parent=retailers and stores
 retailers & store,retailer or store,synonym,Variant form consolidated to Retailer or Store
 retailers and store,retailer or store,synonym,Variant form consolidated to Retailer or Store
 retailers and stores,retailers and stores,hierarchy,parent=commercial businesses
+Reverence M C Brown,Reverence M C Brown,hierarchy,parent=clergy
+Reverend A Sutherland,Reverend A Sutherland,hierarchy,parent=clergy
+Reverend Canon Kemmis,Reverend Canon Kemmis,hierarchy,parent=clergy
+Reverend F V Pratt,Reverend F V Pratt,hierarchy,parent=clergy
+Reverend J H Maclean,Reverend J H Maclean,hierarchy,parent=clergy
+Reverend M S Fletcher,Reverend M S Fletcher,hierarchy,parent=clergy
+Reverend R M Laverty,Reverend R M Laverty,hierarchy,parent=clergy
+Richard Allen,Richard Allen,hierarchy,parent=hotelliers
 rifle club,rifle club,hierarchy,parent=rifle clubs
+rifle clubs,rifle clubs,hierarchy,parent=sports clubs
 rifle range,rifle range,hierarchy,parent=rifle ranges (singular generic term)
 rifle ranges,rifle ranges,hierarchy,parent=sports facilities
+rifle reserves,rifle reserves,hierarchy,parent=reserves
 road,road,hierarchy,parent=roads (singular generic term)
 roads,roads,hierarchy,parent=transport & infrastructure - THEMATIC
 roads,roads,hierarchy,parent=transport infrastructure
+Rockley,Rockley,hierarchy,parent=towns
+Roman Catholic Church (building),Roman Catholic Church (building),hierarchy,parent=churches
+Rubina Fryer,Rubina Fryer,hierarchy,parent=hotelliers
 rugby,rugby,hierarchy,parent=team sports
 rugby,rugby,hierarchy,parent=sport & recreation - THEMATIC
 rugby club,rugby club,hierarchy,parent=rugby clubs (singular generic term)
 rugby clubs,rugby clubs,hierarchy,parent=sports clubs
 rugby match,rugby match,hierarchy,parent=sporting events (singular generic term)
 rugby match,rugby match,hierarchy,parent=sport & recreation - THEMATIC
+Ruined Castle,Ruined Castle mining district,synonym,Unqualified form - use mining district qualifier for mining context; rock formation qualifier for natural feature
+Ruined Castle (settlement),Ruined Castle (settlement),hierarchy,parent=Ruined Castle mining district
+Ruined Castle - rock formation,Ruined Castle - rock formation,hierarchy,parent=mountain features
+Ruined Castle mining district,Ruined Castle mining district,hierarchy,parent=mining districts
+Ruined Castle Shale Mine,Ruined Castle Shale Mine (site),synonym,Unqualified form - use site qualifier for precision
+Ruined Castle Shale Mine (site),Ruined Castle Shale Mine (site),hierarchy,parent=Ruined Castle mining district
 rum,rum,hierarchy,parent=spirits
 runaway horse incidents,runaway horse incidents,hierarchy,parent=horse accidents
+Salvation Army,Salvation Army,hierarchy,parent=religious social movements
 school,school,hierarchy,parent=schools
 school of art,school of arts,synonym,Variant spelling - standardised to School of Arts
 school of arts,school of arts,hierarchy,parent=schools of arts
@@ -1250,14 +1178,20 @@ schools of art,schools of arts,synonym,Variant spelling - standardised to School
 schools of arts,schools of arts,hierarchy,parent=cultural societies
 schools of arts,schools of arts,hierarchy,parent=halls
 senior-constable,senior-constable,hierarchy,parent=police officers
+Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=senior-constable
+Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=people - THEMATIC
+Senior-Constable Thorncroft,Senior-Constable Thorncroft,hierarchy,parent=senior-constable
+Senior-Constable Thorncroft,Senior-Constable Thorncroft,hierarchy,parent=people - THEMATIC
 sergeant,sergeant,hierarchy,parent=police officers
+Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=sergeant
+Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=people - THEMATIC
 serving alcohol to minors,serving alcohol to minors,hierarchy,parent=alcohol-related
 sewerage,sewerage,hierarchy,parent=utilities
 sexual violence,sexual violence,hierarchy,parent=criminal events
 sexual violence,sexual violence,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
 sexual violence,sexual violence,hierarchy,parent=violent crimes - THEMATIC
 shale,shale,hierarchy,parent=Materials
-shale mine,shale mine,hierarchy,parent=shale mines (singular generic term)
+shale mine (facility),shale mine (facility),hierarchy,parent=shale mines (singular generic term)
 shale mines,shale mines,hierarchy,parent=mines & mining districts - THEMATIC
 shale mines,shale mines,hierarchy,parent=Natural resources - THEMATIC
 shale mines,shale mines,hierarchy,parent=mines
@@ -1268,14 +1202,30 @@ shooting,shooting,hierarchy,parent=sport & recreation - THEMATIC
 shooting competition,shooting match,synonym,Alternative term for shooting match
 shooting match,shooting match,hierarchy,parent=sporting events (singular generic term)
 shooting match,shooting match,hierarchy,parent=sport & recreation - THEMATIC
+Sly-grog operations,Unlicensed sales,synonym,Australian colonial term for unlicensed liquor sales
 sly-grog operations,unlicensed sales,synonym,Australian colonial term for unlicensed liquor sales
 social & economic concepts,social & economic concepts,hierarchy,parent=Associated Concepts
 social behaviour,social behaviour,hierarchy,parent=social behaviours (singular generic term)
 social behaviours,social behaviours,hierarchy,parent=Activities
 social event,social event,hierarchy,parent=social events (singular generic term)
 social events,social events,hierarchy,parent=Events
+Social issues,Social issues,hierarchy,parent=(thematic grouping)
+Social order offences,Social order offences,hierarchy,parent=crimes - THEMATIC
+Social order offences,Social order offences,hierarchy,parent=Crimes - THEMATIC
 societal activities,societal activities,hierarchy,parent=Activities
 soldiers,soldiers,hierarchy,parent=military personnel
+South Clifton,South Clifton (Illawarra),synonym,Unqualified form - use Illawarra qualifier to distinguish from Blue Mountains locations
+South Clifton (Illawarra),South Clifton (Illawarra),hierarchy,parent=mining districts
+South Clifton (Illawarra),South Clifton (Illawarra),hierarchy,parent=regional mining contexts - THEMATIC
+South Clifton Mine Co.,South Clifton Mine Company,synonym,Abbreviated form  
+South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies
+South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=regional mining contexts - THEMATIC
+South Clifton Tunnel Mine (facility),South Clifton Tunnel Mine (facility),hierarchy,parent=coal mines
+South Clifton Tunnel Mine (facility),South Clifton Tunnel Mine (facility),hierarchy,parent=regional mining contexts - THEMATIC
+South Clifton Tunnel Mine,South Clifton Tunnel Mine (site),merge,Use site qualifier for geographic location (Blue Mountains context)
+South Clifton Tunnel Mine (site),South Clifton Tunnel Mine (site),hierarchy,parent=South Clifton (Illawarra)
+South Katoomba,South Katoomba,hierarchy,parent=Katoomba
+South Katoomba Reserve,South Katoomba Reserve,hierarchy,parent=reserves
 spectator sports,spectator sports,hierarchy,parent=recreation activities
 spectator sports,spectator sports,hierarchy,parent=sport & recreation - THEMATIC
 spirit,spirit,hierarchy,parent=spirits (singular generic term)
@@ -1284,14 +1234,20 @@ sport & recreation,sport & recreation,hierarchy,parent=(thematic grouping)
 sporting event,sporting event,hierarchy,parent=sporting events (singular generic term)
 sporting events,sporting events,hierarchy,parent=Events
 sporting events,sporting events,hierarchy,parent=sport & recreation - THEMATIC
-sports,sports,merge,Remove from Recreation activities - use specific activity types (Spectator sports for watching events) or event types (Sporting events for the events themselves)
 sports,sports,hierarchy,parent=recreation themes - THEMATIC
+sports,sports,merge,Remove from Recreation activities - use specific activity types (Spectator sports for watching events) or event types (Sporting events for the events themselves)
+sports clubs,sports clubs,hierarchy,parent=cultural & recreational organisations
+sports clubs,sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
 sports clubs,sports clubs,hierarchy,parent=sport & recreation - THEMATIC
 sports facilities,sports facilities,hierarchy,parent=recreation buildings
+Springwood,Springwood,hierarchy,parent=towns
+St Hilda's Church (building),St Hilda's Church (building),hierarchy,parent=churches
 stable,stable,hierarchy,parent=stables
 stables,stables,hierarchy,parent=accommodation buildings
 stationmaster,stationmaster,hierarchy,parent=public officials
 stock trespass,stock trespass,hierarchy,parent=property offences
+Store,Store,hierarchy,parent=retailers and stores
+Store,Store,hierarchy,parent=commercial buildings
 store,retailer or store,synonym,Generic singular form consolidated to Retailer or Store
 stores,retailer or store,synonym,Generic plural form consolidated to Retailer or Store
 strike,strike,hierarchy,parent=economic events
@@ -1299,16 +1255,26 @@ strike,strike,hierarchy,parent=Labour relations - THEMATIC
 suicide,suicide,hierarchy,parent=death
 sunday school,sunday school,hierarchy,parent=education - THEMATIC (religious education)
 sunday school,sunday school,hierarchy,parent=religious education
+Sunny Corner,Sunny Corner,hierarchy,parent=towns
+Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=mining companies
+Supreme Court,Supreme Court,hierarchy,parent=courts
+Sydney,Sydney,hierarchy,parent=towns
+Tabrett and Co.,Tabrett and Company,synonym,Abbreviated form of Tabrett and Company
+Tabrett and Company,Tabrett and Company,hierarchy,parent=retailers and stores
+Tabrett family,Tabrett family,hierarchy,parent=families
 team sports,team sports,hierarchy,parent=recreation activities
 temperance,temperance,hierarchy,parent=social behaviours
 temperance,temperance,hierarchy,parent=temperance organisations & movements - THEMATIC
 temperance organisations & movements,temperance organisations & movements,hierarchy,parent=alcohol & temperance - THEMATIC
+Temperance organizations & movements,Temperance organizations & movements,hierarchy,parent=Alcohol & Temperance - THEMATIC
 tennis,tennis,hierarchy,parent=recreation activities
 tennis,tennis,hierarchy,parent=sport & recreation - THEMATIC
 tennis club,tennis club,hierarchy,parent=tennis clubs (singular generic term)
-theft,theft,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+tennis clubs,tennis clubs,hierarchy,parent=sports clubs
 theft,theft,hierarchy,parent=criminal events
 theft,theft,hierarchy,parent=property crimes - THEMATIC
+theft,theft,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Top Camp (settlement),Top Camp (settlement),hierarchy,parent=Greater Megalong
 tourism,tourism,hierarchy,parent=economic activities
 tourism,tourism,hierarchy,parent=Industries - THEMATIC
 tourism,tourism,hierarchy,parent=tourism activities - THEMATIC
@@ -1325,10 +1291,15 @@ tramway,tramway,hierarchy,parent=mining transport - THEMATIC
 transport,transport,hierarchy,parent=economic activities
 transport & infrastructure,transport & infrastructure,hierarchy,parent=(thematic grouping)
 transport & logistics business,transport & logistics business,hierarchy,parent=transport & logistics businesses (singular generic term)
+transport & logistics businesses,transport & logistics businesses,hierarchy,parent=commercial businesses
 transport accidents,transport accidents,hierarchy,parent=accidents
 transport infrastructure,transport infrastructure,hierarchy,parent=infrastructure
 truck system,truck system,hierarchy,parent=economic activities
+Trucking,Trucking,hierarchy,parent=transport & logistics businesses
+Trucking,Trucking,hierarchy,parent=transport
+Trucking,Trucking,hierarchy,parent=Commercial transport - THEMATIC
 trucking,truck system,synonym,"Historical term for the truck system - 19th century exploitative labor practice of paying workers in goods, credit, or company store tokens instead of cash wages (outlawed by NSW Truck Act 1900)"
+U.A.O.D.,United Ancient Order of Druids,synonym,Acronym for United Ancient Order of Druids
 unaffiliated lodge,unaffiliated lodge,hierarchy,parent=unaffiliated lodges
 unaffiliated lodges,unaffiliated lodges,hierarchy,parent=lodges
 unemployment,unemployment,hierarchy,parent=Economic distress - THEMATIC
@@ -1342,6 +1313,7 @@ unemployment relief,unemployment relief,hierarchy,parent=Economic distress - THE
 unemployment relief,unemployment relief,hierarchy,parent=Economic hardship - THEMATIC
 unions,unions,hierarchy,parent=labour organisations
 unions,unions,hierarchy,parent=Labour relations - THEMATIC
+United Ancient Order of Druids,United Ancient Order of Druids,hierarchy,parent=lodges
 unlicensed sales,unlicensed sales,hierarchy,parent=alcohol-related
 utilities,utilities,hierarchy,parent=infrastructure
 utilities,utilities,hierarchy,parent=transport & infrastructure - THEMATIC
@@ -1352,13 +1324,31 @@ victims of crime & violence,victims of crime & violence,hierarchy,parent=justice
 victims of crime & violence,victims of crime & violence,hierarchy,parent=Social issues - THEMATIC (virtual grouping)
 violent crimes,violent crimes,hierarchy,parent=crimes - THEMATIC
 volunteer rifle reserves,volunteer rifle reserves,hierarchy,parent=military organisations
+Vulnerable populations,Vulnerable populations,hierarchy,parent=Social issues - THEMATIC
+W Green,W Green,hierarchy,parent=hotelliers
+W. Green,W. Green,hierarchy,parent=hotelliers
+Wallerawang Coursing Club,Wallerawang Coursing Club,hierarchy,parent=coursing clubs
 waterfall,waterfall,hierarchy,parent=waterfalls (singular generic term)
 waterfalls,waterfalls,hierarchy,parent=natural features
 waterfalls,waterfalls,hierarchy,parent=tourist attractions - THEMATIC
-weather,weather,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+Watkins family,Watkins family,hierarchy,parent=families
+Waudby & Co.,Waudby and Company,synonym,Abbreviated form with ampersand
+Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
+Waudby's Hall,Waudby's Hall,hierarchy,parent=halls
 weather,weather,hierarchy,parent=physical phenomena
 weather,weather,hierarchy,parent=weather & climate - THEMATIC
+weather,weather,keep,Substring coincidence - semantically unrelated concepts (automated triage)
 weather & climate,weather & climate,hierarchy,parent=environment & weather - THEMATIC
+Wentworth Falls,Wentworth Falls,hierarchy,parent=towns - THEMATIC
+Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=hotels
+Wentworth Falls Progress Association,Wentworth Falls Progress Association,hierarchy,parent=progress committees
+Wentworth Falls Reserve,Wentworth Falls Reserve,hierarchy,parent=reserves
+Wentworth Falls Reserves,Wentworth Falls Reserves,hierarchy,parent=reserves
+Wentworth Falls Reserves,Wentworth Falls Reserve,synonym,Plural variant - standardised to singular
+Wesleyan Church (building),Wesleyan Church (building),hierarchy,parent=churches
+Western Rifle Association,Western Rifle Association,hierarchy,parent=rifle clubs
+Whiskey,Whisky,merge,Variant spelling - standardise to Whisky
+Whiskey,Whisky,synonym,Alternative spelling of whisky (both spellings valid)
 whisky,whisky,hierarchy,parent=spirits
 wholesale liquor business,wholesale liquor business,hierarchy,parent=liquor trade
 widows,widows,hierarchy,parent=demographic groups
@@ -1377,6 +1367,9 @@ women,women,hierarchy,parent=women as demographic group - THEMATIC
 women & gender,women & gender,hierarchy,parent=(thematic grouping)
 women as demographic group,women as demographic group,hierarchy,parent=women & gender - THEMATIC
 women's sports,women's sports,hierarchy,parent=sport & recreation - THEMATIC
+Workforce,Workforce,hierarchy,parent=Economy & Labour - THEMATIC
+World War I,World War I,hierarchy,parent=historical events
+World War I,World War I,hierarchy,parent=military events - THEMATIC
+World War I,World War I,hierarchy,parent=Military events - THEMATIC
 youth sports,youth sports,hierarchy,parent=sport & recreation - THEMATIC
-corroboree,corroboree,hierarchy,parent=cultural events
-corroboree,corroboree,hierarchy,parent=Indigenous peoples - THEMATIC
+Zig Zag,Zig Zag,hierarchy,parent=railway infrastructure

@@ -5,12 +5,10 @@ environment & weather
 ├── Natural resources
 │   ├── coal
 │   └── shale mines
-│       ├── Hartley Vale Shale Mine
-│       ├── Katoomba Shale Mine
-│       ├── Megalong Shale Mines
-│       ├── Nellie's Glen Shale Mine
-│       ├── Ruined Castle Shale Mine
-│       └── shale mine
+│       ├── Katoomba Shale Mine (facility)
+│       ├── Megalong Shale Mines (facility)
+│       ├── Nellie's Glen Shale Mine (facility)
+│       └── shale mine (facility)
 ├── animals
 │   ├── animal
 │   ├── domestic animals
@@ -21,15 +19,9 @@ environment & weather
 │       └── wild horses
 ├── natural features
 │   ├── caves & geological features
-│   │   ├── Jenolan Caves
-│   │   │   └── Jenolan Caves Road
-│   │   └── Jenolan Caves Road
+│   │   └── Jenolan Caves
 │   ├── gullies
 │   │   ├── Break Neck Gully
-│   │   ├── Nellie's Glen
-│   │   │   ├── Nellie's Glen Road
-│   │   │   ├── Nellie's Glen Shale Mine
-│   │   │   └── Nellie's Glen Track
 │   │   └── Nellie's Glen (gully)
 │   ├── mountain features
 │   │   ├── Narrow Neck
@@ -54,6 +46,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 46
+  Total nodes in theme: 38
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

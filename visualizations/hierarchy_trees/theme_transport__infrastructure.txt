@@ -15,7 +15,6 @@ transport & infrastructure
 │   ├── Jenolan Caves Road
 │   ├── Katoomba Street
 │   ├── Nellie's Glen Road
-│   ├── Nellie's Glen Track
 │   └── road
 └── utilities
     ├── gas
@@ -28,6 +27,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 20
+  Total nodes in theme: 19
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

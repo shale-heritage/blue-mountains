@@ -4,34 +4,20 @@ PRIMARY FACET: Places
 Places
 ├── mining districts
 │   ├── Hartley Vale mining district
-│   │   └── Hartley Vale mines
-│   ├── Nellie's Glen
-│   │   ├── Nellie's Glen Road
-│   │   ├── Nellie's Glen Shale Mine
-│   │   └── Nellie's Glen Track
+│   │   └── Hartley Vale Shale Mine (site)
 │   ├── Nellie's Glen mining district
 │   │   ├── Nellie's Glen (settlement)
 │   │   └── Nellie's Glen Shale Mine (site)
-│   ├── Ruined Castle
-│   │   └── Ruined Castle Shale Mine
 │   ├── Ruined Castle mining district
 │   │   ├── Ruined Castle (settlement)
 │   │   └── Ruined Castle Shale Mine (site)
-│   ├── South Clifton
-│   │   └── South Clifton Tunnel Mine
 │   └── South Clifton (Illawarra)
 │       └── South Clifton Tunnel Mine (site)
 ├── natural features
 │   ├── caves & geological features
-│   │   ├── Jenolan Caves
-│   │   │   └── Jenolan Caves Road
-│   │   └── Jenolan Caves Road
+│   │   └── Jenolan Caves
 │   ├── gullies
 │   │   ├── Break Neck Gully
-│   │   ├── Nellie's Glen
-│   │   │   ├── Nellie's Glen Road
-│   │   │   ├── Nellie's Glen Shale Mine
-│   │   │   └── Nellie's Glen Track
 │   │   └── Nellie's Glen (gully)
 │   ├── mountain features
 │   │   ├── Narrow Neck
@@ -75,6 +61,7 @@ Places
     │   ├── Middle Camp (settlement)
     │   └── Top Camp (settlement)
     ├── Hartley Vale
+    ├── Helensburgh
     ├── Katoomba
     │   ├── Carrington
     │   │   └── Katoomba Street
@@ -99,6 +86,6 @@ Places
 
 
 STATISTICS:
-  Total nodes in facet: 95
+  Total nodes in facet: 82
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

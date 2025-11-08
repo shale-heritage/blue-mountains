@@ -16,9 +16,9 @@ A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,drinking (alcohol) | rum
 Mountain Mixtures.,29 April 1892,Katoomba Times,Alcohol,Drunkenness | drunkenness (intoxication) | beer | liquor trade | Lithgow,alcohol_rationalisation_report,Item #2
 Mountain Mixtures,25 August 1893,Katoomba Times,Alcohol,drinking (alcohol) | Whisky | beer | rum | brandy | liquor trade | beer sales | drunkenness (intoxication) | Megalong Valley,alcohol_rationalisation_report,Item #3 - enhanced with RETAGGING_DECISIONS tags
 Mountain Mixtures.,10 February 1893,Katoomba Times,Alcohol,beer | liquor trade | beer sales,alcohol_rationalisation_report,Item #4 - enhanced with RETAGGING_DECISIONS tags
-Found dead.,28 January 1893,Nepean Times,Alcohol,drinking (alcohol) | drunkenness (intoxication) | death | Inquests | Ruined Castle Shale Mine | South Katoomba,alcohol_rationalisation_report,Item #5
+Found dead.,28 January 1893,Nepean Times,Alcohol,drinking (alcohol) | drunkenness (intoxication) | death | Inquests | Ruined Castle Shale Mine (site) | South Katoomba,alcohol_rationalisation_report,Item #5
 Mountain Mixtures.,3 March 1893,Katoomba Times,Alcohol,liquor trade | hotellier | fire | Megalong Valley | Oberon,alcohol_rationalisation_report,Item #6
-Katoomba Court.,14 October 1892,Katoomba Times,Alcohol,liquor licensing | unlicensed sales | Whisky | drinking (alcohol) | beer sales | wine sales | P. Mullany and Company | Nellie's Glen,alcohol_rationalisation_report,Item #7 - enhanced with RETAGGING_DECISIONS tags
+Katoomba Court.,14 October 1892,Katoomba Times,Alcohol,liquor licensing | unlicensed sales | Whisky | drinking (alcohol) | beer sales | wine sales | P. Mullany and Company | Nellie's Glen (settlement),alcohol_rationalisation_report,Item #7 - enhanced with RETAGGING_DECISIONS tags
 Katoomba Police Court.,21 March 1891,Katoomba Times,Alcohol,liquor licensing | serving alcohol to minors | Whisky | adolescents,alcohol_rationalisation_report,Item #8
 Katoomba Court.,17 March 1893,Katoomba Times,Alcohol,drinking (alcohol) | Drunkenness | drunkenness (intoxication) | theft | Whisky | rum | gin | shipwright | South Katoomba,alcohol_rationalisation_report,Item #9
 Megalong Matters.,9 September 1892,Katoomba Times,Alcohol,drinking (alcohol) | drunkenness (intoxication) | wine | liquor trade | Indigenous Australians | publican | Megalong Valley,alcohol_rationalisation_report,Item #10
@@ -53,10 +53,10 @@ Mountain Mixtures.,4 May 1894,Katoomba Times,Accommodation,hotel | Manuell,accom
 Lawson.,5 May 1894,Nepean Times,Accommodation,hotel | Mr Wilson,accommodation_approval,Item #28
 Katoomba Police Court.,1 December 1905,Mountaineer,Accommodation,Railway Hotel | Katoomba,accommodation_approval,Item #29
 A Public Meeting.,13 January 1905,Mountaineer,Accommodation,TBD,accommodation_approval,MODIFIED: No tags; add to (new) to-do list for content extraction
-"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Accommodation,hotel | Mrs Long | Nellie's Glen,accommodation_approval,Item #31
+"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Accommodation,hotel | Mrs Long | Nellie's Glen (settlement) | Nellie's Glen (gully),accommodation_approval,Item #31
 Town Talk.,26 August 1904,Blue Mountain Gazette,Accommodation,Railway Hotel | Mrs Brown | South Katoomba | people | Bashford,accommodation_approval,Item (modified with 1 additional tags)
 Megalong Notes.,21 March 1902,Mountaineer,Accommodation,hotel | Mrs Long,accommodation_approval,Item #33
-Narrow Neck.,27 December 1901,Mountaineer,Accommodation,Megalong Hotel | Nellie's Glen | towns | Megalong,accommodation_approval,Item (modified with 1 additional tags)
+Narrow Neck.,27 December 1901,Mountaineer,Accommodation,Megalong Hotel | Nellie's Glen (gully) | towns | Megalong,accommodation_approval,Item (modified with 1 additional tags)
 The Rockley Game.,18 March 1898,Mountaineer,Accommodation,Grant Hotel | Imperial Hotel,accommodation_approval,Item #35
 The Inquest.,3 July 1896,Mountaineer,Accommodation,Katoomba Hotel | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
 Notice of Application for a Publican's Licence,19 June 1896,Mountaineer,Accommodation,Delaney's Family Hotel | regulatory processes | demographic groups | towns | hotel licensing | Delaney family | Megalong,accommodation_approval,Item (modified with 3 additional tags)
@@ -88,7 +88,7 @@ Katoomba.,19 December 1885,Nepean Times,Accommodation,hotel | Brown,accommodatio
 Megalong Valley.,27 October 1893,Katoomba Times,Accommodation,hotel | Mr Delaney | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
 Katoomba.,24 February 1883,Nepean Times,Accommodation,Great Western Hotel | Mr A. G. Rowell | Oxford Hotel (Sydney) | Sydney,accommodation_approval,Item #62
 Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Accommodation,Megalong Hotel | Megalong | regulatory processes | publican's licensing,accommodation_approval,Item (modified with 1 additional tags)
-The Megalong Hotel,21 September 1894,Mountaineer,Accommodation,Megalong Hotel | Megalong | Katoomba | Nellie's Glen,accommodation_approval,Item #64
+The Megalong Hotel,21 September 1894,Mountaineer,Accommodation,Megalong Hotel | Megalong | Katoomba | Nellie's Glen (gully) | Nellie's Glen (settlement),accommodation_approval,Item #64
 Katoomba Items.,28 April 1899,Lithgow Mercury,Post,postmaster | post office | Mrs. H. Corston | Mrs. A. Smith,post_tag_action_plan,Item #1
 Local Jottings.,26 April 1890,Katoomba Times,Post,postmaster | postboy | post office,post_tag_action_plan,Item #2
 Megalong Matters.,5 June 1896,Mountaineer,Post,postmaster | post office | Mrs. James,post_tag_action_plan,Item #3
@@ -122,8 +122,8 @@ Megalong Valley.,23 June 1893,Unknown,,horses | horseborne transportation | post
 [untitled],29 June 1889,Katoomba Times,Drinking,drinking (alcohol),drinking_consolidation,Consolidate Drinking to Drinking (alcohol)
 Katoomba Municipal Elections.,5 July 1890,Katoomba Times,Drinking,drinking (alcohol),drinking_consolidation,Consolidate Drinking to Drinking (alcohol) - item mentions drunkenness
 Death of Mrs. Nimmo,3 December 1926,Blue Mountain Echo,Family Hotel,Katoomba Family Hotel | Mr Joe Nimmo | Mrs (Joe) Nimmo | Katoomba,family_hotels_rationalization,"Change generic ""Family Hotel"" to specific ""Katoomba Family Hotel"" - add owners and location"
-Mountain Mixtures.,9 September 1892,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site) | Nellie's Glen Shale Mine | Ruined Castle Shale Mine (site) | Ruined Castle Shale Mine,orphaned_tags_retagging_decisions,Mining settlements #1
-Unionism of To-day.,1 September 1893,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site) | Nellie's Glen Shale Mine,orphaned_tags_retagging_decisions,Mining settlements #2
+Mountain Mixtures.,9 September 1892,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site) | Ruined Castle Shale Mine (site),orphaned_tags_retagging_decisions,Mining settlements #1
+Unionism of To-day.,1 September 1893,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site),orphaned_tags_retagging_decisions,Mining settlements #2
 Megalong Mines.,1 September 1893,Katoomba Times,Mining settlements | Trucking,Nellie's Glen (settlement) | Bonnie Doon Track | Nellie's Glen (gully) | miners' dwellings | truck system,orphaned_tags_retagging_decisions,Mining settlements #3 + Trucking
 Great Wentworth Falls Coal and Shale Mining Company.,31 August 1885,Evening News,Mining settlements,Great Wentworth Falls Coal and Shale Mining Company,orphaned_tags_retagging_decisions,Mining settlements #4 - add company tag
 Megalong Valley.,18 August 1893,Katoomba Times,Mining settlements,disease | Nellie's Glen (settlement) | Nellie's Glen Road | Break Neck Gully,orphaned_tags_retagging_decisions,Mining settlements #5
@@ -296,100 +296,100 @@ Katoomba.,14 July 1888,Nepean Times,Weather,weather,high_impact_mappings,Correct
 Katoomba.,21 April 1903,Lithgow Mercury,Weather,weather,high_impact_mappings,Corrected mapping to generic singular leaf
 Katoomba.,19 December 1885,Nepean Times,Weather,weather,high_impact_mappings,Corrected mapping to generic singular leaf
 Megalong Matters.,10 January 1896,Mountaineer,Weather,weather,high_impact_mappings,Corrected mapping to generic singular leaf
-NARROW ESCAPE OF SHALE STACK.,6 January 1905,Daily Telegraph,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Items.,28 April 1899,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,4 December 1891,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,22 January 1892,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,4 August 1905,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,16 June 1893,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,30 October 1903,Blue Mountain Gazette,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,25 May 1889,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,21 September 1889,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,29 April 1892,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-A.K.O. & M. Co.'s Meeting.,27 December 1901,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Kembla Disaster Survivor: Death of Mr. J. J. Meredith,25 November 1940,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-John Britty North.,6 March 1909,Blue Mountain Echo,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-[untitled],22 January 1906,Evening News,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-MINER INJURED AT KATOOMBA.,31 July 1905,Daily Telegraph,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,26 August 1904,Blue Mountain Gazette,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-The Katoomba Mines.,24 November 1903,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,2 October 1903,Blue Mountain Gazette,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Work at the Mines.,17 April 1903,Blue Mountain Gazette,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Industries.,7 April 1903,Evening News,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-LOST IN A SHALE MINE.,15 April 1903,Evening News,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Our Coal and Shale Mines.,9 January 1903,Blue Mountain Gazette,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-The Katoomba Shale Mine.,6 January 1903,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba South Mines.,9 December 1902,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Shale Mine. Work To Be Resumed.,2 December 1902,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mining.,15 June 1897,Evening News,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Current Events.,29 March 1897,Newcastle Morning Herald and Miners' Advocate,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Current Events.,26 October 1896,Newcastle Morning Herald and Miners' Advocate,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mining.,19 September 1896,Newcastle Morning Herald and Miners' Advocate,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mining.,25 August 1896,Evening News,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mining.,19 May 1896,Evening News,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-The Gold Fields.,21 April 1896,Evening News,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Coal and Shale Mines.,7 June 1895,Mountaineer,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-The Megalong Shale Mines.,21 December 1893,National Advocate,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,3 November 1893,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,10 February 1893,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,16 September 1892,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-End of the Katoomba Strike.,11 July 1892,Sydney Morning Herald,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Local and General.,7 July 1892,Bathurst  Free Press and Mining Journal,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,11 March 1892,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Shale Miners.,19 September 1891,Daily Telegraph,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Local News.,6 September 1890,Nepean Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Rich Mineral Deposits.,29 October 1889,Australian Star,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,7 January 1888,Nepean Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,29 September 1888,Nepean Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Great Wentworth Falls Coal and Shale Mining Company.,31 August 1885,Evening News,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,8 July 1908,Lithgow Mercury,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Valley.,27 October 1893,Katoomba Times,Shale mines,shale mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,26 April 1890,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-News in Brief,9 October 1903,Mountaineer,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,7 July 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,21 October 1892,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Matters.,5 August 1892,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Matters.,26 August 1892,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,13 May 1904,Blue Mountain Gazette,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,9 September 1892,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Jottings.,23 May 1891,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,19 July 1890,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,13 March 1903,Blue Mountain Gazette,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-The Target.,5 October 1898,National Advocate,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Moutains Mixtures.,17 November 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,23 March 1894,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Girls Cricket Match at Katoomba.,26 April 1895,Mountaineer,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-The Rockley Game.,7 February 1896,Mountaineer,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,4 December 1891,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Hartley Vale.,13 February 1911,Lithgow Mercury,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Matters.,5 June 1896,Mountaineer,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Valley.,6 October 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Police Court.,21 September 1894,Mountaineer,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Granted,26 March 1892,Nepean Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,22 January 1892,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,23 June 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,4 August 1905,Lithgow Mercury,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,30 June 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,16 June 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mines School of Arts.,2 May 1891,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,30 October 1903,Blue Mountain Gazette,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,25 May 1889,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Sporting.,3 June 1898,Lithgow Mercury,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Footballers' Social at Hartley Vale.,20 October 1899,Lithgow Mercury,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,21 September 1889,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,20 November 1891,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,29 April 1892,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,9 June 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-[untitled],29 June 1889,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Football.,22 April 1904,Blue Mountain Gazette,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,9 July 1901,Lithgow Mercury,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-At Katoomba,10 November 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Cricket Club at the Mines.,25 August 1893,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Hartley Vale.,16 October 1891,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Opening of the Mines School of Arts.,5 September 1891,Katoomba Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Athletic Sports.,12 December 1885,Nepean Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,12 December 1885,Nepean Times,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+NARROW ESCAPE OF SHALE STACK.,6 January 1905,Daily Telegraph,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Items.,28 April 1899,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,4 December 1891,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,22 January 1892,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,4 August 1905,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,16 June 1893,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,30 October 1903,Blue Mountain Gazette,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,25 May 1889,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,21 September 1889,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,29 April 1892,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+A.K.O. & M. Co.'s Meeting.,27 December 1901,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Kembla Disaster Survivor: Death of Mr. J. J. Meredith,25 November 1940,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+John Britty North.,6 March 1909,Blue Mountain Echo,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+[untitled],22 January 1906,Evening News,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+MINER INJURED AT KATOOMBA.,31 July 1905,Daily Telegraph,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,26 August 1904,Blue Mountain Gazette,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+The Katoomba Mines.,24 November 1903,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,2 October 1903,Blue Mountain Gazette,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Work at the Mines.,17 April 1903,Blue Mountain Gazette,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Industries.,7 April 1903,Evening News,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+LOST IN A SHALE MINE.,15 April 1903,Evening News,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Our Coal and Shale Mines.,9 January 1903,Blue Mountain Gazette,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+The Katoomba Shale Mine.,6 January 1903,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba South Mines.,9 December 1902,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Shale Mine. Work To Be Resumed.,2 December 1902,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mining.,15 June 1897,Evening News,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Current Events.,29 March 1897,Newcastle Morning Herald and Miners' Advocate,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Current Events.,26 October 1896,Newcastle Morning Herald and Miners' Advocate,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mining.,19 September 1896,Newcastle Morning Herald and Miners' Advocate,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mining.,25 August 1896,Evening News,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mining.,19 May 1896,Evening News,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+The Gold Fields.,21 April 1896,Evening News,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Coal and Shale Mines.,7 June 1895,Mountaineer,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+The Megalong Shale Mines.,21 December 1893,National Advocate,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,3 November 1893,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,10 February 1893,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,16 September 1892,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+End of the Katoomba Strike.,11 July 1892,Sydney Morning Herald,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Local and General.,7 July 1892,Bathurst  Free Press and Mining Journal,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,11 March 1892,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Shale Miners.,19 September 1891,Daily Telegraph,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Local News.,6 September 1890,Nepean Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Rich Mineral Deposits.,29 October 1889,Australian Star,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,7 January 1888,Nepean Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,29 September 1888,Nepean Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Great Wentworth Falls Coal and Shale Mining Company.,31 August 1885,Evening News,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,8 July 1908,Lithgow Mercury,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Valley.,27 October 1893,Katoomba Times,Shale mine (facility)s,shale mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,26 April 1890,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+News in Brief,9 October 1903,Mountaineer,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,7 July 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,21 October 1892,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Matters.,5 August 1892,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Matters.,26 August 1892,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,13 May 1904,Blue Mountain Gazette,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,9 September 1892,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Jottings.,23 May 1891,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,19 July 1890,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,13 March 1903,Blue Mountain Gazette,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+The Target.,5 October 1898,National Advocate,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Moutains Mixtures.,17 November 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,23 March 1894,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Girls Cricket Match at Katoomba.,26 April 1895,Mountaineer,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+The Rockley Game.,7 February 1896,Mountaineer,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,4 December 1891,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Hartley Vale.,13 February 1911,Lithgow Mercury,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Matters.,5 June 1896,Mountaineer,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Valley.,6 October 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Police Court.,21 September 1894,Mountaineer,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Granted,26 March 1892,Nepean Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,22 January 1892,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,23 June 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,4 August 1905,Lithgow Mercury,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,30 June 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,16 June 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mines School of Arts.,2 May 1891,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,30 October 1903,Blue Mountain Gazette,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,25 May 1889,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Sporting.,3 June 1898,Lithgow Mercury,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Footballers' Social at Hartley Vale.,20 October 1899,Lithgow Mercury,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,21 September 1889,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,20 November 1891,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,29 April 1892,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,9 June 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+[untitled],29 June 1889,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Football.,22 April 1904,Blue Mountain Gazette,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,9 July 1901,Lithgow Mercury,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+At Katoomba,10 November 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Cricket Club at the Mines.,25 August 1893,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Hartley Vale.,16 October 1891,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Opening of the Mines School of Arts.,5 September 1891,Katoomba Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Athletic Sports.,12 December 1885,Nepean Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,12 December 1885,Nepean Times,Recreation for mine (facility)rs,recreation for miners,high_impact_mappings,Corrected mapping to generic singular leaf
 "Supreme Court, Sydney.",2 June 1893,Katoomba Times,Court,court,high_impact_mappings,Corrected mapping to generic singular leaf
 A Charge of Rape.,6 September 1890,Nepean Times,Court,court,high_impact_mappings,Corrected mapping to generic singular leaf
 Mountain Mixtures.,21 October 1892,Katoomba Times,Court,court,high_impact_mappings,Corrected mapping to generic singular leaf
@@ -519,40 +519,40 @@ Hartley Vale.,16 October 1891,Katoomba Times,Sports,recreation activity,high_imp
 Katoomba Athletic Sports.,12 December 1885,Nepean Times,Sports,recreation activity,high_impact_mappings,Corrected mapping to generic singular leaf
 Katoomba.,19 December 1885,Nepean Times,Sports,recreation activity,high_impact_mappings,Corrected mapping to generic singular leaf
 Katoomba.,12 December 1885,Nepean Times,Sports,recreation activity,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,26 April 1890,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-News in Brief,9 October 1903,Mountaineer,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,7 July 1893,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,21 October 1892,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Matters.,5 August 1892,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,13 May 1904,Blue Mountain Gazette,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,19 July 1890,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,13 March 1903,Blue Mountain Gazette,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Moutains Mixtures.,17 November 1893,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mines School of Arts.,2 May 1891,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,30 October 1903,Blue Mountain Gazette,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,29 April 1892,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Concert in Aid of Katoomba Miners' Families.,4 May 1894,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,4 May 1894,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Brevities.,10 April 1894,Evening News,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Lawson.,5 May 1894,Nepean Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-The Unemployed at Katoomba.,17 April 1894,Daily Telegraph,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-A Public Meeting.,13 January 1905,Mountaineer,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,22 Jul 1904,Blue Mountain Gazette,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,9 July 1901,Lithgow Mercury,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Death of Canon Kemmis.,25 March 1897,Sydney Morning Herald,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,29 December 1893,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,2 June 1893,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Wedding Favors.,25 March 1893,Australian Town and Country Journal,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,2 December 1892,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,18 November 1892,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,11 March 1892,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Opening of the Mines School of Arts.,5 September 1891,Katoomba Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,29 September 1888,Nepean Times,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,8 July 1908,Lithgow Mercury,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba. Mine Operations Suspended.,27 May 1904,Lithgow Mercury,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,21 April 1903,Lithgow Mercury,Church,church,high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,26 April 1890,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+News in Brief,9 October 1903,Mountaineer,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,7 July 1893,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,21 October 1892,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Matters.,5 August 1892,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,13 May 1904,Blue Mountain Gazette,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,19 July 1890,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,13 March 1903,Blue Mountain Gazette,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Moutains Mixtures.,17 November 1893,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mines School of Arts.,2 May 1891,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,30 October 1903,Blue Mountain Gazette,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,29 April 1892,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Concert in Aid of Katoomba Miners' Families.,4 May 1894,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,4 May 1894,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Brevities.,10 April 1894,Evening News,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Lawson.,5 May 1894,Nepean Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+The Unemployed at Katoomba.,17 April 1894,Daily Telegraph,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+A Public Meeting.,13 January 1905,Mountaineer,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,22 Jul 1904,Blue Mountain Gazette,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,9 July 1901,Lithgow Mercury,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Death of Canon Kemmis.,25 March 1897,Sydney Morning Herald,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,29 December 1893,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,2 June 1893,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Wedding Favors.,25 March 1893,Australian Town and Country Journal,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,2 December 1892,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,18 November 1892,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,11 March 1892,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Opening of the Mines School of Arts.,5 September 1891,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,29 September 1888,Nepean Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,8 July 1908,Lithgow Mercury,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba. Mine Operations Suspended.,27 May 1904,Lithgow Mercury,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,21 April 1903,Lithgow Mercury,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
 News in Brief,9 October 1903,Mountaineer,Railway,railway,high_impact_mappings,Corrected mapping to generic singular leaf
 Town Talk.,13 May 1904,Blue Mountain Gazette,Railway,railway,high_impact_mappings,Corrected mapping to generic singular leaf
 Moutains Mixtures.,17 November 1893,Katoomba Times,Railway,railway,high_impact_mappings,Corrected mapping to generic singular leaf
@@ -890,24 +890,24 @@ Katoomba Athletic Sports.,12 December 1885,Nepean Times,Dances,dance,high_impact
 Megalong Matters,28 Oct 1892,Katoomba Times,Dances,dance,high_impact_mappings,Corrected mapping to generic singular leaf
 Katoomba.,21 April 1903,Lithgow Mercury,Dances,dance,high_impact_mappings,Corrected mapping to generic singular leaf
 Megalong Valley.,14 July 1893,Katoomba Times,Dances,dance,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,19 July 1890,Katoomba Times,Colliery,coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-The Collieries and Big-Head Mines of New South Wales,1887,,Colliery,coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-New South Wales Railway Enquiry,13 December 1905,Advertiser,Colliery,coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Industries.,7 April 1903,Evening News,Colliery,coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,19 July 1890,Katoomba Times,Colliery,coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+The Collieries and Big-Head Mines of New South Wales,1887,,Colliery,coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+New South Wales Railway Enquiry,13 December 1905,Advertiser,Colliery,coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Industries.,7 April 1903,Evening News,Colliery,coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
 Mountain Mixtures.,21 October 1892,Katoomba Times,Druid's Lodge,Druid's Lodge (local lodge),high_impact_mappings,Corrected mapping to generic singular leaf
 Jottings.,23 May 1891,Katoomba Times,Druid's Lodge,Druid's Lodge (local lodge),high_impact_mappings,Corrected mapping to generic singular leaf
 Mountain Mixtures.,2 June 1893,Katoomba Times,Druid's Lodge,Druid's Lodge (local lodge),high_impact_mappings,Corrected mapping to generic singular leaf
 Mountain Mixtures.,17 June 1892,Katoomba Times,Druid's Lodge,Druid's Lodge (local lodge),high_impact_mappings,Corrected mapping to generic singular leaf
 Girls Cricket Match at Katoomba.,26 April 1895,Mountaineer,Girls' cricket,cricket | women | adolescents,high_impact_mappings,Corrected mapping to generic singular leaf
 The Rockley Game.,7 February 1896,Mountaineer,Girls' cricket,cricket | women | adolescents,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,23 March 1894,Katoomba Times,Katoomba South mines,Katoomba South | coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Lost in the Mine.,17 April 1903,Mountaineer,Katoomba South mines,Katoomba South | coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba South Mines.,9 December 1902,Lithgow Mercury,Katoomba South mines,Katoomba South | coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-The Muont (sic) Kembla Disaster.,8 August 1902,Mountaineer,Katoomba South mines,Katoomba South | coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,11 March 1892,Katoomba Times,Katoomba South mines,Katoomba South | coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Miners' Striek at Katoomba South.,14 July 1891,Sydney Morning Herald,Katoomba South mines,Katoomba South | coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,20 August 1901,Lithgow Mercury,Katoomba South mines,Katoomba South | coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
-The South Katoomba Mine.,1 March 1901,Lithgow Mercury,Katoomba South mines,Katoomba South | coal mine,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,23 March 1894,Katoomba Times,Katoomba South mine (facility)s,Katoomba South | coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Lost in the Mine.,17 April 1903,Mountaineer,Katoomba South mine (facility)s,Katoomba South | coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba South Mines.,9 December 1902,Lithgow Mercury,Katoomba South mine (facility)s,Katoomba South | coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+The Muont (sic) Kembla Disaster.,8 August 1902,Mountaineer,Katoomba South mine (facility)s,Katoomba South | coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,11 March 1892,Katoomba Times,Katoomba South mine (facility)s,Katoomba South | coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Miners' Striek at Katoomba South.,14 July 1891,Sydney Morning Herald,Katoomba South mine (facility)s,Katoomba South | coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,20 August 1901,Lithgow Mercury,Katoomba South mine (facility)s,Katoomba South | coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
+The South Katoomba Mine.,1 March 1901,Lithgow Mercury,Katoomba South mine (facility)s,Katoomba South | coal mine (facility),high_impact_mappings,Corrected mapping to generic singular leaf
 Katoomba Items.,28 April 1899,Lithgow Mercury,A.K.O. & M. Company,Australian Kerosene Oil and Mineral Company,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
 Mountain Mixtures.,23 March 1894,Katoomba Times,A.K.O. & M. Company,Australian Kerosene Oil and Mineral Company,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
 Mountain Mixtures.,4 December 1891,Katoomba Times,A.K.O. & M. Company,Australian Kerosene Oil and Mineral Company,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
@@ -1040,25 +1040,25 @@ Katoomba Court.,17 March 1893,Katoomba Times,Allen's Hotel,hotel | Allen,orphane
 Katoomba Athletic Sports.,12 December 1885,Nepean Times,Brown's Hotel,hotel | Brown,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
 Katoomba.,19 December 1885,Nepean Times,Brown's Hotel,hotel | Brown,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
 A Charge of Rape.,6 September 1890,Nepean Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-NARROW ESCAPE OF SHALE STACK.,6 January 1905,Daily Telegraph,Australian Kerosene Shale and Oil Company | Nellie's Glen,Australian Kerosene Oil and Mineral Company | Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+NARROW ESCAPE OF SHALE STACK.,6 January 1905,Daily Telegraph,Australian Kerosene Shale and Oil Company | Nellie's Glen,Australian Kerosene Oil and Mineral Company | Nellie's Glen Shale Mine (site) | mining accident,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 News in Brief,9 October 1903,Mountaineer,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,7 July 1893,Katoomba Times,I.O.O.F. Hall | Katoomba Tennis Club,Odd Fellows' Hall | Katoomba Lawn Tennis Club,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,21 October 1892,Katoomba Times,Ruined Castle,Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Town Talk.,13 May 1904,Blue Mountain Gazette,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Mountain Mixtures.,9 September 1892,Katoomba Times,I.O.O.F. Hall | Nellie's Glen | Ruined Castle,Odd Fellows' Hall | Nellie's Glen mining district | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Mountain Mixtures.,9 September 1892,Katoomba Times,I.O.O.F. Hall | Nellie's Glen | Ruined Castle,Odd Fellows' Hall | Nellie's Glen (settlement) | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Jottings.,23 May 1891,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Town Talk.,13 March 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Town Talk.,13 March 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,23 March 1894,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-The Rockley Game.,7 February 1896,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Mountain Mixtures.,4 December 1891,Katoomba Times,Hartley Vale | Mr David Brown | Nellie's Glen,Hartley Vale | Mr D Brown | Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+The Rockley Game.,7 February 1896,Mountaineer,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen (settlement),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Mountain Mixtures.,4 December 1891,Katoomba Times,Hartley Vale | Mr David Brown | Nellie's Glen,Hartley Vale | Mr D Brown | Nellie's Glen Shale Mine (site),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Hartley Vale.,13 February 1911,Lithgow Mercury,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Megalong Matters.,5 June 1896,Mountaineer,Nellie's Glen | Ruined Castle,Nellie's Glen mining district | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Megalong Matters.,5 June 1896,Mountaineer,Nellie's Glen | Ruined Castle,Nellie's Glen (gully) | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,22 January 1892,Katoomba Times,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,23 June 1893,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,30 June 1893,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,16 June 1893,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Local Jottings.,25 May 1889,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Local Jottings.,25 May 1889,Katoomba Times,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road | Nellie's Glen Shale Mine (site),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Footballers' Social at Hartley Vale.,20 October 1899,Lithgow Mercury,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Local Jottings.,21 September 1889,Katoomba Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,29 April 1892,Katoomba Times,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
@@ -1072,16 +1072,16 @@ West Wallsend.,10 October 1911,Newcastle Morning Herald and Miners' Advocate,Har
 Deplorable State.,14 February 1911,Illawarra Mercury,South Clifton Mine Co.,South Clifton Mine Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 South Clifton Fatality,31 May 1910,Illawarra Mercury,South Clifton Mine Co.,South Clifton Mine Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Bigamy.,4 August 1909,New South Wales Police Gazette and Weekly Record of Crime,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-John Britty North.,6 March 1909,Blue Mountain Echo,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+John Britty North.,6 March 1909,Blue Mountain Echo,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Shale Mine (site) | Nellie's Glen (settlement) | Nellie's Glen Road,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Missing Friends.,9 June 1909,New South Wales Police Gazette and Weekly Record of Crime,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Police Court.,1 December 1905,Mountaineer,Mr David Brown,Mr D Brown,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 MINER INJURED AT KATOOMBA.,31 July 1905,Daily Telegraph,Australian Kerosene Shale and Oil Company,Australian Kerosene Oil and Mineral Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-A Public Meeting.,13 January 1905,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+A Public Meeting.,13 January 1905,Mountaineer,Nellie's Glen,Nellie's Glen (gully),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Nellie's Glen,Nellie's Glen (settlement) | Nellie's Glen (gully),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Town Talk.,2 October 1903,Blue Mountain Gazette,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Work at the Mines.,17 April 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-The Katoomba Mines.,20 March 1903,Blue Mountain Gazette,Nellie's Glen | Ruined Castle,Nellie's Glen mining district | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Narrow Neck.,27 December 1901,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Work at the Mines.,17 April 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen Shale Mine (site),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+The Katoomba Mines.,20 March 1903,Blue Mountain Gazette,Nellie's Glen | Ruined Castle,Nellie's Glen Shale Mine (site) | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Narrow Neck.,27 December 1901,Mountaineer,Nellie's Glen,Nellie's Glen (gully),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mining.,15 June 1897,Evening News,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Current Events.,26 October 1896,Newcastle Morning Herald and Miners' Advocate,Ruined Castle,Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mining.,25 August 1896,Evening News,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
@@ -1089,13 +1089,13 @@ Mining.,19 May 1896,Evening News,Hartley Vale,Hartley Vale,orphaned_tags_final_r
 The Gold Fields.,21 April 1896,Evening News,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Police Court,13 December 1895,Mountaineer,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 [untitled],4 Novemeber 1895,Evening News,New South Wales Shale and Oil Co.,New South Wales Shale and Oil Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Brevities.,6 April 1894,Evening News,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Mountain Mixtures.,29 December 1893,Katoomba Times,I.O.O.F. Hall | Nellie's Glen,Odd Fellows' Hall | Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Brevities.,6 April 1894,Evening News,Nellie's Glen,Nellie's Glen (settlement),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Mountain Mixtures.,29 December 1893,Katoomba Times,I.O.O.F. Hall | Nellie's Glen,Odd Fellows' Hall | Nellie's Glen Shale Mine (site),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 The Megalong Shale Mines.,21 December 1893,National Advocate,Ruined Castle,Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Megalong Valley.,15 September 1893,Katoomba Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,3 November 1893,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures,14 July 1893,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Megalong Mines.,1 September 1893,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Megalong Mines.,1 September 1893,Katoomba Times,Nellie's Glen,Nellie's Glen (settlement) | Nellie's Glen (gully),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures,25 August 1893,Katoomba Times,I.O.O.F. Hall | Katoomba Tennis Club,Odd Fellows' Hall | Katoomba Lawn Tennis Club,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Court.,16 June 1893,Katoomba Times,Police | Ruined Castle,New South Wales Police | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,5 May 1893,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
@@ -1104,30 +1104,108 @@ Mountain Mixtures.,14 April 1893,Katoomba Times,I.O.O.F. Hall | Police,Odd Fello
 Mountain Mixtures.,10 February 1893,Katoomba Times,Hartley Vale | I.O.O.F. Hall,Hartley Vale | Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,2 December 1892,Katoomba Times,I.O.O.F. Hall | Ruined Castle,Odd Fellows' Hall | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,3 March 1893,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Mountain Mixtures.,25 November 1892,Katoomba Times,Nellie's Glen | Police,Nellie's Glen mining district | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Mountain Mixtures.,25 November 1892,Katoomba Times,Nellie's Glen | Police,Nellie's Glen Shale Mine (site) | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Police Court.,5 November 1892,Nepean Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Katoomba Court.,14 October 1892,Katoomba Times,Nellie's Glen | Police,Nellie's Glen mining district | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Katoomba Court.,14 October 1892,Katoomba Times,Nellie's Glen | Police,Nellie's Glen (settlement) | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,17 June 1892,Katoomba Times,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Police Court.,26 March 1892,Nepean Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Mountain Mixtures.,11 March 1892,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Hartley Vale.,16 October 1891,Katoomba Times,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Accident in Nellie's Glen.,27 July 1889,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Accident in Nellie's Glen.,27 July 1889,Katoomba Times,Nellie's Glen,Nellie's Glen (settlement),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Miners' Strike.,3 August 1887,Evening News,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Miners' Strike.,1 August 1887,Evening News,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Athletic Sports.,12 December 1885,Nepean Times,Mr David Brown,Mr D Brown,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 To the Editor of The Times.,8 September 1893,Katoomba Times,Ruined Castle,Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Court.,17 March 1893,Katoomba Times,Police | Ruined Castle,New South Wales Police | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba Court.,2 June 1893,Katoomba Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Katoomba Court.,4 November 1892,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Katoomba Court.,4 November 1892,Katoomba Times,Nellie's Glen,Nellie's Glen (settlement),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Megalong Matters,28 Oct 1892,Katoomba Times,New South Wales Shale and Oil Co.,New South Wales Shale and Oil Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba News.,29 June 1895,Nepean Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Megalong Matters.,9 September 1892,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Megalong Matters.,9 September 1892,Katoomba Times,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Hartley Vale.,2 February 1900,Lithgow Mercury,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba.,19 December 1885,Nepean Times,Mr David Brown,Mr D Brown,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Megalong Matters.,10 January 1896,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Megalong Valley.,1 September 1893,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Megalong Matters.,10 January 1896,Mountaineer,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Megalong Valley.,1 September 1893,Katoomba Times,Nellie's Glen,,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Hartley Vale | Police,Hartley Vale | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-The Megalong Hotel,21 September 1894,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+The Megalong Hotel,21 September 1894,Mountaineer,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen (settlement),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Megalong Valley.,23 June 1893,,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Megalong Notes.,2 May 1902,Mountaineer,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Tourist Sketch Map showing pathways at Nelly's Glen or Megalong Pass,1909,,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Tourist Sketch Map showing pathways at Nelly's Glen or Megalong Pass,1909,,Nellie's Glen,Nellie's Glen (gully),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+A Charge of Rape.,6 September 1890,Nepean Times,Police,Penrith Police Court,ambiguous_tags_decision_report,Item 1.1 - Police Court
+News in Brief,9 October 1903,Mountaineer,Police,police officer,ambiguous_tags_decision_report,Item 1.2 - generic police officer
+Jottings.,23 May 1891,Katoomba Times,Police,police officer,ambiguous_tags_decision_report,Item 1.3 - generic police officer
+Mountain Mixtures.,23 June 1893,Katoomba Times,Police,police officer | New South Wales Police,ambiguous_tags_decision_report,Item 1.4 - both generic and organization
+Local Jottings.,21 September 1889,Katoomba Times,Police,police officer | New South Wales Police,ambiguous_tags_decision_report,Item 1.5 - both generic and organization
+To-Day's Further Court Proceedings,1 December 1932,Lithgow Mercury,Police,police officer | New South Wales Police,ambiguous_tags_decision_report,Item 1.6 - both generic and organization
+Bigamy.,4 August 1909,New South Wales Police Gazette and Weekly Record of Crime,Police,Senior-constable Tomkins | New South Wales Police | Helensburgh,ambiguous_tags_decision_report,"Item 1.7 - named officer, organization, and town"
+Missing Friends.,9 June 1909,New South Wales Police Gazette and Weekly Record of Crime,Police,New South Wales Police,ambiguous_tags_decision_report,Item 1.8 - organization
+Town Talk.,2 October 1903,Blue Mountain Gazette,Police,Police Court,ambiguous_tags_decision_report,Item 1.9 - Police Court
+Katoomba Police Court,13 December 1895,Mountaineer,Police,Senior-Constable Illingworth | police officer | New South Wales Police | Police Court,ambiguous_tags_decision_report,"Item 1.10 - named officer, generic, organization, and court"
+Megalong Valley.,15 September 1893,Katoomba Times,Police,police officer,ambiguous_tags_decision_report,Item 1.11 - generic police officer
+Katoomba Court.,16 June 1893,Katoomba Times,Police,Constable John Illingworth | New South Wales Police,ambiguous_tags_decision_report,Item 1.12 - named officer and organization
+Mountain Mixtures.,14 April 1893,Katoomba Times,Police,police officer | Megalong,ambiguous_tags_decision_report,Item 1.13 - generic officer and town
+Mountain Mixtures.,3 March 1893,Katoomba Times,Police,police officer | Megalong,ambiguous_tags_decision_report,Item 1.14 - generic officer and town
+Mountain Mixtures.,25 November 1892,Katoomba Times,Police,police quarters | Katoomba,ambiguous_tags_decision_report,Item 1.15 - police quarters building and town
+Katoomba Police Court.,5 November 1892,Nepean Times,Police,Police Court,ambiguous_tags_decision_report,Item 1.16 - Police Court
+Katoomba Court.,14 October 1892,Katoomba Times,Police,New South Wales Police,ambiguous_tags_decision_report,Item 1.17 - organization
+Katoomba Police Court.,26 March 1892,Nepean Times,Police,police officer | New South Wales Police,ambiguous_tags_decision_report,Item 1.18 - generic and organization
+Mountain Mixtures.,11 March 1892,Katoomba Times,Police,police officer | Blackheath,ambiguous_tags_decision_report,Item 1.19 - generic officer and town
+Katoomba Miners' Strike.,3 August 1887,Evening News,Police,police officer | New South Wales Police,ambiguous_tags_decision_report,Item 1.20 - generic and organization
+Katoomba Miners' Strike.,1 August 1887,Evening News,Police,New South Wales Police | Penrith,ambiguous_tags_decision_report,Item 1.21 - organization and town
+Katoomba Court.,17 March 1893,Katoomba Times,Police,Constable John Illingworth,ambiguous_tags_decision_report,Item 1.22 - named officer
+Katoomba Court.,2 June 1893,Katoomba Times,Police,police officer,ambiguous_tags_decision_report,Item 1.23 - generic police officer
+Katoomba News.,29 June 1895,Nepean Times,Police,Police Court,ambiguous_tags_decision_report,Item 1.24 - Police Court
+Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Police,police station | Katoomba,ambiguous_tags_decision_report,Item 1.25 - police station and town
+Megalong Valley.,23 June 1893,,Police,police officer | New South Wales Police,ambiguous_tags_decision_report,Item 1.26 - generic and organization
+Megalong Notes.,2 May 1902,Mountaineer,Police,police officer | Katoomba,ambiguous_tags_decision_report,Item 1.27 - generic officer and town
+NARROW ESCAPE OF SHALE STACK.,6 January 1905,Daily Telegraph,Nellie's Glen,Nellie's Glen Shale Mine (site) | mining accident,ambiguous_tags_decision_report,Item 2.1 - shale mine and accident
+Mountain Mixtures.,9 September 1892,Katoomba Times,Nellie's Glen,Nellie's Glen (settlement),ambiguous_tags_decision_report,Item 2.2 - settlement (mining township)
+Town Talk.,13 March 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road,ambiguous_tags_decision_report,Item 2.3 - gully/road travel
+The Rockley Game.,7 February 1896,Mountaineer,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen (settlement),ambiguous_tags_decision_report,Item 2.4 - both gully and settlement
+Mountain Mixtures.,4 December 1891,Katoomba Times,Nellie's Glen,Nellie's Glen Shale Mine (site) | Nellie's Glen Shale Mine (facility),ambiguous_tags_decision_report,Item 2.5 - shale mine
+Megalong Matters.,5 June 1896,Mountaineer,Nellie's Glen,Nellie's Glen (gully),ambiguous_tags_decision_report,Item 2.6 - gully (approach for stock)
+Local Jottings.,25 May 1889,Katoomba Times,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road | Nellie's Glen Shale Mine (site),ambiguous_tags_decision_report,"Item 2.7 - gully, road, and mine"
+John Britty North.,6 March 1909,Blue Mountain Echo,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Shale Mine (facility) | Nellie's Glen (settlement) | Nellie's Glen Road,ambiguous_tags_decision_report,"Item 2.8 - comprehensive (gully named after daughter, mines, settlement, roads)"
+A Public Meeting.,13 January 1905,Mountaineer,Nellie's Glen,Nellie's Glen (gully),ambiguous_tags_decision_report,Item 2.9 - gully (geographic area affected by bushfire)
+"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Nellie's Glen,Nellie's Glen (settlement) | Nellie's Glen (gully),ambiguous_tags_decision_report,Item 2.10 - settlement and gully (foot of glen near hotel)
+Work at the Mines.,17 April 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen Shale Mine (site),ambiguous_tags_decision_report,Item 2.11 - the Glen = Nellie's Glen Shale Mine
+The Katoomba Mines.,20 March 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen Shale Mine (site),ambiguous_tags_decision_report,Item 2.12 - the Glen = Nellie's Glen Shale Mine
+Narrow Neck.,27 December 1901,Mountaineer,Nellie's Glen,Nellie's Glen (gully),ambiguous_tags_decision_report,Item 2.13 - gully (creek/watercourse)
+Brevities.,6 April 1894,Evening News,Nellie's Glen,Nellie's Glen (settlement),ambiguous_tags_decision_report,Item 2.14 - settlement (mining township with unemployment)
+Mountain Mixtures.,29 December 1893,Katoomba Times,Nellie's Glen,Nellie's Glen Shale Mine (facility),ambiguous_tags_decision_report,Item 2.15 - shale mine
+Megalong Mines.,1 September 1893,Katoomba Times,Nellie's Glen,Nellie's Glen (settlement) | Nellie's Glen (gully),ambiguous_tags_decision_report,Item 2.16 - settlement and gully
+Mountain Mixtures.,25 November 1892,Katoomba Times,Nellie's Glen,Nellie's Glen Shale Mine (site),ambiguous_tags_decision_report,Item 2.17 - shale mine (accident at)
+Katoomba Court.,14 October 1892,Katoomba Times,Nellie's Glen,Nellie's Glen (settlement),ambiguous_tags_decision_report,"Item 2.18 - settlement (sly grog shop, residents)"
+Accident in Nellie's Glen.,27 July 1889,Katoomba Times,Nellie's Glen,Nellie's Glen (settlement),ambiguous_tags_decision_report,Item 2.19 - settlement (resident's home)
+Katoomba Court.,4 November 1892,Katoomba Times,Nellie's Glen,Nellie's Glen (settlement),ambiguous_tags_decision_report,Item 2.20 - settlement (multiple residents)
+Megalong Matters.,9 September 1892,Katoomba Times,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road,ambiguous_tags_decision_report,Item 2.21 - gully and road (trip via)
+Megalong Matters.,10 January 1896,Mountaineer,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road,ambiguous_tags_decision_report,Item 2.22 - gully and road (horsemen via)
+The Megalong Hotel,21 September 1894,Mountaineer,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen (settlement),ambiguous_tags_decision_report,Item 2.24 - gully and settlement (hotel at foot of)
+Tourist Sketch Map showing pathways at Nelly's Glen or Megalong Pass,1909,,Nellie's Glen,Nellie's Glen (gully),ambiguous_tags_decision_report,Item 2.25 - gully (map feature)
+Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Hartley Vale,Hartley Vale | Hartley Vale Natives Football Club,ambiguous_tags_decision_report,Item 3.2 - settlement and football club
+Mountain Mixtures.,4 December 1891,Katoomba Times,Hartley Vale,Hartley Vale | Hartley Vale Shale Mine (site),ambiguous_tags_decision_report,Item 3.3 - settlement and mines
+Hartley Vale.,13 February 1911,Lithgow Mercury,Hartley Vale,Hartley Vale Cricket Club,ambiguous_tags_decision_report,Item 3.4 - cricket club
+Mountain Mixtures.,22 January 1892,Katoomba Times,Hartley Vale,Hartley Vale Shale Mine (site),ambiguous_tags_decision_report,Item 3.5 - mines
+Footballers' Social at Hartley Vale.,20 October 1899,Lithgow Mercury,Hartley Vale,Hartley Vale | Hartley Vale Natives Football Club,ambiguous_tags_decision_report,Item 3.6 - settlement and football club
+Mountain Mixtures.,29 April 1892,Katoomba Times,Hartley Vale,Hartley Vale | police station,ambiguous_tags_decision_report,Item 3.7 - settlement and police station
+The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Hartley Vale,Hartley Vale,ambiguous_tags_decision_report,Item 3.8 - town (revised per user's earlier decision)
+Kembla Disaster Survivor: Death of Mr. J. J. Meredith,25 November 1940,Lithgow Mercury,Hartley Vale,Hartley Vale Shale Mine (site) | Hermitage Coal Mine (facility),ambiguous_tags_decision_report,Item 3.10 - Hartley Vale Shale Mine (Hermitage already exists)
+West Wallsend.,10 October 1911,Newcastle Morning Herald and Miners' Advocate,Hartley Vale,Hartley Vale,ambiguous_tags_decision_report,Item 3.11 - town (birthplace)
+Mining.,15 June 1897,Evening News,Hartley Vale,Hartley Vale Shale Mine (site),ambiguous_tags_decision_report,Item 3.12 - shale mine
+Mining.,25 August 1896,Evening News,Hartley Vale,Hartley Vale Shale Mine (site),ambiguous_tags_decision_report,Item 3.13 - shale mine
+Mining.,19 May 1896,Evening News,Hartley Vale,Hartley Vale Shale Mine (site),ambiguous_tags_decision_report,Item 3.14 - both mines (generic) and specific mine
+The Gold Fields.,21 April 1896,Evening News,Hartley Vale,Hartley Vale Shale Mine (site) | Hartley Vale,ambiguous_tags_decision_report,"Item 3.15 - shale mine, mines, and town"
+Hartley Vale.,16 October 1891,Katoomba Times,Hartley Vale,Hartley Vale Natives Football Club | Hartley Vale,ambiguous_tags_decision_report,Item 3.18 - football club and town
+Hartley Vale.,2 February 1900,Lithgow Mercury,Hartley Vale,Hartley Vale,ambiguous_tags_decision_report,Item 3.19 - town (confirmed via Trove)
+Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Hartley Vale,Hartley Vale,ambiguous_tags_decision_report,Item 3.20 - town
+Mountain Mixtures.,21 October 1892,Katoomba Times,Ruined Castle,Ruined Castle,ambiguous_tags_decision_report,Item 4.1 - rock formation
+Mountain Mixtures.,9 September 1892,Katoomba Times,Ruined Castle,Ruined Castle Shale Mine (site),ambiguous_tags_decision_report,Item 4.2 - shale mine
+Megalong Matters.,5 June 1896,Mountaineer,Ruined Castle,recreation for miners | cricket match | Ruined Castle (settlement),ambiguous_tags_decision_report,"Item 4.3 - recreation, cricket match, and settlement"
+The Katoomba Mines.,20 March 1903,Blue Mountain Gazette,Ruined Castle,Ruined Castle Shale Mine (site),ambiguous_tags_decision_report,Item 4.4 - shale mine
+Current Events.,26 October 1896,Newcastle Morning Herald and Miners' Advocate,Ruined Castle,tramway | Ruined Castle Shale Mine (site),ambiguous_tags_decision_report,Item 4.5 - tramway and shale mine
+The Megalong Shale Mines.,21 December 1893,National Advocate,Ruined Castle,Ruined Castle Shale Mine (site),ambiguous_tags_decision_report,Item 4.6 - shale mine and site
+Katoomba Court.,16 June 1893,Katoomba Times,Ruined Castle,Ruined Castle (settlement),ambiguous_tags_decision_report,Item 4.7 - settlement (residence)
+Mountain Mixtures.,2 June 1893,Katoomba Times,Ruined Castle,Ruined Castle (settlement) | miner | miners' families | women,ambiguous_tags_decision_report,"Item 4.8 - settlement, miners, families, women"
+Mountain Mixtures.,2 December 1892,Katoomba Times,Ruined Castle,Ruined Castle Shale Mine (site) | mining accident,ambiguous_tags_decision_report,Item 4.9 - shale mine and accident
+To the Editor of The Times.,8 September 1893,Katoomba Times,Ruined Castle,Ruined Castle Shale Mine (site) | miner | Ruined Castle (settlement),ambiguous_tags_decision_report,"Item 4.10 - shale mine, miner, settlement"
+Katoomba Court.,17 March 1893,Katoomba Times,Ruined Castle,Ruined Castle (settlement) | miner,ambiguous_tags_decision_report,Item 4.11 - settlement and miner (confirmed via Trove)

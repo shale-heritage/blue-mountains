@@ -8,18 +8,11 @@ tourism & accommodation
 │   └── tourist trains
 └── tourist attractions
     ├── Jenolan Caves
-    │   └── Jenolan Caves Road
     ├── natural features
     │   ├── caves & geological features
-    │   │   ├── Jenolan Caves
-    │   │   │   └── Jenolan Caves Road
-    │   │   └── Jenolan Caves Road
+    │   │   └── Jenolan Caves
     │   ├── gullies
     │   │   ├── Break Neck Gully
-    │   │   ├── Nellie's Glen
-    │   │   │   ├── Nellie's Glen Road
-    │   │   │   ├── Nellie's Glen Shale Mine
-    │   │   │   └── Nellie's Glen Track
     │   │   └── Nellie's Glen (gully)
     │   ├── mountain features
     │   │   ├── Narrow Neck
@@ -47,6 +40,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 39
+  Total nodes in theme: 32
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -113,6 +113,7 @@ Agents
 │   │       │   ├── Wallerawang Coursing Club
 │   │       │   └── coursing club
 │   │       ├── cricket clubs
+│   │       │   ├── Hartley Vale Cricket Club
 │   │       │   ├── Katoomba Cricket Club
 │   │       │   ├── Megalong Cricket Club
 │   │       │   └── cricket club
@@ -168,8 +169,8 @@ Agents
 │   │   │   └── Aborigines' Protection Board
 │   │   ├── postal authorities
 │   │   │   └── Postal Department
-│   │   ├── railway authorities
-│   │   └── railway commission
+│   │   └── railway authorities
+│   │       └── railway commission
 │   ├── military organisations
 │   │   ├── NSW Mounted Rifles
 │   │   └── volunteer rifle reserves
@@ -177,14 +178,12 @@ Agents
 │   │       └── Mountain Rifle Reserves
 │   └── religious organisations
 │       ├── churches
-│       │   ├── Congregational Church
-│       │   │   └── Katoomba Congregational Church
-│       │   ├── Katoomba Congregational Church
-│       │   ├── Methodist Church
-│       │   ├── Roman Catholic Church
-│       │   ├── St Hilda's Church
-│       │   ├── Wesleyan Church
-│       │   └── church
+│       │   ├── Katoomba Congregational Church (building)
+│       │   ├── Methodist Church (building)
+│       │   ├── Roman Catholic Church (building)
+│       │   ├── St Hilda's Church (building)
+│       │   ├── Wesleyan Church (building)
+│       │   └── church (building)
 │       ├── religious education
 │       │   └── sunday school
 │       └── religious social movements
@@ -408,6 +407,7 @@ Agents
         │       │   ├── Constable O'Reilly
         │       │   ├── Constable Orr
         │       │   └── Constable White
+        │       ├── police officer
         │       ├── senior-constable
         │       │   ├── Senior-Constable Illingworth
         │       │   └── Senior-Constable Thorncroft

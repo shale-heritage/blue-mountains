@@ -13,24 +13,20 @@ Religion
 │   └── Reverend R M Laverty
 ├── religious buildings
 │   └── churches
-│       ├── Congregational Church
-│       │   └── Katoomba Congregational Church
-│       ├── Katoomba Congregational Church
-│       ├── Methodist Church
-│       ├── Roman Catholic Church
-│       ├── St Hilda's Church
-│       ├── Wesleyan Church
-│       └── church
+│       ├── Katoomba Congregational Church (building)
+│       ├── Methodist Church (building)
+│       ├── Roman Catholic Church (building)
+│       ├── St Hilda's Church (building)
+│       ├── Wesleyan Church (building)
+│       └── church (building)
 └── religious organisations
     ├── churches
-    │   ├── Congregational Church
-    │   │   └── Katoomba Congregational Church
-    │   ├── Katoomba Congregational Church
-    │   ├── Methodist Church
-    │   ├── Roman Catholic Church
-    │   ├── St Hilda's Church
-    │   ├── Wesleyan Church
-    │   └── church
+    │   ├── Katoomba Congregational Church (building)
+    │   ├── Methodist Church (building)
+    │   ├── Roman Catholic Church (building)
+    │   ├── St Hilda's Church (building)
+    │   ├── Wesleyan Church (building)
+    │   └── church (building)
     ├── religious education
     │   └── sunday school
     └── religious social movements
@@ -44,6 +40,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 36
+  Total nodes in theme: 32
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
