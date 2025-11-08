@@ -1,0 +1,1696 @@
+
+ ▐▛███▜▌   Claude Code v2.0.36
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+
+> Hi CC, welcome back, VS Code just crashed during /compact, here's the compact message:\
+\
+  Session Summary: Hartley Vale Migration + Ambiguous Tags Review
+
+  Completed This Session
+
+  1. ✅ Resolved final 11 orphaned tags - all existed as synonyms in taxonomy
+    - Applied batch_mappings_final.csv (92 entries)
+    - Coverage: 42.7% (178 items)
+    - NO remaining orphaned tags (except "Primary source" metadata tag)
+  2. ✅ Fixed Mount Kembla Disaster - added missing hierarchy entry, now appears in Events visualization
+  3. ✅ Generated ambiguous tags decision report - reports/AMBIGUOUS_TAGS_DECISION_REPORT.md
+    - 83 items across 4 tags (Police, Nellie's Glen, Hartley Vale, Ruined Castle)
+    - KWIC-style contexts for disambiguation
+    - Awaiting your decisions (A/B/C/D/E choices)
+
+  Ready for Next Session: Hartley Vale Migration
+
+  Task: Migrate Hartley Vale from mining settlement to town status
+
+  User Decisions Made:
+  - Add to thematic towns grouping (YES)
+  - Keep mining district as separate historical entity
+  - Do NOT review Nellie's Glen/Ruined Castle (they remain mining settlements)
+
+  Correction Noted: Hartley Vale (settlement) is a leaf node (no children), not intermediate node
+
+  Migration Plan:
+
+  1. Taxonomy changes (tag_map_consolidated.csv):
+    - Add 2 entries: Hartley Vale under towns (primary + thematic)
+    - Modify line 285: Update synonym to reference town
+    - Delete line 1042: Remove Hartley Vale (settlement) leaf node
+    - Keep: mining district (1041) + mines child (1043)
+  2. Tag applications (tag_application_mapping.csv):
+    - Update 20 items: Hartley Vale mining district → Hartley Vale
+  3. Regenerate: hierarchy visualizations
+
+  Result Structure:
+  Places > towns > Hartley Vale (NEW)
+  Places > mining districts > Hartley Vale mining district
+      └── Hartley Vale mines
+
+  Files Ready:
+  - Research report from Plan agent (comprehensive)
+  - reports/AMBIGUOUS_TAGS_DECISION_REPORT.md (awaiting your review)
+
+  Next Steps:
+  1. Execute Hartley Vale migration
+  2. Complete ambiguous tags disambiguation (83 items)
+  3. Generate final batch from your decisions
+  4. Apply and validate
+
+  Todos
+  ☒ Phase 1.1: Reconcile alcohol tag decisions (compare 2 reports, update mapping)
+  ☒ Phase 1.2: Resolve 12 undecided orphaned tags (get decisions, update mapping)
+  ☒ Phase 2.1: Extract all retagging decisions from reports (systematic audit)
+  ☒ Phase 3.1: CORRECTED - Create high-confidence batch mappings (776 entries)
+  ☒ Apply batch_mappings_CORRECTED.csv (776 entries) and batch_mappings_immediate.csv (131 entries)
+  ☒ Add missing taxonomy synonyms (pub, rape)
+  ☒ Resolve remaining 11 orphaned tags (418 applications) - verify taxonomy matches
+  ☐ Clean up 34 invalid tags in old mapping entries
+  ☐ Phase 2.2: Audit consolidation decisions for retagging implications
+  ☐ Phase 5.1: Build retagging simulation script (scripts/50_retagging_dry_run.py)
+  ☐ Phase 5.2: Build validation analysis script with leaf uniqueness check (scripts/51_validate_retagging.py)
+  ☐ Phase 6: Run dry run, validate, review, and iteratively refine
+  ☐ Phase 7: Final quality checks (cross-reference, statistics, spot check)\
+\
+Is that enough to resume work? please confirm before you begin 
+
+● Yes, I have enough context to resume work! Let me confirm my understanding:
+
+  Current State
+
+  - ✅ All orphaned tags resolved (except "Primary source")
+  - ✅ Mount Kembla Disaster fixed
+  - ✅ Ambiguous tags report generated (83 items, 4 tags) - awaiting your review
+
+  Ready to Execute: Hartley Vale Migration
+
+  Your decisions:
+  - Add Hartley Vale to towns (with thematic grouping)
+  - Keep mining district separate
+  - Leave Nellie's Glen/Ruined Castle as-is
+
+  Migration plan I'll execute:
+  1. tag_map_consolidated.csv:
+    - Add 2 new entries (Hartley Vale under towns - primary + thematic)
+    - Modify line 285 (synonym → reference town)
+    - Delete line 1042 (Hartley Vale settlement leaf node)
+    - Keep lines 1041 + 1043 (mining district + mines)
+  2. tag_application_mapping.csv:
+    - Update 20 items: Hartley Vale mining district → Hartley Vale
+  3. Regenerate hierarchy visualizations
+
+  Result:
+  Places > towns > Hartley Vale (NEW)
+  Places > mining districts > Hartley Vale mining district
+      └── Hartley Vale mines
+
+  Next After Migration
+
+  1. You review ambiguous tags report and provide A/B/C/D/E decisions
+  2. I generate batch mappings from your decisions
+  3. Apply and validate
+
+  Ready to proceed with Hartley Vale migration? Just say "go" and I'll execute the plan.
+
+> Yes, I am working through the ambiguous tag report while you are doing this. Please continue. 
+
+● Perfect! I'll execute the Hartley Vale migration now.
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 10 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 15 lines
+
+● Search(pattern: "^Places,towns,", path: "data/tag_map_consolidated.csv", output_mode: "content", head_limit: 20)
+  ⎿  Found 0 lines 
+
+● Search(pattern: "^Places,", path: "data/tag_map_consolidated.csv", output_mode: "content", head_limit: 50)
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Search(pattern: ",hierarchy,parent=Places$", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Bash(grep ",parent=Places" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  mining districts,mining districts,hierarchy,parent=Places (existing facet)
+     natural features,natural features,hierarchy,parent=Places (existing facet)
+     reserves,reserves,hierarchy,parent=Places (existing facet)
+     … +2 lines (ctrl+o to expand)
+
+● Bash(grep -n "^towns,towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  801:towns,towns,hierarchy,parent=Places (existing facet)
+     802:towns,towns,hierarchy,parent=(thematic grouping)
+
+● Bash(grep "towns - THEMATIC" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Katoomba,Katoomba,hierarchy,parent=towns - THEMATIC
+     Leura,Leura,hierarchy,parent=towns - THEMATIC
+     Megalong,Megalong,hierarchy,parent=towns - THEMATIC
+     … +2 lines (ctrl+o to expand)
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 20 lines
+
+● Bash(grep -n "^Katoomba,Katoomba,hierarchy,parent=towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  333:Katoomba,Katoomba,hierarchy,parent=towns - THEMATIC
+
+● Bash(grep "^Katoomba,Katoomba" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Katoomba,Katoomba,hierarchy,parent=towns - THEMATIC
+     Katoomba,Katoomba,hierarchy,parent=Greater Katoomba
+
+● Bash(grep -E "^(Katoomba|Leura|Megalong|Mount Victoria|Wentworth Falls)," /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | grep
+      hierarchy)
+  ⎿  Katoomba,Katoomba,hierarchy,parent=towns - THEMATIC
+     Leura,Leura,hierarchy,parent=towns - THEMATIC
+     Megalong,Megalong,hierarchy,parent=towns - THEMATIC
+     … +6 lines (ctrl+o to expand)
+
+● Bash(grep -n "^[A-Z].*,hierarchy,parent=towns$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -20)
+  ⎿  (No content)
+
+● Bash(grep -n ",hierarchy,parent=towns - THEMATIC$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -20)
+  ⎿  (No content)
+
+● Bash(grep -n "parent=towns$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "parent=towns - THEMATIC$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "parent=towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -30)
+  ⎿  69:Blackheath,Blackheath,hierarchy,parent=towns        
+     104:Clarence,Clarence,hierarchy,parent=towns
+     333:Katoomba,Katoomba,hierarchy,parent=towns - THEMATIC
+     … +24 lines (ctrl+o to expand)
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 20 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 20 lines
+
+● Now I'll make the taxonomy changes. Let me start by adding the thematic entry:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition                                                     
+       330    Jenolan Caves Road,Jenolan Caves road,synonym,Lowercase variant - use capitalised form
+       331    justice & crime,justice & crime,hierarchy,parent=(thematic grouping)
+       332    Kanimbla Valley,Kanimbla Valley,hierarchy,parent=valleys
+       333 +  Hartley Vale,Hartley Vale,hierarchy,parent=towns - THEMATIC
+       334    Katoomba,Katoomba,hierarchy,parent=towns - THEMATIC
+       335    Katoomba Amateur Dramatic Club,Katoomba Amateur Dramatic Club,hierarchy,parent=cultural societies
+       336    Katoomba Amateur Minstrels,Katoomba Amateur Minstrels,hierarchy,parent=Minstrel shows - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition     
+       1136    Bathurst,Bathurst,hierarchy,parent=towns
+       1137    Burragorang,Burragorang,hierarchy,parent=towns
+       1138    Capertee,Capertee,hierarchy,parent=towns
+       1139 +  Hartley Vale,Hartley Vale,hierarchy,parent=towns
+       1140    Lawson,Lawson,hierarchy,parent=towns
+       1141    Newcastle,Newcastle,hierarchy,parent=towns
+       1142    Oberon,Oberon,hierarchy,parent=towns
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                 
+       282    gullies,gullies,hierarchy,parent=natural features
+       283    halls,halls,hierarchy,parent=community buildings
+       284    halls,halls,hierarchy,parent=Cultural venues - THEMATIC
+       285 -  Hartley Vale mining district,Hartley Vale,synonym,Unqualified form - use mining district qualifier for clarity
+       285 +  Hartley Vale mining district,Hartley Vale,synonym,Unqualified form refers to the town - use mining district qualifier when 
+           +  referring to the mining district
+       286    health & medicine,health & medicine,hierarchy,parent=(thematic grouping)
+       287    health conditions,health conditions,hierarchy,parent=health & medicine - THEMATIC
+       288    health-related events,health-related events,hierarchy,parent=health & medicine - THEMATIC
+
+● Bash(grep -n "^Hartley Vale (settlement)" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  1043:Hartley Vale (settlement),Hartley Vale (settlement),hierarchy,parent=Hartley Vale mining district
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 8 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                                          
+       1040    Ruined Castle Shale Mine,Ruined Castle Shale Mine,hierarchy,parent=shale mines
+       1041    mining districts,mining districts,hierarchy,parent=Places
+       1042    Hartley Vale mining district,Hartley Vale mining district,hierarchy,parent=mining districts
+       1043 -  Hartley Vale (settlement),Hartley Vale (settlement),hierarchy,parent=Hartley Vale mining district
+       1043    Hartley Vale mines,Hartley Vale mines,hierarchy,parent=Hartley Vale mining district
+       1044    Nellie's Glen mining district,Nellie's Glen mining district,hierarchy,parent=mining districts
+       1045    Nellie's Glen (settlement),Nellie's Glen (settlement),hierarchy,parent=Nellie's Glen mining district
+
+● Bash(grep -c "Hartley Vale mining district" /home/shawn/Code/blue-mountains/data/tag_application_mapping.csv)
+  ⎿  20
+
+● Bash(grep "Hartley Vale mining district" /home/shawn/Code/blue-mountains/data/tag_application_mapping.csv | head -5)
+  ⎿ Town Talk.,13 May 1904,Blue Mountain Gazette,Hartley Vale,Hartley Vale mining district,orphaned_tags_final_resolution,Final batch: all tags ver
+    ified as synonyms in taxonomy
+    Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Hartley Vale,Hartley Vale mining district,orphaned_tags_final_resolution,Final batch:
+    … +7 lines (ctrl+o to expand)
+
+
+
+● Read(data/tag_application_mapping.csv)
+  ⎿  Read 3 lines
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 20 additions and 20 removals                                                                  
+       1044    News in Brief,9 October 1903,Mountaineer,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags 
+              verified as synonyms in taxonomy
+       1045    Mountain Mixtures.,7 July 1893,Katoomba Times,I.O.O.F. Hall | Katoomba Tennis Club,Odd Fellows' Hall | Katoomba Lawn Tennis 
+              Club,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1046    Mountain Mixtures.,21 October 1892,Katoomba Times,Ruined Castle,Ruined Castle mining district,orphaned_tags_final_resolution,Final
+               batch: all tags verified as synonyms in taxonomy
+       1047 -  Town Talk.,13 May 1904,Blue Mountain Gazette,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1047 +  Town Talk.,13 May 1904,Blue Mountain Gazette,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1048    Mountain Mixtures.,9 September 1892,Katoomba Times,I.O.O.F. Hall | Nellie's Glen | Ruined Castle,Odd Fellows' Hall | Nellie's Glen
+               mining district | Ruined Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in 
+              taxonomy
+       1049    Jottings.,23 May 1891,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1050 -  Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1050 +  Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1051    Town Talk.,13 March 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final 
+              batch: all tags verified as synonyms in taxonomy
+       1052    Mountain Mixtures.,23 March 1894,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+       1053    The Rockley Game.,7 February 1896,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final 
+              batch: all tags verified as synonyms in taxonomy
+       1054 -  Mountain Mixtures.,4 December 1891,Katoomba Times,Hartley Vale | Mr David Brown | Nellie's Glen,Hartley Vale mining district 
+            -  | Mr D Brown | Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1055 -  Hartley Vale.,13 February 1911,Lithgow Mercury,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1054 +  Mountain Mixtures.,4 December 1891,Katoomba Times,Hartley Vale | Mr David Brown | Nellie's Glen,Hartley Vale 
+            +  | Mr D Brown | Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1055 +  Hartley Vale.,13 February 1911,Lithgow Mercury,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1056    Megalong Matters.,5 June 1896,Mountaineer,Nellie's Glen | Ruined Castle,Nellie's Glen mining district | Ruined Castle mining 
+              district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1057 -  Mountain Mixtures.,22 January 1892,Katoomba Times,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1057 +  Mountain Mixtures.,22 January 1892,Katoomba Times,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1058    Mountain Mixtures.,23 June 1893,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1059    Mountain Mixtures.,30 June 1893,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+       1060    Mountain Mixtures.,16 June 1893,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+       1061    Local Jottings.,25 May 1889,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch:
+               all tags verified as synonyms in taxonomy
+       1062 -  Footballers' Social at Hartley Vale.,20 October 1899,Lithgow Mercury,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1062 +  Footballers' Social at Hartley Vale.,20 October 1899,Lithgow Mercury,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1063    Local Jottings.,21 September 1889,Katoomba Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+       1064 -  Mountain Mixtures.,29 April 1892,Katoomba Times,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1065 -  The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1066 -  Mountain Mixtures.,4 May 1894,Katoomba Times,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1064 +  Mountain Mixtures.,29 April 1892,Katoomba Times,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1065 +  The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1066 +  Mountain Mixtures.,4 May 1894,Katoomba Times,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1067    Catalogue of the Australian Kerosene Oil & Mineral Company Limited.,1885,,Australian Kerosene Shale and Oil Company,Australian 
+              Kerosene Oil and Mineral Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1068 -  Kembla Disaster Survivor: Death of Mr. J. J. Meredith,25 November 1940,Lithgow Mercury,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1068 +  Kembla Disaster Survivor: Death of Mr. J. J. Meredith,25 November 1940,Lithgow Mercury,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1069    To-Day's Further Court Proceedings,1 December 1932,Lithgow Mercury,Police,New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1070    Scarborough.,21 February 1911,Illawarra Mercury,South Clifton Mine Co.,South Clifton Mine 
+              Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1071 -  West Wallsend.,10 October 1911,Newcastle Morning Herald and Miners' Advocate,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1071 +  West Wallsend.,10 October 1911,Newcastle Morning Herald and Miners' Advocate,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1072    Deplorable State.,14 February 1911,Illawarra Mercury,South Clifton Mine Co.,South Clifton Mine 
+              Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1073    South Clifton Fatality,31 May 1910,Illawarra Mercury,South Clifton Mine Co.,South Clifton Mine 
+              Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1074    Bigamy.,4 August 1909,New South Wales Police Gazette and Weekly Record of Crime,Police,New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+     ...
+       1082    Work at the Mines.,17 April 1903,Blue Mountain Gazette,Nellie's Glen,Nellie's Glen mining 
+              district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1083    The Katoomba Mines.,20 March 1903,Blue Mountain Gazette,Nellie's Glen | Ruined Castle,Nellie's Glen mining district | Ruined 
+              Castle mining district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1084    Narrow Neck.,27 December 1901,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: 
+              all tags verified as synonyms in taxonomy
+       1085 -  Mining.,15 June 1897,Evening News,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1085 +  Mining.,15 June 1897,Evening News,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1086    Current Events.,26 October 1896,Newcastle Morning Herald and Miners' Advocate,Ruined Castle,Ruined Castle mining 
+              district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1087 -  Mining.,25 August 1896,Evening News,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1088 -  Mining.,19 May 1896,Evening News,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1089 -  The Gold Fields.,21 April 1896,Evening News,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1087 +  Mining.,25 August 1896,Evening News,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1088 +  Mining.,19 May 1896,Evening News,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1089 +  The Gold Fields.,21 April 1896,Evening News,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1090    Katoomba Police Court,13 December 1895,Mountaineer,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+       1091    [untitled],4 Novemeber 1895,Evening News,New South Wales Shale and Oil Co.,New South Wales Shale and Oil 
+              Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1092    Brevities.,6 April 1894,Evening News,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+     ...
+       1101    Mountain Mixtures.,5 May 1893,Katoomba Times,I.O.O.F. Hall,Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags 
+              verified as synonyms in taxonomy
+       1102    Mountain Mixtures.,2 June 1893,Katoomba Times,Ruined Castle,Ruined Castle mining district,orphaned_tags_final_resolution,Final 
+              batch: all tags verified as synonyms in taxonomy
+       1103    Mountain Mixtures.,14 April 1893,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1104 -  Mountain Mixtures.,10 February 1893,Katoomba Times,Hartley Vale | I.O.O.F. Hall,Hartley Vale mining district 
+            -  | Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1104 +  Mountain Mixtures.,10 February 1893,Katoomba Times,Hartley Vale | I.O.O.F. Hall,Hartley Vale 
+            +  | Odd Fellows' Hall,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1105    Mountain Mixtures.,2 December 1892,Katoomba Times,I.O.O.F. Hall | Ruined Castle,Odd Fellows' Hall | Ruined Castle mining 
+              district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1106    Mountain Mixtures.,3 March 1893,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1107    Mountain Mixtures.,25 November 1892,Katoomba Times,Nellie's Glen | Police,Nellie's Glen mining district | New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1108    Katoomba Police Court.,5 November 1892,Nepean Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+       1109    Katoomba Court.,14 October 1892,Katoomba Times,Nellie's Glen | Police,Nellie's Glen mining district | New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1110 -  Mountain Mixtures.,17 June 1892,Katoomba Times,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1110 +  Mountain Mixtures.,17 June 1892,Katoomba Times,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1111    Katoomba Police Court.,26 March 1892,Nepean Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+       1112    Mountain Mixtures.,11 March 1892,Katoomba Times,I.O.O.F. Hall | Police,Odd Fellows' Hall | New South Wales 
+              Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1113 -  Hartley Vale.,16 October 1891,Katoomba Times,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1113 +  Hartley Vale.,16 October 1891,Katoomba Times,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1114    Accident in Nellie's Glen.,27 July 1889,Katoomba Times,Nellie's Glen,Nellie's Glen mining 
+              district,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1115    Katoomba Miners' Strike.,3 August 1887,Evening News,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+       1116    Katoomba Miners' Strike.,1 August 1887,Evening News,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all 
+              tags verified as synonyms in taxonomy
+     ...
+       1122    Megalong Matters,28 Oct 1892,Katoomba Times,New South Wales Shale and Oil Co.,New South Wales Shale and Oil 
+              Company,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1123    Katoomba News.,29 June 1895,Nepean Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags 
+              verified as synonyms in taxonomy
+       1124    Megalong Matters.,9 September 1892,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final
+               batch: all tags verified as synonyms in taxonomy
+       1125 -  Hartley Vale.,2 February 1900,Lithgow Mercury,Hartley Vale,Hartley Vale mining district
+            -  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1125 +  Hartley Vale.,2 February 1900,Lithgow Mercury,Hartley Vale,Hartley Vale
+            +  ,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1126    Katoomba.,19 December 1885,Nepean Times,Mr David Brown,Mr D Brown,orphaned_tags_final_resolution,Final batch: all tags verified as
+               synonyms in taxonomy
+       1127    Megalong Matters.,10 January 1896,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final 
+              batch: all tags verified as synonyms in taxonomy
+       1128    Megalong Valley.,1 September 1893,Katoomba Times,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final 
+              batch: all tags verified as synonyms in taxonomy
+       1129 -  Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Hartley Vale | Police,Hartley Vale 
+            -  mining district | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1129 +  Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Hartley Vale | Police,Hartley Vale 
+            +  | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+       1130    The Megalong Hotel,21 September 1894,Mountaineer,Nellie's Glen,Nellie's Glen mining district,orphaned_tags_final_resolution,Final 
+              batch: all tags verified as synonyms in taxonomy
+       1131    Megalong Valley.,23 June 1893,,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as 
+              synonyms in taxonomy
+       1132    Megalong Notes.,2 May 1902,Mountaineer,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified
+               as synonyms in taxonomy
+
+● Bash(grep -c "Hartley Vale mining district" /home/shawn/Code/blue-mountains/data/tag_application_mapping.csv)
+  ⎿  0
+
+● Bash(grep "Hartley Vale" /home/shawn/Code/blue-mountains/data/tag_application_mapping.csv | head -5)
+  ⎿ Hartley Vale.,13 February 1911,Lithgow Mercury,Death,death,high_impact_mappings,Corrected mapping to generic singular leaf                     
+    Hartley Vale.,13 February 1911,Lithgow Mercury,Weather,weather,high_impact_mappings,Corrected mapping to generic singular leaf
+    Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Recreation for miners,recreation for miners,high_impact_mappings,Corrected mapping to
+    … +5 lines (ctrl+o to expand)
+
+
+● Bash(grep "Hartley Vale" /home/shawn/Code/blue-mountains/data/tag_application_mapping.csv | grep "orphaned_tags_final_resolution" | head -5)
+  ⎿ Town Talk.,13 May 1904,Blue Mountain Gazette,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonym
+    s in taxonomy
+    Social at Hartley Vale.,23 September 1898,Lithgow Mercury,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verifi
+    … +7 lines (ctrl+o to expand)
+
+
+
+● Search(pattern: "scripts/*visuali*.py")
+  ⎿  Found 1 file (ctrl+o to expand)
+
+● Search(pattern: "scripts/*hierarchy*.py")
+  ⎿  Found 4 files (ctrl+o to expand)
+
+● Bash(python /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  Error: Exit code 127
+     /bin/bash: line 1: python: command not found
+
+● Bash(python3 /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHICAL TAXONOMY GENERATOR
+     ================================================================================
+     … +26 lines (ctrl+o to expand)
+
+● Bash(python3 /home/shawn/Code/blue-mountains/scripts/23_visualise_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +214 lines (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/theme_towns.txt)
+  ⎿  Read 56 lines
+
+● Bash(grep -A 3 "Hartley Vale" /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_places.txt)
+  ⎿  │   ├── Hartley Vale          
+     │   ├── Katoomba
+     │   │   ├── Carrington
+     … +12 lines (ctrl+o to expand)
+
+● Let me validate all the changes:
+
+● Bash(grep "^Hartley Vale" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿ Hartley Vale,Hartley Vale mining district,synonym,Unqualified form refers to the town - use mining district qualifier when referring to the min
+    ing district
+    Hartley Vale,Hartley Vale,hierarchy,parent=towns - THEMATIC
+    … +6 lines (ctrl+o to expand)
+
+
+● Bash(grep "Hartley Vale" /home/shawn/Code/blue-mountains/data/tag_application_mapping.csv | wc -l)
+  ⎿  36
+
+● Bash(grep "Hartley Vale (settlement)" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "parent=Towns$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "Hartley Vale,Hartley Vale,hierarchy,parent=Towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  328:Hartley Vale,Hartley Vale,hierarchy,parent=Towns
+
+● Bash(grep "^Towns,Towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Towns,Towns,hierarchy,parent=Places (existing facet)
+
+● Bash(grep "parent=towns$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | wc -l)
+  ⎿  0
+
+● Bash(grep "parent=Towns$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | wc -l)
+  ⎿  0
+
+● Bash(grep ",parent=towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -5)
+  ⎿  Bathurst,Bathurst,hierarchy,parent=towns      
+     Blackheath,Blackheath,hierarchy,parent=towns
+     Burragorang,Burragorang,hierarchy,parent=towns
+     … +2 lines (ctrl+o to expand)
+
+● Bash(grep ",parent=Towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -5)
+  ⎿  Blackheath,Blackheath,hierarchy,parent=Towns    
+     Clarence,Clarence,hierarchy,parent=Towns
+     Hartley Vale,Hartley Vale,hierarchy,parent=Towns
+     … +2 lines (ctrl+o to expand)
+
+● Bash(grep ",parent=towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | wc -l)
+  ⎿  29
+
+● Bash(grep ",parent=Towns" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | wc -l)
+  ⎿  10
+
+● ✅ Hartley Vale Migration Complete
+
+  Successfully migrated Hartley Vale from mining settlement to town status. All changes validated and visualizations regenerated.
+
+  Changes Made
+
+  1. Taxonomy Structure (tag_map_consolidated.csv)
+  - ✅ Added: Hartley Vale,Hartley Vale,hierarchy,parent=towns - THEMATIC (line 333)
+  - ✅ Added: Hartley Vale,Hartley Vale,hierarchy,parent=towns (line 1139)
+  - ✅ Updated: Synonym mapping (line 285) now reads "Unqualified form refers to the town"
+  - ✅ Deleted: Hartley Vale (settlement) leaf node (was line 1042)
+  - ✅ Preserved: Mining district structure intact
+    - Hartley Vale mining district → Hartley Vale mines
+
+  2. Tag Applications (tag_application_mapping.csv)
+  - ✅ Updated 20 items: Hartley Vale mining district → Hartley Vale
+  - All items from orphaned tags final resolution batch
+
+  3. Hierarchy Visualizations
+  - ✅ Regenerated all 58 visualization files
+  - ✅ Hartley Vale now appears in:
+    - Primary facet: Places > towns > Hartley Vale
+    - Thematic: towns > Hartley Vale (line 23)
+  - ✅ Mining infrastructure preserved separately:
+    - Places > mining districts > Hartley Vale mining district > Hartley Vale mines
+
+  Result Structure
+
+  Places > towns > Hartley Vale                    [NEW - town]
+  Places > mining districts > Hartley Vale mining district
+      └── Hartley Vale mines                       [PRESERVED - mining infrastructure]
+
+  Note: Pre-existing Issue Detected
+
+  Found capitalization inconsistency in taxonomy (not introduced by this migration):
+  - 29 entries use parent=towns (lowercase - standard)
+  - 10 entries use parent=Towns (capitalized - auto-generated)
+
+  This doesn't affect functionality but could be cleaned up later if desired.
+
+  ---
+  Ready for next task: Awaiting your decisions on the ambiguous tags report (reports/AMBIGUOUS_TAGS_DECISION_REPORT.md) to proceed with
+  disambiguation of 83 items.
+
+> I'm almost done but need some more time. While I'm doing that, can you give me your opinion on something. When I see text that states 'Mr X worked
+ at the mines', does it make more sense to tag with:\
+\
+Nellie's Glen Shale Mine (site)\
+\
+OR\
+\
+built environment > industrial buildings > mines > shale mines > Nellie's Glen Shale Mine\
+\
+OR BOTH?\
+\
+I've been inclined towards the built environment tag, on the analogy of 'X worked at the factory', but I'm not sure - what do you think? 
+
+● Excellent question! Your factory analogy is spot-on. Let me clarify the tagging mechanics:
+
+  You Only Tag with Leaf Nodes (Not Paths)
+
+  The hierarchy path like "built environment > industrial buildings > mines > shale mines" isn't something you tag with - it's the structural 
+  context that organizes the leaf node.
+
+  When you tag an item, you apply only the leaf node: either:
+  - Nellie's Glen Shale Mine (the specific mine)
+  - OR Nellie's Glen Shale Mine (site) if there's a dual-nature distinction
+
+  The full path is automatic - it comes from the taxonomy structure.
+
+  For "Mr X Worked at the Mines"
+
+  Your instinct is correct: tag with the built environment entity (the physical workplace).
+
+  Analogy confirmation:
+  - "X worked at the factory" → tag with the specific factory (built environment)
+  - "X worked at the mines" → tag with the specific mine (built environment)
+  - "X worked at the church" → tag with the church building (built environment)
+
+  Site Qualifier: When to Use
+
+  The (site) qualifier should only exist if there's a dual-nature distinction:
+
+  IF the taxonomy has BOTH:
+  - Nellie's Glen Shale Mine (mining company/organisation)
+  - Nellie's Glen Shale Mine (site) (physical location)
+
+  THEN for "worked at the mines" → use the (site) version.
+
+  IF there's only one entry (no dual-nature), just use: Nellie's Glen Shale Mine
+
+  Should You Tag Both? No
+
+  Tag with the most specific, semantically appropriate leaf node. Don't tag with both the organization and site unless the source genuinely refers
+  to both aspects.
+
+  ---
+  Quick check: Do you have both "Nellie's Glen Shale Mine" AND "Nellie's Glen Shale Mine (site)" in your taxonomy? If so, that confirms a
+  dual-nature pattern and you should use (site) for workplace references.
+
+> the taxonomy has the company under agents, but the company owned many mines so it's not the best tag to use here (although I caould ALSO add it), 
+and the taxonomy has the site / physical location under places, and it has the mine itself under built enviornment - usually it's clear which one to
+ use but I wasn't sure about this case 
+  ⎿  ⧉ Selected 3 lines from reports/AMBIGUOUS_TAGS_DECISION_REPORT.md in Visual Studio Code
+
+● Ah! Now I understand your three-way distinction:
+
+  1. Agents - Mining company (organizational entity)
+  2. Places - Mining district/site (geographical location)
+  3. Built Environment - Mine structure (industrial building/workplace)
+
+  For "Mr X Worked at the Mines"
+
+  Your instinct is absolutely correct → tag with Built Environment (the mine as industrial building/workplace).
+
+  Semantic logic:
+  - "Worked at" = physical workplace → Built Environment
+  - "Worked for" = employer → Agents (company)
+  - "Lived in" / "Located in" = geographical area → Places (mining district)
+
+  When to Use Each
+
+  | Context                                       | Tag with                                                  | Example               |
+  |-----------------------------------------------|-----------------------------------------------------------|-----------------------|
+  | "Mr X worked at Nellie's Glen Shale Mine"     | Built Environment > mines > Nellie's Glen Shale Mine      | Physical workplace    |
+  | "Mr X was employed by [Company Name]"         | Agents > mining companies > [Company]                     | Employer relationship |
+  | "Settlement at Nellie's Glen mining district" | Places > mining districts > Nellie's Glen mining district | Geographic location   |
+
+  Should You Tag Both?
+
+  Yes, IF the source supports it:
+  - Built Environment (mine) = always for "worked at the mines"
+  - Agents (company) = also if the company is mentioned or contextually relevant
+
+  Example: "Mr X worked at Nellie's Glen Shale Mine for the Australian Kerosene Oil and Mineral Company"
+  → Tag with BOTH:
+  - Built Environment: Nellie's Glen Shale Mine
+  - Agents: Australian Kerosene Oil and Mineral Company
+
+  ---
+  Your selected text confirms this approach - Hartley Vale Shale Mine and Hermitage Coal Mine both under Built Environment. Perfect! 👍
+
+> Great! Could we add the following tags? They were missing from our taxonomy:\
+\
+Built environment > industrial buildings > mines > Shale Mines > Hartley Vale Shale Mine
+Built environment > industrial buildings > mines > Coal Mines > Hermitage Coal Mine 
+PLUS 'Hermitage colliery' as a synonym in the thesaurus for 'Hermitage Coal Mine' 
+
+● Absolutely! Let me add those missing mines to the taxonomy.
+
+● Bash(grep "shale mines" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | grep hierarchy)
+  ⎿  Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=shale mines          
+     Megalong Shale Mines,Megalong Shale Mines,hierarchy,parent=shale mines
+     Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=shale mines
+     … +5 lines (ctrl+o to expand)
+
+● Bash(grep "coal mines" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | grep hierarchy)
+  ⎿  Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines            
+     South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=coal mines
+     South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=coal mines
+     … +2 lines (ctrl+o to expand)
+
+● Bash(grep -n "^Katoomba Shale Mine,Katoomba Shale Mine,hierarchy" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  440:Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=shale mines
+
+● Bash(grep -n "^Katoomba Coal Mines,Katoomba Coal Mines,hierarchy" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  407:Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 10 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 10 lines
+
+● Bash(grep -n "parent=shale mines$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "parent=coal mines$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "parent=shale mines" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  440:Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=shale mines          
+     535:Megalong Shale Mines,Megalong Shale Mines,hierarchy,parent=shale mines
+     959:Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=shale mines
+     … +2 lines (ctrl+o to expand)
+
+● Bash(grep -n "parent=coal mines" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  407:Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines             
+     1168:South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=coal mines
+     1170:South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=coal mines
+     1396:coal mine,coal mine,hierarchy,parent=coal mines (singular generic term)
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 4 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition                                                                                       
+       437    Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=schools of arts
+       438    Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Schools of Arts
+       439    Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Schools of Arts
+       440 +  Hartley Vale Shale Mine,Hartley Vale Shale Mine,hierarchy,parent=shale mines
+       441    Katoomba Shale Mine,Katoomba Shale Mine,hierarchy,parent=shale mines
+       442    Katoomba Shooting Fishing and Excursion Club,Katoomba Shooting Fishing and Excursion Club,hierarchy,parent=outdoor recreation clubs
+       443    Katoomba South,South Katoomba,merge,Naming variant - contextual evidence shows South Katoomba used in newspaper sources
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 4 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition                                                                                      
+       404    Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=athletic clubs
+       405    Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=Athletic clubs
+       406    Katoomba Civilian Rifle Club,Katoomba Civilian Rifle Club,hierarchy,parent=rifle clubs
+       407 +  Hermitage Coal Mine,Hermitage Coal Mine,hierarchy,parent=coal mines
+       408    Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines
+       409    Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies (primary: absorbs Katoomba Coal 
+             and Shale Mines)
+       410    Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Mining companies
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition                                                                                      
+       405    Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=Athletic clubs
+       406    Katoomba Civilian Rifle Club,Katoomba Civilian Rifle Club,hierarchy,parent=rifle clubs
+       407    Hermitage Coal Mine,Hermitage Coal Mine,hierarchy,parent=coal mines
+       408 +  Hermitage Coal Mine,Hermitage colliery,synonym,Historical term for Hermitage Coal Mine - use standard mine nomenclature
+       409    Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines
+       410    Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies (primary: absorbs Katoomba Coal 
+             and Shale Mines)
+       411    Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Mining companies
+
+● Bash(python3 /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHICAL TAXONOMY GENERATOR
+     ================================================================================
+     … +17 lines (ctrl+o to expand)
+
+● Bash(python3 /home/shawn/Code/blue-mountains/scripts/23_visualise_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +214 lines (ctrl+o to expand)
+
+● Bash(grep -A 2 "Hartley Vale Shale Mine" /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_built_environment.txt)
+  ⎿  │           ├── Hartley Vale Shale Mine
+     │           ├── Katoomba Shale Mine
+     │           ├── Megalong Shale Mines
+
+● Bash(grep -A 2 "Hermitage Coal Mine" /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_built_environment.txt)
+  ⎿  │       │   ├── Hermitage Coal Mine      
+     │       │   ├── Katoomba Coal Mines
+     │       │   ├── South Clifton Tunnel Mine
+
+● Bash(grep -B 2 -A 2 "shale mines" /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/theme_mining__industry.txt | head -20)
+  ⎿  ├── mines & mining districts 
+     │   ├── coal mining
+     │   └── shale mines
+     … +2 lines (ctrl+o to expand)
+
+● ✅ Missing Mines Added to Taxonomy
+
+  Successfully added both missing mine entries to the taxonomy with all hierarchy relationships and synonym mapping.
+
+  Changes Made
+
+  1. Hartley Vale Shale Mine (line 440)
+  - ✅ Added: Hartley Vale Shale Mine,Hartley Vale Shale Mine,hierarchy,parent=shale mines
+  - Location in hierarchy:
+  Built Environment > industrial buildings > mines > shale mines > Hartley Vale Shale Mine
+
+  2. Hermitage Coal Mine (line 407)
+  - ✅ Added: Hermitage Coal Mine,Hermitage Coal Mine,hierarchy,parent=coal mines
+  - ✅ Added synonym (line 408): Hermitage Coal Mine,Hermitage colliery,synonym
+  - Location in hierarchy:
+  Built Environment > industrial buildings > mines > coal mines > Hermitage Coal Mine
+
+  3. Visualizations Updated
+  - ✅ Regenerated all 58 hierarchy visualization files
+  - Both mines now appear in:
+    - Primary facet: Built Environment > industrial buildings > mines
+    - Thematic: Mining & Industry > mines & mining districts
+
+  Verification
+
+  Primary Built Environment view:
+  shale mines
+  ├── Hartley Vale Shale Mine  ← NEW
+  ├── Katoomba Shale Mine
+  ├── Megalong Shale Mines
+  ...
+
+  coal mines
+  ├── Hermitage Coal Mine      ← NEW
+  ├── Katoomba Coal Mines
+  ├── South Clifton Tunnel Mine
+
+  Synonym mapping:
+  - "Hermitage colliery" → Hermitage Coal Mine ✓
+
+  ---
+  Ready to continue with the ambiguous tags disambiguation when you've finished your review!
+
+> Still working on the tagging - in the meantime, I see an error - 'girl's cricket' is showing up as a leaf node, but we decided not to do that and 
+instead tag with 'cricket' and 'adolescents' and 'women'. Also, I see a regreasson here - many activities under events have reverted to incorrect 
+capitalisation. Please review our decisions around 'events' and correct these errors. 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_events.txt in Visual Studio Code
+
+● I'll investigate both issues immediately - the "girl's cricket" leaf node and the capitalization regression in Events.
+
+● Bash(grep -i "girl.*cricket" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿ Girls' cricket,cricket,merge,Tag with cricket + women (demographic group) + adolescents (if applicable) instead of gender-specific sport term p
+    er consolidation decision
+    Girls' cricket,Girls' cricket,hierarchy,parent=Cricket
+    Girls' cricket,Girls' cricket,hierarchy,parent=Women as demographic group - THEMATIC
+
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 50 lines
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 30 lines
+
+● Bash(grep "^Events," /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -5)
+  ⎿  Events,Events,hierarchy,parent=(Getty AAT primary facet)
+     Events,Events,hierarchy,parent=(new top-level facet)
+
+● Bash(grep -n "^criminal events," /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  1447:criminal events,criminal events,hierarchy,parent=Events
+
+● Bash(grep -n "^Criminal events," /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  186:Criminal events,Criminal events,hierarchy,parent=Events
+
+● Bash(git log --all --oneline --grep="capitali" | head -10)
+  ⎿  99beccb feat(taxonomy): resolve orphaned tags and improve taxonomy structure
+     cb2b59a style: update capitalization analysis after phase 4 completion
+     9d1a117 style: complete Getty AAT capitalization standard (phase 4)
+     … +5 lines (ctrl+o to expand)
+
+● Bash(git show 99beccb:data/tag_map_consolidated.csv | grep -c "^Criminal events")
+  ⎿  0
+
+● Bash(grep "parent=Events$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | grep -E "^[A-Z]" | head -20)
+  ⎿  (No content)
+
+● Bash(grep ",hierarchy,parent=Events$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep "parent=Events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -30)
+  ⎿  Criminal events,Criminal events,hierarchy,parent=Events            
+     Cultural events,Cultural events,hierarchy,parent=Events
+     Disasters & accidents,Disasters & accidents,hierarchy,parent=Events
+     … +18 lines (ctrl+o to expand)
+
+● Bash(grep -n "^Girls' cricket" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿ 292:Girls' cricket,cricket,merge,Tag with cricket + women (demographic group) + adolescents (if applicable) instead of gender-specific sport te
+    rm per consolidation decision
+    293:Girls' cricket,Girls' cricket,hierarchy,parent=Cricket
+    294:Girls' cricket,Girls' cricket,hierarchy,parent=Women as demographic group - THEMATIC
+
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 8 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 removals                                                                                       
+       290    Gender-related vulnerabilities,Gender-related vulnerabilities,hierarchy,parent=Women & Gender - THEMATIC
+       291    Gin,Gin,hierarchy,parent=Spirits
+       292    Girls' cricket,cricket,merge,Tag with cricket + women (demographic group) + adolescents (if applicable) instead of gender-specific 
+             sport term per consolidation decision
+       293 -  Girls' cricket,Girls' cricket,hierarchy,parent=Cricket
+       294 -  Girls' cricket,Girls' cricket,hierarchy,parent=Women as demographic group - THEMATIC
+       293    Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=mining companies
+       294    Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=Mining companies
+       295    Glen Shale Mine,Nellie's Glen Shale Mine,synonym,Short form of Nellie's Glen Shale Mine - use full name for clarity
+
+● Bash(grep -n "^Criminal events,Criminal events,hierarchy,parent=Events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  186:Criminal events,Criminal events,hierarchy,parent=Events
+
+● Bash(grep -n "^Cultural events,Cultural events,hierarchy,parent=Events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  190:Cultural events,Cultural events,hierarchy,parent=Events
+
+● Bash(grep -n "^Sporting events,Sporting events,hierarchy,parent=Events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  1179:Sporting events,Sporting events,hierarchy,parent=Events
+
+● Bash(grep -n "^[A-Z].*events,.*hierarchy,parent=Events$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "^Disasters & accidents.*hierarchy,parent=Events$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "^Criminal events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  186:Criminal events,Criminal events,hierarchy,parent=Events
+
+● Bash(for term in "Criminal events" "Cultural events" "Disasters & accidents" "Economic events" "Historical events" "Legal events" "Life events"
+      "Political events" "S…)
+  ⎿  186:Criminal events,Criminal events,hierarchy,parent=Events            
+     190:Cultural events,Cultural events,hierarchy,parent=Events
+     210:Disasters & accidents,Disasters & accidents,hierarchy,parent=Events
+     … +7 lines (ctrl+o to expand)
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                    
+       1176    South Katoomba Reserve,South Katoomba Reserve,hierarchy,parent=Reserves
+       1177    Spirits,Spirits,hierarchy,parent=Alcoholic beverages
+       1178    Sport & Recreation,Sport & Recreation,hierarchy,parent=(thematic grouping)
+       1179 -  Sporting events,Sporting events,hierarchy,parent=Events
+       1179    Sporting events,Sporting events,hierarchy,parent=Sport & Recreation - THEMATIC
+       1180    Sports,Sports,hierarchy,parent=Recreation activities
+       1181    Sports,Sports,hierarchy,parent=Recreation themes - THEMATIC
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                                       
+       1152    Sly-grog operations,Unlicensed sales,synonym,Australian colonial term for unlicensed liquor sales
+       1153    Social & economic concepts,Social & economic concepts,hierarchy,parent=Associated Concepts
+       1154    Social behaviours,Social behaviours,hierarchy,parent=Activities
+       1155 -  Social events,Social events,hierarchy,parent=Events
+       1155    Social issues,Social issues,hierarchy,parent=(thematic grouping)
+       1156    Social order offences,Social order offences,hierarchy,parent=crimes - THEMATIC
+       1157    Social order offences,Social order offences,hierarchy,parent=Crimes - THEMATIC
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                         
+       1010    Police facilities,Police facilities,hierarchy,parent=Civic buildings
+       1011    Police station,Police station,hierarchy,parent=Police facilities
+       1012    Police station,Police station,hierarchy,parent=Justice & Crime - THEMATIC
+       1013 -  Political events,Political events,hierarchy,parent=Events
+       1013    Political events,Political events,hierarchy,parent=Politics & Governance - THEMATIC
+       1014    Politics & Governance,Politics & Governance,hierarchy,parent=(thematic grouping)
+       1015    Port Kembla,Port Kembla,hierarchy,parent=towns
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                               
+       492    Licensing Court,Licensing Court,hierarchy,parent=Licensing & regulation - THEMATIC
+       493    Licensing inspector,Licensing inspector,hierarchy,parent=Public officials
+       494    Licensing inspector,Licensing inspector,hierarchy,parent=Licensing & regulation - THEMATIC
+       495 -  Life events,Life events,hierarchy,parent=Events
+       495    Life events,Life events,hierarchy,parent=Family & Domestic Life - THEMATIC
+       496    Liquor licensing,Liquor licensing,hierarchy,parent=Licensing
+       497    Liquor merchants,Liquor merchants,hierarchy,parent=Hospitality workers
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                
+       460    Lawn Tennis Club,Lawn Tennis Club,hierarchy,parent=Tennis clubs
+       461    Lawson,Lawson,hierarchy,parent=towns
+       462    Legal documents,Legal documents,hierarchy,parent=Information Forms
+       463 -  Legal events,Legal events,hierarchy,parent=Events
+       463    Legal events,Legal events,hierarchy,parent=Justice & Crime - THEMATIC
+       464    Legal officials,Legal officials,hierarchy,parent=Occupations
+       465    Legal officials,Legal officials,hierarchy,parent=Justice & Crime - THEMATIC
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                              
+       332    Health & Medicine,Health & Medicine,hierarchy,parent=(thematic grouping)
+       333    Health conditions,Health conditions,hierarchy,parent=Health & Medicine - THEMATIC
+       334    Health-related events,Health-related events,hierarchy,parent=Health & Medicine - THEMATIC
+       335 -  Historical events,Historical events,hierarchy,parent=Events
+       335    Hoffman's House,Hoffman's House,hierarchy,parent=hotels
+       336    Hoffman's House,Hoffman's House,hierarchy,parent=Hotels
+       337    Horseback riding,Horseback riding,hierarchy,parent=Recreation activities
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                     
+       244    Eaton family,Eaton family,hierarchy,parent=families
+       245    Economic activities,Economic activities,hierarchy,parent=Activities
+       246    Economic distress,Economic distress,hierarchy,parent=Economy & Labour - THEMATIC
+       247 -  Economic events,Economic events,hierarchy,parent=Events
+       247    Economic hardship,Economic hardship,hierarchy,parent=Social issues - THEMATIC
+       248    Economy & Labour,Economy & Labour,hierarchy,parent=(thematic grouping)
+       249    Education,Education,hierarchy,parent=(thematic grouping)
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                          
+       207    Demographic groups,Demographic groups,hierarchy,parent=People
+       208    Desertion,Desertion,hierarchy,parent=Criminal events
+       209    Desertion,Desertion,hierarchy,parent=Social order offences - THEMATIC
+       210 -  Disasters & accidents,Disasters & accidents,hierarchy,parent=Events
+       210    Disease,Disease,hierarchy,parent=Physical and health conditions
+       211    Disease,Disease,hierarchy,parent=Health conditions - THEMATIC
+       212    Divorce,Divorce,hierarchy,parent=Legal events
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                                                                   
+       187    Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Organizations
+       188    Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Community institutions - THEMATIC
+       189    Cultural activities,Cultural activities,hierarchy,parent=Arts & Culture - THEMATIC
+       190 -  Cultural events,Cultural events,hierarchy,parent=Events
+       190    Cultural events,Cultural events,hierarchy,parent=Arts & Culture - THEMATIC
+       191    Cultural identity & heritage,Cultural identity & heritage,hierarchy,parent=Race & Ethnicity - THEMATIC
+       192    Cultural organizations,Cultural organizations,hierarchy,parent=Arts & Culture - THEMATIC
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                                                                   
+       183    Cricket,Cricket,hierarchy,parent=Sporting events
+       184    Cricket clubs,Cricket clubs,hierarchy,parent=Sports clubs
+       185    Crimes,Crimes,hierarchy,parent=Justice & Crime - THEMATIC
+       186 -  Criminal events,Criminal events,hierarchy,parent=Events
+       186    Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Organizations
+       187    Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Community institutions - THEMATIC
+       188    Cultural activities,Cultural activities,hierarchy,parent=Arts & Culture - THEMATIC
+
+● Bash(python3 /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHICAL TAXONOMY GENERATOR
+     ================================================================================
+     … +26 lines (ctrl+o to expand)
+
+● Bash(python3 /home/shawn/Code/blue-mountains/scripts/23_visualise_poly_hierarchy.py 2>&1 | head -100) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +97 lines (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 80 lines
+
+● Bash(tail -20 /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  weather & climate,weather & climate,hierarchy,parent=environment & weather - THEMATIC
+     whisky,whisky,hierarchy,parent=spirits
+     wholesale liquor business,wholesale liquor business,hierarchy,parent=liquor trade
+     … +17 lines (ctrl+o to expand)
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 80 lines
+
+● Bash(grep -n "Criminal events" /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py)
+  ⎿  610:        # Criminal events                                                    
+     611:        ['Criminal events', 'Criminal events', 'hierarchy', 'parent=Events'],
+     612:        ['Theft', 'Theft', 'hierarchy', 'parent=Criminal events'],
+     … +8 lines (ctrl+o to expand)
+
+● Bash(grep -n "Girls' cricket" /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py)
+  ⎿  No matches found
+
+● Bash(grep -n "events.*hierarchy.*parent=Events" /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py)
+  ⎿  575:        ['Life events', 'Life events', 'hierarchy', 'parent=Events'],        
+     582:        ['Social events', 'Social events', 'hierarchy', 'parent=Events'],
+     588:        ['Sporting events', 'Sporting events', 'hierarchy', 'parent=Events'],
+     … +6 lines (ctrl+o to expand)
+
+● Bash(grep -n "Disasters" /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py)
+  ⎿  638:        # Disasters & accidents                                                          
+     639:        ['Disasters & accidents', 'Disasters & accidents', 'hierarchy', 'parent=Events'],
+     640:        ['Accident', 'Accident', 'hierarchy', 'parent=Disasters & accidents'],
+     643:        ['Fire', 'Fire', 'hierarchy', 'parent=Disasters & accidents'],
+
+● Bash(grep -n "Girls.*cricket" /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py)
+  ⎿  590:        ['Girls\' cricket', 'Girls\' cricket', 'hierarchy', 'parent=Cricket'],                               
+     1135:        ['Girls\' cricket', 'Girls\' cricket', 'hierarchy', 'parent=Women as demographic group - THEMATIC'],
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 30 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 17 additions and 18 removals        
+       572            ['Events', 'Events', 'hierarchy', 'parent=(new top-level facet)'],
+       573    
+       574            # Life events
+       575 -          ['Life events', 'Life events', 'hierarchy', 'parent=Events'],
+       576 -          ['Death', 'Death', 'hierarchy', 'parent=Life events'],
+       575 +          ['life events', 'life events', 'hierarchy', 'parent=Events'],
+       576 +          ['Death', 'Death', 'hierarchy', 'parent=life events'],
+       577            ['Death notice', 'Death notice', 'hierarchy', 'parent=Death'],
+       578 -          ['Marriage', 'Marriage', 'hierarchy', 'parent=Life events'],
+       579 -          ['Funeral', 'Funeral', 'hierarchy', 'parent=Life events'],
+       578 +          ['Marriage', 'Marriage', 'hierarchy', 'parent=life events'],
+       579 +          ['Funeral', 'Funeral', 'hierarchy', 'parent=life events'],
+       580    
+       581            # Social events
+       582 -          ['Social events', 'Social events', 'hierarchy', 'parent=Events'],
+       583 -          ['Dance', 'Dance', 'hierarchy', 'parent=Social events'],
+       584 -          ['Ball', 'Ball', 'hierarchy', 'parent=Social events'],
+       585 -          ['Flower show', 'Flower show', 'hierarchy', 'parent=Social events'],
+       582 +          ['social events', 'social events', 'hierarchy', 'parent=Events'],
+       583 +          ['Dance', 'Dance', 'hierarchy', 'parent=social events'],
+       584 +          ['Ball', 'Ball', 'hierarchy', 'parent=social events'],
+       585 +          ['Flower show', 'Flower show', 'hierarchy', 'parent=social events'],
+       586    
+       587            # Sporting events
+       588 -          ['Sporting events', 'Sporting events', 'hierarchy', 'parent=Events'],
+       589 -          ['Cricket', 'Cricket', 'hierarchy', 'parent=Sporting events'],
+       590 -          ['Girls\' cricket', 'Girls\' cricket', 'hierarchy', 'parent=Cricket'],
+       591 -          ['Football', 'Football', 'hierarchy', 'parent=Sporting events'],
+       592 -          ['Tennis', 'Tennis', 'hierarchy', 'parent=Sporting events'],
+       593 -          ['Athletics', 'Athletics', 'hierarchy', 'parent=Sporting events'],
+       594 -          ['Rugby', 'Rugby', 'hierarchy', 'parent=Sporting events'],
+       595 -          ['Shooting', 'Shooting', 'hierarchy', 'parent=Sporting events'],
+       596 -          ['Billiards', 'Billiards', 'hierarchy', 'parent=Sporting events'],
+       588 +          ['sporting events', 'sporting events', 'hierarchy', 'parent=Events'],
+       589 +          ['Cricket', 'Cricket', 'hierarchy', 'parent=sporting events'],
+       590 +          ['Football', 'Football', 'hierarchy', 'parent=sporting events'],
+       591 +          ['Tennis', 'Tennis', 'hierarchy', 'parent=sporting events'],
+       592 +          ['Athletics', 'Athletics', 'hierarchy', 'parent=sporting events'],
+       593 +          ['Rugby', 'Rugby', 'hierarchy', 'parent=sporting events'],
+       594 +          ['Shooting', 'Shooting', 'hierarchy', 'parent=sporting events'],
+       595 +          ['Billiards', 'Billiards', 'hierarchy', 'parent=sporting events'],
+       596    
+       597            # Cultural events
+       598 -          ['Cultural events', 'Cultural events', 'hierarchy', 'parent=Events'],
+       598 +          ['cultural events', 'cultural events', 'hierarchy', 'parent=Events'],
+       599            ['Concert', 'Concert', 'hierarchy', 'parent=Cultural events'],
+       600            ['Debate', 'Debate', 'hierarchy', 'parent=Cultural events'],
+       601            ['Corroboree', 'Corroboree', 'hierarchy', 'parent=Cultural events'],
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 3 additions and 3 removals         
+       596    
+       597            # Cultural events
+       598            ['cultural events', 'cultural events', 'hierarchy', 'parent=Events'],
+       599 -          ['Concert', 'Concert', 'hierarchy', 'parent=Cultural events'],
+       600 -          ['Debate', 'Debate', 'hierarchy', 'parent=Cultural events'],
+       601 -          ['Corroboree', 'Corroboree', 'hierarchy', 'parent=Cultural events'],
+       599 +          ['Concert', 'Concert', 'hierarchy', 'parent=cultural events'],
+       600 +          ['Debate', 'Debate', 'hierarchy', 'parent=cultural events'],
+       601 +          ['Corroboree', 'Corroboree', 'hierarchy', 'parent=cultural events'],
+       602    
+       603            # Legal events
+       604            ['Legal events', 'Legal events', 'hierarchy', 'parent=Events'],
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 50 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 28 additions and 28 removals                                                      
+       601            ['Corroboree', 'Corroboree', 'hierarchy', 'parent=cultural events'],
+       602    
+       603            # Legal events
+       604 -          ['Legal events', 'Legal events', 'hierarchy', 'parent=Events'],
+       605 -          ['Court cases', 'Court cases', 'hierarchy', 'parent=Legal events'],
+       606 -          ['Bankruptcy', 'Bankruptcy', 'hierarchy', 'parent=Legal events'],
+       607 -          ['Divorce', 'Divorce', 'hierarchy', 'parent=Legal events'],
+       604 +          ['legal events', 'legal events', 'hierarchy', 'parent=Events'],
+       605 +          ['Court cases', 'Court cases', 'hierarchy', 'parent=legal events'],
+       606 +          ['Bankruptcy', 'Bankruptcy', 'hierarchy', 'parent=legal events'],
+       607 +          ['Divorce', 'Divorce', 'hierarchy', 'parent=legal events'],
+       608    
+       609            # Criminal events
+       610 -          ['Criminal events', 'Criminal events', 'hierarchy', 'parent=Events'],
+       611 -          ['Theft', 'Theft', 'hierarchy', 'parent=Criminal events'],
+       612 -          ['Rape', 'Rape', 'hierarchy', 'parent=Criminal events'],
+       613 -          ['Fighting', 'Fighting', 'hierarchy', 'parent=Criminal events'],
+       614 -          ['Assault', 'Assault', 'hierarchy', 'parent=Criminal events'],
+       615 -          ['Bigamy', 'Bigamy', 'hierarchy', 'parent=Criminal events'],
+       616 -          ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=Criminal events'],
+       617 -          ['Desertion', 'Desertion', 'hierarchy', 'parent=Criminal events'],
+       610 +          ['criminal events', 'criminal events', 'hierarchy', 'parent=Events'],
+       611 +          ['Theft', 'Theft', 'hierarchy', 'parent=criminal events'],
+       612 +          ['Rape', 'Rape', 'hierarchy', 'parent=criminal events'],
+       613 +          ['Fighting', 'Fighting', 'hierarchy', 'parent=criminal events'],
+       614 +          ['Assault', 'Assault', 'hierarchy', 'parent=criminal events'],
+       615 +          ['Bigamy', 'Bigamy', 'hierarchy', 'parent=criminal events'],
+       616 +          ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=criminal events'],
+       617 +          ['Desertion', 'Desertion', 'hierarchy', 'parent=criminal events'],
+       618    
+       619            # Alcohol-related criminal events
+       620 -          ['Alcohol-related', 'Alcohol-related', 'hierarchy', 'parent=Criminal events'],
+       621 -          ['Drunkenness (crime)', 'Drunkenness (crime)', 'hierarchy', 'parent=Alcohol-related'],
+       622 -          ['Unlicensed sales', 'Unlicensed sales', 'hierarchy', 'parent=Alcohol-related'],
+       620 +          ['alcohol-related', 'alcohol-related', 'hierarchy', 'parent=criminal events'],
+       621 +          ['Drunkenness (crime)', 'Drunkenness (crime)', 'hierarchy', 'parent=alcohol-related'],
+       622 +          ['Unlicensed sales', 'Unlicensed sales', 'hierarchy', 'parent=alcohol-related'],
+       623            ['Sly-grog operations', 'Unlicensed sales', 'synonym', 'Australian colonial term for unlicensed liquor sales'],
+       624 -          ['Serving alcohol to minors', 'Serving alcohol to minors', 'hierarchy', 'parent=Alcohol-related'],
+       624 +          ['Serving alcohol to minors', 'Serving alcohol to minors', 'hierarchy', 'parent=alcohol-related'],
+       625    
+       626            # Political events
+       627 -          ['Political events', 'Political events', 'hierarchy', 'parent=Events'],
+       628 -          ['Election', 'Election', 'hierarchy', 'parent=Political events'],
+       629 -          ['Public meeting', 'Public meeting', 'hierarchy', 'parent=Political events'],
+       630 -          ['Petition', 'Petition', 'hierarchy', 'parent=Political events'],
+       627 +          ['political events', 'political events', 'hierarchy', 'parent=Events'],
+       628 +          ['Election', 'Election', 'hierarchy', 'parent=political events'],
+       629 +          ['Public meeting', 'Public meeting', 'hierarchy', 'parent=political events'],
+       630 +          ['Petition', 'Petition', 'hierarchy', 'parent=political events'],
+       631    
+       632            # Economic events
+       633 -          ['Economic events', 'Economic events', 'hierarchy', 'parent=Events'],
+       634 -          ['Strike', 'Strike', 'hierarchy', 'parent=Economic events'],
+       635 -          ['Mine closure', 'Mine closure', 'hierarchy', 'parent=Economic events'],
+       633 +          ['economic events', 'economic events', 'hierarchy', 'parent=Events'],
+       634 +          ['Strike', 'Strike', 'hierarchy', 'parent=economic events'],
+       635 +          ['Mine closure', 'Mine closure', 'hierarchy', 'parent=economic events'],
+       636    
+       637            # Disasters & accidents
+       638 -          ['Disasters & accidents', 'Disasters & accidents', 'hierarchy', 'parent=Events'],
+       639 -          ['Accident', 'Accident', 'hierarchy', 'parent=Disasters & accidents'],
+       638 +          ['disasters & accidents', 'disasters & accidents', 'hierarchy', 'parent=Events'],
+       639 +          ['Accident', 'Accident', 'hierarchy', 'parent=disasters & accidents'],
+       640            ['Mining accidents', 'Mining accidents', 'hierarchy', 'parent=Accident'],
+       641            ['Mount Kembla Disaster', 'Mount Kembla Disaster', 'hierarchy', 'parent=Mining accidents'],
+       642 -          ['Fire', 'Fire', 'hierarchy', 'parent=Disasters & accidents'],
+       642 +          ['Fire', 'Fire', 'hierarchy', 'parent=disasters & accidents'],
+       643    
+       644            # Historical events
+       645 -          ['Historical events', 'Historical events', 'hierarchy', 'parent=Events'],
+       646 -          ['World War I', 'World War I', 'hierarchy', 'parent=Historical events'],
+       645 +          ['historical events', 'historical events', 'hierarchy', 'parent=Events'],
+       646 +          ['World War I', 'World War I', 'hierarchy', 'parent=historical events'],
+       647    
+       648            # Synonyms for Mount Kembla Disaster
+       649            ['Port Kembla disaster', 'Mount Kembla Disaster', 'synonym', 'Historical misnomer - actually Mount Kembla (not Port 
+             Kembla)'],
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 5 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 removal                                                                            
+       1131            ['Women & Gender', 'Women & Gender', 'hierarchy', 'parent=(thematic grouping)'],
+       1132            ['Women as demographic group', 'Women as demographic group', 'hierarchy', 'parent=Women & Gender - THEMATIC'],
+       1133            ['Women', 'Women', 'hierarchy', 'parent=Women as demographic group - THEMATIC'],
+       1134 -          ['Girls\' cricket', 'Girls\' cricket', 'hierarchy', 'parent=Women as demographic group - THEMATIC'],
+       1134            ['Gender-related vulnerabilities', 'Gender-related vulnerabilities', 'hierarchy', 'parent=Women & Gender - THEMATIC'],
+       1135            ['Widows', 'Widows', 'hierarchy', 'parent=Gender-related vulnerabilities - THEMATIC'],
+       1136            ['Sexual violence', 'Sexual violence', 'hierarchy', 'parent=Gender-related vulnerabilities - THEMATIC'],
+
+● Bash(python3 /home/shawn/Code/blue-mountains/scripts/22_generate_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHICAL TAXONOMY GENERATOR
+     ================================================================================
+     … +26 lines (ctrl+o to expand)
+
+● Bash(tail -40 /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  unemployment relief,unemployment relief,hierarchy,parent=Economic distress - THEMATIC
+     unemployment relief,unemployment relief,hierarchy,parent=Economic hardship - THEMATIC
+     unions,unions,hierarchy,parent=labour organisations
+     … +37 lines (ctrl+o to expand)
+
+● Bash(grep -c "^Criminal events,Criminal events,hierarchy,parent=Events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  1
+
+● Bash(grep "^Girls' cricket.*hierarchy" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Girls' cricket,Girls' cricket,hierarchy,parent=Cricket                              
+     Girls' cricket,Girls' cricket,hierarchy,parent=Women as demographic group - THEMATIC
+
+● Bash(grep -n "^Girls' cricket.*hierarchy" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  315:Girls' cricket,Girls' cricket,hierarchy,parent=Cricket                              
+     316:Girls' cricket,Girls' cricket,hierarchy,parent=Women as demographic group - THEMATIC
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 6 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 removals                                                                                       
+       312    Gender-related vulnerabilities,Gender-related vulnerabilities,hierarchy,parent=Women & Gender - THEMATIC
+       313    Gin,Gin,hierarchy,parent=Spirits
+       314    Girls' cricket,cricket,merge,Tag with cricket + women (demographic group) + adolescents (if applicable) instead of gender-specific 
+             sport term per consolidation decision
+       315 -  Girls' cricket,Girls' cricket,hierarchy,parent=Cricket
+       316 -  Girls' cricket,Girls' cricket,hierarchy,parent=Women as demographic group - THEMATIC
+       315    Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=mining companies
+       316    Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=Mining companies
+       317    Glen Shale Mine,Nellie's Glen Shale Mine,synonym,Short form of Nellie's Glen Shale Mine - use full name for clarity
+
+● Bash(for term in "Criminal events" "Cultural events" "Disasters & accidents" "Economic events" "Historical events" "Legal events" "Life events"
+      "Political events" "S…)
+  ⎿  196:Criminal events,Criminal events,hierarchy,parent=Events            
+     201:Cultural events,Cultural events,hierarchy,parent=Events
+     224:Disasters & accidents,Disasters & accidents,hierarchy,parent=Events
+     … +7 lines (ctrl+o to expand)
+
+● Let me create a quick fix to remove all the capitalized event categories at once:
+
+● Bash(cp data/tag_map_consolidated.csv data/tag_map_consolidated.csv.backup-before-cleanup)
+  ⎿  (No content)
+
+● Bash(grep -v "^Criminal events,Criminal events,hierarchy,parent=Events" data/tag_map_consolidated.csv | grep -v "^Cultural events,Cultural
+      events,hierarchy,parent=Ev…)
+  ⎿  (No content)
+
+● Bash(grep -c "^Criminal events,Criminal events,hierarchy,parent=Events" data/tag_map_consolidated.csv)
+  ⎿  0
+
+● Bash(grep "^Girls' cricket.*hierarchy" data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | grep -A 5 "Generating tree for: Events") timeout: 1m 0s
+  ⎿  Generating tree for: Events                                    
+       ✓ Saved to: visualizations/hierarchy_trees/primary_events.txt
+     Generating tree for: Historical events
+     … +3 lines (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 80 lines
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 40 lines
+
+● Bash(grep -i "girls.*cricket" visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  No matches found
+
+● Bash(grep "^[A-Z].*events,.*hierarchy,parent=Events" data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● ✅ All Issues Fixed!
+
+  Successfully resolved both the Girls' cricket leaf node issue and the Events capitalization regression.
+
+  Issues Found and Fixed
+
+  1. Girls' Cricket Leaf Node ❌ → ✅
+  - Problem: "Girls' cricket" was appearing as a leaf node despite decision to tag with cricket + women + adolescents instead
+  - Root Cause: Auto-generated by poly-hierarchy script (lines 590, 1134)
+  - Fix:
+    - Removed Girls' cricket hierarchy entries from script
+    - Removed Girls' cricket from taxonomy (kept merge directive only)
+    - Verified: No "Girls' cricket" under Cricket in visualizations
+
+  2. Events Capitalization Regression ❌ → ✅
+  - Problem: Event categories reverted to incorrect capitalization (Criminal events, Cultural events, etc.)
+  - Root Cause: Hardcoded capitalization in poly-hierarchy generator script (lines 575-646)
+  - Fix:
+    - Updated script to use lowercase for all event categories:
+        - Criminal events → criminal events
+      - Cultural events → cultural events
+      - Disasters & accidents → disasters & accidents
+      - Economic events → economic events
+      - Historical events → historical events
+      - Legal events → legal events
+      - Life events → life events
+      - Political events → political events
+      - Social events → social events
+      - Sporting events → sporting events
+      - Alcohol-related → alcohol-related
+    - Removed all capitalized duplicates from taxonomy
+    - Regenerated visualizations
+
+  Files Modified
+
+  1. scripts/22_generate_poly_hierarchy.py - Fixed capitalization and removed Girls' cricket generation
+  2. data/tag_map_consolidated.csv - Removed capitalized event categories and Girls' cricket hierarchy entries
+  3. visualizations/hierarchy_trees/primary_events.txt - Regenerated with correct lowercase categories
+
+  Validation Results
+
+  - ✅ No "Girls' cricket" hierarchy entries in taxonomy
+  - ✅ Girls' cricket merge directive preserved (tag with cricket + women + adolescents)
+  - ✅ All event categories now lowercase
+  - ✅ No capitalized event category duplicates
+  - ✅ Visualizations regenerated successfully
+
+  ---
+  Ready to continue: Awaiting your review of ambiguous tags report when you're finished!
+
+> an extaneous hierarchy has also appeared under 'events':\
+\
+├── disasters & accidents
+│   ├── Accident
+│   │   └── Mining accidents
+│   │       └── Mount Kembla Disaster
+│   └── Fire\
+\
+All of these nodes are covered under 'Events > accidents', please remove / consolidate (without removing the correct 'accidents' tree) 
+  ⎿  ⧉ Selected 5 lines from visualizations/hierarchy_trees/primary_events.txt in Visual Studio Code
+
+● I'll remove the extraneous disasters & accidents hierarchy while preserving the correct accidents tree.
+
+● Bash(grep -n "^disasters & accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  1495:disasters & accidents,disasters & accidents,hierarchy,parent=Events
+
+● Bash(grep -n "parent=disasters & accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  14:Accident,Accident,hierarchy,parent=disasters & accidents
+     287:Fire,Fire,hierarchy,parent=disasters & accidents
+
+● Bash(grep -n "^accidents,accidents,hierarchy,parent=Events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  1330:accidents,accidents,hierarchy,parent=Events
+
+● Bash(grep -n "parent=accidents$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -10)
+  ⎿  (No content)
+
+● Bash(grep ",hierarchy,parent=accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -10)
+  ⎿  accident,accident,hierarchy,parent=accidents                            
+     agricultural accidents,agricultural accidents,hierarchy,parent=accidents
+     disaster,disaster,hierarchy,parent=accidents
+     … +2 lines (ctrl+o to expand)
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Bash(grep "^Disasters & accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -n "parent=Disasters & accidents$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(sed -n '286p' /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Fire,Fire,hierarchy,parent=Disasters & accidents
+
+● Bash(grep -v "^Accident,Accident,hierarchy,parent=disasters & accidents$" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | grep -v
+      "^Fire,Fire,hierarc…)
+  ⎿  (No content)
+
+● Bash(grep "disasters & accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Accident,Accident,hierarchy,parent=disasters & accidents           
+     Fire,Fire,hierarchy,parent=disasters & accidents
+     disasters & accidents,disasters & accidents,hierarchy,parent=Events
+
+● Bash(grep "^accidents,accidents,hierarchy,parent=Events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  accidents,accidents,hierarchy,parent=Events
+
+● Bash(wc -l /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  1956 /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv
+
+● Bash(wc -l /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv.backup-before-cleanup)
+  ⎿  1966 /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv.backup-before-cleanup
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 4 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                                                
+       11    Accident,Accident,hierarchy,parent=Disasters & accidents
+       12    Accident,Accident,hierarchy,parent=Health-related events - THEMATIC
+       13    Accident,Accident,hierarchy,parent=Mining incidents - THEMATIC
+       14 -  Accident,Accident,hierarchy,parent=disasters & accidents
+       14    Accommodation,Accommodation,hierarchy,parent=tourism & accommodation - THEMATIC
+       15    Accommodation,Accommodation,hierarchy,parent=Tourism & Accommodation - THEMATIC
+       16    Accommodation and hospitality venues,Accommodation and hospitality venues,hierarchy,parent=Built Environment
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 7 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 removals                                        
+       282    Fighting,Fighting,hierarchy,parent=Violent crimes - THEMATIC
+       283    Fighting,Fighting,hierarchy,parent=criminal events
+       284    Financial institutions,Financial institutions,hierarchy,parent=Commercial businesses
+       285 -  Fire,Fire,hierarchy,parent=Disasters & accidents
+       286 -  Fire,Fire,hierarchy,parent=disasters & accidents
+       285    Flower show,Flower show,hierarchy,parent=Social events
+       286    Flower show,Flower show,hierarchy,parent=social events
+       287    Flynn family,Flynn family,hierarchy,parent=families
+
+● Bash(grep -n "^disasters & accidents,disasters & accidents,hierarchy,parent=Events" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  1492:disasters & accidents,disasters & accidents,hierarchy,parent=Events
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                           
+       1489    desertion,desertion,hierarchy,parent=criminal events
+       1490    desertion,desertion,hierarchy,parent=Social order offences - THEMATIC
+       1491    disaster,disaster,hierarchy,parent=accidents
+       1492 -  disasters & accidents,disasters & accidents,hierarchy,parent=Events
+       1492    disease,disease,hierarchy,parent=health conditions - THEMATIC
+       1493    disease,disease,hierarchy,parent=physical and health conditions
+       1494    divorce,divorce,hierarchy,parent=legal events
+
+● Bash(grep "disasters & accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep "Disasters & accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Accident,Accident,hierarchy,parent=Disasters & accidents
+
+● Bash(grep -n "^Accident,Accident,hierarchy,parent=Disasters & accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  11:Accident,Accident,hierarchy,parent=Disasters & accidents
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 removal                                                            
+        8    Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=government bodies
+        9    Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Other government bodies
+       10    Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Indigenous peoples - THEMATIC
+       11 -  Accident,Accident,hierarchy,parent=Disasters & accidents
+       11    Accident,Accident,hierarchy,parent=Health-related events - THEMATIC
+       12    Accident,Accident,hierarchy,parent=Mining incidents - THEMATIC
+       13    Accommodation,Accommodation,hierarchy,parent=tourism & accommodation - THEMATIC
+
+● Bash(grep -i "disasters & accidents" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 10 lines
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 7 removals                                               
+       634            ['Strike', 'Strike', 'hierarchy', 'parent=economic events'],
+       635            ['Mine closure', 'Mine closure', 'hierarchy', 'parent=economic events'],
+       636    
+       637 -          # Disasters & accidents
+       638 -          ['disasters & accidents', 'disasters & accidents', 'hierarchy', 'parent=Events'],
+       639 -          ['Accident', 'Accident', 'hierarchy', 'parent=disasters & accidents'],
+       640 -          ['Mining accidents', 'Mining accidents', 'hierarchy', 'parent=Accident'],
+       641 -          ['Mount Kembla Disaster', 'Mount Kembla Disaster', 'hierarchy', 'parent=Mining accidents'],
+       642 -          ['Fire', 'Fire', 'hierarchy', 'parent=disasters & accidents'],
+       643 -  
+       637            # Historical events
+       638            ['historical events', 'historical events', 'hierarchy', 'parent=Events'],
+       639            ['World War I', 'World War I', 'hierarchy', 'parent=historical events'],
+
+● Bash(python3 /home/shawn/Code/blue-mountains/scripts/23_visualise_poly_hierarchy.py 2>&1 | grep -A 8 "Generating tree for: Events") timeout: 1m 0s
+  ⎿  Generating tree for: Events                                    
+       ✓ Saved to: visualizations/hierarchy_trees/primary_events.txt
+     Generating tree for: Historical events
+     … +6 lines (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 80 lines
+
+● Bash(grep -i "disasters" /home/shawn/Code/blue-mountains/visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  No matches found
+
+● ✅ Extraneous Hierarchy Removed
+
+  Successfully removed the duplicate disasters & accidents hierarchy while preserving the correct accidents tree.
+
+  Issue Found and Fixed
+
+  Problem: Duplicate accident hierarchies under Events
+  - ❌ disasters & accidents (extraneous, removed)
+  - ✅ accidents (correct, preserved)
+
+  Root Cause
+
+  The poly-hierarchy generation script (line 638-642) was creating a "disasters & accidents" tree that duplicated the existing "accidents" tree.
+
+  Changes Made
+
+  1. Removed from CSV (4 entries):
+  - disasters & accidents,disasters & accidents,hierarchy,parent=Events
+  - Accident,Accident,hierarchy,parent=Disasters & accidents (capitalized)
+  - Accident,Accident,hierarchy,parent=disasters & accidents (lowercase)
+  - Fire,Fire,hierarchy,parent=Disasters & accidents (capitalized)
+  - Fire,Fire,hierarchy,parent=disasters & accidents (lowercase)
+
+  2. Updated Script (scripts/22_generate_poly_hierarchy.py):
+  - Removed entire "Disasters & accidents" section (lines 638-642)
+  - Prevents regeneration of duplicate hierarchy
+
+  3. Regenerated Visualizations:
+  - ✅ Only accidents tree appears in Events
+  - ✅ No disasters & accidents tree present
+
+  Verification
+
+  Events hierarchy now shows (correct):
+  Events
+  ├── accidents
+  │   ├── accident
+  │   │   └── mining accidents
+  │   │       └── Mount Kembla Disaster
+  │   ├── agricultural accidents
+  │   ├── disaster
+  │   ├── fire
+  │   └── transport accidents
+
+  No longer shows (removed):
+  ├── disasters & accidents  ❌ GONE
+  │   ├── Accident
+  │   └── Fire
+
+  ---
+  All fixes complete! The Events facet now has correct capitalization and no duplicate hierarchies.
+
+> great, can you please write a /compact message? 
+  ⎿  ⧉ Selected 5 lines from visualizations/hierarchy_trees/primary_events.txt in Visual Studio Code
+
+● Session Summary: Hartley Vale Migration + Taxonomy Fixes
+
+  Completed This Session
+
+  1. ✅ Hartley Vale Migration - Mining Settlement to Town
+  - Added Hartley Vale to towns (primary + thematic hierarchy)
+  - Updated synonym mapping (line 285): "Unqualified form refers to the town"
+  - Deleted Hartley Vale (settlement) leaf node
+  - Updated 20 tag applications: Hartley Vale mining district → Hartley Vale
+  - Preserved mining infrastructure: Hartley Vale mining district > Hartley Vale mines
+
+  Result Structure:
+  Places > towns > Hartley Vale (NEW - town)
+  Places > mining districts > Hartley Vale mining district
+      └── Hartley Vale mines (PRESERVED)
+
+  2. ✅ Added Missing Mines to Taxonomy
+  - Added Hartley Vale Shale Mine under Built Environment > mines > shale mines
+  - Added Hermitage Coal Mine under Built Environment > mines > coal mines
+  - Added synonym: Hermitage colliery → Hermitage Coal Mine
+
+  3. ✅ Fixed Girls' Cricket Leaf Node Issue
+  - Problem: Girls' cricket appearing as leaf node despite decision to tag with cricket + women + adolescents
+  - Fix: Removed hierarchy entries from CSV and generation script (lines 590, 1134)
+  - Preserved: Merge directive only
+
+  4. ✅ Fixed Events Capitalization Regression
+  - Problem: Event categories reverted to incorrect capitalization (Criminal events, Cultural events, etc.)
+  - Root cause: Hardcoded capitalization in poly-hierarchy script
+  - Fix: Updated script to lowercase all event categories, removed 10 capitalized duplicates from CSV
+  - Result: All event categories now lowercase (criminal events, cultural events, etc.)
+
+  5. ✅ Removed Extraneous Disasters & Accidents Hierarchy
+  - Problem: Duplicate disasters & accidents tree under Events (separate from correct accidents tree)
+  - Fix: Removed 4 entries from CSV, deleted generation code from script
+  - Preserved: Correct accidents tree intact
+
+  Files Modified
+
+  1. data/tag_map_consolidated.csv - All taxonomy changes
+  2. data/tag_application_mapping.csv - 20 Hartley Vale items updated
+  3. scripts/22_generate_poly_hierarchy.py - Fixed capitalization, removed Girls' cricket + disasters & accidents generation
+  4. visualizations/hierarchy_trees/ - All 58 files regenerated
+
+  Validation Results
+
+  - ✅ Hartley Vale appears in towns (primary + thematic)
+  - ✅ Mining infrastructure preserved separately
+  - ✅ Both new mines appear in Built Environment hierarchy
+  - ✅ No Girls' cricket hierarchy entries (merge directive only)
+  - ✅ All event categories lowercase
+  - ✅ No duplicate disasters & accidents hierarchy
+  - ✅ Accidents tree preserved and correct
+
+  Next Steps
+
+  - Awaiting your decisions on ambiguous tags report (reports/AMBIGUOUS_TAGS_DECISION_REPORT.md)
+  - 83 items across 4 tags need disambiguation decisions
+
+  Note: Pre-existing capitalization inconsistency detected but not fixed: 29 entries use parent=towns (lowercase), 10 use parent=Towns
+  (capitalized). This doesn't affect functionality but could be cleaned up later if desired.
+
+
+

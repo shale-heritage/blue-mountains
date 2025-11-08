@@ -1,0 +1,1533 @@
+
+ ▐▛███▜▌   Claude Code v2.0.33
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+══════════════════════════════════════════════════════ Conversation compacted · ctrl+o for history ═════════════════════════════════════════════════════
+
+> /compact 
+  ⎿  Compacted (ctrl+o to see full summary)
+  ⎿  Referenced file planning/consolidation-decisions.md
+  ⎿  Read visualizations/hierarchy_trees/00_OVERVIEW.txt (165 lines)
+  ⎿  Read visualizations/hierarchy_trees/primary_places.txt (80 lines)
+  ⎿  Referenced file data/tag_map_consolidated.csv
+  ⎿  Read visualizations/hierarchy_trees/theme_family__domestic_life_-_thematic.txt (36 lines)
+
+> Hi CC, welcome back! Can you please to a git commit and push? If needed, break up the commit for clarity. 
+
+● I'll check the current git status and create appropriate commits for the changes.
+
+● Bash(git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +51 lines (ctrl+o to expand)
+
+● Bash(git diff data/tag_map_consolidated.csv | head -100)
+  ⎿  diff --git a/data/tag_map_consolidated.csv b/data/tag_map_consolidated.csv
+     index 7c360eb..22294f8 100644
+     --- a/data/tag_map_consolidated.csv
+     … +99 lines (ctrl+o to expand)
+
+● Bash(git diff data/tag_map_consolidated.csv | grep -E "^[\+\-]" | grep -v "^[\+\-][\+\-][\+\-]" | tail -100)
+  ⎿  +Mr D J Dunbar,Mr D J Dunbar,hierarchy,parent=named persons
+     +Mr D Morsby,Mr D Morsby,hierarchy,parent=named persons
+     +Mr D O'Keefe,Mr D O'Keefe,hierarchy,parent=named persons
+     … +99 lines (ctrl+o to expand)
+
+● Bash(git diff data/tag_application_mapping.csv)
+  ⎿  diff --git a/data/tag_application_mapping.csv b/data/tag_application_mapping.csv
+     index 30e3027..4465017 100644
+     --- a/data/tag_application_mapping.csv
+     … +26 lines (ctrl+o to expand)
+
+● Bash(git diff planning/consolidation-decisions.md | head -80)
+  ⎿  diff --git a/planning/consolidation-decisions.md b/planning/consolidation-decisions.md
+     index 141db6d..b1b9e5c 100644
+     --- a/planning/consolidation-decisions.md
+     … +79 lines (ctrl+o to expand)
+
+● Bash(git diff .claude/settings.json)
+  ⎿  diff --git a/.claude/settings.json b/.claude/settings.json
+     index fc8da04..8299671 100644
+     --- a/.claude/settings.json
+     … +28 lines (ctrl+o to expand)
+
+● Bash(git diff planning/consolidation-decisions.md | grep -E "^[\+]##" | head -20)
+  ⎿  +## Mine Polyhierarchy Disambiguation with "(site)" Qualifier
+     +### Semantic Distinction
+     +### Problem
+     … +17 lines (ctrl+o to expand)
+
+● Read(planning/consolidation-decisions.md)
+  ⎿  Read 50 lines
+
+● Bash(tail -100 planning/consolidation-decisions.md | head -50)
+  ⎿  - AAT: corporate bodies - aat:300025969                             
+     - Our term: Katoomba Coal and Shale Company (with synonym)
+     - Pattern: Preferred company name with historical variant as synonym
+     … +47 lines (ctrl+o to expand)
+
+● Bash(git log --oneline -5)
+  ⎿  9d1a117 style: complete Getty AAT capitalization standard (phase 4)
+     15ea286 style: complete Getty AAT capitalization standard (phase 3)
+     ddbd51a style: complete Getty AAT capitalization standard (phase 2)
+     … +2 lines (ctrl+o to expand)
+
+● Bash(tail -n +4350 planning/consolidation-decisions.md | grep -E "^## " | head -20)
+  ⎿  ## Mine Polyhierarchy Disambiguation with "(site)" Qualifier               
+     ## Roads Structure Consolidation
+     ## Truck System Reclassification from Transportation to Economic Activities
+     … +4 lines (ctrl+o to expand)
+
+● Bash(git diff reports/capitalization_preview.txt | head -30)
+  ⎿  diff --git a/reports/capitalization_preview.txt b/reports/capitalization_preview.txt
+     index e908c25..48d9cb0 100644
+     --- a/reports/capitalization_preview.txt
+     … +27 lines (ctrl+o to expand)
+
+● Bash(git diff scripts/36_analyse_capitalization.py | head -30)
+  ⎿  diff --git a/scripts/36_analyse_capitalization.py b/scripts/36_analyse_capitalization.py
+     index f302cc7..ff481fc 100755
+     --- a/scripts/36_analyse_capitalization.py
+     … +26 lines (ctrl+o to expand)
+
+● Based on the changes, I'll create a few logical commits. The work includes:
+
+  1. Capitalization analysis updates (from previous work)
+  2. Major taxonomy improvements (orphaned tags resolution, mine disambiguation, etc.)
+  3. Settings cleanup
+
+  Let me create these commits:
+
+● Bash(git add scripts/36_analyse_capitalization.py reports/capitalization_preview.txt && git commit -m "style: update capitalization analysis after
+      phase 4 completion…)
+  ⎿  [main cb2b59a] style: update capitalization analysis after phase 4 completion
+      2 files changed, 124 insertions(+), 529 deletions(-)
+
+● Bash(git add data/tag_map_consolidated.csv data/tag_application_mapping.csv planning/consolidation-decisions.md visualizations/hierarchy_trees/ && git
+       commit -m "fea…)
+  ⎿  [main 99beccb] feat(taxonomy): resolve orphaned tags and improve taxonomy structure
+      24 files changed, 1402 insertions(+), 58 deletions(-)
+
+● Bash(git add .claude/settings.json && git commit -m "chore: clean up Claude Code permissions configuration…)
+  ⎿  [main d6b0fa2] chore: clean up Claude Code permissions configuration
+      1 file changed, 2 insertions(+), 14 deletions(-)
+
+● Bash(git push)
+  ⎿  To github.com:shale-heritage/blue-mountains.git
+        9d1a117..d6b0fa2  main -> main
+
+● Bash(git log --oneline -3)
+  ⎿  d6b0fa2 chore: clean up Claude Code permissions configuration               
+     99beccb feat(taxonomy): resolve orphaned tags and improve taxonomy structure
+     cb2b59a style: update capitalization analysis after phase 4 completion
+
+● Done! I've committed and pushed all changes in 3 logical commits:
+
+  Commit 1: style: update capitalization analysis after phase 4 completion (cb2b59a)
+  - Updated scripts/36_analyse_capitalization.py with new proper noun indicators
+  - Regenerated reports/capitalization_preview.txt (now shows 0 terms requiring changes)
+  - Captures completion of Getty AAT capitalization standardization
+
+  Commit 2: feat(taxonomy): resolve orphaned tags and improve taxonomy structure (99beccb)
+  - Resolved all orphaned tags (trucking, rifle reserves, illness, mining settlements, Katoomba Coal)
+  - Added 13 retagging mappings (total now 134 entries)
+  - Structural improvements: mine (site) disambiguation, roads consolidation, truck system reclassification
+  - Data quality fixes: Goyder family hierarchy, Middle Camp consolidation
+  - Added 824 lines of documentation across 7 decision sections
+  - Regenerated all 24 hierarchy tree visualizations
+
+  Commit 3: chore: clean up Claude Code permissions configuration (d6b0fa2)
+  - Simplified .claude/settings.json by removing redundant Bash permission entries
+
+  All commits have been successfully pushed to origin/main.
+
+> great! we are very close to the point where we can retag items. I am, however, concerned about the completeness of our retagging map. I want to 
+**ensure** that no tags are discarded during retagging unless they have been **explicitly** flagged for removal. I also want to make sure that 
+**every** retagging decision - especially the addition of new tags - made during primary source review is applied. I'd like you to make a plan to 
+ensure that these goals are accomplished. My suggestions would be:\
+- systematically review all reports to make sure that **every** tag change or tag addition has been captured in the retagging mapping CSV.\
+- IF you start encountering very many omissions THEN undertake a systematic review of all of our interactions that have been saved in 
+archive/cc-interactions, looking for any missed tagging changes / additions (add to CSV) or hints that we might be missing some (flag to me).\
+- undertake a retagging 'dry run' and then analyse the results to see if we have lost any tags not explicitly flagged for removal, and that all 
+existing tags that are retained are properly represented in the new taxonomy. I'll leave the details to you.\
+\
+I am also happy to hear any suggestions you have as to how we can achieve the goals of our retagging exercise (retentiona of all existing tags 
+unless explicitly flagged for removal with translation into our new taxonomy; application of all additional tags / tag changes that have emerged 
+from review of primary sourct text). \
+\
+looking forward to seeing your plan! 
+
+● I'll research the current state of the retagging map and related decision documents to create a comprehensive plan for ensuring completeness
+  before we retag.
+
+● Plan(Analyze retagging completeness)
+  ⎿  Done (41 tool uses · 69.9k tokens · 4m 42s)                                                                                                   
+
+● Excellent research! Before I present the plan, I need to clarify a few strategic decisions that will affect the completeness verification:
+                                                                                                                                                   
+● User answered Claude's questions:
+  ⎿  · How should we handle the 111 person name tags (like 'Mr D Brown', 'Mrs Christina Brydon', etc.)? These are currently in the taxonomy but have
+      no retagging mappings. → Keep as-is (preserve all existing person name tags)
+     · For tags that exist in both old Zotero items AND new taxonomy (like 'hotels', 'mining', 'Katoomba'), do we need explicit mapping entries, or 
+     can we assume they carry over automatically? → Tags like 'Katoomba' map directly and don't need explicit mapping entries, BUT tags like 
+     'Hotels' need to conform to the new 'Hotels > Hotel' (generaic) pattern and will need an explicit remapping
+     · What constitutes 'explicitly flagged for removal' - which tags should we intentionally discard? → Note that there is no 'billiard' tag, it is
+      'billiards'. Aside from that, all of your exapmles 1-3 represent situations where existing tags are being corrected or replaced, so the old 
+     incorrect or outdated tags should be removed.
+     · The analysis found ~13 potentially missing alcohol tag retagging decisions. Should we treat overlapping decisions from different reports as 
+     duplicates or verify each individually? → Verify individually - check each occurrence for nuances
+
+● Perfect! Now I can create a comprehensive plan. Based on your answers, I understand that:
+
+  1. Person names: Preserve as-is (no mapping entries needed)
+  2. Pattern changes matter: Tags like 'Hotels' → 'Hotel' need explicit mapping (leaf-node pattern compliance)
+  3. Removal scope: Variants, folksonomy replacements, and corrections should be removed when documented
+  4. Verify individually: Check all alcohol decisions for nuances
+  ⎿  User rejected Claude's plan:
+     ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+     │ Retagging Map Completeness Verification Plan                                                                           │
+     │                                                                                                                        │
+     │ Goals                                                                                                                  │
+     │                                                                                                                        │
+     │ 1. Ensure NO tags discarded unless explicitly flagged for removal                                                      │
+     │ 2. Ensure EVERY retagging decision from primary source review is applied                                               │
+     │ 3. Create comprehensive old→new tag mapping for all 481 current Zotero tags                                            │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Phase 1: Resolve Known Gaps (Priority)                                                                                 │
+     │                                                                                                                        │
+     │ 1.1 Reconcile Alcohol Tag Decisions                                                                                    │
+     │                                                                                                                        │
+     │ - Compare 12 occurrences in orphaned_tags_RETAGGING_DECISIONS.md vs 12 items in alcohol_rationalisation_report.md      │
+     │ - Verify item-by-item if same items or different items                                                                 │
+     │ - Check for nuanced differences in ADD instructions (e.g., specific beverages, criminal events)                        │
+     │ - Add any missing entries to tag_application_mapping.csv                                                               │
+     │ - Output: Reconciliation report + updated mapping CSV                                                                  │
+     │                                                                                                                        │
+     │ 1.2 Complete Accommodation TBD Items                                                                                   │
+     │                                                                                                                        │
+     │ - Extract full text for 5 items marked "TBD - needs content extraction":                                               │
+     │   - Blue Mountains Railway Tourist Guide (1890s)                                                                       │
+     │   - A Public Meeting (13 January 1905)                                                                                 │
+     │   - Licensing (1 October 1892)                                                                                         │
+     │   - (2 others identified in reports)                                                                                   │
+     │ - Analyze context and determine appropriate tags                                                                       │
+     │ - Add to tag_application_mapping.csv                                                                                   │
+     │ - Output: 5 new mapping entries                                                                                        │
+     │                                                                                                                        │
+     │ 1.3 Resolve 12 Undecided Orphaned Tags                                                                                 │
+     │                                                                                                                        │
+     │ - Review orphaned_tags_final_report.md decisions for:                                                                  │
+     │   - Carrington, Colliery, Druid's Lodge, Girls' cricket, Katoomba Street, Maps (and 6 others)                          │
+     │ - User to make final decisions (or confirm existing decisions in taxonomy)                                             │
+     │ - Add mapping entries for affected items                                                                               │
+     │ - Output: Decision log + mapping entries                                                                               │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Phase 2: Systematic Report Audit                                                                                       │
+     │                                                                                                                        │
+     │ 2.1 Extract All Retagging Decisions from Reports                                                                       │
+     │                                                                                                                        │
+     │ For each report in reports/ directory:                                                                                 │
+     │ - Already captured: hotel_licensing, post_tag, alcohol, horses, accommodation (verify counts match)                    │
+     │ - Need to check: Any other *_report.md, *_analysis.md, *_review.md files                                               │
+     │ - Extract: Item title, date, publication, old tags, new tags, rationale                                                │
+     │ - Cross-reference against current mapping                                                                              │
+     │ - Output: Gap analysis showing missing entries                                                                         │
+     │                                                                                                                        │
+     │ 2.2 Audit Consolidation Decisions for Retagging Implications                                                           │
+     │                                                                                                                        │
+     │ Review all 24 sections in planning/consolidation-decisions.md to identify if any existing Zotero items need retagging: │
+     │ - "Drinking" → "Drinking (alcohol)" - check if old tag still in use                                                    │
+     │ - Lodges terminology changes - check for variant names                                                                 │
+     │ - Schools of Arts consolidation - check for fixes                                                                      │
+     │ - Military terminology - check for variants                                                                            │
+     │ - Sports hierarchy - check for category changes                                                                        │
+     │ - Each consolidation decision: Document if it affects existing item tags                                               │
+     │ - Output: List of consolidation decisions requiring item retagging + mapping entries                                   │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Phase 3: Build Comprehensive Tag Translation Map                                                                       │
+     │                                                                                                                        │
+     │ 3.1 Create Master Old→New Tag Mapping                                                                                  │
+     │                                                                                                                        │
+     │ Build complete mapping of all 481 current Zotero tags into categories:                                                 │
+     │                                                                                                                        │
+     │ Category A: Direct Carryover (no mapping entry needed)                                                                 │
+     │ - Person names (111 tags)                                                                                              │
+     │ - Place names unchanged (e.g., 'Katoomba', 'Blackheath')                                                               │
+     │ - Tags already in new taxonomy with identical names                                                                    │
+     │                                                                                                                        │
+     │ Category B: Pattern Compliance Changes (needs mapping entry)                                                           │
+     │ - Plurals → singulars for generics: 'Hotels' → 'Hotel'                                                                 │
+     │ - Identify all parent→generic leaf transformations                                                                     │
+     │ - Extract from taxonomy: All cases where folksonomy used plural parent instead of singular generic                     │
+     │                                                                                                                        │
+     │ Category C: Consolidation/Rationalization (needs mapping entry)                                                        │
+     │ - Variants merged: variants → preferred terms                                                                          │
+     │ - Folksonomy → controlled vocabulary                                                                                   │
+     │ - Corrections: misspellings, capitalization fixes                                                                      │
+     │ - Extract from consolidation-decisions.md                                                                              │
+     │                                                                                                                        │
+     │ Category D: Primary Source Additions (already in mapping)                                                              │
+     │ - Item-specific tag additions from context review                                                                      │
+     │ - Already in tag_application_mapping.csv (verify completeness)                                                         │
+     │                                                                                                                        │
+     │ Category E: Explicit Removals (document only)                                                                          │
+     │ - Tags being intentionally discarded                                                                                   │
+     │ - Document rationale from consolidation decisions                                                                      │
+     │                                                                                                                        │
+     │ Output: Complete 481-tag categorization spreadsheet                                                                    │
+     │                                                                                                                        │
+     │ 3.2 Generate Pattern-Based Mapping Entries                                                                             │
+     │                                                                                                                        │
+     │ - Systematically identify all plural parent tags in current Zotero that should map to singular generic leaves          │
+     │ - Example: Any item tagged 'Hotels' (parent) should be retagged to 'Hotel' (generic leaf)                              │
+     │ - Create bulk mapping entries for pattern compliance                                                                   │
+     │ - Output: ~50-100 new mapping entries (estimate)                                                                       │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Phase 4: Archive Interaction Review (Conditional)                                                                      │
+     │                                                                                                                        │
+     │ Trigger: If Phase 2 finds >20 missing retagging decisions                                                              │
+     │                                                                                                                        │
+     │ 4.1 Systematic Archive Review                                                                                          │
+     │                                                                                                                        │
+     │ - Review all 37 files in archive/cc-interactions/ (2025-10-09 to 2025-11-06)                                           │
+     │ - Search for patterns indicating retagging decisions:                                                                  │
+     │   - "retag", "replace tag", "add tag", "remove tag"                                                                    │
+     │   - Item titles with dates                                                                                             │
+     │   - "change X to Y"                                                                                                    │
+     │ - Extract any decisions not yet in mapping or reports                                                                  │
+     │ - Output: Additional mapping entries + flag any systemic gaps                                                          │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Phase 5: Create Retagging Dry Run Infrastructure                                                                       │
+     │                                                                                                                        │
+     │ 5.1 Build Retagging Simulation Script                                                                                  │
+     │                                                                                                                        │
+     │ Create Python script (scripts/50_retagging_dry_run.py) that:                                                           │
+     │                                                                                                                        │
+     │ Input:                                                                                                                 │
+     │ - data/zotero_full_export.json (current state)                                                                         │
+     │ - data/tag_application_mapping.csv (specific item changes)                                                             │
+     │ - data/tag_map_consolidated.csv (taxonomy + synonyms)                                                                  │
+     │                                                                                                                        │
+     │ Process:                                                                                                               │
+     │ 1. Load current Zotero tags for all 417 items                                                                          │
+     │ 2. For each item:                                                                                                      │
+     │   - Apply specific changes from tag_application_mapping.csv                                                            │
+     │   - Apply pattern-based changes (plurals → singulars)                                                                  │
+     │   - Apply synonym consolidations from tag_map_consolidated.csv                                                         │
+     │   - Preserve metadata tags (Primary source, Secondary source)                                                          │
+     │   - Preserve person names (as-is)                                                                                      │
+     │ 3. Generate new tag set for each item                                                                                  │
+     │                                                                                                                        │
+     │ Output:                                                                                                                │
+     │ - JSON file with proposed new tags for each item                                                                       │
+     │ - Change log showing: old tags → new tags for each item                                                                │
+     │ - Statistics: tags added, removed, unchanged per item                                                                  │
+     │                                                                                                                        │
+     │ 5.2 Build Validation Analysis Script                                                                                   │
+     │                                                                                                                        │
+     │ Create Python script (scripts/51_validate_retagging.py) that analyzes dry run results:                                 │
+     │                                                                                                                        │
+     │ Checks:                                                                                                                │
+     │ 1. No accidental loss: Every old tag is either:                                                                        │
+     │   - Mapped to new tag (documented)                                                                                     │
+     │   - Explicitly removed (documented in consolidation decisions)                                                         │
+     │   - Carried over unchanged (in new taxonomy)                                                                           │
+     │ 2. All additions applied: Every tag addition from primary source review appears in output                              │
+     │ 3. Taxonomy compliance: All new tags exist in tag_map_consolidated.csv                                                 │
+     │ 4. Metadata preservation: Primary/Secondary source tags retained for all items that had them                           │
+     │ 5. Pattern compliance: No plural parent tags remain where singular generic should be used                              │
+     │ 6. Synonym consolidation: All variants mapped to preferred terms                                                       │
+     │                                                                                                                        │
+     │ Output:                                                                                                                │
+     │ - Validation report with PASS/FAIL for each check                                                                      │
+     │ - List of any tags that would be lost (with item details)                                                              │
+     │ - List of any additions not applied                                                                                    │
+     │ - List of any non-taxonomy tags that would be created                                                                  │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Phase 6: Run Dry Run and Analyze Results                                                                               │
+     │                                                                                                                        │
+     │ 6.1 Execute Dry Run                                                                                                    │
+     │                                                                                                                        │
+     │ - Run scripts/50_retagging_dry_run.py                                                                                  │
+     │ - Generate proposed new tag state for all 417 items                                                                    │
+     │ - Output: dry_run_output.json + change_log.csv                                                                         │
+     │                                                                                                                        │
+     │ 6.2 Execute Validation Analysis                                                                                        │
+     │                                                                                                                        │
+     │ - Run scripts/51_validate_retagging.py on dry run output                                                               │
+     │ - Generate validation report                                                                                           │
+     │ - Output: retagging_validation_report.md                                                                               │
+     │                                                                                                                        │
+     │ 6.3 Manual Review of Validation Report                                                                                 │
+     │                                                                                                                        │
+     │ Review validation report for:                                                                                          │
+     │ - Any tags flagged as "would be lost" - investigate each                                                               │
+     │ - Any additions flagged as "not applied" - investigate each                                                            │
+     │ - Any non-taxonomy tags - decide if legitimate or errors                                                               │
+     │ - Decision point: Identify any additional mapping entries needed                                                       │
+     │                                                                                                                        │
+     │ 6.4 Iterative Refinement                                                                                               │
+     │                                                                                                                        │
+     │ - Add any missing mapping entries discovered in validation                                                             │
+     │ - Re-run dry run and validation                                                                                        │
+     │ - Repeat until validation report shows 100% clean                                                                      │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Phase 7: Final Quality Checks                                                                                          │
+     │                                                                                                                        │
+     │ 7.1 Cross-Reference Checks                                                                                             │
+     │                                                                                                                        │
+     │ - Verify mapping CSV has no duplicate entries (same item multiple times with conflicting instructions)                 │
+     │ - Verify all 'source' column values reference valid report files                                                       │
+     │ - Verify all add_tags exist in taxonomy                                                                                │
+     │ - Verify item identifiers (title+date) are unique and match Zotero export                                              │
+     │                                                                                                                        │
+     │ 7.2 Statistical Verification                                                                                           │
+     │                                                                                                                        │
+     │ - Count: Total unique old tags (481) = mapped + removed + carried over                                                 │
+     │ - Count: Total items in mapping ≤ 417 items in library                                                                 │
+     │ - Count: Items affected by pattern changes + specific changes = total items to be modified                             │
+     │ - Output: Statistics summary for final approval                                                                        │
+     │                                                                                                                        │
+     │ 7.3 Human Spot Check                                                                                                   │
+     │                                                                                                                        │
+     │ - Randomly sample 20 items from dry run output                                                                         │
+     │ - Manually verify old→new tag transformations are correct                                                              │
+     │ - Check for unexpected tag losses or additions                                                                         │
+     │ - Output: Spot check report                                                                                            │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Deliverables                                                                                                           │
+     │                                                                                                                        │
+     │ 1. Complete tag_application_mapping.csv with all retagging decisions                                                   │
+     │ 2. Categorized tag spreadsheet (481 tags categorized A-E)                                                              │
+     │ 3. Retagging dry run output (proposed new state)                                                                       │
+     │ 4. Validation report (PASS/FAIL on all quality checks)                                                                 │
+     │ 5. Final statistics summary (tags added/removed/unchanged)                                                             │
+     │ 6. Spot check report (20-item manual verification)                                                                     │
+     │ 7. Go/no-go recommendation for proceeding with actual retagging                                                        │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Estimated Effort                                                                                                       │
+     │                                                                                                                        │
+     │ - Phase 1: 4-5 hours (resolve known gaps)                                                                              │
+     │ - Phase 2: 6-8 hours (systematic audit)                                                                                │
+     │ - Phase 3: 5-6 hours (build translation map)                                                                           │
+     │ - Phase 4: 4-6 hours (if triggered - archive review)                                                                   │
+     │ - Phase 5: 6-8 hours (build dry run infrastructure)                                                                    │
+     │ - Phase 6: 2-3 hours (run and analyze)                                                                                 │
+     │ - Phase 7: 2-3 hours (final checks)                                                                                    │
+     │                                                                                                                        │
+     │ Total: 29-39 hours (22-33 hours if Phase 4 not needed)                                                                 │
+     │                                                                                                                        │
+     │ ---                                                                                                                    │
+     │ Success Criteria                                                                                                       │
+     │                                                                                                                        │
+     │ ✅ Zero tags lost unless explicitly documented for removal                                                              │
+     │ ✅ 100% of primary source review additions applied                                                                      │
+     │ ✅ All 481 current tags accounted for in one of categories A-E                                                          │
+     │ ✅ Validation script shows PASS on all checks                                                                           │
+     │ ✅ Spot check shows correct transformations                                                                             │
+     │ ✅ Complete audit trail for every change                                                                                │
+     ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+> I am reviewing your plan in detail, but while I do that, can you answer a question? In the final deployment (zotero, zenodo, omeka) how is the tag
+ hierarchy captured? what allows, e.g., faceted search (or other kinds of retrieval) based on primary or intermediary tags? Are primary and 
+intermediary tags also written to every item? Is the entire tree written to every item? how does this work? I need this information to approve / 
+reject proposals for 'direct carryover' where the old tag has no hierarchy and the new tag does (e.g.) 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_activities.txt in Visual Studio Code
+
+● Excellent question! This is critical for the retagging strategy and affects whether "direct carryover" is safe. Let me explain the technical
+  realities:
+
+  How Tags Work in Each System
+
+  Zotero
+
+  - Storage: Flat list of tag strings per item
+  - No native hierarchy support: Zotero doesn't understand parent/child relationships
+  - Search: Literal tag matching only - searching "Hotels" only finds items explicitly tagged "Hotels"
+  - Tags are independent strings with no semantic relationships
+
+  Zenodo
+
+  - Storage: Flat keywords array
+  - No hierarchy support: Similar to Zotero - just strings
+  - Search: Keyword matching, no hierarchy awareness
+
+  Omeka
+
+  - Storage: Varies by plugin, but typically flat tags or Dublin Core Subject fields
+  - Some vocabulary plugins exist: Can link to controlled vocabularies (SKOS, etc.)
+  - Search: Depends on configuration, typically flat tag matching
+
+  Two Approaches to Hierarchical Search
+
+  Since none of these systems natively support hierarchical tags, there are two standard approaches:
+
+  Approach 1: Tag Explosion (Write All Ancestors)
+
+  When you tag an item with a leaf node, you ALSO write all parent/ancestor tags to the item.
+
+  Example: Item about the Grand Hotel gets tagged with:
+  - Grand Hotel (specific leaf)
+  - Hotels (parent)
+  - accommodation buildings (grandparent)
+  - Built Environment (great-grandparent)
+  - tourism & accommodation - THEMATIC (thematic parent)
+  - etc.
+
+  Advantages:
+  - ✅ Simple queries work: Search "Hotels" finds all hotel items
+  - ✅ No custom software needed
+  - ✅ Works in any system
+
+  Disadvantages:
+  - ❌ Massive tag bloat (10-20+ tags per item vs 1 leaf tag)
+  - ❌ Maintenance nightmare: If hierarchy changes, must retag all items
+  - ❌ User confusion: Why does this item have "Built Environment" tag?
+  - ❌ Violates clean data principle
+
+  Approach 2: Leaf Nodes Only + Query Expansion
+
+  Store only leaf tags on items. Maintain hierarchy separately (in your CSV/database). When users search, expand queries.
+
+  Example: Item about Grand Hotel gets tagged with:
+  - Grand Hotel (only the leaf)
+
+  When user searches "Hotels", the search system:
+  1. Reads hierarchy from tag_map_consolidated.csv
+  2. Finds all children of "Hotels": Hotel, Grand Hotel, Imperial Hotel, etc.
+  3. Expands query to: (Grand Hotel OR Imperial Hotel OR Hotel OR ...)
+  4. Returns all matching items
+
+  Advantages:
+  - ✅ Clean item tags (leaf nodes only)
+  - ✅ Hierarchy changes don't require retagging items
+  - ✅ Single source of truth (the CSV)
+  - ✅ Maintains intellectual clarity
+
+  Disadvantages:
+  - ❌ Requires custom search interface that understands the hierarchy
+  - ❌ Can't use native Zotero/Zenodo/Omeka search without modification
+  - ❌ Export to other systems loses hierarchy unless you include the CSV
+
+  Current Project Appears to Use Approach 2
+
+  Based on the documentation emphasis on "leaf-node tagging pattern" and the CSV structure, this project seems designed for Approach 2 (leaf nodes
+  only).
+
+  Evidence:
+  - CLAUDE.md explicitly states: "only leaf nodes are used to tag Zotero items"
+  - Plural parents are "organisational only - never applied to items"
+  - Hierarchy is fully captured in tag_map_consolidated.csv
+
+  Critical Implication for "Direct Carryover"
+
+  This means direct carryover is NOT safe if the old tag was a parent node!
+
+  Example Problem:
+
+  - Old Zotero: Item tagged Hotels (used incorrectly as both parent AND leaf in folksonomy)
+  - New taxonomy: Hotels is strictly a parent node (plural organizational), Hotel is the generic leaf
+  - If we do direct carryover: Item stays tagged Hotels → VIOLATES leaf-node pattern!
+  - Correct approach: Map Hotels → Hotel (parent to generic leaf)
+
+  What Tags Need Mapping Entries:
+
+  Category A: True Direct Carryover (no mapping needed)
+  - Person names: Mr D Brown → Mr D Brown (already leaves)
+  - Specific place names: Katoomba → Katoomba (already a leaf)
+  - Already-correct leaf nodes: billiards → billiards (already singular leaf)
+
+  Category B: Pattern Compliance (NEEDS mapping)
+  - Plural parents used as tags: Hotels → Hotel
+  - Plural parents used as tags: Schools → School
+  - Plural parents used as tags: Retailers and Stores → Retailer or Store
+  - ANY tag that currently matches a plural parent name in the new taxonomy
+
+  Questions for You
+
+  To finalize the retagging strategy, I need to understand your deployment plan:
+
+  1. Are you implementing query expansion? (Custom search interface that reads the CSV hierarchy and expands parent searches to include children)
+  2. Or are you doing tag explosion? (Write all ancestor tags to items for simple native searching)
+  3. Or hybrid? (Leaf nodes in Zotero, but generate expanded versions for export to Zenodo/Omeka)
+  4. For direct carryover: Should I systematically identify all tags in current Zotero that match parent node names in the new taxonomy and create
+  mapping entries for Parent → Generic Leaf transformations?
+
+  This is probably 50-100+ tags that need explicit mapping entries to maintain the leaf-node pattern.
+
+  My recommendation: Before proceeding with Phase 3 of the plan, we should:
+  1. Decide on deployment approach (query expansion vs tag explosion vs hybrid)
+  2. Extract all current Zotero tags that match parent nodes in new taxonomy
+  3. Create systematic mapping entries for Parent → Generic Leaf compliance
+
+  What's your deployment strategy?
+
+> It sounds like the query expansion approach will work best; minimum deployment would involve (a) use zotero only internally, not public facing, so
+ leaf node only is ok; (b) zenodo is for technically sophisticated re-users of the data, so publish all items tagged with leaf node only and supply 
+CSV; (c) implement proper query expansion in Omeka - we have Omeka Classic (for compatibility with curatescape), can you sketch out (high-level / 
+broad strokes) how we might do 'query expansion' in Omeka? We can use whatever plugin is necessary, if that helps. 
+
+● Excellent! Query expansion is the cleanest approach. Let me sketch out how to implement it in Omeka Classic:
+
+  Omeka Classic Query Expansion Implementation
+
+  High-Level Architecture
+
+  Three components needed:
+  1. Hierarchy data store (your CSV loaded into Omeka)
+  2. Query expansion engine (intercepts searches)
+  3. UI enhancements (browse by hierarchy, faceted search)
+
+  ---
+  Component 1: Hierarchy Data Store
+
+  Option A: Custom Plugin Database Table
+
+  Create a custom Omeka plugin that:
+  - Adds database table taxonomy_hierarchy with columns: term, parent, facet, relationship_type
+  - Imports your tag_map_consolidated.csv on plugin install/update
+  - Provides API for querying hierarchy: getChildren($term), getAncestors($term), getAllDescendants($term)
+
+  Option B: Use Simple Vocab Plugin
+
+  - SimpleVocab plugin (if compatible with Omeka Classic) lets you import controlled vocabularies
+  - Store hierarchy in custom field structure
+  - May require modifications to support parent/child relationships
+
+  Option C: External JSON/CSV Read
+
+  - Store tag_map_consolidated.csv in Omeka theme directory
+  - PHP reads/parses CSV on demand
+  - Cache parsed hierarchy in session or filesystem cache
+  - Simpler but potentially slower
+
+  Recommendation: Option A (custom database table) for performance and proper integration
+
+  ---
+  Component 2: Query Expansion Engine
+
+  Approach: Custom Plugin That Hooks into Search
+
+  Create plugin that:
+
+  1. Intercepts tag search queries
+  // Hook into Omeka's search system
+  add_filter('items_browse_sql', 'expand_tag_query');
+
+  function expand_tag_query($select) {
+      // Detect if user searched for a tag
+      $tag = $_GET['tag'] ?? null;
+
+      if ($tag) {
+          // Load hierarchy
+          $hierarchy = load_taxonomy_hierarchy();
+
+          // Get all descendant tags (children, grandchildren, etc.)
+          $descendants = get_all_descendants($tag, $hierarchy);
+
+          // Expand query: tag OR child1 OR child2 OR ...
+          $select->where('tags.name IN (?)', array_merge([$tag], $descendants));
+      }
+
+      return $select;
+  }
+
+  2. Handles faceted browse
+  // When browsing by parent category like "Hotels"
+  // Show all items tagged with any descendant leaf node
+  function browse_by_taxonomy_term($parent_term) {
+      $leaves = get_all_leaf_descendants($parent_term);
+      return find_items_with_tags($leaves);
+  }
+
+  3. Recursive expansion for polyhierarchy
+  function get_all_descendants($term, $hierarchy, &$found = []) {
+      // Find all direct children
+      $children = $hierarchy[$term]['children'] ?? [];
+
+      foreach ($children as $child) {
+          $found[] = $child;
+          // Recursive: get children of children
+          get_all_descendants($child, $hierarchy, $found);
+      }
+
+      return array_unique($found); // Handle polyhierarchy
+  }
+
+  ---
+  Component 3: UI Enhancements
+
+  3A: Hierarchical Browse Widget
+
+  Create browse interface showing taxonomy structure:
+
+  Browse by Category:
+
+  ▼ Built Environment
+    ▼ Accommodation buildings
+      ▼ Hotels (23 items)
+        • Hotel (5 items)
+        • Grand Hotel (3 items)
+        • Imperial Hotel (8 items)
+    ▼ Community buildings
+      ▼ Halls (15 items)
+        • School of Arts (12 items)
+        ...
+
+  - Clicking "Hotels" runs expanded query showing all 23 items
+  - Clicking "Grand Hotel" shows only those 3 items
+  - Uses AJAX to lazy-load hierarchy levels
+
+  3B: Faceted Search Integration
+
+  If using FacetedBrowse plugin (or similar), integrate hierarchy:
+
+  // Register custom facet type: "Hierarchical Tag"
+  add_facet_type('hierarchical_tag', [
+      'display_name' => 'Topic (Hierarchical)',
+      'expand_query' => true, // Enable query expansion
+      'show_counts' => true   // Show item counts per facet
+  ]);
+
+  Shows facets like:
+  Filter by Topic:
+  ☐ Arts & Culture (45)
+  ☐ Economy & Labour (89)
+    ☐ Mining & Industry (67)
+      ☑ Mining companies (12) ← Selected
+  ☐ Family & Domestic Life (34)
+
+  Selecting "Mining companies" expands to all child companies
+
+  3C: Tag Cloud with Hierarchy
+
+  Enhanced tag cloud that:
+  - Shows leaf nodes sized by frequency
+  - Clicking parent term highlights all child leaves
+  - Hover shows breadcrumb: Economy & Labour > Mining & Industry > Mining companies > Katoomba Coal and Shale Company
+
+  ---
+  Implementation Workflow
+
+  Phase 1: Basic Query Expansion (Core Functionality)
+
+  Effort: 20-30 hours development
+
+  1. Create custom plugin: TaxonomyHierarchy
+  2. Add database table, CSV import script
+  3. Hook into items_browse_sql for search expansion
+  4. Hook into tag browse page
+  5. Test with your 417 items
+
+  Deliverable: Search and browse work with hierarchy expansion
+
+  Phase 2: UI Enhancements (User Experience)
+
+  Effort: 30-40 hours development
+
+  1. Build hierarchical browse widget (tree view)
+  2. Integrate with FacetedBrowse or similar plugin
+  3. Add breadcrumb trails to item pages
+  4. Create "Related Items" suggestions based on shared hierarchy branches
+  5. Mobile-responsive design (important for Curatescape)
+
+  Deliverable: Polished user-facing interface
+
+  Phase 3: Curatescape Integration (Location + Taxonomy)
+
+  Effort: 10-20 hours development
+
+  1. Enhance Curatescape's location-based filtering with taxonomy facets
+  2. Map/timeline views with hierarchical tag filtering
+  3. Mobile app includes taxonomy browse
+  4. Example: "Show all Hotels in Katoomba on the map"
+
+  Deliverable: Location + taxonomy combined exploration
+
+  ---
+  Existing Plugins to Leverage
+
+  Must Have:
+
+  - Custom plugin (TaxonomyHierarchy) - you'll need to build this, no existing plugin does full hierarchy expansion
+
+  Nice to Have:
+
+  - Simple Vocab - Controlled vocabulary support (may help with term validation)
+  - Search by Metadata - Enhanced search (modify for hierarchy awareness)
+  - Faceted Browse - If exists for Omeka Classic (hierarchy integration point)
+
+  Curatescape Compatibility:
+
+  - Curatescape is well-documented
+  - Plugins can extend it via standard Omeka hooks
+  - Your custom plugin would add hierarchy layer that Curatescape can query
+
+  ---
+  Alternative: Lighter Weight Approach
+
+  If custom plugin development is too heavy:
+
+  "Pseudo-Hierarchy" via Tag Prefixes
+
+  - Instead of query expansion, use hierarchical tag prefixes
+  - Example: Tag items with both Grand Hotel AND hierarchy:Hotels AND hierarchy:Built Environment
+  - Search for hierarchy:Hotels finds all hotel items
+  - Still requires some custom display logic but simpler than full expansion
+
+  Trade-off: More tags per item, but simpler implementation
+
+  ---
+  Development Resources Needed
+
+  For full query expansion implementation:
+  - PHP developer familiar with Omeka Classic plugin architecture (1 developer, 60-90 hours)
+  - OR: You + Omeka Classic documentation + AI assistance (slower but achievable)
+
+  Key Omeka Classic docs:
+  - Plugin development: https://omeka.org/classic/docs/Plugins/
+  - Database hooks: https://omeka.org/classic/docs/Reference/filters/
+  - Working with tags: https://omeka.org/classic/docs/Reference/api/Omeka/Record/Mixin/Tags/
+
+  ---
+  My Recommendation
+
+  Minimum Viable Product (30-40 hours):
+  1. Build TaxonomyHierarchy plugin with CSV import + query expansion
+  2. Hook into browse and search
+  3. Add simple hierarchical browse list (no fancy tree widget yet)
+  4. Test thoroughly with your collection
+
+  Then assess: Is this sufficient, or do you need the UI enhancements?
+
+  This keeps your retagging strategy clean: Leaf nodes only, no tag explosion, hierarchy maintained in single CSV source of truth.
+
+  ---
+  Does This Approach Work for Your Needs?
+
+  Given this technical path, should I proceed with the retagging plan using:
+  - Leaf nodes only in Zotero/Zenodo
+  - Systematic mapping of parent node tags → generic leaf tags
+  - CSV as source of truth for hierarchy
+  - Query expansion deferred to Omeka implementation phase
+
+  This means the retagging plan needs Phase 3.2 ("Generate Pattern-Based Mapping Entries") to find all current parent-node tags and map them to
+  generic leaves.
+
+  Should I proceed with finalizing the plan on this basis?
+
+> since we are ensuring that leaf nodes are unique, tagging with leaf nodes only is safe, we can reconstruct the hierarcy later if needed. This does
+ remind me though, for your plan, we need to add a final check that all leaf nodes actually ARE unique after the retagging is done. I've found some 
+non-unique ones today and there may be more. Here is my other feedback on your plan:\
+\
+Goals are correct
+
+1.1 ok
+1.2 Defer - we'll do OCR / content recognition and tagging of new items later
+1.3 ok
+
+2.1 ok
+2.2 ok
+
+3.1 ok, so long as conforms with leaf node rules / approach - only exact match leaf nodes can carry over directly, all others must be fully mapped
+3.2 ok
+
+4.1 set trigger at >10, otherwise OK
+
+5.1 ok
+5.2 ok
+
+6.1-6.4 ok
+
+7.1-7.3 ok 
+
+● Perfect! Thank you for the detailed feedback. Let me revise the plan with your changes:
+
+  Key Changes:
+  1. ✅ Remove Phase 1.2 (defer accommodation TBD items)
+  2. ✅ Strengthen Phase 3.1 requirement: Only exact match leaf nodes can carry over
+  3. ✅ Change Phase 4 trigger: >10 missing decisions (was >20)
+  4. ✅ Add critical new check: Verify all leaf nodes are unique after retagging
+  5. ✅ Confirm leaf-node-only approach is safe given uniqueness guarantee
+
+  Let me present the revised plan:
+                                                                                                                           
+● User approved Claude's plan:
+  ⎿  Retagging Map Completeness Verification Plan (REVISED)
+
+     Goals
+
+     1. Ensure NO tags discarded unless explicitly flagged for removal
+     2. Ensure EVERY retagging decision from primary source review is applied
+     3. Create comprehensive old→new tag mapping for all 481 current Zotero tags
+     4. Verify all leaf nodes are unique after retagging (critical for query expansion)
+
+     ---
+     Phase 1: Resolve Known Gaps (Priority)
+
+     1.1 Reconcile Alcohol Tag Decisions
+
+     - Compare 12 occurrences in orphaned_tags_RETAGGING_DECISIONS.md vs 12 items in alcohol_rationalisation_report.md
+     - Verify item-by-item if same items or different items
+     - Check for nuanced differences in ADD instructions (e.g., specific beverages, criminal events)
+     - Add any missing entries to tag_application_mapping.csv
+     - Output: Reconciliation report + updated mapping CSV
+
+     1.2 Resolve 12 Undecided Orphaned Tags
+
+     - Review orphaned_tags_final_report.md decisions for:
+       - Carrington, Colliery, Druid's Lodge, Girls' cricket, Katoomba Street, Maps (and 6 others)
+     - User to make final decisions (or confirm existing decisions in taxonomy)
+     - Add mapping entries for affected items
+     - Output: Decision log + mapping entries
+
+     ---
+     Phase 2: Systematic Report Audit
+
+     2.1 Extract All Retagging Decisions from Reports
+
+     For each report in reports/ directory:
+     - Already captured: hotel_licensing, post_tag, alcohol, horses, accommodation (verify counts match)
+     - Need to check: Any other *_report.md, *_analysis.md, *_review.md files
+     - Extract: Item title, date, publication, old tags, new tags, rationale
+     - Cross-reference against current mapping
+     - Output: Gap analysis showing missing entries
+
+     2.2 Audit Consolidation Decisions for Retagging Implications
+
+     Review all 24 sections in planning/consolidation-decisions.md to identify if any existing Zotero items need retagging:
+     - "Drinking" → "Drinking (alcohol)" - check if old tag still in use
+     - Lodges terminology changes - check for variant names
+     - Schools of Arts consolidation - check for fixes
+     - Military terminology - check for variants
+     - Sports hierarchy - check for category changes
+     - Each consolidation decision: Document if it affects existing item tags
+     - Output: List of consolidation decisions requiring item retagging + mapping entries
+
+     ---
+     Phase 3: Build Comprehensive Tag Translation Map
+
+     3.1 Create Master Old→New Tag Mapping
+
+     Build complete mapping of all 481 current Zotero tags into categories:
+
+     Category A: Direct Carryover (no mapping entry needed)
+     - STRICT CRITERIA: Only tags that are EXACT MATCHES to leaf nodes in new taxonomy
+     - Person names (111 tags) - already leaves
+     - Place names that are already leaves (e.g., 'Katoomba', 'Blackheath')
+     - Specific named entities already as leaves (e.g., 'Grand Hotel', 'billiards')
+     - Verification: Each tag MUST exist in tag_map_consolidated.csv AND have children=0 (is a leaf)
+
+     Category B: Pattern Compliance Changes (needs mapping entry)
+     - ALL tags that match parent node names (even if semantically "correct")
+     - Plurals → singulars for generics: 'Hotels' → 'Hotel'
+     - Parent categories used as tags: 'accommodation buildings' → specific leaf
+     - Any tag matching a non-leaf node in taxonomy requires explicit mapping
+
+     Category C: Consolidation/Rationalization (needs mapping entry)
+     - Variants merged: variants → preferred terms
+     - Folksonomy → controlled vocabulary
+     - Corrections: misspellings, capitalization fixes
+     - Extract from consolidation-decisions.md
+
+     Category D: Primary Source Additions (already in mapping)
+     - Item-specific tag additions from context review
+     - Already in tag_application_mapping.csv (verify completeness)
+
+     Category E: Explicit Removals (document only)
+     - Tags being intentionally discarded
+     - Document rationale from consolidation decisions
+
+     Output: Complete 481-tag categorization spreadsheet
+
+     3.2 Generate Pattern-Based Mapping Entries
+
+     - Systematically identify all plural parent tags in current Zotero that should map to singular generic leaves
+     - Example: Any item tagged 'Hotels' (parent) should be retagged to 'Hotel' (generic leaf)
+     - Create bulk mapping entries for pattern compliance
+     - Verification: Cross-check every current Zotero tag against taxonomy to identify parent node matches
+     - Output: ~50-100 new mapping entries (estimate)
+
+     ---
+     Phase 4: Archive Interaction Review (Conditional)
+
+     Trigger: If Phase 2 finds >10 missing retagging decisions
+
+     4.1 Systematic Archive Review
+
+     - Review all 37 files in archive/cc-interactions/ (2025-10-09 to 2025-11-06)
+     - Search for patterns indicating retagging decisions:
+       - "retag", "replace tag", "add tag", "remove tag"
+       - Item titles with dates
+       - "change X to Y"
+     - Extract any decisions not yet in mapping or reports
+     - Output: Additional mapping entries + flag any systemic gaps
+
+     ---
+     Phase 5: Create Retagging Dry Run Infrastructure
+
+     5.1 Build Retagging Simulation Script
+
+     Create Python script (scripts/50_retagging_dry_run.py) that:
+
+     Input: 
+     - data/zotero_full_export.json (current state)
+     - data/tag_application_mapping.csv (specific item changes)
+     - data/tag_map_consolidated.csv (taxonomy + synonyms)
+
+     Process:
+     1. Load current Zotero tags for all 417 items
+     2. For each item:
+       - Apply specific changes from tag_application_mapping.csv
+       - Apply pattern-based changes (plurals → singulars)
+       - Apply synonym consolidations from tag_map_consolidated.csv
+       - Preserve metadata tags (Primary source, Secondary source)
+       - Preserve person names (as-is)
+     3. Generate new tag set for each item
+
+     Output: 
+     - JSON file with proposed new tags for each item
+     - Change log showing: old tags → new tags for each item
+     - Statistics: tags added, removed, unchanged per item
+
+     5.2 Build Validation Analysis Script
+
+     Create Python script (scripts/51_validate_retagging.py) that analyzes dry run results:
+
+     Checks:
+     1. No accidental loss: Every old tag is either:
+       - Mapped to new tag (documented)
+       - Explicitly removed (documented in consolidation decisions)
+       - Carried over unchanged (exact match to leaf node in new taxonomy)
+     2. All additions applied: Every tag addition from primary source review appears in output
+     3. Taxonomy compliance: All new tags exist in tag_map_consolidated.csv
+     4. Leaf node compliance: All new tags on items are leaf nodes (no parent nodes)
+     5. Metadata preservation: Primary/Secondary source tags retained for all items that had them
+     6. Pattern compliance: No plural parent tags remain where singular generic should be used
+     7. Synonym consolidation: All variants mapped to preferred terms
+     8. 🆕 LEAF NODE UNIQUENESS: All leaf nodes in taxonomy are unique across all hierarchy paths
+       - Parse tag_map_consolidated.csv to identify all leaf nodes
+       - Check for duplicates (same leaf name in multiple locations)
+       - Flag any non-unique leaves for user review
+       - Generate report showing: tag name, all parent paths, item count
+
+     Output:
+     - Validation report with PASS/FAIL for each check
+     - List of any tags that would be lost (with item details)
+     - List of any additions not applied
+     - List of any non-taxonomy tags that would be created
+     - 🆕 Leaf node uniqueness report (any duplicates flagged)
+
+     ---
+     Phase 6: Run Dry Run and Analyze Results
+
+     6.1 Execute Dry Run
+
+     - Run scripts/50_retagging_dry_run.py
+     - Generate proposed new tag state for all 417 items
+     - Output: dry_run_output.json + change_log.csv
+
+     6.2 Execute Validation Analysis
+
+     - Run scripts/51_validate_retagging.py on dry run output
+     - Generate validation report including leaf uniqueness check
+     - Output: retagging_validation_report.md
+
+     6.3 Manual Review of Validation Report
+
+     Review validation report for:
+     - Any tags flagged as "would be lost" - investigate each
+     - Any additions flagged as "not applied" - investigate each
+     - Any non-taxonomy tags - decide if legitimate or errors
+     - 🆕 Any non-unique leaf nodes - resolve before proceeding
+     - Decision point: Identify any additional mapping entries needed
+
+     6.4 Iterative Refinement
+
+     - Add any missing mapping entries discovered in validation
+     - 🆕 Fix any non-unique leaf nodes in taxonomy (add qualifiers, restructure, etc.)
+     - Re-run dry run and validation
+     - Repeat until validation report shows 100% clean
+
+     ---
+     Phase 7: Final Quality Checks
+
+     7.1 Cross-Reference Checks
+
+     - Verify mapping CSV has no duplicate entries (same item multiple times with conflicting instructions)
+     - Verify all 'source' column values reference valid report files
+     - Verify all add_tags exist in taxonomy
+     - Verify all add_tags are leaf nodes (not parents)
+     - Verify item identifiers (title+date) are unique and match Zotero export
+
+     7.2 Statistical Verification
+
+     - Count: Total unique old tags (481) = mapped + removed + carried over
+     - Count: Total items in mapping ≤ 417 items in library
+     - Count: Items affected by pattern changes + specific changes = total items to be modified
+     - Count: All leaf nodes in taxonomy are unique (duplicates = 0)
+     - Output: Statistics summary for final approval
+
+     7.3 Human Spot Check
+
+     - Randomly sample 20 items from dry run output
+     - Manually verify old→new tag transformations are correct
+     - Check for unexpected tag losses or additions
+     - Verify all tags are leaf nodes
+     - Output: Spot check report
+
+     ---
+     Deliverables
+
+     1. Complete tag_application_mapping.csv with all retagging decisions
+     2. Categorized tag spreadsheet (481 tags categorized A-E)
+     3. Retagging dry run output (proposed new state)
+     4. Validation report (PASS/FAIL on all quality checks)
+     5. 🆕 Leaf node uniqueness report (all leaves verified unique)
+     6. Final statistics summary (tags added/removed/unchanged)
+     7. Spot check report (20-item manual verification)
+     8. Go/no-go recommendation for proceeding with actual retagging
+
+     ---
+     Estimated Effort
+
+     - Phase 1: 3-4 hours (resolve known gaps, deferred accommodation items)
+     - Phase 2: 6-8 hours (systematic audit)
+     - Phase 3: 5-6 hours (build translation map)
+     - Phase 4: 4-6 hours (if triggered at >10 - archive review)
+     - Phase 5: 6-8 hours (build dry run infrastructure + uniqueness check)
+     - Phase 6: 2-3 hours (run and analyze)
+     - Phase 7: 2-3 hours (final checks)
+
+     Total: 28-38 hours (24-32 hours if Phase 4 not needed)
+
+     ---
+     Success Criteria
+
+     ✅ Zero tags lost unless explicitly documented for removal
+     ✅ 100% of primary source review additions applied
+     ✅ All 481 current tags accounted for in one of categories A-E
+     ✅ All resulting tags are leaf nodes (no parent nodes on items)
+     ✅ 🆕 All leaf nodes in taxonomy are unique (enables safe query expansion)
+     ✅ Validation script shows PASS on all checks
+     ✅ Spot check shows correct transformations
+     ✅ Complete audit trail for every change
+
+     ---
+     Notes
+
+     Deployment Strategy Confirmed:
+     - Leaf nodes only in Zotero/Zenodo (clean data)
+     - CSV published with Zenodo as hierarchy source of truth
+     - Query expansion implemented in Omeka Classic via custom plugin
+     - This approach is safe because leaf node uniqueness guarantees correct hierarchy reconstruction
+
+● Excellent! Plan approved. Let me create a todo list to track this comprehensive work:
+
+● Now let me start with Phase 1.1: Reconciling alcohol tag decisions. I'll compare the two reports to identify any missing entries:
+
+● Read(reports/orphaned_tags_RETAGGING_DECISIONS.md)
+  ⎿  Read 651 lines
+
+● Now let me read the alcohol rationalisation report to compare:
+
+● Read(reports/alcohol_rationalisation_report.md)
+  ⎿  Read 279 lines
+
+● Perfect! Now let me check which alcohol decisions are already in the retagging map:
+
+● Bash(grep -i "alcohol" data/tag_application_mapping.csv | head -20)
+  ⎿ A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,Drinking (alcohol) | Rum | Grog | Sexual assault | Carrington Hotel,alcohol_rationalisa
+    tion_report,Item #1
+    Mountain Mixtures.,29 April 1892,Katoomba Times,Alcohol,Drunkenness | Drunkenness (intoxication) | Beer | Liquor trade | Lithgow,alcohol_ration
+    … +22 lines (ctrl+o to expand)
+
+
+
+● Good news! All 12 alcohol items from the alcohol_rationalisation_report.md are already in the mapping. However, I need to compare tag-by-tag to
+  see if the orphaned_tags_RETAGGING_DECISIONS.md has any additional nuanced tags that should be captured. Let me create a detailed reconciliation:
+
+● Write(reports/alcohol_reconciliation_analysis.md)
+  ⎿  Wrote 275 lines to reports/alcohol_reconciliation_analysis.md                                           
+     # Alcohol Tag Decisions Reconciliation
+     **Date**: 2025-11-06
+     **Purpose**: Compare alcohol tag decisions from two sources to ensure no tags are lost
+     ## Sources Compared
+     1. **alcohol_rationalisation_report.md** (12 items) - Currently in mapping CSV
+     2. **orphaned_tags_RETAGGING_DECISIONS.md** (12 alcohol occurrences) - Need to check for additional tags
+     … +265 lines (ctrl+o to expand)
+
+● Now let me check if these specific liquor trade tags exist in the taxonomy:
+
+● Bash(grep -i "beer sales\|wine sales\|wholesale liquor" data/tag_map_consolidated.csv)
+  ⎿  beer sales,beer sales,hierarchy,parent=liquor trade                              
+     wholesale liquor business,wholesale liquor business,hierarchy,parent=liquor trade
+     wine sales,wine sales,hierarchy,parent=liquor trade
+
+● Perfect! All three liquor trade tags exist in the taxonomy. Now I need to update the 4 alcohol mapping entries with the additional tags. Let me
+  read the current entries:
+
+● Bash(grep -n "A Charge of Rape\|Mountain Mixtures,25 August 1893\|Mountain Mixtures.,10 February 1893\|Katoomba Court.,14 October 1892"
+      data/tag_application_mapping.…)
+  ⎿ 15:A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,Drinking (alcohol) | Rum | Grog | Sexual assault | Carrington Hotel,alcohol_rational
+    isation_report,Item #1
+    17:Mountain Mixtures,25 August 1893,Katoomba Times,Alcohol,Drinking (alcohol) | Whisky | Beer | Rum | Brandy | Liquor trade | Megalong Valley,a
+    … +8 lines (ctrl+o to expand)
+
+
+
+● Now let me update these 4 entries with the additional tags. I'll read the file first to get the exact format:
+
+● Read(data/tag_application_mapping.csv)
+  ⎿  Read 25 lines
+
+● Now I'll update the 4 entries with the additional tags identified in the reconciliation:
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 1 addition and 1 removal                                                                      
+       12    Licensing,1 October 1892,,,Publican's licensing,hotel_licensing_action_plan,Item #48
+       13    Megalong Valley,27 October 1893,,,Hotel licensing,hotel_licensing_action_plan,Item #61
+       14    Notice of Application...,9 June 1893,,,Publican's licensing,hotel_licensing_action_plan,Item #63
+       15 -  A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,Drinking (alcohol) | Rum | Grog | Sexual assault | Carrington Hotel
+          -  ,alcohol_rationalisation_report,Item #1
+       15 +  A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,Drinking (alcohol) | Rum | Grog | Drunkenness (intoxication) | 
+          +  Sexual assault | Carrington Hotel | Penrith Police Court | Dr Spark,alcohol_rationalisation_report,Item #1
+          +   - enhanced with RETAGGING_DECISIONS tags
+       16    Mountain Mixtures.,29 April 1892,Katoomba Times,Alcohol,Drunkenness | Drunkenness (intoxication) | Beer | Liquor trade | 
+            Lithgow,alcohol_rationalisation_report,Item #2
+       17    Mountain Mixtures,25 August 1893,Katoomba Times,Alcohol,Drinking (alcohol) | Whisky | Beer | Rum | Brandy | Liquor trade | Megalong 
+            Valley,alcohol_rationalisation_report,Item #3
+       18    Mountain Mixtures.,10 February 1893,Katoomba Times,Alcohol,Beer | Liquor trade,alcohol_rationalisation_report,Item #4
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 1 addition and 1 removal                                                                      
+       14    Notice of Application...,9 June 1893,,,Publican's licensing,hotel_licensing_action_plan,Item #63
+       15    A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,Drinking (alcohol) | Rum | Grog | Drunkenness (intoxication) | Sexual 
+            assault | Carrington Hotel | Penrith Police Court | Dr Spark,alcohol_rationalisation_report,Item #1 - enhanced with 
+            RETAGGING_DECISIONS tags
+       16    Mountain Mixtures.,29 April 1892,Katoomba Times,Alcohol,Drunkenness | Drunkenness (intoxication) | Beer | Liquor trade | 
+            Lithgow,alcohol_rationalisation_report,Item #2
+       17 -  Mountain Mixtures,25 August 1893,Katoomba Times,Alcohol,Drinking (alcohol) | Whisky | Beer | Rum | Brandy | Liquor trade | 
+          -  Megalong Valley,alcohol_rationalisation_report,Item #3
+       17 +  Mountain Mixtures,25 August 1893,Katoomba Times,Alcohol,Drinking (alcohol) | Whisky | Beer | Rum | Brandy | Liquor trade | 
+          +  beer sales | Drunkenness (intoxication) | Megalong Valley,alcohol_rationalisation_report,Item #3
+          +   - enhanced with RETAGGING_DECISIONS tags
+       18    Mountain Mixtures.,10 February 1893,Katoomba Times,Alcohol,Beer | Liquor trade,alcohol_rationalisation_report,Item #4
+       19    Found dead.,28 January 1893,Nepean Times,Alcohol,Drinking (alcohol) | Drunkenness (intoxication) | Death | Inquests | Ruined Castle 
+            Shale Mine | South Katoomba,alcohol_rationalisation_report,Item #5
+       20    Mountain Mixtures.,3 March 1893,Katoomba Times,Alcohol,Liquor trade | Hotellier | Fires | Megalong Valley | 
+            Oberon,alcohol_rationalisation_report,Item #6
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 1 addition and 1 removal                                                                      
+       15    A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,Drinking (alcohol) | Rum | Grog | Drunkenness (intoxication) | Sexual 
+            assault | Carrington Hotel | Penrith Police Court | Dr Spark,alcohol_rationalisation_report,Item #1 - enhanced with 
+            RETAGGING_DECISIONS tags
+       16    Mountain Mixtures.,29 April 1892,Katoomba Times,Alcohol,Drunkenness | Drunkenness (intoxication) | Beer | Liquor trade | 
+            Lithgow,alcohol_rationalisation_report,Item #2
+       17    Mountain Mixtures,25 August 1893,Katoomba Times,Alcohol,Drinking (alcohol) | Whisky | Beer | Rum | Brandy | Liquor trade | beer 
+            sales | Drunkenness (intoxication) | Megalong Valley,alcohol_rationalisation_report,Item #3 - enhanced with RETAGGING_DECISIONS tags
+       18 -  Mountain Mixtures.,10 February 1893,Katoomba Times,Alcohol,Beer | Liquor trade,alcohol_rationalisation_report,Item #4
+       18 +  Mountain Mixtures.,10 February 1893,Katoomba Times,Alcohol,Beer | Liquor trade | beer sales,alcohol_rationalisation_report,Item #4
+          +   - enhanced with RETAGGING_DECISIONS tags
+       19    Found dead.,28 January 1893,Nepean Times,Alcohol,Drinking (alcohol) | Drunkenness (intoxication) | Death | Inquests | Ruined Castle 
+            Shale Mine | South Katoomba,alcohol_rationalisation_report,Item #5
+       20    Mountain Mixtures.,3 March 1893,Katoomba Times,Alcohol,Liquor trade | Hotellier | Fires | Megalong Valley | 
+            Oberon,alcohol_rationalisation_report,Item #6
+       21    Katoomba Court.,14 October 1892,Katoomba Times,Alcohol,Liquor licensing | Unlicensed sales | Whisky | Nellie's 
+            Glen,alcohol_rationalisation_report,Item #7
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 1 addition and 1 removal                                                                      
+       18    Mountain Mixtures.,10 February 1893,Katoomba Times,Alcohol,Beer | Liquor trade | beer sales,alcohol_rationalisation_report,Item #4 -
+             enhanced with RETAGGING_DECISIONS tags
+       19    Found dead.,28 January 1893,Nepean Times,Alcohol,Drinking (alcohol) | Drunkenness (intoxication) | Death | Inquests | Ruined Castle 
+            Shale Mine | South Katoomba,alcohol_rationalisation_report,Item #5
+       20    Mountain Mixtures.,3 March 1893,Katoomba Times,Alcohol,Liquor trade | Hotellier | Fires | Megalong Valley | 
+            Oberon,alcohol_rationalisation_report,Item #6
+       21 -  Katoomba Court.,14 October 1892,Katoomba Times,Alcohol,Liquor licensing | Unlicensed sales | Whisky | 
+          -  Nellie's Glen,alcohol_rationalisation_report,Item #7
+       21 +  Katoomba Court.,14 October 1892,Katoomba Times,Alcohol,Liquor licensing | Unlicensed sales | Whisky | 
+          +  Drinking (alcohol) | beer sales | wine sales | P. Mullany and Company | Nellie's Glen,alcohol_rationalisation_report,Item #7
+          +   - enhanced with RETAGGING_DECISIONS tags
+       22    Katoomba Police Court.,21 March 1891,Katoomba Times,Alcohol,Liquor licensing | Serving alcohol to minors | Whisky | 
+            Adolescents,alcohol_rationalisation_report,Item #8
+       23    Katoomba Court.,17 March 1893,Katoomba Times,Alcohol,Drinking (alcohol) | Drunkenness | Drunkenness (intoxication) | Theft | Whisky 
+            | Rum | Gin | Shipwright | South Katoomba,alcohol_rationalisation_report,Item #9
+       24    Megalong Matters.,9 September 1892,Katoomba Times,Alcohol,Drinking (alcohol) | Drunkenness (intoxication) | Wine | Liquor trade | 
+            Indigenous Australians | Publican | Megalong Valley,alcohol_rationalisation_report,Item #10
+
+● Now let me also check Item #11 which mentioned "wholesale liquor business". Let me update that one too for completeness:
+
+● Update(data/tag_application_mapping.csv)
+  ⎿  Updated data/tag_application_mapping.csv with 1 addition and 1 removal                                                                      
+       22    Katoomba Police Court.,21 March 1891,Katoomba Times,Alcohol,Liquor licensing | Serving alcohol to minors | Whisky | 
+            Adolescents,alcohol_rationalisation_report,Item #8
+       23    Katoomba Court.,17 March 1893,Katoomba Times,Alcohol,Drinking (alcohol) | Drunkenness | Drunkenness (intoxication) | Theft | Whisky 
+            | Rum | Gin | Shipwright | South Katoomba,alcohol_rationalisation_report,Item #9
+       24    Megalong Matters.,9 September 1892,Katoomba Times,Alcohol,Drinking (alcohol) | Drunkenness (intoxication) | Wine | Liquor trade | 
+            Indigenous Australians | Publican | Megalong Valley,alcohol_rationalisation_report,Item #10
+       25 -  Megalong Valley.,18 August 1893,Katoomba Times,Alcohol,Liquor trade | 
+          -  Mr Wilkinson | Megalong Valley,alcohol_rationalisation_report,Item #11
+       25 +  Megalong Valley.,18 August 1893,Katoomba Times,Alcohol,Liquor trade | wholesale liquor business | 
+          +  Mr Wilkinson | Megalong Valley,alcohol_rationalisation_report,Item #11 - enhanced with RETAGGING_DECISIONS tags
+       26    Megalong Valley.,23 June 1893,Katoomba Times,Alcohol,Liquor licensing | Hotel | Public house | Unlicensed sales | Gambling | 
+            Megalong Valley,alcohol_rationalisation_report,Item #12
+       27    A Charge of Rape.,6 September 1890,Nepean Times,Accommodation,Carrington Hotel | Katoomba,accommodation_approval,Item #1
+       28    Local Jottings.,26 April 1890,Katoomba Times,Accommodation,Hotel | Katoomba,accommodation_approval,Item #2
+
+● Excellent! I've successfully reconciled all alcohol tag decisions. Let me update the reconciliation report with the final status and then mark
+  Phase 1.1 complete:
+
+● Update(reports/alcohol_reconciliation_analysis.md)
+  ⎿  Updated reports/alcohol_reconciliation_analysis.md with 15 additions and 6 removals                                                        
+       261    
+       262    ## Conclusion
+       263    
+       264 -  **Status**: 8/12 items complete, 4 items need tag additions
+       264 +  **Status**: ✅ COMPLETE - All 12/12 items reconciled and updated
+       265    
+       266 -  **Overall Assessment**: The alcohol_rationalisation_report.md provided more comprehensive tagging, but 
+           -  orphaned_tags_RETAGGING_DECISIONS.md identified some additional specific tags (beer sales, wine sales, wholesale liquor business, 
+           -  plus some entity tags) that should be incorporated.
+       266 +  **Overall Assessment**: The alcohol_rationalisation_report.md provided more comprehensive tagging, but 
+           +  orphaned_tags_RETAGGING_DECISIONS.md identified some additional specific tags (beer sales, wine sales, wholesale liquor business, 
+           +  plus some entity tags) that were successfully incorporated.
+       267    
+       268 -  **Next Steps**:
+       269 -  1. Verify beer sales, wine sales, wholesale liquor business exist in taxonomy
+       270 -  2. Update 4 mapping entries with additional tags
+       271 -  3. Mark Phase 1.1 complete
+       268 +  **Actions Completed**:
+       269 +  1. ✅ Verified beer sales, wine sales, wholesale liquor business exist in taxonomy
+       270 +  2. ✅ Updated 5 mapping entries with additional tags
+       271 +  3. ✅ Phase 1.1 complete
+       272    
+       273 +  **Updated Entries** (data/tag_application_mapping.csv):
+       274 +  - Line 15: A Charge of Rape - Added Drunkenness (intoxication), Penrith Police Court, Dr Spark
+       275 +  - Line 17: Mountain Mixtures (25 Aug 1893) - Added beer sales, Drunkenness (intoxication)
+       276 +  - Line 18: Mountain Mixtures (10 Feb 1893) - Added beer sales
+       277 +  - Line 21: Katoomba Court (14 Oct 1892) - Added Drinking (alcohol), beer sales, wine sales, P. Mullany and Company
+       278 +  - Line 25: Megalong Valley (18 Aug 1893) - Added wholesale liquor business
+       279 +  
+       280 +  **Result**: All alcohol tag nuances from both reports are now captured in the retagging mapping CSV.
+       281 +  
+       282    ---
+       283    
+
+● Perfect! Now let me update the todo list and move to Phase 1.2:
+
+● Now for Phase 1.2, I need to check which of the 12 undecided orphaned tags are actually still undecided. Based on the previous session summary and
+   user feedback, many were already resolved. Let me verify the current status:
+
+● Bash(grep -i "carrington\|colliery\|druid.*lodge\|girls.*cricket\|katoomba coal\|katoomba south mines\|katoomba street\|^maps,\|mining
+      settlements\|rifle reserves" d…)
+  ⎿  Carrington Hotel,Carrington Hotel,hierarchy,parent=hotels                                              
+     Druid's Lodge (local lodge),Druid's Lodge (local lodge),hierarchy,parent=United Ancient Order of Druids
+     volunteer rifle reserves,volunteer rifle reserves,hierarchy,parent=military organisations
+     … +20 lines (ctrl+o to expand)
+
+● Excellent! All 12 "undecided" tags actually have decisions in the taxonomy now! Let me verify if there are items in Zotero using these tags that
+  need retagging entries:
+
+● Bash(python3 -c "
+      import json…)
+  ⎿  Carrington: 4 items              
+       - Local Jottings. (25 May 1889)
+       - Marriages. (23 October 1920)
+     … +43 lines (ctrl+o to expand)
+
+● Good! Now let me check which of these items already have retagging entries in the mapping:
+
+● Bash(grep -i "carrington\|colliery\|druid.*lodge\|girls.*cricket\|katoomba coal.*mines\|katoomba south mines\|katoomba street\|maps\|mining
+      settlements\|rifle reserv…)
+  ⎿ Mountain Mixtures.,9 September 1892,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site) | Nellie's G
+    len Shale Mine | Ruined Castle Shale Mine (site) | Ruined Castle Shale Mine,orphaned_tags_retagging_decisions,Mining settlements #1
+    Unionism of To-day.,1 September 1893,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site) | Nellie's
+    … +12 lines (ctrl+o to expand)
+
+
+● I can see that many items are missing retagging entries. Let me create a summary report of what still needs mapping:
+
+● Write(reports/undecided_tags_status.md)
+  ⎿  Wrote 219 lines to reports/undecided_tags_status.md                                                    
+     # Undecided Orphaned Tags Status Report
+     **Date**: 2025-11-06
+     **Purpose**: Track resolution status of 12 "undecided" orphaned tags from orphaned_tags_final_report.md
+     ---
+     ## Summary
+     | Tag | Taxonomy Decision | Zotero Items | Mapped | Status |
+     … +209 lines (ctrl+o to expand)
+
+● Good progress! I've identified 34 items needing retagging entries. Let me start with the high-priority simple replacements. First, let me check if
+   there's already a decision for "Megalong Mines" in the RETAGGING_DECISIONS:
+
+● Bash(grep -A 30 "Megalong Mines\." data/tag_map_consolidated.csv reports/orphaned_tags_RETAGGING_DECISIONS.md | head -50)
+  ⎿  reports/orphaned_tags_RETAGGING_DECISIONS.md:**Item**: Megalong Mines.      
+     reports/orphaned_tags_RETAGGING_DECISIONS.md-**Date**: 1 September 1893
+     reports/orphaned_tags_RETAGGING_DECISIONS.md-**Publication**: Katoomba Times
+     … +45 lines (ctrl+o to expand)
+
+● Perfect! Found the decision for "Megalong Mines". Now let me check if it's already in the mapping or needs to be added:
+
+● Bash(grep "Megalong Mines\.\|Megalong Mines," data/tag_application_mapping.csv)
+  ⎿ Megalong Mines.,1 September 1893,Katoomba Times,Mining settlements | Trucking,Nellie's Glen (settlement) | Bonnie Doon Track | Nellie's Glen (g
+    ully) | miners' dwellings | truck system,orphaned_tags_retagging_decisions,Mining settlements #3 + Trucking
+
+
+● Great! "Megalong Mines" is already in the mapping. So Mining settlements is actually 5/7 mapped. Let me now provide a progress update to the user
+  before continuing with the large amount of remaining work:
+
+  Phase 1 Progress Update
+
+  Phase 1.1 (Alcohol Reconciliation): ✅ COMPLETE
+  - Reconciled 12 alcohol items from 2 reports
+  - Updated 5 mapping entries with additional nuanced tags
+  - Added: beer sales, wine sales, wholesale liquor business, entity tags
+
+  Phase 1.2 (Undecided Orphaned Tags): 🔄 IN PROGRESS
+
+  Status Summary:
+  - ✅ All 12 "undecided" tags now have taxonomy decisions
+  - ⚠️ 31 Zotero items still need retagging mapping entries
+
+  Breakdown:
+  | Tag                         | Items | Mapped | Remaining                      |
+  |-----------------------------|-------|--------|--------------------------------|
+  | Katoomba Coal & Shale Mines | 2     | 2      | 0 ✅                            |
+  | Rifle reserves              | 2     | 2      | 0 ✅                            |
+  | Mining settlements          | 7     | 5      | 2 (1 deferred, 1 keep-as-is) ✅ |
+  | Carrington                  | 4     | 0      | 4                              |
+  | Colliery                    | 4     | 0      | 4                              |
+  | Druid's Lodge               | 4     | 0      | 4                              |
+  | Girls' cricket              | 2     | 0      | 2                              |
+  | Katoomba South mines        | 8     | 0      | 8                              |
+  | Katoomba Street             | 4     | 0      | 4 (may be direct carryover)    |
+  | Maps                        | 9     | 0      | 9 (DEFERRED per user)          |
+
+  Next Steps for Phase 1.2:
+  1. Create 10 simple mapping entries (Druid's Lodge, Colliery, Girls' cricket)
+  2. Review contexts for 12 items (Carrington, Katoomba South mines)
+  3. Verify Katoomba Street direct carryover
+
+  Estimated time: 2-3 hours for remaining Phase 1.2 work
+
+  Question for user: Should I proceed with creating all 31 mapping entries now, or would you prefer to move forward to Phase 2 (systematic report
+  audit) to identify if there are many more gaps before spending time on individual entries? This might help us decide whether to focus on
+  completing individual mappings vs building the automated validation scripts first.
+
+> /export archive/cc-interactions/2025-11-06-c.txt 
+  ⎿  Conversation exported to: archive/cc-interactions/2025-11-06-c.txt
+
+> > please move forward to phase 2; I'd prefer to review a consolidated list of individual mappings that need review - do as much as you can 
+
+● Perfect! I'll proceed to Phase 2 and create a consolidated list of all missing mapping entries. Let me update the todo list and start the
+  systematic audit.
+
+● Now let me systematically audit all reports to find missing retagging decisions:
+
+● Bash(find reports/ -name "*.md" -type f | sort)
+  ⎿  reports/accommodation_rationalization_report.md
+     reports/ACCOMMODATION_TAGS_APPROVAL.md
+     reports/activities_corrections_validation.md
+     … +53 lines (ctrl+o to expand)
+
+● Bash(for file in reports/accommodation_rationalization_report.md reports/horses_tag_reclassification_review.md
+      reports/sporting_events_reclassification_review.md rep…)
+  ⎿  === reports/accommodation_rationalization_report.md ===
+     64
+     === reports/horses_tag_reclassification_review.md ===
+     … +11 lines (ctrl+o to expand)
+
+● Bash(echo "=== Current Mapping Counts ===" && \
+      echo "Accommodation: $(grep -c 'accommodation_approval\|accommodation_rationalization' data/tag_application_mapping.c…)
+  ⎿  === Current Mapping Counts ===
+     Accommodation: 63
+     Horses: 19
+     … +6 lines (ctrl+o to expand)
+
+● Read(reports/family_hotels_analysis.md)
+  ⎿  Read 244 lines
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Error: Exit code 1
+     Traceback (most recent call last):
+       File "<stdin>", line 13, in <module>
+     KeyError: 'item_title'
+
+● Bash(head -1 data/tag_application_mapping.csv)
+  ⎿  title,date,publication,remove_tags,add_tags,source,notes
+
+● Bash(python3 << 'EOF'
+      import json…)
+  ⎿  Total Zotero items: 417         
+     Total mapped items: 102
+     Total unique tags in Zotero: 481
+     … +5 lines (ctrl+o to expand)
+
+● Excellent findings! Let me create a consolidated report of all missing mappings. This is significant - we have major categories of parent node
+  tags that need to be mapped to leaves:
+
+● Write(reports/CONSOLIDATED_MISSING_MAPPINGS.md)
+  ⎿  Wrote 337 lines to reports/CONSOLIDATED_MISSING_MAPPINGS.md                                   
+     # Consolidated Missing Retagging Mappings
+     **Date**: 2025-11-06
+     **Purpose**: Comprehensive list of all items requiring retagging map entries before deployment
+     ---
+     ## Executive Summary
+     **Current Status:**
+     … +327 lines (ctrl+o to expand)
+
+● Now let me create a detailed analysis of parent node violations to give you the complete picture:
+
+● Bash(python3 << 'EOF'
+      import csv…)
+  ⎿  Error: Exit code 1
+     Traceback (most recent call last):
+       File "<stdin>", line 10, in <module>
+     KeyError: 'relationship_type'
+
+● Bash(head -3 data/tag_map_consolidated.csv)
+  ⎿  new_tag,old_tag,action,notes                            
+     Agents,Agents,hierarchy,parent=(Getty AAT primary facet)
+     Places,Places,hierarchy,parent=(Getty AAT primary facet)
+
+● Bash(python3 << 'EOF'
+      import csv…)
+  ⎿  === PARENT NODE VIOLATIONS ===     
+
+     Total parent nodes in taxonomy: 184
+     … +10 lines (ctrl+o to expand)
+
+● Bash(grep "^Hotels,\|^Accommodation,\|^Mining," data/tag_map_consolidated.csv)
+  ⎿  Accommodation,Accommodation,hierarchy,parent=tourism & accommodation - THEMATIC
+
+● Bash(python3 << 'EOF'
+      import csv…)
+  ⎿  === FOLKSONOMY TAGS NOT IN NEW TAXONOMY ===
+
+     Total tags in Zotero: 481
+     … +56 lines (ctrl+o to expand)
+
+● CRITICAL FINDING! The scope is much larger than initially estimated. Let me update the consolidated report with accurate data:
+
+● Write(reports/ORPHANED_FOLKSONOMY_TAGS.md)
+  ⎿  Wrote 260 lines to reports/ORPHANED_FOLKSONOMY_TAGS.md                                            
+     # Orphaned Folksonomy Tags - Complete Analysis
+     **Date**: 2025-11-06
+     **Critical Finding**: 109 folksonomy tags in current Zotero items DO NOT EXIST in the new taxonomy
+     ---
+     ## Executive Summary
+     **The Real Scope:**
+     … +250 lines (ctrl+o to expand)
+

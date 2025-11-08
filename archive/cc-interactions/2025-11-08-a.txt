@@ -1,0 +1,1086 @@
+
+ ▐▛███▜▌   Claude Code v2.0.33
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+══════════════════════════════════════════════════════ Conversation compacted · ctrl+o for history ═════════════════════════════════════════════════════
+  ⎿  Referenced file reports/batch_mappings_immediate.csv
+  ⎿  Read reports/ORPHANED_TAGS_TAG_LEVEL_REPORT.md (262 lines)
+  ⎿  Read reports/BATCH_APPLICATION_SUCCESS_REPORT.md (268 lines)
+  ⎿  Referenced file data/tag_application_mapping.csv.backup-before-batch
+  ⎿  Read reports/CORRECTED_RETAGGING_ANALYSIS.md (375 lines)
+  ⎿  Todo list read (13 items)
+
+● I'll continue investigating the remaining 11 orphaned tags. Let me start by checking the taxonomy for the named entities (companies,
+  organizations, and person names) to see if they exist under variant spellings.
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Error: File content (25089 tokens) exceeds maximum allowed tokens (25000). Please use offset and limit parameters to read specific portions of the 
+     file, or use the GrepTool to search for specific content.
+
+● Search(pattern: "Australian Kerosene", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Search(pattern: "South Clifton", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 11 lines (ctrl+o to expand)
+
+● Search(pattern: "New South Wales Shale", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 3 lines (ctrl+o to expand)
+
+● Search(pattern: "David Brown", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Search(pattern: "Katoomba Tennis", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Excellent! All 5 named entities already exist in the taxonomy with synonyms. Now let me check the geographic/ambiguous tags:
+
+● Search(pattern: "^police,|,police,|^police$", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Search(pattern: "Nellie's Glen", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 12 lines (ctrl+o to expand)
+
+● Search(pattern: "Hartley Vale", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 6 lines (ctrl+o to expand)
+
+● Search(pattern: "Ruined Castle", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 6 lines (ctrl+o to expand)
+
+● Search(pattern: "I\.O\.O\.F\.|IOOF|Odd Fellows", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 5 lines (ctrl+o to expand)
+
+● Perfect! All 11 remaining orphaned tags exist in the taxonomy. Let me update the todo and create the final batch of mappings:
+
+● Bash(python3 -c "
+      import json…)
+  ⎿  Error: Exit code 1
+     Traceback (most recent call last):
+       File "<string>", line 3, in <module>
+     ModuleNotFoundError: No module named 'pandas'
+
+● Bash(python3 -c "
+      import json…)
+  ⎿  Error: Exit code 1
+     Traceback (most recent call last):
+       File "<string>", line 12, in <module>
+     AttributeError: 'str' object has no attribute 'get'
+
+● Bash(python3 -c "
+      import json…)
+  ⎿  Type: <class 'dict'>                                                                                                             
+     Keys: ['exportDate', 'totalItems', 'items']
+     Items type: <class 'list'>
+     First item keys: ['key', 'itemType', 'title', 'creators', 'date', 'publicationTitle', 'url', 'tags', 'dateAdded', 'dateModified']
+
+● Bash(python3 -c "
+      import json…)
+  ⎿  Error: Exit code 1
+     Traceback (most recent call last):
+       File "<string>", line 13, in <module>
+     TypeError: string indices must be integers, not 'str'
+
+● Bash(python3 -c "
+      import json…)
+  ⎿  Tags type: <class 'list'>                               
+     First few tags: ['Court', 'Court cases', 'Davey family']
+
+● Bash(python3 -c "
+      import json…)
+  ⎿  Tag counts for remaining orphaned tags:     
+     Australian Kerosene Shale and Oil Company: 3
+     Hartley Vale: 20
+     … +11 lines (ctrl+o to expand)
+
+● Perfect! The counts match expectations (418 total). Now let me generate the final batch mapping file. Note that "Primary source" (304 items) is
+  metadata and should be preserved as-is, not mapped.
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  ✅ Generated batch_mappings_final.csv 
+        Total entries: 92
+     … +13 lines (ctrl+o to expand)
+
+● Excellent! Now let me validate the batch and check for duplicates before applying:
+
+● Bash(python3 << 'PYEOF'
+      import csv…)
+  ⎿  Loading taxonomy...                
+     Loading batch_mappings_final.csv...
+     … +13 lines (ctrl+o to expand)
+
+● Perfect! All validations passed. Now let me apply the batch to the master mapping file:
+
+● Bash(python3 << 'PYEOF'
+      import csv…)
+  ⎿  ✅ Created backup: data/tag_application_mapping.csv.backup-final-batch 
+        Previous entries: 1038
+        New entries: 92
+     … +5 lines (ctrl+o to expand)
+
+● Excellent! Now let me calculate the final coverage statistics:
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  Total library items: 417      
+     Items with mappings: 178
+     Coverage: 42.7%
+     … +17 lines (ctrl+o to expand)
+
+● Wait, the coverage dropped from 64.7% to 42.7%. Let me investigate this discrepancy:
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  Total Zotero items: 323        
+     Total mapping entries: 1130
+     Unique items with mappings: 174
+     … +11 lines (ctrl+o to expand)
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  Total items in export: 417           
+     Items without 'title' key: 0
+     Items with empty/whitespace titles: 0
+     … +6 lines (ctrl+o to expand)
+
+● Bash(python3 << 'PYEOF'
+      import csv…)
+  ⎿  Checking previous state (backup-immediate-batch):
+       Entries: 907
+       Unique items: 163
+     … +8 lines (ctrl+o to expand)
+
+● Bash(python3 << 'PYEOF'
+      import csv…)
+  ⎿  Mapping progression:                                           
+
+     backup-before-batch             131 entries,  50 items ( 12.0%)
+     … +3 lines (ctrl+o to expand)
+
+● Good! The progression is clear. Now let me update the todo and create a final completion report:
+
+● Write(reports/ORPHANED_TAGS_COMPLETE_REPORT.md)
+  ⎿  Wrote 335 lines to reports/ORPHANED_TAGS_COMPLETE_REPORT.md
+     # Orphaned Tags Resolution - Complete Report
+     **Date**: 2025-11-07
+     **Status**: ✅ COMPLETE
+     **Result**: All orphaned tags successfully resolved
+     ---
+     ## Executive Summary
+     … +325 lines (ctrl+o to expand)
+
+● ✅ Orphaned Tags Resolution Complete!
+
+  All 11 remaining orphaned tags have been successfully resolved. Every single one already existed in the taxonomy as synonyms or variants!
+
+  Final Batch Applied
+
+  File: reports/batch_mappings_final.csv
+  Entries: 92 mapping entries
+  Tags mapped: 10 tags, 114 applications
+
+  | Tag                                       | Items | Mapped To                                   | Status             |
+  |-------------------------------------------|-------|---------------------------------------------|--------------------|
+  | Police                                    | 27    | New South Wales Police                      | ✅ Existing synonym |
+  | Nellie's Glen                             | 25    | Nellie's Glen mining district               | ✅ Existing synonym |
+  | Hartley Vale                              | 20    | Hartley Vale mining district                | ✅ Existing synonym |
+  | I.O.O.F. Hall                             | 17    | Odd Fellows' Hall                           | ✅ Existing merge   |
+  | Ruined Castle                             | 11    | Ruined Castle mining district               | ✅ Existing synonym |
+  | Mr David Brown                            | 4     | Mr D Brown                                  | ✅ Existing synonym |
+  | Australian Kerosene Shale and Oil Company | 3     | Australian Kerosene Oil and Mineral Company | ✅ Existing synonym |
+  | South Clifton Mine Co.                    | 3     | South Clifton Mine Company                  | ✅ Existing synonym |
+  | Katoomba Tennis Club                      | 2     | Katoomba Lawn Tennis Club                   | ✅ Existing synonym |
+  | New South Wales Shale and Oil Co.         | 2     | New South Wales Shale and Oil Company       | ✅ Existing synonym |
+
+  Note: "Primary source" (304 items) preserved as metadata tag - not mapped
+
+  ---
+  Coverage Progress
+
+  | Stage               | Entries | Items | Coverage |
+  |---------------------|---------|-------|----------|
+  | Before this session | 1,038   | 175   | 42.0%    |
+  | After final batch   | 1,130   | 178   | 42.7%    |
+
+  ---
+  Overall Achievement
+
+  From start of orphaned tags work to completion:
+
+  | Metric          | Before | After | Improvement    |
+  |-----------------|--------|-------|----------------|
+  | Mapping entries | 131    | 1,130 | +999 (+762%)   |
+  | Items mapped    | 50     | 178   | +128 (+256%)   |
+  | Coverage        | 12.0%  | 42.7% | +30.7%         |
+  | Orphaned tags   | 42     | 0     | ✅ All resolved |
+
+  ---
+  Validation Results
+
+  ✅ All 92 new entries validated - targets exist in taxonomy
+  ✅ No duplicates found
+  ✅ Backup created: data/tag_application_mapping.csv.backup-final-batch
+  ✅ All mappings follow leaf-node pattern
+
+  ---
+  What This Means
+
+  No more orphaned tags! All Zotero folksonomy tags either:
+  1. Already match the taxonomy (70% of tags)
+  2. Have been mapped through our three batches (27 unique tags → 999 entries)
+  3. Are metadata tags preserved as-is ("Primary source")
+
+  The taxonomy's comprehensive synonym coverage was excellent - abbreviations, historical name variants, and geographic qualifiers were all already
+  accounted for.
+
+  ---
+  Next Steps
+
+  Completed report: reports/ORPHANED_TAGS_COMPLETE_REPORT.md documents the full journey
+
+  Remaining work (from todo list):
+  1. Clean up 34 invalid tags in old mapping entries (pre-dating this work)
+  2. Analyse 239 unmapped items to see if more coverage possible
+  3. CRITICAL: Validate leaf-node uniqueness (Phase 5.2) before deployment
+  4. Build retagging simulation script (Phase 5.1)
+  5. Run dry run and validation (Phase 6)
+
+  The orphaned tags resolution phase is complete. Ready to move on to validation and simulation phases!
+
+> Before we continue, I'd like to review:\
+\
+-Police\
+-Nellie's Glen\
+-Hartley Vale\
+-Ruined Castle\
+\
+As these could potentially resolve to any of several existing tags. For the review, I need to see the tag you assigned plus the source text and an 
+approve / change choice (don't need reject)
+\
+Also, I still don't see the Mount Kembla Disaster in the 'Events' visualisation - can you make sure it's in our active tag CSV and regenerate the 
+hierarchy trees? 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_events.txt in Visual Studio Code
+
+● You're absolutely right to want to review those ambiguous tags! Let me extract the source contexts and check the Mount Kembla Disaster issue.
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  ================================================================================
+     TAG: Police
+     ================================================================================
+     … +104 lines (ctrl+o to expand)
+
+● I notice many items show "[not in this mapping]" - let me check why those weren't included:
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿ Found: Mountain Mixtures.                                                                                                                      
+    Date: 9 September 1892
+    Tags: ['Accommodation', 'Councils', 'Dogs', 'Dr Prangley', 'Dr Spark', 'Hotels', 'I.O.O.F. Hall', 'Injury', 'Katoomba Amateur Minstrels', 'Kato
+    … +8 lines (ctrl+o to expand)
+
+
+● Ah, I see - the batch combined multiple tags per item. Let me create a proper review document with the actual source contexts:
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  Found 94 entries from final resolution batch                                    
+
+     ================================================================================
+     … +149 lines (ctrl+o to expand)
+
+● Now let me check the Mount Kembla Disaster issue and create a review file:
+
+● Search(pattern: "Mount Kembla|Kembla", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Search(pattern: "^Mount Kembla Disaster,", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 3 lines (ctrl+o to expand)
+
+● Search(pattern: "Mount Kembla Disaster", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 3 lines (ctrl+o to expand)
+
+● Search(pattern: "mining accident", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 3 lines (ctrl+o to expand)
+
+● Found the issue! Mount Kembla Disaster has synonym entries but no hierarchy entry. Let me create the review file and fix that:
+
+● Write(reports/AMBIGUOUS_TAGS_REVIEW.md)
+  ⎿  Wrote 205 lines to reports/AMBIGUOUS_TAGS_REVIEW.md                                  
+     # Ambiguous Tags Mapping Review
+     **Date**: 2025-11-07
+     **Purpose**: Review mappings for tags that could resolve to multiple taxonomy options
+     **Action required**: Approve or suggest changes for each mapping
+     ---
+     ## Review Instructions
+     … +195 lines (ctrl+o to expand)
+
+● Now let me fix the Mount Kembla Disaster issue by adding the missing hierarchy entry:
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 50 lines
+
+● Bash(venv/bin/python << 'PYEOF'
+      import csv…)
+  ⎿  ✅ Created backup: data/tag_map_consolidated.csv.backup-add-mount-kembla 
+     ✅ Added Mount Kembla Disaster hierarchy entry at position 451
+     ✅ Updated tag_map_consolidated.csv (1275 rows)
+
+● Bash(venv/bin/python scripts/30_regenerate_hierarchy_trees.py)
+  ⎿  Error: Exit code 2
+     venv/bin/python: can't open file '/home/shawn/Code/blue-mountains/scripts/30_regenerate_hierarchy_trees.py': [Errno 2] No such file or directory
+
+● Search(pattern: "scripts/*hierarchy*.py")
+  ⎿  Found 4 files (ctrl+o to expand)
+
+● Bash(venv/bin/python scripts/23_visualise_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +151 lines (ctrl+o to expand)
+
+● Search(pattern: "Mount Kembla|Kembla", path: "visualizations/hierarchy_trees/primary_events.txt", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/primary_events.txt)
+  ⎿  Read 25 lines
+
+● Perfect! I've completed both tasks:
+
+  1. Ambiguous Tags Review
+
+  I've created reports/AMBIGUOUS_TAGS_REVIEW.md for your review. The file shows for each of the 4 ambiguous tags:
+
+  - My mapping decision and rationale
+  - Alternative options from the taxonomy
+  - Sample source contexts (titles, dates, publications)
+  - Checkboxes for APPROVE or CHANGE
+
+  Summary of My Mappings:
+
+  | Tag           | Items | My Mapping                    | Rationale                                              |
+  |---------------|-------|-------------------------------|--------------------------------------------------------|
+  | Police        | 27    | New South Wales Police        | Organisation (not individual officers or Police Court) |
+  | Nellie's Glen | 25    | Nellie's Glen mining district | Unqualified synonym defaults to district               |
+  | Hartley Vale  | 20    | Hartley Vale mining district  | Unqualified synonym defaults to district               |
+  | Ruined Castle | 11    | Ruined Castle mining district | Unqualified synonym defaults to district               |
+
+  Mapping philosophy: The taxonomy already established that unqualified geographic names are synonyms for the mining district level. This provides
+  the most general geographic container.
+
+  Total items: 83 items affected
+
+  ---
+  2. Mount Kembla Disaster - Fixed! ✅
+
+  Issue found: Mount Kembla Disaster had synonym entries but was missing its hierarchy entry, so it didn't appear in the Events visualization.
+
+  Fix applied:
+  - Added hierarchy entry: Mount Kembla Disaster → parent=mining accidents
+  - Regenerated all hierarchy visualizations
+
+  Mount Kembla Disaster now appears in Events tree:
+
+  Events
+  ├── accidents
+  │   ├── accident
+  │   │   └── mining accidents
+  │   │       └── Mount Kembla Disaster
+
+  Located at: visualizations/hierarchy_trees/primary_events.txt:8
+
+  Files modified:
+  - data/tag_map_consolidated.csv (added hierarchy entry)
+  - All visualizations/hierarchy_trees/*.txt files regenerated
+
+  Backup created: data/tag_map_consolidated.csv.backup-add-mount-kembla
+
+  ---
+  Please review reports/AMBIGUOUS_TAGS_REVIEW.md and let me know if you approve the mappings or want changes!
+
+> ok, we've had a slight misunderstanding. What I need to see is each instance of the ambiguous tags with the primary source text so that I can 
+review each one and disambiguate it, similar to the other decision reports you have made for me in the past 
+  ⎿  Found 6 new diagnostic issues in 1 file (ctrl-o to expand)
+
+● You're absolutely right - you need the actual source text to properly disambiguate each instance! Let me extract the full text contexts from the
+  Zotero export for each of the 83 items.
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  Available fields in Zotero items:
+       attachments: (list, 1 items)
+       creators: (list, 0 items)
+     … +14 lines (ctrl+o to expand)
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  Item: Supreme Court, Sydney.          
+     Notes: 1 note(s)
+       Note 1 keys: ['key', 'note', 'tags']
+     … +23 lines (ctrl+o to expand)
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  ================================================================================
+     TAG: Police
+     ================================================================================
+     … +141 lines (ctrl+o to expand)
+
+● Now let me create a comprehensive decision report with the full text for each item:
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  ✅ Created decision report: reports/AMBIGUOUS_TAGS_DECISION_REPORT.md 
+
+     Summary:
+     … +6 lines (ctrl+o to expand)
+
+● Perfect! I've created reports/AMBIGUOUS_TAGS_DECISION_REPORT.md with all 83 items showing the full source text for your review.
+
+  Report Structure
+
+  For each of the 4 ambiguous tags, the report shows:
+
+  1. Taxonomy options (A, B, C, etc.) for you to choose from
+  2. Each item with:
+    - Title, date, publication
+    - Full source text (up to 1500 chars)
+    - Decision field for you to fill in
+
+  Summary by Tag
+
+  | Tag           | Items | Options                                                                                             |
+  |---------------|-------|-----------------------------------------------------------------------------------------------------|
+  | Police        | 27    | A) New South Wales Police (organisation)B) police officer (occupation)C) Police Court (institution) |
+  | Nellie's Glen | 25    | A) mining districtB) settlementC) gullyD) Shale Mine siteE) Road                                    |
+  | Hartley Vale  | 20    | A) mining districtB) settlementC) minesD) Natives Football Club                                     |
+  | Ruined Castle | 11    | A) mining districtB) settlementC) rock formationD) Shale Mine site                                  |
+
+  Example Entry Format
+
+  #### Item 1.1
+
+  **Title**: A Charge of Rape.
+  **Date**: 6 September 1890
+  **Publication**: Nepean Times
+
+  **Source text**:
+
+  ```text
+  Nepean Times (Penrith, NSW : 1882 - 1962), Saturday 6 September 1890,
+  page 4 A Charge of Rape. At the Penrith Police Court on Friday,
+  before Messrs. A. Judges and A. Colless, J's. P. Robert Russell was...
+
+  DECISION: _____ (A-C)
+
+  The report is ready for your review. Once you've filled in the decisions, I can update the mapping file accordingly.
+
+  Also ✅ **Mount Kembla Disaster is now in the Events hierarchy** as you requested!
+
+> Ok, I'm not finding the source text very useful in this report - the text must include the excerpt(s) related to the tagging issue (e.g., 
+'police'). It should contain only the sentence(s) where the relevant text appears - you've done this before in your reports. Note that I did answer 
+the first two:\
+\
+## 1. Police
+
+### Taxonomy Options
+
+**A.** New South Wales Police (organisation)
+**B.** police officer (occupation)
+**C.** Police Court (institution)
+
+---
+
+### Items (27 total)
+
+#### Item 1.1
+
+**Title**: A Charge of Rape.
+**Date**: 6 September 1890
+**Publication**: Nepean Times
+
+**Source text**:
+
+```text
+Nepean Times (Penrith, NSW : 1882 - 1962), Saturday 6 September 1890, page 4 A Charge of Rape. At the Penrith Police Court on Friday, before Messrs.
+ A. Judges and A. Colless, J's. P. Robert Russell was charged that he did on the 3rd September instant, at Katoomba, without her consent, ravish and
+ carnally know Fanny Lynch. Constable John Hamilton, sworn, deposed: From information I received from Fanny Lynch yesterday morning between 3 and 4 
+o'clock, I took her to Dr. Spark at Katoomba, this was between 9 and 10 o'clock, she refused to be examined; I went in search of Fanny Lynch's 
+husband but I failed to find him; Constable Illingworth then arrived at Katoomba, we went and searched for Lynch but could not find him; we then 
+went to the Carrington Hotel; I called accused and said to him "We are going to arrest you;" I further said "I charge you with committing a rape on 
+Mrs. William Lynch sometime this morning at her residence Katoomba; he replied "Who, me, alright it is one thing. I'm not guilty, that is what you 
+get for being kind to people;” Constable Illingworth and I took him to the Katoomba lock-up; I noticed some scratches on accused face; I know the 
+accused he has been working at Carrington Hotel; Lynch's residence is about half-a-mile away; I have known Mrs Lynch for the last 3 years and never 
+heard anything against her; I brought accused to Penrith lock-up this morning. By the Bench: When Mrs Lynch went to me she made a charge. Accused 
+declined to ask any questions. Fa... [truncated]
+```
+
+**DECISION**: ____B_  (Constable John Hamilton | Constable Illingworth)
+
+---
+
+#### Item 1.2
+
+**Title**: News in Brief
+**Date**: 9 October 1903
+**Publication**: Mountaineer
+
+**Source text**:
+
+```text
+Mountaineer (Katoomba, NSW : 1894 - 1908), Friday 9 October 1903, page 3 News in Brief. — 779 — Tourists — To Katoomba — For the holiday. — We learn
+ that an effort is being made to recussitate the Oddfellows' Lodge in Katoomba. — An extra cheap train arrives from Sydney to-night (Friday). The 
+time at Katoomba is 7.28. — The lettering done by Mr H.J. Wootton on Mr J. Waudby's window is a very elegant and chaste bit of work. — By Government
+ advertisement it will be seen that the Jenolan Caves rivers are closed against salmon and trout fishing. — Mr A. Olsen gives notice he intends to 
+apply for wine license for shop in Leura Mall. — The usual monthly meeting of the Katoomba School of Arts committee will be held on Tuesday evening 
+next. — A third policeman has been stationed at Katoomba and district. — Alderman Tabrett thinks the referendum on the water supply will be against 
+the proposal. — The Aldermen met the District Inspector Culane re improved conveniences at the Katoomba station on Tuesday afternoon. — The Katoomba
+ Methodist Sunday School Anniversary takes place on Sunday next and the picnic and annual meeting on Wednesday. — Alderman Tabrett moved at the 
+Council meeting on Monday night for amid-day mail between Mountain towns. —The monthly display in connection with the Blue Mountain H. and I. 
+Society held in the Council Chambers was in every way a great success. The flowers were good, and the public attended pretty well and appreciated 
+the display. — Katoomba Progress As... [truncated]
+```
+
+**DECISION**:  B (generic)\
+\
+otherwise I need you to regenreate it with th especifisource text please 
+  ⎿  ⧉ Selected 41 lines from reports/AMBIGUOUS_TAGS_DECISION_REPORT.md in Visual Studio Code
+
+● You're absolutely right - I need to extract just the specific sentences containing the tag, like the KWIC context reports I've done before. Let me
+   regenerate with proper context extraction:
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  ✅ Regenerated decision report: reports/AMBIGUOUS_TAGS_DECISION_REPORT.md 
+
+     Report now shows KWIC-style context extraction:
+     … +9 lines (ctrl+o to expand)
+
+● ✅ Report regenerated with KWIC-style context extraction!
+
+  The report now shows only the specific sentence(s) containing the ambiguous tag plus 1 sentence before/after for context - much more focused and
+  useful for disambiguation decisions.
+
+  Example of Improved Format
+
+  Instead of showing the entire 1500-character article, it now shows:
+
+  At the Penrith Police Court on Friday, before Messrs. A. Judges and
+  A. Colless, J's. P. Robert Russell was charged... Constable John
+  Hamilton, sworn, deposed: From information I received from Fanny Lynch
+  yesterday morning between 3 and 4 o'clock, I took her to Dr. Spark at
+  Katoomba...
+
+  Or for the second example:
+
+  The usual monthly meeting of the Katoomba School of Arts committee
+  will be held on Tuesday evening next. — A third policeman has been
+  stationed at Katoomba and district. — Alderman Tabrett thinks the
+  referendum on the water supply will be against the proposal.
+
+  I've noted your two decisions from the examples you provided. The updated report is ready for your full review at
+  reports/AMBIGUOUS_TAGS_DECISION_REPORT.md!
+
+> I see an entry for 'Katoomba Police' - can you search the web and see if there was a Katoomba police department or similar separate from NSW 
+police ca. 1900, or is this a local office of the state police? 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_agents.txt in Visual Studio Code
+
+● Web Search("Katoomba Police Station history 1890s 1900s New South Wales")
+  ⎿  Did 1 search in 21s                                                                                                                           
+
+● Web Search(""New South Wales Police" history 1890s municipal police local police organizational structure")
+  ⎿  Did 3 searches in 53s                                                                                                                         
+
+● Search(pattern: "Katoomba Police", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "Katoomba.*[Pp]olice", path: "visualizations/hierarchy_trees/primary_agents.txt", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 20 lines
+
+● Search(pattern: "Katoomba", path: "visualizations/hierarchy_trees/primary_agents.txt", output_mode: "content")
+  ⎿  Found 18 lines (ctrl+o to expand)
+
+● Based on my web search, Katoomba Police was a local station of the NSW Police Force, not a separate municipal police department.
+
+  Key Historical Findings:
+
+  Centralized State Police Since 1862
+
+  - 1862: The Police Regulation Act amalgamated all existing police forces (Mounted Police, Foot Police, Water Police) into one unified NSW Police 
+  Force under the Inspector-General
+  - No municipal police: The only experiment with municipal police in NSW was Sydney (1842-1846), which failed
+  - By the 1890s: All policing in NSW was conducted under the centralized state police force
+
+  Katoomba Police Station
+
+  - The Katoomba Police Station was a local office/station of the NSW Police Force
+  - Associated with the Inspector-General of Police (1862-1899) and the Police Department (1899-1990)
+  - Records of Occurrences (police station diaries) exist in NSW State Archives
+
+  Organizational Structure
+
+  - The colony was divided into districts and sub-districts with local stations
+  - The Police Regulation Act 1899 reorganized the force structure but maintained central state control
+  - Local government authorities had no separate police forces
+
+  Implication for Disambiguation
+
+  This means in your sources from the 1890s-1900s, "Police" references would refer to:
+
+  1. New South Wales Police (organisation) - the state police force
+  2. police officer (occupation) - individual officers of NSW Police
+  3. Police Court (institution) - the legal proceedings
+  4. Katoomba Police Station (building) - local station facility (if this is in your taxonomy)
+
+  There was no separate "Katoomba Police" organization - it was always NSW Police officers stationed at the Katoomba station.
+
+  Does this help clarify the disambiguation options in the decision report?
+
+> I'm seeing police from different districts, e.g., 'Katoomba Police', 'Helensburgh Police' - what is your recommendation for tagging these? Should 
+we have specific (sub)district tags under New South Wales Police? something else? 
+
+● Good question! This is a classic disambiguation issue between organizational affiliation vs. geographic location vs. physical building. Let me
+  check what's currently in the taxonomy and then make a recommendation:
+
+● Search(pattern: "police station|Police Station", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 2 lines (ctrl+o to expand)
+
+● Search(pattern: "Katoomba.*station|Helensburgh.*station", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Search(pattern: "^New South Wales Police,|^police facilities,|^police station,|^police officer,", path: "data/tag_map_consolidated.csv", output_mode:
+        "content")
+  ⎿  Found 7 lines (ctrl+o to expand)
+
+● Search(pattern: "police officer", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Bash(python3 << 'PYEOF'
+      import json…)
+  ⎿  Sample items tagged 'Police': 
+
+     1. A Charge of Rape.
+     … +23 lines (ctrl+o to expand)
+
+● Search(pattern: "Helensburgh", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Let me look at the full context around where you saw the police hierarchy:
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 30 lines
+
+● Based on my investigation, here's what I found and my recommendations:
+
+  Current State
+
+  In the Zotero folksonomy: There are NO tags like "Katoomba Police" or "Helensburgh Police"
+  - Just generic "Police", "Police court", and "Police station"
+  - Items often have BOTH "Police" and location tags separately (e.g., "Police" + "Katoomba")
+
+  In the taxonomy:
+  - New South Wales Police (organisation under government bodies)
+  - police officers (occupation, with specific named officers like Constable John Hamilton)
+  - police station (generic building type under police facilities)
+
+  Historical Context
+
+  From the web search: All policing in NSW from 1862 onwards was centralized under NSW Police Force. "Katoomba Police" or "Helensburgh Police" refer
+   to NSW Police officers/operations in those locations, NOT separate municipal forces.
+
+  Recommended Tagging Strategy
+
+  I recommend a context-dependent approach:
+
+  1. When referring to police organization/operations in a location:
+
+  Multi-tag: New South Wales Police | [location]
+
+  Example: "Katoomba Police investigated..." → New South Wales Police | Katoomba
+
+  Rationale:
+  - Preserves organizational affiliation (NSW Police)
+  - Preserves geographic specificity
+  - Follows the pattern established for named entities (hotel | person)
+  - Location tags already exist in your taxonomy
+
+  2. When referring to specific officers:
+
+  Use existing pattern: constable or Constable [Name] + location context from item metadata
+
+  3. When referring to the physical station building:
+
+  Either:
+  - Generic: police station | Katoomba
+  - Or create specific: Katoomba Police Station (under police facilities)
+
+  4. When referring to Police Court proceedings:
+
+  Police Court (which should be in taxonomy under legal institutions - let me check)
+
+  Implementation for Current "Police" Disambiguation
+
+  For the 27 items currently tagged "Police", you'll need to determine from context whether they refer to:
+  - A = New South Wales Police (organisation) - when discussing police force/operations
+  - B = police officers (occupation) - when discussing individual officers generically
+  - C = Police Court (institution) - when discussing legal proceedings
+
+  Then add location tags separately if the location is significant and not already in the item's other tags.
+
+  Would this approach work for your needs? Or would you prefer to create specific district entries under NSW Police?
+
+> cool, yes, I'll just tag with town name after I disambiguate 
+
+● Perfect! That makes sense. So your approach will be:
+
+  1. Disambiguate "Police" using the decision report → choose A, B, or C for each item
+  2. Add location tags as needed (e.g., + Katoomba, + Blackheath, etc.)
+
+  This gives you precision on both what kind of police-related tag it is AND where it relates to.
+
+  The AMBIGUOUS_TAGS_DECISION_REPORT.md is ready for your review with the KWIC-style contexts. Once you've filled in your decisions (A/B/C for
+  Police, and A/B/C/D/E for the geographic tags), just let me know and I'll:
+
+  1. Generate a new batch mapping file based on your decisions
+  2. Validate the mappings
+  3. Apply them to the master file
+
+  Take your time with the review - 83 items to work through!
+
+> in this historical context, if the state is going to build 'police quarters', is that a police station or something else? 
+
+● Good question! "Police quarters" in this historical context refers to residential accommodation for police officers, not the police station
+  itself.
+
+  In colonial and early 20th century Australia, especially in rural/regional areas:
+
+  - Police station = the office, lock-up, and cells where police work was conducted
+  - Police quarters = housing provided for police officers and their families (often adjacent to or part of the same complex as the station)
+
+  So "police quarters" would be a residential building, not a police facility.
+
+  Let me check what's in your taxonomy for residential/accommodation buildings:
+
+● Search(pattern: "residential|dwelling|quarters|accommodation buildings", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 13 lines (ctrl+o to expand)
+
+● Perfect! Your taxonomy already has a pattern for occupational dwellings - see "miners' dwellings" under the dwellings category.
+
+  Recommendation for Police Quarters
+
+  Following the existing pattern in your taxonomy, I'd suggest:
+
+  Tag it as: dwelling (generic) or create a specific police quarters entry
+
+  Hierarchy would be:
+  Built Environment
+  └── accommodation buildings
+      └── dwellings
+          └── police quarters
+
+  This parallels the existing structure:
+  Built Environment
+  └── accommodation buildings
+      └── dwellings
+          └── miners' dwellings
+
+  Rationale:
+  - "Police quarters" were residential, not operational buildings
+  - They housed a specific occupational group (like miners' dwellings)
+  - Distinct from "police station" (the workplace/civic building)
+
+  Would you like me to add "police quarters" to the taxonomy with appropriate hierarchy entries? Or would you prefer to just use the generic
+  "dwelling" tag for now?
+
+> hmm...we could do it that way, or put it under 'police facilities' as a sibling of 'police station' - which do you recommend? 
+
+● Excellent question! This is a classic form vs. function classification dilemma. Let me think through both approaches:
+
+  Option 1: Under dwellings (functional classification)
+
+  accommodation buildings
+  └── dwellings
+      ├── miners' dwellings
+      └── police quarters
+  Rationale: Primary function is residential
+
+  Option 2: Under police facilities (organizational classification)
+
+  police facilities
+  ├── police station
+  └── police quarters
+  Rationale: Part of police infrastructure
+
+  My Recommendation: Option 2 - police facilities
+
+  Here's why:
+
+  1. Historical Context
+
+  Police quarters in colonial/early 20th century Australia were government-provided institutional housing as part of the police infrastructure. They
+   weren't just "dwellings that happened to house police" - they were purpose-built government facilities, often physically attached to or part of
+  the station complex.
+
+  2. Different from Miners' Dwellings
+
+  - Miners' dwellings: Often private or company housing, part of the broader accommodation stock
+  - Police quarters: Government facilities, built/funded/maintained as part of police operations
+
+  3. Administrative Reality
+
+  Built and managed as police infrastructure, funded through police/government budgets, not general housing programs.
+
+  4. Research Utility
+
+  Someone researching police infrastructure would expect to find quarters under police facilities. Someone researching housing might not think to
+  look there, but the polyhierarchy can solve that...
+
+  5. Getty AAT Precedent
+
+  Getty does classify some residential facilities under organizational groupings when they're part of institutional complexes (e.g., military
+  barracks under military facilities, not just under dwellings).
+
+  Alternative: Polyhierarchical (both)?
+
+  You could make it polyhierarchical:
+  police facilities > police quarters (PRIMARY)
+  dwellings > police quarters (secondary functional aspect)
+
+  But if I had to choose one, I'd go with police facilities for the institutional/governmental nature of the buildings.
+
+  What do you think?
+
+> right now we have hartley vale as a mining settlement, but it has a football club, cricket club, and police station - was it a 'town' ca. 1900 in 
+a way that the Ruined Castle and Nellie's Glen miners' settlements weren't? 
+
+● Excellent historical question! Let me search for information about Hartley Vale's development and status compared to Ruined Castle and Nellie's
+  Glen:
+
+● Web Search("Hartley Vale NSW history 1890s 1900s settlement town mining")
+  ⎿  Did 1 search in 26s                                                                                                                           
+
+● Web Search(""Ruined Castle" "Nellie's Glen" Megalong Valley mining settlement 1890s shale")
+  ⎿  Did 1 search in 16s                                                                                                                           
+
+● Excellent question! Based on the historical evidence, yes - Hartley Vale was qualitatively different from Ruined Castle and Nellie's Glen. Here's
+  the comparison:
+
+  Hartley Vale - Established Town
+
+  Civic Infrastructure (survived mining era):
+  - School: 1872-1956 (84 years!) - operated 46 years AFTER mining ended
+  - Police station: Permanent facility
+  - Sports clubs: Football club, cricket club (organized recreation)
+  - Pub: Comet Inn (1879+) - permanent establishment
+  - Population: Over 2,000 people at peak
+  - Mining period: 1865-1910, but village survived beyond mining
+
+  Key indicator: The school operated until 1956 - decades after mining ceased in 1910. This shows Hartley Vale became a settled community with civic
+   identity beyond its mining origins.
+
+  ---
+  Nellie's Glen - Mining Settlement
+
+  Commercial Infrastructure (tied to mining):
+  - Hotel, butcher's shop, bakery, public hall
+  - Described as "sizeable mining settlement"
+
+  BUT: Settlement "did not survive the end of the shale industry in 1903"
+  - Hotel was literally moved to Katoomba in 1904 (relocated to Lurline Street as 'Maldwin' guesthouse)
+  - Settlement dissolved when mining ended
+
+  ---
+  Ruined Castle - Mining Camp
+
+  Temporary accommodation only:
+  - "Predominantly quarters for single men"
+  - Buildings: "bush timber, bark, kerosene tins and whatever was at hand"
+  - "Faded away with the end of the shale works"
+
+  Most basic level - no permanent structures, all temporary.
+
+  ---
+  Recommendation
+
+  Your taxonomy hierarchy should reflect this distinction:
+
+  Hartley Vale → Hartley Vale (settlement) or even Hartley Vale (town)
+  - Had civic institutions, survived beyond mining, permanent community
+
+  Nellie's Glen → Nellie's Glen (settlement) or Nellie's Glen mining settlement
+  - Commercial but temporary, existed only during mining operations
+
+  Ruined Castle → Ruined Castle (mining camp) or keep as settlement
+  - Most temporary, primarily workers' quarters
+
+  The football/cricket clubs and long-operating school are key indicators that Hartley Vale achieved town status with civic life beyond economic
+  function, unlike the other two which were purely extractive settlements.
+
+  Would you like me to check what's currently in your taxonomy for these and suggest updates?
+
+> ok, we are going to need to migrate:\
+\
+Places
+├── mining districts
+│   ├── Hartley Vale mining district
+│   │   ├── Hartley Vale (settlement)\
+\
+to Places > towns > Hartley Vale for all items tagged with the former. Can you make a plan to do that comprehensively, updating both the schema and 
+preparing to update the tags too? 
+  ⎿  ⧉ Selected 4 lines from visualizations/hierarchy_trees/primary_places.txt in Visual Studio Code
+
+● I'll create a comprehensive plan to migrate Hartley Vale from mining settlement to town status. Let me research the current state first.
+
+● Plan(Research Hartley Vale taxonomy migration)
+  ⎿  Done (34 tool uses · 35.1k tokens · 9h 33m 4s)                                                                                                
+
+● Excellent! The research agent has provided a comprehensive report. Before I finalize the execution plan, I need to clarify a few decisions:
+                                                                                                                                                   
+● User answered Claude's questions:
+  ⎿  · Should Hartley Vale be added to the thematic towns grouping (towns - THEMATIC) alongside Katoomba, Leura, Mount Victoria, Wentworth Falls, 
+     and Megalong? → Yes - add to thematic grouping
+     · What should happen to the 'Hartley Vale mining district' entity after migration? → Keep as separate historical entity
+     · Should we review Nellie's Glen and Ruined Castle for similar migration? → No - keep as mining settlements
+  ⎿  User rejected Claude's plan:
+     ╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+     │ Hartley Vale Migration Plan: Mining Settlement → Town                                                                                           │
+     │                                                                                                                                                 │
+     │ Summary                                                                                                                                         │
+     │                                                                                                                                                 │
+     │ Migrate Hartley Vale from mining districts > Hartley Vale mining district > Hartley Vale (settlement) to Places > towns > Hartley Vale,         │
+     │ updating both taxonomy and 20 affected tag applications.                                                                                        │
+     │                                                                                                                                                 │
+     │ Changes Overview                                                                                                                                │
+     │                                                                                                                                                 │
+     │ - Add: Hartley Vale as town (2 entries: primary + thematic)                                                                                     │
+     │ - Modify: Synonym entry (line 285) to reference town                                                                                            │
+     │ - Delete: Hartley Vale (settlement) intermediate node (line 1042)                                                                               │
+     │ - Keep: Hartley Vale mining district as historical entity with mines child                                                                      │
+     │ - Update: 20 tag applications → change "Hartley Vale mining district" to "Hartley Vale"                                                         │
+     │                                                                                                                                                 │
+     │ ---                                                                                                                                             │
+     │ Step 1: Backup Files                                                                                                                            │
+     │                                                                                                                                                 │
+     │ - Create data/tag_map_consolidated.csv.backup-hartley-vale-migration                                                                            │
+     │ - Create data/tag_application_mapping.csv.backup-hartley-vale-migration                                                                         │
+     │                                                                                                                                                 │
+     │ Step 2: Update Taxonomy (tag_map_consolidated.csv)                                                                                              │
+     │                                                                                                                                                 │
+     │ Add 2 new entries (after line 1019, near other town entries):                                                                                   │
+     │ Hartley Vale,Hartley Vale,hierarchy,parent=towns                                                                                                │
+     │ Hartley Vale,Hartley Vale,hierarchy,parent=towns - THEMATIC                                                                                     │
+     │                                                                                                                                                 │
+     │ Modify line 285 (synonym entry):                                                                                                                │
+     │ BEFORE: Hartley Vale mining district,Hartley Vale,synonym,Unqualified form - use mining district qualifier for clarity                          │
+     │ AFTER: Hartley Vale,Hartley Vale,synonym,Town in Blue Mountains; historically the Hartley Vale mining district                                  │
+     │                                                                                                                                                 │
+     │ Delete line 1042 (settlement child):                                                                                                            │
+     │ DELETE: Hartley Vale (settlement),Hartley Vale (settlement),hierarchy,parent=Hartley Vale mining district                                       │
+     │                                                                                                                                                 │
+     │ Keep unchanged:                                                                                                                                 │
+     │ - Line 1041: Hartley Vale mining district (mining district parent)                                                                              │
+     │ - Line 1043: Hartley Vale mines (child of mining district)                                                                                      │
+     │ - Lines 346-347: Football club entries                                                                                                          │
+     │                                                                                                                                                 │
+     │ Step 3: Update Tag Applications (tag_application_mapping.csv)                                                                                   │
+     │                                                                                                                                                 │
+     │ Find and replace in add_tags column (20 items affected):                                                                                        │
+     │ - Hartley Vale mining district → Hartley Vale                                                                                                   │
+     │                                                                                                                                                 │
+     │ This includes multi-tag entries:                                                                                                                │
+     │ - Hartley Vale mining district | Mr D Brown | ... → Hartley Vale | Mr D Brown | ...                                                             │
+     │ - Hartley Vale mining district | New South Wales Police → Hartley Vale | New South Wales Police                                                 │
+     │ - etc.                                                                                                                                          │
+     │                                                                                                                                                 │
+     │ Step 4: Regenerate Hierarchy Visualizations                                                                                                     │
+     │                                                                                                                                                 │
+     │ venv/bin/python scripts/23_visualise_poly_hierarchy.py                                                                                          │
+     │                                                                                                                                                 │
+     │ Expected result: Hartley Vale appears under towns in primary_places.txt and theme_towns.txt                                                     │
+     │                                                                                                                                                 │
+     │ Step 5: Validation                                                                                                                              │
+     │                                                                                                                                                 │
+     │ - Verify 2 new town entries exist                                                                                                               │
+     │ - Verify settlement entry deleted                                                                                                               │
+     │ - Verify 20 tag applications updated                                                                                                            │
+     │ - Verify mining district still exists with mines child                                                                                          │
+     │ - Check hierarchy visualizations show correct structure                                                                                         │
+     │                                                                                                                                                 │
+     │ ---                                                                                                                                             │
+     │ Final Structure                                                                                                                                 │
+     │                                                                                                                                                 │
+     │ Before:                                                                                                                                         │
+     │ Places > mining districts > Hartley Vale mining district                                                                                        │
+     │     ├── Hartley Vale (settlement)                                                                                                               │
+     │     └── Hartley Vale mines                                                                                                                      │
+     │                                                                                                                                                 │
+     │ After:                                                                                                                                          │
+     │ Places > towns > Hartley Vale                                                                                                                   │
+     │ Places > mining districts > Hartley Vale mining district                                                                                        │
+     │     └── Hartley Vale mines                                                                                                                      │
+     │                                                                                                                                                 │
+     │ Affected: 20 items, 36 tag occurrences total                                                                                                    │
+     ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+> One minor change : Hartley Vale (settlement) is a *leaf* node not an *intermediate* node. Also, we're almost out of context and it would be better
+ to run this operation after /compact - can you create a /compact message that sets us up for smooth continuation next session? 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_places.txt in Visual Studio Code
+
+● Perfect! Here's your compact message for smooth session continuation:
+
+  ---
+  Session Summary: Hartley Vale Migration + Ambiguous Tags Review
+
+  Completed This Session
+
+  1. ✅ Resolved final 11 orphaned tags - all existed as synonyms in taxonomy
+    - Applied batch_mappings_final.csv (92 entries)
+    - Coverage: 42.7% (178 items)
+    - NO remaining orphaned tags (except "Primary source" metadata tag)
+  2. ✅ Fixed Mount Kembla Disaster - added missing hierarchy entry, now appears in Events visualization
+  3. ✅ Generated ambiguous tags decision report - reports/AMBIGUOUS_TAGS_DECISION_REPORT.md
+    - 83 items across 4 tags (Police, Nellie's Glen, Hartley Vale, Ruined Castle)
+    - KWIC-style contexts for disambiguation
+    - Awaiting your decisions (A/B/C/D/E choices)
+
+  Ready for Next Session: Hartley Vale Migration
+
+  Task: Migrate Hartley Vale from mining settlement to town status
+
+  User Decisions Made:
+  - Add to thematic towns grouping (YES)
+  - Keep mining district as separate historical entity
+  - Do NOT review Nellie's Glen/Ruined Castle (they remain mining settlements)
+
+  Correction Noted: Hartley Vale (settlement) is a leaf node (no children), not intermediate node
+
+  Migration Plan:
+
+  1. Taxonomy changes (tag_map_consolidated.csv):
+    - Add 2 entries: Hartley Vale under towns (primary + thematic)
+    - Modify line 285: Update synonym to reference town
+    - Delete line 1042: Remove Hartley Vale (settlement) leaf node
+    - Keep: mining district (1041) + mines child (1043)
+  2. Tag applications (tag_application_mapping.csv):
+    - Update 20 items: Hartley Vale mining district → Hartley Vale
+  3. Regenerate: hierarchy visualizations
+
+  Result Structure:
+  Places > towns > Hartley Vale (NEW)
+  Places > mining districts > Hartley Vale mining district
+      └── Hartley Vale mines
+
+  Files Ready:
+  - Research report from Plan agent (comprehensive)
+  - reports/AMBIGUOUS_TAGS_DECISION_REPORT.md (awaiting your review)
+
+  Next Steps:
+  1. Execute Hartley Vale migration
+  2. Complete ambiguous tags disambiguation (83 items)
+  3. Generate final batch from your decisions
+  4. Apply and validate
+
+
+

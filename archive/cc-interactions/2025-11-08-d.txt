@@ -1,0 +1,2315 @@
+
+ ▐▛███▜▌   Claude Code v2.0.36
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+══════════════════════════════════════════════════════ Conversation compacted · ctrl+o for history ═════════════════════════════════════════════════════
+
+> /compact ● Session: Taxonomy Capitalization & Structure Fixes
+
+  Completed Tasks
+
+  1. ✅ Removed Extraneous Primary Facets
+  - Fixed capitalized parent references creating false top-level facets
+  - Changed: parent=Accident → parent=accidents
+  - Changed: parent=Animals → parent=animals (3 refs)
+  - Changed: parent=Organizations → parent=organisations (6 refs)
+  - Changed: parent=Criminal events → parent=criminal events
+  - Changed: parent=Historical events → parent=historical events
+  - Changed: parent=Towns → parent=towns (10 refs)
+  - Result: Reduced from 21 to 10 primary facets
+
+  2. ✅ Fixed Capitalized Agent Duplicates
+  - Changed Accident,Accident → accident,accident (2 entries)
+  - Changed Animals,Animals → animals,animals (2 entries)
+  - Changed Organizations,Organizations → organisations,organisations (1 entry)
+  - Changed Miners,Miners → miners,miners (3 entries)
+  - Verified miner generic leaf exists correctly
+
+  3. ✅ Restructured Mining Accidents Hierarchy
+  - Changed: mining accidents,parent=accident → parent=accidents
+  - Changed: Mining accidents → mining accidents (capitalization)
+  - Fixed: parent=Mining accidents → parent=mining accidents
+  - Result: mining accidents now sibling to agricultural/transport accidents
+
+  4. ✅ Fixed Event Capitalization Regression
+  - Updated scripts/22_generate_poly_hierarchy.py (lines 574-635): all event leaves lowercase
+  - Removed 89 capitalized event entries from CSV:
+    - 35 with capitalized parent categories
+    - 54 with various parent references
+    - All event categories: assault, concert, death, marriage, etc. now lowercase
+  - Fixed: Alcohol-related → alcohol-related
+  - Result: All events follow Getty AAT capitalization standard
+
+  5. ✅ Removed Duplicate Entries
+  - Removed 31 exact duplicate entries across multiple cleanup passes
+  - CSV reduced: 1862 → 1842 lines
+
+  Files Modified
+
+  1. data/tag_map_consolidated.csv - Fixed 100+ capitalization issues, removed 120 problematic entries
+  2. scripts/22_generate_poly_hierarchy.py - Lines 574-635: lowercase event generation
+  3. visualizations/hierarchy_trees/ - All 58 files regenerated
+
+  Final Validation
+
+  Primary Facets: 10 (Activities, Agents, Associated Concepts, Built Environment, Events, Information Forms, Law enforcement, Legal officials,
+  Materials, Places)
+
+  Events Structure Verified:
+  Events > accidents
+    ├── accident (generic)
+    ├── agricultural accidents
+    ├── mining accidents ✓ (sibling, not nested)
+    │   └── Mount Kembla Disaster
+    ├── fire, disaster
+    └── transport accidents
+
+  Agents Structure Verified:
+  Agents
+  ├── People > Occupations > miners > miner ✓
+  ├── animals ✓ (lowercase)
+  └── organisations ✓ (lowercase UK)
+
+  All capitalization now follows Getty AAT standard. No extraneous facets. Mining accidents correctly structured. 
+  ⎿  Compacted (ctrl+o to see full summary)
+  ⎿  Referenced file visualizations/hierarchy_trees/primary_agents.txt
+  ⎿  Read visualizations/hierarchy_trees/primary_events.txt (91 lines)
+  ⎿  Read visualizations/hierarchy_trees/primary_associated_concepts.txt (38 lines)
+  ⎿  Read visualizations/hierarchy_trees/primary_built_environment.txt (231 lines)
+  ⎿  Read visualizations/hierarchy_trees/primary_information_forms.txt (17 lines)
+
+> welcome back! I've finished annotating entries in the 'ambiguous_tags_decision_report.md. I also see some more capitalisation issues and a huge 
+proliferation of extraneaou primary nodes. What do you think we should work on next? 
+
+● Welcome back! Let me investigate the current state of the taxonomy to understand the scope of the issues you're seeing.
+
+● Plan(Investigate taxonomy issues)
+  ⎿  Done (76 tool uses · 54.9k tokens · 6m 46s)                                                                                                   
+
+● Great investigation results! The agent found significant issues:
+
+  Current Problems
+
+  1. Primary Facet Proliferation: 24 visualization files instead of 10
+  - 14 spurious files caused by capitalization errors creating false top-level nodes
+  - Examples: primary_accident.txt, primary_animals.txt, primary_organizations.txt
+
+  2. Capitalization Violations: 34 category terms incorrectly capitalized
+  - Organizations: 14 violations (e.g., "Civic organizations" → should be "civic organizations")
+  - Clubs & Groups: 7 violations (e.g., "Athletic clubs" → should be "athletic clubs")
+  - Activities: 6 violations (e.g., "Charitable and welfare activities" → lowercase)
+  - Others: 7 violations (accommodation, financial institutions, etc.)
+
+  3. Malformed Parent Notes: 5 entries with explanatory text in parent field
+  - Example: parent=mining companies (primary: absorbs A.K.O. & M. Company...)
+  - Creating 5 additional spurious facets
+
+  Root Cause
+
+  Capitalized category terms in CSV break the hierarchy logic:
+  - "Civic organizations" exists as a parent reference
+  - But it has parent=organisations (lowercase)
+  - Creates disconnect → appears as orphaned top-level node
+  - Generates spurious primary facet files
+
+  Recommended Priority
+                                                                        
+● User answered Claude's questions:
+  ⎿  · Which issue would you like to tackle first? → Do both in sequence
+
+● Perfect! Let me present a comprehensive plan to fix both issues systematically.
+                                                                                    
+● User approved Claude's plan:
+  ⎿  Capitalization & Hierarchy Cleanup Plan
+
+     Phase 1: Fix Capitalization Violations (34 terms)
+
+     File: data/tag_map_consolidated.csv
+
+     Organizations (14 fixes):
+     - Civic organizations → civic organizations
+     - Commercial businesses → commercial businesses
+     - Cultural & recreational organizations → cultural & recreational organizations
+     - Fraternal orders & lodges → fraternal orders & lodges
+     - Government bodies → government bodies
+     - Hospitality businesses → hospitality businesses
+     - Independent lodges → independent lodges
+     - Labour organizations → labour organizations
+     - Mining companies → mining companies
+     - Other government bodies → other government bodies
+     - Postal authorities → postal authorities
+     - Progress committees → progress committees
+     - Railway authorities → railway authorities
+     - Religious organizations → religious organizations
+
+     Clubs & Groups (7 fixes):
+     - Athletic clubs → athletic clubs
+     - Cricket clubs → cricket clubs
+     - Demographic groups → demographic groups
+     - Ethnic groups → ethnic groups
+     - Football clubs → football clubs
+     - Rifle clubs → rifle clubs
+     - Sports clubs → sports clubs
+     - Tennis clubs → tennis clubs
+
+     Activities (6 fixes):
+     - Charitable and welfare activities → charitable and welfare activities
+     - Commercial activities → commercial activities
+     - Communication activities → communication activities
+     - Economic activities → economic activities
+     - Military activities → military activities
+     - Recreation activities → recreation activities
+
+     Others (7 fixes):
+     - Accommodation and hospitality venues → accommodation and hospitality venues
+     - Financial institutions → financial institutions
+     - Performance groups → performance groups
+     - Police facilities → police facilities
+     - Postal facilities → postal facilities
+     - Transport & logistics businesses → transport & logistics businesses
+
+     Phase 2: Fix Malformed Parent Notes (5 entries)
+
+     Clean up parent references with embedded explanatory text:
+     - Extract explanations to separate documentation
+     - Use clean parent=mining companies format
+
+     Phase 3: Validation & Cleanup
+
+     1. Regenerate visualizations: python3 scripts/23_visualise_poly_hierarchy.py
+     2. Verify 10 primary facets (not 24)
+     3. Delete 14 spurious primary_*.txt files
+     4. Confirm Getty AAT capitalization compliance
+
+     Expected Outcome:
+     - 10 clean primary facet files
+     - Getty AAT standard compliance
+     - No false hierarchy structures
+
+● Search(pattern: "^Civic organizations,Civic organizations,", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 2 lines (ctrl+o to expand)
+
+● Search(pattern: "^Commercial businesses,Commercial businesses,", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 2 lines (ctrl+o to expand)
+
+● Search(pattern: "^Cultural &amp; recreational organizations,Cultural &amp; recreational organizations,", path: "data/tag_map_consolidated.csv",
+        output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "^Fraternal orders &amp; lodges,Fraternal orders &amp; lodges,", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 10 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Now I'll systematically fix all the capitalization violations. Let me start with the organization category terms:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                
+       103    Churches,Churches,hierarchy,parent=Religious buildings
+       104    Civic buildings,Civic buildings,hierarchy,parent=Built Environment
+       105    Civic buildings,Civic buildings,hierarchy,parent=Community institutions - THEMATIC
+       106 -  Civic organizations,Civic organizations,hierarchy,parent=organisations
+       106 +  civic organizations,civic organizations,hierarchy,parent=organisations
+       107    Civic organizations,Civic organizations,hierarchy,parent=Community institutions - THEMATIC
+       108    Clarence,Clarence,hierarchy,parent=towns
+       109    Clarke's Hall,Clarke's Hall,hierarchy,parent=halls
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                
+       104    Civic buildings,Civic buildings,hierarchy,parent=Built Environment
+       105    Civic buildings,Civic buildings,hierarchy,parent=Community institutions - THEMATIC
+       106    civic organizations,civic organizations,hierarchy,parent=organisations
+       107 -  Civic organizations,Civic organizations,hierarchy,parent=Community institutions - THEMATIC
+       107 +  civic organizations,civic organizations,hierarchy,parent=Community institutions - THEMATIC
+       108    Clarence,Clarence,hierarchy,parent=towns
+       109    Clarke's Hall,Clarke's Hall,hierarchy,parent=halls
+       110    Clarke's Hall,Clarke's Hall,hierarchy,parent=Halls
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                      
+       121    Comet Hotel,Comet Hotel,hierarchy,parent=Hotels
+       122    Commercial activities,Commercial activities,hierarchy,parent=Activities
+       123    Commercial buildings,Commercial buildings,hierarchy,parent=Built Environment
+       124 -  Commercial businesses,Commercial businesses,hierarchy,parent=organisations
+       124 +  commercial businesses,commercial businesses,hierarchy,parent=organisations
+       125    Commercial businesses,Commercial businesses,hierarchy,parent=Businesses - THEMATIC
+       126    Commercial transport,Commercial transport,hierarchy,parent=Transport & Infrastructure - THEMATIC
+       127    Communication activities,Communication activities,hierarchy,parent=Activities
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                            
+       122    Commercial activities,Commercial activities,hierarchy,parent=Activities
+       123    Commercial buildings,Commercial buildings,hierarchy,parent=Built Environment
+       124    commercial businesses,commercial businesses,hierarchy,parent=organisations
+       125 -  Commercial businesses,Commercial businesses,hierarchy,parent=Businesses - THEMATIC
+       125 +  commercial businesses,commercial businesses,hierarchy,parent=Businesses - THEMATIC
+       126    Commercial transport,Commercial transport,hierarchy,parent=Transport & Infrastructure - THEMATIC
+       127    Communication activities,Communication activities,hierarchy,parent=Activities
+       128    Communications & Postal Services,Communications & Postal Services,hierarchy,parent=(thematic grouping)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                    
+       162    Courts,Courts,hierarchy,parent=Justice & Crime - THEMATIC
+       163    Cricket clubs,Cricket clubs,hierarchy,parent=Sports clubs
+       164    Crimes,Crimes,hierarchy,parent=Justice & Crime - THEMATIC
+       165 -  Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=organisations
+       165 +  cultural & recreational organizations,cultural & recreational organizations,hierarchy,parent=organisations
+       166    Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Community institutions - THEMATIC
+       167    Cultural activities,Cultural activities,hierarchy,parent=Arts & Culture - THEMATIC
+       168    Cultural events,Cultural events,hierarchy,parent=Arts & Culture - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                    
+       163    Cricket clubs,Cricket clubs,hierarchy,parent=Sports clubs
+       164    Crimes,Crimes,hierarchy,parent=Justice & Crime - THEMATIC
+       165    cultural & recreational organizations,cultural & recreational organizations,hierarchy,parent=organisations
+       166 -  Cultural & recreational organizations,Cultural & recreational organizations,hierarchy,parent=Community institutions - THEMATIC
+       166 +  cultural & recreational organizations,cultural & recreational organizations,hierarchy,parent=Community institutions - THEMATIC
+       167    Cultural activities,Cultural activities,hierarchy,parent=Arts & Culture - THEMATIC
+       168    Cultural events,Cultural events,hierarchy,parent=Arts & Culture - THEMATIC
+       169    Cultural identity & heritage,Cultural identity & heritage,hierarchy,parent=Race & Ethnicity - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                            
+       231    Financial institutions,Financial institutions,hierarchy,parent=Commercial businesses
+       232    Flynn family,Flynn family,hierarchy,parent=families
+       233    Football clubs,Football clubs,hierarchy,parent=Sports clubs
+       234 -  Fraternal orders & lodges,Fraternal orders & lodges,hierarchy,parent=organisations
+       234 +  fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=organisations
+       235    Fraternal orders & lodges,Fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
+       236    Freemasons,Freemasons,hierarchy,parent=lodges
+       237    Freemasons,Freemasons,hierarchy,parent=Lodges
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                         
+       232    Flynn family,Flynn family,hierarchy,parent=families
+       233    Football clubs,Football clubs,hierarchy,parent=Sports clubs
+       234    fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=organisations
+       235 -  Fraternal orders & lodges,Fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
+       235 +  fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
+       236    Freemasons,Freemasons,hierarchy,parent=lodges
+       237    Freemasons,Freemasons,hierarchy,parent=Lodges
+       238    Fryer's Family Hotel,Fryer's Family Hotel,merge,Owner-specific name for Katoomba Family Hotel during Fryer family ownership (1892) 
+             - use Katoomba Family Hotel as preferred term
+
+● Good progress! Let me continue with the remaining organization terms:
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Now let me fix the remaining organization terms:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                  
+       255    Good Templars,Good Templars,hierarchy,parent=Religious social movements
+       256    Good Templars,Good Templars,hierarchy,parent=Temperance organizations & movements - THEMATIC
+       257    Gordon family,Gordon family,hierarchy,parent=families
+       258 -  Government bodies,Government bodies,hierarchy,parent=organisations
+       258 +  government bodies,government bodies,hierarchy,parent=organisations
+       259    Government bodies,Government bodies,hierarchy,parent=Politics & Governance - THEMATIC
+       260    Goyder brothers,Goyder brothers,hierarchy,parent=Goyder family
+       261    Goyder family,Goyder family,hierarchy,parent=families
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                            
+       256    Good Templars,Good Templars,hierarchy,parent=Temperance organizations & movements - THEMATIC
+       257    Gordon family,Gordon family,hierarchy,parent=families
+       258    government bodies,government bodies,hierarchy,parent=organisations
+       259 -  Government bodies,Government bodies,hierarchy,parent=Politics & Governance - THEMATIC
+       259 +  government bodies,government bodies,hierarchy,parent=Politics & Governance - THEMATIC
+       260    Goyder brothers,Goyder brothers,hierarchy,parent=Goyder family
+       261    Goyder family,Goyder family,hierarchy,parent=families
+       262    Grand Hotel,Grand Hotel (Sydney),merge,Primary source evidence shows Grand Hotel refers to Phillip Street Sydney hotel
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                              
+       296    Horseborne transportation,Horseborne transportation,hierarchy,parent=Transport
+       297    Horses,Horses,hierarchy,parent=animals
+       298    Horticulture society,Horticulture society,hierarchy,parent=Cultural societies
+       299 -  Hospitality businesses,Hospitality businesses,hierarchy,parent=Commercial businesses
+       299 +  hospitality businesses,hospitality businesses,hierarchy,parent=commercial businesses
+       300    Hospitality workers,Hospitality workers,hierarchy,parent=Occupations
+       301    Hospitality workers,Hospitality workers,hierarchy,parent=Alcohol & Temperance - THEMATIC
+       302    Hotel,Hotel,hierarchy,parent=Hotels
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                      
+       319    Imperial Hotel,Imperial Hotel,hierarchy,parent=Hotels
+       320    Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=lodges
+       321    Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=Lodges
+       322 -  Independent lodges,Independent lodges,hierarchy,parent=Lodges
+       322 +  independent lodges,independent lodges,hierarchy,parent=Lodges
+       323    Indigenous peoples,Indigenous peoples,hierarchy,parent=Marginalised groups - THEMATIC
+       324    Industries,Industries,hierarchy,parent=Economy & Labour - THEMATIC
+       325    Information Forms,Information Forms,hierarchy,parent=communications & postal services - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                    
+       406    Katoomba band,Katoomba band,hierarchy,parent=Bands
+       407    Katoomba station,Katoomba station,hierarchy,parent=railway infrastructure
+       408    Katoomba station,Katoomba station,hierarchy,parent=Railway infrastructure
+       409 -  Labour organizations,Labour organizations,hierarchy,parent=Civic organizations
+       409 +  labour organizations,labour organizations,hierarchy,parent=civic organizations
+       410    Labour relations,Labour relations,hierarchy,parent=Economy & Labour - THEMATIC
+       411    Law enforcement,Law enforcement,hierarchy,parent=Occupations
+       412    Law enforcement,Law enforcement,hierarchy,parent=Justice & Crime - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                         
+       523    mining accidents,mining accidents,hierarchy,parent=Health-related events - THEMATIC
+       524    mining accidents,mining accidents,hierarchy,parent=Mining incidents - THEMATIC
+       525    Mining activities,Mining activities,hierarchy,parent=Mining & Industry - THEMATIC
+       526 -  Mining companies,Mining companies,hierarchy,parent=Commercial businesses
+       526 +  mining companies,mining companies,hierarchy,parent=commercial businesses
+       527    Mining companies,Mining companies,hierarchy,parent=Mining & Industry - THEMATIC
+       528    Mining districts,Mining districts,hierarchy,parent=Places (existing facet)
+       529    Mining incidents,Mining incidents,hierarchy,parent=Mining & Industry - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                       
+       524    mining accidents,mining accidents,hierarchy,parent=Mining incidents - THEMATIC
+       525    Mining activities,Mining activities,hierarchy,parent=Mining & Industry - THEMATIC
+       526    mining companies,mining companies,hierarchy,parent=commercial businesses
+       527 -  Mining companies,Mining companies,hierarchy,parent=Mining & Industry - THEMATIC
+       527 +  mining companies,mining companies,hierarchy,parent=Mining & Industry - THEMATIC
+       528    Mining districts,Mining districts,hierarchy,parent=Places (existing facet)
+       529    Mining incidents,Mining incidents,hierarchy,parent=Mining & Industry - THEMATIC
+       530    Mining infrastructure,Mining infrastructure,hierarchy,parent=Infrastructure
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                         
+       928    organisations,organisations,hierarchy,parent=Agents (new top-level facet)
+       929    Other crimes,Other crimes,hierarchy,parent=Crimes - THEMATIC
+       930    Other goods and services,Other goods and services,hierarchy,parent=Occupations
+       931 -  Other government bodies,Other government bodies,hierarchy,parent=Government bodies
+       931 +  other government bodies,other government bodies,hierarchy,parent=government bodies
+       932    Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=hotels
+       933    Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=Hotels
+       934    P. Mullany and Company,P. Mullany and Company,hierarchy,parent=retailers and stores
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal              
+       965    Post office,Post office,hierarchy,parent=Postal services - THEMATIC
+       966    Postal Department,Postal Department,hierarchy,parent=government bodies
+       967    Postal Department,Postal Department,hierarchy,parent=Postal authorities
+       968 -  Postal authorities,Postal authorities,hierarchy,parent=Government bodies
+       968 +  postal authorities,postal authorities,hierarchy,parent=government bodies
+       969    Postal employees,Postal employees,hierarchy,parent=Public officials
+       970    Postal facilities,Postal facilities,hierarchy,parent=Civic buildings
+       971    Postal service,Postal service,hierarchy,parent=Postal services
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                  
+       975    Postman,Mailman,synonym,Alternative term for mailman
+       976    Postmaster,Postmaster,hierarchy,parent=Postmasters
+       977    Postmasters,Postmasters,hierarchy,parent=Postal employees
+       978 -  Progress committees,Progress committees,hierarchy,parent=Civic organizations
+       978 +  progress committees,progress committees,hierarchy,parent=civic organizations
+       979    Property crimes,Property crimes,hierarchy,parent=Crimes - THEMATIC
+       980    Pub,public house,synonym,Colloquial term for public house
+       981    Pub,Public house,synonym,Colloquial term for public house
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                 
+        998    Railway Commission,Railway Commission,hierarchy,parent=government bodies
+        999    Railway Hotel,Railway Hotel,hierarchy,parent=hotels
+       1000    Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
+       1001 -  Railway authorities,Railway authorities,hierarchy,parent=Government bodies
+       1001 +  railway authorities,railway authorities,hierarchy,parent=government bodies
+       1002    Railway commission,Railway commission,hierarchy,parent=Railway authorities
+       1003    Railway infrastructure,Railway infrastructure,hierarchy,parent=Railway
+       1004    Railway operations,Railway operations,hierarchy,parent=Railway
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                     
+       1016    Religious buildings,Religious buildings,hierarchy,parent=Built Environment
+       1017    Religious buildings,Religious buildings,hierarchy,parent=Religion - THEMATIC
+       1018    Religious education,Religious education,hierarchy,parent=Religious organizations
+       1019 -  Religious organizations,Religious organizations,hierarchy,parent=organisations
+       1019 +  religious organizations,religious organizations,hierarchy,parent=organisations
+       1020    Religious organizations,Religious organizations,hierarchy,parent=Religion - THEMATIC
+       1021    Religious social movements,Religious social movements,hierarchy,parent=Religious organizations
+       1022    Reserves,Reserves,hierarchy,parent=Places (existing facet)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                     
+       1017    Religious buildings,Religious buildings,hierarchy,parent=Religion - THEMATIC
+       1018    Religious education,Religious education,hierarchy,parent=Religious organizations
+       1019    religious organizations,religious organizations,hierarchy,parent=organisations
+       1020 -  Religious organizations,Religious organizations,hierarchy,parent=Religion - THEMATIC
+       1020 +  religious organizations,religious organizations,hierarchy,parent=Religion - THEMATIC
+       1021    Religious social movements,Religious social movements,hierarchy,parent=Religious organizations
+       1022    Reserves,Reserves,hierarchy,parent=Places (existing facet)
+       1023    Reserves,Reserves,hierarchy,parent=Recreation themes - THEMATIC (recreational lands)
+
+● Now let me fix the clubs & groups capitalization violations:
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Now let me fix all the clubs & groups capitalization violations:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                         
+       37    Arts & Culture,Arts & Culture,hierarchy,parent=(thematic grouping)
+       38    Associated Concepts,Associated Concepts,hierarchy,parent=(Getty AAT primary facet)
+       39    Associated Concepts,Associated Concepts,hierarchy,parent=(conceptual facet)
+       40 -  Athletic clubs,Athletic clubs,hierarchy,parent=Sports clubs
+       40 +  athletic clubs,athletic clubs,hierarchy,parent=sports clubs
+       41    Austin family,Austin family,hierarchy,parent=families
+       42    Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
+       43    Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,"parent=mining companies (primary:
+             absorbs A.K.O. & M. Company, Australian Kerosene Shale and Oil Company)"
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                    
+       160    Courthouse,Courthouse,hierarchy,parent=Court buildings
+       161    Courts,Courts,hierarchy,parent=Government bodies
+       162    Courts,Courts,hierarchy,parent=Justice & Crime - THEMATIC
+       163 -  Cricket clubs,Cricket clubs,hierarchy,parent=Sports clubs
+       163 +  cricket clubs,cricket clubs,hierarchy,parent=sports clubs
+       164    Crimes,Crimes,hierarchy,parent=Justice & Crime - THEMATIC
+       165    cultural & recreational organizations,cultural & recreational organizations,hierarchy,parent=organisations
+       166    cultural & recreational organizations,cultural & recreational organizations,hierarchy,parent=Community institutions - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                
+       176    Delaney's Family Hotel,Delaney's Family Hotel,hierarchy,parent=family hotels
+       177    Delaney's Hotel,Delaney's Hotel,merge,"Variant name - use Delaney's Family Hotel (official name includes ""Family Hotel"" 
+             designation per 1896 license application)"
+       178    Delaney's Hotel,Delaney's Hotel,hierarchy,parent=Hotels
+       179 -  Demographic groups,Demographic groups,hierarchy,parent=People
+       179 +  demographic groups,demographic groups,hierarchy,parent=People
+       180    Disease,Disease,hierarchy,parent=Physical and health conditions
+       181    Disease,Disease,hierarchy,parent=Health conditions - THEMATIC
+       182    Dogs,Dogs,hierarchy,parent=animals
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                       
+       215    Educational buildings,Educational buildings,hierarchy,parent=Education - THEMATIC
+       216    Environment & Weather,Environment & Weather,hierarchy,parent=(thematic grouping)
+       217    Eskbank Oval,Eskbank Oval,hierarchy,parent=ovals
+       218 -  Ethnic groups,Ethnic groups,hierarchy,parent=People
+       218 +  ethnic groups,ethnic groups,hierarchy,parent=People
+       219    Evans family,Evans family,hierarchy,parent=families
+       220    Events,Events,hierarchy,parent=(Getty AAT primary facet)
+       221    Events,Events,hierarchy,parent=(new top-level facet)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                    
+       230    Family members by demographic,Family members by demographic,hierarchy,parent=Family & Domestic Life - THEMATIC
+       231    Financial institutions,Financial institutions,hierarchy,parent=Commercial businesses
+       232    Flynn family,Flynn family,hierarchy,parent=families
+       233 -  Football clubs,Football clubs,hierarchy,parent=Sports clubs
+       233 +  football clubs,football clubs,hierarchy,parent=sports clubs
+       234    fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=organisations
+       235    fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
+       236    Freemasons,Freemasons,hierarchy,parent=lodges
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal         
+       1039    Richard Allen,Richard Allen,hierarchy,parent=hotelliers
+       1040    Richard Allen,Richard Allen,hierarchy,parent=Hotelliers
+       1041    Rifle club,Rifle club,hierarchy,parent=Rifle clubs
+       1042 -  Rifle clubs,Rifle clubs,hierarchy,parent=Sports clubs
+       1042 +  rifle clubs,rifle clubs,hierarchy,parent=sports clubs
+       1043    Rifle reserves,Rifle reserves,hierarchy,parent=Reserves
+       1044    Roads,Roads,hierarchy,parent=Transport infrastructure
+       1045    Roads,Roads,hierarchy,parent=Transport & Infrastructure - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                       
+       1107    Sporting events,Sporting events,hierarchy,parent=Sport & Recreation - THEMATIC
+       1108    Sports,Sports,hierarchy,parent=Recreation activities
+       1109    Sports,Sports,hierarchy,parent=Recreation themes - THEMATIC
+       1110 -  Sports clubs,Sports clubs,hierarchy,parent=Cultural & recreational organizations
+       1110 +  sports clubs,sports clubs,hierarchy,parent=cultural & recreational organizations
+       1111    Sports clubs,Sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
+       1112    Springwood,Springwood,hierarchy,parent=towns
+       1113    St Hilda's Church,St Hilda's Church,hierarchy,parent=churches
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                       
+       1108    Sports,Sports,hierarchy,parent=Recreation activities
+       1109    Sports,Sports,hierarchy,parent=Recreation themes - THEMATIC
+       1110    sports clubs,sports clubs,hierarchy,parent=cultural & recreational organizations
+       1111 -  Sports clubs,Sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
+       1111 +  sports clubs,sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
+       1112    Springwood,Springwood,hierarchy,parent=towns
+       1113    St Hilda's Church,St Hilda's Church,hierarchy,parent=churches
+       1114    St Hilda's Church,St Hilda's Church,hierarchy,parent=Churches
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                 
+       1132    Temperance,Temperance,hierarchy,parent=Social behaviours
+       1133    Temperance,Temperance,hierarchy,parent=Temperance organizations & movements - THEMATIC
+       1134    Temperance organizations & movements,Temperance organizations & movements,hierarchy,parent=Alcohol & Temperance - THEMATIC
+       1135 -  Tennis clubs,Tennis clubs,hierarchy,parent=Sports clubs
+       1135 +  tennis clubs,tennis clubs,hierarchy,parent=sports clubs
+       1136    Top Camp (settlement),Top Camp (settlement),hierarchy,parent=Greater Megalong
+       1137    Tourism,Tourism,hierarchy,parent=Economic activities
+       1138    Tourism,Tourism,hierarchy,parent=Industries - THEMATIC
+
+● Now let me fix the activities capitalization violations:
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Now let me fix all the activities capitalization violations:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                    
+       84    Caves & geological features,Caves & geological features,hierarchy,parent=Natural features
+       85    Centennial Hotel,Centennial Hotel,hierarchy,parent=hotels
+       86    Centennial Hotel,Centennial Hotel,hierarchy,parent=Hotels
+       87 -  Charitable and welfare activities,Charitable and welfare activities,hierarchy,parent=Activities
+       87 +  charitable and welfare activities,charitable and welfare activities,hierarchy,parent=Activities
+       88    Charity,Charity,hierarchy,parent=Charitable and welfare activities
+       89    Charity,Charity,hierarchy,parent=Economic hardship - THEMATIC
+       90    Chess and Draughts Club,Chess and Draughts Club,hierarchy,parent=Cultural societies
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                        
+       119    Colliery,coal mine,synonym,UK/Australian term for coal mine
+       120    Comet Hotel,Comet Hotel,hierarchy,parent=hotels
+       121    Comet Hotel,Comet Hotel,hierarchy,parent=Hotels
+       122 -  Commercial activities,Commercial activities,hierarchy,parent=Activities
+       122 +  commercial activities,commercial activities,hierarchy,parent=Activities
+       123    Commercial buildings,Commercial buildings,hierarchy,parent=Built Environment
+       124    commercial businesses,commercial businesses,hierarchy,parent=organisations
+       125    commercial businesses,commercial businesses,hierarchy,parent=Businesses - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                            
+       124    commercial businesses,commercial businesses,hierarchy,parent=organisations
+       125    commercial businesses,commercial businesses,hierarchy,parent=Businesses - THEMATIC
+       126    Commercial transport,Commercial transport,hierarchy,parent=Transport & Infrastructure - THEMATIC
+       127 -  Communication activities,Communication activities,hierarchy,parent=Activities
+       127 +  communication activities,communication activities,hierarchy,parent=Activities
+       128    Communications & Postal Services,Communications & Postal Services,hierarchy,parent=(thematic grouping)
+       129    Community buildings,Community buildings,hierarchy,parent=Built Environment
+       130    Community buildings,Community buildings,hierarchy,parent=Community institutions - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                       
+       206    Drunkenness (intoxication),Drunkenness (intoxication),hierarchy,parent=Alcohol consumption & behaviour - THEMATIC
+       207    Dwellings,Dwellings,hierarchy,parent=Accommodation and hospitality venues
+       208    Eaton family,Eaton family,hierarchy,parent=families
+       209 -  Economic activities,Economic activities,hierarchy,parent=Activities
+       209 +  economic activities,economic activities,hierarchy,parent=Activities
+       210    Economic distress,Economic distress,hierarchy,parent=Economy & Labour - THEMATIC
+       211    Economic hardship,Economic hardship,hierarchy,parent=Social issues - THEMATIC
+       212    Economy & Labour,Economy & Labour,hierarchy,parent=(thematic grouping)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                              
+       499    Military,Military,hierarchy,parent=Military activities
+       500    Military,Military,hierarchy,parent=Military organizations - THEMATIC
+       501    Military & War,Military & War,hierarchy,parent=(thematic grouping)
+       502 -  Military activities,Military activities,hierarchy,parent=Activities
+       502 +  military activities,military activities,hierarchy,parent=Activities
+       503    Military events,Military events,hierarchy,parent=Military & War - THEMATIC
+       504    Military organizations,Military organizations,hierarchy,parent=Military & War - THEMATIC
+       505    Military personnel,Military personnel,hierarchy,parent=Occupations
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                
+       1004    Railway operations,Railway operations,hierarchy,parent=Railway
+       1005    Rape,sexual violence,merge,Specific term merged into broader category (rape is a type of sexual violence)
+       1006    Rape,sexual violence,synonym,Specific type of sexual violence - retained as synonym for search/discovery
+       1007 -  Recreation activities,Recreation activities,hierarchy,parent=Activities
+       1007 +  recreation activities,recreation activities,hierarchy,parent=Activities
+       1008    Recreation for miners,Recreation for miners,hierarchy,parent=Recreation activities
+       1009    Recreation for miners,Recreation for miners,hierarchy,parent=Mining activities - THEMATIC
+       1010    Recreation for miners,Recreation for miners,hierarchy,parent=Recreation themes - THEMATIC
+
+● Now let me fix the remaining "other" category capitalization violations:
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 3 lines
+
+● Now let me fix all the remaining category capitalization violations:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                 
+       12    accident,accident,hierarchy,parent=Mining incidents - THEMATIC
+       13    Accommodation,Accommodation,hierarchy,parent=tourism & accommodation - THEMATIC
+       14    Accommodation,Accommodation,hierarchy,parent=Tourism & Accommodation - THEMATIC
+       15 -  Accommodation and hospitality venues,Accommodation and hospitality venues,hierarchy,parent=Built Environment
+       15 +  accommodation and hospitality venues,accommodation and hospitality venues,hierarchy,parent=Built Environment
+       16    Activities,Activities,hierarchy,parent=(Getty AAT primary facet)
+       17    Activities,Activities,hierarchy,parent=(new top-level facet)
+       18    Adolescents,Adolescents,hierarchy,parent=Demographic groups
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                    
+       228    Family & Domestic Life,Family & Domestic Life,hierarchy,parent=(thematic grouping)
+       229    Family Hotel,Family Hotel,hierarchy,parent=Hotels
+       230    Family members by demographic,Family members by demographic,hierarchy,parent=Family & Domestic Life - THEMATIC
+       231 -  Financial institutions,Financial institutions,hierarchy,parent=Commercial businesses
+       231 +  financial institutions,financial institutions,hierarchy,parent=commercial businesses
+       232    Flynn family,Flynn family,hierarchy,parent=families
+       233    football clubs,football clubs,hierarchy,parent=sports clubs
+       234    fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=organisations
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                        
+       941    Penrith,Penrith,hierarchy,parent=towns
+       942    Penrith Police Court,Penrith Police Court,hierarchy,parent=courts
+       943    People,People,hierarchy,parent=Agents (new top-level facet)
+       944 -  Performance groups,Performance groups,hierarchy,parent=Cultural & recreational organizations
+       944 +  performance groups,performance groups,hierarchy,parent=cultural & recreational organizations
+       945    Physical and health conditions,Physical and health conditions,hierarchy,parent=Associated Concepts
+       946    Physical phenomena,Physical phenomena,hierarchy,parent=Associated Concepts
+       947    Places,Places,hierarchy,parent=(Getty AAT primary facet)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                         
+       949    Police,Police,hierarchy,parent=Law enforcement (intermediate facet)
+       950    Police Court,Police Court,hierarchy,parent=courts
+       951    Police court,Police court,hierarchy,parent=Courts
+       952 -  Police facilities,Police facilities,hierarchy,parent=Civic buildings
+       952 +  police facilities,police facilities,hierarchy,parent=Civic buildings
+       953    Police station,Police station,hierarchy,parent=Police facilities
+       954    Police station,Police station,hierarchy,parent=Justice & Crime - THEMATIC
+       955    Political events,Political events,hierarchy,parent=Politics & Governance - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                  
+       967    Postal Department,Postal Department,hierarchy,parent=Postal authorities
+       968    postal authorities,postal authorities,hierarchy,parent=government bodies
+       969    Postal employees,Postal employees,hierarchy,parent=Public officials
+       970 -  Postal facilities,Postal facilities,hierarchy,parent=Civic buildings
+       970 +  postal facilities,postal facilities,hierarchy,parent=Civic buildings
+       971    Postal service,Postal service,hierarchy,parent=Postal services
+       972    Postal services,Postal services,hierarchy,parent=Communication activities
+       973    Postal services,Postal services,hierarchy,parent=Communications & Postal Services - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                               
+       1147    Tramway,Tramway,hierarchy,parent=Mining transport - THEMATIC
+       1148    Transport,Transport,hierarchy,parent=Economic activities
+       1149    Transport & Infrastructure,Transport & Infrastructure,hierarchy,parent=(thematic grouping)
+       1150 -  Transport & logistics businesses,Transport & logistics businesses,hierarchy,parent=Commercial businesses
+       1150 +  transport & logistics businesses,transport & logistics businesses,hierarchy,parent=commercial businesses
+       1151    Transport infrastructure,Transport infrastructure,hierarchy,parent=Infrastructure
+       1152    Trucking,Trucking,hierarchy,parent=Transport & logistics businesses
+       1153    Trucking,Trucking,hierarchy,parent=Transport
+
+● Now let me find and fix the malformed parent notes with embedded explanatory text. Let me search for parent notes with long explanations:
+
+● Search(pattern: "parent=mining companies \(primary:", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 5 lines (ctrl+o to expand)
+
+● Perfect! I found all 5 malformed parent notes. Let me clean them up by removing the explanatory text and keeping only the clean parent reference:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                        
+       40    athletic clubs,athletic clubs,hierarchy,parent=sports clubs
+       41    Austin family,Austin family,hierarchy,parent=families
+       42    Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
+       43 -  Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,"parent=mining companies
+          -   (primary: absorbs A.K.O. & M. Company, Australian Kerosene Shale and Oil Company)"
+       43 +  Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
+       44    Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=Mining companies
+       45    Australian Kerosene Shale and Oil Company,Australian Kerosene Oil and Mineral Company,synonym,Variant name for Australian Kerosene 
+            Oil and Mineral Company
+       46    Band,Band,hierarchy,parent=Bands
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                         
+       360    Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=Athletic clubs
+       361    Katoomba Civilian Rifle Club,Katoomba Civilian Rifle Club,hierarchy,parent=rifle clubs
+       362    Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines
+       363 -  Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies
+           -   (primary: absorbs Katoomba Coal and Shale Mines)
+       363 +  Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies
+       364    Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Mining companies
+       365    Katoomba Coal and Shale Mines,Katoomba Coal and Shale Company,synonym,Variant name for Katoomba Coal and Shale Company - refers to 
+             the company and its operations
+       366    Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Congregational Church
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                   
+       912    New South Wales Police,New South Wales Police,hierarchy,parent=justice & crime - THEMATIC
+       913    New South Wales Shale and Oil Co.,New South Wales Shale and Oil Company,synonym,Abbreviated form
+       914    New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
+       915 -  New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
+           -   (primary: absorbs New South Wales Shale and Oil Co.)
+       915 +  New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
+       916    New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=Mining companies
+       917    Newcastle,Newcastle,hierarchy,parent=towns
+       918    Nimmo's,Nimmo's,hierarchy,parent=retailers and stores
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                        
+       1093    South Clifton Mine Co.,South Clifton Mine Company,synonym,Abbreviated form  
+       1094    South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies
+       1095    South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=regional mining contexts - THEMATIC
+       1096 -  South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies (primary: absorbs South Clifton Mine Co.)
+       1096 +  South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies
+       1097    South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=Mining companies
+       1098    South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=coal mines
+       1099    South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=regional mining contexts - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                              
+       1178    Watkins family,Watkins family,hierarchy,parent=families
+       1179    Waudby & Co.,Waudby and Company,synonym,Abbreviated form with ampersand
+       1180    Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
+       1181 -  Waudby and Company,Waudby and Company,hierarchy,parent=mining companies (primary: absorbs Waudby & Co.)
+       1181 +  Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
+       1182    Waudby and Company,Waudby and Company,hierarchy,parent=Mining companies
+       1183    Waudby's Hall,Waudby's Hall,hierarchy,parent=halls
+       1184    Waudby's Hall,Waudby's Hall,hierarchy,parent=Halls
+
+● Good! I've fixed the malformed parent notes. Now I notice there are still some capitalized parent references that need to be fixed. Let me search
+  for and fix any remaining capitalized parent references:
+
+● Search(pattern: "parent=Mining companies", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 7 lines (ctrl+o to expand)
+
+● Search(pattern: "parent=[A-Z][a-z]+ [a-z]+ [a-z]+", path: "data/tag_map_consolidated.csv")
+  ⎿  Found 1 file (ctrl+o to expand)
+
+● I found 7 entries with capitalized "Mining companies" parent references. Let me fix these:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                        
+       41    Austin family,Austin family,hierarchy,parent=families
+       42    Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
+       43    Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
+       44 -  Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=Mining companies
+       44 +  Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
+       45    Australian Kerosene Shale and Oil Company,Australian Kerosene Oil and Mineral Company,synonym,Variant name for Australian Kerosene 
+            Oil and Mineral Company
+       46    Band,Band,hierarchy,parent=Bands
+       47    Bands,Bands,hierarchy,parent=Performance groups
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                         
+       247    Gin,Gin,hierarchy,parent=Spirits
+       248    Girls' cricket,cricket,merge,Tag with cricket + women (demographic group) + adolescents (if applicable) instead of gender-specific 
+             sport term per consolidation decision
+       249    Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=mining companies
+       250 -  Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=Mining companies
+       250 +  Gladstone Coal Company,Gladstone Coal Company,hierarchy,parent=mining companies
+       251    Glen Shale Mine,Nellie's Glen Shale Mine,synonym,Short form of Nellie's Glen Shale Mine - use full name for clarity
+       252    Gold mining,Gold mining,hierarchy,parent=Mining
+       253    Good Templars,Good Templars,hierarchy,parent=religious social movements
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                         
+       361    Katoomba Civilian Rifle Club,Katoomba Civilian Rifle Club,hierarchy,parent=rifle clubs
+       362    Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines
+       363    Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies
+       364 -  Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=Mining companies
+       364 +  Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies
+       365    Katoomba Coal and Shale Mines,Katoomba Coal and Shale Company,synonym,Variant name for Katoomba Coal and Shale Company - refers to 
+             the company and its operations
+       366    Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Congregational Church
+       367    Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Churches
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                   
+       913    New South Wales Shale and Oil Co.,New South Wales Shale and Oil Company,synonym,Abbreviated form
+       914    New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
+       915    New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
+       916 -  New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=Mining companies
+       916 +  New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
+       917    Newcastle,Newcastle,hierarchy,parent=towns
+       918    Nimmo's,Nimmo's,hierarchy,parent=retailers and stores
+       919    Nimmo's,Nimmo's,hierarchy,parent=Retailers and stores
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                 
+       1094    South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies
+       1095    South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=regional mining contexts - THEMATIC
+       1096    South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies
+       1097 -  South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=Mining companies
+       1097 +  South Clifton Mine Company,South Clifton Mine Company,hierarchy,parent=mining companies
+       1098    South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=coal mines
+       1099    South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=regional mining contexts - THEMATIC
+       1100    South Clifton Tunnel Mine,South Clifton Tunnel Mine,hierarchy,parent=South Clifton
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                
+       1121    Sunday school,Sunday school,hierarchy,parent=Education - THEMATIC (religious education)
+       1122    Sunny Corner,Sunny Corner,hierarchy,parent=towns
+       1123    Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=mining companies
+       1124 -  Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=Mining companies
+       1124 +  Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=mining companies
+       1125    Supreme Court,Supreme Court,hierarchy,parent=courts
+       1126    Supreme Court,Supreme Court,hierarchy,parent=Courts
+       1127    Sydney,Sydney,hierarchy,parent=towns
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal              
+       1179    Waudby & Co.,Waudby and Company,synonym,Abbreviated form with ampersand
+       1180    Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
+       1181    Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
+       1182 -  Waudby and Company,Waudby and Company,hierarchy,parent=Mining companies
+       1182 +  Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
+       1183    Waudby's Hall,Waudby's Hall,hierarchy,parent=halls
+       1184    Waudby's Hall,Waudby's Hall,hierarchy,parent=Halls
+       1185    Weather,Weather,hierarchy,parent=Physical phenomena
+
+● Let me check for any other remaining capitalized parent references:
+
+● Search(pattern: "parent=(Athletic clubs|Bands|Churches|Courts|Halls|Hotels|Lodges|Retailers and stores)", path: "data/tag_map_consolidated.csv",
+        output_mode: "count")
+  ⎿  Found 0 matches across 0 files 
+
+● Search(pattern: "parent=Athletic clubs", path: "data/tag_map_consolidated.csv", output_mode: "content", head_limit: 5)
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Search(pattern: "parent=Bands", path: "data/tag_map_consolidated.csv", output_mode: "content", head_limit: 5)
+  ⎿  Found 2 lines (ctrl+o to expand)
+
+● Search(pattern: "parent=Hotels", path: "data/tag_map_consolidated.csv", output_mode: "content", head_limit: 5)
+  ⎿  Found 5 lines (ctrl+o to expand)
+
+● I see there are many more capitalized parent references that need fixing. Let me fix these systematically using replace_all:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                       
+       357    Katoomba Amateur Minstrels,Katoomba Amateur Minstrels,hierarchy,parent=minstrel troupes
+       358    Katoomba Amateur Minstrels,Katoomba Amateur Minstrels,hierarchy,parent=Minstrel troupes
+       359    Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=athletic clubs
+       360 -  Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=Athletic clubs
+       360 +  Katoomba Athletic Club,Katoomba Athletic Club,hierarchy,parent=athletic clubs
+       361    Katoomba Civilian Rifle Club,Katoomba Civilian Rifle Club,hierarchy,parent=rifle clubs
+       362    Katoomba Coal Mines,Katoomba Coal Mines,hierarchy,parent=coal mines
+       363    Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 additions and 2 removals                                                                      
+       43    Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
+       44    Australian Kerosene Oil and Mineral Company,Australian Kerosene Oil and Mineral Company,hierarchy,parent=mining companies
+       45    Australian Kerosene Shale and Oil Company,Australian Kerosene Oil and Mineral Company,synonym,Variant name for Australian Kerosene 
+            Oil and Mineral Company
+       46 -  Band,Band,hierarchy,parent=Bands
+       46 +  Band,Band,hierarchy,parent=bands
+       47    Bands,Bands,hierarchy,parent=Performance groups
+       48    Bank,Bank,hierarchy,parent=Financial institutions
+       49    Bank,Bank,hierarchy,parent=Commercial buildings
+     ...
+       403    Katoomba Tennis Club,Katoomba Lawn Tennis Club,synonym,Shortened/historical name for Katoomba Lawn Tennis Club
+       404    Katoomba Tennis Club,Katoomba Tennis Club,hierarchy,parent=Tennis clubs
+       405    Katoomba band,Katoomba band,hierarchy,parent=bands
+       406 -  Katoomba band,Katoomba band,hierarchy,parent=Bands
+       406 +  Katoomba band,Katoomba band,hierarchy,parent=bands
+       407    Katoomba station,Katoomba station,hierarchy,parent=railway infrastructure
+       408    Katoomba station,Katoomba station,hierarchy,parent=Railway infrastructure
+       409    labour organizations,labour organizations,hierarchy,parent=civic organizations
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 28 additions and 28 removals                                                                     
+       31    Allen,Allen,hierarchy,parent=hotelliers
+       32    Allen,Allen,hierarchy,parent=Hotelliers
+       33    Allen's Hotel,hotel,merge,Possessive form referring to hotel run by Allen (hotellier) - tag as Hotel + Allen
+       34 -  Allen's Hotel,Allen's Hotel,hierarchy,parent=Hotels
+       34 +  Allen's Hotel,Allen's Hotel,hierarchy,parent=hotels
+       35    animals,animals,hierarchy,parent=Agents (new top-level facet)
+       36    animals,animals,hierarchy,parent=Environment & Weather - THEMATIC
+       37    Arts & Culture,Arts & Culture,hierarchy,parent=(thematic grouping)
+     ...
+       51    Bathurst,Bathurst,hierarchy,parent=towns
+       52    Beer,Beer,hierarchy,parent=Alcoholic beverages
+       53    Belgravia Hotel,Belgravia Hotel,hierarchy,parent=hotels
+       54 -  Belgravia Hotel,Belgravia Hotel,hierarchy,parent=Hotels
+       54 +  Belgravia Hotel,Belgravia Hotel,hierarchy,parent=hotels
+       55    Biles,Biles,hierarchy,parent=hotelliers
+       56    Biles,Biles,hierarchy,parent=Hotelliers
+       57    Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+     ...
+       66    Brown,Brown,hierarchy,parent=hotelliers
+       67    Brown,Brown,hierarchy,parent=Hotelliers
+       68    Brown's Hotel,hotel,merge,Possessive form referring to hotel run by Brown (hotellier) - tag as Hotel + Brown
+       69 -  Brown's Hotel,Brown's Hotel,hierarchy,parent=Hotels
+       69 +  Brown's Hotel,Brown's Hotel,hierarchy,parent=hotels
+       70    Brydon family,Brydon family,hierarchy,parent=families
+       71    Built Environment,Built Environment,hierarchy,parent=(Getty AAT primary facet)
+       72    Built Environment,Built Environment,hierarchy,parent=(new top-level facet)
+     ...
+       79    Carrington,Carrington,hierarchy,parent=Greater Katoomba
+       80    Carrington,Carrington,hierarchy,parent=Katoomba
+       81    Carrington Hotel,Carrington Hotel,hierarchy,parent=hotels
+       82 -  Carrington Hotel,Carrington Hotel,hierarchy,parent=Hotels
+       82 +  Carrington Hotel,Carrington Hotel,hierarchy,parent=hotels
+       83    Cattle,Cattle,hierarchy,parent=animals
+       84    Caves & geological features,Caves & geological features,hierarchy,parent=Natural features
+       85    Centennial Hotel,Centennial Hotel,hierarchy,parent=hotels
+       86 -  Centennial Hotel,Centennial Hotel,hierarchy,parent=Hotels
+       86 +  Centennial Hotel,Centennial Hotel,hierarchy,parent=hotels
+       87    charitable and welfare activities,charitable and welfare activities,hierarchy,parent=Activities
+       88    Charity,Charity,hierarchy,parent=Charitable and welfare activities
+       89    Charity,Charity,hierarchy,parent=Economic hardship - THEMATIC
+     ...
+       118    Coal mining,Coal mining,hierarchy,parent=Mines & mining districts - THEMATIC
+       119    Colliery,coal mine,synonym,UK/Australian term for coal mine
+       120    Comet Hotel,Comet Hotel,hierarchy,parent=hotels
+       121 -  Comet Hotel,Comet Hotel,hierarchy,parent=Hotels
+       121 +  Comet Hotel,Comet Hotel,hierarchy,parent=hotels
+       122    commercial activities,commercial activities,hierarchy,parent=Activities
+       123    Commercial buildings,Commercial buildings,hierarchy,parent=Built Environment
+       124    commercial businesses,commercial businesses,hierarchy,parent=organisations
+     ...
+       175    Delaney family,Delaney family,hierarchy,parent=families
+       176    Delaney's Family Hotel,Delaney's Family Hotel,hierarchy,parent=family hotels
+       177    Delaney's Hotel,Delaney's Hotel,merge,"Variant name - use Delaney's Family Hotel (official name includes ""Family Hotel"" 
+             designation per 1896 license application)"
+       178 -  Delaney's Hotel,Delaney's Hotel,hierarchy,parent=Hotels
+       178 +  Delaney's Hotel,Delaney's Hotel,hierarchy,parent=hotels
+       179    demographic groups,demographic groups,hierarchy,parent=People
+       180    Disease,Disease,hierarchy,parent=Physical and health conditions
+       181    Disease,Disease,hierarchy,parent=Health conditions - THEMATIC
+     ...
+       222    F C Goyder,F C Goyder,hierarchy,parent=hotelliers
+       223    F. C. Goyder,F. C. Goyder,hierarchy,parent=Hotelliers
+       224    Falls Hotel,Falls Hotel,hierarchy,parent=hotels
+       225 -  Falls Hotel,Falls Hotel,hierarchy,parent=Hotels
+       225 +  Falls Hotel,Falls Hotel,hierarchy,parent=hotels
+       226    Families,Families,hierarchy,parent=Demographic groups
+       227    Families,Families,hierarchy,parent=Family & Domestic Life - THEMATIC (all family tags)
+       228    Family & Domestic Life,Family & Domestic Life,hierarchy,parent=(thematic grouping)
+       229 -  Family Hotel,Family Hotel,hierarchy,parent=Hotels
+       229 +  Family Hotel,Family Hotel,hierarchy,parent=hotels
+       230    Family members by demographic,Family members by demographic,hierarchy,parent=Family & Domestic Life - THEMATIC
+       231    financial institutions,financial institutions,hierarchy,parent=commercial businesses
+       232    Flynn family,Flynn family,hierarchy,parent=families
+     ...
+       237    Freemasons,Freemasons,hierarchy,parent=Lodges
+       238    Fryer's Family Hotel,Fryer's Family Hotel,merge,Owner-specific name for Katoomba Family Hotel during Fryer family ownership (1892) 
+             - use Katoomba Family Hotel as preferred term
+       239    Fryer's Family Hotel,Katoomba Family Hotel,synonym,Historical name used during Fryer family ownership period (pre-March 1892)
+       240 -  Fryer's Family Hotel,Fryer's Family Hotel,hierarchy,parent=Hotels
+       240 +  Fryer's Family Hotel,Fryer's Family Hotel,hierarchy,parent=hotels
+       241    Fundraising,Fundraising,hierarchy,parent=Communication activities
+       242    Gambling,Gambling,hierarchy,parent=Social behaviours
+       243    Gambling,Gambling,hierarchy,parent=Social order offences - THEMATIC
+     ...
+       260    Goyder brothers,Goyder brothers,hierarchy,parent=Goyder family
+       261    Goyder family,Goyder family,hierarchy,parent=families
+       262    Grand Hotel,Grand Hotel (Sydney),merge,Primary source evidence shows Grand Hotel refers to Phillip Street Sydney hotel
+       263 -  Grand Hotel,Grand Hotel,hierarchy,parent=Hotels
+       263 +  Grand Hotel,Grand Hotel,hierarchy,parent=hotels
+       264    Grand Hotel (Sydney),Grand Hotel (Sydney),hierarchy,parent=hotels
+       265 -  Grand Hotel (Sydney),Grand Hotel (Sydney),hierarchy,parent=Hotels
+       265 +  Grand Hotel (Sydney),Grand Hotel (Sydney),hierarchy,parent=hotels
+       266    Great Wentworth Falls Coal and Shale Mining Company,Great Wentworth Falls Coal and Shale Mining Company,hierarchy,parent=mining 
+             companies
+       267    Great Western Hotel,Great Western Hotel,hierarchy,parent=hotels
+       268 -  Great Western Hotel,Great Western Hotel,hierarchy,parent=Hotels
+       268 +  Great Western Hotel,Great Western Hotel,hierarchy,parent=hotels
+       269    Great Western Railway,Great Western Railway,hierarchy,parent=railway
+       270    Great Western Railway,Great Western Railway,hierarchy,parent=Railway
+       271    Greater Katoomba,Greater Katoomba,hierarchy,parent=towns
+     ...
+       291    Hermitage Coal Mine,Hermitage Coal Mine,hierarchy,parent=coal mines
+       292    Hermitage Coal Mine,Hermitage colliery,synonym,Historical term for Hermitage Coal Mine - use standard mine nomenclature
+       293    Hoffman's House,Hoffman's House,hierarchy,parent=hotels
+       294 -  Hoffman's House,Hoffman's House,hierarchy,parent=Hotels
+       294 +  Hoffman's House,Hoffman's House,hierarchy,parent=hotels
+       295    Horseback riding,Horseback riding,hierarchy,parent=Recreation activities
+       296    Horseborne transportation,Horseborne transportation,hierarchy,parent=Transport
+       297    Horses,Horses,hierarchy,parent=animals
+     ...
+       299    hospitality businesses,hospitality businesses,hierarchy,parent=commercial businesses
+       300    Hospitality workers,Hospitality workers,hierarchy,parent=Occupations
+       301    Hospitality workers,Hospitality workers,hierarchy,parent=Alcohol & Temperance - THEMATIC
+       302 -  Hotel,Hotel,hierarchy,parent=Hotels
+       302 +  Hotel,Hotel,hierarchy,parent=hotels
+       303    Hotel Wentworth,Hotel Wentworth,hierarchy,parent=hotels
+       304 -  Hotel Wentworth,Hotel Wentworth,hierarchy,parent=Hotels
+       304 +  Hotel Wentworth,Hotel Wentworth,hierarchy,parent=hotels
+       305    Hotel licensing,Hotel licensing,hierarchy,parent=Licensing
+       306    Hotellier,Hotellier,hierarchy,parent=Hotelliers
+       307    Hotelliers,Hotelliers,hierarchy,parent=Hospitality workers
+     ...
+       311    Hotels,Hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect)
+       312    Husband family,Husband family,hierarchy,parent=families
+       313    Hydora House Hotel,Hydora House Hotel,hierarchy,parent=hotels
+       314 -  Hydora House Hotel,Hydora House Hotel,hierarchy,parent=Hotels
+       314 +  Hydora House Hotel,Hydora House Hotel,hierarchy,parent=hotels
+       315    I.O.O.F. Hall,Odd Fellows' Hall,merge,Same building - IOOF = Independent Order of Odd Fellows
+       316    Illness,Illness,hierarchy,parent=Physical and health conditions
+       317    Illness,Illness,hierarchy,parent=Health conditions - THEMATIC
+       318    Imperial Hotel,Imperial Hotel,hierarchy,parent=hotels
+       319 -  Imperial Hotel,Imperial Hotel,hierarchy,parent=Hotels
+       319 +  Imperial Hotel,Imperial Hotel,hierarchy,parent=hotels
+       320    Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=lodges
+       321    Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=Lodges
+       322    independent lodges,independent lodges,hierarchy,parent=Lodges
+     ...
+       376    Katoomba Falls,Katoomba Falls,hierarchy,parent=waterfalls
+       377    Katoomba Falls,Katoomba Falls,hierarchy,parent=Waterfalls
+       378    Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=family hotels
+       379 -  Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=Hotels
+       379 +  Katoomba Family Hotel,Katoomba Family Hotel,hierarchy,parent=hotels
+       380    Katoomba Football Club,Katoomba Football Club,hierarchy,parent=football clubs
+       381    Katoomba Football Club,Katoomba Football Club,hierarchy,parent=Football clubs
+       382    Katoomba Hotel,Katoomba Hotel,hierarchy,parent=hotels
+       383 -  Katoomba Hotel,Katoomba Hotel,hierarchy,parent=Hotels
+       383 +  Katoomba Hotel,Katoomba Hotel,hierarchy,parent=hotels
+       384    Katoomba Lawn Tennis Club,Katoomba Lawn Tennis Club,hierarchy,parent=tennis clubs
+       385    Katoomba Progress Association,Katoomba Progress Association,hierarchy,parent=progress committees
+       386    Katoomba Progress Association,Katoomba Progress Association,hierarchy,parent=Progress committees
+     ...
+       424    Leura Falls,Leura Falls,hierarchy,parent=waterfalls
+       425    Leura Falls,Leura Falls,hierarchy,parent=Waterfalls
+       426    Leura Hotel,Leura Hotel,hierarchy,parent=hotels
+       427 -  Leura Hotel,Leura Hotel,hierarchy,parent=Hotels
+       427 +  Leura Hotel,Leura Hotel,hierarchy,parent=hotels
+       428    Leura Progress Association,Leura Progress Association,hierarchy,parent=progress committees
+       429    Leura Progress Association,Leura Progress Association,hierarchy,parent=Progress committees
+       430    Leura Reserve,Leura Reserve,hierarchy,parent=reserves
+     ...
+       477    Megalong Cricket Club,Megalong Cricket Club,hierarchy,parent=cricket clubs
+       478    Megalong Cricket Club,Megalong Cricket Club,hierarchy,parent=Cricket clubs
+       479    Megalong Hotel,Megalong Hotel,hierarchy,parent=hotels
+       480 -  Megalong Hotel,Megalong Hotel,hierarchy,parent=Hotels
+       480 +  Megalong Hotel,Megalong Hotel,hierarchy,parent=hotels
+       481    Megalong Progress Committee,Megalong Progress Committee,hierarchy,parent=progress committees
+       482    Megalong Progress Committee,Megalong Progress Committee,hierarchy,parent=Progress committees
+       483    Megalong Shale Mines,Megalong Shale Mines,hierarchy,parent=shale mines
+     ...
+       556    Miss Nelly Potter,Miss Nelly Potter,hierarchy,parent=people - THEMATIC
+       557    Mixed alcoholic beverages,Mixed alcoholic beverages,hierarchy,parent=Alcoholic beverages
+       558    Montrose House,Montrose House,hierarchy,parent=hotels
+       559 -  Montrose House,Montrose House,hierarchy,parent=Hotels
+       559 +  Montrose House,Montrose House,hierarchy,parent=hotels
+       560    Mount Kembla Colliery Disaster,Mount Kembla Disaster,synonym,Alternative name for 1902 mining disaster
+       561    Mount Kembla Colliery Disaster,Mount Kembla Disaster,merge,Synonym - standardise to Mount Kembla Disaster
+       562    Mount Kembla Disaster,Mount Kembla Disaster,hierarchy,parent=mining accidents
+     ...
+       565    Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=halls
+       566    Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=Halls
+       567    Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=hotels
+       568 -  Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=Hotels
+       568 +  Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=hotels
+       569    Mount Victoria Progress Committee,Mount Victoria Progress Committee,hierarchy,parent=progress committees
+       570    Mount Victoria Progress Committee,Mount Victoria Progress Committee,hierarchy,parent=Progress committees
+       571    Mount Victoria School,Mount Victoria School,hierarchy,parent=schools
+     ...
+       863    Mrs Long,Mrs Long,hierarchy,parent=hotelliers
+       864    Mrs Long,Mrs Long,hierarchy,parent=Hotelliers
+       865    Mrs Long's Hotel,hotel,merge,Possessive form referring to hotel run by Mrs Long (hotellier) - tag as Hotel + Mrs Long
+       866 -  Mrs Long's Hotel,Mrs Long's Hotel,hierarchy,parent=Hotels
+       866 +  Mrs Long's Hotel,Mrs Long's Hotel,hierarchy,parent=hotels
+       867    Mrs Mary Duff (nee Evans),Mrs Mary Duff (nee Evans),hierarchy,parent=named persons
+       868    Mrs Meredith,Mrs Meredith,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+       869    Mrs Meredith,Mrs Meredith,hierarchy,parent=people - THEMATIC
+     ...
+       930    Other goods and services,Other goods and services,hierarchy,parent=Occupations
+       931    other government bodies,other government bodies,hierarchy,parent=government bodies
+       932    Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=hotels
+       933 -  Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=Hotels
+       933 +  Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=hotels
+       934    P. Mullany and Company,P. Mullany and Company,hierarchy,parent=retailers and stores
+       935    Parramatta,Parramatta,hierarchy,parent=towns
+       936    Peckman Bros,Peckman Brothers,synonym,Abbreviated form of Peckman Brothers
+     ...
+        997    Railway,Railway,hierarchy,parent=Transport & Infrastructure - THEMATIC
+        998    Railway Commission,Railway Commission,hierarchy,parent=government bodies
+        999    Railway Hotel,Railway Hotel,hierarchy,parent=hotels
+       1000 -  Railway Hotel,Railway Hotel,hierarchy,parent=Hotels
+       1000 +  Railway Hotel,Railway Hotel,hierarchy,parent=hotels
+       1001    railway authorities,railway authorities,hierarchy,parent=government bodies
+       1002    Railway commission,Railway commission,hierarchy,parent=Railway authorities
+       1003    Railway infrastructure,Railway infrastructure,hierarchy,parent=Railway
+     ...
+       1187    Weather & climate,Weather & climate,hierarchy,parent=Environment & Weather - THEMATIC
+       1188    Wentworth Falls,Wentworth Falls,hierarchy,parent=towns - THEMATIC
+       1189    Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=hotels
+       1190 -  Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=Hotels
+       1190 +  Wentworth Falls Hotel,Wentworth Falls Hotel,hierarchy,parent=hotels
+       1191    Wentworth Falls Progress Association,Wentworth Falls Progress Association,hierarchy,parent=progress committees
+       1192    Wentworth Falls Progress Association,Wentworth Falls Progress Association,hierarchy,parent=Progress committees
+       1193    Wentworth Falls Reserve,Wentworth Falls Reserve,hierarchy,parent=reserves
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 7 additions and 7 removals                                                                       
+        98    Chinese people,Chinese people,hierarchy,parent=Ethnic groups
+        99    Choir,Choir,hierarchy,parent=Choirs
+       100    Choirs,Choirs,hierarchy,parent=Performance groups
+       101 -  Church,Church,hierarchy,parent=Churches
+       101 +  Church,Church,hierarchy,parent=churches
+       102    Churches,Churches,hierarchy,parent=Religious organizations
+       103    Churches,Churches,hierarchy,parent=Religious buildings
+       104    Civic buildings,Civic buildings,hierarchy,parent=Built Environment
+     ...
+       131    Community institutions,Community institutions,hierarchy,parent=(thematic grouping)
+       132    Concerts,concert,merge,Plural form merged into singular (29 items)
+       133    Congregational Church,Congregational Church,hierarchy,parent=churches
+       134 -  Congregational Church,Congregational Church,hierarchy,parent=Churches
+       134 +  Congregational Church,Congregational Church,hierarchy,parent=churches
+       135    Constable John Hamilton,Constable John Hamilton,hierarchy,parent=constable
+       136    Constable John Hamilton,Constable John Hamilton,hierarchy,parent=people - THEMATIC
+       137    Constable John Hamilton,Constable John Hamilton,hierarchy,parent=Police
+     ...
+       364    Katoomba Coal and Shale Company,Katoomba Coal and Shale Company,hierarchy,parent=mining companies
+       365    Katoomba Coal and Shale Mines,Katoomba Coal and Shale Company,synonym,Variant name for Katoomba Coal and Shale Company - refers to 
+             the company and its operations
+       366    Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Congregational Church
+       367 -  Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=Churches
+       367 +  Katoomba Congregational Church,Katoomba Congregational Church,hierarchy,parent=churches
+       368    Katoomba Council,Katoomba Council,hierarchy,parent=councils
+       369    Katoomba Council,Katoomba Council,hierarchy,parent=Councils
+       370    Katoomba Court,Katoomba Court,hierarchy,parent=courts
+     ...
+       491    Men,Men,hierarchy,parent=Family members by demographic - THEMATIC
+       492    Meredith family,Meredith family,hierarchy,parent=families
+       493    Methodist Church,Methodist Church,hierarchy,parent=churches
+       494 -  Methodist Church,Methodist Church,hierarchy,parent=Churches
+       494 +  Methodist Church,Methodist Church,hierarchy,parent=churches
+       495    Middle Camp,Middle Camp (settlement),synonym,Unqualified form - use settlement qualifier for clarity
+       496    Middle Camp (settlement),Middle Camp (settlement),hierarchy,parent=Greater Megalong
+       497    Middle camp,Middle camp,hierarchy,parent=Megalong
+     ...
+       1045    Roads,Roads,hierarchy,parent=Transport & Infrastructure - THEMATIC
+       1046    Rockley,Rockley,hierarchy,parent=towns
+       1047    Roman Catholic Church,Roman Catholic Church,hierarchy,parent=churches
+       1048 -  Roman Catholic Church,Roman Catholic Church,hierarchy,parent=Churches
+       1048 +  Roman Catholic Church,Roman Catholic Church,hierarchy,parent=churches
+       1049    Rubina Fryer,Rubina Fryer,hierarchy,parent=hotelliers
+       1050    Rubina Fryer,Rubina Fryer,hierarchy,parent=Hotelliers
+       1051    Ruined Castle,Ruined Castle mining district,synonym,Unqualified form - use mining district qualifier for mining context; rock 
+              formation qualifier for natural feature
+     ...
+       1111    sports clubs,sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
+       1112    Springwood,Springwood,hierarchy,parent=towns
+       1113    St Hilda's Church,St Hilda's Church,hierarchy,parent=churches
+       1114 -  St Hilda's Church,St Hilda's Church,hierarchy,parent=Churches
+       1114 +  St Hilda's Church,St Hilda's Church,hierarchy,parent=churches
+       1115    Stable,Stable,hierarchy,parent=Stables
+       1116    Stables,Stables,hierarchy,parent=Accommodation and hospitality venues
+       1117    Stationmaster,Stationmaster,hierarchy,parent=Public officials
+     ...
+       1195    Wentworth Falls Reserves,Wentworth Falls Reserve,synonym,Plural variant - standardised to singular
+       1196    Wentworth Falls Reserves,Wentworth Falls Reserves,hierarchy,parent=reserves
+       1197    Wesleyan Church,Wesleyan Church,hierarchy,parent=churches
+       1198 -  Wesleyan Church,Wesleyan Church,hierarchy,parent=Churches
+       1198 +  Wesleyan Church,Wesleyan Church,hierarchy,parent=churches
+       1199    Western Rifle Association,Western Rifle Association,hierarchy,parent=rifle clubs
+       1200    Whiskey,Whisky,synonym,Alternative spelling of whisky (both spellings valid)
+       1201    Whiskey,Whisky,merge,Variant spelling - standardise to Whisky
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 5 additions and 5 removals                                    
+       154    Council Chambers,Council Chambers,hierarchy,parent=Council buildings
+       155    Council buildings,Council buildings,hierarchy,parent=Civic buildings
+       156    Councils,Councils,hierarchy,parent=Government bodies
+       157 -  Court,Court,hierarchy,parent=Courts
+       157 +  Court,Court,hierarchy,parent=courts
+       158    Court buildings,Court buildings,hierarchy,parent=Civic buildings
+       159    Court buildings,Court buildings,hierarchy,parent=Justice & Crime - THEMATIC
+       160    Courthouse,Courthouse,hierarchy,parent=Court buildings
+     ...
+       368    Katoomba Council,Katoomba Council,hierarchy,parent=councils
+       369    Katoomba Council,Katoomba Council,hierarchy,parent=Councils
+       370    Katoomba Court,Katoomba Court,hierarchy,parent=courts
+       371 -  Katoomba Court,Katoomba Court,hierarchy,parent=Courts
+       371 +  Katoomba Court,Katoomba Court,hierarchy,parent=courts
+       372    Katoomba Court,Katoomba Court,hierarchy,parent=Court buildings
+       373    Katoomba Courthouse,Katoomba Courthouse,hierarchy,parent=court buildings
+       374    Katoomba Cricket Club,Katoomba Cricket Club,hierarchy,parent=cricket clubs
+     ...
+       439    Licensing Act,Licensing Act,hierarchy,parent=Licensing & regulation - THEMATIC
+       440    Licensing Court,Licensing Court,hierarchy,parent=courts
+       441    Licensing Court,Licensing Court,hierarchy,parent=licensing & regulation - THEMATIC
+       442 -  Licensing Court,Licensing Court,hierarchy,parent=Courts
+       442 +  Licensing Court,Licensing Court,hierarchy,parent=courts
+       443    Licensing Court,Licensing Court,hierarchy,parent=Licensing & regulation - THEMATIC
+       444    Licensing inspector,Licensing inspector,hierarchy,parent=Public officials
+       445    Licensing inspector,Licensing inspector,hierarchy,parent=Licensing & regulation - THEMATIC
+     ...
+       948    Police,New South Wales Police,synonym,Short form - use full official name New South Wales Police
+       949    Police,Police,hierarchy,parent=Law enforcement (intermediate facet)
+       950    Police Court,Police Court,hierarchy,parent=courts
+       951 -  Police court,Police court,hierarchy,parent=Courts
+       951 +  Police court,Police court,hierarchy,parent=courts
+       952    police facilities,police facilities,hierarchy,parent=Civic buildings
+       953    Police station,Police station,hierarchy,parent=Police facilities
+       954    Police station,Police station,hierarchy,parent=Justice & Crime - THEMATIC
+     ...
+       1123    Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=mining companies
+       1124    Sunny Corner Mining Company,Sunny Corner Mining Company,hierarchy,parent=mining companies
+       1125    Supreme Court,Supreme Court,hierarchy,parent=courts
+       1126 -  Supreme Court,Supreme Court,hierarchy,parent=Courts
+       1126 +  Supreme Court,Supreme Court,hierarchy,parent=courts
+       1127    Sydney,Sydney,hierarchy,parent=towns
+       1128    Tabrett and Co.,Tabrett and Company,synonym,Abbreviated form of Tabrett and Company
+       1129    Tabrett and Company,Tabrett and Company,hierarchy,parent=retailers and stores
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 6 additions and 6 removals                                                                
+       107    civic organizations,civic organizations,hierarchy,parent=Community institutions - THEMATIC
+       108    Clarence,Clarence,hierarchy,parent=towns
+       109    Clarke's Hall,Clarke's Hall,hierarchy,parent=halls
+       110 -  Clarke's Hall,Clarke's Hall,hierarchy,parent=Halls
+       110 +  Clarke's Hall,Clarke's Hall,hierarchy,parent=halls
+       111    Clergy,Clergy,hierarchy,parent=Occupations
+       112    Clergy,Clergy,hierarchy,parent=Religion - THEMATIC
+       113    Coach and buggy business,Coach and buggy business,hierarchy,parent=Other goods and services
+     ...
+       464    Marginalised groups,Marginalised groups,hierarchy,parent=Race & Ethnicity - THEMATIC
+       465    Maritime workers,Maritime workers,hierarchy,parent=Occupations
+       466    Masonic Hall,Masonic Hall,hierarchy,parent=halls
+       467 -  Masonic Hall,Masonic Hall,hierarchy,parent=Halls
+       467 +  Masonic Hall,Masonic Hall,hierarchy,parent=halls
+       468    Masons,Freemasons,synonym,Informal name for Freemasons
+       469    Materials,Materials,hierarchy,parent=(Getty AAT primary facet)
+       470    Materials,Materials,hierarchy,parent=(new top-level facet)
+     ...
+       563    Mount Victoria,Mount Victoria,hierarchy,parent=towns - THEMATIC
+       564    Mount Victoria,Mount Victoria,hierarchy,parent=towns
+       565    Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=halls
+       566 -  Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=Halls
+       566 +  Mount Victoria Hall,Mount Victoria Hall,hierarchy,parent=halls
+       567    Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=hotels
+       568    Mount Victoria Hotel,Mount Victoria Hotel,hierarchy,parent=hotels
+       569    Mount Victoria Progress Committee,Mount Victoria Progress Committee,hierarchy,parent=progress committees
+     ...
+       921    Occupations,Occupations,hierarchy,parent=People
+       922    Odd Fellows,Independent Order of Odd Fellows,synonym,Common short form of Independent Order of Odd Fellows
+       923    Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=halls
+       924 -  Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=Halls
+       924 +  Odd Fellows' Hall,Odd Fellows' Hall,hierarchy,parent=halls
+       925    Oddfellows,Independent Order of Odd Fellows,synonym,Variant spelling - use full formal name Independent Order of Odd Fellows
+       926    Orama Boarding House,Orama Boarding House,hierarchy,parent=boarding houses
+       927    Orama Boarding House,Orama Boarding House,hierarchy,parent=Boarding houses
+     ...
+       1063    School of Arts,School of Arts,hierarchy,parent=Schools of Arts
+       1064    Schools,Schools,hierarchy,parent=Educational buildings
+       1065    Schools of Arts,Schools of Arts,hierarchy,parent=Cultural societies
+       1066 -  Schools of Arts,Schools of Arts,hierarchy,parent=Halls
+       1066 +  Schools of Arts,Schools of Arts,hierarchy,parent=halls
+       1067    Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=senior-constable
+       1068    Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=people - THEMATIC
+       1069    Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=Police
+     ...
+       1181    Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
+       1182    Waudby and Company,Waudby and Company,hierarchy,parent=mining companies
+       1183    Waudby's Hall,Waudby's Hall,hierarchy,parent=halls
+       1184 -  Waudby's Hall,Waudby's Hall,hierarchy,parent=Halls
+       1184 +  Waudby's Hall,Waudby's Hall,hierarchy,parent=halls
+       1185    Weather,Weather,hierarchy,parent=Physical phenomena
+       1186    Weather,Weather,hierarchy,parent=Weather & climate - THEMATIC
+       1187    Weather & climate,Weather & climate,hierarchy,parent=Environment & Weather - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 4 additions and 4 removals                                                                       
+       234    fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=organisations
+       235    fraternal orders & lodges,fraternal orders & lodges,hierarchy,parent=Community institutions - THEMATIC
+       236    Freemasons,Freemasons,hierarchy,parent=lodges
+       237 -  Freemasons,Freemasons,hierarchy,parent=Lodges
+       237 +  Freemasons,Freemasons,hierarchy,parent=lodges
+       238    Fryer's Family Hotel,Fryer's Family Hotel,merge,Owner-specific name for Katoomba Family Hotel during Fryer family ownership (1892) 
+             - use Katoomba Family Hotel as preferred term
+       239    Fryer's Family Hotel,Katoomba Family Hotel,synonym,Historical name used during Fryer family ownership period (pre-March 1892)
+       240    Fryer's Family Hotel,Fryer's Family Hotel,hierarchy,parent=hotels
+     ...
+       318    Imperial Hotel,Imperial Hotel,hierarchy,parent=hotels
+       319    Imperial Hotel,Imperial Hotel,hierarchy,parent=hotels
+       320    Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=lodges
+       321 -  Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=Lodges
+       322 -  independent lodges,independent lodges,hierarchy,parent=Lodges
+       321 +  Independent Order of Odd Fellows,Independent Order of Odd Fellows,hierarchy,parent=lodges
+       322 +  independent lodges,independent lodges,hierarchy,parent=lodges
+       323    Indigenous peoples,Indigenous peoples,hierarchy,parent=Marginalised groups - THEMATIC
+       324    Industries,Industries,hierarchy,parent=Economy & Labour - THEMATIC
+       325    Information Forms,Information Forms,hierarchy,parent=communications & postal services - THEMATIC
+     ...
+       1162    Unions,Unions,hierarchy,parent=Labour organizations
+       1163    Unions,Unions,hierarchy,parent=Labour relations - THEMATIC
+       1164    United Ancient Order of Druids,United Ancient Order of Druids,hierarchy,parent=lodges
+       1165 -  United Ancient Order of Druids,United Ancient Order of Druids,hierarchy,parent=Lodges
+       1165 +  United Ancient Order of Druids,United Ancient Order of Druids,hierarchy,parent=lodges
+       1166    Utilities,Utilities,hierarchy,parent=Infrastructure
+       1167    Utilities,Utilities,hierarchy,parent=Transport & Infrastructure - THEMATIC
+       1168    Valleys,Valleys,hierarchy,parent=Natural features
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 5 additions and 5 removals                                                               
+       184    Domestic accommodation,Domestic accommodation,hierarchy,parent=Family & Domestic Life - THEMATIC
+       185    Douglas & Co.,Douglas and Company,synonym,Abbreviated form of Douglas and Company
+       186    Douglas and Company,Douglas and Company,hierarchy,parent=retailers and stores
+       187 -  Douglas and Company,Douglas and Company,hierarchy,parent=Retailers and stores
+       187 +  Douglas and Company,Douglas and Company,hierarchy,parent=retailers and stores
+       188    Dr Morgan,Dr Morgan,keep,Person names - likely different individuals (preserve granularity per folksonomy_logic.md:517-522)
+       189    Dr Morgan,Dr Morgan,hierarchy,parent=medical professionals
+       190    Dr Morgan,Dr Morgan,hierarchy,parent=Medical professionals
+     ...
+       916    New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies
+       917    Newcastle,Newcastle,hierarchy,parent=towns
+       918    Nimmo's,Nimmo's,hierarchy,parent=retailers and stores
+       919 -  Nimmo's,Nimmo's,hierarchy,parent=Retailers and stores
+       919 +  Nimmo's,Nimmo's,hierarchy,parent=retailers and stores
+       920    Oberon,Oberon,hierarchy,parent=towns
+       921    Occupations,Occupations,hierarchy,parent=People
+       922    Odd Fellows,Independent Order of Odd Fellows,synonym,Common short form of Independent Order of Odd Fellows
+     ...
+       934    P. Mullany and Company,P. Mullany and Company,hierarchy,parent=retailers and stores
+       935    Parramatta,Parramatta,hierarchy,parent=towns
+       936    Peckman Bros,Peckman Brothers,synonym,Abbreviated form of Peckman Brothers
+       937 -  Peckman Bros,Peckman Bros,hierarchy,parent=Retailers and stores
+       937 +  Peckman Bros,Peckman Bros,hierarchy,parent=retailers and stores
+       938    Peckman Brothers,Peckman Brothers,hierarchy,parent=retailers and stores
+       939    Peckman family,Peckman family,hierarchy,parent=families
+       940    Penman family,Penman family,hierarchy,parent=families
+     ...
+       1115    Stable,Stable,hierarchy,parent=Stables
+       1116    Stables,Stables,hierarchy,parent=Accommodation and hospitality venues
+       1117    Stationmaster,Stationmaster,hierarchy,parent=Public officials
+       1118 -  Store,Store,hierarchy,parent=Retailers and stores
+       1118 +  Store,Store,hierarchy,parent=retailers and stores
+       1119    Store,Store,hierarchy,parent=Commercial buildings
+       1120    Sunday school,Sunday school,hierarchy,parent=Religious education
+       1121    Sunday school,Sunday school,hierarchy,parent=Education - THEMATIC (religious education)
+     ...
+       1127    Sydney,Sydney,hierarchy,parent=towns
+       1128    Tabrett and Co.,Tabrett and Company,synonym,Abbreviated form of Tabrett and Company
+       1129    Tabrett and Company,Tabrett and Company,hierarchy,parent=retailers and stores
+       1130 -  Tabrett and Company,Tabrett and Company,hierarchy,parent=Retailers and stores
+       1130 +  Tabrett and Company,Tabrett and Company,hierarchy,parent=retailers and stores
+       1131    Tabrett family,Tabrett family,hierarchy,parent=families
+       1132    Temperance,Temperance,hierarchy,parent=Social behaviours
+       1133    Temperance,Temperance,hierarchy,parent=Temperance organizations & movements - THEMATIC
+
+● Let me check for and fix more capitalized parent references:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 additions and 2 removals                                  
+       85    Centennial Hotel,Centennial Hotel,hierarchy,parent=hotels
+       86    Centennial Hotel,Centennial Hotel,hierarchy,parent=hotels
+       87    charitable and welfare activities,charitable and welfare activities,hierarchy,parent=Activities
+       88 -  Charity,Charity,hierarchy,parent=Charitable and welfare activities
+       88 +  Charity,Charity,hierarchy,parent=charitable and welfare activities
+       89    Charity,Charity,hierarchy,parent=Economic hardship - THEMATIC
+       90    Chess and Draughts Club,Chess and Draughts Club,hierarchy,parent=Cultural societies
+       91    Children,Children,hierarchy,parent=Demographic groups
+     ...
+       1156    Unemployment,Unemployment,hierarchy,parent=Social & economic concepts
+       1157    Unemployment,Unemployment,hierarchy,parent=Economic hardship - THEMATIC
+       1158    Unemployment,Unemployment,hierarchy,parent=Economic distress - THEMATIC
+       1159 -  Unemployment relief,Unemployment relief,hierarchy,parent=Charitable and welfare activities
+       1159 +  Unemployment relief,Unemployment relief,hierarchy,parent=charitable and welfare activities
+       1160    Unemployment relief,Unemployment relief,hierarchy,parent=Economic hardship - THEMATIC
+       1161    Unemployment relief,Unemployment relief,hierarchy,parent=Economic distress - THEMATIC
+       1162    Unions,Unions,hierarchy,parent=Labour organizations
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 6 additions and 6 removals                                                                      
+       15    accommodation and hospitality venues,accommodation and hospitality venues,hierarchy,parent=Built Environment
+       16    Activities,Activities,hierarchy,parent=(Getty AAT primary facet)
+       17    Activities,Activities,hierarchy,parent=(new top-level facet)
+       18 -  Adolescents,Adolescents,hierarchy,parent=Demographic groups
+       18 +  Adolescents,Adolescents,hierarchy,parent=demographic groups
+       19    Advertising,Advertising,hierarchy,parent=Communication activities
+       20    Advertising,Advertising,hierarchy,parent=Cultural activities - THEMATIC
+       21    Advertising,Advertising,hierarchy,parent=Communications & Postal Services - THEMATIC
+     ...
+       88    Charity,Charity,hierarchy,parent=charitable and welfare activities
+       89    Charity,Charity,hierarchy,parent=Economic hardship - THEMATIC
+       90    Chess and Draughts Club,Chess and Draughts Club,hierarchy,parent=Cultural societies
+       91 -  Children,Children,hierarchy,parent=Demographic groups
+       91 +  Children,Children,hierarchy,parent=demographic groups
+       92    Children,Children,hierarchy,parent=Vulnerable populations - THEMATIC
+       93    Children,Children,hierarchy,parent=Family members by demographic - THEMATIC
+       94    Chinese community,Chinese community,hierarchy,parent=marginalised groups - THEMATIC
+     ...
+       223    F. C. Goyder,F. C. Goyder,hierarchy,parent=Hotelliers
+       224    Falls Hotel,Falls Hotel,hierarchy,parent=hotels
+       225    Falls Hotel,Falls Hotel,hierarchy,parent=hotels
+       226 -  Families,Families,hierarchy,parent=Demographic groups
+       226 +  Families,Families,hierarchy,parent=demographic groups
+       227    Families,Families,hierarchy,parent=Family & Domestic Life - THEMATIC (all family tags)
+       228    Family & Domestic Life,Family & Domestic Life,hierarchy,parent=(thematic grouping)
+       229    Family Hotel,Family Hotel,hierarchy,parent=hotels
+     ...
+       487    Megalong Valley School,Megalong Valley School,hierarchy,parent=Schools
+       488    Megalong miners' camp,Nellie's Glen (settlement),synonym,Historical term for the mining settlement at Nellie's Glen in Megalong 
+             Valley
+       489    Megalong mines,Nellie's Glen Shale Mine (site),synonym,Historical reference term for shale mining operations in Megalong Valley - 
+             refers to the geographic site of Nellie's Glen Shale Mine
+       490 -  Men,Men,hierarchy,parent=Demographic groups
+       490 +  Men,Men,hierarchy,parent=demographic groups
+       491    Men,Men,hierarchy,parent=Family members by demographic - THEMATIC
+       492    Meredith family,Meredith family,hierarchy,parent=families
+       493    Methodist Church,Methodist Church,hierarchy,parent=churches
+     ...
+       1201    Whiskey,Whisky,merge,Variant spelling - standardise to Whisky
+       1202    Whisky,Whisky,hierarchy,parent=Spirits
+       1203    Wholesale liquor business,Wholesale liquor business,hierarchy,parent=Liquor trade
+       1204 -  Widows,Widows,hierarchy,parent=Demographic groups
+       1204 +  Widows,Widows,hierarchy,parent=demographic groups
+       1205    Widows,Widows,hierarchy,parent=Victims of crime & violence - THEMATIC
+       1206    Widows,Widows,hierarchy,parent=Vulnerable populations - THEMATIC
+       1207    Widows,Widows,hierarchy,parent=Gender-related vulnerabilities - THEMATIC
+       1208    Widows,Widows,hierarchy,parent=Family members by demographic - THEMATIC
+       1209    Wine,Wine,hierarchy,parent=Alcoholic beverages
+       1210 -  Women,Women,hierarchy,parent=Demographic groups
+       1210 +  Women,Women,hierarchy,parent=demographic groups
+       1211    Women,Women,hierarchy,parent=Women as demographic group - THEMATIC
+       1212    Women,Women,hierarchy,parent=Family members by demographic - THEMATIC
+       1213    Women & Gender,Women & Gender,hierarchy,parent=(thematic grouping)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                                        
+       45    Australian Kerosene Shale and Oil Company,Australian Kerosene Oil and Mineral Company,synonym,Variant name for Australian Kerosene 
+            Oil and Mineral Company
+       46    Band,Band,hierarchy,parent=bands
+       47    Bands,Bands,hierarchy,parent=Performance groups
+       48 -  Bank,Bank,hierarchy,parent=Financial institutions
+       48 +  Bank,Bank,hierarchy,parent=financial institutions
+       49    Bank,Bank,hierarchy,parent=Commercial buildings
+       50    Bashford,Bashford,hierarchy,parent=hotelliers
+       51    Bathurst,Bathurst,hierarchy,parent=towns
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 additions and 2 removals               
+       153    Cottages,Cottages,hierarchy,parent=Accommodation and hospitality venues
+       154    Council Chambers,Council Chambers,hierarchy,parent=Council buildings
+       155    Council buildings,Council buildings,hierarchy,parent=Civic buildings
+       156 -  Councils,Councils,hierarchy,parent=Government bodies
+       156 +  Councils,Councils,hierarchy,parent=government bodies
+       157    Court,Court,hierarchy,parent=courts
+       158    Court buildings,Court buildings,hierarchy,parent=Civic buildings
+       159    Court buildings,Court buildings,hierarchy,parent=Justice & Crime - THEMATIC
+       160    Courthouse,Courthouse,hierarchy,parent=Court buildings
+       161 -  Courts,Courts,hierarchy,parent=Government bodies
+       161 +  Courts,Courts,hierarchy,parent=government bodies
+       162    Courts,Courts,hierarchy,parent=Justice & Crime - THEMATIC
+       163    cricket clubs,cricket clubs,hierarchy,parent=sports clubs
+       164    Crimes,Crimes,hierarchy,parent=Justice & Crime - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 2 additions and 2 removals                                        
+       57    Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage)
+       58    Blackheath,Blackheath,hierarchy,parent=towns
+       59    Boarding house,Boarding house,hierarchy,parent=Boarding houses
+       60 -  Boarding houses,Boarding houses,hierarchy,parent=Hospitality businesses
+       60 +  Boarding houses,Boarding houses,hierarchy,parent=hospitality businesses
+       61    Boarding houses,Boarding houses,hierarchy,parent=Accommodation and hospitality venues
+       62    Boarding houses,Boarding houses,hierarchy,parent=Domestic accommodation - THEMATIC
+       63    Bonnie Doon Track,Bonnie Doon Track,hierarchy,parent=roads
+     ...
+       305    Hotel licensing,Hotel licensing,hierarchy,parent=Licensing
+       306    Hotellier,Hotellier,hierarchy,parent=Hotelliers
+       307    Hotelliers,Hotelliers,hierarchy,parent=Hospitality workers
+       308 -  Hotels,Hotels,hierarchy,parent=Hospitality businesses
+       308 +  Hotels,Hotels,hierarchy,parent=hospitality businesses
+       309    Hotels,Hotels,hierarchy,parent=Accommodation and hospitality venues
+       310    Hotels,Hotels,hierarchy,parent=Alcohol-related venues - THEMATIC
+       311    Hotels,Hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 10 additions and 10 removals                                     
+       108    Clarence,Clarence,hierarchy,parent=towns
+       109    Clarke's Hall,Clarke's Hall,hierarchy,parent=halls
+       110    Clarke's Hall,Clarke's Hall,hierarchy,parent=halls
+       111 -  Clergy,Clergy,hierarchy,parent=Occupations
+       111 +  Clergy,Clergy,hierarchy,parent=occupations
+       112    Clergy,Clergy,hierarchy,parent=Religion - THEMATIC
+       113    Coach and buggy business,Coach and buggy business,hierarchy,parent=Other goods and services
+       114    Coal,Coal,hierarchy,parent=Coal mining
+     ...
+       297    Horses,Horses,hierarchy,parent=animals
+       298    Horticulture society,Horticulture society,hierarchy,parent=Cultural societies
+       299    hospitality businesses,hospitality businesses,hierarchy,parent=commercial businesses
+       300 -  Hospitality workers,Hospitality workers,hierarchy,parent=Occupations
+       300 +  Hospitality workers,Hospitality workers,hierarchy,parent=occupations
+       301    Hospitality workers,Hospitality workers,hierarchy,parent=Alcohol & Temperance - THEMATIC
+       302    Hotel,Hotel,hierarchy,parent=hotels
+       303    Hotel Wentworth,Hotel Wentworth,hierarchy,parent=hotels
+     ...
+       408    Katoomba station,Katoomba station,hierarchy,parent=Railway infrastructure
+       409    labour organizations,labour organizations,hierarchy,parent=civic organizations
+       410    Labour relations,Labour relations,hierarchy,parent=Economy & Labour - THEMATIC
+       411 -  Law enforcement,Law enforcement,hierarchy,parent=Occupations
+       411 +  Law enforcement,Law enforcement,hierarchy,parent=occupations
+       412    Law enforcement,Law enforcement,hierarchy,parent=Justice & Crime - THEMATIC
+       413    Lawn Tennis Club,Lawn Tennis Club,hierarchy,parent=Tennis clubs
+       414    Lawson,Lawson,hierarchy,parent=towns
+       415    Legal documents,Legal documents,hierarchy,parent=Information Forms
+       416    Legal events,Legal events,hierarchy,parent=Justice & Crime - THEMATIC
+       417 -  Legal officials,Legal officials,hierarchy,parent=Occupations
+       417 +  Legal officials,Legal officials,hierarchy,parent=occupations
+       418    Legal officials,Legal officials,hierarchy,parent=Justice & Crime - THEMATIC
+       419    Legal outcomes,Legal outcomes,hierarchy,parent=justice & crime - THEMATIC
+       420    Legal outcomes,Legal outcomes,hierarchy,parent=Justice & Crime - THEMATIC
+     ...
+       462    Maps,Maps,hierarchy,parent=document types
+       463    Maps,Maps,hierarchy,parent=Information Forms
+       464    Marginalised groups,Marginalised groups,hierarchy,parent=Race & Ethnicity - THEMATIC
+       465 -  Maritime workers,Maritime workers,hierarchy,parent=Occupations
+       465 +  Maritime workers,Maritime workers,hierarchy,parent=occupations
+       466    Masonic Hall,Masonic Hall,hierarchy,parent=halls
+       467    Masonic Hall,Masonic Hall,hierarchy,parent=halls
+       468    Masons,Freemasons,synonym,Informal name for Freemasons
+       469    Materials,Materials,hierarchy,parent=(Getty AAT primary facet)
+       470    Materials,Materials,hierarchy,parent=(new top-level facet)
+       471 -  Medical professionals,Medical professionals,hierarchy,parent=Occupations
+       471 +  Medical professionals,Medical professionals,hierarchy,parent=occupations
+       472    Medical professionals,Medical professionals,hierarchy,parent=Health & Medicine - THEMATIC
+       473    Medlow,Medlow,hierarchy,parent=towns
+       474    Megalong,Megalong,hierarchy,parent=towns - THEMATIC
+     ...
+       502    military activities,military activities,hierarchy,parent=Activities
+       503    Military events,Military events,hierarchy,parent=Military & War - THEMATIC
+       504    Military organizations,Military organizations,hierarchy,parent=Military & War - THEMATIC
+       505 -  Military personnel,Military personnel,hierarchy,parent=Occupations
+       505 +  Military personnel,Military personnel,hierarchy,parent=occupations
+       506    Military personnel,Military personnel,hierarchy,parent=Military & War - THEMATIC
+       507 -  miners,miners,hierarchy,parent=Occupations
+       507 +  miners,miners,hierarchy,parent=occupations
+       508    miners,miners,hierarchy,parent=Mining workforce - THEMATIC
+       509    miners,miners,hierarchy,parent=Workforce - THEMATIC
+       510    Miners' dwellings,Miners' dwellings,hierarchy,parent=Dwellings
+     ...
+       927    Orama Boarding House,Orama Boarding House,hierarchy,parent=Boarding houses
+       928    organisations,organisations,hierarchy,parent=Agents (new top-level facet)
+       929    Other crimes,Other crimes,hierarchy,parent=Crimes - THEMATIC
+       930 -  Other goods and services,Other goods and services,hierarchy,parent=Occupations
+       930 +  Other goods and services,Other goods and services,hierarchy,parent=occupations
+       931    other government bodies,other government bodies,hierarchy,parent=government bodies
+       932    Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=hotels
+       933    Oxford Hotel (Sydney),Oxford Hotel (Sydney),hierarchy,parent=hotels
+     ...
+       982    Public house,Public house,hierarchy,parent=Public houses
+       983    Public houses,Public houses,hierarchy,parent=Accommodation and hospitality venues
+       984    Public houses,Public houses,hierarchy,parent=Alcohol-related venues - THEMATIC
+       985 -  Public officials,Public officials,hierarchy,parent=Occupations
+       985 +  Public officials,Public officials,hierarchy,parent=occupations
+       986    Public officials,Public officials,hierarchy,parent=Politics & Governance - THEMATIC
+       987    Publican,Publican,hierarchy,parent=Hospitality workers
+       988    Publican's License,publican's licence,synonym,US spelling variant of UK spelling publican's licence
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                         
+       950    Police Court,Police Court,hierarchy,parent=courts
+       951    Police court,Police court,hierarchy,parent=courts
+       952    police facilities,police facilities,hierarchy,parent=Civic buildings
+       953 -  Police station,Police station,hierarchy,parent=Police facilities
+       953 +  Police station,Police station,hierarchy,parent=police facilities
+       954    Police station,Police station,hierarchy,parent=Justice & Crime - THEMATIC
+       955    Political events,Political events,hierarchy,parent=Politics & Governance - THEMATIC
+       956    Politics & Governance,Politics & Governance,hierarchy,parent=(thematic grouping)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal              
+       964    Post office,Post office,hierarchy,parent=Postal facilities
+       965    Post office,Post office,hierarchy,parent=Postal services - THEMATIC
+       966    Postal Department,Postal Department,hierarchy,parent=government bodies
+       967 -  Postal Department,Postal Department,hierarchy,parent=Postal authorities
+       967 +  Postal Department,Postal Department,hierarchy,parent=postal authorities
+       968    postal authorities,postal authorities,hierarchy,parent=government bodies
+       969    Postal employees,Postal employees,hierarchy,parent=Public officials
+       970    postal facilities,postal facilities,hierarchy,parent=Civic buildings
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                                                
+        999    Railway Hotel,Railway Hotel,hierarchy,parent=hotels
+       1000    Railway Hotel,Railway Hotel,hierarchy,parent=hotels
+       1001    railway authorities,railway authorities,hierarchy,parent=government bodies
+       1002 -  Railway commission,Railway commission,hierarchy,parent=Railway authorities
+       1002 +  Railway commission,Railway commission,hierarchy,parent=railway authorities
+       1003    Railway infrastructure,Railway infrastructure,hierarchy,parent=Railway
+       1004    Railway operations,Railway operations,hierarchy,parent=Railway
+       1005    Rape,sexual violence,merge,Specific term merged into broader category (rape is a type of sexual violence)
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 3 additions and 3 removals                                                           
+       292    Hermitage Coal Mine,Hermitage colliery,synonym,Historical term for Hermitage Coal Mine - use standard mine nomenclature
+       293    Hoffman's House,Hoffman's House,hierarchy,parent=hotels
+       294    Hoffman's House,Hoffman's House,hierarchy,parent=hotels
+       295 -  Horseback riding,Horseback riding,hierarchy,parent=Recreation activities
+       295 +  Horseback riding,Horseback riding,hierarchy,parent=recreation activities
+       296    Horseborne transportation,Horseborne transportation,hierarchy,parent=Transport
+       297    Horses,Horses,hierarchy,parent=animals
+       298    Horticulture society,Horticulture society,hierarchy,parent=Cultural societies
+     ...
+       1005    Rape,sexual violence,merge,Specific term merged into broader category (rape is a type of sexual violence)
+       1006    Rape,sexual violence,synonym,Specific type of sexual violence - retained as synonym for search/discovery
+       1007    recreation activities,recreation activities,hierarchy,parent=Activities
+       1008 -  Recreation for miners,Recreation for miners,hierarchy,parent=Recreation activities
+       1008 +  Recreation for miners,Recreation for miners,hierarchy,parent=recreation activities
+       1009    Recreation for miners,Recreation for miners,hierarchy,parent=Mining activities - THEMATIC
+       1010    Recreation for miners,Recreation for miners,hierarchy,parent=Recreation themes - THEMATIC
+       1011    Recreation themes,Recreation themes,hierarchy,parent=Sport & Recreation - THEMATIC
+     ...
+       1105    Spirits,Spirits,hierarchy,parent=Alcoholic beverages
+       1106    Sport & Recreation,Sport & Recreation,hierarchy,parent=(thematic grouping)
+       1107    Sporting events,Sporting events,hierarchy,parent=Sport & Recreation - THEMATIC
+       1108 -  Sports,Sports,hierarchy,parent=Recreation activities
+       1108 +  Sports,Sports,hierarchy,parent=recreation activities
+       1109    Sports,Sports,hierarchy,parent=Recreation themes - THEMATIC
+       1110    sports clubs,sports clubs,hierarchy,parent=cultural & recreational organizations
+       1111    sports clubs,sports clubs,hierarchy,parent=Sport & Recreation - THEMATIC
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 3 additions and 3 removals                                   
+        99    Choir,Choir,hierarchy,parent=Choirs
+       100    Choirs,Choirs,hierarchy,parent=Performance groups
+       101    Church,Church,hierarchy,parent=churches
+       102 -  Churches,Churches,hierarchy,parent=Religious organizations
+       102 +  Churches,Churches,hierarchy,parent=religious organizations
+       103    Churches,Churches,hierarchy,parent=Religious buildings
+       104    Civic buildings,Civic buildings,hierarchy,parent=Built Environment
+       105    Civic buildings,Civic buildings,hierarchy,parent=Community institutions - THEMATIC
+     ...
+       1015    Religion,Religion,hierarchy,parent=(thematic grouping)
+       1016    Religious buildings,Religious buildings,hierarchy,parent=Built Environment
+       1017    Religious buildings,Religious buildings,hierarchy,parent=Religion - THEMATIC
+       1018 -  Religious education,Religious education,hierarchy,parent=Religious organizations
+       1018 +  Religious education,Religious education,hierarchy,parent=religious organizations
+       1019    religious organizations,religious organizations,hierarchy,parent=organisations
+       1020    religious organizations,religious organizations,hierarchy,parent=Religion - THEMATIC
+       1021 -  Religious social movements,Religious social movements,hierarchy,parent=Religious organizations
+       1021 +  Religious social movements,Religious social movements,hierarchy,parent=religious organizations
+       1022    Reserves,Reserves,hierarchy,parent=Places (existing facet)
+       1023    Reserves,Reserves,hierarchy,parent=Recreation themes - THEMATIC (recreational lands)
+       1024    Retailers and stores,Retailers and stores,hierarchy,parent=Commercial businesses
+
+● Now let me regenerate the hierarchy visualizations to see the results of all the fixes:
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py)
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +274 lines (ctrl+o to expand)
+
+● I see we still have 30 primary facets instead of 10. There are still issues. Let me check what's happening with these lowercase category nodes:
+
+● Search(pattern: "^commercial activities,commercial activities,", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Search(pattern: "^commercial businesses,commercial businesses,", path: "data/tag_map_consolidated.csv", output_mode: "content")
+  ⎿  Found 4 lines (ctrl+o to expand)
+
+● Search(pattern: "^accommodation and hospitality venues,accommodation and hospitality venues,", path: "data/tag_map_consolidated.csv", output_mode:
+        "content")
+  ⎿  Found 1 line (ctrl+o to expand)
+
+● Let me check the overview file to see what the actual primary facets are:
+
+● Read(visualizations/hierarchy_trees/00_OVERVIEW.txt)
+  ⎿  Read 100 lines
+
+● I see the issue - the lowercase category nodes are appearing as top-level. Let me investigate why they're being detected as orphans. Let me check
+  if there are duplicate definitions or if they lack proper primary facet parents:
+
+● Bash(grep -n "^commercial activities," data/tag_map_consolidated.csv | head -20)
+  ⎿  122:commercial activities,commercial activities,hierarchy,parent=Activities
+
+● Bash(grep -n "^cricket clubs," data/tag_map_consolidated.csv | head -20)
+  ⎿  163:cricket clubs,cricket clubs,hierarchy,parent=sports clubs 
+     1355:cricket clubs,cricket clubs,hierarchy,parent=sports clubs
+
+● Bash(grep -n "^ethnic groups," data/tag_map_consolidated.csv | head -20)
+  ⎿  218:ethnic groups,ethnic groups,hierarchy,parent=People 
+     1416:ethnic groups,ethnic groups,hierarchy,parent=people
+
+● I found the issue! There are duplicate entries with different parent capitalizations. Let me check the generation script to see if it's adding
+  entries that already exist in the CSV:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 100 lines
+
+● Found it! The generation script at lines 646+ is still adding CAPITALIZED entries that duplicate the lowercase entries we just fixed in the CSV. I
+   need to lowercase all these entries in the generation script. Let me read more to see all of them:
+
+● Read(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Read 200 lines
+
+● I see the issue. The generation script is adding many capitalized category entries that conflict with the lowercase entries in the CSV, creating
+  duplicates. I need to lowercase the category organizational nodes in the script while keeping proper nouns and primary facets capitalized. Let me
+  fix the key problematic entries:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                       
+       646            ['Activities', 'Activities', 'hierarchy', 'parent=(new top-level facet)'],
+       647    
+       648            # Economic activities
+       649 -          ['Economic activities', 'Economic activities', 'hierarchy', 'parent=Activities'],
+       649 +          ['economic activities', 'economic activities', 'hierarchy', 'parent=Activities'],
+       650            ['Mining', 'Mining', 'hierarchy', 'parent=Economic activities'],
+       651            ['Shale mining', 'Shale mining', 'hierarchy', 'parent=Mining'],
+       652            ['Shale mines', 'Shale mines', 'hierarchy', 'parent=Shale mining'],
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                                     
+       660            ['Horseborne transportation', 'Horseborne transportation', 'hierarchy', 'parent=Transport'],
+       661    
+       662            # Commercial activities
+       663 -          ['Commercial activities', 'Commercial activities', 'hierarchy', 'parent=Activities'],
+       663 +          ['commercial activities', 'commercial activities', 'hierarchy', 'parent=Activities'],
+       664            ['Liquor trade', 'Liquor trade', 'hierarchy', 'parent=Commercial activities'],
+       665            ['Liquor sales', 'Liquor sales', 'hierarchy', 'parent=Liquor trade'],
+       666            ['Wholesale liquor business', 'Wholesale liquor business', 'hierarchy', 'parent=Liquor trade'],
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                                      
+       666            ['Wholesale liquor business', 'Wholesale liquor business', 'hierarchy', 'parent=Liquor trade'],
+       667    
+       668            # Recreation activities
+       669 -          ['Recreation activities', 'Recreation activities', 'hierarchy', 'parent=Activities'],
+       669 +          ['recreation activities', 'recreation activities', 'hierarchy', 'parent=Activities'],
+       670            ['Recreation for miners', 'Recreation for miners', 'hierarchy', 'parent=Recreation activities'],
+       671            ['Sports', 'Sports', 'hierarchy', 'parent=Recreation activities'],
+       672            ['Horseback riding', 'Horseback riding', 'hierarchy', 'parent=Recreation activities'],
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                                 
+       679            ['Temperance', 'Temperance', 'hierarchy', 'parent=Social behaviours'],
+       680    
+       681            # Communication activities
+       682 -          ['Communication activities', 'Communication activities', 'hierarchy', 'parent=Activities'],
+       682 +          ['communication activities', 'communication activities', 'hierarchy', 'parent=Activities'],
+       683            ['Advertising', 'Advertising', 'hierarchy', 'parent=Communication activities'],
+       684            ['Fundraising', 'Fundraising', 'hierarchy', 'parent=Communication activities'],
+       685    
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                                                
+       689            ['Post', 'Postal service', 'synonym', 'Generic term for postal service (deprecated - use specific tags)'],
+       690    
+       691            # Military activities
+       692 -          ['Military activities', 'Military activities', 'hierarchy', 'parent=Activities'],
+       692 +          ['military activities', 'military activities', 'hierarchy', 'parent=Activities'],
+       693            ['Military', 'Military', 'hierarchy', 'parent=Military activities'],
+       694    
+       695            # Regulatory processes
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                                                               
+       703            ['Publican\'s License', 'Publican\'s licensing', 'synonym', 'Historical term for licence to operate public house serving 
+             alcohol'],
+       704    
+       705            # Charitable and welfare activities
+       706 -          ['Charitable and welfare activities', 'Charitable and welfare activities', 'hierarchy', 'parent=Activities'],
+       706 +          ['charitable and welfare activities', 'charitable and welfare activities', 'hierarchy', 'parent=Activities'],
+       707            ['Charity', 'Charity', 'hierarchy', 'parent=Charitable and welfare activities'],
+       708            ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=Charitable and welfare activities'],
+       709        ])
+
+● Good progress! Now I need to fix the parent references in those same lines to point to the lowercase versions:
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 3 additions and 3 removals                                
+       647    
+       648            # Economic activities
+       649            ['economic activities', 'economic activities', 'hierarchy', 'parent=Activities'],
+       650 -          ['Mining', 'Mining', 'hierarchy', 'parent=Economic activities'],
+       650 +          ['Mining', 'Mining', 'hierarchy', 'parent=economic activities'],
+       651            ['Shale mining', 'Shale mining', 'hierarchy', 'parent=Mining'],
+       652            ['Shale mines', 'Shale mines', 'hierarchy', 'parent=Shale mining'],
+       653            ['Coal mining', 'Coal mining', 'hierarchy', 'parent=Mining'],
+       654            ['Coal', 'Coal', 'hierarchy', 'parent=Coal mining'],
+       655            ['Coal mines', 'Coal mines', 'hierarchy', 'parent=Coal mining'],
+       656            ['Gold mining', 'Gold mining', 'hierarchy', 'parent=Mining'],
+       657 -          ['Tourism', 'Tourism', 'hierarchy', 'parent=Economic activities'],
+       658 -          ['Transport', 'Transport', 'hierarchy', 'parent=Economic activities'],
+       657 +          ['Tourism', 'Tourism', 'hierarchy', 'parent=economic activities'],
+       658 +          ['Transport', 'Transport', 'hierarchy', 'parent=economic activities'],
+       659            ['Trucking', 'Trucking', 'hierarchy', 'parent=Transport'],
+       660            ['Horseborne transportation', 'Horseborne transportation', 'hierarchy', 'parent=Transport'],
+       661    
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                                     
+       661    
+       662            # Commercial activities
+       663            ['commercial activities', 'commercial activities', 'hierarchy', 'parent=Activities'],
+       664 -          ['Liquor trade', 'Liquor trade', 'hierarchy', 'parent=Commercial activities'],
+       664 +          ['Liquor trade', 'Liquor trade', 'hierarchy', 'parent=commercial activities'],
+       665            ['Liquor sales', 'Liquor sales', 'hierarchy', 'parent=Liquor trade'],
+       666            ['Wholesale liquor business', 'Wholesale liquor business', 'hierarchy', 'parent=Liquor trade'],
+       667    
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 3 additions and 3 removals                                    
+       667    
+       668            # Recreation activities
+       669            ['recreation activities', 'recreation activities', 'hierarchy', 'parent=Activities'],
+       670 -          ['Recreation for miners', 'Recreation for miners', 'hierarchy', 'parent=Recreation activities'],
+       671 -          ['Sports', 'Sports', 'hierarchy', 'parent=Recreation activities'],
+       672 -          ['Horseback riding', 'Horseback riding', 'hierarchy', 'parent=Recreation activities'],
+       670 +          ['Recreation for miners', 'Recreation for miners', 'hierarchy', 'parent=recreation activities'],
+       671 +          ['Sports', 'Sports', 'hierarchy', 'parent=recreation activities'],
+       672 +          ['Horseback riding', 'Horseback riding', 'hierarchy', 'parent=recreation activities'],
+       673    
+       674            # Social behaviours
+       675            ['Social behaviours', 'Social behaviours', 'hierarchy', 'parent=Activities'],
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 3 additions and 3 removals                                              
+       680    
+       681            # Communication activities
+       682            ['communication activities', 'communication activities', 'hierarchy', 'parent=Activities'],
+       683 -          ['Advertising', 'Advertising', 'hierarchy', 'parent=Communication activities'],
+       684 -          ['Fundraising', 'Fundraising', 'hierarchy', 'parent=Communication activities'],
+       683 +          ['Advertising', 'Advertising', 'hierarchy', 'parent=communication activities'],
+       684 +          ['Fundraising', 'Fundraising', 'hierarchy', 'parent=communication activities'],
+       685    
+       686            # Postal services - Pattern A: Postal services (plural) > Postal service (singular)
+       687 -          ['Postal services', 'Postal services', 'hierarchy', 'parent=Communication activities'],
+       687 +          ['Postal services', 'Postal services', 'hierarchy', 'parent=communication activities'],
+       688            ['Postal service', 'Postal service', 'hierarchy', 'parent=Postal services'],
+       689            ['Post', 'Postal service', 'synonym', 'Generic term for postal service (deprecated - use specific tags)'],
+       690    
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 1 addition and 1 removal                         
+       690    
+       691            # Military activities
+       692            ['military activities', 'military activities', 'hierarchy', 'parent=Activities'],
+       693 -          ['Military', 'Military', 'hierarchy', 'parent=Military activities'],
+       693 +          ['Military', 'Military', 'hierarchy', 'parent=military activities'],
+       694    
+       695            # Regulatory processes
+       696            ['Regulatory processes', 'Regulatory processes', 'hierarchy', 'parent=Activities'],
+
+● Update(scripts/22_generate_poly_hierarchy.py)
+  ⎿  Updated scripts/22_generate_poly_hierarchy.py with 2 additions and 2 removals                                                 
+       704    
+       705            # Charitable and welfare activities
+       706            ['charitable and welfare activities', 'charitable and welfare activities', 'hierarchy', 'parent=Activities'],
+       707 -          ['Charity', 'Charity', 'hierarchy', 'parent=Charitable and welfare activities'],
+       708 -          ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=Charitable and welfare activities'],
+       707 +          ['Charity', 'Charity', 'hierarchy', 'parent=charitable and welfare activities'],
+       708 +          ['Unemployment relief', 'Unemployment relief', 'hierarchy', 'parent=charitable and welfare activities'],
+       709        ])
+       710    
+       711        # ========================================================================
+
+● Good! Now let me regenerate the visualizations to see if we've reduced the number of spurious facets:
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | head -50)
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +47 lines (ctrl+o to expand)
+
+● The issue persists. Let me investigate whether we have duplicate entries being added by both the CSV and the generation script. Let me check if
+  "commercial activities" exists in BOTH places:
+
+● Bash(grep -c "^commercial activities,commercial activities," data/tag_map_consolidated.csv)
+  ⎿  1
+
+● Bash(grep -n "^[cC]ommercial activities,.*hierarchy" data/tag_map_consolidated.csv)
+  ⎿  122:commercial activities,commercial activities,hierarchy,parent=Activities
+
+● Bash(grep -n "^commercial businesses,.*hierarchy" data/tag_map_consolidated.csv | head -10)
+  ⎿  124:commercial businesses,commercial businesses,hierarchy,parent=organisations         
+     125:commercial businesses,commercial businesses,hierarchy,parent=Businesses - THEMATIC
+     1320:commercial businesses,commercial businesses,hierarchy,parent=businesses - THEMATIC
+     1321:commercial businesses,commercial businesses,hierarchy,parent=organisations
+
+● I see duplicates in the CSV! Let me check one of the spurious facet tree files to understand what's actually being generated:
+
+● Read(visualizations/hierarchy_trees/primary_commercial_activities.txt)
+  ⎿  Read 14 lines
+
+● Let me check if there's a case mismatch issue. The problem might be that "commercial activities" is stored with different capitalizations as a
+  parent key vs as a child value:
+
+● Bash(python3 << 'EOF'
+      import csv…)
+  ⎿  === References to 'commercial activities' ===                          
+     Tag: commercial activities, Action: hierarchy, Notes: parent=Activities
+     Referenced in notes of Liquor trade: parent=Commercial activities
+
+● FOUND IT! The CSV has "Liquor trade" with parent=Commercial activities (capital C), but the entry itself is "commercial activities" (lowercase).
+  This case mismatch creates two separate nodes! I need to fix all the capitalized parent references that should point to lowercase category nodes:
+
+● Bash(grep -n "parent=[A-Z][a-z]* activities" data/tag_map_consolidated.csv | head -20)
+  ⎿  19:Advertising,Advertising,hierarchy,parent=Communication activities      
+     20:Advertising,Advertising,hierarchy,parent=Cultural activities - THEMATIC
+     241:Fundraising,Fundraising,hierarchy,parent=Communication activities
+     … +10 lines (ctrl+o to expand)
+
+● Perfect! Found the case mismatches. Let me fix all these capitalized parent references to point to the lowercase category nodes:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● I need to read the file first. Let me do that and then apply the fixes:
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 3 additions and 3 removals                                                                       
+       16    Activities,Activities,hierarchy,parent=(Getty AAT primary facet)
+       17    Activities,Activities,hierarchy,parent=(new top-level facet)
+       18    Adolescents,Adolescents,hierarchy,parent=demographic groups
+       19 -  Advertising,Advertising,hierarchy,parent=Communication activities
+       19 +  Advertising,Advertising,hierarchy,parent=communication activities
+       20    Advertising,Advertising,hierarchy,parent=Cultural activities - THEMATIC
+       21    Advertising,Advertising,hierarchy,parent=Communications & Postal Services - THEMATIC
+       22    Agents,Agents,hierarchy,parent=(Getty AAT primary facet)
+     ...
+       238    Fryer's Family Hotel,Fryer's Family Hotel,merge,Owner-specific name for Katoomba Family Hotel during Fryer family ownership (1892) 
+             - use Katoomba Family Hotel as preferred term
+       239    Fryer's Family Hotel,Katoomba Family Hotel,synonym,Historical name used during Fryer family ownership period (pre-March 1892)
+       240    Fryer's Family Hotel,Fryer's Family Hotel,hierarchy,parent=hotels
+       241 -  Fundraising,Fundraising,hierarchy,parent=Communication activities
+       241 +  Fundraising,Fundraising,hierarchy,parent=communication activities
+       242    Gambling,Gambling,hierarchy,parent=Social behaviours
+       243    Gambling,Gambling,hierarchy,parent=Social order offences - THEMATIC
+       244    Gas,Gas,hierarchy,parent=Utilities
+     ...
+       969    Postal employees,Postal employees,hierarchy,parent=Public officials
+       970    postal facilities,postal facilities,hierarchy,parent=Civic buildings
+       971    Postal service,Postal service,hierarchy,parent=Postal services
+       972 -  Postal services,Postal services,hierarchy,parent=Communication activities
+       972 +  Postal services,Postal services,hierarchy,parent=communication activities
+       973    Postal services,Postal services,hierarchy,parent=Communications & Postal Services - THEMATIC
+       974    Postboy,Postboy,hierarchy,parent=Mailmen
+       975    Postman,Mailman,synonym,Alternative term for mailman
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal            
+       447    Liquor licensing,Liquor licensing,hierarchy,parent=Licensing
+       448    Liquor merchants,Liquor merchants,hierarchy,parent=Hospitality workers
+       449    Liquor sales,Liquor sales,hierarchy,parent=Liquor trade
+       450 -  Liquor trade,Liquor trade,hierarchy,parent=Commercial activities
+       450 +  Liquor trade,Liquor trade,hierarchy,parent=commercial activities
+       451    Lithgow,Lithgow,hierarchy,parent=towns
+       452    Lithgow Council,Lithgow Council,hierarchy,parent=councils
+       453    Lithgow Council,Lithgow Council,hierarchy,parent=Councils
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 1 addition and 1 removal                         
+       496    Middle Camp (settlement),Middle Camp (settlement),hierarchy,parent=Greater Megalong
+       497    Middle camp,Middle camp,hierarchy,parent=Megalong
+       498    Middle camp,Middle camp,hierarchy,parent=Mining settlements - THEMATIC
+       499 -  Military,Military,hierarchy,parent=Military activities
+       499 +  Military,Military,hierarchy,parent=military activities
+       500    Military,Military,hierarchy,parent=Military organizations - THEMATIC
+       501    Military & War,Military & War,hierarchy,parent=(thematic grouping)
+       502    military activities,military activities,hierarchy,parent=Activities
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  Updated data/tag_map_consolidated.csv with 3 additions and 3 removals                                                               
+       515    Miners' families,Miners' families,hierarchy,parent=Vulnerable populations - THEMATIC
+       516    Miners' families,Miners' families,hierarchy,parent=Families - THEMATIC
+       517    Mines & mining districts,Mines & mining districts,hierarchy,parent=Mining & Industry - THEMATIC
+       518 -  Mining,Mining,hierarchy,parent=Economic activities
+       518 +  Mining,Mining,hierarchy,parent=economic activities
+       519    Mining,Mining,hierarchy,parent=Mining activities - THEMATIC
+       520    Mining,Mining,hierarchy,parent=Industries - THEMATIC
+       521    Mining & Industry,Mining & Industry,hierarchy,parent=(thematic grouping)
+     ...
+       1134    Temperance organizations & movements,Temperance organizations & movements,hierarchy,parent=Alcohol & Temperance - THEMATIC
+       1135    tennis clubs,tennis clubs,hierarchy,parent=sports clubs
+       1136    Top Camp (settlement),Top Camp (settlement),hierarchy,parent=Greater Megalong
+       1137 -  Tourism,Tourism,hierarchy,parent=Economic activities
+       1137 +  Tourism,Tourism,hierarchy,parent=economic activities
+       1138    Tourism,Tourism,hierarchy,parent=Industries - THEMATIC
+       1139    Tourism,Tourism,hierarchy,parent=Tourism activities - THEMATIC
+       1140    Tourism & Accommodation,Tourism & Accommodation,hierarchy,parent=(thematic grouping)
+     ...
+       1145    Towns,Towns,hierarchy,parent=Places (existing facet)
+       1146    Tramway,Tramway,hierarchy,parent=Mining infrastructure
+       1147    Tramway,Tramway,hierarchy,parent=Mining transport - THEMATIC
+       1148 -  Transport,Transport,hierarchy,parent=Economic activities
+       1148 +  Transport,Transport,hierarchy,parent=economic activities
+       1149    Transport & Infrastructure,Transport & Infrastructure,hierarchy,parent=(thematic grouping)
+       1150    transport & logistics businesses,transport & logistics businesses,hierarchy,parent=commercial businesses
+       1151    Transport infrastructure,Transport infrastructure,hierarchy,parent=Infrastructure
+
+● Good! I also noticed "parent=Ethnic groups" (capital E) in the CSV. Let me find and fix other capitalized parent references:
+
+● Bash(grep -n "parent=[A-Z][a-z]* [a-z]* [a-z]*" data/tag_map_consolidated.csv | grep -E "parent=(Cricket clubs|Football clubs|Tennis clubs|Rifle
+      clubs|Ethnic groups|…)
+  ⎿  9:Aborigines' Protection Board,Aborigines' Protection Board,hierarchy,parent=Other government bodies
+     20:Advertising,Advertising,hierarchy,parent=Cultural activities - THEMATIC
+     278:Halls,Halls,hierarchy,parent=Cultural venues - THEMATIC
+     … +3 lines (ctrl+o to expand)
+
+● Bash(grep -n "parent=Ethnic groups\|parent=Demographic groups\|parent=Cricket clubs\|parent=Football clubs\|parent=Tennis clubs\|parent=Rifle clubs"
+      data/tag_map_con…)
+  ⎿  5:Aboriginal people,Aboriginal people,hierarchy,parent=Ethnic groups
+     98:Chinese people,Chinese people,hierarchy,parent=Ethnic groups
+     333:Irish culture,Irish culture,hierarchy,parent=Ethnic groups
+     … +6 lines (ctrl+o to expand)
+
+● Perfect! Now let me fix all these capitalized parent references:
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Update(data/tag_map_consolidated.csv)
+  ⎿  File must be read first
+
+● Let me use a Python script to fix all the capitalized parent references at once:
+
+● Bash(python3 << 'EOF'
+      # Fix all capitalized parent references in the CSV…)
+  ⎿  Replacing 'parent=Ethnic groups' → 'parent=ethnic groups' (3 occurrences)  
+     Replacing 'parent=Cricket clubs' → 'parent=cricket clubs' (2 occurrences)
+     Replacing 'parent=Football clubs' → 'parent=football clubs' (1 occurrences)
+     … +6 lines (ctrl+o to expand)
+
+● Excellent! Now let me regenerate the visualizations to see if we've eliminated the spurious facets:
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | grep -A 35 "Identified.*top-level primary facets")
+  ⎿  Identified 19 top-level primary facets: 
+       - Accommodation and hospitality venues
+       - Activities
+     … +33 lines (ctrl+o to expand)
+
+● Good progress! We're down from 30 to 19 primary facets. The remaining 9 spurious facets need primary parent relationships. Let me check their
+  current parent definitions:
+
+● Bash(grep "^accommodation and hospitality venues,\|^commercial businesses,\|^cultural & recreational organizations,\|^independent lodges,\|^labour
+      organizations,\|^p…)
+  ⎿  accommodation and hospitality venues,accommodation and hospitality venues,hierarchy,parent=Built Environment
+     commercial businesses,commercial businesses,hierarchy,parent=organisations
+     commercial businesses,commercial businesses,hierarchy,parent=Businesses - THEMATIC
+     … +14 lines (ctrl+o to expand)
+
+● I see the issue - these have parents defined, but their PARENT nodes might also be orphaned or have case mismatches. Let me check for "Civic
+  buildings" (capital C):
+
+● Bash(grep -i "^civic buildings," data/tag_map_consolidated.csv | grep hierarchy)
+  ⎿  Civic buildings,Civic buildings,hierarchy,parent=Built Environment                
+     Civic buildings,Civic buildings,hierarchy,parent=Community institutions - THEMATIC
+     civic buildings,civic buildings,hierarchy,parent=Built Environment
+     civic buildings,civic buildings,hierarchy,parent=community institutions - THEMATIC
+
+● Bash(grep -i "parent=Civic buildings\|parent=civic buildings" data/tag_map_consolidated.csv | head -10)
+  ⎿  Council buildings,Council buildings,hierarchy,parent=Civic buildings
+     Court buildings,Court buildings,hierarchy,parent=Civic buildings
+     police facilities,police facilities,hierarchy,parent=Civic buildings
+     … +5 lines (ctrl+o to expand)
+
+● I see we have duplicate entries with case mismatches creating orphaned nodes. This is becoming complex to fix piecemeal. Let me give you a summary
+   of the current state and ask how you'd like to proceed:
+
+  Current Status
+
+  Progress Made:
+  - ✅ Fixed 34 capitalized category terms → lowercase
+  - ✅ Fixed 5 malformed parent notes
+  - ✅ Fixed numerous capitalized parent references
+  - ✅ Reduced primary facets from 30 to 19
+
+  Remaining Issue:
+  We have systematic duplicate entries where:
+  - Capitalized versions exist (e.g., "Civic buildings")
+  - Lowercase versions exist (e.g., "civic buildings")
+  - Children point to BOTH versions, creating case mismatches
+
+  Remaining 9 spurious facets:
+  - Accommodation and hospitality venues
+  - Commercial businesses
+  - Cultural & recreational organizations
+  - Independent lodges
+  - Labour organizations
+  - Performance groups
+  - Postal facilities
+  - Progress committees
+  - Transport & logistics businesses
+
+  Recommended Next Steps
+
+  I can either:
+
+  1. Continue fixing piecemeal - Find and fix each capitalization mismatch one by one (slow but thorough)
+  2. Run a deduplication script - Create a script to systematically:
+    - Find all capitalized category entries that have lowercase duplicates
+    - Remove capitalized versions
+    - Update all parent references to lowercase
+    - This would be faster and more comprehensive
+
+  Which approach would you prefer?
+
+> which do you recommend as most reliable to acheive desired state of consistent capitalisation and no spurious primary facets? 
+
+● I strongly recommend the deduplication script approach for these reasons:
+
+  Why Deduplication Script is More Reliable
+
+  1. Comprehensiveness
+  - Manual approach: We only fix issues we've identified
+  - Script approach: Systematically finds ALL duplicate entries regardless of capitalization
+  - We likely haven't found all the duplicates yet
+
+  2. Consistency
+  - Manual: Each fix might be slightly different
+  - Script: Applies same logic uniformly across entire dataset
+
+  3. Speed & Efficiency
+  - Manual: Could take dozens more edits, high chance of missing cases
+  - Script: Single execution, catches everything
+
+  4. Auditability
+  - Script can show us exactly what it's changing before we commit
+  - We can review the changes and verify they're correct
+  - Reproducible if we need to run it again
+
+  5. Root Cause Fix
+  - Manual fixes are reactive (fixing symptoms as we find them)
+  - Script is systematic (fixing the underlying pattern)
+
+  Proposed Script Strategy
+
+  The script would:
+  1. Identify duplicates: Find all entries where both "Term" and "term" exist
+  2. Determine canonical form: Keep lowercase version (Getty AAT standard for categories)
+  3. Remove capitalized duplicates: Delete entries for "Term,Term,hierarchy,..."
+  4. Update parent references: Change all parent=Term → parent=term
+  5. Report changes: Show what was removed and updated for your review
+
+  This should eliminate all 9 spurious facets in one pass and prevent future capitalization issues.
+
+  Shall I proceed with creating and running this deduplication script?
+
+> ok, great, I'll have you run it, but first can you prepare a /compact message that will allow us to resume this work smoothly? we're low on 
+context 
+
+● Bash(cat << 'EOF'
+      ● Session: Taxonomy Capitalization & Hierarchy Cleanup (Phase 2)…)
+  ⎿  ● Session: Taxonomy Capitalization & Hierarchy Cleanup (Phase 2)
+
+     INITIAL PROBLEM
+     … +98 lines (ctrl+o to expand)
+
+● Perfect! I've prepared the compact summary above. This captures:
+
+  - Initial problem: 24 facets instead of 10, capitalization violations
+  - Root cause: Case-sensitive duplicates creating orphaned nodes
+  - All work completed: 4 phases of fixes (100+ changes)
+  - Current state: Reduced to 19 facets (9 still spurious)
+  - Remaining issue: Systematic duplicates with case mismatches
+  - Next step: Deduplication script (agreed approach)
+  - Goal: 10 primary facets, Getty AAT compliance
+
+  This summary should allow smooth resumption of work in a new session.
+
+  Ready to proceed? I can now create and run the deduplication script to eliminate the remaining 9 spurious facets by:
+  1. Finding all capitalized duplicates
+  2. Removing capitalized versions
+  3. Updating parent references
+  4. Reporting changes for your review
+
+  Shall I create and execute the deduplication script?
+
+
+
