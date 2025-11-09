@@ -15,7 +15,8 @@ Places
 │       └── South Clifton Tunnel Mine (site)
 ├── natural features
 │   ├── caves & geological features
-│   │   └── Jenolan Caves
+│   │   ├── Jenolan Caves
+│   │   └── Yarrangobilly Caves
 │   ├── gullies
 │   │   ├── Break Neck Gully
 │   │   └── Nellie's Glen (gully)
@@ -86,6 +87,6 @@ Places
 
 
 STATISTICS:
-  Total nodes in facet: 82
+  Total nodes in facet: 83
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

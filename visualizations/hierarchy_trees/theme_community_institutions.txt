@@ -51,6 +51,7 @@ community institutions
 │   │   │   ├── Katoomba band
 │   │   │   └── band
 │   │   ├── choirs
+│   │   │   ├── Congregational Church Choir
 │   │   │   └── choir
 │   │   └── minstrel troupes
 │   │       ├── Katoomba Amateur Minstrels
@@ -94,6 +95,7 @@ community institutions
     └── lodges
         ├── Freemasons
         ├── Independent Order of Odd Fellows
+        ├── Loyal Orange Order
         ├── United Ancient Order of Druids
         │   └── Druid's Lodge (local lodge)
         ├── independent lodges
@@ -109,6 +111,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 101
+  Total nodes in theme: 103
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

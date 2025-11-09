@@ -235,14 +235,30 @@ people
     │       └── horse breeder
     │           └── Mr Hardie Clydesdale
     ├── clergy
+    │   ├── Archbishop
     │   ├── Cardinal Moran
+    │   ├── Coadjutor Archbishop
+    │   ├── Mr van Someren
     │   ├── Reverence M C Brown
     │   ├── Reverend A Sutherland
     │   ├── Reverend Canon Kemmis
+    │   ├── Reverend E A Ferguson
+    │   ├── Reverend E Lampard
+    │   ├── Reverend F Bevan
     │   ├── Reverend F V Pratt
+    │   ├── Reverend Father Bridge
+    │   ├── Reverend Father Hyland
+    │   ├── Reverend J F Russel
     │   ├── Reverend J H Maclean
+    │   ├── Reverend J Hargreaves
     │   ├── Reverend M S Fletcher
-    │   └── Reverend R M Laverty
+    │   ├── Reverend R M Laverty
+    │   ├── Reverend R W Orton
+    │   ├── Reverend Robertson
+    │   ├── Reverend T K Abbot
+    │   ├── Reverend W Lampard
+    │   ├── Reverend W R Orton
+    │   └── Reverend W Tollis
     ├── hospitality workers
     │   ├── hospitality worker
     │   ├── hotelliers
@@ -355,6 +371,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 347
+  Total nodes in theme: 363
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

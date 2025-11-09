@@ -127,15 +127,64 @@ Built Environment
 │           └── rifle range
 └── religious buildings
     └── churches
-        ├── Katoomba Congregational Church (building)
-        ├── Methodist Church (building)
-        ├── Roman Catholic Church (building)
-        ├── St Hilda's Church (building)
-        ├── Wesleyan Church (building)
-        └── church (building)
+        ├── Church of England churches
+        │   ├── Church of England Katoomba (building)
+        │   ├── Church of England Katoomba (organization)
+        │   ├── Church of England church (building)
+        │   ├── Church of England church (organization)
+        │   ├── St Aidan's Church Blackheath (organization)
+        │   ├── St Andrew's Cathedral Church of England Sydney (building)
+        │   ├── St Andrew's Cathedral Church of England Sydney (organization)
+        │   ├── St Clement's Church of England Yass (organization)
+        │   ├── St David's Church Surry Hills (building)
+        │   ├── St Hilda's Church of England (building)
+        │   ├── St Hilda's Church of England (organization)
+        │   ├── St John's Church Parramatta (building)
+        │   ├── St Mark's Church of England (building)
+        │   ├── St Mark's Church of England Darling Point (organization)
+        │   ├── St Mary's Church of England Greta (building)
+        │   └── St Paul's Church of England (building)
+        ├── Congregational churches
+        │   ├── Congregational Church (building)
+        │   ├── Congregational Church (organization)
+        │   ├── Congregational Church Katoomba (building)
+        │   ├── Congregational Church Katoomba South (building)
+        │   ├── Congregational Church Katoomba South (organization)
+        │   ├── Katoomba Congregational Church (building)
+        │   └── Katoomba Congregational Church (organization)
+        ├── Methodist churches
+        │   ├── Methodist Church (building)
+        │   ├── Methodist Church (organization)
+        │   └── Methodist Church Katoomba (organization)
+        ├── Presbyterian churches
+        │   ├── Presbyterian Church Leura (building)
+        │   ├── Presbyterian Church Leura (organization)
+        │   ├── Presbyterian Church Wentworth Falls (building)
+        │   ├── Presbyterian Church Wentworth Falls (organization)
+        │   ├── Presbyterian church (building)
+        │   └── Presbyterian church (organization)
+        ├── Roman Catholic churches
+        │   ├── Roman Catholic Church (building)
+        │   ├── Roman Catholic Church (organization)
+        │   ├── Roman Catholic Church Blackheath (organization)
+        │   ├── Roman Catholic Church Katoomba (building)
+        │   ├── Roman Catholic Church Lawson (organization)
+        │   ├── Roman Catholic Church Megalong (building)
+        │   ├── Roman Catholic Church Megalong (organization)
+        │   ├── Roman Catholic Church Mount Victoria (organization)
+        │   ├── St Canice's Catholic Church Katoomba (building)
+        │   └── St Canice's Catholic Church Katoomba (organization)
+        ├── Wesleyan churches
+        │   ├── Wesleyan Chapel (building)
+        │   ├── Wesleyan Church (building)
+        │   ├── Wesleyan Church (organization)
+        │   ├── Wesleyan Church Katoomba (building)
+        │   └── Wesleyan Church Katoomba (organization)
+        ├── church (building)
+        └── church (organization)
 
 
 STATISTICS:
-  Total nodes in facet: 132
+  Total nodes in facet: 181
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -99,6 +99,7 @@ Agents
 │   │   │   │   ├── Katoomba band
 │   │   │   │   └── band
 │   │   │   ├── choirs
+│   │   │   │   ├── Congregational Church Choir
 │   │   │   │   └── choir
 │   │   │   └── minstrel troupes
 │   │   │       ├── Katoomba Amateur Minstrels
@@ -138,10 +139,15 @@ Agents
 │   │           ├── Katoomba Tennis Club
 │   │           ├── lawn tennis club
 │   │           └── tennis club
+│   ├── educational institutions
+│   │   └── universities
+│   │       ├── University of Sydney (institution)
+│   │       └── university (institution)
 │   ├── fraternal orders & lodges
 │   │   └── lodges
 │   │       ├── Freemasons
 │   │       ├── Independent Order of Odd Fellows
+│   │       ├── Loyal Orange Order
 │   │       ├── United Ancient Order of Druids
 │   │       │   └── Druid's Lodge (local lodge)
 │   │       ├── independent lodges
@@ -178,16 +184,72 @@ Agents
 │   │       └── Mountain Rifle Reserves
 │   └── religious organisations
 │       ├── churches
-│       │   ├── Katoomba Congregational Church (building)
-│       │   ├── Methodist Church (building)
-│       │   ├── Roman Catholic Church (building)
-│       │   ├── St Hilda's Church (building)
-│       │   ├── Wesleyan Church (building)
-│       │   └── church (building)
+│       │   ├── Church of England churches
+│       │   │   ├── Church of England Katoomba (building)
+│       │   │   ├── Church of England Katoomba (organization)
+│       │   │   ├── Church of England church (building)
+│       │   │   ├── Church of England church (organization)
+│       │   │   ├── St Aidan's Church Blackheath (organization)
+│       │   │   ├── St Andrew's Cathedral Church of England Sydney (building)
+│       │   │   ├── St Andrew's Cathedral Church of England Sydney (organization)
+│       │   │   ├── St Clement's Church of England Yass (organization)
+│       │   │   ├── St David's Church Surry Hills (building)
+│       │   │   ├── St Hilda's Church of England (building)
+│       │   │   ├── St Hilda's Church of England (organization)
+│       │   │   ├── St John's Church Parramatta (building)
+│       │   │   ├── St Mark's Church of England (building)
+│       │   │   ├── St Mark's Church of England Darling Point (organization)
+│       │   │   ├── St Mary's Church of England Greta (building)
+│       │   │   └── St Paul's Church of England (building)
+│       │   ├── Congregational churches
+│       │   │   ├── Congregational Church (building)
+│       │   │   ├── Congregational Church (organization)
+│       │   │   ├── Congregational Church Katoomba (building)
+│       │   │   ├── Congregational Church Katoomba South (building)
+│       │   │   ├── Congregational Church Katoomba South (organization)
+│       │   │   ├── Katoomba Congregational Church (building)
+│       │   │   └── Katoomba Congregational Church (organization)
+│       │   ├── Methodist churches
+│       │   │   ├── Methodist Church (building)
+│       │   │   ├── Methodist Church (organization)
+│       │   │   └── Methodist Church Katoomba (organization)
+│       │   ├── Presbyterian churches
+│       │   │   ├── Presbyterian Church Leura (building)
+│       │   │   ├── Presbyterian Church Leura (organization)
+│       │   │   ├── Presbyterian Church Wentworth Falls (building)
+│       │   │   ├── Presbyterian Church Wentworth Falls (organization)
+│       │   │   ├── Presbyterian church (building)
+│       │   │   └── Presbyterian church (organization)
+│       │   ├── Roman Catholic churches
+│       │   │   ├── Roman Catholic Church (building)
+│       │   │   ├── Roman Catholic Church (organization)
+│       │   │   ├── Roman Catholic Church Blackheath (organization)
+│       │   │   ├── Roman Catholic Church Katoomba (building)
+│       │   │   ├── Roman Catholic Church Lawson (organization)
+│       │   │   ├── Roman Catholic Church Megalong (building)
+│       │   │   ├── Roman Catholic Church Megalong (organization)
+│       │   │   ├── Roman Catholic Church Mount Victoria (organization)
+│       │   │   ├── St Canice's Catholic Church Katoomba (building)
+│       │   │   └── St Canice's Catholic Church Katoomba (organization)
+│       │   ├── Wesleyan churches
+│       │   │   ├── Wesleyan Chapel (building)
+│       │   │   ├── Wesleyan Church (building)
+│       │   │   ├── Wesleyan Church (organization)
+│       │   │   ├── Wesleyan Church Katoomba (building)
+│       │   │   └── Wesleyan Church Katoomba (organization)
+│       │   ├── church (building)
+│       │   └── church (organization)
+│       ├── monasteries and friaries
+│       │   ├── Waverley Friary (organization)
+│       │   └── monastery or friary
 │       ├── religious education
-│       │   └── sunday school
+│       │   └── sunday schools
+│       │       ├── Katoomba Congregational Church (Sunday school)
+│       │       ├── St Aidan's Church Blackheath Sunday School
+│       │       └── sunday school
 │       └── religious social movements
 │           ├── Good Templars
+│           ├── Methodist Band of Hope
 │           ├── Salvation Army
 │           └── religious social movement
 └── people
@@ -342,14 +404,30 @@ Agents
         │       └── horse breeder
         │           └── Mr Hardie Clydesdale
         ├── clergy
+        │   ├── Archbishop
         │   ├── Cardinal Moran
+        │   ├── Coadjutor Archbishop
+        │   ├── Mr van Someren
         │   ├── Reverence M C Brown
         │   ├── Reverend A Sutherland
         │   ├── Reverend Canon Kemmis
+        │   ├── Reverend E A Ferguson
+        │   ├── Reverend E Lampard
+        │   ├── Reverend F Bevan
         │   ├── Reverend F V Pratt
+        │   ├── Reverend Father Bridge
+        │   ├── Reverend Father Hyland
+        │   ├── Reverend J F Russel
         │   ├── Reverend J H Maclean
+        │   ├── Reverend J Hargreaves
         │   ├── Reverend M S Fletcher
-        │   └── Reverend R M Laverty
+        │   ├── Reverend R M Laverty
+        │   ├── Reverend R W Orton
+        │   ├── Reverend Robertson
+        │   ├── Reverend T K Abbot
+        │   ├── Reverend W Lampard
+        │   ├── Reverend W R Orton
+        │   └── Reverend W Tollis
         ├── hospitality workers
         │   ├── hospitality worker
         │   ├── hotelliers
@@ -458,6 +536,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 454
+  Total nodes in facet: 532
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
