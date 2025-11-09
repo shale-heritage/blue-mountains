@@ -1,0 +1,1482 @@
+
+ ▐▛███▜▌   Claude Code v2.0.36
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+══════════════════════════════════════════════════════ Conversation compacted · ctrl+o for history ═════════════════════════════════════════════════════
+  ⎿  Read visualizations/hierarchy_trees/primary_built_environment.txt (142 lines)
+  ⎿  Referenced file visualizations/hierarchy_trees/primary_agents.txt
+  ⎿  Read visualizations/hierarchy_trees/primary_places.txt (92 lines)
+  ⎿  Read ../../../../tmp/nellies_glen_correct_tags.txt (39 lines)
+  ⎿  Read reports/AMBIGUOUS_TAGS_IMPLEMENTATION_COMPLETE.md (282 lines)
+
+● Looking at the summary, all the taxonomy cleanup tasks have been completed successfully. The files show uncommitted changes that need to be
+  committed. Let me verify the current state and create a commit for this work.
+
+● Bash(git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +36 lines (ctrl+o to expand)
+
+● Bash(git diff --stat)
+  ⎿   data/tag_application_mapping.csv                   |  426 +++---              
+      data/tag_map_consolidated.csv                      | 1441 ++++++++++----------
+      visualizations/hierarchy_trees/00_OVERVIEW.txt     |   10 +-
+     … +19 lines (ctrl+o to expand)
+
+● Bash(git diff data/tag_map_consolidated.csv | head -100)
+  ⎿  diff --git a/data/tag_map_consolidated.csv b/data/tag_map_consolidated.csv
+     index ce080a8..89cff5b 100644
+     --- a/data/tag_map_consolidated.csv
+     … +98 lines (ctrl+o to expand)
+
+● Bash(git diff data/tag_map_consolidated.csv | grep -E "(mine \(facility\)|church \(building\)|Mine \(facility\)|Church \(building\))" | head -20)
+  ⎿  +church (building),church (building),hierarchy,parent=churches (singular generic term)        
+     +coal mine (facility),coal mine (facility),hierarchy,parent=coal mines (singular generic term)
+     +Colliery,coal mine (facility),synonym,UK/Australian term for coal mine
+     … +15 lines (ctrl+o to expand)
+
+● Bash(git diff data/tag_map_consolidated.csv | grep -E "^[-+].*Ruined Castle|^[-+].*Hartley Vale.*[Mm]ine|^[-+].*railway
+      commission|^[-+].*Congregational Church" | he…)
+  ⎿  -Congregational Church,Congregational Church,hierarchy,parent=churches              
+     -Hartley Vale Shale Mine,Hartley Vale Shale Mine,hierarchy,parent=shale mines
+     -Hartley Vale mines,Hartley Vale mines,hierarchy,parent=Hartley Vale mining district
+     … +24 lines (ctrl+o to expand)
+
+● Bash(git diff data/tag_application_mapping.csv | grep -E "^\+|^-" | grep -v "^+++" | grep -v "^---" | wc -l)
+  ⎿  426
+
+● Now let me commit these changes with a comprehensive message documenting all the taxonomy cleanup work:
+
+● Bash(git add data/tag_map_consolidated.csv data/tag_application_mapping.csv visualizations/hierarchy_trees/)
+  ⎿  (No content)
+
+● Bash(git commit -m "refactor(taxonomy): consolidate mining districts and add parenthetical qualifiers…)
+  ⎿  [main 4cacf99] refactor(taxonomy): consolidate mining districts and add parenthetical qualifiers
+      21 files changed, 1059 insertions(+), 1018 deletions(-)
+
+● Bash(git push)
+  ⎿  To github.com:shale-heritage/blue-mountains.git
+        bda9f32..4cacf99  main -> main
+
+● Bash(git status)
+  ⎿  On branch main                               
+     Your branch is up to date with 'origin/main'.
+     … +11 lines (ctrl+o to expand)
+
+● Perfect! All taxonomy consolidation work has been committed and pushed to the repository.
+
+  Summary of Changes Committed
+
+  Commit: 4cacf99 - "refactor(taxonomy): consolidate mining districts and add parenthetical qualifiers"
+
+  Key Accomplishments
+
+  1. Mining Districts Consolidated (22 items updated)
+  - Ruined Castle, Hartley Vale, Nellie's Glen, South Clifton all now follow consistent pattern
+  - Eliminated duplicate hierarchy paths
+  - Established strict leaf-node tagging (settlement, site, road, gully)
+
+  2. Parenthetical Qualifiers Added (144 items updated)
+  - Mine (facility): 110 items - distinguishes physical mine structures from geographic locations
+  - Church (building): 34 items - clarifies physical buildings vs religious organisations
+
+  3. Critical Distinction Restored
+  - Fixed conflation error between:
+    - Nellie's Glen Shale Mine (facility) - Built Environment > industrial buildings
+    - Nellie's Glen Shale Mine (site) - Places > mining districts
+  - Pattern now protected with explicit qualifiers throughout taxonomy
+
+  4. Hierarchy Fixes
+  - Railway commission → child of railway authorities (not government bodies)
+  - Jenolan Caves Road → moved from natural features to Built Environment > roads
+  - Removed intermediate "Congregational Church" node
+
+  Files Modified
+
+  - data/tag_map_consolidated.csv - 8 entries removed, 15 qualifiers added, 3 parent relationships fixed
+  - data/tag_application_mapping.csv - 213+ items updated with correct leaf-node tags
+  - 21 hierarchy visualization files regenerated
+
+  Remaining Untracked Files
+
+  You have some untracked reports and scripts from the previous ambiguous tags work:
+  - reports/AMBIGUOUS_TAGS_IMPLEMENTATION_COMPLETE.md
+  - reports/ambiguous_tags_mapping_summary.txt
+  - reports/trove_links_extracted.txt
+  - scripts/temp_*.py (3 temporary scripts)
+  - archive/cc-interactions/2025-11-08-e.txt
+
+  Would you like to commit these documentation files, or should they remain untracked?
+
+> ok, I see that the churches under 'religious organisations' got renamed to 'buildings', they were the same tags apparently. we're going to have to
+ review all of the items tagged 'churches and determine which are buildings and which are organisations, and then gat the organisations with a 
+separate tag (e.g., Katoomba Congragational Church (organisation) or similar). Perhaps it would be easiest to create the organisation tags first, 
+then double tag all entries with both building and organisation tags, then review them and decide which to remove? I'm not sure, what do you 
+suggest? 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_agents.txt in Visual Studio Code
+
+● You're absolutely right - this is a classic dual-nature entity problem. When I added the (building) qualifiers, I didn't account for the fact that
+   some items are about the religious organization (the congregation) rather than the physical structure.
+
+  Let me first check the current state to understand the scope:
+
+● Bash(grep -E "church \(building\)|Church \(building\)" data/tag_application_mapping.csv | wc -l)
+  ⎿  34
+
+● Bash(grep -E "church \(building\)|Church \(building\)" data/tag_application_mapping.csv | head -10)
+  ⎿  Local Jottings.,26 April 1890,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf 
+     News in Brief,9 October 1903,Mountaineer,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+     Mountain Mixtures.,7 July 1893,Katoomba Times,Church,church (building),high_impact_mappings,Corrected mapping to generic singular leaf
+     … +7 lines (ctrl+o to expand)
+
+● Bash(grep -E "Church \(building\)" data/tag_application_mapping.csv | cut -d',' -f5 | sort | uniq -c)
+  ⎿  (No content)
+
+● Bash(grep -E "Church \(building\)|church \(building\)" data/tag_application_mapping.csv | awk -F',' '{print $5}' | grep -o '[^|]*church[^|]*' | sort |
+       uniq -c | sort…)
+  ⎿       33 church (building)
+
+● Bash(grep -E "^[^,]*Church \(building\)" data/tag_map_consolidated.csv)
+  ⎿  Katoomba Congregational Church (building),Katoomba Congregational Church (building),hierarchy,parent=churches
+     Methodist Church (building),Methodist Church (building),hierarchy,parent=churches
+     Roman Catholic Church (building),Roman Catholic Church (building),hierarchy,parent=churches
+     … +2 lines (ctrl+o to expand)
+
+● Bash(grep -i "religious.*organi" data/tag_map_consolidated.csv | head -10)
+  ⎿  churches,churches,hierarchy,parent=religious organisations                      
+     religious education,religious education,hierarchy,parent=religious organisations
+     religious organisations,religious organisations,hierarchy,parent=organisations
+     … +2 lines (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 30 lines
+
+● Bash(grep "church (building)" data/tag_map_consolidated.csv | head -20)
+  ⎿  church (building),church (building),hierarchy,parent=churches (singular generic term)
+
+● Bash(grep "^churches," data/tag_map_consolidated.csv)
+  ⎿  churches,churches,hierarchy,parent=religious buildings    
+     churches,churches,hierarchy,parent=religious organisations
+
+● I see the issue now. Looking at the taxonomy, "churches" (plural parent) has polyhierarchical relationships:
+  - churches → parent: religious buildings (Built Environment)
+  - churches → parent: religious organisations (Agents)
+
+  When I added (building) qualifiers globally, they appeared in BOTH facets because the CSV structure doesn't support facet-specific display names.
+  The visualization shows all church tags with (building) even in the Agents > religious organisations facet, which is incorrect.
+
+  Here's what I suggest:
+
+  Proposed Workflow
+
+  1. Create organization tags in taxonomy (~5 minutes)
+  - Add: church (organization), Katoomba Congregational Church (organization), etc.
+  - These would be children of churches (which already has parent=religious organisations)
+
+  2. Generate review report (~2 minutes)
+  - Export all 34 items with current church (building) tags
+  - Include article title, date, publication for context
+
+  3. Context analysis (~15-20 minutes)
+  - Review each of the 34 items to determine:
+    - Building only (construction, repair, location descriptions)
+    - Organization only (congregation activities, church services, religious events)
+    - Both (dual-aspect articles)
+  - Document decisions
+
+  4. Apply mappings
+  - Items about buildings: keep (building) tag only
+  - Items about organizations: change to (organization) tag
+  - Items about both: add both tags (pipe-delimited)
+
+  Would you like me to proceed with this approach? Or would you prefer your suggestion of double-tagging everything first (add organization tags to
+  all 34 items), then reviewing to remove inappropriate ones? Your approach might be safer as it ensures we don't accidentally remove tags during
+  the review process.
+
+> Great, let's do this. When you make the report, consider which report style worked the best. In my view, it's the one where you looked at the 
+primary text for each item, suggested which tag(s) were appropriate, then presented me with the primary text and your suggestion, allowing me to 
+quickly approve or change. Could you do something like that in the review report? 
+
+● Excellent! That decision report format worked really well. Let me:
+
+  1. Create the organization tags in taxonomy (matching the building tags)
+  2. Generate a context-based review report where I fetch each article's full text, analyze it, suggest the appropriate tag(s), and present both for
+   your review
+
+  Let me start:
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Bash(grep -E "church \(building\)|Church \(building\)" data/tag_map_consolidated.csv)
+  ⎿  church (building),church (building),hierarchy,parent=churches (singular generic term)                        
+     Katoomba Congregational Church (building),Katoomba Congregational Church (building),hierarchy,parent=churches
+     Methodist Church (building),Methodist Church (building),hierarchy,parent=churches
+     … +3 lines (ctrl+o to expand)
+
+● Write(scripts/temp_church_tags_analysis.py)
+  ⎿  Wrote 284 lines to scripts/temp_church_tags_analysis.py         
+     #!/usr/bin/env python3
+     """
+     Generate church building/organization disambiguation report.
+     This script:
+     1. Adds church (organization) tags to taxonomy
+     2. Fetches full text for all items tagged with church (building)
+     3. Analyzes context to suggest appropriate tags
+     4. Generates decision report for user review
+     """
+     … +274 lines (ctrl+o to expand)
+
+● Bash(python scripts/temp_church_tags_analysis.py)
+  ⎿  Error: Exit code 127
+     /bin/bash: line 1: python: command not found
+
+● Bash(python3 scripts/temp_church_tags_analysis.py)
+  ⎿  Error: Exit code 1
+     Traceback (most recent call last):
+       File "/home/shawn/Code/blue-mountains/scripts/temp_church_tags_analysis.py", line 283, in <module>
+         main()
+       File "/home/shawn/Code/blue-mountains/scripts/temp_church_tags_analysis.py", line 270, in main
+         generate_report(church_items)
+       File "/home/shawn/Code/blue-mountains/scripts/temp_church_tags_analysis.py", line 195, in generate_report
+         manual_tags, trove_url = get_article_text(title, date, publication)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       File "/home/shawn/Code/blue-mountains/scripts/temp_church_tags_analysis.py", line 112, in get_article_text
+     … +14 lines (ctrl+o to see all)
+
+● Bash(ls -lh data/*.csv | head -10)
+  ⎿  -rw-rw-r-- 1 shawn shawn 5.3K Oct 24 18:01 data/people_thematic_hierarchy.csv   
+     -rw-rw-r-- 1 shawn shawn  24K Oct 19 13:00 data/quality_duplicates.csv
+     -rw-rw-r-- 1 shawn shawn 9.8K Oct 19 13:00 data/quality_multiple_attachments.csv
+     … +7 lines (ctrl+o to expand)
+
+● Bash(ls -la scripts/temp_*.py)
+  ⎿  -rw-rw-r-- 1 shawn shawn  9193 Nov  8 17:50 scripts/temp_church_tags_analysis.py      
+     -rw-rw-r-- 1 shawn shawn  7221 Nov  8 10:42 scripts/temp_deduplicate_capitalization.py
+     -rw-rw-r-- 1 shawn shawn  4659 Nov  8 13:51 scripts/temp_extract_trove_links.py
+     … +5 lines (ctrl+o to expand)
+
+● Read(scripts/temp_extract_trove_links.py)
+  ⎿  Read 125 lines
+
+● Bash(ls -lh data/*.json 2>/dev/null | head -5)
+  ⎿  -rw-rw-r-- 1 shawn shawn 275K Oct 29 16:00 data/pass1_classifications.json
+     -rw-rw-r-- 1 shawn shawn 237K Oct 19 12:59 data/raw_tags.json
+     -rw-rw-r-- 1 shawn shawn 2.9M Oct 19 12:59 data/tag_network.json
+     -rw-rw-r-- 1 shawn shawn 1.6M Oct 29 15:59 data/zotero_full_export.json
+
+● Update(scripts/temp_church_tags_analysis.py)
+  ⎿  Updated scripts/temp_church_tags_analysis.py with 3 additions and 1 removal   
+       10    """
+       11    
+       12    import csv
+       13 +  import json
+       14    import re
+       15 +  from datetime import datetime
+       16    from pathlib import Path
+       17    
+       18    # Paths
+       19    BASE_DIR = Path(__file__).parent.parent
+       20    TAXONOMY_CSV = BASE_DIR / "data" / "tag_map_consolidated.csv"
+       21    MAPPING_CSV = BASE_DIR / "data" / "tag_application_mapping.csv"
+       22 -  DATASET_CSV = BASE_DIR / "data" / "full_dataset.csv"
+       22 +  ZOTERO_JSON = BASE_DIR / "data" / "zotero_full_export.json"
+       23    REPORT_FILE = BASE_DIR / "reports" / "church_disambiguation_report.md"
+       24    
+       25    
+
+● Update(scripts/temp_church_tags_analysis.py)
+  ⎿  Updated scripts/temp_church_tags_analysis.py with 49 additions and 11 removals            
+       108        return church_items
+       109    
+       110    
+       111 -  def get_article_text(title, date, publication):
+       112 -      """Fetch article text from full dataset."""
+       111 +  def normalize_date(date_str):
+       112 +      """Normalise date for comparison (handle different formats)."""
+       113 +      try:
+       114 +          # Try parsing as full date
+       115 +          dt = datetime.strptime(date_str, "%d %B %Y")
+       116 +          return dt.strftime("%Y-%m-%d")
+       117 +      except:
+       118 +          try:
+       119 +              # Try ISO format
+       120 +              dt = datetime.strptime(date_str, "%Y-%m-%d")
+       121 +              return dt.strftime("%Y-%m-%d")
+       122 +          except:
+       123 +              # Try year only
+       124 +              if date_str.isdigit() and len(date_str) == 4:
+       125 +                  return date_str
+       126 +              return None
+       127    
+       128 -      with open(DATASET_CSV, 'r', encoding='utf-8') as f:
+       129 -          reader = csv.DictReader(f)
+       130 -          for row in reader:
+       131 -              if (row.get('Title', '').strip() == title.strip() and
+       132 -                  row.get('Date', '').strip() == date.strip() and
+       133 -                  row.get('Publication Title', '').strip() == publication.strip()):
+       134 -                  # Get manual tags to see original folksonomy tag
+       135 -                  return row.get('Manual Tags', ''), row.get('Url', '')
+       128    
+       129 -      return None, None
+       129 +  def normalize_title(title):
+       130 +      """Normalise title for comparison."""
+       131 +      return title.strip().rstrip('.').lower()
+       132    
+       133    
+       134 +  def get_article_text(title, date, publication, zotero_items):
+       135 +      """Fetch article text and URL from Zotero export."""
+       136 +  
+       137 +      search_title_norm = normalize_title(title)
+       138 +      search_date_norm = normalize_date(date)
+       139 +  
+       140 +      for item in zotero_items:
+       141 +          item_title_norm = normalize_title(item.get('title', ''))
+       142 +          item_date_norm = normalize_date(item.get('date', ''))
+       143 +  
+       144 +          # Match on title and date
+       145 +          if item_title_norm == search_title_norm:
+       146 +              if item_date_norm and search_date_norm:
+       147 +                  if item_date_norm == search_date_norm:
+       148 +                      # Found match - extract text from notes
+       149 +                      notes_text = ""
+       150 +                      for note in item.get('notes', []):
+       151 +                          note_content = note.get('note', '')
+       152 +                          # Strip HTML tags
+       153 +                          note_content = re.sub(r'<[^>]+>', ' ', note_content)
+       154 +                          notes_text += note_content + " "
+       155 +  
+       156 +                      trove_url = item.get('url', '')
+       157 +                      manual_tags = ', '.join(item.get('tags', []))
+       158 +  
+       159 +                      return notes_text.strip(), trove_url, manual_tags
+       160 +  
+       161 +      return None, None, None
+       162 +  
+       163 +  
+       164    def analyze_church_context(title, date, publication, current_tags, manual_tags):
+       165        """
+       166        Analyze article context and suggest appropriate church tag(s).
+
+● Update(scripts/temp_church_tags_analysis.py)
+  ⎿  Updated scripts/temp_church_tags_analysis.py with 34 additions and 15 removals                             
+       161        return None, None, None
+       162    
+       163    
+       164 -  def analyze_church_context(title, date, publication, current_tags, manual_tags):
+       164 +  def analyze_church_context(title, article_text, current_tags, manual_tags):
+       165        """
+       166 -      Analyze article context and suggest appropriate church tag(s).
+       166 +      Analyse article context and suggest appropriate church tag(s).
+       167    
+       168 -      Returns: (suggestion, reasoning)
+       168 +      Returns: (suggestion, reasoning, key_excerpts)
+       169        """
+       170    
+       171        # Keywords for building-related content
+       172        building_keywords = [
+       173            'built', 'erected', 'construction', 'edifice', 'building', 'structure',
+       174            'roof', 'foundation', 'brick', 'stone', 'architecture', 'opened',
+       175 -          'dedicated', 'consecrated', 'site', 'location', 'corner stone'
+       175 +          'dedicated', 'consecrated', 'site', 'location', 'corner stone',
+       176 +          'laying.*foundation', 'new.*church.*building', 'church.*to.*be.*built'
+       177        ]
+       178    
+       179 -      # Keywords for organization-related content
+       179 +      # Keywords for organisation-related content
+       180        org_keywords = [
+       181 -          'congregation', 'minister', 'reverend', 'rev.', 'service', 'sermon',
+       181 +          'congregation', 'minister', 'reverend', 'rev\.', 'service', 'sermon',
+       182            'sunday school', 'members', 'meeting', 'worship', 'parish',
+       183 -          'denomination', 'clergy', 'pastor', 'priest', 'religious service'
+       183 +          'denomination', 'clergy', 'pastor', 'priest', 'religious service',
+       184 +          'church.*anniversary', 'church.*bazaar', 'church.*social'
+       185        ]
+       186    
+       187 -      # Analyze title and current tags
+       188 -      text_to_analyze = f"{title} {current_tags} {manual_tags}".lower()
+       187 +      # Combine text for analysis
+       188 +      text_to_analyze = f"{title} {article_text} {manual_tags}".lower()
+       189    
+       190 -      has_building = any(kw in text_to_analyze for kw in building_keywords)
+       191 -      has_org = any(kw in text_to_analyze for kw in org_keywords)
+       190 +      # Find matches and extract excerpts
+       191 +      building_matches = []
+       192 +      org_matches = []
+       193    
+       194 +      for kw in building_keywords:
+       195 +          if re.search(kw, text_to_analyze):
+       196 +              # Find context around match (50 chars before/after)
+       197 +              match = re.search(f'.{{0,50}}{kw}.{{0,50}}', text_to_analyze)
+       198 +              if match:
+       199 +                  building_matches.append(match.group(0).strip())
+       200 +  
+       201 +      for kw in org_keywords:
+       202 +          if re.search(kw, text_to_analyze):
+       203 +              match = re.search(f'.{{0,50}}{kw}.{{0,50}}', text_to_analyze)
+       204 +              if match:
+       205 +                  org_matches.append(match.group(0).strip())
+       206 +  
+       207 +      has_building = len(building_matches) > 0
+       208 +      has_org = len(org_matches) > 0
+       209 +  
+       210        # Determine suggestion
+       211        if has_building and has_org:
+       212 -          return "BOTH", "Article discusses both physical structure and congregation/activities"
+       212 +          return "BOTH", "Article discusses both physical structure and congregation/activities"
+           +  , (building_matches[:2], org_matches[:2])
+       213        elif has_building:
+       214 -          return "BUILDING", "Focus on physical structure/construction"
+       214 +          return "BUILDING", "Focus on physical structure/construction", (building_matches[:2], [])
+       215        elif has_org:
+       216 -          return "ORGANIZATION", "Focus on congregation/religious activities"
+       216 +          return "ORGANIZATION", "Focus on congregation/religious activities", ([], org_matches[:2])
+       217        else:
+       218            # Default: need manual review
+       219 -          return "REVIEW", "Insufficient context - manual review needed"
+       219 +          return "REVIEW", "Insufficient context - manual review needed", ([], [])
+       220    
+       221    
+       222    def generate_report(church_items):
+
+● Update(scripts/temp_church_tags_analysis.py)
+  ⎿  Updated scripts/temp_church_tags_analysis.py with 22 additions and 9 removals                             
+       222    def generate_report(church_items):
+       223        """Generate decision report with context analysis."""
+       224    
+       225 +      # Load Zotero export
+       226 +      with open(ZOTERO_JSON, 'r', encoding='utf-8') as f:
+       227 +          zotero_data = json.load(f)
+       228 +      zotero_items = zotero_data.get('items', [])
+       229 +  
+       230        report_lines = [
+       231 -          "# Church Building/Organization Disambiguation Report",
+       231 +          "# Church Building/Organisation Disambiguation Report",
+       232            "",
+       233            "**Generated**: 2025-11-08",
+       234            "**Items to Review**: " + str(len(church_items)),
+     ...
+       232            "",
+       233            "## Instructions",
+       234            "",
+       235 -          "For each item below, review the article title and suggested tag(s).",
+       235 +          "For each item below, review the article text excerpt and suggested tag(s).",
+       236            "Approve or modify the suggestion based on article context.",
+       237            "",
+       238            "**Tag Options:**",
+       239 -          "- `(building)` - Physical church structure only",
+       240 -          "- `(organization)` - Religious congregation/denomination only",
+       241 -          "- `BOTH` - Article discusses both aspects (pipe-delimited tags)",
+       239 +          "- `BUILDING` - Physical church structure only → use `(building)` tag",
+       240 +          "- `ORGANIZATION` - Religious congregation/denomination only → use `(organization)` tag",
+       241 +          "- `BOTH` - Article discusses both aspects → use both tags (pipe-delimited)",
+       242 +          "- `REVIEW` - Insufficient context → manual review needed",
+       243            "",
+       244            "---",
+       245            ""
+       246        ]
+       247    
+       248 +      not_found_count = 0
+       249 +  
+       250        for idx, item in enumerate(church_items, 1):
+       251            title = item.get('title', '')
+       252            date = item.get('date', '')
+     ...
+       251            current_tags = item.get('add_tags', '')
+       252    
+       253            # Get article text/tags
+       254 -          manual_tags, trove_url = get_article_text(title, date, publication)
+       254 +          article_text, trove_url, manual_tags = get_article_text(
+       255 +              title, date, publication, zotero_items
+       256 +          )
+       257    
+       258 -          # Analyze context
+       259 -          suggestion, reasoning = analyze_church_context(
+       260 -              title, date, publication, current_tags, manual_tags or ''
+       258 +          if not article_text:
+       259 +              not_found_count += 1
+       260 +  
+       261 +          # Analyse context
+       262 +          suggestion, reasoning, excerpts = analyze_church_context(
+       263 +              title, article_text or '', current_tags, manual_tags or ''
+       264            )
+       265    
+       266            # Format report entry
+
+● Update(scripts/temp_church_tags_analysis.py)
+  ⎿  Updated scripts/temp_church_tags_analysis.py with 18 additions and 4 removals
+       278                f"**Publication**: {publication} ({date})",
+       279                f"**Current tags**: `{current_tags}`",
+       280                f"**Original folksonomy**: `{manual_tags or 'N/A'}`",
+       281 -              "",
+       282 -              f"**SUGGESTION**: `{suggestion}`",
+       283 -              f"**Reasoning**: {reasoning}",
+       281                ""
+       282            ])
+       283    
+     ...
+       288                report_lines.append(f"**Trove URL**: {trove_url}")
+       289                report_lines.append("")
+       290    
+       291 +          # Add excerpts if available
+       292 +          building_excerpts, org_excerpts = excerpts
+       293 +          if building_excerpts:
+       294 +              report_lines.append("**Building-related context**:")
+       295 +              for excerpt in building_excerpts:
+       296 +                  report_lines.append(f"- \"{excerpt}...\"")
+       297 +              report_lines.append("")
+       298 +  
+       299 +          if org_excerpts:
+       300 +              report_lines.append("**Organisation-related context**:")
+       301 +              for excerpt in org_excerpts:
+       302 +                  report_lines.append(f"- \"{excerpt}...\"")
+       303 +              report_lines.append("")
+       304 +  
+       305            report_lines.extend([
+       306 -              "**Decision**: _[APPROVE / MODIFY]_",
+       306 +              f"**SUGGESTION**: `{suggestion}`",
+       307 +              f"**Reasoning**: {reasoning}",
+       308                "",
+       309 +              "**Decision**: _[APPROVE / MODIFY to: ________]_",
+       310 +              "",
+       311                "---",
+       312                ""
+       313            ])
+
+● Update(scripts/temp_church_tags_analysis.py)
+  ⎿  Updated scripts/temp_church_tags_analysis.py with 5 additions and 3 removals                            
+       315    
+       316        print(f"✓ Generated report: {REPORT_FILE}")
+       317        print(f"  Total items: {len(church_items)}")
+       318 +      if not_found_count > 0:
+       319 +          print(f"  Warning: {not_found_count} items not found in Zotero export")
+       320    
+       321        # Summary statistics
+       322        suggestions = {}
+     ...
+       323            date = item.get('date', '')
+       324            publication = item.get('publication', '')
+       325            current_tags = item.get('add_tags', '')
+       326 -          manual_tags, _ = get_article_text(title, date, publication)
+       327 -          suggestion, _ = analyze_church_context(
+       328 -              title, date, publication, current_tags, manual_tags or ''
+       326 +          article_text, _, manual_tags = get_article_text(title, date, publication, zotero_items)
+       327 +          suggestion, _, _ = analyze_church_context(
+       328 +              title, article_text or '', current_tags, manual_tags or ''
+       329            )
+       330            suggestions[suggestion] = suggestions.get(suggestion, 0) + 1
+       331    
+
+● Bash(python3 scripts/temp_church_tags_analysis.py)
+  ⎿  Church Building/Organization Disambiguation                 
+     ============================================================
+     … +26 lines (ctrl+o to expand)
+
+● Read(reports/church_disambiguation_report.md)
+  ⎿  Read 100 lines
+
+● Bash(grep "church (organization)" data/tag_map_consolidated.csv)
+  ⎿  church (organization),church (organization),hierarchy,parent=churches (singular generic term)
+
+● Bash(grep "Church (organization)" data/tag_map_consolidated.csv)
+  ⎿  Katoomba Congregational Church (organization),Katoomba Congregational Church (organization),hierarchy,parent=churches
+     Methodist Church (organization),Methodist Church (organization),hierarchy,parent=churches
+     Roman Catholic Church (organization),Roman Catholic Church (organization),hierarchy,parent=churches
+     … +2 lines (ctrl+o to expand)
+
+● Perfect! The analysis is complete. Here's what I've done:
+
+  Summary
+
+  Step 1: Added Organization Tags to Taxonomy ✓
+  - Added 6 new tags to data/tag_map_consolidated.csv:
+    - church (organization) (generic singular)
+    - Katoomba Congregational Church (organization)
+    - Methodist Church (organization)
+    - Roman Catholic Church (organization)
+    - St Hilda's Church (organization)
+    - Wesleyan Church (organization)
+
+  Step 2: Generated Context-Based Decision Report ✓
+  - Analysed all 34 items with church (building) tags
+  - Fetched full article text from Zotero export
+  - Used keyword analysis to suggest appropriate tags
+  - Extracted relevant text excerpts to show you the context
+
+  Report Statistics
+
+  The automated analysis suggests:
+  - 22 items → BOTH (building and organization)
+  - 9 items → ORGANIZATION only
+  - 1 item → BUILDING only
+  - 2 items → REVIEW (manual review needed)
+
+  Report Format
+
+  Each item shows:
+  1. Article metadata (title, publication, date)
+  2. Trove URL for full context
+  3. Building-related excerpts (when detected)
+  4. Organisation-related excerpts (when detected)
+  5. My suggestion with reasoning
+  6. Decision field for you to approve or modify
+
+  Example Entry
+
+  ## Item 2: News in Brief
+
+  **Publication**: Mountaineer (9 October 1903)
+  **Current tags**: `church (building)`
+  **Trove URL**: http://nla.gov.au/nla.news-article190715974
+
+  **Organisation-related context**:
+  - "the annual social in connection with the katoomba congregational church takes place..."
+  - "there was a large attendance. rev. j. s. austin occupied the chair..."
+
+  **SUGGESTION**: `ORGANIZATION`
+  **Reasoning**: Focus on congregation/religious activities
+
+  **Decision**: _[APPROVE / MODIFY to: ________]_
+
+  The full report is ready at: /home/shawn/Code/blue-mountains/reports/church_disambiguation_report.md
+
+  Would you like me to open it for review, or would you prefer to review it yourself first?
+
+> I'm trying to review it, but the excerpts are too short, and some of them appear to not pertain to churches. I need a little more context - say 
+two sentences around where the church is mentioned, enough to also see the name of the church if used, since we'll want to tag with the name in both
+ cases (building or organisation) wherever possible 
+
+● You're absolutely right - those excerpts are too short and some aren't even about churches. Let me update the script to extract better context
+  around actual church mentions.
+
+● Update(scripts/temp_church_tags_analysis.py)
+  ⎿  Updated scripts/temp_church_tags_analysis.py with 63 additions and 37 removals                                                              
+       161        return None, None, None
+       162    
+       163    
+       164 +  def extract_sentences_around_match(text, match_pos, num_sentences=2):
+       165 +      """Extract sentences around a match position."""
+       166 +      # Split into sentences (rough approximation)
+       167 +      sentences = re.split(r'[.!?]+\s+', text)
+       168 +  
+       169 +      # Find which sentence contains the match
+       170 +      char_count = 0
+       171 +      match_sentence_idx = 0
+       172 +      for idx, sentence in enumerate(sentences):
+       173 +          if char_count <= match_pos < char_count + len(sentence):
+       174 +              match_sentence_idx = idx
+       175 +              break
+       176 +          char_count += len(sentence) + 2  # +2 for punctuation and space
+       177 +  
+       178 +      # Extract surrounding sentences
+       179 +      start_idx = max(0, match_sentence_idx - num_sentences)
+       180 +      end_idx = min(len(sentences), match_sentence_idx + num_sentences + 1)
+       181 +  
+       182 +      context = ' '.join(sentences[start_idx:end_idx])
+       183 +      return context[:300]  # Cap at 300 chars
+       184 +  
+       185 +  
+       186    def analyze_church_context(title, article_text, current_tags, manual_tags):
+       187        """
+       188        Analyse article context and suggest appropriate church tag(s).
+       189    
+       190 -      Returns: (suggestion, reasoning, key_excerpts)
+       190 +      Returns: (suggestion, reasoning, church_excerpts)
+       191        """
+       192    
+       193 -      # Keywords for building-related content
+       194 -      building_keywords = [
+       195 -          'built', 'erected', 'construction', 'edifice', 'building', 'structure',
+       196 -          'roof', 'foundation', 'brick', 'stone', 'architecture', 'opened',
+       197 -          'dedicated', 'consecrated', 'site', 'location', 'corner stone',
+       198 -          'laying.*foundation', 'new.*church.*building', 'church.*to.*be.*built'
+       199 -      ]
+       193 +      # Combine text for analysis
+       194 +      full_text = f"{title} {article_text}".lower()
+       195    
+       196 -      # Keywords for organisation-related content
+       197 -      org_keywords = [
+       198 -          'congregation', 'minister', 'reverend', 'rev\.', 'service', 'sermon',
+       199 -          'sunday school', 'members', 'meeting', 'worship', 'parish',
+       200 -          'denomination', 'clergy', 'pastor', 'priest', 'religious service',
+       201 -          'church.*anniversary', 'church.*bazaar', 'church.*social'
+       196 +      # Find all church mentions with context
+       197 +      church_patterns = [
+       198 +          r'church\s+(?:building|structure|edifice)',
+       199 +          r'(?:congregational|methodist|roman\s+catholic|wesleyan|st\s+hilda\'?s?)\s+church',
+       200 +          r'church\s+(?:service|congregation|minister|pastor|reverend)',
+       201 +          r'(?:built|erected|constructed|opened).*church',
+       202 +          r'church.*(?:built|erected|constructed|opened)',
+       203 +          r'foundation.*church',
+       204 +          r'church.*foundation',
+       205 +          r'the\s+church\s+',
+       206        ]
+       207    
+       208 -      # Combine text for analysis
+       209 -      text_to_analyze = f"{title} {article_text} {manual_tags}".lower()
+       208 +      church_mentions = []
+       209 +      for pattern in church_patterns:
+       210 +          for match in re.finditer(pattern, full_text, re.IGNORECASE):
+       211 +              context = extract_sentences_around_match(full_text, match.start())
+       212 +              church_mentions.append(context)
+       213    
+       214 -      # Find matches and extract excerpts
+       215 -      building_matches = []
+       216 -      org_matches = []
+       214 +      # Remove duplicates while preserving order
+       215 +      seen = set()
+       216 +      church_mentions = [x for x in church_mentions if not (x in seen or seen.add(x))]
+       217    
+       218 -      for kw in building_keywords:
+       219 -          if re.search(kw, text_to_analyze):
+       220 -              # Find context around match (50 chars before/after)
+       221 -              match = re.search(f'.{{0,50}}{kw}.{{0,50}}', text_to_analyze)
+       222 -              if match:
+       223 -                  building_matches.append(match.group(0).strip())
+       218 +      # Keywords for building-related content (must be near "church")
+       219 +      building_keywords = [
+       220 +          r'church.{0,100}(?:built|erected|construction|edifice|building|structure|foundation|brick|stone|opened|dedicated|consecrate
+           + d|corner\s+stone)',
+       221 +          r'(?:built|erected|construction|edifice|building|structure|foundation|brick|stone|opened|dedicated|consecrated|corner\s+sto
+           + ne).{0,100}church',
+       222 +          r'new\s+church',
+       223 +          r'church.{0,50}roof',
+       224 +      ]
+       225    
+       226 -      for kw in org_keywords:
+       227 -          if re.search(kw, text_to_analyze):
+       228 -              match = re.search(f'.{{0,50}}{kw}.{{0,50}}', text_to_analyze)
+       229 -              if match:
+       230 -                  org_matches.append(match.group(0).strip())
+       226 +      # Keywords for organisation-related content (must be near "church")
+       227 +      org_keywords = [
+       228 +          r'church.{0,100}(?:congregation|minister|reverend|rev\.|service|sermon|sunday\s+school|members|meeting|worship|social|bazaa
+           + r|anniversary)',
+       229 +          r'(?:congregation|minister|reverend|rev\.|service|sermon|sunday\s+school|members|meeting|worship|social|bazaar|anniversary)
+           + .{0,100}church',
+       230 +      ]
+       231    
+       232 -      has_building = len(building_matches) > 0
+       233 -      has_org = len(org_matches) > 0
+       232 +      # Check for building vs organization context
+       233 +      has_building = any(re.search(kw, full_text, re.IGNORECASE) for kw in building_keywords)
+       234 +      has_org = any(re.search(kw, full_text, re.IGNORECASE) for kw in org_keywords)
+       235    
+       236        # Determine suggestion
+       237        if has_building and has_org:
+       238 -          return "BOTH", "Article discusses both physical structure and congregation/activities", (building_matches[:2]
+           -  , org_matches[:2])
+       238 +          return "BOTH", "Article discusses both physical structure and congregation/activities", church_mentions[:3]
+       239        elif has_building:
+       240 -          return "BUILDING", "Focus on physical structure/construction", (building_matches[:2], [])
+       240 +          return "BUILDING", "Focus on physical church structure/construction", church_mentions[:3]
+       241        elif has_org:
+       242 -          return "ORGANIZATION", "Focus on congregation/religious activities", ([], org_matches[:2])
+       242 +          return "ORGANIZATION", "Focus on congregation/religious activities", church_mentions[:3]
+       243        else:
+       244 -          # Default: need manual review
+       245 -          return "REVIEW", "Insufficient context - manual review needed", ([], [])
+       244 +          # Default: provide context for manual review
+       245 +          return "REVIEW", "Church mentioned but unclear context - manual review needed", church_mentions[:3]
+       246    
+       247    
+       248    def generate_report(church_items):
+
+● Update(scripts/temp_church_tags_analysis.py)
+  ⎿  Updated scripts/temp_church_tags_analysis.py with 13 additions and 13 removals                                  
+       293                not_found_count += 1
+       294    
+       295            # Analyse context
+       296 -          suggestion, reasoning, excerpts = analyze_church_context(
+       296 +          suggestion, reasoning, church_excerpts = analyze_church_context(
+       297                title, article_text or '', current_tags, manual_tags or ''
+       298            )
+       299    
+     ...
+       311                report_lines.append(f"**Trove URL**: {trove_url}")
+       312                report_lines.append("")
+       313    
+       314 -          # Add excerpts if available
+       315 -          building_excerpts, org_excerpts = excerpts
+       316 -          if building_excerpts:
+       317 -              report_lines.append("**Building-related context**:")
+       318 -              for excerpt in building_excerpts:
+       319 -                  report_lines.append(f"- \"{excerpt}...\"")
+       314 +          # Add church context excerpts
+       315 +          if church_excerpts:
+       316 +              report_lines.append("**Church mentions in context**:")
+       317 +              for excerpt in church_excerpts:
+       318 +                  # Clean up and format excerpt
+       319 +                  excerpt = excerpt.strip()
+       320 +                  if len(excerpt) > 250:
+       321 +                      excerpt = excerpt[:250] + "..."
+       322 +                  report_lines.append(f"> {excerpt}")
+       323 +                  report_lines.append("")
+       324 +          else:
+       325 +              report_lines.append("**Church mentions in context**: _(No church-specific context found)_")
+       326                report_lines.append("")
+       327    
+       328 -          if org_excerpts:
+       329 -              report_lines.append("**Organisation-related context**:")
+       330 -              for excerpt in org_excerpts:
+       331 -                  report_lines.append(f"- \"{excerpt}...\"")
+       332 -              report_lines.append("")
+       333 -  
+       328            report_lines.extend([
+       329                f"**SUGGESTION**: `{suggestion}`",
+       330                f"**Reasoning**: {reasoning}",
+
+● Bash(python3 scripts/temp_church_tags_analysis.py)
+  ⎿  Church Building/Organization Disambiguation                 
+     ============================================================
+     … +24 lines (ctrl+o to expand)
+
+● Read(reports/church_disambiguation_report.md)
+  ⎿  Read 80 lines
+
+● Read(reports/church_disambiguation_report.md)
+  ⎿  Read 60 lines
+
+● Bash(grep -A 20 "SUGGESTION.*BUILDING" reports/church_disambiguation_report.md | head -25)
+  ⎿  **SUGGESTION**: `BUILDING`                                    
+     **Reasoning**: Focus on physical church structure/construction
+     … +24 lines (ctrl+o to expand)
+
+● Bash(grep -B 10 "^**SUGGESTION**: \`BUILDING\`" reports/church_disambiguation_report.md | head -40)
+  ⎿  (No content)
+
+● Bash(awk '/^## Item [0-9]+:/{item=$0} /SUGGESTION.*BUILDING/{print item}' reports/church_disambiguation_report.md)
+  ⎿  ## Item 16: Brevities.                      
+     ## Item 20: St Joseph's New Church, Megalong
+
+● Bash(awk '/^## Item 20: St Joseph/{p=1} p; /^---$/ && p{p=0; exit}' reports/church_disambiguation_report.md)
+  ⎿  ## Item 20: St Joseph's New Church, Megalong
+
+     **Publication**: Mountaineer (17 March 1905)
+     … +17 lines (ctrl+o to expand)
+
+● Bash(awk '/^## Item 16: Brevities/{p=1} p; /^---$/ && p{p=0; exit}' reports/church_disambiguation_report.md)
+  ⎿  ## Item 16: Brevities.                       
+
+     **Publication**: Evening News (10 April 1894)
+     … +19 lines (ctrl+o to expand)
+
+● Bash(awk '/SUGGESTION.*BOTH/{print NR}' reports/church_disambiguation_report.md)
+  ⎿  383
+
+● Read(reports/church_disambiguation_report.md)
+  ⎿  Read 30 lines
+
+● Perfect! The report has been regenerated with much better context. Now each item shows:
+
+  1. Article metadata (title, publication, date)
+  2. Trove URL for full article access
+  3. Church mentions in context - up to 3 excerpts showing ~2 sentences around each church mention, capped at 250 chars
+  4. My suggestion based on keyword analysis
+  5. Decision field for you to approve/modify
+
+  Key Improvements
+
+  The excerpts now:
+  - ✓ Focus specifically on church mentions (not generic building/organization keywords)
+  - ✓ Include ~2 sentences of context around the church
+  - ✓ Show church names when mentioned (e.g., "Katoomba Congregational Church", "Wesleyan Church", "Methodist Church")
+  - ✓ Provide enough context to determine if it's about the building, the organization, or both
+
+  New Suggestion Breakdown
+
+  The analysis now suggests:
+  - 24 items → ORGANIZATION (religious activities, services, congregations)
+  - 7 items → REVIEW (unclear context, needs manual check)
+  - 2 items → BUILDING (physical structures, construction)
+  - 1 item → BOTH (discusses both aspects)
+
+  Example Entries
+
+  Item 9 (Organization):
+  "the anniversary of the sunday school in connection with the katoomba congregational church was celebrated last sunday by special services the 
+  church was beautifully decorated..."
+
+  Item 20 (Building):
+  "st joseph's new church, megalong ... his eminence cardinal moran has fixed next sunday, the feast day of st joseph, for the opening..."
+
+  The report is ready for your review at /home/shawn/Code/blue-mountains/reports/church_disambiguation_report.md. You can now go through each item
+  and approve or modify the suggestions!
+
+> I am reviewing the churches report. Can we please revise the 'sunday school' tag? It needs to follow our usual pattern of religious education > 
+sunday schools > sunday school. We also need to add another leaf node: sunday schools > Katoomba Congregational Church (Sunday school) - with the 
+parenthetical do distinguish from the church as an organisaton or building. \
+\
+OR, here's an alternative: change Sunday School to an activity and tag alongside the association church (organisation) where known? I'm not sure if 
+a Sunday School should be an agent or an activity - what do you think? 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_agents.txt in Visual Studio Code
+
+● Excellent question! This is exactly the kind of dual-nature issue we need to think through carefully. Let me check the current state and then
+  discuss the options.
+
+● Bash(grep -i "sunday school" data/tag_map_consolidated.csv)
+  ⎿  sunday school,sunday school,hierarchy,parent=education - THEMATIC (religious education)
+     sunday school,sunday school,hierarchy,parent=religious education
+
+● Bash(grep -i "^religious education," data/tag_map_consolidated.csv)
+  ⎿  religious education,religious education,hierarchy,parent=religious organisations
+
+● Bash(grep -i "religious.*activities" data/tag_map_consolidated.csv | head -10)
+  ⎿  (No content)
+
+● Bash(grep -i "educational activities" data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep "^Activities," data/tag_map_consolidated.csv)
+  ⎿  Activities,Activities,hierarchy,parent=(Getty AAT primary facet)
+     Activities,Activities,hierarchy,parent=(new top-level facet)
+
+● Fetch(https://vocab.getty.edu/page/aat/300069573)
+  ⎿  Error: Request failed with status code 404
+
+● Web Search("Getty AAT sunday school organization activity classification")
+  ⎿  Did 1 search in 14s                                                                                                                           
+
+● Fetch(https://www.getty.edu/vow/AATServlet?english=N&find=sunday+school&logic=AND&page=1&note=)
+  ⎿  Received 18.9KB (200 OK)
+
+● Perfect question! Getty AAT actually has a clear answer for this. Let me share what I found:
+
+  Getty AAT Classification
+
+  Getty AAT has two separate classifications for Sunday schools:
+
+  1. "Sunday schools (institutions)" - Under Organizations/Agents facet
+    - Institutional entities: organizations providing religious education
+    - Alternate terms: "schools, Sunday (institutions)", "Sunday school (institution)"
+  2. "Sunday schools (buildings)" - Under Built Environment facet
+    - Physical structures dedicated to Sunday school education
+
+  So Getty AAT treats Sunday schools as institutions/organizations, not activities.
+
+  Implications for Blue Mountains Taxonomy
+
+  Following Getty AAT, we should treat Sunday schools as organizations with the same dual-nature pattern as churches:
+
+  Recommended Structure:
+  Agents > organisations > religious organisations > religious education > sunday schools
+  ├── sunday school (singular generic - for unspecified Sunday schools)
+  └── Katoomba Congregational Church (Sunday school) (specific named organization)
+
+  This would parallel your church pattern:
+  - Church (building) = physical structure
+  - Church (organization) = congregation/denomination
+  - Sunday school (institution) = religious education organization
+  - Sunday school (building) = physical structure (if needed)
+
+  When tagging items:
+  - "Anniversary of the Sunday school" → Katoomba Congregational Church (Sunday school)
+  - Article also mentions church events → tag BOTH church (organization) AND Sunday school (institution)
+
+  Alternative (Activity-based)
+
+  If you decide Sunday schools are better classified as activities in your context:
+  - Move to Activities facet under religious/educational activities
+  - Tag as: Church (organization) + sunday school (activity)
+  - Simpler, doesn't proliferate organizational entities
+
+  My recommendation: Follow Getty AAT and treat them as institutions. The historical sources treat Sunday schools as organizational entities (they
+  have anniversaries, officers, membership), not just activities. This aligns with authoritative vocabulary standards.
+
+  What do you think? Should we follow Getty AAT's institutional classification, or do you feel the activity-based approach better serves your
+  research context?
+
+> Ok, yes, agree, follow Getty AAT. Please implement the new tags, including inserting the new intermedate tag 'sunday schools' 
+
+● Perfect! I'll implement the Sunday schools hierarchy following Getty AAT standards. Let me update the taxonomy to add the intermediate "sunday
+  schools" node and create the specific Katoomba Congregational Church (Sunday school) tag.
+
+● Read(data/tag_map_consolidated.csv)
+  ⎿  Read 5 lines
+
+● Bash(grep -n "^sunday school," data/tag_map_consolidated.csv)
+  ⎿  1256:sunday school,sunday school,hierarchy,parent=education - THEMATIC (religious education)
+     1257:sunday school,sunday school,hierarchy,parent=religious education
+
+● Write(scripts/temp_add_sunday_schools.py)
+  ⎿  Wrote 114 lines to scripts/temp_add_sunday_schools.py                                     
+     #!/usr/bin/env python3
+     """
+     Add Sunday schools hierarchy following Getty AAT institutional classification.
+     Changes:
+     1. Add intermediate "sunday schools" (plural parent) under religious education
+     2. Change "sunday school" from child of "religious education" to child of "sunday schools"
+     3. Add "Katoomba Congregational Church (Sunday school)" as specific named institution
+     """
+     … +104 lines (ctrl+o to expand)
+
+● Bash(python3 scripts/temp_add_sunday_schools.py)
+  ⎿  Sunday Schools Hierarchy Implementation                     
+     ============================================================
+     … +23 lines (ctrl+o to expand)
+
+● Bash(grep -E "^sunday school|^Katoomba Congregational Church \(Sunday school\)" data/tag_map_consolidated.csv)
+  ⎿  sunday school,sunday school,hierarchy,parent=education - THEMATIC (religious education)                                      
+     sunday school,sunday school,hierarchy,parent=sunday schools (singular generic term)
+     sunday schools,sunday schools,hierarchy,parent=religious education
+     Katoomba Congregational Church (Sunday school),Katoomba Congregational Church (Sunday school),hierarchy,parent=sunday schools
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py) timeout: 1m 0s
+  ⎿  ================================================================================
+     POLY-HIERARCHY VISUALIZATION GENERATOR
+     ================================================================================
+     … +223 lines (ctrl+o to expand)
+
+● Bash(grep -A 5 "religious education" visualizations/hierarchy_trees/primary_agents.txt | head -10)
+  ⎿  │       ├── religious education                                   
+     │       │   └── sunday schools
+     │       │       ├── Katoomba Congregational Church (Sunday school)
+     … +3 lines (ctrl+o to expand)
+
+● Bash(grep -B 2 -A 4 "sunday schools" visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  │       │   └── church (organization)
+     │       ├── religious education
+     │       │   └── sunday schools
+     … +4 lines (ctrl+o to expand)
+
+● Bash(grep -B 2 -A 4 "sunday schools" visualizations/hierarchy_trees/theme_religion.txt)
+  ⎿      │   └── church (organization)
+         ├── religious education
+         │   └── sunday schools
+     … +4 lines (ctrl+o to expand)
+
+● Bash(grep -i "sunday school" data/tag_application_mapping.csv | wc -l)
+  ⎿  0
+
+● Bash(grep -i "sunday school" data/tag_application_mapping.csv | head -5)
+  ⎿  (No content)
+
+● Bash(grep -i "sunday school" reports/church_disambiguation_report.md | head -10)
+  ⎿ **Original folksonomy**: `Accommodation, Advertising, Church, Concerts, Council Chambers, Cricket clubs, Horticulture society, Hotels, Jenolan 
+    Caves, Katoomba, Katoomba Congregational Church, Katoomba Court, Katoomba Progress Association, Katoomba School of Arts, Lawn Tennis Club, Leur
+    a, Licensing, Masonic Hall, Mr E E Medlicott, Mr Kitch, Odd Fellows' Hall, Police, Primary source, Progress committees, Publican's License, Rai
+    … +15 lines (ctrl+o to expand)
+
+
+
+● Perfect! The Sunday schools hierarchy has been successfully implemented following Getty AAT standards. Here's what's been done:
+
+  Implementation Complete ✓
+
+  Taxonomy Changes
+
+  New hierarchy structure:
+  Agents > organisations > religious organisations > religious education
+  └── sunday schools (plural parent - NEW)
+      ├── sunday school (singular generic)
+      └── Katoomba Congregational Church (Sunday school) (specific named institution - NEW)
+
+  Files Modified
+
+  1. data/tag_map_consolidated.csv:
+    - Added: sunday schools (plural parent) as child of religious education
+    - Updated: sunday school changed from child of religious education to child of sunday schools
+    - Added: Katoomba Congregational Church (Sunday school) as specific named institution
+  2. Visualizations regenerated (61 files):
+    - All hierarchy trees updated to show new structure
+    - Verified in both primary facet (Agents) and thematic views (Religion)
+
+  Verified in Visualizations
+
+  Primary Agents tree (primary_agents.txt):
+  │       ├── religious education
+  │       │   └── sunday schools
+  │       │       ├── Katoomba Congregational Church (Sunday school)
+  │       │       └── sunday school
+
+  Religion thematic tree (theme_religion.txt):
+      ├── religious education
+      │   └── sunday schools
+      │       ├── Katoomba Congregational Church (Sunday school)
+      │       └── sunday school
+
+  Impact on Church Disambiguation Report
+
+  The church report already shows Sunday school mentions in the original folksonomy. For example, Item 9 mentions:
+  "the anniversary of the sunday school in connection with the katoomba congregational church was celebrated..."
+
+  When we process the church disambiguation decisions, items like this should be tagged with:
+  - Katoomba Congregational Church (organization) - for the congregation
+  - Katoomba Congregational Church (Sunday school) - for the specific Sunday school institution
+
+  The new hierarchy is ready to use! Should we continue with reviewing the church disambiguation report now that the Sunday schools structure is in
+  place?
+
+> I'm still working on church disambiguation. I have also come across mention of St Paul's College University of Sydney (both are organisations), 
+where in our hierarchy would you suggest we put these? 
+
+● Good question! Let me check what educational institutions structure we currently have, and then suggest where colleges and universities should go
+  following Getty AAT.
+
+● Bash(grep -i "educational" data/tag_map_consolidated.csv | grep -i "institution\|organi" | head -10)
+  ⎿  (No content)
+
+● Bash(grep -i "^college\|^university\|^school," data/tag_map_consolidated.csv | head -20)
+  ⎿  school,school,hierarchy,parent=schools
+
+● Bash(grep "^organisations," data/tag_map_consolidated.csv)
+  ⎿  organisations,organisations,hierarchy,parent=Agents
+
+● Bash(grep "parent=organisations" data/tag_map_consolidated.csv | cut -d',' -f1 | sort -u)
+  ⎿  civic organisations                  
+     commercial businesses
+     cultural & recreational organisations
+     … +4 lines (ctrl+o to expand)
+
+● Bash(grep "parent=schools" data/tag_map_consolidated.csv)
+  ⎿  Katoomba Public School,Katoomba Public School,hierarchy,parent=schools                  
+     Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=schools of arts
+     Katoomba Superior Public School,Katoomba Superior Public School,hierarchy,parent=schools
+     … +4 lines (ctrl+o to expand)
+
+● Read(visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  Read 100 lines
+
+● Fetch(https://www.getty.edu/vow/AATServlet?english=N&find=university&logic=AND&page=1&note=)
+  ⎿  Received 36.8KB (200 OK)
+
+● Perfect! Getty AAT has exactly what we need. Following the same dual-nature pattern as churches and Sunday schools:
+
+  Getty AAT Classification
+
+  Universities and Colleges as Organizations:
+  - "universities (institutions)"
+  - "university colleges (institutions)"
+  - "colleges (institutions)"
+
+  Universities and Colleges as Buildings:
+  - "universities (building complexes)"
+  - "university buildings"
+  - "college buildings"
+
+  Recommended Hierarchy for Blue Mountains
+
+  Since you're currently tagging the organizational mentions, I suggest:
+
+  Agents > organisations
+  └── educational institutions (NEW - plural parent)
+      ├── colleges (NEW - plural parent)
+      │   ├── college (institution) (NEW - singular generic)
+      │   └── St Paul's College (institution) (NEW - specific named)
+      └── universities (NEW - plural parent)
+          ├── university (institution) (NEW - singular generic)
+          └── University of Sydney (institution) (NEW - specific named)
+
+  Note on St Paul's College: It's an Anglican residential college at the University of Sydney, so it could potentially have polyhierarchical
+  relationships:
+  - Primary: Agents > organisations > educational institutions > colleges
+  - Secondary (optional): Agents > organisations > religious organisations > [Anglican institutions]
+
+  But I'd recommend starting with just the educational institutions classification unless you're finding many mentions specifically about its
+  religious character.
+
+  Future consideration: If you encounter building/construction mentions, you could add:
+  - Built Environment > educational buildings > college buildings > St Paul's College (building)
+  - Built Environment > educational buildings > university buildings > University of Sydney (building)
+
+  Should I create a script to add this educational institutions hierarchy to the taxonomy?
+
+> hmm, I guess this is getting outside the realm of what we're tagging, maybe just do 'educational institutions > universities > University of 
+Sydney (organisation) and educational instiitutions > universities > university 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_agents.txt in Visual Studio Code
+
+● Good call - keep it focused on what's actually in the Blue Mountains collection. Let me add just the universities hierarchy with the generic and
+  University of Sydney tags.
+
+● Write(scripts/temp_add_universities.py)
+  ⎿  Wrote 109 lines to scripts/temp_add_universities.py                         
+     #!/usr/bin/env python3
+     """
+     Add universities hierarchy following Getty AAT institutional classification.
+     Changes:
+     1. Add "educational institutions" under organisations
+     2. Add "universities" under educational institutions
+     3. Add "university (institution)" as singular generic
+     4. Add "University of Sydney (institution)" as specific named entity
+     """
+     … +99 lines (ctrl+o to expand)
+
+● Bash(python3 scripts/temp_add_universities.py)
+  ⎿  Universities Hierarchy Implementation                       
+     ============================================================
+     … +21 lines (ctrl+o to expand)
+
+● Bash(python3 scripts/23_visualise_poly_hierarchy.py 2>&1 | tail -30) timeout: 1m 0s
+  ⎿    ✓ Saved to: visualizations/hierarchy_trees/theme_towns.txt                    
+     Generating tree for: transport & infrastructure
+       ✓ Saved to: visualizations/hierarchy_trees/theme_transport__infrastructure.txt
+     … +26 lines (ctrl+o to expand)
+
+● Bash(grep -B 2 -A 5 "educational institutions" visualizations/hierarchy_trees/primary_agents.txt)
+  ⎿  │   │           ├── lawn tennis club
+     │   │           └── tennis club
+     │   ├── educational institutions
+     … +5 lines (ctrl+o to expand)
+
+● Bash(grep -E "educational institutions|universities|University of Sydney" data/tag_map_consolidated.csv)
+  ⎿  educational institutions,educational institutions,hierarchy,parent=organisations                       
+     universities,universities,hierarchy,parent=educational institutions
+     university (institution),university (institution),hierarchy,parent=universities (singular generic term)
+     University of Sydney (institution),University of Sydney (institution),hierarchy,parent=universities
+
+● Perfect! Universities hierarchy has been successfully added. Here's what's now in place:
+
+  Implementation Complete ✓
+
+  New Hierarchy Structure
+
+  Agents > organisations
+  └── educational institutions (NEW)
+      └── universities (NEW)
+          ├── university (institution) (NEW - singular generic)
+          └── University of Sydney (institution) (NEW - specific named)
+
+  Verified in Visualization
+
+  Primary Agents tree (primary_agents.txt):
+  │   ├── educational institutions
+  │   │   └── universities
+  │   │       ├── University of Sydney (institution)
+  │   │       └── university (institution)
+
+  Taxonomy Entries
+
+  All 4 new tags confirmed in data/tag_map_consolidated.csv:
+  - educational institutions → parent: organisations
+  - universities → parent: educational institutions
+  - university (institution) → parent: universities (singular generic term)
+  - University of Sydney (institution) → parent: universities
+
+  For St Paul's College
+
+  Since it's a college at University of Sydney, you could tag items mentioning it as:
+  - University of Sydney (institution) (if mentioned in that context)
+  - Or just leave as generic if not specifically about the university
+
+  The hierarchy is ready to use for church disambiguation tagging! You can now tag items that mention University of Sydney appropriately.
+
+> ok, great - I'm done reviewing all items in church_disambiguation)report.md - please review and let me know if you have any questions (I 
+abbreviated some hierarchies, like Agents > ... > clergy > [name], hopefully it's clear enough!). After I've answered any questions you have, please
+ make a plan to update the taxonomy and retag these items, ensuring that no items are missed. 
+
+● I'll review your decisions in the church disambiguation report and check for any questions before creating a plan.
+
+● Read(reports/church_disambiguation_report.md)
+  ⎿  Read 676 lines
+
+● I've reviewed all 34 items in your church disambiguation report. Great work on the detailed decisions! I have several clarifying questions before
+  I create the implementation plan:
+                                                                                                                                                   
+● User answered Claude's questions:
+  ⎿  · For Item 1, you specified 'Wesleyan Chapel (building) AND (organisation)'. Should I create new 'Chapel' tags separate from the existing 
+     'Church' tags, or did you mean 'Wesleyan Church'? → I don't think we need to separate out churches from chapels, but looking at this entry I'd 
+     suggest: Wesleyan Chapel (building) AND Wesleyan Church (organisation)
+     · Your decisions reference many new church denominations not yet in the taxonomy (Presbyterian, Church of England, Catholic vs Roman Catholic).
+      Should I create full hierarchies for these, or just add the specific named churches? → Mix: major ones get hierarchies BUT also correct 
+     'Catholic' to Roman Catholic' and (if necessary) 'Anglican' to Church of England
+     · Several decisions reference new organizational categories: 'monasteries and friaries', 'performance groups > choirs', 'Activities > social 
+     behaviours > temperance', 'Loyal Orange Order'. Should I add all these to the taxonomy? → Add all new categories after checking to make sure 
+     they do not already exist - if you find duplicates, please inform me and wait for a decision
+     · For Item 22, you asked if I could look up the Anglican Archbishop of Sydney in July 1901. Should I research this now, or can we handle it 
+     separately? → Handle separately
+
+● Perfect! Thank you for the clarifications. Let me check the current taxonomy for existing categories before creating the plan.
+
+● Bash(grep -i "choir" data/tag_map_consolidated.csv)
+  ⎿  choir,choir,hierarchy,parent=choirs              
+     choirs,choirs,hierarchy,parent=performance groups
+
+● Bash(grep -i "temperance" data/tag_map_consolidated.csv)
+  ⎿  alcohol & temperance,alcohol & temperance,hierarchy,parent=(thematic grouping)                                  
+     alcohol consumption & behaviour,alcohol consumption & behaviour,hierarchy,parent=alcohol & temperance - THEMATIC
+     Alcohol-related venues,Alcohol-related venues,hierarchy,parent=alcohol & temperance - THEMATIC
+     … +11 lines (ctrl+o to expand)
+
+● Bash(grep -i "orange" data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -i "monastery\|monasteries\|friar" data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -i "presbyterian" data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -i "church of england\|anglican" data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -i "^Catholic\|Roman Catholic" data/tag_map_consolidated.csv | head -10)
+  ⎿  Roman Catholic Church (building),Roman Catholic Church (building),hierarchy,parent=churches        
+     Roman Catholic Church (organization),Roman Catholic Church (organization),hierarchy,parent=churches
+
+● Bash(grep "parent=performance groups" data/tag_map_consolidated.csv)
+  ⎿  bands,bands,hierarchy,parent=performance groups                      
+     choirs,choirs,hierarchy,parent=performance groups
+     minstrel troupes,minstrel troupes,hierarchy,parent=performance groups
+
+● Bash(grep "parent=churches" data/tag_map_consolidated.csv | grep -v "^churches," | cut -d',' -f1 | sort -u)
+  ⎿  church (building)                        
+     church (organization)
+     Katoomba Congregational Church (building)
+     … +9 lines (ctrl+o to expand)
+
+● Bash(grep "parent=lodges" data/tag_map_consolidated.csv | cut -d',' -f1 | sort -u)
+  ⎿  Freemasons                      
+     independent lodges
+     Independent Order of Odd Fellows
+     … +3 lines (ctrl+o to expand)
+
+● Bash(grep -i "social behaviours" data/tag_map_consolidated.csv | head -10)
+  ⎿  drinking (alcohol),drinking (alcohol),hierarchy,parent=social behaviours                    
+     gambling,gambling,hierarchy,parent=social behaviours
+     social behaviour,social behaviour,hierarchy,parent=social behaviours (singular generic term)
+     … +2 lines (ctrl+o to expand)
+
+● Perfect! I've checked the existing taxonomy. Here's what I found:
+
+  ALREADY EXISTS (no action needed):
+  - ✓ choirs (under performance groups)
+  - ✓ temperance (under social behaviours)
+  - ✓ Roman Catholic Church (building) and Roman Catholic Church (organization)
+  - ✓ Existing specific churches: Katoomba Congregational Church, Methodist Church, Wesleyan Church, St Hilda's Church
+
+  NEEDS TO BE ADDED:
+  - Loyal Orange Order (no Orange-related tags found)
+  - monasteries and friaries (not found)
+  - Presbyterian churches (not found)
+  - Church of England churches (not found - need to add as primary, map "Anglican" as synonym)
+  - Many specific named churches from your decisions
+
+  Let me now create the comprehensive implementation plan:
+  ⎿  User rejected Claude's plan:
+     ╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+     │ Church Disambiguation Implementation Plan                                                                          │
+     │                                                                                                                    │
+     │ Phase 1: Add New Taxonomy Hierarchies                                                                              │
+     │                                                                                                                    │
+     │ 1.1 Add Loyal Orange Order                                                                                         │
+     │                                                                                                                    │
+     │ Agents > organisations > fraternal orders & lodges > lodges                                                        │
+     │ └── Loyal Orange Order (NEW)                                                                                       │
+     │                                                                                                                    │
+     │ 1.2 Add monasteries and friaries                                                                                   │
+     │                                                                                                                    │
+     │ Agents > organisations > religious organisations                                                                   │
+     │ └── monasteries and friaries (NEW - plural parent)                                                                 │
+     │     ├── monastery or friary (NEW - singular generic)                                                               │
+     │     └── Waverley Friary (organization) (NEW - specific named)                                                      │
+     │                                                                                                                    │
+     │ 1.3 Add Presbyterian churches hierarchy                                                                            │
+     │                                                                                                                    │
+     │ Agents > organisations > religious organisations > churches                                                        │
+     │ └── Presbyterian churches (NEW - intermediate node)                                                                │
+     │     ├── Presbyterian church (organization) (NEW - singular generic for organisation)                               │
+     │     ├── Presbyterian church (building) (NEW - singular generic for building)                                       │
+     │     ├── Leura Presbyterian Church (organization) (NEW)                                                             │
+     │     ├── Leura Presbyterian Church (building) (NEW)                                                                 │
+     │     ├── Wentworth Falls Presbyterian Church (organization) (NEW)                                                   │
+     │     └── Wentworth Falls Presbyterian Church (building) (NEW)                                                       │
+     │                                                                                                                    │
+     │ 1.4 Add Church of England hierarchy                                                                                │
+     │                                                                                                                    │
+     │ Agents > organisations > religious organisations > churches                                                        │
+     │ └── Church of England churches (NEW - intermediate node)                                                           │
+     │     ├── Church of England church (organization) (NEW - singular generic)                                           │
+     │     ├── Church of England church (building) (NEW - singular generic)                                               │
+     │     ├── Church of England Katoomba (organization) (NEW)                                                            │
+     │     ├── Church of England Katoomba (building) (NEW)                                                                │
+     │     ├── St Hilda's Church of England (organization) (NEW)                                                          │
+     │     ├── St Hilda's Church of England (building) (NEW)                                                              │
+     │     ├── St Aidan's Church Blackheath (organization) (NEW)                                                          │
+     │     ├── St Clement's Church of England Yass (organization) (NEW)                                                   │
+     │     ├── St Mark's Church of England Darling Point (organization) (NEW)                                             │
+     │     ├── St Mark's Church of England (building) (NEW)                                                               │
+     │     ├── St Andrew's Cathedral Church of England Sydney (organization) (NEW)                                        │
+     │     ├── St Andrew's Cathedral Church of England Sydney (building) (NEW)                                            │
+     │     ├── St John's Church Parramatta (building) (NEW)                                                               │
+     │     ├── St David's Church Surry Hills (building) (NEW)                                                             │
+     │     ├── St Paul's Church of England (building) (NEW)                                                               │
+     │     └── St Mary's Church of England Greta (building) (NEW)                                                         │
+     │ Note: Add synonym mapping: "Anglican" → "Church of England"                                                        │
+     │                                                                                                                    │
+     │ 1.5 Add additional Catholic churches                                                                               │
+     │                                                                                                                    │
+     │ Agents > organisations > religious organisations > churches > [existing Roman Catholic hierarchy]                  │
+     │ ├── Lawson Roman Catholic Church (organization) (NEW)                                                              │
+     │ ├── St Canice's Catholic Church Katoomba (organization) (NEW)                                                      │
+     │ ├── St Canice's Catholic Church Katoomba (building) (NEW)                                                          │
+     │ ├── St Joseph's Roman Catholic Church Megalong (organization) (NEW)                                                │
+     │ ├── St Joseph's Roman Catholic Church Megalong (building) (NEW)                                                    │
+     │ ├── Mount Victoria Catholic Church (organization) (NEW)                                                            │
+     │ ├── Blackheath Catholic Church (organization) (NEW)                                                                │
+     │ └── Roman Catholic Church Katoomba (building) (NEW)                                                                │
+     │ Note: Standardize "Catholic" → "Roman Catholic" where needed                                                       │
+     │                                                                                                                    │
+     │ 1.6 Add Congregational churches (location-specific)                                                                │
+     │                                                                                                                    │
+     │ Under existing churches hierarchy:                                                                                 │
+     │ ├── Congregational Church Katoomba South (organization) (NEW)                                                      │
+     │ ├── Congregational Church Katoomba South (building) (NEW)                                                          │
+     │ ├── Congregational Church (organization) (NEW - generic)                                                           │
+     │ ├── Congregational Church (building) (NEW - generic)                                                               │
+     │ └── Congregational Church Katoomba (building) (NEW)                                                                │
+     │                                                                                                                    │
+     │ 1.7 Add Methodist churches (location-specific)                                                                     │
+     │                                                                                                                    │
+     │ Under existing Methodist Church:                                                                                   │
+     │ └── Katoomba Methodist Church (organization) (NEW)                                                                 │
+     │                                                                                                                    │
+     │ 1.8 Add Wesleyan churches (location-specific + chapel variant)                                                     │
+     │                                                                                                                    │
+     │ Under existing Wesleyan Church:                                                                                    │
+     │ ├── Wesleyan Chapel (building) (NEW - distinct building type)                                                      │
+     │ ├── Katoomba Wesleyan Church (organization) (NEW)                                                                  │
+     │ ├── Katoomba Wesleyan Church (building) (NEW)                                                                      │
+     │ └── Wesleyan Church Katoomba (building) (NEW - variant naming)                                                     │
+     │                                                                                                                    │
+     │ 1.9 Add Methodist Band of Hope                                                                                     │
+     │                                                                                                                    │
+     │ Agents > organisations > religious organisations > religious social movements                                      │
+     │ └── Methodist Band of Hope (NEW)                                                                                   │
+     │                                                                                                                    │
+     │ 1.10 Add Congregational Church Choir                                                                               │
+     │                                                                                                                    │
+     │ Agents > organisations > cultural & recreational organisations > performance groups > choirs                       │
+     │ └── Congregational Church Choir (NEW)                                                                              │
+     │                                                                                                                    │
+     │ Phase 2: Create Tag Application Mappings                                                                           │
+     │                                                                                                                    │
+     │ For all 34 items, create entries in data/tag_application_mapping.csv:                                              │
+     │ - Remove: church (building) from all items                                                                         │
+     │ - Add: Specific church tags based on decisions in report                                                           │
+     │ - Source: church_disambiguation_report                                                                             │
+     │ - Handle Item 21: Skip (user needs to check Zotero annotation)                                                     │
+     │ - Handle Item 5: Remove Church tag entirely (no church mentioned)                                                  │
+     │                                                                                                                    │
+     │ Phase 3: Handle Special Cases & Clergy                                                                             │
+     │                                                                                                                    │
+     │ Extract all clergy mentions (abbreviated as "Agents > ... > clergy > [name]") and create:                          │
+     │ - Verify clergy exists under occupations                                                                           │
+     │ - Add all named clergy as specific persons under clergy                                                            │
+     │                                                                                                                    │
+     │ Phase 4: Validation                                                                                                │
+     │                                                                                                                    │
+     │ 1. Regenerate hierarchy visualizations                                                                             │
+     │ 2. Verify all 34 items have correct tags applied                                                                   │
+     │ 3. Check for any typos in church names                                                                             │
+     │ 4. Ensure no duplicate entries created                                                                             │
+     │                                                                                                                    │
+     │ Summary Statistics                                                                                                 │
+     │                                                                                                                    │
+     │ - New hierarchies: 4 (Loyal Orange Order, monasteries/friaries, Presbyterian churches, Church of England churches) │
+     │ - New specific churches: ~30+ individual church tags                                                               │
+     │ - Items to retag: 33 (excluding Item 21 which needs manual review)                                                 │
+     │ - Tags to remove: 33 instances of generic church (building)                                                        │
+     ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+
