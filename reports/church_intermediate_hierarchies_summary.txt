@@ -1,0 +1,124 @@
+Church Intermediate Hierarchies Implementation
+================================================================================
+
+Date: 2025-11-09
+Status: COMPLETE
+
+OBJECTIVE
+--------------------------------------------------------------------------------
+Add intermediate hierarchy nodes for church denominations with multiple 
+instances, following the pattern established for Presbyterian churches and 
+Church of England churches.
+
+CHANGES IMPLEMENTED
+--------------------------------------------------------------------------------
+
+1. Added 2 new intermediate hierarchy nodes:
+   - Congregational churches (parent=churches)
+   - Roman Catholic churches (parent=churches)
+
+2. Updated parent relationships for 17 existing church tags:
+   
+   Congregational churches (7 tags):
+   - Congregational Church (building)
+   - Congregational Church (organization)
+   - Congregational Church Katoomba (building)
+   - Congregational Church Katoomba South (building)
+   - Congregational Church Katoomba South (organization)
+   - Katoomba Congregational Church (building)
+   - Katoomba Congregational Church (organization)
+   
+   Roman Catholic churches (10 tags):
+   - Roman Catholic Church (building)
+   - Roman Catholic Church (organization)
+   - Roman Catholic Church Blackheath (organization)
+   - Roman Catholic Church Katoomba (building)
+   - Roman Catholic Church Lawson (organization)
+   - Roman Catholic Church Megalong (building)
+   - Roman Catholic Church Megalong (organization)
+   - Roman Catholic Church Mount Victoria (organization)
+   - St Canice's Catholic Church Katoomba (building)
+   - St Canice's Catholic Church Katoomba (organization)
+
+RESULTING HIERARCHY STRUCTURE
+--------------------------------------------------------------------------------
+
+churches
+├── Church of England churches (17 instances)
+│   ├── Church of England church (building/organization) [generic]
+│   ├── Church of England Katoomba (building/organization)
+│   ├── St Aidan's Church Blackheath (organization)
+│   ├── St Andrew's Cathedral Church of England Sydney (...)
+│   ├── St Clement's Church of England Yass (organization)
+│   ├── St David's Church Surry Hills (building)
+│   ├── St Hilda's Church of England (building/organization)
+│   ├── St John's Church Parramatta (building)
+│   ├── St Mark's Church of England (building)
+│   ├── St Mark's Church of England Darling Point (organization)
+│   ├── St Mary's Church of England Greta (building)
+│   └── St Paul's Church of England (building)
+│
+├── Congregational churches (7 instances) [NEW INTERMEDIATE NODE]
+│   ├── Congregational Church (building/organization) [generic]
+│   ├── Congregational Church Katoomba (building)
+│   ├── Congregational Church Katoomba South (building/organization)
+│   └── Katoomba Congregational Church (building/organization)
+│
+├── Presbyterian churches (6 instances)
+│   ├── Presbyterian church (building/organization) [generic]
+│   ├── Presbyterian Church Leura (building/organization)
+│   └── Presbyterian Church Wentworth Falls (building/organization)
+│
+├── Roman Catholic churches (10 instances) [NEW INTERMEDIATE NODE]
+│   ├── Roman Catholic Church (building/organization) [generic]
+│   ├── Roman Catholic Church Blackheath (organization)
+│   ├── Roman Catholic Church Katoomba (building)
+│   ├── Roman Catholic Church Lawson (organization)
+│   ├── Roman Catholic Church Megalong (building/organization)
+│   ├── Roman Catholic Church Mount Victoria (organization)
+│   └── St Canice's Catholic Church Katoomba (building/organization)
+│
+├── Methodist Church (building/organization)
+├── Methodist Church Katoomba (organization)
+├── Wesleyan Chapel (building)
+├── Wesleyan Church (building/organization)
+├── Wesleyan Church Katoomba (building/organization)
+├── St Hilda's Church (building/organization) [pre-existing, generic]
+├── church (building/organization) [generic]
+└── ...
+
+CONSISTENCY ACHIEVED
+--------------------------------------------------------------------------------
+
+All denominations with 2+ distinct church instances now have intermediate 
+hierarchy nodes:
+
+✓ Church of England churches (17 instances)
+✓ Congregational churches (7 instances) [NEW]
+✓ Presbyterian churches (6 instances)  
+✓ Roman Catholic churches (10 instances) [NEW]
+
+Denominations with single instances remain directly under "churches":
+- Methodist Church (2 instances: generic + Katoomba specific)
+- Wesleyan churches (4 instances: Chapel, generic Church, Katoomba)
+- St Hilda's Church (generic)
+
+Note: Methodist and Wesleyan churches currently have fewer location-specific
+instances and don't yet warrant intermediate hierarchy nodes. These can be
+added if more instances are discovered in the collection.
+
+FILES MODIFIED
+--------------------------------------------------------------------------------
+- data/tag_map_consolidated.csv (2 new tags, 17 updated parent relationships)
+- visualizations/hierarchy_trees/*.txt (all 61 files regenerated)
+
+VALIDATION
+--------------------------------------------------------------------------------
+✓ All hierarchy visualizations regenerated successfully
+✓ Structure verified in Religion thematic grouping
+✓ Structure verified in Agents primary facet
+✓ Consistent with existing Presbyterian/Church of England pattern
+
+================================================================================
+Implementation: temp_add_church_intermediate_hierarchies.py
+Report generated: 2025-11-09

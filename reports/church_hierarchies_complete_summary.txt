@@ -1,0 +1,179 @@
+Complete Church Hierarchies Implementation
+================================================================================
+
+Date: 2025-11-09
+Status: COMPLETE
+
+OBJECTIVE
+--------------------------------------------------------------------------------
+Create consistent intermediate hierarchy nodes for ALL church denominations,
+and resolve duplicate St Hilda's Church entries.
+
+FINAL CHANGES
+--------------------------------------------------------------------------------
+
+1. Added 2 additional intermediate hierarchy nodes:
+   - Methodist churches (parent=churches)
+   - Wesleyan churches (parent=churches)
+
+2. Updated parent relationships for 8 church tags:
+   
+   Methodist churches (3 tags):
+   - Methodist Church (building)
+   - Methodist Church (organization)
+   - Methodist Church Katoomba (organization)
+   
+   Wesleyan churches (5 tags):
+   - Wesleyan Chapel (building)
+   - Wesleyan Church (building)
+   - Wesleyan Church (organization)
+   - Wesleyan Church Katoomba (building)
+   - Wesleyan Church Katoomba (organization)
+
+3. Resolved duplicate entries:
+   - St Hilda's Church (building) → SYNONYM → St Hilda's Church of England (building)
+   - St Hilda's Church (organization) → SYNONYM → St Hilda's Church of England (organization)
+
+COMPLETE HIERARCHY STRUCTURE
+--------------------------------------------------------------------------------
+
+churches
+├── Church of England churches (17 instances)
+│   ├── Church of England church (building/organization) [generic]
+│   ├── Church of England Katoomba (building/organization)
+│   ├── St Aidan's Church Blackheath (organization)
+│   ├── St Andrew's Cathedral Church of England Sydney (building/organization)
+│   ├── St Clement's Church of England Yass (organization)
+│   ├── St David's Church Surry Hills (building)
+│   ├── St Hilda's Church of England (building/organization) ✓ [duplicate resolved]
+│   ├── St John's Church Parramatta (building)
+│   ├── St Mark's Church of England (building)
+│   ├── St Mark's Church of England Darling Point (organization)
+│   ├── St Mary's Church of England Greta (building)
+│   └── St Paul's Church of England (building)
+│
+├── Congregational churches (7 instances)
+│   ├── Congregational Church (building/organization) [generic]
+│   ├── Congregational Church Katoomba (building)
+│   ├── Congregational Church Katoomba South (building/organization)
+│   └── Katoomba Congregational Church (building/organization)
+│
+├── Methodist churches (3 instances) ✓ [NEW]
+│   ├── Methodist Church (building/organization) [generic]
+│   └── Methodist Church Katoomba (organization)
+│
+├── Presbyterian churches (6 instances)
+│   ├── Presbyterian church (building/organization) [generic]
+│   ├── Presbyterian Church Leura (building/organization)
+│   └── Presbyterian Church Wentworth Falls (building/organization)
+│
+├── Roman Catholic churches (10 instances)
+│   ├── Roman Catholic Church (building/organization) [generic]
+│   ├── Roman Catholic Church Blackheath (organization)
+│   ├── Roman Catholic Church Katoomba (building)
+│   ├── Roman Catholic Church Lawson (organization)
+│   ├── Roman Catholic Church Megalong (building/organization)
+│   ├── Roman Catholic Church Mount Victoria (organization)
+│   └── St Canice's Catholic Church Katoomba (building/organization)
+│
+├── Wesleyan churches (5 instances) ✓ [NEW]
+│   ├── Wesleyan Chapel (building)
+│   ├── Wesleyan Church (building/organization) [generic]
+│   └── Wesleyan Church Katoomba (building/organization)
+│
+├── church (building/organization) [generic catch-all]
+└── Katoomba Congregational Church (Sunday school) [under religious education]
+
+FULL CONSISTENCY ACHIEVED
+--------------------------------------------------------------------------------
+
+ALL denominations now have intermediate hierarchy nodes:
+
+✓ Church of England churches (17 instances)
+✓ Congregational churches (7 instances)
+✓ Methodist churches (3 instances) [NEW]
+✓ Presbyterian churches (6 instances)
+✓ Roman Catholic churches (10 instances)
+✓ Wesleyan churches (5 instances) [NEW]
+
+Total: 6 denomination-specific intermediate nodes
+Total church instances: 48 location/denomination-specific churches
+
+PATTERN CONSISTENCY
+--------------------------------------------------------------------------------
+
+Every denomination follows the same pattern:
+
+[Denomination] churches (parent=churches)
+├── [Denomination] Church (building) [generic singular]
+├── [Denomination] Church (organization) [generic singular]
+├── [Denomination] Church [Location] (building) [specific named]
+├── [Denomination] Church [Location] (organization) [specific named]
+└── ...
+
+Benefits:
+- Faceted browsing by denomination
+- Consistent depth across all branches
+- Clear distinction between building and organization
+- Generic singular terms for unspecified instances
+- Named instances for specific churches
+
+DUPLICATE RESOLUTION
+--------------------------------------------------------------------------------
+
+Before:
+- St Hilda's Church (building) [standalone at root]
+- St Hilda's Church (organization) [standalone at root]
+- St Hilda's Church of England (building) [under Church of England churches]
+- St Hilda's Church of England (organization) [under Church of England churches]
+
+After:
+- St Hilda's Church → SYNONYM → St Hilda's Church of England
+- Only St Hilda's Church of England appears in hierarchy
+- Maintains semantic correctness (St Hilda's IS Church of England)
+
+SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+
+Total intermediate nodes added (all sessions): 6
+- Church of England churches
+- Congregational churches
+- Methodist churches (NEW)
+- Presbyterian churches
+- Roman Catholic churches
+- Wesleyan churches (NEW)
+
+Total parent relationships updated: 25
+Total duplicates resolved: 2 (converted to synonyms)
+Total hierarchy visualization files: 61
+
+FILES MODIFIED
+--------------------------------------------------------------------------------
+- data/tag_map_consolidated.csv (4 new tags, 25 updated relationships, 2 synonyms)
+- visualizations/hierarchy_trees/*.txt (all 61 files regenerated)
+
+VALIDATION
+--------------------------------------------------------------------------------
+✓ All hierarchy visualizations regenerated successfully
+✓ Structure verified in Religion thematic grouping
+✓ Structure verified in Agents primary facet (religious organisations)
+✓ St Hilda's duplicate verified resolved
+✓ Pattern consistency verified across all 6 denominations
+
+NAMING CONVENTION
+--------------------------------------------------------------------------------
+
+Followed throughout:
+- [church name] [place] as preferred form
+- [place] [church name] mapped as synonyms
+- (building) vs (organization) parentheticals for disambiguation
+- Lowercase "church/churches" for generic terms
+- Capitalized for proper names and denominational names
+
+================================================================================
+Implementation scripts:
+- temp_church_disambiguation_taxonomy.py (original hierarchies)
+- temp_add_church_intermediate_hierarchies.py (Congregational, Roman Catholic)
+- temp_complete_church_hierarchies.py (Methodist, Wesleyan, St Hilda's fix)
+
+Report generated: 2025-11-09
