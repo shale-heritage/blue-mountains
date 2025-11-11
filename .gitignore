@@ -44,6 +44,7 @@ gazetteers/
 # Reference PDFs (copyrighted articles, large files)
 # Not suitable for public repository due to copyright and file size
 references/pdfs/
+data/pdfs/
 
 # Conversation exports - require manual review before committing
 # Name new exports with .new extension, review/redact, then rename to .txt
