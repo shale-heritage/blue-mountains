@@ -8,7 +8,9 @@ Events
 │   │   └── livestock accidents
 │   │       └── animal attacks
 │   │           └── goring
-│   ├── disaster
+│   ├── disasters
+│   │   ├── bushfire
+│   │   └── disaster
 │   ├── fire
 │   ├── mining accidents
 │   │   ├── Mount Kembla Disaster
@@ -50,11 +52,15 @@ Events
 │   │   └── property offences
 │   │       └── stock trespass
 │   ├── divorce
+│   ├── inquests
+│   │   └── inquest
 │   └── legal event
 ├── legal proceedings
 │   ├── court cases
 │   │   └── property offences
 │   │       └── stock trespass
+│   ├── inquests
+│   │   └── inquest
 │   ├── legal proceeding
 │   └── licensing cases
 │       ├── licensing offences
@@ -87,6 +93,6 @@ Events
 
 
 STATISTICS:
-  Total nodes in facet: 83
+  Total nodes in facet: 89
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

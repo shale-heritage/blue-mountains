@@ -4,39 +4,7 @@ THEMATIC GROUPING: alcohol & temperance
 alcohol & temperance
 ├── Alcohol-related venues
 │   ├── hotels
-│   │   ├── Allen's Hotel
-│   │   ├── Belgravia Hotel
-│   │   ├── Brown's Hotel
-│   │   ├── Carrington Hotel
-│   │   ├── Centennial Hotel
-│   │   ├── Comet Hotel
-│   │   ├── Delaney's Hotel
-│   │   ├── Falls Hotel
-│   │   ├── Family Hotel
-│   │   ├── Fryer's Family Hotel
-│   │   ├── Grand Hotel
-│   │   ├── Grand Hotel (Sydney)
-│   │   ├── Great Western Hotel
-│   │   ├── Hoffman's House
-│   │   ├── Hotel Wentworth
-│   │   ├── Hydora House Hotel
-│   │   ├── Imperial Hotel
-│   │   ├── Katoomba Family Hotel
-│   │   ├── Katoomba Hotel
-│   │   ├── Leura Hotel
-│   │   ├── Megalong Hotel
-│   │   ├── Montrose House
-│   │   ├── Mount Victoria Hotel
-│   │   ├── Mrs Long's Hotel
-│   │   ├── Oxford Hotel (Sydney)
-│   │   ├── Railway Hotel
-│   │   ├── Wentworth Falls Hotel
-│   │   ├── family hotels
-│   │   │   ├── Delaney's Family Hotel
-│   │   │   └── Katoomba Family Hotel
-│   │   └── hotel
 │   └── public houses
-│       └── public house
 ├── alcohol consumption & behaviour
 │   ├── Drunkeness
 │   ├── alcoholic beverages
@@ -80,9 +48,6 @@ alcohol & temperance
 │   │   ├── Mr Edwards
 │   │   ├── Mr Ellis
 │   │   ├── Mr J Hudson
-│   │   ├── Mr J Nimmo
-│   │   ├── Mr J. Nimmo
-│   │   ├── Mr Joe Nimmo
 │   │   ├── Mr Lindeman
 │   │   ├── Mr Manuel
 │   │   ├── Mr N Delaney
@@ -128,6 +93,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 120
+  Total nodes in theme: 85
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

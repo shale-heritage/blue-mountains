@@ -81,8 +81,9 @@ people
 ├── Mrs Meredith
 ├── Mrs W Watson
 ├── Mrs Wilson
-├── Senior-Constable Illingworth
+├── Senior-Constable John Illingworth
 ├── Senior-Constable Thorncroft
+├── Senior-Constable Tomkins
 ├── Sergeant Thorndyke
 ├── demographic groups
 │   ├── adolescents
@@ -284,9 +285,6 @@ people
     │   │   ├── Mr Edwards
     │   │   ├── Mr Ellis
     │   │   ├── Mr J Hudson
-    │   │   ├── Mr J Nimmo
-    │   │   ├── Mr J. Nimmo
-    │   │   ├── Mr Joe Nimmo
     │   │   ├── Mr Lindeman
     │   │   ├── Mr Manuel
     │   │   ├── Mr N Delaney
@@ -318,8 +316,9 @@ people
     │       │   └── Constable White
     │       ├── police officer
     │       ├── senior-constable
-    │       │   ├── Senior-Constable Illingworth
-    │       │   └── Senior-Constable Thorncroft
+    │       │   ├── Senior-Constable John Illingworth
+    │       │   ├── Senior-Constable Thorncroft
+    │       │   └── Senior-Constable Tomkins
     │       └── sergeant
     │           └── Sergeant Thorndyke
     ├── legal officials
@@ -371,6 +370,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 363
+  Total nodes in theme: 362
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

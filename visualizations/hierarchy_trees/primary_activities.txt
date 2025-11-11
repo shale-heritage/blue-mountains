@@ -12,7 +12,7 @@ Activities
 │   ├── communication activity
 │   ├── fundraising
 │   └── postal services
-│       └── Postal service
+│       └── postal service
 ├── economic activities
 │   ├── agriculture
 │   │   └── animal husbandry
@@ -63,6 +63,7 @@ Activities
 │   └── temperance
 └── societal activities
     ├── law enforcement
+    │   ├── New South Wales Police
     │   └── policing
     ├── military activities
     ├── public health and safety activities
@@ -78,6 +79,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 74
+  Total nodes in facet: 75
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

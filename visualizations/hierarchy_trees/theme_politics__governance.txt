@@ -3,20 +3,20 @@ THEMATIC GROUPING: Politics & Governance
 
 Politics & Governance
 ├── government bodies
-│   ├── Aborigines' Protection Board
-│   ├── New South Wales Police
-│   ├── Postal Department
 │   ├── councils
 │   │   ├── Katoomba Council
 │   │   ├── Lithgow Council
 │   │   └── council
 │   ├── courts
+│   │   ├── Courts of Petty Sessions
 │   │   ├── Katoomba Court
 │   │   ├── Licensing Court
 │   │   ├── Penrith Police Court
 │   │   ├── Supreme Court
-│   │   ├── court
-│   │   └── police court
+│   │   └── court
+│   ├── law enforcement
+│   │   ├── New South Wales Police
+│   │   └── policing
 │   ├── other government bodies
 │   │   └── Aborigines' Protection Board
 │   ├── postal authorities

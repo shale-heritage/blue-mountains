@@ -15,7 +15,6 @@ Agents
 │   │   ├── labour organisations
 │   │   │   ├── labour organisation
 │   │   │   └── unions
-│   │   ├── labour organizations
 │   │   └── progress committees
 │   │       ├── Katoomba Progress Association
 │   │       ├── Leura Progress Association
@@ -28,41 +27,10 @@ Agents
 │   │   │   ├── bank
 │   │   │   └── financial institution
 │   │   ├── hospitality businesses
-│   │   │   ├── boarding houses
-│   │   │   │   ├── Orama Boarding House
-│   │   │   │   └── boarding house
-│   │   │   └── hotels
-│   │   │       ├── Allen's Hotel
-│   │   │       ├── Belgravia Hotel
-│   │   │       ├── Brown's Hotel
-│   │   │       ├── Carrington Hotel
-│   │   │       ├── Centennial Hotel
-│   │   │       ├── Comet Hotel
-│   │   │       ├── Delaney's Hotel
-│   │   │       ├── Falls Hotel
-│   │   │       ├── Family Hotel
-│   │   │       ├── Fryer's Family Hotel
-│   │   │       ├── Grand Hotel
-│   │   │       ├── Grand Hotel (Sydney)
-│   │   │       ├── Great Western Hotel
-│   │   │       ├── Hoffman's House
-│   │   │       ├── Hotel Wentworth
-│   │   │       ├── Hydora House Hotel
-│   │   │       ├── Imperial Hotel
-│   │   │       ├── Katoomba Family Hotel
-│   │   │       ├── Katoomba Hotel
-│   │   │       ├── Leura Hotel
-│   │   │       ├── Megalong Hotel
-│   │   │       ├── Montrose House
-│   │   │       ├── Mount Victoria Hotel
-│   │   │       ├── Mrs Long's Hotel
-│   │   │       ├── Oxford Hotel (Sydney)
-│   │   │       ├── Railway Hotel
-│   │   │       ├── Wentworth Falls Hotel
-│   │   │       ├── family hotels
-│   │   │       │   ├── Delaney's Family Hotel
-│   │   │       │   └── Katoomba Family Hotel
-│   │   │       └── hotel
+│   │   │   ├── boarding houses (businesses)
+│   │   │   │   ├── Orama Boarding House (business)
+│   │   │   │   └── boarding house (business)
+│   │   │   └── hotels (businesses)
 │   │   ├── mining companies
 │   │   │   ├── Australian Kerosene Oil and Mineral Company
 │   │   │   ├── Gladstone Coal Company
@@ -77,9 +45,7 @@ Agents
 │   │   │   ├── Douglas and Company
 │   │   │   ├── Nimmo's
 │   │   │   ├── P. Mullany and Company
-│   │   │   ├── Peckman Bros
 │   │   │   ├── Peckman Brothers
-│   │   │   ├── Store
 │   │   │   ├── Tabrett and Company
 │   │   │   └── retailer or store
 │   │   └── transport & logistics businesses
@@ -132,7 +98,7 @@ Agents
 │   │       │   ├── Western Rifle Association
 │   │       │   └── rifle club
 │   │       ├── rugby clubs
-│   │       │   ├── penrith rugby club
+│   │       │   ├── Penrith Rugby Club
 │   │       │   └── rugby club
 │   │       └── tennis clubs
 │   │           ├── Katoomba Lawn Tennis Club
@@ -150,27 +116,25 @@ Agents
 │   │       ├── Loyal Orange Order
 │   │       ├── United Ancient Order of Druids
 │   │       │   └── Druid's Lodge (local lodge)
-│   │       ├── independent lodges
-│   │       │   └── Mountaineer Lodge
 │   │       ├── lodge
 │   │       └── unaffiliated lodges
 │   │           ├── Mountaineer Lodge
 │   │           └── unaffiliated lodge
 │   ├── government bodies
-│   │   ├── Aborigines' Protection Board
-│   │   ├── New South Wales Police
-│   │   ├── Postal Department
 │   │   ├── councils
 │   │   │   ├── Katoomba Council
 │   │   │   ├── Lithgow Council
 │   │   │   └── council
 │   │   ├── courts
+│   │   │   ├── Courts of Petty Sessions
 │   │   │   ├── Katoomba Court
 │   │   │   ├── Licensing Court
 │   │   │   ├── Penrith Police Court
 │   │   │   ├── Supreme Court
-│   │   │   ├── court
-│   │   │   └── police court
+│   │   │   └── court
+│   │   ├── law enforcement
+│   │   │   ├── New South Wales Police
+│   │   │   └── policing
 │   │   ├── other government bodies
 │   │   │   └── Aborigines' Protection Board
 │   │   ├── postal authorities
@@ -183,69 +147,44 @@ Agents
 │   │       ├── Katoomba Rifle Reserves
 │   │       └── Mountain Rifle Reserves
 │   └── religious organisations
-│       ├── churches
-│       │   ├── Church of England churches
-│       │   │   ├── Church of England Katoomba (building)
-│       │   │   ├── Church of England Katoomba (organization)
-│       │   │   ├── Church of England church (building)
-│       │   │   ├── Church of England church (organization)
-│       │   │   ├── St Aidan's Church Blackheath (organization)
-│       │   │   ├── St Andrew's Cathedral Church of England Sydney (building)
-│       │   │   ├── St Andrew's Cathedral Church of England Sydney (organization)
-│       │   │   ├── St Clement's Church of England Yass (organization)
-│       │   │   ├── St David's Church Surry Hills (building)
-│       │   │   ├── St Hilda's Church of England (building)
-│       │   │   ├── St Hilda's Church of England (organization)
-│       │   │   ├── St John's Church Parramatta (building)
-│       │   │   ├── St Mark's Church of England (building)
-│       │   │   ├── St Mark's Church of England Darling Point (organization)
-│       │   │   ├── St Mary's Church of England Greta (building)
-│       │   │   └── St Paul's Church of England (building)
-│       │   ├── Congregational churches
-│       │   │   ├── Congregational Church (building)
-│       │   │   ├── Congregational Church (organization)
-│       │   │   ├── Congregational Church Katoomba (building)
-│       │   │   ├── Congregational Church Katoomba South (building)
-│       │   │   ├── Congregational Church Katoomba South (organization)
-│       │   │   ├── Katoomba Congregational Church (building)
-│       │   │   └── Katoomba Congregational Church (organization)
-│       │   ├── Methodist churches
-│       │   │   ├── Methodist Church (building)
-│       │   │   ├── Methodist Church (organization)
-│       │   │   └── Methodist Church Katoomba (organization)
-│       │   ├── Presbyterian churches
-│       │   │   ├── Presbyterian Church Leura (building)
-│       │   │   ├── Presbyterian Church Leura (organization)
-│       │   │   ├── Presbyterian Church Wentworth Falls (building)
-│       │   │   ├── Presbyterian Church Wentworth Falls (organization)
-│       │   │   ├── Presbyterian church (building)
-│       │   │   └── Presbyterian church (organization)
-│       │   ├── Roman Catholic churches
-│       │   │   ├── Roman Catholic Church (building)
-│       │   │   ├── Roman Catholic Church (organization)
-│       │   │   ├── Roman Catholic Church Blackheath (organization)
-│       │   │   ├── Roman Catholic Church Katoomba (building)
-│       │   │   ├── Roman Catholic Church Lawson (organization)
-│       │   │   ├── Roman Catholic Church Megalong (building)
-│       │   │   ├── Roman Catholic Church Megalong (organization)
-│       │   │   ├── Roman Catholic Church Mount Victoria (organization)
-│       │   │   ├── St Canice's Catholic Church Katoomba (building)
-│       │   │   └── St Canice's Catholic Church Katoomba (organization)
-│       │   ├── Wesleyan churches
-│       │   │   ├── Wesleyan Chapel (building)
-│       │   │   ├── Wesleyan Church (building)
-│       │   │   ├── Wesleyan Church (organization)
-│       │   │   ├── Wesleyan Church Katoomba (building)
-│       │   │   └── Wesleyan Church Katoomba (organization)
-│       │   ├── church (building)
-│       │   └── church (organization)
+│       ├── churches (organisations)
+│       │   ├── Church of England churches (organisations)
+│       │   │   ├── Church of England Katoomba (organisation)
+│       │   │   ├── Church of England church (organisation)
+│       │   │   ├── St Aidan's Church Blackheath (organisation)
+│       │   │   ├── St Andrew's Cathedral Church of England Sydney (organisation)
+│       │   │   ├── St Clement's Church of England Yass (organisation)
+│       │   │   ├── St Hilda's Church of England (organisation)
+│       │   │   └── St Mark's Church of England Darling Point (organisation)
+│       │   ├── Congregational churches (organisations)
+│       │   │   ├── Congregational Church (organisation)
+│       │   │   ├── Congregational Church Katoomba South (organisation)
+│       │   │   └── Katoomba Congregational Church (organisation)
+│       │   ├── Methodist churches (organisations)
+│       │   │   ├── Methodist Church (organisation)
+│       │   │   └── Methodist Church Katoomba (organisation)
+│       │   ├── Presbyterian churches (organisations)
+│       │   │   ├── Presbyterian Church Leura (organisation)
+│       │   │   ├── Presbyterian Church Wentworth Falls (organisation)
+│       │   │   └── Presbyterian church (organisation)
+│       │   ├── Roman Catholic churches (organisations)
+│       │   │   ├── Roman Catholic Church (organisation)
+│       │   │   ├── Roman Catholic Church Blackheath (organisation)
+│       │   │   ├── Roman Catholic Church Lawson (organisation)
+│       │   │   ├── Roman Catholic Church Megalong (organisation)
+│       │   │   ├── Roman Catholic Church Mount Victoria (organisation)
+│       │   │   └── St Canice's Catholic Church Katoomba (organisation)
+│       │   ├── Wesleyan churches (organisations)
+│       │   │   ├── Wesleyan Church (organisation)
+│       │   │   └── Wesleyan Church Katoomba (organisation)
+│       │   └── church (organisation)
 │       ├── monasteries and friaries
-│       │   ├── Waverley Friary (organization)
+│       │   ├── Waverley Friary (organisation)
 │       │   └── monastery or friary
 │       ├── religious education
 │       │   └── sunday schools
-│       │       ├── Katoomba Congregational Church (Sunday school)
-│       │       ├── St Aidan's Church Blackheath Sunday School
+│       │       ├── Katoomba Congregational Church (Sunday School)
+│       │       ├── St Aidan's Church Blackheath (Sunday School)
 │       │       └── sunday school
 │       └── religious social movements
 │           ├── Good Templars
@@ -453,9 +392,6 @@ Agents
         │   │   ├── Mr Edwards
         │   │   ├── Mr Ellis
         │   │   ├── Mr J Hudson
-        │   │   ├── Mr J Nimmo
-        │   │   ├── Mr J. Nimmo
-        │   │   ├── Mr Joe Nimmo
         │   │   ├── Mr Lindeman
         │   │   ├── Mr Manuel
         │   │   ├── Mr N Delaney
@@ -487,8 +423,9 @@ Agents
         │       │   └── Constable White
         │       ├── police officer
         │       ├── senior-constable
-        │       │   ├── Senior-Constable Illingworth
-        │       │   └── Senior-Constable Thorncroft
+        │       │   ├── Senior-Constable John Illingworth
+        │       │   ├── Senior-Constable Thorncroft
+        │       │   └── Senior-Constable Tomkins
         │       └── sergeant
         │           └── Sergeant Thorndyke
         ├── legal officials
@@ -536,6 +473,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 532
+  Total nodes in facet: 469
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

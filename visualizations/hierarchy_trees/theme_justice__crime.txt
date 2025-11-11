@@ -11,12 +11,12 @@ justice & crime
 │   ├── Katoomba Courthouse
 │   └── courthouse
 ├── courts
+│   ├── Courts of Petty Sessions
 │   ├── Katoomba Court
 │   ├── Licensing Court
 │   ├── Penrith Police Court
 │   ├── Supreme Court
-│   ├── court
-│   └── police court
+│   └── court
 ├── crimes
 │   ├── Social order offences
 │   │   ├── desertion
@@ -31,6 +31,7 @@ justice & crime
 │       ├── fighting
 │       └── sexual violence
 ├── law enforcement
+│   ├── New South Wales Police
 │   └── policing
 ├── legal events
 │   ├── bankruptcy
@@ -38,6 +39,8 @@ justice & crime
 │   │   └── property offences
 │   │       └── stock trespass
 │   ├── divorce
+│   ├── inquests
+│   │   └── inquest
 │   └── legal event
 ├── legal officials
 │   ├── coroners
@@ -48,6 +51,8 @@ justice & crime
 │   ├── court cases
 │   │   └── property offences
 │   │       └── stock trespass
+│   ├── inquests
+│   │   └── inquest
 │   ├── legal proceeding
 │   └── licensing cases
 │       ├── licensing offences
@@ -60,6 +65,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 52
+  Total nodes in theme: 57
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

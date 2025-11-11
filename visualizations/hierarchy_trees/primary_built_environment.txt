@@ -4,52 +4,48 @@ PRIMARY FACET: Built Environment
 Built Environment
 ├── accommodation and hospitality venues
 ├── accommodation buildings
-│   ├── boarding houses
-│   │   ├── Orama Boarding House
-│   │   └── boarding house
+│   ├── boarding houses (buildings)
+│   │   ├── Orama Boarding House (building)
+│   │   └── boarding house (building)
 │   ├── cottages
 │   │   └── cottage
 │   ├── dwellings
 │   │   ├── dwelling
 │   │   └── miners' dwellings
-│   ├── hotels
-│   │   ├── Allen's Hotel
-│   │   ├── Belgravia Hotel
-│   │   ├── Brown's Hotel
-│   │   ├── Carrington Hotel
-│   │   ├── Centennial Hotel
-│   │   ├── Comet Hotel
-│   │   ├── Delaney's Hotel
-│   │   ├── Falls Hotel
-│   │   ├── Family Hotel
-│   │   ├── Fryer's Family Hotel
-│   │   ├── Grand Hotel
-│   │   ├── Grand Hotel (Sydney)
-│   │   ├── Great Western Hotel
-│   │   ├── Hoffman's House
-│   │   ├── Hotel Wentworth
-│   │   ├── Hydora House Hotel
-│   │   ├── Imperial Hotel
-│   │   ├── Katoomba Family Hotel
-│   │   ├── Katoomba Hotel
-│   │   ├── Leura Hotel
-│   │   ├── Megalong Hotel
-│   │   ├── Montrose House
-│   │   ├── Mount Victoria Hotel
-│   │   ├── Mrs Long's Hotel
-│   │   ├── Oxford Hotel (Sydney)
-│   │   ├── Railway Hotel
-│   │   ├── Wentworth Falls Hotel
+│   │       └── miners' dwelling
+│   ├── hotel (building)
+│   ├── hotels (buildings)
+│   │   ├── Belgravia Hotel (building)
+│   │   ├── Carrington Hotel (building)
+│   │   ├── Centennial Hotel (building)
+│   │   ├── Comet Hotel (building)
+│   │   ├── Falls Hotel (building)
+│   │   ├── Grand Hotel (Sydney) (building)
+│   │   ├── Great Western Hotel (building)
+│   │   ├── Hoffman's House (building)
+│   │   ├── Hotel Wentworth (building)
+│   │   ├── Hydora House Hotel (building)
+│   │   ├── Imperial Hotel (building)
+│   │   ├── Katoomba Hotel (building)
+│   │   ├── Leura Hotel (building)
+│   │   ├── Megalong Hotel (building)
+│   │   ├── Montrose House (building)
+│   │   ├── Mount Victoria Hotel (building)
+│   │   ├── Oxford Hotel (Sydney) (building)
+│   │   ├── Railway Hotel (building)
+│   │   ├── Wentworth Falls Hotel (building)
 │   │   ├── family hotels
-│   │   │   ├── Delaney's Family Hotel
-│   │   │   └── Katoomba Family Hotel
-│   │   └── hotel
-│   ├── public houses
-│   │   └── public house
-│   └── stables
-│       └── stable
+│   │   │   ├── Delaney's Family Hotel (building)
+│   │   │   ├── Fryer's Family Hotel (building)
+│   │   │   ├── Katoomba Family Hotel (building)
+│   │   │   └── family hotel (building)
+│   │   └── hotel (building)
+│   ├── public houses (buildings)
+│   │   └── public house (building)
+│   └── stables (buildings)
+│       └── stable (building)
 ├── civic buildings
-│   ├── Council buildings
+│   ├── council buildings
 │   ├── council chambers
 │   ├── court buildings
 │   │   ├── Katoomba Court
@@ -116,6 +112,10 @@ Built Environment
 │       ├── gas
 │       ├── sewerage
 │       └── utility
+├── institutional buildings
+│   └── healthcare facilities
+│       └── sanatoriums
+│           └── sanatorium
 ├── recreation buildings
 │   └── sports facilities
 │       ├── cricket grounds
@@ -126,65 +126,41 @@ Built Environment
 │       └── rifle ranges
 │           └── rifle range
 └── religious buildings
-    └── churches
-        ├── Church of England churches
+    └── churches (buildings)
+        ├── Church of England churches (buildings)
         │   ├── Church of England Katoomba (building)
-        │   ├── Church of England Katoomba (organization)
         │   ├── Church of England church (building)
-        │   ├── Church of England church (organization)
-        │   ├── St Aidan's Church Blackheath (organization)
         │   ├── St Andrew's Cathedral Church of England Sydney (building)
-        │   ├── St Andrew's Cathedral Church of England Sydney (organization)
-        │   ├── St Clement's Church of England Yass (organization)
         │   ├── St David's Church Surry Hills (building)
         │   ├── St Hilda's Church of England (building)
-        │   ├── St Hilda's Church of England (organization)
         │   ├── St John's Church Parramatta (building)
         │   ├── St Mark's Church of England (building)
-        │   ├── St Mark's Church of England Darling Point (organization)
         │   ├── St Mary's Church of England Greta (building)
         │   └── St Paul's Church of England (building)
-        ├── Congregational churches
+        ├── Congregational churches (buildings)
         │   ├── Congregational Church (building)
-        │   ├── Congregational Church (organization)
         │   ├── Congregational Church Katoomba (building)
         │   ├── Congregational Church Katoomba South (building)
-        │   ├── Congregational Church Katoomba South (organization)
-        │   ├── Katoomba Congregational Church (building)
-        │   └── Katoomba Congregational Church (organization)
-        ├── Methodist churches
-        │   ├── Methodist Church (building)
-        │   ├── Methodist Church (organization)
-        │   └── Methodist Church Katoomba (organization)
-        ├── Presbyterian churches
+        │   └── Katoomba Congregational Church (building)
+        ├── Methodist churches (buildings)
+        │   └── Methodist Church (building)
+        ├── Presbyterian churches (buildings)
         │   ├── Presbyterian Church Leura (building)
-        │   ├── Presbyterian Church Leura (organization)
         │   ├── Presbyterian Church Wentworth Falls (building)
-        │   ├── Presbyterian Church Wentworth Falls (organization)
-        │   ├── Presbyterian church (building)
-        │   └── Presbyterian church (organization)
-        ├── Roman Catholic churches
+        │   └── Presbyterian church (building)
+        ├── Roman Catholic churches (buildings)
         │   ├── Roman Catholic Church (building)
-        │   ├── Roman Catholic Church (organization)
-        │   ├── Roman Catholic Church Blackheath (organization)
         │   ├── Roman Catholic Church Katoomba (building)
-        │   ├── Roman Catholic Church Lawson (organization)
         │   ├── Roman Catholic Church Megalong (building)
-        │   ├── Roman Catholic Church Megalong (organization)
-        │   ├── Roman Catholic Church Mount Victoria (organization)
-        │   ├── St Canice's Catholic Church Katoomba (building)
-        │   └── St Canice's Catholic Church Katoomba (organization)
-        ├── Wesleyan churches
+        │   └── St Canice's Catholic Church Katoomba (building)
+        ├── Wesleyan churches (buildings)
         │   ├── Wesleyan Chapel (building)
         │   ├── Wesleyan Church (building)
-        │   ├── Wesleyan Church (organization)
-        │   ├── Wesleyan Church Katoomba (building)
-        │   └── Wesleyan Church Katoomba (organization)
-        ├── church (building)
-        └── church (organization)
+        │   └── Wesleyan Church Katoomba (building)
+        └── church (building)
 
 
 STATISTICS:
-  Total nodes in facet: 181
+  Total nodes in facet: 157
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

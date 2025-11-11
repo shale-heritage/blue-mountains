@@ -1,0 +1,15 @@
+PRIMARY FACET: hotels
+================================================================================
+
+hotels
+└── family hotels
+    ├── Delaney's Family Hotel (building)
+    ├── Fryer's Family Hotel (building)
+    ├── Katoomba Family Hotel (building)
+    └── family hotel (building)
+
+
+STATISTICS:
+  Total nodes in facet: 6
+  Generated: 2025-10-20
+  Source: data/tag_map_consolidated.csv

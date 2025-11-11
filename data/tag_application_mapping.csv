@@ -12,7 +12,7 @@ Katoomba Court,16 June 1893,,,hotel licensing | publican's licensing,hotel_licen
 Licensing,1 October 1892,,,publican's licensing,hotel_licensing_action_plan,Item #48
 Megalong Valley,27 October 1893,,,hotel licensing,hotel_licensing_action_plan,Item #61
 Notice of Application...,9 June 1893,,,publican's licensing,hotel_licensing_action_plan,Item #63
-A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,drinking (alcohol) | rum | grog | drunkenness (intoxication) | sexual violence | Carrington Hotel | Penrith Police Court | Dr Spark,alcohol_rationalisation_report,Item #1 - enhanced with RETAGGING_DECISIONS tags
+A Charge of Rape.,6 September 1890,Nepean Times,Alcohol,drinking (alcohol) | rum | grog | drunkenness (intoxication) | sexual violence | Carrington Hotel (building) | Penrith Police Court | Dr Spark,alcohol_rationalisation_report,Item #1 - enhanced with RETAGGING_DECISIONS tags
 Mountain Mixtures.,29 April 1892,Katoomba Times,Alcohol,drunkenness (intoxication) | drunkenness (intoxication) | beer | liquor trade | Lithgow,alcohol_rationalisation_report,Item #2
 Mountain Mixtures,25 August 1893,Katoomba Times,Alcohol,drinking (alcohol) | whisky | beer | rum | brandy | liquor trade | beer sales | drunkenness (intoxication) | Megalong Valley,alcohol_rationalisation_report,Item #3 - enhanced with RETAGGING_DECISIONS tags
 Mountain Mixtures.,10 February 1893,Katoomba Times,Alcohol,beer | liquor trade | beer sales,alcohol_rationalisation_report,Item #4 - enhanced with RETAGGING_DECISIONS tags
@@ -23,70 +23,70 @@ Katoomba Police Court.,21 March 1891,Katoomba Times,Alcohol,liquor licensing | s
 Katoomba Court.,17 March 1893,Katoomba Times,Alcohol,drinking (alcohol) | drunkenness (intoxication) | drunkenness (intoxication) | theft | whisky | rum | gin | shipwright | South Katoomba,alcohol_rationalisation_report,Item #9
 Megalong Matters.,9 September 1892,Katoomba Times,Alcohol,drinking (alcohol) | drunkenness (intoxication) | wine | liquor trade | Aboriginal people | publican | Megalong Valley,alcohol_rationalisation_report,Item #10
 Megalong Valley.,18 August 1893,Katoomba Times,Alcohol,liquor trade | wholesale liquor business | Mr Wilkinson | Megalong Valley,alcohol_rationalisation_report,Item #11 - enhanced with RETAGGING_DECISIONS tags
-Megalong Valley.,23 June 1893,Katoomba Times,Alcohol,liquor licensing | hotel | public house | unlicensed sales | gambling | Megalong Valley,alcohol_rationalisation_report,Item #12
-A Charge of Rape.,6 September 1890,Nepean Times,Accommodation,Carrington Hotel | Katoomba,accommodation_approval,Item #1
-Local Jottings.,26 April 1890,Katoomba Times,Accommodation,hotel | Katoomba,accommodation_approval,Item #2
-News in Brief,9 October 1903,Mountaineer,Accommodation,hotel | cottage | boarding house | hotellier,accommodation_approval,Item #3
-Mountain Mixtures.,7 July 1893,Katoomba Times,Accommodation,hotel | Leura | hotel licensing | Mr Lindeman,accommodation_approval,Item (modified with 2 additional tags)
-Mountain Mixtures.,21 October 1892,Katoomba Times,Accommodation,Hotel Wentworth | stable | towns | Mr J Hudson | Wentworth Falls | sanatorium,accommodation_approval,Item (modified with 2 additional tags)
-Mountain Mixtures.,9 September 1892,Katoomba Times,Accommodation,Wentworth Falls Hotel | Mr Wilson | Mr Manuel | Hartley Vale | towns | Wentworth Falls,accommodation_approval,Item (modified with 1 additional tags)
-Local Jottings.,19 July 1890,Katoomba Times,Accommodation,hotel | towns | Sydney,accommodation_approval,Item (modified with 1 additional tags)
-Moutains Mixtures.,17 November 1893,Katoomba Times,Accommodation,hotel | boarding house | hotellier,accommodation_approval,Item #8
-Girls Cricket Match at Katoomba.,26 April 1895,Mountaineer,Accommodation,Katoomba Family Hotel | Mrs Long,accommodation_approval,Item #9
-The Rockley Game.,7 February 1896,Mountaineer,Accommodation,Megalong Hotel | towns | Megalong,accommodation_approval,Item (modified with 1 additional tags)
-Mountain Mixtures.,4 December 1891,Katoomba Times,Accommodation,Orama Boarding House,accommodation_approval,Item #11
-Megalong Matters.,5 June 1896,Mountaineer,Accommodation,Megalong Hotel | towns | Megalong,accommodation_approval,Item (modified with 1 additional tags)
-Megalong Valley.,6 October 1893,Katoomba Times,Accommodation,hotel | towns | publican's licensing | Mr Delaney | Katoomba,accommodation_approval,Item (modified with 3 additional tags)
-Katoomba Police Court.,21 September 1894,Mountaineer,Accommodation,hotel | F. C. Goyder | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
-Granted,26 March 1892,Nepean Times,Accommodation,Fryer's Family Hotel | Rubina Fryer | Isabellea J. Long | towns | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
-Mountain Mixtures.,22 January 1892,Katoomba Times,Accommodation,Wentworth Falls Hotel | Mr N. Delaney | Mr Thomas Cale | towns | Wentworth Falls,accommodation_approval,Item (modified with 1 additional tags)
-Mountain Mixtures.,23 June 1893,Katoomba Times,Accommodation,Imperial Hotel | Mount Victoria,accommodation_approval,Item #17
-Katoomba.,4 August 1905,Lithgow Mercury,Accommodation,Katoomba Family Hotel | Mrs Long | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
-Local Jottings.,25 May 1889,Katoomba Times,Accommodation,hotel | Mr D Thomson,accommodation_approval,Item #19
-Local Jottings.,21 September 1889,Katoomba Times,Accommodation,Carrington Hotel | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
-Mountain Mixtures.,20 November 1891,Katoomba Times,Accommodation,hotel | hotellier | Mount Victoria | towns,accommodation_approval,Item (modified with 1 additional tags)
-Mountain Mixtures.,29 April 1892,Katoomba Times,Accommodation,Belgravia Hotel | Mr Ellis | Medlow | towns | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
-News in Brief.,1 September 1905,Mountaineer,Accommodation,Falls Hotel | cattle,accommodation_approval,Item #23
+Megalong Valley.,23 June 1893,Katoomba Times,Alcohol,liquor licensing | hotel (building) | public house | unlicensed sales | gambling | Megalong Valley,alcohol_rationalisation_report,Item #12
+A Charge of Rape.,6 September 1890,Nepean Times,Accommodation,Carrington Hotel (building) | Katoomba,accommodation_approval,Item #1
+Local Jottings.,26 April 1890,Katoomba Times,Accommodation,hotel (building) | Katoomba,accommodation_approval,Item #2
+News in Brief,9 October 1903,Mountaineer,Accommodation,hotel (building) | cottage | boarding house (building) | hotellier,accommodation_approval,Item #3
+Mountain Mixtures.,7 July 1893,Katoomba Times,Accommodation,hotel (building) | Leura | hotel licensing | Mr Lindeman,accommodation_approval,Item (modified with 2 additional tags)
+Mountain Mixtures.,21 October 1892,Katoomba Times,Accommodation,Hotel Wentworth (building) | stable (building) | towns | Mr J Hudson | Wentworth Falls | sanatorium,accommodation_approval,Item (modified with 2 additional tags)
+Mountain Mixtures.,9 September 1892,Katoomba Times,Accommodation,Wentworth Falls Hotel (building) | Mr Wilson | Mr Manuel | Hartley Vale | towns | Wentworth Falls,accommodation_approval,Item (modified with 1 additional tags)
+Local Jottings.,19 July 1890,Katoomba Times,Accommodation,hotel (building) | towns | Sydney,accommodation_approval,Item (modified with 1 additional tags)
+Moutains Mixtures.,17 November 1893,Katoomba Times,Accommodation,hotel (building) | boarding house (building) | hotellier,accommodation_approval,Item #8
+Girls Cricket Match at Katoomba.,26 April 1895,Mountaineer,Accommodation,Katoomba Family Hotel (building) | Mrs Long,accommodation_approval,Item #9
+The Rockley Game.,7 February 1896,Mountaineer,Accommodation,Megalong Hotel (building) | towns | Megalong,accommodation_approval,Item (modified with 1 additional tags)
+Mountain Mixtures.,4 December 1891,Katoomba Times,Accommodation,Orama Boarding House (building),accommodation_approval,Item #11
+Megalong Matters.,5 June 1896,Mountaineer,Accommodation,Megalong Hotel (building) | towns | Megalong,accommodation_approval,Item (modified with 1 additional tags)
+Megalong Valley.,6 October 1893,Katoomba Times,Accommodation,hotel (building) | towns | publican's licensing | Mr Delaney | Katoomba,accommodation_approval,Item (modified with 3 additional tags)
+Katoomba Police Court.,21 September 1894,Mountaineer,Accommodation,hotel (building) | F. C. Goyder | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
+Granted,26 March 1892,Nepean Times,Accommodation,Fryer's Family Hotel (building) | Rubina Fryer | Isabellea J. Long | towns | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
+Mountain Mixtures.,22 January 1892,Katoomba Times,Accommodation,Wentworth Falls Hotel (building) | Mr N. Delaney | Mr Thomas Cale | towns | Wentworth Falls,accommodation_approval,Item (modified with 1 additional tags)
+Mountain Mixtures.,23 June 1893,Katoomba Times,Accommodation,Imperial Hotel (building) | Mount Victoria,accommodation_approval,Item #17
+Katoomba.,4 August 1905,Lithgow Mercury,Accommodation,Katoomba Family Hotel (building) | Mrs Long | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
+Local Jottings.,25 May 1889,Katoomba Times,Accommodation,hotel (building) | Mr D Thomson,accommodation_approval,Item #19
+Local Jottings.,21 September 1889,Katoomba Times,Accommodation,Carrington Hotel (building) | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
+Mountain Mixtures.,20 November 1891,Katoomba Times,Accommodation,hotel (building) | hotellier | Mount Victoria | towns,accommodation_approval,Item (modified with 1 additional tags)
+Mountain Mixtures.,29 April 1892,Katoomba Times,Accommodation,Belgravia Hotel (building) | Mr Ellis | Medlow | towns | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
+News in Brief.,1 September 1905,Mountaineer,Accommodation,Falls Hotel (building) | cattle,accommodation_approval,Item #23
 Blue Mountains Railway Tourist Guide,1890s,,Accommodation,,accommodation_approval,MODIFIED: No tags; add to (new) to-do list for content extraction
-The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Accommodation,Comet Hotel | Clarence | Hartley Vale | Lithgow | hotellier | people | Mr Joseph Nimmo,accommodation_approval,Item (modified with 1 additional tags)
-Mountain Mixtures.,4 May 1894,Katoomba Times,Accommodation,hotel | Manuell,accommodation_approval,Item #27
-Lawson.,5 May 1894,Nepean Times,Accommodation,hotel | Mr Wilson,accommodation_approval,Item #28
-Katoomba Police Court.,1 December 1905,Mountaineer,Accommodation,Railway Hotel | Katoomba,accommodation_approval,Item #29
-A Public Meeting.,13 January 1905,Mountaineer,Accommodation,,accommodation_approval,MODIFIED: No tags; add to (new) to-do list for content extraction
-"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Accommodation,hotel | Mrs Long | Nellie's Glen (settlement) | Nellie's Glen (gully),accommodation_approval,Item #31
-Town Talk.,26 August 1904,Blue Mountain Gazette,Accommodation,Railway Hotel | Mrs Brown | South Katoomba | people | Bashford,accommodation_approval,Item (modified with 1 additional tags)
-Megalong Notes.,21 March 1902,Mountaineer,Accommodation,hotel | Mrs Long,accommodation_approval,Item #33
-Narrow Neck.,27 December 1901,Mountaineer,Accommodation,Megalong Hotel | Nellie's Glen (gully) | towns | Megalong,accommodation_approval,Item (modified with 1 additional tags)
-The Rockley Game.,18 March 1898,Mountaineer,Accommodation,Grand Hotel | Imperial Hotel,accommodation_approval,Item #35
-The Inquest.,3 July 1896,Mountaineer,Accommodation,Katoomba Hotel | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
-Notice of Application for a Publican's Licence,19 June 1896,Mountaineer,Accommodation,Delaney's Family Hotel | regulatory processes | demographic groups | towns | hotel licensing | Delaney family | Megalong,accommodation_approval,Item (modified with 3 additional tags)
-Katoomba Police Court,13 December 1895,Mountaineer,Accommodation,hotel,accommodation_approval,Item #38
-Advertising,8 February 1895,Mountaineer,Accommodation,Belgravia Hotel | Medlow | W. Green,accommodation_approval,Item #39
-Mountain Mixtures.,29 December 1893,Katoomba Times,Accommodation,boarding house,accommodation_approval,Item #40
-Mountain Mixtures,14 July 1893,Katoomba Times,Accommodation,Leura Hotel | cottage | Katoomba,accommodation_approval,Item #41
-Licensing.,7 July 1893,Katoomba Times,Accommodation,hotel | Katoomba | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
-Local and General,8 July 1893,Nepean Times,Accommodation,Carrington Hotel | F. C. Goyder | hotel | Leura | Megalong | regulatory processes | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
-Katoomba Court.,16 June 1893,Katoomba Times,Accommodation,Centennial Hotel | Richard Allen | South Katoomba | regulatory processes,accommodation_approval,Item (modified with 1 additional tags)
-Mountain Mixtures.,2 June 1893,Katoomba Times,Accommodation,Hydora House Hotel | Mr Alf. Goodare | Blackheath,accommodation_approval,Item #45
-Mountain Mixtures.,2 December 1892,Katoomba Times,Accommodation,hotel | boarding house | people | hotellier,accommodation_approval,Item (modified with 1 additional tags)
-Mountain Mixtures.,18 November 1892,Katoomba Times,Accommodation,hotel | boarding house | people,accommodation_approval,Item (modified with 1 additional tags)
-Licensing.,1 October 1892,Nepean Times,Accommodation,,accommodation_approval,MODIFIED: No tags; add to (new) to-do list for content extraction
-Mountain Mixtures.,11 March 1892,Katoomba Times,Accommodation,Katoomba Family Hotel | Mr R. Fryer | Mrs (R.) Fryer | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
-Testimonial to a Mine Manager.,9 August 1890,Katoomba Times,Accommodation,Centennial Hotel | Mr Edwards,accommodation_approval,Item #50
-Katoomba Municipal Elections.,5 July 1890,Katoomba Times,Accommodation,Centennial Hotel | Mr Edwards,accommodation_approval,Item #51
-Katoomba.,7 January 1888,Nepean Times,Accommodation,Carrington Hotel | Katoomba Hotel | Biles | boarding house | Katoomba | hotel,accommodation_approval,Item (modified with 1 additional tags)
-Katoomba.,29 September 1888,Nepean Times,Accommodation,hotel | Mr Joseph Nimmo | Mr D. Thompson | towns | Katoomba Hotel | Katoomba | Odd Fellows' Hall,accommodation_approval,Item (modified with 2 additional tags)
-Katoomba Athletic Sports.,12 December 1885,Nepean Times,Accommodation,hotel | Mr D. Brown,accommodation_approval,Item (modified with 1 additional tags)
-Advertising,20 November 1885,Sydney Morning Herald,Accommodation,Great Western Hotel | Katoomba,accommodation_approval,Item #55
-"Opening of the Gladstone Coal-Mine, Katoomba.",13 July 1885,Sydney Morning Herald,Accommodation,Mount Victoria Hotel | Mr P. G. Whittall | Grand Hotel (Sydney) | Sydney | hotellier | people,accommodation_approval,Item (modified with 1 additional tags)
-Katoomba Court.,17 March 1893,Katoomba Times,Accommodation,hotel | Allen,accommodation_approval,Item #57
+The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Accommodation,Comet Hotel (building) | Clarence | Hartley Vale | Lithgow | hotellier | people | Mr Joseph Nimmo,accommodation_approval,Item (modified with 1 additional tags)
+Mountain Mixtures.,4 May 1894,Katoomba Times,Accommodation,hotel (building) | Manuell,accommodation_approval,Item #27
+Lawson.,5 May 1894,Nepean Times,Accommodation,hotel (building) | Mr Wilson,accommodation_approval,Item #28
+Katoomba Police Court.,1 December 1905,Mountaineer,Accommodation,Railway Hotel (building) | Katoomba,accommodation_approval,Item #29
+A Public Meeting.,13 January 1905,Mountaineer,Accommodation,Carrington Hotel (building) | bushfire,accommodation_approval,Added hotel and disaster tags based on content review
+"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Accommodation,hotel (building) | Mrs Long | Nellie's Glen (settlement) | Nellie's Glen (gully),accommodation_approval,Item #31
+Town Talk.,26 August 1904,Blue Mountain Gazette,Accommodation,Railway Hotel (building) | Mrs Brown | South Katoomba | people | Bashford,accommodation_approval,Item (modified with 1 additional tags)
+Megalong Notes.,21 March 1902,Mountaineer,Accommodation,hotel (building) | Mrs Long,accommodation_approval,Item #33
+Narrow Neck.,27 December 1901,Mountaineer,Accommodation,Megalong Hotel (building) | Nellie's Glen (gully) | towns | Megalong,accommodation_approval,Item (modified with 1 additional tags)
+The Rockley Game.,18 March 1898,Mountaineer,Accommodation,Grand Hotel (Sydney) (building) | Imperial Hotel (building),accommodation_approval,Item #35
+The Inquest.,3 July 1896,Mountaineer,Accommodation,Katoomba Hotel (building) | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
+Notice of Application for a Publican's Licence,19 June 1896,Mountaineer,Accommodation,Delaney's Family Hotel (building) | regulatory processes | demographic groups | towns | hotel licensing | Delaney family | Megalong,accommodation_approval,Item (modified with 3 additional tags)
+Katoomba Police Court,13 December 1895,Mountaineer,Accommodation,hotel (building),accommodation_approval,Item #38
+Advertising,8 February 1895,Mountaineer,Accommodation,Belgravia Hotel (building) | Medlow | W. Green,accommodation_approval,Item #39
+Mountain Mixtures.,29 December 1893,Katoomba Times,Accommodation,boarding house (building),accommodation_approval,Item #40
+Mountain Mixtures,14 July 1893,Katoomba Times,Accommodation,Leura Hotel (building) | cottage | Katoomba,accommodation_approval,Item #41
+Licensing.,7 July 1893,Katoomba Times,Accommodation,hotel (building) | Katoomba | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
+Local and General,8 July 1893,Nepean Times,Accommodation,Carrington Hotel (building) | F. C. Goyder | hotel (building) | Leura | Megalong | regulatory processes | towns | Katoomba,accommodation_approval,Item (modified with 1 additional tags)
+Katoomba Court.,16 June 1893,Katoomba Times,Accommodation,Centennial Hotel (building) | Richard Allen | South Katoomba | regulatory processes,accommodation_approval,Item (modified with 1 additional tags)
+Mountain Mixtures.,2 June 1893,Katoomba Times,Accommodation,Hydora House Hotel (building) | Mr Alf. Goodare | Blackheath,accommodation_approval,Item #45
+Mountain Mixtures.,2 December 1892,Katoomba Times,Accommodation,hotel (building) | boarding house (building) | people | hotellier,accommodation_approval,Item (modified with 1 additional tags)
+Mountain Mixtures.,18 November 1892,Katoomba Times,Accommodation,hotel (building) | boarding house (building) | people,accommodation_approval,Item (modified with 1 additional tags)
+Licensing.,1 October 1892,Nepean Times,Accommodation,publican's licensing,accommodation_approval,Added licensing tag based on content review
+Mountain Mixtures.,11 March 1892,Katoomba Times,Accommodation,Katoomba Family Hotel (building) | Mr R. Fryer | Mrs (R.) Fryer | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
+Testimonial to a Mine Manager.,9 August 1890,Katoomba Times,Accommodation,Centennial Hotel (building) | Mr Edwards,accommodation_approval,Item #50
+Katoomba Municipal Elections.,5 July 1890,Katoomba Times,Accommodation,Centennial Hotel (building) | Mr Edwards,accommodation_approval,Item #51
+Katoomba.,7 January 1888,Nepean Times,Accommodation,Carrington Hotel (building) | Katoomba Hotel (building) | Biles | boarding house (building) | Katoomba | hotel (building),accommodation_approval,Item (modified with 1 additional tags)
+Katoomba.,29 September 1888,Nepean Times,Accommodation,hotel (building) | Mr Joseph Nimmo | Mr D. Thompson | towns | Katoomba Hotel (building) | Katoomba | Odd Fellows' Hall,accommodation_approval,Item (modified with 2 additional tags)
+Katoomba Athletic Sports.,12 December 1885,Nepean Times,Accommodation,hotel (building) | Mr D. Brown,accommodation_approval,Item (modified with 1 additional tags)
+Advertising,20 November 1885,Sydney Morning Herald,Accommodation,Great Western Hotel (building) | Katoomba,accommodation_approval,Item #55
+"Opening of the Gladstone Coal-Mine, Katoomba.",13 July 1885,Sydney Morning Herald,Accommodation,Mount Victoria Hotel (building) | Mr P. G. Whittall | Grand Hotel (Sydney) (building) | Sydney | hotellier | people,accommodation_approval,Item (modified with 1 additional tags)
+Katoomba Court.,17 March 1893,Katoomba Times,Accommodation,hotel (building) | Allen,accommodation_approval,Item #57
 Katoomba.,14 July 1888,Nepean Times,Accommodation,Carrington | cottage | towns | Katoomba | dwelling | miners' dwelling | Odd Fellows' Hall,accommodation_approval,Item (modified with 1 additional tags)
-Katoomba.,21 April 1903,Lithgow Mercury,Accommodation,Centennial Hotel | South Katoomba | hotellier,accommodation_approval,Item #59
-Katoomba.,19 December 1885,Nepean Times,Accommodation,hotel | Brown,accommodation_approval,Item #60
-Megalong Valley.,27 October 1893,Katoomba Times,Accommodation,hotel | Mr Delaney | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
-Katoomba.,24 February 1883,Nepean Times,Accommodation,Great Western Hotel | Mr A. G. Rowell | Oxford Hotel (Sydney) | Sydney,accommodation_approval,Item #62
-Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Accommodation,Megalong Hotel | Megalong | regulatory processes | publican's licensing,accommodation_approval,Item (modified with 1 additional tags)
-The Megalong Hotel,21 September 1894,Mountaineer,Accommodation,Megalong Hotel | Megalong | Katoomba | Nellie's Glen (gully) | Nellie's Glen (settlement),accommodation_approval,Item #64
+Katoomba.,21 April 1903,Lithgow Mercury,Accommodation,Centennial Hotel (building) | South Katoomba | hotellier,accommodation_approval,Item #59
+Katoomba.,19 December 1885,Nepean Times,Accommodation,hotel (building) | Brown,accommodation_approval,Item #60
+Megalong Valley.,27 October 1893,Katoomba Times,Accommodation,hotel (building) | Mr Delaney | regulatory processes | hotel licensing,accommodation_approval,Item (modified with 1 additional tags)
+Katoomba.,24 February 1883,Nepean Times,Accommodation,Great Western Hotel (building) | Mr A. G. Rowell | Oxford Hotel (Sydney) (building) | Sydney,accommodation_approval,Item #62
+Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Accommodation,Megalong Hotel (building) | Megalong | regulatory processes | publican's licensing,accommodation_approval,Item (modified with 1 additional tags)
+The Megalong Hotel,21 September 1894,Mountaineer,Accommodation,Megalong Hotel (building) | Megalong | Katoomba | Nellie's Glen (gully) | Nellie's Glen (settlement),accommodation_approval,Item #64
 Katoomba Items.,28 April 1899,Lithgow Mercury,Post,postmaster | post office | Mrs. H. Corston | Mrs. A. Smith,post_tag_action_plan,Item #1
 Local Jottings.,26 April 1890,Katoomba Times,Post,postmaster | postboy | post office,post_tag_action_plan,Item #2
 Megalong Matters.,5 June 1896,Mountaineer,Post,postmaster | post office | Mrs. James,post_tag_action_plan,Item #3
@@ -119,7 +119,7 @@ Megalong Matters.,10 January 1896,Unknown,,horses | horseborne transportation | 
 Megalong Valley.,23 June 1893,Unknown,,horses | horseborne transportation | postal services,horses_reclassification_getty_aat,Item #19 - Mailman's horse (postal delivery)
 [untitled],29 June 1889,Katoomba Times,Drinking,drinking (alcohol),drinking_consolidation,Consolidate Drinking to Drinking (alcohol)
 Katoomba Municipal Elections.,5 July 1890,Katoomba Times,Drinking,drinking (alcohol),drinking_consolidation,Consolidate Drinking to Drinking (alcohol) - item mentions drunkenness
-Death of Mrs. Nimmo,3 December 1926,Blue Mountain Echo,Family Hotel,Katoomba Family Hotel | Mr Joseph Nimmo | Mrs (Joe) Nimmo | Katoomba,family_hotels_rationalization,"Change generic ""Family Hotel"" to specific ""Katoomba Family Hotel"" - add owners and location"
+Death of Mrs. Nimmo,3 December 1926,Blue Mountain Echo,Family Hotel,Katoomba Family Hotel (building) | Mr Joseph Nimmo | Mrs (Joe) Nimmo | Katoomba,family_hotels_rationalization,"Change generic ""Family Hotel"" to specific ""Katoomba Family Hotel"" - add owners and location"
 Mountain Mixtures.,9 September 1892,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site) | Ruined Castle Shale Mine (site),orphaned_tags_retagging_decisions,Mining settlements #1
 Unionism of To-day.,1 September 1893,Katoomba Times,Mining settlements,Nellie's Glen (settlement) | Nellie's Glen Shale Mine (site),orphaned_tags_retagging_decisions,Mining settlements #2
 Megalong Mines.,1 September 1893,Katoomba Times,Mining settlements | Trucking,Nellie's Glen (settlement) | Bonnie Doon Track | Nellie's Glen (gully) | miners' dwellings | truck system,orphaned_tags_retagging_decisions,Mining settlements #3 + Trucking
@@ -130,68 +130,68 @@ Mountain Mixtures.,21 October 1892,Katoomba Times,Rifle reserves,shooting | inju
 Town Talk.,13 May 1904,Blue Mountain Gazette,Rifle reserves,cycling | bicycle club | rifle range | rifle club,orphaned_tags_retagging_decisions,Rifle reserves #2
 Mountain Mixtures.,20 November 1891,Katoomba Times,Katoomba Coal and Shale Mines,Katoomba Coal and Shale Company,orphaned_tags_final_resolution,Company name variant
 Testimonial to a Mine Manager.,9 August 1890,Katoomba Times,Katoomba Coal and Shale Mines,Katoomba Coal and Shale Company,orphaned_tags_final_resolution,Company name variant
-A Charge of Rape.,6 September 1890,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,26 April 1890,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-News in Brief,9 October 1903,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,7 July 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,21 October 1892,Katoomba Times,Hotels,hotel | sanatorium,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,9 September 1892,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,19 July 1890,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Girls Cricket Match at Katoomba.,26 April 1895,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-The Rockley Game.,7 February 1896,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,4 December 1891,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Matters.,5 June 1896,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Valley.,6 October 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Police Court.,21 September 1894,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Granted,26 March 1892,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,22 January 1892,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,23 June 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,4 August 1905,Lithgow Mercury,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,25 May 1889,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Local Jottings.,21 September 1889,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,20 November 1891,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,29 April 1892,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-News in Brief.,1 September 1905,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Blue Mountains Railway Tourist Guide,1890s,,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Death of Mrs. Nimmo,3 December 1926,Blue Mountain Echo,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,4 May 1894,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Lawson.,5 May 1894,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Police Court.,1 December 1905,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-A Public Meeting.,13 January 1905,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Town Talk.,26 August 1904,Blue Mountain Gazette,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Notes.,21 March 1902,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Narrow Neck.,27 December 1901,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-The Rockley Game.,18 March 1898,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-The Inquest.,3 July 1896,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Notice of Application for a Publican's Licence,19 June 1896,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Police Court,13 December 1895,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Advertising,8 February 1895,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures,14 July 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Licensing.,7 July 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Local and General,8 July 1893,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Court.,16 June 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,2 June 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,2 December 1892,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,18 November 1892,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Licensing.,1 October 1892,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Mountain Mixtures.,11 March 1892,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Testimonial to a Mine Manager.,9 August 1890,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Municipal Elections.,5 July 1890,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,7 January 1888,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,29 September 1888,Nepean Times,Hotels,hotel | Odd Fellows' Hall,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Athletic Sports.,12 December 1885,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Advertising,20 November 1885,Sydney Morning Herald,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-"Opening of the Gladstone Coal-Mine, Katoomba.",13 July 1885,Sydney Morning Herald,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba Court.,17 March 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,14 July 1888,Nepean Times,Hotels,hotel | dwelling | miners' dwelling | Odd Fellows' Hall,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,21 April 1903,Lithgow Mercury,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,19 December 1885,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Megalong Valley.,27 October 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Katoomba.,24 February 1883,Nepean Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
-The Megalong Hotel,21 September 1894,Mountaineer,Hotels,hotel,high_impact_mappings,Corrected mapping to generic singular leaf
+A Charge of Rape.,6 September 1890,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,26 April 1890,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+News in Brief,9 October 1903,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,7 July 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,21 October 1892,Katoomba Times,Hotels,hotel (building) | sanatorium,high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,9 September 1892,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,19 July 1890,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Girls Cricket Match at Katoomba.,26 April 1895,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+The Rockley Game.,7 February 1896,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,4 December 1891,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Matters.,5 June 1896,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Valley.,6 October 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Police Court.,21 September 1894,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Granted,26 March 1892,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,22 January 1892,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,23 June 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,4 August 1905,Lithgow Mercury,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,25 May 1889,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Local Jottings.,21 September 1889,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,20 November 1891,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,29 April 1892,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+News in Brief.,1 September 1905,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Blue Mountains Railway Tourist Guide,1890s,,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+The Passing of a Mountaineer. Vale! Joseph Nimmo.,23 March 1917,Blue Mountain Echo,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Death of Mrs. Nimmo,3 December 1926,Blue Mountain Echo,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,4 May 1894,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Lawson.,5 May 1894,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Police Court.,1 December 1905,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+A Public Meeting.,13 January 1905,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Town Talk.,26 August 1904,Blue Mountain Gazette,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Notes.,21 March 1902,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Narrow Neck.,27 December 1901,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+The Rockley Game.,18 March 1898,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+The Inquest.,3 July 1896,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Notice of Application for a Publican's Licence,19 June 1896,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Police Court,13 December 1895,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Advertising,8 February 1895,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures,14 July 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Licensing.,7 July 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Local and General,8 July 1893,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Court.,16 June 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,2 June 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,2 December 1892,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,18 November 1892,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Licensing.,1 October 1892,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Mountain Mixtures.,11 March 1892,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Testimonial to a Mine Manager.,9 August 1890,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Municipal Elections.,5 July 1890,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,7 January 1888,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,29 September 1888,Nepean Times,Hotels,hotel (building) | Odd Fellows' Hall,high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Athletic Sports.,12 December 1885,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Advertising,20 November 1885,Sydney Morning Herald,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+"Opening of the Gladstone Coal-Mine, Katoomba.",13 July 1885,Sydney Morning Herald,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba Court.,17 March 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,14 July 1888,Nepean Times,Hotels,hotel (building) | dwelling | miners' dwelling | Odd Fellows' Hall,high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,21 April 1903,Lithgow Mercury,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,19 December 1885,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Megalong Valley.,27 October 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Katoomba.,24 February 1883,Nepean Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
+The Megalong Hotel,21 September 1894,Mountaineer,Hotels,hotel (building),high_impact_mappings,Corrected mapping to generic singular leaf
 Town Talk.,13 May 1904,Blue Mountain Gazette,Death,death,high_impact_mappings,Corrected mapping to generic singular leaf
 Local Jottings.,19 July 1890,Katoomba Times,Death,death,high_impact_mappings,Corrected mapping to generic singular leaf
 Moutains Mixtures.,17 November 1893,Katoomba Times,Death,death,high_impact_mappings,Corrected mapping to generic singular leaf
@@ -1025,18 +1025,18 @@ Mountain Mixtures.,14 April 1893,Katoomba Times,Rape,sexual violence,orphaned_ta
 Kembla Disaster Survivor: Death of Mr. J. J. Meredith,25 November 1940,Lithgow Mercury,Port Kembla disaster,Mount Kembla Disaster,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
 The Muont (sic) Kembla Disaster.,8 August 1902,Mountaineer,Port Kembla disaster,Mount Kembla Disaster,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
 General News. The State Cabinet.,13 August 1902,Daily Telegraph,Port Kembla disaster,Mount Kembla Disaster,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-The Rockley Game.,18 March 1898,Mountaineer,Grand Hotel,Grand Hotel (Sydney),orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Mountain Mixtures.,2 June 1893,Katoomba Times,Grand Hotel,Grand Hotel (Sydney),orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-"Opening of the Gladstone Coal-Mine, Katoomba.",13 July 1885,Sydney Morning Herald,Grand Hotel,Grand Hotel (Sydney),orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Granted,26 March 1892,Nepean Times,Mrs Long's Hotel,hotel | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Katoomba.,4 August 1905,Lithgow Mercury,Mrs Long's Hotel,hotel | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Mrs Long's Hotel,hotel | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Megalong Notes.,21 March 1902,Mountaineer,Mrs Long's Hotel,hotel | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Licensing.,1 October 1892,Nepean Times,Mrs Long's Hotel,hotel | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Katoomba Court.,16 June 1893,Katoomba Times,Allen's Hotel,hotel | Allen,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Katoomba Court.,17 March 1893,Katoomba Times,Allen's Hotel,hotel | Allen,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Katoomba Athletic Sports.,12 December 1885,Nepean Times,Brown's Hotel,hotel | Brown,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
-Katoomba.,19 December 1885,Nepean Times,Brown's Hotel,hotel | Brown,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+The Rockley Game.,18 March 1898,Mountaineer,Grand Hotel,Grand Hotel (Sydney) (building),orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Mountain Mixtures.,2 June 1893,Katoomba Times,Grand Hotel,Grand Hotel (Sydney) (building),orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+"Opening of the Gladstone Coal-Mine, Katoomba.",13 July 1885,Sydney Morning Herald,Grand Hotel,Grand Hotel (Sydney) (building),orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Granted,26 March 1892,Nepean Times,Mrs Long's Hotel,hotel (building) | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Katoomba.,4 August 1905,Lithgow Mercury,Mrs Long's Hotel,hotel (building) | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+"St Joseph's New Church, Megalong",17 March 1905,Mountaineer,Mrs Long's Hotel,hotel (building) | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Megalong Notes.,21 March 1902,Mountaineer,Mrs Long's Hotel,hotel (building) | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Licensing.,1 October 1892,Nepean Times,Mrs Long's Hotel,hotel (building) | Mrs Long,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Katoomba Court.,16 June 1893,Katoomba Times,Allen's Hotel,hotel (building) | Allen,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Katoomba Court.,17 March 1893,Katoomba Times,Allen's Hotel,hotel (building) | Allen,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Katoomba Athletic Sports.,12 December 1885,Nepean Times,Brown's Hotel,hotel (building) | Brown,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
+Katoomba.,19 December 1885,Nepean Times,Brown's Hotel,hotel (building) | Brown,orphaned_tags_immediate_batch,User-confirmed tag-level mapping
 A Charge of Rape.,6 September 1890,Nepean Times,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 NARROW ESCAPE OF SHALE STACK.,6 January 1905,Daily Telegraph,Australian Kerosene Shale and Oil Company | Nellie's Glen,Australian Kerosene Oil and Mineral Company | Nellie's Glen Shale Mine (site) | mining accident,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 News in Brief,9 October 1903,Mountaineer,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
@@ -1123,7 +1123,7 @@ Megalong Matters.,9 September 1892,Katoomba Times,Nellie's Glen,Nellie's Glen (g
 Hartley Vale.,2 February 1900,Lithgow Mercury,Hartley Vale,Hartley Vale,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Katoomba.,19 December 1885,Nepean Times,Mr David Brown,Mr D Brown,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Megalong Matters.,10 January 1896,Mountaineer,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen Road,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
-Megalong Valley.,1 September 1893,Katoomba Times,Nellie's Glen,,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
+Megalong Valley.,1 September 1893,Katoomba Times,Nellie's Glen,,orphaned_tags_final_resolution,Confirmed: Nellie's Glen not mentioned in source - removal correct
 Notice of Application for a Conditional Publican's Licence,9 June 1893,Katoomba Times,Hartley Vale | Police,Hartley Vale | New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 The Megalong Hotel,21 September 1894,Mountaineer,Nellie's Glen,Nellie's Glen (gully) | Nellie's Glen (settlement),orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
 Megalong Valley.,23 June 1893,,Police,New South Wales Police,orphaned_tags_final_resolution,Final batch: all tags verified as synonyms in taxonomy
@@ -1211,11 +1211,11 @@ Local Jottings.,26 April 1890,Katoomba Times,church (building),Wesleyan Chapel (
 News in Brief,9 October 1903,Mountaineer,church (building),Katoomba Congregational Church (organisation) | Methodist Church (building) | Methodist Band of Hope | Presbyterian Church Leura (organisation) | Presbyterian Church Leura (building) | Presbyterian Church Wentworth Falls (organisation) | Presbyterian Church Wentworth Falls (building) | temperance,church_disambiguation_report,Item #2
 Mountain Mixtures.,7 July 1893,Katoomba Times,church (building),Church of England Katoomba (building) | Church of England Katoomba (organisation) | Loyal Orange Order | Wesleyan Church Katoomba (organisation),church_disambiguation_report,Item #3
 Mountain Mixtures.,21 October 1892,Katoomba Times,church (building),Katoomba Congregational Church (building) | sanatorium,church_disambiguation_report,Item #4
-Megalong Matters.,5 August 1892,Katoomba Times,church (building),,church_disambiguation_report,Item #5
+Megalong Matters.,5 August 1892,Katoomba Times,church (building),,church_disambiguation_report,Confirmed: no church mention in source - removal correct
 Town Talk.,13 May 1904,Blue Mountain Gazette,church (building),Katoomba Congregational Church (organisation) | Katoomba Congregational Church (building) | Mr van Someren | dance | disease,church_disambiguation_report,Item #6
 Local Jottings.,19 July 1890,Katoomba Times,church (building),Wesleyan Church (building) | Loyal Orange Order | Reverend W R Orton,church_disambiguation_report,Item #7
 Town Talk.,13 March 1903,Blue Mountain Gazette,church (building),Methodist Church (organisation) | Methodist Church (building) | Reverend R M Laverty | Roman Catholic Church Lawson | Cardinal Moran | Coadjutor Archbishop | Waverley Friary (organisation) | St Canice's Catholic Church Katoomba (organisation) | St Canice's Catholic Church Katoomba (building) | Reverend Father Hyland | Reverend Father Bridge | Roman Catholic Church Mount Victoria (organisation) | Roman Catholic Church Blackheath (organisation) | church (organisation) | Congregational Church (building) | temperance,church_disambiguation_report,Item #8
-Moutains Mixtures.,17 November 1893,Katoomba Times,church (building),Reverend R W Orton | Wesleyan Church Katoomba (organisation) | Wesleyan Church Katoomba (building) | Katoomba Congregational Church (building) | Katoomba Congregational Church (Sunday school),church_disambiguation_report,Item #9
+Moutains Mixtures.,17 November 1893,Katoomba Times,church (building),Reverend R W Orton | Wesleyan Church Katoomba (organisation) | Wesleyan Church Katoomba (building) | Katoomba Congregational Church (building) | Katoomba Congregational Church (Sunday School),church_disambiguation_report,Item #9
 Mines School of Arts.,2 May 1891,Katoomba Times,church (building),Reverend Canon Kemmis | church (building) | Congregational Church Katoomba South (organisation),church_disambiguation_report,Item #10
 Town Talk.,30 October 1903,Blue Mountain Gazette,church (building),St Hilda's Church of England (organisation) | Methodist Church (building) | Methodist Church Katoomba (organisation),church_disambiguation_report,Item #11
 Mountain Mixtures.,29 April 1892,Katoomba Times,church (building),Roman Catholic Church (organisation),church_disambiguation_report,Item #12
@@ -1227,7 +1227,7 @@ Lawson.,5 May 1894,Nepean Times,church (building),Congregational Church (buildin
 The Unemployed at Katoomba.,17 April 1894,Daily Telegraph,church (building),Congregational Church Katoomba South (building),church_disambiguation_report,Item #18
 A Public Meeting.,13 January 1905,Mountaineer,church (building),Congregational Church (organisation),church_disambiguation_report,Item #19
 "St Joseph's New Church, Megalong",17 March 1905,Mountaineer,church (building),Roman Catholic Church Megalong (organisation) | Roman Catholic Church Megalong (building),church_disambiguation_report,Item #20
-Katoomba.,9 July 1901,Lithgow Mercury,church (building),St Hilda's Church of England (organisation) | St Hilda's Church of England (building) | Reverend T K Abbot | Reverend W Lampard | St Aidan's Church Blackheath Sunday School | Reverend E Lampard | Archbishop,church_disambiguation_report,Item #22
+Katoomba.,9 July 1901,Lithgow Mercury,church (building),St Hilda's Church of England (organisation) | St Hilda's Church of England (building) | Reverend T K Abbot | Reverend W Lampard | St Aidan's Church Blackheath (Sunday School) | Reverend E Lampard | Archbishop,church_disambiguation_report,Item #22
 Death of Canon Kemmis.,25 March 1897,Sydney Morning Herald,church (building),Reverend Canon Kemmis | St Clement's Church of England Yass (organisation) | St Mark's Church of England Darling Point (organisation) | St Andrew's Cathedral Church of England Sydney (organisation) | St Mark's Church of England (building) | St Andrew's Cathedral Church of England Sydney (building) | University of Sydney (institution),church_disambiguation_report,Item #23
 Mountain Mixtures.,29 December 1893,Katoomba Times,church (building),Katoomba Congregational Church (building),church_disambiguation_report,Item #24
 Mountain Mixtures.,2 June 1893,Katoomba Times,church (building),Wesleyan Church (organisation) | Wesleyan Church (building) | Reverend M S Fletcher,church_disambiguation_report,Item #25

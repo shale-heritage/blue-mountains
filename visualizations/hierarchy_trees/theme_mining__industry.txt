@@ -37,6 +37,7 @@ mining & industry
 │   ├── miners
 │   │   └── miner
 │   ├── miners' dwellings
+│   │   └── miners' dwelling
 │   └── miners' families
 └── regional mining contexts
     ├── South Clifton (Illawarra)
@@ -50,6 +51,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 42
+  Total nodes in theme: 43
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
