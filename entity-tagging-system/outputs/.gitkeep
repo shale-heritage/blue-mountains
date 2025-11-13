@@ -1,0 +1,29 @@
+# Entity Tagging System Outputs
+
+This directory stores generated classification reports and analysis outputs.
+
+## Structure
+
+```
+outputs/
+├── hotels/           # Hotel classification outputs
+├── churches/         # Church classification outputs
+└── schools/          # School of Arts classification outputs
+```
+
+## Contents (Not Committed)
+
+Generated files stored here but excluded from git:
+- Collection results (`*_mentions.json`)
+- Classification prompts (`*_classification_prompt.txt`)
+- Generated reports (`*_classifications.md`)
+- Approved classifications (`approved_classifications.md`)
+
+## Workflow
+
+1. Scripts generate outputs here
+2. Review and approve classifications
+3. Apply approved classifications to taxonomy
+4. Archive final approved versions if needed
+
+See `../workflows/` for detailed workflow guides.
