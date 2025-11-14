@@ -30,7 +30,7 @@ This checklist guides review and approval of 43 proposed hotel item-tag mappings
 
 **Building-only (4 entities):**
 
-- Grand Hotel (1 mention)
+- Grand Hotel (1 mention) **NOTE: User changed to BOTH - see modifications section**
 - Katoomba Hotel (3 mentions)
 - Montrose House (4 mentions)
 - Railway Hotel (2 mentions)
@@ -65,6 +65,7 @@ These require careful manual verification:
 - **Context:** "Picture of the Carrington Hotel in the Sydney illustrated"
 - **Issue:** Minimal context; illustrations typically depict buildings
 - **Verify:** Is building classification appropriate for visual representation?
+- **USER RESPONSE:** Building only classification is correct. ✓
 
 #### 2. Grand Hotel - Opening of Gladstone Coal-Mine (1885-07-13)
 
@@ -72,6 +73,7 @@ These require careful manual verification:
 - **Context:** "Shortly-to-be Grand Hotel in Phillip-street, Sydney"
 - **Issue:** Future establishment, not yet operating
 - **Verify:** Building classification appropriate for planned/future hotel?
+- **USER RESPONSE:** BOTH building and business; tag as 'Grand Hotel (Sydney)' (building and business). **MODIFICATION REQUIRED** ⚠
 
 #### 3. Wentworth Falls Hotel - Mountain Mixtures (1892-01-22)
 
@@ -79,6 +81,7 @@ These require careful manual verification:
 - **Context:** "Mr. N. Delaney's Wentworth Falls Hotel" in business notices section
 - **Issue:** Brief mention in advertising context
 - **Verify:** Business classification justified by advertising/proprietor identification?
+- **USER RESPONSE:** Business only is correct. ✓
 
 ### Medium Priority: "Both" Classifications (8 items)
 
@@ -103,6 +106,8 @@ Verify that dual indicators genuinely present:
 9. **Centennial Hotel** - Katoomba Municipal Elections (1890-07-05)
    - Both: "Host Edwards" + room accommodation
 
+**USER RESPONSE:** All appear correct ('both' EXCEPT for item 4, which is correctly 'building' only). ✓
+
 ### Low Priority: High Confidence Items (40 items)
 
 Clear indicators support classifications. Spot-check recommended.
@@ -112,32 +117,39 @@ Clear indicators support classifications. Spot-check recommended.
 ## Systematic Review Process
 
 ### Step 1: Review Medium Confidence Items
-- [ ] Verify Carrington Hotel illustration (building appropriate?)
-- [ ] Verify Grand Hotel future reference (building appropriate?)
-- [ ] Verify Wentworth Falls Hotel business notice (business justified?)
+
+- [X] Verify Carrington Hotel illustration (building appropriate?)
+- [X] Verify Grand Hotel future reference (BOTH?)
+- [X] Verify Wentworth Falls Hotel business notice (business justified?)
 
 ### Step 2: Review "Both" Classifications
-- [ ] Verify all 8 "both" items have genuine dual indicators
-- [ ] Check proprietor+location pattern is consistently applied
-- [ ] Check advertisement pattern is consistently applied
+
+- [X] Verify all 8 "both" items have genuine dual indicators
+- [X] Check proprietor+location pattern is consistently applied
+- [X] Check advertisement pattern is consistently applied
 
 ### Step 3: Review Capitalization Handling
-- [ ] Verify "Family hotel" (capital) → Katoomba Family Hotel (3 items)
-- [ ] Verify "family hotel" (lowercase) → generic family hotel (3 items)
-- [ ] Confirm capitalization rule correctly applied in all cases
+
+- [X] Verify "Family hotel" (capital) → Katoomba Family Hotel (3 items)
+- [X] Verify "family hotel" (lowercase) → generic family hotel (3 items)
+- [ ] Confirm capitalization rule correctly applied in all 7 cases (see detailed_review_report.md)
 
 ### Step 4: Spot-Check High Confidence Items
+
 - [ ] Sample 5 "building" classifications (spatial/locational indicators)
 - [ ] Sample 5 "business" classifications (licensing/operations indicators)
 - [ ] Verify consistency with NLU reasoning
+- [ ] Review 10 spot-check items in detailed_review_report.md
 
 ### Step 5: Cross-Reference with Taxonomy
+
 - [ ] Verify all proposed tags exist in `data/tag_map_consolidated.csv`
 - [ ] Confirm building tags present for all entities
 - [ ] Confirm business tags present for all 9 polyhierarchical entities
 - [ ] Check no orphaned tags will be created
 
 ### Step 6: Validate Mapping Proposal Document
+
 - [ ] Open `entity-tagging-system/outputs/hotels/item_tag_mapping_proposal.md`
 - [ ] Verify all 43 items present
 - [ ] Check entity grouping is logical
@@ -148,6 +160,7 @@ Clear indicators support classifications. Spot-check recommended.
 ## Common Issues to Watch For
 
 ### 1. Metonymy Confusion
+
 **Problem:** Hotel mentioned but unclear if building or business intended
 
 **How to identify:**
@@ -156,13 +169,18 @@ Clear indicators support classifications. Spot-check recommended.
 - Passive constructions ("hotel was built," "hotel remains closed")
 - Spatial vs operational verbs
 
+**USER CLARIFICATION:** Items like 'hotel remains closed' or 'hotel opening soon' should be *business* unless it also involves the building explicitly, as in the Grand Hotel (Sydney) above which is both being built (a building) and will open soon (a business).
+
 **What to check:**
 
 - "Hotel remains closed" → business (operational status)
 - "Hotel to be rebuilt" → building (construction passive)
 - "Went to the hotel" → building (movement/location)
 
+**USER RESPONSE:** Yes, agree. ✓
+
 ### 2. Proprietor Identification Alone
+
 **Problem:** Proprietor mentioned but no clear business context
 
 **How to identify:**
@@ -176,7 +194,10 @@ Clear indicators support classifications. Spot-check recommended.
 - If proprietor + business operations → "business"
 - If proprietor only identifies location → "building"
 
+**USER RESPONSE:** Agree. ✓
+
 ### 3. Court/Legal Contexts
+
 **Problem:** Legal proceedings could involve building location OR business entity
 
 **How to identify:**
@@ -185,7 +206,10 @@ Clear indicators support classifications. Spot-check recommended.
 - Crimes at location → building (or "both" if proprietor testifies)
 - Testimony by licensee → "both" (business operator + spatial location)
 
+**USER RESPONSE:** Agree. ✓
+
 ### 4. Advertisements
+
 **Problem:** Inherently dual-nature (marketing business + describing location)
 
 **What to check:**
@@ -193,6 +217,8 @@ Clear indicators support classifications. Spot-check recommended.
 - All advertisements should be "both" unless purely spatial description
 - Marketing language ("convenient to visitors") = business indicator
 - Geographic descriptors ("at the foot of") = building indicator
+
+**USER RESPONSE:** Agree. ✓
 
 ---
 
@@ -227,25 +253,25 @@ For each item, ask:
 
 ### Review Completion Checklist
 
-- [ ] All 3 medium-confidence items reviewed and approved/modified
-- [ ] All 8 "both" classifications verified
+- [X] All 3 medium-confidence items reviewed and approved/modified
+- [X] All 8 "both" classifications verified
 - [ ] Capitalization handling verified (6 Family/family hotel items)
 - [ ] Spot-checked 10+ high-confidence items
 - [ ] Cross-referenced proposed tags with taxonomy
 - [ ] Reviewed full mapping proposal document
 - [ ] No inconsistencies or errors identified
 
-### Modifications Made (if any)
+### Modifications Made
 
-Document any changes to proposed mappings:
+#### 1. Grand Hotel (Sydney) - Opening of Gladstone Coal-Mine (1885-07-13)
 
-```text
-[Record any modifications here]
-
-Example:
-
-- Item 8 (Carrington illustration): Changed from "building" to "both" because [rationale]
-```
+- **Original classification:** `building`
+- **Modified classification:** `both` (building + business)
+- **Rationale:** Hotel is being built (building aspect) AND will open soon as business (business aspect)
+- **Tags required:**
+  - `Grand Hotel (Sydney) (building)` ✓ exists
+  - `Grand Hotel (Sydney) (business)` ⚠ **TAXONOMY GAP - needs creation**
+- **Action:** Create business tag before applying mappings
 
 ### Final Approval
 

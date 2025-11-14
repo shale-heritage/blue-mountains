@@ -26,9 +26,11 @@ For each item below, review:
 **Total Unique Entities:** 14
 
 **Proposed Tag Distribution:**
-- Building tag only: 18 items
-- Business tag only: 17 items
-- Both tags (polyhierarchical): 8 items
+- Building tag only: 17 items (REVISED from 18)
+- Business tag only: 14 items (REVISED from 17)
+- Both tags (polyhierarchical): 12 items (REVISED from 8)
+
+**User Modifications:** 5 items modified during Phase 4 review (see MODIFIED tags)
 
 ---
 
@@ -40,16 +42,16 @@ For each item below, review:
 | Carrington Hotel | 4 | 2 | 1 | 1 | Carrington Hotel (building), Carrington Hotel (business) |
 | Centennial Hotel | 5 | 1 | 2 | 2 | Centennial Hotel (building), Centennial Hotel (business) |
 | Family hotel | 3 | 0 | 2 | 1 | Katoomba Family Hotel (building), Katoomba Family Hotel (business) |
-| Grand Hotel | 1 | 1 | 0 | 0 | Grand Hotel (building) |
+| Grand Hotel | 1 | 0 | 0 | 1 | Grand Hotel (Sydney) (building), Grand Hotel (Sydney) (business) **MODIFIED** |
 | Imperial Hotel | 3 | 2 | 1 | 0 | Imperial Hotel (building), Imperial Hotel (business) |
 | Katoomba Family Hotel | 1 | 0 | 1 | 0 | Katoomba Family Hotel (business) |
 | Katoomba Hotel | 3 | 3 | 0 | 0 | Katoomba Hotel (building) |
-| Megalong Hotel | 8 | 2 | 3 | 3 | Megalong Hotel (building), Megalong Hotel (business) |
+| Megalong Hotel | 8 | 2 | 2 | 4 | Megalong Hotel (building), Megalong Hotel (business) **MODIFIED** |
 | Montrose House | 4 | 4 | 0 | 0 | Montrose House (building) |
 | Mount Victoria Hotel | 2 | 0 | 2 | 0 | Mount Victoria Hotel (business) |
 | Railway Hotel | 2 | 2 | 0 | 0 | Railway Hotel (building) |
 | Wentworth Falls Hotel | 2 | 0 | 2 | 0 | Wentworth Falls Hotel (business) |
-| family hotel | 3 | 0 | 2 | 1 | family hotel (building), family hotel (business) |
+| family hotel | 3 | 0 | 0 | 3 | Katoomba Family Hotel (building), Katoomba Family Hotel (business) **MODIFIED** |
 
 ---
 
@@ -423,20 +425,21 @@ ggestion, and at a later date appoint delegates, as much good was likely to resu
 **Date:** 13 July 1885
 **Trove URL:** http://nla.gov.au/nla.news-article13592813
 
-**NLU Classification:** building
+**NLU Classification:** both
 **Confidence:** medium
 
 **Proposed Tags:**
-- `Grand Hotel (building)`
+- `Grand Hotel (Sydney) (building)`
+- `Grand Hotel (Sydney) (business)`
 
 **Context Excerpt:**
 ```text
 , an immediate adjournment was made for lunch, which had been prepared for several hundred people in a large marquee, adorned with mountain gigantic ferns, and pitched so as to afford a bird's-eye vista of the timber clearing along which the route to the mine runs. Mr. P. G. Whittall, of the Mount Victoria Hotel, and host elect of the shorty-to-be ...
 ```
 
-**Reasoning:** Future establishment reference - "host elect of the shortly-to-be Grand Hotel in Phillip-street, Sydney." Reference to planned hotel (not yet built/operating). Geographic location provided ("in Phillip-street, Sydney"). Weak indicators overall - mentions future existence and location. Classified as building due to geographic positioning, though minimal context.
+**Reasoning:** Mixed indicators. Building: "shortly-to-be Grand Hotel in Phillip-street, Sydney" - future construction, geographic location. Business: "host elect" - future business proprietor/operator role. USER CORRECTION: Hotel is being built (building aspect) AND will open soon as business (business aspect). Note: Correct tag is "Grand Hotel (Sydney)" to distinguish from other Grand Hotels.
 
-**APPROVED:** [ ]
+**APPROVED:** [X] MODIFIED
 
 ---
 
@@ -734,20 +737,21 @@ Edward Delaney, licensee of the Megalong Hotel, on oath, deposed: Remember ...
 **Date:** 19 June 1896
 **Trove URL:** http://nla.gov.au/nla.news-article194842204
 
-**NLU Classification:** business
+**NLU Classification:** both
 **Confidence:** high
 
 **Proposed Tags:**
 - `Megalong Hotel (business)`
+- `Megalong Hotel (building)`
 
 **Context Excerpt:**
 ```text
 The accomodation in the premises for which the License is desired is in conformity with the provisions of section 30 of Act 45, Vic No. 14. The premises for which this license is applied for are the same for which a Publican's license was granted by the Penrith Licensing Court at Katoomba on the 11th April, 1894, then known by the sign of the Megal...
 ```
 
-**Reasoning:** Licensing renewal application - legal/regulatory business context. "License is applied for," reference to previous license grant, reduction of license fee - all business/regulatory matters. No spatial usage.
+**Reasoning:** Mixed indicators. Business: "License is applied for," reference to previous license grant, reduction of license fee - legal/regulatory business context. Building: "plans of which have been lodged" - reference to architectural plans suggests physical building structure. USER CORRECTION: Plans mentioned indicate building aspect alongside licensing (business aspect).
 
-**APPROVED:** [ ]
+**APPROVED:** [X] MODIFIED
 
 ---
 
@@ -1096,7 +1100,7 @@ Mr. Wilson has sold out the business in connection with ...
 **Confidence:** high
 
 **Proposed Tags:**
-- `family hotel (business)`
+- `Katoomba Family Hotel (business)`
 
 **Context Excerpt:**
 ```text
@@ -1107,9 +1111,9 @@ BURIED AT BOWENFELS.
 Back in the early days of Katoomba, Mr. and Mrs. Joe Nimmo were prominent personalities in the community of Katoomba. For years they presided over the destinies of the Family Hotel, where they made money quickly and spent it with the fre...
 ```
 
-**Reasoning:** Duplicate of Mention 1 (case variation only). Same context, same indicators.
+**Reasoning:** Duplicate of Mention 1 (case variation only). Same context, same indicators. USER CORRECTION: Original text uses capitalized "Family Hotel" - refers to specific Katoomba Family Hotel, not generic family hotel.
 
-**APPROVED:** [ ]
+**APPROVED:** [X] MODIFIED
 
 ---
 
@@ -1122,16 +1126,16 @@ Back in the early days of Katoomba, Mr. and Mrs. Joe Nimmo were prominent person
 **Confidence:** high
 
 **Proposed Tags:**
-- `family hotel (business)`
+- `Katoomba Family Hotel (business)`
 
 **Context Excerpt:**
 ```text
 years; when, with two others, he started sawmills at Clarence. Disposing of his interest there, he left Lithgow for Hartley Vale, where he took over the Comet Hotel, the present brick building, which was sold the other day for a record decline price, being specially built for him. In '87, Mr. and Mrs. Nimmo came to Katoomba, where he purchased the ...
 ```
 
-**Reasoning:** Duplicate of Mention 2 (case variation only). Same context, same indicators.
+**Reasoning:** Duplicate of Mention 2 (case variation only). Same context, same indicators. USER CORRECTION: Original text uses capitalized "Family Hotel" - refers to specific Katoomba Family Hotel, not generic family hotel.
 
-**APPROVED:** [ ]
+**APPROVED:** [X] MODIFIED
 
 ---
 
@@ -1144,17 +1148,17 @@ years; when, with two others, he started sawmills at Clarence. Disposing of his 
 **Confidence:** high
 
 **Proposed Tags:**
-- `family hotel (building)`
-- `family hotel (business)`
+- `Katoomba Family Hotel (building)`
+- `Katoomba Family Hotel (business)`
 
 **Context Excerpt:**
 ```text
 ggestion, and at a later date appoint delegates, as much good was likely to result from exchange of views. From the Katoomba Council, granting use of the chambers on payment of the usual fee of 2s 6d. After discussion it was decided to decline the offer at present, but it was stated that favourable arrangements had been made with Mrs. Long, of the ...
 ```
 
-**Reasoning:** Duplicate of Mention 3 (case variation only). Same context, same indicators.
+**Reasoning:** Duplicate of Mention 3 (case variation only). Same context, same indicators. USER CORRECTION: Original text uses capitalized "Family Hotel" - refers to specific Katoomba Family Hotel, not generic family hotel.
 
-**APPROVED:** [ ]
+**APPROVED:** [X] MODIFIED
 
 ---
 
