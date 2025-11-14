@@ -1,0 +1,73 @@
+I need you to classify 4 mentions of boarding-houses in historical newspaper text.
+
+For each mention below, determine whether the boarding-houses should be classified as:
+- **building** (Built Environment facet only)
+- **business/organisation** (Agents facet only)
+- **both** (polyhierarchical - appears in both facets)
+
+Apply the entity classification heuristic, looking for spatial indicators (at/in/near, events occurring, accommodation) vs agency indicators (ownership, operations, services, financial actions).
+
+Please analyse each mention independently and provide the structured output format specified in the skill.
+
+---
+
+## Mention 1
+
+**Entity:** boarding houses
+**Item:** Katoomba (1888-01-07) (7 January 1888)
+**Trove URL:** http://nla.gov.au/nla.news-article100894625
+
+**Context:**
+> Nepean Times (Penrith, NSW : 1882 - 1962), Saturday 7 January 1888, page 4
+
+Katoomba.
+The weather during the last week has been delightful, and visitors are numerous —they come and go daily. The Carrington has been full up during the whole season, as also has been The Katoomba and Biles' Hotel. All the boarding houses have been taxed to their utmost, and the various furnished cottages are all full. Among the numerous residents of Katoomba at present will be found most of our leading [?]nists. The beginning of the season was very bad indeed, hundreds only remaining a day or too.
+Mr. Phil May, that popular Bulletin caricaturist, still remains at Katoomba, and int
+
+---
+
+## Mention 2
+
+**Entity:** boarding houses
+**Item:** Mountain Mixtures (1892-11-18) (18 November 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194117649
+
+**Context:**
+> coach proprietor wishes the Council to proceed against another for breach of vehicle by-laws he must pay the cost of summons, &c.
+Several young men of Katoomba have formed a select dramatic club. Dr. Prangley has kindly consented to assist the movement and we will be pleased to see a club formed here.
+We will publish a list of visitors at all the boarding houses and hotels on the Blue Mountains. Names should not reach this office not later than Wednesday, 10 o'clock, in each week.
+Next Tuesday a meeting of Katoomba residents is to be held at the Council Chambers, Katoomba, to devise means of recognising in some manner the services rendered by Mr. C. James to Katoomba.
+The Katoomba Council propose to make
+
+---
+
+## Mention 3
+
+**Entity:** Boarding houses
+**Item:** Katoomba (1888-01-07) (7 January 1888)
+**Trove URL:** http://nla.gov.au/nla.news-article100894625
+
+**Context:**
+> Nepean Times (Penrith, NSW : 1882 - 1962), Saturday 7 January 1888, page 4
+
+Katoomba.
+The weather during the last week has been delightful, and visitors are numerous —they come and go daily. The Carrington has been full up during the whole season, as also has been The Katoomba and Biles' Hotel. All the boarding houses have been taxed to their utmost, and the various furnished cottages are all full. Among the numerous residents of Katoomba at present will be found most of our leading [?]nists. The beginning of the season was very bad indeed, hundreds only remaining a day or too.
+Mr. Phil May, that popular Bulletin caricaturist, still remains at Katoomba, and int
+
+---
+
+## Mention 4
+
+**Entity:** Boarding houses
+**Item:** Mountain Mixtures (1892-11-18) (18 November 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194117649
+
+**Context:**
+> coach proprietor wishes the Council to proceed against another for breach of vehicle by-laws he must pay the cost of summons, &c.
+Several young men of Katoomba have formed a select dramatic club. Dr. Prangley has kindly consented to assist the movement and we will be pleased to see a club formed here.
+We will publish a list of visitors at all the boarding houses and hotels on the Blue Mountains. Names should not reach this office not later than Wednesday, 10 o'clock, in each week.
+Next Tuesday a meeting of Katoomba residents is to be held at the Council Chambers, Katoomba, to devise means of recognising in some manner the services rendered by Mr. C. James to Katoomba.
+The Katoomba Council propose to make
+
+---
+
