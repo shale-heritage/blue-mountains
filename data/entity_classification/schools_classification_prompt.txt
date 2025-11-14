@@ -1,0 +1,284 @@
+I need you to classify 18 mentions of schools in historical newspaper text.
+
+For each mention below, determine whether the school of arts should be classified as:
+- **building** (Built Environment facet only)
+- **business/organisation** (Agents facet only)
+- **both** (polyhierarchical - appears in both facets)
+
+Apply the entity classification heuristic, looking for spatial indicators (at/in/near, events occurring, accommodation) vs agency indicators (ownership, operations, services, financial actions).
+
+Please analyse each mention independently and provide the structured output format specified in the skill.
+
+---
+
+## Mention 1
+
+**Entity:** Katoomba School of Arts
+**Item:** Mountain Mixtures (1892-11-25) (25 November 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194115505
+
+**Context:**
+> (NSW : 1889 - 1894), Friday 25 November 1892, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes an' faith we'll prent 'em."
+KEEP your drains clean!
+No funds for Courthouse.
+Harry Edwards and son gone to the goldfinch.
+Skating handicap at the Odd Fellows' Hall on Tuesday night.
+The Primate of the C.E. Church, Katoomba, to-night. See advt.
+Katoomba School of Arts Flower Show on [?] and 17th December.
+Mr. G. Davis, butcher of Katoomba, opened a broach shop at Lawson last Monday.
+The Blue Mountains will be thoroughly represented at Chicago Exposition in the matter of photographs.
+Next issue a short translation, "Nihilism" will appear, to be followed by another which is written in a racy style and which will
+
+---
+
+## Mention 2
+
+**Entity:** Katoomba School of Arts
+**Item:** Mountain Mixtures (1892-12-02) (2 December 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194113022
+
+**Context:**
+> 's amang ye takin' notes an' faith we'll prent 'em."
+Brass Band formed at Hartley Vale.
+Not a brick yet laid of the new wing to Katoomba School.
+Mr. Copeland invites tenders for painting a house in this issue.
+Why did the magistrates all look so "seedy" last Thursday morning?
+Last month of another year and no courthouse or post office at Katoomba.
+Katoomba School of Arts Flower Show this month on the 16th and 17th.
+Railway big-guns on a tour of inspection on the Western Line last Wednesday.
+Very important letter lying at this office for Mr. T. D. Hamilton, an itinerate play-actor.
+The Land Board sit at the hired court house, Katoomba, on Monday and Tuesday next.
+Professor Kelley did not turn up at the I.O.O.F.
+
+---
+
+## Mention 3
+
+**Entity:** Katoomba School of Arts
+**Item:** Mountain Mixtures (1893-08-25) (25 August 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194114976
+
+**Context:**
+> ervices of the well-known harpist, Signor Butta, and a member of his band, with harp and violin, for their ball, to be held on Monday, 4th September. 
+Song sermon at Katoomba Wesleyan Church on Sunday next. The minister of the circuit, Rev. M. Scott Fletcher, B.A., will deliver the sermon and special music will be rendered by the choir. See advt. 
+Katoomba School of Arts almost free from debt. New books are to be purchased, and during the season that well-known house-to-house traveller, Mr. Day, is to dodge among the visitors for subscriptions. 
+Angus and Angus have secured the contract for erecting the new post office at Katoomba. The building is to be a substantial one, and the contractors are allowed four month
+
+---
+
+## Mention 4
+
+**Entity:** Katoomba School of Arts
+**Item:** Town Talk (1904-07-22) (22 Jul 1904)
+**Trove URL:** http://nla.gov.au/nla.news-article188871008
+
+**Context:**
+> e Leura Caves, when one of them discovered an old silver watch wrapped in a rag, which had the appearance of having lain there for a long time. 
+Reports from various centres of the Hartley electoral indicate that the chances of the defeat of Mr. Hurley are becoming very serious for John. Mr. Pillans is daily gaining adherents. 
+The return from the Katoomba School of Arts billiard table for the eight months that it has been in existence amounts to £60 19s 3 1/2d. That is in addition to the £2 5s which was netted from the tournament. 
+A meeting of Mr. Hurley's supporters is called for Tuesday evening next at the School Hall, Leura. Mr. C. L. Dash is the secretary. 
+A meeting of the Katoomba supporters of Mr.
+
+---
+
+## Mention 5
+
+**Entity:** Katoomba School of Arts
+**Item:** Mountain Mixtures (1892-04-29) (29 April 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194118683
+
+**Context:**
+> See ad.
+If the three smithy shops being erected are to have tenants Katoomba will have enough smithies and to spare, we are afraid.
+George James, of Oberon, out of business, has made a voluntary sequestration of his estate. Mr. L. T. Lloyd, official asignee.
+The majority of the new books added to the Katoomba School of Arts library are a great acquisition to the institution.
+Our Lithgow contemporary couldn't manage to report the matter of a goods engine tender running off the line under half a column.
+Mr. Ellis was granted a renewal of the license for the Belgravia Hotel, Medlow, at the Licensing Court, held at Katoomba, last Wednesday.
+Events to come.
+
+---
+
+## Mention 6
+
+**Entity:** Katoomba School of Arts
+**Item:** Jottings (1891-05-23) (23 May 1891)
+**Trove URL:** http://nla.gov.au/nla.news-article194112487
+
+**Context:**
+> might not be removed from Katoomba to Emu Plains was in vain.
+Katoomba Rifle Reserves musketry shooting this week. Wentworth Falls last week.
+A report of the Wentworth Falls Rifle Reserves annual meeting held last Thursday week appears. It reached us too late for last issue.
+There is room for improvement in the class of literature placed upon the Katoomba School of Arts reading-room table. Many important newspapers and periodicals are - to use the stereotyped phrase - conspicuous by their absence. Will the committee attend to this?
+An exchange says the coal trade at Lithgow is not very brisk just now.
+We are informed that the Katoomba Amateur Minstrel Troupe will perform shortly at Blackheath and Mountain Victori
+
+---
+
+## Mention 7
+
+**Entity:** Katoomba School of Arts
+**Item:** Mountain Mixtures (1892-10-21) (21 October 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194117986
+
+**Context:**
+> e course of a few weeks there will be alike demand for cottages furnished. The boarding houses and hotels are securing a fair share of patronage, and if the weather only continues as favorable all through the season as it has commenced this will be the best season experienced on the Mountains.
+Some weeks ago while fossicking about the books at the Katoomba School of Arts we came across Carlyle's translation of Gothe's "Apprenticeship and Travels of Willhelm Meister." It is a high class work, couched in beautiful language, and abounding in rich philosophy. In fact, it is one of the best books in the library, and yet when we picked it up its leaves were uncut, although the work has been upon the shelves ever since t
+
+---
+
+## Mention 8
+
+**Entity:** Katoomba School of Arts
+**Item:** Mountain Mixtures (1893-07-07) (7 July 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194118634
+
+**Context:**
+> The following officers were elected: - President, Sir Frederick Darley; Vice-Presidents, Dr. Prangley, J.P., and Mr. J. W. Fletcher, J.P.; Treasurer, Mr. H. Kaye; Secretary, Mr. W. F. Goyder; Committee, Alderman McKillop, Messrs. Hewett and Preston. Membership fee 21s. 
+On Tuesday evening last the usual committee meeting of Katoomba School of Arts was held at the reading room at 8 p.m., when Messrs. Hewett and McKillop (vice presidents), Banfield (acting secretary), Wilkinson, Illingworth, Craig, Southwood, and Rev. J. H. Maclean were present. Mr. S. E. Hewett, one of the vice presidents, occupied the chair. Minutes of previous meeting were read and confirmed.
+
+---
+
+## Mention 9
+
+**Entity:** Katoomba School of Arts
+**Item:** News in Brief (1903-10-09) (9 October 1903)
+**Trove URL:** http://nla.gov.au/nla.news-article190715974
+
+**Context:**
+> Wootton on Mr J. Waudby's window is a very elegant and chaste bit of work.
+— By Government advertisement it will be seen that the Jenolan Caves rivers are closed against salmon and trout fishing.
+— Mr A. Olsen gives notice he intends to apply for wine license for shop in Leura Mall.
+— The usual monthly meeting of the Katoomba School of Arts committee will be held on Tuesday evening next.
+— A third policeman has been stationed at Katoomba and district.
+— Alderman Tabrett thinks the referendum on the water supply will be against the proposal.
+— The Aldermen met the District Inspector Culane re improved conveniences at the Katoomba station on Tuesday afternoon.
+— The Katoomba Methodist
+
+---
+
+## Mention 10
+
+**Entity:** School of Arts
+**Item:** Opening of the Mines School of Arts (1891-09-05) (5 September 1891)
+**Trove URL:** http://nla.gov.au/nla.news-article194113923
+
+**Context:**
+> Katoomba Times (NSW : 1889 - 1894), Saturday 5 September 1891, page 2
+
+Opening of the Mines School of Arts.
+THE opening of this institute was celebrated on Saturday last by means of a concert given in the Congregational Church, Katoomba South. The president (the Rev. Canon Kemmis) was unable to be present and the chair was taken by Mr. Joseph Edwards. The church was prettily decorated with evergreens and being well lighted had a bright and attractive a
+
+---
+
+## Mention 11
+
+**Entity:** School of Arts
+**Item:** Mountain Mixtures (1893-06-09) (9 June 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194112700
+
+**Context:**
+> The usual weekly meeting of the Chess and Draughts Club was held at the Council Chambers on Friday evening last. Though the night was wet and cold there was a fair attendance, and several interesting games were played. A sub-committee has been appointed to make arrangements for a tournament for winter months. Many subscribers of the School of Arts are fairly expert at both chess and draughts and the committee would like to see these attend the meetings occasionally, so that the club may be further strengthened and the proposed tournament be a success. To those not members the only qualification necessary is that they become subscribers to the School of Arts, the quarterly subscription to wh
+
+---
+
+## Mention 12
+
+**Entity:** School of Arts
+**Item:** Town Talk (1903-10-30) (30 October 1903)
+**Trove URL:** http://nla.gov.au/nla.news-article188870500
+
+**Context:**
+> 100 lbs in 2 or 3 months.
+At future parliamentary elections Leura will have a polling booth of its own. This should please residents of that locality.
+The fortnightly meeting the council takes place on Monday next.
+Weather permitting the band will play a programme of music in the street tomorrow (Saturday) evening.
+The official opening of the new School of Arts building on Wednesday next promises to be a successful affair.
+The return social given by Alderman and Mrs. Lewis Duff on Tuesday evening last was a great success, and was largely attended.
+A couple of cattle and horse straying cases were heard at the local court on Monday. In each case the defendant pleaded guilty and was fined 5s and 4s 10d cost
+
+---
+
+## Mention 13
+
+**Entity:** School of Arts
+**Item:** Mines School of Arts (1891-05-02) (2 May 1891)
+**Trove URL:** http://nla.gov.au/nla.news-article194110570
+
+**Context:**
+> Katoomba Times (NSW : 1889 - 1894), Saturday 2 May 1891, page 2
+
+Mines School of Arts.
+A MEETING of intending members of the above was held at Mr Joseph Edwards' residence, Katoomba South, when a fair number of miners and residents of Katoomba attended.
+The Mayor of Katoomba (Mr. A. A. Smith) occupied the chair and explained that the object of the meeting was to enroll members and to elect officers.
+Ald.
+
+---
+
+## Mention 14
+
+**Entity:** School of Arts
+**Item:** Mountain Mixtures (1893-06-16) (16 June 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194113774
+
+**Context:**
+> d that some mean scoundrels had appropriated a considerable portion of his stock. The police have the matter in hand, but so far have no clue or the least suspicion on anyone. House-breaking is a game indulged in rather too frequently just now, and we trust the gang will soon be broken up. 
+Mr. J. Nimmo complained of the management of the Katoomba School of Arts at the opening of the Katoomba Superior Public School library on Wednesday and said in consequence many members had discontinued their subscription. The last portion of the above sentence is, we regret to say, quite true but the accusation as to the management we think hardly fair and hardly correct.
+
+---
+
+## Mention 15
+
+**Entity:** School of Arts
+**Item:** Mountain Mixtures (1893-06-30) (30 June 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194117017
+
+**Context:**
+> A splendid supper was partaken of at 11 o'clock, and at 12 the party dispersed. We heartily congratulate the young man on the attainment of his majority wish him heaps of good fortune, and many happy returns of the day. 
+Messrs. Douglass and Banfield went about the town on Wednesday and Friday last and secured 18 new subscribers for Katoomba School of Arts. Several expressed their gratification upon hearing about the chess and draughts club and promised to be present at the next meeting. Others were ignorant of the advantages and of the new vigorous administration just inaugurated. We are convinced that the numbers of subscribers will be doubled this quarter, and that a new measure of vigor and vita
+
+---
+
+## Mention 16
+
+**Entity:** School of Arts
+**Item:** Katoomba (1905-08-04) (4 August 1905)
+**Trove URL:** http://nla.gov.au/nla.news-article218749071
+
+**Context:**
+> some of the aldermen at the last meeting, and after ventilating their views a motion was ordered to be placed in the minute book relating to the matter. The unsatisfactory state of Bent-street was discussed, and it was resolved to ask the Council to attend to it. Several other matters were discussed, and the meeting adjourned.
+The librarian of the School of Arts has just returned from a fortnight's holiday, and looks considerably better for the change.
+At the mines the men are still busily engaged hauling up the shale, and a large heap now awaits trucking. During the last fortnight two slight accidents have occurred, but matters might have been much worse only for speedy treatment.
+
+---
+
+## Mention 17
+
+**Entity:** School of Arts
+**Item:** Mountain Mixtures (1893-06-23) (23 June 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194113438
+
+**Context:**
+> be done by contract, as we suggested it should be. This is one way of settling the difference between Potter and Whitehead.
+Katoomba Council have reduced the whole of their employees 10 per cent. Why not reduce the Council Clarke to £100 per year? The billet is not worth more.
+We notice that the current number of periodicals are now upon Katoomba School of Arts reading room table. Current numbers will always be to hand in future.
+Rough kerbing and guttering to be done on Bathurst Road, commencing near THE TIMES office and finishing at Wooller's corner. For small mercies we are truly thankful.
+The Orange Leader wants to know if Mr. Fairfax will give away The Echo when the Herald is reduced to price to 1d.
+
+---
+
+## Mention 18
+
+**Entity:** School of Arts
+**Item:** Town Talk (1903-03-13) (13 March 1903)
+**Trove URL:** http://nla.gov.au/nla.news-article188871927
+
+**Context:**
+> he motion to reduce the council clerk's salary by £26 per annum was negatived by the aldermen at Monday's meeting by 5 votes to 3.
+We have heard during the week of a snake story from over Leura way. It was that a large tiger snake had been killed with 25 young ones. We do not vough for the accuracy of above.
+A mooting of the committee of the local School of Arts was to have been held at the room on Tuesday evening. The night was somewhat damp and no quorum turned up. The interest shown by some of the committee seems very slight, especially as important business in connection with new building, &c., had to be discussed. Those who did turn up and who waited till nine p.m. to see if any others came were Dr.
+
+---
+
