@@ -1,0 +1,1402 @@
+
+ ▐▛███▜▌   Claude Code v2.0.37
+▝▜█████▛▘  Sonnet 4.5 · Claude Max
+  ▘▘ ▝▝    /home/shawn/Code/blue-mountains
+
+> Hi CC, welcome back. I'd like to resume where we left off yesterday. You may have save a /compact message, 
+otherwise please review archive/cc-interactions/2025-11-13-b.txt and remind me what we were working on 
+
+● I'll check for any saved session state and review the previous interaction.
+
+● Read(SESSION_HANDOVER.md)
+  ⎿  Read 258 lines
+
+● Read(archive/cc-interactions/2025-11-13-b.txt)
+  ⎿  Read 772 lines
+
+● Welcome back! I've reviewed the session handover and previous interaction transcript.
+
+  Where We Left Off
+
+  Yesterday we completed educational schools classification (35 mentions). The session ended with me writing the
+  classification results to a markdown file for your review.
+
+  Classification Summary:
+  - Building only: 5 mentions (21.7%)
+  - Organisation only: 15 mentions (65.2%)
+  - Both: 3 mentions (13.0%)
+  - School of Arts (misclassified): 3 mentions
+
+  Key Findings:
+  1. Educational schools show strong organisational emphasis (similar to Schools of Arts)
+  2. 3 items incorrectly tagged as "School" are actually "School of Arts"
+  3. 12 duplicate mentions exist due to case-variant tagging ("School" vs "school")
+
+  Current Entity Classification Status
+
+  | Entity Type         | Status                       | Next Action              |
+  |---------------------|------------------------------|--------------------------|
+  | Hotels              | ✅ Phase 6 complete           | Ready to apply (49 tags) |
+  | Churches            | ✅ Manual complete            | 5-item spot-check        |
+  | Schools of Arts     | ✅ NLU complete (18 mentions) | Generate application CSV |
+  | Educational schools | ✅ NLU complete (35 mentions) | Awaiting your review     |
+  | Boarding houses     | ⏸️ No data in library        | Skip                     |
+  | Halls/Lodges        | ✅ Intentionally separate     | 5-item spot-check        |
+
+  Ready for Your Corrections
+
+  The educational schools classification results are in:
+  data/entity_classification/educational-schools_classification_results.md
+
+  Would you like to review the educational schools classifications and provide corrections (similar to what we did
+   with Schools of Arts)? Once corrected, I can generate the application CSV and continue with the remaining
+  entity validations.
+
+> I have reviewed the classification results and agree with all of your recommendations with one change: I've 
+noted one 'building' classification that needs to be 'both' (prefaced with an asterisk). I agree with following 
+the hotel model of disambiguation. I also agree with retagging to 'school of arts...' as you indicate for the 
+three incorrect items. Please implement these changes in the taxonomy and with regard to retagging of Zotero 
+items. 
+
+● I'll implement the changes to the taxonomy and prepare the retagging instructions. First, let me identify which
+  classification you've marked for correction in the file.
+
+● Search(pattern: "^\*", path: "data/entity_classification/educational-schools_classification_results.md",
+        output_mode: "content")
+  ⎿  Found 20 lines (ctrl+o to expand)
+
+● Search(pattern: "^\* ", path: "data/entity_classification/educational-schools_classification_results.md",
+        output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Let me search more broadly for your correction mark:
+
+● Bash(grep -n "^\*"
+      /home/shawn/Code/blue-mountains/data/entity_classification/educational-schools_classification_results.md | head
+      -20)
+  ⎿  3:**Date:** 2025-11-13                                                   
+     4:**Entity Type:** Educational schools (public schools)
+     5:**Total Mentions:** 35 (with 12 duplicates due to case-variant tagging)
+     … +22 lines (ctrl+o to expand)
+
+● Let me look for an asterisk at the start of a mention number line or before "Mention":
+
+● Bash(grep -n "^\* Mention\|^\*Mention"
+      /home/shawn/Code/blue-mountains/data/entity_classification/educational-schools_classification_results.md)
+  ⎿  No matches found
+
+● Let me search differently - perhaps the asterisk is in a different format:
+
+● Bash(grep -n "building.*both\|both.*building"
+      /home/shawn/Code/blue-mountains/data/entity_classification/educational-schools_classification_results.md | head
+      -10)
+  ⎿ 349:**Reasoning:** "Unsatisfactory state of the public school building" explicitly references the physical st
+    ructure AND "its inadequate accommodation" refers to the building's functional capacity. However, the context
+     is about institutional concern (Minister for Public Instruction requesting examination), showing both physic
+    … +4 lines (ctrl+o to expand)
+
+
+
+
+● Let me check if there's an asterisk or other marker near the "building only" classifications:
+
+● Read(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Read 50 lines
+
+● Read(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Read 50 lines
+
+● Read(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Read 30 lines
+
+● Perfect! I found it. Mention 22 should be changed from "building" to "both". Let me create a todo list and
+  implement all the changes:
+
+● Update(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Updated data/entity_classification/educational-schools_classification_results.md with 4 additions and 4     
+     removals
+       437    **Item:** Megalong Matters (1892-08-26)
+       438    **Trove URL:** http://nla.gov.au/nla.news-article194115068
+       439    
+       440 -  **Classification:** building
+       441 -  **Confidence:** medium
+       440 +  **Classification:** both
+       441 +  **Confidence:** high
+       442    
+       443 -  **Reasoning:** "Land...reserved from selection for school and church purposes" refers to land 
+           -  designated for building purposes. The second sentence mentions "school attendance" which is 
+           -  organisational, but the primary reference is spatial/land allocation for physical infrastructure.
+       443 +  **Reasoning:** "Land...reserved from selection for school and church purposes" refers to land 
+           +  designated for building purposes (spatial/physical). The second sentence "school attendance in 
+           +  consequence" indicates organisational activity. Both building infrastructure and institutional 
+           +  operations are referenced.
+       444    
+       445    **Indicators Found:**
+       446    - Building: land_reservation, spatial_designation
+       447 -  - Organisation: attendance (secondary mention in different sentence)
+       447 +  - Organisation: attendance, institutional_operations
+       448    
+       449    **Context:**
+       450    > Portions of unalienated land centrally situated will probably be reserved from selection for 
+             school and church purposes. The population of the mines continues to increase also the school 
+             attendance in consequence.
+
+● Update(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Updated data/entity_classification/educational-schools_classification_results.md with 2 removals        
+       449    **Context:**
+       450    > Portions of unalienated land centrally situated will probably be reserved from selection for 
+             school and church purposes. The population of the mines continues to increase also the school 
+             attendance in consequence.
+       451    
+       452 -  *PLEASE MODIFY: should be 'both' since 'school attendance' is mentioned.
+       453 -  
+       452    ---
+       453    
+       454    ### Mention 23: School (generic - Megalong Public lease)
+
+● Now let me update the summary statistics in the file:
+
+● Update(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Error editing file
+  ⎿  Found 15 new diagnostic issues in 1 file (ctrl-o to expand)
+
+● Read(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Read 15 lines
+
+● Update(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Updated data/entity_classification/educational-schools_classification_results.md with 2 additions and 2     
+     removals
+       14    
+       15    | Classification | Count | Percentage |
+       16    |----------------|-------|------------|
+       17 -  | Building only | 5 | 21.7% |
+       17 +  | Building only | 4 | 17.4% |
+       18    | Organisation only | 15 | 65.2% |
+       19 -  | Both | 3 | 13.0% |
+       19 +  | Both | 4 | 17.4% |
+       20    | **Total** | **23** | **100%** |
+       21    
+       22    **Note:** 3 mentions (15, 20, 21) were incorrectly tagged as "School" but actually refer to 
+            "School of Arts" (cultural societies, not educational institutions). These have been classified as 
+            they appear but should be retagged to Schools of Arts.
+
+● Now let me update the detailed breakdown section:
+
+● Read(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Read 40 lines
+
+● Update(data/entity_classification/educational-schools_classification_results.md)
+  ⎿  Updated data/entity_classification/educational-schools_classification_results.md with 1 addition and 1      
+     removal
+       485    - **Mention 31** = Mention 19: organisation
+       486    - **Mention 32** = Mention 20: organisation (School of Arts misclassification)
+       487    - **Mention 33** = Mention 21: organisation (School of Arts misclassification)
+       488 -  - **Mention 34** = Mention 22: building
+       488 +  - **Mention 34** = Mention 22: both
+       489    - **Mention 35** = Mention 23: both
+       490    
+       491    ---
+
+● Now let me check the current taxonomy structure for schools and create the disambiguated structure following the
+   hotel model:
+
+● Bash(grep -E "^(School|school|Katoomba.*School|Megalong.*School|Mount Victoria School)"
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -30)
+  ⎿ Katoomba Congregational Church (Sunday School),Katoomba Congregational Church (Sunday School),hierarchy,paren
+    t=sunday schools
+    Katoomba Public School,Katoomba Public School,hierarchy,parent=schools
+    … +25 lines (ctrl+o to expand)
+
+
+● Let me check how hotels are structured to follow the same pattern:
+
+● Bash(grep -E "^(Hotel|hotel|Grand Hotel)" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -30)
+  ⎿ Grand Hotel,Grand Hotel (Sydney),synonym,Unqualified reference - all instances in collection refer to Sydney 
+    hotel
+    Grand Hotel,Grand Hotel (Sydney),merge,Primary source evidence shows Grand Hotel refers to Phillip Street Syd
+    … +25 lines (ctrl+o to expand)
+
+
+● I see. Let me look at churches as well to understand the full pattern:
+
+● Bash(grep -E "^(Church|church|Methodist Church)" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv |
+      head -30)
+  ⎿ Church,church (organisation),synonym,Unqualified variant from original Zotero tags                           
+    Church,Church,hierarchy,parent=Churches
+    Church of England Katoomba (building),Church of England Katoomba (building),hierarchy,parent=Church of Englan
+    … +24 lines (ctrl+o to expand)
+
+
+● Perfect! Now I understand the pattern. I need to create a structure with:
+  - schools (buildings) and schools (organisations) as intermediate parents
+  - School (building) and School (organisation) as singular generics
+  - Specific school names with (building) and (organisation) qualifiers
+
+  Let me create the new taxonomy structure. First, let me read the current relevant section:
+
+● Bash(grep -n "^schools,schools,hierarchy,parent=educational buildings"
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  2065:schools,schools,hierarchy,parent=educational buildings
+
+● Now let me prepare the complete taxonomy changes. I'll create a detailed change document first:
+
+● Write(entity-tagging-system/outputs/educational-schools/taxonomy-implementation-plan.md)
+  ⎿  Wrote 211 lines to entity-tagging-system/outputs/educational-schools/taxonomy-implementation-plan.md
+     # Educational Schools Taxonomy Implementation Plan
+     **Date:** 2025-11-14
+     **Entity Type:** Educational schools (public schools)
+     **Strategy:** Disambiguation with parenthetical qualifiers (following hotel/church model)
+     ---
+     ## Current Taxonomy Issues
+     … +201 lines (ctrl+o to expand)
+
+● Now let me create a backup of the taxonomy CSV:
+
+● Bash(cp /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv.backup-$(date +%Y%m%d-%H%M%S) &&…)
+  ⎿  Error: Exit code 2
+     /bin/bash: eval: line 1: syntax error near unexpected token `('
+     /bin/bash: eval: line 1: `cp /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv 
+     /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv.backup-\$ ( date +%Y%m%d-%H%M%S ) && ls -lh 
+     /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv.backup-* < /dev/null | tail -1'
+
+● Bash(timestamp=$(date +%Y%m%d-%H%M%S) && cp /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.c…)
+  ⎿ -rw-rw-r-- 1 shawn shawn 169K Nov 14 16:35 /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv.back
+    up-20251114-163534
+
+
+● Now let me apply the taxonomy changes. I'll create a Python script to do this systematically:
+
+● Write(scripts/39_implement_educational_schools_taxonomy.py)
+  ⎿  Wrote 141 lines to scripts/39_implement_educational_schools_taxonomy.py           
+     #!/usr/bin/env python3
+     """
+     Implement educational schools dual-nature taxonomy with disambiguation qualifiers.
+     This script:
+     1. Removes obsolete unqualified school entries
+     2. Adds new disambiguated structure (building)/(organisation)
+     3. Creates synonym mappings for unqualified terms
+     4. Follows hotel/church model for consistency
+     … +131 lines (ctrl+o to expand)
+
+● Bash(chmod +x scripts/39_implement_educational_schools_taxonomy.py && source venv/bin/activate && python
+      scripts/39_implement_educational_schools_taxonomy.py)
+  ⎿  Educational Schools Taxonomy Implementation                 
+     ============================================================
+     … +19 lines (ctrl+o to expand)
+
+● Excellent! Let me verify the changes:
+
+● Bash(grep -E "^(School|school|Katoomba.*School|Megalong.*School|Mount Victoria School)"
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | grep -v "Scho…)
+  ⎿ Katoomba Public School (building),Katoomba Public School (building),hierarchy,parent=schools (buildings)     
+    Katoomba Public School,Katoomba Public School (organisation),synonym,Unqualified variant - to be applied base
+    d on context analysis
+    … +34 lines (ctrl+o to expand)
+
+
+● Perfect! The taxonomy structure is now implemented. Now let me mark this complete and move to generating the
+  item tag application CSV:
+
+● Now let me generate the item tag application CSV. First, let me read the classification results to map each
+  mention to its tag application:
+
+● Bash(source venv/bin/activate && python << 'EOF'
+      import json…)
+  ⎿  Total mentions: 35            
+
+     First mention structure:
+     … +14 lines (ctrl+o to expand)
+
+● Now let me create a script to generate the tag application CSV based on the classification results:
+
+● Write(scripts/40_generate_schools_tag_applications.py)
+  ⎿  Wrote 205 lines to scripts/40_generate_schools_tag_applications.py                        
+     #!/usr/bin/env python3
+     """
+     Generate item tag application CSV for educational schools based on classification results.
+     This script reads the classification results and generates a CSV with instructions for:
+     1. Removing old unqualified tags
+     2. Adding new qualified tags based on building/organisation/both classifications
+     3. Fixing School of Arts misclassifications
+     Date: 2025-11-14
+     … +195 lines (ctrl+o to expand)
+
+● Bash(chmod +x scripts/40_generate_schools_tag_applications.py && source venv/bin/activate && python
+      scripts/40_generate_schools_tag_applications.py)
+  ⎿  Educational Schools Tag Application Generator               
+     ============================================================
+     … +28 lines (ctrl+o to expand)
+
+● Excellent! Let me verify a few rows of the generated CSV:
+
+● Bash(head -10
+      /home/shawn/Code/blue-mountains/entity-tagging-system/outputs/educational-schools/item_tag_application.csv |
+      column -t -s ',')
+  ⎿ mention_id  item_title                      item_url                                     action             o
+    ld_tag                          new_tags
+                    classification  context_snippet
+    … +87 lines (ctrl+o to expand)
+
+
+● Now let me prepare the retagging instructions for the 3 School of Arts misclassifications:
+
+● Bash(grep "RETAG_SCHOOL_OF_ARTS"
+      /home/shawn/Code/blue-mountains/entity-tagging-system/outputs/educational-schools/item_tag_application.csv)
+  ⎿ 15,Mountain Mixtures (1892-11-25),http://nla.gov.au/nla.news-article194115505,RETAG_SCHOOL_OF_ARTS,School,Sch
+    ool of Arts,school_of_arts,"89 - 1894), Friday 25 November 1892, page 2  Mountain Mixtures. ""A chiel's amang
+     ye takin' notes an' faith we'll prent 'em."" KEEP your drains clean! No funds for Courthouse. Harry Edwards
+    … +9 lines (ctrl+o to expand)
+
+
+
+● Let me create a dedicated file for the School of Arts retagging instructions:
+
+● Write(entity-tagging-system/outputs/educational-schools/school-of-arts-retagging-instructions.md)
+  ⎿  Wrote 136 lines to entity-tagging-system/outputs/educational-schools/school-of-arts-retagging-instructions.m
+
+     # School of Arts Retagging Instructions
+     **Date:** 2025-11-14
+     **Issue:** 3 items incorrectly tagged as "School" (educational schools) should be "School of Arts" (cultural
+     societies)
+     ---
+     ## Summary
+     During educational schools classification, 3 items were found to be incorrectly tagged with the generic
+     "School" tag when they actually refer to "School of Arts" (cultural societies/community halls), not
+     educational institutions.
+     … +126 lines (ctrl+o to expand)
+
+● Now let me update the consolidation decisions log with the educational schools implementation:
+
+● Read(planning/consolidation-decisions.md)
+  ⎿  Read 30 lines
+
+● Bash(wc -l /home/shawn/Code/blue-mountains/planning/consolidation-decisions.md)
+  ⎿  5484 /home/shawn/Code/blue-mountains/planning/consolidation-decisions.md
+
+● Let me append the educational schools decision to the end of the file:
+
+● Bash(tail -5 /home/shawn/Code/blue-mountains/planning/consolidation-decisions.md)
+  ⎿  4. Confirmed with `scripts/40_check_orphaned_tags.py`
+
+     **Status:** Implemented 2025-11-13
+     … +2 lines (ctrl+o to expand)
+
+● Bash(cat >> /home/shawn/Code/blue-mountains/planning/consolidation-decisions.md << 'EOF'…)
+  ⎿  ✓ Consolidation decision appended
+
+● Perfect! All tasks are complete. Let me create a summary document of what was accomplished:
+
+● Write(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Wrote 313 lines to entity-tagging-system/outputs/educational-schools/implementation-summary.md              
+     # Educational Schools Implementation Summary
+     **Date:** 2025-11-14
+     **Status:** ✅ Complete - Ready for Zotero application
+     ---
+     ## Overview
+     Successfully implemented dual-nature taxonomy structure for educational schools with disambiguation
+     qualifiers, following the hotel/church model. All 35 mentions (23 unique) classified and mapped to qualified
+     building/organisation tags.
+     … +303 lines (ctrl+o to expand)
+
+● Perfect! Now let me create a brief summary for you:
+
+  ✅ Educational Schools Implementation Complete
+
+  I've successfully implemented the educational schools dual-nature taxonomy with disambiguation qualifiers,
+  following your agreement with the hotel model approach. Here's what was accomplished:
+
+  Classification Corrections Applied
+
+  - ✅ Updated Mention 22 from "building" to "both" (land reservation + attendance)
+  - ✅ Updated statistics: Building 17.4%, Organisation 65.2%, Both 17.4%
+
+  Taxonomy Changes Implemented
+
+  - Removed: 13 obsolete unqualified entries
+  - Added: 22 new disambiguated entries
+  - Structure: Created schools (buildings) and schools (organisations) intermediate parents with all specific
+  schools having (building) and (organisation) variants
+  - Backup created: tag_map_consolidated.csv.backup-20251114-163534
+
+  Deliverables Generated
+
+  1. Item tag application CSV: 23 unique retagging instructions
+    - 15 single replacements (building OR organisation)
+    - 5 both tags (building AND organisation)
+    - 3 School of Arts corrections
+  2. School of Arts retagging instructions: Detailed guide for 3 misclassified items
+  3. Consolidation decision logged: Full documentation in planning/consolidation-decisions.md
+
+  Output Files
+
+  All files in /home/shawn/Code/blue-mountains/entity-tagging-system/outputs/educational-schools/:
+  - taxonomy-implementation-plan.md - Structure design
+  - item_tag_application.csv - Retagging instructions
+  - school-of-arts-retagging-instructions.md - 3 corrections
+  - implementation-summary.md - Complete overview
+
+  Status
+
+  ✅ Ready for Zotero application (with caveat: 7 items need manual review - Megalong Valley School (6) and Mount
+  Victoria School (1) had no extracted mention text)
+
+  Would you like me to proceed with any next steps, or would you like to review the generated files first?
+
+> I forgot to specify: I really appreciated your extraction of specific school names (e.g., 'Katoomba Superior 
+Public School', etc.). Did you use those names in the taxonomy and your proposed tagging? 
+
+● Yes! I did use those specific school names throughout the taxonomy implementation and tagging proposals. Let me
+  show you exactly where:
+
+● Bash(grep -E "Katoomba Public School|Katoomba Superior Public School|Megalong Valley School|Mount Victoria School"
+      /home/shawn/Code/blue-mountains/data/tag_map_conso…)
+  ⎿ Katoomba Public School (building),Katoomba Public School (building),hierarchy,parent=schools (buildings)     
+    Katoomba Public School (organisation),Katoomba Public School (organisation),hierarchy,parent=schools (organis
+    ations)
+    … +18 lines (ctrl+o to expand)
+
+
+● Perfect! And in the tagging applications:
+
+● Bash(grep -E "Katoomba Public School|Katoomba Superior Public School|Megalong Valley School|Mount Victoria School"
+      /home/shawn/Code/blue-mountains/entity-tagging-sys…)
+  ⎿ 1,Mountain Mixtures (1892-06-17),http://nla.gov.au/nla.news-article194118172,REPLACE,Katoomba Public School,K
+    atoomba Public School (building),building,"straight that it is a capitalist organ ? — it is owned by mighty e
+    mail capitalists, by the way. Cook and Donald are a heap better than Jack Hurley, anyway, and the said owners
+    … +42 lines (ctrl+o to expand)
+
+
+
+
+● Yes! Every classification and tag application uses the specific school names as they appear in the historical
+  sources:
+
+  Specific Schools Implemented
+
+  In Taxonomy (tag_map_consolidated.csv):
+  1. Katoomba Public School - with (building) and (organisation) variants
+  2. Katoomba Superior Public School - with (building) and (organisation) variants
+  3. Megalong Valley School - with (building) and (organisation) variants
+  4. Mount Victoria School - with (building) and (organisation) variants
+
+  In Tag Applications (item_tag_application.csv):
+  - Each item gets tagged with the exact school name plus the appropriate qualifier:
+    - Katoomba Public School (building) - for building references
+    - Katoomba Public School (organisation) - for institutional references
+    - Both tags when context indicates both aspects
+
+  Examples from the CSV:
+  - Mention 1: "lantern exhibition at the Katoomba Public School" → Katoomba Public School (building)
+  - Mention 2: "Pupils prohibited from attending Katoomba Public School" → Katoomba Public School (organisation)
+  - Mention 7: "Opening of Katoomba Superior Public School library" → Both: Katoomba Superior Public School 
+  (building) | Katoomba Superior Public School (organisation)
+
+  This means your Zotero items will be tagged with the precise school names as they appear in the historical
+  sources, not just generic "School" tags. This provides much better specificity and searchability!
+
+  The only generic "School" tags are for cases where the source doesn't specify which school (e.g., "additions to
+  the local school"), and those get mapped to either School (building) or School (organisation) based on context.
+
+> great, thank you. Can you please generate a report with Trove (or other) links so that I can manually review the
+ final seven items? 
+
+● Bash(source venv/bin/activate && python << 'EOF'
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +31 lines (ctrl+o to expand)
+
+● Great! Now let me create a formatted markdown report for manual review:
+
+● Bash(source venv/bin/activate && python << 'EOF'
+      import json…)
+  ⎿  ✓ Manual review report generated: entity-tagging-system/outputs/educational-schools/manual-review-report.md
+
+     📋 Summary:
+     … +3 lines (ctrl+o to expand)
+
+● Perfect! I've created a manual review report. Let me show you what it looks like:
+
+● Read(entity-tagging-system/outputs/educational-schools/manual-review-report.md)
+  ⎿  Read 80 lines
+
+● Perfect! I've generated a comprehensive manual review report at:
+
+  entity-tagging-system/outputs/educational-schools/manual-review-report.md
+
+  What's in the Report
+
+  7 Items Ready for Your Review:
+
+  - Megalong Valley School: 6 items with Trove links
+  - Mount Victoria School: 1 item with Trove link
+
+  For Each Item:
+
+  - ✅ Title and date
+  - ✅ Clickable Trove URL (or note if no URL available)
+  - ✅ Checkboxes for classification: [ ] building [ ] organisation [ ] both
+  - ✅ Space for notes
+
+  Classification Guidelines Included:
+
+  - Building indicators (construction, grounds, location)
+  - Organisation indicators (inspections, attendance, staff, curriculum)
+  - Both indicators (combined contexts)
+
+  Note About One Item:
+
+  One item ("Offer to lease Waudby's Hall for school building at Lower Megalong") has no Trove URL - this appears
+  to be an internal document or memorandum from the Zotero collection, not a newspaper article.
+
+  Once you complete your manual classifications, let me know and I can:
+  1. Update the item_tag_application.csv with these 7 additional entries
+  2. Regenerate the implementation summary with complete coverage
+  3. Prepare the final consolidated retagging instructions for all educational schools
+
+> ok, I have reviewed them, thank you - also, the ones I checked to have transcriptions attached as annotations, 
+I'm not sure why you couldn't extract them. 
+
+● That's interesting - the extraction script looks for mentions in the abstractNote field and item content, but it
+   may not be checking Zotero annotations/notes. Let me check what the extraction script actually looks at:
+
+● Read(scripts/38_classify_entities_with_claude.py)
+  ⎿  Read 80 lines
+
+● Ah, I see the issue! The script at line 139 specifically looks for children with itemType == 'note', and at line
+   146 it skips any items where the full text is less than 100 characters.
+
+  The script is checking Zotero notes (child items), but if your transcriptions are stored as annotations (which
+  is a different Zotero item type), the script won't find them. Zotero has different attachment types:
+  - note - Standalone or child notes
+  - annotation - PDF/document annotations (newer Zotero feature)
+  - attachment - File attachments
+
+  Would you like me to update the extraction script to also check for annotations? That way future entity
+  extractions will capture those transcriptions. For now, since you've manually reviewed the 7 items, if you can
+  share your classifications, I can add them to the tag application CSV and we'll have complete coverage.
+
+  What classifications did you assign to the 7 items?
+
+> I have added my classifications to manual-review-report.md using the response options you provided, plus I added
+ notes under a couple of the items about additional tags. Please confirm you can see my responses. 
+
+● Read(entity-tagging-system/outputs/educational-schools/manual-review-report.md)
+  ⎿  Read 190 lines
+
+● Perfect! I can see your classifications clearly. Let me summarise what you've marked:
+
+  Your Classifications
+
+  Megalong Valley School (6 items):
+
+  1. Item 1 (1893-06-23): [X] both
+  2. Item 2 (1893-07-14): [X] both
+  3. Item 3 (1892-09-09): NEITHER - only mentions 'school teacher' → Note: Needs "school teachers > Mr W Chapman" 
+  under Agents > people > occupations
+  4. Item 4 (1892-10-28): [X] organisation
+  5. Item 5 (1904-05-13): [X] both
+  6. Item 6 (Waudby's Hall lease): [X] building
+
+  Mount Victoria School (1 item):
+
+  1. Item 1 (1892-11-25): [X] organisation → Note: Also add 'University of Sydney (institution)' under agents > 
+  organisations
+
+  Summary for Tag Applications:
+
+  - Building only: 1 (Megalong Item 6)
+  - Organisation only: 2 (Megalong Item 4, Mount Victoria Item 1)
+  - Both: 3 (Megalong Items 1, 2, 5)
+  - Neither (school teacher only): 1 (Megalong Item 3) - needs different tagging
+
+  Additional Actions Identified:
+
+  1. Add taxonomy entry: school teachers under Agents > people > occupations
+  2. Add person: Mr W Chapman as school teacher
+  3. Add organisation: University of Sydney (institution) under Agents > organisations
+
+  Would you like me to:
+  1. Update the item_tag_application.csv with these 6 school-related items (excluding the "school teacher" one)
+  2. Create a separate task list for the additional taxonomy additions (school teachers, Mr W Chapman, University
+  of Sydney)?
+
+> Yes, update the item_tag_application.csv and prepare taxonomy additions 
+
+● Bash(source venv/bin/activate && python << 'EOF'
+      import csv…)
+  ⎿  ✓ Loaded 23 existing applications   
+     ✓ Added 6 manual classifications
+       Final count: 29 total applications
+     … +15 lines (ctrl+o to expand)
+
+● Now let me check the current taxonomy structure for teachers and educational occupations:
+
+● Bash(grep -i "teacher\|educator\|educational.*occupation"
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -20)
+  ⎿  (No content)
+
+● Bash(grep -i "occupation" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -20)
+  ⎿  Clergy,Clergy,hierarchy,parent=Occupations                          
+     Hospitality workers,Hospitality workers,hierarchy,parent=Occupations
+     Law enforcement,Law enforcement,hierarchy,parent=Occupations
+     … +17 lines (ctrl+o to expand)
+
+● Bash(grep -i "university" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  University of Sydney (institution),University of Sydney (institution),hierarchy,parent=universities    
+     university (institution),university (institution),hierarchy,parent=universities (singular generic term)
+
+● Great! The University of Sydney already exists in the taxonomy. Now let me create the taxonomy additions
+  document:
+
+● Write(entity-tagging-system/outputs/educational-schools/additional-taxonomy-additions.md)
+  ⎿  Wrote 231 lines to entity-tagging-system/outputs/educational-schools/additional-taxonomy-additions.md
+     # Additional Taxonomy Additions from Educational Schools Review
+     **Date:** 2025-11-14
+     **Source:** Manual review of Megalong Valley School and Mount Victoria School items
+     **Status:** Ready for implementation
+     ---
+     ## Overview
+     … +221 lines (ctrl+o to expand)
+
+● Now let me create the implementation script for the school teachers hierarchy:
+
+● Write(scripts/41_add_educational_occupations_taxonomy.py)
+  ⎿  Wrote 94 lines to scripts/41_add_educational_occupations_taxonomy.py 
+     #!/usr/bin/env python3
+     """
+     Add educational occupations hierarchy to taxonomy.
+     This script adds:
+     - Educational occupations (intermediate parent under Occupations)
+     - School teachers (intermediate parent under Educational occupations)
+     - School teacher (singular generic leaf)
+     Date: 2025-11-14
+     … +84 lines (ctrl+o to expand)
+
+● Now let me update the implementation summary with the complete coverage:
+
+● Read(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Read 50 lines
+
+● Update(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Updated entity-tagging-system/outputs/educational-schools/implementation-summary.md with 3 additions and 1 
+     removal
+        7    
+        8    ## Overview
+        9    
+       10 -  Successfully implemented dual-nature taxonomy structure for educational schools with 
+          -  disambiguation qualifiers, following the hotel/church model. All 35 mentions (23 unique) 
+          -  classified and mapped to qualified building/organisation tags.
+       10 +  Successfully implemented dual-nature taxonomy structure for educational schools with 
+          +  disambiguation qualifiers, following the hotel/church model. All items 
+          +  classified and mapped to qualified building/organisation tags.
+       11    
+       12 +  **Coverage:** 29 educational school items + 1 school teacher item + identified need for University
+          +  of Sydney tag
+       13 +  
+       14    ---
+       15    
+       16    ## What Was Accomplished
+
+● Update(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Updated entity-tagging-system/outputs/educational-schools/implementation-summary.md with 11 additions and 7 
+     removals
+       16    ## What Was Accomplished
+       17    
+       18    ### 1. ✅ Classification Analysis
+       19 -  - Reviewed and corrected 35 mentions (23 unique + 12 case-variant duplicates)
+       20 -  - Applied user correction: Mention 22 changed from "building" to "both"
+       21 -  - Final distribution:
+       22 -    - Building only: 4 (17.4%)
+       23 -    - Organisation only: 15 (65.2%)
+       24 -    - Both: 4 (17.4%)
+       25 -    - School of Arts misclassifications: 3
+       19 +  - **Automated:** 35 mentions (23 unique + 12 case-variant duplicates)
+       20 +  - **Manual:** 7 additional items (6 school classifications + 1 school teacher)
+       21 +  - Applied user corrections:
+       22 +    - Automated: Mention 22 changed from "building" to "both"
+       23 +    - Manual: 6 items classified (Megalong Valley School & Mount Victoria School)
+       24 +  - Final distribution (automated + manual):
+       25 +    - Building only: 5 items (1 automated + 1 manual)
+       26 +    - Organisation only: 17 items (15 automated + 2 manual)
+       27 +    - Both: 7 items (4 automated + 3 manual)
+       28 +    - School of Arts misclassifications: 3 items
+       29 +    - School teacher (not school entity): 1 item
+       30    
+       31    ### 2. ✅ Taxonomy Implementation
+       32    - **Removed:** 13 obsolete unqualified entries
+
+● Update(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Updated entity-tagging-system/outputs/educational-schools/implementation-summary.md with 4 additions and 3 
+     removals
+       38      - Synonym mappings: Unqualified names → organisation variant (primary)
+       39    
+       40    ### 3. ✅ Item Tag Applications
+       41 -  - Generated CSV with 23 unique retagging instructions
+       41 +  - Generated CSV with 29 unique retagging instructions (23 automated + 6 manual)
+       42    - Actions breakdown:
+       43 -    - REPLACE: 15 (single tag building or organisation)
+       44 -    - REPLACE_WITH_BOTH: 5 (both building and organisation tags)
+       43 +    - REPLACE: 18 (single tag building or organisation)
+       44 +    - REPLACE_WITH_BOTH: 8 (both building and organisation tags)
+       45      - RETAG_SCHOOL_OF_ARTS: 3 (misclassifications)
+       46    - Removed 12 duplicate applications (case-variant consolidation)
+       47 +  - Manual review completed for 7 items (Megalong Valley School: 6, Mount Victoria School: 1)
+       48    
+       49    ### 4. ✅ School of Arts Corrections
+       50    - Identified 3 items incorrectly tagged as "School" (educational)
+
+● Update(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Updated entity-tagging-system/outputs/educational-schools/implementation-summary.md with 10 additions and 1 
+     removal
+       51    - Created retagging instructions to move to "School of Arts" (cultural)
+       52    - Documented root cause and prevention strategy
+       53    
+       54 -  ### 5. ✅ Documentation
+       54 +  ### 5. ✅ Additional Taxonomy Needs Identified
+       55 +  - **School teachers hierarchy:** Ready to implement (6 CSV entries)
+       56 +    - Educational occupations > School teachers > School teacher
+       57 +    - Script prepared: `scripts/41_add_educational_occupations_taxonomy.py`
+       58 +  - **University of Sydney tag:** Already exists in taxonomy, needs to be applied to Mountain 
+          + Mixtures (1892-11-25)
+       59 +  - **Mr W Chapman (school teacher):** Specific person, requires name verification before adding
+       60 +  
+       61 +  ### 6. ✅ Documentation
+       62    - Classification results with detailed reasoning
+       63    - Taxonomy implementation plan
+       64    - Consolidation decisions log entry
+       65    - School of Arts retagging instructions
+       66 +  - Manual review report with user classifications
+       67 +  - Additional taxonomy additions documentation
+       68    - This implementation summary
+       69    
+       70    ---
+
+● Read(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Read 35 lines
+
+● Update(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Updated entity-tagging-system/outputs/educational-schools/implementation-summary.md with 5 additions and 2 
+     removals
+       80    
+       81    entity-tagging-system/outputs/educational-schools/
+       82    ├── taxonomy-implementation-plan.md (structure planning)
+       83 -  ├── item_tag_application.csv (23 retagging instructions)
+       83 +  ├── item_tag_application.csv (29 retagging instructions - updated)
+       84    ├── school-of-arts-retagging-instructions.md (3 corrections)
+       85 +  ├── manual-review-report.md (7 items with user classifications)
+       86 +  ├── additional-taxonomy-additions.md (school teachers + University of Sydney)
+       87    └── implementation-summary.md (this file)
+       88    
+       89    scripts/
+       90    ├── 39_implement_educational_schools_taxonomy.py (taxonomy script)
+       91 -  └── 40_generate_schools_tag_applications.py (application generator)
+       91 +  ├── 40_generate_schools_tag_applications.py (application generator)
+       92 +  └── 41_add_educational_occupations_taxonomy.py (school teachers hierarchy - ready to run)
+       93    ```
+       94    
+       95    ### Modified Files
+
+● Read(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Read 40 lines
+
+● Update(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Updated entity-tagging-system/outputs/educational-schools/implementation-summary.md with 19 additions and 11
+     removals
+       174    ## Impact Analysis
+       175    
+       176    ### Items Affected
+       177 -  - **Total mentions classified:** 35 (23 unique)
+       178 -  - **Items requiring retagging:** 23 unique items
+       179 -    - Katoomba Public School: 6 items (5 classified + 1 duplicate)
+       180 -    - Katoomba Superior Public School: 8 items (6 classified + 2 duplicates)
+       181 -    - Generic "School": 24 items (12 unique + 12 case duplicates)
+       182 -    - Megalong Valley School: 6 items (no classification data)
+       183 -    - Mount Victoria School: 1 item (no classification data)
+       177 +  - **Automated classification:** 23 unique items (35 mentions with duplicates)
+       178 +    - Katoomba Public School: 5 items
+       179 +    - Katoomba Superior Public School: 6 items
+       180 +    - Generic "School": 12 items (plus 12 case-variant duplicates)
+       181 +  - **Manual classification:** 6 school items + 1 school teacher item
+       182 +    - Megalong Valley School: 5 items (Item 3 is school teacher, not school)
+       183 +    - Mount Victoria School: 1 item
+       184 +  - **Total educational school retagging:** 29 items
+       185    - **School of Arts corrections:** 3 items
+       186 +  - **Additional tags needed:**
+       187 +    - School teacher: 1 item (Megalong Matters 1892-09-09)
+       188 +    - University of Sydney: 1 item (Mountain Mixtures 1892-11-25)
+       189    
+       190    ### Taxonomy Changes
+       191 -  - **Entries removed:** 13 obsolete unqualified entries
+       192 -  - **Entries added:** 22 new disambiguated entries
+       193 -  - **Net change:** +9 entries
+       194 -  - **Final taxonomy size:** 2,216 entries (was 2,207)
+       191 +  - **Educational schools:**
+       192 +    - Entries removed: 13 obsolete unqualified entries
+       193 +    - Entries added: 22 new disambiguated entries
+       194 +    - Net change: +9 entries
+       195 +  - **School teachers (pending):**
+       196 +    - Entries to add: 6 new entries (Educational occupations hierarchy)
+       197 +  - **Current taxonomy size:** 2,216 entries (was 2,207)
+       198 +  - **After school teachers:** 2,222 entries
+       199    
+       200    ---
+       201    
+
+● Read(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Read 25 lines
+
+● Update(entity-tagging-system/outputs/educational-schools/implementation-summary.md)
+  ⎿  Updated entity-tagging-system/outputs/educational-schools/implementation-summary.md with 6 additions and 5 
+     removals
+       207    3. ✅ **Cross-category misclassifications:** Identified 3 School of Arts items tagged as 
+             educational schools
+       208    4. ✅ **Structural consistency:** Educational schools now match hotel/church disambiguation 
+             pattern
+       209    
+       210 -  ### Issues Identified (Require Manual Review)
+       211 -  1. ⚠️ **Megalong Valley School:** 6 items tagged but no mention text extracted
+       212 -  2. ⚠️ **Mount Victoria School:** 1 item tagged but no mention text extracted
+       210 +  ### Issues Identified and Resolved
+       211 +  1. ✅ **Megalong Valley School & Mount Victoria School:** Manual review completed for 7 items
+       212 +     - 6 school classifications added to application CSV
+       213 +     - 1 item identified as school teacher occupation (not school entity)
+       214 +  2. ✅ **Additional taxonomy needs:** School teachers hierarchy prepared
+       215 +  3. ✅ **Cross-entity tagging:** University of Sydney tag identified for 1 item
+       216    
+       217 -  **Recommendation:** Re-run extraction or manually review these 7 items to determine building vs 
+           - organisation classification before applying tags.
+       218 -  
+       217    ---
+       218    
+       219    ## Getty AAT Alignment
+
+● Perfect! All tasks complete. Let me create a final summary for you:
+
+  ✅ Complete Educational Schools Implementation with Manual Review
+
+  I've successfully updated all deliverables with your manual classifications. Here's the final summary:
+
+  Updated Item Tag Application CSV
+
+  File: entity-tagging-system/outputs/educational-schools/item_tag_application.csv
+  - Total applications: 29 (was 23)
+  - Added from manual review: 6 school items
+    - Megalong Valley School: 3 both, 1 organisation, 1 building (5 items)
+    - Mount Victoria School: 1 organisation
+
+  Breakdown:
+  - REPLACE: 18 items (single building or organisation tag)
+  - REPLACE_WITH_BOTH: 8 items (both tags)
+  - RETAG_SCHOOL_OF_ARTS: 3 items (corrections)
+
+  School Teachers Taxonomy Addition Prepared
+
+  Documentation: entity-tagging-system/outputs/educational-schools/additional-taxonomy-additions.md
+  Script: scripts/41_add_educational_occupations_taxonomy.py
+
+  Ready to implement (6 CSV entries):
+  Educational occupations → Occupations
+    └── School teachers → Educational occupations
+        └── School teacher (generic leaf)
+
+  Item needing this tag:
+  - Megalong Matters (1892-09-09) - Currently tagged "Megalong Valley School" should be "School teacher"
+
+  University of Sydney Tag
+
+  ✅ Already exists in taxonomy at: Agents > Organisations > Educational institutions > universities > University 
+  of Sydney (institution)
+
+  Item needing this tag:
+  - Mountain Mixtures (1892-11-25) - Add as additional tag (keep Mount Victoria School organisation tag)
+
+  Final Coverage
+
+  - Educational schools: 29 items fully classified
+  - School of Arts corrections: 3 items identified
+  - School teacher: 1 item identified
+  - Additional organisational tag: 1 item (University of Sydney)
+  - Total items addressed: 34 items
+
+  Next Steps (Your Choice)
+
+  1. Implement school teachers taxonomy:
+  source venv/bin/activate
+  python scripts/41_add_educational_occupations_taxonomy.py
+  2. Apply all tags to Zotero library using the application CSV
+  3. Decide on Mr W Chapman: Whether to add as specific person or just use generic "School teacher" tag
+
+  All documentation is complete and ready for implementation!
+
+> (3) yes, include Mr W Chapman as a specific school teacher - we want to identify people explicitly and 
+specifically where we can. 
+
+● Perfect! Let me add Mr W Chapman to the school teachers taxonomy implementation script:
+
+● Update(scripts/41_add_educational_occupations_taxonomy.py)
+  ⎿  Updated scripts/41_add_educational_occupations_taxonomy.py with 3 additions                 
+       50            # School teacher (singular generic leaf)
+       51            ('School teacher', 'School teacher', 'hierarchy', 'parent=School teachers'),
+       52            ('school teacher', 'school teacher', 'hierarchy', 'parent=school teachers'),
+       53 +  
+       54 +          # Specific named school teacher
+       55 +          ('Mr W Chapman', 'Mr W Chapman', 'hierarchy', 'parent=School teachers'),
+       56        ]
+       57    
+       58        print(f"✓ Adding {len(new_entries)} new entries for educational occupations")
+
+● Update(scripts/41_add_educational_occupations_taxonomy.py)
+  ⎿  Updated scripts/41_add_educational_occupations_taxonomy.py with 5 additions and 4 removals              
+       86        print("  Agents > People > Occupations")
+       87        print("    └── Educational occupations")
+       88        print("        └── School teachers")
+       89 -      print("            └── School teacher (singular generic)")
+       89 +      print("            ├── School teacher (singular generic)")
+       90 +      print("            └── Mr W Chapman (specific person)")
+       91        print("\nNext steps:")
+       92 -      print("  1. Verify structure: grep -E 'educational occupation|school teacher
+          -  ' data/tag_map_consolidated.csv")
+       93 -      print("  2. Add specific person (Mr W Chapman) if appropriate")
+       94 -      print("  3. Apply 'School teacher' tag to Megalong Matters (1892-09-09)")
+       92 +      print("  1. Verify structure: grep -E 'educational occupation|school teacher|Chapman
+          +  ' data/tag_map_consolidated.csv")
+       93 +      print("  2. Apply 'Mr W Chapman' tag to Megalong Matters (1892-09-09)")
+       94 +      print("  3. Remove 'Megalong Valley School' tag from that item (it's about the teacher, not 
+          + the school)")
+       95    
+       96    if __name__ == "__main__":
+       97        main()
+
+● Now let me run the script to implement the school teachers taxonomy with Mr W Chapman:
+
+● Bash(chmod +x scripts/41_add_educational_occupations_taxonomy.py && source venv/bin/activate && python
+      scripts/41_add_educational_occupations_taxonomy.py)
+  ⎿  Educational Occupations Taxonomy Addition                   
+     ============================================================
+     … +29 lines (ctrl+o to expand)
+
+● Perfect! Let me verify the structure:
+
+● Bash(grep -E "educational occupation|school teacher|Chapman"
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  educational occupations,educational occupations,hierarchy,parent=occupations
+     school teachers,school teachers,hierarchy,parent=educational occupations
+     school teacher,school teacher,hierarchy,parent=school teachers
+     Mr W Chapman,Mr W Chapman,hierarchy,parent=School teachers
+
+● Let me check for the capitalised variants:
+
+● Bash(grep -E "Educational occupation|School teacher|Chapman"
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Educational occupations,Educational occupations,hierarchy,parent=Occupations
+     School teachers,School teachers,hierarchy,parent=Educational occupations
+     School teacher,School teacher,hierarchy,parent=School teachers
+     Mr W Chapman,Mr W Chapman,hierarchy,parent=School teachers
+
+● Excellent! Now let me create a supplementary CSV entry for the Megalong Matters item that needs the Mr W Chapman
+   tag:
+
+● Bash(source venv/bin/activate && python << 'EOF'
+      import csv…)
+  ⎿  ✓ Added Mr W Chapman application
+       Total applications: 30
+     … +7 lines (ctrl+o to expand)
+
+● Perfect! Now let me update the additional taxonomy additions document to reflect that Mr W Chapman has been
+  implemented:
+
+● Update(entity-tagging-system/outputs/educational-schools/additional-taxonomy-additions.md)
+  ⎿  Updated entity-tagging-system/outputs/educational-schools/additional-taxonomy-additions.md with 19 additions
+     and 17 removals
+       131    
+       132    ## Implementation Plan
+       133    
+       134 -  ### Phase 1: Add School Teachers Hierarchy (Ready)
+       134 +  ### Phase 1: Add School Teachers Hierarchy ✅ COMPLETE
+       135    
+       136 +  **Implemented:** 2025-11-14
+       137 +  
+       138    ```bash
+       139 -  # Add educational occupations and school teachers entries to taxonomy
+       140 -  # 6 new CSV entries as specified above
+       139 +  python scripts/41_add_educational_occupations_taxonomy.py
+       140    ```
+       141    
+       142 -  **Script to create:**
+       143 -  ```python
+       144 -  # scripts/41_add_educational_occupations_taxonomy.py
+       145 -  ```
+       142 +  **Result:** 7 new CSV entries added (6 hierarchy + 1 specific person)
+       143 +  - Educational occupations (intermediate parent)
+       144 +  - School teachers (intermediate parent)
+       145 +  - School teacher (singular generic leaf)
+       146 +  - Mr W Chapman (specific person)
+       147    
+       148 -  ### Phase 2: Add Mr W Chapman (Requires Research)
+       148 +  **Taxonomy updated:** 2,223 entries (was 2,216)
+       149    
+       150 -  **Before implementation:**
+       151 -  1. Review Megalong Matters (1892-09-09) full text
+       152 -  2. Confirm name spelling and any additional details
+       153 -  3. Check for other mentions in collection
+       154 -  4. Determine if separate person entry needed or if occupational tagging sufficient
+       150 +  ### Phase 2: Add Mr W Chapman ✅ COMPLETE
+       151    
+       152 -  **Decision needed:**
+       153 -  - Tag item with generic "School teacher" or specific "Mr W Chapman"?
+       154 -  - If specific person entries are typically created, follow that pattern
+       155 -  - If not, generic occupational tag may be sufficient
+       152 +  **Decision made:** Include Mr W Chapman as specific named person under School teachers
+       153    
+       154 +  **Rationale:** User specified to "identify people explicitly and specifically where we can"
+       155 +  
+       156 +  **Implementation:**
+       157 +  - Added to taxonomy: `Mr W Chapman → School teachers`
+       158 +  - Added to application CSV: Megalong Matters (1892-09-09)
+       159 +  - Action: REPLACE "Megalong Valley School" with "Mr W Chapman"
+       160 +  
+       161    ### Phase 3: Apply University of Sydney Tag (Ready)
+       162    
+       163    **Action:** Simply add existing "University of Sydney (institution)" tag to:
+
+● Now let me create a final comprehensive summary document:
+
+● Write(entity-tagging-system/outputs/educational-schools/final-implementation-summary.md)
+  ⎿  Wrote 411 lines to entity-tagging-system/outputs/educational-schools/final-implementation-summary.md        
+     # Educational Schools: Final Implementation Summary
+     **Date:** 2025-11-14
+     **Status:** ✅ COMPLETE - All taxonomy changes implemented, ready for Zotero application
+     ---
+     ## Executive Summary
+     Successfully completed dual-nature entity classification and taxonomy implementation for educational schools,
+      including manual review of all items and identification of additional taxonomy needs. All taxonomy changes
+     have been implemented.
+     … +401 lines (ctrl+o to expand)
+
+● Perfect! Let me create one final summary for you:
+
+  ✅ Educational Schools Implementation COMPLETE
+
+  All taxonomy changes have been successfully implemented! Here's what was accomplished:
+
+  Taxonomy Implemented (2,223 entries total)
+
+  1. Educational Schools (22 entries) ✅
+  - Dual-nature structure with (building) / (organisation) qualifiers
+  - 4 specific schools + generic School, all with both variants
+  - Script: scripts/39_implement_educational_schools_taxonomy.py (already run)
+
+  2. School Teachers Hierarchy (7 entries) ✅
+  - Educational occupations > School teachers > School teacher (generic)
+  - Plus: Mr W Chapman (specific person)
+  - Script: scripts/41_add_educational_occupations_taxonomy.py (just run)
+
+  3. University of Sydney ✅
+  - Already exists in taxonomy, ready to apply
+
+  Item Tag Application CSV Updated
+
+  File: entity-tagging-system/outputs/educational-schools/item_tag_application.csv
+
+  30 total applications:
+  - 18 single school tags (building OR organisation)
+  - 8 both school tags (building AND organisation)
+  - 1 school teacher (Mr W Chapman)
+  - 3 School of Arts corrections
+
+  Verification
+
+● Bash(wc -l /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv && echo "---" && tail -5
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  2223 /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv      
+     ---
+     School teachers,School teachers,hierarchy,parent=Educational occupations
+     … +4 lines (ctrl+o to expand)
+
+● Perfect! ✅ 2,223 entries confirmed (was 2,207 → +16 net change)
+
+  Ready for Zotero Application
+
+  All files ready:
+  1. Application CSV: 30 retagging instructions at
+  entity-tagging-system/outputs/educational-schools/item_tag_application.csv
+  2. School of Arts corrections: Separate instructions at school-of-arts-retagging-instructions.md
+  3. Final summary: Complete overview at final-implementation-summary.md
+
+  Actions for Zotero:
+  - 29 educational school items → Apply qualified (building)/(organisation) tags
+  - 1 school teacher item → Apply "Mr W Chapman" tag
+  - 3 School of Arts items → Move from "School" to "School of Arts"
+  - 1 University item → Add "University of Sydney (institution)" tag
+
+  Taxonomy changes: All implemented in data/tag_map_consolidated.csv
+
+  You're now ready to apply all 30 tag changes to your Zotero library!
+
+> ok, I see an extraneous 'hotels' primary facet in the visualisations - can you check if that's really a problem,
+ or if it's just an outdated visualisation file 
+  ⎿  ⧉ Selected 1 lines from visualizations/hierarchy_trees/primary_agents.txt in Visual Studio Code
+
+● Let me check if there's actually a "hotels" primary facet in the taxonomy or if it's just an outdated
+  visualization:
+
+● Bash(grep "^Hotels,Hotels,hierarchy,parent=" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  Hotels,Hotels,hierarchy,parent=Hospitality businesses                                
+     Hotels,Hotels,hierarchy,parent=Accommodation and hospitality venues
+     Hotels,Hotels,hierarchy,parent=Alcohol-related venues - THEMATIC
+     Hotels,Hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect)
+
+● Good! Hotels correctly has parents under proper facets. Now let me check when the visualizations were last
+  generated:
+
+● Bash(ls -lh visualizations/hierarchy_trees/*.txt | head -10)
+  ⎿  -rw-rw-r-- 1 shawn shawn 5.5K Nov 12 10:52 visualizations/hierarchy_trees/00_OVERVIEW.txt       
+     -rw-rw-r-- 1 shawn shawn 2.7K Nov 12 10:52 visualizations/hierarchy_trees/primary_activities.txt
+     -rw-rw-r-- 1 shawn shawn  21K Nov 12 10:52 visualizations/hierarchy_trees/primary_agents.txt
+     … +7 lines (ctrl+o to expand)
+
+● I see the issue! There's a file primary_hotels.txt dated Nov 11 (older than the others from Nov 12). Let me
+  check what's in it:
+
+● Read(visualizations/hierarchy_trees/primary_hotels.txt)
+  ⎿  Read 16 lines
+
+● This is an outdated visualization file from October 20, 2025 that predates the hotels taxonomy restructuring.
+  Let me verify there's no actual "hotels" primary facet in the current taxonomy:
+
+● Bash(grep "^hotels,hotels,hierarchy,parent=" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿  No matches found
+
+● Bash(grep -E "^(hotels|Hotels)," /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | grep "hierarchy" |
+      head -10)
+  ⎿  Hotels,Hotels,hierarchy,parent=Hospitality businesses                                
+     Hotels,Hotels,hierarchy,parent=Accommodation and hospitality venues
+     Hotels,Hotels,hierarchy,parent=Alcohol-related venues - THEMATIC
+     Hotels,Hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect)
+
+● Perfect! It's just an outdated visualization file. The taxonomy is correct:
+
+  Diagnosis: Outdated Visualization ✅
+
+  Current taxonomy (correct):
+  - Hotels is not a primary facet
+  - Hotels correctly has parents under:
+    - Hospitality businesses
+    - Accommodation and hospitality venues
+    - Alcohol-related venues (thematic)
+    - Domestic accommodation (thematic)
+
+  Outdated file:
+  - visualizations/hierarchy_trees/primary_hotels.txt
+  - Generated: October 20, 2025 (very old)
+  - Contains obsolete structure from before hotels restructuring
+
+  Recommendation: Delete the outdated file or regenerate all visualizations to reflect the current taxonomy
+  structure (which includes your recent educational schools changes).
+
+  Would you like me to delete that outdated visualization file?
+
+> Done, thanks. Can we please review boarding houses and cottages? I don't think we've done that yet. Same 
+approach as hotels and schools 
+
+● Let me check the current status of boarding houses and cottages in the taxonomy:
+
+● Bash(grep -iE "^(boarding house|boarding houses|Boarding house|Boarding houses),"
+      /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -20)
+  ⎿  Boarding house,Boarding house,hierarchy,parent=Boarding houses                       
+     Boarding houses,boarding houses,synonym,Capitalized variant from original Zotero tags
+     Boarding houses,Boarding houses,hierarchy,parent=Hospitality businesses
+     … +5 lines (ctrl+o to expand)
+
+● Bash(grep -iE "^(Orama|orama)" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv)
+  ⎿ Orama Boarding House,Orama Boarding House,hierarchy,parent=Boarding houses                                   
+    Orama Boarding House (building),Orama Boarding House (building),hierarchy,parent=boarding houses (buildings)
+    Orama Boarding House (business),Orama Boarding House (business),hierarchy,parent=boarding houses (businesses)
+
+
+● Bash(grep -iE "^(cottage|cottages)," /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | head -20)
+  ⎿  Cottage,Cottage,hierarchy,parent=Cottages                              
+     Cottages,Cottages,hierarchy,parent=Accommodation and hospitality venues
+     cottage,cottage,hierarchy,parent=cottages
+     cottages,cottages,hierarchy,parent=accommodation buildings
+
+● Interesting! I can see that:
+
+  Boarding houses: Has partial dual-nature structure (Orama has building/business variants, and there are
+  intermediate parents boarding houses (buildings) and boarding houses (businesses))
+
+  Cottages: Single hierarchy, no disambiguation
+
+  Let me check if there are any items tagged with these in Zotero:
+
+● Bash(source venv/bin/activate && python << 'EOF'
+      import sys…)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +9 lines (ctrl+o to expand)
+
+● Great! So we have:
+  - Boarding houses: 8 items tagged (case variants)
+  - Cottages: 0 items tagged
+
+  Let me check the current boarding houses structure more carefully:
+
+● Bash(grep -E "boarding house" /home/shawn/Code/blue-mountains/data/tag_map_consolidated.csv | grep -i hierarchy)
+  ⎿ Orama Boarding House (building),Orama Boarding House (building),hierarchy,parent=boarding houses (buildings) 
+    Orama Boarding House (business),Orama Boarding House (business),hierarchy,parent=boarding houses (businesses)
+    … +5 lines (ctrl+o to expand)
+
+
+● Perfect! Boarding houses already has a complete dual-nature structure similar to hotels. Now let me extract and
+  classify the 8 items. Let me check if boarding-houses is already configured in script 38:
+
+● Bash(grep -A5 "'boarding-houses'" /home/shawn/Code/blue-mountains/scripts/38_classify_entities_with_claude.py)
+  ⎿          choices=['hotels', 'churches', 'schools', 'halls', 'boarding-houses', 'educational-schools'],
+             help='Type of entity to classify'
+         )
+     … +10 lines (ctrl+o to expand)
+
+● Good, it's already configured! Let me add "Boarding houses" (plural) to the entity list and run the extraction:
+
+● Update(scripts/38_classify_entities_with_claude.py)
+  ⎿  Updated scripts/38_classify_entities_with_claude.py with 1 addition              
+       277            ],
+       278            'boarding-houses': [
+       279                'Orama Boarding House', 'boarding house', 'Boarding house',
+       280 +              'boarding houses', 'Boarding houses',
+       281            ],
+       282            'educational-schools': [
+       283                'Katoomba Public School', 'Katoomba Superior Public School',
+
+● Bash(source venv/bin/activate && python scripts/38_classify_entities_with_claude.py --entity-type boarding-houses
+      2>&1 | head -100)
+  ⎿  ✓ Configuration loaded successfully
+       Zotero Group ID: 2258643
+       Library Type: group
+     … +107 lines (ctrl+o to expand)
+
+● Good! We collected 4 mentions (2 unique contexts with case-variant duplicates). Now let me invoke the
+  entity-classifier skill to classify these:
+
+> The "entity-classifier" skill is running 
+
+● I'll classify the 4 boarding house mentions using the entity classification heuristic. Let me read the
+  classification prompt:
+
+● Read(data/entity_classification/boarding-houses_classification_prompt.txt)
+  ⎿  Read 74 lines
+
+● Now let me classify these 4 mentions (noting that 3 & 4 are case-variant duplicates of 1 & 2):
+
+  Boarding Houses Classification Results
+
+  Mention 1: boarding houses
+
+  Item: Katoomba (1888-01-07)Trove URL: http://nla.gov.au/nla.news-article100894625
+
+  Classification: bothConfidence: high
+
+  Reasoning: "All the boarding houses have been taxed to their utmost" combines business capacity management
+  ("taxed to their utmost" = operating at full capacity, business operations) with spatial accommodation ("full"
+  indicates physical occupancy of buildings). The parallel structure with hotels and furnished cottages suggests
+  both physical facilities and commercial operations.
+
+  Indicators Found:
+  - Building: accommodation_capacity, spatial_reference (parallel with "furnished cottages")
+  - Business: operational_capacity ("taxed to their utmost"), commercial_services (accommodation provision),
+  capacity_management
+
+  ---
+  Mention 2: boarding houses
+
+  Item: Mountain Mixtures (1892-11-18)Trove URL: http://nla.gov.au/nla.news-article194117649
+
+  Classification: businessConfidence: high
+
+  Reasoning: "Publish a list of visitors at all the boarding houses and hotels" refers to guest lists for
+  publication - this is about commercial hospitality operations and visitor tracking. The phrase "at all the
+  boarding houses" uses "at" locatively but the context is clearly about business operations (publishing visitor
+  lists), not physical structures. This is agency/business activity.
+
+  Indicators Found:
+  - Building: locational_prep ("at") but secondary
+  - Business: visitor_lists (operational record-keeping), commercial_services (hospitality operations),
+  parallel_with_hotels (both business operations)
+
+  ---
+  Mention 3: Boarding houses (duplicate)
+
+  Item: Katoomba (1888-01-07)Trove URL: http://nla.gov.au/nla.news-article100894625
+
+  Classification: bothConfidence: high
+
+  Note: Exact duplicate of Mention 1 (case variant). Same context, same classification.
+
+  ---
+  Mention 4: Boarding houses (duplicate)
+
+  Item: Mountain Mixtures (1892-11-18)Trove URL: http://nla.gov.au/nla.news-article194117649
+
+  Classification: businessConfidence: high
+
+  Note: Exact duplicate of Mention 2 (case variant). Same context, same classification.
+
+  ---
+  Summary Statistics
+
+  Unique mentions: 2Case-variant duplicates: 2
+
+  Classification breakdown:
+  - Building only: 0 (0%)
+  - Business only: 1 (50%)
+  - Both: 1 (50%)
+
+  Pattern observations:
+  - Boarding houses show mixed usage similar to hotels
+  - Capacity/occupancy contexts indicate both physical (accommodation) and business (operations) aspects
+  - Visitor list context is purely business/operational
+  - Limited data set (only 2 unique contexts), but follows expected hotel-like pattern
+
+  Comparison with hotels:
+  Hotels showed 43% building, 25% business, 32% both. Boarding houses data is too limited (n=2) for statistical
+  comparison, but the mixed classification aligns with similar dual-nature hospitality accommodation.
+
+  Let me write these results to a markdown file:
+
+● Write(data/entity_classification/boarding-houses_classification_results.md)
+  ⎿  Wrote 237 lines to data/entity_classification/boarding-houses_classification_results.md
+     # Boarding Houses Classification Results
+     **Date:** 2025-11-14
+     **Entity Type:** Boarding houses (hospitality accommodation businesses)
+     **Total Mentions:** 4 (2 unique + 2 case-variant duplicates)
+     **Method:** NLU classification using entity-classifier skill
+     ---
+     ## Classification Summary
+     … +227 lines (ctrl+o to expand)
+
+● Perfect! I've completed the classification of the 2 unique boarding house mentions. The results show:
+
+  Boarding Houses Classification Summary
+
+  Classified: 2 unique mentions (4 total with case duplicates)
+  - Both: 1 mention (50%) - capacity management context
+  - Business: 1 mention (50%) - visitor lists context
+  - Building: 0 mentions (0%)
+
+  Key finding: Boarding houses already has a complete dual-nature taxonomy structure with (building)/(business)
+  qualifiers - no taxonomy changes needed!
+
+  Issue: Only 2 of 8 tagged items had extractable text. The remaining 6 items need manual review.
+
+  Would you like me to:
+  1. Generate a manual review report for the remaining 6 boarding house items (like we did for educational
+  schools)?
+  2. Move on to cottages (which had 0 items tagged, so may not need classification)?
+
+
+
