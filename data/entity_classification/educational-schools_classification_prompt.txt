@@ -1,0 +1,587 @@
+I need you to classify 35 mentions of educational-schools in historical newspaper text.
+
+For each mention below, determine whether the educational-schools should be classified as:
+- **building** (Built Environment facet only)
+- **business/organisation** (Agents facet only)
+- **both** (polyhierarchical - appears in both facets)
+
+Apply the entity classification heuristic, looking for spatial indicators (at/in/near, events occurring, accommodation) vs agency indicators (ownership, operations, services, financial actions).
+
+Please analyse each mention independently and provide the structured output format specified in the skill.
+
+---
+
+## Mention 1
+
+**Entity:** Katoomba Public School
+**Item:** Mountain Mixtures (1892-06-17) (17 June 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194118172
+
+**Context:**
+> straight that it is a capitalist organ ? — it is owned by mighty email capitalists, by the way. Cook and Donald are a heap better than Jack Hurley, anyway, and the said owners did not cry out at him once. But, after all, they don't injure our Members the least bit. Its circulation still sticks to the same old 136.
+Another lantern exhibition at the Katoomba Public School last Monday right. The school-master, Mr. Douglass, delivered a brief but very instructive lecture on the subject, "Highland of Scotland." Considering the little notice given the attendance was good; but - are you listening, Mr. Douglass? - would it not be as well to pop a small ad. in the local papers, so that the general public may be apprised o
+
+---
+
+## Mention 2
+
+**Entity:** Katoomba Public School
+**Item:** Mountain Mixtures (1893-08-25) (25 August 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194114976
+
+**Context:**
+> Getting better. 
+Hartley and The Nepean electorates retain their names. 
+Arbor Day celebration a big success at Penrith last week. 
+Seed Potatoes at G. Clarke's produce store, Katoomba. - Advt. 
+Mr. John Barry, at one time coach proprietor at Katoomba, died recently. 
+Over 140 pupils prohibited from attending the Katoomba Public School for several weeks. Cause - measles. 
+Mr. Mullany intends erecting two weatherboard cottages in Leichhardt-street, Katoomba. Tenders called in this issue. 
+Katoomba Tennis Club fencing being proceeded with, also, we suppose, the rent to the Railway Commissioners is still running on. 
+Mr. Samuel J. Thompson, solicitor, is conducting Mr. S. B.
+
+---
+
+## Mention 3
+
+**Entity:** Katoomba Public School
+**Item:** Local Jottings (1889-09-21) (21 September 1889)
+**Trove URL:** http://nla.gov.au/nla.news-article194115775
+
+**Context:**
+> A fellow-workmen enjoying the fun.
+Single miners' fare—no more. One loaf of bread among four.
+Shale works at Katoomba Colliery stopped.
+Small number of miners in the colliery.
+Boy miners, 6d. per hour. Snakes near Guiva; young black one seen last week.
+Katoomba Progress Committee energetic. They are getting a Court House and lockup.
+Katoomba Public School ground to be cleared by tender.
+Katoomba Rifle Reserves want tenders for the clearing of 15ft. in width of scrub along the range.
+Whilst Katoomba coal miners were waiting for their pay one party of four single men had only one loaf of bread between them for two days.
+It took three men and a dog to kill an old man kangaroo near Katoomba the other d
+
+---
+
+## Mention 4
+
+**Entity:** Katoomba Public School
+**Item:** Mountain Mixtures (1892-01-22) (22 January 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194117043
+
+**Context:**
+> esday, Anniversary Day.
+The Mount Sports are postponed indefinitely.
+Mr. Lewis Duff, senior, who is well known to almost everyone in the district, announces in our advertising columns that he is a candidate for municipal honors.
+'Tis now said that as yet only 100 men have been discharged by the Sunny Corner Mining Company.
+Inspector Kevin examined Katoomba Public School this week.
+New business notices for THE TIMES. — Mr. N. Delaney's Wentworth Falls Hotel, and Mr. Thomas Cale's coach and buggy business. See the ads.
+A Lithgow man last week sued his wife because she threatened to knock his brains out and because he was in terror of grievous bodily injury at her hands.
+
+---
+
+## Mention 5
+
+**Entity:** Katoomba Public School
+**Item:** Jottings (1891-05-23) (23 May 1891)
+**Trove URL:** http://nla.gov.au/nla.news-article194112487
+
+**Context:**
+> will not wire that down to the Telegraph, or "blow" any more.
+Mr. Kitch, a photographer, Katoomba, has shown us some very nice views of the Sunny Corner Silver Mine and Smelters which he have been orderes from him by the proprietors of the mines. The are really works of art and well worth seeing.
+Railway works are in full swing at Lawson.
+The old Katoomba Public School building is to be sold by auction.
+The miners are indignant and think the school should be removed to Katoomba South. Probably a public meeting will be held.
+The Katoomba crematory carter will have pretty rough times. Three days and three nights work a week. Forty hours a week is quite long enough to work on that job.
+
+---
+
+## Mention 6
+
+**Entity:** Katoomba Superior Public School
+**Item:** Mountain Mixtures (1893-02-10) (10 February 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194115698
+
+**Context:**
+> Katoomba Times (NSW : 1889 - 1894), Friday 10 February 1893, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes, an' faith we'll prent 'em."
+No new courthouse for Katoomba yet awhile. Blackheath is to have an Oddfellows' Lodge (independent order).
+The addition to Katoomba Superior Public School proceeding very slowly.
+Will John Hurley be the National Ass. candidate for Hartley next election?
+Katoomba Park Estate to be auctioned on the ground at Katoomba next Saturday, February 11.
+Mr. H. Scope is the delegate of Mountaineer Lodge I.O.O.F. to the G.L. session to be held next week.
+Masonic installment at Mount Victoria on Saturday. R.W.
+
+---
+
+## Mention 7
+
+**Entity:** Katoomba Superior Public School
+**Item:** Mountain Mixtures (1893-06-16) (16 June 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194113774
+
+**Context:**
+> The police have the matter in hand, but so far have no clue or the least suspicion on anyone. House-breaking is a game indulged in rather too frequently just now, and we trust the gang will soon be broken up. 
+Mr. J. Nimmo complained of the management of the Katoomba School of Arts at the opening of the Katoomba Superior Public School library on Wednesday and said in consequence many members had discontinued their subscription. The last portion of the above sentence is, we regret to say, quite true but the accusation as to the management we think hardly fair and hardly correct. The only thing to be complained of is the lack of interest taken in the institution by the public, an
+
+---
+
+## Mention 8
+
+**Entity:** Katoomba Superior Public School
+**Item:** Mountain Mixtures (1893-06-23) (23 June 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194113438
+
+**Context:**
+> After the good things provided had been done justice to, the health of the daughter of the hostess was proposed in enlogistic terms by Mr. s. B. Banfield, M.A., supported by Mr. Southwood and responded to by Mr. J. H. Crick. A vote of thanks was also given to Mrs. Doig for the trouble that she had taken with the class.
+The inspector's report of Katoomba Superior Public School examination for 1893 appears in another column. The result reflects greatly to the credit of the head teacher and his assistants, no marks below fair being recorded in the whole report. It will be noticed that the whole of the classes secured excellent or 100 per cent. marks in the item dictation, while the results for grammar, arithmetic and writ
+
+---
+
+## Mention 9
+
+**Entity:** Katoomba Superior Public School
+**Item:** Mountain Mixtures (1894-03-23) (23 March 1894)
+**Trove URL:** http://nla.gov.au/nla.news-article194112362
+
+**Context:**
+> On Thursday, at the Katoomba school, an exhibition of work was held, and a fairly large number of parents attended.
+One day this week a miner employed by the A. K.O. and M. Company, at Katoomba South, was seriously injured by a skip falling upon him. The man was employed removing skips and other tools.
+Miss Gayter, pupil teacher at Katoomba Superior Public School, has received word that she has passed her examination succesfully and been promoted to Class 1. The results of the other pupil teachers' exams are not yet known.
+On Thursday Mr. W. F. Goyder, house and estate agent, Katoomba, disposed of Mr. J. W. Fletcher's property known as "The Rocks" together with 9 acres of land to Mr.
+
+---
+
+## Mention 10
+
+**Entity:** Katoomba Superior Public School
+**Item:** Moutains Mixtures (1893-11-17) (17 November 1893)
+**Trove URL:** http://nla.gov.au/nla.news-article194110192
+
+**Context:**
+> t them?
+Friday's and Saturday's wet didn't add to the attractiveness of the Wesleyan bazaar at Katoomba, although a fairly large number of people patronised the event, the proceeds amounting to about £30. Wish we could make £30 in three days.
+Two Katoomba boys passed the Junior University Exam., namely, Wilfred Moss, son of our worth Railway S.M. (Katoomba Superior Public School) and A. B. Dale, son of Mrs. Dale, of Temora House, and a pupil of Mr. Rienits, of "The School," Mount Victoria.
+Last week's damp weather did a wonderful lot of good to Blue Mountain cabbage and flower gardens. By the way, the people up this way are a discontented, growling, lot. They grunted when the weather was dry for a few days, and - well, a
+
+---
+
+## Mention 11
+
+**Entity:** Katoomba Superior Public School
+**Item:** Mountain Mixtures (1892-10-21) (21 October 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194117986
+
+**Context:**
+> Katoomba Times (NSW : 1889 - 1894), Friday 21 October 1892, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes an' faith we'll prent' ein."
+Lovely day last Wednesday.
+More new ads. - The Hotel Wentworth: Mr. J. Hudson, livery stables.
+An official visit was paid by Mr. McIntyre, Deputy Chief Inspector of Schools, to Katoomba Superior Public School on Monday last.
+Rev. Alexander Miller, B.A., will lecture at the Katoomba Congregational Church next Tuesday on the American War. See ad.
+The petition protesting against the sewerage fad has been forwarded to our Members, who promise to present it to the Premier at once.
+Send along your advt. for our guide book.
+
+---
+
+## Mention 12
+
+**Entity:** School
+**Item:** Hartley Vale (1891-10-16) (16 October 1891)
+**Trove URL:** http://nla.gov.au/nla.news-article194115931
+
+**Context:**
+> Mr. Russell, the new manager, is getting everything into first-class order, and what was a wilderness formerly is a network of tramways now. He is erecting an engine on the top of the incline to do the hauling, thereby saving a large amount of wear and tear.
+Mr. Hutchinson, the head teacher of the Public School here, had his pupils rehearsing in the Odd Fellows' Hall on Saturday last, and judging by the way they acquitted themselves there is a great treat in store for the parents and visitors on the 9th of November, that being the day set apart for the concert.
+Great preparations are being made here by the Odd Fellows to celebrate the anniversary of the
+
+---
+
+## Mention 13
+
+**Entity:** School
+**Item:** Mountain Mixtures (1892-03-11) (11 March 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194115130
+
+**Context:**
+> 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes, an' faith we'll print 'em."
+WEATHER. - Lovely.
+Plenty of visitors.
+Have you seen Kitch's perch?
+Every prospect of the reason being a long one.
+Five changes in 18 months.
+The rag and Bone heap again sold, likewise the man who bought it.
+Theatricals next Saturday week at Katoomba in aid of the school children's picnic.
+Mr. T. Tiernan continues his clearing sale for one week longer. See his advertisement.
+We still require scribes in any Mountain town where appointments have not been made.
+Lithgow miners make only half time. Katoomba black diamond hunters are more fortunate; they make full time.
+Five Pound Skating Handicap on Tuesday, March 29,
+
+---
+
+## Mention 14
+
+**Entity:** School
+**Item:** Katoomba Police Court (1892-03-26) (26 March 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article101077351
+
+**Context:**
+> Blakey by Mr Baster, and as he said that he was not aware that he had given up the hall, and as the event took place only a few days after Mr. Baster had given up the hall, he would have to dismiss the case.
+FREE, SECULAR, AND COMPULSORY.
+William Perkins was summoned for not sending his two children to school for 70 days, ending the half-year 31st December last. He pleaded guilty. The Inspector, Mr. Cahusac, stated that he had been informed that Mr. Perkins had had a lot of sickness in his family, and that lately he had lost his wife, and under the circumstances he would ask to withdraw the summons on the defendant paying costs 5s 6d, and 7s 4d.
+
+---
+
+## Mention 15
+
+**Entity:** School
+**Item:** Mountain Mixtures (1892-11-25) (25 November 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194115505
+
+**Context:**
+> 89 - 1894), Friday 25 November 1892, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes an' faith we'll prent 'em."
+KEEP your drains clean!
+No funds for Courthouse.
+Harry Edwards and son gone to the goldfinch.
+Skating handicap at the Odd Fellows' Hall on Tuesday night.
+The Primate of the C.E. Church, Katoomba, to-night. See advt.
+Katoomba School of Arts Flower Show on [?] and 17th December.
+Mr. G. Davis, butcher of Katoomba, opened a broach shop at Lawson last Monday.
+The Blue Mountains will be thoroughly represented at Chicago Exposition in the matter of photographs.
+Next issue a short translation, "Nihilism" will appear, to be followed by another which is written in a racy style and whi
+
+---
+
+## Mention 16
+
+**Entity:** School
+**Item:** Mountain Mixtures (1892-11-18) (18 November 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194117649
+
+**Context:**
+> Katoomba Times (NSW : 1889 - 1894), Friday 18 November 1892, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes an' faith we'll prent 'em.
+Keeps up - The J.P. attendance.
+Not started yet - The additions to the local school.
+A number of Katoomba miners have rushed to the new gold field at Oberon.
+Lithgow people talking of inviting the Governor to turn on the gas for the first time.
+The excursion train over the Mountains on Wednesday night brought several visitors.
+Mr. Banfield, M.A., solicitor, has taken up his residence at Katoomba where he will practice his profess
+
+---
+
+## Mention 17
+
+**Entity:** School
+**Item:** Official (1895-05-10) (10 May 1895)
+**Trove URL:** http://nla.gov.au/nla.news-article194838295
+
+**Context:**
+> dd that a further communication will be made to you when a decision in this case has been given. - I have, &c., 
+W. HOUSTON, Under Secretary. 
+The Hon. J. Cook, M.L.A., Sydney. 
+- o -
+Department of Public Instruction, Sydney, 8th May, 1895. 
+Sir, - With reference to your letter of the 1st instant representing the unsatisfactory state of the public school building at Blackheath, and its inadequate accommodation, I am directed to acquaint you that the Minster for Public Instruction has requested the architect for public schools to have a careful examination of the premise made as early as possible. When the architect's re-port is received and the Minster has finally decided thereon, a further commun
+
+---
+
+## Mention 18
+
+**Entity:** School
+**Item:** Katoomba. Rumour About Work At The Mines (1905-05-23) (23 May 1905)
+**Trove URL:** http://nla.gov.au/nla.news-article218752709
+
+**Context:**
+> Guest, and Jay West, and by Misses Messiter, Bradley, and others, which were well received and encored, after which Mr. H. Scope, J.P., came forward and thanked the audience for their patronage, and announced that as soon as the floor was cleared dancing would be in full swing until midnight.
+Now that Empire Day is approaching, Mr. F. Neal, public school teacher, has been sending the children out with boxes for the purpose of collecting sufficient funds for a picnic, but has not met with the support it merits. However, I hope funds will be forthcoming to give the youngsters a good day's outing.
+It is rumoured here that men will be put on in a few days to get the train lines ready for work at the m
+
+---
+
+## Mention 19
+
+**Entity:** School
+**Item:** Mountain Mixtures (1894-03-23) (23 March 1894)
+**Trove URL:** http://nla.gov.au/nla.news-article194112362
+
+**Context:**
+> C. concert at Katoomba on Easter Monday.
+Wonder if old Pluyious is in league with our local plumber?
+I.O.O.F. Ball at Blackheath on Wednesday next.
+"Under the Palms" at Mount Victoria tonight and tomorrow night.
+On Thursday night three heavily laden trains brought crowds of visitors to the Mountains.
+Katoomba school youngsters acquitted themselves capitally at their concert on Saturday night.
+St. Patrick's Day in the morning, in the afternoon, as well as in the night, up this way was wet.
+Mr. Colquhoun, who has considerable interests at Katoomba, has been appointed Crown solicitor.
+Mr. Catling's "Katoomba" ran at Orange races on Saturday, but did not secure a
+
+---
+
+## Mention 20
+
+**Entity:** School
+**Item:** Town Talk (1903-03-13) (13 March 1903)
+**Trove URL:** http://nla.gov.au/nla.news-article188871927
+
+**Context:**
+> he motion to reduce the council clerk's salary by £26 per annum was negatived by the aldermen at Monday's meeting by 5 votes to 3.
+We have heard during the week of a snake story from over Leura way. It was that a large tiger snake had been killed with 25 young ones. We do not vough for the accuracy of above.
+A mooting of the committee of the local School of Arts was to have been held at the room on Tuesday evening. The night was somewhat damp and no quorum turned up. The interest shown by some of the committee seems very slight, especially as important business in connection with new building, &c., had to be discussed. Those who did turn up and who waited till nine p.m.
+
+---
+
+## Mention 21
+
+**Entity:** School
+**Item:** Town Talk (1904-05-13) (13 May 1904)
+**Trove URL:** http://nla.gov.au/nla.news-article188871519
+
+**Context:**
+> good deal of regret is expressed at the departure of Alderman Bronger, who was looked upon as a man who took an interest in the whole of the Mountain towns.
+The court house was well filled with spectators on Wednesday, but proceedings unexpectedly turned out very tamely.
+A canvass of the town is to be made for an increase in the membership of the School of Arts.
+Land at Blackheath continues to find ready purchasers. Mr. Slatyer, the local agent, gets away with two or three lots every week. It is stated that a large number of buildings will be started up there shortly.
+Charles Pratt, Katoomba's genteel postman, and his grey neddy, bade adieu to the Mountain town on Saturday.
+
+---
+
+## Mention 22
+
+**Entity:** School
+**Item:** Megalong Matters (1892-08-26) (26 August 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194115068
+
+**Context:**
+> He already has some good ponies in foal to "Leddicott," his stallion, winner of four first prizes at the Hawkesbury and Metropolitan Shows and I trust he will be fortunate in his enterprise. Peradventure Katoomba may prove a good market. 
+Portions of unalienated land centrally situated will probably be reserved from selection for school and church purposes. 
+The population of the mines continues to increase also the school attendance in consequence.
+
+---
+
+## Mention 23
+
+**Entity:** School
+**Item:** Memorandum to the Chief Inspector [recommending Waudby’s Hall for public school] (7 July 1994)
+**Trove URL:** 
+
+**Context:**
+> Memorandum to the Chief Inspector [recommending Waudby’s Hall for public school]
+
+Memorandum to The Chief Inspector
+Megalong Public: As to lease of building
+As many of the residents of this place have removed further down the valley, I would suggest that Mr. Clarke’s lease not be renewed, but that of Mr. John Waudby of Lower Megalong be accepted at a yearly rental of £15.
+The place would be more central and otherwise more sui
+
+---
+
+## Mention 24
+
+**Entity:** school
+**Item:** Hartley Vale (1891-10-16) (16 October 1891)
+**Trove URL:** http://nla.gov.au/nla.news-article194115931
+
+**Context:**
+> Mr. Russell, the new manager, is getting everything into first-class order, and what was a wilderness formerly is a network of tramways now. He is erecting an engine on the top of the incline to do the hauling, thereby saving a large amount of wear and tear.
+Mr. Hutchinson, the head teacher of the Public School here, had his pupils rehearsing in the Odd Fellows' Hall on Saturday last, and judging by the way they acquitted themselves there is a great treat in store for the parents and visitors on the 9th of November, that being the day set apart for the concert.
+Great preparations are being made here by the Odd Fellows to celebrate the anniversary of the
+
+---
+
+## Mention 25
+
+**Entity:** school
+**Item:** Mountain Mixtures (1892-03-11) (11 March 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194115130
+
+**Context:**
+> 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes, an' faith we'll print 'em."
+WEATHER. - Lovely.
+Plenty of visitors.
+Have you seen Kitch's perch?
+Every prospect of the reason being a long one.
+Five changes in 18 months.
+The rag and Bone heap again sold, likewise the man who bought it.
+Theatricals next Saturday week at Katoomba in aid of the school children's picnic.
+Mr. T. Tiernan continues his clearing sale for one week longer. See his advertisement.
+We still require scribes in any Mountain town where appointments have not been made.
+Lithgow miners make only half time. Katoomba black diamond hunters are more fortunate; they make full time.
+Five Pound Skating Handicap on Tuesday, March 29,
+
+---
+
+## Mention 26
+
+**Entity:** school
+**Item:** Katoomba Police Court (1892-03-26) (26 March 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article101077351
+
+**Context:**
+> Blakey by Mr Baster, and as he said that he was not aware that he had given up the hall, and as the event took place only a few days after Mr. Baster had given up the hall, he would have to dismiss the case.
+FREE, SECULAR, AND COMPULSORY.
+William Perkins was summoned for not sending his two children to school for 70 days, ending the half-year 31st December last. He pleaded guilty. The Inspector, Mr. Cahusac, stated that he had been informed that Mr. Perkins had had a lot of sickness in his family, and that lately he had lost his wife, and under the circumstances he would ask to withdraw the summons on the defendant paying costs 5s 6d, and 7s 4d.
+
+---
+
+## Mention 27
+
+**Entity:** school
+**Item:** Mountain Mixtures (1892-11-25) (25 November 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194115505
+
+**Context:**
+> 89 - 1894), Friday 25 November 1892, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes an' faith we'll prent 'em."
+KEEP your drains clean!
+No funds for Courthouse.
+Harry Edwards and son gone to the goldfinch.
+Skating handicap at the Odd Fellows' Hall on Tuesday night.
+The Primate of the C.E. Church, Katoomba, to-night. See advt.
+Katoomba School of Arts Flower Show on [?] and 17th December.
+Mr. G. Davis, butcher of Katoomba, opened a broach shop at Lawson last Monday.
+The Blue Mountains will be thoroughly represented at Chicago Exposition in the matter of photographs.
+Next issue a short translation, "Nihilism" will appear, to be followed by another which is written in a racy style and whi
+
+---
+
+## Mention 28
+
+**Entity:** school
+**Item:** Mountain Mixtures (1892-11-18) (18 November 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194117649
+
+**Context:**
+> Katoomba Times (NSW : 1889 - 1894), Friday 18 November 1892, page 2
+
+Mountain Mixtures.
+"A chiel's amang ye takin' notes an' faith we'll prent 'em.
+Keeps up - The J.P. attendance.
+Not started yet - The additions to the local school.
+A number of Katoomba miners have rushed to the new gold field at Oberon.
+Lithgow people talking of inviting the Governor to turn on the gas for the first time.
+The excursion train over the Mountains on Wednesday night brought several visitors.
+Mr. Banfield, M.A., solicitor, has taken up his residence at Katoomba where he will practice his profess
+
+---
+
+## Mention 29
+
+**Entity:** school
+**Item:** Official (1895-05-10) (10 May 1895)
+**Trove URL:** http://nla.gov.au/nla.news-article194838295
+
+**Context:**
+> dd that a further communication will be made to you when a decision in this case has been given. - I have, &c., 
+W. HOUSTON, Under Secretary. 
+The Hon. J. Cook, M.L.A., Sydney. 
+- o -
+Department of Public Instruction, Sydney, 8th May, 1895. 
+Sir, - With reference to your letter of the 1st instant representing the unsatisfactory state of the public school building at Blackheath, and its inadequate accommodation, I am directed to acquaint you that the Minster for Public Instruction has requested the architect for public schools to have a careful examination of the premise made as early as possible. When the architect's re-port is received and the Minster has finally decided thereon, a further commun
+
+---
+
+## Mention 30
+
+**Entity:** school
+**Item:** Katoomba. Rumour About Work At The Mines (1905-05-23) (23 May 1905)
+**Trove URL:** http://nla.gov.au/nla.news-article218752709
+
+**Context:**
+> Guest, and Jay West, and by Misses Messiter, Bradley, and others, which were well received and encored, after which Mr. H. Scope, J.P., came forward and thanked the audience for their patronage, and announced that as soon as the floor was cleared dancing would be in full swing until midnight.
+Now that Empire Day is approaching, Mr. F. Neal, public school teacher, has been sending the children out with boxes for the purpose of collecting sufficient funds for a picnic, but has not met with the support it merits. However, I hope funds will be forthcoming to give the youngsters a good day's outing.
+It is rumoured here that men will be put on in a few days to get the train lines ready for work at the m
+
+---
+
+## Mention 31
+
+**Entity:** school
+**Item:** Mountain Mixtures (1894-03-23) (23 March 1894)
+**Trove URL:** http://nla.gov.au/nla.news-article194112362
+
+**Context:**
+> C. concert at Katoomba on Easter Monday.
+Wonder if old Pluyious is in league with our local plumber?
+I.O.O.F. Ball at Blackheath on Wednesday next.
+"Under the Palms" at Mount Victoria tonight and tomorrow night.
+On Thursday night three heavily laden trains brought crowds of visitors to the Mountains.
+Katoomba school youngsters acquitted themselves capitally at their concert on Saturday night.
+St. Patrick's Day in the morning, in the afternoon, as well as in the night, up this way was wet.
+Mr. Colquhoun, who has considerable interests at Katoomba, has been appointed Crown solicitor.
+Mr. Catling's "Katoomba" ran at Orange races on Saturday, but did not secure a
+
+---
+
+## Mention 32
+
+**Entity:** school
+**Item:** Town Talk (1903-03-13) (13 March 1903)
+**Trove URL:** http://nla.gov.au/nla.news-article188871927
+
+**Context:**
+> he motion to reduce the council clerk's salary by £26 per annum was negatived by the aldermen at Monday's meeting by 5 votes to 3.
+We have heard during the week of a snake story from over Leura way. It was that a large tiger snake had been killed with 25 young ones. We do not vough for the accuracy of above.
+A mooting of the committee of the local School of Arts was to have been held at the room on Tuesday evening. The night was somewhat damp and no quorum turned up. The interest shown by some of the committee seems very slight, especially as important business in connection with new building, &c., had to be discussed. Those who did turn up and who waited till nine p.m.
+
+---
+
+## Mention 33
+
+**Entity:** school
+**Item:** Town Talk (1904-05-13) (13 May 1904)
+**Trove URL:** http://nla.gov.au/nla.news-article188871519
+
+**Context:**
+> good deal of regret is expressed at the departure of Alderman Bronger, who was looked upon as a man who took an interest in the whole of the Mountain towns.
+The court house was well filled with spectators on Wednesday, but proceedings unexpectedly turned out very tamely.
+A canvass of the town is to be made for an increase in the membership of the School of Arts.
+Land at Blackheath continues to find ready purchasers. Mr. Slatyer, the local agent, gets away with two or three lots every week. It is stated that a large number of buildings will be started up there shortly.
+Charles Pratt, Katoomba's genteel postman, and his grey neddy, bade adieu to the Mountain town on Saturday.
+
+---
+
+## Mention 34
+
+**Entity:** school
+**Item:** Megalong Matters (1892-08-26) (26 August 1892)
+**Trove URL:** http://nla.gov.au/nla.news-article194115068
+
+**Context:**
+> He already has some good ponies in foal to "Leddicott," his stallion, winner of four first prizes at the Hawkesbury and Metropolitan Shows and I trust he will be fortunate in his enterprise. Peradventure Katoomba may prove a good market. 
+Portions of unalienated land centrally situated will probably be reserved from selection for school and church purposes. 
+The population of the mines continues to increase also the school attendance in consequence.
+
+---
+
+## Mention 35
+
+**Entity:** school
+**Item:** Memorandum to the Chief Inspector [recommending Waudby’s Hall for public school] (7 July 1994)
+**Trove URL:** 
+
+**Context:**
+> Memorandum to the Chief Inspector [recommending Waudby’s Hall for public school]
+
+Memorandum to The Chief Inspector
+Megalong Public: As to lease of building
+As many of the residents of this place have removed further down the valley, I would suggest that Mr. Clarke’s lease not be renewed, but that of Mr. John Waudby of Lower Megalong be accepted at a yearly rental of £15.
+The place would be more central and otherwise more sui
+
+---
+
