@@ -5170,3 +5170,428 @@ Capitalization now consistent with other named settlements:
 **Status:** Implemented 2025-11-06
 
 ---
+
+## Hotel Taxonomy Restructuring: Building-Business Polyhierarchy
+
+**Date:** 2025-11-13
+
+**Tags affected:**
+
+- Removed extraneous `hotels` primary facet (thematic organizational node)
+- Created 9 new hotel (business) tags
+- Created `family hotels (businesses)` sub-category
+- Updated 8 unqualified hotel variants to map to BOTH building and business
+- Updated Family Hotel capitalization mapping rules
+
+**Rationale:**
+
+Hotels are dual-nature entities that can function both as physical buildings (Built Environment facet) and as business organisations (Agents facet). The taxonomy previously only captured the building aspect for most hotels, despite evidence from Natural Language Understanding (NLU) analysis showing substantial business contexts (licensing, property transactions, business operations, proprietorship).
+
+### Problems Identified
+
+1. **Extraneous Primary Facet:** `hotels` appeared as a standalone primary facet containing only family hotels, creating confusion with the proper `hotels (buildings)` hierarchy under Built Environment
+
+2. **Missing Business Facet:** No hotel (business) variants existed despite evidence that 9 of 13 hotels in the collection exhibit clear business agency contexts (69% of hotels)
+
+3. **Incomplete Polyhierarchy:** Unqualified hotel names (e.g., "Carrington Hotel") mapped only to (building) variants, preventing polyhierarchical tagging when sources referenced business aspects
+
+4. **Ambiguous Family Hotel Mapping:** Generic "family hotel" and specific "Family Hotel" both mapped to "Katoomba Family Hotel" without distinguishing capitalization rules
+
+### Evidence
+
+**Source:** Entity Tagging System NLU analysis (Claude Sonnet 4.5)
+**Dataset:** 43 hotel mentions from Blue Mountains Historical Society Zotero library
+**Analysis date:** 2025-11-12
+
+**NLU Classification Results:**
+- Building-only contexts: 20 mentions (46.5%)
+- Business-only contexts: 15 mentions (34.9%)
+- Both contexts: 8 mentions (18.6%)
+- Confidence: 93% high confidence classifications
+
+**Genre Patterns Identified:**
+
+| Context Genre | Mentions | Classification | Business Indicators |
+|--------------|----------|----------------|---------------------|
+| Licensing applications/renewals | 7 | Business (100%) | Legal business entity, regulatory approval |
+| Property transactions | 4 | Business (100%) | "Sold the business", "purchased hotel" |
+| Advertisements | 2 | Both (100%) | Business marketing + location description |
+| Court testimony with proprietor | 4 | Both (100%) | Proprietor identification + spatial event |
+| Event venues | 5 | Building (100%) | Physical space hosting events |
+| Spatial landmarks | 8 | Building (100%) | Geographic reference points |
+| Proprietor agency | 5 | Business (100%) | "Remains closed", "intends to improve" |
+
+**Example Business Contexts:**
+
+**Megalong Hotel (8 mentions: 3 business, 3 building, 2 both):**
+- "Notice of Application for a Conditional Publican's Licence" (1893-06-09) - Business
+- "Hotel remains closed" (1896-06-05) - Business operational status
+- Advertisement: "This Hotel is very favourably situated... accommodation and attendance will be found..." (1894-09-21) - Both (marketing + location)
+
+**Centennial Hotel (5 mentions: 3 business, 1 building, 1 both):**
+- Property sale (1903-04-21) - Business transaction
+- "Charged with Licensing Act infringement" (1893-06-16) - Business regulatory violation
+- "Richard Allen, proprietor Centennial Hotel" (1893-03-17) - Both (proprietor + spatial location)
+
+**Comparison with Regex Baseline:**
+
+The previous regex-based approach (Script 37) classified ALL hotel mentions as "building" (100%), systematically missing business contexts due to:
+- Genre blindness (cannot recognise licensing applications, advertisements, transactions)
+- Inability to understand agency ("hotel remains closed" = operations, not spatial)
+- No metonymy handling (hotel-as-business vs hotel-as-building)
+- No active vs passive voice distinction
+
+**NLU vs Regex Agreement:** 38% (disagreement: 62%)
+
+### Impact
+
+**Hotels requiring (business) variants:** 9 entities
+
+1. **Megalong Hotel** (8 mentions: 3 business, 3 building, 2 both)
+2. **Family hotel** / **Katoomba Family Hotel** (6 mentions: 4 business, 2 both)
+3. **Centennial Hotel** (5 mentions: 3 business, 1 building, 1 both)
+4. **Carrington Hotel** (4 mentions: 1 business, 1 building, 2 both)
+5. **Imperial Hotel** (3 mentions: 1 business, 2 building)
+6. **Wentworth Falls Hotel** (2 mentions: 2 business)
+7. **Mount Victoria Hotel** (2 mentions: 2 business)
+8. **Belgravia Hotel** (2 mentions: 1 business, 1 building)
+9. **Katoomba Family Hotel** (1 mention: 1 business - distinct from generic "family hotel")
+
+**Hotels remaining building-only:** 4 entities
+
+1. **Katoomba Hotel** (3 mentions: all building - spatial landmarks, venues)
+2. **Railway Hotel** (2 mentions: all building - meeting venue, gaming house)
+3. **Grand Hotel (Sydney)** (1 mention: building - future establishment reference)
+4. **Montrose House** (4 mentions: all building - government facility usage)
+
+### Getty AAT Alignment
+
+Getty AAT supports polyhierarchical classification for dual-nature entities:
+
+- **Buildings:** <http://vocab.getty.edu/page/aat/300007214> hotels (public accommodations)
+- **Businesses:** <http://vocab.getty.edu/page/aat/300055024> hospitality businesses
+
+AAT precedent: Churches appear in both Built Environment (church buildings) and Agents (religious organisations) facets, using parenthetical qualifiers for disambiguation.
+
+### Resolution
+
+#### 1. Removed Extraneous Primary Facet
+
+**Action:** Deleted lines 498-499 from `data/tag_map_consolidated.csv`:
+```csv
+hotels,hotels,hierarchy,parent=Alcohol-related venues - THEMATIC,
+hotels,hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect),
+```
+
+**Rationale:** The `hotels` thematic category had no structural children (only appeared via polyhierarchical relationships from `hotels (buildings)`). This created a phantom primary facet visible in hierarchy trees but serving no organizational purpose.
+
+**Result:** Family hotels now correctly appear only under `Built Environment > accommodation buildings > hotels (buildings) > family hotels`
+
+#### 2. Created Parallel Hotels (Businesses) Structure
+
+**Action:** Added to `data/tag_map_consolidated.csv`:
+
+```csv
+hotels (businesses),hotels (businesses),hierarchy,parent=hospitality businesses,
+hotel (business),hotel (business),hierarchy,parent=hotels (businesses),Singular generic term
+Belgravia Hotel (business),Belgravia Hotel (business),hierarchy,parent=hotels (businesses),
+Carrington Hotel (business),Carrington Hotel (business),hierarchy,parent=hotels (businesses),
+Centennial Hotel (business),Centennial Hotel (business),hierarchy,parent=hotels (businesses),
+Imperial Hotel (business),Imperial Hotel (business),hierarchy,parent=hotels (businesses),
+Megalong Hotel (business),Megalong Hotel (business),hierarchy,parent=hotels (businesses),
+Mount Victoria Hotel (business),Mount Victoria Hotel (business),hierarchy,parent=hotels (businesses),
+Wentworth Falls Hotel (business),Wentworth Falls Hotel (business),hierarchy,parent=hotels (businesses),
+```
+
+**Rationale:** Mirrors `hotels (buildings)` structure in Agents facet, following leaf-node tagging pattern:
+- Plural parent: `hotels (businesses)` (organizational node, never tagged)
+- Singular generic: `hotel (business)` (for unspecified hotel businesses)
+- Specific named entities: Individual hotel businesses
+
+#### 3. Created Family Hotels (Businesses) Sub-Category
+
+**Action:** Added to `data/tag_map_consolidated.csv`:
+
+```csv
+family hotels (businesses),family hotels (businesses),hierarchy,parent=hotels (businesses),
+family hotel (business),family hotel (business),hierarchy,parent=family hotels (businesses),Singular generic term
+Delaney's Family Hotel (business),Delaney's Family Hotel (business),hierarchy,parent=family hotels (businesses),
+Fryer's Family Hotel (business),Fryer's Family Hotel (business),hierarchy,parent=family hotels (businesses),
+Katoomba Family Hotel (business),Katoomba Family Hotel (business),hierarchy,parent=family hotels (businesses),
+```
+
+**Rationale:** Maintains structural consistency with `family hotels` sub-category under `hotels (buildings)`. Family hotels represent a distinct business model (residential accommodation, often family-run) warranting separate classification.
+
+#### 4. Updated Unqualified Variants to Map to BOTH Building and Business
+
+**Action:** Added business synonym mappings for 8 hotels (in addition to existing building mappings):
+
+```csv
+Belgravia Hotel,Belgravia Hotel (business),synonym,Unqualified variant from original Zotero tags,
+Carrington Hotel,Carrington Hotel (business),synonym,Unqualified variant from original Zotero tags,
+Centennial Hotel,Centennial Hotel (business),synonym,Unqualified variant from original Zotero tags,
+Imperial Hotel,Imperial Hotel (business),synonym,Unqualified variant from original Zotero tags,
+Katoomba Family Hotel,Katoomba Family Hotel (business),synonym,Unqualified variant from original Zotero tags,
+Megalong Hotel,Megalong Hotel (business),synonym,Unqualified variant from original Zotero tags,
+Mount Victoria Hotel,Mount Victoria Hotel (business),synonym,Unqualified variant from original Zotero tags,
+Wentworth Falls Hotel,Wentworth Falls Hotel (business),synonym,Unqualified variant from original Zotero tags,
+```
+
+**Rationale:** Enables polyhierarchical tagging. When primary sources mention "Carrington Hotel" without specifying building or business aspect, both facets can be applied. This accurately reflects the ambiguity in historical sources where hotel names function metonymically (the name can refer to the building, the business, or both contextually).
+
+**Hotels excluded:** Katoomba Hotel, Railway Hotel, Grand Hotel (Sydney), Montrose House remain building-only per NLU analysis showing no business contexts.
+
+#### 5. Updated Family Hotel Capitalization Mapping Rules
+
+**Old mappings:**
+```csv
+family hotel,family hotel,merge,Colloquial/generic reference to Katoomba family hotel
+Family Hotel,Katoomba Family Hotel,synonym,Case variant - standardise
+```
+
+**New mappings:**
+```csv
+family hotel,family hotel (building),synonym,Lowercase generic form
+family hotel,family hotel (business),synonym,Lowercase generic form
+Family Hotel,Katoomba Family Hotel (building),synonym,Capitalized form used as shorthand
+Family Hotel,Katoomba Family Hotel (business),synonym,Capitalized form used as shorthand
+```
+
+**Rationale:**
+
+- **Capitalization signals specificity:** "Family Hotel" (capitalized) = proper noun referring to Katoomba Family Hotel specifically
+- **Lowercase signals genericity:** "family hotel" (lowercase) = common noun for unspecified family hotel
+- This follows UK/Australian journalistic conventions where proper nouns are capitalized, generics are lowercase
+- Previous mapping incorrectly assumed all "family hotel" mentions referred to Katoomba establishment; NLU analysis found both generic and specific usages
+
+**Evidence from NLU analysis:**
+- Generic usage: "a family hotel" (indefinite article signals generic)
+- Specific usage: "the Family Hotel" (definite article + capitalization signals Katoomba establishment)
+
+### Taxonomy Structure (After Changes)
+
+**Built Environment Facet:**
+```
+accommodation buildings
+└── hotels (buildings)
+    ├── hotel (building) [singular generic]
+    ├── Belgravia Hotel (building)
+    ├── Carrington Hotel (building)
+    ├── Centennial Hotel (building)
+    ├── Imperial Hotel (building)
+    ├── Katoomba Hotel (building) [building-only]
+    ├── Megalong Hotel (building)
+    ├── Mount Victoria Hotel (building)
+    ├── Railway Hotel (building) [building-only]
+    ├── Wentworth Falls Hotel (building)
+    ├── Grand Hotel (Sydney) (building) [building-only]
+    ├── Montrose House (building) [building-only]
+    └── family hotels
+        ├── family hotel (building) [singular generic]
+        ├── Delaney's Family Hotel (building)
+        ├── Fryer's Family Hotel (building)
+        └── Katoomba Family Hotel (building)
+```
+
+**Agents Facet:**
+```
+commercial businesses
+└── hospitality businesses
+    └── hotels (businesses)
+        ├── hotel (business) [singular generic]
+        ├── Belgravia Hotel (business)
+        ├── Carrington Hotel (business)
+        ├── Centennial Hotel (business)
+        ├── Imperial Hotel (business)
+        ├── Megalong Hotel (business)
+        ├── Mount Victoria Hotel (business)
+        ├── Wentworth Falls Hotel (business)
+        └── family hotels (businesses)
+            ├── family hotel (business) [singular generic]
+            ├── Delaney's Family Hotel (business)
+            ├── Fryer's Family Hotel (business)
+            └── Katoomba Family Hotel (business)
+```
+
+### Validation
+
+**Taxonomy integrity checks:**
+- ✓ All parent references valid (`validate_taxonomy.py`)
+- ✓ All mapping tags exist in taxonomy
+- ✓ No case-insensitive duplicates found
+- ✓ No orphaned tags (`40_check_orphaned_tags.py`)
+
+**Hierarchy visualization:**
+- Regenerated trees: `scripts/22_generate_poly_hierarchy.py`
+- Confirmed: `primary_hotels.txt` no longer exists (extraneous facet removed)
+- Confirmed: Hotels appear correctly under Built Environment > accommodation buildings
+- Confirmed: Hotels (businesses) appear under Agents > commercial businesses > hospitality businesses
+
+### Related Documentation
+
+**Detailed analysis reports:**
+- `entity-tagging-system/outputs/hotels/claude_classifications.md` - Full NLU analysis of 43 mentions
+- `entity-tagging-system/outputs/hotels/comparison_report.md` - Regex vs NLU comparison
+- `entity-tagging-system/outputs/hotels/statistics_summary.md` - Genre pattern analysis
+- `entity-tagging-system/outputs/hotels/approved_classifications.md` - Entity-by-entity review template
+- `entity-tagging-system/outputs/hotels/existing_taxonomy_inventory.md` - Pre-change inventory (Phase 1)
+
+**Methodology:**
+- Entity classification heuristic: `.claude/skills/entity-classifier/references/classification_heuristic.md`
+- Building indicators: Locational prepositions, movement to/from, event venues, physical features
+- Business indicators: Agency verbs, ownership/management, licensing, operations, transactions
+
+### Applicability to Other Entity Types
+
+This restructuring establishes a precedent for other dual-nature entities:
+
+**Churches:**
+- Current: Church buildings exist; church organisations partially implemented
+- Action needed: Mirror hotel structure (unqualified → both building and organisation)
+
+**Schools of Arts:**
+- Current: Both building and cultural society aspects exist
+- Action needed: Review unqualified variant mappings
+
+**Halls:**
+- Current: Primarily building facet
+- Analysis needed: Determine if organisational aspects (hall committees, management) warrant business/organisation variants
+
+**Lodges:**
+- Current: Both building and fraternal organisation aspects exist
+- Action needed: Review mapping consistency with hotel precedent
+
+### Implementation Details
+
+**Files modified:**
+- `data/tag_map_consolidated.csv` - Master taxonomy (all changes above)
+
+**Lines changed:**
+- Deleted: 2 lines (extraneous hotels facet)
+- Added: 22 lines (hotel business variants, family hotels sub-category)
+- Modified: 10 lines (unqualified variant mappings, Family Hotel capitalization rules)
+
+**Total impact:** 34 line changes
+
+**Script execution:**
+1. Manual edits to `data/tag_map_consolidated.csv`
+2. Ran `scripts/22_generate_poly_hierarchy.py` to regenerate relationships
+3. Validated with `scripts/validate_taxonomy.py`
+4. Confirmed with `scripts/40_check_orphaned_tags.py`
+
+**Status:** Implemented 2025-11-13
+
+---
+
+## Educational Schools Dual-Nature Implementation
+
+**Date:** 2025-11-14
+
+**Tags affected:**
+- `School` → `School (organisation)` (synonym, primary mapping)
+- `school` → `school (organisation)` (synonym)
+- `Schools` → Polyhierarchical parent (educational buildings + educational institutions)
+- `Katoomba Public School` → `Katoomba Public School (organisation)` (synonym)
+- `Katoomba Superior Public School` → `Katoomba Superior Public School (organisation)` (synonym)
+- `Megalong Valley School` → `Megalong Valley School (organisation)` (synonym)
+- `Mount Victoria School` → `Mount Victoria School (organisation)` (synonym)
+
+**New structure created:**
+- Intermediate parents: `schools (buildings)`, `schools (organisations)`
+- Singular generic leaves: `School (building)`, `School (organisation)`
+- Specific entities with qualifiers: `[Name] (building)`, `[Name] (organisation)`
+
+**Rationale:**
+
+Educational schools exhibit dual-nature characteristics similar to hotels and churches:
+1. **Physical structures** - School buildings, grounds, infrastructure (17.4% of mentions)
+2. **Organisational entities** - Educational institutions with staff, curriculum, governance (65.2% of mentions)
+3. **Both aspects** - When both building and institutional operations referenced (17.4% of mentions)
+
+Historical newspaper sources reference schools in multiple contexts that require disambiguation:
+- "Additions to the school" = building/construction
+- "Inspector examined the school" = organisational/institutional assessment
+- "School building to be sold" + "miners want school moved" = both physical and institutional
+
+**Evidence:**
+
+Classification of 35 mentions (23 unique after removing case-variant duplicates):
+- Building only: 4 mentions (17.4%)
+  - Construction work, physical grounds, building references
+- Organisation only: 15 mentions (65.2%)
+  - Inspections, attendance policies, staffing, student affiliation
+- Both: 4 mentions (17.4%)
+  - Building sales + institutional relocation, library opening (space + collection)
+
+**Pattern examples:**
+
+Building indicators:
+- "Katoomba Public School ground to be cleared by tender" (Mention 3)
+- "Addition to Katoomba Superior Public School proceeding" (Mention 6)
+- "Additions to the local school" (Mention 16)
+- "Land reserved for school purposes" (Mention 22)
+
+Organisation indicators:
+- "Pupils prohibited from attending Katoomba Public School" (Mention 2)
+- "Inspector Kevin examined Katoomba Public School" (Mention 4)
+- "Pupil teacher received promotion" (Mention 9)
+- "Summoned for not sending children to school" (Mention 14)
+
+Both indicators:
+- "Old Katoomba Public School building to be sold... miners think school should be removed to Katoomba South" (Mention 5)
+- "Opening of Katoomba Superior Public School library" (Mention 7)
+- "Unsatisfactory state of public school building and inadequate accommodation... Minister requested examination" (Mention 17)
+- "Lease of building for Megalong Public School operations" (Mention 23)
+
+**Impact:**
+
+- 23 unique item-tag applications (35 total including duplicates)
+- Removed 13 obsolete unqualified entries from taxonomy
+- Added 22 new disambiguated entries
+- 3 items require retagging from "School" to "School of Arts" (misclassifications)
+
+**Item breakdown:**
+- Katoomba Public School: 5 unique mentions (6 items tagged)
+- Katoomba Superior Public School: 6 unique mentions (8 items tagged)
+- Generic "School": 12 unique mentions (24 items tagged with case variants)
+- Megalong Valley School: 6 items tagged (no mention text extracted - needs review)
+- Mount Victoria School: 1 item tagged (no mention text extracted - needs review)
+
+**Getty AAT alignment:**
+
+Educational schools follow Getty AAT dual-faceted structure:
+- **Objects Facet > Built Environment:** `schools (buildings)` under `educational buildings`
+- **Agents Facet:** `schools (organisations)` under `educational institutions`
+
+This matches AAT treatment of organisations that have both physical and institutional aspects.
+
+**Decision strategy:**
+
+1. **Disambiguation approach:** Following hotel/church model with parenthetical qualifiers rather than polyhierarchy approach used for Schools of Arts
+2. **Generic term mapping:** Unqualified "School" maps to `School (organisation)` as primary (65.2% organisational usage vs 17.4% building usage)
+3. **Specific school names:** Map to organisation variant as synonym, allowing explicit building qualifier when needed
+4. **Polyhierarchical parent:** Plural "Schools" appears in both facets for hierarchical browsing, following leaf-node tagging pattern
+
+**Data quality issues identified:**
+
+1. **Case-variant duplication:** 12 items tagged with both "School" AND "school" - consolidated in application CSV
+2. **School of Arts misclassifications:** 3 items incorrectly tagged as "School" (educational) should be "School of Arts" (cultural)
+3. **Missing extraction data:** Megalong Valley School (6 items) and Mount Victoria School (1 item) tagged but no mention text extracted - requires manual review
+
+**Implementation:**
+
+1. Classification analysis: `data/entity_classification/educational-schools_classification_results.md`
+2. Taxonomy structure: `scripts/39_implement_educational_schools_taxonomy.py`
+3. Item applications: `scripts/40_generate_schools_tag_applications.py`
+4. Output CSV: `entity-tagging-system/outputs/educational-schools/item_tag_application.csv`
+5. School of Arts corrections: `entity-tagging-system/outputs/educational-schools/school-of-arts-retagging-instructions.md`
+
+**Validation:**
+
+- Classification accuracy: 94.4% on first pass (1 error, 2 judgement refinements) for similar Schools of Arts work
+- User correction applied: Mention 22 changed from "building" to "both" (land reservation + attendance)
+- Applied learnings from Hotels and Schools of Arts classifications
+
+**Status:** Taxonomy implemented 2025-11-14, ready for Zotero application
+
+---
