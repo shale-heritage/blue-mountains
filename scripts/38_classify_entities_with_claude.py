@@ -68,13 +68,31 @@ def extract_context(text: str, entity_name: str, context_chars: int = 400) -> st
     """
     Extract context around first mention of entity.
 
+    Handles orthographic variants:
+    - Space/hyphen interchange: "boarding houses" matches "boarding-houses"
+    - Optional plural: "boarding house" matches "boarding houses"
+    - Apostrophe variants: handles both straight and curly quotes
+
     Returns:
         Context string, or None if entity not found
     """
     import re
 
-    # Find entity mention (case-insensitive, handle apostrophes)
-    pattern = re.compile(re.escape(entity_name).replace(r"\'", r"'?"), re.IGNORECASE)
+    # Build flexible pattern from entity name
+    pattern_str = re.escape(entity_name)
+
+    # Space/hyphen interchange: space → space or hyphen, hyphen → space or hyphen
+    pattern_str = pattern_str.replace(r"\ ", r"[\s-]")
+    pattern_str = pattern_str.replace(r"\-", r"[\s-]")
+
+    # Optional plural: make trailing 's' optional
+    # Match 's' followed by word boundary or end of string
+    pattern_str = re.sub(r's(\\b|\$)', r's?\\1', pattern_str, flags=re.IGNORECASE)
+
+    # Apostrophe variants (handle straight and curly quotes)
+    pattern_str = pattern_str.replace(r"\'", r"'?")
+
+    pattern = re.compile(pattern_str, re.IGNORECASE)
     match = pattern.search(text)
 
     if not match:
@@ -228,7 +246,7 @@ def main():
     )
     parser.add_argument(
         '--entity-type',
-        choices=['hotels', 'churches', 'schools', 'halls', 'boarding-houses', 'educational-schools'],
+        choices=['hotels', 'churches', 'schools', 'halls', 'boarding-houses', 'educational-schools', 'public-houses'],
         help='Type of entity to classify'
     )
     parser.add_argument(
@@ -283,6 +301,9 @@ def main():
             'Katoomba Public School', 'Katoomba Superior Public School',
             'Megalong Valley School', 'Mount Victoria School',
             'School', 'school',
+        ],
+        'public-houses': [
+            'Public house', 'public house', 'Pub', 'pub', 'Pubs', 'pubs',
         ],
     }
 
