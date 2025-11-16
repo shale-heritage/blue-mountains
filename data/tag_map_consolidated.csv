@@ -506,9 +506,6 @@ Katoomba Rifle Reserve,Katoomba Rifle Reserve,hierarchy,parent=rifle reserves
 Katoomba Rifle Reserve,Katoomba Rifle Reserve,hierarchy,parent=Rifle reserves
 Katoomba Rifle Reserves,Katoomba Rifle Reserves,hierarchy,parent=volunteer rifle reserves
 Katoomba Rifle Reserves,Katoomba Rifle Reserve,synonym,Plural variant - standardised to singular
-Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=schools of arts
-Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Schools of Arts
-Katoomba School of Arts,Katoomba School of Arts,hierarchy,parent=Schools of Arts
 Katoomba Shale Mine,Katoomba Shale Mine (facility),synonym,Unqualified variant from original Zotero tags
 Katoomba Shale Mine (facility),Katoomba Shale Mine (facility),hierarchy,parent=shale mines
 Katoomba Shooting Fishing and Excursion Club,Katoomba Shooting Fishing and Excursion Club,hierarchy,parent=outdoor recreation clubs
@@ -1163,12 +1160,7 @@ Primary source,PRIMARY SOURCE,exclude,Metadata flag - not a subject tag. Item ty
 Progress committees,progress committees,synonym,Capitalized variant from original Zotero tags
 Progress committees,Progress committees,hierarchy,parent=Civic organizations
 Property crimes,Property crimes,hierarchy,parent=Crimes - THEMATIC
-Pub,public house,synonym,Colloquial term for public house
-Pub,public house,synonym,Colloquial term for public house
 Pub,Public house,synonym,Colloquial term for public house
-Public house,Public house,hierarchy,parent=Public houses
-Public houses,Public houses,hierarchy,parent=Accommodation and hospitality venues
-Public houses,Public houses,hierarchy,parent=Alcohol-related venues - THEMATIC
 Public meeting,public meeting,synonym,Capitalized variant from original Zotero tags
 Public officials,Public officials,hierarchy,parent=Occupations
 Public officials,Public officials,hierarchy,parent=Politics & Governance - THEMATIC
@@ -1180,7 +1172,6 @@ Publican's License,Publican's licensing,synonym,Historical term for licence to o
 Publican's License,Publican's License,hierarchy,parent=Licenses
 Publican's License,Publican's License,hierarchy,parent=Licensing & regulation - THEMATIC
 Publican's licensing,Publican's licensing,hierarchy,parent=Licensing
-Pubs,public houses,synonym,Colloquial short form - prefer full form public houses
 Race & Ethnicity,Race & Ethnicity,hierarchy,parent=(thematic grouping)
 Racial stereotyping & performance,Racial stereotyping & performance,hierarchy,parent=Race & Ethnicity - THEMATIC
 Railway,railway,synonym,Capitalized variant from original Zotero tags
@@ -1281,11 +1272,6 @@ Ruined Castle mining district,Ruined Castle mining district,hierarchy,parent=min
 Rum,Rum,hierarchy,parent=Spirits
 Salvation Army,Salvation Army,hierarchy,parent=religious social movements
 Salvation Army,Salvation Army,hierarchy,parent=Religious social movements
-School of Arts,school of arts,synonym,Capitalized variant from original Zotero tags
-School of Arts,School of Arts,hierarchy,parent=Schools of Arts
-School of Arts,School of Arts,hierarchy,parent=Schools of Arts
-Schools of Arts,Schools of Arts,hierarchy,parent=Cultural societies
-Schools of Arts,Schools of Arts,hierarchy,parent=Halls
 Senior-Constable Illingworth,Senior-Constable John Illingworth,synonym,Short form without first name
 Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=Police
 Senior-Constable John Illingworth,Senior-Constable John Illingworth,hierarchy,parent=senior-constable
@@ -1976,10 +1962,8 @@ progress committee,progress committee,hierarchy,parent=progress committees (sing
 progress committees,progress committees,hierarchy,parent=civic organisations
 property crimes,property crimes,hierarchy,parent=crimes - THEMATIC
 property offences,property offences,hierarchy,parent=court cases
-pub,public house,synonym,Short form (UK/Australian) - lowercase variant
 public health and safety activities,public health and safety activities,hierarchy,parent=societal activities
 public house (building),public house (building),hierarchy,parent=public houses (buildings)
-public houses,public houses,hierarchy,parent=Alcohol-related venues - THEMATIC
 public houses (buildings),public houses (buildings),hierarchy,parent=accommodation buildings
 public meeting,public meeting,hierarchy,parent=political events
 public meeting,public meeting,keep,Substring coincidence - semantically unrelated concepts (automated triage)
@@ -2044,11 +2028,6 @@ rum,rum,hierarchy,parent=spirits
 runaway horse incidents,runaway horse incidents,hierarchy,parent=horse accidents
 sanatorium,sanatorium,hierarchy,parent=sanatoriums
 sanatoriums,sanatoriums,hierarchy,parent=healthcare facilities
-school of art,school of arts,synonym,Variant spelling - standardised to School of Arts
-school of arts,school of arts,hierarchy,parent=schools of arts
-schools of art,schools of arts,synonym,Variant spelling - standardised to Schools of Arts
-schools of arts,schools of arts,hierarchy,parent=cultural societies
-schools of arts,schools of arts,hierarchy,parent=halls
 senior-constable,senior-constable,hierarchy,parent=police officers
 sergeant,sergeant,hierarchy,parent=police officers
 serving alcohol to minors,serving alcohol to minors,hierarchy,parent=alcohol-related
@@ -2224,3 +2203,30 @@ cottages (buildings),cottages (buildings),hierarchy,parent=accommodation buildin
 cottage (building),cottage (building),hierarchy,parent=cottages (buildings)
 cottages (businesses),cottages (businesses),hierarchy,parent=hospitality businesses
 cottage (business),cottage (business),hierarchy,parent=cottages (businesses)
+schools of arts (buildings),schools of arts (buildings),hierarchy,parent=halls
+school of arts (building),school of arts (building),hierarchy,parent=schools of arts (buildings)
+Katoomba School of Arts (building),Katoomba School of Arts (building),hierarchy,parent=schools of arts (buildings)
+Mines School of Arts (building),Mines School of Arts (building),hierarchy,parent=schools of arts (buildings)
+schools of arts (organisations),schools of arts (organisations),hierarchy,parent=cultural societies
+school of arts (organisation),school of arts (organisation),hierarchy,parent=schools of arts (organisations)
+Katoomba School of Arts (organisation),Katoomba School of Arts (organisation),hierarchy,parent=schools of arts (organisations)
+Mines School of Arts (organisation),Mines School of Arts (organisation),hierarchy,parent=schools of arts (organisations)
+School of Arts,school of arts (building),synonym,Capitalised variant - maps to building aspect
+School of Arts,school of arts (organisation),synonym,Capitalised variant - maps to organisation aspect
+school of art,school of arts (building),synonym,Singular variant - maps to building aspect
+school of art,school of arts (organisation),synonym,Singular variant - maps to organisation aspect
+schools of art,schools of arts (buildings),synonym,Plural variant - maps to building aspect
+schools of art,schools of arts (organisations),synonym,Plural variant - maps to organisation aspect
+public houses (buildings),public houses (buildings),hierarchy,parent=accommodation buildings
+public houses (businesses),public houses (businesses),hierarchy,parent=hospitality businesses
+public house (business),public house (business),hierarchy,parent=public houses (businesses)
+public houses (buildings),public houses (buildings),hierarchy,parent=Accommodation and hospitality venues
+public houses (businesses),public houses (businesses),hierarchy,parent=Alcohol-related venues - THEMATIC
+Pub,public house (building),synonym,Colloquial term - maps to building aspect
+Pub,public house (business),synonym,Colloquial term - maps to business aspect
+pub,public house (building),synonym,Short form (UK/Australian) - maps to building aspect
+pub,public house (business),synonym,Short form (UK/Australian) - maps to business aspect
+Pubs,public houses (buildings),synonym,Colloquial plural - maps to building aspect
+Pubs,public houses (businesses),synonym,Colloquial plural - maps to business aspect
+pubs,public houses (buildings),synonym,Colloquial plural (lowercase) - maps to building aspect
+pubs,public houses (businesses),synonym,Colloquial plural (lowercase) - maps to business aspect
