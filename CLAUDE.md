@@ -205,6 +205,47 @@ docs/
 6. **Application** - Update tag_consolidation_map.csv
 7. **Verification** - Generate post-change reports
 
+### Dual-Nature Entity Classification Workflow
+
+For entities with both building and organisational aspects (hotels, churches, schools of arts, etc.):
+
+1. **Extract mentions** - Use script 38 to collect contexts from Zotero
+   ```bash
+   venv/bin/python scripts/38_classify_entities_with_claude.py --entity-type {type}
+   ```
+
+2. **Classify with entity-classifier skill** - Use NLU (Natural Language Understanding) approach
+   - Invoke skill: `/skill entity-classifier`
+   - Paste the auto-generated prompt from step 1
+   - Analyse each mention using linguistic heuristic framework
+
+3. **Generate markdown report** - **IMPORTANT: Always create a markdown file, never just chat responses**
+   - Save to: `entity-tagging-system/outputs/{entity-type}/{entity-type}_classification_results.md`
+   - Use template: `entity-tagging-system/templates/classification-report-template.md`
+   - Include: detailed analysis, pattern identification, taxonomy recommendations, comparison tables
+
+4. **Create item tag application CSV** - Prepare Zotero retagging instructions
+   - Format: old_tag, new_tags, action, reasoning
+   - Save to: `entity-tagging-system/outputs/{entity-type}/item_tag_application.csv`
+
+5. **Implement taxonomy changes** - Create numbered script to update master CSV
+   - Script naming: `scripts/{NN}_implement_{entity-type}_taxonomy.py`
+   - Always create backup before modifications
+   - Document net change in entries
+
+6. **Document decision** - Add rationale to `planning/consolidation-decisions.md`
+
+**Templates available:**
+- Classification prompt: `entity-tagging-system/templates/classification-prompt-template.md`
+- Classification report: `entity-tagging-system/templates/classification-report-template.md`
+
+**Why markdown reports matter:**
+- Creates permanent audit trail
+- Enables cross-session review and validation
+- Facilitates methodology sharing
+- Supports reproducible research
+- Chat responses are ephemeral; markdown files persist
+
 ### Script Numbering Convention
 - **01-09**: Setup and data preparation
 - **10-19**: Entity-specific analysis (churches, councils, schools)
