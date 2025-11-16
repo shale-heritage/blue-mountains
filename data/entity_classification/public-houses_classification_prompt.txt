@@ -1,0 +1,59 @@
+I need you to classify 4 mentions of public-houses in historical newspaper text.
+
+For each mention below, determine whether the public-houses should be classified as:
+- **building** (Built Environment facet only)
+- **business/organisation** (Agents facet only)
+- **both** (polyhierarchical - appears in both facets)
+
+Apply the entity classification heuristic, looking for spatial indicators (at/in/near, events occurring, accommodation) vs agency indicators (ownership, operations, services, financial actions).
+
+Please analyse each mention independently and provide the structured output format specified in the skill.
+
+---
+
+## Mention 1
+
+**Entity:** Pub
+**Item:** Megalong Valley (1893-06-23) (23 June 1893)
+**Trove URL:** https://trove.nla.gov.au/newspaper/article/194113432/21705257
+
+**Context:**
+> itely in-formed him that he was having one, and all that was needed to perfect matters was a black boy to rub us down. We, however, managed to reach the post office 15 minutes inside of contract time. Jim says he has not yet recovered, although this occurred a week ago, and he intends to give the Blackfellows Ladder best. 
+Re the application for a public house, many of the residents are against the project. [We should think a hotel would be preferable to the sly-grog and gambling shanties which are said to exist at the Mines at present. We take a public house to be the lesser of the two evils. A public house is watched by the police, and the Licensing Act is strict enough to keep even the most
+
+---
+
+## Mention 2
+
+**Entity:** Pub
+**Item:** Rich Mineral Deposits (1889-10-29) (29 October 1889)
+**Trove URL:** http://nla.gov.au/nla.news-article227569730
+
+**Context:**
+> We said it, we looked it, and even the boys "jollied" us as we came within the bounds of civilisation. The latter action made us bite our lips, and the color rush to our cheeks, but we had to bear these gratuitous insults without rebuke, because we knew and felt that young Australia had the best of us. The nearest "pub." had a fascination for us. We allowed ourselves to roll off our horses, and the amiable old lady who presided behind the bar soon comforted our weary spirits (we had spirits) with something enervating. And thus ended our mission to Katoomba, and glad we were that it was so. We all voted Mr. Hassall, Mr.
+
+---
+
+## Mention 3
+
+**Entity:** pub
+**Item:** Megalong Valley (1893-06-23) (23 June 1893)
+**Trove URL:** https://trove.nla.gov.au/newspaper/article/194113432/21705257
+
+**Context:**
+> itely in-formed him that he was having one, and all that was needed to perfect matters was a black boy to rub us down. We, however, managed to reach the post office 15 minutes inside of contract time. Jim says he has not yet recovered, although this occurred a week ago, and he intends to give the Blackfellows Ladder best. 
+Re the application for a public house, many of the residents are against the project. [We should think a hotel would be preferable to the sly-grog and gambling shanties which are said to exist at the Mines at present. We take a public house to be the lesser of the two evils. A public house is watched by the police, and the Licensing Act is strict enough to keep even the most
+
+---
+
+## Mention 4
+
+**Entity:** pub
+**Item:** Rich Mineral Deposits (1889-10-29) (29 October 1889)
+**Trove URL:** http://nla.gov.au/nla.news-article227569730
+
+**Context:**
+> We said it, we looked it, and even the boys "jollied" us as we came within the bounds of civilisation. The latter action made us bite our lips, and the color rush to our cheeks, but we had to bear these gratuitous insults without rebuke, because we knew and felt that young Australia had the best of us. The nearest "pub." had a fascination for us. We allowed ourselves to roll off our horses, and the amiable old lady who presided behind the bar soon comforted our weary spirits (we had spirits) with something enervating. And thus ended our mission to Katoomba, and glad we were that it was so. We all voted Mr. Hassall, Mr.
+
+---
+
