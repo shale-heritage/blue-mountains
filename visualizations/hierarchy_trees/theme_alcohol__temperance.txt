@@ -3,8 +3,39 @@ THEMATIC GROUPING: alcohol & temperance
 
 alcohol & temperance
 ├── Alcohol-related venues
-│   ├── hotels
-│   └── public houses
+│   ├── Hotels
+│   │   ├── Allen's Hotel
+│   │   ├── Belgravia Hotel
+│   │   ├── Brown's Hotel
+│   │   ├── Carrington Hotel
+│   │   ├── Centennial Hotel
+│   │   ├── Comet Hotel
+│   │   ├── Delaney's Hotel
+│   │   ├── Falls Hotel
+│   │   ├── Family Hotel
+│   │   ├── Fryer's Family Hotel
+│   │   ├── Grand Hotel
+│   │   ├── Grand Hotel (Sydney)
+│   │   ├── Great Western Hotel
+│   │   ├── Hoffman's House
+│   │   ├── Hotel
+│   │   ├── Hotel Wentworth
+│   │   ├── Hydora House Hotel
+│   │   ├── Imperial Hotel
+│   │   ├── Katoomba Family Hotel
+│   │   ├── Katoomba Hotel
+│   │   ├── Leura Hotel
+│   │   ├── Megalong Hotel
+│   │   ├── Montrose House
+│   │   ├── Mount Victoria Hotel
+│   │   ├── Mrs Long's Hotel
+│   │   ├── Oxford Hotel (Sydney)
+│   │   ├── Railway Hotel
+│   │   └── Wentworth Falls Hotel
+│   ├── Public houses
+│   │   └── Public house
+│   └── public houses (businesses)
+│       └── public house (business)
 ├── alcohol consumption & behaviour
 │   ├── Drunkeness
 │   ├── alcoholic beverages
@@ -93,6 +124,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 85
+  Total nodes in theme: 116
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

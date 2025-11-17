@@ -3,12 +3,18 @@ THEMATIC GROUPING: Social issues
 
 Social issues
 ├── Economic hardship
+│   ├── Charity
+│   ├── Unemployment
+│   ├── Unemployment relief
 │   ├── bankruptcy
 │   ├── charity
 │   ├── unemployment
 │   ├── unemployment insurance
 │   └── unemployment relief
 └── Vulnerable populations
+    ├── Children
+    ├── Miners' families
+    ├── Widows
     ├── children
     ├── miners' families
     └── widows
@@ -19,6 +25,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 11
+  Total nodes in theme: 17
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

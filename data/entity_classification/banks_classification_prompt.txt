@@ -1,0 +1,77 @@
+I need you to classify 4 mentions of banks in historical newspaper text.
+
+For each mention below, determine whether the banks should be classified as:
+- **building** (Built Environment facet only)
+- **business/organisation** (Agents facet only)
+- **both** (polyhierarchical - appears in both facets)
+
+Apply the entity classification heuristic, looking for spatial indicators (at/in/near, events occurring, accommodation) vs agency indicators (ownership, operations, services, financial actions).
+
+Please analyse each mention independently and provide the structured output format specified in the skill.
+
+---
+
+## Mention 1
+
+**Entity:** Bank
+**Item:** Town Talk (1903-10-02) (2 October 1903)
+**Trove URL:** http://nla.gov.au/nla.news-article188872658
+
+**Context:**
+> Blue Mountain Gazette (Katoomba, NSW : 1903 - 1904), Friday 2 October 1903, page 2
+
+TOWN TALK.
+The Commercial Bank of Australia opened a branch office in Katoomba during the week.
+Another wet Saturday afternoon last week prevented any of our local riflemen putting in practice.
+Special trains will run from the metropolis to the mountains on Mon-day next (Eight Hour Day).
+The late rains have made the local gardeners rejoice, and they have planted large quantitie
+
+---
+
+## Mention 2
+
+**Entity:** Bank
+**Item:** Local Jottings (1889-09-21) (21 September 1889)
+**Trove URL:** http://nla.gov.au/nla.news-article194115775
+
+**Context:**
+> an held in respect by the miners, and it is their wish that he will fare better in the future. Not long ago he met with an accident on the aerial tramway that was within a hairspace of proving fatal. We hear two engagements are open to him, one being near the city.
+Big fall of snow at Sunny Corner on Saturday.
+William Payne, formerly of Orange, is bankrupt. His creditors will feel pain.
+Jerry has a new apprentice to the stonebreaking.
+The following land has been reserved for water supply and public recreation in lieu of water reserve 104, which was revoked on the 7th instant :—No 9467. County of Cook, parish of Jamieson, village of Brasfort, containing an area of about 15 1/2 acres, commencing o
+
+---
+
+## Mention 3
+
+**Entity:** bank
+**Item:** Town Talk (1903-10-02) (2 October 1903)
+**Trove URL:** http://nla.gov.au/nla.news-article188872658
+
+**Context:**
+> Blue Mountain Gazette (Katoomba, NSW : 1903 - 1904), Friday 2 October 1903, page 2
+
+TOWN TALK.
+The Commercial Bank of Australia opened a branch office in Katoomba during the week.
+Another wet Saturday afternoon last week prevented any of our local riflemen putting in practice.
+Special trains will run from the metropolis to the mountains on Mon-day next (Eight Hour Day).
+The late rains have made the local gardeners rejoice, and they have planted large quantitie
+
+---
+
+## Mention 4
+
+**Entity:** bank
+**Item:** Local Jottings (1889-09-21) (21 September 1889)
+**Trove URL:** http://nla.gov.au/nla.news-article194115775
+
+**Context:**
+> an held in respect by the miners, and it is their wish that he will fare better in the future. Not long ago he met with an accident on the aerial tramway that was within a hairspace of proving fatal. We hear two engagements are open to him, one being near the city.
+Big fall of snow at Sunny Corner on Saturday.
+William Payne, formerly of Orange, is bankrupt. His creditors will feel pain.
+Jerry has a new apprentice to the stonebreaking.
+The following land has been reserved for water supply and public recreation in lieu of water reserve 104, which was revoked on the 7th instant :—No 9467. County of Cook, parish of Jamieson, village of Brasfort, containing an area of about 15 1/2 acres, commencing o
+
+---
+

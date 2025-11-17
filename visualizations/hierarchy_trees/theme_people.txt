@@ -260,6 +260,9 @@ people
     │   ├── Reverend W Lampard
     │   ├── Reverend W R Orton
     │   └── Reverend W Tollis
+    ├── educational occupations
+    │   └── school teachers
+    │       └── school teacher
     ├── hospitality workers
     │   ├── hospitality worker
     │   ├── hotelliers
@@ -370,6 +373,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 362
+  Total nodes in theme: 365
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

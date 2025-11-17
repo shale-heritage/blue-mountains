@@ -2,18 +2,46 @@ PRIMARY FACET: Activities
 ================================================================================
 
 Activities
+├── Regulatory processes
+│   └── Licensing
+│       ├── Hotel licensing
+│       ├── Liquor licensing
+│       └── Publican's licensing
+├── Social behaviours
+│   ├── Drinking (alcohol)
+│   ├── Gambling
+│   └── Temperance
 ├── charitable and welfare activities
+│   ├── Charity
+│   ├── Unemployment relief
 │   ├── charitable and welfare activity
 │   ├── charity
 │   └── unemployment relief
 ├── commercial activities
+│   └── Liquor trade
+│       ├── Liquor sales
+│       └── Wholesale liquor business
 ├── communication activities
+│   ├── Advertising
+│   ├── Fundraising
+│   ├── Postal services
+│   │   └── Postal service
 │   ├── advertising
 │   ├── communication activity
 │   ├── fundraising
 │   └── postal services
 │       └── postal service
 ├── economic activities
+│   ├── Mining
+│   │   ├── Coal mining
+│   │   │   ├── Coal
+│   │   │   └── Coal mines
+│   │   ├── Gold mining
+│   │   └── Shale mining
+│   │       └── Shale mines
+│   ├── Tourism
+│   ├── Transport
+│   │   └── Horseborne transportation
 │   ├── agriculture
 │   │   └── animal husbandry
 │   │       └── animal breeding
@@ -34,14 +62,17 @@ Activities
 │   │   └── shale mining
 │   ├── tourism
 │   ├── transport
-│   │   ├── Trucking
 │   │   ├── horseborne transportation
 │   │   └── railway operations
 │   │       ├── railway operation
 │   │       └── tourist trains
 │   └── truck system
 ├── military activities
+│   └── Military
 ├── recreation activities
+│   ├── Horseback riding
+│   ├── Recreation for miners
+│   ├── Sports
 │   ├── athletics
 │   ├── billiards
 │   ├── cycling
@@ -66,6 +97,7 @@ Activities
     │   ├── New South Wales Police
     │   └── policing
     ├── military activities
+    │   └── Military
     ├── public health and safety activities
     │   └── animal control
     │       ├── feral dog control
@@ -79,6 +111,6 @@ Activities
 
 
 STATISTICS:
-  Total nodes in facet: 75
+  Total nodes in facet: 107
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

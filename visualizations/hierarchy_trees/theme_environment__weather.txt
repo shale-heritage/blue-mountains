@@ -3,6 +3,8 @@ THEMATIC GROUPING: environment & weather
 
 environment & weather
 ├── Natural resources
+│   ├── Coal
+│   ├── Shale mines
 │   ├── coal
 │   └── shale mines
 │       ├── Katoomba Shale Mine (facility)
@@ -20,6 +22,7 @@ environment & weather
 ├── natural features
 │   ├── caves & geological features
 │   │   ├── Jenolan Caves
+│   │   │   └── Jenolan Caves Road
 │   │   └── Yarrangobilly Caves
 │   ├── gullies
 │   │   ├── Break Neck Gully
@@ -47,6 +50,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 39
+  Total nodes in theme: 42
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

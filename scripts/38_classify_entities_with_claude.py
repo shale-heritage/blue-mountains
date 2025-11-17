@@ -246,7 +246,7 @@ def main():
     )
     parser.add_argument(
         '--entity-type',
-        choices=['hotels', 'churches', 'schools', 'halls', 'boarding-houses', 'educational-schools', 'public-houses'],
+        choices=['hotels', 'churches', 'schools', 'halls', 'boarding-houses', 'educational-schools', 'public-houses', 'banks', 'retailers'],
         help='Type of entity to classify'
     )
     parser.add_argument(
@@ -304,6 +304,16 @@ def main():
         ],
         'public-houses': [
             'Public house', 'public house', 'Pub', 'pub', 'Pubs', 'pubs',
+        ],
+        'banks': [
+            'Bank', 'bank',
+        ],
+        'retailers': [
+            'Store', 'store', 'Retailers and stores', 'retailers and stores',
+            'retailer or store',
+            'Douglas and Company', 'Nimmo\'s', "Nimmo's",
+            'P. Mullany and Company', 'Peckman Bros', 'Peckman Brothers',
+            'Tabrett and Company',
         ],
     }
 

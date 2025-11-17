@@ -2,6 +2,38 @@ THEMATIC GROUPING: Politics & Governance
 ================================================================================
 
 Politics & Governance
+├── Government bodies
+│   ├── Councils
+│   │   ├── Katoomba Council
+│   │   └── Lithgow Council
+│   ├── Courts
+│   │   ├── Court
+│   │   ├── Katoomba Court
+│   │   ├── Licensing Court
+│   │   ├── Police court
+│   │   └── Supreme Court
+│   ├── Other government bodies
+│   │   └── Aborigines' Protection Board
+│   ├── Postal authorities
+│   │   └── Postal Department
+│   └── Railway authorities
+│       └── Railway commission
+├── Political events
+├── Public officials
+│   ├── Aldermen
+│   ├── Licensing inspector
+│   ├── Minister for Mines
+│   ├── Postal employees
+│   │   ├── Mailmen
+│   │   │   ├── Mailman
+│   │   │   └── Postboy
+│   │   └── Postmasters
+│   │       ├── Mrs. A. Smith
+│   │       ├── Mrs. England
+│   │       ├── Mrs. H. Corston
+│   │       ├── Mrs. James
+│   │       └── Postmaster
+│   └── Stationmaster
 ├── government bodies
 │   ├── councils
 │   │   ├── Katoomba Council
@@ -54,6 +86,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 46
+  Total nodes in theme: 78
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -2,13 +2,114 @@ PRIMARY FACET: Built Environment
 ================================================================================
 
 Built Environment
+├── Accommodation and hospitality venues
+│   ├── Boarding houses
+│   │   ├── Boarding house
+│   │   └── Orama Boarding House
+│   ├── Cottages
+│   │   └── Cottage
+│   ├── Dwellings
+│   │   └── Miners' dwellings
+│   ├── Hotels
+│   │   ├── Allen's Hotel
+│   │   ├── Belgravia Hotel
+│   │   ├── Brown's Hotel
+│   │   ├── Carrington Hotel
+│   │   ├── Centennial Hotel
+│   │   ├── Comet Hotel
+│   │   ├── Delaney's Hotel
+│   │   ├── Falls Hotel
+│   │   ├── Family Hotel
+│   │   ├── Fryer's Family Hotel
+│   │   ├── Grand Hotel
+│   │   ├── Grand Hotel (Sydney)
+│   │   ├── Great Western Hotel
+│   │   ├── Hoffman's House
+│   │   ├── Hotel
+│   │   ├── Hotel Wentworth
+│   │   ├── Hydora House Hotel
+│   │   ├── Imperial Hotel
+│   │   ├── Katoomba Family Hotel
+│   │   ├── Katoomba Hotel
+│   │   ├── Leura Hotel
+│   │   ├── Megalong Hotel
+│   │   ├── Montrose House
+│   │   ├── Mount Victoria Hotel
+│   │   ├── Mrs Long's Hotel
+│   │   ├── Oxford Hotel (Sydney)
+│   │   ├── Railway Hotel
+│   │   └── Wentworth Falls Hotel
+│   ├── Public houses
+│   │   └── Public house
+│   ├── Stables
+│   │   └── Stable
+│   └── public houses (buildings)
+│       └── public house (building)
+├── Civic buildings
+│   ├── Council buildings
+│   │   └── Council Chambers
+│   ├── Court buildings
+│   │   ├── Courthouse
+│   │   └── Katoomba Court
+│   ├── Police facilities
+│   │   └── Police station
+│   └── Postal facilities
+│       └── Post office
+├── Commercial buildings
+│   └── Store
+├── Community buildings
+│   └── Halls
+│       ├── Clarke's Hall
+│       ├── Masonic Hall
+│       ├── Mount Victoria Hall
+│       ├── Odd Fellows' Hall
+│       ├── Schools of Arts
+│       │   ├── Katoomba School of Arts
+│       │   └── School of Arts
+│       └── Waudby's Hall
+├── Educational buildings
+│   └── Schools
+│       ├── Katoomba Public School
+│       ├── Katoomba Superior Public School
+│       ├── Megalong Valley School
+│       ├── Mount Victoria School
+│       └── School
+├── Infrastructure
+│   ├── Mining infrastructure
+│   │   └── Tramway
+│   ├── Transport infrastructure
+│   │   ├── Railway
+│   │   │   ├── Great Western Railway
+│   │   │   ├── Railway infrastructure
+│   │   │   │   ├── Katoomba station
+│   │   │   │   └── Zig Zag
+│   │   │   └── Railway operations
+│   │   │       └── Tourist trains
+│   │   └── Roads
+│   │       ├── Jenolan Caves Road
+│   │       ├── Nellie's Glen Road
+│   │       └── Nellie's Glen Track
+│   └── Utilities
+│       ├── Gas
+│       └── Sewerage
+├── Religious buildings
+│   └── Churches
+│       ├── Church
+│       ├── Congregational Church
+│       ├── Katoomba Congregational Church
+│       ├── Methodist Church
+│       ├── Roman Catholic Church
+│       ├── St Hilda's Church
+│       └── Wesleyan Church
 ├── accommodation and hospitality venues
 ├── accommodation buildings
 │   ├── boarding houses (buildings)
+│   │   ├── Miss Kelly's Boarding House (building)
+│   │   ├── Mrs Gillen's Boarding House (building)
 │   │   ├── Orama Boarding House (building)
 │   │   └── boarding house (building)
-│   ├── cottages
-│   │   └── cottage
+│   ├── cottages (buildings)
+│   │   └── cottage (building)
 │   ├── dwellings
 │   │   ├── dwelling
 │   │   └── miners' dwellings
@@ -33,6 +134,7 @@ Built Environment
 │   │   ├── Mount Victoria Hotel (building)
 │   │   ├── Oxford Hotel (Sydney) (building)
 │   │   ├── Railway Hotel (building)
+│   │   ├── Railway Hotel Katoomba (building)
 │   │   ├── Wentworth Falls Hotel (building)
 │   │   ├── family hotels
 │   │   │   ├── Delaney's Family Hotel (building)
@@ -57,7 +159,9 @@ Built Environment
 │       └── post office
 ├── commercial buildings
 │   ├── Store
-│   ├── bank
+│   ├── banks (buildings)
+│   │   ├── Commercial Bank of Australia (building)
+│   │   └── bank (building)
 │   └── commercial building
 ├── community buildings
 │   └── halls
@@ -67,16 +171,24 @@ Built Environment
 │       ├── Odd Fellows' Hall
 │       ├── Waudby's Hall
 │       ├── hall
-│       └── schools of arts
-│           ├── Katoomba School of Arts
-│           └── school of arts
+│       └── schools of arts (buildings)
+│           ├── Katoomba School of Arts (building)
+│           ├── Mines School of Arts (building)
+│           └── school of arts (building)
 ├── educational buildings
-│   └── schools
-│       ├── Katoomba Public School
-│       ├── Katoomba Superior Public School
-│       ├── Megalong Valley School
-│       ├── Mount Victoria School
-│       └── school
+│   ├── Schools
+│   │   ├── Katoomba Public School
+│   │   ├── Katoomba Superior Public School
+│   │   ├── Megalong Valley School
+│   │   ├── Mount Victoria School
+│   │   └── School
+│   └── schools (buildings)
+│       ├── Katoomba Public School (building)
+│       ├── Katoomba Superior Public School (building)
+│       ├── Megalong Valley School (building)
+│       ├── Mount Victoria School (building)
+│       ├── School (building)
+│       └── school (building)
 ├── industrial buildings
 │   └── mines
 │       ├── coal mines
@@ -160,6 +272,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 156
+  Total nodes in facet: 268
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

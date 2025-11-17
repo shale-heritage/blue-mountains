@@ -4,6 +4,18 @@
 
 Rationalize 1600+ folksonomy tags from the Blue Mountains Historical Society's Zotero library into a controlled vocabulary aligned with Getty Art & Architecture Thesaurus (AAT) structure. Transform user-generated tags into a hierarchical, polyhierarchical thesaurus suitable for cultural heritage research.
 
+## Style Guide
+
+**All taxonomy entries must conform to style-guide.md**
+
+Key conventions:
+- **Capitalisation:** Lowercase for generic terms (hotel, church), Title Case for proper nouns (Grand Hotel, Katoomba)
+- **Spelling:** UK/Australian throughout (organisation, labour, colour)
+- **Disambiguation:** Lowercase qualifiers in parentheses: (building), (business), (organisation)
+- **Punctuation:** Minimal, preserve apostrophes in proper nouns
+
+See **style-guide.md** for comprehensive rules.
+
 ## Core Principles
 
 ### Getty AAT Alignment

@@ -2,7 +2,20 @@ THEMATIC GROUPING: Arts & Culture
 ================================================================================
 
 Arts & Culture
+├── Cultural activities
+│   └── Advertising
+├── Cultural events
+├── Cultural organizations
 ├── Cultural venues
+│   ├── Halls
+│   │   ├── Clarke's Hall
+│   │   ├── Masonic Hall
+│   │   ├── Mount Victoria Hall
+│   │   ├── Odd Fellows' Hall
+│   │   ├── Schools of Arts
+│   │   │   ├── Katoomba School of Arts
+│   │   │   └── School of Arts
+│   │   └── Waudby's Hall
 │   └── halls
 │       ├── Clarke's Hall
 │       ├── Masonic Hall
@@ -10,9 +23,10 @@ Arts & Culture
 │       ├── Odd Fellows' Hall
 │       ├── Waudby's Hall
 │       ├── hall
-│       └── schools of arts
-│           ├── Katoomba School of Arts
-│           └── school of arts
+│       └── schools of arts (buildings)
+│           ├── Katoomba School of Arts (building)
+│           ├── Mines School of Arts (building)
+│           └── school of arts (building)
 ├── cultural activities
 │   └── advertising
 ├── cultural events
@@ -29,6 +43,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 21
+  Total nodes in theme: 35
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

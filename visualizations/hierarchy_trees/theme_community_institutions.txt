@@ -32,18 +32,20 @@ community institutions
 │       ├── Odd Fellows' Hall
 │       ├── Waudby's Hall
 │       ├── hall
-│       └── schools of arts
-│           ├── Katoomba School of Arts
-│           └── school of arts
+│       └── schools of arts (buildings)
+│           ├── Katoomba School of Arts (building)
+│           ├── Mines School of Arts (building)
+│           └── school of arts (building)
 ├── cultural & recreational organisations
 │   ├── cultural societies
 │   │   ├── Katoomba Amateur Dramatic Club
 │   │   ├── chess and draughts club
 │   │   ├── cultural society
 │   │   ├── horticulture society
-│   │   └── schools of arts
-│   │       ├── Katoomba School of Arts
-│   │       └── school of arts
+│   │   └── schools of arts (organisations)
+│   │       ├── Katoomba School of Arts (organisation)
+│   │       ├── Mines School of Arts (organisation)
+│   │       └── school of arts (organisation)
 │   ├── performance groups
 │   │   ├── bands
 │   │   │   ├── Katoomba band
@@ -107,6 +109,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 99
+  Total nodes in theme: 101
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

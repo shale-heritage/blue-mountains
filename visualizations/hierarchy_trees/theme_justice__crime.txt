@@ -3,6 +3,7 @@ THEMATIC GROUPING: justice & crime
 
 justice & crime
 ├── Legal outcomes
+│   ├── Divorce
 │   ├── bankruptcy
 │   └── divorce
 ├── New South Wales Police
@@ -19,6 +20,9 @@ justice & crime
 │   └── court
 ├── crimes
 │   ├── Social order offences
+│   │   ├── Desertion
+│   │   ├── Drunkenness (crime)
+│   │   ├── Gambling
 │   │   ├── desertion
 │   │   ├── drunkenness (crime)
 │   │   └── gambling
@@ -65,6 +69,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 57
+  Total nodes in theme: 61
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

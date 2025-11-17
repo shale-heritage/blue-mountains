@@ -8,9 +8,11 @@ tourism & accommodation
 │   └── tourist trains
 └── tourist attractions
     ├── Jenolan Caves
+    │   └── Jenolan Caves Road
     ├── natural features
     │   ├── caves & geological features
     │   │   ├── Jenolan Caves
+    │   │   │   └── Jenolan Caves Road
     │   │   └── Yarrangobilly Caves
     │   ├── gullies
     │   │   ├── Break Neck Gully
@@ -41,6 +43,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 33
+  Total nodes in theme: 35
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

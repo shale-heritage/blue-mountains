@@ -2,6 +2,55 @@ PRIMARY FACET: Places
 ================================================================================
 
 Places
+├── Mining districts
+│   ├── Nellie's Glen
+│   │   ├── Nellie's Glen Road
+│   │   ├── Nellie's Glen Shale Mine
+│   │   └── Nellie's Glen Track
+│   ├── Ruined Castle
+│   │   └── Ruined Castle Shale Mine
+│   └── South Clifton
+│       └── South Clifton Tunnel Mine
+├── Natural features
+│   ├── Caves & geological features
+│   │   └── Jenolan Caves
+│   │       └── Jenolan Caves Road
+│   ├── Gullies
+│   │   └── Nellie's Glen
+│   │       ├── Nellie's Glen Road
+│   │       ├── Nellie's Glen Shale Mine
+│   │       └── Nellie's Glen Track
+│   ├── Mountain features
+│   │   └── Narrow Neck
+│   ├── Valleys
+│   │   ├── Jamieson Valley
+│   │   ├── Kanimbla Valley
+│   │   └── Megalong Valley
+│   └── Waterfalls
+│       ├── Katoomba Falls
+│       ├── Leura Falls
+│       └── Minnehaha
+├── Reserves
+│   ├── Leura Reserve
+│   ├── Rifle reserves
+│   │   └── Katoomba Rifle Reserve
+│   ├── South Katoomba Reserve
+│   └── Wentworth Falls Reserve
+├── Towns
+│   ├── Blackheath
+│   ├── Clarence
+│   ├── Hartley Vale
+│   ├── Katoomba
+│   │   ├── Carrington
+│   │   │   └── Katoomba Street
+│   │   └── South Katoomba
+│   ├── Leura
+│   ├── Lithgow
+│   ├── Medlow
+│   ├── Megalong
+│   │   └── Middle camp
+│   ├── Mount Victoria
+│   └── Sydney
 ├── mining districts
 │   ├── Hartley Vale mining district
 │   │   └── Hartley Vale Shale Mine (site)
@@ -16,6 +65,7 @@ Places
 ├── natural features
 │   ├── caves & geological features
 │   │   ├── Jenolan Caves
+│   │   │   └── Jenolan Caves Road
 │   │   └── Yarrangobilly Caves
 │   ├── gullies
 │   │   ├── Break Neck Gully
@@ -87,6 +137,6 @@ Places
 
 
 STATISTICS:
-  Total nodes in facet: 83
+  Total nodes in facet: 133
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -31,13 +31,20 @@ sport & recreation
 ├── shooting match
 ├── spectator sports
 ├── sporting events
+│   ├── athletics
+│   ├── billiards
 │   ├── coursing
+│   ├── cricket
 │   ├── cricket match
+│   ├── football
 │   ├── football match
 │   ├── horse races
+│   ├── rugby
 │   ├── rugby match
+│   ├── shooting
 │   ├── shooting match
-│   └── sporting event
+│   ├── sporting event
+│   └── tennis
 ├── sports clubs
 │   ├── athletic clubs
 │   │   ├── Katoomba Athletic Club
@@ -83,6 +90,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 75
+  Total nodes in theme: 82
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

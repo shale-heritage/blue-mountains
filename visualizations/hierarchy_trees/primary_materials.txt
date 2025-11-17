@@ -2,6 +2,17 @@ PRIMARY FACET: Materials
 ================================================================================
 
 Materials
+├── Consumable materials
+│   └── Alcoholic beverages
+│       ├── Beer
+│       ├── Mixed alcoholic beverages
+│       │   └── Grog
+│       ├── Spirits
+│       │   ├── Brandy
+│       │   ├── Gin
+│       │   ├── Rum
+│       │   └── Whisky
+│       └── Wine
 ├── coal
 ├── consumable materials
 │   └── alcoholic beverages
@@ -21,6 +32,6 @@ Materials
 
 
 STATISTICS:
-  Total nodes in facet: 17
+  Total nodes in facet: 28
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

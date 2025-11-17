@@ -2,33 +2,170 @@ THEMATIC GROUPING: Economy & Labour
 ================================================================================
 
 Economy & Labour
+├── Businesses
+│   ├── Commercial businesses
+│   │   ├── Financial institutions
+│   │   ├── Hospitality businesses
+│   │   │   ├── Boarding houses
+│   │   │   │   ├── Boarding house
+│   │   │   │   └── Orama Boarding House
+│   │   │   └── Hotels
+│   │   │       ├── Allen's Hotel
+│   │   │       ├── Belgravia Hotel
+│   │   │       ├── Brown's Hotel
+│   │   │       ├── Carrington Hotel
+│   │   │       ├── Centennial Hotel
+│   │   │       ├── Comet Hotel
+│   │   │       ├── Delaney's Hotel
+│   │   │       ├── Falls Hotel
+│   │   │       ├── Family Hotel
+│   │   │       ├── Fryer's Family Hotel
+│   │   │       ├── Grand Hotel
+│   │   │       ├── Grand Hotel (Sydney)
+│   │   │       ├── Great Western Hotel
+│   │   │       ├── Hoffman's House
+│   │   │       ├── Hotel
+│   │   │       ├── Hotel Wentworth
+│   │   │       ├── Hydora House Hotel
+│   │   │       ├── Imperial Hotel
+│   │   │       ├── Katoomba Family Hotel
+│   │   │       ├── Katoomba Hotel
+│   │   │       ├── Leura Hotel
+│   │   │       ├── Megalong Hotel
+│   │   │       ├── Montrose House
+│   │   │       ├── Mount Victoria Hotel
+│   │   │       ├── Mrs Long's Hotel
+│   │   │       ├── Oxford Hotel (Sydney)
+│   │   │       ├── Railway Hotel
+│   │   │       └── Wentworth Falls Hotel
+│   │   ├── Mining companies
+│   │   │   ├── Australian Kerosene Oil and Mineral Company
+│   │   │   ├── Gladstone Coal Company
+│   │   │   ├── Katoomba Coal and Shale Company
+│   │   │   ├── New South Wales Shale and Oil Company
+│   │   │   ├── South Clifton Mine Company
+│   │   │   ├── Sunny Corner Mining Company
+│   │   │   └── Waudby and Company
+│   │   ├── Retailers and stores
+│   │   │   ├── Douglas and Company
+│   │   │   ├── Nimmo's
+│   │   │   ├── Peckman Bros
+│   │   │   ├── Store
+│   │   │   └── Tabrett and Company
+│   │   └── Transport & logistics businesses
+│   └── commercial businesses
+│       ├── financial institutions
+│       │   ├── banks (businesses)
+│       │   │   ├── Commercial Bank of Australia (business)
+│       │   │   └── bank (business)
+│       │   └── financial institution
+│       ├── hospitality businesses
+│       │   ├── boarding houses (businesses)
+│       │   │   ├── Miss Kelly's Boarding House (business)
+│       │   │   ├── Orama Boarding House (business)
+│       │   │   └── boarding house (business)
+│       │   ├── cottages (businesses)
+│       │   │   └── cottage (business)
+│       │   ├── hotels (businesses)
+│       │   │   ├── Belgravia Hotel (business)
+│       │   │   ├── Carrington Hotel (business)
+│       │   │   ├── Centennial Hotel (business)
+│       │   │   ├── Grand Hotel (Sydney) (business)
+│       │   │   ├── Imperial Hotel (business)
+│       │   │   ├── Megalong Hotel (business)
+│       │   │   ├── Mount Victoria Hotel (business)
+│       │   │   ├── Railway Hotel Katoomba (business)
+│       │   │   ├── Wentworth Falls Hotel (business)
+│       │   │   ├── family hotels (businesses)
+│       │   │   │   ├── Delaney's Family Hotel (business)
+│       │   │   │   ├── Fryer's Family Hotel (business)
+│       │   │   │   ├── Katoomba Family Hotel (business)
+│       │   │   │   └── family hotel (business)
+│       │   │   └── hotel (business)
+│       │   └── public houses (businesses)
+│       │       └── public house (business)
+│       ├── mining companies
+│       │   ├── Australian Kerosene Oil and Mineral Company
+│       │   ├── Gladstone Coal Company
+│       │   ├── Great Wentworth Falls Coal and Shale Mining Company
+│       │   ├── Katoomba Coal and Shale Company
+│       │   ├── New South Wales Shale and Oil Company
+│       │   ├── South Clifton Mine Company
+│       │   ├── Sunny Corner Mining Company
+│       │   ├── Waudby and Company
+│       │   └── mining company
+│       ├── retailers and stores
+│       │   ├── Douglas and Company
+│       │   ├── P. Mullany and Company
+│       │   ├── Tabrett and Company
+│       │   └── retailer or store
+│       └── transport & logistics businesses
+│           ├── coach services
+│           │   ├── Peckman Brothers (business)
+│           │   └── coach service
+│           └── transport & logistics business
 ├── Economic distress
+│   ├── Unemployment
+│   ├── Unemployment relief
 │   ├── bankruptcy
 │   ├── unemployment
 │   ├── unemployment insurance
 │   └── unemployment relief
 ├── Industries
+│   ├── Mining
+│   │   ├── Coal mining
+│   │   │   ├── Coal
+│   │   │   └── Coal mines
+│   │   ├── Gold mining
+│   │   └── Shale mining
+│   │       └── Shale mines
+│   ├── Tourism
 │   ├── mining
 │   │   ├── coal mining
 │   │   ├── gold mining
 │   │   └── shale mining
 │   └── tourism
 ├── Labour relations
+│   ├── Strike
+│   ├── Unions
 │   ├── strike
 │   └── unions
 ├── Workforce
+│   ├── Miners
 │   └── miners
 │       └── miner
 └── businesses
     └── commercial businesses
         ├── financial institutions
-        │   ├── bank
+        │   ├── banks (businesses)
+        │   │   ├── Commercial Bank of Australia (business)
+        │   │   └── bank (business)
         │   └── financial institution
         ├── hospitality businesses
         │   ├── boarding houses (businesses)
+        │   │   ├── Miss Kelly's Boarding House (business)
         │   │   ├── Orama Boarding House (business)
         │   │   └── boarding house (business)
-        │   └── hotels (businesses)
+        │   ├── cottages (businesses)
+        │   │   └── cottage (business)
+        │   ├── hotels (businesses)
+        │   │   ├── Belgravia Hotel (business)
+        │   │   ├── Carrington Hotel (business)
+        │   │   ├── Centennial Hotel (business)
+        │   │   ├── Grand Hotel (Sydney) (business)
+        │   │   ├── Imperial Hotel (business)
+        │   │   ├── Megalong Hotel (business)
+        │   │   ├── Mount Victoria Hotel (business)
+        │   │   ├── Railway Hotel Katoomba (business)
+        │   │   ├── Wentworth Falls Hotel (business)
+        │   │   ├── family hotels (businesses)
+        │   │   │   ├── Delaney's Family Hotel (business)
+        │   │   │   ├── Fryer's Family Hotel (business)
+        │   │   │   ├── Katoomba Family Hotel (business)
+        │   │   │   └── family hotel (business)
+        │   │   └── hotel (business)
+        │   └── public houses (businesses)
+        │       └── public house (business)
         ├── mining companies
         │   ├── Australian Kerosene Oil and Mineral Company
         │   ├── Gladstone Coal Company
@@ -41,13 +178,13 @@ Economy & Labour
         │   └── mining company
         ├── retailers and stores
         │   ├── Douglas and Company
-        │   ├── Nimmo's
         │   ├── P. Mullany and Company
-        │   ├── Peckman Brothers
         │   ├── Tabrett and Company
         │   └── retailer or store
         └── transport & logistics businesses
-            ├── Trucking
+            ├── coach services
+            │   ├── Peckman Brothers (business)
+            │   └── coach service
             └── transport & logistics business
 
 
@@ -56,6 +193,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 48
+  Total nodes in theme: 185
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
