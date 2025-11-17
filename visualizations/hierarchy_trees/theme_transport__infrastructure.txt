@@ -2,14 +2,25 @@ THEMATIC GROUPING: transport & infrastructure
 ================================================================================
 
 transport & infrastructure
+├── Roads
+│   ├── Jenolan Caves Road
+│   ├── Nellie's Glen Road
+│   └── Nellie's Glen Track
+├── Utilities
+│   ├── Gas
+│   └── Sewerage
 ├── commercial transport
 ├── mining transport
+│   ├── Tramway
 │   └── tramway
 ├── railway
 │   ├── Great Western Railway
-│   └── railway infrastructure
-│       ├── Katoomba station
-│       └── Zig Zag
+│   ├── railway infrastructure
+│   │   ├── Katoomba station
+│   │   └── Zig Zag
+│   └── railway operations
+│       ├── railway operation
+│       └── tourist trains
 ├── roads
 │   ├── Bonnie Doon Track
 │   ├── Jenolan Caves Road
@@ -27,6 +38,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 19
+  Total nodes in theme: 30
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

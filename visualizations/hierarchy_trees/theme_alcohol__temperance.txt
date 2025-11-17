@@ -3,7 +3,7 @@ THEMATIC GROUPING: alcohol & temperance
 
 alcohol & temperance
 ├── Alcohol-related venues
-│   ├── Hotels
+│   ├── hotels
 │   │   ├── Allen's Hotel
 │   │   ├── Belgravia Hotel
 │   │   ├── Brown's Hotel
@@ -12,13 +12,10 @@ alcohol & temperance
 │   │   ├── Comet Hotel
 │   │   ├── Delaney's Hotel
 │   │   ├── Falls Hotel
-│   │   ├── Family Hotel
 │   │   ├── Fryer's Family Hotel
-│   │   ├── Grand Hotel
 │   │   ├── Grand Hotel (Sydney)
 │   │   ├── Great Western Hotel
 │   │   ├── Hoffman's House
-│   │   ├── Hotel
 │   │   ├── Hotel Wentworth
 │   │   ├── Hydora House Hotel
 │   │   ├── Imperial Hotel
@@ -31,12 +28,23 @@ alcohol & temperance
 │   │   ├── Mrs Long's Hotel
 │   │   ├── Oxford Hotel (Sydney)
 │   │   ├── Railway Hotel
-│   │   └── Wentworth Falls Hotel
-│   ├── Public houses
-│   │   └── Public house
+│   │   ├── Wentworth Falls Hotel
+│   │   ├── family hotel
+│   │   └── hotel
+│   ├── public houses
 │   └── public houses (businesses)
 │       └── public house (business)
 ├── alcohol consumption & behaviour
+│   ├── Alcoholic beverages
+│   │   ├── Beer
+│   │   ├── Mixed alcoholic beverages
+│   │   │   └── Grog
+│   │   ├── Spirits
+│   │   │   ├── Brandy
+│   │   │   ├── Gin
+│   │   │   ├── Rum
+│   │   │   └── Whisky
+│   │   └── Wine
 │   ├── Drunkeness
 │   ├── alcoholic beverages
 │   │   ├── alcoholic beverage
@@ -79,6 +87,8 @@ alcohol & temperance
 │   │   ├── Mr Edwards
 │   │   ├── Mr Ellis
 │   │   ├── Mr J Hudson
+│   │   ├── Mr J. Nimmo
+│   │   ├── Mr Joe Nimmo
 │   │   ├── Mr Lindeman
 │   │   ├── Mr Manuel
 │   │   ├── Mr N Delaney
@@ -113,7 +123,8 @@ alcohol & temperance
 │   │   ├── licensing offences
 │   │   └── liquor licensing applications
 │   ├── licensing inspector
-│   └── publican's licence
+│   ├── publican's licence
+│   └── publican's license
 └── temperance organisations & movements
     ├── Good Templars
     └── temperance
@@ -124,6 +135,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 116
+  Total nodes in theme: 127
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

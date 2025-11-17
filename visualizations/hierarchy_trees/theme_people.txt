@@ -89,6 +89,27 @@ people
 │   ├── adolescents
 │   ├── children
 │   ├── demographic group
+│   ├── families
+│   │   ├── Austin family
+│   │   ├── Brydon family
+│   │   ├── Delaney family
+│   │   ├── Goyder family
+│   │   │   └── Goyder brothers
+│   │   ├── Greenbank family
+│   │   ├── Peckman family
+│   │   ├── Tabrett family
+│   │   ├── davey family
+│   │   ├── eaton family
+│   │   ├── evans family
+│   │   ├── family
+│   │   ├── flynn family
+│   │   ├── gordon family
+│   │   ├── hartman family
+│   │   ├── husband family
+│   │   ├── meredith family
+│   │   ├── miners' families
+│   │   ├── penman family
+│   │   └── watkins family
 │   ├── men
 │   ├── widows
 │   └── women
@@ -100,24 +121,24 @@ people
 ├── families
 │   ├── Austin family
 │   ├── Brydon family
-│   ├── Davey family
 │   ├── Delaney family
-│   ├── Eaton family
-│   ├── Evans family
-│   ├── Flynn family
-│   ├── Gordon family
 │   ├── Goyder family
 │   │   └── Goyder brothers
 │   ├── Greenbank family
-│   ├── Hartman family
-│   ├── Husband family
-│   ├── Meredith family
 │   ├── Peckman family
-│   ├── Penman family
 │   ├── Tabrett family
-│   ├── Watkins family
+│   ├── davey family
+│   ├── eaton family
+│   ├── evans family
 │   ├── family
-│   └── miners' families
+│   ├── flynn family
+│   ├── gordon family
+│   ├── hartman family
+│   ├── husband family
+│   ├── meredith family
+│   ├── miners' families
+│   ├── penman family
+│   └── watkins family
 ├── named persons
 │   ├── Miss Bradley
 │   ├── Miss Edwards
@@ -262,6 +283,7 @@ people
     │   └── Reverend W Tollis
     ├── educational occupations
     │   └── school teachers
+    │       ├── Mr W Chapman
     │       └── school teacher
     ├── hospitality workers
     │   ├── hospitality worker
@@ -288,6 +310,8 @@ people
     │   │   ├── Mr Edwards
     │   │   ├── Mr Ellis
     │   │   ├── Mr J Hudson
+    │   │   ├── Mr J. Nimmo
+    │   │   ├── Mr Joe Nimmo
     │   │   ├── Mr Lindeman
     │   │   ├── Mr Manuel
     │   │   ├── Mr N Delaney
@@ -373,6 +397,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 365
+  Total nodes in theme: 389
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

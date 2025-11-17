@@ -2,11 +2,15 @@ THEMATIC GROUPING: justice & crime
 ================================================================================
 
 justice & crime
+├── Court buildings
+│   ├── Courthouse
+│   └── Katoomba Court
 ├── Legal outcomes
 │   ├── Divorce
 │   ├── bankruptcy
 │   └── divorce
 ├── New South Wales Police
+├── Police station
 ├── court buildings
 │   ├── Katoomba Court
 │   ├── Katoomba Courthouse
@@ -16,26 +20,29 @@ justice & crime
 │   ├── Katoomba Court
 │   ├── Licensing Court
 │   ├── Penrith Police Court
+│   ├── Police court
 │   ├── Supreme Court
 │   └── court
 ├── crimes
 │   ├── Social order offences
 │   │   ├── Desertion
-│   │   ├── Drunkenness (crime)
-│   │   ├── Gambling
 │   │   ├── desertion
 │   │   ├── drunkenness (crime)
 │   │   └── gambling
 │   ├── other crimes
+│   │   ├── Bigamy
 │   │   └── bigamy
 │   ├── property crimes
+│   │   ├── Theft
 │   │   └── theft
 │   └── violent crimes
+│       ├── Assault
+│       ├── Fighting
+│       ├── Rape
 │       ├── assault
 │       ├── fighting
 │       └── sexual violence
 ├── law enforcement
-│   ├── New South Wales Police
 │   └── policing
 ├── legal events
 │   ├── bankruptcy
@@ -69,6 +76,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 61
+  Total nodes in theme: 68
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

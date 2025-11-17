@@ -16,6 +16,10 @@ tourism & accommodation
     │   │   └── Yarrangobilly Caves
     │   ├── gullies
     │   │   ├── Break Neck Gully
+    │   │   ├── Nellie's Glen
+    │   │   │   ├── Nellie's Glen Road
+    │   │   │   ├── Nellie's Glen Shale Mine
+    │   │   │   └── Nellie's Glen Track
     │   │   └── Nellie's Glen (gully)
     │   ├── mountain features
     │   │   ├── Narrow Neck
@@ -43,6 +47,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 35
+  Total nodes in theme: 39
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

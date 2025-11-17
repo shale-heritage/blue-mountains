@@ -2,234 +2,15 @@ PRIMARY FACET: Agents
 ================================================================================
 
 Agents
-├── Animals
-│   ├── Cattle
-│   ├── Dogs
-│   └── Horses
-├── Organizations
-│   ├── Civic organizations
-│   │   ├── Labour organizations
-│   │   │   └── Unions
-│   │   └── Progress committees
-│   │       ├── Katoomba Progress Association
-│   │       ├── Leura Progress Association
-│   │       ├── Megalong Progress Committee
-│   │       ├── Mount Victoria Progress Committee
-│   │       └── Wentworth Falls Progress Association
-│   ├── Commercial businesses
-│   │   ├── Financial institutions
-│   │   ├── Hospitality businesses
-│   │   │   ├── Boarding houses
-│   │   │   │   ├── Boarding house
-│   │   │   │   └── Orama Boarding House
-│   │   │   └── Hotels
-│   │   │       ├── Allen's Hotel
-│   │   │       ├── Belgravia Hotel
-│   │   │       ├── Brown's Hotel
-│   │   │       ├── Carrington Hotel
-│   │   │       ├── Centennial Hotel
-│   │   │       ├── Comet Hotel
-│   │   │       ├── Delaney's Hotel
-│   │   │       ├── Falls Hotel
-│   │   │       ├── Family Hotel
-│   │   │       ├── Fryer's Family Hotel
-│   │   │       ├── Grand Hotel
-│   │   │       ├── Grand Hotel (Sydney)
-│   │   │       ├── Great Western Hotel
-│   │   │       ├── Hoffman's House
-│   │   │       ├── Hotel
-│   │   │       ├── Hotel Wentworth
-│   │   │       ├── Hydora House Hotel
-│   │   │       ├── Imperial Hotel
-│   │   │       ├── Katoomba Family Hotel
-│   │   │       ├── Katoomba Hotel
-│   │   │       ├── Leura Hotel
-│   │   │       ├── Megalong Hotel
-│   │   │       ├── Montrose House
-│   │   │       ├── Mount Victoria Hotel
-│   │   │       ├── Mrs Long's Hotel
-│   │   │       ├── Oxford Hotel (Sydney)
-│   │   │       ├── Railway Hotel
-│   │   │       └── Wentworth Falls Hotel
-│   │   ├── Mining companies
-│   │   │   ├── Australian Kerosene Oil and Mineral Company
-│   │   │   ├── Gladstone Coal Company
-│   │   │   ├── Katoomba Coal and Shale Company
-│   │   │   ├── New South Wales Shale and Oil Company
-│   │   │   ├── South Clifton Mine Company
-│   │   │   ├── Sunny Corner Mining Company
-│   │   │   └── Waudby and Company
-│   │   ├── Retailers and stores
-│   │   │   ├── Douglas and Company
-│   │   │   ├── Nimmo's
-│   │   │   ├── Peckman Bros
-│   │   │   ├── Store
-│   │   │   └── Tabrett and Company
-│   │   └── Transport & logistics businesses
-│   ├── Cultural & recreational organizations
-│   │   ├── Cultural societies
-│   │   │   ├── Chess and Draughts Club
-│   │   │   ├── Horticulture society
-│   │   │   ├── Katoomba Amateur Dramatic Club
-│   │   │   └── Schools of Arts
-│   │   │       ├── Katoomba School of Arts
-│   │   │       └── School of Arts
-│   │   ├── Performance groups
-│   │   │   ├── Bands
-│   │   │   │   ├── Band
-│   │   │   │   └── Katoomba band
-│   │   │   ├── Choirs
-│   │   │   │   └── Choir
-│   │   │   └── Minstrel troupes
-│   │   │       └── Katoomba Amateur Minstrels
-│   │   └── Sports clubs
-│   │       ├── Athletic clubs
-│   │       │   └── Katoomba Athletic Club
-│   │       ├── Cricket clubs
-│   │       │   ├── Katoomba Cricket Club
-│   │       │   └── Megalong Cricket Club
-│   │       ├── Football clubs
-│   │       │   └── Katoomba Football Club
-│   │       ├── Rifle clubs
-│   │       │   └── Rifle club
-│   │       └── Tennis clubs
-│   │           ├── Katoomba Tennis Club
-│   │           └── Lawn Tennis Club
-│   ├── Fraternal orders & lodges
-│   │   └── Lodges
-│   │       ├── Freemasons
-│   │       ├── Independent Order of Odd Fellows
-│   │       ├── Independent lodges
-│   │       │   └── Mountaineer Lodge
-│   │       └── United Ancient Order of Druids
-│   │           └── Druid's Lodge (local lodge)
-│   ├── Government bodies
-│   │   ├── Councils
-│   │   │   ├── Katoomba Council
-│   │   │   └── Lithgow Council
-│   │   ├── Courts
-│   │   │   ├── Court
-│   │   │   ├── Katoomba Court
-│   │   │   ├── Licensing Court
-│   │   │   ├── Police court
-│   │   │   └── Supreme Court
-│   │   ├── Other government bodies
-│   │   │   └── Aborigines' Protection Board
-│   │   ├── Postal authorities
-│   │   │   └── Postal Department
-│   │   └── Railway authorities
-│   │       └── Railway commission
-│   └── Religious organizations
-│       ├── Churches
-│       │   ├── Church
-│       │   ├── Congregational Church
-│       │   ├── Katoomba Congregational Church
-│       │   ├── Methodist Church
-│       │   ├── Roman Catholic Church
-│       │   ├── St Hilda's Church
-│       │   └── Wesleyan Church
-│       ├── Religious education
-│       │   └── Sunday school
-│       └── Religious social movements
-│           ├── Good Templars
-│           └── Salvation Army
-├── People
-│   ├── Demographic groups
-│   │   ├── Adolescents
-│   │   ├── Children
-│   │   ├── Families
-│   │   │   └── Miners' families
-│   │   ├── Men
-│   │   ├── Widows
-│   │   └── Women
-│   ├── Ethnic groups
-│   │   ├── Aboriginal people
-│   │   ├── Chinese people
-│   │   └── Irish culture
-│   └── Occupations
-│       ├── Clergy
-│       │   ├── Cardinal Moran
-│       │   ├── Reverence M C Brown
-│       │   ├── Reverend A Sutherland
-│       │   ├── Reverend Canon Kemmis
-│       │   ├── Reverend F V Pratt
-│       │   ├── Reverend J H Maclean
-│       │   ├── Reverend M S Fletcher
-│       │   └── Reverend R M Laverty
-│       ├── Educational occupations
-│       │   └── School teachers
-│       │       ├── Mr W Chapman
-│       │       └── School teacher
-│       ├── Hospitality workers
-│       │   ├── Hotelliers
-│       │   │   ├── Allen
-│       │   │   ├── Biles
-│       │   │   ├── Brown
-│       │   │   ├── F. C. Goyder
-│       │   │   ├── Hotellier
-│       │   │   ├── Isabellea J. Long
-│       │   │   ├── Manuell
-│       │   │   ├── Mr A. G. Rowell
-│       │   │   ├── Mr Alf. Goodare
-│       │   │   ├── Mr D Thomson
-│       │   │   ├── Mr D. Brown
-│       │   │   ├── Mr D. Thompson
-│       │   │   ├── Mr Delaney
-│       │   │   ├── Mr Edwards
-│       │   │   ├── Mr Ellis
-│       │   │   ├── Mr J. Nimmo
-│       │   │   ├── Mr Joe Nimmo
-│       │   │   ├── Mr Manuel
-│       │   │   ├── Mr N. Delaney
-│       │   │   ├── Mr P. G. Whittall
-│       │   │   ├── Mr R. Fryer
-│       │   │   ├── Mr Wilson
-│       │   │   ├── Mrs (Joe) Nimmo
-│       │   │   ├── Mrs (R.) Fryer
-│       │   │   ├── Mrs Brown
-│       │   │   ├── Mrs Long
-│       │   │   ├── Richard Allen
-│       │   │   ├── Rubina Fryer
-│       │   │   └── W. Green
-│       │   ├── Liquor merchants
-│       │   │   └── Mr Wilkinson
-│       │   └── Publican
-│       ├── Law enforcement
-│       ├── Legal officials
-│       ├── Maritime workers
-│       │   └── Shipwright
-│       ├── Medical professionals
-│       │   ├── Dr Morgan
-│       │   ├── Dr Prangley
-│       │   ├── Dr Spark
-│       │   └── Dr Watkins
-│       ├── Military personnel
-│       │   └── Soldiers
-│       ├── Miners
-│       ├── Other goods and services
-│       │   └── Coach and buggy business
-│       │       └── Mr Thomas Cale
-│       └── Public officials
-│           ├── Aldermen
-│           ├── Licensing inspector
-│           ├── Minister for Mines
-│           ├── Postal employees
-│           │   ├── Mailmen
-│           │   │   ├── Mailman
-│           │   │   └── Postboy
-│           │   └── Postmasters
-│           │       ├── Mrs. A. Smith
-│           │       ├── Mrs. England
-│           │       ├── Mrs. H. Corston
-│           │       ├── Mrs. James
-│           │       └── Postmaster
-│           └── Stationmaster
 ├── animals
 │   ├── animal
+│   ├── cattle
+│   ├── dogs
 │   ├── domestic animals
 │   │   ├── cattle
 │   │   ├── dogs
 │   │   └── horses
+│   ├── horses
 │   └── wild animals
 │       └── wild horses
 ├── organisations
@@ -251,12 +32,43 @@ Agents
 │   │   │   │   └── bank (business)
 │   │   │   └── financial institution
 │   │   ├── hospitality businesses
+│   │   │   ├── boarding houses
+│   │   │   │   ├── boarding house
+│   │   │   │   └── orama boarding house
 │   │   │   ├── boarding houses (businesses)
 │   │   │   │   ├── Miss Kelly's Boarding House (business)
-│   │   │   │   ├── Orama Boarding House (business)
-│   │   │   │   └── boarding house (business)
+│   │   │   │   ├── boarding house (business)
+│   │   │   │   └── orama boarding house (business)
 │   │   │   ├── cottages (businesses)
 │   │   │   │   └── cottage (business)
+│   │   │   ├── hotels
+│   │   │   │   ├── Allen's Hotel
+│   │   │   │   ├── Belgravia Hotel
+│   │   │   │   ├── Brown's Hotel
+│   │   │   │   ├── Carrington Hotel
+│   │   │   │   ├── Centennial Hotel
+│   │   │   │   ├── Comet Hotel
+│   │   │   │   ├── Delaney's Hotel
+│   │   │   │   ├── Falls Hotel
+│   │   │   │   ├── Fryer's Family Hotel
+│   │   │   │   ├── Grand Hotel (Sydney)
+│   │   │   │   ├── Great Western Hotel
+│   │   │   │   ├── Hoffman's House
+│   │   │   │   ├── Hotel Wentworth
+│   │   │   │   ├── Hydora House Hotel
+│   │   │   │   ├── Imperial Hotel
+│   │   │   │   ├── Katoomba Family Hotel
+│   │   │   │   ├── Katoomba Hotel
+│   │   │   │   ├── Leura Hotel
+│   │   │   │   ├── Megalong Hotel
+│   │   │   │   ├── Montrose House
+│   │   │   │   ├── Mount Victoria Hotel
+│   │   │   │   ├── Mrs Long's Hotel
+│   │   │   │   ├── Oxford Hotel (Sydney)
+│   │   │   │   ├── Railway Hotel
+│   │   │   │   ├── Wentworth Falls Hotel
+│   │   │   │   ├── family hotel
+│   │   │   │   └── hotel
 │   │   │   ├── hotels (businesses)
 │   │   │   │   ├── Belgravia Hotel (business)
 │   │   │   │   ├── Carrington Hotel (business)
@@ -277,19 +89,22 @@ Agents
 │   │   │       └── public house (business)
 │   │   ├── mining companies
 │   │   │   ├── Australian Kerosene Oil and Mineral Company
-│   │   │   ├── Gladstone Coal Company
 │   │   │   ├── Great Wentworth Falls Coal and Shale Mining Company
 │   │   │   ├── Katoomba Coal and Shale Company
 │   │   │   ├── New South Wales Shale and Oil Company
 │   │   │   ├── South Clifton Mine Company
-│   │   │   ├── Sunny Corner Mining Company
 │   │   │   ├── Waudby and Company
-│   │   │   └── mining company
+│   │   │   ├── gladstone coal company
+│   │   │   ├── mining company
+│   │   │   └── sunny corner mining company
 │   │   ├── retailers and stores
 │   │   │   ├── Douglas and Company
-│   │   │   ├── P. Mullany and Company
+│   │   │   ├── Nimmo's
+│   │   │   ├── Peckman Bros
 │   │   │   ├── Tabrett and Company
-│   │   │   └── retailer or store
+│   │   │   ├── p. mullany and company
+│   │   │   ├── retailer or store
+│   │   │   └── store
 │   │   └── transport & logistics businesses
 │   │       ├── coach services
 │   │       │   ├── Peckman Brothers (business)
@@ -297,21 +112,25 @@ Agents
 │   │       └── transport & logistics business
 │   ├── cultural & recreational organisations
 │   │   ├── cultural societies
+│   │   │   ├── Chess and Draughts Club
 │   │   │   ├── Katoomba Amateur Dramatic Club
 │   │   │   ├── chess and draughts club
 │   │   │   ├── cultural society
 │   │   │   ├── horticulture society
+│   │   │   ├── schools of arts
+│   │   │   │   ├── Katoomba School of Arts
+│   │   │   │   └── school of arts
 │   │   │   └── schools of arts (organisations)
 │   │   │       ├── Katoomba School of Arts (organisation)
-│   │   │       ├── Mines School of Arts (organisation)
+│   │   │       ├── mines school of arts (organisation)
 │   │   │       └── school of arts (organisation)
 │   │   ├── performance groups
 │   │   │   ├── bands
 │   │   │   │   ├── Katoomba band
 │   │   │   │   └── band
 │   │   │   ├── choirs
-│   │   │   │   ├── Congregational Church Choir
-│   │   │   │   └── choir
+│   │   │   │   ├── choir
+│   │   │   │   └── congregational church choir
 │   │   │   └── minstrel troupes
 │   │   │       ├── Katoomba Amateur Minstrels
 │   │   │       └── minstrel troupe
@@ -351,18 +170,17 @@ Agents
 │   │           ├── lawn tennis club
 │   │           └── tennis club
 │   ├── educational institutions
-│   │   ├── Schools
+│   │   ├── schools
 │   │   │   ├── Katoomba Public School
 │   │   │   ├── Katoomba Superior Public School
 │   │   │   ├── Megalong Valley School
 │   │   │   ├── Mount Victoria School
-│   │   │   └── School
+│   │   │   └── school
 │   │   ├── schools (organisations)
 │   │   │   ├── Katoomba Public School (organisation)
 │   │   │   ├── Katoomba Superior Public School (organisation)
 │   │   │   ├── Megalong Valley School (organisation)
 │   │   │   ├── Mount Victoria School (organisation)
-│   │   │   ├── School (organisation)
 │   │   │   └── school (organisation)
 │   │   └── universities
 │   │       ├── University of Sydney (institution)
@@ -374,9 +192,11 @@ Agents
 │   │       ├── Loyal Orange Order
 │   │       ├── United Ancient Order of Druids
 │   │       │   └── Druid's Lodge (local lodge)
+│   │       ├── independent lodges
+│   │       │   └── mountaineer lodge
 │   │       ├── lodge
 │   │       └── unaffiliated lodges
-│   │           ├── Mountaineer Lodge
+│   │           ├── mountaineer lodge
 │   │           └── unaffiliated lodge
 │   ├── government bodies
 │   │   ├── councils
@@ -388,23 +208,33 @@ Agents
 │   │   │   ├── Katoomba Court
 │   │   │   ├── Licensing Court
 │   │   │   ├── Penrith Police Court
+│   │   │   ├── Police court
 │   │   │   ├── Supreme Court
 │   │   │   └── court
-│   │   ├── law enforcement
+│   │   ├── law enforcement agencies
 │   │   │   ├── New South Wales Police
-│   │   │   └── policing
+│   │   │   └── Police
 │   │   ├── other government bodies
 │   │   │   └── Aborigines' Protection Board
 │   │   ├── postal authorities
 │   │   │   └── Postal Department
 │   │   └── railway authorities
+│   │       ├── Railway commission
 │   │       └── railway commission
 │   ├── military organisations
 │   │   ├── NSW Mounted Rifles
 │   │   └── volunteer rifle reserves
 │   │       ├── Katoomba Rifle Reserves
-│   │       └── Mountain Rifle Reserves
+│   │       └── mountain rifle reserves
 │   └── religious organisations
+│       ├── churches
+│       │   ├── Congregational Church
+│       │   ├── Katoomba Congregational Church
+│       │   ├── Methodist Church
+│       │   ├── Roman Catholic Church
+│       │   ├── St Hilda's Church
+│       │   ├── Wesleyan Church
+│       │   └── church
 │       ├── churches (organisations)
 │       │   ├── Church of England churches (organisations)
 │       │   │   ├── Church of England Katoomba (organisation)
@@ -414,46 +244,68 @@ Agents
 │       │   │   ├── St Clement's Church of England Yass (organisation)
 │       │   │   ├── St Hilda's Church of England (organisation)
 │       │   │   └── St Mark's Church of England Darling Point (organisation)
-│       │   ├── Congregational churches (organisations)
-│       │   │   ├── Congregational Church (organisation)
-│       │   │   ├── Congregational Church Katoomba South (organisation)
-│       │   │   └── Katoomba Congregational Church (organisation)
-│       │   ├── Methodist churches (organisations)
-│       │   │   ├── Methodist Church (organisation)
-│       │   │   └── Methodist Church Katoomba (organisation)
-│       │   ├── Presbyterian churches (organisations)
-│       │   │   ├── Presbyterian Church Leura (organisation)
-│       │   │   ├── Presbyterian Church Wentworth Falls (organisation)
-│       │   │   └── Presbyterian church (organisation)
 │       │   ├── Roman Catholic churches (organisations)
-│       │   │   ├── Roman Catholic Church (organisation)
 │       │   │   ├── Roman Catholic Church Blackheath (organisation)
-│       │   │   ├── Roman Catholic Church Lawson (organisation)
 │       │   │   ├── Roman Catholic Church Megalong (organisation)
 │       │   │   ├── Roman Catholic Church Mount Victoria (organisation)
-│       │   │   └── St Canice's Catholic Church Katoomba (organisation)
-│       │   ├── Wesleyan churches (organisations)
-│       │   │   ├── Wesleyan Church (organisation)
-│       │   │   └── Wesleyan Church Katoomba (organisation)
-│       │   └── church (organisation)
+│       │   │   ├── St Canice's Catholic Church Katoomba (organisation)
+│       │   │   ├── roman catholic church (organisation)
+│       │   │   └── roman catholic church lawson (organisation)
+│       │   ├── church (organisation)
+│       │   ├── congregational churches (organisations)
+│       │   │   ├── Congregational Church Katoomba South (organisation)
+│       │   │   ├── Katoomba Congregational Church (organisation)
+│       │   │   └── congregational church (organisation)
+│       │   ├── methodist churches (organisations)
+│       │   │   ├── Methodist Church Katoomba (organisation)
+│       │   │   └── methodist church (organisation)
+│       │   ├── presbyterian churches (organisations)
+│       │   │   ├── Presbyterian Church Leura (organisation)
+│       │   │   ├── Presbyterian Church Wentworth Falls (organisation)
+│       │   │   └── presbyterian church (organisation)
+│       │   └── wesleyan churches (organisations)
+│       │       ├── Wesleyan Church Katoomba (organisation)
+│       │       └── wesleyan church (organisation)
 │       ├── monasteries and friaries
-│       │   ├── Waverley Friary (organisation)
-│       │   └── monastery or friary
+│       │   ├── monastery or friary
+│       │   └── waverley friary (organisation)
 │       ├── religious education
+│       │   ├── sunday school
 │       │   └── sunday schools
 │       │       ├── Katoomba Congregational Church (Sunday School)
 │       │       ├── St Aidan's Church Blackheath (Sunday School)
 │       │       └── sunday school
 │       └── religious social movements
 │           ├── Good Templars
-│           ├── Methodist Band of Hope
 │           ├── Salvation Army
+│           ├── methodist band of hope
 │           └── religious social movement
 └── people
     ├── demographic groups
     │   ├── adolescents
     │   ├── children
     │   ├── demographic group
+    │   ├── families
+    │   │   ├── Austin family
+    │   │   ├── Brydon family
+    │   │   ├── Delaney family
+    │   │   ├── Goyder family
+    │   │   │   └── Goyder brothers
+    │   │   ├── Greenbank family
+    │   │   ├── Peckman family
+    │   │   ├── Tabrett family
+    │   │   ├── davey family
+    │   │   ├── eaton family
+    │   │   ├── evans family
+    │   │   ├── family
+    │   │   ├── flynn family
+    │   │   ├── gordon family
+    │   │   ├── hartman family
+    │   │   ├── husband family
+    │   │   ├── meredith family
+    │   │   ├── miners' families
+    │   │   ├── penman family
+    │   │   └── watkins family
     │   ├── men
     │   ├── widows
     │   └── women
@@ -465,24 +317,24 @@ Agents
     ├── families
     │   ├── Austin family
     │   ├── Brydon family
-    │   ├── Davey family
     │   ├── Delaney family
-    │   ├── Eaton family
-    │   ├── Evans family
-    │   ├── Flynn family
-    │   ├── Gordon family
     │   ├── Goyder family
     │   │   └── Goyder brothers
     │   ├── Greenbank family
-    │   ├── Hartman family
-    │   ├── Husband family
-    │   ├── Meredith family
     │   ├── Peckman family
-    │   ├── Penman family
     │   ├── Tabrett family
-    │   ├── Watkins family
+    │   ├── davey family
+    │   ├── eaton family
+    │   ├── evans family
     │   ├── family
-    │   └── miners' families
+    │   ├── flynn family
+    │   ├── gordon family
+    │   ├── hartman family
+    │   ├── husband family
+    │   ├── meredith family
+    │   ├── miners' families
+    │   ├── penman family
+    │   └── watkins family
     ├── named persons
     │   ├── Miss Bradley
     │   ├── Miss Edwards
@@ -627,6 +479,7 @@ Agents
         │   └── Reverend W Tollis
         ├── educational occupations
         │   └── school teachers
+        │       ├── Mr W Chapman
         │       └── school teacher
         ├── hospitality workers
         │   ├── hospitality worker
@@ -653,6 +506,8 @@ Agents
         │   │   ├── Mr Edwards
         │   │   ├── Mr Ellis
         │   │   ├── Mr J Hudson
+        │   │   ├── Mr J. Nimmo
+        │   │   ├── Mr Joe Nimmo
         │   │   ├── Mr Lindeman
         │   │   ├── Mr Manuel
         │   │   ├── Mr N Delaney
@@ -734,6 +589,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 730
+  Total nodes in facet: 585
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

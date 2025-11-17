@@ -2,64 +2,23 @@ PRIMARY FACET: Places
 ================================================================================
 
 Places
-├── Mining districts
+├── mining districts
+│   ├── Hartley Vale mining district
+│   │   └── Hartley Vale Shale Mine (site)
 │   ├── Nellie's Glen
 │   │   ├── Nellie's Glen Road
 │   │   ├── Nellie's Glen Shale Mine
 │   │   └── Nellie's Glen Track
-│   ├── Ruined Castle
-│   │   └── Ruined Castle Shale Mine
-│   └── South Clifton
-│       └── South Clifton Tunnel Mine
-├── Natural features
-│   ├── Caves & geological features
-│   │   └── Jenolan Caves
-│   │       └── Jenolan Caves Road
-│   ├── Gullies
-│   │   └── Nellie's Glen
-│   │       ├── Nellie's Glen Road
-│   │       ├── Nellie's Glen Shale Mine
-│   │       └── Nellie's Glen Track
-│   ├── Mountain features
-│   │   └── Narrow Neck
-│   ├── Valleys
-│   │   ├── Jamieson Valley
-│   │   ├── Kanimbla Valley
-│   │   └── Megalong Valley
-│   └── Waterfalls
-│       ├── Katoomba Falls
-│       ├── Leura Falls
-│       └── Minnehaha
-├── Reserves
-│   ├── Leura Reserve
-│   ├── Rifle reserves
-│   │   └── Katoomba Rifle Reserve
-│   ├── South Katoomba Reserve
-│   └── Wentworth Falls Reserve
-├── Towns
-│   ├── Blackheath
-│   ├── Clarence
-│   ├── Hartley Vale
-│   ├── Katoomba
-│   │   ├── Carrington
-│   │   │   └── Katoomba Street
-│   │   └── South Katoomba
-│   ├── Leura
-│   ├── Lithgow
-│   ├── Medlow
-│   ├── Megalong
-│   │   └── Middle camp
-│   ├── Mount Victoria
-│   └── Sydney
-├── mining districts
-│   ├── Hartley Vale mining district
-│   │   └── Hartley Vale Shale Mine (site)
 │   ├── Nellie's Glen mining district
 │   │   ├── Nellie's Glen (settlement)
 │   │   └── Nellie's Glen Shale Mine (site)
+│   ├── Ruined Castle
+│   │   └── Ruined Castle Shale Mine
 │   ├── Ruined Castle mining district
 │   │   ├── Ruined Castle (settlement)
 │   │   └── Ruined Castle Shale Mine (site)
+│   ├── South Clifton
+│   │   └── South Clifton Tunnel Mine
 │   └── South Clifton (Illawarra)
 │       └── South Clifton Tunnel Mine (site)
 ├── natural features
@@ -69,6 +28,10 @@ Places
 │   │   └── Yarrangobilly Caves
 │   ├── gullies
 │   │   ├── Break Neck Gully
+│   │   ├── Nellie's Glen
+│   │   │   ├── Nellie's Glen Road
+│   │   │   ├── Nellie's Glen Shale Mine
+│   │   │   └── Nellie's Glen Track
 │   │   └── Nellie's Glen (gully)
 │   ├── mountain features
 │   │   ├── Narrow Neck
@@ -110,14 +73,13 @@ Places
     │   ├── Megalong
     │   │   └── Middle camp
     │   ├── Middle Camp (settlement)
-    │   └── Top Camp (settlement)
+    │   └── top camp (settlement)
     ├── Hartley Vale
     ├── Helensburgh
     ├── Katoomba
     │   ├── Carrington
     │   │   └── Katoomba Street
     │   └── South Katoomba
-    ├── Lawson
     ├── Leura
     ├── Lithgow
     ├── Medlow
@@ -133,10 +95,11 @@ Places
     ├── Springwood
     ├── Sunny Corner
     ├── Sydney
+    ├── lawson
     └── town
 
 
 STATISTICS:
-  Total nodes in facet: 133
+  Total nodes in facet: 96
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

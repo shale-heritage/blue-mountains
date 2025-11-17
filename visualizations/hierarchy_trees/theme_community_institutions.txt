@@ -3,15 +3,22 @@ THEMATIC GROUPING: community institutions
 
 community institutions
 ├── civic buildings
+│   ├── Council buildings
+│   │   └── Council Chambers
+│   ├── Court buildings
+│   │   ├── Courthouse
+│   │   └── Katoomba Court
 │   ├── Katoomba Council Chambers
 │   ├── court buildings
 │   │   ├── Katoomba Court
 │   │   ├── Katoomba Courthouse
 │   │   └── courthouse
 │   ├── police facilities
+│   │   ├── Police station
 │   │   ├── police quarters
 │   │   └── police station
 │   └── postal facilities
+│       ├── Post office
 │       └── post office
 ├── civic organisations
 │   ├── labour organisations
@@ -27,32 +34,39 @@ community institutions
 ├── community buildings
 │   └── halls
 │       ├── Clarke's Hall
-│       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
 │       ├── Waudby's Hall
 │       ├── hall
+│       ├── masonic hall
+│       ├── schools of arts
+│       │   ├── Katoomba School of Arts
+│       │   └── school of arts
 │       └── schools of arts (buildings)
 │           ├── Katoomba School of Arts (building)
-│           ├── Mines School of Arts (building)
+│           ├── mines school of arts (building)
 │           └── school of arts (building)
 ├── cultural & recreational organisations
 │   ├── cultural societies
+│   │   ├── Chess and Draughts Club
 │   │   ├── Katoomba Amateur Dramatic Club
 │   │   ├── chess and draughts club
 │   │   ├── cultural society
 │   │   ├── horticulture society
+│   │   ├── schools of arts
+│   │   │   ├── Katoomba School of Arts
+│   │   │   └── school of arts
 │   │   └── schools of arts (organisations)
 │   │       ├── Katoomba School of Arts (organisation)
-│   │       ├── Mines School of Arts (organisation)
+│   │       ├── mines school of arts (organisation)
 │   │       └── school of arts (organisation)
 │   ├── performance groups
 │   │   ├── bands
 │   │   │   ├── Katoomba band
 │   │   │   └── band
 │   │   ├── choirs
-│   │   │   ├── Congregational Church Choir
-│   │   │   └── choir
+│   │   │   ├── choir
+│   │   │   └── congregational church choir
 │   │   └── minstrel troupes
 │   │       ├── Katoomba Amateur Minstrels
 │   │       └── minstrel troupe
@@ -98,9 +112,11 @@ community institutions
         ├── Loyal Orange Order
         ├── United Ancient Order of Druids
         │   └── Druid's Lodge (local lodge)
+        ├── independent lodges
+        │   └── mountaineer lodge
         ├── lodge
         └── unaffiliated lodges
-            ├── Mountaineer Lodge
+            ├── mountaineer lodge
             └── unaffiliated lodge
 
 
@@ -109,6 +125,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 101
+  Total nodes in theme: 117
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

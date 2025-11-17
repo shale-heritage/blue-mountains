@@ -3,14 +3,16 @@ PRIMARY FACET: Built Environment
 
 Built Environment
 ├── Accommodation and hospitality venues
-│   ├── Boarding houses
-│   │   ├── Boarding house
-│   │   └── Orama Boarding House
 │   ├── Cottages
-│   │   └── Cottage
 │   ├── Dwellings
-│   │   └── Miners' dwellings
-│   ├── Hotels
+│   │   └── miners' dwellings
+│   │       └── miners' dwelling
+│   ├── Stables
+│   │   └── Stable
+│   ├── boarding houses
+│   │   ├── boarding house
+│   │   └── orama boarding house
+│   ├── hotels
 │   │   ├── Allen's Hotel
 │   │   ├── Belgravia Hotel
 │   │   ├── Brown's Hotel
@@ -19,13 +21,10 @@ Built Environment
 │   │   ├── Comet Hotel
 │   │   ├── Delaney's Hotel
 │   │   ├── Falls Hotel
-│   │   ├── Family Hotel
 │   │   ├── Fryer's Family Hotel
-│   │   ├── Grand Hotel
 │   │   ├── Grand Hotel (Sydney)
 │   │   ├── Great Western Hotel
 │   │   ├── Hoffman's House
-│   │   ├── Hotel
 │   │   ├── Hotel Wentworth
 │   │   ├── Hydora House Hotel
 │   │   ├── Imperial Hotel
@@ -38,76 +37,19 @@ Built Environment
 │   │   ├── Mrs Long's Hotel
 │   │   ├── Oxford Hotel (Sydney)
 │   │   ├── Railway Hotel
-│   │   └── Wentworth Falls Hotel
-│   ├── Public houses
-│   │   └── Public house
-│   ├── Stables
-│   │   └── Stable
+│   │   ├── Wentworth Falls Hotel
+│   │   ├── family hotel
+│   │   └── hotel
+│   ├── public houses
 │   └── public houses (buildings)
 │       └── public house (building)
-├── Civic buildings
-│   ├── Council buildings
-│   │   └── Council Chambers
-│   ├── Court buildings
-│   │   ├── Courthouse
-│   │   └── Katoomba Court
-│   ├── Police facilities
-│   │   └── Police station
-│   └── Postal facilities
-│       └── Post office
-├── Commercial buildings
-│   └── Store
-├── Community buildings
-│   └── Halls
-│       ├── Clarke's Hall
-│       ├── Masonic Hall
-│       ├── Mount Victoria Hall
-│       ├── Odd Fellows' Hall
-│       ├── Schools of Arts
-│       │   ├── Katoomba School of Arts
-│       │   └── School of Arts
-│       └── Waudby's Hall
-├── Educational buildings
-│   └── Schools
-│       ├── Katoomba Public School
-│       ├── Katoomba Superior Public School
-│       ├── Megalong Valley School
-│       ├── Mount Victoria School
-│       └── School
-├── Infrastructure
-│   ├── Mining infrastructure
-│   │   └── Tramway
-│   ├── Transport infrastructure
-│   │   ├── Railway
-│   │   │   ├── Great Western Railway
-│   │   │   ├── Railway infrastructure
-│   │   │   │   ├── Katoomba station
-│   │   │   │   └── Zig Zag
-│   │   │   └── Railway operations
-│   │   │       └── Tourist trains
-│   │   └── Roads
-│   │       ├── Jenolan Caves Road
-│   │       ├── Nellie's Glen Road
-│   │       └── Nellie's Glen Track
-│   └── Utilities
-│       ├── Gas
-│       └── Sewerage
-├── Religious buildings
-│   └── Churches
-│       ├── Church
-│       ├── Congregational Church
-│       ├── Katoomba Congregational Church
-│       ├── Methodist Church
-│       ├── Roman Catholic Church
-│       ├── St Hilda's Church
-│       └── Wesleyan Church
 ├── accommodation and hospitality venues
 ├── accommodation buildings
 │   ├── boarding houses (buildings)
 │   │   ├── Miss Kelly's Boarding House (building)
 │   │   ├── Mrs Gillen's Boarding House (building)
-│   │   ├── Orama Boarding House (building)
-│   │   └── boarding house (building)
+│   │   ├── boarding house (building)
+│   │   └── orama boarding house (building)
 │   ├── cottages (buildings)
 │   │   └── cottage (building)
 │   ├── dwellings
@@ -115,87 +57,98 @@ Built Environment
 │   │   └── miners' dwellings
 │   │       └── miners' dwelling
 │   ├── hotel (building)
-│   ├── hotels (buildings)
-│   │   ├── Belgravia Hotel (building)
-│   │   ├── Carrington Hotel (building)
-│   │   ├── Centennial Hotel (building)
-│   │   ├── Comet Hotel (building)
-│   │   ├── Falls Hotel (building)
-│   │   ├── Grand Hotel (Sydney) (building)
-│   │   ├── Great Western Hotel (building)
-│   │   ├── Hoffman's House (building)
-│   │   ├── Hotel Wentworth (building)
-│   │   ├── Hydora House Hotel (building)
-│   │   ├── Imperial Hotel (building)
-│   │   ├── Katoomba Hotel (building)
-│   │   ├── Leura Hotel (building)
-│   │   ├── Megalong Hotel (building)
-│   │   ├── Montrose House (building)
-│   │   ├── Mount Victoria Hotel (building)
-│   │   ├── Oxford Hotel (Sydney) (building)
-│   │   ├── Railway Hotel (building)
-│   │   ├── Railway Hotel Katoomba (building)
-│   │   ├── Wentworth Falls Hotel (building)
-│   │   ├── family hotels
-│   │   │   ├── Delaney's Family Hotel (building)
-│   │   │   ├── Fryer's Family Hotel (building)
-│   │   │   ├── Katoomba Family Hotel (building)
-│   │   │   └── family hotel (building)
-│   │   └── hotel (building)
+│   ├── public accommodations
+│   │   └── hotels (buildings)
+│   │       ├── Belgravia Hotel (building)
+│   │       ├── Carrington Hotel (building)
+│   │       ├── Centennial Hotel (building)
+│   │       ├── Comet Hotel (building)
+│   │       ├── Falls Hotel (building)
+│   │       ├── Grand Hotel (Sydney) (building)
+│   │       ├── Great Western Hotel (building)
+│   │       ├── Hoffman's House (building)
+│   │       ├── Hotel Wentworth (building)
+│   │       ├── Hydora House Hotel (building)
+│   │       ├── Imperial Hotel (building)
+│   │       ├── Katoomba Hotel (building)
+│   │       ├── Leura Hotel (building)
+│   │       ├── Megalong Hotel (building)
+│   │       ├── Montrose House (building)
+│   │       ├── Mount Victoria Hotel (building)
+│   │       ├── Oxford Hotel (Sydney) (building)
+│   │       ├── Railway Hotel (building)
+│   │       ├── Railway Hotel Katoomba (building)
+│   │       ├── Wentworth Falls Hotel (building)
+│   │       ├── family hotels
+│   │       │   ├── Delaney's Family Hotel (building)
+│   │       │   ├── Fryer's Family Hotel (building)
+│   │       │   ├── Katoomba Family Hotel (building)
+│   │       │   └── family hotel (building)
+│   │       └── hotel (building)
 │   ├── public houses (buildings)
 │   │   └── public house (building)
 │   └── stables (buildings)
 │       └── stable (building)
 ├── civic buildings
+│   ├── Council buildings
+│   │   └── Council Chambers
+│   ├── Court buildings
+│   │   ├── Courthouse
+│   │   └── Katoomba Court
 │   ├── Katoomba Council Chambers
 │   ├── court buildings
 │   │   ├── Katoomba Court
 │   │   ├── Katoomba Courthouse
 │   │   └── courthouse
 │   ├── police facilities
+│   │   ├── Police station
 │   │   ├── police quarters
 │   │   └── police station
 │   └── postal facilities
+│       ├── Post office
 │       └── post office
 ├── commercial buildings
-│   ├── Store
-│   ├── banks (buildings)
-│   │   ├── Commercial Bank of Australia (building)
-│   │   └── bank (building)
-│   └── commercial building
+│   ├── commercial building
+│   ├── financial institutions (buildings)
+│   │   └── banks (buildings)
+│   │       ├── Commercial Bank of Australia (building)
+│   │       └── bank (building)
+│   └── store
 ├── community buildings
 │   └── halls
 │       ├── Clarke's Hall
-│       ├── Masonic Hall
 │       ├── Mount Victoria Hall
 │       ├── Odd Fellows' Hall
 │       ├── Waudby's Hall
 │       ├── hall
+│       ├── masonic hall
+│       ├── schools of arts
+│       │   ├── Katoomba School of Arts
+│       │   └── school of arts
 │       └── schools of arts (buildings)
 │           ├── Katoomba School of Arts (building)
-│           ├── Mines School of Arts (building)
+│           ├── mines school of arts (building)
 │           └── school of arts (building)
 ├── educational buildings
-│   ├── Schools
+│   ├── schools
 │   │   ├── Katoomba Public School
 │   │   ├── Katoomba Superior Public School
 │   │   ├── Megalong Valley School
 │   │   ├── Mount Victoria School
-│   │   └── School
+│   │   └── school
 │   └── schools (buildings)
 │       ├── Katoomba Public School (building)
 │       ├── Katoomba Superior Public School (building)
 │       ├── Megalong Valley School (building)
 │       ├── Mount Victoria School (building)
-│       ├── School (building)
 │       └── school (building)
 ├── industrial buildings
 │   └── mines
 │       ├── coal mines
-│       │   ├── Hermitage Coal Mine (facility)
 │       │   ├── Katoomba Coal Mines (facility)
 │       │   ├── South Clifton Tunnel Mine (facility)
-│       │   └── coal mine (facility)
+│       │   ├── coal mine (facility)
+│       │   └── hermitage coal mine (facility)
 │       ├── mine (facility)
 │       └── shale mines
 │           ├── Katoomba Shale Mine (facility)
@@ -203,16 +156,27 @@ Built Environment
 │           ├── Nellie's Glen Shale Mine (facility)
 │           └── shale mine (facility)
 ├── infrastructure
+│   ├── Utilities
+│   │   ├── Gas
+│   │   └── Sewerage
 │   ├── mining infrastructure
+│   │   ├── Tramway
 │   │   └── tramway
 │   ├── transport infrastructure
+│   │   ├── Roads
+│   │   │   ├── Jenolan Caves Road
+│   │   │   ├── Nellie's Glen Road
+│   │   │   └── Nellie's Glen Track
 │   │   ├── cattle trucking yards
 │   │   │   └── cattle trucking yard
 │   │   ├── railway
 │   │   │   ├── Great Western Railway
-│   │   │   └── railway infrastructure
-│   │   │       ├── Katoomba station
-│   │   │       └── Zig Zag
+│   │   │   ├── railway infrastructure
+│   │   │   │   ├── Katoomba station
+│   │   │   │   └── Zig Zag
+│   │   │   └── railway operations
+│   │   │       ├── railway operation
+│   │   │       └── tourist trains
 │   │   └── roads
 │   │       ├── Bonnie Doon Track
 │   │       ├── Jenolan Caves Road
@@ -237,6 +201,14 @@ Built Environment
 │       └── rifle ranges
 │           └── rifle range
 └── religious buildings
+    ├── churches
+    │   ├── Congregational Church
+    │   ├── Katoomba Congregational Church
+    │   ├── Methodist Church
+    │   ├── Roman Catholic Church
+    │   ├── St Hilda's Church
+    │   ├── Wesleyan Church
+    │   └── church
     └── churches (buildings)
         ├── Church of England churches (buildings)
         │   ├── Church of England Katoomba (building)
@@ -248,30 +220,34 @@ Built Environment
         │   ├── St Mark's Church of England (building)
         │   ├── St Mary's Church of England Greta (building)
         │   └── St Paul's Church of England (building)
-        ├── Congregational churches (buildings)
-        │   ├── Congregational Church (building)
-        │   ├── Congregational Church Katoomba (building)
-        │   ├── Congregational Church Katoomba South (building)
-        │   └── Katoomba Congregational Church (building)
-        ├── Methodist churches (buildings)
-        │   └── Methodist Church (building)
-        ├── Presbyterian churches (buildings)
-        │   ├── Presbyterian Church Leura (building)
-        │   ├── Presbyterian Church Wentworth Falls (building)
-        │   └── Presbyterian church (building)
         ├── Roman Catholic churches (buildings)
-        │   ├── Roman Catholic Church (building)
+        │   ├── Roman Catholic Church Blackheath (building)
         │   ├── Roman Catholic Church Katoomba (building)
         │   ├── Roman Catholic Church Megalong (building)
-        │   └── St Canice's Catholic Church Katoomba (building)
-        ├── Wesleyan churches (buildings)
-        │   ├── Wesleyan Chapel (building)
-        │   ├── Wesleyan Church (building)
-        │   └── Wesleyan Church Katoomba (building)
-        └── church (building)
+        │   ├── Roman Catholic Church Mount Victoria (building)
+        │   ├── St Canice's Catholic Church Katoomba (building)
+        │   ├── roman catholic church (building)
+        │   └── roman catholic church lawson (building)
+        ├── church (building)
+        ├── congregational churches (buildings)
+        │   ├── Congregational Church Katoomba (building)
+        │   ├── Congregational Church Katoomba South (building)
+        │   ├── Katoomba Congregational Church (building)
+        │   └── congregational church (building)
+        ├── methodist churches (buildings)
+        │   ├── Methodist Church Katoomba (building)
+        │   └── methodist church (building)
+        ├── presbyterian churches (buildings)
+        │   ├── Presbyterian Church Leura (building)
+        │   ├── Presbyterian Church Wentworth Falls (building)
+        │   └── presbyterian church (building)
+        └── wesleyan churches (buildings)
+            ├── Wesleyan Church Katoomba (building)
+            ├── wesleyan chapel (building)
+            └── wesleyan church (building)
 
 
 STATISTICS:
-  Total nodes in facet: 268
+  Total nodes in facet: 244
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

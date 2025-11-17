@@ -3,18 +3,17 @@ THEMATIC GROUPING: education
 
 education
 └── educational buildings
-    ├── Schools
+    ├── schools
     │   ├── Katoomba Public School
     │   ├── Katoomba Superior Public School
     │   ├── Megalong Valley School
     │   ├── Mount Victoria School
-    │   └── School
+    │   └── school
     └── schools (buildings)
         ├── Katoomba Public School (building)
         ├── Katoomba Superior Public School (building)
         ├── Megalong Valley School (building)
         ├── Mount Victoria School (building)
-        ├── School (building)
         └── school (building)
 
 
@@ -23,6 +22,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 15
+  Total nodes in theme: 14
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

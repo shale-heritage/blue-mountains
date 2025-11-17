@@ -2,7 +2,7 @@ THEMATIC GROUPING: Domestic accommodation - THEMATIC (residential aspect)
 ================================================================================
 
 Domestic accommodation - THEMATIC (residential aspect)
-└── Hotels
+└── hotels
     ├── Allen's Hotel
     ├── Belgravia Hotel
     ├── Brown's Hotel
@@ -11,13 +11,10 @@ Domestic accommodation - THEMATIC (residential aspect)
     ├── Comet Hotel
     ├── Delaney's Hotel
     ├── Falls Hotel
-    ├── Family Hotel
     ├── Fryer's Family Hotel
-    ├── Grand Hotel
     ├── Grand Hotel (Sydney)
     ├── Great Western Hotel
     ├── Hoffman's House
-    ├── Hotel
     ├── Hotel Wentworth
     ├── Hydora House Hotel
     ├── Imperial Hotel
@@ -30,7 +27,9 @@ Domestic accommodation - THEMATIC (residential aspect)
     ├── Mrs Long's Hotel
     ├── Oxford Hotel (Sydney)
     ├── Railway Hotel
-    └── Wentworth Falls Hotel
+    ├── Wentworth Falls Hotel
+    ├── family hotel
+    └── hotel
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -38,6 +37,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 30
+  Total nodes in theme: 29
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

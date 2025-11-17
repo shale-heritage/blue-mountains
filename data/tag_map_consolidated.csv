@@ -133,10 +133,8 @@ clergy,clergy,hierarchy,parent=Religion - THEMATIC,active
 coach and buggy business,coach and buggy business,hierarchy,parent=other goods and services,active
 Coadjutor Archbishop,Coadjutor Archbishop,hierarchy,parent=clergy,active
 Coal,coal,synonym,Capitalized variant from original Zotero tags,active
-Coal,Coal,hierarchy,parent=coal mining,active
 Coal,Coal,hierarchy,parent=Natural resources - THEMATIC,active
 coal mine,coal mine (facility),synonym,Unqualified variant from original Zotero tags,active
-coal mines,coal mines,hierarchy,parent=coal mining,active
 coal mining,coal mining,hierarchy,parent=mining,active
 coal mining,coal mining,hierarchy,parent=mines & mining districts - THEMATIC,active
 Colliery,coal mine (facility),synonym,UK/Australian term for coal mine,active
@@ -167,22 +165,16 @@ congregational churches (buildings),congregational churches (buildings),hierarch
 congregational churches (organisations),congregational churches (organisations),hierarchy,parent=churches (organisations),active
 Constable John Hamilton,Constable John Hamilton,hierarchy,parent=constable,active
 Constable John Hamilton,Constable John Hamilton,hierarchy,parent=people - THEMATIC,active
-Constable John Hamilton,Constable John Hamilton,hierarchy,parent=Police,active
-Constable John Illingworth,Senior-Constable John Illingworth,synonym,Incorrect rank - use Senior-Constable,removed
 Constable O'Reilly,Constable O'Reilly,hierarchy,parent=constable,active
 Constable O'Reilly,Constable O'Reilly,hierarchy,parent=people - THEMATIC,active
-Constable O'Reilly,Constable O'Reilly,hierarchy,parent=Police,active
 Constable Orr,Constable Orr,hierarchy,parent=constable,active
 Constable Orr,Constable Orr,hierarchy,parent=people - THEMATIC,active
-Constable Orr,Constable Orr,hierarchy,parent=Police,active
 Constable White,Constable White,hierarchy,parent=constable,active
 Constable White,Constable White,hierarchy,parent=people - THEMATIC,active
-Constable White,Constable White,hierarchy,parent=Police,active
 Consumable materials,Consumable materials,hierarchy,parent=Materials,active
 coroner,coroner,synonym,Capitalized variant from original Zotero tags,active
 coroner,coroner,hierarchy,parent=coroners,active
 Coroner Lethbridge,Coroner Lethbridge,hierarchy,parent=coroners,active
-coroners,coroners,hierarchy,parent=legal officials (intermediate facet),active
 Corroboree,corroboree,synonym,Capitalized variant from original Zotero tags,active
 Corroboree,Corroboree,hierarchy,parent=indigenous peoples - THEMATIC,active
 Cottages,Cottages,hierarchy,parent=Accommodation and hospitality venues,active
@@ -482,7 +474,6 @@ Katoomba coal mines,Katoomba Coal Mines (facility),synonym,Unqualified variant f
 Katoomba station,Katoomba station,hierarchy,parent=railway infrastructure,active
 labour organisations,labour organisations,hierarchy,parent=civic organisations,active
 Labour relations,Labour relations,hierarchy,parent=Economy & Labour - THEMATIC,active
-law enforcement,law enforcement,hierarchy,parent=occupations,active
 law enforcement,law enforcement,hierarchy,parent=justice & crime - THEMATIC,active
 lawn tennis club,lawn tennis club,synonym,Capitalized variant from original Zotero tags,active
 lawn tennis club,lawn tennis club,hierarchy,parent=tennis clubs,active
@@ -519,7 +510,6 @@ life events,life events,hierarchy,parent=family & domestic life - THEMATIC,activ
 liquor licensing,liquor licensing,hierarchy,parent=licensing,active
 liquor merchants,liquor merchants,hierarchy,parent=hospitality workers,active
 liquor sales,liquor sales,hierarchy,parent=liquor trade,active
-liquor trade,liquor trade,hierarchy,parent=commercial activities,active
 Lithgow,Lithgow,hierarchy,parent=towns,active
 Lithgow Council,Lithgow Council,hierarchy,parent=councils,active
 Lithgow Rovers,Lithgow Rovers,hierarchy,parent=football clubs,active
@@ -577,9 +567,8 @@ Middle Camp,Middle Camp (settlement),synonym,Unqualified form - use settlement q
 Middle Camp (settlement),Middle Camp (settlement),hierarchy,parent=Greater Megalong,active
 Middle camp,Middle camp,hierarchy,parent=Megalong,active
 Middle camp,Middle camp,hierarchy,parent=mining settlements - THEMATIC,active
-military,military,synonym,Capitalized variant from original Zotero tags,active
-military,military,hierarchy,parent=military activities,active
-military,military,hierarchy,parent=military organisations - THEMATIC,active
+military,military activity,synonym,Capitalized variant from original Zotero tags,active
+military,military activity,hierarchy,parent=military organisations - THEMATIC,active
 military & war,military & war,hierarchy,parent=(thematic grouping),active
 military events,military events,hierarchy,parent=military & war - THEMATIC,active
 military organisations,military organisations,hierarchy,parent=military & war - THEMATIC,active
@@ -994,7 +983,6 @@ Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Nellie's Glen,active
 Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Roads,active
 Nellie's Glen mining district,Nellie's Glen mining district,hierarchy,parent=mining districts,active
 Nellie's Glen track,Nellie's Glen Road,synonym,Lowercase variant - use Nellie's Glen Road,active
-New South Wales Police,New South Wales Police,hierarchy,parent=law enforcement,active
 New South Wales Police,New South Wales Police,hierarchy,parent=justice & crime - THEMATIC,active
 New South Wales Shale and Oil Co.,New South Wales Shale and Oil Company,synonym,Abbreviated form,active
 New South Wales Shale and Oil Company,New South Wales Shale and Oil Company,hierarchy,parent=mining companies,active
@@ -1037,7 +1025,6 @@ physical and health conditions,physical and health conditions,hierarchy,parent=A
 physical phenomena,physical phenomena,hierarchy,parent=Associated Concepts,active
 Places,Places,hierarchy,parent=(Getty AAT primary facet),active
 Police,New South Wales Police,synonym,Short form - use full official name New South Wales Police,active
-Police,Police,hierarchy,parent=law enforcement (intermediate facet),active
 Police Court,Courts of Petty Sessions,synonym,Colloquial term for Courts of Petty Sessions in NSW ca. 1900,active
 Police court,police court,synonym,Capitalized variant from original Zotero tags,active
 Police court,Police court,hierarchy,parent=courts,active
@@ -1060,8 +1047,6 @@ Postal Department,Postal Department,hierarchy,parent=postal authorities,active
 postal authorities,postal authorities,hierarchy,parent=government bodies,active
 postal employees,postal employees,hierarchy,parent=public officials,active
 postal facilities,postal facilities,hierarchy,parent=civic buildings,active
-postal service,postal service,hierarchy,parent=postal services,active
-postal services,postal services,hierarchy,parent=communication activities,active
 postal services,postal services,hierarchy,parent=communications & postal services - THEMATIC,active
 postboy,postboy,hierarchy,parent=mailmen,active
 postman,mailman,synonym,Alternative term for mailman,active
@@ -1122,7 +1107,6 @@ recreation for miners,recreation for miners,hierarchy,parent=recreation themes -
 recreation themes,recreation themes,hierarchy,parent=sport & recreation - THEMATIC,active
 Reference to the Irish or Irish culture,Reference to the Irish or Irish culture,hierarchy,parent=Cultural identity & heritage - THEMATIC,active
 Reference to the Irish or Irish culture,Irish culture,synonym,Renamed to emphasize cultural references rather than demographic group,active
-regulatory processes,regulatory processes,hierarchy,parent=Activities,active
 Religion,Religion,hierarchy,parent=(thematic grouping),active
 religious buildings,religious buildings,hierarchy,parent=Built Environment,active
 religious buildings,religious buildings,hierarchy,parent=Religion - THEMATIC,active
@@ -1202,25 +1186,21 @@ schools,schools,hierarchy,parent=educational buildings,active
 schools of arts,schools of arts,hierarchy,parent=cultural societies,active
 schools of arts,schools of arts,hierarchy,parent=halls,active
 Senior-Constable Illingworth,Senior-Constable John Illingworth,synonym,Short form without first name,active
-Senior-Constable Illingworth,Senior-Constable Illingworth,hierarchy,parent=Police,active
 Senior-Constable John Illingworth,Senior-Constable John Illingworth,hierarchy,parent=senior-constable,active
 Senior-Constable John Illingworth,Senior-Constable John Illingworth,hierarchy,parent=people - THEMATIC,active
 Senior-Constable Thorncroft,Senior-Constable Thorncroft,hierarchy,parent=senior-constable,active
 Senior-Constable Thorncroft,Senior-Constable Thorncroft,hierarchy,parent=people - THEMATIC,active
-Senior-Constable Thorncroft,Senior-Constable Thorncroft,hierarchy,parent=Police,active
 Senior-Constable Tomkins,Senior-Constable Tomkins,hierarchy,parent=senior-constable,active
 Senior-Constable Tomkins,Senior-Constable Tomkins,hierarchy,parent=people - THEMATIC,active
 senior-constable tomkins,Senior-Constable Tomkins,synonym,Lowercase variant - use standard capitalisation,active
 Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=sergeant,active
 Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=people - THEMATIC,active
-Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=Police,active
 Sewerage,sewerage,synonym,Capitalized variant from original Zotero tags,active
 Sewerage,Sewerage,hierarchy,parent=Utilities,active
 sexual violence,sexual violence,synonym,Capitalized variant from original Zotero tags,active
 sexual violence,sexual violence,hierarchy,parent=violent crimes - THEMATIC,active
 sexual violence,sexual violence,hierarchy,parent=Gender-related vulnerabilities - THEMATIC,active
 shale mines,shale mines,synonym,Capitalized variant from original Zotero tags,active
-shale mines,shale mines,hierarchy,parent=shale mining,active
 shale mines,shale mines,hierarchy,parent=mines & mining districts - THEMATIC,active
 shale mines,shale mines,hierarchy,parent=Natural resources - THEMATIC,active
 shale mining,shale mining,hierarchy,parent=mining,active
@@ -1266,8 +1246,6 @@ St Clement's Church of England Yass (organisation),St Clement's Church of Englan
 St David's Church Surry Hills (building),St David's Church Surry Hills (building),hierarchy,parent=Church of England churches (buildings),active
 St Hilda's Church,St Hilda's Church of England (organisation),synonym,Unqualified variant from original Zotero tags,active
 St Hilda's Church,St Hilda's Church,hierarchy,parent=churches,active
-St Hilda's Church (building),St Hilda's Church of England (building),synonym,Duplicate - map to Church of England variant,removed
-St Hilda's Church (organisation),St Hilda's Church of England (organisation),synonym,Duplicate - map to Church of England variant,removed
 St Hilda's Church of England (building),St Hilda's Church of England (building),hierarchy,parent=Church of England churches (buildings),active
 St Hilda's Church of England (organisation),St Hilda's Church of England (organisation),hierarchy,parent=Church of England churches (organisations),active
 St John's Church Parramatta (building),St John's Church Parramatta (building),hierarchy,parent=Church of England churches (buildings),active
@@ -1466,7 +1444,6 @@ cattle straying,cattle straying,merge,Use-for term for Stock trespass,merged
 cattle trucking yard,cattle trucking yard,hierarchy,parent=cattle trucking yards,active
 cattle trucking yards,cattle trucking yards,hierarchy,parent=transport infrastructure,active
 charitable and welfare activities,charitable and welfare activities,hierarchy,parent=Activities,active
-charitable and welfare activity,charitable and welfare activity,hierarchy,parent=charitable and welfare activities (singular generic term),active
 chess and draughts club,chess and draughts club,hierarchy,parent=cultural societies,active
 childhood & adolescence,childhood & adolescence,hierarchy,parent=family & domestic life - THEMATIC,active
 church (building),church (building),hierarchy,parent=churches (buildings),active
@@ -1479,10 +1456,8 @@ coal,coal,hierarchy,parent=Natural resources - THEMATIC,active
 coal,coal,hierarchy,parent=Materials,active
 coal mine (facility),coal mine (facility),hierarchy,parent=coal mines (singular generic term),active
 coal mines,coal mines,hierarchy,parent=mines,active
-commercial activities,commercial activities,hierarchy,parent=Activities,active
 commercial building,commercial building,hierarchy,parent=commercial buildings (singular generic term),active
 communication activities,communication activities,hierarchy,parent=Activities,active
-communication activity,communication activity,hierarchy,parent=communication activities (singular generic term),active
 concert,concert,hierarchy,parent=cultural events,active
 concert,concert,hierarchy,parent=social events,active
 constable,constable,hierarchy,parent=police officers,active
@@ -1545,7 +1520,6 @@ drunkenness (crime),drunkenness (crime),hierarchy,parent=alcohol-related,active
 dwelling,dwelling,hierarchy,parent=dwellings (singular generic term),active
 dwellings,dwellings,hierarchy,parent=accommodation buildings,active
 economic activities,economic activities,hierarchy,parent=Activities,active
-economic activity,economic activity,hierarchy,parent=economic activities (singular generic term),active
 economic event,economic event,hierarchy,parent=economic events (singular generic term),active
 economic events,economic events,hierarchy,parent=Events,active
 educational institutions,educational institutions,hierarchy,parent=organisations,active
@@ -1611,7 +1585,6 @@ inquests,inquests,hierarchy,parent=legal proceedings,active
 institutional buildings,institutional buildings,hierarchy,parent=Built Environment,active
 insurance provision,insurance provision,hierarchy,parent=financial services,active
 labour organisation,labour organisation,hierarchy,parent=labour organisations (singular generic term),active
-law enforcement,law enforcement,hierarchy,parent=government bodies,active
 law enforcement,law enforcement,hierarchy,parent=societal activities,active
 law enforcement personnel,law enforcement personnel,hierarchy,parent=occupations,active
 laws,laws,hierarchy,parent=legal concepts,active
@@ -1636,10 +1609,7 @@ lodge,lodge,hierarchy,parent=lodges (singular generic term),active
 maritime worker,maritime worker,hierarchy,parent=maritime workers (singular generic term),active
 marriage,marriage,hierarchy,parent=life events,active
 medical professional,medical professional,hierarchy,parent=medical professionals (singular generic term),active
-military,military,merge,Consolidate to Military activities (preferred term for activity facet),merged
-military activities,military activities,hierarchy,parent=Activities,active
 military activities,military activities,hierarchy,parent=societal activities,active
-military activity,military activity,merge,Consolidate to Military activities (redundant singular form),merged
 military organisations,military organisations,hierarchy,parent=organisations,active
 military sports,military sports,hierarchy,parent=recreation activities,active
 military sports,military sports,hierarchy,parent=sport & recreation - THEMATIC,active
@@ -1707,7 +1677,6 @@ railway operation,railway operation,hierarchy,parent=railway operations (singula
 railway operations,railway operations,hierarchy,parent=transport,active
 rape,rape,hierarchy,parent=criminal events,active
 recreation activities,recreation activities,hierarchy,parent=Activities,active
-recreation activity,recreation activity,hierarchy,parent=recreation activities (singular generic term),active
 recreation buildings,recreation buildings,hierarchy,parent=Built Environment,active
 recreation buildings,recreation buildings,hierarchy,parent=sport & recreation - THEMATIC,active
 regional mining contexts,regional mining contexts,hierarchy,parent=mining & industry - THEMATIC,active
@@ -1759,7 +1728,6 @@ shooting,shooting,hierarchy,parent=sporting events,active
 shooting competition,shooting match,synonym,Alternative term for shooting match,active
 shooting match,shooting match,hierarchy,parent=sporting events (singular generic term),active
 shooting match,shooting match,hierarchy,parent=sport & recreation - THEMATIC,active
-social behaviour,social behaviour,hierarchy,parent=social behaviours (singular generic term),active
 social event,social event,hierarchy,parent=social events (singular generic term),active
 social events,social events,hierarchy,parent=Events,active
 societal activities,societal activities,hierarchy,parent=Activities,active
@@ -1829,20 +1797,14 @@ public house,public house (building),synonym,Unqualified form - maps to building
 public house,public house (business),synonym,Unqualified form - maps to business aspect,active
 public house,public house (building),synonym,Title Case variant - maps to building aspect,active
 public house,public house (business),synonym,Title Case variant - maps to business aspect,active
-trucking,trucking,hierarchy,parent=transport & logistics businesses - REMOVED by script 48 (regression),removed
-trucking,trucking,hierarchy,parent=transport - REMOVED by script 48 (regression),removed
-trucking,trucking,hierarchy,parent=Commercial transport - THEMATIC - REMOVED by script 48 (regression),removed
-trucking,trucking,hierarchy,parent=Transport & logistics businesses - REMOVED by script 48 (regression),removed
-trucking,trucking,hierarchy,parent=Transport - REMOVED by script 48 (regression),removed
-bankruptcy,bankruptcy,hierarchy,parent=Legal outcomes - THEMATIC - REMOVED by script 51 (incorrect capitalization),removed
-bankruptcy,bankruptcy,hierarchy,parent=Economic hardship - THEMATIC - REMOVED by script 51 (incorrect capitalization),removed
-bankruptcy,bankruptcy,hierarchy,parent=Economic distress - THEMATIC - REMOVED by script 51 (incorrect capitalization),removed
-Cottage,Cottage,hierarchy,parent=Cottages - REMOVED by script 52 (obsolete unqualified form),removed
-public house,public house,hierarchy,parent=Public houses - REMOVED by script 52 (obsolete unqualified form),removed
 Methodist Church Katoomba (building),Methodist Church Katoomba (building),hierarchy,parent=methodist churches (buildings),active
 Roman Catholic Church Blackheath (building),Roman Catholic Church Blackheath (building),hierarchy,parent=Roman Catholic churches (buildings),active
 roman catholic church lawson (building),roman catholic church lawson (building),hierarchy,parent=Roman Catholic churches (buildings),active
 Roman Catholic Church Mount Victoria (building),Roman Catholic Church Mount Victoria (building),hierarchy,parent=Roman Catholic churches (buildings),active
 financial institutions (buildings),financial institutions (buildings),hierarchy,parent=commercial buildings,active
 public accommodations,public accommodations,hierarchy,parent=accommodation buildings,active
-banks,banks,hierarchy,parent=financial institutions,active
+law enforcement agencies,law enforcement agencies,hierarchy,parent=government bodies,active
+New South Wales Police,New South Wales Police,hierarchy,parent=law enforcement agencies,active
+Police,Police,hierarchy,parent=law enforcement agencies,active
+postal service,postal service,hierarchy,parent=societal activities,active
+military activity,military activity,hierarchy,parent=military activities (singular generic term),active

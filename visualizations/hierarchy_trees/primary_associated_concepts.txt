@@ -2,15 +2,6 @@ PRIMARY FACET: Associated Concepts
 ================================================================================
 
 Associated Concepts
-├── Physical and health conditions
-│   ├── Disease
-│   ├── Drunkenness (intoxication)
-│   ├── Illness
-│   └── Injury
-├── Physical phenomena
-│   └── Weather
-├── Social & economic concepts
-│   └── Unemployment
 ├── document types
 │   └── Maps
 ├── legal concepts
@@ -32,6 +23,6 @@ Associated Concepts
 
 
 STATISTICS:
-  Total nodes in facet: 28
+  Total nodes in facet: 19
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
