@@ -3,7 +3,6 @@ THEMATIC GROUPING: family & domestic life
 
 family & domestic life
 ├── Domestic accommodation
-│   ├── boarding houses
 │   └── miners' dwellings
 │       └── miners' dwelling
 ├── childhood & adolescence
@@ -25,6 +24,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 17
+  Total nodes in theme: 16
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

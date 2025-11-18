@@ -21,6 +21,9 @@ PRIMARY FACETS (Form-Based, Getty AAT Compatible):
   - Built Environment
     File: primary_built_environment.txt
 
+  - Dwellings
+    File: primary_dwellings.txt
+
   - Events
     File: primary_events.txt
 
@@ -38,9 +41,6 @@ THEMATIC GROUPINGS (Domain-Based, Exhibition Optimised):
 
   - Arts & Culture
     File: theme_arts__culture.txt
-
-  - Domestic accommodation - THEMATIC (residential aspect)
-    File: theme_domestic_accommodation_-_thematic_residential_aspect.txt
 
   - Economy & Labour
     File: theme_economy__labour.txt
@@ -146,20 +146,20 @@ This enables:
 OVERALL STATISTICS:
 
 Primary Facets:
-  - Top-level facets: 8
-  - Total nodes: 954
-  - Total relationships: 976
-  - Parent nodes: 253
-  - Leaf nodes: 701
+  - Top-level facets: 9
+  - Total nodes: 939
+  - Total relationships: 958
+  - Parent nodes: 250
+  - Leaf nodes: 689
 
 Thematic Groupings:
-  - Top-level themes: 29
-  - Total nodes: 322
-  - Total relationships: 320
-  - Parent nodes: 77
-  - Leaf nodes: 245
+  - Top-level themes: 28
+  - Total nodes: 312
+  - Total relationships: 310
+  - Parent nodes: 76
+  - Leaf nodes: 236
 
-TOTAL HIERARCHY RELATIONSHIPS: 1296
+TOTAL HIERARCHY RELATIONSHIPS: 1268
 
 ================================================================================
 Generated: 2025-10-20

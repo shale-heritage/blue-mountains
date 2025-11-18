@@ -2,14 +2,11 @@ THEMATIC GROUPING: justice & crime
 ================================================================================
 
 justice & crime
-├── Court buildings
-│   └── Courthouse
 ├── Legal outcomes
 │   ├── Divorce
 │   ├── bankruptcy
 │   └── divorce
 ├── New South Wales Police
-├── Police station
 ├── court buildings
 │   ├── Katoomba Courthouse
 │   └── courthouse
@@ -73,6 +70,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 65
+  Total nodes in theme: 62
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

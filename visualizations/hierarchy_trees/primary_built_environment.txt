@@ -2,19 +2,19 @@ PRIMARY FACET: Built Environment
 ================================================================================
 
 Built Environment
-├── Accommodation and hospitality venues
-│   ├── Cottages
-│   ├── Dwellings
+├── accommodation and hospitality venues
+│   ├── boarding houses
+│   ├── cottages
+│   ├── dwellings
+│   │   ├── dwelling
 │   │   └── miners' dwellings
 │   │       └── miners' dwelling
-│   ├── Stables
-│   │   └── Stable
-│   ├── boarding houses
 │   ├── hotels
 │   ├── public houses
-│   └── public houses (buildings)
-│       └── public house (building)
-├── accommodation and hospitality venues
+│   ├── public houses (buildings)
+│   │   └── public house (building)
+│   └── stables
+│       └── stable
 ├── accommodation buildings
 │   ├── boarding houses (buildings)
 │   │   ├── Miss Kelly's Boarding House (building)
@@ -27,7 +27,6 @@ Built Environment
 │   │   ├── dwelling
 │   │   └── miners' dwellings
 │   │       └── miners' dwelling
-│   ├── hotel (building)
 │   ├── public accommodations
 │   │   └── hotels (buildings)
 │   │       ├── Belgravia Hotel (building)
@@ -60,20 +59,16 @@ Built Environment
 │   └── stables (buildings)
 │       └── stable (building)
 ├── civic buildings
-│   ├── Council buildings
-│   │   └── Council Chambers
-│   ├── Court buildings
-│   │   └── Courthouse
 │   ├── Katoomba Council Chambers
+│   ├── council buildings
+│   │   └── council chambers
 │   ├── court buildings
 │   │   ├── Katoomba Courthouse
 │   │   └── courthouse
 │   ├── police facilities
-│   │   ├── Police station
 │   │   ├── police quarters
 │   │   └── police station
 │   └── postal facilities
-│       ├── Post office
 │       └── post office
 ├── commercial buildings
 │   ├── commercial building
@@ -115,17 +110,9 @@ Built Environment
 │           ├── Nellie's Glen Shale Mine (facility)
 │           └── shale mine (facility)
 ├── infrastructure
-│   ├── Utilities
-│   │   ├── Gas
-│   │   └── Sewerage
 │   ├── mining infrastructure
-│   │   ├── Tramway
 │   │   └── tramway
 │   ├── transport infrastructure
-│   │   ├── Roads
-│   │   │   ├── Jenolan Caves Road
-│   │   │   ├── Nellie's Glen Road
-│   │   │   └── Nellie's Glen Track
 │   │   ├── cattle trucking yards
 │   │   │   └── cattle trucking yard
 │   │   ├── railway
@@ -141,6 +128,7 @@ Built Environment
 │   │       ├── Jenolan Caves Road
 │   │       ├── Katoomba Street
 │   │       ├── Nellie's Glen Road
+│   │       ├── Nellie's Glen Track
 │   │       └── road
 │   └── utilities
 │       ├── gas
@@ -161,12 +149,7 @@ Built Environment
 │           └── rifle range
 └── religious buildings
     ├── churches
-    │   ├── Congregational Church
-    │   ├── Katoomba Congregational Church
-    │   ├── Methodist Church
-    │   ├── Roman Catholic Church
-    │   ├── St Hilda's Church
-    │   └── Wesleyan Church
+    │   └── Katoomba Congregational Church
     └── churches (buildings)
         ├── Church of England churches (buildings)
         │   ├── Church of England Katoomba (building)
@@ -206,6 +189,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 202
+  Total nodes in facet: 185
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

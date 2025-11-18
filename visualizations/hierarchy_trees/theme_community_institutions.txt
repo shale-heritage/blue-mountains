@@ -3,20 +3,16 @@ THEMATIC GROUPING: community institutions
 
 community institutions
 ├── civic buildings
-│   ├── Council buildings
-│   │   └── Council Chambers
-│   ├── Court buildings
-│   │   └── Courthouse
 │   ├── Katoomba Council Chambers
+│   ├── council buildings
+│   │   └── council chambers
 │   ├── court buildings
 │   │   ├── Katoomba Courthouse
 │   │   └── courthouse
 │   ├── police facilities
-│   │   ├── Police station
 │   │   ├── police quarters
 │   │   └── police station
 │   └── postal facilities
-│       ├── Post office
 │       └── post office
 ├── civic organisations
 │   ├── labour organisations
@@ -110,6 +106,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 102
+  Total nodes in theme: 98
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

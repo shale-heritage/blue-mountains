@@ -179,12 +179,7 @@ Agents
 │   │       └── Mountain Rifle Reserves
 │   └── religious organisations
 │       ├── churches
-│       │   ├── Congregational Church
-│       │   ├── Katoomba Congregational Church
-│       │   ├── Methodist Church
-│       │   ├── Roman Catholic Church
-│       │   ├── St Hilda's Church
-│       │   └── Wesleyan Church
+│       │   └── Katoomba Congregational Church
 │       ├── churches (organisations)
 │       │   ├── Church of England churches (organisations)
 │       │   │   ├── Church of England Katoomba (organisation)
@@ -493,6 +488,6 @@ Agents
 
 
 STATISTICS:
-  Total nodes in facet: 489
+  Total nodes in facet: 484
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
