@@ -1556,7 +1556,6 @@ public health and safety activities,public health and safety activities,hierarch
 public house (building),public house (building),hierarchy,parent=public houses (buildings),active
 public house (business),public house (business),hierarchy,parent=public houses (businesses),active
 public houses (buildings),public houses (buildings),hierarchy,parent=accommodation buildings,active
-public houses (buildings),public houses (buildings),hierarchy,parent=accommodation and hospitality venues,active
 public houses (businesses),public houses (businesses),hierarchy,parent=hospitality businesses,active
 public houses (businesses),public houses (businesses),hierarchy,parent=Alcohol-related venues - THEMATIC,active
 public meeting,public meeting,hierarchy,parent=political events,active

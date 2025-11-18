@@ -11,8 +11,6 @@ Built Environment
 │   │       └── miners' dwelling
 │   ├── hotels
 │   ├── public houses
-│   ├── public houses (buildings)
-│   │   └── public house (building)
 │   └── stables
 │       └── stable
 ├── accommodation buildings
@@ -189,6 +187,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 185
+  Total nodes in facet: 183
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
