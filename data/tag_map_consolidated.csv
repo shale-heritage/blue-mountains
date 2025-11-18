@@ -1300,7 +1300,7 @@ public house (building),public house (building),hierarchy,parent=public houses (
 public house (business),public house (business),hierarchy,parent=public houses (businesses),active
 public houses,public houses (buildings),synonym,Unqualified form - maps to buildings aspect,active
 public houses,public houses (businesses),synonym,Unqualified form - maps to businesses aspect,active
-public houses (buildings),public houses (buildings),hierarchy,parent=accommodation buildings,active
+public houses (buildings),public houses (buildings),hierarchy,parent=public accommodations,active
 public houses (businesses),public houses (businesses),hierarchy,parent=hospitality businesses,active
 public houses (businesses),public houses (businesses),hierarchy,parent=Alcohol-related venues - THEMATIC,active
 public meeting,public meeting,hierarchy,parent=political events,active
