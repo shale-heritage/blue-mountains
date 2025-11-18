@@ -2,12 +2,12 @@ PRIMARY FACET: Information Forms
 ================================================================================
 
 Information Forms
-├── Maps
-└── legal documents
-    ├── Legislation
-    │   └── Licensing Act
-    └── Licenses
-        └── publican's license
+├── legal documents
+│   ├── Legislation
+│   │   └── Licensing Act
+│   └── Licenses
+│       └── publican's license
+└── maps
 
 
 STATISTICS:

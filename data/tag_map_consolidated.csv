@@ -491,8 +491,8 @@ mailmen,mailmen,hierarchy,parent=postal employees,active
 Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=soldiers,active
 Major Sir Charles George Gordon,Major Sir Charles George Gordon,hierarchy,parent=people - THEMATIC,active
 Manuell,Manuell,hierarchy,parent=hotelliers,active
-Maps,Maps,hierarchy,parent=document types,active
-Maps,Maps,hierarchy,parent=Information Forms,active
+maps,maps,hierarchy,parent=document types,active
+maps,maps,hierarchy,parent=Information Forms,active
 marginalised groups,marginalised groups,hierarchy,parent=Race & Ethnicity - THEMATIC,active
 maritime workers,maritime workers,hierarchy,parent=occupations,active
 Marriage,marriage,synonym,Capitalized variant from original Zotero tags,active

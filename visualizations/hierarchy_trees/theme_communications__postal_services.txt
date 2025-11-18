@@ -3,12 +3,12 @@ THEMATIC GROUPING: communications & postal services
 
 communications & postal services
 ├── Information Forms
-│   ├── Maps
-│   └── legal documents
-│       ├── Legislation
-│       │   └── Licensing Act
-│       └── Licenses
-│           └── publican's license
+│   ├── legal documents
+│   │   ├── Legislation
+│   │   │   └── Licensing Act
+│   │   └── Licenses
+│   │       └── publican's license
+│   └── maps
 ├── Information objects
 ├── advertising
 └── postal services
