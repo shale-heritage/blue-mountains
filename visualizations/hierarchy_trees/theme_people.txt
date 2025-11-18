@@ -88,57 +88,34 @@ people
 ├── demographic groups
 │   ├── adolescents
 │   ├── children
-│   ├── demographic group
 │   ├── families
 │   │   ├── Austin family
 │   │   ├── Brydon family
+│   │   ├── Davey family
 │   │   ├── Delaney family
+│   │   ├── Eaton family
+│   │   ├── Evans family
+│   │   ├── Flynn family
+│   │   ├── Gordon family
 │   │   ├── Goyder family
 │   │   │   └── Goyder brothers
 │   │   ├── Greenbank family
+│   │   ├── Hartman family
+│   │   ├── Husband family
+│   │   ├── Meredith family
 │   │   ├── Peckman family
+│   │   ├── Penman family
 │   │   ├── Tabrett family
-│   │   ├── davey family
-│   │   ├── eaton family
-│   │   ├── evans family
+│   │   ├── Watkins family
 │   │   ├── family
-│   │   ├── flynn family
-│   │   ├── gordon family
-│   │   ├── hartman family
-│   │   ├── husband family
-│   │   ├── meredith family
-│   │   ├── miners' families
-│   │   ├── penman family
-│   │   └── watkins family
+│   │   └── miners' families
 │   ├── men
 │   ├── widows
 │   └── women
 ├── ethnic groups
 │   ├── Aboriginal people
 │   ├── Chinese people
-│   ├── Irish culture
-│   └── ethnic group
-├── families
-│   ├── Austin family
-│   ├── Brydon family
-│   ├── Delaney family
-│   ├── Goyder family
-│   │   └── Goyder brothers
-│   ├── Greenbank family
-│   ├── Peckman family
-│   ├── Tabrett family
-│   ├── davey family
-│   ├── eaton family
-│   ├── evans family
-│   ├── family
-│   ├── flynn family
-│   ├── gordon family
-│   ├── hartman family
-│   ├── husband family
-│   ├── meredith family
-│   ├── miners' families
-│   ├── penman family
-│   └── watkins family
+│   └── Irish culture
 ├── named persons
 │   ├── Miss Bradley
 │   ├── Miss Edwards
@@ -257,9 +234,7 @@ people
     │       └── horse breeder
     │           └── Mr Hardie Clydesdale
     ├── clergy
-    │   ├── Archbishop
     │   ├── Cardinal Moran
-    │   ├── Coadjutor Archbishop
     │   ├── Mr van Someren
     │   ├── Reverence M C Brown
     │   ├── Reverend A Sutherland
@@ -280,32 +255,28 @@ people
     │   ├── Reverend T K Abbot
     │   ├── Reverend W Lampard
     │   ├── Reverend W R Orton
-    │   └── Reverend W Tollis
+    │   ├── Reverend W Tollis
+    │   ├── archbishop
+    │   └── coadjutor archbishop
+    ├── coach and buggy business
+    │   └── Mr Thomas Cale
     ├── educational occupations
     │   └── school teachers
-    │       ├── Mr W Chapman
-    │       └── school teacher
+    │       └── Mr W Chapman
     ├── hospitality workers
-    │   ├── hospitality worker
     │   ├── hotelliers
     │   │   ├── Allen
     │   │   ├── Bashford
     │   │   ├── Biles
     │   │   ├── Brown
     │   │   ├── F C Goyder
-    │   │   ├── F. C. Goyder
     │   │   ├── Isabellea J Long
-    │   │   ├── Isabellea J. Long
     │   │   ├── Manuell
     │   │   ├── Mr A G Rowell
-    │   │   ├── Mr A. G. Rowell
     │   │   ├── Mr Alf Goodare
-    │   │   ├── Mr Alf. Goodare
     │   │   ├── Mr D Brown
     │   │   ├── Mr D Thompson
     │   │   ├── Mr D Thomson
-    │   │   ├── Mr D. Brown
-    │   │   ├── Mr D. Thompson
     │   │   ├── Mr Delaney
     │   │   ├── Mr Edwards
     │   │   ├── Mr Ellis
@@ -315,9 +286,7 @@ people
     │   │   ├── Mr Lindeman
     │   │   ├── Mr Manuel
     │   │   ├── Mr N Delaney
-    │   │   ├── Mr N. Delaney
     │   │   ├── Mr P G Whittall
-    │   │   ├── Mr P. G. Whittall
     │   │   ├── Mr R Fryer
     │   │   ├── Mr R. Fryer
     │   │   ├── Mr Wilson
@@ -328,11 +297,9 @@ people
     │   │   ├── Richard Allen
     │   │   ├── Rubina Fryer
     │   │   ├── W Green
-    │   │   ├── W. Green
-    │   │   └── hotellier
+    │   │   └── W. Green
     │   ├── liquor merchants
-    │   │   ├── Mr Wilkinson
-    │   │   └── liquor merchant
+    │   │   └── Mr Wilkinson
     │   └── publican
     ├── law enforcement personnel
     │   └── police officers
@@ -354,22 +321,17 @@ people
     │   │   └── coroner
     │   └── legal official
     ├── maritime workers
-    │   ├── maritime worker
     │   └── shipwright
     ├── medical professionals
     │   ├── Dr Morgan
     │   ├── Dr Prangley
     │   ├── Dr Spark
-    │   ├── Dr Watkins
-    │   └── medical professional
+    │   └── Dr Watkins
     ├── military personnel
     │   └── soldiers
     │       └── Major Sir Charles George Gordon
     ├── miners
     │   └── miner
-    ├── other goods and services
-    │   └── coach and buggy business
-    │       └── Mr Thomas Cale
     └── public officials
         ├── aldermen
         ├── licensing inspector
@@ -382,12 +344,7 @@ people
         │       ├── Mrs A Smith
         │       ├── Mrs England
         │       ├── Mrs H Corston
-        │       ├── Mrs James
-        │       ├── Mrs. A. Smith
-        │       ├── Mrs. England
-        │       ├── Mrs. H. Corston
-        │       ├── Mrs. James
-        │       └── postmaster
+        │       └── Mrs James
         ├── public official
         └── stationmaster
 
@@ -397,6 +354,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 389
+  Total nodes in theme: 346
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

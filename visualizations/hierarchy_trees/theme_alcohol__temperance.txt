@@ -4,33 +4,6 @@ THEMATIC GROUPING: alcohol & temperance
 alcohol & temperance
 ├── Alcohol-related venues
 │   ├── hotels
-│   │   ├── Allen's Hotel
-│   │   ├── Belgravia Hotel
-│   │   ├── Brown's Hotel
-│   │   ├── Carrington Hotel
-│   │   ├── Centennial Hotel
-│   │   ├── Comet Hotel
-│   │   ├── Delaney's Hotel
-│   │   ├── Falls Hotel
-│   │   ├── Fryer's Family Hotel
-│   │   ├── Grand Hotel (Sydney)
-│   │   ├── Great Western Hotel
-│   │   ├── Hoffman's House
-│   │   ├── Hotel Wentworth
-│   │   ├── Hydora House Hotel
-│   │   ├── Imperial Hotel
-│   │   ├── Katoomba Family Hotel
-│   │   ├── Katoomba Hotel
-│   │   ├── Leura Hotel
-│   │   ├── Megalong Hotel
-│   │   ├── Montrose House
-│   │   ├── Mount Victoria Hotel
-│   │   ├── Mrs Long's Hotel
-│   │   ├── Oxford Hotel (Sydney)
-│   │   ├── Railway Hotel
-│   │   ├── Wentworth Falls Hotel
-│   │   ├── family hotel
-│   │   └── hotel
 │   ├── public houses
 │   └── public houses (businesses)
 │       └── public house (business)
@@ -63,26 +36,19 @@ alcohol & temperance
 │   ├── drunkenness (crime)
 │   └── drunkenness (intoxication)
 ├── hospitality workers
-│   ├── hospitality worker
 │   ├── hotelliers
 │   │   ├── Allen
 │   │   ├── Bashford
 │   │   ├── Biles
 │   │   ├── Brown
 │   │   ├── F C Goyder
-│   │   ├── F. C. Goyder
 │   │   ├── Isabellea J Long
-│   │   ├── Isabellea J. Long
 │   │   ├── Manuell
 │   │   ├── Mr A G Rowell
-│   │   ├── Mr A. G. Rowell
 │   │   ├── Mr Alf Goodare
-│   │   ├── Mr Alf. Goodare
 │   │   ├── Mr D Brown
 │   │   ├── Mr D Thompson
 │   │   ├── Mr D Thomson
-│   │   ├── Mr D. Brown
-│   │   ├── Mr D. Thompson
 │   │   ├── Mr Delaney
 │   │   ├── Mr Edwards
 │   │   ├── Mr Ellis
@@ -92,9 +58,7 @@ alcohol & temperance
 │   │   ├── Mr Lindeman
 │   │   ├── Mr Manuel
 │   │   ├── Mr N Delaney
-│   │   ├── Mr N. Delaney
 │   │   ├── Mr P G Whittall
-│   │   ├── Mr P. G. Whittall
 │   │   ├── Mr R Fryer
 │   │   ├── Mr R. Fryer
 │   │   ├── Mr Wilson
@@ -105,11 +69,9 @@ alcohol & temperance
 │   │   ├── Richard Allen
 │   │   ├── Rubina Fryer
 │   │   ├── W Green
-│   │   ├── W. Green
-│   │   └── hotellier
+│   │   └── W. Green
 │   ├── liquor merchants
-│   │   ├── Mr Wilkinson
-│   │   └── liquor merchant
+│   │   └── Mr Wilkinson
 │   └── publican
 ├── licensing & regulation
 │   ├── Licensing Act
@@ -135,6 +97,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 127
+  Total nodes in theme: 89
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

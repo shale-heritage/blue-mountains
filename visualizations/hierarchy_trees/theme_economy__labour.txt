@@ -23,56 +23,36 @@ Economy & Labour
 └── businesses
     └── commercial businesses
         ├── financial institutions
-        │   ├── banks (businesses)
-        │   │   ├── Commercial Bank of Australia (business)
-        │   │   └── bank (business)
-        │   └── financial institution
+        │   └── banks (businesses)
+        │       ├── Commercial Bank of Australia (business)
+        │       └── bank (business)
         ├── hospitality businesses
-        │   ├── boarding houses
-        │   │   ├── boarding house
-        │   │   └── orama boarding house
         │   ├── boarding houses (businesses)
         │   │   ├── Miss Kelly's Boarding House (business)
-        │   │   ├── boarding house (business)
-        │   │   └── orama boarding house (business)
+        │   │   ├── Orama Boarding House (business)
+        │   │   └── boarding house (business)
         │   ├── cottages (businesses)
         │   │   └── cottage (business)
-        │   ├── hotels
-        │   │   ├── Allen's Hotel
-        │   │   ├── Belgravia Hotel
-        │   │   ├── Brown's Hotel
-        │   │   ├── Carrington Hotel
-        │   │   ├── Centennial Hotel
-        │   │   ├── Comet Hotel
-        │   │   ├── Delaney's Hotel
-        │   │   ├── Falls Hotel
-        │   │   ├── Fryer's Family Hotel
-        │   │   ├── Grand Hotel (Sydney)
-        │   │   ├── Great Western Hotel
-        │   │   ├── Hoffman's House
-        │   │   ├── Hotel Wentworth
-        │   │   ├── Hydora House Hotel
-        │   │   ├── Imperial Hotel
-        │   │   ├── Katoomba Family Hotel
-        │   │   ├── Katoomba Hotel
-        │   │   ├── Leura Hotel
-        │   │   ├── Megalong Hotel
-        │   │   ├── Montrose House
-        │   │   ├── Mount Victoria Hotel
-        │   │   ├── Mrs Long's Hotel
-        │   │   ├── Oxford Hotel (Sydney)
-        │   │   ├── Railway Hotel
-        │   │   ├── Wentworth Falls Hotel
-        │   │   ├── family hotel
-        │   │   └── hotel
         │   ├── hotels (businesses)
         │   │   ├── Belgravia Hotel (business)
         │   │   ├── Carrington Hotel (business)
         │   │   ├── Centennial Hotel (business)
+        │   │   ├── Comet Hotel (business)
+        │   │   ├── Falls Hotel (business)
+        │   │   ├── Fryer's Family Hotel (business)
         │   │   ├── Grand Hotel (Sydney) (business)
+        │   │   ├── Great Western Hotel (business)
+        │   │   ├── Hoffman's House (business)
+        │   │   ├── Hotel Wentworth (business)
+        │   │   ├── Hydora House Hotel (business)
         │   │   ├── Imperial Hotel (business)
+        │   │   ├── Katoomba Family Hotel (business)
+        │   │   ├── Katoomba Hotel (business)
+        │   │   ├── Leura Hotel (business)
         │   │   ├── Megalong Hotel (business)
+        │   │   ├── Montrose House (business)
         │   │   ├── Mount Victoria Hotel (business)
+        │   │   ├── Oxford Hotel (Sydney) (business)
         │   │   ├── Railway Hotel Katoomba (business)
         │   │   ├── Wentworth Falls Hotel (business)
         │   │   ├── family hotels (businesses)
@@ -85,27 +65,19 @@ Economy & Labour
         │       └── public house (business)
         ├── mining companies
         │   ├── Australian Kerosene Oil and Mineral Company
+        │   ├── Gladstone Coal Company
         │   ├── Great Wentworth Falls Coal and Shale Mining Company
         │   ├── Katoomba Coal and Shale Company
         │   ├── New South Wales Shale and Oil Company
         │   ├── South Clifton Mine Company
+        │   ├── Sunny Corner Mining Company
         │   ├── Waudby and Company
-        │   ├── gladstone coal company
-        │   ├── mining company
-        │   └── sunny corner mining company
+        │   └── mining company
         ├── retailers and stores
-        │   ├── Douglas and Company
-        │   ├── Nimmo's
-        │   ├── Peckman Bros
-        │   ├── Tabrett and Company
-        │   ├── p. mullany and company
-        │   ├── retailer or store
         │   └── store
         └── transport & logistics businesses
-            ├── coach services
-            │   ├── Peckman Brothers (business)
-            │   └── coach service
-            └── transport & logistics business
+            └── coach services
+                └── Peckman Brothers (business)
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -113,6 +85,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 105
+  Total nodes in theme: 77
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -6,11 +6,9 @@ community institutions
 │   ├── Council buildings
 │   │   └── Council Chambers
 │   ├── Court buildings
-│   │   ├── Courthouse
-│   │   └── Katoomba Court
+│   │   └── Courthouse
 │   ├── Katoomba Council Chambers
 │   ├── court buildings
-│   │   ├── Katoomba Court
 │   │   ├── Katoomba Courthouse
 │   │   └── courthouse
 │   ├── police facilities
@@ -22,15 +20,13 @@ community institutions
 │       └── post office
 ├── civic organisations
 │   ├── labour organisations
-│   │   ├── labour organisation
 │   │   └── unions
 │   └── progress committees
 │       ├── Katoomba Progress Association
 │       ├── Leura Progress Association
 │       ├── Megalong Progress Committee
 │       ├── Mount Victoria Progress Committee
-│       ├── Wentworth Falls Progress Association
-│       └── progress committee
+│       └── Wentworth Falls Progress Association
 ├── community buildings
 │   └── halls
 │       ├── Clarke's Hall
@@ -39,37 +35,29 @@ community institutions
 │       ├── Waudby's Hall
 │       ├── hall
 │       ├── masonic hall
-│       ├── schools of arts
-│       │   ├── Katoomba School of Arts
-│       │   └── school of arts
 │       └── schools of arts (buildings)
 │           ├── Katoomba School of Arts (building)
-│           ├── mines school of arts (building)
+│           ├── Mines School of Arts (building)
 │           └── school of arts (building)
 ├── cultural & recreational organisations
 │   ├── cultural societies
-│   │   ├── Chess and Draughts Club
 │   │   ├── Katoomba Amateur Dramatic Club
 │   │   ├── chess and draughts club
 │   │   ├── cultural society
 │   │   ├── horticulture society
-│   │   ├── schools of arts
-│   │   │   ├── Katoomba School of Arts
-│   │   │   └── school of arts
 │   │   └── schools of arts (organisations)
 │   │       ├── Katoomba School of Arts (organisation)
-│   │       ├── mines school of arts (organisation)
+│   │       ├── Mines School of Arts (organisation)
 │   │       └── school of arts (organisation)
 │   ├── performance groups
 │   │   ├── bands
-│   │   │   ├── Katoomba band
+│   │   │   ├── Katoomba Band
 │   │   │   └── band
 │   │   ├── choirs
-│   │   │   ├── choir
-│   │   │   └── congregational church choir
+│   │   │   ├── Congregational Church Choir
+│   │   │   └── choir
 │   │   └── minstrel troupes
-│   │       ├── Katoomba Amateur Minstrels
-│   │       └── minstrel troupe
+│   │       └── Katoomba Amateur Minstrels
 │   └── sports clubs
 │       ├── athletic clubs
 │       │   ├── Katoomba Athletic Club
@@ -88,11 +76,10 @@ community institutions
 │       │   ├── Hartley Vale Natives Football Club
 │       │   ├── Katoomba Football Club
 │       │   ├── Lithgow Rovers
-│       │   ├── football club
-│       │   └── nepean football club
+│       │   ├── Nepean Football Club
+│       │   └── football club
 │       ├── outdoor recreation clubs
-│       │   ├── Katoomba Shooting Fishing and Excursion Club
-│       │   └── outdoor recreation club
+│       │   └── Katoomba Shooting Fishing and Excursion Club
 │       ├── rifle clubs
 │       │   ├── Katoomba Civilian Rifle Club
 │       │   ├── Western Rifle Association
@@ -112,11 +99,9 @@ community institutions
         ├── Loyal Orange Order
         ├── United Ancient Order of Druids
         │   └── Druid's Lodge (local lodge)
-        ├── independent lodges
-        │   └── mountaineer lodge
         ├── lodge
         └── unaffiliated lodges
-            ├── mountaineer lodge
+            ├── Mountaineer Lodge
             └── unaffiliated lodge
 
 
@@ -125,6 +110,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 117
+  Total nodes in theme: 102
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

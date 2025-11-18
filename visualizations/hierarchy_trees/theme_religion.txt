@@ -3,9 +3,7 @@ THEMATIC GROUPING: Religion
 
 Religion
 ├── clergy
-│   ├── Archbishop
 │   ├── Cardinal Moran
-│   ├── Coadjutor Archbishop
 │   ├── Mr van Someren
 │   ├── Reverence M C Brown
 │   ├── Reverend A Sutherland
@@ -26,7 +24,9 @@ Religion
 │   ├── Reverend T K Abbot
 │   ├── Reverend W Lampard
 │   ├── Reverend W R Orton
-│   └── Reverend W Tollis
+│   ├── Reverend W Tollis
+│   ├── archbishop
+│   └── coadjutor archbishop
 ├── religious buildings
 │   ├── churches
 │   │   ├── Congregational Church
@@ -34,8 +34,7 @@ Religion
 │   │   ├── Methodist Church
 │   │   ├── Roman Catholic Church
 │   │   ├── St Hilda's Church
-│   │   ├── Wesleyan Church
-│   │   └── church
+│   │   └── Wesleyan Church
 │   └── churches (buildings)
 │       ├── Church of England churches (buildings)
 │       │   ├── Church of England Katoomba (building)
@@ -47,31 +46,31 @@ Religion
 │       │   ├── St Mark's Church of England (building)
 │       │   ├── St Mary's Church of England Greta (building)
 │       │   └── St Paul's Church of England (building)
-│       ├── Roman Catholic churches (buildings)
-│       │   ├── Roman Catholic Church Blackheath (building)
-│       │   ├── Roman Catholic Church Katoomba (building)
-│       │   ├── Roman Catholic Church Megalong (building)
-│       │   ├── Roman Catholic Church Mount Victoria (building)
-│       │   ├── St Canice's Catholic Church Katoomba (building)
-│       │   ├── roman catholic church (building)
-│       │   └── roman catholic church lawson (building)
-│       ├── church (building)
-│       ├── congregational churches (buildings)
+│       ├── Congregational churches (buildings)
 │       │   ├── Congregational Church Katoomba (building)
 │       │   ├── Congregational Church Katoomba South (building)
-│       │   ├── Katoomba Congregational Church (building)
-│       │   └── congregational church (building)
-│       ├── methodist churches (buildings)
+│       │   ├── Congregational church (building)
+│       │   └── Katoomba Congregational Church (building)
+│       ├── Methodist churches (buildings)
 │       │   ├── Methodist Church Katoomba (building)
-│       │   └── methodist church (building)
-│       ├── presbyterian churches (buildings)
+│       │   └── Methodist church (building)
+│       ├── Presbyterian churches (buildings)
 │       │   ├── Presbyterian Church Leura (building)
 │       │   ├── Presbyterian Church Wentworth Falls (building)
-│       │   └── presbyterian church (building)
-│       └── wesleyan churches (buildings)
-│           ├── Wesleyan Church Katoomba (building)
-│           ├── wesleyan chapel (building)
-│           └── wesleyan church (building)
+│       │   └── Presbyterian church (building)
+│       ├── Roman Catholic churches (buildings)
+│       │   ├── Roman Catholic Church (building)
+│       │   ├── Roman Catholic Church Blackheath (building)
+│       │   ├── Roman Catholic Church Katoomba (building)
+│       │   ├── Roman Catholic Church Lawson (building)
+│       │   ├── Roman Catholic Church Megalong (building)
+│       │   ├── Roman Catholic Church Mount Victoria (building)
+│       │   └── St Canice's Catholic Church Katoomba (building)
+│       ├── Wesleyan churches (buildings)
+│       │   ├── Wesleyan Church Katoomba (building)
+│       │   ├── Wesleyan chapel (building)
+│       │   └── Wesleyan church (building)
+│       └── church (building)
 └── religious organisations
     ├── churches
     │   ├── Congregational Church
@@ -79,8 +78,7 @@ Religion
     │   ├── Methodist Church
     │   ├── Roman Catholic Church
     │   ├── St Hilda's Church
-    │   ├── Wesleyan Church
-    │   └── church
+    │   └── Wesleyan Church
     ├── churches (organisations)
     │   ├── Church of England churches (organisations)
     │   │   ├── Church of England Katoomba (organisation)
@@ -90,42 +88,39 @@ Religion
     │   │   ├── St Clement's Church of England Yass (organisation)
     │   │   ├── St Hilda's Church of England (organisation)
     │   │   └── St Mark's Church of England Darling Point (organisation)
-    │   ├── Roman Catholic churches (organisations)
-    │   │   ├── Roman Catholic Church Blackheath (organisation)
-    │   │   ├── Roman Catholic Church Megalong (organisation)
-    │   │   ├── Roman Catholic Church Mount Victoria (organisation)
-    │   │   ├── St Canice's Catholic Church Katoomba (organisation)
-    │   │   ├── roman catholic church (organisation)
-    │   │   └── roman catholic church lawson (organisation)
-    │   ├── church (organisation)
-    │   ├── congregational churches (organisations)
+    │   ├── Congregational churches (organisations)
     │   │   ├── Congregational Church Katoomba South (organisation)
-    │   │   ├── Katoomba Congregational Church (organisation)
-    │   │   └── congregational church (organisation)
-    │   ├── methodist churches (organisations)
+    │   │   ├── Congregational church (organisation)
+    │   │   └── Katoomba Congregational Church (organisation)
+    │   ├── Methodist churches (organisations)
     │   │   ├── Methodist Church Katoomba (organisation)
-    │   │   └── methodist church (organisation)
-    │   ├── presbyterian churches (organisations)
+    │   │   └── Methodist church (organisation)
+    │   ├── Presbyterian churches (organisations)
     │   │   ├── Presbyterian Church Leura (organisation)
     │   │   ├── Presbyterian Church Wentworth Falls (organisation)
-    │   │   └── presbyterian church (organisation)
-    │   └── wesleyan churches (organisations)
-    │       ├── Wesleyan Church Katoomba (organisation)
-    │       └── wesleyan church (organisation)
+    │   │   └── Presbyterian church (organisation)
+    │   ├── Roman Catholic churches (organisations)
+    │   │   ├── Roman Catholic Church (organisation)
+    │   │   ├── Roman Catholic Church Blackheath (organisation)
+    │   │   ├── Roman Catholic Church Lawson (organisation)
+    │   │   ├── Roman Catholic Church Megalong (organisation)
+    │   │   ├── Roman Catholic Church Mount Victoria (organisation)
+    │   │   └── St Canice's Catholic Church Katoomba (organisation)
+    │   ├── Wesleyan churches (organisations)
+    │   │   ├── Wesleyan Church Katoomba (organisation)
+    │   │   └── Wesleyan church (organisation)
+    │   └── church (organisation)
     ├── monasteries and friaries
-    │   ├── monastery or friary
-    │   └── waverley friary (organisation)
+    │   └── Waverley Friary (organisation)
     ├── religious education
-    │   ├── sunday school
     │   └── sunday schools
     │       ├── Katoomba Congregational Church (Sunday School)
     │       ├── St Aidan's Church Blackheath (Sunday School)
     │       └── sunday school
     └── religious social movements
         ├── Good Templars
-        ├── Salvation Army
-        ├── methodist band of hope
-        └── religious social movement
+        ├── Methodist Band of Hope
+        └── Salvation Army
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -133,6 +128,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 125
+  Total nodes in theme: 120
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

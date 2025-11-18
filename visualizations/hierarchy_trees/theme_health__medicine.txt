@@ -19,8 +19,7 @@ health & medicine
     ├── Dr Morgan
     ├── Dr Prangley
     ├── Dr Spark
-    ├── Dr Watkins
-    └── medical professional
+    └── Dr Watkins
 
 
 NOTE: Tags in thematic groupings may also appear in primary facets.
@@ -28,6 +27,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 20
+  Total nodes in theme: 19
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

@@ -12,13 +12,10 @@ environment & weather
 │       └── shale mine (facility)
 ├── animals
 │   ├── animal
-│   ├── cattle
-│   ├── dogs
 │   ├── domestic animals
 │   │   ├── cattle
 │   │   ├── dogs
 │   │   └── horses
-│   ├── horses
 │   └── wild animals
 │       └── wild horses
 ├── natural features
@@ -56,6 +53,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 48
+  Total nodes in theme: 45
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv

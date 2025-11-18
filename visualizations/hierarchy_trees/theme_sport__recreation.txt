@@ -63,11 +63,10 @@ sport & recreation
 │   │   ├── Hartley Vale Natives Football Club
 │   │   ├── Katoomba Football Club
 │   │   ├── Lithgow Rovers
-│   │   ├── football club
-│   │   └── nepean football club
+│   │   ├── Nepean Football Club
+│   │   └── football club
 │   ├── outdoor recreation clubs
-│   │   ├── Katoomba Shooting Fishing and Excursion Club
-│   │   └── outdoor recreation club
+│   │   └── Katoomba Shooting Fishing and Excursion Club
 │   ├── rifle clubs
 │   │   ├── Katoomba Civilian Rifle Club
 │   │   ├── Western Rifle Association
@@ -90,6 +89,6 @@ This is intentional poly-hierarchy design for flexible querying.
 
 
 STATISTICS:
-  Total nodes in theme: 82
+  Total nodes in theme: 81
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
