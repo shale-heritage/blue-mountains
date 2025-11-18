@@ -8,7 +8,6 @@ accident,accident,synonym,Capitalized variant from original Zotero tags,active
 accident,accident,hierarchy,parent=health-related events - THEMATIC,active
 accident,accident,hierarchy,parent=mining incidents - THEMATIC,active
 Accommodation,Accommodation,hierarchy,parent=tourism & accommodation - THEMATIC,active
-Accommodation and hospitality venues,Accommodation and hospitality venues,hierarchy,parent=Built Environment,active
 Activities,Activities,hierarchy,parent=(Getty AAT primary facet),active
 Activities,Activities,hierarchy,parent=(new top-level facet),active
 adolescents,adolescents,hierarchy,parent=demographic groups,active
@@ -64,8 +63,7 @@ Blackheath,Blackheath,hierarchy,parent=towns,active
 Blackheath,Blackheath,keep,Substring coincidence - semantically unrelated concepts (automated triage),active
 Blackheath Catholic Church,Roman Catholic Church Blackheath,synonym,Variant naming pattern - standardized to [church name] [place],active
 boarding houses,boarding houses,synonym,Capitalized variant from original Zotero tags,active
-boarding houses,boarding houses,hierarchy,parent=Accommodation and hospitality venues,active
-boarding houses,boarding houses,hierarchy,parent=Domestic accommodation - THEMATIC,active
+boarding houses,boarding houses,hierarchy,parent=accommodation and hospitality venues,active
 Bonnie Doon Track,Bonnie Doon Track,hierarchy,parent=roads,active
 Brandy,Brandy,hierarchy,parent=Spirits,active
 Break Neck Gully,Break Neck Gully,hierarchy,parent=gullies,active
@@ -144,7 +142,6 @@ community buildings,community buildings,hierarchy,parent=community institutions 
 community institutions,community institutions,hierarchy,parent=(thematic grouping),active
 Concerts,concert,merge,Plural form merged into singular (29 items),merged
 Congregational Church,Congregational church (organisation),synonym,Unqualified variant from original Zotero tags,active
-Congregational Church,Congregational Church,hierarchy,parent=churches,active
 Congregational church (building),Congregational church (building),hierarchy,parent=Congregational churches (buildings),active
 Congregational church (organisation),Congregational church (organisation),hierarchy,parent=Congregational churches (organisations) (singular generic term),active
 Congregational Church Choir,Congregational Church Choir,hierarchy,parent=choirs,active
@@ -167,19 +164,17 @@ coroner,coroner,hierarchy,parent=coroners,active
 Coroner Lethbridge,Coroner Lethbridge,hierarchy,parent=coroners,active
 Corroboree,corroboree,synonym,Capitalized variant from original Zotero tags,active
 Corroboree,Corroboree,hierarchy,parent=indigenous peoples - THEMATIC,active
-Cottages,Cottages,hierarchy,parent=Accommodation and hospitality venues,active
-Council Chambers,Katoomba Council Chambers,synonym,Capitalized variant from original Zotero tags,active
-Council Chambers,Council Chambers,hierarchy,parent=Council buildings,active
-Council buildings,Council buildings,hierarchy,parent=civic buildings,active
+cottages,cottages,hierarchy,parent=accommodation and hospitality venues,active
+council chambers,Katoomba Council Chambers,synonym,Capitalized variant from original Zotero tags,active
+council chambers,council chambers,hierarchy,parent=council buildings,active
+council buildings,council buildings,hierarchy,parent=civic buildings,active
 councils,councils,synonym,Capitalized variant from original Zotero tags,active
 councils,councils,hierarchy,parent=government bodies,active
 court,court,synonym,Capitalized variant from original Zotero tags,active
 court,court,hierarchy,parent=courts,active
-Court buildings,Court buildings,hierarchy,parent=civic buildings,active
-Court buildings,Court buildings,hierarchy,parent=justice & crime - THEMATIC,active
 Court cases,court cases,synonym,Capitalized variant from original Zotero tags,active
-Courthouse,courthouse,synonym,Capitalized variant from original Zotero tags,active
-Courthouse,Courthouse,hierarchy,parent=Court buildings,active
+courthouse,courthouse,synonym,Capitalized variant from original Zotero tags,active
+courthouse,courthouse,hierarchy,parent=court buildings,active
 courts,courts,hierarchy,parent=government bodies,active
 courts,courts,hierarchy,parent=justice & crime - THEMATIC,active
 cricket,cricket,synonym,Capitalized variant from original Zotero tags,active
@@ -233,7 +228,7 @@ drunkenness (crime),drunkenness (crime),hierarchy,parent=Social order offences -
 drunkenness (crime),drunkenness (crime),hierarchy,parent=alcohol consumption & behaviour - THEMATIC,active
 drunkenness (intoxication),drunkenness (intoxication),hierarchy,parent=physical and health conditions,active
 drunkenness (intoxication),drunkenness (intoxication),hierarchy,parent=alcohol consumption & behaviour - THEMATIC,active
-Dwellings,Dwellings,hierarchy,parent=Accommodation and hospitality venues,active
+dwellings,dwellings,hierarchy,parent=accommodation and hospitality venues,active
 Eaton family,Eaton family,hierarchy,parent=families,active
 Economic distress,Economic distress,hierarchy,parent=Economy & Labour - THEMATIC,active
 Economic hardship,Economic hardship,hierarchy,parent=Social issues - THEMATIC,active
@@ -282,7 +277,6 @@ gambling,gambling,synonym,Capitalized variant from original Zotero tags,active
 gambling,gambling,hierarchy,parent=social behaviours,active
 gambling,gambling,hierarchy,parent=Social order offences - THEMATIC,active
 Gas,gas,synonym,Capitalized variant from original Zotero tags,active
-Gas,Gas,hierarchy,parent=Utilities,active
 Gender-related vulnerabilities,Gender-related vulnerabilities,hierarchy,parent=women & gender - THEMATIC,active
 Gin,Gin,hierarchy,parent=Spirits,active
 girls' cricket,cricket,merge,Tag with cricket + women (demographic group) + adolescents (if applicable) instead of gender-specific sport term per consolidation decision,merged
@@ -347,9 +341,7 @@ Hotel Wentworth (building),Hotel Wentworth (building),hierarchy,parent=hotels (b
 hotel licensing,hotel licensing,hierarchy,parent=licensing,active
 hotelliers,hotelliers,hierarchy,parent=hospitality workers,active
 hotels,hotels (businesses),synonym,Capitalized variant from original Zotero tags,active
-hotels,hotels,hierarchy,parent=Accommodation and hospitality venues,active
-hotels,hotels,hierarchy,parent=Alcohol-related venues - THEMATIC,active
-hotels,hotels,hierarchy,parent=Domestic accommodation - THEMATIC (residential aspect),active
+hotels,hotels,hierarchy,parent=accommodation and hospitality venues,active
 Husband family,Husband family,hierarchy,parent=families,active
 Hydora House Hotel (business),Hydora House Hotel (business),hierarchy,parent=hotels (businesses),active
 Hydora House Hotel (building),Hydora House Hotel (building),hierarchy,parent=hotels (buildings),active
@@ -379,7 +371,7 @@ Jenolan Caves,Jenolan Caves,hierarchy,parent=tourist attractions - THEMATIC,acti
 Jenolan Caves,Jenolan Cave,synonym,Singular form - always use plural as caves are a complex system,active
 Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=roads,active
 Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=Jenolan Caves,active
-Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=Roads,active
+Jenolan Caves Road,Jenolan Caves Road,hierarchy,parent=roads,active
 Jenolan Caves road,Jenolan Caves Road,synonym,Lowercase variant - use capitalised form,active
 Joseph Nimmo,Mr Joseph Nimmo,synonym,Short form without honorific - use Mr Joseph Nimmo,active
 justice & crime,justice & crime,hierarchy,parent=(thematic grouping),active
@@ -525,7 +517,6 @@ men,men,hierarchy,parent=family members by demographic - THEMATIC,active
 Meredith family,Meredith family,hierarchy,parent=families,active
 Methodist Band of Hope,Methodist Band of Hope,hierarchy,parent=religious social movements,active
 Methodist Church,Methodist church (organisation),synonym,Unqualified variant from original Zotero tags,active
-Methodist Church,Methodist Church,hierarchy,parent=churches,active
 Methodist church (building),Methodist church (building),hierarchy,parent=Methodist churches (buildings),active
 Methodist church (organisation),Methodist church (organisation),hierarchy,parent=Methodist churches (organisations),active
 Methodist Church Katoomba (organisation),Methodist Church Katoomba (organisation),hierarchy,parent=Methodist churches (organisations),active
@@ -927,14 +918,14 @@ Nellie's Glen (gully),Nellie's Glen (gully),hierarchy,parent=gullies,active
 Nellie's Glen (settlement),Nellie's Glen (settlement),hierarchy,parent=Nellie's Glen mining district,active
 Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=roads,active
 Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Nellie's Glen,active
-Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=Roads,active
+Nellie's Glen Road,Nellie's Glen Road,hierarchy,parent=roads,active
 Nellie's Glen Shale Mine,Nellie's Glen Shale Mine (facility),synonym,Unqualified variant from original Zotero tags,active
 Nellie's Glen Shale Mine,Nellie's Glen Shale Mine,hierarchy,parent=Nellie's Glen,active
 Nellie's Glen Shale Mine (facility),Nellie's Glen Shale Mine (facility),hierarchy,parent=shale mines,active
 Nellie's Glen Shale Mine (site),Nellie's Glen Shale Mine (site),hierarchy,parent=Nellie's Glen mining district,active
 Nellie's Glen Track,Nellie's Glen Road,synonym,Informal local term for same route - prefer formal Road designation,active
 Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Nellie's Glen,active
-Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=Roads,active
+Nellie's Glen Track,Nellie's Glen Track,hierarchy,parent=roads,active
 Nellie's Glen mining district,Nellie's Glen mining district,hierarchy,parent=mining districts,active
 Nellie's Glen track,Nellie's Glen Road,synonym,Lowercase variant - use Nellie's Glen Road,active
 New South Wales Police,New South Wales Police,hierarchy,parent=justice & crime - THEMATIC,active
@@ -978,8 +969,6 @@ Police Court,Katoomba Court of Petty Sessions,synonym,Colloquial term for Katoom
 Police court,police court,synonym,Capitalized variant from original Zotero tags,active
 police facilities,police facilities,hierarchy,parent=civic buildings,active
 Police station,police station,synonym,Capitalized variant from original Zotero tags,active
-Police station,Police station,hierarchy,parent=police facilities,active
-Police station,Police station,hierarchy,parent=justice & crime - THEMATIC,active
 political events,political events,hierarchy,parent=Politics & Governance - THEMATIC,active
 Politics & Governance,Politics & Governance,hierarchy,parent=(thematic grouping),active
 Port Kembla,Port Kembla,hierarchy,parent=towns,active
@@ -989,8 +978,6 @@ Post,postal service,synonym,Generic term for postal service (deprecated - use sp
 Post Office Department,Post Department,merge,Synonym - standardise to Post Department,merged
 Post Office Department,Postal Department,synonym,Historical name for Postal Department,active
 Post office,post office,synonym,Capitalized variant from original Zotero tags,active
-Post office,Post office,hierarchy,parent=postal facilities,active
-Post office,Post office,hierarchy,parent=postal services - THEMATIC,active
 Postal Department,Postal Department,hierarchy,parent=postal authorities,active
 postal authorities,postal authorities,hierarchy,parent=government bodies,active
 postal employees,postal employees,hierarchy,parent=public officials,active
@@ -1014,8 +1001,7 @@ property crimes,property crimes,hierarchy,parent=crimes - THEMATIC,active
 Pub,public house,synonym,Colloquial term for public house,active
 Pub,public house (building),synonym,Colloquial term - maps to building aspect,active
 Pub,public house (business),synonym,Colloquial term - maps to business aspect,active
-public houses,public houses,hierarchy,parent=Accommodation and hospitality venues,active
-public houses,public houses,hierarchy,parent=Alcohol-related venues - THEMATIC,active
+public houses,public houses,hierarchy,parent=accommodation and hospitality venues,active
 public meeting,public meeting,synonym,Capitalized variant from original Zotero tags,active
 public officials,public officials,hierarchy,parent=occupations,active
 public officials,public officials,hierarchy,parent=Politics & Governance - THEMATIC,active
@@ -1090,11 +1076,8 @@ rifle clubs,rifle clubs,hierarchy,parent=sports clubs,active
 rifle reserves,rifle reserves,synonym,Capitalized variant from original Zotero tags,active
 rifle reserves,rifle reserves,hierarchy,parent=reserves,active
 Roads,roads,synonym,Capitalized variant from original Zotero tags,active
-Roads,Roads,hierarchy,parent=transport infrastructure,active
-Roads,Roads,hierarchy,parent=transport & infrastructure - THEMATIC,active
 Rockley,Rockley,hierarchy,parent=towns,active
 Roman Catholic Church,Roman Catholic Church (organisation),synonym,Unqualified variant from original Zotero tags,active
-Roman Catholic Church,Roman Catholic Church,hierarchy,parent=churches,active
 Roman Catholic Church (building),Roman Catholic Church (building),hierarchy,parent=Roman Catholic churches (buildings),active
 Roman Catholic Church (organisation),Roman Catholic Church (organisation),hierarchy,parent=Roman Catholic churches (organisations),active
 Roman Catholic Church Blackheath (organisation),Roman Catholic Church Blackheath (organisation),hierarchy,parent=Roman Catholic churches (organisations),active
@@ -1134,7 +1117,6 @@ senior-constable tomkins,Senior-Constable Tomkins,synonym,Lowercase variant - us
 Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=sergeant,active
 Sergeant Thorndyke,Sergeant Thorndyke,hierarchy,parent=people - THEMATIC,active
 Sewerage,sewerage,synonym,Capitalized variant from original Zotero tags,active
-Sewerage,Sewerage,hierarchy,parent=Utilities,active
 sexual violence,sexual violence,synonym,Capitalized variant from original Zotero tags,active
 sexual violence,sexual violence,hierarchy,parent=violent crimes - THEMATIC,active
 sexual violence,sexual violence,hierarchy,parent=Gender-related vulnerabilities - THEMATIC,active
@@ -1183,7 +1165,6 @@ St Canice's Catholic Church Katoomba (organisation),St Canice's Catholic Church 
 St Clement's Church of England Yass (organisation),St Clement's Church of England Yass (organisation),hierarchy,parent=Church of England churches (organisations),active
 St David's Church Surry Hills (building),St David's Church Surry Hills (building),hierarchy,parent=Church of England churches (buildings),active
 St Hilda's Church,St Hilda's Church of England (organisation),synonym,Unqualified variant from original Zotero tags,active
-St Hilda's Church,St Hilda's Church,hierarchy,parent=churches,active
 St Hilda's Church of England (building),St Hilda's Church of England (building),hierarchy,parent=Church of England churches (buildings),active
 St Hilda's Church of England (organisation),St Hilda's Church of England (organisation),hierarchy,parent=Church of England churches (organisations),active
 St John's Church Parramatta (building),St John's Church Parramatta (building),hierarchy,parent=Church of England churches (buildings),active
@@ -1193,8 +1174,8 @@ St Mark's Church of England (building),St Mark's Church of England (building),hi
 St Mark's Church of England Darling Point (organisation),St Mark's Church of England Darling Point (organisation),hierarchy,parent=Church of England churches (organisations),active
 St Mary's Church of England Greta (building),St Mary's Church of England Greta (building),hierarchy,parent=Church of England churches (buildings),active
 St Paul's Church of England (building),St Paul's Church of England (building),hierarchy,parent=Church of England churches (buildings),active
-Stable,Stable,hierarchy,parent=Stables,active
-Stables,Stables,hierarchy,parent=Accommodation and hospitality venues,active
+stable,stable,hierarchy,parent=stables,active
+stables,stables,hierarchy,parent=accommodation and hospitality venues,active
 stationmaster,stationmaster,synonym,Capitalized variant from original Zotero tags,active
 stationmaster,stationmaster,hierarchy,parent=public officials,active
 store,store,hierarchy,parent=commercial buildings,active
@@ -1232,8 +1213,6 @@ tourist trains,tourist trains,hierarchy,parent=railway operations,active
 tourist trains,tourist trains,hierarchy,parent=tourism activities - THEMATIC,active
 towns,towns,hierarchy,parent=Places (existing facet),active
 Tramway,tramway,synonym,Capitalized variant from original Zotero tags,active
-Tramway,Tramway,hierarchy,parent=mining infrastructure,active
-Tramway,Tramway,hierarchy,parent=mining transport - THEMATIC,active
 transport,transport,hierarchy,parent=economic activities,active
 transport & infrastructure,transport & infrastructure,hierarchy,parent=(thematic grouping),active
 transport & logistics businesses,transport & logistics businesses,hierarchy,parent=commercial businesses,active
@@ -1252,8 +1231,6 @@ unions,unions,hierarchy,parent=labour organisations,active
 unions,unions,hierarchy,parent=Labour relations - THEMATIC,active
 United Ancient Order of Druids,United Ancient Order of Druids,hierarchy,parent=lodges,active
 University of Sydney (institution),University of Sydney (institution),hierarchy,parent=universities,active
-Utilities,Utilities,hierarchy,parent=infrastructure,active
-Utilities,Utilities,hierarchy,parent=transport & infrastructure - THEMATIC,active
 valleys,valleys,hierarchy,parent=natural features,active
 victims of crime & violence,victims of crime & violence,hierarchy,parent=justice & crime - THEMATIC (virtual grouping),active
 victims of crime & violence,victims of crime & violence,hierarchy,parent=Social issues - THEMATIC (virtual grouping),active
@@ -1285,7 +1262,6 @@ Wentworth Falls Reserves,Wentworth Falls Reserves,hierarchy,parent=reserves,acti
 Wentworth Falls Reserves,Wentworth Falls Reserve,synonym,Plural variant - standardised to singular,active
 Wesleyan chapel (building),Wesleyan chapel (building),hierarchy,parent=Wesleyan churches (buildings),active
 Wesleyan Church,Wesleyan church (organisation),synonym,Unqualified variant from original Zotero tags,active
-Wesleyan Church,Wesleyan Church,hierarchy,parent=churches,active
 Wesleyan church (building),Wesleyan church (building),hierarchy,parent=Wesleyan churches (buildings),active
 Wesleyan church (organisation),Wesleyan church (organisation),hierarchy,parent=Wesleyan churches (organisations),active
 Wesleyan Church Katoomba (building),Wesleyan Church Katoomba (building),hierarchy,parent=Wesleyan churches (buildings),active
@@ -1502,7 +1478,6 @@ horses,horses,hierarchy,parent=domestic animals,active
 horses,horses,keep,Substring coincidence - semantically unrelated concepts (automated triage),active
 horses,horses,merge,Remove from Recreation activities - horses are animals (agents) not activities; use 'Horseback riding' for the activity,merged
 hotel (building),hotel (building),hierarchy,parent=hotels (buildings),active
-hotel (building),hotel (building),hierarchy,parent=accommodation buildings,active
 hotel (business),hotel (business),hierarchy,parent=hotels (businesses),active
 hotels (buildings),hotels (buildings),hierarchy,parent=public accommodations,active
 hotels (businesses),hotels (businesses),hierarchy,parent=hospitality businesses,active
@@ -1581,7 +1556,7 @@ public health and safety activities,public health and safety activities,hierarch
 public house (building),public house (building),hierarchy,parent=public houses (buildings),active
 public house (business),public house (business),hierarchy,parent=public houses (businesses),active
 public houses (buildings),public houses (buildings),hierarchy,parent=accommodation buildings,active
-public houses (buildings),public houses (buildings),hierarchy,parent=Accommodation and hospitality venues,active
+public houses (buildings),public houses (buildings),hierarchy,parent=accommodation and hospitality venues,active
 public houses (businesses),public houses (businesses),hierarchy,parent=hospitality businesses,active
 public houses (businesses),public houses (businesses),hierarchy,parent=Alcohol-related venues - THEMATIC,active
 public meeting,public meeting,hierarchy,parent=political events,active
