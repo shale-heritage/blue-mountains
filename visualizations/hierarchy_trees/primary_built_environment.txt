@@ -3,18 +3,18 @@ PRIMARY FACET: Built Environment
 
 Built Environment
 ├── accommodation buildings
-│   ├── boarding houses (buildings)
-│   │   ├── Miss Kelly's Boarding House (building)
-│   │   ├── Mrs Gillen's Boarding House (building)
-│   │   ├── Orama Boarding House (building)
-│   │   └── boarding house (building)
-│   ├── cottages (buildings)
-│   │   └── cottage (building)
 │   ├── dwellings
 │   │   ├── dwelling
 │   │   └── miners' dwellings
 │   │       └── miners' dwelling
 │   ├── public accommodations
+│   │   ├── boarding houses (buildings)
+│   │   │   ├── Miss Kelly's Boarding House (building)
+│   │   │   ├── Mrs Gillen's Boarding House (building)
+│   │   │   ├── Orama Boarding House (building)
+│   │   │   └── boarding house (building)
+│   │   ├── cottages (buildings)
+│   │   │   └── cottage (building)
 │   │   └── hotels (buildings)
 │   │       ├── Belgravia Hotel (building)
 │   │       ├── Carrington Hotel (building)

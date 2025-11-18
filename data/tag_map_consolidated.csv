@@ -119,7 +119,7 @@ boarding houses,boarding houses,keep,Substring coincidence - semantically unrela
 boarding houses,boarding houses,synonym,Capitalized variant from original Zotero tags,active
 boarding houses,boarding houses (buildings),synonym,Unqualified form - maps to buildings aspect,active
 boarding houses,boarding houses (businesses),synonym,Unqualified form - maps to businesses aspect,active
-boarding houses (buildings),boarding houses (buildings),hierarchy,parent=accommodation buildings,active
+boarding houses (buildings),boarding houses (buildings),hierarchy,parent=public accommodations,active
 boarding houses (businesses),boarding houses (businesses),hierarchy,parent=hospitality businesses,active
 Bonnie Doon Track,Bonnie Doon Track,hierarchy,parent=roads,active
 Brandy,Brandy,hierarchy,parent=Spirits,active
@@ -256,7 +256,7 @@ cottage (building),cottage (building),hierarchy,parent=cottages (buildings),acti
 cottage (business),cottage (business),hierarchy,parent=cottages (businesses),active
 cottages,cottages (buildings),synonym,Unqualified form - maps to buildings aspect,active
 cottages,cottages (businesses),synonym,Unqualified form - maps to businesses aspect,active
-cottages (buildings),cottages (buildings),hierarchy,parent=accommodation buildings,active
+cottages (buildings),cottages (buildings),hierarchy,parent=public accommodations,active
 cottages (businesses),cottages (businesses),hierarchy,parent=hospitality businesses,active
 council,council,hierarchy,parent=councils (singular generic term),active
 council buildings,council buildings,hierarchy,parent=civic buildings,active
