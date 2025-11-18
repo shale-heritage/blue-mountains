@@ -2,17 +2,6 @@ PRIMARY FACET: Built Environment
 ================================================================================
 
 Built Environment
-├── accommodation and hospitality venues
-│   ├── boarding houses
-│   ├── cottages
-│   ├── dwellings
-│   │   ├── dwelling
-│   │   └── miners' dwellings
-│   │       └── miners' dwelling
-│   ├── hotels
-│   ├── public houses
-│   └── stables
-│       └── stable
 ├── accommodation buildings
 │   ├── boarding houses (buildings)
 │   │   ├── Miss Kelly's Boarding House (building)
@@ -187,6 +176,6 @@ Built Environment
 
 
 STATISTICS:
-  Total nodes in facet: 183
+  Total nodes in facet: 172
   Generated: 2025-10-20
   Source: data/tag_map_consolidated.csv
