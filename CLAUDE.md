@@ -226,8 +226,8 @@ For entities with both building and organisational aspects (hotels, churches, sc
    venv/bin/python scripts/38_classify_entities_with_claude.py --entity-type {type}
    ```
 
-2. **Classify with entity-classifier skill** - Use NLU (Natural Language Understanding) approach
-   - Invoke skill: `/skill entity-classifier`
+2. **Classify with the `heritage-taxonomy:entity-classifier` skill** - Use NLU (Natural Language Understanding) approach
+   - Invoke skill: `/heritage-taxonomy:entity-classifier` (the toolkit plugin, since 18 Nov 2026)
    - Paste the auto-generated prompt from step 1
    - Analyse each mention using linguistic heuristic framework
 
